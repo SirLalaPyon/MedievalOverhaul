@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Component Medieval ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_ComponentMedieval</defName>
+    <label>Medieval component</label>
+    <description>Miscellaneous gears, wheels, nails. Necessary for assembling complex contraptions.</description>
+    <graphicData>
+      <texPath>Resources/ComponentMedieval</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>15</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!--=============== Ballista Bolts ====================-->
+
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>DankPyon_BallistaBolt</defName>
+    <label>Ballista Bolts</label>
+    <description>A heavy bolt used by ballistas.</description>
+    <graphicData>
+      <texPath>Resources/BallistaBolt</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <costList>
+      <DankPyon_IronIngot>25</DankPyon_IronIngot>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Mortars</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+</Defs>

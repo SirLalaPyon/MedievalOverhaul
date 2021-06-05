@@ -2,10 +2,10 @@
 <Defs>
 
 	<BiomeDef>
-		<defName>DarkForest</defName>
-		<label>BiomeWorker_Dark Forest</label>
+		<defName>DankPyon_DarkForest</defName>
+		<label>Dark Forest</label>
 		<description>A forest dominated by tall and ancient growth due to its fertile nature. Frequently rainy and overcast. Many species of animals live in these woods. Snow slows winter travel significantly.</description>
-		<workerClass>BiomeWorker_BorealForest</workerClass>
+		<workerClass>DankPyon.BiomeWorker_DarkForest</workerClass>
 		<animalDensity>2.8</animalDensity>
 		<plantDensity>0.85</plantDensity>
 		<implemented>true</implemented>

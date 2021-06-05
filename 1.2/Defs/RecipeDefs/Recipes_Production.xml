@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+ <!-- Ammuniation: Base Class --> 
+	<RecipeDef Name="DankPyon_MakeableAmmunitionBase" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>Smith</effectWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>	
+		<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>DankPyon_Workbench</li>
+			</recipeUsers>	
+	</RecipeDef>
+	
  <!-- Ingots: Base Class --> 
 	<RecipeDef Name="DankPyon_SmelterBase" Abstract="True">
 		<description>Smelts raw ores into usuable ingots.</description>
-		<workSpeedStat>MiningSpeed</workSpeedStat>
-		<workSkill>Mining</workSkill>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<effectWorking>Smelt</effectWorking>
 		<allowMixingIngredients>false</allowMixingIngredients>	
@@ -182,6 +195,32 @@
   
   <RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_SteelBulk</defName>
+		<workAmount>1600</workAmount>		
+		<label>Refine Iron Ingots into Steel Ingots</label>
+		<jobString>Refining Iron Ingots into Steel Ingots</jobString>
+		<targetCountAdjustment>60</targetCountAdjustment>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_IronIngot</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_IronIngot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Steel>30</Steel>
+		</products>		
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_SmelterBase">
+		<defName>DankPyon_MakeBullet_BallistaBolt</defName>
 		<workAmount>1600</workAmount>		
 		<label>Refine Iron Ingots into Steel Ingots</label>
 		<jobString>Refining Iron Ingots into Steel Ingots</jobString>

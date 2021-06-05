@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<TheEndTimes_Beastmen.ElementSpawnDef>
+		<defName>RH_TET_Beastmen_SpawnGreatOakDead</defName>
+		<thingDef>RH_TET_Beastmen_GreatOakDead</thingDef>
+		<allowOnWater>false</allowOnWater>
+		<terrainValidationDisallowed/>
+		<terrainValidationAllowed>
+			<li>Soil</li>
+		</terrainValidationAllowed>
+		<forbiddenBiomes/>
+		<allowedBiomes>
+			<li>RH_TET_Beastmen_OldGrowthForest</li>
+		</allowedBiomes>
+	</TheEndTimes_Beastmen.ElementSpawnDef>
+
+</Defs>

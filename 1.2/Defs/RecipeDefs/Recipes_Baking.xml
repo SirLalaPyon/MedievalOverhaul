@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+	  
+<!-- ======= Bread ====== -->
+	  
+	  <RecipeDef>
+      <defName>DankPyon_BakeBread</defName>
+      <label>bake bread</label>
+      <description>Bake bread from flour.</description>
+      <jobString>Baking bread.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>DankPyon_Flour</li>
+               </thingDefs>
+            </filter>
+            <count>0.45</count>
+         </li>
+      </ingredients>
+      <products>
+         <DankPyon_MealBread>1</DankPyon_MealBread>
+      </products>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>DankPyon_Flour</li>
+         </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+      <workAmount>250</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>DankPyon_StoneOven</li>
+      </recipeUsers>
+      </RecipeDef>
+	  
+	  <RecipeDef>
+      <defName>DankPyon_BakeBreadBulk</defName>
+      <label>bake 10 breads</label>
+      <description>Bake bread from flour.</description>
+      <jobString>Baking bread.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <thingDefs>
+                  <li>DankPyon_Flour</li>
+               </thingDefs>
+            </filter>
+            <count>4.5</count>
+         </li>
+      </ingredients>
+      <products>
+         <DankPyon_MealBread>10</DankPyon_MealBread>
+      </products>
+      <fixedIngredientFilter>
+         <thingDefs>
+            <li>DankPyon_Flour</li>
+         </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+      <workAmount>1000</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>DankPyon_StoneOven</li>
+      </recipeUsers>
+      </RecipeDef>
+	  
+
+<!-- ===================================== Stews ======================================== --> 
+<!-- ======= Weak Stews ====== -->
+<!-- Weak Stew -->
+  <RecipeDef> 
+    <defName>DankPyon_CookMealWeakStew</defName>
+    <label>Cook Weak Stew.</label>
+    <description>Cooks a straightforward stew from few ingredients.</description>
+    <jobString>Cooking a weak stew.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>600</workAmount>  
+      <recipeUsers>
+        <li>DankPyon_StewPot</li>	  			
+      </recipeUsers>	
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>FoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.3</count>
+      </li>
+    </ingredients>
+    <products>
+      <DankPyon_MealWeakStew>1</DankPyon_MealWeakStew>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>				
+			</disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+  
+<!-- Weak Stew Bulk -->
+  <RecipeDef> 
+    <defName>DankPyon_CookMealWeakStewBulk</defName>
+    <label>(Bulk x10) Cook Weak Stew.</label>
+    <description>Cooks a straightforward stew from few ingredients.</description>
+    <jobString>Cooking a weak stew.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>1800</workAmount>  
+	  <recipeUsers>
+		<li>DankPyon_StewPot</li>	  	  	  
+    </recipeUsers>	
+	  <ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>FoodRaw</li>
+				</categories>
+			</filter>
+			<count>3</count>
+		</li>
+    </ingredients>
+    <products>
+		<DankPyon_MealWeakStew>10</DankPyon_MealWeakStew>
+    </products>
+    <fixedIngredientFilter>
+		<categories>
+			<li>FoodRaw</li>
+		</categories>
+		<specialFiltersToDisallow>
+			<li>AllowPlantFood</li>
+		</specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>				
+			</disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<skillRequirements>
+		<Cooking>3</Cooking>
+	</skillRequirements>	
+  </RecipeDef>
+
+  
+<!-- ======= Hearty Stews ====== -->
+<!-- Hearty Stew -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealHeartyStew</defName>
+		<label>Cook Hearty Stew.</label>
+		<description>Cooks a somewhat complex meal from a combination of raw meat and raw plant ingredients.</description>
+		<jobString>Cooking a hearty stew.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>600</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_StewPot</li>		  	  
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealHeartyStew>1</DankPyon_MealHeartyStew>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>3</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  
+  <!-- Hearty Stew Bulk -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealHeartyStewBulk</defName>
+		<label>(Bulk x10) Cook Hearty Stew.</label>
+		<description>Cooks a somewhat complex meal from a combination of raw meat and raw plant ingredients.</description>
+		<jobString>Cooking a hearty stew.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>1800</workAmount> 
+    <recipeUsers>
+		<li>DankPyon_StewPot</li>	  		  	  
+    </recipeUsers>	
+    <ingredients>
+		<li>
+		<filter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</categories>
+		</filter>
+		<count>2.5</count>
+		</li>
+		<li>
+			<filter>
+				<categories>
+					<li>PlantFoodRaw</li>
+				</categories>
+			</filter>
+			<count>2.5</count>
+		</li>
+	</ingredients>
+	<products>
+		<DankPyon_MealHeartyStew>10</DankPyon_MealHeartyStew>
+    </products>
+	<fixedIngredientFilter>
+		<categories>
+			<li>FoodRaw</li>
+		</categories>
+		<specialFiltersToDisallow>
+			<li>AllowPlantFood</li>
+		</specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>FoodRaw</li>
+		</categories>
+		<disallowedCategories>
+			<li>EggsFertilized</li>
+		</disallowedCategories>
+		<disallowedThingDefs>
+			<li>Meat_Human</li>
+			<li>Meat_Megaspider</li>
+			<li>InsectJelly</li>
+			<li>Milk</li>				
+		</disallowedThingDefs>
+	</defaultIngredientFilter>
+	<skillRequirements>
+		<Cooking>6</Cooking>
+	</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+</Defs>

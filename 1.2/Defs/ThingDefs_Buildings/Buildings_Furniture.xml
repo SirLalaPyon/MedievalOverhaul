@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--======================= Basic domestic furniture ==============================-->
+
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>DankPyon_RusticStool</defName>
+    <label>rustic round stool</label>
+    <description>A simple platform on which to sit. Not very comfortable, but much better than nothing.Commonly seen at taverns and inns. Can be used at tables, work stations, and elsewhere.</description>
+    <graphicData>
+      <texPath>Furniture/RusticRoundStool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+        <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+        <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+        <rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <shadowData>
+        <volume>(0.18, 0.23, 0.18)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>450</WorkToBuild>
+      <Mass>3</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0</Beauty>
+      <Comfort>0.5</Comfort>
+    </statBases>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <pathCost>30</pathCost>
+    <designationHotKey>Misc6</designationHotKey>
+    <fillPercent>0.20</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <uiIconOffset>(0, -0.05)</uiIconOffset>
+  </ThingDef>
+
+  <ThingDef ParentName="TableBase">
+    <defName>DankPyon_RusticEndTable</defName>
+    <label>end table</label>
+    <description>A small bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+    <surfaceType>Item</surfaceType>
+    <graphicData>
+      <texPath>Furniture/RusticEndTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <pathCost>30</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>30</costStuffCount>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.05</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+  </ThingDef>
+
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>DankPyon_RusticTable1x2c</defName>
+    <label>table (1x2)</label>
+    <graphicData>
+      <texPath>Furniture/RusticTable1x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(1,2)</size>
+    <costStuffCount>28</costStuffCount>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>DankPyon_RusticTable2x2c</defName>
+    <label>table (2x2)</label>
+    <graphicData>
+      <texPath>Furniture/RusticTable2x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>50</costStuffCount>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>DankPyon_Table2x4c</defName>
+    <label>table (2x4)</label>
+    <graphicData>
+      <texPath>Furniture/RusticTable2x4</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,6)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <size>(2,4)</size>
+    <costStuffCount>95</costStuffCount>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <building>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+  </ThingDef>
+
+  <!-- ======================== Lighting ======================= -->
+
+  <ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_RusticCandles</defName>
+		<label>candles</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A candle to prevent darkness seeping in your room.</description>
+		<graphicData>
+			<texPath>Furniture/RusticCandle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>			
+		</graphicData>
+		<uiIconPath>Furniture/RusticCandle_MenuIcon</uiIconPath>
+		<costList>
+			<WoodLog>10</WoodLog>
+			<DankPyon_IronIngot>1</DankPyon_IronIngot>
+		</costList>
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>		
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>75</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.2</Mass>	  
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>0.5</heatPerSecond>
+				<heatPushMaxTemperature>5</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_RusticLamp</defName>
+		<label>lamp</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A candle to prevent darkness seeping in your room.</description>
+		<graphicData>
+			<texPath>Furniture/RusticLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>			
+		</graphicData>
+		<uiIconPath>Furniture/RusticLamp_MenuIcon</uiIconPath>
+		<costList>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+		</costList>
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>		
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>75</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.2</Mass>	  
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>0.5</heatPerSecond>
+				<heatPushMaxTemperature>5</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+
+	</ThingDef>
+
+  <!--============================== Storage (Chest) ==============================-->
+
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>DankPyon_RusticChest</defName>
+    <label>Chest</label>
+    <description>A trusty wooden chest to put your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/RusticChest</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.3</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>30</pathCost>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationHotKey>Misc12</designationHotKey>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+	    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.05</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>6</maxDistance>
+      </li>
+    </comps>
+	<rotatable>false</rotatable>
+  </ThingDef>
+  
+    <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>DankPyon_MetalStrongbox</defName>
+    <label>Metal Strongbox</label>
+    <description>A trusty metal strongbox to put your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.Multiple chests do not stack comfort bonuses</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/MetalStrongbox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.3</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>30</pathCost>
+	<costList>
+		<DankPyon_IronIngot>10</DankPyon_IronIngot>
+	</costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>10</Mass>
+      <WorkToBuild>560</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>3</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationHotKey>Misc12</designationHotKey>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+	    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.05</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>6</maxDistance>
+      </li>
+    </comps>
+	<rotatable>false</rotatable>
+  </ThingDef>
+  
+      <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>DankPyon_RoyalChest</defName>
+    <label>Royal Chest</label>
+    <description>An ornate chest used by the nobles.. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Furniture/RoyalChest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.3</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>30</pathCost>
+	<costList>
+		<DankPyon_IronIngot>10</DankPyon_IronIngot>
+		<Gold>10</Gold>
+	</costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>10</Mass>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>30</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationHotKey>Misc12</designationHotKey>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.1</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>6</maxDistance>
+      </li>
+  </comps>
+  <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	<rotatable>false</rotatable>
+  </ThingDef>
+  <!--============================== Dressers ==============================-->
+
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>DankPyon_RusticDresser</defName>
+    <label>dresser</label>
+    <description>A dresser. Gives a small comfort bonus to all nearby beds. Placing more than one dresser near the same bed has no effect.</description>
+    <graphicData>
+      <texPath>Furniture/RusticDresser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>42</pathCost>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>15</Mass>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <designationHotKey>Misc12</designationHotKey>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.05</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>6</maxDistance>
+      </li>
+    </comps>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>DankPyon_RusticWardrobe</defName>
+		<label>rustic wardrobe</label>
+		<description>Shelves and drawers for storing clothes. Gives a small comfort bonus to all nearby beds. Placing more than one dresser near the same bed has no effect.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Furniture/RusticWardrobe</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+
+		<statBases>
+			<Beauty>8</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.02</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>4</maxDistance>
+			</li>
+		</comps>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+	</ThingDef>	
+	
+<!--============================== Bookshelf ==============================-->
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_RusticBookshelf</defName>
+		<label>bookshelf</label>
+		<description>Increases research speed when placed near research table. Each research bench can  use two bookshelf.</description>
+		<graphicData>
+			<texPath>Furniture/RusticBookshelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.6</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>7500</WorkToBuild>
+			<Mass>70</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+		</statBases>
+		<costList>
+			<Cloth>80</Cloth>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.075</ResearchSpeedFactor>
+				</statOffsets>
+				<maxDistance>5</maxDistance>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+	</ThingDef>
+
+
+<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>DankPyon_RusticBarrelClosed</defName>
+		<label>Barrel</label>
+		<description>A wooden barrel reinforced by metal hoops. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Furniture/BarrelClosed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+    <uiIconPath>Furniture/BarrelClosed_MenuIcon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<WorkToBuild>560</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<Comfort>0.6</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+		</costList>
+		<costStuffCount>20</costStuffCount>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<designationHotKey>Misc3</designationHotKey>
+		<fillPercent>0.40</fillPercent>		
+		<building>
+			<isSittable>False</isSittable>
+		</building>
+		<uiIconOffset>(0, -0.05)</uiIconOffset>
+		<rotatable>false</rotatable>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+	</ThingDef>
+	
+	<!--============================== Beds ==============================-->
+	
+	<ThingDef ParentName="BedWithQualityBase">
+    <defName>DankPyon_StrawBed</defName>
+    <label>Straw bed</label>
+    <description>A cheap and quick bed to build.</description>
+    <graphicData>
+      <texPath>Furniture/StrawBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+		      <li>DankPyon_RusticEndTable</li>
+		      <li>DankPyon_RusticDresser</li>
+		      <li>DankPyon_RusticChest</li>
+		      <li>DankPyon_MetalStrongbox</li>
+		       <li>DankPyon_RoyalChest</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+      <WorkToBuild>650</WorkToBuild>
+      <Mass>30</Mass>
+      <BedRestEffectiveness>0.98</BedRestEffectiveness>
+      <Comfort>0.72</Comfort>
+      <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+  </ThingDef>
+  
+  <!--============================== Animal Beds ==============================-->
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>Dank_StrawBedAnimal</defName>
+    <thingClass>Building_Bed</thingClass>
+    <label>animal straw bed</label>
+    <description>A small hay bed for animals to sleep in. Fits smaller animals like chickens, cats, or small dogs.</description>
+    <rotatable>false</rotatable>
+    <fillPercent>0.15</fillPercent>
+    <pathCost>10</pathCost>
+    <passability>PassThroughOnly</passability>
+    <canOverlapZones>false</canOverlapZones>
+    <graphicData>
+      <texPath>Furniture/StrawBedAnimal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.05,0.05,0.9,0.9)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+	<costList>
+		<Hay>20</Hay>
+	</costList>
+    <building>
+      <bed_humanlike>false</bed_humanlike>
+      <bed_maxBodySize>0.55</bed_maxBodySize>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>180</WorkToBuild>
+      <Mass>3</Mass>
+      <BedRestEffectiveness>0.93</BedRestEffectiveness>
+      <Comfort>0.60</Comfort>
+      <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Bed</compClass>
+      </li>
+    </comps>
+    <uiIconScale>0.75</uiIconScale>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+  </ThingDef>
+  
+</Defs>

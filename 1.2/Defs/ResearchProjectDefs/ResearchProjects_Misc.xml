@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_WheatFarming</defName>
+    <label>wheat farming</label>
+    <description>Allows agriculture and basic processing of wheat.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>DankPyon_FoodPreservation</defName>
+    <label>Food Preservation</label>
+    <description>Allows drying to preserve resources.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>DankPyon_CheeseMaking</defName>
+    <label>Food Preservation</label>
+    <description>Make Cheese</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>DankPyon_Mining</defName>
+    <label>Mining</label>
+    <description>Research how to build a mineshaft and the proper procedures.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
+  
+</Defs>

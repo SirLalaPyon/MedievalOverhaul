@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======= Drinks based thoughts ========= -->
+
+
+	<ThoughtDef>	
+		<defName>DankPyon_DrankAle</defName>
+		<hediff>DrankBeer</hediff>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.4</durationDays>
+		<stages>
+			<li>
+				<label>Good ol' Ale</label>
+				<description>Nothing like good Ale to keep the horrors out of my mind.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+	
+	<!-- ======= Food Quality Thoughts ========= -->
+	<!-- Hearty Stew -->
+	<ThoughtDef>
+		<defName>DankPyon_AteHeartyStew</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>ate Hearty Stew</label>
+				<description>I ate a Hearty Stew, a delightful meal that warms my body.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+	<!-- Weak Stew -->
+	<ThoughtDef>
+		<defName>DankPyon_AteWeakStew</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>ate Weak Stew</label>
+				<description>I ate a Weak Stew, a delightful meal that warms my body.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+  </ThoughtDef>
+  
+  <!-- Cheese -->  
+	<ThoughtDef>
+		<defName>DankPyon_AteCheese</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>	
+		<stages>
+			<li>
+				<label>ate cheese</label>
+				<description>PLACEHOLDER</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

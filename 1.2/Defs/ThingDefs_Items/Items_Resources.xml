@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- ==================== Raw Plants Resource ======================= -->  
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_RawWheat</defName>
+    <label>wheat</label>
+    <description>Wheat is a grain that can be milled into flour.</description>
+    <graphicData>
+	  <drawSize>(1,1)</drawSize>
+      <texPath>Plants/RawWheat</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>	
+    </graphicData>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Seed</foodType>
+ 	 <preferability>NeverForNutrition</preferability>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+        <defName>DankPyon_RawGrapes</defName>
+        <label>grapes</label>
+        <description>Tasty grapes that can be eaten raw. Useful for making wine.</description>
+        <graphicData>
+            <texPath>Plants/RawGrape</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.027</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>14</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+    </ThingDef>
+
+<!-- ==================== Processed Resource ======================= -->  
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_Flour</defName>
+    <label>flour</label>
+    <description>Flour is used to prepare many different meals and can be stored for very long periods of time, but cannot be eaten raw. Due to its nature, it can be stored very efficiently.</description>
+    <stackLimit>75</stackLimit>	
+    <graphicData>
+      <texPath>Meal/Flour</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.2</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>90</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+	  <foodType>Meal</foodType>
+	  <tasteThought>AteRawFood</tasteThought>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+	  <ingestSound>Meal_Eat</ingestSound>
+	  <optimalityOffsetHumanlikes>-4</optimalityOffsetHumanlikes>
+    </ingestible>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	
+  </ThingDef>  
+  
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_Straw</defName>
+    <label>Straw</label>
+    <description>Dried stalks of grain, used especially as fodder, harvested and compacted for storage. Straw is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <graphicData>
+      <texPath>Resources/Straw</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.7</MarketValue>	        
+	    <Mass>0.010</Mass>
+      <Flammability>1.8</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <optimalityOffsetFeedingAnimals>6</optimalityOffsetFeedingAnimals>
+    </ingestible>	
+  </ThingDef>  
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_Coal</defName>
+    <label>Coal Chunks</label>
+    <description>PLACEHOLDER</description>
+    <graphicData>
+      <texPath>Resources/Coal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>(1,1)</drawSize>	  
+    </graphicData>
+
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+	  <MaxHitPoints>80</MaxHitPoints>
+	  <Flammability>0.8</Flammability>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.008</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>5</deepCommonality>
+    <deepCountPerPortion>50</deepCountPerPortion>
+    <deepLumpSizeRange>20~30</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+  
+  <!--=============== Iron ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_IronOre</defName>
+    <label>Iron Ore</label>
+    <description>A raw iron ore, needs to be processed into ingots at a smelter to be usable.</description>
+    <graphicData>
+      <texPath>Resources/IronOre</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.4</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>5</deepCommonality>
+    <deepCountPerPortion>45</deepCountPerPortion>
+    <deepLumpSizeRange>20~30</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_IronIngot</defName>
+    <label>Iron Ingot</label>
+    <description>A bar of iron ingot. Ready to be used in crafting and construction.</description>
+    <graphicData>
+      <texPath>Resources/IronIngot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.38</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.58</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.9</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>5</deepCommonality>
+    <deepCountPerPortion>45</deepCountPerPortion>
+    <deepLumpSizeRange>20~30</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <stuffAdjective>iron</stuffAdjective>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>1.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(112, 108, 101)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.9</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.42</Flammability>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+  
+  <!--=============== Gold ====================-->
+  
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_GoldOre</defName>
+    <label>Gold Ore</label>
+    <description>A raw gold ore, needs to be processed into ingots at a smelter to be usable.</description>
+    <graphicData>
+      <texPath>Resources/GoldOre</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>3</MarketValue>
+      <Mass>0.004</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+	<stackLimit>500</stackLimit>
+    <smallVolume>true</smallVolume>
+    <deepCommonality>0.5</deepCommonality>
+    <deepCountPerPortion>8</deepCountPerPortion>
+    <deepLumpSizeRange>1~4</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+  </ThingDef>
+  
+  <!--=============== Component Medieval ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_ComponentMedieval</defName>
+    <label>Medieval component</label>
+    <description>Miscellaneous gears, wheels, nails. Necessary for assembling complex contraptions.</description>
+    <graphicData>
+      <texPath>Resource/ComponentMedieval</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>15</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  </Defs>

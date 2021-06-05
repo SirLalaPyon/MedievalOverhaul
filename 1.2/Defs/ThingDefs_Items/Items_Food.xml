@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ========================= Actual Meals ==========================-->
+
+<!--==============  Preserved Food ===============-->
+  <!-- Rations --> 
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealRations</defName>
+    <label>packaged rations</label>
+    <description>A hearty and nutritious packaged meal, packed for use in survival situations. While it never rots, it can still deteriorate if left outside. Great for adventuring.</description>
+    <graphicData>
+      <texPath>Meal/Rations</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>24</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <!-- Jerked Meats -->
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_DriedMeat</defName>
+    <label>Dried Meat</label>
+    <description>Dried meat to preserve and prolong shelf life.</description>
+    <graphicData>
+      <texPath>Meal/DriedMeat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>	  
+    </graphicData>
+    <statBases>
+		<Nutrition>0.85</Nutrition>
+    </statBases>	
+    <ingestible>
+      <preferability>MealAwful</preferability>		   
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>45</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>	
+  </ThingDef> 
+  
+  <!-- Cheese -->
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealCheese</defName>
+    <label>Cheese</label>
+    <description>Cheese is made from milk and is a by-product of coagulation of the milk's proteins.</description>
+    <graphicData>
+      <texPath>Meal/Cheese</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>	  
+    </graphicData>
+    <statBases>
+		<Nutrition>0.85</Nutrition>
+    </statBases>	
+    <ingestible>
+      <preferability>MealSimple</preferability>
+	  <tasteThought>DankPyon_AteCheese</tasteThought>	  
+      <optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>	  
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>45</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>	
+  </ThingDef>
+  
+<!--==============  Stews ===============-->
+<!-- Hearty Stew -->   
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealHeartyStew</defName>
+    <label>Hearty Stew</label>
+    <description>A Hearty Stew, containing various ingredients, and cooked in a reasonable amount of time.</description>
+    <graphicData>
+      <texPath>Meal/HeartyStew</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<MaxHitPoints>50</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<MarketValue>20</MarketValue>
+		<Nutrition>0.9</Nutrition>
+		<WorkToMake>450</WorkToMake>	
+		<Mass>0.5</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+	  <tasteThought>DankPyon_AteHeartyStew</tasteThought>	  
+      <optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>	  
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>		
+  </ThingDef>
+
+  
+ <!-- Weak Stew --> 
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealWeakStew</defName>
+    <label>Weak Stew</label>
+    <description>A simple stew quickly cooked from a few ingredients.</description>
+    <graphicData>
+      <texPath>Meal/WeakStew</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<MaxHitPoints>50</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<MarketValue>10</MarketValue>
+		<Nutrition>0.8</Nutrition>
+		<WorkToMake>450</WorkToMake>	
+		<Mass>0.5</Mass>
+    </statBases>	
+    <ingestible>
+      <preferability>MealSimple</preferability>
+	  <tasteThought>DankPyon_AteWeakStew</tasteThought>	 	  
+      <optimalityOffsetHumanlikes>10</optimalityOffsetHumanlikes>	  
+    </ingestible>	
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>	
+  </ThingDef>
+  
+<!-- Bread --> 
+ <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealBread</defName>
+    <label>bread</label>
+    <description>Made from flour and water. A classic staple to start a day.</description>
+    <graphicData>
+      <texPath>Meal/Bread</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>15</stackLimit>    
+    <statBases>
+      <MarketValue>16</MarketValue>
+      <Mass>0.4</Mass>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>400</WorkToMake>  
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>
+			<ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <tradeability>Buyable</tradeability>    
+  </ThingDef>
+  
+<!-- End of ThingDefs -->   
+</Defs>

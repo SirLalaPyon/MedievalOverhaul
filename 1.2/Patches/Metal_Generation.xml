@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Remove Steel Generation -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MineableSteel"]/building</xpath>
+		<value>
+			<building>
+			  <isResourceRock>true</isResourceRock>
+			  <mineableThing>Steel</mineableThing>
+			  <mineableYield>40</mineableYield>
+			  <mineableScatterCommonality>0</mineableScatterCommonality>
+			  <mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
+			</building>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Steel"]/deepCommonality</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Steel"]/deepLumpSizeRange</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Steel"]/deepCountPerPortion</xpath>
+	</Operation>
+	
+	<!-- Remove Plasteel Generation -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MineablePlasteel"]/building</xpath>
+		<value>
+			<building>
+			  <isResourceRock>true</isResourceRock>
+			  <mineableThing>Plasteel</mineableThing>
+			  <mineableYield>40</mineableYield>
+			  <mineableScatterCommonality>0</mineableScatterCommonality>
+			  <mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
+			</building>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Plasteel"]/deepCommonality</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Plasteel"]/deepLumpSizeRange</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Plasteel"]/deepCountPerPortion</xpath>
+	</Operation>
+	
+	<!-- Remove Component Generation -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MineableComponent"]/building</xpath>
+		<value>
+			<building>
+			  <isResourceRock>true</isResourceRock>
+			  <mineableThing>Component</mineableThing>
+			  <mineableYield>40</mineableYield>
+			  <mineableScatterCommonality>0</mineableScatterCommonality>
+			  <mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
+			</building>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Component"]/deepCommonality</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Component"]/deepLumpSizeRange</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName = "Component"]/deepCountPerPortion</xpath>
+	</Operation>
+	
+</Patch>

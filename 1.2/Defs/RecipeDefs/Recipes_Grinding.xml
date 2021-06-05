@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+	<defName>DankPyon_CraftFlour</defName>
+	<label>grind wheat into flour</label>
+	<description>Grind wheat into flour.</description>
+	<jobString>Making flour.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<workAmount>100</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          	
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>DankPyon_RawWheat</li>
+	      </thingDefs>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>DankPyon_RawWheat</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <DankPyon_Flour>1</DankPyon_Flour>
+	  <Hay>1</Hay>
+	</products>
+	<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>DankPyon_Millstone</li>
+    </recipeUsers>
+  </RecipeDef>
+
+
+  <RecipeDef>
+	<defName>DankPyon_CraftFlourBulk</defName>
+	<label>grind wheat into flour</label>
+	<description>Grind wheat into flour.</description>
+	<jobString>Making bulk flour.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+	<workAmount>900</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          	
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>DankPyon_RawWheat</li>
+	      </thingDefs>
+	    </filter>
+	    <count>12</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>DankPyon_RawWheat</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+    <products>
+      <DankPyon_Flour>12</DankPyon_Flour>
+	    <Hay>12</Hay>      
+    </products>
+	<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>DankPyon_Millstone</li>
+    </recipeUsers>
+  </RecipeDef>
+
+
+</Defs>

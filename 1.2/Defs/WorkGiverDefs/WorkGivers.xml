@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <WorkGiverDef>
+  <defName>DankPyon_DoBillsStoneOven</defName>
+  <label>bake goods</label>
+  <giverClass>WorkGiver_DoBill</giverClass>
+  <workType>Cooking</workType>
+  <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>DankPyon_StoneOven</li>
+    </fixedBillGiverDefs>
+  <verb>bake</verb>
+  <gerund>baking</gerund>
+  <requiredCapacities>
+      <li>Manipulation</li>
+  </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+
+ <WorkGiverDef>
+    <defName>DankPyon_DoBillsMillstone</defName>
+    <label>grind bulk grains</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>DankPyon_Millstone</li>
+   </fixedBillGiverDefs>
+    <verb>mill</verb>
+    <gerund>milling</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>TakeAleOutOfFermentingBarrel</defName>
+    <label>take Ale out of fermenting barrels</label>
+    <giverClass>WorkGiver_TakeAleOutOfFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>take Ale</verb>
+    <gerund>taking Ale from</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>

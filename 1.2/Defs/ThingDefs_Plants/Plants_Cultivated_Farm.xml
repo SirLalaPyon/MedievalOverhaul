@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>DankPyon_Plant_Wheat</defName>
+    <label>wheat plant</label>
+    <description>A thin, fragile grain plant which produces small yellow seeds. Takes a relatively long time to grow and yields lots of food, but requires further processing to be eatable. Needs fertile soil to grow well.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Nutrition>0.3</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/WheatMature</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.70</fertilityMin>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <maxMeshCount>4</maxMeshCount>
+	    <harvestedThingDef>DankPyon_RawWheat</harvestedThingDef>
+      <harvestYield>22</harvestYield>
+      <sowResearchPrerequisites>
+        <li>WheatFarming</li>
+      </sowResearchPrerequisites>	  
+      <sowTags>
+        <li>Ground</li>
+		<li>Hydroponics</li>
+      </sowTags>
+      <topWindExposure>0.20</topWindExposure>
+      <growDays>12</growDays>
+	    <fertilitySensitivity>1.0</fertilitySensitivity>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <immatureGraphicPath>Plants/WheatImmature</immatureGraphicPath>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantBase">
+        <defName>DankPyon_Plant_Grape</defName>
+        <label>grape plant</label>
+        <description>A medium-sized vine that yields grapes when harvested - an essential ingredient in the production of wine that also tastes nice when eaten raw. Takes a long time to initially grow but can be harvested repeatedly in a single lifespan.</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Nutrition>0.2</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Plants/GrapeMature</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible />
+        <plant>
+            <fertilitySensitivity>0.7</fertilitySensitivity>
+            <growDays>19.5</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0.30</harvestAfterGrowth>
+            <harvestedThingDef>DankPyon_RawGrapes</harvestedThingDef>
+            <harvestYield>12</harvestYield>
+            <sowMinSkill>5</sowMinSkill>
+            <sowTags>
+				<li>DankPyon_Post</li>
+            </sowTags>
+            <topWindExposure>0.1</topWindExposure>
+            <wildOrder>2</wildOrder>
+        </plant>
+    </ThingDef>
+</Defs>

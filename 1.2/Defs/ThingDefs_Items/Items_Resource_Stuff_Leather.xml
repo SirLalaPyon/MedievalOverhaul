@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== Super leathers ============-->
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>DankPyon_Leather_Rox</defName>
+    <label>Rox Leather</label>
+    <description>The fabled leather of a rox, made from skinning one of the mighty beasts. Though somewhat rough in its raw form, none can deny its incredible insulating capabilities due to the sheer density of rox hairs. That same density as well as innate composition makes it surprisingly flame- retardent, preventing oxygen from reaching any smoldering embers on the fur. That said, it is a heavy material to work with.</description>
+    <graphicData>
+      <texPath>Resources/FurRox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>14.0</MarketValue>
+      <StuffPower_Armor_Sharp>2.20</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>34</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(80,75,72)</color>
+      <commonality>0.0025</commonality>
+      <statFactors>
+        <MaxHitPoints>2.0</MaxHitPoints>
+        <Beauty>10</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+</Defs>

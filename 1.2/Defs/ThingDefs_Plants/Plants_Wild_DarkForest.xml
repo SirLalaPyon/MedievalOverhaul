@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>DankPyon_GreatOak</defName>
+		<label>great oak</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Plants/GreatOak</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<statBases>
+			<Beauty>15</Beauty>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0.65</Flammability>
+		</statBases>
+		<blockLight>true</blockLight>
+		<plant>
+			<fertilityMin>0.8</fertilityMin>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<leaflessGraphicPath>Plants_Leafless/GreatOak_Leafless</leaflessGraphicPath>
+			<growDays>300</growDays>
+			<harvestWork>2000</harvestWork>
+			<harvestYield>150</harvestYield>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildClusterRadius>10</wildClusterRadius>
+			<visualSizeRange>8~12</visualSizeRange>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>DankPyon_GreatIter</defName>
+		<label>Great Iter</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Plants/GreatIter</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<statBases>
+			<Beauty>10</Beauty>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>0.65</Flammability>
+		</statBases>
+		<blockLight>true</blockLight>
+		<plant>
+			<fertilityMin>0.8</fertilityMin>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<fertilitySensitivity>0.8</fertilitySensitivity>
+			<leaflessGraphicPath>Plants_Leafless/GreatIter_Leafless</leaflessGraphicPath>
+			<growDays>300</growDays>
+			<harvestWork>2000</harvestWork>
+			<harvestYield>150</harvestYield>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildClusterRadius>10</wildClusterRadius>
+			<visualSizeRange>6~8</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>DankPyon_GreatFir</defName>
+		<label>Great fir</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Plants/GreatFir</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<Beauty>4</Beauty>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<plant>
+			<fertilityMin>0.4</fertilityMin>
+			<growDays>18</growDays>
+			<harvestWork>2000</harvestWork>
+			<harvestYield>150</harvestYield>
+			<wildClusterWeight>32</wildClusterWeight>
+			<wildClusterRadius>5</wildClusterRadius>
+			<visualSizeRange>3~5</visualSizeRange>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="DeciduousTreeBase">
+    <defName>DankPyon_GreatWillow</defName>
+    <label>Great Willow</label>
+    <description>A willow tree that has managed to live for thousands of years.</description>
+    <graphicData>
+      <texPath>Plants/GreatWillow</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.3, 0.13)</volume>
+        <offset>(0,0,-0.44)</offset>
+      </shadowData>
+      <shaderParameters>
+        <_FallColorSource>(0.373, 0.427, 0.313)</_FallColorSource>
+        <_FallTransitionRange>(0.02, 0.14)</_FallTransitionRange>
+      </shaderParameters>
+    </graphicData>
+    <statBases>
+      <Beauty>15</Beauty>
+    </statBases>
+    <plant>
+      <growDays>200</growDays>
+      <leaflessGraphicPath>Plants_Leafless/GreatWillow_Leafless</leaflessGraphicPath>
+      <harvestWork>2000</harvestWork>
+      <harvestYield>100</harvestYield>
+      <wildClusterRadius>8</wildClusterRadius>
+      <wildClusterWeight>10</wildClusterWeight>
+      <visualSizeRange>6~9</visualSizeRange>
+    </plant>
+  </ThingDef>
+</Defs>

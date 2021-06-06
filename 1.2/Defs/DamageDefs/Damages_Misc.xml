@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Splinter -->
+  <DamageDef ParentName="Arrow">
+    <defName>DankPyon_Damage_BallistaBolt</defName>
+    <label>splinter</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been impaled to death by a ballista bolt.</deathMessage>
+    <hediff>Stab</hediff>
+    <hediffSkin>Cut</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.71</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <isExplosive>true</isExplosive>
+    <minDamageToFragment>8</minDamageToFragment>
+    <defaultDamage>5</defaultDamage>
+    <defaultArmorPenetration>0.1</defaultArmorPenetration>
+    <explosionCellMote>Mote_DustPuff</explosionCellMote>
+    <explosionColorCenter>(1, 1, 1, 0.6)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 1, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
+
+</Defs>

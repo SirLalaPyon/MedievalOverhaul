@@ -8,7 +8,7 @@
     <description></description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
-      <texPath>Security/Ballista/TurretBallista_Base</texPath>
+      <texPath>Security/TurretBallista/TurretBallista_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2.3, 2.3)</drawSize>
       <damageData>
@@ -20,7 +20,7 @@
       </shadowData>
     </graphicData>
     <techLevel>Medieval</techLevel>
-    <uiIconPath>Security/Ballista/TurretBallista_MenuIcon</uiIconPath>
+    <uiIconPath>Security/TurretBallista/TurretBallista_MenuIcon</uiIconPath>
     <uiIconScale>0.95</uiIconScale>
     <size>(2,2)</size>
     <altitudeLayer>Building</altitudeLayer>
@@ -68,7 +68,7 @@
     <hasInteractionCell>true</hasInteractionCell>
     <costList>
       <WoodLog>200</WoodLog>
-      <IronIngot>20</IronIngot>
+      <DankPyon_IronIngot>20</DankPyon_IronIngot>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
@@ -100,19 +100,19 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.2,1.2)</drawSize>
     </graphicData>
-    <thingClass>VFESecurity.Bullet_ExplosiveAlt</thingClass>
+    <thingClass>DankPyon.Bullet_ExplosiveProperty</thingClass>
     <projectile>
       <flyOverhead>false</flyOverhead>
       <damageDef>RangedStab</damageDef>
       <damageAmountBase>40</damageAmountBase>
       <stoppingPower>1.5</stoppingPower>
       <armorPenetrationBase>0.25</armorPenetrationBase>
-      <speed>49</speed>
+      <speed>55</speed>
     </projectile>
     <modExtensions>
-      <li Class="VFESecurity.ExtendedProjectileProperties">
+      <li Class="DankPyon.AdditionalProjectileProperties">
         <projectile2>
-          <damageDef>VFES_SplinterArrow</damageDef>
+          <damageDef>DankPyon_Damage_BallistaBolt</damageDef>
           <damageAmountBase>20</damageAmountBase>
           <explosionRadius>1.9</explosionRadius>
           <soundExplode>BulletImpact_Wood</soundExplode>
@@ -123,11 +123,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
-    <defName>VFES_Gun_BallistaTurret</defName>
+    <defName>DankPyon_Gun_BallistaTurret</defName>
     <label>ballista</label>
     <description>An ancient military siege engine in a form of a crossbow mounted on a wooden construct.</description>
     <graphicData>
-      <texPath>Things/Building/Ballista/TurretBallista_Top</texPath>
+      <texPath>Security/TurretBallista/TurretBallista_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
@@ -153,11 +153,11 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>VFES_Bullet_Ballista</defaultProjectile>
+        <defaultProjectile>DankPyon_Bullet_Ballista</defaultProjectile>
         <warmupTime>1.9</warmupTime>
         <minRange>4.9</minRange>
         <range>44.9</range>
-        <soundCast>VFES_Shot_Ballista</soundCast>
+        <soundCast>DankPyon_Shot_Ballista</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
@@ -174,7 +174,7 @@
     <uiIconScale>0.85</uiIconScale>
     <uiIconPath>Security/Catapult/TurretCatapult_MenuIcon</uiIconPath>
     <graphicData>
-      <texPath>Security/Catapult/TurretCatapult_Base</texPath>
+      <texPath>Security/TurretCatapult/TurretCatapult_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3.1,3.1)</drawSize>
       <damageData>
@@ -263,7 +263,7 @@
     <tradeability>None</tradeability>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Things/Building/Catapult/TurretCatapult_Top</texPath>
+      <texPath>Security/TurretCatapult/TurretCatapult_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>

@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DankPyon_MedievalOverhaul.cs" />
+    <Compile Include="DankPyon_Bullet_ExplosiveProperty.cs" />
+    <Compile Include="DankPyon_AdditionalProjectileProperties.cs" />
+    <Compile Include="DankPyon_BiomeWorker_DarkForest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

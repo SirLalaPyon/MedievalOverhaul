@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DamagerWorker_ExplosionNoFlash.cs" />
     <Compile Include="DankPyon_Bullet_ExplosiveProperty.cs" />
     <Compile Include="DankPyon_AdditionalProjectileProperties.cs" />
     <Compile Include="DankPyon_BiomeWorker_DarkForest.cs" />

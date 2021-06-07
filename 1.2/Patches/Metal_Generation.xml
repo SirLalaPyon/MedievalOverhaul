@@ -49,7 +49,7 @@
 	
 	<!-- Remove Component Generation -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName = "MineableComponent"]/building</xpath>
+		<xpath>/Defs/ThingDef[defName = "MineableComponentIndustrial"]/building</xpath>
 		<value>
 			<building>
 			  <isResourceRock>true</isResourceRock>
@@ -61,13 +61,13 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName = "Component"]/deepCommonality</xpath>
+		<xpath>/Defs/ThingDef[defName = "ComponentIndustrial"]/deepCommonality</xpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName = "Component"]/deepLumpSizeRange</xpath>
+		<xpath>/Defs/ThingDef[defName = "ComponentIndustrial"]/deepLumpSizeRange</xpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName = "Component"]/deepCountPerPortion</xpath>
+		<xpath>/Defs/ThingDef[defName = "ComponentIndustrial"]/deepCountPerPortion</xpath>
 	</Operation>
 	
 </Patch>

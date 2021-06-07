@@ -83,7 +83,7 @@
     <repairEffect>ConstructDirt</repairEffect>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>DankPyon_SiegeEquipment</li>
+      <li>DankPyon_SiegeEngine</li>
     </researchPrerequisites>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <placeWorkers>
@@ -141,22 +141,19 @@
       <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.75</AccuracyMedium>
       <AccuracyLong>0.65</AccuracyLong>
-      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
-      <Mass>48</Mass>
+      <Mass>45</Mass>
       <Flammability>0</Flammability>
     </statBases>
-    <weaponTags Inherit="false">
-      <li>ArtilleryMedieval</li>
-    </weaponTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>DankPyon_Bullet_Ballista</defaultProjectile>
-        <warmupTime>1.9</warmupTime>
-        <minRange>4.9</minRange>
-        <range>44.9</range>
+        <warmupTime>2</warmupTime>
+        <minRange>4</minRange>
+        <range>45</range>
         <soundCast>DankPyon_Shot_Ballista</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>0</muzzleFlashScale>
@@ -165,16 +162,16 @@
     </verbs>
   </ThingDef>
 
-  <!-- Catapult -->
+  <!-- Trebuchet -->
   <ThingDef ParentName="BuildingBase">
-    <defName>DankPyon_Turret_Catapult</defName>
-    <label>catapult</label>
+    <defName>DankPyon_Turret_Trebuchet</defName>
+    <label>Trebuchet</label>
     <description>PLACEHOLDER</description>
     <thingClass>Building_TurretGun</thingClass>
     <uiIconScale>0.85</uiIconScale>
-    <uiIconPath>Security/Catapult/TurretCatapult_MenuIcon</uiIconPath>
+    <uiIconPath>Security/TurretTrebuchet/TurretTrebuchet_MenuIcon</uiIconPath>
     <graphicData>
-      <texPath>Security/TurretCatapult/TurretCatapult_Base</texPath>
+      <texPath>Security/TurretTrebuchet/TurretTrebuchet_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3.1,3.1)</drawSize>
       <damageData>
@@ -198,14 +195,9 @@
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
-    <stuffCategories>
-      <li>Stony</li>
-      <li>Woody</li>
-    </stuffCategories>
-    <costStuffCount>160</costStuffCount>
     <costList>
-      <WoodLog>190</WoodLog>
-      <Steel>80</Steel>
+      <WoodLog>250</WoodLog>
+      <DankPyon_IronIngot>30</DankPyon_IronIngot>
     </costList>
     <statBases>
       <MaxHitPoints>450</MaxHitPoints>
@@ -216,9 +208,6 @@
     <inspectorTabs>
       <li>ITab_Shells</li>
     </inspectorTabs>
-    <weaponTags>
-      <li>ArtilleryMedieval_BaseDestroyer</li>
-    </weaponTags>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Mannable">
@@ -230,18 +219,14 @@
     <building>
       <turretBurstWarmupTime>6</turretBurstWarmupTime>
       <turretBurstCooldownTime>42</turretBurstCooldownTime>
-      <buildingTags>
-        <li>ArtilleryMedieval</li>
-        <li>ArtilleryMedieval_BaseDestroyer</li>
-      </buildingTags>
-      <turretGunDef>VFES_Artillery_Catapult</turretGunDef>
+      <turretGunDef>DankPyon_Artillery_Trebuchet</turretGunDef>
       <turretTopDrawSize>3</turretTopDrawSize>
     </building>
     <repairEffect>ConstructDirt</repairEffect>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <specialDisplayRadius>29.9</specialDisplayRadius>
     <researchPrerequisites>
-      <li>VFES_SiegeEquipment</li>      <!-- Change -->
+      <li>DankPyon_SiegeEngine</li>
     </researchPrerequisites>
     <placeWorkers>
       <li>PlaceWorker_NotUnderRoof</li>
@@ -250,9 +235,9 @@
   </ThingDef>
 
   <ThingDef>
-    <defName>VFES_Artillery_Catapult</defName>
-    <label>catapult</label>
-    <description>A catapult is a ballistic device used to launch a projectile a great distance without the aid of gunpowder or other propellants. In use since ancient times, the catapult has proven to be one of the most persistently effective mechanisms in warfare.</description>
+    <defName>DankPyon_Artillery_Trebuchet</defName>
+    <label>Trebuchet</label>
+    <description>PLACEHOLDER.</description>
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
     <useHitPoints>false</useHitPoints>
@@ -263,7 +248,7 @@
     <tradeability>None</tradeability>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Security/TurretCatapult/TurretCatapult_Top</texPath>
+      <texPath>Security/TurretTrebuchet/TurretTrebuchet_Top</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -271,20 +256,19 @@
     </statBases>
     <weaponTags>
       <li>Artillery</li>
-      <li>Artillery_BaseDestroyer</li>
     </weaponTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <hasStandardCommand>true</hasStandardCommand>
-        <warmupTime>6.0</warmupTime>
-        <forcedMissRadius>16</forcedMissRadius>
+        <warmupTime>4.0</warmupTime>
+        <forcedMissRadius>10</forcedMissRadius>
         <requireLineOfSight>false</requireLineOfSight>
-        <minRange>29.9</minRange>
+        <minRange>19</minRange>
         <range>500</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>Bow_Recurve</soundCast>
+        <soundCast>DankPyon_Trebuchet</soundCast>
         <muzzleFlashScale>0</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
@@ -310,22 +294,16 @@
           <categories>
             <li>StoneChunks</li>
           </categories>
-          <disallowedThingDefs>
-            <li>Shell_Incendiary</li>
-            <li>Shell_HighExplosive</li>
-            <li>Shell_Firefoam</li>
-            <li>Shell_AntigrainWarhead</li>
-          </disallowedThingDefs>
         </filter>
       </defaultStorageSettings>
     </building>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
-    <defName>VFES_Artillery_Rock</defName>
-    <label>massive boulder</label>
+    <defName>DankPyon_Artillery_Boulder</defName>
+    <label>boulder</label>
     <graphicData>
-      <texPath>Things/Projectile/Proj_Boulder</texPath>
+      <texPath>Projectile/BoulderBullet</texPath>
       <graphicClass>Graphic_Flicker</graphicClass>
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
@@ -333,15 +311,15 @@
       <speed>33</speed>
       <explosionRadius>2</explosionRadius>
       <flyOverhead>true</flyOverhead>
-      <damageDef>VFES_Rock</damageDef>
-      <damageAmountBase>100</damageAmountBase>
+      <damageDef>DankPyon_Boulder</damageDef>
+      <damageAmountBase>80</damageAmountBase>
       <stoppingPower>3</stoppingPower>
       <preExplosionSpawnChance>0.4</preExplosionSpawnChance>
       <preExplosionSpawnThingDef>Filth_RubbleRock</preExplosionSpawnThingDef>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-      <soundExplode>VFES_Explosion_Catapult</soundExplode>      <!-- Change -->
+      <soundExplode>DankPyon_Explosion_Boulder</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>      <!-- Change -->
+      <soundAmbient>MortarRound_Ambient</soundAmbient>    
     </projectile>
   </ThingDef>
 

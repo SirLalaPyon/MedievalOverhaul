@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Splinter -->
+  <!-- Ballista Bolt Splash -->
   <DamageDef ParentName="Arrow">
     <defName>DankPyon_Damage_BallistaBolt</defName>
-    <label>splinter</label>
-    <workerClass>DamageWorker_AddInjury</workerClass>
+    <label>bolt fragment</label>
+    <workerClass>DankPyon.DamagerWorker_ExplosionNoFlash</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been impaled to death by a ballista bolt.</deathMessage>
     <hediff>Stab</hediff>
@@ -24,6 +24,32 @@
     <explosionCellMote>Mote_DustPuff</explosionCellMote>
     <explosionColorCenter>(1, 1, 1, 0.6)</explosionColorCenter>
     <explosionColorEdge>(1, 1, 1, 0.4)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+  </DamageDef>
+
+  <!-- Boulder Splash -->
+  <DamageDef>
+    <defName>DankPyon_Boulder</defName>
+    <label>Boulder</label>
+    <workerClass>DankPyon.DamagerWorker_ExplosionNoFlash</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been squashed to death by a boulder.</deathMessage>
+    <hediff>Crush</hediff>
+    <hediffSkin>Bruise</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <overkillPctToDestroyPart>0~0.67</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <isExplosive>true</isExplosive>
+    <minDamageToFragment>4</minDamageToFragment>
+    <defaultDamage>20</defaultDamage>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <explosionCellMote>Mote_DustPuff</explosionCellMote>
+    <explosionColorCenter>(1, 1, 1, 0.9)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 1, 0.6)</explosionColorEdge>
     <soundExplosion>Explosion_Bomb</soundExplosion>
     <combatLogRules>Damage_Bomb</combatLogRules>
   </DamageDef>

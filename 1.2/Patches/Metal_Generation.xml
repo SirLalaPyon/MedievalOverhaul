@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- Remove Steel Generation -->
+	<!-- Steel Generation and Description -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName = "MineableSteel"]/building</xpath>
 		<value>
@@ -14,6 +14,18 @@
 			</building>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Steel"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Resources/SteelIngot</texPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Steel"]/label</xpath>
+		<value>
+			<label>Steel Ingot</label>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<xpath>/Defs/ThingDef[defName = "Steel"]/deepCommonality</xpath>
 	</Operation>
@@ -23,51 +35,26 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>/Defs/ThingDef[defName = "Steel"]/deepCountPerPortion</xpath>
 	</Operation>
-	
-	<!-- Remove Plasteel Generation -->
+
+	<!-- Gold Graphic Replacement -->
+
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName = "MineablePlasteel"]/building</xpath>
+		<xpath>/Defs/ThingDef[defName = "Gold"]/graphicData/texPath</xpath>
 		<value>
-			<building>
-			  <isResourceRock>true</isResourceRock>
-			  <mineableThing>Plasteel</mineableThing>
-			  <mineableYield>40</mineableYield>
-			  <mineableScatterCommonality>0</mineableScatterCommonality>
-			  <mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
-			</building>
+			<texPath>Resources/GoldIngot</texPath>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName = "Plasteel"]/deepCommonality</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName = "Plasteel"]/deepLumpSizeRange</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName = "Plasteel"]/deepCountPerPortion</xpath>
-	</Operation>
 	
-	<!-- Remove Component Generation -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName = "MineableComponentIndustrial"]/building</xpath>
-		<value>
-			<building>
-			  <isResourceRock>true</isResourceRock>
-			  <mineableThing>Component</mineableThing>
-			  <mineableYield>40</mineableYield>
-			  <mineableScatterCommonality>0</mineableScatterCommonality>
-			  <mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
-			</building>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName = "ComponentIndustrial"]/deepCommonality</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName = "ComponentIndustrial"]/deepLumpSizeRange</xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName = "ComponentIndustrial"]/deepCountPerPortion</xpath>
+	<!-- Remove Plasteel and Component Generation -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "MineablePlasteel" or defName = "MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
+				<value>
+					<mineableScatterCommonality>0</mineableScatterCommonality>
+				</value>
+			</li>
+		</operations>	
 	</Operation>
 	
 </Patch>

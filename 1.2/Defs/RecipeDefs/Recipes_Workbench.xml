@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Ammuniation: Base Class --> 
+ <RecipeDef Name="DankPyon_MakeableAmmunitionBase" Abstract="True">
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<workSkillLearnFactor>0.25</workSkillLearnFactor>
+	<effectWorking>Smith</effectWorking>
+	<allowMixingIngredients>false</allowMixingIngredients>	
+	<soundWorking>Recipe_Smith</soundWorking>
+		<recipeUsers>
+			<li>DankPyon_Workbench</li>
+		</recipeUsers>	
+</RecipeDef>	
+
+<!-- Ammuniation: Ballista Bolts --> 
+
+
+<RecipeDef ParentName="DankPyon_SmelterBase">
+	<defName>DankPyon_MakeBullet_BallistaBolt</defName>
+	<workAmount>200</workAmount>		
+	<label>Craft Ballista Bolts</label>
+	<jobString>Crafting Ballista Bolts</jobString>
+	<targetCountAdjustment>5</targetCountAdjustment>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_IronIngot</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_IronIngot</li>
+			<li>WoodLog</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_BallistaBolt>30</DankPyon_BallistaBolt>
+	</products>		
+</RecipeDef>
+
+ <!-- Make Component Medieval  --> 
+ <RecipeDef>
+    <defName>Make_ComponentMedieval</defName>
+    <label>make medieval component</label>
+    <description>Make a component.</description>
+    <jobString>Making component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>2500</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	<recipeUsers>
+		<li>DankPyon_Workbench</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_IronIngot</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_IronIngot</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DankPyon_ComponentMedieval>1</DankPyon_ComponentMedieval>
+    </products>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <!-- Make Component Medieval Bulk --> 
+ <RecipeDef>
+    <defName>Make_ComponentMedievalBulk</defName>
+    <label>make bulk medieval component</label>
+    <description>Make a component.</description>
+    <jobString>Making component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>7500</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	<recipeUsers>
+		<li>DankPyon_Workbench</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_IronIngot</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_IronIngot</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DankPyon_ComponentMedieval>5</DankPyon_ComponentMedieval>
+    </products>
+    <skillRequirements>
+      <Crafting>9</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</Defs>

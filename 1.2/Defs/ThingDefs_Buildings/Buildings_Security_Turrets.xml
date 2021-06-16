@@ -5,7 +5,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Turret_Ballista</defName>
     <label>Ballista</label>
-    <description></description>
+    <description>PLACEHOLDER</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Security/TurretBallista/TurretBallista_Base</texPath>
@@ -69,6 +69,7 @@
     <costList>
       <WoodLog>200</WoodLog>
       <DankPyon_IronIngot>20</DankPyon_IronIngot>
+      <DankPyon_ComponentMedieval>10</DankPyon_ComponentMedieval>
     </costList>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>

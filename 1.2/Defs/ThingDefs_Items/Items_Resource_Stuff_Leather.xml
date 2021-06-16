@@ -23,7 +23,32 @@
       <commonality>0.0025</commonality>
       <statFactors>
         <MaxHitPoints>2.0</MaxHitPoints>
-        <Beauty>10</Beauty>
+        <Beauty>6</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>DankPyon_Leather_Lindwurm</defName>
+    <label>Lindwurm Scales</label>
+    <description>PLACEHOLDER</description>
+    <graphicData>
+      <texPath>Resources/LindwurmScales</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20.0</MarketValue>
+      <StuffPower_Armor_Sharp>2.20</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(97,127,40)</color>
+      <commonality>0.0025</commonality>
+      <statFactors>
+        <MaxHitPoints>2.0</MaxHitPoints>
+        <Beauty>8</Beauty>
       </statFactors>
     </stuffProps>
   </ThingDef>

@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+<!--=========================== Basic Agriculture ==============================-->
+
   <ThingDef ParentName="PlantBase">
     <defName>DankPyon_Plant_Wheat</defName>
     <label>wheat plant</label>
@@ -9,7 +12,7 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Plants/WheatMature</texPath>
+      <texPath>Plants/Plants_Mature/WheatPlant</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -23,51 +26,103 @@
 	    <harvestedThingDef>DankPyon_RawWheat</harvestedThingDef>
       <harvestYield>22</harvestYield>
       <sowResearchPrerequisites>
-        <li>WheatFarming</li>
+        <li>DankPyon_BasicAgriculture</li>
       </sowResearchPrerequisites>	  
       <sowTags>
         <li>Ground</li>
-		<li>Hydroponics</li>
+		    <li>Hydroponics</li>
       </sowTags>
       <topWindExposure>0.20</topWindExposure>
       <growDays>12</growDays>
 	    <fertilitySensitivity>1.0</fertilitySensitivity>
       <visualSizeRange>0.5~1.0</visualSizeRange>
-      <immatureGraphicPath>Plants/WheatImmature</immatureGraphicPath>
+      <immatureGraphicPath>Plants_Immature/WheatPlant</immatureGraphicPath>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
     </plant>
   </ThingDef>
   
+<!--=========================== Advanced Agriculture ==============================-->
+
   <ThingDef ParentName="PlantBase">
-        <defName>DankPyon_Plant_Grape</defName>
-        <label>grape plant</label>
-        <description>A medium-sized vine that yields grapes when harvested - an essential ingredient in the production of wine that also tastes nice when eaten raw. Takes a long time to initially grow but can be harvested repeatedly in a single lifespan.</description>
-        <statBases>
-            <MaxHitPoints>85</MaxHitPoints>
-            <Nutrition>0.2</Nutrition>
-        </statBases>
-        <graphicData>
-            <texPath>Plants/GrapeMature</texPath>
-            <graphicClass>Graphic_Random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible />
-        <plant>
-            <fertilitySensitivity>0.9</fertilitySensitivity>
-            <growDays>19.5</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestAfterGrowth>0.30</harvestAfterGrowth>
-            <harvestedThingDef>DankPyon_RawGrapes</harvestedThingDef>
-            <harvestYield>12</harvestYield>
-            <sowMinSkill>5</sowMinSkill>
-            <sowTags>
+    <defName>DankPyon_Plant_Grape</defName>
+    <label>grape plant</label>
+    <description>A medium-sized vine that yields grapes when harvested - an essential ingredient in the production of wine that also tastes nice when eaten raw. Takes a long time to initially grow but can be harvested repeatedly in a single lifespan.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/GrapePlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+      <plant>
+        <fertilitySensitivity>0.9</fertilitySensitivity>
+        <growDays>19.5</growDays>
+        <dieIfLeafless>true</dieIfLeafless>
+        <harvestTag>Standard</harvestTag>
+        <harvestAfterGrowth>0.30</harvestAfterGrowth>
+        <harvestedThingDef>DankPyon_RawGrapes</harvestedThingDef>
+        <harvestYield>12</harvestYield>
+        <sowMinSkill>5</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>DankPyon_BasicAgriculture</li>
+        </sowResearchPrerequisites>	 
+        <sowTags>
+				  <li>DankPyon_Post</li>
+        </sowTags>
+        <topWindExposure>0.1</topWindExposure>
+        <wildOrder>2</wildOrder>
+        <immatureGraphicPath>Plants_Immature/GrapePlant</immatureGraphicPath>
+        <purpose>Food</purpose>
+      </plant>
+  </ThingDef>
+
+<!--=========================== Griffon Berry ==============================-->
+
+  <ThingDef ParentName="PlantBase">
+    <defName>DankPyon_Plant_GriffonBerry</defName>
+    <label>Griffon Berry Vine</label>
+    <description>PLACEHOLDER</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Nutrition>0.35</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plant/GriffonBerryPlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.1, 0.2, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>0.9</fertilitySensitivity>
+      <growDays>18</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <immatureGraphicPath>Plants_Immature/Ambrosia_Immature</immatureGraphicPath>
+      <harvestYield>14</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.3</harvestAfterGrowth>
+      <harvestedThingDef>DankPyon_GriffonBerry</harvestedThingDef>
+      <sowMinSkill>10</sowMinSkill>
+      <sowResearchPrerequisites>
+        <li>DankPyon_Research_GriffonBerry</li>
+      </sowResearchPrerequisites>	 
+      <sowTags>
 				<li>DankPyon_Post</li>
-            </sowTags>
-            <topWindExposure>0.1</topWindExposure>
-            <wildOrder>2</wildOrder>
-        </plant>
-    </ThingDef>
+      </sowTags>      
+      <visualSizeRange>0.6~1.1</visualSizeRange>
+      <topWindExposure>0.1</topWindExposure>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
 </Defs>

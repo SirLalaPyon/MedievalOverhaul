@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- ==================== Processed Resource ======================= -->  
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_Flour</defName>
+    <label>flour</label>
+    <description>Flour is used to prepare many different meals and can be stored for very long periods of time, but cannot be eaten raw. Due to its nature, it can be stored very efficiently.</description>
+    <stackLimit>75</stackLimit>	
+    <graphicData>
+      <texPath>Resources/Flour</texPath>
+	    <graphicClass>Graphic_StackCount</graphicClass>
+	    <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.2</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>90</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+	  <foodType>Meal</foodType>
+	  <tasteThought>AteRawFood</tasteThought>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+	  <ingestSound>Meal_Eat</ingestSound>
+	  <optimalityOffsetHumanlikes>-4</optimalityOffsetHumanlikes>
+    </ingestible>
+	  <socialPropernessMatters>true</socialPropernessMatters>
+	
+  </ThingDef>  
+  
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_Straw</defName>
+    <label>Straw</label>
+    <description>Dried stalks of grain, used especially as fodder, harvested and compacted for storage. Straw is good animal feed, but inedible for humans.</description>
+    <stackLimit>200</stackLimit>
+    <graphicData>
+      <texPath>Resources/Straw</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.7</MarketValue>	        
+	    <Mass>0.010</Mass>
+      <Flammability>1.8</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <optimalityOffsetFeedingAnimals>6</optimalityOffsetFeedingAnimals>
+    </ingestible>	
+  </ThingDef>  
+
+
+  </Defs>

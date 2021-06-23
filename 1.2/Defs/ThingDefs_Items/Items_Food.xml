@@ -3,7 +3,7 @@
 
 <!-- ========================= Actual Meals ==========================-->
 
-<!--==============  Preserved Food ===============-->
+<!--============== Preserved Food ===============-->
   <!-- Rations --> 
   <ThingDef ParentName="MealBase">
     <defName>DankPyon_MealRations</defName>
@@ -77,7 +77,7 @@
     </comps>	
   </ThingDef>
   
-<!--==============  Stews ===============-->
+<!--============== Stews ===============-->
 <!-- Hearty Stew -->   
   <ThingDef ParentName="MealBase">
     <defName>DankPyon_MealHeartyStew</defName>
@@ -170,6 +170,28 @@
     </comps>
     <tradeability>Buyable</tradeability>    
   </ThingDef>
-  
+
+<!-- Rox Steak -->
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealRoxSteak</defName>
+    <label>rox steak</label>
+    <description>A thick slab of fatty rox meat, grilled to infuse smoky and savory flavors while seasoned with salt and stewed in ale. A luxurious feast that every king desires.</description>
+    <graphicData>
+      <texPath>Meal/ExtravagantSteak</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>75</MarketValue>
+      <WorkToMake>1100</WorkToMake>
+      <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>DankPyon_AteRoxSteak</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
 <!-- End of ThingDefs -->   
 </Defs>

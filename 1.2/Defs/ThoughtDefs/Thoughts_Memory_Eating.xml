@@ -85,4 +85,20 @@
 		</stages>
 	</ThoughtDef>
 
+<!-- Rox Steak -->
+	<ThoughtDef>
+		<defName>DankPyon_AteBreadSoup</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>	
+		<stages>
+			<li>
+				<label>ate bread soup</label>
+				<description>PLACEHOLDER</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
 </Defs>

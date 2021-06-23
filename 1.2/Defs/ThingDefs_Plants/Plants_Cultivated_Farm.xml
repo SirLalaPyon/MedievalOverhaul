@@ -12,7 +12,7 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Plants/Plants_Mature/WheatPlant</texPath>
+      <texPath>Plants/WheatPlant</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -92,7 +92,7 @@
       <Nutrition>0.35</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Plant/GriffonBerryPlant</texPath>
+      <texPath>Plants/GriffonBerryPlant</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <shadowData>
         <volume>(0.1, 0.2, 0.1)</volume>
@@ -106,7 +106,7 @@
       <fertilitySensitivity>0.9</fertilitySensitivity>
       <growDays>18</growDays>
       <dieIfLeafless>true</dieIfLeafless>
-      <immatureGraphicPath>Plants_Immature/Ambrosia_Immature</immatureGraphicPath>
+      <immatureGraphicPath>Plants_Immature/GriffonBerryPlant</immatureGraphicPath>
       <harvestYield>14</harvestYield>
       <harvestTag>Standard</harvestTag>
       <harvestAfterGrowth>0.3</harvestAfterGrowth>

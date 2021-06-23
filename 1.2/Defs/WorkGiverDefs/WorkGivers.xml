@@ -37,7 +37,7 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
-  <WorkGiverDef>
+  <!--WorkGiverDef>
     <defName>TakeAleOutOfFermentingBarrel</defName>
     <label>take Ale out of fermenting barrels</label>
     <giverClass>WorkGiver_TakeAleOutOfFermentingBarrel</giverClass>
@@ -48,6 +48,6 @@
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
-  </WorkGiverDef>
+  </WorkGiverDef-->
 
 </Defs>

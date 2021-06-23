@@ -326,6 +326,7 @@
 
 <!-- ======= Rox Steak ====== -->
 <!-- Rox Steak -->
+<!-- TODO: Bulk recipe once specific meat def gets input -->
   <RecipeDef>
 		<defName>DankPyon_CookMealRoxSteak</defName>
 		<label>Cook Rox steak</label>
@@ -395,6 +396,236 @@
 				<Cooking>10</Cooking>
 		</skillRequirements>
     <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- ======= Bread Soup ====== -->
+<!-- Bread Soup -->
+  <RecipeDef> 
+    <defName>DankPyon_CookMealBreadSoup</defName>
+    <label>Cook Bread Soup</label>
+    <description>Cooks a straightforward soup from few ingredients.</description>
+    <jobString>Cooking bread soup.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>475</workAmount>  
+      <recipeUsers>	  
+        <li>DankPyon_RusticCookingTable</li>		  	  
+      </recipeUsers>	
+	  <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_MealBread</li>
+          </thingDefs>
+        </filter>
+        <count>0.4</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.1</count>
+      </li>
+    </ingredients>
+    <products>
+      <DankPyon_MealBreadSoup>1</DankPyon_MealBreadSoup>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>				
+			</disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- Bread Soup Bulk -->
+  <RecipeDef> 
+    <defName>DankPyon_CookMealBreadSoupBulk</defName>
+    <label>(Bulk x10) Cook Bread Soup</label>
+    <description>Cooks a straightforward soup from few ingredients.</description>
+    <jobString>Cooking bread soup.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>1800</workAmount> <!-- a true x10 would be 4500, but that seems way too high so i used hearty stew work -->
+      <recipeUsers>
+        <li>DankPyon_RusticCookingTable</li>	  			
+      </recipeUsers>	
+	  <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_MealBread</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <DankPyon_MealBreadSoup>10</DankPyon_MealBreadSoup>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>				
+			</disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- ======= Fried Eggs ====== -->
+<!-- Fried Eggs -->
+  <RecipeDef>
+    <defName>DankPyon_CookMealFriedEggs</defName>
+    <label>cook fried eggs</label>
+    <description>Cook a straightforward meal from eggs.</description>
+    <jobString>Frying eggs.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+      <recipeUsers>
+        <li>DankPyon_RusticCookingTable</li>	  			
+      </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <DankPyon_MealFriedEggs>1</DankPyon_MealFriedEggs>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <fixedIngredientFilter>
+      <categories>
+        <li>EggsUnfertilized</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>EggsUnfertilized</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>				
+			</disallowedThingDefs>
+    </defaultIngredientFilter>
+  </RecipeDef>
+
+<!-- Fried Eggs Bulk-->
+  <RecipeDef>
+    <defName>DankPyon_CookMealFriedEggsBulk</defName>
+    <label>(Bulk x10) cook fried eggs</label>
+    <description>Cook a straightforward meal from eggs.</description>
+    <jobString>Frying eggs.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+      <recipeUsers>
+        <li>DankPyon_RusticCookingTable</li>	  			
+      </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <DankPyon_MealFriedEggs>10</DankPyon_MealFriedEggs>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <fixedIngredientFilter>
+      <categories>
+        <li>EggsUnfertilized</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>EggsUnfertilized</li>
+      </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>				
+			</disallowedThingDefs>
+    </defaultIngredientFilter>
   </RecipeDef>
 
 </Defs>

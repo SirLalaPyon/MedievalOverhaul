@@ -32,7 +32,7 @@
   </ThingDef>
 
   <PawnKindDef Name="DankPyon_BaseGolemKind" Abstract="True">
-    <defaultFactionType>DankPyon_Constructs</defaultFactionType>
+    <!--defaultFactionType>DankPyon_Constructs</defaultFactionType-->
     <aiAvoidCover>true</aiAvoidCover>
     <destroyGearOnDrop>true</destroyGearOnDrop>
   </PawnKindDef>

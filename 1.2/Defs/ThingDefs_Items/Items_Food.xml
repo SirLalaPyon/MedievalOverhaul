@@ -76,13 +76,54 @@
       </li>
     </comps>	
   </ThingDef>
-  
+
 <!--============== Tier 4 Meals ===============-->
 <!-- Rox Steak -->
   <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealRoxSteak</defName>
     <label>rox steak</label>
     <description>A thick slab of fatty rox meat, grilled to infuse smoky and savory flavors while seasoned with salt and stewed in ale. A luxurious feast that every king desires.</description>
+    <graphicData>
+      <texPath>Meal/ExtravagantSteak</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>75</MarketValue>
+      <WorkToMake>1100</WorkToMake>
+      <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>DankPyon_AteRoxSteak</tasteThought>
+    </ingestible>
+  </ThingDef>
+
+  <!--============== Tier 2 Meals ===============-->
+<!-- Bread Soup -->
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealBreadSoup</defName>
+    <label>bread soup</label>
+    <description>A thick, milky soup housed in a bowl made from a hollowed out chunk of sour bread. A hearty, filling meal.</description>
+    <graphicData>
+      <texPath>Meal/BreadSoup</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>DankPyon_AteBreadSoup</tasteThought>
+    </ingestible>
+  </ThingDef>
+
+  <!-- Hearty Stew -->   
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealHeartyStew</defName>
+    <label>Hearty Stew</label>
+    <description>A Hearty Stew, containing various ingredients, and cooked in a reasonable amount of time.</description>
     <graphicData>
       <texPath>Meal/ExtravagantSteak</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -191,7 +232,37 @@
 		<Mass>0.5</Mass>
     </statBases>	
     <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>DankPyon_AteRoxSteak</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+      <preferability>MealSimple</preferability>
 	    <tasteThought>DankPyon_AteWeakStew</tasteThought>	 	  
+      <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+    </ingestible>		
+  </ThingDef>
+
+<!-- Fried Eggs -->
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealFriedEggs</defName>
+    <label>Fried Eggs</label>
+    <description>A simple meal, consisting of eggs quickly prepared and optionally served with a light sprinkling of salt and or pepper.</description>
+    <graphicData>
+      <texPath>Meal/FriedEggs</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<MaxHitPoints>50</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<MarketValue>15</MarketValue>
+		<Nutrition>0.9</Nutrition>
+		<WorkToMake>100</WorkToMake>	
+		<Mass>0.5</Mass>
+    </statBases>	
+    <ingestible>
+      <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
     </ingestible>		

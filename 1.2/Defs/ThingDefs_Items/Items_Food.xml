@@ -59,7 +59,8 @@
     <description>Cheese is made from milk and is a by-product of coagulation of the milk's proteins.</description>
     <graphicData>
       <texPath>Meal/Cheese</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>	  
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.65</drawSize>
     </graphicData>
     <statBases>
 		<Nutrition>0.85</Nutrition>

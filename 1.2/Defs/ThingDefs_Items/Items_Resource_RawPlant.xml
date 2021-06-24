@@ -51,5 +51,28 @@
     </ingestible>
   </ThingDef>
 
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_Sugarcane</defName>
+    <label>sugarcane</label>
+    <description>PLACEHOLDER</description>
+    <graphicData>
+	  <drawSize>(1,1)</drawSize>
+      <texPath>Plants/RawSugarcane</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>	
+    </graphicData>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Seed</foodType>
+ 	 <preferability>NeverForNutrition</preferability>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
 
   </Defs>

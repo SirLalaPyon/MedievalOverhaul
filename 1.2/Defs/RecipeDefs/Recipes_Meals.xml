@@ -432,17 +432,89 @@
 				</filter>
 				<count>0.16</count>
 			</li>
-			<!--li>
+			<li>
 				<filter>
 					<thingDefs>
-						<li>salt</li>
+						<li>DankPyon_Salt</li>
           </thingDefs>
 				</filter>
 				<count>0.1</count>
-			</li-->
+			</li>
 		</ingredients>
 		<products>
       <DankPyon_MealRoxSteak>1</DankPyon_MealRoxSteak>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>10</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- Rox Steak Bulk -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealRoxSteakBulk</defName>
+		<label>(Bulk x10) Cook Rox steak</label>
+		<description>Cooks extravagant steaks from a Rox.</description>
+		<jobString>Cooking a rox steak.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>5500</workAmount> <!--5500 SEEMS LIKE A LOT --> 
+      <recipeUsers>	  
+        <li>DankPyon_RusticCookingTable</li>		  	  
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li> <!-- SPECIFY ROX MEAT SOMEHOW -->
+          </categories>
+				</filter>
+				<count>2.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Ale</li>
+          </thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Salt</li>
+          </thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealRoxSteak>5</DankPyon_MealRoxSteak>
     </products>
 		<fixedIngredientFilter>
 			<categories>

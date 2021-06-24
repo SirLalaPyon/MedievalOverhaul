@@ -147,7 +147,7 @@
         <harvestYield>12</harvestYield>
         <sowMinSkill>5</sowMinSkill>
         <sowResearchPrerequisites>
-          <li>DankPyon_BasicAgriculture</li>
+          <li>DankPyon_AdvancedAgriculture</li>
         </sowResearchPrerequisites>	 
         <sowTags>
 				  <li>DankPyon_Post</li>
@@ -155,6 +155,43 @@
         <topWindExposure>0.1</topWindExposure>
         <wildOrder>2</wildOrder>
         <immatureGraphicPath>Plants_Immature/GrapePlant</immatureGraphicPath>
+        <purpose>Food</purpose>
+      </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>DankPyon_Plant_Tomatoes</defName>
+    <label>tomato plant</label>
+    <description>PLACEHOLDER</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/TomatoPlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+      <plant>
+        <fertilitySensitivity>1</fertilitySensitivity>
+        <growDays>4.25</growDays>
+        <dieIfLeafless>true</dieIfLeafless>
+        <harvestTag>Standard</harvestTag>
+        <!--harvestAfterGrowth>0.30</harvestAfterGrowth-->
+        <harvestedThingDef>DankPyon_RawTomatoes</harvestedThingDef>
+        <harvestYield>8</harvestYield>
+        <sowMinSkill>4</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>DankPyon_AdvancedAgriculture</li>
+        </sowResearchPrerequisites>	 
+        <sowTags>
+				  <li>DankPyon_Post</li>
+        </sowTags>
+        <topWindExposure>0.1</topWindExposure>
+        <wildOrder>2</wildOrder>
+        <immatureGraphicPath>Plants_Immature/TomatoPlant</immatureGraphicPath>
         <purpose>Food</purpose>
       </plant>
   </ThingDef>

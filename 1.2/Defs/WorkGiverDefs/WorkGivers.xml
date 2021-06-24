@@ -19,7 +19,6 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
-
  <WorkGiverDef>
     <defName>DankPyon_DoBillsMillstone</defName>
     <label>grind bulk grains</label>
@@ -49,5 +48,22 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </WorkGiverDef-->
+
+  <WorkGiverDef>
+  <defName>DankPyon_DoBillsMineshaft</defName>
+  <label>mine stones</label>
+  <giverClass>WorkGiver_DoBill</giverClass>
+  <workType>Cooking</workType>
+  <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>DankPyon_MineShaft</li>
+    </fixedBillGiverDefs>
+  <verb>mine</verb>
+  <gerund>baking</gerund>
+  <requiredCapacities>
+      <li>Manipulation</li>
+  </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
 
 </Defs>

@@ -61,7 +61,7 @@
 	  <graphicClass>Graphic_Single</graphicClass>	
     </graphicData>
     <statBases>
-      <MarketValue>2.0</MarketValue>
+      <MarketValue>1.2</MarketValue>
     </statBases>
     <ingestible>
       <foodType>Seed</foodType>
@@ -75,4 +75,29 @@
     </comps>
   </ThingDef>
 
-  </Defs>
+<!-- ==================== Raw Plants Food ======================= -->
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawTomatoes</defName>
+    <label>tomatoes</label>
+    <description>Raw tomatoes.</description>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>Plants/RawTomatoes</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

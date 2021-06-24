@@ -223,5 +223,30 @@
     </ingestible>		
   </ThingDef>
 
+<!-- Grilled Sausages -->
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealGrilledSausages</defName>
+    <label>Grilled Sausages</label>
+    <description>Seasoned meat with spices encased in a cylindrical manner. Grilled in an open flame to bring out smoky flavors.</description>
+    <graphicData>
+      <texPath>Meal/GrilledSausages</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<MaxHitPoints>50</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<MarketValue>15</MarketValue>
+		<Nutrition>0.9</Nutrition>
+		<WorkToMake>150</WorkToMake>	
+		<Mass>0.5</Mass>
+    </statBases>	
+    <ingestible>
+      <tasteThought>DankPyon_AteGrilledSausages</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+    </ingestible>		
+  </ThingDef>
+
 <!-- End of ThingDefs -->   
 </Defs>

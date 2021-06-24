@@ -28,7 +28,6 @@
     <ingestible>
       <preferability>NeverForNutrition</preferability>
     </ingestible>
-	
   </ThingDef>  
   
   <ThingDef ParentName="RoughPlantBase">
@@ -129,4 +128,29 @@
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 	</ThingDef>
+
+  <ThingDef ParentName="MealBase"> <!-- you might want to change the parent name if it causes any issues -->
+    <defName>DankPyon_Sausages</defName>
+    <label>Raw sausage</label>
+    <description>Minced meat mixed with herbs and spices.</description>
+    <stackLimit>30</stackLimit>
+    <graphicData>
+      <texPath>Resources/Sausage</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+	    <Mass>0.010</Mass>
+      <Flammability>1.8</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
+      <preferability>NeverForNutrition</preferability>
+      <optimalityOffsetFeedingAnimals>6</optimalityOffsetFeedingAnimals>
+    </ingestible>	
+  </ThingDef>  
+
   </Defs>

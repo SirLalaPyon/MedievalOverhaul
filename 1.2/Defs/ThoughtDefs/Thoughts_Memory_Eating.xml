@@ -100,4 +100,21 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+
+<!-- Grilled Sausages -->
+	<ThoughtDef>
+		<defName>DankPyon_AteGrilledSausages</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>	
+		<stages>
+			<li>
+				<label>ate grilled sausages</label>
+				<description>These sausages harbor a savory and smoky flavor!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
 </Defs>

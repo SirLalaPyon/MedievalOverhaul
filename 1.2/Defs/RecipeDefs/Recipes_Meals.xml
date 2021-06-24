@@ -77,7 +77,81 @@
         <li>DankPyon_StoneOven</li>
       </recipeUsers>
       </RecipeDef>
-	  
+
+<!-- Sausages -->
+	  <RecipeDef>
+      <defName>DankPyon_MakeSausagesBulk</defName>
+      <label>Make 1 sausage</label>
+      <description>Make 1 sausage from raw meat.</description>
+      <jobString>Making sausage.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <categories>
+                  <li>MeatRaw</li>
+               </categories>
+            </filter>
+            <count>0.2</count>
+         </li>
+      </ingredients>
+      <products>
+         <DankPyon_Sausages>1</DankPyon_Sausages>
+      </products>
+      <fixedIngredientFilter>
+         <categories>
+            <li>MeatRaw</li>
+         </categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+      <workAmount>200</workAmount>
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>DankPyon_RusticCookingTable</li>
+      </recipeUsers>
+    </RecipeDef>
+
+	  <RecipeDef>
+      <defName>DankPyon_MakeSausages</defName>
+      <label>Make sausage links</label>
+      <description>Make 10 sausages from raw meat.</description>
+      <jobString>Making sausages.</jobString>  
+      <allowMixingIngredients>true</allowMixingIngredients>
+      <ingredients>
+         <li>
+            <filter>
+               <categories>
+                  <li>MeatRaw</li>
+               </categories>
+            </filter>
+            <count>2</count>
+         </li>
+      </ingredients>
+      <products>
+         <DankPyon_Sausages>10</DankPyon_Sausages>
+      </products>
+      <fixedIngredientFilter>
+         <categories>
+            <li>MeatRaw</li>
+         </categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+      </fixedIngredientFilter>
+      <workAmount>2000</workAmount> <!-- change this maybe -->
+      <workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>DankPyon_RusticCookingTable</li>
+      </recipeUsers>
+    </RecipeDef>
 
 <!-- ===================================== Stews ======================================== --> 
 <!-- ======= Weak Stews ====== -->
@@ -358,17 +432,89 @@
 				</filter>
 				<count>0.16</count>
 			</li>
-			<!--li>
+			<li>
 				<filter>
 					<thingDefs>
-						<li>salt</li>
+						<li>DankPyon_Salt</li>
           </thingDefs>
 				</filter>
 				<count>0.1</count>
-			</li-->
+			</li>
 		</ingredients>
 		<products>
       <DankPyon_MealRoxSteak>1</DankPyon_MealRoxSteak>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>10</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- Rox Steak Bulk -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealRoxSteakBulk</defName>
+		<label>(Bulk x10) Cook Rox steak</label>
+		<description>Cooks extravagant steaks from a Rox.</description>
+		<jobString>Cooking a rox steak.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>5500</workAmount> <!--5500 SEEMS LIKE A LOT --> 
+      <recipeUsers>	  
+        <li>DankPyon_RusticCookingTable</li>		  	  
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li> <!-- SPECIFY ROX MEAT SOMEHOW -->
+          </categories>
+				</filter>
+				<count>2.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Ale</li>
+          </thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Salt</li>
+          </thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealRoxSteak>5</DankPyon_MealRoxSteak>
     </products>
 		<fixedIngredientFilter>
 			<categories>
@@ -534,6 +680,7 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>100</workAmount>
       <recipeUsers>
         <li>DankPyon_RusticCookingTable</li>	  			
       </recipeUsers>
@@ -587,6 +734,7 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>500</workAmount>
       <recipeUsers>
         <li>DankPyon_RusticCookingTable</li>	  			
       </recipeUsers>
@@ -616,6 +764,115 @@
       <categories>
         <li>EggsUnfertilized</li>
       </categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>				
+			</disallowedThingDefs>
+    </defaultIngredientFilter>
+  </RecipeDef>
+
+<!-- ======= Grilled Sausages ====== -->
+<!-- Grilled Sausages -->
+  <RecipeDef>
+    <defName>DankPyon_CookMealGrilledSausages</defName>
+    <label>cook grilled sausages</label>
+    <description>Cook a straightforward meal from sausages.</description>
+    <jobString>Grillin' dogs.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>150</workAmount>
+      <recipeUsers>
+        <li>DankPyon_RusticCookingTable</li>	  <!-- Replace with grill when added -->  					
+      </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_Sausages</li>
+          </thingDefs>
+        </filter>
+        <count>0.2</count>
+      </li>
+    </ingredients>
+    <products>
+      <DankPyon_MealGrilledSausages>1</DankPyon_MealGrilledSausages>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_Sausages</li>
+      </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_Sausages</li>
+      </thingDefs>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>				
+			</disallowedThingDefs>
+    </defaultIngredientFilter>
+  </RecipeDef>
+
+<!-- Grilled Sausages Bulk -->
+  <RecipeDef>
+    <defName>DankPyon_CookMealGrilledSausagesBulk</defName>
+    <label>(Bulk x5) cook grilled sausages</label>
+    <description>Cook a straightforward meal from sausages.</description>
+    <jobString>Grillin' dogs.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>750</workAmount>
+      <recipeUsers>
+        <li>DankPyon_RusticCookingTable</li> <!-- Replace with grill when added -->  			
+      </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_Sausages</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <DankPyon_MealGrilledSausages>5</DankPyon_MealGrilledSausages>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_Sausages</li>
+      </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_Sausages</li>
+      </thingDefs>
       <disallowedCategories>
         <li>EggsFertilized</li>
       </disallowedCategories>

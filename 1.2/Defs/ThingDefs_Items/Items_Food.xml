@@ -84,47 +84,6 @@
     <label>rox steak</label>
     <description>A thick slab of fatty rox meat, grilled to infuse smoky and savory flavors while seasoned with salt and stewed in ale. A luxurious feast that every king desires.</description>
     <graphicData>
-      <texPath>Meal/ExtravagantSteak</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>75</MarketValue>
-      <WorkToMake>1100</WorkToMake>
-      <Nutrition>1</Nutrition>
-    </statBases>
-    <ingestible>
-      <preferability>MealLavish</preferability>
-      <tasteThought>DankPyon_AteRoxSteak</tasteThought>
-    </ingestible>
-  </ThingDef>
-
-  <!--============== Tier 2 Meals ===============-->
-<!-- Bread Soup -->
-  <ThingDef ParentName="MealCooked">
-    <defName>DankPyon_MealBreadSoup</defName>
-    <label>bread soup</label>
-    <description>A thick, milky soup housed in a bowl made from a hollowed out chunk of sour bread. A hearty, filling meal.</description>
-    <graphicData>
-      <texPath>Meal/BreadSoup</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>20</MarketValue>
-      <WorkToMake>450</WorkToMake>
-      <Nutrition>0.9</Nutrition>
-    </statBases>
-    <ingestible>
-      <preferability>MealFine</preferability>
-      <tasteThought>DankPyon_AteBreadSoup</tasteThought>
-    </ingestible>
-  </ThingDef>
-
-  <!-- Hearty Stew -->   
-  <ThingDef ParentName="MealBase">
-    <defName>DankPyon_MealHeartyStew</defName>
-    <label>Hearty Stew</label>
-    <description>A Hearty Stew, containing various ingredients, and cooked in a reasonable amount of time.</description>
-    <graphicData>
       <texPath>Meal/RoxSteak</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
@@ -139,14 +98,14 @@
     </ingestible>
   </ThingDef>
 
-  <!--============== Tier 2 Meals ===============-->
+<!--============== Tier 2 Meals ===============-->
 <!-- Bread Soup -->
   <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealBreadSoup</defName>
     <label>bread soup</label>
     <description>A thick, milky soup housed in a bowl made from a hollowed out chunk of sour bread. A hearty, filling meal.</description>
     <graphicData>
-      <texPath>Meal/BreadSoup</texPath>
+      <texPath>Meal/SoupBread</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
@@ -155,6 +114,7 @@
       <Nutrition>0.9</Nutrition>
     </statBases>
     <ingestible>
+      <preferability>MealFine</preferability>
       <tasteThought>DankPyon_AteBreadSoup</tasteThought>
     </ingestible>
   </ThingDef>
@@ -184,8 +144,7 @@
   </ThingDef>
 
 
-  <!--============== Tier 1 Meals ===============-->
-
+<!--============== Tier 1 Meals ===============-->
 <!-- Bread --> 
  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealBread</defName>
@@ -203,6 +162,7 @@
       <WorkToMake>350</WorkToMake>  
     </statBases>
     <ingestible>
+      <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>
     </ingestible>
@@ -232,11 +192,6 @@
 		<Mass>0.5</Mass>
     </statBases>	
     <ingestible>
-      <preferability>MealLavish</preferability>
-      <tasteThought>DankPyon_AteRoxSteak</tasteThought>
-      <ingestEffect>EatVegetarian</ingestEffect>
-      <ingestSound>Meal_Eat</ingestSound>
-    </ingestible>
       <preferability>MealSimple</preferability>
 	    <tasteThought>DankPyon_AteWeakStew</tasteThought>	 	  
       <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>

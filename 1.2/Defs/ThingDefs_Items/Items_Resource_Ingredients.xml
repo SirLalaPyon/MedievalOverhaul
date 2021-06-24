@@ -26,7 +26,7 @@
       </li>
     </comps>
     <ingestible>
-      <<preferability>NeverForNutrition</preferability>
+      <preferability>NeverForNutrition</preferability>
     </ingestible>
 	
   </ThingDef>  
@@ -105,11 +105,11 @@
 	</ThingDef>
 
   <ThingDef ParentName="RoughPlantBase">
-		<defName>DankPyon_Spices</defName>
+		<defName>DankPyon_RawSpices</defName>
 		<label>spices</label>
 		<description>PLACEHOLDER</description>
 		<graphicData>
-			<texPath>Resources/Spice</texPath>
+			<texPath>Resources/Spices</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>6.6</MarketValue>

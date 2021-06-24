@@ -51,6 +51,68 @@
 		<researchViewY>5.7</researchViewY>    
   </ResearchProjectDef>
 
-  
+  <!--=========================== Agriculture ==============================-->
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BasicAgriculture</defName>
+    <label>Basic Agriculture</label>
+    <description>Research how to sow basic plants</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_IntermediateAgriculture</defName>
+    <label>Intermediate Agriculture</label>
+    <description>Research how to sow intermediate plants</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_AdvancedAgriculture</defName>
+    <label>Advanced Agriculture</label>
+    <description>Research how to sow advance plants</description>
+    <baseCost>800</baseCost>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
+
+  <!--=========================== Cooking ==============================-->
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BasicCooking</defName>
+    <label>Basic Cooking</label>
+    <description>Learn basic recipes of dishes</description>
+    <baseCost>200</baseCost>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_IntermediateCooking</defName>
+    <label>Intermediate Cooking</label>
+    <description>Learn intermediate recipes of dishes</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_AdvancedCooking</defName>
+    <label>Advanced Cooking</label>
+    <description>Learn advanced recipes of dishes</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>5.7</researchViewY>    
+  </ResearchProjectDef>
   
 </Defs>

@@ -672,7 +672,7 @@
 		<description>A wooden barrel reinforced by metal hoops. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Furniture/BarrelClosed</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
@@ -684,7 +684,7 @@
 				<cornerBL>Damage/Corner</cornerBL>
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
-			<drawSize>(3,3)</drawSize>
+			<drawSize>(1.8,1.8)</drawSize>
 			<shadowData>
 				<volume>(0.18, 0.23, 0.18)</volume>
 			</shadowData>

@@ -41,6 +41,44 @@
       <purpose>Food</purpose>
     </plant>
   </ThingDef>
+
+<!--=========================== Intermediate Agriculture ==============================-->
+
+  <ThingDef ParentName="PlantBase">
+		<defName>DankPyon_Plant_Herb</defName>
+		<label>herb plant</label>
+		<description>PLACEHOLDER</description>
+		<statBases>
+			<MaxHitPoints>65</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/HerbPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>0.50</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>3</maxMeshCount>
+			<harvestedThingDef>DankPyon_RawHerb</harvestedThingDef>
+			<harvestYield>2</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.6</growDays>
+			<visualSizeRange>0.4~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
   
 <!--=========================== Advanced Agriculture ==============================-->
 

@@ -6,8 +6,8 @@
 	  
 	  <RecipeDef>
       <defName>DankPyon_BakeBread</defName>
-      <label>bake bread</label>
-      <description>Bake bread from flour.</description>
+      <label>bake 2 breads</label>
+      <description>Bake 2 breads from flour.</description>
       <jobString>Baking bread.</jobString>  
       <allowMixingIngredients>true</allowMixingIngredients>
       <ingredients>
@@ -463,7 +463,7 @@
 <!-- Bread Soup Bulk -->
   <RecipeDef> 
     <defName>DankPyon_CookMealBreadSoupBulk</defName>
-    <label>(Bulk x10) Cook Bread Soup</label>
+    <label>(Bulk x5) Cook Bread Soup</label>
     <description>Cooks a straightforward soup from few ingredients.</description>
     <jobString>Cooking bread soup.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
@@ -471,7 +471,7 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-    <workAmount>1800</workAmount> <!-- a true x10 would be 4500, but that seems way too high so i used hearty stew work -->
+    <workAmount>2375</workAmount>
       <recipeUsers>
         <li>DankPyon_RusticCookingTable</li>	  			
       </recipeUsers>	
@@ -494,7 +494,7 @@
       </li>
     </ingredients>
     <products>
-      <DankPyon_MealBreadSoup>10</DankPyon_MealBreadSoup>
+      <DankPyon_MealBreadSoup>5</DankPyon_MealBreadSoup>
     </products>
     <fixedIngredientFilter>
       <categories>
@@ -578,7 +578,7 @@
 <!-- Fried Eggs Bulk-->
   <RecipeDef>
     <defName>DankPyon_CookMealFriedEggsBulk</defName>
-    <label>(Bulk x10) cook fried eggs</label>
+    <label>(Bulk x5) cook fried eggs</label>
     <description>Cook a straightforward meal from eggs.</description>
     <jobString>Frying eggs.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
@@ -597,11 +597,11 @@
             <li>EggsUnfertilized</li>
           </categories>
         </filter>
-        <count>5</count>
+        <count>2.5</count>
       </li>
     </ingredients>
     <products>
-      <DankPyon_MealFriedEggs>10</DankPyon_MealFriedEggs>
+      <DankPyon_MealFriedEggs>5</DankPyon_MealFriedEggs>
     </products>
     <workSkill>Cooking</workSkill>
     <fixedIngredientFilter>

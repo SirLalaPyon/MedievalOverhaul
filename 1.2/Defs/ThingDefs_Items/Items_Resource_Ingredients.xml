@@ -15,7 +15,9 @@
 	    <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
-      <MarketValue>2.2</MarketValue>
+      <MarketValue>1.5</MarketValue>
+      <WorkToMake>100</WorkToMake>
+      <Nutrition>0.05</Nutrition>
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -24,14 +26,8 @@
       </li>
     </comps>
     <ingestible>
-      <preferability>DesperateOnly</preferability>
-	  <foodType>Meal</foodType>
-	  <tasteThought>AteRawFood</tasteThought>
-	  <ingestEffect>EatVegetarian</ingestEffect>
-	  <ingestSound>Meal_Eat</ingestSound>
-	  <optimalityOffsetHumanlikes>-4</optimalityOffsetHumanlikes>
+      <<preferability>NeverForNutrition</preferability>
     </ingestible>
-	  <socialPropernessMatters>true</socialPropernessMatters>
 	
   </ThingDef>  
   
@@ -45,7 +41,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.7</MarketValue>	        
+      <MarketValue>0.7</MarketValue>
 	    <Mass>0.010</Mass>
       <Flammability>1.8</Flammability>
     </statBases>
@@ -57,5 +53,80 @@
     </ingestible>	
   </ThingDef>  
 
+<ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_Salt</defName>
+    <label>Salt</label>
+    <description>Salt is a common mineral that can be found abundantly in the sea. It generally used in cooking and preserving meals.</description>
+    <stackLimit>200</stackLimit>
+    <graphicData>
+      <texPath>Resources/Salt</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>	        
+	    <Mass>0.010</Mass>
+      <Flammability>1.8</Flammability>
+      <Nutrition>0.02</Nutrition>
+    </statBases>
+    <deepCommonality>1.25</deepCommonality>
+		<deepCountPerPortion>10</deepCountPerPortion>
+		<deepLumpSizeRange>2~5</deepLumpSizeRange>
+    <thingCategories>
+      <li>DankPyon_Condiments</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+    </ingestible>	
+</ThingDef>  
 
+<ThingDef ParentName="RoughPlantBase">
+		<defName>DankPyon_Sugar</defName>
+		<label>sugar</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Resources/Sugar</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.2</MarketValue>
+			<Nutrition>0.02</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>120</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>DankPyon_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+	</ThingDef>
+
+  <ThingDef ParentName="RoughPlantBase">
+		<defName>DankPyon_Spices</defName>
+		<label>spices</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Resources/Spice</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>6.6</MarketValue>
+			<Nutrition>1</Nutrition>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>DankPyon_Condiments</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+	</ThingDef>
   </Defs>

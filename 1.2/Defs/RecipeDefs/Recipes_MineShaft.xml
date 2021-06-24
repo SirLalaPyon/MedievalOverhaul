@@ -89,5 +89,38 @@
     </products>		
   </RecipeDef>  
 
+<!-- ========== Salt ==========-->
+   <!-- Salt --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeSalt</defName>
+		<workAmount>200</workAmount>		
+		<label>Gather salt</label>
+		<jobString>Mining for salt</jobString>
+    <products>
+      <DankPyon_Salt>1</DankPyon_Salt>
+    </products>		
+  </RecipeDef>  
+
+   <!-- Salt x5 --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeSalt5</defName>
+		<workAmount>1000</workAmount>		
+		<label>Gather salt x5</label>
+		<jobString>Mining for salt</jobString>
+    <products>
+      <DankPyon_Salt>5</DankPyon_Salt>
+    </products>		
+  </RecipeDef>  
+
+   <!-- Salt x10 --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeSalt10</defName>
+		<workAmount>2000</workAmount>		
+		<label>Gather salt x10</label>
+		<jobString>Mining for salt</jobString>
+    <products>
+      <DankPyon_Salt>10</DankPyon_Salt>
+    </products>		
+  </RecipeDef>  
 
 </Defs>

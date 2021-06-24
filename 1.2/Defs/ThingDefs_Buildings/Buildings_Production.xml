@@ -619,9 +619,11 @@
     <comps><li Class="CompProperties_Forbiddable"/></comps>
     <building>
       <defaultPlantToGrow>DankPyon_Plant_Grape</defaultPlantToGrow>
-      <sowTag>DankPyon_Post</sowTag>	  
+      <sowTag>DankPyon_Post</sowTag>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
     </building>
-
     <thingCategories><li>BuildingsProduction</li></thingCategories>		
     <minifiedDef>MinifiedThing</minifiedDef>
   </ThingDef>

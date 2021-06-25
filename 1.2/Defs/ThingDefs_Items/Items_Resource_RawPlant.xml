@@ -132,11 +132,58 @@
       <Nutrition>0.03</Nutrition>
     </statBases>
     <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawCabbages</defName>
+    <label>cabbages</label>
+    <description>Raw cabbages.</description>
+    <graphicData>
+      <texPath>Plants/RawCabbage</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.8</MarketValue>
+      <Nutrition>0.4</Nutrition>
+    </statBases>
+    <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawCarrots</defName>
+    <label>carrots</label>
+    <description>Raw carrots.</description>
+    <graphicData>
+      <texPath>Plants/RawCarrots</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>

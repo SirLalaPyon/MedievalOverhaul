@@ -74,11 +74,51 @@
       <topWindExposure>0.20</topWindExposure>
       <growDays>5.8</growDays>
 	    <fertilitySensitivity>1.0</fertilitySensitivity>
-      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <visualSizeRange>0.3~1.0</visualSizeRange>
       <!--immatureGraphicPath>Plants_Immature/</immatureGraphicPath-->
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
       <sowMinSkill>3</sowMinSkill>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>DankPyon_Plant_Carrots</defName>
+    <label>carrot plant</label>
+    <description>Bushy, short stalks whos root consists of a brightly-colored orange tuber. They make for healthy, if not tasty snacks on their own, or a good addition to any meal when boiled, stewed or sauteed.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/CarrotPlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.6</fertilityMin>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <maxMeshCount>4</maxMeshCount>
+	    <harvestedThingDef>DankPyon_RawCarrots</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowResearchPrerequisites>
+        <li>DankPyon_BasicAgriculture</li>
+      </sowResearchPrerequisites>	  
+      <sowTags>
+        <li>Ground</li>
+		    <li>Hydroponics</li>
+      </sowTags>
+      <topWindExposure>0.20</topWindExposure>
+      <growDays>3.25</growDays>
+	    <fertilitySensitivity>1.0</fertilitySensitivity>
+      <visualSizeRange>0.3~0.7</visualSizeRange>
+      <immatureGraphicPath>Plants_Immature/CarrotPlant</immatureGraphicPath>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <sowMinSkill>4</sowMinSkill>
     </plant>
   </ThingDef>
 
@@ -104,7 +144,7 @@
 			<fertilitySensitivity>0.50</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
 			<harvestTag>Standard</harvestTag>
-			<maxMeshCount>3</maxMeshCount>
+			<maxMeshCount>4</maxMeshCount>
 			<harvestedThingDef>DankPyon_RawHerb</harvestedThingDef>
 			<harvestYield>2</harvestYield>
 			<harvestWork>200</harvestWork>
@@ -156,6 +196,7 @@
         <wildOrder>2</wildOrder>
         <immatureGraphicPath>Plants_Immature/GrapePlant</immatureGraphicPath>
         <purpose>Food</purpose>
+        <visualSizeRange>0.4~1.2</visualSizeRange>
       </plant>
   </ThingDef>
 
@@ -179,7 +220,7 @@
         <growDays>4.25</growDays>
         <dieIfLeafless>true</dieIfLeafless>
         <harvestTag>Standard</harvestTag>
-        <!--harvestAfterGrowth>0.30</harvestAfterGrowth-->
+        <harvestAfterGrowth>0.30</harvestAfterGrowth>
         <harvestedThingDef>DankPyon_RawTomatoes</harvestedThingDef>
         <harvestYield>8</harvestYield>
         <sowMinSkill>4</sowMinSkill>
@@ -191,8 +232,48 @@
         </sowTags>
         <topWindExposure>0.1</topWindExposure>
         <wildOrder>2</wildOrder>
+        <visualSizeRange>0.6~1</visualSizeRange>
         <immatureGraphicPath>Plants_Immature/TomatoPlant</immatureGraphicPath>
         <purpose>Food</purpose>
+      </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>DankPyon_Plant_Cabbages</defName>
+    <label>cabbage plant</label>
+    <description>Green heads of cabbage. A vegetable made up of many leaves stacked on top of each other. Cabbage is especially good as an ingredient in salads and soups.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.4</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/CabbagePlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+      <plant>
+        <fertilitySensitivity>0.9</fertilitySensitivity>
+        <growDays>4</growDays>
+        <dieIfLeafless>true</dieIfLeafless>
+        <harvestTag>Standard</harvestTag>
+        <!--harvestAfterGrowth>0.30</harvestAfterGrowth-->
+        <harvestedThingDef>DankPyon_RawCabbages</harvestedThingDef>
+        <harvestYield>2</harvestYield>
+        <!--sowMinSkill>4</sowMinSkill-->
+        <sowResearchPrerequisites>
+          <li>DankPyon_AdvancedAgriculture</li>
+        </sowResearchPrerequisites>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+			  </sowTags>
+        <topWindExposure>0.1</topWindExposure>
+        <wildOrder>2</wildOrder>
+        <!--immatureGraphicPath>Plants_Immature/</immatureGraphicPath-->
+        <purpose>Food</purpose>
+        <!--visualSizeRange>0.4~0.6</visualSizeRange-->
       </plant>
   </ThingDef>
 
@@ -214,6 +295,9 @@
     <pathCost>10</pathCost>
     <ingestible />
       <plant>
+        <sowTags>
+          <li>Ground</li>
+			  </sowTags>
         <fertilitySensitivity>0.7</fertilitySensitivity>
         <growDays>33</growDays>
         <dieIfLeafless>true</dieIfLeafless>
@@ -248,6 +332,9 @@
     <pathCost>10</pathCost>
     <ingestible />
       <plant>
+        <sowTags>
+          <li>Ground</li>
+			  </sowTags>
         <fertilitySensitivity>0.7</fertilitySensitivity>
         <growDays>33</growDays>
         <dieIfLeafless>true</dieIfLeafless>

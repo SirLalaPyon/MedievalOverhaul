@@ -189,4 +189,96 @@
     </comps>
   </ThingDef>
 
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawGarlic</defName>
+    <label>garlic</label>
+    <description>Raw garlic.</description>
+    <graphicData>
+      <texPath>Plants/RawGarlic</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.44</MarketValue>
+      <Nutrition>0.02</Nutrition>
+    </statBases>
+    <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawOnions</defName>
+    <label>onions</label>
+    <description>Raw onions.</description>
+    <graphicData>
+      <texPath>Plants/RawOnions</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.66</MarketValue>
+      <Nutrition>0.03</Nutrition>
+    </statBases>
+    <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawPumpkins</defName>
+    <label>Pumpkins</label>
+    <description>Raw pumpkins.</description>
+    <graphicData>
+      <texPath>Plants/RawPumpkins</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>10.8</MarketValue>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawLentils</defName>
+    <label>lentils</label>
+    <description>Raw lentils.</description>
+    <graphicData>
+      <texPath>Plants/RawLentils</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.44</MarketValue>
+      <Nutrition>0.02</Nutrition>
+    </statBases>
+    <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
 </Defs>

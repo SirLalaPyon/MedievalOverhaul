@@ -195,7 +195,7 @@
       <topWindExposure>0.20</topWindExposure>
       <growDays>4</growDays>
 	    <fertilitySensitivity>0.2</fertilitySensitivity>
-      <visualSizeRange>0.3~0.7</visualSizeRange>
+      <visualSizeRange>0.2~0.4</visualSizeRange>
       <immatureGraphicPath>Plants_Immature/OnionPlant</immatureGraphicPath>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
@@ -208,7 +208,7 @@
     <label>lentils plant</label>
     <description>A petite, leafy liguine which gives way to numerous little sprouts. Lentil foods are suprisingly nourishing, and are said to be good for both the body and the soul.</description>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>65</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
@@ -235,7 +235,7 @@
       <topWindExposure>0.20</topWindExposure>
       <growDays>3</growDays>
 	    <fertilitySensitivity>0.7</fertilitySensitivity>
-      <visualSizeRange>0.3~0.5</visualSizeRange>
+      <visualSizeRange>0.2~0.3</visualSizeRange>
       <!--immatureGraphicPath>Plants_Immature/</immatureGraphicPath-->
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
@@ -447,7 +447,6 @@
       <Nutrition>0.5</Nutrition>
     </statBases>
     <graphicData>
-      <drawSize>0.9</drawSize>
       <texPath>Plants/PumpkinPlant</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
@@ -455,7 +454,7 @@
     <pathCost>10</pathCost>
     <ingestible />
     <plant>
-      <!--fertilityMin></fertilityMin-->
+      <fertilityMin>0.7</fertilityMin>
       <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
       <maxMeshCount>1</maxMeshCount>
@@ -471,7 +470,7 @@
       <topWindExposure>0.20</topWindExposure>
       <growDays>4.4</growDays>
 	    <fertilitySensitivity>0.9</fertilitySensitivity>
-      <!--visualSizeRange>0.4~1.3</visualSizeRange-->
+      <visualSizeRange>0.8~1.0</visualSizeRange>
       <immatureGraphicPath>Plants_Immature/PumpkinPlant</immatureGraphicPath>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
@@ -509,7 +508,7 @@
         <harvestYield>12</harvestYield>
         <sowMinSkill>3</sowMinSkill>
         <!--sowResearchPrerequisites>
-          <li>DankPyon_AdvancedAgriculture</li> FRUIT TREE RESEARCH HERE
+          <li>DankPyon_FruitTree</li> FRUIT TREE RESEARCH HERE
         </sowResearchPrerequisites-->	 
         <topWindExposure>0.1</topWindExposure>
         <wildOrder>2</wildOrder>
@@ -546,7 +545,7 @@
         <harvestYield>12</harvestYield>
         <sowMinSkill>3</sowMinSkill>
         <!--sowResearchPrerequisites>
-          <li>DankPyon_AdvancedAgriculture</li> FRUIT TREE RESEARCH HERE
+          <li>DankPyon_FruitTree</li> FRUIT TREE RESEARCH HERE
         </sowResearchPrerequisites-->	 
         <topWindExposure>0.1</topWindExposure>
         <wildOrder>2</wildOrder>

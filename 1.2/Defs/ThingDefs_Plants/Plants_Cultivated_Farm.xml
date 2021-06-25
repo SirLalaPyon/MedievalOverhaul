@@ -196,6 +196,76 @@
       </plant>
   </ThingDef>
 
+<!--=========================== Fruit Trees ==============================-->
+
+  <ThingDef ParentName="TreeBase">
+    <defName>DankPyon_Tree_Apple</defName>
+    <label>apple tree</label>
+    <description>PLACEHOLDER</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>1.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/TreeApple</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+      <plant>
+        <fertilitySensitivity>0.7</fertilitySensitivity>
+        <growDays>33</growDays>
+        <dieIfLeafless>true</dieIfLeafless>
+        <harvestTag>Standard</harvestTag>
+        <harvestAfterGrowth>0.30</harvestAfterGrowth>
+        <harvestedThingDef>DankPyon_RawApples</harvestedThingDef>
+        <harvestYield>12</harvestYield>
+        <sowMinSkill>3</sowMinSkill>
+        <!--sowResearchPrerequisites>
+          <li>DankPyon_AdvancedAgriculture</li> FRUIT TREE RESEARCH HERE
+        </sowResearchPrerequisites-->	 
+        <topWindExposure>0.1</topWindExposure>
+        <wildOrder>2</wildOrder>
+        <immatureGraphicPath>Plants_Immature/TreeApple</immatureGraphicPath>
+        <purpose>Food</purpose>
+      </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="TreeBase">
+    <defName>DankPyon_Tree_Lemon</defName>
+    <label>lemon tree</label>
+    <description>PLACEHOLDER</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>1.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/TreeLemon</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+      <plant>
+        <fertilitySensitivity>0.7</fertilitySensitivity>
+        <growDays>33</growDays>
+        <dieIfLeafless>true</dieIfLeafless>
+        <harvestTag>Standard</harvestTag>
+        <harvestAfterGrowth>0.30</harvestAfterGrowth>
+        <harvestedThingDef>DankPyon_RawApples</harvestedThingDef>
+        <harvestYield>12</harvestYield>
+        <sowMinSkill>3</sowMinSkill>
+        <!--sowResearchPrerequisites>
+          <li>DankPyon_AdvancedAgriculture</li> FRUIT TREE RESEARCH HERE
+        </sowResearchPrerequisites-->	 
+        <topWindExposure>0.1</topWindExposure>
+        <wildOrder>2</wildOrder>
+        <immatureGraphicPath>Plants_Immature/TreeLemon</immatureGraphicPath>
+        <purpose>Food</purpose>
+      </plant>
+  </ThingDef>
+
 <!--=========================== Griffon Berry ==============================-->
 
   <ThingDef ParentName="PlantBase">

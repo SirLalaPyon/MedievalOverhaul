@@ -9,7 +9,7 @@
     <label>wheat</label>
     <description>Wheat is a grain that can be milled into flour.</description>
     <graphicData>
-	  <drawSize>(1,1)</drawSize>
+	    <drawSize>(1,1)</drawSize>
       <texPath>Plants/RawWheat</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>	
     </graphicData>
@@ -56,7 +56,7 @@
     <label>sugarcane</label>
     <description>PLACEHOLDER</description>
     <graphicData>
-	  <drawSize>(1,1)</drawSize>
+	    <drawSize>(1,1)</drawSize>
       <texPath>Plants/RawSugarcane</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>	
     </graphicData>
@@ -81,8 +81,6 @@
     <defName>DankPyon_RawTomatoes</defName>
     <label>tomatoes</label>
     <description>Raw tomatoes.</description>
-    <soundInteract>Grain_Drop</soundInteract>
-    <soundDrop>Grain_Drop</soundDrop>
     <graphicData>
       <texPath>Plants/RawTomatoes</texPath>
     </graphicData>
@@ -95,6 +93,50 @@
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>12</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawApples</defName>
+    <label>apples</label>
+    <description>Raw apples.</description>
+    <graphicData>
+      <texPath>Plants/RawApples</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.92</MarketValue>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawLemons</defName>
+    <label>lemons</label>
+    <description>Raw lemons.</description>
+    <graphicData>
+      <texPath>Plants/RawLemons</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.66</MarketValue>
+      <Nutrition>0.03</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>

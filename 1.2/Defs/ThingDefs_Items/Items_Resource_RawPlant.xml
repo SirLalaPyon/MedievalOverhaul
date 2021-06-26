@@ -9,7 +9,6 @@
     <label>wheat</label>
     <description>Wheat is a grain that can be milled into flour.</description>
     <graphicData>
-	    <drawSize>(1,1)</drawSize>
       <texPath>Plants/RawWheat</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>	
     </graphicData>
@@ -56,7 +55,6 @@
     <label>sugarcane</label>
     <description>PLACEHOLDER</description>
     <graphicData>
-	    <drawSize>(1,1)</drawSize>
       <texPath>Plants/RawSugarcane</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>	
     </graphicData>
@@ -70,6 +68,29 @@
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_RawHerb</defName>
+    <label>raw herbs</label>
+    <description>PLACEHOLDER</description>
+    <graphicData>
+      <texPath>Plants/RawHerb</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>	
+    </graphicData>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Seed</foodType>
+ 	 <preferability>NeverForNutrition</preferability>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>

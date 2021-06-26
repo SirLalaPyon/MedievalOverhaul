@@ -172,7 +172,7 @@
   </ThingDef>
 
   <!-- Apple Pie -->   
-  <ThingDef ParentName="MealBase">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealApplePie</defName>
     <label>Apple pie</label>
     <description>A pie that uses sliced apples for its principal filling ingredient, mixed together with profound spices. Typically covered with a lattice patterned crust then sprinkled with sugar for its finish.</description>
@@ -190,8 +190,7 @@
     </statBases>
     <ingestible>
       <preferability>MealFine</preferability>
-	    <tasteThought>DankPyon_AteApplePie</tasteThought>	  
-      <optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>	  
+	    <tasteThought>DankPyon_AteApplePie</tasteThought>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>

@@ -27,6 +27,7 @@
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
+    <rotatable>false</rotatable>
   </ThingDef>
   
   <!-- Jerked Meats -->
@@ -49,7 +50,8 @@
         <daysToRotStart>45</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
-    </comps>	
+    </comps>
+    <rotatable>false</rotatable>
   </ThingDef> 
   
   <!-- Cheese -->
@@ -75,7 +77,8 @@
         <daysToRotStart>45</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
-    </comps>	
+    </comps>
+    <rotatable>false</rotatable>
   </ThingDef>
 
 <!--============== Tier 4 Meals ===============-->
@@ -97,6 +100,28 @@
       <preferability>MealLavish</preferability>
       <tasteThought>DankPyon_AteRoxSteak</tasteThought>
     </ingestible>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+<!-- Griffon Berry Pie -->
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealGriffonBerryPie</defName>
+    <label>griffon berry pie</label>
+    <description>A delicious fruit-tart pie, consisting of a flakey sugar crust layer with a filling of pureed Griffon Berry, topped with a light lemon glaze.</description>
+    <graphicData>
+      <texPath>Meal/GriffonPie</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>75</MarketValue>
+      <WorkToMake>950</WorkToMake>
+      <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>DankPyon_AteGriffonBerryPie</tasteThought>
+    </ingestible>
+    <rotatable>false</rotatable>
   </ThingDef>
 
 <!--============== Tier 2 Meals ===============-->
@@ -118,6 +143,7 @@
       <preferability>MealFine</preferability>
       <tasteThought>DankPyon_AteBreadSoup</tasteThought>
     </ingestible>
+    <rotatable>false</rotatable>
   </ThingDef>
 
   <!-- Hearty Stew -->   
@@ -141,9 +167,34 @@
       <preferability>MealFine</preferability>
 	    <tasteThought>DankPyon_AteHeartyStew</tasteThought>	  
       <optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>	  
-    </ingestible>	
+    </ingestible>
+    <rotatable>false</rotatable>
   </ThingDef>
 
+  <!-- Apple Pie -->   
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealApplePie</defName>
+    <label>Apple pie</label>
+    <description>A pie that uses sliced apples for its principal filling ingredient, mixed together with profound spices. Typically covered with a lattice patterned crust then sprinkled with sugar for its finish.</description>
+    <graphicData>
+      <texPath>Meal/ApplePie</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<MaxHitPoints>50</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<MarketValue>24</MarketValue>
+		<Nutrition>0.9</Nutrition>
+		<WorkToMake>515</WorkToMake>	
+		<Mass>0.5</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+	    <tasteThought>DankPyon_AteApplePie</tasteThought>	  
+      <optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>	  
+    </ingestible>
+    <rotatable>false</rotatable>
+  </ThingDef>
 
 <!--============== Tier 1 Meals ===============-->
 <!-- Bread --> 
@@ -172,7 +223,8 @@
         <daysToRotStart>8</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
-    </comps>  
+    </comps>
+    <rotatable>false</rotatable>
   </ThingDef>
 
   <!-- Weak Stew --> 
@@ -197,7 +249,8 @@
 	    <tasteThought>DankPyon_AteWeakStew</tasteThought>	 	  
       <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
-    </ingestible>		
+    </ingestible>
+    <rotatable>false</rotatable>
   </ThingDef>
 
 <!-- Fried Eggs -->
@@ -221,7 +274,8 @@
       <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
-    </ingestible>		
+    </ingestible>
+    <rotatable>false</rotatable>
   </ThingDef>
 
 <!-- Grilled Sausages -->
@@ -246,7 +300,8 @@
       <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
-    </ingestible>		
+    </ingestible>
+    <rotatable>false</rotatable>
   </ThingDef>
 
 <!-- End of ThingDefs -->   

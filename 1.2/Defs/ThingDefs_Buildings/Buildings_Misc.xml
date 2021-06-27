@@ -70,12 +70,15 @@
 			<texPath>Misc/QuenchingBucket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+        	<volume>(0.18, 0.23, 0.18)</volume>
+      		</shadowData>
 		</graphicData>
+		<rotatable>false</rotatable>
 		<thingClass>Building</thingClass>
 		<size>(1,1)</size>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.1</fillPercent>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<canOverlapZones>false</canOverlapZones>

@@ -153,6 +153,76 @@
 	  <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 	</building>
   </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+	<defName>DankPyon_Grill</defName>
+	<label>grill</label>
+	<thingClass>Building_WorkTable_HeatPush</thingClass>
+	<description>A wood fueled grill used for cooking.</description>
+	<graphicData>
+      <texPath>Production/Grill</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+	<altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.5</fillPercent>
+	<useHitPoints>True</useHitPoints>
+	<statBases>
+	  <WorkToBuild>2000</WorkToBuild>
+	  <MaxHitPoints>180</MaxHitPoints>
+	  <Flammability>1.0</Flammability>
+	</statBases>
+	<size>(3,1)</size>
+	<designationCategory>Production</designationCategory>
+	<passability>PassThroughOnly</passability>
+	<pathCost>70</pathCost>
+	<hasInteractionCell>True</hasInteractionCell>
+	<interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	<surfaceType>Item</surfaceType>
+	<inspectorTabs>
+		<li>ITab_Bills</li>
+	</inspectorTabs>
+	<comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>DankPyon_RusticCookingTools</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>100.0</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>DankPyon_Coal</li>
+			</thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+	<building>
+	  <isMealSource>true</isMealSource>
+	  <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	</building>
+  </ThingDef>
   
   <ThingDef ParentName="BenchBase">
 	<defName>DankPyon_RusticHearth</defName>
@@ -231,7 +301,7 @@
 	<description>A stew pot to cook delicious soups.</description>
 	<graphicData>
       <texPath>Production/StewPot</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(4,4)</drawSize>
       <damageData>

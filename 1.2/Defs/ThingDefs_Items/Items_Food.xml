@@ -43,7 +43,9 @@
 		<Nutrition>0.85</Nutrition>
     </statBases>	
     <ingestible>
-      <preferability>MealAwful</preferability>		   
+      <preferability>MealAwful</preferability>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals> 
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -70,7 +72,8 @@
     <ingestible>
       <preferability>MealSimple</preferability>
 	  <tasteThought>DankPyon_AteCheese</tasteThought>	  
-      <optimalityOffsetHumanlikes>20</optimalityOffsetHumanlikes>	  
+      <optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>   
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -99,6 +102,8 @@
     <ingestible>
       <preferability>MealLavish</preferability>
       <tasteThought>DankPyon_AteRoxSteak</tasteThought>
+      <optimalityOffsetHumanlikes>18</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-30</optimalityOffsetFeedingAnimals> 
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -120,6 +125,8 @@
     <ingestible>
       <preferability>MealLavish</preferability>
       <tasteThought>DankPyon_AteGriffonBerryPie</tasteThought>
+      <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-30</optimalityOffsetFeedingAnimals> 
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -147,7 +154,7 @@
   </ThingDef>
 
   <!-- Hearty Stew -->   
-  <ThingDef ParentName="MealBase">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealHeartyStew</defName>
     <label>Hearty Stew</label>
     <description>A Hearty Stew, containing various ingredients, and cooked in a reasonable amount of time.</description>
@@ -156,12 +163,10 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-		<MaxHitPoints>50</MaxHitPoints>
-		<Flammability>1.0</Flammability>
-		<MarketValue>20</MarketValue>
-		<Nutrition>0.9</Nutrition>
-		<WorkToMake>450</WorkToMake>	
-		<Mass>0.5</Mass>
+      <MarketValue>20</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>450</WorkToMake>	
+      <Mass>0.5</Mass>
     </statBases>
     <ingestible>
       <preferability>MealFine</preferability>
@@ -181,16 +186,15 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-		<MaxHitPoints>50</MaxHitPoints>
-		<Flammability>1.0</Flammability>
-		<MarketValue>24</MarketValue>
-		<Nutrition>0.9</Nutrition>
-		<WorkToMake>515</WorkToMake>	
-		<Mass>0.5</Mass>
+      <MarketValue>24</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>515</WorkToMake>	
+      <Mass>0.5</Mass>
     </statBases>
     <ingestible>
       <preferability>MealFine</preferability>
 	    <tasteThought>DankPyon_AteApplePie</tasteThought>
+      <optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>

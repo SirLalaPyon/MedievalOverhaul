@@ -222,6 +222,75 @@
     <rotatable>false</rotatable>
   </ThingDef>
 
+  <!-- Grilled Cheese -->   
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealGrilledCheese</defName>
+    <label>Grilled cheese</label>
+    <description>A simple dish consisting of a rich cut of cheese grilled with smoky fire.</description>
+    <graphicData>
+      <texPath>Meal/GrilledCheese</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>200</WorkToMake>	
+      <Mass>0.5</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+	    <tasteThought>DankPyon_AteGrilledCheese</tasteThought>
+      <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+    </ingestible>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+  <!-- Quiche -->   
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealQuiche</defName>
+    <label>quiche</label>
+    <description>A pie-adjacent breakfast food, consisting of layers of fluffy egg intermitted with delicious morsels of meat, baked into a hearty meal.</description>
+    <graphicData>
+      <texPath>Meal/Quiche</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>23</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>450</WorkToMake>	
+      <Mass>0.5</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+	    <tasteThought>DankPyon_AteQuiche</tasteThought>
+      <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+    </ingestible>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+  <!-- Sweet Pancakes -->   
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealSweetPancakes</defName>
+    <label>sweet pancakes</label>
+    <description>Stacks of fluffy pan-fried shortcakes with a drizzel of sweet syrup plastered atop. A delicious, if not particularly healthy start to a day.</description>
+    <graphicData>
+      <texPath>Meal/SweetPancakes</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>22</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>450</WorkToMake>	
+      <Mass>0.5</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+	    <tasteThought>DankPyon_AteSweetPancakes</tasteThought>
+      <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+    </ingestible>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
 <!--============== Tier 1 Meals ===============-->
 <!-- Bread --> 
  <ThingDef ParentName="MealCooked">
@@ -241,7 +310,7 @@
     </statBases>
     <ingestible>
       <preferability>MealSimple</preferability>
-      <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>
     </ingestible>
     <comps>
@@ -263,8 +332,6 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-		<MaxHitPoints>50</MaxHitPoints>
-		<Flammability>1.0</Flammability>
 		<MarketValue>10</MarketValue>
 		<Nutrition>0.8</Nutrition>
 		<WorkToMake>450</WorkToMake>	
@@ -273,7 +340,7 @@
     <ingestible>
       <preferability>MealSimple</preferability>
 	    <tasteThought>DankPyon_AteWeakStew</tasteThought>	 	  
-      <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+      <optimalityOffsetHumanlikes>18</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
     </ingestible>
     <rotatable>false</rotatable>
@@ -289,8 +356,6 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-		<MaxHitPoints>50</MaxHitPoints>
-		<Flammability>1.0</Flammability>
 		<MarketValue>15</MarketValue>
 		<Nutrition>0.9</Nutrition>
 		<WorkToMake>100</WorkToMake>	
@@ -298,7 +363,7 @@
     </statBases>	
     <ingestible>
       <preferability>MealSimple</preferability>
-      <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
     </ingestible>
     <rotatable>false</rotatable>
@@ -314,8 +379,6 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-		<MaxHitPoints>50</MaxHitPoints>
-		<Flammability>1.0</Flammability>
 		<MarketValue>15</MarketValue>
 		<Nutrition>0.9</Nutrition>
 		<WorkToMake>150</WorkToMake>	
@@ -324,7 +387,31 @@
     <ingestible>
       <tasteThought>DankPyon_AteGrilledSausages</tasteThought>
       <preferability>MealSimple</preferability>
-      <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+      <optimalityOffsetHumanlikes>18</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+    </ingestible>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+<!-- Mashed Potatoes -->
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealMashedPotatoes</defName>
+    <label>Mashed potatoes</label>
+    <description>A simple dish made with boiled potatos then mashed into a soft mixture while supplmented with milk for a creamy base.</description>
+    <graphicData>
+      <texPath>Meal/MashedPotatoes</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<MarketValue>17</MarketValue>
+		<Nutrition>0.9</Nutrition>
+		<WorkToMake>300</WorkToMake>	
+		<Mass>0.5</Mass>
+    </statBases>	
+    <ingestible>
+      <tasteThought>DankPyon_AteMashedPotatoes</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
     </ingestible>
     <rotatable>false</rotatable>

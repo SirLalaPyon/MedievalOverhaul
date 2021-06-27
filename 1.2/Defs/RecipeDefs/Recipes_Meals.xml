@@ -791,7 +791,7 @@
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <workAmount>150</workAmount>
       <recipeUsers>
-        <li>DankPyon_RusticCookingTable</li>	  <!-- Replace with grill when added -->  					
+        <li>DankPyon_Grill</li>				
       </recipeUsers>
     <ingredients>
       <li>
@@ -845,7 +845,7 @@
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <workAmount>750</workAmount>
       <recipeUsers>
-        <li>DankPyon_RusticCookingTable</li> <!-- Replace with grill when added -->  			
+        <li>DankPyon_Grill</li>			
       </recipeUsers>
     <ingredients>
       <li>
@@ -1221,7 +1221,7 @@
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <workAmount>450</workAmount> 
       <recipeUsers>	  
-        <li>DankPyon_RusticCookingTable</li>		  	  
+        <li>DankPyon_StewPot</li>		  	  
       </recipeUsers>	
     <ingredients>
 			<li>
@@ -1301,7 +1301,7 @@
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <workAmount>1600</workAmount> 
       <recipeUsers>	  
-        <li>DankPyon_RusticCookingTable</li>		  	  
+        <li>DankPyon_StewPot</li>		  	  
       </recipeUsers>	
     <ingredients>
 			<li>
@@ -1367,6 +1367,581 @@
 		</skillRequirements>
     <workSkill>Cooking</workSkill>
   </RecipeDef>
+
+<!-- ======= Mashed Potatoes ====== -->
+<!-- Mashed Potatoes -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealMashedPotatoes</defName>
+		<label>Cook mashed potatoes</label>
+		<description>Cook mashed potatoes.</description>
+		<jobString>Cooking mashed potatoes.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>300</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_RusticCookingTable</li>		  	  
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+          </thingDefs>
+				</filter>
+				<count>0.45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+          </thingDefs>
+				</filter>
+				<count>0.05</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealMashedPotatoes>1</DankPyon_MealMashedPotatoes>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<!--li>Milk</li-->
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>2</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- Mashed Potatoes Bulk -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealMashedPotatoesBulk</defName>
+		<label>(Bulk x5) Cook mashed potatoes</label>
+		<description>Cook mashed potatoes.</description>
+		<jobString>Cooking mashed potatoes.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>1000</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_RusticCookingTable</li>		  	  
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+          </thingDefs>
+				</filter>
+				<count>2.25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+          </thingDefs>
+				</filter>
+				<count>0.25</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealMashedPotatoes>5</DankPyon_MealMashedPotatoes>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<!--li>Milk</li-->
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>4</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- ======= Grilled Cheese ====== -->
+<!-- Grilled Cheese -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealGrilledCheese</defName>
+		<label>Cook grilled cheese</label>
+		<description>Cook grilled cheese.</description>
+		<jobString>Grillin' cheese.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>200</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_Grill</li>
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_MealCheese</li>
+          </thingDefs>
+				</filter>
+				<count>0.4</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealGrilledCheese>1</DankPyon_MealGrilledCheese>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>3</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- Grilled Cheese Bulk -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealGrilledCheeseBulk</defName>
+		<label>(Bulk x5) Cook grilled cheese</label>
+		<description>Cook grilled cheese.</description>
+		<jobString>Grillin' cheese.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>1000</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_Grill</li>
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_MealCheese</li>
+          </thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealGrilledCheese>5</DankPyon_MealGrilledCheese>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>5</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- ======= Quiche ====== -->
+<!-- Quiche -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealQuiche</defName>
+		<label>Cook quiche</label>
+		<description>Cook quiche.</description>
+		<jobString>Cooking quiche.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>450</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_StoneOven</li>
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+          </categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+          </categories>
+				</filter>
+				<count>0.10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+          </thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+          </thingDefs>
+				</filter>
+				<count>0.1</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealQuiche>1</DankPyon_MealQuiche>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<!--li>Milk</li-->
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>6</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- Quiche Bulk -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealQuicheBulk</defName>
+		<label>(Bulk x5) Cook quiche</label>
+		<description>Cook quiche.</description>
+		<jobString>Cooking quiche.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>1600</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_StoneOven</li>
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+          </categories>
+				</filter>
+				<count>1.25</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+          </categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+          </thingDefs>
+				</filter>
+				<count>2.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+          </thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealQuiche>5</DankPyon_MealQuiche>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<!--li>Milk</li-->
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>8</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- ======= Sweet Pancakes ====== -->
+<!-- Sweet Pancakes -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealSweetPancakes</defName>
+		<label>Cook sweet pancakes</label>
+		<description>Cook sweet pancakes.</description>
+		<jobString>Cooking sweet pancakes.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>450</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_RusticCookingTable</li>
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+          </categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Sugar</li>
+          </thingDefs>
+				</filter>
+				<count>0.05</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+          </thingDefs>
+				</filter>
+				<count>0.05</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+          </thingDefs>
+				</filter>
+				<count>0.15</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealSweetPancakes>1</DankPyon_MealSweetPancakes>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<!--li>Milk</li-->
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>5</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+<!-- Sweet Pancakes Bulk -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealSweetPancakesBulk</defName>
+		<label>(Bulk x5) Cook sweet pancakes</label>
+		<description>Cook sweet pancakes.</description>
+		<jobString>Cooking sweet pancakes.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>1600</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_RusticCookingTable</li>
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+          </categories>
+				</filter>
+				<count>1.25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Sugar</li>
+          </thingDefs>
+				</filter>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+          </thingDefs>
+				</filter>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+          </thingDefs>
+				</filter>
+				<count>0.75</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealSweetPancakes>5</DankPyon_MealSweetPancakes>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<!--li>Milk</li-->
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>8</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

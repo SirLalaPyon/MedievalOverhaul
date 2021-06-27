@@ -36,6 +36,23 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
+ <WorkGiverDef>
+    <defName>DankPyon_DoBillsGrill</defName>
+    <label>grill</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>DankPyon_Grill</li>
+   </fixedBillGiverDefs>
+    <verb>grill</verb>
+    <gerund>grilling</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
   <!--WorkGiverDef>
     <defName>TakeAleOutOfFermentingBarrel</defName>
     <label>take Ale out of fermenting barrels</label>

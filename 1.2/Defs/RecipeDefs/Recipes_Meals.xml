@@ -1207,9 +1207,166 @@
     <workSkill>Cooking</workSkill>
   </RecipeDef>
 
+<!-- ======= Hunters Stew ====== -->
+<!-- Hunters Stew -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealHuntersStew</defName>
+		<label>Cook hunter's stew</label>
+		<description>Cook a hearty stew.</description>
+		<jobString>Cooking a hearty stew.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>450</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_RusticCookingTable</li>		  	  
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Sausages</li>
+          </thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawCabbages</li>
+          </thingDefs>
+				</filter>
+				<count>0.1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawOnions</li>
+          </thingDefs>
+				</filter>
+				<count>0.09</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawGarlic</li>
+          </thingDefs>
+				</filter>
+				<count>0.1</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealHuntersStew>1</DankPyon_MealHuntersStew>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>6</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
 
-
-
+<!-- Hunters Stew Bulk -->
+  <RecipeDef>
+		<defName>DankPyon_CookMealHuntersStewBulk</defName>
+		<label>(Bulk x5) Cook hunter's stew</label>
+		<description>Cook a hearty stew.</description>
+		<jobString>Cooking a hearty stew.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>1600</workAmount> 
+      <recipeUsers>	  
+        <li>DankPyon_RusticCookingTable</li>		  	  
+      </recipeUsers>	
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Sausages</li>
+          </thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawCabbages</li>
+          </thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawOnions</li>
+          </thingDefs>
+				</filter>
+				<count>0.45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawGarlic</li>
+          </thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+      <DankPyon_MealHuntersStew>5</DankPyon_MealHuntersStew>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+      <disallowedCategories>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+				<Cooking>8</Cooking>
+		</skillRequirements>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
 
 
 

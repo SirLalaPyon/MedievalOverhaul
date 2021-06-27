@@ -199,6 +199,29 @@
     <rotatable>false</rotatable>
   </ThingDef>
 
+  <!-- Hunters Stew -->   
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealHuntersStew</defName>
+    <label>Hunter's stew</label>
+    <description>A hearty stew consisting of boiled sausage sauteed in a vegetable broth with minced cabbage.</description>
+    <graphicData>
+      <texPath>Meal/HuntersStew</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>22</MarketValue>
+      <Nutrition>1</Nutrition>
+      <WorkToMake>450</WorkToMake>	
+      <Mass>0.5</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+	    <tasteThought>DankPyon_AteHuntersStew</tasteThought>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </ingestible>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
 <!--============== Tier 1 Meals ===============-->
 <!-- Bread --> 
  <ThingDef ParentName="MealCooked">

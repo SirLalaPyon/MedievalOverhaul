@@ -86,14 +86,14 @@
 
   <ThingDef ParentName="BenchBase">
 	<defName>DankPyon_StoneOven</defName>
-	<label>stone oven</label>
+	<label>oven</label>
 	<thingClass>Building_WorkTable_HeatPush</thingClass>
-	<description>A stone oven used for baking.</description>
+	<description>An oven used for baking.</description>
 	<graphicData>
-      <texPath>Production/StoneOven</texPath>
+      <texPath>Production/Oven</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(4,4)</drawSize>
+      <drawSize>(3.5,1.5)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -114,12 +114,12 @@
 	  <MaxHitPoints>180</MaxHitPoints>
 	  <Flammability>1.0</Flammability>
 	</statBases>
-	<size>(2,1)</size>
+	<size>(3,1)</size>
 	<designationCategory>Production</designationCategory>
 	<passability>PassThroughOnly</passability>
 	<pathCost>70</pathCost>
 	<hasInteractionCell>True</hasInteractionCell>
-	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	<interactionCellOffset>(-1,0,-1)</interactionCellOffset>
     <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	<surfaceType>Item</surfaceType>
 	<inspectorTabs>

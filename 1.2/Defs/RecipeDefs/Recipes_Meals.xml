@@ -2087,9 +2087,9 @@
     <ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>EggsUnfertilized</li>
-          			</thingDefs>
+					<categories>
+           	 			<li>EggsUnfertilized</li>
+          			</categories>
 				</filter>
 				<count>0.25</count>
 			</li>
@@ -2154,31 +2154,31 @@
         <li>DankPyon_RusticCookingTable</li>	  
       </recipeUsers>
     <ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>EggsUnfertilized</li>
-          			</thingDefs>
-				</filter>
-				<count>0.75</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>DankPyon_RawTomatoes</li>
-          			</thingDefs>
-				</filter>
-				<count>0.45</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>DankPyon_RawOnions</li>
-          			</thingDefs>
-				</filter>
-				<count>0.45</count>
-			</li>
-		</ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>EggsUnfertilized</li>
+				</categories>
+			</filter>
+			<count>0.75</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_RawTomatoes</li>
+          		</thingDefs>
+			</filter>
+			<count>0.45</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_RawOnions</li>
+          		</thingDefs>
+			</filter>
+			<count>0.45</count>
+		</li>
+	</ingredients>
 		<products>
       <DankPyon_MealTomatoeOmelette>3</DankPyon_MealTomatoeOmelette>
     </products>
@@ -2980,10 +2980,10 @@
 <!-- ======= Boiled Bean and Onion ====== -->
 <!-- Boiled Bean and Onion -->
   <RecipeDef>
-		<defName>DankPyon_CookMealBoiledBeanAndOnion</defName>
-		<label>Cook boiled bean and onion</label>
-		<description>Cook boiled bean and onion.</description>
-		<jobString>Cooking boiled bean and onion</jobString>
+		<defName>DankPyon_CookMealBoiledBeansAndOnion</defName>
+		<label>Cook boiled beans and onion</label>
+		<description>Cook boiled beans and onion.</description>
+		<jobString>Cooking boiled beans and onion</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
@@ -3020,7 +3020,7 @@
 			</li>
 	</ingredients>
 	<products>
-      	<DankPyon_MealBoiledBeanAndOnion>1</DankPyon_MealBoiledBeanAndOnion>
+      	<DankPyon_MealBoiledBeansAndOnion>1</DankPyon_MealBoiledBeansAndOnion>
     </products>
 		<fixedIngredientFilter>
 			<categories>
@@ -3136,7 +3136,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Cheese</li>
+						<li>DankPyon_MealCheese</li>
           			</thingDefs>
 				</filter>
 				<count>0.4</count>
@@ -3205,7 +3205,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Cheese</li>
+						<li>DankPyon_MealCheese</li>
           			</thingDefs>
 				</filter>
 				<count>1.2</count>

@@ -547,37 +547,35 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_DryingRack</defName>
     <label>Drying Rack</label>
+    <description>A wooden rack to preserve goods for long time use.</description>
     <graphicData>
       <texPath>Production/DryingRack/DryingRack</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.5,1.5)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.5,2.5)</drawSize>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
     </graphicData>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.5</fillPercent>
     <pathCost>70</pathCost>
     <statBases>
       <WorkToBuild>400</WorkToBuild>
-      <Mass>20</Mass>
-      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
-    <description>A rack for drying resources into preserved goods</description>
-	  <size>(3,1)</size>   
-    <costList>
-      <WoodLog>20</WoodLog>
-    </costList>
+	  <size>(2,2)</size>   
+    <costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>	
+		</stuffCategories>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="UniversalFermenter.CompProperties_UniversalFermenter">
@@ -591,6 +589,7 @@
             </ingredientFilter>
             <maxCapacity>100</maxCapacity>
             <processDays>2.5</processDays>
+            <efficiency>1.0</efficiency>
             <temperatureIdeal>
                 <min>20</min>
                 <max>60</max>
@@ -623,6 +622,7 @@
             </ingredientFilter>
             <maxCapacity>100</maxCapacity>
             <processDays>2.5</processDays>
+            <efficiency>0.05</efficiency>
             <temperatureIdeal>
                 <min>20</min>
                 <max>60</max>
@@ -651,8 +651,6 @@
     </comps>
     <tickerType>Rare</tickerType>
     <designationCategory>Production</designationCategory>
-    <constructEffect>ConstructWood</constructEffect>
-    <rotatable>true</rotatable>
   </ThingDef>
   
   <!-- Gardening Box -->
@@ -687,7 +685,6 @@
     <fertility>1.0</fertility>
     <passability>Standable</passability>
     <pathCost>35</pathCost>	
-    <comps><li Class="CompProperties_Forbiddable"/></comps>
     <building>
       <defaultPlantToGrow>DankPyon_Plant_Grape</defaultPlantToGrow>
       <sowTag>DankPyon_Post</sowTag>

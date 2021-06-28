@@ -6,6 +6,7 @@
     <label>wheat farming</label>
     <description>Allows agriculture and basic processing of wheat.</description>
     <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    
@@ -16,6 +17,7 @@
     <label>Food Preservation</label>
     <description>Allows drying to preserve resources.</description>
     <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    
@@ -26,6 +28,7 @@
     <label>Food Preservation</label>
     <description>Make Cheese</description>
     <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    
@@ -36,6 +39,7 @@
     <label>Mining</label>
     <description>Research how to build a mineshaft and the proper procedures.</description>
     <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    
@@ -46,21 +50,37 @@
     <label>Siege Equipment</label>
     <description>Research how to build powerful siege machinations for sheer ordinance</description>
     <baseCost>2000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    
   </ResearchProjectDef>
 
   <!--=========================== Agriculture ==============================-->
+  <ResearchProjectDef>
+    <defName>DankPyon_FruitTreeSowing</defName>
+    <label>Fruit Tree sowing</label>
+    <description>Research how to sow basic plants</description>
+    <baseCost>500</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>TreeSowing</li>
+    </prerequisites>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>    
+  </ResearchProjectDef>
+
 
   <ResearchProjectDef>
     <defName>DankPyon_BasicAgriculture</defName>
     <label>Basic Agriculture</label>
     <description>Research how to sow basic plants</description>
     <baseCost>200</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
 		<researchViewX>0</researchViewX>
-		<researchViewY>5.7</researchViewY>    
+		<researchViewY>0.70</researchViewY>    
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -68,6 +88,7 @@
     <label>Intermediate Agriculture</label>
     <description>Research how to sow intermediate plants</description>
     <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    
@@ -78,6 +99,7 @@
     <label>Advanced Agriculture</label>
     <description>Research how to sow advance plants</description>
     <baseCost>800</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    
@@ -90,6 +112,7 @@
     <label>Basic Cooking</label>
     <description>Learn basic recipes of dishes</description>
     <baseCost>200</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    
@@ -100,6 +123,7 @@
     <label>Intermediate Cooking</label>
     <description>Learn intermediate recipes of dishes</description>
     <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    
@@ -110,6 +134,7 @@
     <label>Advanced Cooking</label>
     <description>Learn advanced recipes of dishes</description>
     <baseCost>800</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>5.7</researchViewY>    

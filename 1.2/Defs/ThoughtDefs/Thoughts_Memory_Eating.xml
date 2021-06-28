@@ -343,7 +343,7 @@
 
 <!-- Pumpkin Soup -->
 	<ThoughtDef>
-		<defName>DankPyon_Ate</defName>
+		<defName>DankPyon_AtePumpkinSoup</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
@@ -375,14 +375,14 @@
 
 <!-- Boiled Bean and Onion -->
 	<ThoughtDef>
-		<defName>DankPyon_AteBoiledBeanAndOnion</defName>
+		<defName>DankPyon_AteBoiledBeansAndOnion</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
 		<stackLimit>1</stackLimit>	
 		<stages>
 			<li>
-				<label>ate boiled bean and onion</label>
+				<label>ate boiled beans and onion</label>
 				<description>PLACEHOLDER</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>

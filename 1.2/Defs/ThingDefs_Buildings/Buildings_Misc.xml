@@ -336,4 +336,152 @@
 	<designationCategory>Misc</designationCategory>
   </ThingDef>
 
+  <!--============== Medieval Comms ===============-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_BirdPost</defName>
+    <label>bird post</label>
+	<thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Misc/BirdPost</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.15</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+	  <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+	  <Cleanliness>-5</Cleanliness>
+    </statBases>
+
+    <tickerType>Normal</tickerType>
+    <description>PLACEHOLDER</description>
+    <size>(1,1)</size>
+    <building>
+		<ai_chillDestination>false</ai_chillDestination>
+    </building>
+	
+	<costList>
+      <DankPyon_ComponentMedieval>1</DankPyon_ComponentMedieval>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.2</fuelConsumptionRate>
+        <fuelCapacity>10.0</fuelCapacity>
+        <fuelFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Hay</li>
+				<li>Kibble</li>
+			</thingDefs>
+        </fuelFilter>
+		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>ProjectBirdPost</li>
+    </researchPrerequisites>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_ScribeTable</defName>
+    <label>scribe table</label>
+    <description>Allows you to write messages for trade and diplomacy with nearby factions. Consumes paper when contacting factions.</description>
+    <thingClass>Building_CommsConsole</thingClass>
+    <graphicData>
+      <texPath>Misc/TableScribe</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+	<size>(3,2)</size>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+	<staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2800</WorkToBuild>
+      <Flammability>0.6</Flammability>
+	  <Mass>15</Mass>
+    </statBases>
+
+	<stuffCategories>
+		<li>Metallic</li>
+		<li>Woody</li>
+		<li>Stony</li>
+	  </stuffCategories>
+	  <costStuffCount>75</costStuffCount>
+    <costList>
+      <DankPyon_IronIngot>20</DankPyon_IronIngot>
+      <DankPyon_ComponentMedieval>4</DankPyon_ComponentMedieval>
+    </costList>
+
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>1</basePowerConsumption>
+      </li>
+    </comps>
+
+    <designationHotKey>Misc3</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+		<li>DankPyon_CarrierBirds</li>
+	  </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	<thingCategories>
+		<li>BuildingsMisc</li>
+	</thingCategories>
+	<minifiedDef>MinifiedThing</minifiedDef>
+  </ThingDef>
+
 </Defs>

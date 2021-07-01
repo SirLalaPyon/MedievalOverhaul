@@ -786,6 +786,106 @@
 		  </li>    
 		</comps>
 	</ThingDef>
+
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>DankPyon_Smoker</defName>
+    <label>Smoker</label>
+    <graphicData>
+      <texPath>Production/Smoker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <passability>PassThroughOnly</passability>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <castEdgeShadows>true</castEdgeShadows>
+
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <costList>
+      <WoodLog>60</WoodLog>
+    </costList>
+
+    <researchPrerequisites>
+			<li>DankPyon_Smoking</li>
+		</researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>40</fuelConsumptionRate>
+        <fuelCapacity>70.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+			      <li>DankPyon_Coal</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+	  
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>9</heatPerSecond>
+      </li>
+
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="UniversalFermenter.CompProperties_UniversalFermenter">
+        <processes>
+          
+		      <li>
+            <thingDef>DankPyon_SmokedMeat</thingDef>
+            <ingredientFilter>
+                <categories>
+                    <li>MeatRaw</li>
+                </categories>
+            </ingredientFilter>
+            <maxCapacity>100</maxCapacity>
+            <processDays>0.5</processDays>
+            <efficiency>0.05</efficiency>
+            <temperatureIdeal>
+                <min>20</min>
+                <max>60</max>
+            </temperatureIdeal>
+            <temperatureSafe>
+                <min>0</min>
+                <max>80</max>
+            </temperatureSafe>
+            <sunFactor>
+                <min>0.8</min>
+                <max>1.5</max>
+            </sunFactor>
+            <rainFactor>
+                <min>1.0</min>
+                <max>0.2</max>
+            </rainFactor>
+            <windFactor>
+                <min>0.9</min>
+                <max>1.2</max>
+            </windFactor>
+          </li>
+		  
+        </processes>
+      </li>    
+    </comps>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Production</designationCategory>
+  </ThingDef>
 	
 	<ThingDef ParentName="BenchBase">
     <defName>DankPyon_Workbench</defName>
@@ -808,10 +908,12 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-	<costStuffCount>100</costStuffCount>
-	<stuffCategories>
+
+	  <costStuffCount>100</costStuffCount>
+	  <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
+
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>

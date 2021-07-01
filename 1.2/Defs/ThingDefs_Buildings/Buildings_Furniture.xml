@@ -566,7 +566,7 @@
 			<Beauty>8</Beauty>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
-			<WorkToBuild>3000</WorkToBuild>
+			<WorkToBuild>2000</WorkToBuild>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<size>(1,1)</size>
@@ -675,10 +675,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
-				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
-				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
-				<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
-				<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
 				<cornerBL>Damage/Corner</cornerBL>
@@ -689,7 +685,6 @@
 				<volume>(0.18, 0.23, 0.18)</volume>
 			</shadowData>
 		</graphicData>
-    <uiIconPath>Furniture/BarrelClosed_MenuIcon</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>

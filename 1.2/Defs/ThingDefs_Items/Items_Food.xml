@@ -30,7 +30,7 @@
     <rotatable>false</rotatable>
   </ThingDef>
   
-  <!-- Jerked Meats -->
+  <!-- Dried Meats -->
   <ThingDef ParentName="MealBase">
     <defName>DankPyon_DriedMeat</defName>
     <label>Dried Meat</label>
@@ -40,7 +40,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>	  
     </graphicData>
     <statBases>
-		<Nutrition>0.85</Nutrition>
+		<Nutrition>0.7</Nutrition>
     </statBases>	
     <ingestible>
       <preferability>MealAwful</preferability>
@@ -49,7 +49,34 @@
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>45</daysToRotStart>
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+  </ThingDef> 
+
+  <!-- Dried Meats -->
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_SmokedMeat</defName>
+    <label>Smoked Meat</label>
+    <description>Dried meat to preserve and prolong shelf life.</description>
+    <graphicData>
+      <texPath>Meal/SmokedMeat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>	  
+    </graphicData>
+    <statBases>
+		<Nutrition>0.85</Nutrition>
+    </statBases>	
+    <ingestible>
+      <preferability>MealAwful</preferability>
+      <tasteThought>DankPyon_AteSmokedMeat</tasteThought>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals> 
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
@@ -86,7 +113,7 @@
 
 <!--============== Tier 4 Meals ===============-->
 <!-- Rox Steak -->
-  <ThingDef ParentName="DankPyon_Tier3Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealRoxSteak</defName>
     <label>rox steak</label>
     <description>A thick slab of fatty rox meat, grilled to infuse smoky and savory flavors while seasoned with salt and stewed in ale. A luxurious feast that every king desires.</description>
@@ -109,7 +136,7 @@
   </ThingDef>
 
 <!-- Griffon Berry Pie -->
-  <ThingDef ParentName="DankPyon_Tier3Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealGriffonBerryPie</defName>
     <label>griffon berry pie</label>
     <description>A delicious fruit-tart pie, consisting of a flakey sugar crust layer with a filling of pureed Griffon Berry, topped with a light lemon glaze.</description>
@@ -132,15 +159,8 @@
   </ThingDef>
 
 <!--============== Tier 3 Meals ===============-->
-<!-- Advanced Cooking Research Prerequisite --> 
-<ThingDef ParentName="MealCooked" Name="DankPyon_Tier3Meal" Abstract="True">
-  <recipeMaker>
-    <researchPrerequisite>DankPyon_AdvancedCooking</researchPrerequisite>
-  </recipeMaker>
-  </ThingDef>
-
 <!-- Steak with Wine -->
-  <ThingDef ParentName="DankPyon_Tier3Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealSteakWithWine</defName>
     <label>Steak with wine</label>
     <description>A delicious fruit-tart pie, consisting of a flakey sugar crust layer with a filling of pureed Griffon Berry, topped with a light lemon glaze.</description>
@@ -163,7 +183,7 @@
   </ThingDef>
 
   <!-- Cheese Soup -->
-  <ThingDef ParentName="DankPyon_Tier3Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealCheeseSoup</defName>
     <label>Cheese soup</label>
     <description>A delightfully gooey soup consisting of cuts of melted cheese curd housed in a rich broth of garlic-spiced ale. A hearty dish best served warm, soothing for both the body and soul.</description>
@@ -186,14 +206,8 @@
   </ThingDef>
 
 <!--============== Tier 2 Meals ===============-->
-<!-- Intermediate Cooking Research Prerequisite --> 
-<ThingDef ParentName="MealCooked" Name="DankPyon_Tier2Meal" Abstract="True">
-  <recipeMaker>
-    <researchPrerequisite>DankPyon_IntermediateCooking</researchPrerequisite>
-  </recipeMaker>
-</ThingDef>
 <!-- Bread Soup -->
-  <ThingDef ParentName="DankPyon_Tier2Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealBreadSoup</defName>
     <label>bread soup</label>
     <description>A thick, milky soup housed in a bowl made from a hollowed out chunk of sour bread. A hearty, filling meal.</description>
@@ -214,7 +228,7 @@
   </ThingDef>
 
   <!-- Hearty Stew -->   
-  <ThingDef ParentName="DankPyon_Tier2Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealHeartyStew</defName>
     <label>Hearty Stew</label>
     <description>A Hearty Stew, containing various ingredients, and cooked in a reasonable amount of time.</description>
@@ -237,7 +251,7 @@
   </ThingDef>
 
   <!-- Apple Pie -->   
-  <ThingDef ParentName="DankPyon_Tier2Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealApplePie</defName>
     <label>Apple pie</label>
     <description>A pie that uses sliced apples for its principal filling ingredient, mixed together with profound spices. Typically covered with a lattice patterned crust then sprinkled with sugar for its finish.</description>
@@ -260,7 +274,7 @@
   </ThingDef>
 
   <!-- Hunters Stew -->   
-  <ThingDef ParentName="DankPyon_Tier2Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealHuntersStew</defName>
     <label>Hunter's stew</label>
     <description>A hearty stew consisting of boiled sausage sauteed in a vegetable broth with minced cabbage.</description>
@@ -283,7 +297,7 @@
   </ThingDef>
 
   <!-- Grilled Cheese -->   
-  <ThingDef ParentName="DankPyon_Tier2Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealGrilledCheese</defName>
     <label>Grilled cheese</label>
     <description>A simple dish consisting of a rich cut of cheese grilled with smoky fire.</description>
@@ -306,7 +320,7 @@
   </ThingDef>
 
   <!-- Quiche -->   
-  <ThingDef ParentName="DankPyon_Tier2Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealQuiche</defName>
     <label>quiche</label>
     <description>A pie-adjacent breakfast food, consisting of layers of fluffy egg intermitted with delicious morsels of meat, baked into a hearty meal.</description>
@@ -329,7 +343,7 @@
   </ThingDef>
 
   <!-- Sweet Pancakes -->   
-  <ThingDef ParentName="DankPyon_Tier2Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealSweetPancakes</defName>
     <label>sweet pancakes</label>
     <description>Stacks of fluffy pan-fried shortcakes with a drizzel of sweet syrup plastered atop. A delicious, if not particularly healthy start to a day.</description>
@@ -352,7 +366,7 @@
   </ThingDef>
 
   <!-- Pumpkin Pie -->   
-  <ThingDef ParentName="DankPyon_Tier2Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealPumpkinPie</defName>
     <label>sweet pancakes</label>
     <description>A dense, rich pie made from mashed pumpkin mixed with strong spices, layered atop a sweet, flakey crust. A fall-favorite desert.</description>
@@ -375,7 +389,7 @@
   </ThingDef>
 
   <!-- Pumpkin Soup -->   
-  <ThingDef ParentName="DankPyon_Tier2Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealPumpkinSoup</defName>
     <label>pumpkin soup</label>
     <description>A creamy soup made from finely pureed pumpkin and a light assortment of spices.</description>
@@ -397,16 +411,31 @@
     <rotatable>false</rotatable>
   </ThingDef>
 
+  <!-- Tomato Omelette -->   
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealTomatoOmelette</defName>
+    <label>tomato omelette</label>
+    <description>A sheet of fried, folded egg housing a tasteful cumilation of runny yolk and sauteed tomato.</description>
+    <graphicData>
+      <texPath>Meal/TomatoOmelette</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <WorkToMake>500</WorkToMake>	
+      <Mass>0.5</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+	    <tasteThought>DankPyon_AteTomatoOmelette</tasteThought>
+      <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+    </ingestible>
+    <rotatable>false</rotatable>
+  </ThingDef>
 <!--============== Tier 1 Meals ===============-->
-<!-- Basic Cooking Research Prerequisite --> 
-<ThingDef ParentName="MealCooked" Name="DankPyon_Tier1Meal" Abstract="True">
-  <recipeMaker>
-    <researchPrerequisite>DankPyon_BasicCooking</researchPrerequisite>
-  </recipeMaker>
-</ThingDef>
-
 <!-- Bread --> 
- <ThingDef ParentName="DankPyon_Tier1Meal">
+ <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealBread</defName>
     <label>bread</label>
     <description>Made from flour and water. A classic staple to start a day.</description>
@@ -436,10 +465,10 @@
   </ThingDef>
 
   <!-- Weak Stew --> 
-  <ThingDef ParentName="DankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealWeakStew</defName>
     <label>Weak Stew</label>
-    <description>A simple stew quickly cooked from a few ingredients.</description>
+    <description>A light stew, consisting primarily of bone broth with a few morsels of meat floating within. Not quite saturating, but a filling meal nonetheless.</description>
     <graphicData>
       <texPath>Meal/WeakStew</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -460,7 +489,7 @@
   </ThingDef>
 
 <!-- Fried Eggs -->
-  <ThingDef ParentName="DankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealFriedEggs</defName>
     <label>Fried Eggs</label>
     <description>A simple meal, consisting of eggs quickly prepared and optionally served with a light sprinkling of salt and or pepper.</description>
@@ -483,7 +512,7 @@
   </ThingDef>
 
 <!-- Grilled Sausages -->
-  <ThingDef ParentName="DankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealGrilledSausages</defName>
     <label>Grilled Sausages</label>
     <description>Seasoned meat with spices encased in a cylindrical manner. Grilled in an open flame to bring out smoky flavors.</description>
@@ -507,7 +536,7 @@
   </ThingDef>
 
 <!-- Mashed Potatoes -->
-  <ThingDef ParentName="MDankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealMashedPotatoes</defName>
     <label>Mashed potatoes</label>
     <description>A simple dish made with boiled potatos then mashed into a soft mixture while supplmented with milk for a creamy base.</description>
@@ -531,7 +560,7 @@
   </ThingDef>
 
 <!-- Mushroom Soup -->
-  <ThingDef ParentName="DankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealMushroomSoup</defName>
     <label>Mushroom soup</label>
     <description>A fragrant soup consisting of minced sauteed mushrooms in a rich milky broth, making for a bold-tasting, somewhat hearty meal.</description>
@@ -555,7 +584,7 @@
   </ThingDef>
 
   <!-- Vegetable Pot -->
-  <ThingDef ParentName="DankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealVegetablePot</defName>
     <label>Vegetable pot</label>
     <description>A rich stew of chopped vegetables, sauteed and boiled in a lightly seasoned broth. A hearty, yet healthy meal.</description>
@@ -579,7 +608,7 @@
   </ThingDef>
 
   <!-- Pumpkin Fritters -->
-  <ThingDef ParentName="DankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealPumpkinFritters</defName>
     <label>Pumpkin fritters</label>
     <description>A sweet, dense biscuit of pumpkin and flour with a caramelized confectionery glaze.</description>
@@ -603,7 +632,7 @@
   </ThingDef>
 
   <!-- Grilled Skewers -->
-  <ThingDef ParentName="DankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealGrilledSkewers</defName>
     <label>Grilled skewers</label>
     <description>Thick-cut chunks of seared meat arranged on a wooden stake, making for an easily-eaten, tasty meal.</description>
@@ -627,7 +656,7 @@
   </ThingDef>
   
   <!-- Boiled Bean and Onion -->
-  <ThingDef ParentName="DankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealBoiledBeansAndOnion</defName>
     <label>Boiled beans and onion</label>
     <description>A simple, yet hearty meal consisting of beans and chopped onion boiled in a light lentil broth.</description>
@@ -651,7 +680,7 @@
   </ThingDef>
 
   <!-- Winter Lentil Soup -->
-  <ThingDef ParentName="DankPyon_Tier1Meal">
+  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealWinterLentilSoup</defName>
     <label>Boiled bean and onion</label>
     <description>A light, homey soup primarily made up from lentils with a light sprinkling of herbs and seasonings. A perfect dish to sip on during a cold winter afternoon.</description>

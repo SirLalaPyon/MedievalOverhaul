@@ -101,6 +101,22 @@
 		</stages>
 	</ThoughtDef>
 
+<!-- Smoked Meat -->
+	<ThoughtDef>
+		<defName>DankPyon_AteSmokedMeat</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>	
+		<stages>
+			<li>
+				<label>ate smoked meat</label>
+				<description>That smoked meat had a rustic flavour to it.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
 <!-- Bread Soup -->
 	<ThoughtDef>
 		<defName>DankPyon_AteBreadSoup</defName>

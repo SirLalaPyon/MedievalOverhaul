@@ -114,7 +114,7 @@
       <topWindExposure>0.20</topWindExposure>
       <growDays>3.25</growDays>
 	    <fertilitySensitivity>0.6</fertilitySensitivity>
-      <visualSizeRange>0.3~0.7</visualSizeRange>
+      <visualSizeRange>0.2~0.4</visualSizeRange>
       <immatureGraphicPath>Plants_Immature/CarrotPlant</immatureGraphicPath>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
@@ -154,7 +154,7 @@
       <topWindExposure>0.20</topWindExposure>
       <growDays>3</growDays>
 	    <fertilitySensitivity>0.2</fertilitySensitivity>
-      <visualSizeRange>0.3~0.7</visualSizeRange>
+      <visualSizeRange>0.2~0.4</visualSizeRange>
       <immatureGraphicPath>Plants_Immature/GarlicPlant</immatureGraphicPath>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
@@ -288,7 +288,7 @@
   <ThingDef ParentName="PlantBase">
 		<defName>DankPyon_Plant_Herb</defName>
 		<label>herb plant</label>
-		<description>PLACEHOLDER</description>
+		<description>A fragrant, leafy green plant which has an iota of uses in food preperation as a flavor enchancer, but which is virtually inedible on its own.</description>
 		<statBases>
 			<MaxHitPoints>65</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
@@ -315,7 +315,7 @@
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>5.6</growDays>
-			<visualSizeRange>0.4~1</visualSizeRange>
+			<visualSizeRange>0.2~0.4</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 		</plant>
@@ -422,7 +422,7 @@
         <!--harvestAfterGrowth>0.30</harvestAfterGrowth-->
         <harvestedThingDef>DankPyon_RawCabbages</harvestedThingDef>
         <harvestYield>2</harvestYield>
-        <!--sowMinSkill>4</sowMinSkill-->
+        <sowMinSkill>4</sowMinSkill>
         <sowResearchPrerequisites>
           <li>DankPyon_AdvancedAgriculture</li>
         </sowResearchPrerequisites>
@@ -434,7 +434,7 @@
         <wildOrder>2</wildOrder>
         <!--immatureGraphicPath>Plants_Immature/</immatureGraphicPath-->
         <purpose>Food</purpose>
-        <!--visualSizeRange>0.4~0.6</visualSizeRange-->
+        <visualSizeRange>0.7~0.7</visualSizeRange>
       </plant>
   </ThingDef>
 

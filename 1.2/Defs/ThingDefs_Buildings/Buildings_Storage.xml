@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Storage Base ==================== -->
+
+  <ThingDef Name="DankPyon_StorageBase" ParentName="LWM_DeepStorage" Abstract="True">
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+    </building>	
+  </ThingDef>
+
+  <!--======================= Resource Barrel ==============================-->
+
+  <!--== WoodLog Barrel ==-->
+  <ThingDef ParentName="DankPyon_StorageBase" >
+    <defName>DankPyon_BarrelWoodLog</defName>
+    <label>barrel of wood</label>
+    <description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 10 stacks of wood</description>
+    <graphicData>
+      <texPath>Storage/BarrelWoodLog</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.8,1.8)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+
+    <costList>
+      <WoodLog>30</WoodLog>
+      <DankPyon_IronIngot>5</DankPyon_IronIngot>
+    </costList>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>WoodLog</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>	
+    
+    
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--== Iron Ore Barrel ==-->
+  <ThingDef ParentName="DankPyon_StorageBase" >
+    <defName>DankPyon_BarrelIronOre</defName>
+    <label>barrel of iron ore</label>
+    <description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 10 stacks of iron ore</description>
+    <graphicData>
+      <texPath>Storage/BarrelIronOre</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.8,1.8)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+
+    <costList>
+      <WoodLog>30</WoodLog>
+      <DankPyon_IronIngot>5</DankPyon_IronIngot>
+    </costList>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>DankPyon_IronOre</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>	
+    
+    
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--== Gold Ore Barrel ==-->
+  <ThingDef ParentName="DankPyon_StorageBase" >
+    <defName>DankPyon_BarrelGoldOre</defName>
+    <label>barrel of iron ore</label>
+    <description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 10 stacks of gold ore</description>
+    <graphicData>
+      <texPath>Storage/BarrelGoldOre</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.8,1.8)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+
+    <costList>
+      <WoodLog>30</WoodLog>
+      <DankPyon_IronIngot>5</DankPyon_IronIngot>
+    </costList>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>DankPyon_GoldOre</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>	
+    
+    
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--== Textiles Barrel ==-->
+  <ThingDef ParentName="DankPyon_StorageBase" >
+    <defName>DankPyon_BarrelTextiles</defName>
+    <label>barrel of textiles</label>
+    <description>A cylindrical barrel reserved for textiles to save space. Can hold up to 10 stacks of textiles</description>
+    <graphicData>
+      <texPath>Storage/BarrelTextiles</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.8,1.8)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+
+    <costList>
+      <WoodLog>30</WoodLog>
+      <DankPyon_IronIngot>5</DankPyon_IronIngot>
+    </costList>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <categories>
+          <li>Textiles</li>
+        </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>	
+    
+    
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--== Leather Barrel ==-->
+  <ThingDef ParentName="DankPyon_StorageBase" >
+    <defName>DankPyon_BarrelLeather</defName>
+    <label>barrel of leather</label>
+    <description>A cylindrical barrel reserved for leather to save space. Can hold up to 10 stacks of leather</description>
+    <graphicData>
+      <texPath>Storage/BarrelLeather</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.8,1.8)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+
+    <costList>
+      <WoodLog>30</WoodLog>
+      <DankPyon_IronIngot>5</DankPyon_IronIngot>
+    </costList>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Leathers</li>
+          </categories>
+          </filter>
+      </fixedStorageSettings>
+    </building>	
+    
+    
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--== Basic Component ==-->
+  <ThingDef ParentName="DankPyon_StorageBase" >
+    <defName>DankPyon_BarrelBasicComponent</defName>
+    <label>barrel of basic components</label>
+    <description>A cylindrical barrel reserved for basic components to save space. Can hold up to 10 stacks of basic components</description>
+    <graphicData>
+      <texPath>Storage/BarrelBasicComponent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.8,1.8)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+
+    <costList>
+      <WoodLog>30</WoodLog>
+      <DankPyon_IronIngot>5</DankPyon_IronIngot>
+    </costList>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_ComponentBasic</li>
+          </thingDefs>
+          </filter>
+      </fixedStorageSettings>
+    </building>	
+    
+    
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  
+</Defs>

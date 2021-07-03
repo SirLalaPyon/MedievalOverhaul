@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--========================= Doors =============================-->
+
+  <ThingDef ParentName="DoorBase">
+    <defName>DankPyon_RusticDoor</defName>
+    <label>rustic door</label>
+    <description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+    <statBases>
+      <WorkToBuild>850</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Buildings/RusticDoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <uiIconPath>Buildings/RusticDoor_MenuIcon</uiIconPath>
+    <costStuffCount>25</costStuffCount>
+    <designationHotKey>Misc1</designationHotKey>
+  </ThingDef>
+
+</Defs>

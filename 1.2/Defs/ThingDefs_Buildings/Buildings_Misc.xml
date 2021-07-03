@@ -35,7 +35,7 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<costList>
-			<DankPyon_IronIngot>40</DankPyon_IronIngot>
+			<DankPyon_IronIngot>120</DankPyon_IronIngot>
 		</costList>
 		<stuffCategories>
 			<li>Woody</li>
@@ -60,6 +60,9 @@
 		<clearBuildingArea>false</clearBuildingArea>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Smithing</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -86,19 +89,22 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
+
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<WorkToBuild>1200</WorkToBuild>
 			<Mass>10</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
+
 		<costList>
-			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+			<DankPyon_IronIngot>15</DankPyon_IronIngot>
 		</costList>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
+
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -108,12 +114,16 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 		</comps>
+
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<clearBuildingArea>false</clearBuildingArea>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Smithing</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
@@ -137,20 +147,23 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
+
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToBuild>1200</WorkToBuild>
 			<Mass>15</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
+
 		<costList>
 			<WoodLog>50</WoodLog>
-			<DankPyon_IronIngot>20</DankPyon_IronIngot>
+			<DankPyon_IronIngot>60</DankPyon_IronIngot>
 		</costList>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
+
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -160,12 +173,16 @@
 				<maxSimultaneous>3</maxSimultaneous>
 			</li>
 		</comps>
+
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<clearBuildingArea>false</clearBuildingArea>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Smithing</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
@@ -189,20 +206,22 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
+
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<WorkToBuild>1200</WorkToBuild>
 			<Mass>10</Mass>
 			<Flammability>1.0</Flammability>
-			<Beauty>5</Beauty>
 		</statBases>
+
 		<costList>
-			<DankPyon_IronIngot>20</DankPyon_IronIngot>
+			<DankPyon_IronIngot>60</DankPyon_IronIngot>
 		</costList>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
+
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -218,6 +237,9 @@
 		<clearBuildingArea>false</clearBuildingArea>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Smithing</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -245,6 +267,7 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
+
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToBuild>2000</WorkToBuild>
@@ -252,13 +275,15 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>
 		</statBases>
+
 		<costList>
-			<DankPyon_IronIngot>25</DankPyon_IronIngot>
+			<DankPyon_IronIngot>75</DankPyon_IronIngot>
 		</costList>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
+		
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -314,7 +339,7 @@
 	</statBases>
 	<costList>
       <WoodLog>120</WoodLog>
-	  <DankPyon_IronIngot>20</DankPyon_IronIngot>
+	  <DankPyon_IronIngot>60</DankPyon_IronIngot>
     </costList>
 		<comps>
 			<li Class="CompProperties_Facility">
@@ -370,7 +395,7 @@
     </building>
 	
 	<costList>
-      <DankPyon_ComponentMedieval>1</DankPyon_ComponentMedieval>
+      <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
     </costList>
     <stuffCategories>
       <li>Metallic</li>
@@ -404,7 +429,7 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Misc</designationCategory>
     <researchPrerequisites>
-      <li>ProjectBirdPost</li>
+      <li>DankPyon_CarrierBirds</li>
     </researchPrerequisites>
 	<minifiedDef>MinifiedThing</minifiedDef>
 	<thingCategories>
@@ -451,10 +476,10 @@
 		<li>Woody</li>
 		<li>Stony</li>
 	  </stuffCategories>
-	  <costStuffCount>75</costStuffCount>
+	  <costStuffCount>100</costStuffCount>
     <costList>
       <DankPyon_IronIngot>20</DankPyon_IronIngot>
-      <DankPyon_ComponentMedieval>4</DankPyon_ComponentMedieval>
+      <DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
     </costList>
 
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>

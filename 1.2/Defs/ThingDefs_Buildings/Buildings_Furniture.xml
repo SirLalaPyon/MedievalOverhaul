@@ -145,6 +145,33 @@
   </ThingDef>
 
   <ThingDef ParentName="TableGatherSpotBase">
+    <defName>DankPyon_RusticRoundTable2x2c</defName>
+    <label>round table (2x2)</label>
+    <graphicData>
+      <texPath>Furniture/RusticRoundTable2x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>50</costStuffCount>
+	<designationCategory>DankPyon_RusticFurniture</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="TableGatherSpotBase">
     <defName>DankPyon_Table2x4c</defName>
     <label>table (2x4)</label>
     <graphicData>
@@ -193,7 +220,7 @@
 		<uiIconPath>Furniture/RusticCandle_MenuIcon</uiIconPath>
 		<costList>
 			<WoodLog>10</WoodLog>
-			<DankPyon_IronIngot>1</DankPyon_IronIngot>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
 		</costList>
 		<rotatable>false</rotatable>
 		<building>
@@ -249,7 +276,7 @@
 		</graphicData>
 		<uiIconPath>Furniture/RusticLamp_MenuIcon</uiIconPath>
 		<costList>
-			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+			<DankPyon_IronIngot>15</DankPyon_IronIngot>
 		</costList>
 		<rotatable>false</rotatable>
 		<building>
@@ -369,7 +396,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <pathCost>30</pathCost>
 	<costList>
-		<DankPyon_IronIngot>10</DankPyon_IronIngot>
+		<DankPyon_IronIngot>30</DankPyon_IronIngot>
 	</costList>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
@@ -430,7 +457,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <pathCost>30</pathCost>
 	<costList>
-		<DankPyon_IronIngot>10</DankPyon_IronIngot>
+		<DankPyon_IronIngot>30</DankPyon_IronIngot>
 		<Gold>10</Gold>
 	</costList>
     <statBases>
@@ -665,54 +692,75 @@
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 	</ThingDef>
 
-
-<ThingDef ParentName="FurnitureWithQualityBase">
-		<defName>DankPyon_RusticBarrelClosed</defName>
-		<label>Barrel</label>
-		<description>A wooden barrel reinforced by metal hoops. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
-		<graphicData>
-			<texPath>Furniture/BarrelClosed</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-			<drawSize>(1.8,1.8)</drawSize>
-			<shadowData>
-				<volume>(0.18, 0.23, 0.18)</volume>
-			</shadowData>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<WorkToBuild>560</WorkToBuild>
-			<Mass>3</Mass>
-			<Flammability>1.0</Flammability>
-			<Beauty>5</Beauty>
-			<Comfort>0.6</Comfort>
-		</statBases>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<stuffCategories>
-			<li>Woody</li>
-		</stuffCategories>
-		<costList>
-			<DankPyon_IronIngot>5</DankPyon_IronIngot>
-		</costList>
-		<costStuffCount>20</costStuffCount>
-		<passability>PassThroughOnly</passability>
-		<pathCost>30</pathCost>
-		<designationHotKey>Misc3</designationHotKey>
-		<fillPercent>0.40</fillPercent>		
-		<building>
-			<isSittable>False</isSittable>
-		</building>
-		<uiIconOffset>(0, -0.05)</uiIconOffset>
-		<rotatable>false</rotatable>
-		<designationCategory>DankPyon_RusticFurniture</designationCategory>
-	</ThingDef>
+  <ThingDef ParentName="BenchBase">
+    <defName>DankPyon_RusticHearth</defName>
+    <label>Hearth</label>
+    <thingClass>Building_WorkTable_HeatPush</thingClass>
+    <description>A stone hearth for warmth and a homey atmosphere. Can be used to cook at a reduced speed.</description>
+    <graphicData>
+        <texPath>Furniture/RusticHearth</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+        <drawSize>(4,4)</drawSize>
+        <damageData>
+          <cornerTL>Damage/Corner</cornerTL>
+          <cornerTR>Damage/Corner</cornerTR>
+          <cornerBL>Damage/Corner</cornerBL>
+          <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+      </graphicData>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+      <stuffCategories>
+        <li>Stony</li>
+      </stuffCategories>
+      <costStuffCount>60</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(2,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+        <li Class="CompProperties_AffectedByFacilities">
+          <linkableFacilities>
+            <li>DankPyon_RusticCookingTools</li>
+          </linkableFacilities>
+        </li>
+        <li Class="CompProperties_Glower">
+          <glowRadius>4</glowRadius>
+          <glowColor>(217,112,33,0)</glowColor>
+        </li>
+        <li Class="CompProperties_Refuelable">
+          <fuelConsumptionRate>100.0</fuelConsumptionRate>
+          <fuelCapacity>50.0</fuelCapacity>
+          <fuelFilter>
+        <thingDefs>
+          <li>WoodLog</li>
+          <li>DankPyon_Coal</li>
+        </thingDefs>
+          </fuelFilter>
+          <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+      <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        </li>
+      </comps>
+    <building>
+      <isMealSource>true</isMealSource>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    </ThingDef>
 	
 	<!--============================== Beds ==============================-->
 	
@@ -761,7 +809,7 @@
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
     <building>
-      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
       <bed_healPerDay>4</bed_healPerDay>
     </building>
     <fillPercent>0.4</fillPercent>
@@ -771,7 +819,7 @@
     <designationHotKey>Misc2</designationHotKey>
     <techLevel>Medieval</techLevel>
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <uiIconScale>0.90</uiIconScale>
 	<designationCategory>DankPyon_RusticFurniture</designationCategory>

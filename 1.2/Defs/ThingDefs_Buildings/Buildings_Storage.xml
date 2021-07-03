@@ -12,8 +12,54 @@
         <filter>
         </filter>
       </defaultStorageSettings>
-    </building>	
+    </building>
+    <researchPrerequisites>
+      <li>DankPyon_RusticStorage</li>
+    </researchPrerequisites>
   </ThingDef>
+
+  <ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RusticBarrelClosed</defName>
+		<label>Barrel</label>
+		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Furniture/BarrelClosed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.8,1.8)</drawSize>
+      <drawRotated>false</drawRotated>
+		</graphicData>
+    <uiIconPath>Furniture/BarrelClosed</uiIconPath>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
+    
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+		</costList>
+		<costStuffCount>30</costStuffCount>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+
+	</ThingDef>
 
   <!--======================= Resource Barrel ==============================-->
 
@@ -28,15 +74,17 @@
       <drawSize>(1.8,1.8)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
+    <uiIconPath>Storage/BarrelWoodLog</uiIconPath>
     <castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>600</WorkToBuild>
-      <Flammability>1</Flammability>
-      <Mass>15</Mass>
-    </statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
 
     <costList>
       <WoodLog>30</WoodLog>
@@ -76,15 +124,17 @@
       <drawSize>(1.8,1.8)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
+    <uiIconPath>Storage/BarrelIronOre</uiIconPath>
     <castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>600</WorkToBuild>
-      <Flammability>1</Flammability>
-      <Mass>15</Mass>
-    </statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
 
     <costList>
       <WoodLog>30</WoodLog>
@@ -116,7 +166,7 @@
   <!--== Gold Ore Barrel ==-->
   <ThingDef ParentName="DankPyon_StorageBase" >
     <defName>DankPyon_BarrelGoldOre</defName>
-    <label>barrel of iron ore</label>
+    <label>barrel of gold ore</label>
     <description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 10 stacks of gold ore</description>
     <graphicData>
       <texPath>Storage/BarrelGoldOre</texPath>
@@ -124,15 +174,17 @@
       <drawSize>(1.8,1.8)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
+    <uiIconPath>Storage/BarrelGoldOre</uiIconPath>
     <castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>600</WorkToBuild>
-      <Flammability>1</Flammability>
-      <Mass>15</Mass>
-    </statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
 
     <costList>
       <WoodLog>30</WoodLog>
@@ -172,15 +224,17 @@
       <drawSize>(1.8,1.8)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
+    <uiIconPath>Storage/BarrelTextiles</uiIconPath>
     <castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>600</WorkToBuild>
-      <Flammability>1</Flammability>
-      <Mass>15</Mass>
-    </statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
 
     <costList>
       <WoodLog>30</WoodLog>
@@ -220,15 +274,17 @@
       <drawSize>(1.8,1.8)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
+    <uiIconPath>Storage/BarrelLeather</uiIconPath>
     <castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>600</WorkToBuild>
-      <Flammability>1</Flammability>
-      <Mass>15</Mass>
-    </statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
 
     <costList>
       <WoodLog>30</WoodLog>
@@ -259,24 +315,26 @@
 
   <!--== Basic Component ==-->
   <ThingDef ParentName="DankPyon_StorageBase" >
-    <defName>DankPyon_BarrelBasicComponent</defName>
+    <defName>DankPyon_BarrelComponentBasic</defName>
     <label>barrel of basic components</label>
     <description>A cylindrical barrel reserved for basic components to save space. Can hold up to 10 stacks of basic components</description>
     <graphicData>
-      <texPath>Storage/BarrelBasicComponent</texPath>
+      <texPath>Storage/BarrelComponentBasic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.8,1.8)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
+    <uiIconPath>Storage/BarrelComponentBasic</uiIconPath>
     <castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>600</WorkToBuild>
-      <Flammability>1</Flammability>
-      <Mass>15</Mass>
-    </statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
 
     <costList>
       <WoodLog>30</WoodLog>
@@ -305,5 +363,129 @@
     </comps>
   </ThingDef>
 
+  <ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_ShelfEmpty</defName>
+    <label>empty shelf</label>
+    <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/ShelfEmpty</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <uiIconPath>Storage/ShelfEmpty_north</uiIconPath>
+    
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>65</costStuffCount>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>12</Mass>
+      <WorkToBuild>900</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+
+    <building>
+      <defaultStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationHotKey>Misc12</designationHotKey>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_ShelfPlates</defName>
+    <label>shelf of plates</label>
+    <description>A shelf for reserved for clean plates. Items stored in this will not affect room beauty.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/ShelfPlate</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.70,2.70)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Storage/ShelfPlate_north</uiIconPath>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+
+    <costStuffCount>65</costStuffCount>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>12</Mass>
+      <WorkToBuild>900</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>DankPyon_PlateClean</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationHotKey>Misc12</designationHotKey>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <canOverlapZones>false</canOverlapZones>
+  </ThingDef>
+
+  <comps>
+    <li Class="LWM.DeepStorage.Properties" >
+      <minNumberStacks>1</minNumberStacks>
+      <maxNumberStacks>10</maxNumberStacks>
+      <timeStoringTakes>120</timeStoringTakes>
+      <showContents>false</showContents>
+  <overlayType>None</overlayType>
+    </li>
+  </comps>
   
 </Defs>

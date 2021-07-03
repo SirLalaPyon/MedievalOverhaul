@@ -66,11 +66,13 @@
     </comps>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <hasInteractionCell>true</hasInteractionCell>
+
     <costList>
       <WoodLog>200</WoodLog>
-      <DankPyon_IronIngot>20</DankPyon_IronIngot>
-      <DankPyon_ComponentMedieval>10</DankPyon_ComponentMedieval>
+      <DankPyon_IronIngot>60</DankPyon_IronIngot>
+      <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
     </costList>
+
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <building>
@@ -83,9 +85,9 @@
     </building>
     <repairEffect>ConstructDirt</repairEffect>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-    <!--researchPrerequisites>
-      <li>DankPyon_SiegeEngine</li>
-    </researchPrerequisites-->
+    <researchPrerequisites>
+      <li>DankPyon_SiegeEngines</li>
+    </researchPrerequisites>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <placeWorkers>
       <li>PlaceWorker_ShowTurretRadius</li>
@@ -198,7 +200,8 @@
     <designationCategory>Security</designationCategory>
     <costList>
       <WoodLog>250</WoodLog>
-      <DankPyon_IronIngot>30</DankPyon_IronIngot>
+      <DankPyon_IronIngot>90</DankPyon_IronIngot>
+      <DankPyon_ComponentBasic>15</DankPyon_ComponentBasic>
     </costList>
     <statBases>
       <MaxHitPoints>450</MaxHitPoints>
@@ -226,9 +229,9 @@
     <repairEffect>ConstructDirt</repairEffect>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <specialDisplayRadius>29.9</specialDisplayRadius>
-    <!--researchPrerequisites>
-      <li>DankPyon_SiegeEngine</li>
-    </researchPrerequisites-->
+    <researchPrerequisites>
+      <li>DankPyon_SiegeEngines</li>
+    </researchPrerequisites>
     <placeWorkers>
       <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_TurretTop</li>

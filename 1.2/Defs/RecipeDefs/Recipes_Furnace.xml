@@ -16,7 +16,7 @@
 	</RecipeDef>
   
  <!-- Coal --> 
- 	<RecipeDef>
+ 	<!--RecipeDef>
 		<defName>DankPyon_MakeChunk_Coal</defName>
 		<label>make charcoal from wood</label>
 		<description>Make a batch of coal by burning wood.</description>
@@ -44,15 +44,15 @@
 		<products>
 			<DankPyon_Coal>100</DankPyon_Coal>
 		</products>
-	</RecipeDef>
+	</RecipeDef-->
   
  <!-- Iron Ingots --> 
  	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Iron</defName>
-		<workAmount>600</workAmount>		
-		<label>Smelt Iron Ore into Ingots</label>
-		<jobString>Smelting Iron Ore into Ingots</jobString>
-		<targetCountAdjustment>30</targetCountAdjustment>	
+		<workAmount>100</workAmount>		
+		<label>Smelt an iron ore into an ingot</label>
+		<jobString>Smelting 1 iron ore into 1 ingot.</jobString>
+		<targetCountAdjustment>1</targetCountAdjustment>	
 		<ingredients>
 			<li>
 				<filter>
@@ -60,7 +60,7 @@
 						<li>DankPyon_IronOre</li>
 					</thingDefs>
 				</filter>
-				<count>30</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -69,15 +69,41 @@
 			</thingDefs>
 		</fixedIngredientFilter>
     <products>
-      <DankPyon_IronIngot>10</DankPyon_IronIngot>
+      <DankPyon_IronIngot>1</DankPyon_IronIngot>
     </products>		
   </RecipeDef> 
+
+  <RecipeDef ParentName="DankPyon_SmelterBase">
+	<defName>DankPyon_MakeIngots_IronBulk</defName>
+	<workAmount>600</workAmount>		
+	<label>(Bulk x30) Smelt iron ore into ingots</label>
+	<jobString>Smelting 30 iron ore into ingots</jobString>
+	<targetCountAdjustment>30</targetCountAdjustment>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_IronOre</li>
+				</thingDefs>
+			</filter>
+			<count>30</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_IronOre</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+<products>
+  <DankPyon_IronIngot>30</DankPyon_IronIngot>
+</products>		
+</RecipeDef> 
   
   <RecipeDef ParentName="DankPyon_SmelterBase">
-		<defName>DankPyon_MakeIngots_IronBulk</defName>
+		<defName>DankPyon_MakeIngots_IronExtraBulk</defName>
 		<workAmount>1600</workAmount>		
-		<label>Smelt Iron Ore into Ingots</label>
-		<jobString>Smelting Iron Ore into Ingots</jobString>
+		<label>(Bulk x90) Smelt iron ore into ingots</label>
+		<jobString>Smelting 90 iron ore into ingots.</jobString>
 		<targetCountAdjustment>90</targetCountAdjustment>	
 		<ingredients>
 			<li>
@@ -95,17 +121,17 @@
 			</thingDefs>
 		</fixedIngredientFilter>
     <products>
-      <DankPyon_IronIngot>30</DankPyon_IronIngot>
+      <DankPyon_IronIngot>90</DankPyon_IronIngot>
     </products>		
   </RecipeDef> 
 
  <!-- Gold Ingots --> 
  	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Gold</defName>
-		<workAmount>600</workAmount>		
-		<label>Smelt Gold Ore into Ingots</label>
-		<jobString>Smelting Gold Ore into Ingots</jobString>
-		<targetCountAdjustment>30</targetCountAdjustment>	
+		<workAmount>100</workAmount>		
+		<label>Smelt gold ore into ingots</label>
+		<jobString>Smelting 1 gold ore into an ingot.</jobString>
+		<targetCountAdjustment>1</targetCountAdjustment>	
 		<ingredients>
 			<li>
 				<filter>
@@ -113,7 +139,7 @@
 						<li>DankPyon_GoldOre</li>
 					</thingDefs>
 				</filter>
-				<count>30</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -122,7 +148,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
     <products>
-      <Gold>10</Gold>
+      <Gold>1</Gold>
     </products>		
   </RecipeDef> 
   

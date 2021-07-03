@@ -6,8 +6,8 @@
 		<defName>DankPyon_MakeStoneChunks_Coal</defName>
 		<description>(Bulk x25) Mine from underground Coal Seams to create usable Coal Chunks.</description>		
 		<workAmount>2000</workAmount>		
-		<label>Gather Coal Chunks</label>
-		<jobString>Mining for Coal Chunks.</jobString>
+		<label>(Bulk x25) Gather coal chunks</label>
+		<jobString>Mining for coal chunks.</jobString>
 		<workSpeedStat>MiningSpeed</workSpeedStat>
 		<workSkill>Mining</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
@@ -17,7 +17,9 @@
       <recipeUsers>
         <li>DankPyon_MineShaft</li>	  
       </recipeUsers>		  
-		<products><DankPyon_Coal>25</DankPyon_Coal></products>	
+		<products>
+			<DankPyon_Coal>25</DankPyon_Coal>
+		</products>	
 	</RecipeDef>
 
  <!-- Stone Chunks Base Class --> 

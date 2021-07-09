@@ -13,6 +13,17 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>DankPyon_RoyalRusticFurniture</defName>
+    <label>Imperial Architecture</label>
+    <description>Construct elegant and luxurious furniture adorned with gold befitting for nobles.</description>
+    <baseCost>900</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.7</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
     <defName>DankPyon_RusticStorage</defName>
     <label>Rustic storage</label>
     <description>Construct basic rustic furniture like hay beds, end tables, dressers, and more.</description>
@@ -124,6 +135,20 @@
     <label>Advanced Agriculture</label>
     <description>Research how to sow advance plants</description>
     <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>DankPyon_IntermediateAgriculture</li>
+    </prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.1</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_TreeGriffonBerry</defName>
+    <label>griffon berry</label>
+    <description>A rare luscious fruit that grows on small tree. As per it's given name, the red fruit is a delicacy to griffins and are typically guarded by them.</description>
+    <baseCost>900</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
     <prerequisites>

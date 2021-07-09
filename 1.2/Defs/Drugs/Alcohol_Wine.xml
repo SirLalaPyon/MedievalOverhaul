@@ -4,7 +4,7 @@
     <ThingDef ParentName="DrugBase">
         <defName>DankPyon_Wine</defName>
         <label>wine</label>
-        <description>A classy drink usually drank by the upper class or those who can afford it. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+        <description>Liquor of many faces. Old vintages are dainty drinks intended for connoisseurs and rather finicky tongues - mandatory positions at royal parties, feasts and masquerades. Younger are often sold to peasants in roadside inns, diluted with water as much as innkeepers conscience allows.</description>
         <graphicData>
             <texPath>Drug/Wine</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -12,6 +12,7 @@
         <equippedAngleOffset>-150</equippedAngleOffset>
         <rotatable>false</rotatable>
         <stackLimit>10</stackLimit>
+
         <statBases>
             <DeteriorationRate>0.5</DeteriorationRate>
             <MarketValue>20</MarketValue>
@@ -19,6 +20,7 @@
             <Flammability>0.5</Flammability>
             <Nutrition>0.08</Nutrition>
         </statBases>
+
         <ingestible>
             <foodType>Fluid, Processed, Liquor</foodType>
             <joyKind>Chemical</joyKind>
@@ -47,6 +49,7 @@
                 </li>
             </outcomeDoers>
         </ingestible>
+        
         <equipmentType>Primary</equipmentType>
         <techLevel>Medieval</techLevel>
         <comps>

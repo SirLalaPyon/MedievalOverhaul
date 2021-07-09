@@ -53,7 +53,7 @@
   <ThingDef ParentName="RoughPlantBase">
     <defName>DankPyon_Sugarcane</defName>
     <label>sugarcane</label>
-    <description>PLACEHOLDER</description>
+    <description>Raw sugarcane. Needs to be grineded into sugar to be usuable.</description>
     <graphicData>
       <texPath>Plants/RawSugarcane</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>	
@@ -76,7 +76,7 @@
   <ThingDef ParentName="RoughPlantBase">
     <defName>DankPyon_RawHerb</defName>
     <label>raw herbs</label>
-    <description>PLACEHOLDER</description>
+    <description>Raw herbs.</description>
     <graphicData>
       <texPath>Plants/RawHerb</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>	
@@ -289,6 +289,30 @@
     <statBases>
       <MarketValue>0.44</MarketValue>
       <Nutrition>0.02</Nutrition>
+    </statBases>
+    <ingestible>
+      <tasteThought>AteRawFood</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_GriffonBerry</defName>
+    <label>griffon berry</label>
+    <description>Raw griffon berry.</description>
+    <graphicData>
+      <texPath>Plants/RawGriffonBerry</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>	
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Nutrition>0.05</Nutrition>
     </statBases>
     <ingestible>
       <tasteThought>AteRawFood</tasteThought>

@@ -31,7 +31,7 @@
   <ThingDef ParentName="LeatherBase">
     <defName>DankPyon_Leather_Lindwurm</defName>
     <label>Lindwurm Scales</label>
-    <description>PLACEHOLDER</description>
+    <description>A broad green husks size of a hand, tinting the reflected light emerald. Material both durable and elegant, attracting envious glances.</description>
     <graphicData>
       <texPath>Resources/LindwurmScales</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -49,6 +49,50 @@
       <statFactors>
         <MaxHitPoints>2.0</MaxHitPoints>
         <Beauty>8</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>DankPyon_Leather_Direwolf</defName>
+    <label>wolfskin</label>
+    <description>A strong furry pelt harvested from a vicious direwolf. Harder than regular wolf pelt and insulates well against cold.</description>
+    <graphicData>
+      <texPath>Resources/LeatherDirewolf</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.4</MarketValue>
+      <StuffPower_Armor_Sharp>1.12</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+    </statBases>
+    <stuffProps>
+      <color>(69,63,58)</color>
+      <commonality>0.075</commonality>
+      <statFactors>
+        <Beauty>1.80</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>DankPyon_Leather_Hyena</defName>
+    <label>hyena fur</label>
+    <description>A soft furry pelt harvested from a hyena. It is difficult to pierce and insulates well against heat.</description>
+    <graphicData>
+      <texPath>Resources/LeatherHyena</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.0</MarketValue>
+      <StuffPower_Armor_Sharp>0.93</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(205,171,122)</color>
+      <commonality>0.075</commonality>
+      <statFactors>
+        <Beauty>1.70</Beauty>
       </statFactors>
     </stuffProps>
   </ThingDef>

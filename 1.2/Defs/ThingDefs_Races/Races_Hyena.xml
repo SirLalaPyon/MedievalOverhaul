@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>DankPyon_Hyena</defName>
     <label>Hyena</label>
-    <description>PLACHOLDER</description>
+    <description>A cunning predator, possessing features of felines and canids alike. An easily underestimated creature by those taking their peculiar chuckling gurgles as a playful sign of harmlessness. While a pack of hyenas might hesitate to attack a group of man in the open, they will show no mercy to a lonesome vagabond. Being eaten alive to the accompaniment of satisfied giggles must be a terrible end.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
       <MarketValue>360</MarketValue>
@@ -84,7 +84,7 @@
       <baseHungerRate>0.24</baseHungerRate>
       <baseHealthScale>1.5</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-      <leatherDef>Leather_Wolf</leatherDef>
+      <leatherDef>DankPyon_Leather_Hyena</leatherDef>
       <wildness>0.60</wildness>
       <manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.20</manhunterOnDamageChance>

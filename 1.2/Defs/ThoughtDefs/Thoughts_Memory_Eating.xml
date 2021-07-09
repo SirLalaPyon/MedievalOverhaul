@@ -1,12 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- ======= Griffon Berry thoughts ========= -->
+
+
+	<ThoughtDef>	
+		<defName>DankPyon_AteGriffonBerry</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.4</durationDays>
+		<stages>
+			<li>
+				<label>griffon berry</label>
+				<description>PLACEHOLDER</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+
 	<!-- ======= Drinks based thoughts ========= -->
 
 
 	<ThoughtDef>	
 		<defName>DankPyon_DrankAle</defName>
-		<hediff>DrankBeer</hediff>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.4</durationDays>

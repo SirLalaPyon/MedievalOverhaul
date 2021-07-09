@@ -4,7 +4,7 @@
 	<BiomeDef>
 		<defName>DankPyon_DarkForest</defName>
 		<label>Dark Forest</label>
-		<description>A forest dominated by tall and ancient growth due to its fertile nature. Frequently rainy and overcast. Many species of animals live in these woods. Snow slows winter travel significantly.</description>
+		<description>An ancient wilderness tall like no other, a place of dim light and dense, overwhelming vegetation. Commonly used to procure broad variety of cautionary tales for mischievous children. And justly so. Not many live long enough to carry this knowledge out of the forest, since the forest itself wishes to remain undiscovered. And it just so happens, this particular thicket has an arsenal of gnarly thorns and amply clawed paws willing to fulfill that wish.</description>
 		<workerClass>DankPyon.BiomeWorker_DarkForest</workerClass>
 		<animalDensity>2.8</animalDensity>
 		<plantDensity>0.85</plantDensity>
@@ -114,7 +114,7 @@
 			<DankPyon_GreatOak>0.05</DankPyon_GreatOak>
 			<DankPyon_GreatIter>0.05</DankPyon_GreatIter>
 			<DankPyon_GreatFir>0.15</DankPyon_GreatFir>
-			<DankPyon_GreatWillow>0.15</DankPyon_GreatWillow>
+			<!--DankPyon_GreatWillow>0.15</DankPyon_GreatWillow-->
 			<Plant_TreeOak>0.25</Plant_TreeOak>
 			<Plant_TreeMaple>0.25</Plant_TreeMaple>
 			<Plant_TreePoplar>0.35</Plant_TreePoplar>
@@ -135,6 +135,7 @@
 			<Boomalope>0.2</Boomalope>
 			<Elk>0.3</Elk>
 			<Wolf_Timber>0.04</Wolf_Timber>
+			<DankPyon_Direwolf>0.04</DankPyon_Direwolf>
 			<Fox_Red>0.04</Fox_Red>
 			<Megasloth>0.04</Megasloth>
 			<Bear_Grizzly>0.022</Bear_Grizzly>

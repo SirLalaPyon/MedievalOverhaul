@@ -57,6 +57,7 @@
       <li>Make_Pemmican</li>
       <li>Make_PemmicanBulk</li>
     </recipes>
+    
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -474,7 +475,6 @@
     </building>
     <designationHotKey>Misc3</designationHotKey>
     <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <techLevel>Medieval</techLevel>
@@ -530,7 +530,6 @@
     </building>
     <designationHotKey>Misc3</designationHotKey>
     <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <techLevel>Medieval</techLevel>
@@ -874,6 +873,9 @@
       </damageData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
     <passability>PassThroughOnly</passability>
     <uiIconScale>0.8</uiIconScale>
     <statBases>
@@ -1070,7 +1072,6 @@
       <li>DankPyon_MakeIngots_GoldBulk</li>
       <li>DankPyon_MakeIngots_Steel</li>
       <li>DankPyon_MakeIngots_SteelBulk</li>
-      <li>DankPyon_MakeChunk_Coal</li>
       <li>ExtractMetalFromSlag</li>
       <li>SmeltWeapon</li>
       <li>SmeltApparel</li>
@@ -1119,7 +1120,7 @@
       <heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
     </building>
     <researchPrerequisites>
-      <li>DankPyon_Smithing</li>
+      <li>Smithing</li>
     </researchPrerequisites>
   </ThingDef>
   
@@ -1180,7 +1181,7 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>DankPyon_Smithing</li>
+      <li>Smithing</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -1202,6 +1203,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+
     <costStuffCount>250</costStuffCount>
     <costList>
       <DankPyon_IronIngot>60</DankPyon_IronIngot>
@@ -1209,6 +1211,7 @@
     <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
+
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -1224,7 +1227,7 @@
     <pathCost>50</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,0)</interactionCellOffset>
-	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	  <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <surfaceType>Item</surfaceType>
     <inspectorTabs>
       <li>ITab_Bills</li>
@@ -1243,7 +1246,7 @@
 
     <designationHotKey>Misc3</designationHotKey>
     <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <!--li>PlaceWorker_ShowFacilitiesConnections</li-->
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <researchPrerequisites>

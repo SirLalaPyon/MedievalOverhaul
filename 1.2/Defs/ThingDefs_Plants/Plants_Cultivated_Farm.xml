@@ -364,7 +364,7 @@
   <ThingDef ParentName="PlantBase">
     <defName>DankPyon_Plant_Tomatoes</defName>
     <label>tomato plant</label>
-    <description>PLACEHOLDER</description>
+    <description>A thick, leafy green vine which gives birth to many large bulbous red fruits. While weither it exists as a fruit or a vegetable is a hotly debated topic, what is known is that the tomatoes it creates are juicy and delicious.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
@@ -483,7 +483,7 @@
   <ThingDef ParentName="TreeBase">
     <defName>DankPyon_Tree_Apple</defName>
     <label>apple tree</label>
-    <description>PLACEHOLDER</description>
+    <description>A hardwood tree known for its wonderfully sweet, bright-red fruits, which are good both on their own and mixed into a variety of desserts.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>1.5</Nutrition>
@@ -520,7 +520,7 @@
   <ThingDef ParentName="TreeBase">
     <defName>DankPyon_Tree_Lemon</defName>
     <label>lemon tree</label>
-    <description>PLACEHOLDER</description>
+    <description>A small hardwood tree which gives way to bitter-tasting yellow citrus fruits. Lemons are often consumed for their dietary benefits and to prevent diseases such as Scurvy, as well as often being used as an ingredient or glaze for many different prepared meals.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>1.5</Nutrition>
@@ -556,19 +556,22 @@
 
 <!--=========================== Griffon Berry ==============================-->
 
-  <ThingDef ParentName="PlantBase">
-    <defName>DankPyon_Plant_GriffonBerry</defName>
-    <label>Griffon Berry Vine</label>
-    <description>PLACEHOLDER</description>
+  <ThingDef ParentName="TreeBase">
+    <defName>DankPyon_Tree_GriffonBerry</defName>
+    <label>griffon berry tree</label>
+    <description>A rare luscious fruit that grows on small tree. As per it's given name, the red fruit is a delicacy to griffins and are typically guarded by them.</description>
+    
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Nutrition>0.35</Nutrition>
+      <Beauty>6</Beauty>
+      <Nutrition>1.25</Nutrition>
     </statBases>
+
     <graphicData>
-      <texPath>Plants/GriffonBerryPlant</texPath>
+      <texPath>Plants/TreeGriffonBerry</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <shadowData>
-        <volume>(0.1, 0.2, 0.1)</volume>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
       </shadowData>
     </graphicData>
     <selectable>true</selectable>
@@ -577,10 +580,10 @@
     <ingestible />
     <plant>
       <fertilitySensitivity>0.15</fertilitySensitivity>
-      <growDays>18</growDays>
+      <growDays>33</growDays>
       <dieIfLeafless>true</dieIfLeafless>
-      <immatureGraphicPath>Plants_Immature/GriffonBerryPlant</immatureGraphicPath>
-      <harvestYield>14</harvestYield>
+      <immatureGraphicPath>Plants_Immature/TreeGriffonBerry</immatureGraphicPath>
+      <harvestYield>9</harvestYield>
       <harvestTag>Standard</harvestTag>
       <harvestAfterGrowth>0.3</harvestAfterGrowth>
       <harvestedThingDef>DankPyon_GriffonBerry</harvestedThingDef>
@@ -589,9 +592,12 @@
         <li>DankPyon_Research_GriffonBerry</li>
       </sowResearchPrerequisites-->	 
       <sowTags>
-				<li>DankPyon_Post</li>
-      </sowTags>      
-      <visualSizeRange>0.6~1.1</visualSizeRange>
+				<li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites Inherit="False">
+        <li>DankPyon_TreeGriffonBerry</li>
+      </sowResearchPrerequisites>      
+      <visualSizeRange>0.8~2.0</visualSizeRange>
       <topWindExposure>0.1</topWindExposure>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>

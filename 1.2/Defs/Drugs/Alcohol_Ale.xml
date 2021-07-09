@@ -4,7 +4,7 @@
   <ThingDef ParentName="DrugBase">
     <defName>DankPyon_Ale</defName>
     <label>ale</label>
-    <description>Good ol' ale, A perfect drink to blow your sorrows away. Excessive consumption can lead to alcohol blackouts and, over time, addiction.</description>
+    <description>Fermented beverage of deep golden colouring, a real lifeblood of social life in these parts. Few mugs in the tavern are all what's needed to forget about hardships of field work, dangers awaiting on the road or ill-considered marriage vows. Let the warm haze of drunkenness embrace you, no need to worry about anything. Not today.</description>
     <descriptionHyperlinks>
       <HediffDef>AlcoholHigh</HediffDef>
       <HediffDef>AlcoholTolerance</HediffDef>
@@ -13,6 +13,7 @@
       <HediffDef>Cirrhosis</HediffDef>
       <HediffDef>ChemicalDamageModerate</HediffDef>
     </descriptionHyperlinks>
+
     <graphicData>
       <texPath>Drug/Ale</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -20,6 +21,7 @@
     <equippedAngleOffset>-150</equippedAngleOffset>
     <rotatable>false</rotatable>
     <stackLimit>25</stackLimit>
+
     <statBases>
       <DeteriorationRate>0.5</DeteriorationRate>
       <MarketValue>12</MarketValue>
@@ -27,6 +29,8 @@
       <Flammability>0.5</Flammability>
       <Nutrition>0.08</Nutrition>
     </statBases>
+
+    <techLevel>Medieval</techLevel>
     <ingestible>
       <foodType>Fluid, Processed, Liquor</foodType>
       <joyKind>Chemical</joyKind>
@@ -57,7 +61,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
-    <techLevel>Neolithic</techLevel>
+
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>Alcohol</chemical>

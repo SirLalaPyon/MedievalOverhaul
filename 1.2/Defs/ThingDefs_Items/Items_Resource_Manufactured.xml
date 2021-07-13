@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_ComponentBasic</defName>
-    <label>Basic component</label>
+    <label>basic component</label>
     <description>Miscellaneous gears, wheels, nails. Necessary for assembling complex contraptions.</description>
     <graphicData>
       <texPath>Resources/ComponentMedieval</texPath>
@@ -32,7 +32,7 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_Paper</defName>
-    <label>Paper</label>
+    <label>paper</label>
     <description>An empty sheet of paper. Useful for scribbling or writing notes.</description>
     <graphicData>
       <texPath>Resources/Paper</texPath>
@@ -53,11 +53,35 @@
     </thingCategories>
   </ThingDef>
 
+  <!--=============== Tannin Liquor ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_TanningLiquor</defName>
+    <label>tanning liquor</label>
+    <description>Tannins leeched from various natural sources have been concentrated into this liquor. It can be used to process raw hides into tanned leathers.</description>
+    <graphicData>
+      <texPath>Resources/Tannin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.2</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.05</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+  </ThingDef>
+
   <!--=============== Ballista Bolts ====================-->
 
   <ThingDef ParentName="MakeableShellBase">
     <defName>DankPyon_BallistaBolt</defName>
-    <label>Ballista Bolts</label>
+    <label>ballista bolts</label>
     <description>A heavy bolt used by ballistas.</description>
     <graphicData>
       <texPath>Resources/BallistaBolt</texPath>

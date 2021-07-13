@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Leather_Plain"]/label</xpath>
+				<value>
+					<label>leather</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Leather_Bear"]/label</xpath>
+				<value>
+					<label>thick leather</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Leather_Light"]/label</xpath>
+				<value>
+					<label>soft fur</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Leather_Bluefur"]/label</xpath>
+				<value>
+					<label>heavy fur</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Leather_Lizard"]/label</xpath>
+				<value>
+					<label>scale leather</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Leather_Bird"]/label</xpath>
+				<value>
+					<label>bird leather</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Leather_Thrumbo"]/label</xpath>
+				<value>
+					<label>thrumbo fur</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1025,6 +1025,64 @@
     </placeWorkers>
     <techLevel>Medieval</techLevel>
   </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>DankPyon_TanningRack</defName>
+    <label>tanning rack</label>
+    <description>A rack for treating raw hides to become useful leathers.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Production/Workbench</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(2.8, 0.35, 0.59)</volume>
+        <offset>(0, 0, 0.08)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+
+	  <costStuffCount>60</costStuffCount>
+	  <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <size>(2,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>DankPyon_LeatherCrafting</li>
+    </researchPrerequisites>
+  </ThingDef>
 	
 	<ThingDef ParentName="BenchBase">
     <defName>DankPyon_Furnace</defName>

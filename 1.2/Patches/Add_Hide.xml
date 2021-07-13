@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<!-- Remove leather def from all animals -->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef/race/leatherDef</xpath>
+			</li>
+
+			<!--=============== Start of adding pelts to butcher products ===============-->
+			<!--========== WildCanines ==========-->
+			<!-- Fox_Arctic -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Fox_Arctic"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltMedium>1</DankPyon_Hide_SoftPeltMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Fox_Red -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Fox_Red"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltMedium>1</DankPyon_Hide_SoftPeltMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Fox_Fennec -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Fox_Fennec"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltMedium>1</DankPyon_Hide_SoftPeltMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Warg -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Warg"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_WolfTimber>1</DankPyon_Hide_WolfTimber>
+					</butcherProducts>
+				</value>
+			</li>
+
+			<!--========== Tropical ==========-->
+			<!-- Boomalope -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Boomalope"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideLarge>1</DankPyon_Hide_HideLarge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Monkey -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Monkey"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideSmall>1</DankPyon_Hide_HideSmall>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Cobra -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Cobra"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_ScaleTiny>1</DankPyon_Hide_ScaleTiny>
+					</butcherProducts>
+				</value>
+			</li>
+
+			<!--========== Temperate ==========-->
+			<!-- Tortoise -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Tortoise"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_ScaleMedium>1</DankPyon_Hide_ScaleMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- WildBoar -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "WildBoar"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideLarge>1</DankPyon_Hide_HideLarge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Caribou -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Caribou"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideHuge>1</DankPyon_Hide_HideHuge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Elk -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Elk"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideHuge>1</DankPyon_Hide_HideHuge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Ibex -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Ibex"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideMedium>1</DankPyon_Hide_HideMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Deer -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Deer"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideLarge>1</DankPyon_Hide_HideLarge>
+					</butcherProducts>
+				</value>
+			</li>
+
+			<!--========== Rodentlike ==========-->
+			<!-- Raccoon -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Raccoon"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltSmall>1</DankPyon_Hide_SoftPeltSmall>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Boomrat -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Boomrat"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltTiny>1</DankPyon_Hide_SoftPeltTiny>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Chinchilla -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Chinchilla"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltTiny>1</DankPyon_Hide_SoftPeltTiny>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Capybara -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Capybara"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideSmall>1</DankPyon_Hide_HideSmall>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Alphabeaver -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Alphabeaver"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltSmall>1</DankPyon_Hide_SoftPeltSmall>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Squirrel -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Squirrel"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltTiny>1</DankPyon_Hide_SoftPeltTiny>
+					</butcherProducts>
+				</value>
+			</li>
+
+			<!--========== Pet ==========-->
+			<!-- Cat -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Cat"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltTiny>1</DankPyon_Hide_SoftPeltTiny>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- LabradorRetriever -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "LabradorRetriever"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideMedium>1</DankPyon_Hide_HideMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Husky -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Husky"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideLarge>1</DankPyon_Hide_HideLarge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- YorkshireTerrier -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "YorkshireTerrier"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideSmall>1</DankPyon_Hide_HideSmall>
+					</butcherProducts>
+				</value>
+			</li>
+
+			<!--========== Hare ==========-->
+			<!-- Snowhare -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Snowhare"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltTiny>1</DankPyon_Hide_SoftPeltTiny>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Hare -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Hare"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltTiny>1</DankPyon_Hide_SoftPeltTiny>
+					</butcherProducts>
+				</value>
+			</li>
+
+			<!--========== Farm ==========-->
+			<!-- Donkey -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Donkey"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideLarge>1</DankPyon_Hide_HideLarge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- GuineaPig -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "GuineaPig"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltTiny>1</DankPyon_Hide_SoftPeltTiny>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Yak -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Yak"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideHuge>1</DankPyon_Hide_HideHuge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Horse -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Horse"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideHuge>1</DankPyon_Hide_HideHuge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Sheep -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Sheep"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideMedium>1</DankPyon_Hide_HideMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Goose -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Goose"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_BirdSmall>1</DankPyon_Hide_BirdSmall>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Goat -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Goat"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideMedium>1</DankPyon_Hide_HideMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Alpaca -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Alpaca"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideLarge>1</DankPyon_Hide_HideLarge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Cow -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Cow"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideHuge>1</DankPyon_Hide_HideHuge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Pig -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Pig"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideLarge>1</DankPyon_Hide_HideLarge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!--========== Birds ==========-->
+			<!-- Turkey -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Turkey"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_BirdMedium>1</DankPyon_Hide_BirdMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Ostrich -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Ostrich"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_BirdLarge>1</DankPyon_Hide_BirdLarge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Emu -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Emu"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_BirdLarge>1</DankPyon_Hide_BirdLarge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Cassowary -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Cassowary"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_BirdLarge>1</DankPyon_Hide_BirdLarge>
+					</butcherProducts>
+				</value>
+			</li>
+
+			<!--========== Big Cats ==========-->
+			<!-- Lynx -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Lynx"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_SoftPeltLarge>1</DankPyon_Hide_SoftPeltLarge>
+					</butcherProducts>
+				</value>
+			</li>
+
+			<!--========== Arid ==========-->
+			<!-- Gazelle -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Gazelle"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideMedium>1</DankPyon_Hide_HideMedium>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Dromedary -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Dromedary"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_HideHuge>1</DankPyon_Hide_HideHuge>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Iguana -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Iguana"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_ScaleTiny>1</DankPyon_Hide_ScaleTiny>
+					</butcherProducts>
+				</value>
+			</li>
+
+			<!--=============== Ruggable ===============-->
+			<!-- Panther -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Panther"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_Panther>1</DankPyon_Hide_Panther>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Cougar -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Cougar"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_Cougar>1</DankPyon_Hide_Cougar>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Megasloth -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Megasloth"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_Megasloth>1</DankPyon_Hide_Megasloth>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Elephant -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Elephant"]/lifeStages/li[//thing = "ElephantTusk"]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_Elephant>1</DankPyon_Hide_Elephant>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Rhinoceros -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Rhinoceros"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_Rhinoceros>1</DankPyon_Hide_Rhinoceros>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Muffalo -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Muffalo"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherBodyPart>
+						<bodyPartGroup>Torso</bodyPartGroup>
+						<thing>DankPyon_Hide_Muffalo</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
+				</value>
+			</li>
+			<!-- Bison -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Bison"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_Bison>1</DankPyon_Hide_Bison>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- BearGrizzly -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Bear_Grizzly"]/lifeStages/li[2]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_BearGrizzly>1</DankPyon_Hide_BearGrizzly>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- Thrumbo -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName = "Thrumbo"]/lifeStages/li[//thing = "ThrumboHorn"]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_Thrumbo>1</DankPyon_Hide_Thrumbo>
+					</butcherProducts>
+				</value>
+			</li>
+			<!-- HumanFlesh -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Human"]</xpath>
+				<value>
+					<butcherProducts>
+						<DankPyon_Hide_Human>1</DankPyon_Hide_Human>
+					</butcherProducts>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!-- Change the leather amounts on the following creatures. First we remove this tag in case some other mod may have added it -->
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Rat" or defName="Turkey" or defName="Bear_Grizzly" or defName="Bear_Polar"]/statBases/LeatherAmount</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Rat" or defName="Turkey"]/statBases</xpath>
+		<value>
+			<LeatherAmount>0</LeatherAmount>
+		</value>
+	</Operation>
+
+</Patch>	

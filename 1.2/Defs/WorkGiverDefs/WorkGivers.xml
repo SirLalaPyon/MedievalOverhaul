@@ -134,4 +134,21 @@
           <prioritizeSustains>true</prioritizeSustains>
         </WorkGiverDef>
 
+        <WorkGiverDef>
+          <defName>DankPyon_DoBillsTanningRack</defName>
+          <label>treat hide</label>
+          <giverClass>WorkGiver_DoBill</giverClass>
+          <workType>Crafting</workType>
+          <priorityInType>70</priorityInType>
+            <fixedBillGiverDefs>
+              <li>DankPyon_TanningRack</li>
+            </fixedBillGiverDefs>
+          <verb>treat hide</verb>
+          <gerund>treating hide at</gerund>
+          <requiredCapacities>
+              <li>Manipulation</li>
+          </requiredCapacities>
+            <prioritizeSustains>true</prioritizeSustains>
+          </WorkGiverDef>
+
 </Defs>

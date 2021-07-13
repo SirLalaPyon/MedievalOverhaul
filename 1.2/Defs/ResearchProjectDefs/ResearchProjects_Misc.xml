@@ -25,7 +25,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_RusticStorage</defName>
-    <label>Rustic storage</label>
+    <label>rustic storage</label>
     <description>Construct basic rustic furniture like hay beds, end tables, dressers, and more.</description>
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -39,7 +39,18 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_CarrierBirds</defName>
-    <label>Carrier birds</label>
+    <label>carrier birds</label>
+    <description>Research how to build powerful siege machinations for sheer ordinance</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_LeatherCrafting</defName>
+    <label>leather crafting</label>
     <description>Research how to build powerful siege machinations for sheer ordinance</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -52,7 +63,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_Engineering</defName>
-    <label>Engineering</label>
+    <label>engineering</label>
     <description>Research how to craft basic components to build complex contraptions</description>
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -63,7 +74,7 @@
   
   <ResearchProjectDef>
     <defName>DankPyon_Mining</defName>
-    <label>Mining</label>
+    <label>mining</label>
     <description>Learn safety precautions and the proper way to build a mineshaft to mine resources and stones.</description>
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -77,7 +88,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_SiegeEngines</defName>
-    <label>Siege Engine</label>
+    <label>siege engine</label>
     <description>Research how to build powerful siege machinations for sheer ordinance</description>
     <baseCost>2000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -92,7 +103,7 @@
   <!--=========================== Agriculture ==============================-->
   <ResearchProjectDef>
     <defName>DankPyon_FruitTreeSowing</defName>
-    <label>Fruit Tree sowing</label>
+    <label>fruit tree sowing</label>
     <description>Research how to sow basic plants</description>
     <baseCost>500</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -107,7 +118,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_BasicAgriculture</defName>
-    <label>Basic Agriculture</label>
+    <label>basic agriculture</label>
     <description>Research how to sow basic plants</description>
     <baseCost>300</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -118,7 +129,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_IntermediateAgriculture</defName>
-    <label>Intermediate Agriculture</label>
+    <label>intermediate agriculture</label>
     <description>Research how to sow intermediate plants</description>
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -132,7 +143,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_AdvancedAgriculture</defName>
-    <label>Advanced Agriculture</label>
+    <label>advanced agriculture</label>
     <description>Research how to sow advance plants</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -162,8 +173,8 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_BasicCooking</defName>
-    <label>Basic Cooking</label>
-    <description>Learn basic recipes of dishes</description>
+    <label>basic cooking</label>
+    <description>Learn basic recipes of dishes.</description>
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
@@ -173,8 +184,8 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_IntermediateCooking</defName>
-    <label>Intermediate Cooking</label>
-    <description>Learn intermediate recipes of dishes</description>
+    <label>intermediate cooking</label>
+    <description>Learn intermediate recipes of dishes.</description>
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
@@ -187,8 +198,8 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_AdvancedCooking</defName>
-    <label>Advanced Cooking</label>
-    <description>Learn advanced recipes of dishes</description>
+    <label>advanced cooking</label>
+    <description>Learn advanced recipes of dishes.</description>
     <baseCost>800</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
@@ -203,7 +214,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_FoodPreservation</defName>
-    <label>Food Preservation</label>
+    <label>food preservation</label>
     <description>Build drying racks or apply salt to meat to remove the moisture of meats, prolonging their shelf life.</description>
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -217,7 +228,7 @@
   
   <ResearchProjectDef>
     <defName>DankPyon_CheeseMaking</defName>
-    <label>Cheese making</label>
+    <label>cheese making</label>
     <description>Make Cheese</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -231,8 +242,8 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_Smoker</defName>
-    <label>Smoker</label>
-    <description>Research how to smoke meat to prolong shelf life and add rustic flavours to meals</description>
+    <label>smoker</label>
+    <description>Learn how to smoke fresh meat into dried slabs of jerky to prolong shelf life and add rustic flavours to meals.</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
@@ -247,8 +258,8 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_Grill</defName>
-    <label>Grill</label>
-    <description>Research how to smoke meat to prolong shelf life and add rustic flavours to meals</description>
+    <label>grill</label>
+    <description>Learn how to smoke fresh meat into dried slabs of jerky to prolong shelf life and add rustic flavours to meals</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
@@ -261,7 +272,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_StewPot</defName>
-    <label>Stew pot</label>
+    <label>stew pot</label>
     <description>Research how to smoke meat to prolong shelf life and add rustic flavours to meals</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -275,8 +286,8 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_Oven</defName>
-    <label>Oven</label>
-    <description>Research how to smoke meat to prolong shelf life and add rustic flavours to meals</description>
+    <label>oven</label>
+    <description>Learn how to smoke fresh meat to prolong shelf life and add rustic flavours to meals.</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
@@ -286,7 +297,5 @@
       <li>DankPyon_BasicCooking</li>
     </prerequisites>    
   </ResearchProjectDef>
-
-
   
 </Defs>

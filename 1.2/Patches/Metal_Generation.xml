@@ -49,7 +49,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MineablePlasteel" or defName = "MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
+				<xpath>/Defs/ThingDef[defName = "MineablePlasteel" or defName = "MineableComponentsIndustrial" or defName = "MineableSilver"]/building/mineableScatterCommonality</xpath>
 				<value>
 					<mineableScatterCommonality>0</mineableScatterCommonality>
 				</value>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsUseCraftingSpot"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Owl_TanningVat</li>
+		</value>
+	</Operation>
+</Patch>	

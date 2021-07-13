@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>
+			Defs/ThingDef[defName="Leather_Dog"] |
+			Defs/ThingDef[defName="Leather_Wolf"] |
+			Defs/ThingDef[defName="Leather_Panthera"] |
+			Defs/ThingDef[defName="Leather_Camel"] |
+			Defs/ThingDef[defName="Leather_Pig"] |
+			Defs/ThingDef[defName="Leather_Elephant"] |
+			Defs/ThingDef[defName="Leather_Rhinoceros"] |
+			Defs/ThingDef[defName="Leather_Chinchilla"] |
+			Defs/ThingDef[defName="Leather_Fox"] |
+			Defs/ThingDef[defName="Leather_GuineaPig"] |
+			Defs/ThingDef[defName="Leather_Heavy"]
+		</xpath>
+	</Operation>
+</Patch>

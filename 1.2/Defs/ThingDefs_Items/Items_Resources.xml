@@ -387,6 +387,35 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
+
+  <!--=============== Iron ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_SilverOre</defName>
+    <label>silver ore</label>
+    <description>A raw silver ore, needs to be processed into ingots at a smelter to be usable.</description>
+    <graphicData>
+      <texPath>Resources/SilverOre</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>4</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.5</deepCommonality>
+    <deepCountPerPortion>70</deepCountPerPortion>
+    <deepLumpSizeRange>2~10</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
   
   <!--=============== Gold Ore ====================-->
   

@@ -506,45 +506,55 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Panther"]/lifeStages/li[2]</xpath>
 				<value>
-					<butcherProducts>
-						<DankPyon_Hide_Panther>1</DankPyon_Hide_Panther>
-					</butcherProducts>
+					</butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_Panther</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
 				</value>
 			</li>
 			<!-- Cougar -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Cougar"]/lifeStages/li[2]</xpath>
 				<value>
-					<butcherProducts>
-						<DankPyon_Hide_Cougar>1</DankPyon_Hide_Cougar>
-					</butcherProducts>
+					</butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_Cougar</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
 				</value>
 			</li>
 			<!-- Megasloth -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Megasloth"]/lifeStages/li[2]</xpath>
 				<value>
-					<butcherProducts>
-						<DankPyon_Hide_Megasloth>1</DankPyon_Hide_Megasloth>
-					</butcherProducts>
+					</butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_Megasloth</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
 				</value>
 			</li>
 			<!-- Elephant -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Elephant"]/lifeStages/li[//thing = "ElephantTusk"]</xpath>
 				<value>
-					<butcherProducts>
-						<DankPyon_Hide_Elephant>1</DankPyon_Hide_Elephant>
-					</butcherProducts>
+					</butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_Elephant</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
 				</value>
 			</li>
 			<!-- Rhinoceros -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Rhinoceros"]/lifeStages/li[2]</xpath>
 				<value>
-					<butcherProducts>
-						<DankPyon_Hide_Rhinoceros>1</DankPyon_Hide_Rhinoceros>
-					</butcherProducts>
+					</butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_Rhinoceros</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
 				</value>
 			</li>
 			<!-- Muffalo -->
@@ -552,7 +562,7 @@
 				<xpath>Defs/PawnKindDef [defName = "Muffalo"]/lifeStages/li[2]</xpath>
 				<value>
 					<butcherBodyPart>
-						<bodyPartGroup>Torso</bodyPartGroup>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
 						<thing>DankPyon_Hide_Muffalo</thing>
 						<allowFemale>true</allowFemale>
 					</butcherBodyPart>
@@ -562,36 +572,44 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Bison"]/lifeStages/li[2]</xpath>
 				<value>
-					<butcherProducts>
-						<DankPyon_Hide_Bison>1</DankPyon_Hide_Bison>
-					</butcherProducts>
+					</butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_Bison</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
 				</value>
 			</li>
 			<!-- BearGrizzly -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Bear_Grizzly"]/lifeStages/li[2]</xpath>
 				<value>
-					<butcherProducts>
-						<DankPyon_Hide_BearGrizzly>1</DankPyon_Hide_BearGrizzly>
-					</butcherProducts>
+					</butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_BearGrizzly</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
 				</value>
 			</li>
 			<!-- Thrumbo -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Thrumbo"]/lifeStages/li[//thing = "ThrumboHorn"]</xpath>
 				<value>
-					<butcherProducts>
-						<DankPyon_Hide_Thrumbo>1</DankPyon_Hide_Thrumbo>
-					</butcherProducts>
+					</butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_Thrumbo</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
 				</value>
 			</li>
 			<!-- HumanFlesh -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "Human"]</xpath>
 				<value>
-					<butcherProducts>
-						<DankPyon_Hide_Human>1</DankPyon_Hide_Human>
-					</butcherProducts>
+					</butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_Human</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
 				</value>
 			</li>
 		</operations>

@@ -536,7 +536,7 @@
 				</value>
 			</li>
 			<!-- Elephant -->
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/PawnKindDef [defName = "Elephant"]/lifeStages/li[3]/butcherBodyPart</xpath>
 				<value>
 					<butcherBodyPart>

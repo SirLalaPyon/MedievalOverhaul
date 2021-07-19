@@ -2,8 +2,8 @@
 <Defs>
 
 	<TheEndTimes_Beastmen.ElementSpawnDef>
-		<defName>RH_TET_Beastmen_SpawnGreatOakDead</defName>
-		<thingDef>RH_TET_Beastmen_GreatOakDead</thingDef>
+		<defName>DankPyon_SpawnGreatOakDead</defName>
+		<thingDef>DankPyon_Beastmen_GreatOakDead</thingDef>
 		<allowOnWater>false</allowOnWater>
 		<terrainValidationDisallowed/>
 		<terrainValidationAllowed>
@@ -11,7 +11,7 @@
 		</terrainValidationAllowed>
 		<forbiddenBiomes/>
 		<allowedBiomes>
-			<li>RH_TET_Beastmen_OldGrowthForest</li>
+			<li>DankPyon_DarkForest</li>
 		</allowedBiomes>
 	</TheEndTimes_Beastmen.ElementSpawnDef>
 

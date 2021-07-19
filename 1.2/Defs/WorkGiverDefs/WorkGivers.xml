@@ -19,6 +19,23 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
 
+  <WorkGiverDef>
+    <defName>DankPyon_DoBillsSpinningWheel</defName>
+    <label>spin cotton</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>110</priorityInType>
+      <fixedBillGiverDefs>
+        <li>DankPyon_SpinningWheel</li>
+      </fixedBillGiverDefs>
+    <verb>spin</verb>
+    <gerund>spinning at</gerund>
+    <requiredCapacities>
+        <li>Manipulation</li>
+    </requiredCapacities>
+      <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
  <WorkGiverDef>
     <defName>DankPyon_DoBillsMillstone</defName>
     <label>grind bulk grains</label>

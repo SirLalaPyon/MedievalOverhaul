@@ -369,7 +369,7 @@
 				<value>
 					<butcherBodyPart>
 						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-						<thing>DankPyon_Hide_Medium</thing>
+						<thing>DankPyon_Hide_HideMedium</thing>
 						<allowFemale>true</allowFemale>
 					</butcherBodyPart>
 				</value>
@@ -603,7 +603,7 @@
 			</li>
 			<!-- HumanFlesh -->
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "Human"]</xpath>
+				<xpath>Defs/ThingDef[defName = "Human"]/lifeStages/li[5]</xpath>
 				<value>
 					<butcherBodyPart>
 						<bodyPartGroup>HeadAttackTool</bodyPartGroup>

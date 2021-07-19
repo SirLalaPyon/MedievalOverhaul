@@ -79,6 +79,7 @@
 		<workSkill>Crafting</workSkill>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
+		<unfinishedThingDef>DankPyon_UnfinishedHide</unfinishedThingDef>
 		<recipeUsers>
 			<li>DankPyon_TanningRack</li>
 		</recipeUsers>
@@ -226,6 +227,16 @@
 						<li>DankPyon_Hide_HeavyPeltLarge</li>
 						<li>DankPyon_Hide_ScaleLarge</li>
 						<li>DankPyon_Hide_BirdLarge</li>
+
+						<li>DankPyon_Hide_Hyena</li>
+						<li>DankPyon_Hide_WolfDirewolf</li>
+						<li>DankPyon_Hide_WolfTimber</li>
+						<li>DankPyon_Hide_WolfArctic</li>
+						<li>DankPyon_Hide_Cougar</li>
+						<li>DankPyon_Hide_Panther</li>
+
+						<li>DankPyon_Hide_Human</li>
+
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -248,6 +259,16 @@
 				<li>DankPyon_Hide_ScaleLarge</li>
 				<li>DankPyon_Hide_BirdLarge</li>
 				<li>DankPyon_TanningLiquor</li>
+
+				<li>DankPyon_Hide_Hyena</li>
+				<li>DankPyon_Hide_WolfDirewolf</li>
+				<li>DankPyon_Hide_WolfTimber</li>
+				<li>DankPyon_Hide_WolfArctic</li>
+				<li>DankPyon_Hide_Cougar</li>
+				<li>DankPyon_Hide_Panther</li>
+
+				<li>DankPyon_Hide_Human</li>
+
 			</thingDefs>
 		</fixedIngredientFilter>
 		<specialProducts>
@@ -269,6 +290,17 @@
 						<li>DankPyon_Hide_HeavyPeltHuge</li>
 						<li>DankPyon_Hide_ScaleHuge</li>
 						<li>DankPyon_Hide_BirdHuge</li>
+						
+						<li>DankPyon_Hide_Muffalo</li>
+						<li>DankPyon_Hide_Bison</li>
+						<li>DankPyon_Hide_BearGrizzly</li>
+						<li>DankPyon_Hide_BearPolar</li>
+						<li>DankPyon_Hide_Rhinoceros</li>
+						<li>DankPyon_Hide_Megasloth</li>
+						<li>DankPyon_Hide_Elephant</li>
+						<li>DankPyon_Hide_Muffalo</li>
+						<li>DankPyon_Hide_Rox</li>
+						<li>DankPyon_Hide_Thrumbo</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -291,6 +323,17 @@
 				<li>DankPyon_Hide_ScaleHuge</li>
 				<li>DankPyon_Hide_BirdHuge</li>
 				<li>DankPyon_TanningLiquor</li>
+
+				<li>DankPyon_Hide_Muffalo</li>
+						<li>DankPyon_Hide_Bison</li>
+						<li>DankPyon_Hide_BearGrizzly</li>
+						<li>DankPyon_Hide_BearPolar</li>
+						<li>DankPyon_Hide_Rhinoceros</li>
+						<li>DankPyon_Hide_Megasloth</li>
+						<li>DankPyon_Hide_Elephant</li>
+						<li>DankPyon_Hide_Muffalo</li>
+						<li>DankPyon_Hide_Rox</li>
+						<li>DankPyon_Hide_Thrumbo</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<specialProducts>

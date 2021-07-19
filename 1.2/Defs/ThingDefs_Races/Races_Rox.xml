@@ -82,7 +82,7 @@
       <baseHungerRate>3.5</baseHungerRate>
       <baseHealthScale>30.0</baseHealthScale>
       <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
-      <leatherDef>DankPyon_Leather_Rox</leatherDef>
+      <!--leatherDef>DankPyon_Leather_Rox</leatherDef-->
       <trainability>Advanced</trainability>
       <gestationPeriodDays>60</gestationPeriodDays>
       <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
@@ -170,8 +170,8 @@
           <drawSize>5.4</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>
-          <bodyPartGroup>HornAttackTool</bodyPartGroup>
-          <thing>DankPyon_RoxHorn</thing>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_Rox</thing>
         </butcherBodyPart>
       </li>
     </lifeStages>

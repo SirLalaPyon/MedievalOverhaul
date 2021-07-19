@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <!--============================== Rugs ==============================-->
   <ThingDef ParentName="DankPyon_ArtableFurnitureBase">
 		<defName>DankPyon_RugPatched1x1c</defName>
@@ -11,22 +12,22 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
-    <building>
-      <isEdifice>false</isEdifice>
-    </building>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
 		<rotatable>true</rotatable>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>5000</WorkToMake>
-			<Beauty>10</Beauty>
+			<Beauty>3</Beauty>
 			<Mass>9</Mass>
 		</statBases>
     
 		<stuffCategories>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>25</costStuffCount>
+      		<li>Leathery</li>
+    	</stuffCategories>
+    	<costStuffCount>25</costStuffCount>
 
 		<useHitPoints>False</useHitPoints>
 		<size>(1,1)</size>
@@ -43,22 +44,22 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    <building>
-      <isEdifice>false</isEdifice>
-    </building>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
 		<rotatable>true</rotatable>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<Beauty>10</Beauty>
+			<WorkToMake>7000</WorkToMake>
+			<Beauty>4</Beauty>
 			<Mass>9</Mass>
 		</statBases>
     
 		<stuffCategories>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>45</costStuffCount>
+      		<li>Leathery</li>
+    	</stuffCategories>
+    	<costStuffCount>30</costStuffCount>
 
 		<useHitPoints>False</useHitPoints>
 		<size>(2,2)</size>
@@ -75,22 +76,22 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-    <building>
-      <isEdifice>false</isEdifice>
-    </building>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
 		<rotatable>true</rotatable>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
-			<Beauty>10</Beauty>
+			<Beauty>5</Beauty>
 			<Mass>12</Mass>
 		</statBases>
     
 		<stuffCategories>
-      <li>Leathery</li>
-    </stuffCategories>
-    <costStuffCount>105</costStuffCount>
+      		<li>Leathery</li>
+    	</stuffCategories>
+    <costStuffCount>75</costStuffCount>
 
 		<useHitPoints>False</useHitPoints>
 		<size>(3,3)</size>
@@ -107,20 +108,20 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    <building>
-      <isEdifice>false</isEdifice>
-    </building>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
 		<rotatable>true</rotatable>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<Beauty>30</Beauty>
+			<WorkToMake>7000</WorkToMake>
+			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
     
 		<costList>
-			<Leather_Wolf>29</Leather_Wolf>
+			<DankPyon_Hide_Hyena>1</DankPyon_Hide_Hyena>
 		</costList>
 
 		<useHitPoints>False</useHitPoints>
@@ -145,13 +146,13 @@
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<Beauty>30</Beauty>
+			<WorkToMake>7000</WorkToMake>
+			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
     
 		<costList>
-			<Leather_Wolf>29</Leather_Wolf>
+			<DankPyon_Hide_WolfTimber>1</DankPyon_Hide_WolfTimber>
 		</costList>
 
 		<useHitPoints>False</useHitPoints>
@@ -176,13 +177,14 @@
 	<altitudeLayer>FloorEmplacement</altitudeLayer>
 
 	<statBases>
-		<WorkToMake>8000</WorkToMake>
-		<Beauty>30</Beauty>
+		<WorkToMake>7000</WorkToMake>
+		<Beauty>10</Beauty>
 		<Mass>9</Mass>
 	</statBases>
 
 	<costList>
-		<Leather_Wolf>29</Leather_Wolf>
+		<DankPyon_Hide_WolfArctic>1</DankPyon_Hide_WolfArctic>
+		<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
 	</costList>
 
 	<useHitPoints>False</useHitPoints>
@@ -200,20 +202,21 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    <building>
-      <isEdifice>false</isEdifice>
-    </building>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
 		<rotatable>true</rotatable>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<Beauty>30</Beauty>
+			<WorkToMake>7000</WorkToMake>
+			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
     
 		<costList>
-			<Leather_Wolf>29</Leather_Wolf>
+			<DankPyon_Hide_Cougar>1</DankPyon_Hide_Cougar>
+			<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
 		</costList>
 
 		<useHitPoints>False</useHitPoints>
@@ -231,20 +234,21 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    <building>
-      <isEdifice>false</isEdifice>
-    </building>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
 		<rotatable>true</rotatable>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<Beauty>30</Beauty>
+			<WorkToMake>7000</WorkToMake>
+			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
     
 		<costList>
-			<Leather_Wolf>29</Leather_Wolf>
+			<DankPyon_Hide_Panther>1</DankPyon_Hide_Panther>
+			<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
 		</costList>
 
 		<useHitPoints>False</useHitPoints>
@@ -262,20 +266,21 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-    <building>
-      <isEdifice>false</isEdifice>
-    </building>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
 		<rotatable>true</rotatable>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
-			<Beauty>30</Beauty>
+			<Beauty>15</Beauty>
 			<Mass>9</Mass>
 		</statBases>
 
 		<costList>
-			<Leather_Bear>65</Leather_Bear>
+			<DankPyon_Hide_BearGrizzly>1</DankPyon_Hide_BearGrizzly>
+			<DankPyon_TanningLiquor>12</DankPyon_TanningLiquor>
 		</costList>
 
 		<useHitPoints>False</useHitPoints>
@@ -301,12 +306,13 @@
 
 	<statBases>
 		<WorkToMake>12000</WorkToMake>
-		<Beauty>30</Beauty>
+		<Beauty>15</Beauty>
 		<Mass>9</Mass>
 	</statBases>
 
 	<costList>
-		<Leather_Bear>65</Leather_Bear>
+		<DankPyon_Hide_BearPolar>1</DankPyon_Hide_BearPolar>
+		<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
 	</costList>
 
 	<useHitPoints>False</useHitPoints>
@@ -331,13 +337,13 @@
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>15000</WorkToMake>
 			<Beauty>30</Beauty>
 			<Mass>9</Mass>
 		</statBases>
     
 		<costList>
-			<Leather_Bear>65</Leather_Bear>
+			<DankPyon_Hide_Thrumbo>1</DankPyon_Hide_Thrumbo>
 		</costList>
 
 		<useHitPoints>False</useHitPoints>
@@ -347,32 +353,32 @@
 
   <ThingDef ParentName="DankPyon_ArtableFurnitureBase">
 		<defName>DankPyon_RugHuman1x2c</defName>
-		<label>human rug (3x3)</label>
+		<label>human rug (1x2)</label>
 		<description>PLACEHOLDER</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugHuman1x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3,3)</drawSize>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    <building>
-      <isEdifice>false</isEdifice>
-    </building>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
 		<rotatable>true</rotatable>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
-			<Beauty>30</Beauty>
+			<WorkToMake>7000</WorkToMake>
+			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
     
 		<costList>
-			<Leather_Bear>65</Leather_Bear>
+			<DankPyon_Hide_Human>1</DankPyon_Hide_Human>
 		</costList>
 
 		<useHitPoints>False</useHitPoints>
-		<size>(3,3)</size>
+		<size>(1,2)</size>
 		<passability>Standable</passability>
 	</ThingDef>
 	

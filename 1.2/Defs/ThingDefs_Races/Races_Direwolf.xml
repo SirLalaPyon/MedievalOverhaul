@@ -86,7 +86,7 @@
       <baseHungerRate>0.25</baseHungerRate>
       <baseHealthScale>1.4</baseHealthScale>
       <foodType>CarnivoreAnimalStrict</foodType>
-      <leatherDef>DankPyon_Leather_Direwolf</leatherDef>
+      <!--leatherDef>DankPyon_Leather_Direwolf</leatherDef-->
       <gestationPeriodDays>26</gestationPeriodDays>
       <nameOnTameChance>1</nameOnTameChance>
       <trainability>Advanced</trainability>
@@ -119,6 +119,7 @@
           <soundDeath>Pawn_Warg_Death</soundDeath>
           <soundCall>Pawn_Warg_Call</soundCall>
           <soundAngry>Pawn_Warg_Angry</soundAngry>
+
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -180,6 +181,11 @@
           <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
           <drawSize>2.15</drawSize>
         </dessicatedBodyGraphicData>
+        <butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_WolfDirewolf</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
       </li>
     </lifeStages>
   </PawnKindDef>

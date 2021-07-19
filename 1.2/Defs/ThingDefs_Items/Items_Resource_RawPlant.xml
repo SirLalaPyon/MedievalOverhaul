@@ -4,6 +4,19 @@
 
 <!-- ==================== Raw Plants Resource ======================= -->  
 
+<ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_RawCotton</defName>
+    <label>cotton</label>
+    <description>cotton</description>
+    <graphicData>
+      <texPath>Plants/RawCotton</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>	
+    </graphicData>
+    <statBases>
+      <MarketValue>1</MarketValue>
+    </statBases>
+  </ThingDef>
+
   <ThingDef ParentName="RoughPlantBase">
     <defName>DankPyon_RawWheat</defName>
     <label>wheat</label>

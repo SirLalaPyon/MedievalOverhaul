@@ -602,7 +602,7 @@
 				</value>
 			</li>
 			<!-- HumanFlesh -->
-			<li Class="PatchOperationAdd">
+			<!--li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "Human"]/lifeStages/li[5]</xpath>
 				<value>
 					<butcherBodyPart>
@@ -611,7 +611,7 @@
 						<allowFemale>true</allowFemale>
 					</butcherBodyPart>
 				</value>
-			</li>
+			</li-->
 		</operations>
 	</Operation>
 	

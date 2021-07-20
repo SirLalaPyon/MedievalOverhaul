@@ -388,7 +388,7 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
 
-  <!--=============== Iron ====================-->
+  <!--=============== Silver ====================-->
   
   <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_SilverOre</defName>
@@ -401,8 +401,8 @@
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
     <statBases>
-      <MarketValue>4</MarketValue>
-      <Mass>0.4</Mass>
+      <MarketValue>1</MarketValue>
+      <Mass>0.04</Mass>
     </statBases>
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -433,12 +433,12 @@
     <soundDrop>Metal_Drop</soundDrop>
     <statBases>
       <MarketValue>3</MarketValue>
-      <Mass>0.004</Mass>
+      <Mass>0.04</Mass>
     </statBases>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
-	<stackLimit>500</stackLimit>
+	  <stackLimit>500</stackLimit>
     <smallVolume>true</smallVolume>
     <deepCommonality>0.5</deepCommonality>
     <deepCountPerPortion>8</deepCountPerPortion>

@@ -36,6 +36,21 @@
 		<xpath>/Defs/ThingDef[defName = "Steel"]/deepCountPerPortion</xpath>
 	</Operation>
 
+	<!-- Silver Ore Replacement -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MineableSilver"]/building</xpath>
+		<value>
+			<building>
+				<isResourceRock>true</isResourceRock>
+				<mineableThing>DankPyon_SilverOre</mineableThing>
+				<mineableYield>40</mineableYield>
+				<mineableScatterCommonality>0.10</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>4~12</mineableScatterLumpSizeRange>
+			</building>
+		</value>
+	</Operation>
+
 	<!-- Gold Graphic Replacement -->
 
 	<Operation Class="PatchOperationReplace">

@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,14 +22,14 @@ namespace DankPyon_MedievalOverhaul
         private static ThingDef bone = ThingDef.Named("DankPyon_Bone");
         private static void Thing_MakeButcherProducts_FatAndBone_PostFix(Thing __instance, ref IEnumerable<Thing> __result, Pawn butcher, float efficiency)
         {
-            if (__instance is Pawn pawn && pawn.RaceProps.IsFlesh)
+            if (__instance is Pawn pawn && pawn.RaceProps.IsFlesh && pawn.RaceProps.meatDef != null)
             {
-                int amount = Math.Max(1, (int)(pawn.BodySize * 0.2f));
                 Thing Bone = ThingMaker.MakeThing(bone, null);
-                Bone.stackCount = amount;
-                __result = __result.AddItem(Bone);
                 Thing Fat = ThingMaker.MakeThing(fat, null);
+                int amount = Math.Max(1, (int)(GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.MeatAmount, true) * efficiency) * 0.2f));
+                Bone.stackCount = amount;
                 Fat.stackCount = amount;
+                __result = __result.AddItem(Bone);
                 __result = __result.AddItem(Fat);
             }
         }

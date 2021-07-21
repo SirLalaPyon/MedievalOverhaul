@@ -234,7 +234,6 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-		<clearBuildingArea>false</clearBuildingArea>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<designationCategory>Misc</designationCategory>
 		<researchPrerequisites>
@@ -318,10 +317,7 @@
 			<rect>(0,0.05,1,1.95)</rect>
 		</damageData>
 	</graphicData>
-	<thingClass>Building</thingClass>
-	<uiIconScale>1</uiIconScale>
-	<uiIconPath>Misc/CookingTools_MenuIcon</uiIconPath>
-	<uiIconOffset>(0, 0)</uiIconOffset>
+
 	<size>(1,1)</size>
 	<minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
@@ -333,33 +329,35 @@
 	<thingCategories>
 		<li>BuildingsMisc</li>
 	</thingCategories>
+
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToBuild>2000</WorkToBuild>
-		<Mass>5</Mass>
+		<WorkToBuild>1500</WorkToBuild>
+		<Mass>15</Mass>
 		<Flammability>1.0</Flammability>
-		<Beauty>5</Beauty>
 	</statBases>
+
 	<costList>
       <WoodLog>150</WoodLog>
 	  <DankPyon_IronIngot>50</DankPyon_IronIngot>
     </costList>
+
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
-					<WorkTableWorkSpeedFactor>0.10</WorkTableWorkSpeedFactor>
+					<WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
 				</statOffsets>
-				<maxDistance>2</maxDistance>
+				<maxDistance>5</maxDistance>
 				<maxSimultaneous>2</maxSimultaneous>
 			</li>
 		</comps>
+
 	<placeWorkers>
 		<li>PlaceWorker_ShowFacilitiesConnections</li>
 	</placeWorkers>
-	<clearBuildingArea>false</clearBuildingArea>
 	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	<researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
 	<designationCategory>Misc</designationCategory>
   </ThingDef>

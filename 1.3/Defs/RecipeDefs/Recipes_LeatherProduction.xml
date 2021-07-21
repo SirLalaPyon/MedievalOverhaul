@@ -19,6 +19,9 @@
 			<li>ElectricStove</li>
 			<li>DankPyon_RusticCookingTable</li>
 		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_LeatherTanning</li>
+		</researchPrerequisites>
 	</RecipeDef>
 
 	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase">
@@ -83,6 +86,9 @@
 		<recipeUsers>
 			<li>DankPyon_TanningRack</li>
 		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_LeatherTanning</li>
+		</researchPrerequisites>
 	</RecipeDef>
 
 	<RecipeDef ParentName="DankPyon_PrepareHideBase">

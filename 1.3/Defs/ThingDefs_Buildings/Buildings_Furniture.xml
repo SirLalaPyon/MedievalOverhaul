@@ -5,7 +5,7 @@
   <!--======================= Basic domestic furniture ==============================-->
   <ThingDef Abstract="True" ParentName="BuildingBase" Name="DankPyon_BuildingBase">
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
@@ -13,42 +13,42 @@
 
   <ThingDef Abstract="True" ParentName="TableGatherSpotBase" Name="DankPyon_TableGatherSpotBase">
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="TableBase" Name="DankPyon_TableBase">
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="FurnitureWithQualityBase" Name="DankPyon_FurnitureWithQualityBase">
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="ArtableFurnitureBase" Name="DankPyon_ArtableFurnitureBase">
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="ArtableBedBase" Name="DankPyon_ArtableBedBase">
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="BedWithQualityBase" Name="DankPyon_BedWithQualityBase">
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
@@ -97,6 +97,55 @@
       <isSittable>true</isSittable>
     </building>
     <uiIconOffset>(0, -0.05)</uiIconOffset>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+    <defName>DankPyon_RusticChair</defName>
+    <label>rustic chair</label>
+    <description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
+    <graphicData>
+      <texPath>Furniture/RusticChair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+        <rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+        <rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+        <rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+      </damageData>
+      <shadowData>
+        <volume>(0.23, 0.26, 0.23)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+      <Comfort>0.70</Comfort>
+    </statBases>
+    <socialPropernessMatters>true</socialPropernessMatters>
+
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+
+    <pathCost>30</pathCost>
+    <designationHotKey>Misc7</designationHotKey>
+    <fillPercent>0.35</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Styleable" />
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_TableBase">
@@ -500,9 +549,6 @@
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <surfaceType>Item</surfaceType>
     <canOverlapZones>false</canOverlapZones>
-    <researchPrerequisites>
-      <li>ComplexFurniture</li>
-    </researchPrerequisites>
 	    <comps>
       <li Class="CompProperties_Facility">
         <statOffsets>
@@ -561,9 +607,6 @@
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <surfaceType>Item</surfaceType>
     <canOverlapZones>false</canOverlapZones>
-    <researchPrerequisites>
-      <li>ComplexFurniture</li>
-    </researchPrerequisites>
 	    <comps>
       <li Class="CompProperties_Facility">
         <statOffsets>
@@ -678,9 +721,6 @@
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
-    <researchPrerequisites>
-      <li>ComplexFurniture</li>
-    </researchPrerequisites>
     <comps>
       <li Class="CompProperties_Facility">
         <statOffsets>
@@ -941,9 +981,6 @@
     <castEdgeShadows>True</castEdgeShadows>
     <designationHotKey>Misc2</designationHotKey>
     <techLevel>Medieval</techLevel>
-    <researchPrerequisites>
-      <li>ComplexFurniture</li>
-    </researchPrerequisites>
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
 

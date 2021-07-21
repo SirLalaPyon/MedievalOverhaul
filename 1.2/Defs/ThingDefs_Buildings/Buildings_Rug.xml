@@ -1,8 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!--============================== Base ==============================-->
+  <ThingDef Name="DankPyon_FurnitureBaseRug" ParentName="BuildingBase" Abstract="True">
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+	<researchPrerequisites>
+		<li>DankPyon_LeatherTanning</li>
+	</researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef Name="DankPyon_FurnitureWithQualityBaseRug" ParentName="DankPyon_FurnitureBaseRug" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
   <!--============================== Rugs ==============================-->
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugPatched1x1c</defName>
 		<label>patched rug (1x1)</label>
 		<description>PLACEHOLDER</description>
@@ -34,7 +53,7 @@
 		<passability>Standable</passability>
   </ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugPatched2x2c</defName>
 		<label>patched rug (2x2)</label>
 		<description>PLACEHOLDER</description>
@@ -66,7 +85,7 @@
 		<passability>Standable</passability>
   </ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugPatched3x3c</defName>
 		<label>patched rug (3x3)</label>
 		<description>PLACEHOLDER</description>
@@ -98,7 +117,7 @@
 		<passability>Standable</passability>
   </ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugHyena2x2c</defName>
 		<label>hyena rug (2x2)</label>
 		<description>PLACEHOLDER</description>
@@ -129,7 +148,7 @@
 		<passability>Standable</passability>
   </ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugWolfTimber2x2c</defName>
 		<label>timber wolf rug (2x2)</label>
 		<description>PLACEHOLDER</description>
@@ -160,7 +179,7 @@
 		<passability>Standable</passability>
  </ThingDef>
 
- <ThingDef ParentName="FurnitureWithQualityBase">
+ <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 	<defName>DankPyon_RugWolfArctic2x2c</defName>
 	<label>arctic wolf rug (2x2)</label>
 	<description>PLACEHOLDER</description>
@@ -192,7 +211,7 @@
 	<passability>Standable</passability>
 </ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugCougar2x2c</defName>
 		<label>cougar rug (2x2)</label>
 		<description>PLACEHOLDER</description>
@@ -224,7 +243,7 @@
 		<passability>Standable</passability>
 	</ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugPanther2x2c</defName>
 		<label>panther rug (2x2)</label>
 		<description>PLACEHOLDER</description>
@@ -256,7 +275,7 @@
 		<passability>Standable</passability>
 	</ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugGrizzlyBear3x3c</defName>
 		<label>grizzly bear rug (3x3)</label>
 		<description>PLACEHOLDER</description>
@@ -288,7 +307,7 @@
 		<passability>Standable</passability>
   </ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 	<defName>DankPyon_RugPolarBear3x3c</defName>
 	<label>polar bear rug (3x3)</label>
 	<description>PLACEHOLDER</description>
@@ -320,7 +339,7 @@
 	<passability>Standable</passability>
   </ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugThrumbo3x3c</defName>
 		<label>thrumbo rug (3x3)</label>
 		<description>PLACEHOLDER</description>
@@ -351,7 +370,7 @@
 		<passability>Standable</passability>
 	</ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugHuman1x2c</defName>
 		<label>human rug (1x2)</label>
 		<description>PLACEHOLDER</description>

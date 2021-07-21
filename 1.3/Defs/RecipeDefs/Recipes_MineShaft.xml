@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Coal Chunks -->
+	<RecipeDef>
+		<defName>DankPyon_MakeStoneChunks_Coal</defName>
+		<description>(Bulk x25) Mine from underground Coal Seams to create usable Coal Chunks.</description>		
+		<workAmount>2000</workAmount>		
+		<label>(Bulk x25) Gather coal chunks</label>
+		<jobString>Mining for coal chunks.</jobString>
+		<workSpeedStat>MiningSpeed</workSpeedStat>
+		<workSkill>Mining</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>25</targetCountAdjustment>		
+      <recipeUsers>
+        <li>DankPyon_MineShaft</li>	  
+      </recipeUsers>		  
+		<products>
+			<DankPyon_Coal>25</DankPyon_Coal>
+		</products>	
+	</RecipeDef>
+
+ <!-- Stone Chunks Base Class --> 
+	<RecipeDef Name="DankPyon_MineShaftBase" Abstract="True">
+		<description>Cuts rock chunks into usable stone blocks.</description>
+		<workSpeedStat>MiningSpeed</workSpeedStat>
+		<workSkill>Mining</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+			<recipeUsers>
+				<li>DankPyon_MineShaft</li>	  
+			</recipeUsers>	
+	</RecipeDef>
+  
+  
+ <!-- Stone Chunks: Sandstone --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Sandstone</defName>
+		<workAmount>2250</workAmount>		
+		<label>Gather Sandstone Chunks</label>
+		<jobString>Mining for Sandstone Chunk.</jobString>
+    <products>
+      <ChunkSandstone>1</ChunkSandstone>
+    </products>		
+  </RecipeDef> 
+
+ <!-- Stone Chunks: Granite --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Granite</defName>
+		<workAmount>2975</workAmount>		
+		<label>Gather Granite Chunks</label>
+		<jobString>Mining for Granite Chunk.</jobString>
+    <products>
+      <ChunkGranite>1</ChunkGranite>
+    </products>		
+  </RecipeDef> 
+
+  <!-- Stone Chunks: Limestone --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Limestone</defName>
+		<workAmount>2700</workAmount>		
+		<label>Gather Limestone Chunks</label>
+		<jobString>Mining for Limestone Chunk.</jobString>
+    <products>
+      <ChunkLimestone>1</ChunkLimestone>
+    </products>		
+  </RecipeDef> 
+
+   <!-- Stone Chunks: Slate --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Slate</defName>
+		<workAmount>2275</workAmount>		
+		<label>Gather Slate Chunks</label>
+		<jobString>Mining for Slate Chunk.</jobString>
+    <products>
+      <ChunkSlate>1</ChunkSlate>
+    </products>		
+  </RecipeDef>   
+  
+   <!-- Stone Chunks: Marble --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Marble</defName>
+		<workAmount>2100</workAmount>		
+		<label>Gather Marble Chunks</label>
+		<jobString>Mining for Marble Chunk.</jobString>
+    <products>
+      <ChunkMarble>1</ChunkMarble>
+    </products>		
+  </RecipeDef>  
+
+<!-- ========== Salt ==========-->
+   <!-- Salt --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeSalt</defName>
+		<workAmount>200</workAmount>		
+		<label>Gather salt</label>
+		<jobString>Mining for salt</jobString>
+    <products>
+      <DankPyon_Salt>1</DankPyon_Salt>
+    </products>		
+  </RecipeDef>  
+
+   <!-- Salt x5 --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeSalt5</defName>
+		<workAmount>1000</workAmount>		
+		<label>Gather salt x5</label>
+		<jobString>Mining for salt</jobString>
+    <products>
+      <DankPyon_Salt>5</DankPyon_Salt>
+    </products>		
+  </RecipeDef>  
+
+   <!-- Salt x10 --> 
+ 	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeSalt10</defName>
+		<workAmount>2000</workAmount>		
+		<label>Gather salt x10</label>
+		<jobString>Mining for salt</jobString>
+    <products>
+      <DankPyon_Salt>10</DankPyon_Salt>
+    </products>		
+  </RecipeDef>  
+
+</Defs>

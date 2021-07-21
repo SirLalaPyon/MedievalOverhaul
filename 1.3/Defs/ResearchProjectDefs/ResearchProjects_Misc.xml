@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_RusticFurniture</defName>
+    <label>Rustic furniture</label>
+    <description>Construct basic rustic furniture like hay beds, end tables, dressers, and more.</description>
+    <baseCost>300</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_RoyalRusticFurniture</defName>
+    <label>Imperial Architecture</label>
+    <description>Construct elegant and luxurious furniture adorned with gold befitting for nobles.</description>
+    <baseCost>900</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.7</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_RusticStorage</defName>
+    <label>rustic storage</label>
+    <description>Construct basic rustic furniture like hay beds, end tables, dressers, and more.</description>
+    <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>DankPyon_RusticFurniture</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_CarrierBirds</defName>
+    <label>carrier birds</label>
+    <description>Research how to build powerful siege machinations for sheer ordinance</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_LeatherCrafting</defName>
+    <label>leather crafting</label>
+    <description>Research how to build powerful siege machinations for sheer ordinance</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>    
+  </ResearchProjectDef>
+
+  <!--=========================== Engineering ==============================-->
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Engineering</defName>
+    <label>engineering</label>
+    <description>Research how to craft basic components to build complex contraptions</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>    
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>DankPyon_Mining</defName>
+    <label>mining</label>
+    <description>Learn safety precautions and the proper way to build a mineshaft to mine resources and stones.</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0.4</researchViewY> 
+    <prerequisites>
+      <li>DankPyon_Engineering</li>
+    </prerequisites>   
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_SiegeEngines</defName>
+    <label>siege engine</label>
+    <description>Research how to build powerful siege machinations for sheer ordinance</description>
+    <baseCost>2000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1.10</researchViewY>
+    <prerequisites>
+      <li>DankPyon_Engineering</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  <!--=========================== Agriculture ==============================-->
+  <ResearchProjectDef>
+    <defName>DankPyon_FruitTreeSowing</defName>
+    <label>fruit tree sowing</label>
+    <description>Research how to sow basic plants</description>
+    <baseCost>500</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>TreeSowing</li>
+    </prerequisites>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>    
+  </ResearchProjectDef>
+
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BasicAgriculture</defName>
+    <label>basic agriculture</label>
+    <description>Research how to sow basic plants</description>
+    <baseCost>300</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2.1</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_IntermediateAgriculture</defName>
+    <label>intermediate agriculture</label>
+    <description>Research how to sow intermediate plants</description>
+    <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>DankPyon_BasicAgriculture</li>
+    </prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.1</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_AdvancedAgriculture</defName>
+    <label>advanced agriculture</label>
+    <description>Research how to sow advance plants</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>DankPyon_IntermediateAgriculture</li>
+    </prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.1</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_TreeGriffonBerry</defName>
+    <label>griffon berry</label>
+    <description>A rare luscious fruit that grows on small tree. As per it's given name, the red fruit is a delicacy to griffins and are typically guarded by them.</description>
+    <baseCost>900</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>DankPyon_IntermediateAgriculture</li>
+    </prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.1</researchViewY>    
+  </ResearchProjectDef>
+
+  <!--=========================== Cooking ==============================-->
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BasicCooking</defName>
+    <label>basic cooking</label>
+    <description>Learn basic recipes of dishes.</description>
+    <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2.8</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_IntermediateCooking</defName>
+    <label>intermediate cooking</label>
+    <description>Learn intermediate recipes of dishes.</description>
+    <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>DankPyon_BasicCooking</li>
+    </prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.8</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_AdvancedCooking</defName>
+    <label>advanced cooking</label>
+    <description>Learn advanced recipes of dishes.</description>
+    <baseCost>800</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>DankPyon_AdvancedCooking</li>
+    </prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.8</researchViewY>    
+  </ResearchProjectDef>
+
+  <!--=========================== Food Preservation ==============================-->
+
+  <ResearchProjectDef>
+    <defName>DankPyon_FoodPreservation</defName>
+    <label>food preservation</label>
+    <description>Build drying racks or apply salt to meat to remove the moisture of meats, prolonging their shelf life.</description>
+    <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4.2</researchViewY> 
+    <prerequisites>
+      <li>DankPyon_BasicCooking</li>
+    </prerequisites>   
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>DankPyon_CheeseMaking</defName>
+    <label>cheese making</label>
+    <description>Make Cheese</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>4.6</researchViewY> 
+    <prerequisites>
+      <li>DankPyon_FoodPreservation</li>
+    </prerequisites>   
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Smoker</defName>
+    <label>smoker</label>
+    <description>Learn how to smoke fresh meat into dried slabs of jerky to prolong shelf life and add rustic flavours to meals.</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>5.3</researchViewY>
+    <prerequisites>
+      <li>DankPyon_FoodPreservation</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  <!--=========================== Food Production Tables ==============================-->
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Grill</defName>
+    <label>grill</label>
+    <description>Learn how to smoke fresh meat into dried slabs of jerky to prolong shelf life and add rustic flavours to meals</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3.5</researchViewY>
+    <prerequisites>
+      <li>DankPyon_BasicCooking</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_StewPot</defName>
+    <label>stew pot</label>
+    <description>Research how to smoke meat to prolong shelf life and add rustic flavours to meals</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3.5</researchViewY>
+    <prerequisites>
+      <li>DankPyon_BasicCooking</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Oven</defName>
+    <label>oven</label>
+    <description>Learn how to smoke fresh meat to prolong shelf life and add rustic flavours to meals.</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3.5</researchViewY>
+    <prerequisites>
+      <li>DankPyon_BasicCooking</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+  
+</Defs>

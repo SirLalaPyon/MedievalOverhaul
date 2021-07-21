@@ -613,7 +613,7 @@
   
   <!-- ==================== Rack ======================= -->  
 
-  <ThingDef ParentName="BuildingBase">
+  <!--<ThingDef ParentName="BuildingBase">
     <defName>DankPyon_DryingRack</defName>
     <label>Drying Rack</label>
     <description>A wooden rack to preserve goods for long time use.</description>
@@ -723,7 +723,7 @@
     <researchPrerequisites>
       <li>DankPyon_FoodPreservation</li>
     </researchPrerequisites>
-  </ThingDef>
+  </ThingDef-->
   
   <!-- Gardening Box -->
   <ThingDef ParentName="BuildingBase">
@@ -771,7 +771,7 @@
     </researchPrerequisites>
   </ThingDef>
 
-<ThingDef ParentName="BuildingBase">
+<!--ThingDef ParentName="BuildingBase">
 	<defName>DankPyon_Presser</defName>
 	<label>Presser</label>
 	<description>PLACEHOLDER</description>
@@ -963,7 +963,7 @@
     <researchPrerequisites>
       <li>DankPyon_Smoker</li>
     </researchPrerequisites>
-  </ThingDef>
+  </ThingDef-->
 	
 	<ThingDef ParentName="BenchBase">
     <defName>DankPyon_Workbench</defName>

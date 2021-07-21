@@ -242,7 +242,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<!--ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_RusticCupboard</defName>
 		<label>tableware shelf</label>
 		<description>A shelf for Tableware. Increases Cook speed when placed near rustic cooking table.</description>
@@ -303,17 +303,20 @@
 		<clearBuildingArea>false</clearBuildingArea>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
-	</ThingDef>
+	</ThingDef-->
 	
 	<ThingDef ParentName="BuildingBase">
 	<defName>DankPyon_RusticCookingTools</defName>
 	<label>Cooking Tools</label>
 	<description>A table full of useful cooking equipment. Increases work speed when placed near a rustic cooking table.</description>
 	<graphicData>
-		<texPath>Misc/CookingTools</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
+		<texPath>Misc/RusticCookingTools</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-	<drawSize>(3,3)</drawSize>
+		<drawSize>(2,2)</drawSize>
+		<damageData>
+			<rect>(0,0.05,1,1.95)</rect>
+		</damageData>
 	</graphicData>
 	<thingClass>Building</thingClass>
 	<uiIconScale>1</uiIconScale>
@@ -338,8 +341,8 @@
 		<Beauty>5</Beauty>
 	</statBases>
 	<costList>
-      <WoodLog>120</WoodLog>
-	  <DankPyon_IronIngot>60</DankPyon_IronIngot>
+      <WoodLog>150</WoodLog>
+	  <DankPyon_IronIngot>50</DankPyon_IronIngot>
     </costList>
 		<comps>
 			<li Class="CompProperties_Facility">

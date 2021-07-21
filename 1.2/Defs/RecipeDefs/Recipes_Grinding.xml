@@ -5,13 +5,14 @@
 	<defName>DankPyon_CraftFlour</defName>
 	<label>grind wheat into flour</label>
 	<description>Grind wheat into flour.</description>
-	<jobString>Making flour.</jobString>
+	<jobString>Grinding wheat into flour.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 	<workAmount>100</workAmount>
     <soundWorking>Recipe_CookMeal</soundWorking>          	
 	<allowMixingIngredients>true</allowMixingIngredients>
 	<ingredients>
+
 	  <li>
 	    <filter>
 	      <thingDefs>
@@ -20,6 +21,7 @@
 	    </filter>
 	    <count>1</count>
 	  </li>
+
 	</ingredients>
 	<fixedIngredientFilter>
 	  <thingDefs>
@@ -42,12 +44,12 @@
 
   <RecipeDef>
 	<defName>DankPyon_CraftFlourBulk</defName>
-	<label>grind wheat into flour</label>
+	<label>grind wheat into flour x10</label>
 	<description>Grind wheat into flour.</description>
-	<jobString>Making bulk flour.</jobString>
+	<jobString>Grinding wheat into 12 flour.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
-	<workAmount>900</workAmount>
+	<workAmount>800</workAmount>
     <soundWorking>Recipe_CookMeal</soundWorking>          	
 	<allowMixingIngredients>true</allowMixingIngredients>
 	<ingredients>
@@ -57,7 +59,7 @@
 	        <li>DankPyon_RawWheat</li>
 	      </thingDefs>
 	    </filter>
-	    <count>12</count>
+	    <count>10</count>
 	  </li>
 	</ingredients>
 	<fixedIngredientFilter>
@@ -69,8 +71,8 @@
       </specialFiltersToDisallow>
 	</fixedIngredientFilter>
     <products>
-      <DankPyon_Flour>12</DankPyon_Flour>
-	    <Hay>12</Hay>      
+      <DankPyon_Flour>10</DankPyon_Flour>
+	    <Hay>10</Hay>      
     </products>
 	<workSkill>Cooking</workSkill>
 	<recipeUsers>
@@ -83,7 +85,7 @@
 	<defName>DankPyon_CraftSugar</defName>
 	<label>grind sugarcane into sugar</label>
 	<description>Grind sguarcane into sugar.</description>
-	<jobString>Making sugar.</jobString>
+	<jobString>Grinding sugarcane into sugar.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 	<workAmount>100</workAmount>
@@ -116,4 +118,40 @@
     </recipeUsers>
   </RecipeDef>
 
+  <RecipeDef>
+	<defName>DankPyon_CraftSugarBulk</defName>
+	<label>grind sugarcane into sugar x10</label>
+	<description>Grind sugarcane into 10 sugar.</description>
+	<jobString>Grinding sugarcane into 10 sugar.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<workAmount>800</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          	
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>DankPyon_Sugarcane</li>
+	      </thingDefs>
+	    </filter>
+	    <count>10</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>DankPyon_Sugarcane</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <DankPyon_Sugar>10</DankPyon_Sugar>
+	</products>
+	<workSkill>Cooking</workSkill>
+	<recipeUsers>
+         <li>DankPyon_Millstone</li>
+    </recipeUsers>
+  </RecipeDef>
 </Defs>

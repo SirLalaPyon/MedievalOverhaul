@@ -304,7 +304,7 @@
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 	</ThingDef-->
 	
-	<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
 	<defName>DankPyon_RusticCookingTools</defName>
 	<label>Cooking Tools</label>
 	<description>A table full of useful cooking equipment. Increases work speed when placed near a rustic cooking table.</description>
@@ -318,7 +318,7 @@
 		</damageData>
 	</graphicData>
 
-	<size>(1,2)</size>
+	<size>(2,1)</size>
 	<minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -337,8 +337,11 @@
 		<Flammability>1.0</Flammability>
 	</statBases>
 
+	<stuffCategories>
+		<li>Woody</li>
+	  </stuffCategories>
+	  <costStuffCount>150</costStuffCount>
 	<costList>
-      <WoodLog>150</WoodLog>
 	  <DankPyon_IronIngot>50</DankPyon_IronIngot>
     </costList>
 

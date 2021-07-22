@@ -4,7 +4,7 @@
 
 <!-- ==================== Raw Plants Resource ======================= -->  
 
-<ThingDef ParentName="RoughPlantBase">
+<ThingDef ParentName="ResourceBase">
     <defName>DankPyon_RawCotton</defName>
     <label>cotton</label>
     <description>cotton</description>
@@ -12,6 +12,9 @@
       <texPath>Plants/RawCotton</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>	
     </graphicData>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
     <statBases>
       <MarketValue>1</MarketValue>
     </statBases>
@@ -30,7 +33,7 @@
     </statBases>
     <ingestible>
       <foodType>Seed</foodType>
- 	 <preferability>NeverForNutrition</preferability>
+ 	    <preferability>NeverForNutrition</preferability>
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">

@@ -10,7 +10,7 @@
     <category>Building</category>
     <graphicData>
       <texPath>Exotic/BrokenCart</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(2,2)</drawSize>
       <damageData>
         <rect>(0.1,0.1,1.8,1.8)</rect>
@@ -20,6 +20,7 @@
       </shadowData>
     </graphicData>
 
+    <rotatable>false</rotatable>
     <altitudeLayer>Building</altitudeLayer>
     <pathCost>42</pathCost>
     <blockWind>true</blockWind>

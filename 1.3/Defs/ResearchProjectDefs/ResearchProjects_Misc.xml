@@ -40,7 +40,7 @@
   <ResearchProjectDef>
     <defName>DankPyon_CarrierBirds</defName>
     <label>carrier birds</label>
-    <description>PLACEHOLDER</description>
+    <description>Train birds to carry messages which allows you to communicate with other factions.</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
@@ -204,7 +204,7 @@
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
     <prerequisites>
-      <li>DankPyon_AdvancedCooking</li>
+      <li>DankPyon_IntermediateCooking</li>
     </prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>2.8</researchViewY>    
@@ -229,7 +229,7 @@
   <ResearchProjectDef>
     <defName>DankPyon_CheeseMaking</defName>
     <label>cheese making</label>
-    <description>Make Cheese</description>
+    <description>Learn how to make a cheese press to produce cheese from milk.</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
@@ -272,8 +272,8 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_StewPot</defName>
-    <label>stew pot</label>
-    <description>PLACEHOLDER</description>
+    <label>stews</label>
+    <description>Learn how to make hearty and nutritious stews such as pumpkin and lentil soups</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
@@ -286,8 +286,8 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_Oven</defName>
-    <label>oven</label>
-    <description>PLACEHOLDER</description>
+    <label>baking</label>
+    <description>Learn how to bake meals such as bread or even luxurious desserts such as apple pies.</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>

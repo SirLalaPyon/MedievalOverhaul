@@ -59,6 +59,21 @@
 			<texPath>Resources/GoldIngot</texPath>
 		</value>
 	</Operation>
+
+	<!-- Gold Harvest Replacement -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "MineableGold"]/building</xpath>
+		<value>
+			<building>
+				<isResourceRock>true</isResourceRock>
+				<mineableThing>DankPyon_GoldOre</mineableThing>
+				<mineableYield>40</mineableYield>
+				<mineableScatterCommonality>0.07</mineableScatterCommonality>
+				<mineableScatterLumpSizeRange>2~8</mineableScatterLumpSizeRange>
+			  </building>
+		</value>
+	</Operation>
 	
 	<!-- Remove Plasteel and Component Generation -->
 	<Operation Class="PatchOperationSequence">

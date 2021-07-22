@@ -39,38 +39,59 @@
     </placeWorkers>
   </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
-		<defName>DankPyon_StonecuttingSpot</defName>
-		<label>stonecutting spot</label>
-		<description>A place for bashing rocks unto other rocks. Stonecutting here is slow because of the lack of tools.</description>
-		<thingClass>Building_ResearchBench</thingClass>
-		<graphicData>
-			<texPath>Production/StonecuttingSpot</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
-		</graphicData>
-    <altitudeLayer>FloorEmplacement</altitudeLayer>
+  <ThingDef ParentName="BenchBase">
+    <defName>DankPyon_StonecuttingSpot</defName>
+    <label>Stonecutting Spot</label>
+    <description>A place for bashing stones to each other. Production here is slow because of the lack of tools.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Production/StonecuttingSpot</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.33,1.33)</drawSize>
+      <shadowData>
+        <volume>(2.9, 0.3, 0.5)</volume>
+        <offset>(0, 0, 0)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+
+    <stuffCategories>
+      <li>DankPyon_StoneChunky</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+
     <statBases>
-			<WorkToBuild>0</WorkToBuild>
-			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
-		</statBases>
-    <scatterableOnMapGen>false</scatterableOnMapGen>
-    <useHitPoints>false</useHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+
+    <recipes>
+      <li>Make_StoneBlocksAny</li>
+    </recipes>
+
     <size>(1,1)</size>
     <designationCategory>Production</designationCategory>
-    <passability>Standable</passability>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-      <sowTag>SupportPlantsOnly</sowTag>
-      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-      <ai_chillDestination>false</ai_chillDestination>
-      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-      <buildingTags>
-        <li>Production</li>
-      </buildingTags>
     </building>
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
@@ -78,19 +99,12 @@
           <li>ToolCabinet</li>
         </linkableFacilities>
       </li>
-      <li>
-        <compClass>CompReportWorkSpeed</compClass>
-      </li>
     </comps>
-    <designationHotKey>Misc1</designationHotKey>
+    <designationHotKey>Misc2</designationHotKey>
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
-      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
-    <recipes>
-      <li>Make_StoneBlocksAny</li>
-    </recipes>
   </ThingDef>
 
   <ThingDef ParentName="BenchBase">

@@ -166,6 +166,24 @@
               <li>Manipulation</li>
           </requiredCapacities>
             <prioritizeSustains>true</prioritizeSustains>
-          </WorkGiverDef>
+        </WorkGiverDef>
+
+        <WorkGiverDef>
+          <defName>DankPyon_DoBillsButcherFlesh</defName>
+          <label>butcher creatures</label>
+          <giverClass>WorkGiver_DoBill</giverClass>
+          <workType>Cooking</workType>
+          <priorityInType>90</priorityInType>
+          <fixedBillGiverDefs>
+            <li>DankPyon_ButchersBlock</li>
+          </fixedBillGiverDefs>
+          <verb>butcher</verb>
+          <gerund>butchering at</gerund>
+          <requiredCapacities>
+            <li>Manipulation</li>
+          </requiredCapacities>
+          <prioritizeSustains>true</prioritizeSustains>
+        </WorkGiverDef>
+
 
 </Defs>

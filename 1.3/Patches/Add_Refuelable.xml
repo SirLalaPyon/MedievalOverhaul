@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Campfire"]/comps</xpath>
+		<value>
+			<comps>
+				<li Class="CompProperties_Refuelable">
+				  <fuelConsumptionRate>10.0</fuelConsumptionRate>
+				  <fuelCapacity>20.0</fuelCapacity>
+				  <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				  <fuelFilter>
+					<thingDefs>
+					  <li>WoodLog</li>
+					  <li>DankPyon_Coal</li>
+					</thingDefs>
+				  </fuelFilter>
+				  <initialFuelPercent>1</initialFuelPercent>
+				  <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				</li>
+				<li Class="CompProperties_Glower">
+				  <glowRadius>10</glowRadius>
+				  <glowColor>(252,187,113,0)</glowColor>
+				</li>
+				<li Class="CompProperties_HeatPusher">
+				  <compClass>CompHeatPusherPowered</compClass>
+				  <heatPerSecond>21</heatPerSecond>
+				  <heatPushMaxTemperature>28</heatPushMaxTemperature>
+				</li>
+				<li Class="CompProperties_FireOverlay">
+				  <fireSize>1</fireSize>
+				</li>
+				<li>
+				  <compClass>CompGatherSpot</compClass>
+				</li>
+				<li Class="CompProperties_MeditationFocus">
+				  <statDef>MeditationFocusStrength</statDef>
+				  <focusTypes><li>Flame</li></focusTypes>
+				  <offsets>
+					<li Class="FocusStrengthOffset_Lit">
+					  <offset>0.12</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+					  <defs>
+						<li>Campfire</li>
+						<li>TorchLamp</li>
+						<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+					  </defs>
+					  <offsetPerBuilding>0.02</offsetPerBuilding>
+					  <radius>9.9</radius>
+					  <maxBuildings>8</maxBuildings>
+					  <explanationKey>MeditationFocusPerFlame</explanationKey>
+					  <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					</li>
+				  </offsets>
+				</li>
+			  </comps>
+		</value>
+	</Operation>
+</Patch>	

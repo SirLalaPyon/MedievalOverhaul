@@ -60,10 +60,9 @@
       </damageData>
     </graphicData>
 
-    <stuffCategories>
-      <li>DankPyon_StoneChunky</li>
-    </stuffCategories>
-    <costStuffCount>1</costStuffCount>
+    <costList>
+      <WoodLog>10</WoodLog>
+    </costList>
 
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
@@ -1384,7 +1383,7 @@
         <fuelFilter>
           <thingDefs>
             <li>WoodLog</li>
-			<li>DankPyon_Coal</li>
+			      <li>DankPyon_Coal</li>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>

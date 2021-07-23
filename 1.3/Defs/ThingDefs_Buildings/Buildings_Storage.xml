@@ -13,13 +13,13 @@
         </filter>
       </defaultStorageSettings>
     </building>
-    <researchPrerequisites>
+    <researchPrerequisites Inherit="false">
       <li>DankPyon_RusticStorage</li>
     </researchPrerequisites>
   </ThingDef>
 
   <!-- ==================== Wood Logs ==================== -->
-  <ThingDef ParentName="LWM_DeepStorage">
+  <ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_WoodLogs1x1c</defName>
 		<label>wood logs</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -39,15 +39,13 @@
       <Mass>5</Mass>
       <Flammability>1</Flammability>
 		</statBases>
-    <designatorDropdown>DankPyon_WoodLogs1x2a</designatorDropdown>
+    <designatorDropdown>DankPyon_WoodLogs1x1a</designatorDropdown>
     
 		<costList>
 			<WoodLog>45</WoodLog>
 		</costList>
 
     <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <fixedStorageSettings>
         <filter>
           <thingDefs>
@@ -69,7 +67,7 @@
 	</ThingDef>
 
   <!--== Wood Logs 1x2 ==-->
-  <ThingDef ParentName="LWM_DeepStorage">
+  <ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_WoodLogs1x2c</defName>
 		<label>wood logs (1x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -94,8 +92,6 @@
 		</costList>
 
     <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <fixedStorageSettings>
         <filter>
           <thingDefs>
@@ -118,7 +114,7 @@
 	</ThingDef>
 
   <!--== Dark Wood Logs 1x1 ==-->
-  <ThingDef ParentName="LWM_DeepStorage">
+  <ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_DarkWoodLogs1x1c</defName>
 		<label>dark wood logs</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -127,7 +123,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.33,1.33)</drawSize>
 		</graphicData>
-    <uiIconPath>Storage/DarkWoodLogs1x2_south</uiIconPath>
+    <uiIconPath>Storage/DarkWoodLogs1x1_south</uiIconPath>
     <uiIconScale>1</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
@@ -145,8 +141,6 @@
 		</costList>
 
     <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <fixedStorageSettings>
         <filter>
           <thingDefs>
@@ -169,7 +163,7 @@
 	</ThingDef>
 
   <!--== Dark Wood Logs 1x2 ==-->
-  <ThingDef ParentName="LWM_DeepStorage">
+  <ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_DarkWoodLogs1x2c</defName>
 		<label>dark wood logs 1x2</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -182,8 +176,6 @@
     <size>(1,1)</size>
 
 		<building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <fixedStorageSettings>
         <filter>
           <thingDefs>

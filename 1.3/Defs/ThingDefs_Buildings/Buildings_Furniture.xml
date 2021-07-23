@@ -395,7 +395,7 @@
 
   <!-- ======================== Lighting ======================= -->
 
-  <ThingDef ParentName="DankPyon_BuildingBase">
+  <!--ThingDef ParentName="DankPyon_BuildingBase">
 		<defName>DankPyon_RusticCandles</defName>
 		<label>candles</label>
 		<thingClass>Building</thingClass>
@@ -445,7 +445,79 @@
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
-	</ThingDef>
+	</ThingDef-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_Candle</defName>
+    <label>candle</label>
+    <description>A candle to prevent darkness seeping in your room. Can be refueled with animal fat.</description>
+    <graphicData>
+      <texPath>Furniture/Candle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <damageData>
+        <rect>(0.35,0.35,0.3,0.3)</rect>
+      </damageData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <category>Building</category>
+    <rotatable>false</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>4</pathCost>
+    <constructEffect>ConstructWood</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.15</fillPercent>
+    <statBases>
+      <Beauty>8</Beauty>
+      <MaxHitPoints>20</MaxHitPoints>
+      <WorkToBuild>250</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Mass>0.2</Mass>
+    </statBases>
+    <selectable>true</selectable>
+
+    <costList>
+      <DankPyon_Fat>10</DankPyon_Fat>
+    </costList>
+
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <clearBuildingArea>false</clearBuildingArea>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <comps>
+        <li Class="CompProperties_Refuelable">
+          <fuelConsumptionRate>1.1</fuelConsumptionRate>
+          <fuelCapacity>20</fuelCapacity>
+          <initialFuelPercent>1</initialFuelPercent>
+          <fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
+          <fuelFilter>
+              <thingDefs>
+                  <li>DankPyon_Fat</li>
+              </thingDefs>
+          </fuelFilter>
+          <destroyOnNoFuel>true</destroyOnNoFuel>
+       </li>
+        <li Class="CompProperties_Glower">
+          <glowRadius>5</glowRadius>
+          <glowColor>(252,187,113,0)</glowColor>
+        </li>
+        <li Class="CompProperties_FireOverlay">
+           <fireSize>0.3</fireSize>
+          <offset>(0,0,0.5)</offset>
+        </li>
+    </comps>
+    <designationCategory>DankPyon_RusticFurniture</designationCategory>
+</ThingDef>
 	
 	<ThingDef ParentName="DankPyon_BuildingBase">
 		<defName>DankPyon_RusticLamp</defName>

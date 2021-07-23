@@ -1327,8 +1327,8 @@
     <thingClass>Building_WorkTable_HeatPush</thingClass>
     <graphicData>
       <texPath>Production/Furnace</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Multi</graphicClass>
+	    <shaderType>CutoutComplex</shaderType>
       <drawSize>(4,4)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>

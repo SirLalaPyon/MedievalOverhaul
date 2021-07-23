@@ -3,6 +3,87 @@
 <Defs>
 
 <!--============== Tier 1 Meals ===============-->
+<!-- ======= Bone Soup ====== -->
+<!-- Bone Soup -->
+<RecipeDef>
+	<defName>DankPyon_CookMealBoneSoup</defName>
+	<label>cook bone soup</label>
+	<description>Cook bone soup.</description>
+	<jobString>Cooking bone soup.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_CookMeal</soundWorking>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>300</workAmount> 
+  		<recipeUsers>	  
+			<li>DankPyon_StewPot</li>		  	  
+  		</recipeUsers>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_Bone</li>
+	  			</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+	</ingredients>
+
+	<products>
+		<DankPyon_MealBoneSoup>1</DankPyon_MealBoneSoup>
+	</products>
+
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_Bone</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<workSkill>Cooking</workSkill>
+	<researchPrerequisites>
+		<li>DankPyon_BasicCooking</li>
+	</researchPrerequisites>
+</RecipeDef>
+
+<!-- Bone Soup Bulk -->
+<RecipeDef>
+	<defName>DankPyon_CookMealBoneSoupBulk</defName>
+	<label>cook bone soup x5</label>
+	<description>Cook 5 bone soup.</description>
+	<jobString>Cooking 5 bone soups.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_CookMeal</soundWorking>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>1500</workAmount> 
+  		<recipeUsers>	  
+			<li>DankPyon_StewPot</li>		  	  
+  		</recipeUsers>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_Bone</li>
+	  			</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
+	</ingredients>
+
+	<products>
+		<DankPyon_MealBoneSoup>5</DankPyon_MealBoneSoup>
+	</products>
+
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_Bone</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<workSkill>Cooking</workSkill>
+	<researchPrerequisites>
+		<li>DankPyon_BasicCooking</li>
+	</researchPrerequisites>
+</RecipeDef>
+
 <!-- ======= Bread ====== -->
 <!-- Bread -->
 <RecipeDef>
@@ -2947,14 +3028,14 @@
 	<jobString>Cooking cheese soup.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
-<soundWorking>Recipe_CookMeal</soundWorking>
-<allowMixingIngredients>true</allowMixingIngredients>
-<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-<workAmount>650</workAmount> 
-  <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
-  </recipeUsers>
-<ingredients>
+	<soundWorking>Recipe_CookMeal</soundWorking>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<workAmount>650</workAmount> 
+  	<recipeUsers>	  
+		<li>DankPyon_RusticCookingTable</li>		  	  
+  	</recipeUsers>
+	<ingredients>
 		<li>
 			<filter>
 				<thingDefs>
@@ -2979,25 +3060,25 @@
 			</filter>
 			<count>0.8</count>
 		</li>
-</ingredients>
-<products>
+	</ingredients>
+	<products>
 	  <DankPyon_MealCheeseSoup>1</DankPyon_MealCheeseSoup>
-</products>
+	</products>
 	<fixedIngredientFilter>
 		<categories>
 			<li>FoodRaw</li>
 		</categories>
-		  <specialFiltersToDisallow>
+		<specialFiltersToDisallow>
 			<li>AllowPlantFood</li>
-		  </specialFiltersToDisallow>
+		</specialFiltersToDisallow>
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<categories>
 			<li>FoodRaw</li>
 		</categories>
-	  <disallowedCategories>
+	<disallowedCategories>
 		<li>EggsFertilized</li>
-	  </disallowedCategories>
+	</disallowedCategories>
 		<disallowedThingDefs>
 			<li>Meat_Human</li>
 			<li>Meat_Megaspider</li>
@@ -3005,7 +3086,10 @@
 			<!--li>Milk</li-->
 		</disallowedThingDefs>
 	</defaultIngredientFilter>
-<workSkill>Cooking</workSkill>
+	<workSkill>Cooking</workSkill>
+	<researchPrerequisites>
+		<li>DankPyon_AdvancedCooking</li>
+	</researchPrerequisites>
 </RecipeDef>
 
 <!-- Cheese Soup Bulk -->

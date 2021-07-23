@@ -433,7 +433,32 @@
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
+
 <!--============== Tier 1 Meals ===============-->
+<!-- Bone Soup -->
+<ThingDef ParentName="MealCooked">
+  <defName>DankPyon_MealBoneSoup</defName>
+  <label>bone soup</label>
+  <description>A weak broth made from animal bones. Not so filling on its own.</description>
+  <graphicData>
+    <texPath>Meal/BoneSoup</texPath>
+    <graphicClass>Graphic_StackCount</graphicClass>
+  </graphicData>
+  <statBases>
+  <MarketValue>5</MarketValue>
+  <Nutrition>0.3</Nutrition>
+  <WorkToMake>300</WorkToMake>	
+  <Mass>0.5</Mass>
+  </statBases>	
+  <ingestible>
+    <!--tasteThought>DankPyon_AteBoneSoup</tasteThought-->
+    <preferability>MealSimple</preferability>
+    <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+    <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+  </ingestible>
+  <rotatable>false</rotatable>
+</ThingDef>
+
 <!-- Bread --> 
  <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealBread</defName>
@@ -445,7 +470,7 @@
     </graphicData>
     <stackLimit>25</stackLimit>    
     <statBases>
-      <MarketValue>16</MarketValue>
+      <MarketValue>9</MarketValue>
       <Mass>0.4</Mass>
       <Nutrition>0.4</Nutrition>
       <WorkToMake>350</WorkToMake>  
@@ -467,14 +492,14 @@
   <!-- Weak Stew --> 
   <ThingDef ParentName="MealCooked">
     <defName>DankPyon_MealWeakStew</defName>
-    <label>Weak Stew</label>
+    <label>weak stew</label>
     <description>A light stew, consisting primarily of bone broth with a few morsels of meat floating within. Not quite saturating, but a filling meal nonetheless.</description>
     <graphicData>
       <texPath>Meal/WeakStew</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-		<MarketValue>10</MarketValue>
+		<MarketValue>15</MarketValue>
 		<Nutrition>0.8</Nutrition>
 		<WorkToMake>450</WorkToMake>	
 		<Mass>0.5</Mass>

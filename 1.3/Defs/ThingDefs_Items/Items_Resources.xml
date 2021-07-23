@@ -451,7 +451,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>DankPyon_Bone</defName>
     <label>bone</label>
-    <description>PLACEHOLDER</description>
+    <description>Bone from animals, including humans, can be used as a general material. Bone weapons and armor offer poor durability but accessible protection. Buildings and art inlaid with bone provide decoration to otherwise poor or dull materials. Although easy to acquire, using bones as entire structures, such as a wall or door, should be cautioned. The best use of bone, whether for armor or art, should be to elevate other materials.</description>
     <graphicData>
       <texPath>Resources/Bone</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -516,7 +516,7 @@
   <ThingDef ParentName="OrganicProductBase">
     <defName>DankPyon_Fat</defName>
     <label>fat</label>
-    <description>PLACEHOLDER</description>
+    <description>An abundant material, fat serves multiple purposes. In food, added fat improves meals and fills a colonist’s gut longer, but too much and the colonist will more likely get sick. In survival, fat can be added to flames, whether in a torch or a bonfire, to maintain heat longer. Finally, rendered fat can mold into candles, soaps, sculptures, and more.</description>
     <graphicData>
       <texPath>Resources/Fat</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

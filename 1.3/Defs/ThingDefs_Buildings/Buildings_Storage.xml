@@ -18,6 +18,209 @@
     </researchPrerequisites>
   </ThingDef>
 
+  <!-- ==================== Wood Logs ==================== -->
+  <ThingDef ParentName="LWM_DeepStorage">
+		<defName>DankPyon_WoodLogs1x1c</defName>
+		<label>wood logs</label>
+		<description>Logs that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/WoodLogs1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.33,1.33)</drawSize>
+		</graphicData>
+    <uiIconPath>Storage/WoodLogs1x1_south</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+    
+		<costList>
+			<WoodLog>45</WoodLog>
+		</costList>
+
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+	</ThingDef>
+
+  <!--== Wood Logs 1x2 ==-->
+  <ThingDef ParentName="LWM_DeepStorage">
+		<defName>DankPyon_WoodLogs1x1c</defName>
+		<label>wood logs</label>
+		<description>Logs that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/WoodLogs1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.33,1.33)</drawSize>
+		</graphicData>
+    <uiIconPath>Storage/WoodLogs1x1_south</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+    
+		<costList>
+			<WoodLog>45</WoodLog>
+		</costList>
+
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+	</ThingDef>
+
+  <!--== Dark Wood Logs 1x1 ==-->
+  <ThingDef ParentName="LWM_DeepStorage">
+		<defName>DankPyon_DarkWoodLogs1x1c</defName>
+		<label>dark wood logs</label>
+		<description>Logs that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/DarkWoodLogs1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.33,1.33)</drawSize>
+		</graphicData>
+    <uiIconPath>Storage/WoodLogs1x2_south</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+    
+		<costList>
+			<WoodLog>45</WoodLog>
+		</costList>
+
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+	</ThingDef>
+
+  <!--== Dark Wood Logs 1x2 ==-->
+  <ThingDef ParentName="LWM_DeepStorage">
+		<defName>DankPyon_DarkWoodLogs1x2c</defName>
+		<label>dark wood logs 1x2</label>
+		<description>Logs that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/DarkWoodLogs1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+		<building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+
+    
+		<costList>
+			<WoodLog>45</WoodLog>
+		</costList>
+
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>10</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+	</ThingDef>
+
+
+
+  <!-- ==================== Barrels ==================== -->
   <ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_RusticBarrelClosed</defName>
 		<label>Barrel</label>
@@ -52,7 +255,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>None</overlayType>
@@ -105,7 +308,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>None</overlayType>
@@ -155,7 +358,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>None</overlayType>
@@ -205,7 +408,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>None</overlayType>
@@ -255,7 +458,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>None</overlayType>
@@ -305,7 +508,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>None</overlayType>
@@ -355,7 +558,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>None</overlayType>
@@ -405,7 +608,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		<overlayType>None</overlayType>
@@ -662,7 +865,7 @@
 
   </ThingDef>
 
-  <ThingDef ParentName="DankPyon_StorageBase">
+  <!--ThingDef ParentName="DankPyon_StorageBase">
     <defName>DankPyon_ShelfPlates</defName>
     <label>shelf of plates</label>
     <description>A shelf for reserved for clean plates. Items stored in this will not affect room beauty.</description>
@@ -722,7 +925,7 @@
         <overlayType>None</overlayType>
       </li>
     </comps>
-  </ThingDef>
+  </ThingDef-->
 
   <ThingDef ParentName="DankPyon_StorageBase">
     <defName>DankPyon_StrawPile</defName>

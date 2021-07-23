@@ -34,11 +34,12 @@
     <size>(1,1)</size>
 
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>200</WorkToBuild>
-			<Mass>10</Mass>
-			<Flammability>1</Flammability>
+			<MaxHitPoints>70</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1</Flammability>
 		</statBases>
+    <designatorDropdown>DankPyon_WoodLogs1x2a</designatorDropdown>
     
 		<costList>
 			<WoodLog>45</WoodLog>
@@ -59,7 +60,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>8</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>
@@ -69,28 +70,27 @@
 
   <!--== Wood Logs 1x2 ==-->
   <ThingDef ParentName="LWM_DeepStorage">
-		<defName>DankPyon_WoodLogs1x1c</defName>
-		<label>wood logs</label>
+		<defName>DankPyon_WoodLogs1x2c</defName>
+		<label>wood logs (1x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/WoodLogs1x1</texPath>
+			<texPath>Storage/WoodLogs1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1.33,1.33)</drawSize>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    <uiIconPath>Storage/WoodLogs1x1_south</uiIconPath>
-    <uiIconScale>1</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>200</WorkToBuild>
-			<Mass>10</Mass>
-			<Flammability>1</Flammability>
+			<MaxHitPoints>70</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1</Flammability>
 		</statBases>
+    <designatorDropdown>DankPyon_WoodLogs1x2a</designatorDropdown>
     
 		<costList>
-			<WoodLog>45</WoodLog>
+			<WoodLog>90</WoodLog>
 		</costList>
 
     <building>
@@ -109,7 +109,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>16</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>
@@ -127,20 +127,21 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.33,1.33)</drawSize>
 		</graphicData>
-    <uiIconPath>Storage/WoodLogs1x2_south</uiIconPath>
+    <uiIconPath>Storage/DarkWoodLogs1x2_south</uiIconPath>
     <uiIconScale>1</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>200</WorkToBuild>
-			<Mass>10</Mass>
-			<Flammability>1</Flammability>
+			<Mass>5</Mass>
+			<Flammability>0.95</Flammability>
 		</statBases>
+    <designatorDropdown>DankPyon_WoodLogs1x1a</designatorDropdown>
     
 		<costList>
-			<WoodLog>45</WoodLog>
+			<DankPyon_DarkWoodLog>45</DankPyon_DarkWoodLog>
 		</costList>
 
     <building>
@@ -149,7 +150,7 @@
       <fixedStorageSettings>
         <filter>
           <thingDefs>
-            <li>WoodLog</li>
+            <li>DankPyon_DarkWoodLog</li>
           </thingDefs>
         </filter>
       </fixedStorageSettings>
@@ -159,7 +160,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>8</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>
@@ -186,38 +187,34 @@
       <fixedStorageSettings>
         <filter>
           <thingDefs>
-            <li>WoodLog</li>
+            <li>DankPyon_DarkWoodLog</li>
           </thingDefs>
         </filter>
       </fixedStorageSettings>
     </building>
 
-    
-		<costList>
-			<WoodLog>45</WoodLog>
-		</costList>
+    <statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>0.95</Flammability>
+		</statBases>
+    <designatorDropdown>DankPyon_WoodLogs1x2a</designatorDropdown>
 
-    <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-        <filter>
-        </filter>
-      </defaultStorageSettings>
-    </building>
+		<costList>
+			<DankPyon_DarkWoodLog>90</DankPyon_DarkWoodLog>
+		</costList>
 
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>10</maxNumberStacks>
+        <maxNumberStacks>16</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>
       </li>
     </comps>
 	</ThingDef>
-
 
 
   <!-- ==================== Barrels ==================== -->

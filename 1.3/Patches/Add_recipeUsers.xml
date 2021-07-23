@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "Plant_Grass"]/RecipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_TailorsBench</li>
+		</value>
+	</Operation>
+
+</Patch>

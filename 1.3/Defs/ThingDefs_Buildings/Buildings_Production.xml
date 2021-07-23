@@ -200,11 +200,11 @@
   </ThingDef>
 
   <ThingDef ParentName="BenchBase">
-	<defName>DankPyon_StoneOven</defName>
-	<label>oven</label>
-	<thingClass>Building_WorkTable_HeatPush</thingClass>
-	<description>An oven used for baking.</description>
-	<graphicData>
+	  <defName>DankPyon_StoneOven</defName>
+	  <label>oven</label>
+	  <thingClass>Building_WorkTable_HeatPush</thingClass>
+	  <description>A cooking table with a stone oven designed for baking meals.</description>
+	  <graphicData>
       <texPath>Production/Oven</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
@@ -216,30 +216,35 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-	<staticSunShadowHeight>0.3</staticSunShadowHeight>
+	  <staticSunShadowHeight>0.3</staticSunShadowHeight>
+
     <stuffCategories>
       <li>Stony</li>
     </stuffCategories>
     <costStuffCount>60</costStuffCount>
-	<altitudeLayer>Building</altitudeLayer>
-	<fillPercent>0.5</fillPercent>
-	<useHitPoints>True</useHitPoints>
-	<statBases>
-	  <WorkToBuild>2000</WorkToBuild>
-	  <MaxHitPoints>180</MaxHitPoints>
-	  <Flammability>1.0</Flammability>
-	</statBases>
-	<size>(3,1)</size>
-	<designationCategory>Production</designationCategory>
-	<passability>PassThroughOnly</passability>
-	<pathCost>70</pathCost>
-	<hasInteractionCell>True</hasInteractionCell>
-	<interactionCellOffset>(-1,0,-1)</interactionCellOffset>
-    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
-	<surfaceType>Item</surfaceType>
-	<inspectorTabs>
-		<li>ITab_Bills</li>
-	</inspectorTabs>
+    <costList>
+      <WoodLog>20</WoodLog>
+    </costList>
+
+	  <altitudeLayer>Building</altitudeLayer>
+	  <fillPercent>0.5</fillPercent>
+	  <useHitPoints>True</useHitPoints>
+	  <statBases>
+	    <WorkToBuild>2000</WorkToBuild>
+	    <MaxHitPoints>180</MaxHitPoints>
+	    <Flammability>1.0</Flammability>
+	  </statBases>
+	  <size>(3,1)</size>
+	  <designationCategory>Production</designationCategory>
+	  <passability>PassThroughOnly</passability>
+	  <pathCost>70</pathCost>
+	  <hasInteractionCell>True</hasInteractionCell>
+	  <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+      <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	  <surfaceType>Item</surfaceType>
+	  <inspectorTabs>
+	  	<li>ITab_Bills</li>
+	   </inspectorTabs>
 	<comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -272,7 +277,7 @@
 	<defName>DankPyon_Grill</defName>
 	<label>grill</label>
 	<thingClass>Building_WorkTable_HeatPush</thingClass>
-	<description>A wood fueled grill used for cooking.</description>
+	<description>A wood fueled grill used for cooking meals with an open fire.</description>
 	<graphicData>
       <texPath>Production/Grill</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -1307,6 +1312,11 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
+
+    <recipes>
+      <li>Make_Patchleather</li>
+    </recipes>
+
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>

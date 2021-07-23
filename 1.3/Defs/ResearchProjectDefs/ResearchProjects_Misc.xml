@@ -8,6 +8,9 @@
     <baseCost>300</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
+    <tags>
+      <li>DankPyon_MedievalStart</li>
+    </tags>
 		<researchViewX>2</researchViewX>
 		<researchViewY>0</researchViewY>    
   </ResearchProjectDef>
@@ -21,6 +24,9 @@
     <techLevel>Medieval</techLevel>
 		<researchViewX>3</researchViewX>
 		<researchViewY>0.7</researchViewY>    
+    <prerequisites>
+      <li>DankPyon_RusticFurniture</li>
+    </prerequisites>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -178,6 +184,9 @@
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>DankPyon_MedievalStart</li>
+    </tags>
 		<researchViewX>0</researchViewX>
 		<researchViewY>2.8</researchViewY>    
   </ResearchProjectDef>

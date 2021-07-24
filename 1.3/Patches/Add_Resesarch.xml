@@ -8,4 +8,12 @@
 			</researchPrerequisites>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_Cotton"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_Textiles</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
 </Patch>	

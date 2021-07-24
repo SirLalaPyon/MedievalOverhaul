@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name = "ApparelMakeableBase"]/RecipeMaker/recipeUsers</xpath>
+		<xpath>Defs/ThingDef[@Name = "ApparelMakeableBase"]/recipeMaker/recipeUsers</xpath>
 		<value>
 			<li>DankPyon_TailorsBench</li>
 		</value>

@@ -734,7 +734,7 @@
   <!--<ThingDef ParentName="BuildingBase">
     <defName>DankPyon_DryingRack</defName>
     <label>Drying Rack</label>
-    <description>A wooden rack to preserve goods for long time use.</description>
+    <description>A wooden rack to dry goods under the sun for preservation and long time use.</description>
     <graphicData>
       <texPath>Production/DryingRack/DryingRack</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -752,17 +752,20 @@
     <passability>PassThroughOnly</passability>
     <fillPercent>0.5</fillPercent>
     <pathCost>70</pathCost>
+
     <statBases>
       <WorkToBuild>400</WorkToBuild>
       <Mass>5</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
+
 	  <size>(2,2)</size>   
     <costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>	
 		</stuffCategories>
+
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="UniversalFermenter.CompProperties_UniversalFermenter">
@@ -1090,7 +1093,7 @@
 	<ThingDef ParentName="BenchBase">
     <defName>DankPyon_Workbench</defName>
     <label>Workbench</label>
-    <description>A wood-fueled station for smithing non-mechanical weapons and tools.</description>
+    <description>A work table equipped with tools for crafting and designing items.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Production/Workbench</texPath>
@@ -1156,7 +1159,7 @@
   <ThingDef ParentName="BenchBase">
     <defName>DankPyon_TanningRack</defName>
     <label>tanning rack</label>
-    <description>A rack for treating raw hides to become useful leathers.</description>
+    <description>A standing rack for treating raw hides to become useful leathers.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Production/TanningRack</texPath>
@@ -1214,7 +1217,7 @@
   <ThingDef ParentName="BenchBase">
     <defName>DankPyon_SpinningWheel</defName>
     <label>spinning wheel</label>
-    <description>A rolling contraption that processes raw cotton into cloth fabrics.</description>
+    <description>A rolling contraption that processes raw cotton into fabrics.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Production/SpinningWheel</texPath>
@@ -1245,10 +1248,9 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>600</WorkToBuild>
+      <WorkToBuild>2000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
-      <Cleanliness>-10</Cleanliness>
     </statBases>
     <size>(2,1)</size>
     <designationCategory>Production</designationCategory>
@@ -1268,7 +1270,7 @@
     </placeWorkers>
     <techLevel>Medieval</techLevel>
     <researchPrerequisites>
-      <li>DankPyon_LeatherTanning</li>
+      <li>DankPyon_Textiles</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -1305,7 +1307,6 @@
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
-      <Cleanliness>-3</Cleanliness>
     </statBases>
     <size>(3,1)</size>
 
@@ -1338,12 +1339,15 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>DankPyon_Textiles</li>
+    </researchPrerequisites>
   </ThingDef>
 	
 	<ThingDef ParentName="BenchBase">
     <defName>DankPyon_Furnace</defName>
     <label>Furnace</label>
-    <description>A furnace to smelt and refine resources.</description>
+    <description>A large stone furnace used to smelt raw ores and refine resources.</description>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
     <graphicData>
       <texPath>Production/Furnace</texPath>
@@ -1359,15 +1363,17 @@
     </graphicData>
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
+
 	  <costStuffCount>120</costStuffCount>
 	  <stuffCategories>
       <li>Stony</li>
     </stuffCategories>
+
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>2500</WorkToBuild>
+      <WorkToBuild>3000</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0</Flammability>
     </statBases>
@@ -1441,7 +1447,7 @@
   <ThingDef ParentName="BenchBase">
     <defName>DankPyon_Anvil</defName>
     <label>Anvil</label>
-    <description>A wood-fueled station for smithing non-mechanical weapons and tools.</description>
+    <description>A large metalworking tool with a flattened top surface to strike objects on such as weapons and armor.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Production/Anvil</texPath>
@@ -1454,10 +1460,12 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
-    <costStuffCount>30</costStuffCount>
+    <costStuffCount>50</costStuffCount>
+
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -1465,7 +1473,7 @@
       <WorkToBuild>2000</WorkToBuild>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
-      <Cleanliness>-3</Cleanliness>
+      <Mass>30</Mass>
     </statBases>
     <size>(1,1)</size>
     <designationCategory>Production</designationCategory>
@@ -1502,8 +1510,8 @@
 <!-- Mine Shaft -->
 <ThingDef ParentName="BenchBase">
     <defName>DankPyon_MineShaft</defName>
-    <label>Mine Shaft</label>
-    <description>A structure built on top of a vertical tunnel. Can be used for mining resources and chunks.</description>
+    <label>mine shaft</label>
+    <description>A sturdy platform equipped with a primitive elevator built on top of a vertical tunnel. Can be used for mining resources and chunks.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Production/MineShaft</texPath>
@@ -1518,19 +1526,20 @@
       </damageData>
     </graphicData>
 
-    <costStuffCount>250</costStuffCount>
     <costList>
       <DankPyon_IronIngot>60</DankPyon_IronIngot>
+      <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
     </costList>
     <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
+    <costStuffCount>200</costStuffCount>
 
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <WorkToBuild>5000</WorkToBuild>
+      <WorkToBuild>6000</WorkToBuild>
       <MaxHitPoints>500</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-15</Cleanliness>
@@ -1606,7 +1615,7 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>70</costStuffCount>
 
     <fertility>2.8</fertility>
     <building>
@@ -1617,10 +1626,10 @@
       </buildingTags>
     </building>
     <tickerType>Rare</tickerType>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Production</designationCategory>
     <researchPrerequisites>
-      <li>DankPyon_IntermediateAgriculture</li>
+      <li>DankPyon_BasicAgriculture</li>
     </researchPrerequisites>
   </ThingDef>
 

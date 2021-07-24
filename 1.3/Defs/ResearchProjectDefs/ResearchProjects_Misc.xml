@@ -50,14 +50,25 @@
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>1</researchViewX>
-		<researchViewY>0</researchViewY>    
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.7</researchViewY>    
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>DankPyon_LeatherTanning</defName>
     <label>leather tanning</label>
     <description>Learn how to treat raw animal pelts into leather.</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.7</researchViewY>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Textiles</defName>
+    <label>textiles</label>
+    <description>Learn how to plant cotton and harvest them to tailor clothing.</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
@@ -169,9 +180,9 @@
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
     <prerequisites>
-      <li>DankPyon_IntermediateAgriculture</li>
+      <li>DankPyon_AdvancedAgriculture</li>
     </prerequisites>
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>2.1</researchViewY>    
   </ResearchProjectDef>
 

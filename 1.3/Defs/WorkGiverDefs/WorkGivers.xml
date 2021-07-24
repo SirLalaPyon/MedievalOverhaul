@@ -3,6 +3,23 @@
 <Defs>
 
   <WorkGiverDef>
+    <defName>DankPyon_DoBillsRusticCookingTable</defName>
+    <label>cook meals</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>110</priorityInType>
+      <fixedBillGiverDefs>
+        <li>DankPyon_RusticCookingTable</li>
+      </fixedBillGiverDefs>
+    <verb>cook</verb>
+    <gerund>cooking at</gerund>
+    <requiredCapacities>
+        <li>Manipulation</li>
+    </requiredCapacities>
+      <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+  <WorkGiverDef>
   <defName>DankPyon_DoBillsStoneOven</defName>
   <label>bake goods</label>
   <giverClass>WorkGiver_DoBill</giverClass>
@@ -117,7 +134,7 @@
       <prioritizeSustains>true</prioritizeSustains>
     </WorkGiverDef>
 
-    <WorkGiverDef>
+    <!--WorkGiverDef>
       <defName>DankPyon_DoBillsDishwasher</defName>
       <label>wash items</label>
       <giverClass>WorkGiver_DoBill</giverClass>
@@ -132,7 +149,7 @@
           <li>Manipulation</li>
       </requiredCapacities>
         <prioritizeSustains>true</prioritizeSustains>
-      </WorkGiverDef>
+      </WorkGiverDef-->
 
       <WorkGiverDef>
         <defName>DankPyon_DoBillsFurnace</defName>

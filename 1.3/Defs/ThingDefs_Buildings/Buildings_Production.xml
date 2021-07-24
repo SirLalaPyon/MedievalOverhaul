@@ -355,7 +355,7 @@
 	<defName>DankPyon_StewPot</defName>
 	<label>Stew Pot</label>
 	<thingClass>Building_WorkTable_HeatPush</thingClass>
-	<description>A stew pot to cook delicious soups.</description>
+	<description>A large metal cauldron that can cook delicious soups.</description>
 	<graphicData>
       <texPath>Production/StewPot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -368,18 +368,22 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>100</costStuffCount>
+
 	<altitudeLayer>Building</altitudeLayer>
 	<fillPercent>0.5</fillPercent>
 	<useHitPoints>True</useHitPoints>
+
 	<statBases>
 	  <WorkToBuild>2000</WorkToBuild>
 	  <MaxHitPoints>180</MaxHitPoints>
 	  <Flammability>1.0</Flammability>
 	</statBases>
+
 	<size>(2,2)</size>
 	<designationCategory>Production</designationCategory>
 	<passability>PassThroughOnly</passability>
@@ -429,13 +433,14 @@
 		<defName>DankPyon_Millstone</defName>
 		<label>Millstone</label>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>A small muscle-powered grinding stone for grinding raw plants.</description>
+		<description>A small round stone for grinding raw plants.</description>
 		<graphicData>
 		<texPath>Production/Millstone</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 		<drawSize>(1,1)</drawSize>
 		</graphicData>
+
     		<stuffCategories>
       		<li>Stony</li>
     		</stuffCategories>
@@ -443,6 +448,7 @@
     		<costList>
       		<WoodLog>20</WoodLog>
     		</costList>
+
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -483,7 +489,7 @@
 
 	</ThingDef>
 	
-	  <ThingDef ParentName="BuildingBase">
+	<!--ThingDef ParentName="BuildingBase">
     <defName>DankPyon_RusticFermentingBarrel</defName>
     <label>rustic fermenting barrel</label>
     <description>A barrel for fermenting raw wort into ale</description>
@@ -499,7 +505,7 @@
         <volume>(0.75, 0.35, 0.33)</volume>
       </shadowData>
     </graphicData>
-	<uiIconPath>Production/RusticFermentingBarrel_MenuIcon</uiIconPath>
+	  <uiIconPath>Production/RusticFermentingBarrel_MenuIcon</uiIconPath>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -538,12 +544,12 @@
     <researchPrerequisites>
       <li>Brewing</li>
     </researchPrerequisites>
-  </ThingDef>
+  </ThingDef-->
 
   <ThingDef ParentName="BenchBase">
     <defName>DankPyon_ButchersBlock</defName>
     <label>butcher's block</label>
-    <description>A heavy table for butchering dead creatures into pieces of raw meat.</description>
+    <description>A wooden stump for butchering dead creatures into pieces of raw meat.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Production/ButcherBlock</texPath>
@@ -594,7 +600,7 @@
     <techLevel>Medieval</techLevel>
   </ThingDef>
 
-  <ThingDef ParentName="BenchBase">
+  <!--ThingDef ParentName="BenchBase">
     <defName>DankPyon_Dishwasher</defName>
     <label>dishwasher</label>
     <description>A bucket full of water to wash the dirt dishes.</description>
@@ -650,7 +656,7 @@
     <researchPrerequisites>
       <li>DankPyon_BasicCooking</li>
     </researchPrerequisites>
-  </ThingDef>
+  </ThingDef-->
 
   <ThingDef ParentName="BenchBase">
     <defName>DankPyon_ResearchBench</defName>
@@ -676,7 +682,7 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
-    <costStuffCount>100</costStuffCount>
+    <costStuffCount>75</costStuffCount>
     <costList>
       <DankPyon_IronIngot>25</DankPyon_IronIngot>
     </costList>
@@ -886,7 +892,7 @@
 <!--ThingDef ParentName="BuildingBase">
 	<defName>DankPyon_Presser</defName>
 	<label>Presser</label>
-	<description>PLACEHOLDER</description>
+	<description>A wooden contraption to press whey from curds, which makes milk into delicious cheese.</description>
 	<graphicData>
 		<drawSize>(2,2)</drawSize>
 		<texPath>Production/Presser/Presser</texPath>
@@ -907,16 +913,20 @@
 	<thingCategories>
 		<li>BuildingsProduction</li>
 	</thingCategories>
+
 	<statBases>
 		<WorkToBuild>600</WorkToBuild>
 		<Mass>10</Mass>
 		<MaxHitPoints>100</MaxHitPoints>
 		<Flammability>1.0</Flammability>
 	</statBases>
+
 	<costList>
 		<DankPyon_IronIngot>30</DankPyon_IronIngot>
 		<WoodLog>30</WoodLog>
+    <DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
 	</costList>
+
 	<hasInteractionCell>True</hasInteractionCell>
 	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>

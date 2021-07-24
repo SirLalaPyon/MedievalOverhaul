@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Wash Plate  --> 
+  <!--> 
  <RecipeDef>
   <defName>DankPyon_Wash_PlateDirty</defName>
   <label>wash a dirty plate</label>
@@ -35,7 +35,6 @@
   <workSkill>Cooking</workSkill>
 </RecipeDef>
 
-<!-- Wash Plate Bulk --> 
 <RecipeDef>
   <defName>DankPyon_Wash_PlateDirtyBulk</defName>
   <label>(Bulk x5) Wash a dirty plate</label>
@@ -69,7 +68,6 @@
   <workSkill>Cooking</workSkill>
 </RecipeDef>
 
-<!-- Wash Dirty Bowl --> 
 <RecipeDef>
   <defName>DankPyon_Wash_BowlDirty</defName>
   <label>wash a dirty wooden bowl</label>
@@ -103,7 +101,6 @@
   <workSkill>Cooking</workSkill>
 </RecipeDef>
 
-<!-- Wash Dirty Bowl Bulk --> 
 <RecipeDef>
   <defName>DankPyon_Wash_BowlDirtyBulk</defName>
   <label>(Bulk x5) Wash a dirty wooden bowl</label>
@@ -135,6 +132,6 @@
     <DankPyon_BowlClean>5</DankPyon_BowlClean>
   </products>
   <workSkill>Cooking</workSkill>
-</RecipeDef>
+</RecipeDef-->
 
 </Defs>

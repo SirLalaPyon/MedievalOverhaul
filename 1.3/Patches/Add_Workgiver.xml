@@ -6,4 +6,11 @@
 			<li>DankPyon_StonecuttingSpot</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>DankPyon_TailorsBench</li>
+		</value>
+	</Operation>
 </Patch>	

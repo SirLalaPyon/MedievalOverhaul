@@ -13,4 +13,11 @@
 			<li>DankPyon_TailorsBench</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>DankPyon_Anvil</li>
+		</value>
+	</Operation>
 </Patch>	

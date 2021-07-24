@@ -128,8 +128,7 @@
     <workSkill>Crafting</workSkill>
   </RecipeDef>
 
-  <!-- Make Plate  --> 
- <RecipeDef>
+ <!--RecipeDef>
   <defName>DankPyon_Make_Plate</defName>
   <label>make a wooden plate</label>
   <description>Make a wooden plate.</description>
@@ -162,7 +161,6 @@
   <workSkill>Crafting</workSkill>
 </RecipeDef>
 
-<!-- Make Plate Bulk  --> 
 <RecipeDef>
   <defName>DankPyon_Make_PlateBulk</defName>
   <label>(Bulk 4x) Make a wooden plate</label>
@@ -196,7 +194,6 @@
   <workSkill>Crafting</workSkill>
 </RecipeDef>
 
-<!-- Make Bowl  --> 
 <RecipeDef>
   <defName>DankPyon_Make_Bowl</defName>
   <label>make a wooden bowl</label>
@@ -230,7 +227,6 @@
   <workSkill>Crafting</workSkill>
 </RecipeDef>
 
-<!-- Make Bowl Bulk  --> 
 <RecipeDef>
   <defName>DankPyon_Make_BowlBulk</defName>
   <label>(Bulk 4x) Make a wooden bowl</label>
@@ -262,7 +258,7 @@
     <DankPyon_BowlClean>4</DankPyon_BowlClean>
   </products>
   <workSkill>Crafting</workSkill>
-</RecipeDef>
+</RecipeDef-->
 
 <!-- Make Paper  --> 
 <RecipeDef>

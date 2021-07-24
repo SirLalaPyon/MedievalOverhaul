@@ -444,7 +444,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_ScribeTable</defName>
     <label>scribe table</label>
-    <description>Allows you to write messages for trade and diplomacy with nearby factions. Consumes paper when contacting factions.</description>
+    <description>A table housing wax tablets, which contain records and receipts. Alongside the tablets lay parchments, a seal, quills, and ink to allow for correspondence. When used alongside the bird post, the written letters can reach far lands quicker than a messenger. One can invite allies for feasts, rivals for a challenge, or neutral factions for trade.</description>
     <thingClass>Building_CommsConsole</thingClass>
     <graphicData>
       <texPath>Misc/TableScribe</texPath>

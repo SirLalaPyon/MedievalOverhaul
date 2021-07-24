@@ -28,8 +28,8 @@
 			<growDays>300</growDays>
 			<harvestWork>2000</harvestWork>
 			<harvestYield>150</harvestYield>
-			<wildClusterWeight>3</wildClusterWeight>
-			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+			<wildClusterRadius>5</wildClusterRadius>
 			<visualSizeRange>8~12</visualSizeRange>
 		</plant>
 	</ThingDef>
@@ -61,8 +61,8 @@
 			<growDays>300</growDays>
 			<harvestWork>2000</harvestWork>
 			<harvestYield>150</harvestYield>
-			<wildClusterWeight>8</wildClusterWeight>
-			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>5</wildClusterWeight>
+			<wildClusterRadius>5</wildClusterRadius>
 			<visualSizeRange>8~12</visualSizeRange>
 		</plant>
 	</ThingDef>
@@ -75,6 +75,7 @@
 			<texPath>Plants/GreatFir</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
+		<altitudeLayer>Pawn</altitudeLayer>
 		<statBases>
 			<Beauty>4</Beauty>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -115,8 +116,8 @@
       <leaflessGraphicPath>Plants_Leafless/GreatWillow_Leafless</leaflessGraphicPath>
       <harvestWork>2000</harvestWork>
       <harvestYield>100</harvestYield>
-      <wildClusterRadius>8</wildClusterRadius>
-      <wildClusterWeight>10</wildClusterWeight>
+      <wildClusterWeight>32</wildClusterWeight>
+      <wildClusterRadius>5</wildClusterRadius>
       <visualSizeRange>6~9</visualSizeRange>
     </plant>
   </ThingDef>

@@ -281,7 +281,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_Coal</defName>
     <label>Coal Chunks</label>
-    <description>Coal is a black combustible chunk of rock formed by mostly carbon. A good source of fuel for stoves and campfires.</description>
+    <description>Coal is a black combustible chunk of rock formed by mostly carbon. A good source of fuel for stoves and furnaces.</description>
     <graphicData>
       <texPath>Resources/Coal</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -312,7 +312,7 @@
   
   <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_IronOre</defName>
-    <label>Iron Ore</label>
+    <label>iron ore</label>
     <description>A raw iron ore, needs to be processed into ingots at a smelter to be usable.</description>
     <graphicData>
       <texPath>Resources/IronOre</texPath>
@@ -339,7 +339,7 @@
   
   <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_IronIngot</defName>
-    <label>Iron Ingot</label>
+    <label>iron ingot</label>
     <description>A bar of iron ingot. Ready to be used in crafting and construction.</description>
     <graphicData>
       <texPath>Resources/IronIngot</texPath>
@@ -422,7 +422,7 @@
   
   <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_GoldOre</defName>
-    <label>Gold Ore</label>
+    <label>gold ore</label>
     <description>A raw gold ore, needs to be processed into ingots at a smelter to be usable.</description>
     <graphicData>
       <texPath>Resources/GoldOre</texPath>

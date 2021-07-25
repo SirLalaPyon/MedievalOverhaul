@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>DankPyon_Apparel_Hauberk</defName>
+        <label>hauberk</label>
+        <description>A basic and simple hauberk. Offers decent and affordable protection against slashing and piercing attacks.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+		<costList>
+          <Steel>80</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>27000</WorkToMake>
+            <MaxHitPoints>230</MaxHitPoints>
+            <Mass>6</Mass>
+            <StuffEffectMultiplierArmor>0.63</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+            <!--MeleeDodgeChance>-3</MeleeDodgeChance--> <!-- Offsets nimble and the minimum skill to get a dodge chance -->
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+	
+	    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>DankPyon_Apparel_Heavy_Hauberk</defName>
+        <label>heavy hauberk</label>
+        <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail_Pad</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+		<costList>
+          <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>28000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>8</Mass>
+            <StuffEffectMultiplierArmor>0.63</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.5</MoveSpeed>
+            <!--MeleeDodgeChance>-5</MeleeDodgeChance--> <!-- Offsets nimble and the minimum skill to get a dodge chance -->
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_Pad</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+
+</Defs>

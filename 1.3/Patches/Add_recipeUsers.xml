@@ -8,4 +8,11 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name = "ArmorSmithableBase"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_Anvil</li>
+		</value>
+	</Operation>
+
 </Patch>

@@ -35,7 +35,7 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<costList>
-			<DankPyon_IronIngot>120</DankPyon_IronIngot>
+			<DankPyon_IronIngot>140</DankPyon_IronIngot>
 		</costList>
 		<stuffCategories>
 			<li>Woody</li>
@@ -150,14 +150,13 @@
 
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-			<WorkToBuild>1200</WorkToBuild>
+			<WorkToBuild>1500</WorkToBuild>
 			<Mass>15</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 
 		<costList>
 			<WoodLog>50</WoodLog>
-			<DankPyon_IronIngot>60</DankPyon_IronIngot>
 		</costList>
 		<stuffCategories>
 			<li>Stony</li>
@@ -209,7 +208,7 @@
 
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
-			<WorkToBuild>1200</WorkToBuild>
+			<WorkToBuild>1800</WorkToBuild>
 			<Mass>10</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
@@ -332,7 +331,7 @@
 
 	<statBases>
 		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToBuild>1500</WorkToBuild>
+		<WorkToBuild>1800</WorkToBuild>
 		<Mass>15</Mass>
 		<Flammability>1.0</Flammability>
 	</statBases>
@@ -370,6 +369,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_BirdPost</defName>
     <label>bird post</label>
+	<description>PLACEHOLDER</description>
 	<thingClass>Building</thingClass>
     <graphicData>
       <texPath>Misc/BirdPost</texPath>
@@ -392,7 +392,6 @@
     </statBases>
 
     <tickerType>Normal</tickerType>
-    <description>PLACEHOLDER</description>
     <size>(1,1)</size>
     <building>
 		<ai_chillDestination>false</ai_chillDestination>

@@ -36,6 +36,14 @@
 		<xpath>/Defs/ThingDef[defName = "Steel"]/deepCountPerPortion</xpath>
 	</Operation>
 
+	<!-- Steel Adjective -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name = "Steel"]/stuffProps</xpath>
+		<value>
+			<stuffAdjective>steel</stuffAdjective>
+		</value>
+	</Operation>
+
 	<!-- Silver Ore Replacement -->
 
 	<Operation Class="PatchOperationReplace">

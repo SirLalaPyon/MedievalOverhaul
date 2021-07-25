@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	 <ThingDef ParentName="ArmorSmithableBase">
+        <defName>DankPyon_Apparel_Coat_of_Plates</defName>
+        <label>coat of Pplates</label>
+        <description>Two layers of armor give way to this fantastically protective, yet cumbersome, suit, consisting of strong-forged chains beset by overlapping layers of metal plates to protect vitals and extremities.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+			<texPath>Apparel/HeavyArmor/Coat_Of_Plates</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
+
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>170</costStuffCount>
+
+        <statBases>
+            <WorkToMake>38000</WorkToMake>
+            <MaxHitPoints>290</MaxHitPoints>
+            <Mass>15</Mass>
+            <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+
+        <equippedStatOffsets>
+            <MoveSpeed>-0.8</MoveSpeed>
+            <!--MeleeDodgeChance>-1</MeleeDodgeChance--> <!-- Offsets nimble and the minimum skill to get a dodge chance -->
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+				<li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/HeavyArmor/Coat_Of_Plates</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>DankPyon_KnightMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+              <li>
+                <weight>10</weight>
+                <only>(0.33,0.33,0.33)</only>
+              </li>
+              <li>
+                <weight>10</weight>
+                <only>(0.65,0.65,0.65)</only>
+              </li>
+              <li>
+                <weight>6</weight>
+                <min>(0.3,0.3,0.3)</min>
+                <max>(0.5,0.5,0.5)</max>
+              </li>
+            </options>
+          </colorGenerator>
+    </ThingDef>
+
+    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>DankPyon_Apparel_Breast_Plate</defName>
+        <label>breast plate</label>
+        <description>A strong metal cuirass forged to encompass the torso while leaving the limbs exposed. Rather lightweight and protective.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+			<texPath>Apparel/HeavyArmor/Chest_Plate</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
+        <statBases>
+            <WorkToMake>39000</WorkToMake>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>8</Mass>
+            <StuffEffectMultiplierArmor>0.92</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/HeavyArmor/Chest_Plate</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>DankPyon_KnightMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+              <li>
+                <weight>10</weight>
+                <only>(0.33,0.33,0.33)</only>
+              </li>
+              <li>
+                <weight>10</weight>
+                <only>(0.65,0.65,0.65)</only>
+              </li>
+              <li>
+                <weight>6</weight>
+                <min>(0.3,0.3,0.3)</min>
+                <max>(0.5,0.5,0.5)</max>
+              </li>
+            </options>
+          </colorGenerator>
+    </ThingDef>
+	
+	
+	    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>DankPyon_Apparel_Full_Plate</defName>
+        <label>full plate</label>
+        <description>A longer and heavier hauberk with shoulder guards providing excellent protection against most weapons.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+			<texPath>Apparel/HeavyArmor/Chest_Plate_Full</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
+
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>200</costStuffCount>
+
+        <statBases>
+            <WorkToMake>45000</WorkToMake>
+            <MaxHitPoints>310</MaxHitPoints>
+            <Mass>17</Mass>
+            <StuffEffectMultiplierArmor>0.92</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>20</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-8</MoveSpeed>
+            <!--MeleeDodgeChance>-15</MeleeDodgeChance--> <!-- Offsets nimble and the minimum skill to get a dodge chance -->
+        </equippedStatOffsets>
+
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/HeavyArmor/Chest_Plate_Full</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>DankPyon_KnightMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+              <li>
+                <weight>10</weight>
+                <only>(0.33,0.33,0.33)</only>
+              </li>
+              <li>
+                <weight>10</weight>
+                <only>(0.65,0.65,0.65)</only>
+              </li>
+              <li>
+                <weight>6</weight>
+                <min>(0.3,0.3,0.3)</min>
+                <max>(0.5,0.5,0.5)</max>
+              </li>
+            </options>
+          </colorGenerator>
+    </ThingDef>
+
+
+</Defs>

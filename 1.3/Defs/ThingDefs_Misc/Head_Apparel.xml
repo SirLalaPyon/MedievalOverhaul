@@ -46,11 +46,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-		<defName>DankPyon_Headgear_LeatherCap</defName>
-		<label>leather cap</label>
+		<defName>DankPyon_Headgear_coif</defName>
+		<label>coif</label>
 		<description>A close-fitting and lightly padded cap often worn beneath mail or a helmet, or on its own for warmth in cold weather.</description>
 		<graphicData>
-			<texPath>Headgear/LeatherCap/LeatherCap</texPath>
+			<texPath>Headgear/Coif/Coif</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -59,7 +59,7 @@
 
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
-			<li>Leathery</li>
+			<li>Fabric</li>
 		</stuffCategories>
 
 		<statBases>
@@ -746,7 +746,7 @@
     <label>chain flat top</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
     <graphicData>
-      <texPath>THeadgear/ChainFlatTop/ChainFlatTop</texPath>
+      <texPath>Headgear/ChainFlatTop/ChainFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1206,7 +1206,7 @@
     <label>great helm</label>
     <description>An early design of the close helm, which is worn over a very thickly padded fabric coif. Provides excellent protection to the entire head, but, like with most full-face helmets, limits one's field of vision and constricts breathing when worn.</description>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/Great_Helm/Great_Helm</texPath>
+      <texPath>Headgear/GreatHelm/GreatHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1382,7 +1382,7 @@
     <label>heraldic great helm</label>
     <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle.</description>
     <graphicData>
-      <texPath>eadgear/GreatHelmHorn/GreatHelmHorn</texPath>
+      <texPath>Headgear/GreatHelmHorn/GreatHelmHorn</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>

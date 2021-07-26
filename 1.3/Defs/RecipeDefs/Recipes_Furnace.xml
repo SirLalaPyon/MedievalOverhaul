@@ -125,6 +125,85 @@
     </products>		
   </RecipeDef> 
 
+  <!-- Silver Ingots --> 
+  <RecipeDef ParentName="DankPyon_SmelterBase">
+	<defName>DankPyon_MakeIngots_Silver</defName>
+	<workAmount>100</workAmount>		
+	<label>Smelt a silver ore into a coin</label>
+	<jobString>Smelting silver ore into 1 coin.</jobString>
+	<targetCountAdjustment>1</targetCountAdjustment>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_SilverOre</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_SilverOre</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+<products>
+  <Silver>1</Silver>
+</products>		
+</RecipeDef> 
+
+<RecipeDef ParentName="DankPyon_SmelterBase">
+<defName>DankPyon_MakeCoins_SilverBulk</defName>
+<workAmount>600</workAmount>		
+<label>smelt silver ore into ingots x30</label>
+<jobString>Smelting silver ores into 30 coins.</jobString>
+<targetCountAdjustment>30</targetCountAdjustment>	
+<ingredients>
+	<li>
+		<filter>
+			<thingDefs>
+				<li>DankPyon_SilverOre</li>
+			</thingDefs>
+		</filter>
+		<count>30</count>
+	</li>
+</ingredients>
+<fixedIngredientFilter>
+	<thingDefs>
+		<li>DankPyon_SilverOre</li>
+	</thingDefs>
+</fixedIngredientFilter>
+<products>
+	  <Silver>30</Silver>
+</products>		
+</RecipeDef> 
+
+<RecipeDef ParentName="DankPyon_SmelterBase">
+	<defName>DankPyon_MakeCoin_SilverExtraBulk</defName>
+	<workAmount>1200</workAmount>		
+	<label>smelt silver ore into coins x60</label>
+	<jobString>Smelting silver ores into 60 coins.</jobString>
+	<targetCountAdjustment>60</targetCountAdjustment>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_SilverOre</li>
+				</thingDefs>
+			</filter>
+			<count>60</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_SilverOre</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+<products>
+  <Silver>60</Silver>
+</products>		
+</RecipeDef>
+
  <!-- Gold Ingots --> 
  	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Gold</defName>

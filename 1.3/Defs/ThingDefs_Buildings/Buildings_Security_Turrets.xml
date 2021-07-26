@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- Ballista -->
-  <ThingDef ParentName="BuildingBase">
+  <!--ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Turret_Ballista</defName>
     <label>Ballista</label>
     <description>PLACEHOLDER</description>
@@ -162,10 +162,10 @@
         <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
     </verbs>
-  </ThingDef>
+  </ThingDef-->
 
   <!-- Trebuchet -->
-  <ThingDef ParentName="BuildingBase">
+  <!--ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Turret_Trebuchet</defName>
     <label>Trebuchet</label>
     <description>PLACEHOLDER</description>
@@ -323,6 +323,6 @@
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>    
     </projectile>
-  </ThingDef>
+  </ThingDef-->
 
 </Defs>

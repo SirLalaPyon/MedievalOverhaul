@@ -2,8 +2,8 @@
 <Defs>
 
 	 <ThingDef ParentName="ArmorSmithableBase">
-        <defName>DankPyon_Apparel_Coat_of_Plates</defName>
-        <label>coat of Pplates</label>
+        <defName>DankPyon_Apparel_CoatOfPlates</defName>
+        <label>coat of plates</label>
         <description>Two layers of armor give way to this fantastically protective, yet cumbersome, suit, consisting of strong-forged chains beset by overlapping layers of metal plates to protect vitals and extremities.</description>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -35,7 +35,6 @@
 
         <equippedStatOffsets>
             <MoveSpeed>-0.8</MoveSpeed>
-            <!--MeleeDodgeChance>-1</MeleeDodgeChance--> <!-- Offsets nimble and the minimum skill to get a dodge chance -->
         </equippedStatOffsets>
         <thingCategories>
             <li>Apparel</li>
@@ -54,7 +53,8 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>DankPyon_KnightMilitary</li>
+                <li>DankPyon_Knight</li>
+                <li>DankPyon_HedgeKnight</li>
             </tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -87,7 +87,7 @@
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
             <skillRequirements>
-                <Crafting>7</Crafting>
+                <Crafting>9</Crafting>
             </skillRequirements>
         </recipeMaker>
         <graphicData>
@@ -103,13 +103,13 @@
             <WorkToMake>39000</WorkToMake>
             <MaxHitPoints>300</MaxHitPoints>
             <Mass>8</Mass>
-            <StuffEffectMultiplierArmor>0.92</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierArmor>0.90</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.2</MoveSpeed>
+            <MoveSpeed>-0.4</MoveSpeed>
         </equippedStatOffsets>
         <thingCategories>
             <li>Apparel</li>
@@ -125,7 +125,8 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>DankPyon_KnightMilitary</li>
+                <li>DankPyon_Knight</li>
+                <li>DankPyon_HedgeKnight</li>
             </tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -152,14 +153,14 @@
 	
 	
 	    <ThingDef ParentName="ArmorSmithableBase">
-        <defName>DankPyon_Apparel_Full_Plate</defName>
+        <defName>DankPyon_Apparel_FullPlate</defName>
         <label>full plate</label>
-        <description>A longer and heavier hauberk with shoulder guards providing excellent protection against most weapons.</description>
+        <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war.</description>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>10</Crafting>
             </skillRequirements>
         </recipeMaker>
         <graphicData>
@@ -183,8 +184,7 @@
             <EquipDelay>20</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-8</MoveSpeed>
-            <!--MeleeDodgeChance>-15</MeleeDodgeChance--> <!-- Offsets nimble and the minimum skill to get a dodge chance -->
+            <MoveSpeed>-1.2</MoveSpeed>
         </equippedStatOffsets>
 
         <thingCategories>
@@ -204,7 +204,8 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>DankPyon_KnightMilitary</li>
+                <li>DankPyon_Knight</li>
+                <li>DankPyon_HedgeKnight</li>
             </tags>
             <defaultOutfitTags>
                 <li>Soldier</li>

@@ -29,7 +29,6 @@
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.4</MoveSpeed>
-            <!--MeleeDodgeChance>-3</MeleeDodgeChance--> <!-- Offsets nimble and the minimum skill to get a dodge chance -->
         </equippedStatOffsets>
         <thingCategories>
             <li>Apparel</li>
@@ -42,6 +41,17 @@
                 <li>Arms</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/ChainArmor/Chain_Mail</wornGraphicPath>
+            <tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_Bandit</li>
+                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Archer</li>
+                <li>DankPyon_Footman</li>
+                <li>DankPyon_FootmanHeavy</li>
+                <li>DankPyon_Knight</li>
+                <li>DankPyon_HedgeKnight</li>
+            </tags>
             <layers>
                 <li>Middle</li>
             </layers>
@@ -79,7 +89,6 @@
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.5</MoveSpeed>
-            <!--MeleeDodgeChance>-5</MeleeDodgeChance--> <!-- Offsets nimble and the minimum skill to get a dodge chance -->
         </equippedStatOffsets>
         <thingCategories>
             <li>Apparel</li>
@@ -93,6 +102,11 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_Pad</wornGraphicPath>
+            <tags>
+                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_Archer</li>
+                <li>DankPyon_Footman</li>
+            </tags>
             <layers>
                 <li>Shell</li>
             </layers>

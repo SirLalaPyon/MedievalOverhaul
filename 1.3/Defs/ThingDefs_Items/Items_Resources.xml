@@ -340,7 +340,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_IronIngot</defName>
     <label>iron ingot</label>
-    <description>A bar of iron ingot. Ready to be used in crafting and construction.</description>
+    <description>A bar of iron. Ready to be used in crafting and construction.</description>
     <graphicData>
       <texPath>Resources/IronIngot</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -416,6 +416,33 @@
     <smeltable>true</smeltable>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
+
+  <!--ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_SilverIngot</defName>
+    <label>silver ingot</label>
+    <description>A bar of silver. A more compact form of silver. Can be minted into silver coins</description>
+    <graphicData>
+      <texPath>Resources/SilverIngot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.04</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>0.5</deepCommonality>
+    <deepCountPerPortion>70</deepCountPerPortion>
+    <deepLumpSizeRange>2~10</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef-->
   
   <!--=============== Gold Ore ====================-->
   

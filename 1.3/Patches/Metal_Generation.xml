@@ -38,7 +38,7 @@
 
 	<!-- Steel Adjective -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name = "Steel"]/stuffProps</xpath>
+		<xpath>Defs/ThingDef[defName = "Steel"]/stuffProps</xpath>
 		<value>
 			<stuffAdjective>steel</stuffAdjective>
 		</value>

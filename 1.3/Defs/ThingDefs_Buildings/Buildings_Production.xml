@@ -665,9 +665,9 @@
   </ThingDef-->
 
   <ThingDef ParentName="BenchBase">
-    <defName>DankPyon_ResearchBench</defName>
-    <label>research bench</label>
-    <description>A simple bench with writing implements and simple measurement devices. Researchers work here to discover new things. Requires paper to research.</description>
+    <defName>DankPyon_AdvancedResearchBench</defName>
+    <label>advanced research bench</label>
+    <description>A simple bench with writing implements and simple measurement devices. Researchers work here to discover new things.</description>
     <thingClass>Building_ResearchBench</thingClass>
     <size>(3,2)</size>
     <graphicData>
@@ -688,9 +688,10 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
-    <costStuffCount>75</costStuffCount>
+    <costStuffCount>150</costStuffCount>
     <costList>
       <DankPyon_IronIngot>25</DankPyon_IronIngot>
+      <DankPyon_ComponentBasic>25</DankPyon_ComponentBasic>
     </costList>
 
     <castEdgeShadows>true</castEdgeShadows>
@@ -703,7 +704,7 @@
       <MaxHitPoints>250</MaxHitPoints>
       <WorkToBuild>2800</WorkToBuild>
       <Flammability>1.0</Flammability>
-      <ResearchSpeedFactor>0.75</ResearchSpeedFactor>
+      <ResearchSpeedFactor>1</ResearchSpeedFactor>
     </statBases>
 
     <placeWorkers>
@@ -717,7 +718,7 @@
     <techLevel>Medieval</techLevel>
     <comps>
 	
-      <li Class="CompProperties_Refuelable">
+      <!--li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>340</fuelConsumptionRate>
         <fuelCapacity>100.0</fuelCapacity>
         <fuelFilter>
@@ -727,11 +728,12 @@
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-      </li>
+      </li-->
       
     </comps>
     <researchPrerequisites>
-      <li>DankPyon_RusticFurniture</li>
+      <li>DankPyon_Engineering</li>
+      <li>DankPyon_Alchemy</li>
     </researchPrerequisites>
   </ThingDef>
   

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "SimpleResearchBench"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Production/SimpleResearchBench</texPath>
+		</value>
+	</Operation>
+
+</Path-->

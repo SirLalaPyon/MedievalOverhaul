@@ -28,5 +28,14 @@
 			<li>MeatRaw</li>						
 		</items>							
 	</ItemProcessor.ItemAcceptedDef>
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>DankPyon_HayRackFirstItem</defName>
+		<building>DankPyon_HayRack</building>
+		<slot>1</slot>
+		<items>			
+			<li>Hay</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
 	
 </Defs>

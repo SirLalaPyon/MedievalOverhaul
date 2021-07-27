@@ -48,5 +48,19 @@
 		<singleTimeIfNotQualityIncreasing>2.5</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 
+	<ItemProcessor.CombinationDef>
+		<defName>DankPyon_HayIntoStraw</defName>
+		<building>DankPyon_HayRack</building>
+		<items>
+			<li>Hay</li>
+		</items>	
+		<amount>
+			<li>50</li>
+		</amount>
+		<result>DankPyon_Straw</result>	
+		<yield>50</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
 
 </Defs>

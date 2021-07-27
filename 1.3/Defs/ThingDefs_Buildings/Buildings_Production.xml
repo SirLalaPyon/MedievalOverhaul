@@ -760,7 +760,7 @@
 
     <statBases>
       <WorkToBuild>500</WorkToBuild>
-      <Mass>5</Mass>
+      <Mass>10</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -781,7 +781,7 @@
         <showProgressBar>true</showProgressBar>
 
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
-				<InsertFirstItemDesc>DankPyon_InsertMeatkDesc</InsertFirstItemDesc>
+				<InsertFirstItemDesc>DankPyon_InsertMeatDesc</InsertFirstItemDesc>
 
 				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
 				<resetSemiautomaticIcon>UI/ResetMeat_Icon</resetSemiautomaticIcon>
@@ -789,7 +789,7 @@
 
 				<bringIngredientsText>DankPyon_StartInsertionMeat</bringIngredientsText>
 				<bringIngredientsDesc>DankPyon_StartInsertionMeatDesc</bringIngredientsDesc>
-				<bringIngredientsIcon>UI/InsertMeat_</bringIngredientsIcon >
+				<bringIngredientsIcon>UI/InsertMeat_Icon</bringIngredientsIcon >
 
 				<cancelIngredientsText>DankPyon_CancelBringingMeat</cancelIngredientsText> 
 				<cancelIngredientsDesc>DankPyon_CancelBringingMeatDesc</cancelIngredientsDesc>
@@ -800,6 +800,83 @@
 				<removeProductText>DankPyon_RemoveDriedMeat</removeProductText>
 				<removeProductDesc>DankPyon_RemoveDriedMeatDesc</removeProductDesc>
 				<removeProductIcon>UI/RemoveDriedMeat_Icon</removeProductIcon>
+
+				<destroyIngredientsAtStartOfProcess>false</destroyIngredientsAtStartOfProcess>
+				<destroyIngredientsAtAwfulQuality>false</destroyIngredientsAtAwfulQuality>
+
+			</li>  
+    </comps>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Production</designationCategory>
+    <researchPrerequisites>
+      <li>DankPyon_FoodPreservation</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- Hay Rack -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_HayRack</defName>
+    <label>hay rack</label>
+    <description>A wooden rack to dry hay under the sun for preservation and long time use.</description>
+    <graphicData>
+      <texPath>Production/HayRack/HayRack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+    </graphicData>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <pathCost>70</pathCost>
+
+    <statBases>
+      <WorkToBuild>500</WorkToBuild>
+      <Mass>5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+
+	  <size>(2,1)</size>   
+
+    <costList>
+      <WoodLog>25</WoodLog>
+    </costList>
+
+    <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+    <comps>
+      <li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Production/HayRack/HayRackFilled</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<qualitySelector>true</qualitySelector>
+        <isCategoryBuilding>false</isCategoryBuilding>
+        <showProgressBar>true</showProgressBar>
+
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>DankPyon_InsertHayDesc</InsertFirstItemDesc>
+
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/ResetHay_Icon</resetSemiautomaticIcon>
+				<chooseIngredientsIcon>UI/EmptyHay_Icon</chooseIngredientsIcon>
+
+				<bringIngredientsText>DankPyon_StartInsertionHay</bringIngredientsText>
+				<bringIngredientsDesc>DankPyon_StartInsertionHayDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/InsertHay_Icon</bringIngredientsIcon >
+
+				<cancelIngredientsText>DankPyon_CancelBringingHay</cancelIngredientsText> 
+				<cancelIngredientsDesc>DankPyon_CancelBringingHayDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/CancelHay_Icon</cancelIngredientsIcon> 
+
+				<noPowerDestroysProgress>false</noPowerDestroysProgress>
+
+				<removeProductText>DankPyon_RemoveStraw</removeProductText>
+				<removeProductDesc>DankPyon_RemoveStrawDesc</removeProductDesc>
+				<removeProductIcon>UI/RemoveStraw_Icon</removeProductIcon>
 
 				<destroyIngredientsAtStartOfProcess>false</destroyIngredientsAtStartOfProcess>
 				<destroyIngredientsAtAwfulQuality>false</destroyIngredientsAtAwfulQuality>
@@ -927,7 +1004,7 @@
 
 				<bringIngredientsText>DankPyon_StartInsertionMilk</bringIngredientsText>
 				<bringIngredientsDesc>DankPyon_StartInsertionMilkDesc</bringIngredientsDesc>
-				<bringIngredientsIcon>UI/InsertMilk_</bringIngredientsIcon >
+				<bringIngredientsIcon>UI/InsertMilk_Icon</bringIngredientsIcon >
 
 				<cancelIngredientsText>DankPyon_CancelBringingMilk</cancelIngredientsText> 
 				<cancelIngredientsDesc>DankPyon_CancelBringingMilkDesc</cancelIngredientsDesc>
@@ -1020,7 +1097,7 @@
 
 				<bringIngredientsText>DankPyon_StartInsertionMeat</bringIngredientsText>
 				<bringIngredientsDesc>DankPyon_StartInsertionMeatDesc</bringIngredientsDesc>
-				<bringIngredientsIcon>UI/InsertMeat_</bringIngredientsIcon >
+				<bringIngredientsIcon>UI/InsertMeat_Icon</bringIngredientsIcon >
 
 				<cancelIngredientsText>DankPyon_CancelBringingMeat</cancelIngredientsText> 
 				<cancelIngredientsDesc>DankPyon_CancelBringingMeatDesc</cancelIngredientsDesc>

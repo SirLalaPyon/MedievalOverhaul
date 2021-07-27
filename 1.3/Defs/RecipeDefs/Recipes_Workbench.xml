@@ -23,6 +23,9 @@
 	<label>Craft Ballista Bolts</label>
 	<jobString>Crafting Ballista Bolts</jobString>
 	<targetCountAdjustment>5</targetCountAdjustment>	
+  <researchPrerequisites>
+    <li>DankPyon_SiegeEngines</li>
+  </researchPrerequisites>
 	<ingredients>
 		<li>
 			<filter>
@@ -66,6 +69,9 @@
 	<recipeUsers>
 		<li>DankPyon_Workbench</li>
 	</recipeUsers>
+  <researchPrerequisites>
+    <li>DankPyon_Engineering</li>
+  </researchPrerequisites>
     <ingredients>
       <li>
         <filter>
@@ -101,9 +107,12 @@
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>7500</workAmount>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-	<recipeUsers>
-		<li>DankPyon_Workbench</li>
-	</recipeUsers>
+	  <recipeUsers>
+		  <li>DankPyon_Workbench</li>
+	  </recipeUsers>
+    <researchPrerequisites>
+      <li>DankPyon_Engineering</li>
+    </researchPrerequisites>
     <ingredients>
       <li>
         <filter>

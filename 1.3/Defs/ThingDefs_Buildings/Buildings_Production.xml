@@ -381,17 +381,21 @@
         <fireSize>0.4</fireSize>
         <offset>(0,0,0.2)</offset>
       </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>4</glowRadius>
-        <glowColor>(217,112,33,0)</glowColor>
-      </li>
+      <li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPushMaxTemperature>36</heatPushMaxTemperature>
+				<heatPerSecond>6</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(244, 112, 42,0)</glowColor>
+			</li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>100.0</fuelConsumptionRate>
         <fuelCapacity>50.0</fuelCapacity>
         <fuelFilter>
 			<thingDefs>
 				<li>WoodLog</li>
-				<li>DankPyon_Coal</li>
 			</thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -733,14 +737,13 @@
   
   <!-- ==================== Rack ======================= -->  
 
-  <!--<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_DryingRack</defName>
     <label>Drying Rack</label>
     <description>A wooden rack to dry goods under the sun for preservation and long time use.</description>
     <graphicData>
       <texPath>Production/DryingRack/DryingRack</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
       <drawSize>(2.5,2.5)</drawSize>
 			<damageData>
 				<rect>(0.05,0.1,0.9,0.9)</rect>
@@ -756,97 +759,59 @@
     <pathCost>70</pathCost>
 
     <statBases>
-      <WorkToBuild>400</WorkToBuild>
+      <WorkToBuild>500</WorkToBuild>
       <Mass>5</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
 
 	  <size>(2,2)</size>   
-    <costStuffCount>50</costStuffCount>
-		<stuffCategories>
-			<li>Woody</li>	
-		</stuffCategories>
 
+    <costList>
+      <WoodLog>50</WoodLog>
+    </costList>
+
+    <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="UniversalFermenter.CompProperties_UniversalFermenter">
-        <processes>
-          <li>
-            <thingDef>DankPyon_Straw</thingDef>
-            <ingredientFilter>
-                <thingDefs>
-                    <li>Hay</li>
-                </thingDefs>
-            </ingredientFilter>
-            <maxCapacity>100</maxCapacity>
-            <processDays>2.5</processDays>
-            <efficiency>1.0</efficiency>
-            <temperatureIdeal>
-                <min>20</min>
-                <max>60</max>
-            </temperatureIdeal>
-            <temperatureSafe>
-                <min>0</min>
-                <max>80</max>
-            </temperatureSafe>
-            <sunFactor>
-                <min>0.8</min>
-                <max>1.5</max>
-            </sunFactor>
-            <rainFactor>
-                <min>1.0</min>
-                <max>0.2</max>
-            </rainFactor>
-            <windFactor>
-                <min>0.9</min>
-                <max>1.2</max>
-            </windFactor>
-			      <graphicSuffix>FilledHay</graphicSuffix>
-          </li>
-		  
-		  <li>
-            <thingDef>DankPyon_DriedMeat</thingDef>
-            <ingredientFilter>
-                <thingDefs>
-                    <li>Hay</li>
-                </thingDefs>
-            </ingredientFilter>
-            <maxCapacity>100</maxCapacity>
-            <processDays>2.5</processDays>
-            <efficiency>0.05</efficiency>
-            <temperatureIdeal>
-                <min>20</min>
-                <max>60</max>
-            </temperatureIdeal>
-            <temperatureSafe>
-                <min>0</min>
-                <max>80</max>
-            </temperatureSafe>
-            <sunFactor>
-                <min>0.8</min>
-                <max>1.5</max>
-            </sunFactor>
-            <rainFactor>
-                <min>1.0</min>
-                <max>0.2</max>
-            </rainFactor>
-            <windFactor>
-                <min>0.9</min>
-                <max>1.2</max>
-            </windFactor>
-			      <graphicSuffix>FilledMeat</graphicSuffix>
-          </li>
-		  
-        </processes>
-      </li>    
+      <li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Production/DryingRack/DryingRackFilledMeat</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<qualitySelector>true</qualitySelector>
+        <isCategoryBuilding>true</isCategoryBuilding>
+        <showProgressBar>true</showProgressBar>
+
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>DankPyon_InsertMeatkDesc</InsertFirstItemDesc>
+
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/ResetMeat_Icon</resetSemiautomaticIcon>
+				<chooseIngredientsIcon>UI/EmptyMeat_Icon</chooseIngredientsIcon>
+
+				<bringIngredientsText>DankPyon_StartInsertionMeat</bringIngredientsText>
+				<bringIngredientsDesc>DankPyon_StartInsertionMeatDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/InsertMeat_</bringIngredientsIcon >
+
+				<cancelIngredientsText>DankPyon_CancelBringingMeat</cancelIngredientsText> 
+				<cancelIngredientsDesc>DankPyon_CancelBringingMeatDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/CancelMeat_Icon</cancelIngredientsIcon> 
+
+				<noPowerDestroysProgress>false</noPowerDestroysProgress>
+
+				<removeProductText>DankPyon_RemoveDriedMeat</removeProductText>
+				<removeProductDesc>DankPyon_RemoveDriedMeatDesc</removeProductDesc>
+				<removeProductIcon>UI/RemoveDriedMeat_Icon</removeProductIcon>
+
+				<destroyIngredientsAtStartOfProcess>false</destroyIngredientsAtStartOfProcess>
+				<destroyIngredientsAtAwfulQuality>false</destroyIngredientsAtAwfulQuality>
+
+			</li>  
     </comps>
     <tickerType>Rare</tickerType>
     <designationCategory>Production</designationCategory>
     <researchPrerequisites>
       <li>DankPyon_FoodPreservation</li>
     </researchPrerequisites>
-  </ThingDef-->
+  </ThingDef>
   
   <!-- Gardening Box -->
   <ThingDef ParentName="BuildingBase">
@@ -894,7 +859,7 @@
     </researchPrerequisites>
   </ThingDef>
 
-<!--ThingDef ParentName="BuildingBase">
+<ThingDef ParentName="BuildingBase">
 	<defName>DankPyon_Presser</defName>
 	<label>Presser</label>
 	<description>A wooden contraption to press whey from curds, which makes milk into delicious cheese.</description>
@@ -945,44 +910,39 @@
 	<rotatable>false</rotatable>
 	<designationCategory>Production</designationCategory>
 	<constructEffect>ConstructWood</constructEffect>
+
+  <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
-			<li Class="UniversalFermenter.CompProperties_UniversalFermenter">
-        <processes> 
-		  <li>
-            <thingDef>DankPyon_MealCheese</thingDef>
-            <ingredientFilter>
-                <thingDefs>
-                    <li>Milk</li>
-                </thingDefs>
-            </ingredientFilter>
-            <maxCapacity>50</maxCapacity>
-            <processDays>2.5</processDays>
-            <temperatureIdeal>
-                <min>20</min>
-                <max>60</max>
-            </temperatureIdeal>
-            <temperatureSafe>
-                <min>0</min>
-                <max>80</max>
-            </temperatureSafe>
-            <sunFactor>
-                <min>0.8</min>
-                <max>1.5</max>
-            </sunFactor>
-            <rainFactor>
-                <min>1.0</min>
-                <max>0.2</max>
-            </rainFactor>
-            <windFactor>
-                <min>0.9</min>
-                <max>1.2</max>
-            </windFactor>
-			      <graphicSuffix>Filled</graphicSuffix>
-          </li>
-		  
-			</processes>
-		  </li>    
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Production/Presser/PresserFilled</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<qualitySelector>true</qualitySelector>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>DankPyon_InsertMilkDesc</InsertFirstItemDesc>
+
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/ResetMilk_Icon</resetSemiautomaticIcon>
+				<chooseIngredientsIcon>UI/EmptyMilk_Icon</chooseIngredientsIcon>
+
+				<bringIngredientsText>DankPyon_StartInsertionMilk</bringIngredientsText>
+				<bringIngredientsDesc>DankPyon_StartInsertionMilkDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/InsertMilk_</bringIngredientsIcon >
+
+				<cancelIngredientsText>DankPyon_CancelBringingMilk</cancelIngredientsText> 
+				<cancelIngredientsDesc>DankPyon_CancelBringingMilkDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/CancelMilk_Icon</cancelIngredientsIcon> 
+
+				<noPowerDestroysProgress>false</noPowerDestroysProgress>
+
+				<removeProductText>DankPyon_RemoveCheese</removeProductText>
+				<removeProductDesc>DankPyon_RemoveCheeseDesc</removeProductDesc>
+				<removeProductIcon>UI/RemoveCheese_Icon</removeProductIcon>
+
+				<destroyIngredientsAtStartOfProcess>false</destroyIngredientsAtStartOfProcess>
+				<!--destroyIngredientsAtAwfulQuality>true</destroyIngredientsAtAwfulQuality-->
+
+			</li>  
 		</comps>
     <researchPrerequisites>
       <li>DankPyon_CheeseMaking</li>
@@ -992,12 +952,11 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Smoker</defName>
     <label>Smoker</label>
-    <description>an enclosure </description>
+    <description>Smoke generated by the burnt wood stacked at the bottom of the smoker encompasses the meat, providing indirect heat and a rich smoke flavor. This also adds a protective layer and allows the smoked meat to last longer.</description>
     <graphicData>
-      <texPath>Production/Smoker</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(1.5,1.5)</drawSize>
+      <texPath>Production/Smoker/Smoker</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -1013,31 +972,28 @@
     <uiIconScale>0.8</uiIconScale>
 
     <statBases>
+      <WorkToBuild>2000</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>1200</WorkToBuild>
+      <Flammability>0.5</Flammability>
       <Mass>10</Mass>
-      <Flammability>0.8</Flammability>
     </statBases>
 
-    <size>(1,1)</size>
+    <size>(2,1)</size>
     <castEdgeShadows>true</castEdgeShadows>
 
-		<stuffCategories>
-			<li>Stony</li>
-		</stuffCategories>
-    <costStuffCount>20</costStuffCount>
-    <costList>
-      <WoodLog>30</WoodLog>
+		<costList>
+      <WoodLog>60</WoodLog>
+      <DankPyon_IronIngot>60</DankPyon_IronIngot>
     </costList>
 
+    <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>40</fuelConsumptionRate>
+        <fuelConsumptionRate>10</fuelConsumptionRate>
         <fuelCapacity>70.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
             <li>WoodLog</li>
-			      <li>DankPyon_Coal</li>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -1049,51 +1005,42 @@
         <heatPerSecond>9</heatPerSecond>
       </li>
 
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="UniversalFermenter.CompProperties_UniversalFermenter">
-        <processes>
-          
-		      <li>
-            <thingDef>DankPyon_SmokedMeat</thingDef>
-            <ingredientFilter>
-                <categories>
-                    <li>MeatRaw</li>
-                </categories>
-            </ingredientFilter>
-            <maxCapacity>100</maxCapacity>
-            <processDays>0.5</processDays>
-            <efficiency>0.05</efficiency>
-            <temperatureIdeal>
-                <min>20</min>
-                <max>60</max>
-            </temperatureIdeal>
-            <temperatureSafe>
-                <min>0</min>
-                <max>80</max>
-            </temperatureSafe>
-            <sunFactor>
-                <min>0.8</min>
-                <max>1.5</max>
-            </sunFactor>
-            <rainFactor>
-                <min>1.0</min>
-                <max>0.2</max>
-            </rainFactor>
-            <windFactor>
-                <min>0.9</min>
-                <max>1.2</max>
-            </windFactor>
-          </li>
-		  
-        </processes>
-      </li>    
+      <li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Production/Smoker/SmokerFilled</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<qualitySelector>true</qualitySelector>
+        <isCategoryBuilding>true</isCategoryBuilding>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+        <showProgressBar>true</showProgressBar>
+				<InsertFirstItemDesc>DankPyon_InsertMeatDesc</InsertFirstItemDesc>
+
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/ResetMeat_Icon</resetSemiautomaticIcon>
+				<chooseIngredientsIcon>UI/EmptyMeat_Icon</chooseIngredientsIcon>
+
+				<bringIngredientsText>DankPyon_StartInsertionMeat</bringIngredientsText>
+				<bringIngredientsDesc>DankPyon_StartInsertionMeatDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/InsertMeat_</bringIngredientsIcon >
+
+				<cancelIngredientsText>DankPyon_CancelBringingMeat</cancelIngredientsText> 
+				<cancelIngredientsDesc>DankPyon_CancelBringingMeatDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/CancelMeat_Icon</cancelIngredientsIcon> 
+
+				<removeProductText>DankPyon_RemoveSmokedMeat</removeProductText>
+				<removeProductDesc>DankPyon_RemoveSmokedMeatDesc</removeProductDesc>
+				<removeProductIcon>UI/RemoveSmokedMeat_Icon</removeProductIcon>
+
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+
+			</li>  
     </comps>
     <tickerType>Rare</tickerType>
     <designationCategory>Production</designationCategory>
     <researchPrerequisites>
       <li>DankPyon_Smoker</li>
     </researchPrerequisites>
-  </ThingDef-->
+  </ThingDef>
 	
 	<ThingDef ParentName="BenchBase">
     <defName>DankPyon_Workbench</defName>
@@ -1282,7 +1229,7 @@
   <ThingDef ParentName="BenchBase">
     <defName>DankPyon_TailorsBench</defName>
     <label>tailor's bench</label>
-    <description>a wooden worktable for sewing and stitching fabrics to produce wearable clothing</description>
+    <description>A wooden worktable for sewing and stitching fabrics to produce wearable clothing.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Production/TailorsBench</texPath>
@@ -1345,7 +1292,7 @@
     </placeWorkers>
     <techLevel>Medieval</techLevel>
     <researchPrerequisites>
-      <li>DankPyon_Textiles</li>
+      <li>DankPyon_Tailoring</li>
     </researchPrerequisites>
   </ThingDef>
 	
@@ -1377,11 +1324,13 @@
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
+    
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0</Flammability>
     </statBases>
+
     <size>(2,1)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>

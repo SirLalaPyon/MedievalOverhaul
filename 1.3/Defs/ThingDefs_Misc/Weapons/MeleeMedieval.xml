@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+ <Defs>
+
+  <!-- ==================== Maces ==================== -->
+  <!-- ========== Basic Maces ========== -->
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>DankPyon_MeleeWeapon_Bludgeon</defName>
+    <label>bludgeon</label>
+    <description>A simple club consisting of a knobbed metal head attached to a short wooden pole. Crude, but effective.</description>
+    <graphicData>
+      <texPath>WeaponMelee/Maces/Bludgeon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1.10</Mass>
+    </statBases>
+
+    <costStuffCount>0</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costList>
+      <WoodLog>30</WoodLog>
+    </costList>
+
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+
+</Defs>

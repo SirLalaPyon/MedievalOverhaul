@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Cheese Presser -->
+	<DankPyon_InsertMilkDesc>Insert milk to press.</DankPyon_InsertMilkDesc>
+	<DankPyon_InsertMilk>Insert Milk</DankPyon_InsertMilk>
+	<DankPyon_InsertMilkVariable>Insert {0}</DankPyon_InsertMilkVariable>
+	<DankPyon_NoMilksFound>No milks found in this map.</DankPyon_NoMilksFound>
+	<DankPyon_SelectMilk>Select a type of milk to be pressed</DankPyon_SelectMilk>
+	<DankPyon_StartInsertionMilk>Bring Milk</DankPyon_StartInsertionMilk>
+	<DankPyon_StartInsertionMilkDesc>Bring milk to the cheese press to start pressing</DankPyon_StartInsertionMilkDesc>
+	<DankPyon_RemoveMilk>Remove Milk</DankPyon_RemoveMilk>
+	<DankPyon_RemoveMilkDesc>Remove the milk from the press. This can only be done before you start pressing it.</DankPyon_RemoveMilkDesc>	
+	<DankPyon_CancelBringingMilk>Cancel Bringing Milk</DankPyon_CancelBringingMilk>
+	<DankPyon_CancelBringingMilkDesc>Cancel bringing milk to the cheese press.</DankPyon_CancelBringingMilkDesc>
+	<DankPyon_WaitTillJobsEndMilk>Wait until the milk has been brought to the cheese press, or cancel the job.</DankPyon_WaitTillJobsEndMilk>
+	<DankPyon_EngageMilk>Press Into Cheese</DankPyon_EngageMilk>
+	<DankPyon_EngageMilkDesc>Start pressing milk. This process takes 5 days and can't be interrupted, or the milk will be destroyed.</DankPyon_EngageMilkDesc>
+	<DankPyon_CheeseFinished>A cheese has finished ripening in the cheese press</DankPyon_CheeseFinished>
+	<DankPyon_CheeseInProgress>A {0} is pressing. It will be ready in {1}</DankPyon_CheeseInProgress>
+	<DankPyon_CheeseReady>A cheese has finished pressing and is waiting for pickup</DankPyon_CheeseReady>
+	<DankPyon_MilkImproperlyDefined>This milk has been improperly defined to work with the cheese press, contact the milk mod's author</DankPyon_MilkImproperlyDefined>
+	<DankPyon_RemoveCheese>Remove Cheese ({0})</DankPyon_RemoveCheese>
+	<DankPyon_RemoveCheeseDesc>Remove cheese from the cheese press.</DankPyon_RemoveCheeseDesc>
+	
+	<DankPyon_CheesePressEmpty>Cheese press is empty right now</DankPyon_CheesePressEmpty>
+	<DankPyon_CheesePressFilled>Cheese press filled with {0}</DankPyon_CheesePressFilled>
+	<DankPyon_CheesePressWorking>Cheese press is working:</DankPyon_CheesePressWorking>
+	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
+
+	<!-- Smoker -->
+	<DankPyon_InsertMeatDesc>Insert meat to smoke.</DankPyon_InsertMeatDesc>
+	<DankPyon_InsertMeat>Insert Meat</DankPyon_InsertMeat>
+	<DankPyon_InsertMeatVariable>Insert {0}</DankPyon_InsertMeatVariable>
+	<DankPyon_NoMeatsFound>No meats found in this map.</DankPyon_NoMeatsFound>
+	<DankPyon_SelectMeat>Select a type of meat to be smoked</DankPyon_SelectMeat>
+	<DankPyon_StartInsertionMeat>Bring Meat</DankPyon_StartInsertionMeat>
+	<DankPyon_StartInsertionMeatDesc>Bring meat to the smoker to start smoking</DankPyon_StartInsertionMeatDesc>
+	<DankPyon_RemoveMeat>Remove Meat</DankPyon_RemoveMeat>
+	<DankPyon_RemoveMeatDesc>Remove the meat from the smoker. This can only be done before you start smoking it.</DankPyon_RemoveMeatDesc>	
+	<DankPyon_CancelBringingMeat>Cancel Bringing Meat</DankPyon_CancelBringingMeat>
+	<DankPyon_CancelBringingMeatDesc>Cancel bringing meat to the smoker.</DankPyon_CancelBringingMeatDesc>
+	<DankPyon_WaitTillJobsEndMeat>Wait until the meat has been brought to the smoker, or cancel the job.</DankPyon_WaitTillJobsEndMeat>
+	<DankPyon_EngageMeat>Smoke Into Smoked Meat</DankPyon_EngageMeat>
+	<DankPyon_EngageMeatDesc>Start smoking meat. This process takes a day and can't be interrupted, or the meat will be destroyed.</DankPyon_EngageMeatDesc>
+	<DankPyon_SmokedMeatFinished>Smoked meats have finished cooking in the smoker</DankPyon_SmokedMeatFinished>
+	<DankPyon_SmokedMeatInProgress>A {0} is being smoked. It will be ready in {1}</DankPyon_SmokedMeatInProgress>
+	<DankPyon_SmokedMeatReady>meats have finished smoking and is waiting for pickup</DankPyon_SmokedMeatReady>
+	<DankPyon_MeatImproperlyDefined>This meat has been improperly defined to work with the smoker, contact the meat mod's author</DankPyon_MeatImproperlyDefined>
+	<DankPyon_RemoveSmokedMeat>Remove Smoked Meat ({0})</DankPyon_RemoveSmokedMeat>
+	
+	<DankPyon_SmokerEmpty>Smoker is empty right now</DankPyon_SmokerEmpty>
+	<DankPyon_SmokerFilled>Smoker filled with {0}</DankPyon_SmokerFilled>
+	<DankPyon_SmokerWorking>Cheese press is working:</DankPyon_SmokerWorking>
+	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
+
+	<!-- Drying Rack Meat -->
+	<DankPyon_InsertMeatDesc>Insert meat to dry.</DankPyon_InsertMeatDesc>
+	<DankPyon_InsertMeat>Insert Meat</DankPyon_InsertMeat>
+	<DankPyon_InsertMeatVariable>Insert {0}</DankPyon_InsertMeatVariable>
+	<DankPyon_NoMeatsFound>No meats found in this map.</DankPyon_NoMeatsFound>
+	<DankPyon_SelectMeat>Select a type of meat to be dried</DankPyon_SelectMeat>
+	<DankPyon_StartInsertionMeat>Bring Meat</DankPyon_StartInsertionMeat>
+	<DankPyon_StartInsertionMeatDesc>Bring meat to the drying rack to start drying</DankPyon_StartInsertionMeatDesc>
+	<DankPyon_RemoveMeat>Remove Meat</DankPyon_RemoveMeat>
+	<DankPyon_RemoveMeatDesc>Remove the meat from the drying rack. This can only be done before you start drying it.</DankPyon_RemoveMeatDesc>	
+	<DankPyon_CancelBringingMeat>Cancel Bringing Meat</DankPyon_CancelBringingMeat>
+	<DankPyon_CancelBringingMeatDesc>Cancel bringing meat to the drying rack.</DankPyon_CancelBringingMeatDesc>
+	<DankPyon_WaitTillJobsEndMeat>Wait until the meat has been brought to the drying rack, or cancel the job.</DankPyon_WaitTillJobsEndMeat>
+	<DankPyon_EngageMeat>Dry Into Dried Meat</DankPyon_EngageMeat>
+	<DankPyon_EngageMeatDesc>Start drying meat. This process takes a day and can't be interrupted, or the meat will be destroyed.</DankPyon_EngageMeatDesc>
+	<DankPyon_DriedMeatFinished>Dried meats have finished drying in the drying rack</DankPyon_DriedMeatFinished>
+	<DankPyon_DriedMeatInProgress>A {0} is being dried. It will be ready in {1}</DankPyon_DriedMeatInProgress>
+	<DankPyon_DriedMeatReady>meats have finished drying and is waiting for pickup</DankPyon_DriedMeatReady>
+	<DankPyon_MeatImproperlyDefined>This meat has been improperly defined to work with the drying rack, contact the meat mod's author</DankPyon_MeatImproperlyDefined>
+	<DankPyon_RemoveDriedMeat>Remove Dried Meat ({0})</DankPyon_RemoveDriedMeat>
+	
+	<DankPyon_DryingRackEmpty>Drying rack is empty right now</DankPyon_DryingRackEmpty>
+	<DankPyon_DryingRackFilled>Drying rack filled with {0}</DankPyon_DryingRackFilled>
+	<DankPyon_DryingRackWorking>Drying rack is working:</DankPyon_DryingRackWorking>
+	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
+
+</LanguageData>

@@ -23,7 +23,7 @@
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>3</researchViewX>
-		<researchViewY>0.7</researchViewY>    
+		<researchViewY>1.10</researchViewY>    
     <prerequisites>
       <li>DankPyon_RusticFurniture</li>
     </prerequisites>
@@ -37,7 +37,7 @@
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>3</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewY>0.4</researchViewY>
     <prerequisites>
       <li>DankPyon_RusticFurniture</li>
     </prerequisites>
@@ -67,7 +67,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_Textiles</defName>
-    <label>textiles</label>
+    <label>textile spinning</label>
     <description>Learn how to plant cotton and harvest them to tailor clothing.</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -77,7 +77,6 @@
   </ResearchProjectDef>
 
   <!--=========================== Engineering ==============================-->
-
   <ResearchProjectDef>
     <defName>DankPyon_Engineering</defName>
     <label>engineering</label>
@@ -117,6 +116,215 @@
     </prerequisites>    
   </ResearchProjectDef>
 
+  <!--=========================== Apparel ==============================-->
+  <ResearchProjectDef>
+    <defName>DankPyon_Tailoring</defName>
+    <label>Tailoring</label>
+    <description>Learn how to sew everyday garmnets, fit for civillian</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2.8</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_ChainArmor</defName>
+    <label>chain armor</label>
+    <description>Learn the techniques of linking chains to smith formidable chainmail armors.</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>DankPyon_Tailoring</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_PlateArmor</defName>
+    <label>palte armor</label>
+    <description>Learn the techniques of properly smithing and tempering metal plates to craft expensive plate armors</description>
+    <baseCost>2000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>DankPyon_ChainArmor</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  <!--=========================== Weapons ==============================-->
+  <ResearchProjectDef>
+    <defName>DankPyon_BasicSpears</defName>
+    <label>basic spears</label>
+    <description>Learn how to craft basic spears</description>
+    <baseCost>200</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites> 
+    <techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>3.5</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_MiltarySpears</defName>
+    <label>military spears</label>
+    <description>Learn how to craft spears designed for combat</description>
+    <baseCost>500</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>DankPyon_BasicSpears</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>3.5</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_NobleSpears</defName>
+    <label>noble spears</label>
+    <description>Learn how to craft stronger and better spears, fit for a noble.</description>
+    <baseCost>900</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>DankPyon_MiltarySpears</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>3.5</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BasicMaces</defName>
+    <label>basic maces</label>
+    <description>Learn how to craft basic maces</description>
+    <baseCost>300</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites> 
+    <techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>4.2</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_MiltaryMaces</defName>
+    <label>military maces</label>
+    <description>Learn how to craft maces designed for combat</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>DankPyon_BasicMaces</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>4.2</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_NobleMaces</defName>
+    <label>noble maces</label>
+    <description>Learn how to craft stronger and better maces, fit for a noble.</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>DankPyon_MiltaryMaces</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>4.2</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BasicAxes</defName>
+    <label>basic axes</label>
+    <description>Learn how to craft basic axes</description>
+    <baseCost>300</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites> 
+    <techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>4.9</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_MiltaryAxes</defName>
+    <label>military axes</label>
+    <description>Learn how to craft axes designed for combat</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>DankPyon_BasicAxes</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>4.9</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_NobleAxes</defName>
+    <label>noble axes</label>
+    <description>Learn how to craft stronger and better axes, fit for a noble.</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>DankPyon_MiltaryAxes</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>4.9</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BasicSwords</defName>
+    <label>basic swords</label>
+    <description>Learn how to craft basic swords</description>
+    <baseCost>300</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites> 
+    <techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>5.6</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_MiltarySwords</defName>
+    <label>military swords</label>
+    <description>Learn how to craft wwords designed for combat</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>DankPyon_BasicSwords</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>5.6</researchViewY>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_NobleSwords</defName>
+    <label>noble swords</label>
+    <description>Learn how to craft stronger and better swords, fit for a noble.</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <prerequisites>
+      <li>DankPyon_MiltarySwords</li>
+    </prerequisites>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>7</researchViewX>
+		<researchViewY>5.6</researchViewY>  
+  </ResearchProjectDef>
+  
   <!--=========================== Agriculture ==============================-->
   <ResearchProjectDef>
     <defName>DankPyon_FruitTreeSowing</defName>

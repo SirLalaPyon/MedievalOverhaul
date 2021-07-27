@@ -5,7 +5,7 @@
   <!--ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Turret_Ballista</defName>
     <label>Ballista</label>
-    <description>PLACEHOLDER</description>
+    <description>Developed during ancient times, the ballista is a powerful missile weapon capable of launching large darts over long distances. Effective in both siege and defense, the precise design strikes fear into enemies but must be reloaded after every bolt fired.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Security/TurretBallista/TurretBallista_Base</texPath>
@@ -168,7 +168,7 @@
   <!--ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Turret_Trebuchet</defName>
     <label>Trebuchet</label>
-    <description>PLACEHOLDER</description>
+    <description>The trebuchet relies on powerful torsion to launch stones over a great distance and with such power to destroy walls. This makes the trebuchet a fearsome siege weapon capable of ravaging defenses; where siege attackers used to climb palisades under enemy missiles, they can now create openings before the battle even begins. Upon seeing the great trebuchet deployed to fields, defenders should attempt to destroy it quickly.</description>
     <thingClass>Building_TurretGun</thingClass>
     <uiIconScale>0.85</uiIconScale>
     <uiIconPath>Security/TurretTrebuchet/TurretTrebuchet_MenuIcon</uiIconPath>

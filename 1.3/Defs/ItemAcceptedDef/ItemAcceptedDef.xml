@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>DankPyon_CheesePressFirstItem</defName>
+		<building>DankPyon_Presser</building>
+		<slot>1</slot>
+		<items>			
+			<li>Milk</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>DankPyon_SmokerFirstItem</defName>
+		<building>DankPyon_Smoker</building>
+		<slot>1</slot>
+		<items>			
+			<li>MeatRaw</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>DankPyon_DryingRackFirstItem</defName>
+		<building>DankPyon_DryingRack</building>
+		<slot>1</slot>
+		<items>			
+			<li>MeatRaw</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+</Defs>

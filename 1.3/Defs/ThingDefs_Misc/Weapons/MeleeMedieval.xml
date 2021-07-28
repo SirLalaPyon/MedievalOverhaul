@@ -1395,9 +1395,24 @@
       <texPath>WeaponMelee/Hammers/Polehammer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <techLevel>Medieval</techLevel>
-    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedAngleOffset>-100</equippedAngleOffset>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <verticalFlipNorth>true</verticalFlipNorth>
+        <angleAdjustmentNorth>-180</angleAdjustmentNorth>
+        <angleAdjustmentEast></angleAdjustmentEast>
+        <angleAdjustmentWest></angleAdjustmentWest>
+        <angleAdjustmentSouth></angleAdjustmentSouth>
+
+        <northOffset>(0.34,0,0.70)</northOffset>
+        <southOffset>(-0.34,0,0.70)</southOffset>
+        <westOffset>(0.34,0,0.70)</westOffset>
+        <eastOffset>(-0.34,0,0.70)</eastOffset>
+      </li>
+    </comps>
 
     <statBases>
       <WorkToMake>16000</WorkToMake>

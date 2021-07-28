@@ -17,7 +17,7 @@
 <!-- Ammuniation: Ballista Bolts --> 
 
 
-<RecipeDef ParentName="DankPyon_SmelterBase">
+<!--RecipeDef ParentName="DankPyon_SmelterBase">
 	<defName>DankPyon_MakeBullet_BallistaBolt</defName>
 	<workAmount>200</workAmount>		
 	<label>Craft Ballista Bolts</label>
@@ -53,7 +53,7 @@
 	<products>
 		<DankPyon_BallistaBolt>30</DankPyon_BallistaBolt>
 	</products>		
-</RecipeDef>
+</RecipeDef-->
 
  <!-- Make Component Basic  --> 
  <RecipeDef>
@@ -270,7 +270,7 @@
 </RecipeDef-->
 
 <!-- Make Paper  --> 
-<RecipeDef>
+<!--RecipeDef>
   <defName>DankPyon_Make_Paper</defName>
   <label>(20x) Make paper</label>
   <description>Make 10 paper.</description>
@@ -301,10 +301,10 @@
     <DankPyon_Paper>20</DankPyon_Paper>
   </products>
   <workSkill>Crafting</workSkill>
-</RecipeDef>
+</RecipeDef-->
 
 <!-- Make Paper  --> 
-<RecipeDef>
+<!--RecipeDef>
   <defName>DankPyon_Make_PaperBulk</defName>
   <label>(100x) Make paper</label>
   <description>Make 100 paper.</description>
@@ -335,6 +335,6 @@
     <DankPyon_Paper>100</DankPyon_Paper>
   </products>
   <workSkill>Crafting</workSkill>
-</RecipeDef>
+</RecipeDef-->
 
 </Defs>

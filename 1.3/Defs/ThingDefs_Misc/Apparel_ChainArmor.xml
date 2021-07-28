@@ -5,6 +5,11 @@
         <defName>DankPyon_Apparel_Hauberk</defName>
         <label>hauberk</label>
         <description>A basic and simple hauberk. Offers decent and affordable protection against slashing and piercing attacks.</description>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <skillRequirements>
@@ -12,13 +17,12 @@
             </skillRequirements>
             <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
         </recipeMaker>
-        <graphicData>
-			<texPath>Apparel/ChainArmor/Chain_Mail</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-		<costList>
-          <Steel>80</Steel>
-        </costList>
+       
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
         <statBases>
             <WorkToMake>27000</WorkToMake>
             <MaxHitPoints>230</MaxHitPoints>
@@ -66,6 +70,11 @@
         <defName>DankPyon_Apparel_Heavy_Hauberk</defName>
         <label>heavy hauberk</label>
         <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective.</description>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail_Pad</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <skillRequirements>
@@ -73,13 +82,12 @@
             </skillRequirements>
             <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
         </recipeMaker>
-        <graphicData>
-			<texPath>Apparel/ChainArmor/Chain_Mail_Pad</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-		<costList>
-          <Steel>100</Steel>
-        </costList>
+        
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
         <statBases>
             <WorkToMake>28000</WorkToMake>
             <MaxHitPoints>250</MaxHitPoints>

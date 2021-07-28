@@ -11,6 +11,7 @@
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
+            <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
         </recipeMaker>
         <graphicData>
 			<texPath>Apparel/HeavyArmor/Coat_Of_Plates</texPath>
@@ -94,6 +95,7 @@
 			<texPath>Apparel/HeavyArmor/Chest_Plate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+            <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
         </graphicData>
         <stuffCategories>
             <li>Metallic</li>
@@ -158,10 +160,10 @@
         <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war.</description>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
+            <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
         </recipeMaker>
         <graphicData>
 			<texPath>Apparel/HeavyArmor/Chest_Plate_Full</texPath>

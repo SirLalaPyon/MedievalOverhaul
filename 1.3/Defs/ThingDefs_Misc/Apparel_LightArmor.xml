@@ -15,6 +15,7 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
@@ -73,6 +74,7 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
@@ -126,6 +128,7 @@
 			<texPath>Apparel/LightArmor/Gambeson</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
@@ -185,6 +188,7 @@
 			<texPath>Apparel/LightArmor/Padded_Leather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>

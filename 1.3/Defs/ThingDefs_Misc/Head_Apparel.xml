@@ -9,10 +9,15 @@
 		<graphicData>
 			<texPath>Headgear/RedBandana/RedBandana</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
     <generateCommonality>0.95</generateCommonality>
+
+    <recipeMaker>
+      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+    </recipeMaker>
 
     <costStuffCount>20</costStuffCount>
     <stuffCategories>
@@ -57,6 +62,10 @@
 		<tradeability>Sellable</tradeability>
     <generateCommonality>0.95</generateCommonality>
 
+    <recipeMaker>
+      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+    </recipeMaker>
+
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -96,10 +105,15 @@
 		<graphicData>
 			<texPath>Headgear/ArmingCap/ArmingCap</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
     <generateCommonality>0.50</generateCommonality>
+
+    <recipeMaker>
+      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+    </recipeMaker>
 
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
@@ -142,10 +156,15 @@
 		<graphicData>
 			<texPath>Headgear/ArmingCapFull/ArmingCapFull</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
     <generateCommonality>0.95</generateCommonality>
+
+    <recipeMaker>
+      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+    </recipeMaker>
 
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
@@ -195,6 +214,10 @@
 		<tradeability>Sellable</tradeability>
     <generateCommonality>0.25</generateCommonality>
 
+    <recipeMaker>
+      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+    </recipeMaker>
+
 		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -239,6 +262,7 @@
     <graphicData>
       <texPath>Headgear/PaddedNasalHelm/PaddedNasalHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -250,6 +274,7 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -298,6 +323,7 @@
     <graphicData>
       <texPath>Headgear/PaddedKettle/PaddedKettle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>   
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -309,6 +335,7 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -357,6 +384,7 @@
     <graphicData>
       <texPath>Headgear/PaddedFlatTop/PaddedFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -368,6 +396,7 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -417,6 +446,7 @@
     <graphicData>
       <texPath>Headgear/ChainCoif/ChainCoif</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -428,6 +458,7 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -469,6 +500,11 @@
     <defName>DankPyon_Headgear_ChainCoifClosed</defName>
     <label>closed chain coif</label>
     <description>A thick hood forged from chains of metal with additional protection reinforcing the lower face and neck. Provides excellent protection to the entire head and neck against piercing and slashing attacks.</description>
+    <graphicData>
+      <texPath>Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
       <recipeUsers>
@@ -479,11 +515,9 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
     </recipeMaker>
-    <graphicData>
-      <texPath>Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+    
     <statBases>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>125</MaxHitPoints>
@@ -525,6 +559,7 @@
     <graphicData>
       <texPath>Headgear/ChainCoifFull/ChainCoifFull</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -536,6 +571,7 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -580,6 +616,7 @@
     <graphicData>
       <texPath>Headgear/ChainNasalHelm/ChainNasalHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -591,6 +628,7 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -636,6 +674,7 @@
     <graphicData>
       <texPath>Headgear/ChainNasalHelmRed/ChainNasalHelmRed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -647,6 +686,7 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -692,6 +732,7 @@
     <graphicData>
       <texPath>Headgear/ChainKettle/ChainKettle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -703,6 +744,7 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -748,6 +790,7 @@
     <graphicData>
       <texPath>Headgear/ChainFlatTop/ChainFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -759,6 +802,7 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -804,6 +848,7 @@
     <graphicData>
       <texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -815,6 +860,7 @@
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -873,6 +919,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -929,6 +976,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -987,6 +1035,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -1045,6 +1094,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -1103,6 +1153,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -1161,6 +1212,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -1219,6 +1271,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -1277,6 +1330,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -1337,6 +1391,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>
@@ -1397,6 +1452,7 @@
     <skillRequirements>
       <Crafting>8</Crafting>
     </skillRequirements>
+    <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
   </recipeMaker>
 
   <statBases>
@@ -1456,6 +1512,7 @@
       <skillRequirements>
         <Crafting>12</Crafting>
       </skillRequirements>
+      <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
     </recipeMaker>
 
     <statBases>

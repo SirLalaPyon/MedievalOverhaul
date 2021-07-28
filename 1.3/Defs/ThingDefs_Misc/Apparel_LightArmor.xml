@@ -128,21 +128,24 @@
 			<texPath>Apparel/LightArmor/Gambeson</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
+
 		<costStuffCount>70</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
+
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
+
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
@@ -152,6 +155,7 @@
 			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
+
 		<apparel>
 			<bodyPartGroups>
 				<li>Shoulders</li>
@@ -188,13 +192,13 @@
 			<texPath>Apparel/LightArmor/Padded_Leather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
@@ -230,7 +234,7 @@
                 <li>DankPyon_HedgeKnight</li>
             </tags>
 			<layers>
-				<li>OnSkin</li>
+				<li>Shell</li>
 			</layers>
 			<defaultOutfitTags>
 				<li>Worker</li>

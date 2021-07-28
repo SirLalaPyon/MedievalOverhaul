@@ -7,7 +7,6 @@
         <description>Two layers of armor give way to this fantastically protective, yet cumbersome, suit, consisting of strong-forged chains beset by overlapping layers of metal plates to protect vitals and extremities.</description>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -84,19 +83,19 @@
         <defName>DankPyon_Apparel_Breast_Plate</defName>
         <label>breast plate</label>
         <description>A strong metal cuirass forged to encompass the torso while leaving the limbs exposed. Rather lightweight and protective.</description>
-        <recipeMaker>
-            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>9</Crafting>
-            </skillRequirements>
-        </recipeMaker>
         <graphicData>
 			<texPath>Apparel/HeavyArmor/Chest_Plate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-            <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
         </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
+        </recipeMaker>
+        
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
@@ -158,6 +157,11 @@
         <defName>DankPyon_Apparel_FullPlate</defName>
         <label>full plate</label>
         <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war.</description>
+        <graphicData>
+			<texPath>Apparel/HeavyArmor/Chest_Plate_Full</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <skillRequirements>
@@ -165,11 +169,6 @@
             </skillRequirements>
             <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
         </recipeMaker>
-        <graphicData>
-			<texPath>Apparel/HeavyArmor/Chest_Plate_Full</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-        </graphicData>
 
         <stuffCategories>
             <li>Metallic</li>

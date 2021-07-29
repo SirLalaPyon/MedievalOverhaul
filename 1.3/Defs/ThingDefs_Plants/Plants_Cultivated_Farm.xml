@@ -171,7 +171,7 @@
   <label>wheat plant</label>
   <description>A thin, fragile grain plant which produces small yellow seeds. Takes a relatively long time to grow and yields lots of food, but requires further processing to be eatable. Needs fertile soil to grow well.</description>
   <statBases>
-    <MaxHitPoints>100</MaxHitPoints>
+    <MaxHitPoints>80</MaxHitPoints>
     <Nutrition>0.2</Nutrition>
   </statBases>
   <graphicData>
@@ -187,7 +187,7 @@
     <harvestTag>Standard</harvestTag>
     <maxMeshCount>4</maxMeshCount>
     <harvestedThingDef>DankPyon_RawWheat</harvestedThingDef>
-    <harvestYield>22</harvestYield>
+    <harvestYield>28</harvestYield>
     <sowResearchPrerequisites>
       <li>DankPyon_IntermediateAgriculture</li>
     </sowResearchPrerequisites>	  

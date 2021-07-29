@@ -8,7 +8,6 @@
         <graphicData>
 			<texPath>Apparel/ChainArmor/Chain_Mail</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -19,7 +18,7 @@
         </recipeMaker>
        
 		<costList>
-			<Dankpyon_IronIngot>80</Dankpyon_IronIngot>
+			<DankPyon_IronIngot>80</DankPyon_IronIngot>
 		</costList>
 
         <statBases>
@@ -46,7 +45,6 @@
             </bodyPartGroups>
             <wornGraphicPath>Apparel/ChainArmor/Chain_Mail</wornGraphicPath>
             <tags>
-				<li>DankPyon_Peasant</li>
 				<li>DankPyon_Bandit</li>
                 <li>DankPyon_Mercenary</li>
 				<li>DankPyon_MercenaryHeavy</li>
@@ -72,7 +70,6 @@
         <graphicData>
 			<texPath>Apparel/ChainArmor/Chain_Mail_Pad</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -83,7 +80,7 @@
         </recipeMaker>
         
 		<costList>
-			<Dankpyon_IronIngot>100</Dankpyon_IronIngot>
+			<DankPyon_IronIngot>100</DankPyon_IronIngot>
 		</costList>
 
         <statBases>

@@ -309,7 +309,10 @@
 		</fixedIngredientFilter>
     	<products>
       		<Steel>1</Steel>
-    	</products>		
+    	</products>
+		<researchPrerequisites>
+			<li>DankPyon_Steel</li>
+		</researchPrerequisites>		
   </RecipeDef> 
   
   <RecipeDef ParentName="DankPyon_SmelterBase">
@@ -336,6 +339,9 @@
 		<products>
 			<Steel>30</Steel>
 		</products>		
+		<researchPrerequisites>
+			<li>DankPyon_Steel</li>
+		</researchPrerequisites>
 	</RecipeDef>
 
 	<RecipeDef ParentName="DankPyon_SmelterBase">
@@ -361,7 +367,10 @@
 		</fixedIngredientFilter>
 		<products>
 			<Steel>60</Steel>
-		</products>		
+		</products>	
+		<researchPrerequisites>
+			<li>DankPyon_Steel</li>
+		</researchPrerequisites>	
 	</RecipeDef>
 
 </Defs>

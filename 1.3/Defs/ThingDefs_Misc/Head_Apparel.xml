@@ -9,7 +9,6 @@
 		<graphicData>
 			<texPath>Headgear/RedBandana/RedBandana</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
@@ -20,8 +19,8 @@
     </recipeMaker>
 
     <costList>
-      <Cloth>20</Cloth>
-    </costList>
+			<Cloth>20</Cloth>
+		</costList>
 
 		<statBases>
 			<WorkToMake>1200</WorkToMake>
@@ -86,7 +85,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<wornGraphicPath>Headgear/LeatherCap/LeatherCap</wornGraphicPath>
+			<wornGraphicPath>Headgear/Coif/Coif</wornGraphicPath>
 			<tags>
 				<li>DankPyon_Bandit</li>
         <li>DankPyon_Peasant</li>
@@ -110,12 +109,12 @@
     <generateCommonality>0.50</generateCommonality>
 
     <recipeMaker>
-      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
     </recipeMaker>
 
 		<costList>
-      <Cloth>25</Cloth>
-    </costList>
+			<Cloth>25</Cloth>
+		</costList>
 
 		<statBases>
 			<WorkToMake>2200</WorkToMake>
@@ -159,12 +158,12 @@
     <generateCommonality>0.95</generateCommonality>
 
     <recipeMaker>
-      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
     </recipeMaker>
 
 		<costList>
-      <Cloth>30</Cloth>
-    </costList>
+			<Cloth>30</Cloth>
+		</costList>
 
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
@@ -350,7 +349,7 @@
        <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Apparel/Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
+      <wornGraphicPath>Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
       <tags>
         <li>DankPyon_FootmanHeavy</li>
         <li>DankPyon_MercenaryHeavy</li>
@@ -371,7 +370,6 @@
     <graphicData>
       <texPath>Headgear/PaddedFlatTop/PaddedFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -430,7 +428,6 @@
     <graphicData>
       <texPath>Headgear/ChainCoif/ChainCoif</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -486,7 +483,6 @@
     <graphicData>
       <texPath>Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -519,7 +515,7 @@
        <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Apparel/Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
+      <wornGraphicPath>Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
       <tags>
         <li>DankPyon_Archer</li>
 				<li>DankPyon_Footman</li>
@@ -541,7 +537,6 @@
     <graphicData>
       <texPath>Headgear/ChainCoifFull/ChainCoifFull</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -597,7 +592,6 @@
     <graphicData>
       <texPath>Headgear/ChainNasalHelm/ChainNasalHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -626,7 +620,7 @@
     </equippedStatOffsets>
 
 		<costList>
-      <DankPyon_IronIngot>65</DankPyon_IronIngot>
+      <DankPyon_IronIngot>70</DankPyon_IronIngot>
     </costList>
     
     <apparel>
@@ -654,7 +648,6 @@
     <graphicData>
       <texPath>Headgear/ChainNasalHelmRed/ChainNasalHelmRed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -683,8 +676,8 @@
     </equippedStatOffsets>
 
 		<costList>
-      <DankPyon_IronIngot>65</DankPyon_IronIngot>
-    </costList>
+      <DankPyon_IronIngot>70</DankPyon_IronIngot>
+    </costList> 
 
     <apparel>
        <bodyPartGroups>
@@ -711,7 +704,6 @@
     <graphicData>
       <texPath>Headgear/ChainKettle/ChainKettle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -741,7 +733,7 @@
     
 		<costList>
       <DankPyon_IronIngot>70</DankPyon_IronIngot>
-    </costList> 
+    </costList>  
 
     <apparel>
        <bodyPartGroups>
@@ -825,7 +817,6 @@
     <graphicData>
       <texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -855,7 +846,7 @@
 
 		<costList>
       <DankPyon_IronIngot>80</DankPyon_IronIngot>
-    </costList> 
+    </costList>
 
     <apparel>
        <bodyPartGroups>
@@ -1236,7 +1227,6 @@
     <graphicData>
       <texPath>Headgear/GreatHelm/GreatHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -1289,7 +1279,7 @@
     </apparel>
   </ThingDef>
   
-    <!--ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_CrusaderGreatHelm</defName>
     <label>crusader's great helm</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
@@ -1347,7 +1337,7 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-  </ThingDef-->
+  </ThingDef>
   
     <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_RoyalGreatHelm</defName>

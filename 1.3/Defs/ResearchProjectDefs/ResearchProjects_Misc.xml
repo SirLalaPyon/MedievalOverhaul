@@ -51,7 +51,10 @@
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>0</researchViewX>
-		<researchViewY>0.7</researchViewY>    
+		<researchViewY>0.7</researchViewY>   
+    <prerequisites>
+      <li>DankPyon_RusticFurniture</li>
+    </prerequisites> 
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -133,6 +136,20 @@
 		<researchViewY>2.1</researchViewY>
     <hiddenPrerequisites>
       <li>DankPyon_RusticFurniture</li>
+    </hiddenPrerequisites>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Steel</defName>
+    <label>steel</label>
+    <description>Discover the basics of metallurgy and manufacture steel</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>11</researchViewX>
+		<researchViewY>2.5</researchViewY>
+    <hiddenPrerequisites>
+      <li>DankPyon_Alchemy</li>
     </hiddenPrerequisites>    
   </ResearchProjectDef>
 

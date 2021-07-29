@@ -69,14 +69,13 @@
 		<graphicData>
 			<texPath>Apparel/LightArmor/Padded_Coat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
 
 		<costList>
@@ -201,7 +200,7 @@
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
-		
+
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>

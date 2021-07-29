@@ -2,6 +2,83 @@
 
 <Defs>
 
+	<!--============== Ingredients ===============-->
+	<RecipeDef>
+		<defName>DankPyon_MakeSpice</defName>
+		<label>make spice</label>
+		<description>Make spice from raw spices.</description>
+		<jobString>Making 1 spice.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>100</workAmount> 
+			  <recipeUsers>	  
+				<li>DankPyon_RusticCookingTable</li>		  	  
+			  </recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawHerb</li>
+					  </thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+	
+		<products>
+			<DankPyon_Spices>1</DankPyon_Spices>
+		</products>
+	
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_RawHerb</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisites>
+			<li>DankPyon_BasicCooking</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DankPyon_MakeSpiceBulk</defName>
+		<label>make spices x10</label>
+		<description>Make 10 spices from raw herbs.</description>
+		<jobString>Making 10 spices.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>1000</workAmount> 
+			  <recipeUsers>	  
+				<li>DankPyon_RusticCookingTable</li>		  	  
+			  </recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawHerb</li>
+					  </thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+	
+		<products>
+			<DankPyon_Spices>10</DankPyon_Spices>
+		</products>
+	
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_RawHerb</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisites>
+			<li>DankPyon_BasicCooking</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
 <!--============== Tier 1 Meals ===============-->
 <!-- ======= Bone Soup ====== -->
 <!-- Bone Soup -->
@@ -184,6 +261,14 @@
 		  </filter>
 		  <count>0.2</count>
 	   </li>
+	   <li>
+		<filter>
+		   <thingDefs>
+			  <li>DankPyon_Spices</li>
+		   </thingDefs>
+		</filter>
+		<count>0.6</count>
+	 </li>
 	</ingredients>
 	<products>
 	   <DankPyon_Sausages>1</DankPyon_Sausages>
@@ -212,7 +297,7 @@
 <!-- Sausages Bulk-->
 <RecipeDef>
   <defName>DankPyon_MakeSausagesBulk</defName>
-  <label>(x10)Make sausage links</label>
+  <label>make sausage links x10</label>
   <description>Make 10 sausages from raw meat.</description>
   <jobString>Making bulk sausages.</jobString>  
   <allowMixingIngredients>true</allowMixingIngredients>
@@ -225,6 +310,14 @@
 		  </filter>
 		  <count>2</count>
 	  </li>
+	  <li>
+		<filter>
+		   <thingDefs>
+			  <li>DankPyon_Spices</li>
+		   </thingDefs>
+		</filter>
+		<count>6</count>
+	 </li>
   </ingredients>
   <products>
 	  <DankPyon_Sausages>10</DankPyon_Sausages>
@@ -906,7 +999,7 @@
 			<filter>
 				<thingDefs>
 					<li>RawFungus</li>
-	  </thingDefs>
+	  			</thingDefs>
 			</filter>
 			<count>0.5</count>
 		</li>

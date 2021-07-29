@@ -375,7 +375,7 @@
 		<defName>DankPyon_Hide_HeavyPeltTiny</defName>
 		<label>tiny heavy pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Resources/HeavyFurTiny</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -393,7 +393,7 @@
 		<defName>DankPyon_Hide_HeavyPeltSmall</defName>
 		<label>small heavy pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Resources/HeavyFurSmall</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -411,7 +411,7 @@
 		<defName>DankPyon_Hide_HeavyPeltMedium</defName>
 		<label>medium heavy pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Resources/HeavyFurMedium</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -429,7 +429,7 @@
 		<defName>DankPyon_Hide_HeavyPeltLarge</defName>
 		<label>large heavy pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Resources/HeavyFurLarge</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -915,6 +915,7 @@
 		<graphicData>
 			<texPath>Resources/HideHuge</texPath>
 			<color>(211,194,143)</color>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
 			<MarketValue>189</MarketValue>

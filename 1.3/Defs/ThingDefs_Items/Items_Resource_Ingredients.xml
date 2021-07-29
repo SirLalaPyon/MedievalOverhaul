@@ -58,7 +58,7 @@
 <ThingDef ParentName="RoughPlantBase">
     <defName>DankPyon_Salt</defName>
     <label>Salt</label>
-    <description>Salt is a common mineral that can be found abundantly in the sea. It generally used in cooking and preserving meals.</description>
+    <description>Salt is a common mineral, often found in natural rocky deposits and in abundance in the ocean. It is often used for food preservation, and as a seasoning in meals.</description>
     <stackLimit>200</stackLimit>
     <graphicData>
       <texPath>Resources/Salt</texPath>
@@ -83,7 +83,7 @@
 <ThingDef ParentName="RoughPlantBase">
 		<defName>DankPyon_Sugar</defName>
 		<label>sugar</label>
-		<description>PLACEHOLDER</description>
+		<description>A sweet, white powdery substance extracted from the sugar cane plant.</description>
 		<graphicData>
 			<texPath>Resources/Sugar</texPath>
 		</graphicData>
@@ -107,15 +107,15 @@
 	</ThingDef>
 
   <ThingDef ParentName="RoughPlantBase">
-		<defName>DankPyon_RawSpices</defName>
+		<defName>DankPyon_Spices</defName>
 		<label>spices</label>
-		<description>PLACEHOLDER</description>
+		<description>A mix of dried and crushed seasonings, provides wonderful aroma and flavours.</description>
 		<graphicData>
 			<texPath>Resources/Spices</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>6.6</MarketValue>
-			<Nutrition>1</Nutrition>
+			<MarketValue>2.5</MarketValue>
+			<Nutrition>0.02</Nutrition>
 			<Flammability>1.3</Flammability>
 		</statBases>
 		<comps>
@@ -132,7 +132,7 @@
 		</ingestible>
 	</ThingDef>
 
-  <ThingDef ParentName="MealBase"> <!-- you might want to change the parent name if it causes any issues -->
+  <ThingDef ParentName="MealBase">
     <defName>DankPyon_Sausages</defName>
     <label>Raw sausage</label>
     <description>Minced meat mixed with herbs and spices.</description>

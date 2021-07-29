@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>DankPyon_Apparel_Leather_Tunic</defName>
-		<label>leather tunic</label>
+		<label>leather vest</label>
 		<description>A simple vest stitched from treated and tanned leathers, both comfortable and pragmatic. The thick leather is a decent balance between protection and encumbrance.</description>
 		<graphicData>
 			<texPath>Apparel/LightArmor/Leather_Tunic</texPath>
@@ -53,7 +53,7 @@
                 <li>DankPyon_HedgeKnight</li>
             </tags>
 			<layers>
-				<li>OnSkin</li>
+				<li>Middle</li>
 			</layers>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -78,10 +78,11 @@
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>60</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
+
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
@@ -129,7 +130,6 @@
 		<graphicData>
 			<texPath>Apparel/LightArmor/Gambeson</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
@@ -139,10 +139,9 @@
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
 
-		<costStuffCount>70</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
+		<costList>
+			<Cloth>70</Cloth>
+		</costList>
 
 		<thingCategories>
 			<li>ApparelArmor</li>
@@ -202,10 +201,12 @@
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
+		
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
+
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>

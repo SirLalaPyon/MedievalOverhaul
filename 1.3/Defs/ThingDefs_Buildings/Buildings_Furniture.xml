@@ -602,8 +602,8 @@
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
     <defName>DankPyon_RusticChest</defName>
-    <label>Chest</label>
-    <description>A trusty wooden chest to put your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses</description>
+    <label>chest</label>
+    <description>A trusty wooden chest to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Furniture/RusticChest</texPath>
@@ -661,8 +661,8 @@
   
     <ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
     <defName>DankPyon_MetalStrongbox</defName>
-    <label>Metal Strongbox</label>
-    <description>A trusty metal strongbox to put your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.Multiple chests do not stack comfort bonuses</description>
+    <label>metal strongbox</label>
+    <description>A trusty metal strongbox to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.Multiple chests do not stack comfort bonuses.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Furniture/MetalStrongbox</texPath>
@@ -719,8 +719,8 @@
   
       <ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
     <defName>DankPyon_RoyalChest</defName>
-    <label>Royal Chest</label>
-    <description>An ornate chest used by the nobles.. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses</description>
+    <label>royal chest</label>
+    <description>An ornate chest store by the nobles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Furniture/RoyalChest</texPath>
@@ -1007,7 +1007,6 @@
           <fuelFilter>
         <thingDefs>
           <li>WoodLog</li>
-          <li>DankPyon_Coal</li>
         </thingDefs>
           </fuelFilter>
           <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -1038,13 +1037,11 @@
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
-          <li>EndTable</li>
-          <li>Dresser</li>
 		      <li>DankPyon_RusticEndTable</li>
 		      <li>DankPyon_RusticDresser</li>
 		      <li>DankPyon_RusticChest</li>
 		      <li>DankPyon_MetalStrongbox</li>
-		      <li>DankPyon_RoyalChest</li>
+          <li>DankPyon_RusticCloset</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -1099,13 +1096,11 @@
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
-          <li>EndTable</li>
-          <li>Dresser</li>
 		      <li>DankPyon_RusticEndTable</li>
 		      <li>DankPyon_RusticDresser</li>
 		      <li>DankPyon_RusticChest</li>
 		      <li>DankPyon_MetalStrongbox</li>
-		      <li>DankPyon_RoyalChest</li>
+          <li>DankPyon_RusticCloset</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -1162,13 +1157,11 @@
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
-          <li>EndTable</li>
-          <li>Dresser</li>
           <li>DankPyon_RusticEndTable</li>
           <li>DankPyon_RusticDresser</li>
           <li>DankPyon_RusticChest</li>
           <li>DankPyon_MetalStrongbox</li>
-          <li>DankPyon_RoyalChest</li>
+          <li>DankPyon_RusticCloset</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -1225,13 +1218,11 @@
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
-          <li>EndTable</li>
-            <li>Dresser</li>
             <li>DankPyon_RusticEndTable</li>
             <li>DankPyon_RusticDresser</li>
             <li>DankPyon_RusticChest</li>
             <li>DankPyon_MetalStrongbox</li>
-            <li>DankPyon_RoyalChest</li>
+            <li>DankPyon_RusticCloset</li>
         </linkableFacilities>
       </li>
     </comps>

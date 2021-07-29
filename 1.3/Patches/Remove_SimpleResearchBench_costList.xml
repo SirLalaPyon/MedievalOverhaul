@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch> <!-- For some reason, i cant find the code where the simple research bench has +25 iron ingots thusthis patch is made-->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "SimpleResearchBench"]/costList</xpath>
+	</Operation>
+
+</Patch>

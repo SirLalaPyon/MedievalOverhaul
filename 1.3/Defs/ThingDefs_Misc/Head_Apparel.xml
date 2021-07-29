@@ -19,10 +19,9 @@
       <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
     </recipeMaker>
 
-    <costStuffCount>20</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-    </stuffCategories>
+    <costList>
+      <Cloth>20</Cloth>
+    </costList>
 
 		<statBases>
 			<WorkToMake>1200</WorkToMake>
@@ -105,7 +104,6 @@
 		<graphicData>
 			<texPath>Headgear/ArmingCap/ArmingCap</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
@@ -115,10 +113,9 @@
       <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
     </recipeMaker>
 
-		<costStuffCount>25</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
+		<costList>
+      <Cloth>25</Cloth>
+    </costList>
 
 		<statBases>
 			<WorkToMake>2200</WorkToMake>
@@ -156,7 +153,6 @@
 		<graphicData>
 			<texPath>Headgear/ArmingCapFull/ArmingCapFull</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
@@ -166,10 +162,9 @@
       <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
     </recipeMaker>
 
-		<costStuffCount>30</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
+		<costList>
+      <Cloth>30</Cloth>
+    </costList>
 
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
@@ -262,7 +257,6 @@
     <graphicData>
       <texPath>Headgear/PaddedNasalHelm/PaddedNasalHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -292,11 +286,8 @@
 
 		<costList>
       <Cloth>10</Cloth>
+      <DankPyon_IronIngot>50</DankPyon_IronIngot>
     </costList>
-    <costStuffCount>50</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories> 
 
     <apparel>
        <bodyPartGroups>
@@ -323,7 +314,6 @@
     <graphicData>
       <texPath>Headgear/PaddedKettle/PaddedKettle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
     </graphicData>   
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -353,11 +343,8 @@
 
 		<costList>
       <Cloth>10</Cloth>
+      <DankPyon_IronIngot>55</DankPyon_IronIngot>
     </costList>
-    <costStuffCount>55</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>  
 
     <apparel>
        <bodyPartGroups>
@@ -414,11 +401,8 @@
 
 		<costList>
       <Cloth>10</Cloth>
+      <DankPyon_IronIngot>60</DankPyon_IronIngot>
     </costList>
-    <costStuffCount>60</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories> 
 
     <apparel>
        <bodyPartGroups>
@@ -471,10 +455,9 @@
       <EquipDelay>4</EquipDelay>
     </statBases>
     
-		<costStuffCount>50</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
+		<costList>
+      <DankPyon_IronIngot>50</DankPyon_IronIngot>
+    </costList>
 
     <apparel>
       <bodyPartGroups>
@@ -528,10 +511,9 @@
       <EquipDelay>4.5</EquipDelay>
     </statBases>
 
-		<costStuffCount>60</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
+		<costList>
+      <DankPyon_IronIngot>60</DankPyon_IronIngot>
+    </costList>
 
     <apparel>
        <bodyPartGroups>
@@ -584,10 +566,9 @@
       <EquipDelay>5</EquipDelay>
     </statBases>
 
-		<costStuffCount>65</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories> 
+		<costList>
+      <DankPyon_IronIngot>65</DankPyon_IronIngot>
+    </costList>
 
     <apparel>
        <bodyPartGroups>
@@ -644,10 +625,9 @@
       <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
     </equippedStatOffsets>
 
-		<costStuffCount>70</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>  
+		<costList>
+      <DankPyon_IronIngot>65</DankPyon_IronIngot>
+    </costList>
     
     <apparel>
        <bodyPartGroups>
@@ -702,10 +682,9 @@
       <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
     </equippedStatOffsets>
 
-		<costStuffCount>65</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>  
+		<costList>
+      <DankPyon_IronIngot>65</DankPyon_IronIngot>
+    </costList>
 
     <apparel>
        <bodyPartGroups>
@@ -760,10 +739,9 @@
       <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
     </equippedStatOffsets>
     
-		<costStuffCount>70</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>   
+		<costList>
+      <DankPyon_IronIngot>70</DankPyon_IronIngot>
+    </costList> 
 
     <apparel>
        <bodyPartGroups>
@@ -818,10 +796,9 @@
       <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
     </equippedStatOffsets>
 
-		<costStuffCount>75</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>  
+		<costList>
+      <DankPyon_IronIngot>75</DankPyon_IronIngot>
+    </costList>
 
     <apparel>
        <bodyPartGroups>
@@ -876,10 +853,9 @@
       <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
     </equippedStatOffsets>
 
-		<costStuffCount>80</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>  
+		<costList>
+      <DankPyon_IronIngot>80</DankPyon_IronIngot>
+    </costList> 
 
     <apparel>
        <bodyPartGroups>
@@ -1260,6 +1236,7 @@
     <graphicData>
       <texPath>Headgear/GreatHelm/GreatHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
@@ -1312,7 +1289,7 @@
     </apparel>
   </ThingDef>
   
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <!--ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_CrusaderGreatHelm</defName>
     <label>crusader's great helm</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
@@ -1370,7 +1347,7 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-  </ThingDef>
+  </ThingDef-->
   
     <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_RoyalGreatHelm</defName>

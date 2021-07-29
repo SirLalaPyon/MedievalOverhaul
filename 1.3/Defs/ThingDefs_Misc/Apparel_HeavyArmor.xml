@@ -5,6 +5,10 @@
         <defName>DankPyon_Apparel_CoatOfPlates</defName>
         <label>coat of plates</label>
         <description>Two layers of armor give way to this fantastically protective, yet cumbersome, suit, consisting of strong-forged chains beset by overlapping layers of metal plates to protect vitals and extremities.</description>
+        <graphicData>
+			<texPath>Apparel/HeavyArmor/Coat_Of_Plates</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <skillRequirements>
@@ -12,16 +16,10 @@
             </skillRequirements>
             <researchPrerequisite>DankPyon_PlateArmor</researchPrerequisite>
         </recipeMaker>
-        <graphicData>
-			<texPath>Apparel/HeavyArmor/Coat_Of_Plates</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-        </graphicData>
 
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <costStuffCount>170</costStuffCount>
+        <costList>
+			<Dankpyon_IronIngot>170</Dankpyon_IronIngot>
+		</costList>
 
         <statBases>
             <WorkToMake>38000</WorkToMake>

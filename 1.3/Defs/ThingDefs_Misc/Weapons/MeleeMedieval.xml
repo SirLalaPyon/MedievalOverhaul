@@ -59,6 +59,12 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
@@ -117,6 +123,12 @@
         <Crafting>4</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
@@ -175,6 +187,12 @@
         <Crafting>4</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
@@ -233,6 +251,12 @@
         <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- ==================== Two-Handed Maces ==================== -->
@@ -468,6 +492,12 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -527,6 +557,12 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -586,6 +622,12 @@
         <Crafting>4</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- ==================== Two-Handed Spears ==================== -->
@@ -1151,6 +1193,12 @@
         <Crafting>2</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
@@ -1212,6 +1260,12 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
@@ -1269,6 +1323,12 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- ==================== Two-Handed Hammers ==================== -->
@@ -1521,6 +1581,12 @@
         <Crafting>2</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -1582,6 +1648,12 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -1636,6 +1708,12 @@
         <Crafting>4</Crafting>
       </skillRequirements>
     </recipeMaker>
+
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- ==================== Two-Handed Axes ==================== -->
@@ -2000,6 +2078,12 @@
       <Crafting>4</Crafting>
     </skillRequirements>
   </recipeMaker>
+
+  <modExtensions>
+    <li Class="VFECore.ThingDefExtension">
+      <usableWithShields>true</usableWithShields>
+    </li>
+  </modExtensions>
 </ThingDef>
 
 <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -2054,6 +2138,12 @@
       <Crafting>5</Crafting>
     </skillRequirements>
   </recipeMaker>
+
+  <modExtensions>
+    <li Class="VFECore.ThingDefExtension">
+      <usableWithShields>true</usableWithShields>
+    </li>
+  </modExtensions>
 </ThingDef>
 
 <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -2108,6 +2198,12 @@
       <Crafting>5</Crafting>
     </skillRequirements>
   </recipeMaker>
+
+  <modExtensions>
+    <li Class="VFECore.ThingDefExtension">
+      <usableWithShields>true</usableWithShields>
+    </li>
+  </modExtensions>
 </ThingDef>
 
 <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -2162,6 +2258,12 @@
       <Crafting>5</Crafting>
     </skillRequirements>
   </recipeMaker>
+
+  <modExtensions>
+    <li Class="VFECore.ThingDefExtension">
+      <usableWithShields>true</usableWithShields>
+    </li>
+  </modExtensions>
 </ThingDef>
 
 <!-- ==================== Two-Handed Sword ==================== -->

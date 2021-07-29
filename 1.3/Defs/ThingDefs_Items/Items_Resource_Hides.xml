@@ -201,7 +201,7 @@
 		<statBases>
 			<MarketValue>40.5</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bear>15</Leather_Bear>
 		</butcherProducts>
 		<stuffProps>
@@ -218,7 +218,7 @@
 		<statBases>
 			<MarketValue>54</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bear>20</Leather_Bear>
 		</butcherProducts>
 		<stuffProps>
@@ -238,7 +238,7 @@
 		<butcherProducts>
 			<Leather_Bear>25</Leather_Bear>
 		</butcherProducts>
-		<stuffProps>
+		<stuffProps Inherit="False">
 			<color>(112,82,65)</color>
 		</stuffProps>
 	</ThingDef>
@@ -252,7 +252,7 @@
 		<statBases>
 			<MarketValue>81</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bear>30</Leather_Bear>
 		</butcherProducts>
 		<stuffProps>
@@ -269,7 +269,7 @@
 		<statBases>
 			<MarketValue>162</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bear>60</Leather_Bear>
 		</butcherProducts>
 		<stuffProps>
@@ -289,7 +289,7 @@
 		<statBases>
 			<MarketValue>37.125</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Light>15</Leather_Light>
 		</butcherProducts>
 		<stuffProps>
@@ -307,7 +307,7 @@
 		<statBases>
 			<MarketValue>49.5</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Light>20</Leather_Light>
 		</butcherProducts>
 		<stuffProps>
@@ -325,7 +325,7 @@
 		<statBases>
 			<MarketValue>61.87</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Light>25</Leather_Light>
 		</butcherProducts>
 		<stuffProps>
@@ -343,7 +343,7 @@
 		<statBases>
 			<MarketValue>74.25</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Light>30</Leather_Light>
 		</butcherProducts>
 		<stuffProps>
@@ -361,7 +361,7 @@
 		<statBases>
 			<MarketValue>148.5</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Light>60</Leather_Light>
 		</butcherProducts>
 		<stuffProps>
@@ -381,7 +381,7 @@
 		<statBases>
 			<MarketValue>31.05</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bluefur>15</Leather_Bluefur>
 		</butcherProducts>
 		<stuffProps>
@@ -399,7 +399,7 @@
 		<statBases>
 			<MarketValue>41.4</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bluefur>20</Leather_Bluefur>
 		</butcherProducts>
 		<stuffProps>
@@ -417,7 +417,7 @@
 		<statBases>
 			<MarketValue>51.75</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bluefur>25</Leather_Bluefur>
 		</butcherProducts>
 		<stuffProps>
@@ -435,7 +435,7 @@
 		<statBases>
 			<MarketValue>62.1</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bluefur>30</Leather_Bluefur>
 		</butcherProducts>
 		<stuffProps>
@@ -453,7 +453,7 @@
 		<statBases>
 			<MarketValue>124.2</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False"> 
 			<Leather_Bluefur>60</Leather_Bluefur>
 		</butcherProducts>
 		<stuffProps>
@@ -473,7 +473,7 @@
 		<statBases>
 			<MarketValue>33.75</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Lizard>15</Leather_Lizard>
 		</butcherProducts>
 		<stuffProps>
@@ -491,7 +491,7 @@
 		<statBases>
 			<MarketValue>45</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Lizard>20</Leather_Lizard>
 		</butcherProducts>
 		<stuffProps>
@@ -509,7 +509,7 @@
 		<statBases>
 			<MarketValue>56.25</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Lizard>25</Leather_Lizard>
 		</butcherProducts>
 		<stuffProps>
@@ -527,7 +527,7 @@
 		<statBases>
 			<MarketValue>67.5</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Lizard>30</Leather_Lizard>
 		</butcherProducts>
 		<stuffProps>
@@ -545,7 +545,7 @@
 		<statBases>
 			<MarketValue>135</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Lizard>60</Leather_Lizard>
 		</butcherProducts>
 		<stuffProps>
@@ -565,7 +565,7 @@
 		<statBases>
 			<MarketValue>27</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bird>15</Leather_Bird>
 		</butcherProducts>
 		<stuffProps>
@@ -583,7 +583,7 @@
 		<statBases>
 			<MarketValue>36</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bird>20</Leather_Bird>
 		</butcherProducts>
 		<stuffProps>
@@ -601,7 +601,7 @@
 		<statBases>
 			<MarketValue>45</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bird>25</Leather_Bird>
 		</butcherProducts>
 		<stuffProps>
@@ -619,7 +619,7 @@
 		<statBases>
 			<MarketValue>54</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bird>30</Leather_Bird>
 		</butcherProducts>
 		<stuffProps>
@@ -637,7 +637,7 @@
 		<statBases>
 			<MarketValue>108</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bird>60</Leather_Bird>
 		</butcherProducts>
 		<stuffProps>
@@ -713,7 +713,7 @@
 			<MarketValue>75.6</MarketValue>
 			<Mass>10.8</Mass>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Plain>42</Leather_Plain>
 		</butcherProducts>
 		<stuffProps>
@@ -731,7 +731,7 @@
 			<MarketValue>75.6</MarketValue>
 			<Mass>10.8</Mass>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Plain>42</Leather_Plain>
 		</butcherProducts>
 		<stuffProps>
@@ -750,7 +750,7 @@
 			<MarketValue>130.41</MarketValue>
 			<Mass>10</Mass>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bluefur>63</Leather_Bluefur>
 		</butcherProducts>
 		<stuffProps>
@@ -769,7 +769,7 @@
 			<MarketValue>130.41</MarketValue>
 			<Mass>10</Mass>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Plain>63</Leather_Plain>
 		</butcherProducts>
 		<stuffProps>
@@ -787,7 +787,7 @@
 			<Mass>19.5</Mass>
 			<MarketValue>175.5</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bear>65</Leather_Bear>
 		</butcherProducts>
 		<stuffProps>
@@ -806,7 +806,7 @@
 			<Mass>19.5</Mass>
 			<MarketValue>175.5</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bear>65</Leather_Bear>
 		</butcherProducts>
 		<stuffProps>
@@ -824,7 +824,7 @@
 			<MarketValue>243</MarketValue>
 			<Mass>27</Mass>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bear>90</Leather_Bear>
 		</butcherProducts>
 		<stuffProps>
@@ -843,7 +843,7 @@
 			<Mass>36</Mass>
 			<MarketValue>248.4</MarketValue>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bluefur>120</Leather_Bluefur>
 		</butcherProducts>
 		<stuffProps>
@@ -861,7 +861,7 @@
 			<MarketValue>324</MarketValue>
 			<Mass>36</Mass>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bear>120</Leather_Bear>
 			<ElephantTusk>2</ElephantTusk>
 		</butcherProducts>
@@ -881,7 +881,7 @@
 			<MarketValue>324</MarketValue>
 			<Mass>36</Mass>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Bear>120</Leather_Bear>
 		</butcherProducts>
 		<stuffProps>
@@ -900,7 +900,7 @@
 			<MarketValue>1512</MarketValue>
 			<Mass>36</Mass>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Thrumbo>120</Leather_Thrumbo>
 			<ThrumboHorn>1</ThrumboHorn>
 		</butcherProducts>
@@ -920,7 +920,7 @@
 			<MarketValue>189</MarketValue>
 			<Mass>10</Mass>
 		</statBases>
-		<butcherProducts>
+		<butcherProducts Inherit="False">
 			<Leather_Human>50</Leather_Human>
 		</butcherProducts>
 		<stuffProps>

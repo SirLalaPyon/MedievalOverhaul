@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>
+<!--Patch>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Campfire"]/comps/li[1]</xpath>
 		<value>
@@ -10,7 +10,6 @@
 				<fuelFilter>
 				<thingDefs>
 					<li>WoodLog</li>
-					<li>DankPyon_Coal</li>
 				</thingDefs>
 				</fuelFilter>
 				<initialFuelPercent>1</initialFuelPercent>
@@ -18,4 +17,4 @@
 			</li>
 		</value>
 	</Operation>
-</Patch>	
+</Patch-->	

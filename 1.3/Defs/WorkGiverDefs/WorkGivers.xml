@@ -202,4 +202,54 @@
           <prioritizeSustains>true</prioritizeSustains>
         </WorkGiverDef>
 
+        <WorkGiverDef>
+          <defName>DankPyon_DoBillsMakeApparel</defName>
+          <label>make apparel</label>
+          <giverClass>WorkGiver_DoBill</giverClass>
+          <workType>Tailoring</workType>
+          <priorityInType>110</priorityInType>
+          <fixedBillGiverDefs>
+            <li>DankPyon_TailorsBench</li>
+          </fixedBillGiverDefs>
+          <verb>tailor</verb>
+          <gerund>tailoring at</gerund>
+          <requiredCapacities>
+            <li>Manipulation</li>
+          </requiredCapacities>
+          <prioritizeSustains>true</prioritizeSustains>
+        </WorkGiverDef>
+
+        <WorkGiverDef>
+          <defName>DankPyon_DoBillsStonecut</defName>
+          <label>make stone blocks</label>
+          <giverClass>WorkGiver_DoBill</giverClass>
+          <workType>Crafting</workType>
+          <priorityInType>90</priorityInType>
+          <fixedBillGiverDefs>
+            <li>DankPyon_StonecuttingSpot</li>
+          </fixedBillGiverDefs>
+          <verb>stonecut</verb>
+          <gerund>cutting stone blocks at</gerund>
+          <requiredCapacities>
+            <li>Manipulation</li>
+          </requiredCapacities>
+          <prioritizeSustains>true</prioritizeSustains>
+        </WorkGiverDef>
+
+        <WorkGiverDef>
+          <defName>DankPyon_DoBillsMakeWeapons</defName>
+          <label>make weapons</label>
+          <giverClass>WorkGiver_DoBill</giverClass>
+          <workType>Smithing</workType>
+          <priorityInType>115</priorityInType>
+          <fixedBillGiverDefs>
+            <li>DankPyon_Anvil</li>
+          </fixedBillGiverDefs>
+          <verb>smith</verb>
+          <gerund>smithing at</gerund>
+          <requiredCapacities>
+            <li>Manipulation</li>
+          </requiredCapacities>
+          <prioritizeSustains>true</prioritizeSustains>
+        </WorkGiverDef>
 </Defs>

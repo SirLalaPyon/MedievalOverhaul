@@ -43,6 +43,9 @@
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
   </ThingDef>
   
   <ThingDef ParentName="PlantFoodRawBase">
@@ -89,6 +92,9 @@
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
   </ThingDef>
 
   <ThingDef ParentName="RoughPlantBase">
@@ -112,6 +118,9 @@
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
   </ThingDef>
 
 <!-- ==================== Raw Plants Food ======================= -->
@@ -148,7 +157,10 @@
       <MarketValue>1.92</MarketValue>
       <Nutrition>0.08</Nutrition>
     </statBases>
-    <ingestible>
+    <ingestible Inherit="False">
+      <preferability>RawBad</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
       <foodType>VegetableOrFruit</foodType>
     </ingestible>
     <comps>

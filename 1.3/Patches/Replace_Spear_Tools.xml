@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName = "ApparelMakeableBase"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName = "MeleeWeapon_Spear"]/tools</xpath>
 		<value>
 			<tools>
 				<li>

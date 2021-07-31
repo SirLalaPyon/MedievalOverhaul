@@ -73,6 +73,7 @@
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-5</Cleanliness>
+      <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
     </statBases>
 
     <recipes>
@@ -137,6 +138,7 @@
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <Cleanliness>-15</Cleanliness>
+      <WorkTableWorkSpeedFactor>0.85</WorkTableWorkSpeedFactor>
     </statBases>
     <size>(1,1)</size>
     <designationCategory>Production</designationCategory>
@@ -209,11 +211,19 @@
     <recipes>
       <li>CookMealSimple</li>
       <li>CookMealFine</li>
+      <li>CookMealFine_Veg</li>
+      <li>CookMealFine_Meat</li>
       <li>CookMealLavish</li>
+      <li>CookMealLavish_Veg</li>
+      <li>CookMealLavish_Meat</li>
       <li>CookMealSurvival</li>
       <li>CookMealSimpleBulk</li>
       <li>CookMealFineBulk</li>
+      <li>CookMealFineBulk_Veg</li>
+      <li>CookMealFineBulk_Meat</li>
       <li>CookMealLavishBulk</li>
+      <li>CookMealLavishBulk_Veg</li>
+      <li>CookMealLavishBulk_Meat</li>
       <li>CookMealSurvivalBulk</li>
       <li>Make_Pemmican</li>
       <li>Make_PemmicanBulk</li>
@@ -707,30 +717,26 @@
       <ResearchSpeedFactor>1</ResearchSpeedFactor>
     </statBases>
 
-    <placeWorkers>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-    </placeWorkers>
     <fillPercent>0.5</fillPercent>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <hasInteractionCell>true</hasInteractionCell>
     <designationCategory>Production</designationCategory>
     <surfaceType>Item</surfaceType>
     <techLevel>Medieval</techLevel>
+
     <comps>
-	
-      <!--li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>340</fuelConsumptionRate>
-        <fuelCapacity>100.0</fuelCapacity>
-        <fuelFilter>
-          <thingDefs>
-			      <li>DankPyon_Paper</li>
-          </thingDefs>
-        </fuelFilter>
-        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-      </li-->
-      
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>DankPyon_RusticBookshelf</li>
+        </linkableFacilities>
+      </li>
     </comps>
+    <designationHotKey>Misc2</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    
     <researchPrerequisites>
       <li>DankPyon_Engineering</li>
       <li>DankPyon_Alchemy</li>
@@ -1184,7 +1190,7 @@
     <techLevel>Medieval</techLevel>
   </ThingDef>
 
-  <ThingDef ParentName="BenchBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_TanningRack</defName>
     <label>tanning rack</label>
     <description>A standing rack for treating raw hides to become useful leathers.</description>
@@ -1233,6 +1239,9 @@
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
+
+    <comps Inherit="false"/>
+
     <placeWorkers>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
@@ -1537,7 +1546,7 @@
   </ThingDef>
 
 <!-- Mine Shaft -->
-<ThingDef ParentName="BenchBase">
+<ThingDef ParentName="BuildingBase">
     <defName>DankPyon_MineShaft</defName>
     <label>mine shaft</label>
     <description>A sturdy platform equipped with a primitive elevator built on top of a vertical tunnel. Can be used for mining resources and chunks.</description>
@@ -1564,6 +1573,8 @@
     </stuffCategories>
     <costStuffCount>200</costStuffCount>
 
+    <designationCategory>Production</designationCategory>
+
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -1574,7 +1585,7 @@
       <Cleanliness>-15</Cleanliness>
     </statBases>
     <size>(3,3)</size>
-    <designationCategory>Production</designationCategory>
+
     <passability>Standable</passability>
     <pathCost>50</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -1587,14 +1598,6 @@
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
-
-    <!--comps>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>DankPyon_MiningTools</li>
-        </linkableFacilities>
-      </li>
-    </comps-->
 
     <designationHotKey>Misc3</designationHotKey>
     <placeWorkers>

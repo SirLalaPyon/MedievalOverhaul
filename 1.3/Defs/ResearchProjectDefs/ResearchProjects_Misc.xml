@@ -11,7 +11,7 @@
     <tags>
       <li>DankPyon_MedievalStart</li>
     </tags>
-		<researchViewX>2</researchViewX>
+		<researchViewX>1</researchViewX>
 		<researchViewY>0</researchViewY>    
   </ResearchProjectDef>
 
@@ -22,7 +22,7 @@
     <baseCost>900</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>3</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>1.10</researchViewY>    
     <prerequisites>
       <li>DankPyon_RusticFurniture</li>
@@ -36,7 +36,7 @@
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>3</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>0.4</researchViewY>
     <prerequisites>
       <li>DankPyon_RusticFurniture</li>
@@ -50,8 +50,8 @@
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>0</researchViewX>
-		<researchViewY>0.7</researchViewY>   
+		<researchViewX>3</researchViewX>
+		<researchViewY>1.1</researchViewY>   
     <prerequisites>
       <li>DankPyon_RusticFurniture</li>
     </prerequisites> 
@@ -75,8 +75,11 @@
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>1</researchViewX>
-		<researchViewY>0</researchViewY>    
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.4</researchViewY>   
+    <prerequisites>
+      <li>DankPyon_RusticFurniture</li>
+    </prerequisites>  
   </ResearchProjectDef>
 
   <!--=========================== Engineering ==============================-->
@@ -110,16 +113,44 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
-    <defName>DankPyon_SiegeEngines</defName>
-    <label>siege engine</label>
-    <description>Research how to build powerful siege machinations for sheer ordinance</description>
-    <baseCost>2000</baseCost>
+    <defName>DankPyon_Crossbow</defName>
+    <label>crossbow</label>
+    <description>craft a mechanically compact bow. Requires less skill to wield but is long to reload.</description>
+    <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>11</researchViewX>
 		<researchViewY>1.10</researchViewY>
     <prerequisites>
       <li>DankPyon_Engineering</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_HeavyCrossbow</defName>
+    <label>arbalest</label>
+    <description>Craft a heavier version of the crossbow to decimate your enemies.</description>
+    <baseCost>700</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>12</researchViewX>
+		<researchViewY>1.10</researchViewY>
+    <prerequisites>
+      <li>DankPyon_Crossbow</li>
+    </prerequisites>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_SiegeEngines</defName>
+    <label>siege engine</label>
+    <description>Research how to build powerful siege machinations for sheer ordinance</description>
+    <baseCost>2000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>13</researchViewX>
+		<researchViewY>1.10</researchViewY>
+    <prerequisites>
+      <li>DankPyon_HeavyCrossbow</li>
     </prerequisites>
     <requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>     
   </ResearchProjectDef>
@@ -148,9 +179,9 @@
     <techLevel>Medieval</techLevel>
 		<researchViewX>11</researchViewX>
 		<researchViewY>2.5</researchViewY>
-    <hiddenPrerequisites>
+    <prerequisites>
       <li>DankPyon_Alchemy</li>
-    </hiddenPrerequisites>    
+    </prerequisites>    
   </ResearchProjectDef>
 
   <!--=========================== Apparel ==============================-->
@@ -193,7 +224,7 @@
     </prerequisites>    
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <!--ResearchProjectDef>
     <defName>DankPyon_PlateArmor</defName>
     <label>plate armor</label>
     <description>Learn the techniques of properly smithing and tempering metal plates to craft expensive plate armors</description>
@@ -205,9 +236,40 @@
     <prerequisites>
       <li>DankPyon_ChainArmor</li>
     </prerequisites>    
+  </ResearchProjectDef-->
+
+  <!--=========================== Ranged Weapons ==============================-->
+
+  <ResearchProjectDef>
+    <defName>DankPyon_HuntingBow</defName>
+    <label>hunting bow</label>
+    <description>Build hunting bows, a strong bow used for obtaining game.</description>
+    <baseCost>500</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0.7</researchViewY>  
+    <prerequisites>
+      <li>RecurveBow</li>
+    </prerequisites>
   </ResearchProjectDef>
 
-  <!--=========================== Weapons ==============================-->
+  <ResearchProjectDef>
+    <defName>DankPyon_WarBow</defName>
+    <label>war bow</label>
+    <description>Craft the ultimate longbow, dangerous especially at long range</description>
+    <baseCost>500</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>8</researchViewX>
+		<researchViewY>0.7</researchViewY>  
+    <prerequisites>
+      <li>Greatbow</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+
+  <!--=========================== Melee Weapons ==============================-->
   <ResearchProjectDef>
     <defName>DankPyon_BasicSpears</defName>
     <label>basic spears</label>
@@ -271,7 +333,7 @@
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <prerequisites>
-      <li>Smithing</li>
+      <li>DankPyon_BasicPolearms</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
 		<researchViewX>6</researchViewX>
@@ -285,7 +347,7 @@
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <prerequisites>
-      <li>Smithing</li>
+      <li>DankPyon_MilitaryPolearms</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
 		<researchViewX>7</researchViewX>
@@ -488,7 +550,7 @@
 		<researchViewY>5.6</researchViewY>  
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <!--ResearchProjectDef>
     <defName>DankPyon_NobleSwords</defName>
     <label>noble swords</label>
     <description>Learn how to craft stronger and better swords, fit for a noble.</description>
@@ -500,7 +562,7 @@
     <techLevel>Medieval</techLevel>
 		<researchViewX>7</researchViewX>
 		<researchViewY>5.6</researchViewY>  
-  </ResearchProjectDef>
+  </ResearchProjectDef-->
   
   <!--=========================== Agriculture ==============================-->
   <ResearchProjectDef>
@@ -664,8 +726,8 @@
   <ResearchProjectDef>
     <defName>DankPyon_Grill</defName>
     <label>grill</label>
-    <description>Learn how to smoke fresh meat into dried slabs of jerky to prolong shelf life and add rustic flavours to meals</description>
-    <baseCost>600</baseCost>
+    <description>Learn how to grill meat in an open flame, such grilled sausages and grilled meats.</description>
+    <baseCost>200</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>1</researchViewX>
@@ -679,7 +741,7 @@
     <defName>DankPyon_StewPot</defName>
     <label>stews</label>
     <description>Learn how to make hearty and nutritious stews such as pumpkin and lentil soups</description>
-    <baseCost>600</baseCost>
+    <baseCost>300</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>2</researchViewX>

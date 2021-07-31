@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Cheese Presser -->
+  <DankPyon_InsertMilkDesc>압착할 우유를 넣으세요.</DankPyon_InsertMilkDesc>
+  <DankPyon_InsertMilk>우유 넣기</DankPyon_InsertMilk>
+  <DankPyon_InsertMilkVariable>{0} 넣기</DankPyon_InsertMilkVariable>
+  <DankPyon_NoMilksFound>이 지도에 우유가 없습니다.</DankPyon_NoMilksFound>
+  <DankPyon_SelectMilk>압착할 우유 종류를 선택하세요.</DankPyon_SelectMilk>
+  <DankPyon_StartInsertionMilk>우유 가져오기</DankPyon_StartInsertionMilk>
+  <DankPyon_StartInsertionMilkDesc>우유를 가져와 치즈 압착기로 압착을 시작합니다.</DankPyon_StartInsertionMilkDesc>
+  <DankPyon_RemoveMilk>우유 제거하기</DankPyon_RemoveMilk>
+  <DankPyon_RemoveMilkDesc>압착기에서 우유를 제거합니다. 압착을 시작하기 전에만 할 수 있습니다.</DankPyon_RemoveMilkDesc>
+  <DankPyon_CancelBringingMilk>우유 가져오기 취소</DankPyon_CancelBringingMilk>
+  <DankPyon_CancelBringingMilkDesc>치즈 압착기에 우유 가져오기를 취소합니다.</DankPyon_CancelBringingMilkDesc>
+  <DankPyon_WaitTillJobsEndMilk>우유를 치즈 압착기에 가져올 때까지 기다리거나, 작업을 취소하세요.</DankPyon_WaitTillJobsEndMilk>
+  <DankPyon_EngageMilk>치즈로 압착</DankPyon_EngageMilk>
+  <DankPyon_EngageMilkDesc>우유 압착을 시작합니다. 이 과정은 5일 걸리고 중간에 멈출 수 없으며, 멈춘다면 우유가 파괴됩니다.</DankPyon_EngageMilkDesc>
+  <DankPyon_CheeseFinished>치즈 압착기에서 치즈가 숙성되었습니다.</DankPyon_CheeseFinished>
+  <DankPyon_CheeseInProgress>{0}(을)를 압착 중입니다. {1} 후에 준비됩니다.</DankPyon_CheeseInProgress>
+  <DankPyon_CheeseReady>치즈가 압착되어 운반을 기다리고 있습니다.</DankPyon_CheeseReady>
+  <DankPyon_MilkImproperlyDefined>이 우유는 치즈 압착기에 사용할 수 없도록 부적절하게 정의되었습니다. 모드 제작자에게 문의하세요.</DankPyon_MilkImproperlyDefined>
+  <DankPyon_RemoveCheese>치즈 제거({0})</DankPyon_RemoveCheese>
+  <DankPyon_RemoveCheeseDesc>치즈 압착기에서 치즈를 제거합니다.</DankPyon_RemoveCheeseDesc>
+
+  <DankPyon_CheesePressEmpty>치즈 압착기가 현재 비어 있습니다.</DankPyon_CheesePressEmpty>
+  <DankPyon_CheesePressFilled>치즈 압착기 {0}(으)로 채워짐</DankPyon_CheesePressFilled>
+  <DankPyon_CheesePressWorking>치즈 압착기 작동 중:</DankPyon_CheesePressWorking>
+  <DankPyon_ResourcePercentage> ({1} 중 {0} 채워짐)</DankPyon_ResourcePercentage>
+
+  <!-- Smoker -->
+  <DankPyon_InsertMeatDesc>훈연할 고기를 넣으세요.</DankPyon_InsertMeatDesc>
+  <DankPyon_InsertMeat>고기 넣기</DankPyon_InsertMeat>
+  <DankPyon_InsertMeatVariable>{0} 넣기</DankPyon_InsertMeatVariable>
+  <DankPyon_NoMeatsFound>이 지도에 고기가 없습니다.</DankPyon_NoMeatsFound>
+  <DankPyon_SelectMeat>훈연할 고기 종류를 선택하세요.</DankPyon_SelectMeat>
+  <DankPyon_StartInsertionMeat>고기 가져오기</DankPyon_StartInsertionMeat>
+  <DankPyon_StartInsertionMeatDesc>고기를 가져와 훈연기로 훈연을 시작합니다.</DankPyon_StartInsertionMeatDesc>
+  <DankPyon_RemoveMeat>고기 제거하기</DankPyon_RemoveMeat>
+  <DankPyon_RemoveMeatDesc>훈연기에서 고기를 제거합니다. 훈연을 시작하기 전에만 할 수 있습니다.</DankPyon_RemoveMeatDesc>
+  <DankPyon_CancelBringingMeat>고기 가져오기 취소</DankPyon_CancelBringingMeat>
+  <DankPyon_CancelBringingMeatDesc>훈연기에 고기 가져오기를 취소합니다.</DankPyon_CancelBringingMeatDesc>
+  <DankPyon_WaitTillJobsEndMeat>고기를 훈연기에 가져올 때까지 기다리거나, 작업을 취소하세요.</DankPyon_WaitTillJobsEndMeat>
+  <DankPyon_EngageMeat>훈제 고기로 훈연</DankPyon_EngageMeat>
+  <DankPyon_EngageMeatDesc>고기 훈연을 시작합니다. 이 과정은 하루 걸리고 중간에 멈출 수 없으며, 멈춘다면 고기가 파괴됩니다.</DankPyon_EngageMeatDesc>
+  <DankPyon_SmokedMeatFinished>훈연기에서 훈제 고기가 조리되었습니다.</DankPyon_SmokedMeatFinished>
+  <DankPyon_SmokedMeatInProgress>{0}(을)를 훈연 중입니다. {1} 후에 준비됩니다.</DankPyon_SmokedMeatInProgress>
+  <DankPyon_SmokedMeatReady>고기가 훈연되어 운반을 기다리고 있습니다.</DankPyon_SmokedMeatReady>
+  <DankPyon_MeatImproperlyDefined>이 고기는 훈연기에 사용할 수 없도록 부적절하게 정의되었습니다. 모드 제작자에게 문의하세요.</DankPyon_MeatImproperlyDefined>
+  <DankPyon_RemoveSmokedMeat>훈제 고기 제거({0})</DankPyon_RemoveSmokedMeat>
+
+  <DankPyon_SmokerEmpty>훈연기가 현재 비어 있습니다.</DankPyon_SmokerEmpty>
+  <DankPyon_SmokerFilled>훈연기 {0}(으)로 채워짐</DankPyon_SmokerFilled>
+  <DankPyon_SmokerWorking>훈연기 작동 중:</DankPyon_SmokerWorking>
+  <DankPyon_ResourcePercentage> ({1} 중 {0} 채워짐)</DankPyon_ResourcePercentage>
+
+  <!-- Drying Rack Meat -->
+  <DankPyon_InsertMeatDesc>말릴 고기를 넣으세요.</DankPyon_InsertMeatDesc>
+  <DankPyon_InsertMeat>고기 넣기</DankPyon_InsertMeat>
+  <DankPyon_InsertMeatVariable>{0} 넣기</DankPyon_InsertMeatVariable>
+  <DankPyon_NoMeatsFound>이 지도에 고기가 없습니다.</DankPyon_NoMeatsFound>
+  <DankPyon_SelectMeat>말릴 고기 종류를 선택하세요.</DankPyon_SelectMeat>
+  <DankPyon_StartInsertionMeat>고기 가져오기</DankPyon_StartInsertionMeat>
+  <DankPyon_StartInsertionMeatDesc>고기를 가져와 건조대에서 말립니다.</DankPyon_StartInsertionMeatDesc>
+  <DankPyon_RemoveMeat>고기 제거하기</DankPyon_RemoveMeat>
+  <DankPyon_RemoveMeatDesc>건조대에서 고기를 제거합니다. 건조를 시작하기 전에만 할 수 있습니다.</DankPyon_RemoveMeatDesc>
+  <DankPyon_CancelBringingMeat>고기 가져오기 취소</DankPyon_CancelBringingMeat>
+  <DankPyon_CancelBringingMeatDesc>건조대에 고기 가져오기를 취소합니다.</DankPyon_CancelBringingMeatDesc>
+  <DankPyon_WaitTillJobsEndMeat>고기를 건조대에 가져올 때까지 기다리거나, 작업을 취소하세요.</DankPyon_WaitTillJobsEndMeat>
+  <DankPyon_EngageMeat>말린 고기로 건조</DankPyon_EngageMeat>
+  <DankPyon_EngageMeatDesc>고기 건조를 시작합니다. 이 과정은 하루 걸리고 중간에 멈출 수 없으며, 멈춘다면 고기가 파괴됩니다.</DankPyon_EngageMeatDesc>
+  <DankPyon_DriedMeatFinished>건조대에서 고기가 다 말랐습니다.</DankPyon_DriedMeatFinished>
+  <DankPyon_DriedMeatInProgress>{0}(을)를 건조 중입니다. {1} 후에 준비됩니다.</DankPyon_DriedMeatInProgress>
+  <DankPyon_DriedMeatReady>고기가 건조되어 운반을 기다리고 있습니다.</DankPyon_DriedMeatReady>
+  <DankPyon_MeatImproperlyDefined>이 고기는 건조대에 사용할 수 없도록 부적절하게 정의되었습니다. 모드 제작자에게 문의하세요.</DankPyon_MeatImproperlyDefined>
+  <DankPyon_RemoveDriedMeat>말린 고기 제거({0})</DankPyon_RemoveDriedMeat>
+
+  <DankPyon_DryingRackEmpty>건조대가 현재 비어 있습니다.</DankPyon_DryingRackEmpty>
+  <DankPyon_DryingRackFilled>건조대 {0}(으)로 채워짐</DankPyon_DryingRackFilled>
+  <DankPyon_DryingRackWorking>건조대 작동 중:</DankPyon_DryingRackWorking>
+  <DankPyon_ResourcePercentage> ({1} 중 {0} 채워짐)</DankPyon_ResourcePercentage>
+
+  <!-- Hay Rack Meat -->
+  <DankPyon_InsertHayDesc>말릴 건초를 넣으세요.</DankPyon_InsertHayDesc>
+  <DankPyon_InsertHay>건초 넣기</DankPyon_InsertHay>
+  <DankPyon_InsertHayVariable>{0} 넣기</DankPyon_InsertHayVariable>
+  <DankPyon_NoHayFound>이 지도에 건초가 없습니다.</DankPyon_NoHayFound>
+  <DankPyon_SelectHay>말릴 건초를 선택하세요.</DankPyon_SelectHay>
+  <DankPyon_StartInsertionHay>건초 가져오기</DankPyon_StartInsertionHay>
+  <DankPyon_StartInsertionHayDesc>건초를 가져와 건조대에서 말립니다.</DankPyon_StartInsertionHayDesc>
+  <DankPyon_RemoveHay>건초 제거하기</DankPyon_RemoveHay>
+  <DankPyon_RemoveHayDesc>건조대에서 건초를 제거합니다. 건조를 시작하기 전에만 할 수 있습니다.</DankPyon_RemoveHayDesc>
+  <DankPyon_CancelBringingHay>건초 가져오기 취소</DankPyon_CancelBringingHay>
+  <DankPyon_CancelBringingHayDesc>건조대에 건초 가져오기를 취소합니다.</DankPyon_CancelBringingHayDesc>
+  <DankPyon_WaitTillJobsEndHay>건초를 건조대에 가져올 때까지 기다리거나, 작업을 취소하세요.</DankPyon_WaitTillJobsEndHay>
+  <DankPyon_EngageHay>밀짚으로 건조</DankPyon_EngageHay>
+  <DankPyon_EngageHayDesc>건초 건조를 시작합니다. 이 과정은 3일 걸립니다.</DankPyon_EngageHayDesc>
+  <DankPyon_StrawFinished>건조대에서 밀짚이 다 말랐습니다.</DankPyon_StrawFinished>
+  <DankPyon_StrawInProgress>{0}(을)를 건조 중입니다. {1} 후에 준비됩니다.</DankPyon_StrawInProgress>
+  <DankPyon_StrawReady>건초가 건조되어 운반을 기다리고 있습니다.</DankPyon_StrawReady>
+  <DankPyon_MeatImproperlyDefined>이 건초는 건조대에 사용할 수 없도록 부적절하게 정의되었습니다. 모드 제작자에게 문의하세요.</DankPyon_MeatImproperlyDefined>
+  <DankPyon_RemoveStraw>밀짚 제거({0})</DankPyon_RemoveStraw>
+
+  <DankPyon_DryingRackEmpty>건조대가 현재 비어 있습니다.</DankPyon_DryingRackEmpty>
+  <DankPyon_DryingRackFilled>건조대 {0}(으)로 채워짐</DankPyon_DryingRackFilled>
+  <DankPyon_DryingRackWorking>건조대 작동 중:</DankPyon_DryingRackWorking>
+  <DankPyon_ResourcePercentage> ({1} 중 {0} 채워짐)</DankPyon_ResourcePercentage>
+
+</LanguageData>

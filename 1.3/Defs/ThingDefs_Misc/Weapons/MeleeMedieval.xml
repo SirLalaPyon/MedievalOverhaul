@@ -854,7 +854,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DankPyon_MeleeWeapon_HookedBlade</defName>
     <label>hooked blade</label>
-    <description>An agricultural tool, the pitchfork offers minimal damage and armor penetration. However, the length and pointy ends allow it to be useful as an improvised weapon by outranging swords and spears.</description>
+    <description>When striking isn’t enough, brave warriors can close distances with the hooked blade’s curved head. The sharp point can puncture both flesh and metal, ensuring a tight grip to pull in enemies. Deals impressive damage for an agricultural tool but shines thanks to its utility.</description>
     <graphicData>
       <texPath>WeaponMelee/Polearms/HookedBlade</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -928,7 +928,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DankPyon_MeleeWeapon_Billhook</defName>
     <label>Billhook</label>
-    <description>An agricultural tool, the pitchfork offers minimal damage and armor penetration. However, the length and pointy ends allow it to be useful as an improvised weapon by outranging swords and spears.</description>
+    <description>A versatile pike with three deadly ends—a blade for strikes, a hook for grappling, and a spear-like point for puncturing chainmail and metal plates.</description>
     <graphicData>
       <texPath>WeaponMelee/Polearms/Billhook</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1001,7 +1001,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DankPyon_MeleeWeapon_Pike</defName>
     <label>Pike</label>
-    <description>An agricultural tool, the pitchfork offers minimal damage and armor penetration. However, the length and pointy ends allow it to be useful as an improvised weapon by outranging swords and spears.</description>
+    <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.</description>
     <graphicData>
       <texPath>WeaponMelee/Polearms/Pike</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1074,7 +1074,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DankPyon_MeleeWeapon_Swordlance</defName>
     <label>swordlance</label>
-    <description>An agricultural tool, the pitchfork offers minimal damage and armor penetration. However, the length and pointy ends allow it to be useful as an improvised weapon by outranging swords and spears.</description>
+    <description>Variation of the pike, although the curved blade allows for fierce slashing at a distance. This trades armor penetration for raw damage, making the swordlance deadly in experienced hands.</description>
     <graphicData>
       <texPath>WeaponMelee/Polearms/Swordlance</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -2193,7 +2193,7 @@
     </li>
   </tools>
   <recipeMaker>
-    <researchPrerequisite>DankPyon_NobleSwords</researchPrerequisite>
+    <researchPrerequisite>LongBlades</researchPrerequisite>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
@@ -2253,7 +2253,7 @@
     </li>
   </tools>
   <recipeMaker>
-    <researchPrerequisite>DankPyon_NobleSwords</researchPrerequisite>
+    <researchPrerequisite>LongBlades</researchPrerequisite>
     <skillRequirements>
       <Crafting>5</Crafting>
     </skillRequirements>
@@ -2270,7 +2270,7 @@
 <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
   <defName>DankPyon_MeleeWeapon_Longsword</defName>
   <label>longsword</label>
-  <description>Soft rods meld into the harder metals, forming unique yet faint patterns along the sharp blade. This attention to detail shines as the sword reflects sunlight on an open field. The patterns tell of nobility and wealth, while the blade itself tells of a warrior’s victory. Expensive, but an effective tool for warfare that portrays a warrior’s wealth and reputation for all to see.</description>
+  <description>Where shorter and lighter blades are most useful in shield walls, the longsword shines in skirmishes and duels. By increasing the length, and consequently ditching a shield, a warrior can increase reach to inflict high damage through swings and even thrusts. Do not assume that the increased size brings increased weight, as a swift strike from a longsword has caught many enemies off-guard.</description>
   <graphicData>
     <texPath>WeaponMelee/Swords/Longsword</texPath>
     <graphicClass>Graphic_Single</graphicClass>
@@ -2338,7 +2338,7 @@
 <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
   <defName>DankPyon_MeleeWeapon_Greatsword</defName>
   <label>Greatsword</label>
-  <description>A long two-handed sword, highly versatile with its swings.</description>
+  <description>A humongous, two-handed sword with a long blade, capable of cleaving enemies with fierce swings and chops. Decent at long thrusts as well.</description>
   <graphicData>
     <texPath>WeaponMelee/Swords/Greatsword</texPath>
     <graphicClass>Graphic_Single</graphicClass>
@@ -2396,7 +2396,7 @@
     </li>
   </tools>
   <recipeMaker>
-    <researchPrerequisite>DankPyon_NobleSwords</researchPrerequisite>
+    <researchPrerequisite>LongBlades</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
     </skillRequirements>

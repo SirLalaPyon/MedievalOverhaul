@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Generic -->
+
+  <IP_InsertFirstItemDesc>넣기</IP_InsertFirstItemDesc>
+  <IP_InsertSecondItemDesc>넣기</IP_InsertSecondItemDesc>
+  <IP_InsertThirdItemDesc>넣기</IP_InsertThirdItemDesc>
+  <IP_InsertVariable>{0} 넣기</IP_InsertVariable>
+  <IP_InsertVariableSecond>두번째 칸에 {0} 넣기</IP_InsertVariableSecond>
+  <IP_InsertVariableThird>세번째 {0} 넣기</IP_InsertVariableThird>
+  <IP_CantFindThing>이 지도에 {0} 종류의 물품이 없습니다.</IP_CantFindThing>
+  <IP_BringIngredients>재료 가져오기</IP_BringIngredients>
+  <IP_BringIngredientsDesc>공정을 시작하기 위해 재료 가져오기</IP_BringIngredientsDesc>
+  <IP_CancelIngredients>재료 가져오기 취소</IP_CancelIngredients>
+  <IP_CancelIngredientsDesc>이 건물로 재료 가져오기를 취소합니다</IP_CancelIngredientsDesc>
+  <IP_NoIngredientFound>지도에 재료가 없음</IP_NoIngredientFound>
+  <IP_ChooseIngredient>재료 선택</IP_ChooseIngredient>
+  <IP_ChooseIngredientSecond>두번째 재료 선택</IP_ChooseIngredientSecond>
+  <IP_ChooseIngredientThird>세번째 재료 선택</IP_ChooseIngredientThird>
+  <IP_IngredientImproperlyDefined>재료 중 하나가 물품 가공기와 잘 작동할 수 없도록 부적절하게 정의되었습니다. 모드 제작자에게 문의하세요.</IP_IngredientImproperlyDefined>
+  <IP_NoPowerDestroysWarning>{0}(이)가 작동하려면 전력이 필요합니다.</IP_NoPowerDestroysWarning>
+  <IP_NoFuelDestroysWarning>{0}(이)가 작동하려면 연료가 필요합니다.</IP_NoFuelDestroysWarning>
+  <IP_LightDestroysWarning>{0}(이)가 작동하려면 빛이 적절한 수준이어야 합니다.</IP_LightDestroysWarning>
+  <IP_RainDestroysWarning>{0}(이)가 작동하려면 비가 오지 않아야 합니다.</IP_RainDestroysWarning>
+  <IP_TemperatureDestroysWarning>{0}(이)가 작동하려면 온도가 적절해야 합니다({1} - {2}).</IP_TemperatureDestroysWarning>
+  <IP_NoPowerDestroysInitialWarning>물품 가공기에 전력이 들어오지 않아 결과물이 못쓰게 되고 있습니다.</IP_NoPowerDestroysInitialWarning>
+  <IP_NoPowerDestroysMessage>물품 가공기에 전력이 들어오지 않아 결과물이 못쓰게 되고 있습니다.</IP_NoPowerDestroysMessage>
+  <IP_GenericProductFinished>생산품 가공이 끝나 운반을 대기하고 있습니다.</IP_GenericProductFinished>
+  <IP_IsEmpty>{0} 비어 있음</IP_IsEmpty>
+  <IP_FilledWith>{0} {1}(으)로 채움</IP_FilledWith>
+  <IP_FilledWithSecond>{0}의 두번째 칸 {1}(으)로 채움</IP_FilledWithSecond>
+  <IP_FilledWithThird>{0}의 세번째 칸 {1}(으)로 채움</IP_FilledWithThird>
+  <IP_IngredientPercentage> ({J} 중 {0} 채워짐)</IP_IngredientPercentage>
+  <IP_ProcessorWorking>{0} 작동 중: </IP_ProcessorWorking>
+  <IP_ProcessingInProgress>{0}(이)가 {1}(을)를 가공 중입니다. {2}는 {4} 뒤에 {3} 품질로 완성됩니다.</IP_ProcessingInProgress>
+  <IP_ProcessingInProgressNoQuality>{0}(이)가 {1}(을)를 가공 중입니다. {2}는 {3} 뒤에 완성됩니다.</IP_ProcessingInProgressNoQuality>
+  <IP_RemoveProduct>{0} ({1}) 제거하기</IP_RemoveProduct>
+  <IP_RemoveProductDesc>{1}에서 {0}을 제거합니다. 생산품은 현재 품질({2})로 완성됩니다.R</IP_RemoveProductDesc>
+  <IP_ResetSemiautomatic>제조법 재설정</IP_ResetSemiautomatic>
+  <IP_ResetSemiautomaticDesc>현재 생산품을 만들고 나서 이 건물을 재설정하여 새로운 재료를 고를 수 있게 합니다.</IP_ResetSemiautomaticDesc>
+  <IP_NoCombination>이 재료들에 대한 조합 없음</IP_NoCombination>
+  <IP_SetAutoQuality>생산품을 꺼낼 품질을 설정합니다. 생산품이 이 품질이 되면, 정착민이 자동으로 꺼내고 가능하다면 창고로 옮길 것입니다. 설정하지 않으면 생산품을 수동으로 꺼내거나 전설 등급이 될 때 꺼냅니다.</IP_SetAutoQuality>
+  <IP_ChooseQualityAuto>자동 품질을 선택하세요</IP_ChooseQualityAuto>
+  <IP_QualityAutoIs>자동 품질: {0}</IP_QualityAutoIs>
+  <IP_QualityAutoNot>자동 품질 비활성화</IP_QualityAutoNot>
+  <IP_QualityAutoEstablished>자동 품질, 생산품은 {0} 등급에서 꺼내질 것임</IP_QualityAutoEstablished>
+  <IP_ToggleAuto>자동 재료 취득</IP_ToggleAuto>
+  <IP_ToggleAutoDesc>활성화하면, 이 건물은 인접한 호퍼에서 재료를 자동으로 가져온 후, 생산품을 제거하면 자동으로 다시 작동할 것입니다. 비활성화하면, 정착민들이 건물로 재료를 옮길 것이고, 다시 채운 후 수동으로 활성화해야 합니다.</IP_ToggleAutoDesc>
+  <IP_ProductWaiting>운반 대기 중</IP_ProductWaiting>
+  <IP_OutsideLightRange>이 기계의 공정은 부적절한 광량으로 인해 멈추었으며 곧 못쓰게 될 것입니다</IP_OutsideLightRange>
+  <IP_SpoiledDueToLight>이 기계의 생산품은 부적절한 광량으로 인해 못쓰게 되었습니다</IP_SpoiledDueToLight>
+  <IP_ItRains>이 기계의 공정은 나쁜 날씨로 인해 멈추었으며 곧 못쓰게 될 것입니다</IP_ItRains>
+  <IP_SpoiledDueToRain>이 기계의 생산품은 나쁜 날씨로 인해 못쓰게 되었습니다</IP_SpoiledDueToRain>
+  <IP_WrongTemp>이 기계의 공정은 부적합한 온도로 인해 멈추었으며 곧 못쓰게 될 것입니다</IP_WrongTemp>
+  <IP_SpoiledDueToWrongTemp>이 기계의 생산품은 부적합한 온도로 인해 못쓰게 되었습니다</IP_SpoiledDueToWrongTemp>
+  <IP_TempRangeInThisMachine>. 이 발효기는 {2} {0} - {1}도의 온도가 필요합니다.</IP_TempRangeInThisMachine>
+
+
+
+</LanguageData>

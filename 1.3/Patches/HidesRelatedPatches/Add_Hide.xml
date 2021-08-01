@@ -8,20 +8,6 @@
 				<xpath>Defs/ThingDef/race/leatherDef</xpath>
 			</li>
 
-			<!--li Class="PatchOperationAdd">                                  
-				<xpath>Defs/PawnKindDef [defName = "Rat"]/race</xpath>
-				<value>
-					<leatherDef>DankPyon_Hide_HideTiny</leatherDef>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/PawnKindDef [defName = "Rat"]/race/baseBodySize</xpath>    Fails for some reason
-				<value>
-					<baseBodySize>0.025</baseBodySize>
-				</value>
-			</li-->
-
 			<!--=============== Start of adding pelts to butcher products ===============-->
 			<!--========== WildCanines ==========-->
 			<!-- Fox_Arctic -->

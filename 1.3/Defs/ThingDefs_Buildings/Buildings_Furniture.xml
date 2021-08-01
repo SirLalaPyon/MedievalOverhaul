@@ -1080,6 +1080,65 @@
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_BedWithQualityBase">
+    <defName>DankPyon_BedWickerDouble</defName>
+    <label>double wicker bed</label>
+    <description>A simple and quick to make wicker bed.</description>
+    <graphicData>
+      <texPath>Furniture/BedWickerDouble</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+		      <li>DankPyon_RusticEndTable</li>
+		      <li>DankPyon_RusticDresser</li>
+		      <li>DankPyon_RusticChest</li>
+		      <li>DankPyon_MetalStrongbox</li>
+          <li>DankPyon_RusticCloset</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+      <WorkToBuild>1000</WorkToBuild>
+      <Mass>40</Mass>
+      <BedRestEffectiveness>0.95</BedRestEffectiveness>
+      <Comfort>0.70</Comfort>
+      <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>85</costStuffCount>
+
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_BedWithQualityBase">
     <defName>DankPyon_StrawBed</defName>
     <label>Straw bed</label>
     <description>A simple and quick to make wicker bed, padded with straw for added comfort.</description>
@@ -1126,6 +1185,67 @@
     <costStuffCount>45</costStuffCount>
     <costList>
       <DankPyon_Straw>15</DankPyon_Straw>
+    </costList>
+
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_BedWithQualityBase">
+    <defName>DankPyon_StrawBedDouble</defName>
+    <label>double straw bed</label>
+    <description>A simple and quick to make wicker bed, padded with straw for added comfort.</description>
+    <graphicData>
+      <texPath>Furniture/BedStrawDouble</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+		      <li>DankPyon_RusticEndTable</li>
+		      <li>DankPyon_RusticDresser</li>
+		      <li>DankPyon_RusticChest</li>
+		      <li>DankPyon_MetalStrongbox</li>
+          <li>DankPyon_RusticCloset</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>45</Mass>
+      <BedRestEffectiveness>0.98</BedRestEffectiveness>
+      <Comfort>0.72</Comfort>
+      <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>85</costStuffCount>
+    <costList>
+      <DankPyon_Straw>30</DankPyon_Straw>
     </costList>
 
     <building>

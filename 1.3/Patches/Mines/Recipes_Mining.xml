@@ -5,7 +5,6 @@
 			<li>Mines</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/RecipeDef[defName="Excavate_Gold"]/products</xpath>
@@ -17,6 +16,12 @@
 				</li>
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/RecipeDef[defName="Excavate_Steel"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingeDef[defName="Mine"]/recipes/Excavate_Steel</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingeDef[defName="Mine"]/recipes/Excavate_ComponentIndustrial</xpath>
 				</li>
 			</operations>
 		</match>

@@ -34,6 +34,12 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Leather_Rhinoceros"]/label</xpath>
+				<value>
+					<label>thick scale leather</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Leather_Bird"]/label</xpath>
 				<value>
 					<label>bird leather</label>
@@ -57,6 +63,7 @@
 			defName="Leather_Light" or 
 			defName="Leather_Bluefur" or 
 			defName="Leather_Lizard" or 
+			defName="Leather_Rhinoceros" or 
 			defName="Leather_Bird" or 
 			defName="Leather_Human" or 
 			defName="Leather_Patch"]/statBases</xpath>
@@ -70,6 +77,7 @@
 			defName="Leather_Light" or 
 			defName="Leather_Bluefur" or 
 			defName="Leather_Lizard" or 
+			defName="Leather_Rhinoceros" or 
 			defName="Leather_Bird" or 
 			defName="Leather_Human" or 
 			defName="Leather_Patch"]</xpath>
@@ -140,6 +148,18 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Leather_Rhinoceros"]/statBases</xpath>
+				<value>
+					<statBases>
+						<MarketValue>3</MarketValue>
+						<StuffPower_Armor_Sharp>1.29</StuffPower_Armor_Sharp>
+						<StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt>
+						<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+						<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+					</statBases>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Leather_Bird"]/statBases</xpath>
 				<value>
 					<statBases>
@@ -188,6 +208,7 @@
 			defName="Leather_Light" or 
 			defName="Leather_Bluefur" or 
 			defName="Leather_Lizard" or 
+			defName="Leather_Rhinoceros" or 
 			defName="Leather_Bird" or 
 			defName="Leather_Patch" or
 			defName="Leather_Thrumbo"]/stuffProps/statFactors</xpath>
@@ -251,6 +272,17 @@
 						<BedRestEffectiveness>0.9</BedRestEffectiveness>
 						<Comfort>0.75</Comfort>
 						<Mass>0.9</Mass>
+					</statFactors>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Rhinoceros"]/stuffProps</xpath>
+				<value>
+					<statFactors>
+						<MaxHitPoints>2</MaxHitPoints>
+						<BedRestEffectiveness>0.86</BedRestEffectiveness>
+						<Comfort>0.65</Comfort>
+						<Mass>1.5</Mass>
 					</statFactors>
 				</value>
 			</li>

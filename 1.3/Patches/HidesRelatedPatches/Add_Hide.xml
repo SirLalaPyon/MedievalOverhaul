@@ -7,6 +7,12 @@
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef/race/leatherDef</xpath>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Human"]/race</xpath>
+				<value>
+					<leatherDef>Leather_Human</leatherDef>
+				</value>
+			</li>
 
 			<!--=============== Start of adding pelts to butcher products ===============-->
 			<!--========== WildCanines ==========-->

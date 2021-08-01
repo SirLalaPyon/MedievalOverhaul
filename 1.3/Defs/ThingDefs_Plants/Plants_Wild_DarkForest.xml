@@ -32,6 +32,20 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<visualSizeRange>8~12</visualSizeRange>
 		</plant>
+		<modExtensions>
+			<li Class="DankPyon.PlantExtension">
+				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+				<firstAreaOffset>(-1, 0)</firstAreaOffset>
+				<firstArea>(3, 7)</firstArea>
+				<secondArea>(11, 4)</secondArea>
+				<secondAreaOffset>(-5, 7)</secondAreaOffset>
+				<ignoredThings>
+					<li>ChunkMarble</li>
+					<li>ChunkGranite</li>
+					<li>ChunkSandstone</li>
+				</ignoredThings>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef ParentName="TreeBase">
@@ -65,6 +79,20 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<visualSizeRange>8~12</visualSizeRange>
 		</plant>
+		<modExtensions>
+			<li Class="DankPyon.PlantExtension">
+				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+				<firstAreaOffset>(-3, 0)</firstAreaOffset>
+				<firstArea>(7, 6)</firstArea>
+				<secondArea>(6, 5)</secondArea>
+				<secondAreaOffset>(-2, 6)</secondAreaOffset>
+				<ignoredThings>
+					<li>ChunkMarble</li>
+					<li>ChunkGranite</li>
+					<li>ChunkSandstone</li>
+				</ignoredThings>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="TreeBase">
@@ -90,6 +118,20 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<visualSizeRange>3~5</visualSizeRange>
 		</plant>
+		<modExtensions>
+			<li Class="DankPyon.PlantExtension">
+				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+				<firstAreaOffset>(-1, 0)</firstAreaOffset>
+				<firstArea>(3, 3)</firstArea>
+				<secondAreaOffset>(0, 3)</secondAreaOffset>
+				<secondArea>(1, 2)</secondArea>
+				<ignoredThings>
+					<li>ChunkMarble</li>
+					<li>ChunkGranite</li>
+					<li>ChunkSandstone</li>
+				</ignoredThings>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef ParentName="DeciduousTreeBase">

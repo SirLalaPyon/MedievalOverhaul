@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DankPyon_MedievalOverhaul")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DankPyon_MedievalOverhaul")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DankPyon_MedievalOverhaul")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

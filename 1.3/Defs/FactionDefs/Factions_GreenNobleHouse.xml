@@ -260,16 +260,15 @@
     </backstoryFilters>
     <leaderTitle>chief</leaderTitle>
     <caravanTraderKinds>
-      <li>Caravan_Neolithic_BulkGoods</li>
-      <li>Caravan_Neolithic_WarMerchant</li>
-      <li>Caravan_Neolithic_Slaver</li>
-      <li>Caravan_Neolithic_ShamanMerchant</li>
+      <li>DankPyon_Caravan_Medieval_BulkGoodsMerchant</li>
+      <li>DankPyon_Caravan_Medieval_Weaponsmith</li>
+      <li>DankPyon_Caravan_Medieval_Armorsmith</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
-      <li>Visitor_Neolithic_Standard</li>
+      <li>DankPyon_Visitor_Medieval_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-      <li>Base_Neolithic_Standard</li>
+      <li>DankPyon_Base_Medieval_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
     <raidCommonalityFromPointsCurve>
@@ -277,7 +276,7 @@
         <li>(0, 1)</li> <!--Constant 1 at all points levels-->
       </points>
     </raidCommonalityFromPointsCurve>
-    <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+    <!--raidLootMaker>TribeRaidLootMaker</raidLootMaker-->
     <maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(0,35)</li>
@@ -293,14 +292,14 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <Tribal_Penitent>5</Tribal_Penitent>
+          <!--DankPyon_Peasant>5</DankPyon_Peasant>
           <Tribal_Warrior>5</Tribal_Warrior>
           <Tribal_Archer>10</Tribal_Archer>
           <Tribal_Hunter>10</Tribal_Hunter>
           <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
           <Tribal_Berserker>5</Tribal_Berserker>
           <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
-          <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+          <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee-->
         </options>
       </li>
       <li>
@@ -422,11 +421,11 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <settlementTexturePath>WorldObjects/Castle</settlementTexturePath>
   </FactionDef>
 
   <ThingSetMakerDef>
-    <defName>TribeRaidLootMaker</defName>
+    <defName>DankPyon_MedievalLootMaker</defName>
     <root Class="ThingSetMaker_MarketValue">
       <fixedParams>
         <filter>
@@ -434,20 +433,19 @@
             <li>Silver</li>
             <li>Jade</li>
             <li>MedicineHerbal</li>
-            <li>Pemmican</li>
           </thingDefs>
         </filter>
       </fixedParams>
     </root>
   </ThingSetMakerDef>
   
-  <FactionDef ParentName="TribeBase">
-    <defName>TribeCivil</defName>
-    <label>gentle tribe</label>
+  <FactionDef ParentName="DankPyon_GreenNobleHouseFactionBase">
+    <defName>DankPyon_GreenNobleHouse</defName>
+    <label>gentle noble house</label>
     <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
     <colorSpectrum>
-      <li>(0.85, 0.75, 0.37)</li>
-      <li>(0.94, 0.61, 0.06)</li>
+      <li>(0.34, 0.73, 0.76)</li>
+      <li>(0.47, 1, 1)</li>
     </colorSpectrum>
     <disallowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
@@ -461,17 +459,16 @@
   </FactionDef>
 
   <FactionDef ParentName="TribeBase">
-    <defName>TribeRough</defName>
-    <label>fierce tribe</label>
+    <defName>DankPyon_RedNobleHouse</defName>
+    <label>fierce noble house</label>
     <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
     <colorSpectrum>
-      <li>(0.03, 0.47, 0.16)</li>
-      <li>(0.49, 0.96, 0.51)</li>
+      <li>(0.99, 0.65, 0.40)</li>
+      <li>(1, 0.65, 0.40)</li>
     </colorSpectrum>
     <factionIconPath>World/WorldObjects/Expanding/VillageRough</factionIconPath>
     <naturalEnemy>true</naturalEnemy>
     <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
@@ -481,12 +478,12 @@
   </FactionDef>
 
   <FactionDef ParentName="TribeBase">
-    <defName>TribeSavage</defName>
-    <label>savage tribe</label>
+    <defName>DankPyon_BlueNobleHouse</defName>
+    <label>savage noble house</label>
     <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe is driven by a blood-and-honor culture; you will not be able to ally with them!</description>
     <colorSpectrum>
       <li>(0.85, 0, 0)</li>
-      <li>(0.85, 0.7, 0.7)</li>
+      <li>(1, 0.1, 0.1)</li>>
     </colorSpectrum>
     <factionIconPath>World/WorldObjects/Expanding/VillageSavage</factionIconPath>
     <permanentEnemy>true</permanentEnemy>
@@ -500,187 +497,5 @@
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>60</configurationListOrderPriority>
   </FactionDef>
-
-
-
-  <FactionDef Name="PirateBandBase" ParentName="FactionBase">
-    <defName>Pirate</defName>
-    <label>pirate gang</label>
-    <description>A loose confederation of pirate gangs who've agreed to mostly fight outsiders instead of fighting each other.\n\nPirates don't sow, they don't build, and they rarely trade. Driven by a blood-and-honor culture that values personal strength and ruthlessness, they enrich themselves by raiding and robbing their more productive neighbors.\n\nTheir technology level depends mostly on who they've managed to steal from recently. Mostly they carry gunpowder weapons, though some prefer to stab victims at close range.</description>
-    <pawnSingular>pirate</pawnSingular>
-    <pawnsPlural>pirates</pawnsPlural>
-    <listOrderPriority>10</listOrderPriority>
-    <settlementGenerationWeight>1</settlementGenerationWeight>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <maxCountAtGameStart>1</maxCountAtGameStart>
-    <canMakeRandomly>true</canMakeRandomly>
-    <canSiege>true</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-    <leaderTitle>boss</leaderTitle>
-    <factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
-    <factionNameMaker>NamerFactionPirate</factionNameMaker>
-    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
-    <colorSpectrum>
-      <li>(0.78, 0, 0.27)</li>
-      <li>(1, 0.74, 0.83)</li>
-    </colorSpectrum>
-    <permanentEnemy>true</permanentEnemy>
-    <techLevel>Spacer</techLevel>
-    <allowedCultures><li>Kriminul</li></allowedCultures>
-    <requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-    </requiredMemes>
-    <allowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
-    </allowedMemes>
-    <structureMemeWeights>
-      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
-    </structureMemeWeights>
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Pirate</li>
-        </categories>
-      </li>
-    </backstoryFilters>
-    <geneticVariance>0.8</geneticVariance>
-    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
-    <maxPawnCostPerTotalPointsCurve>
-      <points>
-        <li>(0,35)</li>
-        <li>(70, 50)</li>
-        <li>(700, 100)</li>
-        <li>(1300, 150)</li>
-        <li>(100000, 10000)</li>
-      </points>
-    </maxPawnCostPerTotalPointsCurve>
-    <pawnGroupMakers>
-      <li>
-        <!-- Normal fights, ranged with melee mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>100</commonality>
-        <options>
-          <Drifter>10</Drifter>
-          <Thrasher>3</Thrasher>
-          <Scavenger>10</Scavenger>
-          <Pirate>10</Pirate>
-          <Grenadier_EMP>0.25</Grenadier_EMP>
-          <Grenadier_Smoke>0.25</Grenadier_Smoke>
-          <Grenadier_Destructive>2</Grenadier_Destructive>
-          <Mercenary_Gunner>10</Mercenary_Gunner>
-          <Mercenary_Heavy>6</Mercenary_Heavy>
-          <Mercenary_Slasher>3</Mercenary_Slasher>
-          <Mercenary_Sniper>7</Mercenary_Sniper>
-          <Mercenary_Elite>10</Mercenary_Elite>
-          <PirateBoss>5</PirateBoss>
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, melee-only -->
-        <kindDef>Combat</kindDef>
-        <commonality>30</commonality>
-        <disallowedStrategies>
-          <li>Siege</li>
-        </disallowedStrategies>
-        <options>
-          <Thrasher>10</Thrasher>
-          <Mercenary_Slasher>10</Mercenary_Slasher>
-          <PirateBoss>5</PirateBoss>
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, ranged only -->
-        <kindDef>Combat</kindDef>
-        <commonality>20</commonality>
-        <options>
-          <Scavenger>10</Scavenger>
-          <Pirate>10</Pirate>
-          <Grenadier_EMP>0.25</Grenadier_EMP>
-          <Grenadier_Smoke>0.25</Grenadier_Smoke>
-          <Grenadier_Destructive>2</Grenadier_Destructive>
-          <Mercenary_Gunner>10</Mercenary_Gunner>
-          <Mercenary_Heavy>6</Mercenary_Heavy>
-          <Mercenary_Sniper>7</Mercenary_Sniper>
-          <Mercenary_Elite>10</Mercenary_Elite>
-          <PirateBoss>5</PirateBoss>
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, explosives with ranged mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>15</commonality>
-        <disallowedStrategies>
-          <li>Siege</li>
-        </disallowedStrategies>
-        <options>
-          <Grenadier_EMP>0.5</Grenadier_EMP>
-          <Grenadier_Smoke>0.5</Grenadier_Smoke>
-          <Grenadier_Destructive>10</Grenadier_Destructive>
-          <Mercenary_Gunner>1</Mercenary_Gunner>
-          <Mercenary_Heavy>10</Mercenary_Heavy>
-          <Mercenary_Elite>1</Mercenary_Elite>
-          <PirateBoss>1</PirateBoss>
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, snipers only -->
-        <kindDef>Combat</kindDef>
-        <commonality>10</commonality>
-        <options>
-          <Mercenary_Sniper>10</Mercenary_Sniper>
-        </options>
-      </li>
-      <li>
-        <!-- Normal fights, drifters only (very rare) -->
-        <kindDef>Combat</kindDef>
-        <commonality>2.5</commonality>
-        <maxTotalPoints>1000</maxTotalPoints>
-        <options>
-          <Drifter>10</Drifter>
-        </options>
-      </li>
-      <li>
-        <!-- Base defense, mainly ranged with melee mix-ins -->
-        <kindDef>Settlement</kindDef>
-        <options>
-          <Thrasher>3</Thrasher>
-          <Pirate>10</Pirate>
-          <Grenadier_Destructive>2</Grenadier_Destructive>
-          <Mercenary_Slasher>3</Mercenary_Slasher>
-          <Mercenary_Sniper>10</Mercenary_Sniper>
-          <Mercenary_Gunner>10</Mercenary_Gunner>
-          <Mercenary_Elite>10</Mercenary_Elite>
-          <PirateBoss>10</PirateBoss>
-        </options>
-      </li>
-    </pawnGroupMakers>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>30</configurationListOrderPriority>
-  </FactionDef>
-
-  <ThingSetMakerDef>
-    <defName>PirateRaidLootMaker</defName>
-    <root Class="ThingSetMaker_MarketValue">
-      <fixedParams>
-        <filter>
-          <thingDefs>
-            <li>Silver</li>
-            <li>MedicineIndustrial</li>
-            <li>MealSurvivalPack</li>
-            <li>Flake</li>
-            <li>Yayo</li>
-            <li>GoJuice</li>
-            <li>WakeUp</li>
-            <li>SmokeleafJoint</li>
-            <li>Luciferium</li>
-          </thingDefs>
-        </filter>
-      </fixedParams>
-    </root>
-  </ThingSetMakerDef>
 
 </Defs>

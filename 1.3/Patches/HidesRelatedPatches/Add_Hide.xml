@@ -7,6 +7,8 @@
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef/race/leatherDef</xpath>
 			</li>
+
+			<!-- Add human leather def to fix human leather thoughts  -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Human"]/race</xpath>
 				<value>

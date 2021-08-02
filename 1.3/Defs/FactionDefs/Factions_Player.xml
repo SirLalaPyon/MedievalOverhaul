@@ -44,6 +44,49 @@
     </recipePrerequisiteTags>
     </FactionDef>
 
+    <FactionDef ParentName="PlayerFactionBase">
+      <defName>DankPyon_LoneWolf</defName>
+      <label>New Kingdom</label>
+      <description>A small kingdom.</description>
+      <isPlayer>true</isPlayer>
+      <pawnSingular>subject</pawnSingular>
+      <pawnsPlural>subjects</pawnsPlural>
+      <basicMemberKind>DankPyon_HedgeKnight</basicMemberKind>
+      <techLevel>Medieval</techLevel>
+      <backstoryFilters>
+        <li>
+          <categories>
+            <li>Tribal</li>
+          </categories>
+        </li>
+      </backstoryFilters>
+      <factionIconPath>WorldObjects/Castle</factionIconPath>
+      <settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
+      <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+      <factionNameMaker>NamerFactionTribal</factionNameMaker>
+      <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+      <geneticVariance>1</geneticVariance>
+      <forageabilityFactor>1.7</forageabilityFactor>
+      <startingResearchTags>
+        <li>DankPyon_MedievalStart</li>
+        <li>TribalStart</li>
+      </startingResearchTags>
+      <startingTechprintsResearchTags>
+        <li>DankPyon_MedievalStart</li>
+        <li>TribalStart</li>
+        <li>TribalStartTechprints</li>
+      </startingTechprintsResearchTags>
+      <apparelStuffFilter>
+        <thingDefs>
+          <li>Cloth</li>
+        </thingDefs>
+      </apparelStuffFilter>
+      <recipePrerequisiteTags>
+        <li>Tribal</li>
+      </recipePrerequisiteTags>
+      </FactionDef>
+  
+
 
   <!-- ==================== End Medieval Factions ================= --> 
 </Defs>

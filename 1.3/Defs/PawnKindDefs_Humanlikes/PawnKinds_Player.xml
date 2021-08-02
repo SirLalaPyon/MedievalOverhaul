@@ -25,4 +25,30 @@
     <initialResistanceRange>9~15</initialResistanceRange>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>DankPyon_HedgeKnight</defName>
+    <label>hedge knight</label>
+    <race>Human</race>
+    <defaultFactionType>DankPyon_LoneWolf</defaultFactionType>
+    <backstoryCategories>
+        <li>Tribal</li>
+    </backstoryCategories>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    
+    <weaponMoney>310~500</weaponMoney>
+    <weaponTags>
+      <li>DankPyon_Longsword</li>
+    </weaponTags>
+
+    <apparelMoney>1000~1600</apparelMoney>
+    <apparelTags>
+      <li>DankPyon_HedgeKnight</li>
+      <li>DankPyon_HedgeKnightHelmet</li>
+    </apparelTags>
+
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.0</techHediffsChance>
+    <initialResistanceRange>9~15</initialResistanceRange>
+  </PawnKindDef>
+
 </Defs>

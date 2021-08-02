@@ -3,7 +3,7 @@
 
   <ScenarioDef>
     <defName>DankPyon_LoneWolfStart</defName>
-    <label>Tavern Owner</label>
+    <label>Lone Wolf</label>
     <description>One year’s service—that was the deal. The lord whom I followed attempted many times to keep my sword by his side, but a deal is a deal and after one year, I swore no further oaths. As I traverse the wooded hills, I wonder to myself whether the decision was correct.
 
       I may have hoarded wealth, but bandits roam the countryside, and should my campfire not betray me, hungry beasts and monsters hidden in the dark eye me all the same. I often wonder if I should have allowed my lord to wield me as his sword again, but I also know that in doing so, I would forgo my freedom.
@@ -16,7 +16,7 @@
       <summary>Lone Wolf - Avatar Experience</summary>
       <playerFaction>
         <def>PlayerFaction</def>
-        <factionDef>DankPyon_PlayerKingdom</factionDef>
+        <factionDef>DankPyon_LoneWolf</factionDef>
       </playerFaction>
       <parts>
 
@@ -64,11 +64,6 @@
           <def>StartingThing_Defined</def>
           <thingDef>DankPyon_ComponentBasic</thingDef>
           <count>10</count>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>DankPyon_MeleeWeapon_Longsword</thingDef>
-          <stuff>DankPyon_IronIngot</stuff>
         </li>
         <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>

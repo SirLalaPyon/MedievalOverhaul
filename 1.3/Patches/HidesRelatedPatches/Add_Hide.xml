@@ -16,6 +16,13 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Human"]/statBases/LeatherAmount</xpath>
+				<value>
+					<LeatherAmount>0</LeatherAmount>
+				</value>
+			</li>
+
 			<!--=============== Start of adding pelts to butcher products ===============-->
 			<!--========== WildCanines ==========-->
 			<!-- Fox_Arctic -->
@@ -609,7 +616,7 @@
 					</butcherBodyPart>
 				</value>
 			</li>
-			<!-- HumanFlesh -->
+			<!-- HumanFlesh CANNOT ADD because humans dont have any attacktools-->
 			<!--li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "Human"]/lifeStages/li[5]</xpath>
 				<value>

@@ -480,7 +480,7 @@
       <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>
     </ingestible>
-    <comps>
+    <comps Inherit="False">
       <li Class="CompProperties_Rottable">
         <daysToRotStart>8</daysToRotStart>
         <rotDestroys>true</rotDestroys>

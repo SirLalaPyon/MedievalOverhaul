@@ -115,18 +115,18 @@
             <li Class="StockGenerator_Category">
                 <categoryDef>WeaponsMelee</categoryDef>
                 <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
-                <excludedCategories>
-                    <li>DankPyon_Shields</li> <!-- Handled in another StockGenerator -->
-                </excludedCategories>
+                <!--excludedCategories>
+                    <li>DankPyon_Shields</li>
+                </excludedCategories-->
                 <thingDefCountRange>3~5</thingDefCountRange>
                 <countRange>2~3</countRange>
             </li>
-            <li Class="StockGenerator_Category">
+            <!--li Class="StockGenerator_Category">
                 <categoryDef>DankPyon_Shields</categoryDef>
                 <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
                 <thingDefCountRange>1~2</thingDefCountRange>
                 <countRange>2~3</countRange>
-            </li>
+            </li-->
             <li Class="StockGenerator_Armor">
                 <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
                 <countRange>2~4</countRange>

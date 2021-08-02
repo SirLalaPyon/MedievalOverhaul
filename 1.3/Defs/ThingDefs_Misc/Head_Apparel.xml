@@ -40,8 +40,9 @@
 			</layers>
 			<wornGraphicPath>Headgear/RedBandana/RedBandana</wornGraphicPath>
 			<tags>
-				<li>DankPyon_Bandit</li>
-        <li>DankPyon_Peasant</li>
+				<li>DankPyon_BanditHelmet</li>
+        <li>DankPyon_PeasantHelmet</li>
+        <li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -88,8 +89,9 @@
 			</layers>
 			<wornGraphicPath>Headgear/Coif/Coif</wornGraphicPath>
 			<tags>
-				<li>DankPyon_Bandit</li>
-        <li>DankPyon_Peasant</li>
+				<li>DankPyon_BanditHelmet</li>
+        <li>DankPyon_PeasantHelmet</li>
+        <li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -136,9 +138,10 @@
 			</layers>
 			<wornGraphicPath>Headgear/ArmingCap/ArmingCap</wornGraphicPath>
 			<tags>
-				<li>DankPyon_Peasant</li>
-        <li>DankPyon_Footman</li>
-        <li>DankPyon_Bandit</li>
+				<li>DankPyon_PeasantHelmet</li>
+        <li>DankPyon_FootmanHelmet</li>
+        <li>DankPyon_BanditHelmet</li>
+        <li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -187,9 +190,10 @@
 			</layers>
 			<wornGraphicPath>Headgear/ArmingCapFull/ArmingCapFull</wornGraphicPath>
 			<tags>
-				<li>DankPyon_Peasant</li>
-				<li>DankPyon_Footman</li>
-        <li>DankPyon_Bandit</li>
+				<li>DankPyon_PeasantHelmet</li>
+				<li>DankPyon_FootmanHelmet</li>
+        <li>DankPyon_BanditHelmet</li>
+        <li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -241,7 +245,6 @@
 			</layers>
 			<wornGraphicPath>Headgear/ZweihandersHat/ZweihandersHat</wornGraphicPath>
 			<tags>
-				<li>DankPyon_Royal</li>
 				<li>DankPyon_Zweihander</li>
 			</tags>
 			<defaultOutfitTags>
@@ -299,8 +302,9 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/PaddedNasalHelm/PaddedNasalHelm</wornGraphicPath>
       <tags>
-        <li>DankPyon_FootmanHeavy</li>
-        <li>DankPyon_MercenaryHeavy</li>
+        <li>DankPyon_FootmanHelmet</li>
+        <li>DankPyon_BillmanHelmet</li>
+        <li>DankPyon_MercenaryHeavyHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -357,8 +361,9 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
       <tags>
-        <li>DankPyon_FootmanHeavy</li>
-        <li>DankPyon_MercenaryHeavy</li>
+        <li>DankPyon_FootmanHelmet</li>
+        <li>DankPyon_BillmanHelmet</li>
+        <li>DankPyon_MercenaryHeavyHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -415,7 +420,8 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/PaddedFlatTop/PaddedFlatTop</wornGraphicPath>
       <tags>
-        <li>DankPyon_FootmanHeavy</li>
+        <li>DankPyon_FootmanHelmet</li>
+        <li>DankPyon_Billman</li>
         <li>DankPyon_MercenaryHeavy</li>
 			</tags>
       <layers>
@@ -471,9 +477,9 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainCoif/ChainCoif</wornGraphicPath>
       <tags>
-				<li>DankPyon_Footman</li>
-        <li>DankPyon_Archer</li>
-        <li>DankPyon_Mercenary</li>
+				<li>DankPyon_FootmanHelmet</li>
+        <li>DankPyon_ArbalesterHelmet</li>
+        <li>DankPyon_MercenaryHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -526,9 +532,9 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
       <tags>
-        <li>DankPyon_Archer</li>
-				<li>DankPyon_Footman</li>
-        <li>DankPyon_Mercenary</li>
+        <li>DankPyon_ArbalesterHelmet</li>
+				<li>DankPyon_FootmanHelmet</li>
+        <li>DankPyon_MercenaryHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -581,9 +587,9 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainCoifFull/ChainCoifFull</wornGraphicPath>
       <tags>
-        <li>DankPyon_Archer</li>
-				<li>DankPyon_Footman</li>
-        <li>DankPyon_Mercenary</li>
+        <li>DankPyon_ArbalesterHelmet</li>
+				<li>DankPyon_FootmanHelmet</li>
+        <li>DankPyon_MercenaryHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -640,7 +646,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainNasalHelm/ChainNasalHelm</wornGraphicPath>
       <tags>
-				<li>DankPyon_FootmanHeavy</li>
+				<li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHeavy</li>
 			</tags>
       <layers>
@@ -697,7 +703,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainNasalHelmRed/ChainNasalHelmRed</wornGraphicPath>
       <tags>
-        <li>DankPyon_FootmanHeavy</li>
+        <li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHeavy</li>
 			</tags>
       <layers>
@@ -754,7 +760,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainKettle/ChainKettle</wornGraphicPath>
       <tags>
-				<li>DankPyon_FootmanHeavy</li>
+				<li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHeavy</li>
 			</tags>
       <layers>
@@ -812,8 +818,8 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
       <tags>
-        <li>DankPyon_FootmanHeavy</li>
-        <li>DankPyon_Mercenary</li>
+        <li>DankPyon_FootmanHelmet</li>
+        <li>DankPyon_MercenaryHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -870,8 +876,8 @@
       <wornGraphicPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</wornGraphicPath>
       <tags>
         <li>DankPyon_MercenaryHeavy</li>
-        <li>DankPyon_Knight</li>
-        <li>DankPyon_HedgeKnight</li>
+        <li>DankPyon_KnightHelmet</li>
+        <li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -928,7 +934,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/KettleHelmet/KettleHelmet</wornGraphicPath>
       <tags>
-        <li>DankPyon_Knight</li>
+        <li>DankPyon_KnightHelmet</li>
         <li>DankPyon_MercenaryHeavy</li>
 			</tags>
       <layers>
@@ -987,8 +993,8 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/BascinetHelmet/BascinetHelmet</wornGraphicPath>
       <tags>
-        <li>DankPyon_Knight</li>
-        <li>DankPyon_HedgeKnight</li>
+        <li>DankPyon_KnightHelmet</li>
+        <li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -1046,8 +1052,8 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/HounskullHelmet/HounskullHelmet</wornGraphicPath>
       <tags>
-        <li>DankPyon_Knight</li>
-        <li>DankPyon_HedgeKnight</li>
+        <li>DankPyon_KnightHelmet</li>
+        <li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -1105,8 +1111,8 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/SalletHelmet/SalletHelmet</wornGraphicPath>
       <tags>
-        <li>DankPyon_Knight</li>
-        <li>DankPyon_HedgeKnight</li>
+        <li>DankPyon_KnightHelmet</li>
+        <li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -1164,8 +1170,8 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</wornGraphicPath>
       <tags>
-        <li>DankPyon_Knight</li>
-        <li>DankPyon_HedgeKnight</li>
+        <li>DankPyon_KnightHelmet</li>
+        <li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -1223,8 +1229,8 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/KlappvisierHelmetOpen/KlappvisierHelmetOpen</wornGraphicPath>
       <tags>
-        <li>DankPyon_Knight</li>
-        <li>DankPyon_HedgeKnight</li>
+        <li>DankPyon_KnightHelmet</li>
+        <li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -1282,8 +1288,8 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/GreatHelm/GreatHelm</wornGraphicPath>
       <tags>
-        <li>DankPyon_Knight</li>
-        <li>DankPyon_HedgeKnight</li>
+        <li>DankPyon_KnightHelmet</li>
+        <li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -1342,8 +1348,8 @@
       <wornGraphicPath>Headgear/CrusaderGreatHelm/CrusaderGreatHelm</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
-        <li>DankPyon_Knight</li>
-        <li>DankPyon_HedgeKnight</li>
+        <li>DankPyon_KnightHelmet</li>
+        <li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -1402,7 +1408,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/RoyalGreatHelm/RoyalGreatHelm</wornGraphicPath>
       <tags>
-        <li>DankPyon_Lord</li>
+        <li>DankPyon_LordHelmet</li>
 			</tags>
 	    <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
@@ -1462,7 +1468,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/GreatHelmHorn/GreatHelmHorn</wornGraphicPath>
       <tags>
-        <li>DankPyon_Lord</li>
+        <li>DankPyon_LordHelmet</li>
 			</tags>
 	    <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
@@ -1522,7 +1528,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/Armet/Armet</wornGraphicPath>
       <tags>
-        <li>DankPyon_Lord</li>
+        <li>DankPyon_LordHelmet</li>
         <li>DankPyon_Champion</li>
 			</tags>
       <layers>

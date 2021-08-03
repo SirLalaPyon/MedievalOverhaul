@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- Ballista -->
-  <!--ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Turret_Ballista</defName>
     <label>Ballista</label>
     <description>Developed during ancient times, the ballista is a powerful missile weapon capable of launching large darts over long distances. Effective in both siege and defense, the precise design strikes fear into enemies but must be reloaded after every bolt fired.</description>
@@ -78,15 +78,15 @@
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>DankPyon_Gun_BallistaTurret</turretGunDef>
-      <turretBurstCooldownTime>4.5</turretBurstCooldownTime>
-      <turretBurstWarmupTime>1.9</turretBurstWarmupTime>
+      <turretBurstCooldownTime>5</turretBurstCooldownTime>
+      <turretBurstWarmupTime>2</turretBurstWarmupTime>
       <turretTopDrawSize>3</turretTopDrawSize>
-      <turretTopOffset>(0, 0.05)</turretTopOffset>
+      <turretTopOffset>(0, 0)</turretTopOffset>
     </building>
     <repairEffect>ConstructDirt</repairEffect>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>DankPyon_SiegeEngines</li>
+      <li>DankPyon_Trebuchet</li>
     </researchPrerequisites>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <placeWorkers>
@@ -108,9 +108,9 @@
       <flyOverhead>false</flyOverhead>
       <damageDef>RangedStab</damageDef>
       <damageAmountBase>40</damageAmountBase>
-      <stoppingPower>1.5</stoppingPower>
+      <stoppingPower>2</stoppingPower>
       <armorPenetrationBase>0.25</armorPenetrationBase>
-      <speed>55</speed>
+      <speed>60</speed>
     </projectile>
     <modExtensions>
       <li Class="DankPyon.AdditionalProjectileProperties">
@@ -119,7 +119,7 @@
           <damageAmountBase>20</damageAmountBase>
           <explosionRadius>1.9</explosionRadius>
           <soundExplode>BulletImpact_Wood</soundExplode>
-          <armorPenetrationBase>0.15</armorPenetrationBase>
+          <armorPenetrationBase>0.20</armorPenetrationBase>
         </projectile2>
       </li>
     </modExtensions>
@@ -148,6 +148,9 @@
       <Mass>45</Mass>
       <Flammability>0</Flammability>
     </statBases>
+    <weaponTags Inherit="false">
+      <li>DankPyon_Ballista</li>
+    </weaponTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -162,10 +165,10 @@
         <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
     </verbs>
-  </ThingDef-->
+  </ThingDef>
 
   <!-- Trebuchet -->
-  <!--ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Turret_Trebuchet</defName>
     <label>Trebuchet</label>
     <description>The trebuchet relies on powerful torsion to launch stones over a great distance and with such power to destroy walls. This makes the trebuchet a fearsome siege weapon capable of ravaging defenses; where siege attackers used to climb palisades under enemy missiles, they can now create openings before the battle even begins. Upon seeing the great trebuchet deployed to fields, defenders should attempt to destroy it quickly.</description>
@@ -323,6 +326,6 @@
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>    
     </projectile>
-  </ThingDef-->
+  </ThingDef>
 
 </Defs>

@@ -811,6 +811,11 @@
 
 			</li>  
     </comps>
+
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+
     <tickerType>Rare</tickerType>
     <designationCategory>Production</designationCategory>
     <researchPrerequisites>
@@ -889,6 +894,11 @@
 
 			</li>  
     </comps>
+    
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+
     <tickerType>Rare</tickerType>
     <designationCategory>Production</designationCategory>
   </ThingDef>
@@ -1241,6 +1251,7 @@
     <comps Inherit="false"/>
 
     <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <techLevel>Medieval</techLevel>
@@ -1574,6 +1585,10 @@
       <Cleanliness>-15</Cleanliness>
     </statBases>
     <size>(3,3)</size>
+
+    <comps>
+      <li Class="CompProperties_CreatesInfestations" />
+    </comps>
 
     <passability>Standable</passability>
     <pathCost>50</pathCost>

@@ -125,4 +125,15 @@
     </products>		
   </RecipeDef>  
 
+  <!-- Stone Chunks: Sandstone --> 
+  <!--RecipeDef ParentName="DankPyon_MineShaftBase">
+	<defName>DankPyon_MakeOre_IronOre</defName>
+	<workAmount>2250</workAmount>		
+	<label>Gather Sandstone Chunks</label>
+	<jobString>Mining for Sandstone Chunk.</jobString>
+	<products>
+  		<DankPyon_IronOre>1</DankPyon_IronOre>
+	</products>		
+  </RecipeDef--> 
+
 </Defs>

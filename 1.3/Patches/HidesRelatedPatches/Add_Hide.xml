@@ -561,6 +561,16 @@
 					</butcherBodyPart>
 				</value>
 			</li>
+
+			<!-- Elephant -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef [defName = "Elephant"]</xpath>
+				<value>
+					<butcherProducts>
+						<ElephantTusk>2</ElephantTusk>
+					</butcherProducts>
+				</value>
+			</li>
 			<!-- Rhinoceros -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Rhinoceros"]/lifeStages/li[3]</xpath>
@@ -614,6 +624,14 @@
 						<thing>DankPyon_Hide_Thrumbo</thing>
 						<allowFemale>true</allowFemale>
 					</butcherBodyPart>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef [defName = "Thrumbo"]</xpath>
+				<value>
+					<butcherProducts>
+						<ThrumboHorn>1</ThrumboHorn>
+					</butcherProducts>
 				</value>
 			</li>
 			<!-- HumanFlesh CANNOT ADD because humans dont have any attacktools-->

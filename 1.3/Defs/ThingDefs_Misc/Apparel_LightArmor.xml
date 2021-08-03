@@ -2,6 +2,68 @@
 <Defs>
 
 	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>DankPyon_Apparel_Sackcloth</defName>
+		<label>Sackcloth</label>
+		<description>A quickly made ragged piece of clothing, sewn from bits and pieces of various leathers.</description>
+		<graphicData>
+			<texPath>Apparel/LightArmor/Tunic_Poor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_LeatherTanning</researchPrerequisite>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		  </statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LightArmor/Leather_Tunic</wornGraphicPath>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_Bandit</li>
+                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Archer</li>
+                <li>DankPyon_Footman</li>
+                <li>DankPyon_Billman</li>
+                <li>DankPyon_Knight</li>
+                <li>DankPyon_HedgeKnight</li>
+            </tags>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>DankPyon_Apparel_Leather_Tunic</defName>
 		<label>leather vest</label>
 		<description>A simple vest stitched from treated and tanned leathers, both comfortable and pragmatic. The thick leather is a decent balance between protection and encumbrance.</description>
@@ -24,7 +86,7 @@
 		</stuffCategories>
 
 		<thingCategories>
-			<li>ApparelArmor</li>
+			<li>Apparel</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -83,7 +145,7 @@
 		</costList>
 
 		<thingCategories>
-			<li>ApparelArmor</li>
+			<li>Apparel</li>
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
@@ -144,7 +206,7 @@
 		</costList>
 
 		<thingCategories>
-			<li>ApparelArmor</li>
+			<li>Apparel</li>
 		</thingCategories>
 
 		<statBases>

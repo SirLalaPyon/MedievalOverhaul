@@ -984,9 +984,10 @@
       <WorkToBuild>2000</WorkToBuild>
       <MaxHitPoints>180</MaxHitPoints>
       <Flammability>1.0</Flammability>
+      <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
     </statBases>
     <size>(2,1)</size>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>DankPyon_RusticFurniture</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -1010,7 +1011,12 @@
         </thingDefs>
           </fuelFilter>
           <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-      <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+          <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        </li>
+        <li Class="CompProperties_HeatPusher">
+          <compClass>CompHeatPusherPowered</compClass>
+          <heatPerSecond>21</heatPerSecond>
+          <heatPushMaxTemperature>28</heatPushMaxTemperature>
         </li>
       </comps>
     <building>

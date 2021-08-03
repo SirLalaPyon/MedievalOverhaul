@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- Replace Costlist VE crossbow -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow"]/costList</xpath>
+          <value>
+            <costList>
+              <WoodLog>60</WoodLog>
+              <DankPyon_IronIngot>25</DankPyon_IronIngot>
+            </costList>
+          </value>
+        </li>
+
+        <!-- Replace stats VE crossbow -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow"]/statBases</xpath>
+          <value>
+            <statBases>
+              <WorkToMake>16000</WorkToMake>
+              <Mass>4</Mass>
+              <AccuracyTouch>0.86</AccuracyTouch>
+              <AccuracyShort>0.9</AccuracyShort>
+              <AccuracyMedium>0.76</AccuracyMedium>
+              <AccuracyLong>0.54</AccuracyLong>
+              <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+            </statBases>
+        </value>
+        </li>
+
+        <!-- Replace stats VE crossbow -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VFEM_Arrow_HeavyBolt"]/projectile</xpath>
+          <value>
+            <projectile>
+              <flyOverhead>false</flyOverhead>
+              <damageDef>Arrow</damageDef>
+              <damageAmountBase>21</damageAmountBase>
+              <stoppingPower>2</stoppingPower>
+              <armorPenetrationBase>0.25</armorPenetrationBase>
+              <speed>60</speed>
+            </projectile>
+        </value>
+        </li>
+
+        <!-- Replace stats VE crossbow -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VFEM_Arrow_HeavyBolt"]/verbs</xpath>
+          <value>
+            <verbs>
+              <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VFEM_Arrow_HeavyBolt</defaultProjectile>
+                <warmupTime>1.35</warmupTime>
+                <range>21.9</range>
+                <soundCast>VFEM_Shot_HeavyCrossbow</soundCast>
+              </li>
+          </verbs>
+          </value>
+        </li>
+
+        <!-- Add tags for VE pawnkinds to use -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="DankPyon_CrossbowHeavy" or defName="DankPyon_Crossbow"]/weaponTags</xpath>
+          <value>
+            <li>MedievalRangedHeavy</li>
+	          <li>MedievalRanged</li>
+          </value>
+        </li>
+
+        <!-- Remove Research -->
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ResearchProjectDef[defName="VFEM_HeavyCrossbow"]</xpath>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

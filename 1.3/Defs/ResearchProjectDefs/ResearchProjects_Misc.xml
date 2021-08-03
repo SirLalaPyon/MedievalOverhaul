@@ -63,7 +63,10 @@
     <description>Learn how to treat raw animal pelts into leather.</description>
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>TribalStart</li>
+    </tags>
 		<researchViewX>1</researchViewX>
 		<researchViewY>0.7</researchViewY>    
   </ResearchProjectDef>
@@ -501,7 +504,7 @@
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <prerequisites>
-      <li>Smithing</li>
+      <li>DankPyon_BasicCleavers</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
 		<researchViewX>6</researchViewX>
@@ -515,7 +518,7 @@
     <baseCost>100</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <prerequisites>
-      <li>Smithing</li>
+      <li>DankPyon_MilitaryCleavers</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
 		<researchViewX>7</researchViewX>

@@ -47,7 +47,7 @@
 
 	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase">
 		<defName>DankPyon_MakeTanningLiquorFromFood</defName>
-		<label>make tanning liquor from food</label>
+		<label>make tanning liquor from plants</label>
 		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
 		<ingredients>
 			<li>
@@ -69,6 +69,27 @@
 				<li>RawBerries</li>
 				<li>RawCorn</li>
 			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase">
+		<defName>DankPyon_MakeTanningLiquorFromMeat</defName>
+		<label>make tanning liquor from meat</label>
+		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+					   <li>MeatRaw</li>
+					</categories>
+				 </filter>
+				<count>28</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
 		</fixedIngredientFilter>
 	</RecipeDef>
 

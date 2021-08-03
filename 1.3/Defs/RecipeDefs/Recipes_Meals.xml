@@ -630,7 +630,8 @@
   <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
   <workAmount>100</workAmount>
 	<recipeUsers>
-	  <li>DankPyon_RusticCookingTable</li>	  			
+	  <li>DankPyon_RusticCookingTable</li>
+	  <li>DankPyon_RusticHearth</li>	  			
 	</recipeUsers>
   <ingredients>
 	<li>
@@ -687,7 +688,8 @@
   <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
   <workAmount>500</workAmount>
 	<recipeUsers>
-	  <li>DankPyon_RusticCookingTable</li>	  			
+	  <li>DankPyon_RusticCookingTable</li>
+	  <li>DankPyon_RusticHearth</li>	  			
 	</recipeUsers>
   <ingredients>
 	<li>
@@ -744,7 +746,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>300</workAmount> 
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>		  	  
   </recipeUsers>	
 <ingredients>
 		<li>
@@ -811,7 +814,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>1000</workAmount> 
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>		  	  
   </recipeUsers>	
 <ingredients>
 		<li>
@@ -874,25 +878,25 @@
 	<jobString>Cooking winter lentil soup.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
-<soundWorking>Recipe_CookMeal</soundWorking>
-<allowMixingIngredients>true</allowMixingIngredients>
-<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-<workAmount>300</workAmount> 
-  <recipeUsers>	  
-	<li>DankPyon_StewPot</li>		  	  
-  </recipeUsers>	
-<ingredients>
+	<soundWorking>Recipe_CookMeal</soundWorking>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<workAmount>300</workAmount> 
+  	<recipeUsers>	  
+		<li>DankPyon_StewPot</li>		  	  
+  	</recipeUsers>	
+	<ingredients>
 		<li>
 			<filter>
 				<thingDefs>
 					<li>DankPyon_RawLentils</li>
-	  </thingDefs>
+	  			</thingDefs>
 			</filter>
 			<count>0.5</count>
 		</li>
 	</ingredients>
 	<products>
-  <DankPyon_MealWinterLentilSoup>1</DankPyon_MealWinterLentilSoup>
+  	<DankPyon_MealWinterLentilSoup>1</DankPyon_MealWinterLentilSoup>
 </products>
 	<fixedIngredientFilter>
 		<categories>
@@ -1105,7 +1109,7 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>350</workAmount> 
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_StewPot</li>		  	  
   </recipeUsers>	
 	<ingredients>
 		<li>
@@ -1218,7 +1222,8 @@
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <workAmount>750</workAmount> 
       <recipeUsers>	  
-        <li>DankPyon_RusticCookingTable</li>		  	  
+        <li>DankPyon_RusticCookingTable</li>
+		<li>DankPyon_RusticHearth</li>		  	  
       </recipeUsers>
     <ingredients>
 			<li>
@@ -1282,7 +1287,8 @@
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <workAmount>1500</workAmount> 
       <recipeUsers>	  
-        <li>DankPyon_RusticCookingTable</li>		  	  
+        <li>DankPyon_RusticCookingTable</li>
+		<li>DankPyon_RusticHearth</li>		  	  
       </recipeUsers>
     <ingredients>
 			<li>
@@ -1337,7 +1343,7 @@
 <!-- Boiled Bean and Onion -->
 <RecipeDef>
 	<defName>DankPyon_CookMealBoiledBeansAndOnion</defName>
-	<label>Cook boiled beans and onion</label>
+	<label>Cook boiled lentils and onion</label>
 	<description>Cook boiled beans and onion.</description>
 	<jobString>Cooking boiled beans and onion.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -1409,9 +1415,9 @@
 <!-- Boiled Bean and Onion Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealBoiledBeanAndOnionBulk</defName>
-	<label>(Bulk x5) Cook boiled bean and onion</label>
-	<description>Cook 5 boiled bean and onion.</description>
-	<jobString>Cooking 5 boiled bean and onion.</jobString>
+	<label>(Bulk x5) Cook boiled lentils and onion</label>
+	<description>Cook 5 boiled lentils and onion.</description>
+	<jobString>Cooking 5 boiled lentils and onion.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -1806,7 +1812,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>150</workAmount>  
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>		  	  
   </recipeUsers>	
   <ingredients>
   <li>
@@ -1870,7 +1877,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>750</workAmount>
   <recipeUsers>
-	<li>DankPyon_RusticCookingTable</li>	  			
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>	  			
   </recipeUsers>	
   <ingredients>
   <li>
@@ -2540,6 +2548,7 @@
 <workAmount>450</workAmount> 
   <recipeUsers>	  
 	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>
   </recipeUsers>	
 <ingredients>
 		<li>
@@ -2623,6 +2632,7 @@
 <workAmount>2250</workAmount> 
   <recipeUsers>	  
 	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>
   </recipeUsers>	
 <ingredients>
 		<li>
@@ -2706,7 +2716,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>500</workAmount> 
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>		  	  
   </recipeUsers>	
 <ingredients>
 		<li>
@@ -2778,7 +2789,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>1500</workAmount> 
   <recipeUsers>
-	<li>DankPyon_RusticCookingTable</li>	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>	  
   </recipeUsers>
 <ingredients>
 	<li>
@@ -3126,7 +3138,8 @@
 	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 	<workAmount>650</workAmount> 
   	<recipeUsers>	  
-		<li>DankPyon_RusticCookingTable</li>		  	  
+		<li>DankPyon_RusticCookingTable</li>
+		<li>DankPyon_RusticHearth</li>		  	  
   	</recipeUsers>
 	<ingredients>
 		<li>
@@ -3198,7 +3211,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>1950</workAmount> 
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>		  	  
   </recipeUsers>
 <ingredients>
 		<li>
@@ -3271,7 +3285,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>800</workAmount> 
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>		  	  
   </recipeUsers>
 <ingredients>
 		<li>
@@ -3351,7 +3366,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>2400</workAmount> 
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>		  	  
   </recipeUsers>
 <ingredients>
 		<li>
@@ -3438,7 +3454,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>1100</workAmount> 
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>		  	  
   </recipeUsers>	
 <ingredients>
 		<li>
@@ -3513,7 +3530,8 @@
 <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 <workAmount>2200</workAmount>
   <recipeUsers>	  
-	<li>DankPyon_RusticCookingTable</li>		  	  
+	<li>DankPyon_RusticCookingTable</li>
+	<li>DankPyon_RusticHearth</li>		  	  
   </recipeUsers>	
 <ingredients>
 		<li>

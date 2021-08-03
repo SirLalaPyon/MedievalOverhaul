@@ -533,10 +533,6 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-		<recipes>
-			<li>DankPyon_CraftFlour</li>
-			<li>DankPyon_CraftFlourBulk</li>
-		</recipes>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
@@ -762,6 +758,7 @@
     </graphicData>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <altitudeLayer>Building</altitudeLayer>
+    <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.5</fillPercent>
     <pathCost>70</pathCost>
@@ -839,6 +836,7 @@
     </graphicData>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <altitudeLayer>Building</altitudeLayer>
+    <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.5</fillPercent>
     <pathCost>70</pathCost>
@@ -1277,9 +1275,6 @@
 	  <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
-    <costList>
-      <DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
-    </costList>
 
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
@@ -1425,12 +1420,6 @@
 	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <surfaceType>Item</surfaceType>
     <recipes>
-      <li>DankPyon_MakeIngots_Iron</li>
-      <li>DankPyon_MakeIngots_IronBulk</li>
-      <li>DankPyon_MakeIngots_Gold</li>
-      <li>DankPyon_MakeIngots_GoldBulk</li>
-      <li>DankPyon_MakeIngots_Steel</li>
-      <li>DankPyon_MakeIngots_SteelBulk</li>
       <li>ExtractMetalFromSlag</li>
       <li>SmeltWeapon</li>
       <li>SmeltApparel</li>

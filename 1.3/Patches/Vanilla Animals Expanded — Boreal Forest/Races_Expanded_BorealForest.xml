@@ -44,6 +44,18 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef [defName="AEXP_ArcticCoyote"]/lifeStages/li[3]</xpath>
+		
+					<value>
+						<butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_HideLarge</thing>
+						<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
+
 			</operations>
 		</match>
 	</Operation>

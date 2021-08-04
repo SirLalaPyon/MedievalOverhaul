@@ -10,6 +10,29 @@
       <operations>
 
         <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_Walrus</defName>
+              <label>huge walrus hide</label>
+              <graphicData>
+                <color>(130,126,119)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>388.8</MarketValue>
+                <Mass>36</Mass>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Bear>144</Leather_Bear>
+              </butcherProducts>
+              <stuffProps>
+                <color>(130,126,119)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+		
+        <li Class="PatchOperationAdd">
           <xpath>Defs/PawnKindDef [defName="AEXP_Penguin"]/lifeStages/li[3]</xpath>
 
           <value>
@@ -33,35 +56,8 @@
           </value>
         </li>
 
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef [defName="DankPyon_Hide_Walrus"]</xpath>
-          <value>
-
-            <ThingDef ParentName="DankPyon_HideBaseHuge">
-              <defName>DankPyon_Hide_Walrus</defName>
-              <label>huge walrus hide</label>
-              <graphicData>
-                <color>(130,126,119)</color>
-              </graphicData>
-              <statBases>
-                <MarketValue>388.8</MarketValue>
-                <Mass>36</Mass>
-              </statBases>
-              <butcherProducts Inherit="False">
-                <Leather_Bear>144</Leather_Bear>
-              </butcherProducts>
-              <stuffProps>
-                <color>(130,126,119)</color>
-              </stuffProps>
-            </ThingDef>
-
-          </value>
-        </li>
-
-
         <li Class="PatchOperationReplace">
-          <xpath>Defs/PawnKindDef [defName="AEXP_Walrus"]/lifeStages/li[3/butcherBodyPart]</xpath>
-
+          <xpath>Defs/PawnKindDef [defName="AEXP_Walrus"]/lifeStages/li[3]/butcherBodyPart</xpath>
           <value>
             <butcherBodyPart>
               <bodyPartGroup>HeadAttackTool</bodyPartGroup>

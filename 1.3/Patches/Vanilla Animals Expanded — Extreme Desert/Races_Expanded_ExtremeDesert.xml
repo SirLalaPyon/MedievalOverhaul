@@ -6,13 +6,10 @@
       <li>Vanilla Animals Expanded — Extreme Desert</li>
     </mods>
     <match Class="PatchOperationSequence">
-      <success>Normal</success>
       <operations>
-
         <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef [defName="DankPyon_Hide_Camel"]</xpath>
+          <xpath>Defs</xpath>
           <value>
-
             <ThingDef ParentName="DankPyon_HideBaseHuge">
               <defName>DankPyon_Hide_Camel</defName>
               <label>huge camel hide</label>
@@ -30,10 +27,9 @@
                 <color>(130,126,119)</color>
               </stuffProps>
             </ThingDef>
-
           </value>
         </li>
-
+		
         <li Class="PatchOperationAdd">
           <xpath>Defs/PawnKindDef [defName="AEXP_Camel"]/lifeStages/li[3]</xpath>
 
@@ -41,30 +37,6 @@
             <butcherBodyPart>
               <bodyPartGroup>HeadAttackTool</bodyPartGroup>
               <thing>DankPyon_Hide_Camel</thing>
-              <allowFemale>true</allowFemale>
-            </butcherBodyPart>
-          </value>
-        </li>
-
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/PawnKindDef [defName="AEXP_ArcticCoyote"]/lifeStages/li[3]</xpath>
-
-          <value>
-            <butcherBodyPart>
-              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
-              <thing>DankPyon_Hide_HideLarge</thing>
-              <allowFemale>true</allowFemale>
-            </butcherBodyPart>
-          </value>
-        </li>
-
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/PawnKindDef [defName="AEXP_BlackBear"]/lifeStages/li[3]</xpath>
-
-          <value>
-            <butcherBodyPart>
-              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
-              <thing>DankPyon_Hide_BearGrizzly</thing>
               <allowFemale>true</allowFemale>
             </butcherBodyPart>
           </value>

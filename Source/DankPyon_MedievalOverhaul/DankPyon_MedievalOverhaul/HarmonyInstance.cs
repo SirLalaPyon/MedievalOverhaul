@@ -15,7 +15,7 @@ namespace DankPyon
     public static class DankPyonDefOf
     {
         public static ShaderTypeDef TransparentPlant;
-        public static ThingDef VFES_Artillery_Catapult;
+        public static ThingDef DankPyon_Artillery_Trebuchet;
     }
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
@@ -213,7 +213,7 @@ namespace DankPyon
 
         static ArtillerySearchGroup()
         {
-            RegisterArtillery(DankPyonDefOf.VFES_Artillery_Catapult, ThingRequestGroup.Chunk);
+            RegisterArtillery(DankPyonDefOf.DankPyon_Artillery_Trebuchet, ThingRequestGroup.Chunk);
         }
 
         public static bool RegisterArtillery(ThingDef def, ThingRequestGroup ammoGroup)

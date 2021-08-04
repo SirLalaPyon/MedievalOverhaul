@@ -6,7 +6,7 @@
 		<label>Sackcloth</label>
 		<description>A quickly made ragged piece of clothing, sewn from bits and pieces of various leathers.</description>
 		<graphicData>
-			<texPath>Apparel/LightArmor/Tunic_Poor</texPath>
+			<texPath>Apparel/LightArmor/TunicPoor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -41,7 +41,7 @@
 				<li>Torso</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LightArmor/Leather_Tunic</wornGraphicPath>
+			<wornGraphicPath>Apparel/LightArmor/TunicPoor</wornGraphicPath>
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_Bandit</li>
@@ -54,7 +54,7 @@
                 <li>DankPyon_HedgeKnight</li>
             </tags>
 			<layers>
-				<li>Middle</li>
+				<li>OnSkin</li>
 			</layers>
 			<defaultOutfitTags>
 				<li>Worker</li>

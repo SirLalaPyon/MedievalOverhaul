@@ -450,7 +450,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Candles</defName>
     <label>candles</label>
-    <description>A candle to prevent darkness seeping in your room. Can be refueled with animal fat.</description>
+    <description>A candle to prevent darkness seeping in your room. Can be refueled with animal fat or tallow.</description>
     <graphicData>
       <texPath>Furniture/Candles</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -481,7 +481,7 @@
     <selectable>true</selectable>
 
     <costList>
-      <DankPyon_Fat>10</DankPyon_Fat>
+      <DankPyon_Tallow>5</DankPyon_Tallow>
     </costList>
 
     <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
@@ -504,7 +504,7 @@
           <fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
           <fuelFilter>
               <thingDefs>
-                  <li>DankPyon_Fat</li>
+                  <li>DankPyon_Tallow</li>
               </thingDefs>
           </fuelFilter>
           <destroyOnNoFuel>false</destroyOnNoFuel>
@@ -542,6 +542,9 @@
           </offsets>
         </li>
     </comps>
+    <researchPrerequisites>
+      <li>DankPyon_CandleMaking</li>
+    </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 	

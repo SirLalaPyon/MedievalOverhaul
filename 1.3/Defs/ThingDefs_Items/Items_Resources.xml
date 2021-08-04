@@ -539,41 +539,4 @@
     </tools>
   </ThingDef>
 
-  <!--=============== Fat ====================-->
-  <ThingDef ParentName="OrganicProductBase">
-    <defName>DankPyon_Fat</defName>
-    <label>fat</label>
-    <description>An abundant material, fat serves multiple purposes. In food, added fat improves meals and fills a colonist’s gut longer, but too much and the colonist will more likely get sick. In survival, fat can be added to flames, whether in a torch or a bonfire, to maintain heat longer. Finally, rendered fat can mold into candles, soaps, sculptures, and more.</description>
-    <graphicData>
-      <texPath>Resources/Fat</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <thingCategories>
-        <li>AnimalProductRaw</li>
-    </thingCategories>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <statBases>
-      <MaxHitPoints>30</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <Beauty>-1</Beauty>
-      <MarketValue>1</MarketValue>
-      <Mass>0.02</Mass>
-      <Nutrition>0.01</Nutrition>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Forbiddable" />
-      <li Class="CompProperties_Ingredients" />
-      <li Class="CompProperties_FoodPoisonable" />
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>8</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-    <ingestible>
-      <preferability>DesperateOnlyForHumanlikes</preferability>
-      <tasteThought>AteRawFood</tasteThought>
-      <foodType>Meal</foodType>
-    </ingestible>
-  </ThingDef>
-
   </Defs>

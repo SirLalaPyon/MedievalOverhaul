@@ -4,6 +4,105 @@
 
 	<!--============== Ingredients ===============-->
 	<RecipeDef>
+		<defName>DankPyon_MakeTallow</defName>
+		<label>make tallow</label>
+		<description>Render fat to make tallow.</description>
+		<jobString>Making 1 tallow.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>100</workAmount> 
+			  <recipeUsers>	  
+				<li>Campfire</li>
+				<li>FueledStove</li>
+				<li>ElectricStove</li>
+				<li>DankPyon_RusticCookingTable</li>	  	  
+			  </recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Fat</li>
+					  </thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Salt</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+	
+		<products>
+			<DankPyon_Tallow>1</DankPyon_Tallow>
+		</products>
+	
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Tallow</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisites>
+			<li>DankPyon_BasicCooking</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DankPyon_MakeTallowBulk</defName>
+		<label>make tallow x10</label>
+		<description>Render fat to make tallow.</description>
+		<jobString>Making 10 tallow.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>100</workAmount> 
+			  <recipeUsers>	  
+				<li>Campfire</li>
+				<li>FueledStove</li>
+				<li>ElectricStove</li>
+				<li>DankPyon_RusticCookingTable</li>			  	  
+			  </recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Fat</li>
+					  </thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Salt</li>
+					  </thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+	
+		<products>
+			<DankPyon_Tallow>5</DankPyon_Tallow>
+		</products>
+	
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Tallow</li>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisites>
+			<li>DankPyon_BasicCooking</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
 		<defName>DankPyon_MakeSpice</defName>
 		<label>make spice</label>
 		<description>Make spice from raw spices.</description>

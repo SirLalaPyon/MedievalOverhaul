@@ -23,22 +23,17 @@
     <chemicalAddictionChance>0.10</chemicalAddictionChance>
     <invNutrition>0</invNutrition>
     <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
     <gearHealthRange>
       <min>0.2</min>
       <max>1.1</max>
     </gearHealthRange>
-    <apparelMoney>
-      <min>50</min>
-      <max>125</max>
-    </apparelMoney>
+    <apparelMoney>200~400</apparelMoney>
     <apparelTags>
       <li>DankPyon_Peasant</li>
       <li>DankPyon_PeasantHelmet</li>
     </apparelTags>
-    <weaponMoney>
-      <min>90</min>
-      <max>150</max>
-    </weaponMoney>
+    <weaponMoney>100~250</weaponMoney>
     <weaponTags>
       <li>DankPyon_Bludgeon</li>
       <li>DankPyon_Pitchfork</li>
@@ -70,18 +65,12 @@
       <min>1</min>
       <max>1</max>
     </gearHealthRange>
-    <apparelMoney>
-      <min>300</min>
-      <max>500</max>
-    </apparelMoney>
+    <apparelMoney>400~600</apparelMoney>
     <apparelTags>
       <li>DankPyon_Peasant</li>
       <li>DankPyon_PeasantHelmet</li>
     </apparelTags>
-    <weaponMoney>
-      <min>100</min>
-      <max>150</max>
-    </weaponMoney>
+    <weaponMoney>250~400</weaponMoney>
     <weaponTags>
       <li>DankPyon_Bludgeon</li>
       <li>DankPyon_Hatchet</li>
@@ -98,22 +87,14 @@
     <label>footman</label>
     <combatPower>60</combatPower>
     <canBeSapper>true</canBeSapper>
-    <gearHealthRange>
-      <min>0.5</min>
-      <max>1.8</max>
-    </gearHealthRange>
-    <apparelMoney>
-      <min>700</min>
-      <max>1000</max>
-    </apparelMoney>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelMoney>700~1000</apparelMoney>
     <apparelTags>
       <li>DankPyon_Footman</li>
       <li>DankPyon_FootmanHelmet</li>
     </apparelTags>
-    <weaponMoney>
-      <min>150</min>
-      <max>250</max>
-    </weaponMoney>
+    <weaponMoney>250~400</weaponMoney>
     <weaponTags>
       <li>DankPyon_ArmingSword</li>
       <li>DankPyon_MorningStar</li>
@@ -128,6 +109,7 @@
     <label>billman</label>
     <combatPower>60</combatPower>
     <canBeSapper>true</canBeSapper>
+    <isFighter>true</isFighter>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.8</max>
@@ -140,10 +122,7 @@
       <li>DankPyon_Footman</li>
       <li>DankPyon_BillmanHelmet</li>
     </apparelTags>
-    <weaponMoney>
-      <min>200</min>
-      <max>300</max>
-    </weaponMoney>
+    <weaponMoney>250~400</weaponMoney>
     <weaponTags>
       <li>DankPyon_Billhook</li>
       <li>DankPyon_Polehammer</li>
@@ -187,18 +166,13 @@
     <defName>DankPyon_Medieval_Knight</defName>
     <label>knight</label>
     <combatPower>110</combatPower>
-    <apparelMoney>
-      <min>1000</min>
-      <max>1600</max>
-    </apparelMoney>
+    <isFighter>true</isFighter>
+    <apparelMoney>700~1600</apparelMoney>
     <apparelTags>
       <li>DankPyon_Knight</li>
       <li>DankPyon_KnightHelmet</li>
     </apparelTags>
-    <weaponMoney>
-      <min>300</min>
-      <max>500</max>
-    </weaponMoney>
+    <weaponMoney>300~500</weaponMoney>
     <weaponTags>
       <li>DankPyon_Greatsword</li>
       <li>DankPyon_TwoHandedHammer</li>
@@ -216,18 +190,12 @@
     <maxGenerationAge>999</maxGenerationAge>
     <itemQuality>Good</itemQuality>
     <factionLeader>true</factionLeader>
-    <apparelMoney>
-      <min>1600</min>
-      <max>2400</max>
-    </apparelMoney>
+    <apparelMoney>1600~2400</apparelMoney>
     <apparelTags>
       <li>DankPyon_Knight</li>
       <li>DankPyon_LordHelmet</li>
     </apparelTags>
-    <weaponMoney>
-      <min>500</min>
-      <max>700</max>
-    </weaponMoney>
+    <weaponMoney>500~700</weaponMoney>
     <initialWillRange>3~5</initialWillRange>
     <initialResistanceRange>20~30</initialResistanceRange>
   </PawnKindDef>

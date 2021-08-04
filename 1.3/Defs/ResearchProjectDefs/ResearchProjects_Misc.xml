@@ -85,6 +85,20 @@
     </prerequisites>  
   </ResearchProjectDef>
 
+  <ResearchProjectDef>
+    <defName>DankPyon_CandleMaking</defName>
+    <label>textile spinning</label>
+    <description>Make candles to lighten up your colony and build beautiful chandeliers</description>
+    <baseCost>300</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+    <tags>
+      <li>DankPyon_MedievalStart</li>
+    </tags>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.7</researchViewY>       
+  </ResearchProjectDef>
+
   <!--=========================== Engineering ==============================-->
   <ResearchProjectDef>
     <defName>DankPyon_Engineering</defName>
@@ -144,13 +158,28 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
-    <defName>DankPyon_SiegeEngines</defName>
-    <label>siege engine</label>
-    <description>Research how to build powerful siege machinations for sheer ordinance</description>
-    <baseCost>2000</baseCost>
+    <defName>DankPyon_Ballista</defName>
+    <label>ballista</label>
+    <description>Research how to construct a huge ballista. Fires huge ballista bolts at a medium rate of fire.</description>
+    <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>13</researchViewX>
+		<researchViewY>1.10</researchViewY>
+    <prerequisites>
+      <li>DankPyon_HeavyCrossbow</li>
+    </prerequisites>
+    <requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>     
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Trebuchet</defName>
+    <label>trebuchet</label>
+    <description>Research how to construct a huge trebuchet. Powerful and deadly but takes a long time to reload.</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>14</researchViewX>
 		<researchViewY>1.10</researchViewY>
     <prerequisites>
       <li>DankPyon_HeavyCrossbow</li>

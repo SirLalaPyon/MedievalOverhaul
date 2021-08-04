@@ -8,7 +8,6 @@
     <match Class="PatchOperationSequence">
       <operations>
 
-        <!-- Replace Costlist VE crossbow -->
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow"]/costList</xpath>
           <value>
@@ -18,8 +17,6 @@
             </costList>
           </value>
         </li>
-
-        <!-- Replace stats VE crossbow -->
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow"]/statBases</xpath>
           <value>
@@ -35,7 +32,6 @@
         </value>
         </li>
 
-        <!-- Replace stats VE crossbow -->
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="VFEM_Arrow_HeavyBolt"]/projectile</xpath>
           <value>
@@ -50,9 +46,8 @@
         </value>
         </li>
 
-        <!-- Replace stats VE crossbow -->
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="VFEM_Arrow_HeavyBolt"]/verbs</xpath>
+          <xpath>Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow"]/verbs</xpath>
           <value>
             <verbs>
               <li>
@@ -67,7 +62,6 @@
           </value>
         </li>
 
-        <!-- Add tags for VE pawnkinds to use -->
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="DankPyon_CrossbowHeavy" or defName="DankPyon_Crossbow"]/weaponTags</xpath>
           <value>
@@ -76,7 +70,6 @@
           </value>
         </li>
 
-        <!-- Remove Research -->
         <li Class="PatchOperationRemove">
           <xpath>Defs/ResearchProjectDef[defName="VFEM_HeavyCrossbow"]</xpath>
         </li>

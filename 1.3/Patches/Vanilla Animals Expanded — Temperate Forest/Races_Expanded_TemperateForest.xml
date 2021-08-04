@@ -9,10 +9,6 @@
       <success>Normal</success>
       <operations>
 
-        <li Class="PatchOperationRemove">
-          <xpath>Defs/ThingDef[defName="AEXP_RedPanda" or defName="AEXP_Badger" or defName="AEXP_WildGoose" or defName="AEXP_Beaver"]/race/leatherDef</xpath>
-        </li>
-
         <li Class="PatchOperationAdd">
           <xpath>Defs/PawnKindDef [defName="AEXP_RedPanda"]/lifeStages/li[3]</xpath>
 

@@ -9,10 +9,6 @@
       <success>Normal</success>
       <operations>
 
-        <li Class="PatchOperationRemove">
-          <xpath>Defs/ThingDef[defName="AEXP_Camel" or defName="AEXP_ArcticCoyote" or defName="AEXP_BlackBear"]/race/leatherDef</xpath>
-        </li>
-
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef [defName="DankPyon_Hide_Camel"]</xpath>
           <value>

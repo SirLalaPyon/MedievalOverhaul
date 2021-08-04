@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace DankPyon
 {
@@ -14,6 +15,7 @@ namespace DankPyon
     public static class DankPyonDefOf
     {
         public static ShaderTypeDef TransparentPlant;
+        public static ThingDef VFES_Artillery_Catapult;
     }
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
@@ -179,5 +181,51 @@ namespace DankPyon
                 __result = __result.AddItem(Fat);
             }
         }
+
+        [HarmonyPatch(typeof(JobDriver_ManTurret), nameof(JobDriver_ManTurret.FindAmmoForTurret))]
+        public static class Patch_TryFindRandomShellDef
+        {
+            private static bool Prefix(Pawn pawn, Building_TurretGun gun, ref Thing __result)
+            {
+                if (gun.TryGetArtillery(out var group))
+                {
+                    Log.Message($"Trying to get custom ammo for {gun.Label}");
+                    StorageSettings allowedShellsSettings = pawn.IsColonist ? gun.gun.TryGetComp<CompChangeableProjectile>().allowedShellsSettings : RetrieveParentSettings(gun);
+                    bool validator(Thing t) => !t.IsForbidden(pawn) && pawn.CanReserve(t, 10, 1, null, false) && (allowedShellsSettings == null || allowedShellsSettings.AllowedToAccept(t));
+                    __result = GenClosest.ClosestThingReachable(gun.Position, gun.Map, ThingRequest.ForGroup(group), PathEndMode.OnCell, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false),
+                        40f, validator, null, 0, -1, false, RegionType.Set_Passable, false);
+                    return false;
+                }
+                return true;
+            }
+
+            private static StorageSettings RetrieveParentSettings(Building_TurretGun gun)
+            {
+                return gun.gun.TryGetComp<CompChangeableProjectile>().GetParentStoreSettings();
+            }
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    public static class ArtillerySearchGroup
+    {
+        private static readonly Dictionary<ThingDef, ThingRequestGroup> registeredArtillery = new Dictionary<ThingDef, ThingRequestGroup>();
+
+        static ArtillerySearchGroup()
+        {
+            RegisterArtillery(DankPyonDefOf.VFES_Artillery_Catapult, ThingRequestGroup.Chunk);
+        }
+
+        public static bool RegisterArtillery(ThingDef def, ThingRequestGroup ammoGroup)
+        {
+            if (!registeredArtillery.ContainsKey(def))
+            {
+                registeredArtillery.Add(def, ammoGroup);
+                return true;
+            }
+            return false;
+        }
+
+        public static bool TryGetArtillery(this Thing thing, out ThingRequestGroup group) => registeredArtillery.TryGetValue(thing.def, out group);
     }
 }

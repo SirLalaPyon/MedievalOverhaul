@@ -1,55 +1,50 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Vanilla Animals Expanded — Boreal Forest</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <success>Normal</success>
-      <operations>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Boreal Forest</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
 
-        <li Class="PatchOperationRemove">
-          <xpath>Defs/ThingDef[defName="AEXP_Otter" or defName="AEXP_ArcticCoyote" or defName="AEXP_BlackBear"]/race/leatherDef</xpath>
-        </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef [defName="AEXP_Otter"]/lifeStages/li[3]</xpath>
 
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/PawnKindDef [defName="AEXP_Otter"]/lifeStages/li[3]</xpath>
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DankPyon_Hide_SoftPeltSmall</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
 
-          <value>
-            <butcherBodyPart>
-              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
-              <thing>DankPyon_Hide_SoftPeltSmall</thing>
-              <allowFemale>true</allowFemale>
-            </butcherBodyPart>
-          </value>
-        </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef [defName="AEXP_ArcticCoyote"]/lifeStages/li[3]</xpath>
 
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/PawnKindDef [defName="AEXP_ArcticCoyote"]/lifeStages/li[3]</xpath>
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DankPyon_Hide_HideLarge</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
 
-          <value>
-            <butcherBodyPart>
-              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
-              <thing>DankPyon_Hide_HideLarge</thing>
-              <allowFemale>true</allowFemale>
-            </butcherBodyPart>
-          </value>
-        </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef [defName="AEXP_BlackBear"]/lifeStages/li[3]</xpath>
 
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/PawnKindDef [defName="AEXP_BlackBear"]/lifeStages/li[3]</xpath>
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DankPyon_Hide_BearGrizzly</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
 
-          <value>
-            <butcherBodyPart>
-              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
-              <thing>DankPyon_Hide_BearGrizzly</thing>
-              <allowFemale>true</allowFemale>
-            </butcherBodyPart>
-          </value>
-        </li>
-
-      </operations>
-    </match>
-  </Operation>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

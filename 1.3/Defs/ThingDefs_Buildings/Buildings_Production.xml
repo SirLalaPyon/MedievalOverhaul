@@ -1441,6 +1441,11 @@
       <li>ITab_Bills</li>
     </inspectorTabs>
     <comps>
+
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
 	
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>80</fuelConsumptionRate>

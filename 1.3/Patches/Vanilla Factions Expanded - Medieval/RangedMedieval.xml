@@ -70,6 +70,13 @@
           </value>
         </li>
 
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow"]/recipeMaker/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite>DankPyon_HeavyCrossbow</researchPrerequisite>
+          </value>
+        </li>
+
         <li Class="PatchOperationRemove">
           <xpath>Defs/ResearchProjectDef[defName="VFEM_HeavyCrossbow"]</xpath>
         </li>

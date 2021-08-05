@@ -70,6 +70,29 @@
         </li>
 
         <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_Tiger</defName>
+              <label>large seal hide</label>
+              <graphicData>
+                <color>(197,154,99)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>453.6</MarketValue>
+                <Mass>36</Mass>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <AEXP_Leather_Tiger>72</AEXP_Leather_Tiger>
+              </butcherProducts>
+              <stuffProps>
+                <color>(197,154,99)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
           <xpath>Defs/PawnKindDef [defName="AEXP_Tiger"]/lifeStages/li[3]</xpath>
 
           <value>

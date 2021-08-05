@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DankPyon_DoBillsRusticCookingTable.label>做饭</DankPyon_DoBillsRusticCookingTable.label>
+  <DankPyon_DoBillsRusticCookingTable.verb>做饭</DankPyon_DoBillsRusticCookingTable.verb>
+  <DankPyon_DoBillsRusticCookingTable.gerund>烹饪于</DankPyon_DoBillsRusticCookingTable.gerund>
+
+  <DankPyon_DoBillsStoneOven.label>烘焙</DankPyon_DoBillsStoneOven.label>
+  <DankPyon_DoBillsStoneOven.verb>烘焙</DankPyon_DoBillsStoneOven.verb>
+  <DankPyon_DoBillsStoneOven.gerund>烘焙于</DankPyon_DoBillsStoneOven.gerund>
+
+  <DankPyon_DoBillsSpinningWheel.label>纺棉</DankPyon_DoBillsSpinningWheel.label>
+  <DankPyon_DoBillsSpinningWheel.verb>纺棉</DankPyon_DoBillsSpinningWheel.verb>
+  <DankPyon_DoBillsSpinningWheel.gerund>纺棉于</DankPyon_DoBillsSpinningWheel.gerund>
+
+  <DankPyon_DoBillsMillstone.label>批量研磨谷物</DankPyon_DoBillsMillstone.label>
+  <DankPyon_DoBillsMillstone.verb>研磨</DankPyon_DoBillsMillstone.verb>
+  <DankPyon_DoBillsMillstone.gerund>研磨于</DankPyon_DoBillsMillstone.gerund>
+
+  <DankPyon_DoBillsGrill.label>烤</DankPyon_DoBillsGrill.label>
+  <DankPyon_DoBillsGrill.verb>烤</DankPyon_DoBillsGrill.verb>
+  <DankPyon_DoBillsGrill.gerund>烤于</DankPyon_DoBillsGrill.gerund>
+
+
+  <!-- WorkGiverDef>
+    <defName>TakeAleOutOfFermentingBarrel</defName>
+    <label>take Ale out of fermenting barrels</label>
+    <giverClass>WorkGiver_TakeAleOutOfFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>take Ale</verb>
+    <gerund>taking Ale from</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef -->
+
+  <DankPyon_DoBillsMineshaft.label>开采石头</DankPyon_DoBillsMineshaft.label>
+  <DankPyon_DoBillsMineshaft.verb>开采</DankPyon_DoBillsMineshaft.verb>
+  <DankPyon_DoBillsMineshaft.gerund>开采于</DankPyon_DoBillsMineshaft.gerund>
+
+  <DankPyon_DoBillsWorkbench.label>制造物品</DankPyon_DoBillsWorkbench.label>
+  <DankPyon_DoBillsWorkbench.verb>制造</DankPyon_DoBillsWorkbench.verb>
+  <DankPyon_DoBillsWorkbench.gerund>制造于</DankPyon_DoBillsWorkbench.gerund>
+
+
+  <!-- WorkGiverDef>
+      <defName>DankPyon_DoBillsDishwasher</defName>
+      <label>wash items</label>
+      <giverClass>WorkGiver_DoBill</giverClass>
+      <workType>Crafting</workType>
+      <priorityInType>80</priorityInType>
+        <fixedBillGiverDefs>
+          <li>DankPyon_Dishwasher</li>
+        </fixedBillGiverDefs>
+      <verb>wash</verb>
+      <gerund>washing at</gerund>
+      <requiredCapacities>
+          <li>Manipulation</li>
+      </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+      </WorkGiverDef -->
+
+  <DankPyon_DoBillsFurnace.label>熔炼物品</DankPyon_DoBillsFurnace.label>
+  <DankPyon_DoBillsFurnace.verb>精炼</DankPyon_DoBillsFurnace.verb>
+  <DankPyon_DoBillsFurnace.gerund>精炼于</DankPyon_DoBillsFurnace.gerund>
+
+  <DankPyon_DoBillsTanningRack.label>加工毛皮</DankPyon_DoBillsTanningRack.label>
+  <DankPyon_DoBillsTanningRack.verb>加工毛皮</DankPyon_DoBillsTanningRack.verb>
+  <DankPyon_DoBillsTanningRack.gerund>加工于</DankPyon_DoBillsTanningRack.gerund>
+
+  <DankPyon_DoBillsButcherFlesh.label>屠宰尸体</DankPyon_DoBillsButcherFlesh.label>
+  <DankPyon_DoBillsButcherFlesh.verb>屠宰</DankPyon_DoBillsButcherFlesh.verb>
+  <DankPyon_DoBillsButcherFlesh.gerund>屠宰于</DankPyon_DoBillsButcherFlesh.gerund>
+
+  <DankPyon_DoBillsMakeApparel.label>缝纫衣物</DankPyon_DoBillsMakeApparel.label>
+  <DankPyon_DoBillsMakeApparel.verb>缝纫</DankPyon_DoBillsMakeApparel.verb>
+  <DankPyon_DoBillsMakeApparel.gerund>缝纫于</DankPyon_DoBillsMakeApparel.gerund>
+
+  <DankPyon_DoBillsStonecut.label>制作石砖</DankPyon_DoBillsStonecut.label>
+  <DankPyon_DoBillsStonecut.verb>制作</DankPyon_DoBillsStonecut.verb>
+  <DankPyon_DoBillsStonecut.gerund>制作石砖于</DankPyon_DoBillsStonecut.gerund>
+
+
+</LanguageData>

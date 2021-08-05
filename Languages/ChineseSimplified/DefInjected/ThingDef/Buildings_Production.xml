@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DankPyon_ResearchingSpot.label>研究点</DankPyon_ResearchingSpot.label>
+  <DankPyon_ResearchingSpot.description>一个研究简单想法的地方。由于缺乏工具，在这里研究会进展缓慢。</DankPyon_ResearchingSpot.description>
+
+  <DankPyon_StonecuttingSpot.label>切石点</DankPyon_StonecuttingSpot.label>
+  <DankPyon_StonecuttingSpot.description>用石头来砸石头的地方。由于缺少工具，所以产出缓慢。</DankPyon_StonecuttingSpot.description>
+
+  <DankPyon_ButchersBlock.label>屠宰木墩</DankPyon_ButchersBlock.label>
+  <DankPyon_ButchersBlock.description>用来将死去的动物切成肉块的木墩。</DankPyon_ButchersBlock.description>
+
+  <DankPyon_RusticCookingTable.label>烹饪桌</DankPyon_RusticCookingTable.label>
+  <DankPyon_RusticCookingTable.description>以木头为燃料的炉子，带有处理食材用的台板</DankPyon_RusticCookingTable.description>
+
+  <DankPyon_StoneOven.label>烤炉</DankPyon_StoneOven.label>
+  <DankPyon_StoneOven.description>配有石制烤炉的烹调台，专为烘焙食物而设计。</DankPyon_StoneOven.description>
+
+  <DankPyon_Grill.label>烤架</DankPyon_Grill.label>
+  <DankPyon_Grill.description>以木头为燃料的烧烤架，用明火做饭</DankPyon_Grill.description>
+
+  <DankPyon_StewPot.label>大釜</DankPyon_StewPot.label>
+  <DankPyon_StewPot.description>能煮美味汤的大锅</DankPyon_StewPot.description>
+
+  <DankPyon_Millstone.label>磨盘</DankPyon_Millstone.label>
+  <DankPyon_Millstone.description>一种用于研磨植物原料的圆形石头</DankPyon_Millstone.description>
+
+
+  <!-- ThingDef ParentName="BenchBase">
+    <defName>DankPyon_Dishwasher</defName>
+    <label>dishwasher</label>
+    <description>A bucket full of water to wash the dirt dishes.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Production/Dishwasher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.25,1.25)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+
+    <costList>
+      <DankPyon_IronIngot>5</DankPyon_IronIngot>
+    </costList>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.2</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <designationHotKey>Misc3</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>DankPyon_BasicCooking</li>
+    </researchPrerequisites>
+  </ThingDef -->
+
+  <DankPyon_AdvancedResearchBench.label>进阶研究台</DankPyon_AdvancedResearchBench.label>
+  <DankPyon_AdvancedResearchBench.description>更先进的技术需要更聪明的头脑，因此，必须要升级简单的研究台，以满足发明家和研究人员的需要。从工程学到炼金术，进阶研究台可以推动殖民地的技术进入高级战争和医学的新时代。</DankPyon_AdvancedResearchBench.description>
+
+
+  <!-- Rack -->
+
+  <DankPyon_DryingRack.label>晾干架</DankPyon_DryingRack.label>
+  <DankPyon_DryingRack.description>用以在阳光下晾干食物以便保存和长时间使用的木制架子。</DankPyon_DryingRack.description>
+
+
+  <!-- Hay Rack -->
+
+  <DankPyon_HayRack.label>干草架</DankPyon_HayRack.label>
+  <DankPyon_HayRack.description>用以在阳光下晾干干草以便保存和长时间使用的木制架子。</DankPyon_HayRack.description>
+
+
+  <!-- Gardening Box -->
+
+  <DankPyon_Post.label>葡萄架</DankPyon_Post.label>
+  <DankPyon_Post.description>辅助葡萄藤健康生长的架子</DankPyon_Post.description>
+
+  <DankPyon_Presser.label>奶酪压块机</DankPyon_Presser.label>
+  <DankPyon_Presser.description>一种木制的装置，可以将凝乳压成奶酪，使牛奶变成美味的奶酪。</DankPyon_Presser.description>
+
+  <DankPyon_Smoker.label>熏炉</DankPyon_Smoker.label>
+  <DankPyon_Smoker.description>堆放在熏炉底部的烧焦的木材所产生的烟雾笼罩了生肉，间接提供热量和并赋予了浓郁的烟味。这同时给肉熏上保护层，延长了熏肉的保存时间。</DankPyon_Smoker.description>
+
+  <DankPyon_Workbench.label>工作台</DankPyon_Workbench.label>
+  <DankPyon_Workbench.description>配有设计和制作物品工具的工作台</DankPyon_Workbench.description>
+
+  <DankPyon_TanningRack.label>鞣制架</DankPyon_TanningRack.label>
+  <DankPyon_TanningRack.description>把毛皮加工成可用皮革的立式架。</DankPyon_TanningRack.description>
+
+  <DankPyon_SpinningWheel.label>纺轮</DankPyon_SpinningWheel.label>
+  <DankPyon_SpinningWheel.description>一种将棉花加工成纺织品的轮式装置。</DankPyon_SpinningWheel.description>
+
+  <DankPyon_TailorsBench.label>缝纫台</DankPyon_TailorsBench.label>
+  <DankPyon_TailorsBench.description>一种木制工作台，用于缝制编制面料，制作可穿的衣服。</DankPyon_TailorsBench.description>
+
+  <DankPyon_Furnace.label>熔炉</DankPyon_Furnace.label>
+  <DankPyon_Furnace.description>用于熔炼矿石原石与精炼资源的大型石质熔炉。</DankPyon_Furnace.description>
+
+  <DankPyon_Anvil.label>铁砧</DankPyon_Anvil.label>
+  <DankPyon_Anvil.description>大型金属加工工具，顶部是扁平平面，用来打制武器和盔甲。</DankPyon_Anvil.description>
+
+
+  <!-- Mine Shaft -->
+
+  <DankPyon_MineShaft.label>矿井</DankPyon_MineShaft.label>
+  <DankPyon_MineShaft.description>一个坚固的平台，配有一个建在垂直隧道顶部的原始电梯。可用于挖掘资源和石块。</DankPyon_MineShaft.description>
+
+  <DankPyon_GardeningBox.label>园艺盒</DankPyon_GardeningBox.label>
+  <DankPyon_GardeningBox.description>一个装满泥土用来种植植物的盒子。</DankPyon_GardeningBox.description>
+
+
+</LanguageData>

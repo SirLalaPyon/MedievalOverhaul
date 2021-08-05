@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Linkables -->
+
+  <DankPyon_ToolRack.label>工具架</DankPyon_ToolRack.label>
+  <DankPyon_ToolRack.description>一套打铁工具。放置在中世纪工作台附近时，可以提高工作速度。</DankPyon_ToolRack.description>
+
+  <DankPyon_QuenchingBucket.label>淬火桶</DankPyon_QuenchingBucket.label>
+  <DankPyon_QuenchingBucket.description>盛满油的桶，用于淬火阴燃的金属。放置在中世纪工作台附近时，提高工作速度。</DankPyon_QuenchingBucket.description>
+
+  <DankPyon_Grinder.label>砂轮</DankPyon_Grinder.label>
+  <DankPyon_Grinder.description>用来给武器开刃。放置在中世纪工作台附近时，可以提高工作速度</DankPyon_Grinder.description>
+
+  <DankPyon_Bellows.label>风箱</DankPyon_Bellows.label>
+  <DankPyon_Bellows.description>放置在中世纪工作台附近时，提高工作速度。</DankPyon_Bellows.description>
+
+
+  <!-- ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_RusticCupboard</defName>
+		<label>tableware shelf</label>
+		<description>A shelf for Tableware. Increases Cook speed when placed near rustic cooking table.</description>
+		<graphicData>
+			<texPath>Misc/RusticCupboard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<uiIconScale>1</uiIconScale>
+		<uiIconPath>Misc/RusticCupboard_MenuIcon</uiIconPath>
+		<uiIconOffset>(0, 0)</uiIconOffset>
+		<size>(2,1)</size>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+
+		<costList>
+			<DankPyon_IronIngot>75</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.10</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>2</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+	</ThingDef -->
+
+  <DankPyon_RusticCookingTools.label>厨具</DankPyon_RusticCookingTools.label>
+  <DankPyon_RusticCookingTools.description>一桌子烹饪厨具。放置在灶炉附近时，可以提高工作速度</DankPyon_RusticCookingTools.description>
+
+
+  <!-- Medieval Comms -->
+
+  <DankPyon_BirdPost.label>信鸽柱</DankPyon_BirdPost.label>
+  <DankPyon_BirdPost.description>一些鸟类在专家训练员的指导下，能够飞到指定的位置，然后再回到它们的栖息地。只要能负担得起捕获、训练，喂养这些鸟的昂贵费用，就可以借此与邻近派系沟通。需要配套的书写台。</DankPyon_BirdPost.description>
+
+  <DankPyon_ScribeTable.label>书写台</DankPyon_ScribeTable.label>
+  <DankPyon_ScribeTable.description>桌子上放着蜡片，上面写着各种纪录和收据。写字台旁放着羊皮纸，印章，羽毛笔和墨水。配合信鸽柱一起使用，传信速度比信使要快得多。你可以邀请盟友前来赴宴，挑衅对手来挑战或是请中立派系来贸易。</DankPyon_ScribeTable.description>
+
+
+</LanguageData>

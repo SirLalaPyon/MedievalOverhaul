@@ -34,12 +34,35 @@
         </li>
 
         <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_Lion</defName>
+              <label>huge lion hide</label>
+              <graphicData>
+                <color>(130,126,119)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>308.88</MarketValue>
+                <Mass>36</Mass>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <AEXP_Leather_Lion>66</AEXP_Leather_Lion>
+              </butcherProducts>
+              <stuffProps>
+                <color>(185,143,96)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
           <xpath>Defs/PawnKindDef [defName="AEXP_Lion"]/lifeStages/li[3]</xpath>
 
           <value>
             <butcherBodyPart>
               <bodyPartGroup>HeadAttackTool</bodyPartGroup>
-              <thing>DankPyon_Hide_HideHuge</thing>
+              <thing>DankPyon_Hide_Lion</thing>
               <allowFemale>true</allowFemale>
             </butcherBodyPart>
           </value>

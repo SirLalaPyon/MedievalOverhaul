@@ -16,17 +16,17 @@
               <defName>DankPyon_Hide_Walrus</defName>
               <label>huge walrus hide</label>
               <graphicData>
-                <color>(130,126,119)</color>
+                <color>(112,82,65)</color>
               </graphicData>
               <statBases>
-                <MarketValue>388.8</MarketValue>
+                <MarketValue>583.2</MarketValue>
                 <Mass>36</Mass>
               </statBases>
               <butcherProducts Inherit="False">
-                <Leather_Bear>144</Leather_Bear>
+                <AEXP_Leather_Pinniped>144</AEXP_Leather_Pinniped>
               </butcherProducts>
               <stuffProps>
-                <color>(130,126,119)</color>
+                <color>(112,82,65)</color>
               </stuffProps>
             </ThingDef>
           </value>
@@ -41,6 +41,29 @@
               <thing>DankPyon_Hide_BirdLarge</thing>
               <allowFemale>true</allowFemale>
             </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_Seal</defName>
+              <label>large seal hide</label>
+              <graphicData>
+                <color>(112,82,65)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>145.8</MarketValue>
+                <Mass>36</Mass>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <AEXP_Leather_Pinniped>36</AEXP_Leather_Pinniped>
+              </butcherProducts>
+              <stuffProps>
+                <color>(112,82,65)</color>
+              </stuffProps>
+            </ThingDef>
           </value>
         </li>
 

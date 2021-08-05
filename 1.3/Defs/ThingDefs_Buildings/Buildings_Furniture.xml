@@ -509,6 +509,11 @@
           </fuelFilter>
           <destroyOnNoFuel>false</destroyOnNoFuel>
        </li>
+       <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>3.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
         <li Class="CompProperties_Glower">
           <glowRadius>5</glowRadius>
           <glowColor>(252,187,113,0)</glowColor>
@@ -1002,9 +1007,10 @@
     </inspectorTabs>
     <comps>
         <li Class="CompProperties_Glower">
-          <glowRadius>4</glowRadius>
-          <glowColor>(217,112,33,0)</glowColor>
+          <glowRadius>10</glowRadius>
+          <glowColor>(252,187,113,0)</glowColor>
         </li>
+        
         <li Class="CompProperties_Refuelable">
           <fuelConsumptionRate>100.0</fuelConsumptionRate>
           <fuelCapacity>50.0</fuelCapacity>

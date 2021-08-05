@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Basic domestic furniture -->
+
+  <DankPyon_RusticStool.label>乡村圆凳</DankPyon_RusticStool.label>
+  <DankPyon_RusticStool.description>给人坐小台子。不是很舒服，但总比什么都没有要强。通常都是在小酒馆或小旅馆能看到。可放在桌子、工作台和其他地方。</DankPyon_RusticStool.description>
+
+  <DankPyon_RusticChair.label>乡村椅子</DankPyon_RusticChair.label>
+  <DankPyon_RusticChair.description>一把舒服美观的椅子。可放在桌子、工作台和其他地方。</DankPyon_RusticChair.description>
+
+  <DankPyon_RusticEndTable.label>床头柜</DankPyon_RusticEndTable.label>
+  <DankPyon_RusticEndTable.description>床边的小桌子，用于给旁边的床增加一点舒适度。必须直接放在与头毗邻的位置。同一张床对应多个床头柜不会产生效果。</DankPyon_RusticEndTable.description>
+
+  <DankPyon_RusticTable1x2c.label>桌子 (1x2)</DankPyon_RusticTable1x2c.label>
+  <DankPyon_ReinforcedRusticTable1x2c.label>加固桌 (1x2)</DankPyon_ReinforcedRusticTable1x2c.label>
+  <DankPyon_RusticTable2x2c.label>桌子 (2x2)</DankPyon_RusticTable2x2c.label>
+  <DankPyon_ReinforcedRusticTable2x2c.label>加固桌 (2x2)</DankPyon_ReinforcedRusticTable2x2c.label>
+  <DankPyon_RusticRoundTable2x2c.label>圆桌 (2x2)</DankPyon_RusticRoundTable2x2c.label>
+  <DankPyon_Table2x4c.label>桌子 (2x4)</DankPyon_Table2x4c.label>
+  <DankPyon_ReinforcedTable2x4c.label>加固桌 (2x4)</DankPyon_ReinforcedTable2x4c.label>
+
+
+  <!-- ThingDef ParentName="DankPyon_BuildingBase">
+		<defName>DankPyon_RusticCandles</defName>
+		<label>candles</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>A candle to prevent darkness seeping in your room.</description>
+		<graphicData>
+			<texPath>Furniture/RusticCandle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>			
+		</graphicData>
+		<uiIconPath>Furniture/RusticCandle_MenuIcon</uiIconPath>
+		<costList>
+			<WoodLog>10</WoodLog>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+		</costList>
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>		
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>75</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.2</Mass>	  
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>0.5</heatPerSecond>
+				<heatPushMaxTemperature>5</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+	</ThingDef -->
+
+  <DankPyon_Candles.label>蜡烛</DankPyon_Candles.label>
+  <DankPyon_Candles.description>点燃蜡烛可以防止黑暗渗入你的房间。可以用动物脂肪补充。</DankPyon_Candles.description>
+  <DankPyon_Candles_Blueprint.label>蜡烛 (蓝图)</DankPyon_Candles_Blueprint.label>
+  <DankPyon_Candles_Blueprint_Install.label>蜡烛 (蓝图)</DankPyon_Candles_Blueprint_Install.label>
+  <DankPyon_Candles_Frame.label>蜡烛 (建设中)</DankPyon_Candles_Frame.label>
+  <DankPyon_Candles_Frame.description>点燃蜡烛可以防止黑暗渗入你的房间。可以用动物脂肪补充。</DankPyon_Candles_Frame.description>
+
+
+  <!-- Storage (Chest) -->
+
+  <DankPyon_RusticChest.label>箱子</DankPyon_RusticChest.label>
+  <DankPyon_RusticChest.description>用来存放个人物品的可靠木箱。储存在这里的物品不会影响房间的美观度，即使放在外面也不会老化。多个箱子不能堆叠舒适度奖励。</DankPyon_RusticChest.description>
+
+  <DankPyon_MetalStrongbox.label>金属保险箱</DankPyon_MetalStrongbox.label>
+  <DankPyon_MetalStrongbox.description>一个可靠的金属保险箱，用来存放你的私人物品。储存在这里的物品不会影响房间的美观度，即使放在外面也不会老化。多个箱子不能堆叠舒适度奖励。</DankPyon_MetalStrongbox.description>
+
+  <DankPyon_RoyalChest.label>皇家箱子</DankPyon_RoyalChest.label>
+  <DankPyon_RoyalChest.description>贵族们的华丽箱子。储存在这里的物品不会影响房间的美观度，即使放在外面也不会老化。多个箱子不能堆叠舒适度奖励。</DankPyon_RoyalChest.description>
+
+
+  <!-- Dressers -->
+
+  <DankPyon_RusticDresser.label>梳妆台</DankPyon_RusticDresser.label>
+  <DankPyon_RusticDresser.description>一个梳妆台。给附近所有的床提供小额舒适度增益。在同一张床旁边放置多个梳妆台不会产生效果。</DankPyon_RusticDresser.description>
+
+
+  <!-- Closet -->
+
+  <DankPyon_RusticCloset.label>衣橱</DankPyon_RusticCloset.label>
+  <DankPyon_RusticCloset.description>一个能高效存放衣服的好看衣橱。放置在床旁可以提高少量舒适度。</DankPyon_RusticCloset.description>
+
+
+  <!-- Bookshelf -->
+
+  <DankPyon_RusticBookshelf.label>书橱</DankPyon_RusticBookshelf.label>
+  <DankPyon_RusticBookshelf.description>放置在研究台附近时，可以提高研究速度。每个研究台可以配两个书橱。</DankPyon_RusticBookshelf.description>
+
+  <DankPyon_RusticHearth.label>壁炉</DankPyon_RusticHearth.label>
+  <DankPyon_RusticHearth.description>石质壁炉营造出温暖如家的氛围。也可以用来烹饪食物，虽然速度要慢一些。</DankPyon_RusticHearth.description>
+
+
+  <!-- Beds -->
+
+  <DankPyon_BedWicker.label>藤木床</DankPyon_BedWicker.label>
+  <DankPyon_BedWicker.description>制作简单快速的藤木床</DankPyon_BedWicker.description>
+
+  <DankPyon_StrawBed.label>稻草床</DankPyon_StrawBed.label>
+  <DankPyon_StrawBed.description>制作简单快速的稻草床，上面有稻草做的软垫，增加了一点舒适度。</DankPyon_StrawBed.description>
+
+  <DankPyon_BedFur.label>兽皮床</DankPyon_BedFur.label>
+  <DankPyon_BedFur.description>由柔软舒适的动物毛皮制成的温馨小床。</DankPyon_BedFur.description>
+
+  <DankPyon_BedFurDouble.label>双人兽皮床</DankPyon_BedFurDouble.label>
+  <DankPyon_BedFurDouble.description>可以睡两个人的舒适床.</DankPyon_BedFurDouble.description>
+
+
+</LanguageData>

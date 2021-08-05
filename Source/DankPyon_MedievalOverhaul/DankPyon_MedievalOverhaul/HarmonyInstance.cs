@@ -20,7 +20,7 @@ namespace DankPyon
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
     {
-        public static Dictionary<Thing, Pair<HashSet<IntVec3>, PlantExtension>> cachedTransparentablePlants = new Dictionary<Thing, Pair<HashSet<IntVec3>, PlantExtension>>();
+        public static Dictionary<Thing, PlantExtension> cachedTransparentablePlants = new Dictionary<Thing, PlantExtension>();
         static HarmonyInstance()
         {
             var harmony = new Harmony("lalapyhon.rimworld.medievaloverhaul");
@@ -78,7 +78,7 @@ namespace DankPyon
         }
 
         public static Dictionary<Thing, Shader> lastCachedShaders = new Dictionary<Thing, Shader>();
-        public static void RecheckTransparency(Thing plant, Thing otherThing, PlantExtension extension, HashSet<IntVec3> cells)
+        public static void RecheckTransparency(Thing plant, Thing otherThing, PlantExtension extension)
         {
             if (plant != otherThing && plant.Spawned && plant.Map == otherThing.Map)
             {
@@ -90,6 +90,7 @@ namespace DankPyon
                 bool isTransparent = shader == DankPyonDefOf.TransparentPlant.Shader;
                 if (!isTransparent && ItemMatches(otherThing, extension))
                 {
+                    var cells = GetTransparentCheckArea(plant, extension);
                     if (cells.Contains(otherThing.Position))
                     {
                         otherThing.Map.mapDrawer.MapMeshDirty(plant.Position, MapMeshFlag.Things);
@@ -99,6 +100,7 @@ namespace DankPyon
 
                 if (isTransparent)
                 {
+                    var cells = GetTransparentCheckArea(plant, extension);
                     if (!cells.Any(x => HasItemsInCell(x, otherThing.Map, extension)))
                     {
                         otherThing.Map.mapDrawer.MapMeshDirty(plant.Position, MapMeshFlag.Things);
@@ -109,12 +111,12 @@ namespace DankPyon
         [HarmonyPatch(typeof(Thing), "SpawnSetup")]
         public class Thing_SpawnSetup_Patch
         {
-            private static void Postfix(Thing __instance)
+            private static void Prefix(Thing __instance)
             {
                 var extension = __instance.def.GetModExtension<PlantExtension>();
                 if (extension != null && extension.transparencyWhenPawnOrItemIsBehind)
                 {
-                    cachedTransparentablePlants[__instance] = new Pair<HashSet<IntVec3>, PlantExtension>(GetTransparentCheckArea(__instance, extension), extension);
+                    cachedTransparentablePlants[__instance] = extension;
                 }
             }
         }
@@ -129,10 +131,9 @@ namespace DankPyon
                     foreach (var data in cachedTransparentablePlants)
                     {
                         var plant = data.Key;
-                        var value = data.Value;
-                        if (value.first.Contains(__instance.positionInt))
+                        if (__instance.positionInt.z > plant.positionInt.z && plant.positionInt.DistanceTo(__instance.positionInt) < 13)
                         {
-                            RecheckTransparency(plant, __instance, value.second, value.first);
+                            RecheckTransparency(plant, __instance, data.Value);
                         }
                     }
                 }
@@ -145,9 +146,10 @@ namespace DankPyon
         {
             private static void Postfix(Plant __instance, ref Graphic __result)
             {
-                if (cachedTransparentablePlants.TryGetValue(__instance, out var pair))
+                if (cachedTransparentablePlants.TryGetValue(__instance, out var extension))
                 {
-                    bool anyItemsExistsInArea = pair.first.Any(x => HasItemsInCell(x, __instance.Map, pair.second));
+                    var cells = GetTransparentCheckArea(__instance, extension);
+                    bool anyItemsExistsInArea = cells.Any(x => HasItemsInCell(x, __instance.Map, extension));
                     if (anyItemsExistsInArea)
                     {
                         __result = GraphicDatabase.Get(__result.GetType(), "Transparent/" + __result.path, DankPyonDefOf.TransparentPlant.Shader,

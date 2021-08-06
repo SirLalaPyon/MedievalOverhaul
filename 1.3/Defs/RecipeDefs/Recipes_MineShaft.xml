@@ -4,10 +4,10 @@
   <!-- Coal Chunks -->
 	<RecipeDef>
 		<defName>DankPyon_MakeStoneChunks_Coal</defName>
-		<description>(Bulk x25) Mine from underground Coal Seams to create usable Coal Chunks.</description>		
+		<description>Mine deep down underground to obtain coal chunks.</description>		
 		<workAmount>2000</workAmount>		
-		<label>(Bulk x25) Gather coal chunks</label>
-		<jobString>Mining for coal chunks.</jobString>
+		<label>Mine coal chunks x25</label>
+		<jobString>Mining 25 coal chunks.</jobString>
 		<workSpeedStat>MiningSpeed</workSpeedStat>
 		<workSkill>Mining</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
@@ -40,8 +40,8 @@
  	<RecipeDef ParentName="DankPyon_MineShaftBase">
 		<defName>DankPyon_MakeStoneChunks_Sandstone</defName>
 		<workAmount>2250</workAmount>		
-		<label>Gather Sandstone Chunks</label>
-		<jobString>Mining for Sandstone Chunk.</jobString>
+		<label>Gather sandstone chunk</label>
+		<jobString>Mining 1 sandstone chunk.</jobString>
     <products>
       <ChunkSandstone>1</ChunkSandstone>
     </products>		
@@ -51,8 +51,8 @@
  	<RecipeDef ParentName="DankPyon_MineShaftBase">
 		<defName>DankPyon_MakeStoneChunks_Granite</defName>
 		<workAmount>2975</workAmount>		
-		<label>Gather Granite Chunks</label>
-		<jobString>Mining for Granite Chunk.</jobString>
+		<label>Gather granite chunk</label>
+		<jobString>Mining 1 granite chunk.</jobString>
     <products>
       <ChunkGranite>1</ChunkGranite>
     </products>		
@@ -62,8 +62,8 @@
  	<RecipeDef ParentName="DankPyon_MineShaftBase">
 		<defName>DankPyon_MakeStoneChunks_Limestone</defName>
 		<workAmount>2700</workAmount>		
-		<label>Gather Limestone Chunks</label>
-		<jobString>Mining for Limestone Chunk.</jobString>
+		<label>Gather limestone chunk</label>
+		<jobString>Mining 1 limestone chunk.</jobString>
     <products>
       <ChunkLimestone>1</ChunkLimestone>
     </products>		
@@ -73,8 +73,8 @@
  	<RecipeDef ParentName="DankPyon_MineShaftBase">
 		<defName>DankPyon_MakeStoneChunks_Slate</defName>
 		<workAmount>2275</workAmount>		
-		<label>Gather Slate Chunks</label>
-		<jobString>Mining for Slate Chunk.</jobString>
+		<label>Gather slate chunk</label>
+		<jobString>Mining 1 slate chunk.</jobString>
     <products>
       <ChunkSlate>1</ChunkSlate>
     </products>		
@@ -84,8 +84,8 @@
  	<RecipeDef ParentName="DankPyon_MineShaftBase">
 		<defName>DankPyon_MakeStoneChunks_Marble</defName>
 		<workAmount>2100</workAmount>		
-		<label>Gather Marble Chunks</label>
-		<jobString>Mining for Marble Chunk.</jobString>
+		<label>Gather marble chunk</label>
+		<jobString>Mining 1 marble chunk.</jobString>
     <products>
       <ChunkMarble>1</ChunkMarble>
     </products>		
@@ -97,7 +97,7 @@
 		<defName>DankPyon_MakeSalt</defName>
 		<workAmount>200</workAmount>		
 		<label>Gather salt</label>
-		<jobString>Mining for salt</jobString>
+		<jobString>Mining 1 salt</jobString>
 		<recipeUsers>
 			<li>DankPyon_MiningSpot</li>	  
 		</recipeUsers>
@@ -112,21 +112,31 @@
 		<defName>DankPyon_MakeSalt10</defName>
 		<workAmount>2000</workAmount>		
 		<label>Gather salt x10</label>
-		<jobString>Mining for salt</jobString>
+		<jobString>Mining 10 salt</jobString>
     <products>
       <DankPyon_Salt>10</DankPyon_Salt>
     </products>		
   </RecipeDef>  
 
-  <!-- Stone Chunks: Sandstone --> 
-  <!--RecipeDef ParentName="DankPyon_MineShaftBase">
+  <!-- Ores--> 
+  <RecipeDef ParentName="DankPyon_MineShaftBase">
 	<defName>DankPyon_MakeOre_IronOre</defName>
-	<workAmount>2250</workAmount>		
-	<label>Gather Sandstone Chunks</label>
-	<jobString>Mining for Sandstone Chunk.</jobString>
+	<workAmount>900</workAmount>		
+	<label>Mine an iron ore</label>
+	<jobString>Mining 1 iron ore.</jobString>
 	<products>
   		<DankPyon_IronOre>1</DankPyon_IronOre>
 	</products>		
-  </RecipeDef--> 
+  </RecipeDef> 
+
+  <RecipeDef ParentName="DankPyon_MineShaftBase">
+	<defName>DankPyon_MakeOre_SilverOre</defName>
+	<workAmount>600</workAmount>		
+	<label>Mine a silver ore</label>
+	<jobString>Mining 1 silver ore.</jobString>
+	<products>
+  		<DankPyon_SilverOre>1</DankPyon_SilverOre>
+	</products>		
+  </RecipeDef> 
 
 </Defs>

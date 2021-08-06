@@ -9,7 +9,7 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThoughtDef[defName="ObservedLayingRottingCorpse" or defName="KnowPrisonerDiedInnocent" or defName="PawnWithGoodOpinionDied" or defName="KnowGuestExecuted" or defName="ButcheredHumanlikeCorpse" or defName="KnowButcheredHumanlikeCorpse" or defName="ButcheredHumanlikeCorpseOpinion" or defName="WitnessedDeathAlly" or defName="WitnessedDeathNonAlly" or defName="DeniedJoining" or defName="ColonistBanished" or defName="ColonistBanishedToDie" or defName="PrisonerBanishedToDie" or defName="ColonyPrisonerEscaped"]/nullifyingTraits</xpath>
+        <xpath>/Defs/ThoughtDef[defName="ObservedLayingRottingCorpse" or defName="KnowPrisonerDiedInnocent" or defName="PawnWithGoodOpinionDied" or defName="KnowGuestExecuted" or defName="WitnessedDeathAlly" or defName="WitnessedDeathNonAlly" or defName="DeniedJoining" or defName="ColonistBanished" or defName="ColonistBanishedToDie" or defName="PrisonerBanishedToDie" or defName="ColonyPrisonerEscaped"]/nullifyingTraits</xpath>
         <value>
             <li>DankPyon_Veteran</li>
         </value>

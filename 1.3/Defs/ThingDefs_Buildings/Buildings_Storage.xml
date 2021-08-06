@@ -216,6 +216,56 @@
     </researchPrerequisites>
 	</ThingDef>
 
+  <!--== Bricks ==-->
+  <ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Bricks2x2c</defName>
+		<label>bricks</label>
+		<description>Bricks that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Bricks2x2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+    <uiIconScale>1</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>25</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+    
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+          </filter>
+      </fixedStorageSettings>
+    </building>	
+
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>8</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+    <researchPrerequisites Inherit="false">
+    </researchPrerequisites>
+	</ThingDef>
+
 
   <!-- ==================== Barrels ==================== -->
   <ThingDef ParentName="DankPyon_StorageBase">

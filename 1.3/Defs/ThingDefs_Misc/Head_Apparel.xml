@@ -53,7 +53,7 @@
 	<ThingDef ParentName="HatMakeableBase">
 		<defName>DankPyon_Headgear_coif</defName>
 		<label>coif</label>
-		<description>A close-fitting and lightly padded cap often worn beneath mail or a helmet, or on its own for warmth in cold weather.</description>
+		<description>A close-fitting and lightly padded coif often worn beneath mail or a helmet, or on its own for warmth in cold weather.</description>
 		<graphicData>
 			<texPath>Headgear/Coif/Coif</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -277,28 +277,28 @@
     </recipeMaker>
 
     <statBases>
-      <WorkToMake>11000</WorkToMake>
+      <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>140</MaxHitPoints>
       <Mass>2.75</Mass>
-      <ArmorRating_Sharp>0.6375</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.285</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.663</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.2964</ArmorRating_Blunt>
       <Insulation_Cold>2.7</Insulation_Cold>
       <Insulation_Heat>0.9</Insulation_Heat>
-      <EquipDelay>10</EquipDelay>
+      <EquipDelay>4</EquipDelay>
     </statBases>
-
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
     </equippedStatOffsets>
 
 		<costList>
       <Cloth>10</Cloth>
-      <DankPyon_IronIngot>50</DankPyon_IronIngot>
+      <DankPyon_IronIngot>55</DankPyon_IronIngot>
     </costList>
 
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Headgear/PaddedNasalHelm/PaddedNasalHelm</wornGraphicPath>
       <tags>
@@ -358,6 +358,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
       <tags>
@@ -395,12 +396,12 @@
       <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
     </recipeMaker>
 
-    <statBases>
-      <WorkToMake>13000</WorkToMake>
+   <statBases>
+      <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>140</MaxHitPoints>
       <Mass>2.75</Mass>
-      <ArmorRating_Sharp>0.6885</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.3078</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.663</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.2964</ArmorRating_Blunt>
       <Insulation_Cold>2.7</Insulation_Cold>
       <Insulation_Heat>0.9</Insulation_Heat>
       <EquipDelay>4</EquipDelay>
@@ -411,12 +412,13 @@
 
 		<costList>
       <Cloth>10</Cloth>
-      <DankPyon_IronIngot>60</DankPyon_IronIngot>
-    </costList>
+      <DankPyon_IronIngot>55</DankPyon_IronIngot>
+    </costList>z
 
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Headgear/PaddedFlatTop/PaddedFlatTop</wornGraphicPath>
       <tags>
@@ -623,11 +625,11 @@
     </recipeMaker>
 
     <statBases>
-      <WorkToMake>12000</WorkToMake>
+      <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>3</Mass>
-      <ArmorRating_Sharp>0.7225</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.323</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.748</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.3344</ArmorRating_Blunt>
       <Insulation_Cold>0.45</Insulation_Cold>
       <Insulation_Heat>0</Insulation_Heat>
       <EquipDelay>8</EquipDelay>
@@ -635,14 +637,15 @@
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
     </equippedStatOffsets>
-
+    
 		<costList>
       <DankPyon_IronIngot>70</DankPyon_IronIngot>
-    </costList>
+    </costList> 
     
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainNasalHelm/ChainNasalHelm</wornGraphicPath>
       <tags>
@@ -680,11 +683,11 @@
     </recipeMaker>
 
     <statBases>
-      <WorkToMake>12000</WorkToMake>
+      <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>3</Mass>
-      <ArmorRating_Sharp>0.7225</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.323</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.748</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.3344</ArmorRating_Blunt>
       <Insulation_Cold>0.45</Insulation_Cold>
       <Insulation_Heat>0</Insulation_Heat>
       <EquipDelay>8</EquipDelay>
@@ -692,7 +695,7 @@
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
     </equippedStatOffsets>
-
+    
 		<costList>
       <DankPyon_IronIngot>70</DankPyon_IronIngot>
     </costList> 
@@ -700,6 +703,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainNasalHelmRed/ChainNasalHelmRed</wornGraphicPath>
       <tags>
@@ -757,6 +761,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainKettle/ChainKettle</wornGraphicPath>
       <tags>
@@ -795,11 +800,11 @@
     </recipeMaker>
 
     <statBases>
-      <WorkToMake>17000</WorkToMake>
+      <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>3</Mass>
-      <ArmorRating_Sharp>0.7735</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.3458</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.748</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.3344</ArmorRating_Blunt>
       <Insulation_Cold>0.45</Insulation_Cold>
       <Insulation_Heat>0</Insulation_Heat>
       <EquipDelay>8</EquipDelay>
@@ -807,14 +812,15 @@
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
     </equippedStatOffsets>
-
+    
 		<costList>
-      <DankPyon_IronIngot>75</DankPyon_IronIngot>
-    </costList>
+      <DankPyon_IronIngot>70</DankPyon_IronIngot>
+    </costList> 
 
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
       <tags>

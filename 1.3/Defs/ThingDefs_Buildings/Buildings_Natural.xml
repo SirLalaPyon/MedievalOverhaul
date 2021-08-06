@@ -25,6 +25,29 @@
       <mineableScatterLumpSizeRange>15~20</mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
+
+  <ThingDef ParentName="RockBase">
+    <defName>DankPyon_MineableSalt</defName>
+    <label>salt ore</label>
+    <description>Rock containing chunks of salt.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(114,114,114)</color>
+      <colorTwo>(248,177,133)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>DankPyon_Salt</mineableThing>
+      <mineableYield>40</mineableYield>
+      <mineableScatterCommonality>0.75</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>15~20</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
   
   <!--============================ Resource rocks ===============================-->
   

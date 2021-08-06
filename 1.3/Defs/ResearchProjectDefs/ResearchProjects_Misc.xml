@@ -87,7 +87,7 @@
 
   <ResearchProjectDef>
     <defName>DankPyon_CandleMaking</defName>
-    <label>textile spinning</label>
+    <label>candle making</label>
     <description>Make candles to lighten up your colony and build beautiful chandeliers</description>
     <baseCost>300</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
@@ -232,7 +232,7 @@
     <defName>DankPyon_ProtectiveClothing</defName>
     <label>protective clothing</label>
     <description>Learn how to sew padded clothing, granting better protection against physical threats.</description>
-    <baseCost>600</baseCost>
+    <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>6</researchViewX>
@@ -246,7 +246,7 @@
     <defName>DankPyon_ChainArmor</defName>
     <label>chain armor</label>
     <description>Learn the techniques of linking chains to smith formidable chainmail armors.</description>
-    <baseCost>1000</baseCost>
+    <baseCost>1500</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>7</researchViewX>
@@ -255,20 +255,6 @@
       <li>DankPyon_ProtectiveClothing</li>
     </prerequisites>    
   </ResearchProjectDef>
-
-  <!--ResearchProjectDef>
-    <defName>DankPyon_PlateArmor</defName>
-    <label>plate armor</label>
-    <description>Learn the techniques of properly smithing and tempering metal plates to craft expensive plate armors</description>
-    <baseCost>2000</baseCost>
-    <tab>DankPyon_MedievalResearchTab</tab>
-    <techLevel>Medieval</techLevel>
-		<researchViewX>8</researchViewX>
-		<researchViewY>0</researchViewY>
-    <prerequisites>
-      <li>DankPyon_ChainArmor</li>
-    </prerequisites>    
-  </ResearchProjectDef-->
 
   <!--=========================== Ranged Weapons ==============================-->
 

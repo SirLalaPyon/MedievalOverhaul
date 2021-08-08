@@ -6,9 +6,26 @@
 		  <li>Vanilla Furniture Expanded - Security</li>
 		</mods>
 
-		<match Class="PatchOperationRemove">
+		<match Class="PatchOperationSequence">
 		  <success>Normal</success>
-		  <xpath>Defs/ThingDef[defName = "VFES_Turret_Ballista" or defName="VFES_Turret_Catapult"]/designationCategory</xpath>
+		  <operations>
+
+
+			<li Class="PatchOperationRemove">
+		  		<xpath>Defs/ThingDef[defName = "VFES_Turret_Ballista" or defName="VFES_Turret_Catapult"]/designationCategory</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "VFES_Turret_Ballista" or defName="VFES_Turret_Catapult"]/researchPrerequisites</xpath>
+		  </li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName = "VFES_SiegeEquipment"]</xpath>
+		  	</li>
+
+		  </operations>
+
+		
 		  
 		</match>
 	  </Operation>

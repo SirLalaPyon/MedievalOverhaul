@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Dinosauria</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Normal</success>
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_Tyrannosaurus</defName>
+              <label>tyrannosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(104,85,52)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>1008</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Tyrannosaurus>140</Leather_Tyrannosaurus>
+              </butcherProducts>
+              <stuffProps>
+                <color>(104,85,52)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_Spinosaurus</defName>
+              <label>spinosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(88,85,82)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>1008</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Spinosaurus>140</Leather_Spinosaurus>
+              </butcherProducts>
+              <stuffProps>
+                <color>(88,85,82)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_Carnotosaurus</defName>
+              <label>untreated redhide</label>
+              <graphicData>
+                <texPath>Resources/ScaleLarge</texPath>
+                <color>(156,72,60)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>378</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Redhide>100</Leather_Redhide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(156,72,60)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_TheropodAllo</defName>
+              <label>theropod hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleLarge</texPath>
+                <color>(82,97,108)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>342</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Theropod>100</Leather_Theropod>
+              </butcherProducts>
+              <stuffProps>
+                <color>(82,97,108)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_TheropodBary</defName>
+              <label>theropod hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(82,97,108)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>478.8</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Theropod>140</Leather_Theropod>
+              </butcherProducts>
+              <stuffProps>
+                <color>(82,97,108)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_ArmoredDinoAnk</defName>
+              <label>ankylosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleMedium</texPath>
+                <color>(179,147,34)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>756</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_ArmoredDino>84</Leather_ArmoredDino>
+              </butcherProducts>
+              <stuffProps>
+                <color>(179,147,34)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_ArmoredDinoMin</defName>
+              <label>minmi hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleSmall</texPath>
+                <color>(179,147,34)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>360</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_ArmoredDino>40</Leather_ArmoredDino>
+              </butcherProducts>
+              <stuffProps>
+                <color>(179,147,34)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_SauropodBra</defName>
+              <label>brachiosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(95,90,86)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>1998</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Sauropod>600</Leather_Sauropod>
+              </butcherProducts>
+              <stuffProps>
+                <color>(95,90,86)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_SauropodMag</defName>
+              <label>magyarosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleLarge</texPath>
+                <color>(95,90,86)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>399.6</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Sauropod>120</Leather_Sauropod>
+              </butcherProducts>
+              <stuffProps>
+                <color>(95,90,86)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_SauropodBro</defName>
+              <label>brontosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(95,90,86)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>1998</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Sauropod>600</Leather_Sauropod>
+              </butcherProducts>
+              <stuffProps>
+                <color>(95,90,86)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_SauropodDip</defName>
+              <label>brontosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(95,90,86)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>1998</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Sauropod>600</Leather_Sauropod>
+              </butcherProducts>
+              <stuffProps>
+                <color>(95,90,86)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_SauropodBro</defName>
+              <label>brontosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(95,90,86)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>1998</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Sauropod>600</Leather_Sauropod>
+              </butcherProducts>
+              <stuffProps>
+                <color>(95,90,86)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseTiny">
+              <defName>DankPyon_Hide_DinosaurSkinCom</defName>
+              <label>untreated compsognathus skin</label>
+              <graphicData>
+                <texPath>Resources/ScaleTiny</texPath>
+                <color>(107,101,0)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>22.68</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurSkin>12</Leather_DinosaurSkin>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,101,0)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseTiny">
+              <defName>DankPyon_Hide_DinosaurSkinDry</defName>
+              <label>untreated dryosaurus skin</label>
+              <graphicData>
+                <texPath>Resources/ScaleTiny</texPath>
+                <color>(107,101,0)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>24.57</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurSkin>13</Leather_DinosaurSkin>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,101,0)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseTiny">
+              <defName>DankPyon_Hide_DinosaurSkinPro</defName>
+              <label>untreated protoceratops skin</label>
+              <graphicData>
+                <texPath>Resources/ScaleTiny</texPath>
+                <color>(107,101,0)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>28.35</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurSkin>15</Leather_DinosaurSkin>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,101,0)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_DinosaurHideCor</defName>
+              <label>untreated corythosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleMedium</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>151.2</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurHide>56</Leather_DinosaurHide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_DinosaurHideGig</defName>
+              <label>untreated gigantoraptor hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleMedium</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>113.4</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurHide>42</Leather_DinosaurHide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_DinosaurHideTri</defName>
+              <label>untreated triceratops hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>388.8</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurHide>144</Leather_DinosaurHide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseTiny">
+              <defName>DankPyon_Hide_DinosaurHideSty</defName>
+              <label>untreated stygimoloch hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleTiny</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>40.5</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurHide>15</Leather_DinosaurHide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_DinosaurHideGal</defName>
+              <label>untreated gallimimus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleLarge</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>113.4</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurHide>42</Leather_DinosaurHide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseMedium">
+              <defName>DankPyon_Hide_DinosaurHidePac</defName>
+              <label>untreated pachycephalosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleTiny</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>70.2</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurHide>26</Leather_DinosaurHide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseMedium">
+              <defName>DankPyon_Hide_DinosaurHideIgu</defName>
+              <label>untreated iguanodon hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleMedium</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>70.2</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurHide>26</Leather_DinosaurHide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_DinosaurHideSte</defName>
+              <label>untreated stegosaurus hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleHuge</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>364.5</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurHide>135</Leather_DinosaurHide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_DinosaurHidePar</defName>
+              <label>untreated parasaur hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleMedium</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>151.2</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurHide>56</Leather_DinosaurHide>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_DinosaurFuzz</defName>
+              <label>untreated dinosaur fuzz</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurMedium</texPath>
+                <color>(107,123,156)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>151.2</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_DinosaurFuzz>56</Leather_DinosaurFuzz>
+              </butcherProducts>
+              <stuffProps>
+                <color>(107,123,156)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_RaptorBig</defName>
+              <label>raptor hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleMedium</texPath>
+                <color>(70,70,70)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>108</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Raptor>40</Leather_Raptor>
+              </butcherProducts>
+              <stuffProps>
+                <color>(70,70,70)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseSmall">
+              <defName>DankPyon_Hide_RaptorSml</defName>
+              <label>small raptor hide</label>
+              <graphicData>
+                <texPath>Resources/ScaleTiny</texPath>
+                <color>(70,70,70)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>56.7</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Raptor>21</Leather_Raptor>
+              </butcherProducts>
+              <stuffProps>
+                <color>(70,70,70)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseHuge">
+              <defName>DankPyon_Hide_PterosaurQue</defName>
+              <label>untreated quetzalcoatlus skin</label>
+              <graphicData>
+                <texPath>Resources/HideHuge</texPath>
+                <color>(240,216,199)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>226.8</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_PterosaurSkin>84</Leather_PterosaurSkin>
+              </butcherProducts>
+              <stuffProps>
+                <color>(240,216,199)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseTiny">
+              <defName>DankPyon_Hide_PterosaurPte</defName>
+              <label>untreated pteranodon skin</label>
+              <graphicData>
+                <texPath>Resources/HideTiny</texPath>
+                <color>(240,216,199)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>40.5</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_PterosaurSkin>15</Leather_PterosaurSkin>
+              </butcherProducts>
+              <stuffProps>
+                <color>(240,216,199)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="DankPyon_HideBaseLarge">
+              <defName>DankPyon_Hide_BlueFuzz</defName>
+              <label>untreated yutyrannus fuzz</label>
+              <graphicData>
+                <texPath>Resources/HeavyFurHuge</texPath>
+                <color>(91,144,155)</color>
+              </graphicData>
+              <statBases>
+                <MarketValue>252</MarketValue>
+              </statBases>
+              <butcherProducts Inherit="False">
+                <Leather_Bluefuzz>40</Leather_Bluefuzz>
+              </butcherProducts>
+              <stuffProps>
+                <color>(91,144,155)</color>
+              </stuffProps>
+            </ThingDef>
+          </value>
+        </li>
+
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Baryonyx"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_TheropodBary</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Allosaurus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_TheropodAllo</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Ankylosaurus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_ArmoredDinoAnk</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Minmi"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_ArmoredDinoMin</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Brachiosaurus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_SauropodBra</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Magyarosaurus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_SauropodMag</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Brontosaurus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_SauropodBro</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Diplodocus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_SauropodDip</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Compsognathus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_DinosaurSkinCom</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Dryosaurus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_DinosaurSkinDry</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Protoceratops"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_DinosaurSkinPro</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Corythosaurus"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_DinosaurHideCor</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef [defName="Gigantoraptor"]/lifeStages/li[3]</xpath>
+
+          <value>
+            <butcherBodyPart>
+              <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+              <thing>DankPyon_Hide_DinosaurHideGig</thing>
+              <allowFemale>true</allowFemale>
+            </butcherBodyPart>
+          </value>
+        </li>
+
+      <li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef [defName = "Triceratops"]/lifeStages/li[3]/butcherBodyPart</xpath>
+				<value>
+					<butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_DinosaurHideTri</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef [defName = "Triceratops"]</xpath>
+				<value>
+					<butcherProducts>
+						<TriceratopsHorn>1</TriceratopsHorn>
+					</butcherProducts>
+				</value>
+			</li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Stygimoloch"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_DinosaurHideSty</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Gallimimus"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_DinosaurHideGal</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Pachycephalosaurus"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_DinosaurHidePac</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Iguanodon"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_DinosaurHideIgu</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Stegosaurus"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_DinosaurHideSte</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Parasaur"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_DinosaurHidePar</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Deinocheirus"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_DinosaurFuzz</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Therizinosaurus"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_DinosaurFuzz</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Dakotaraptor"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_RaptorBig</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Utahraptor"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_RaptorBig</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Dilophosaurus"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_RaptorBig</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Velociraptor"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_RaptorSml</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Quetzalcoatlus"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_PterosaurQue</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Pteranodon"]/lifeStages/li[3]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_PterosaurPte</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Yutyrannus"]/lifeStages/li[2]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_BlueFuzz</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef [defName = "TyrannosaurusRex"]/lifeStages/li[3]/butcherBodyPart</xpath>
+				<value>
+					<butcherBodyPart>
+						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+						<thing>DankPyon_Hide_Tyrannosaurus</thing>
+						<allowFemale>true</allowFemale>
+					</butcherBodyPart>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef [defName = "TyrannosaurusRex"]</xpath>
+				<value>
+					<butcherProducts>
+						<TyrannosaurusRexSkull>1</TyrannosaurusRexSkull>
+					</butcherProducts>
+				</value>
+			</li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Spinosaurus"]/lifeStages/li[2]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_Spinosaurus</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef [defName="Carnotaurus"]/lifeStages/li[2]</xpath>
+
+        <value>
+          <butcherBodyPart>
+            <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+            <thing>DankPyon_Hide_Carnotosaurus</thing>
+            <allowFemale>true</allowFemale>
+          </butcherBodyPart>
+        </value>
+      </li>
+      </operations>
+
+
+  </match>
+</Operation>
+</Patch>

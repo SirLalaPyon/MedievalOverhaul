@@ -9,106 +9,80 @@
 			<operations>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef [defName="AEXP_Coyote"]/lifeStages/li[3]</xpath>
-
-					<value>
-						<butcherBodyPart>
-							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-							<thing>DankPyon_Hide_HideLarge</thing>
-							<allowFemale>true</allowFemale>
-						</butcherBodyPart>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
-					  <ThingDef ParentName="DankPyon_HideBaseHuge">
-						<defName>DankPyon_Hide_Giraffe</defName>
-						<label>huge giraffe hide</label>
+					  <ThingDef ParentName="DankPyon_HideBaseMedium">
+						<defName>DankPyon_Hide_Coyote</defName>
+						<label>coyote hide</label>
 						<graphicData>
-						  <color>(251,234,216)</color>
+                            <texPath>Resources/HeavyFurMedium</texPath>
+						  <color>(115,110,100)</color>
 						</graphicData>
 						<statBases>
-						  <MarketValue>288</MarketValue>
-						  <Mass>36</Mass>
+						  <MarketValue>8.1</MarketValue>
 						</statBases>
 						<butcherProducts Inherit="False">
-						  <Leather_Plain>160</Leather_Plain>
+						  <Leather_Plain>27</Leather_Plain>
 						</butcherProducts>
 						<stuffProps>
-							<color>(251,234,216)</color>
+						  <color>(115,110,100)</color>
 						</stuffProps>
 					  </ThingDef>
 					</value>
 				  </li>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef [defName="AEXP_Giraffe"]/lifeStages/li[3]</xpath>
-
+                  <li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
 					<value>
-						<butcherBodyPart>
-							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-							<thing>DankPyon_Hide_Giraffe</thing>
-							<allowFemale>true</allowFemale>
-						</butcherBodyPart>
+					  <ThingDef ParentName="DankPyon_HideBaseLarge">
+						<defName>DankPyon_Hide_Giraffe</defName>
+						<label>giraffe hide</label>
+						<graphicData>
+						  <color>(162,106,57)</color>
+						</graphicData>
+						<statBases>
+						  <MarketValue>288</MarketValue>
+						</statBases>
+						<butcherProducts Inherit="False">
+						  <Leather_Plain>146</Leather_Plain>
+						</butcherProducts>
+						<stuffProps>
+						  <color>(162,106,57)</color>
+						</stuffProps>
+					  </ThingDef>
 					</value>
-				</li>
+				  </li>
 
-				<li Class="PatchOperationAdd">
+                  <li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
 					  <ThingDef ParentName="DankPyon_HideBaseHuge">
-						<defName>DankPyon_Hide_Hippopotamus</defName>
-						<label>huge hippopotamus hide</label>
+						<defName>DankPyon_Hide_Hippo</defName>
+						<label>hippopotamus hide</label>
 						<graphicData>
-							<color>(88,82,102)</color>
+						  <color>(88,82,102)</color>
 						</graphicData>
 						<statBases>
-						  <MarketValue>525.6</MarketValue>
-						  <Mass>36</Mass>
+						  <MarketValue>526.6</MarketValue>
 						</statBases>
 						<butcherProducts Inherit="False">
 						  <AEXP_Leather_Hippopotamus>160</AEXP_Leather_Hippopotamus>
 						</butcherProducts>
 						<stuffProps>
-							<color>(88,82,102)</color>
+						  <color>(88,82,102)</color>
 						</stuffProps>
 					  </ThingDef>
 					</value>
 				  </li>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef [defName="AEXP_Hippopotamus"]/lifeStages/li[3]</xpath>
-
-					<value>
-						<butcherBodyPart>
-							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-							<thing>DankPyon_Hide_Hippopotamus</thing>
-							<allowFemale>true</allowFemale>
-						</butcherBodyPart>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef [defName="AEXP_Zebra"]/lifeStages/li[3]</xpath>
-
-					<value>
-						<butcherBodyPart>
-							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-							<thing>DankPyon_Hide_HideHuge</thing>
-							<allowFemale>true</allowFemale>
-						</butcherBodyPart>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
+                  <li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
 					  <ThingDef ParentName="DankPyon_HideBaseHuge">
 						<defName>DankPyon_Hide_Wildebeest</defName>
-						<label>huge wildebeest hide</label>
+						<label>wildebeest hide</label>
 						<graphicData>
+                            <texPath>Resources/HeavyFurLarge</texPath>
 							<color>(58,58,58)</color>
 						</graphicData>
 						<statBases>
@@ -125,8 +99,124 @@
 					</value>
 				  </li>
 
-				  <li Class="PatchOperationAdd">
-					<xpath>Defs/PawnKindDef [defName="DankPyon_Hide_Wildebeest"]/lifeStages/li[3]</xpath>
+                  <li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					  <ThingDef ParentName="DankPyon_HideBaseLarge">
+						<defName>DankPyon_Hide_Zebra</defName>
+						<label>zebra hide</label>
+						<graphicData>
+                            <texPath>Resources/HideLarge</texPath>
+						  <color>(178,170,158)</color>
+						</graphicData>
+						<statBases>
+						  <MarketValue>8.1</MarketValue>
+						</statBases>
+						<butcherProducts Inherit="False">
+						  <Leather_Plain>60</Leather_Plain>
+						</butcherProducts>
+						<stuffProps>
+						  <color>(178,170,158)</color>
+						</stuffProps>
+					  </ThingDef>
+					</value>
+				  </li>
+
+                  <li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					  <ThingDef ParentName="DankPyon_HideBaseLarge">
+						<defName>DankPyon_Hide_Crocodile</defName>
+						<label>zebra hide</label>
+						<graphicData>
+                            <texPath>Resources/ScaleLarge</texPath>
+						  <color>(101,116,58)</color>
+						</graphicData>
+						<statBases>
+						  <MarketValue>90.72</MarketValue>
+						</statBases>
+						<butcherProducts Inherit="False">
+						  <Leather_Lizard>48</Leather_Lizard>
+						</butcherProducts>
+						<stuffProps>
+						  <color>(101,116,58)</color>
+						</stuffProps>
+					  </ThingDef>
+					</value>
+				  </li>
+
+                  <li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					  <ThingDef ParentName="DankPyon_HideBaseMedium">
+						<defName>DankPyon_Hide_Cheetah</defName>
+						<label>cheetah hide</label>
+						<graphicData>
+						  <color>(162,106,57)</color>
+						</graphicData>
+						<statBases>
+						  <MarketValue>29.2</MarketValue>
+						</statBases>
+						<butcherProducts Inherit="False">
+						  <Leather_Panthera>42</Leather_Panthera>
+						</butcherProducts>
+						<stuffProps>
+						  <color>(162,106,57)</color>
+						</stuffProps>
+					  </ThingDef>
+					</value>
+				  </li>
+
+                  <li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef [defName="AEXP_Coyote"]/lifeStages/li[3]</xpath>
+
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DankPyon_Hide_Coyote</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
+
+                  <li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef [defName="AEXP_Giraffe"]/lifeStages/li[3]</xpath>
+
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DankPyon_Hide_Giraffe</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
+
+                  <li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef [defName="AEXP_Hippopotamus"]/lifeStages/li[3]</xpath>
+
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DankPyon_Hide_Hippo</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
+
+                  <li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef [defName="AEXP_Zebra"]/lifeStages/li[3]</xpath>
+
+					<value>
+						<butcherBodyPart>
+							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+							<thing>DankPyon_Hide_Zebra</thing>
+							<allowFemale>true</allowFemale>
+						</butcherBodyPart>
+					</value>
+				</li>
+
+                  <li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef [defName="AEXP_Wildebeest"]/lifeStages/li[3]</xpath>
 
 					<value>
 						<butcherBodyPart>
@@ -137,25 +227,25 @@
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd">
+                  <li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef [defName="AEXP_Crocodile"]/lifeStages/li[3]</xpath>
 
 					<value>
 						<butcherBodyPart>
 							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-							<thing>DankPyon_Hide_ThickScaleHuge</thing>
+							<thing>DankPyon_Hide_Crocodile</thing>
 							<allowFemale>true</allowFemale>
 						</butcherBodyPart>
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd">
+                  <li Class="PatchOperationAdd">
 					<xpath>Defs/PawnKindDef [defName="AEXP_Cheetah"]/lifeStages/li[3]</xpath>
 
 					<value>
 						<butcherBodyPart>
 							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-							<thing>DankPyon_Hide_HideLarge</thing>
+							<thing>DankPyon_Hide_Cheetah</thing>
 							<allowFemale>true</allowFemale>
 						</butcherBodyPart>
 					</value>

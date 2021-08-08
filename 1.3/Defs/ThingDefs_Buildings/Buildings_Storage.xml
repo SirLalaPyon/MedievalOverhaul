@@ -58,7 +58,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>8</maxNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>
@@ -107,7 +107,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>8</maxNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>
@@ -158,7 +158,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>8</maxNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>
@@ -206,7 +206,108 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>8</maxNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+    <researchPrerequisites Inherit="false">
+    </researchPrerequisites>
+	</ThingDef>
+
+  <!--== Bricks ==-->
+  <ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Bricks1x1c</defName>
+		<label>bricks(1x1)</label>
+		<description>Bricks that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Bricks1x1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+		</graphicData>
+    <uiIconScale>1</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+    
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+          </filter>
+      </fixedStorageSettings>
+    </building>	
+
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+    <researchPrerequisites Inherit="false">
+    </researchPrerequisites>
+	</ThingDef>
+
+  <!--== Bricks ==-->
+  <ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Bricks1x2c</defName>
+		<label>bricks(1x2)</label>
+		<description>Bricks that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Bricks1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+    <uiIconScale>1</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(2,1)</size>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+    
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+          </filter>
+      </fixedStorageSettings>
+    </building>	
+
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>
@@ -225,6 +326,7 @@
 			<texPath>Storage/Bricks2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
+      <drawRotated>false</drawRotated>
 		</graphicData>
     <uiIconScale>1</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -240,7 +342,7 @@
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>135</costStuffCount>
 
     <building>
       <fixedStorageSettings>
@@ -256,7 +358,7 @@
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>
-        <maxNumberStacks>8</maxNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
         <timeStoringTakes>120</timeStoringTakes>
         <showContents>false</showContents>
 		    <overlayType>None</overlayType>

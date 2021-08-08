@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef ParentName="BuildingBase">
+  <!--ThingDef ParentName="BuildingBase">
     <defName>DankPyon_MiningSpot</defName>
     <label>salt mining spot</label>
     <description>A place for mining salt. Production here is slow because of the lack of tools.</description>
@@ -40,7 +40,7 @@
         <li>Production</li>
       </buildingTags>
     </building>
-    <!--comps>
+    <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
@@ -49,14 +49,14 @@
       <li>
         <compClass>CompReportWorkSpeed</compClass>
       </li>
-    </comps-->
+    </comps>
     <designationHotKey>Misc1</designationHotKey>
     <placeWorkers>
-      <!--li>PlaceWorker_ShowFacilitiesConnections</li-->
-      <!--li>PlaceWorker_ReportWorkSpeedPenalties</li-->
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
-  </ThingDef>
+  </ThingDef-->
 
   <ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_ResearchingSpot</defName>
@@ -432,7 +432,7 @@
 	<passability>PassThroughOnly</passability>
 	<pathCost>70</pathCost>
 	<hasInteractionCell>True</hasInteractionCell>
-	<interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 	<surfaceType>Item</surfaceType>
 	<inspectorTabs>
@@ -844,6 +844,7 @@
 
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
         <transfersIngredientLists>false</transfersIngredientLists>
+        <isAutoDropper>true</isAutoDropper>
 				<InsertFirstItemDesc>DankPyon_InsertMeatDesc</InsertFirstItemDesc>
 
 				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>

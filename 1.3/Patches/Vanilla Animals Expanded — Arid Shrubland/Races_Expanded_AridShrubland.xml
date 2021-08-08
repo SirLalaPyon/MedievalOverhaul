@@ -11,16 +11,13 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
-					  <ThingDef ParentName="DankPyon_HideBaseMedium">
+					  <ThingDef ParentName="DankPyon_HideBaseLarge">
 						<defName>DankPyon_Hide_Coyote</defName>
-						<label>coyote hide</label>
+						<label>large coyote hide</label>
 						<graphicData>
-                            <texPath>Resources/HeavyFurMedium</texPath>
+                          <texPath>Resources/HeavyFurLarge</texPath>
 						  <color>(115,110,100)</color>
 						</graphicData>
-						<statBases>
-						  <MarketValue>8.1</MarketValue>
-						</statBases>
 						<butcherProducts Inherit="False">
 						  <Leather_Plain>27</Leather_Plain>
 						</butcherProducts>
@@ -34,9 +31,9 @@
                   <li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
-					  <ThingDef ParentName="DankPyon_HideBaseLarge">
+					  <ThingDef ParentName="DankPyon_HideBaseHuge">
 						<defName>DankPyon_Hide_Giraffe</defName>
-						<label>giraffe hide</label>
+						<label>huge giraffe hide</label>
 						<graphicData>
 						  <color>(162,106,57)</color>
 						</graphicData>
@@ -58,7 +55,7 @@
 					<value>
 					  <ThingDef ParentName="DankPyon_HideBaseHuge">
 						<defName>DankPyon_Hide_Hippo</defName>
-						<label>hippopotamus hide</label>
+						<label>huge hippopotamus hide</label>
 						<graphicData>
 						  <color>(88,82,102)</color>
 						</graphicData>
@@ -80,7 +77,7 @@
 					<value>
 					  <ThingDef ParentName="DankPyon_HideBaseHuge">
 						<defName>DankPyon_Hide_Wildebeest</defName>
-						<label>wildebeest hide</label>
+						<label>huge wildebeest hide</label>
 						<graphicData>
                             <texPath>Resources/HeavyFurLarge</texPath>
 							<color>(58,58,58)</color>
@@ -102,19 +99,15 @@
                   <li Class="PatchOperationAdd">
 					<xpath>Defs</xpath>
 					<value>
-					  <ThingDef ParentName="DankPyon_HideBaseLarge">
+					  <ThingDef ParentName="DankPyon_HideBaseHuge">
 						<defName>DankPyon_Hide_Zebra</defName>
-						<label>zebra hide</label>
+						<label>huge zebra hide</label>
 						<graphicData>
-                            <texPath>Resources/HideLarge</texPath>
 						  <color>(178,170,158)</color>
 						</graphicData>
 						<statBases>
 						  <MarketValue>8.1</MarketValue>
 						</statBases>
-						<butcherProducts Inherit="False">
-						  <Leather_Plain>60</Leather_Plain>
-						</butcherProducts>
 						<stuffProps>
 						  <color>(178,170,158)</color>
 						</stuffProps>
@@ -126,39 +119,17 @@
 					<xpath>Defs</xpath>
 					<value>
 					  <ThingDef ParentName="DankPyon_HideBaseLarge">
-						<defName>DankPyon_Hide_Crocodile</defName>
-						<label>zebra hide</label>
-						<graphicData>
-                            <texPath>Resources/ScaleLarge</texPath>
-						  <color>(101,116,58)</color>
-						</graphicData>
-						<statBases>
-						  <MarketValue>90.72</MarketValue>
-						</statBases>
-						<butcherProducts Inherit="False">
-						  <Leather_Lizard>48</Leather_Lizard>
-						</butcherProducts>
-						<stuffProps>
-						  <color>(101,116,58)</color>
-						</stuffProps>
-					  </ThingDef>
-					</value>
-				  </li>
-
-                  <li Class="PatchOperationAdd">
-					<xpath>Defs</xpath>
-					<value>
-					  <ThingDef ParentName="DankPyon_HideBaseMedium">
 						<defName>DankPyon_Hide_Cheetah</defName>
 						<label>cheetah hide</label>
 						<graphicData>
 						  <color>(162,106,57)</color>
 						</graphicData>
 						<statBases>
-						  <MarketValue>29.2</MarketValue>
+						  <MarketValue>75.6</MarketValue>
+						  <Mass>10.8</Mass>
 						</statBases>
 						<butcherProducts Inherit="False">
-						  <Leather_Panthera>42</Leather_Panthera>
+						  <Leather_Plain>42</Leather_Plain>
 						</butcherProducts>
 						<stuffProps>
 						  <color>(162,106,57)</color>
@@ -233,7 +204,7 @@
 					<value>
 						<butcherBodyPart>
 							<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-							<thing>DankPyon_Hide_Crocodile</thing>
+							<thing>DankPyon_Hide_ThickScaleHuge</thing>
 							<allowFemale>true</allowFemale>
 						</butcherBodyPart>
 					</value>

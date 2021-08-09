@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>DankPyon_Apparel_Brigandine</defName>
+        <label>brigandine</label>
+        <description>Two layers of armor give way to this fantastically protective, yet cumbersome, suit, consisting of internal strong-forged overlapping layers of metal plates riveted to the fabric for protecting vitals and extremities.</description>
+        <graphicData>
+			<texPath>Apparel/HeavyArmor/Brigandine</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+        </recipeMaker>
+
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>170</costStuffCount>
+
+        <statBases>
+            <WorkToMake>38000</WorkToMake>
+            <MaxHitPoints>290</MaxHitPoints>
+            <Mass>15</Mass>
+            <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+
+        <equippedStatOffsets>
+            <MoveSpeed>-0.8</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+				<li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/HeavyArmor/Brigandine</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>DankPyon_Knight</li>
+                <li>DankPyon_HedgeKnight</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+              <li>
+                <weight>10</weight>
+                <only>(0.33,0.33,0.33)</only>
+              </li>
+              <li>
+                <weight>10</weight>
+                <only>(0.65,0.65,0.65)</only>
+              </li>
+              <li>
+                <weight>6</weight>
+                <min>(0.3,0.3,0.3)</min>
+                <max>(0.5,0.5,0.5)</max>
+              </li>
+            </options>
+          </colorGenerator>
+    </ThingDef>
+
 	 <ThingDef ParentName="ArmorSmithableBase">
         <defName>DankPyon_Apparel_CoatOfPlates</defName>
         <label>coat of plates</label>

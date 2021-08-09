@@ -17,4 +17,18 @@
       <iconPath>Resources/HideLarge</iconPath>
     </ThingCategoryDef>
 
+    <ThingCategoryDef>
+      <defName>DankPyon_Handwear</defName>
+      <label>Handwear</label>
+      <parent>Apparel</parent>
+      <iconPath>Apparel/Handwear/GlovesPlate</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>DankPyon_Footwear</defName>
+      <label>Footwear</label>
+      <parent>Apparel</parent>
+      <iconPath>Apparel/Footwear/BootsPlate</iconPath>
+    </ThingCategoryDef>
+
 </Defs>

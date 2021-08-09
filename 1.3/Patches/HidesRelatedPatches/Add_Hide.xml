@@ -634,15 +634,14 @@
 					</butcherProducts>
 				</value>
 			</li>
-			<!-- HumanFlesh CANNOT ADD because humans dont have any attacktools-->
+		
+			<!-- fails for somereason-->
 			<!--li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "Human"]/lifeStages/li[5]</xpath>
+				<xpath>Defs/ThingDef[defName = "Human"]/butcherProducts</xpath>
 				<value>
-					<butcherBodyPart>
-						<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-						<thing>DankPyon_Hide_Human</thing>
-						<allowFemale>true</allowFemale>
-					</butcherBodyPart>
+					<butcherProducts>
+						<DankPyon_Hide_Human>1</DankPyon_Hide_Human>
+					</butcherProducts>
 				</value>
 			</li-->
 		</operations>

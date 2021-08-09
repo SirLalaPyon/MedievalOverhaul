@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<HediffDef>
+		<defName>DankPyon_AteSoup</defName>
+		<label>drank soda</label>
+		<makesSickThought>false</makesSickThought>
+		<description>A burst of sugar enters the bloodstream, providing some short-lived energy. Provides a 5% manipulation buff for 5 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_DrankSoda</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_DrankTea</defName>
+		<label>drank tea</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_DrankTea</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>0.90</restFallFactor>
+				<statOffsets>
+					<ImmunityGainSpeedFactor>0.15</ImmunityGainSpeedFactor>
+
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_TequilaAsIngredient</defName>
+		<label>drank tequila based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a cocktail that had tequila as one of its ingredients. Provides an animal tame chance bonus of 15%.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_TequilaAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<TameAnimalChance>0.15</TameAnimalChance>
+
+				</statOffsets>		
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_WhiskeyAsIngredient</defName>
+		<label>drank whiskey based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a cocktail that had whiskey as one of its ingredients. Provides a shooting accuracy bonus.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_WhiskeyAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<ShootingAccuracyPawn>15</ShootingAccuracyPawn>
+
+				</statOffsets>		
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_VodkaAsIngredient</defName>
+		<label>drank vodka based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a cocktail that had vodka as one of its ingredients. Increases dodge chance by 20%.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_VodkaAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<MeleeDodgeChance>20</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_GinAsIngredient</defName>
+		<label>drank gin based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a cocktail that had gin as one of its ingredients.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_GinAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+<statOffsets>
+					<SocialImpact>0.2</SocialImpact>
+
+				</statOffsets>	
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_AmbrandyAsIngredient</defName>
+		<label>drank ambrandy based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a cocktail that had ambrandy as one of its ingredients.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_AmbrandyAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<MentalBreakThreshold>-15</MentalBreakThreshold>
+				</statOffsets>	
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VBE_RBMeadAsIngredient</defName>
+		<label>drank mead based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a cocktail that had mead as one of its ingredients.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_RBMeadAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<ToxicSensitivity>-0.2</ToxicSensitivity>
+				</statOffsets>	
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VBE_WineAsIngredient</defName>
+		<label>drank wine based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a cocktail that had wine as one of its ingredients. You monster.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_WineAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<vomitMtbDays>0.125</vomitMtbDays>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_ConsumedLuciferiumPowder</defName>
+		<label>consumed luciferium powder (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Luciferium powder is a very finely blended powder made from luciferium. So diluted, the drug won't certainly heal any wounds, but it will reinvigorate its consumer considerably.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_ConsumedLuciferiumPowder</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.95</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.02</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.02</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.02</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.02</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_ConsumedGoStock</defName>
+		<label>consumed go-juice stock (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Go-juice stock is a gelatinized cube of Go-Juice, able to be digested rather than injected. So diluted, the drug won't block so much pain, and combat advantages will be much more subtle.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_ConsumedGoStock</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.9</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.03</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_ConsumedWakeupPowder</defName>
+		<label>consumed wake-up powder (from meal)</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Wake-up powder is a crushed and powdered form of wake-up, surprisingly sweet and sometimes used as a replacement for sugar in desserts or dissolved into a morning espresso. So diluted, the drug won't be as stimulating. Note that, while not addictive, wake-up powder still carries risk (albeit very small) of a heart attack.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_ConsumedWakeupPowder</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>0.95</restFallFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.03</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.03</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+					<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.05</MeditationFocusGain>
+				</statOffsets>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>HeartAttack</hediff>
+						<mtbDays>500</mtbDays>
+						<partsToAffect>
+							<li>Heart</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

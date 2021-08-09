@@ -132,6 +132,35 @@
     <initialResistanceRange>14~22</initialResistanceRange>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+    <defName>DankPyon_Medieval_Bowman</defName>
+    <label>bowman</label>
+    <combatPower>90</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>700</min>
+      <max>1000</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>DankPyon_ArbalesterHelmet</li>
+      <li>DankPyon_Arbalester</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>200</min>
+      <max>400</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>DankPyon_HuntingBow</li>
+      <li>DankPyon_GreatBow</li>
+      <li>DankPyon_Warbow</li>
+    </weaponTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>14~22</initialResistanceRange>
+  </PawnKindDef>
 
   <PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
     <defName>DankPyon_Medieval_Arbalester</defName>
@@ -151,7 +180,7 @@
       <li>DankPyon_Arbalester</li>
     </apparelTags>
     <weaponMoney>
-      <min>150</min>
+      <min>200</min>
       <max>400</max>
     </weaponMoney>
     <weaponTags>

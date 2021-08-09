@@ -90,22 +90,22 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <DankPyon_Medieval_Peasant>10</DankPyon_Medieval_Peasant>
-          <DankPyon_Medieval_Footman>40</DankPyon_Medieval_Footman>
-          <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
-          <DankPyon_Medieval_Arbalester>50</DankPyon_Medieval_Arbalester>
+          <DankPyon_Medieval_Footman>50</DankPyon_Medieval_Footman>
+          <DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+          <DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+          <DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
           <DankPyon_Medieval_Knight>20</DankPyon_Medieval_Knight>
           <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
         </options>
       </li>
-      <li>
-        <!-- Normal fights, ranged only -->
+      <!-- Normal fights, ranged only -->
+      <!--li>
         <kindDef>Combat</kindDef>
         <commonality>30</commonality>
         <options>
           <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
         </options>
-      </li>
+      </li-->
       <li>
         <!-- Normal fights, melee only -->
         <kindDef>Combat</kindDef>
@@ -145,6 +145,7 @@
           <DankPyon_Medieval_Footman>10</DankPyon_Medieval_Footman>
           <DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
           <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+          <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
           <DankPyon_Medieval_Knight>10</DankPyon_Medieval_Knight>
         </guards>
       </li>

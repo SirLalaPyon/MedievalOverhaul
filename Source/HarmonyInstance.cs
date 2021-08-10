@@ -21,12 +21,22 @@ namespace DankPyon
     public static class HarmonyInstance
     {
         public static Dictionary<Thing, PlantExtension> cachedTransparentablePlants = new Dictionary<Thing, PlantExtension>();
+
+        public static Dictionary<HediffDef, StatDef> statMultipliers = new Dictionary<HediffDef, StatDef>();
         static HarmonyInstance()
         {
             var harmony = new Harmony("lalapyhon.rimworld.medievaloverhaul");
             harmony.Patch(AccessTools.Method(typeof(Thing), "ButcherProducts", null, null), null,
                 new HarmonyMethod(typeof(HarmonyInstance), "Thing_MakeButcherProducts_FatAndBone_PostFix", null), null);
             harmony.PatchAll();
+            foreach (var stat in DefDatabase<StatDef>.AllDefs)
+            {
+                var extension = stat.GetModExtension<HediffFallRateMultiplier>();
+                if (extension != null && extension.hediffDef != null)
+                {
+                    statMultipliers[extension.hediffDef] = stat;
+                }
+            }
         }
 
         private static Dictionary<Thing, HashSet<IntVec3>> cachedCells = new Dictionary<Thing, HashSet<IntVec3>>();
@@ -230,5 +240,23 @@ namespace DankPyon
         }
 
         public static bool TryGetArtillery(this Thing thing, out ThingRequestGroup group) => registeredArtillery.TryGetValue(thing.def, out group);
+    }
+
+    public class HediffFallRateMultiplier : DefModExtension
+    {
+        public HediffDef hediffDef;
+    }
+
+    [HarmonyPatch(typeof(HediffComp_SeverityPerDay), "SeverityChangePerDay")]
+    [HarmonyPatch(typeof(HediffComp_Immunizable), "SeverityChangePerDay")]
+    public class HediffComp_Immunizable_Patch
+    {
+        private static void Postfix(HediffComp_SeverityPerDay __instance, ref float __result)
+        {
+            if (HarmonyInstance.statMultipliers.TryGetValue(__instance.Def, out var stat))
+            {
+                __result *= __instance.Pawn.GetStatValue(stat);
+            }
+        }
     }
 }

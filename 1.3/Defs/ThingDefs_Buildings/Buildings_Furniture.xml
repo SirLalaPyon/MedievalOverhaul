@@ -455,6 +455,7 @@
     <graphicData>
       <texPath>Furniture/Candles</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
       <drawRotated>false</drawRotated>
       <damageData>
         <rect>(0.35,0.35,0.3,0.3)</rect>
@@ -521,7 +522,7 @@
         </li>
         <li Class="CompProperties_FireOverlay">
            <fireSize>0.5</fireSize>
-          <offset>(0,0,0.6)</offset>
+          <offset>(0,0,0.7)</offset>
         </li>
         <li Class="CompProperties_MeditationFocus">
           <statDef>MeditationFocusStrength</statDef>
@@ -562,6 +563,7 @@
     <graphicData>
       <texPath>Furniture/CandleStand</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+
       <drawRotated>false</drawRotated>
       <damageData>
         <rect>(0.35,0.35,0.3,0.3)</rect>
@@ -571,7 +573,7 @@
 
     <category>Building</category>
     <rotatable>false</rotatable>
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>4</pathCost>
     <tickerType>Normal</tickerType>
@@ -631,7 +633,7 @@
         </li>
         <li Class="CompProperties_FireOverlay">
            <fireSize>0.5</fireSize>
-          <offset>(0,0,0.7)</offset>
+          <offset>(0,0,0.9)</offset>
         </li>
         <li Class="CompProperties_MeditationFocus">
           <statDef>MeditationFocusStrength</statDef>
@@ -1074,77 +1076,6 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 	</ThingDef>
-
-  <ThingDef ParentName="BenchBase">
-    <defName>DankPyon_RusticHearth</defName>
-    <label>Hearth</label>
-    <thingClass>Building_WorkTable_HeatPush</thingClass>
-    <description>A stone hearth for warmth and a homey atmosphere. Can be used to cook at a reduced speed.</description>
-    <graphicData>
-        <texPath>Furniture/RusticHearth</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <shaderType>CutoutComplex</shaderType>
-        <drawSize>(4,4)</drawSize>
-        <damageData>
-          <cornerTL>Damage/Corner</cornerTL>
-          <cornerTR>Damage/Corner</cornerTR>
-          <cornerBL>Damage/Corner</cornerBL>
-          <cornerBR>Damage/Corner</cornerBR>
-        </damageData>
-      </graphicData>
-    <staticSunShadowHeight>0.3</staticSunShadowHeight>
-      <stuffCategories>
-        <li>Stony</li>
-      </stuffCategories>
-      <costStuffCount>60</costStuffCount>
-    <altitudeLayer>Building</altitudeLayer>
-    <fillPercent>0.5</fillPercent>
-    <useHitPoints>True</useHitPoints>
-    <statBases>
-      <WorkToBuild>2000</WorkToBuild>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
-    </statBases>
-    <size>(2,1)</size>
-    <designationCategory>DankPyon_RusticFurniture</designationCategory>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-    <surfaceType>Item</surfaceType>
-    <inspectorTabs>
-      <li>ITab_Bills</li>
-    </inspectorTabs>
-    <comps>
-        <li Class="CompProperties_Glower">
-          <glowRadius>10</glowRadius>
-          <glowColor>(252,187,113,0)</glowColor>
-        </li>
-        
-        <li Class="CompProperties_Refuelable">
-          <fuelConsumptionRate>100.0</fuelConsumptionRate>
-          <fuelCapacity>50.0</fuelCapacity>
-          <fuelFilter>
-        <thingDefs>
-          <li>WoodLog</li>
-        </thingDefs>
-          </fuelFilter>
-          <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-          <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-        </li>
-        <li Class="CompProperties_HeatPusher">
-          <compClass>CompHeatPusherPowered</compClass>
-          <heatPerSecond>21</heatPerSecond>
-          <heatPushMaxTemperature>28</heatPushMaxTemperature>
-        </li>
-      </comps>
-    <building>
-      <isMealSource>true</isMealSource>
-      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-    </building>
-    </ThingDef>
     
 	<!--============================== Beds ==============================-->
   <ThingDef ParentName="DankPyon_BedWithQualityBase">
@@ -1510,6 +1441,208 @@
     <designationHotKey>Misc3</designationHotKey>
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>DankPyon_WoodBurningStove</defName>
+    <label>wood burning stove</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A small wood burning stove to heat up a small room.</description>
+    <graphicData>
+        <texPath>Furniture/WoodBurningStove</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(2,2)</drawSize>
+        <drawRotated>false</drawRotated>
+        <damageData>
+          <cornerTL>Damage/Corner</cornerTL>
+          <cornerTR>Damage/Corner</cornerTR>
+          <cornerBL>Damage/Corner</cornerBL>
+          <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+      </graphicData>
+      <uiIconScale>1</uiIconScale>
+      <castEdgeShadows>true</castEdgeShadows>
+
+    <stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(1,1)</size>
+    <designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+        <li Class="CompProperties_Glower">
+          <glowRadius>5</glowRadius>
+          <glowColor>(252,187,113,0)</glowColor>
+        </li>
+        
+        <li Class="CompProperties_Refuelable">
+          <fuelConsumptionRate>6</fuelConsumptionRate>
+          <fuelCapacity>30.0</fuelCapacity>
+          <fuelFilter>
+        <thingDefs>
+          <li>WoodLog</li>
+        </thingDefs>
+          </fuelFilter>
+          <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        </li>
+        <li Class="CompProperties_HeatPusher">
+          <compClass>CompHeatPusherPowered</compClass>
+          <heatPerSecond>11</heatPerSecond>
+          <heatPushMaxTemperature>24</heatPushMaxTemperature>
+        </li>
+        <li Class="CompProperties_MeditationFocus">
+          <statDef>MeditationFocusStrength</statDef>
+          <focusTypes><li>Flame</li></focusTypes>
+          <offsets>
+            <li Class="FocusStrengthOffset_Lit">
+              <offset>0.12</offset>
+            </li>
+            <li Class="FocusStrengthOffset_BuildingDefsLit">
+              <defs>
+                <li>Campfire</li>
+                <li>TorchLamp</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              </defs>
+              <offsetPerBuilding>0.02</offsetPerBuilding>
+              <radius>9.9</radius>
+              <maxBuildings>8</maxBuildings>
+              <explanationKey>MeditationFocusPerFlame</explanationKey>
+              <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+            </li>
+          </offsets>
+        </li>
+      </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisites>
+      <li>DankPyon_RusticFurniture</li>
+    </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BenchBase">
+      <defName>DankPyon_RusticHearth</defName>
+      <label>hearth</label>
+      <thingClass>Building_WorkTable_HeatPush</thingClass>
+      <description>A stone hearth for warmth and a homey atmosphere.</description>
+      <graphicData>
+          <texPath>Furniture/RusticHearth</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(4,4)</drawSize>
+          <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+          </damageData>
+        </graphicData>
+      <staticSunShadowHeight>0.3</staticSunShadowHeight>
+        <stuffCategories>
+          <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>60</costStuffCount>
+      <altitudeLayer>Building</altitudeLayer>
+      <fillPercent>0.5</fillPercent>
+      <useHitPoints>True</useHitPoints>
+      <tickerType>Normal</tickerType>
+      <statBases>
+        <WorkToBuild>2000</WorkToBuild>
+        <MaxHitPoints>180</MaxHitPoints>
+        <Flammability>1.0</Flammability>
+        <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+        <Beauty>5</Beauty>
+      </statBases>
+      <size>(2,1)</size>
+      <designationCategory>DankPyon_RusticFurniture</designationCategory>
+      <passability>PassThroughOnly</passability>
+      <pathCost>70</pathCost>
+      <hasInteractionCell>True</hasInteractionCell>
+      <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+      <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+      <surfaceType>Item</surfaceType>
+      <recipes>
+        <li>CookMealSimple</li>
+        <li>CookMealSimpleBulk</li>
+        <li>Make_Pemmican</li>
+        <li>Make_PemmicanBulk</li>
+        <li>BurnApparel</li>
+        <li>BurnWeapon</li>
+        <li>BurnDrugs</li>
+      </recipes>
+      <inspectorTabs>
+        <li>ITab_Bills</li>
+      </inspectorTabs>
+      <comps>
+          <li Class="CompProperties_Glower">
+            <glowRadius>10</glowRadius>
+            <glowColor>(252,187,113,0)</glowColor>
+          </li>
+          
+          <li Class="CompProperties_Refuelable">
+            <fuelConsumptionRate>100.0</fuelConsumptionRate>
+            <fuelCapacity>50.0</fuelCapacity>
+            <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+            </fuelFilter>
+            <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+          </li>
+          <li Class="CompProperties_HeatPusher">
+            <compClass>CompHeatPusherPowered</compClass>
+            <heatPerSecond>21</heatPerSecond>
+            <heatPushMaxTemperature>28</heatPushMaxTemperature>
+          </li>
+          <li Class="CompProperties_MeditationFocus">
+            <statDef>MeditationFocusStrength</statDef>
+            <focusTypes><li>Flame</li></focusTypes>
+            <offsets>
+              <li Class="FocusStrengthOffset_Lit">
+                <offset>0.12</offset>
+              </li>
+              <li Class="FocusStrengthOffset_BuildingDefsLit">
+                <defs>
+                  <li>Campfire</li>
+                  <li>TorchLamp</li>
+                  <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+                </defs>
+                <offsetPerBuilding>0.02</offsetPerBuilding>
+                <radius>9.9</radius>
+                <maxBuildings>8</maxBuildings>
+                <explanationKey>MeditationFocusPerFlame</explanationKey>
+                <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+              </li>
+            </offsets>
+          </li>
+        </comps>
+      <building>
+        <isMealSource>true</isMealSource>
+        <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      </building>
+      <researchPrerequisites>
+        <li>DankPyon_RusticFurniture</li>
+      </researchPrerequisites>
+      </ThingDef>
   
   <!--============================== Animal Beds ==============================-->
   

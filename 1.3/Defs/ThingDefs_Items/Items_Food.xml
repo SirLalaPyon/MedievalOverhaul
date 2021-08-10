@@ -201,6 +201,12 @@
       <tasteThought>DankPyon_AteCheeseSoup</tasteThought>
       <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-30</optimalityOffsetFeedingAnimals> 
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteLavishSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -223,6 +229,12 @@
     <ingestible>
       <preferability>MealFine</preferability>
       <tasteThought>DankPyon_AteBreadSoup</tasteThought>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteFineSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -246,6 +258,12 @@
       <preferability>MealFine</preferability>
 	    <tasteThought>DankPyon_AteHeartyStew</tasteThought>	  
       <optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>	  
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteFineSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -292,6 +310,12 @@
       <preferability>MealFine</preferability>
 	    <tasteThought>DankPyon_AteHuntersStew</tasteThought>
       <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteFineSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -315,6 +339,42 @@
       <preferability>MealFine</preferability>
 	    <tasteThought>DankPyon_AteGrilledCheese</tasteThought>
       <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteFineGrill</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+  <!-- Grilled Sausages -->
+  <ThingDef ParentName="MealCooked">
+    <defName>DankPyon_MealGrilledSausages</defName>
+    <label>Grilled Sausages</label>
+    <description>Seasoned meat with spices encased in a cylindrical manner. Grilled in an open flame to bring out smoky flavors.</description>
+    <graphicData>
+      <texPath>Meal/GrilledSausages</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<MarketValue>15</MarketValue>
+		<Nutrition>0.9</Nutrition>
+		<WorkToMake>150</WorkToMake>	
+		<Mass>0.5</Mass>
+    </statBases>	
+    <ingestible>
+      <tasteThought>DankPyon_AteGrilledSausages</tasteThought>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>18</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteFineGrill</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>  
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -407,6 +467,12 @@
       <preferability>MealFine</preferability>
 	    <tasteThought>DankPyon_AtePumpkinSoup</tasteThought>
       <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteFineSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -455,6 +521,12 @@
     <preferability>MealSimple</preferability>
     <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
     <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+    <outcomeDoers>
+      <li Class="IngestionOutcomeDoer_GiveHediff">
+        <hediffDef>DankPyon_AteSoup</hediffDef>
+        <severity>1</severity>
+      </li>
+    </outcomeDoers>
   </ingestible>
   <rotatable>false</rotatable>
 </ThingDef>
@@ -509,6 +581,12 @@
 	    <tasteThought>DankPyon_AteWeakStew</tasteThought>	 	  
       <optimalityOffsetHumanlikes>18</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -531,30 +609,6 @@
     <ingestible>
       <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
-      <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
-    </ingestible>
-    <rotatable>false</rotatable>
-  </ThingDef>
-
-<!-- Grilled Sausages -->
-  <ThingDef ParentName="MealCooked">
-    <defName>DankPyon_MealGrilledSausages</defName>
-    <label>Grilled Sausages</label>
-    <description>Seasoned meat with spices encased in a cylindrical manner. Grilled in an open flame to bring out smoky flavors.</description>
-    <graphicData>
-      <texPath>Meal/GrilledSausages</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-		<MarketValue>15</MarketValue>
-		<Nutrition>0.9</Nutrition>
-		<WorkToMake>150</WorkToMake>	
-		<Mass>0.5</Mass>
-    </statBases>	
-    <ingestible>
-      <tasteThought>DankPyon_AteGrilledSausages</tasteThought>
-      <preferability>MealSimple</preferability>
-      <optimalityOffsetHumanlikes>18</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
     </ingestible>
     <rotatable>false</rotatable>
@@ -604,6 +658,12 @@
       <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -628,6 +688,12 @@
       <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -675,7 +741,13 @@
       <tasteThought>DankPyon_AteGrilledSkewers</tasteThought>
       <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
-      <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+      <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals> 
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteGrill</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers> 
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -700,6 +772,12 @@
       <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -724,6 +802,12 @@
       <preferability>MealSimple</preferability>
       <optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>  
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>DankPyon_AteSoup</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
     </ingestible>
     <rotatable>false</rotatable>
   </ThingDef>

@@ -135,11 +135,11 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 
-    <!-- ===== Leather Boots ===== -->
+    <!-- ===== Plate Boots ===== -->
     <ThingDef ParentName="ApparelMakeableBase">
 		<defName>DankPyon_Footwear_BootsPlate</defName>
 		<label>plate boots</label>
-		<description>A pair of meticulously crafted plate boots. Offers protection as great as its cost. Wearing plate gloves will reduce the workspeed and shooting accuracy of the pawn.</description>
+		<description>A pair of meticulously crafted plate boots. Offers protection as great as its cost. Wearing plate gloves will reduce movement speed.</description>
 		<graphicData>
 			<texPath>Apparel/Footwear/BootsPlate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

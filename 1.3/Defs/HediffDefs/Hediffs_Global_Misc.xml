@@ -2,6 +2,46 @@
 <Defs>
 
 	<HediffDef>
+		<defName>DankPyon_AteBake</defName>
+		<label>ate bake</label>
+		<makesSickThought>false</makesSickThought>
+		<description>Ate a baked meal, energizing the body. Slighty boosts workspeed and gets the blood pumping.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			  </li>
+		</comps>
+		<stages>
+			<li>  
+				<statOffsets>
+					<HungerRateMultiplier>-0.05</HungerRateMultiplier>					
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.025</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.025</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.01</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
 		<defName>DankPyon_AteGrill</defName>
 		<label>ate grill</label>
 		<makesSickThought>false</makesSickThought>
@@ -14,7 +54,7 @@
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-1</severityPerDay>
+				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
 			  </li>
 		</comps>
@@ -54,7 +94,7 @@
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-1</severityPerDay>
+				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
 			  </li>
 		</comps>
@@ -94,7 +134,7 @@
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-1</severityPerDay>
+				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
 			  </li>
 		</comps>

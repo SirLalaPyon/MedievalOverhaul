@@ -522,7 +522,7 @@
         </li>
         <li Class="CompProperties_FireOverlay">
            <fireSize>0.5</fireSize>
-          <offset>(0,0,0.7)</offset>
+          <offset>(0,0,0.9)</offset>
         </li>
         <li Class="CompProperties_MeditationFocus">
           <statDef>MeditationFocusStrength</statDef>
@@ -1542,7 +1542,7 @@
     <ThingDef ParentName="BenchBase">
       <defName>DankPyon_RusticHearth</defName>
       <label>hearth</label>
-      <thingClass>Building_WorkTable_HeatPush</thingClass>
+      <thingClass>Building_WorkTable</thingClass>
       <description>A stone hearth for warmth and a homey atmosphere.</description>
       <graphicData>
           <texPath>Furniture/RusticHearth</texPath>
@@ -1561,10 +1561,11 @@
           <li>Stony</li>
         </stuffCategories>
         <costStuffCount>60</costStuffCount>
-      <altitudeLayer>Building</altitudeLayer>
+      <altitudeLayer>BuildingOnTop</altitudeLayer>
       <fillPercent>0.5</fillPercent>
       <useHitPoints>True</useHitPoints>
       <tickerType>Normal</tickerType>
+      <drawerType>RealtimeOnly</drawerType>
       <statBases>
         <WorkToBuild>2000</WorkToBuild>
         <MaxHitPoints>180</MaxHitPoints>
@@ -1634,6 +1635,10 @@
               </li>
             </offsets>
           </li>
+          <li Class="CompProperties_FireOverlay">
+            <fireSize>0.5</fireSize>
+           <offset>(0,0,0.7)</offset>
+         </li>
         </comps>
       <building>
         <isMealSource>true</isMealSource>

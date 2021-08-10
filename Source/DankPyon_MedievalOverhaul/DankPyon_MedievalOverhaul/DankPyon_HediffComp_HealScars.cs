@@ -39,7 +39,7 @@ namespace DankPyon
 		{
 			if (base.Pawn.health.hediffSet.hediffs.Where((Hediff hd) => hd.IsPermanent()).TryRandomElement(out var result))
 			{
-				HealthUtility.CureHediff(result);
+				HealthUtility.Cure(result);
 				if (PawnUtility.ShouldSendNotificationAbout(base.Pawn))
 				{
 					Messages.Message("MessagePermanentWoundHealed".Translate(parent.LabelCap, base.Pawn.LabelShort, result.Label, base.Pawn.Named("PAWN")), base.Pawn, MessageTypeDefOf.PositiveEvent);

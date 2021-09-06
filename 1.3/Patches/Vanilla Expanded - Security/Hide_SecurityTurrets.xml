@@ -9,8 +9,11 @@
 		<match Class="PatchOperationSequence">
 		  <success>Normal</success>
 		  <operations>
-
-
+		  
+			<li Class="PatchOperationRemove">
+		  		<xpath>Defs/ThingDef[defName = "VFES_Turret_Ballista" or defName="VFES_Turret_Catapult"]/building/buildingTags</xpath>
+			</li>
+			
 			<li Class="PatchOperationRemove">
 		  		<xpath>Defs/ThingDef[defName = "VFES_Turret_Ballista" or defName="VFES_Turret_Catapult"]/designationCategory</xpath>
 			</li>

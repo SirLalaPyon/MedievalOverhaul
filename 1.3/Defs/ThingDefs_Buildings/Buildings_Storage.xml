@@ -368,7 +368,7 @@
     </researchPrerequisites>
 	</ThingDef>
 
-
+  <!--======================= Resource Barrel ==============================-->
   <!-- ==================== Barrels ==================== -->
   <ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_RusticBarrelClosed</defName>
@@ -396,9 +396,6 @@
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-		<costList>
-			<DankPyon_IronIngot>5</DankPyon_IronIngot>
-		</costList>
 		<costStuffCount>30</costStuffCount>
 
     <comps>
@@ -410,10 +407,9 @@
 		<overlayType>None</overlayType>
       </li>
     </comps>
+    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
 	</ThingDef>
-
-  <!--======================= Resource Barrel ==============================-->
 
   <!--== WoodLog Barrel ==-->
   <ThingDef ParentName="DankPyon_StorageBase" >
@@ -440,7 +436,6 @@
 
     <costList>
       <WoodLog>30</WoodLog>
-      <DankPyon_IronIngot>5</DankPyon_IronIngot>
     </costList>
 
     <building>
@@ -452,7 +447,7 @@
         </filter>
       </fixedStorageSettings>
     </building>	
-    
+    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
     
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
@@ -490,8 +485,8 @@
 
     <costList>
       <WoodLog>30</WoodLog>
-      <DankPyon_IronIngot>5</DankPyon_IronIngot>
     </costList>
+    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -540,8 +535,8 @@
 
     <costList>
       <WoodLog>30</WoodLog>
-      <DankPyon_IronIngot>5</DankPyon_IronIngot>
     </costList>
+    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -590,8 +585,8 @@
 
     <costList>
       <WoodLog>30</WoodLog>
-      <DankPyon_IronIngot>5</DankPyon_IronIngot>
     </costList>
+    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -640,8 +635,8 @@
 
     <costList>
       <WoodLog>30</WoodLog>
-      <DankPyon_IronIngot>5</DankPyon_IronIngot>
     </costList>
+    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -690,8 +685,8 @@
 
     <costList>
       <WoodLog>30</WoodLog>
-      <DankPyon_IronIngot>5</DankPyon_IronIngot>
     </costList>
+    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>

@@ -49,6 +49,7 @@
 		<defName>DankPyon_MakeTanningLiquorFromFood</defName>
 		<label>make tanning liquor from plants</label>
 		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
+		<jobString>Boiling plants into 6 tanning liquor.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -76,6 +77,7 @@
 		<defName>DankPyon_MakeTanningLiquorFromMeat</defName>
 		<label>make tanning liquor from meat</label>
 		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
+		<jobString>Boiling meat into 6 tanning liquor.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -124,6 +126,7 @@
 						<li>DankPyon_Hide_SoftPeltTiny</li>
 						<li>DankPyon_Hide_HeavyPeltTiny</li>
 						<li>DankPyon_Hide_ScaleTiny</li>
+						<li>DankPyon_Hide_ThickScaleTiny</li>
 						<li>DankPyon_Hide_BirdTiny</li>
 					</thingDefs>
 				</filter>
@@ -145,6 +148,7 @@
 				<li>DankPyon_Hide_SoftPeltTiny</li>
 				<li>DankPyon_Hide_HeavyPeltTiny</li>
 				<li>DankPyon_Hide_ScaleTiny</li>
+				<li>DankPyon_Hide_ThickScaleTiny</li>
 				<li>DankPyon_Hide_BirdTiny</li>
 				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
@@ -167,6 +171,7 @@
 						<li>DankPyon_Hide_SoftPeltSmall</li>
 						<li>DankPyon_Hide_HeavyPeltSmall</li>
 						<li>DankPyon_Hide_ScaleSmall</li>
+						<li>DankPyon_Hide_ThickScaleSmall</li>
 						<li>DankPyon_Hide_BirdSmall</li>
 					</thingDefs>
 				</filter>
@@ -188,6 +193,7 @@
 				<li>DankPyon_Hide_SoftPeltSmall</li>
 				<li>DankPyon_Hide_HeavyPeltSmall</li>
 				<li>DankPyon_Hide_ScaleSmall</li>
+				<li>DankPyon_Hide_ThickScaleSmall</li>
 				<li>DankPyon_Hide_BirdSmall</li>
 				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
@@ -210,6 +216,7 @@
 						<li>DankPyon_Hide_SoftPeltMedium</li>
 						<li>DankPyon_Hide_HeavyPeltMedium</li>
 						<li>DankPyon_Hide_ScaleMedium</li>
+						<li>DankPyon_Hide_ThickScaleMedium</li>
 						<li>DankPyon_Hide_BirdMedium</li>
 					</thingDefs>
 				</filter>
@@ -231,6 +238,7 @@
 				<li>DankPyon_Hide_SoftPeltMedium</li>
 				<li>DankPyon_Hide_HeavyPeltMedium</li>
 				<li>DankPyon_Hide_ScaleMedium</li>
+				<li>DankPyon_Hide_ThickScaleMedium</li>
 				<li>DankPyon_Hide_BirdMedium</li>
 				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
@@ -253,6 +261,7 @@
 						<li>DankPyon_Hide_SoftPeltLarge</li>
 						<li>DankPyon_Hide_HeavyPeltLarge</li>
 						<li>DankPyon_Hide_ScaleLarge</li>
+						<li>DankPyon_Hide_ThickScaleLarge</li>
 						<li>DankPyon_Hide_BirdLarge</li>
 
 						<li>DankPyon_Hide_Hyena</li>
@@ -284,6 +293,7 @@
 				<li>DankPyon_Hide_SoftPeltLarge</li>
 				<li>DankPyon_Hide_HeavyPeltLarge</li>
 				<li>DankPyon_Hide_ScaleLarge</li>
+				<li>DankPyon_Hide_ThickScaleLarge</li>
 				<li>DankPyon_Hide_BirdLarge</li>
 				<li>DankPyon_TanningLiquor</li>
 
@@ -316,6 +326,7 @@
 						<li>DankPyon_Hide_SoftPeltHuge</li>
 						<li>DankPyon_Hide_HeavyPeltHuge</li>
 						<li>DankPyon_Hide_ScaleHuge</li>
+						<li>DankPyon_Hide_ThickScaleHuge</li>
 						<li>DankPyon_Hide_BirdHuge</li>
 						
 						<li>DankPyon_Hide_Muffalo</li>
@@ -348,6 +359,7 @@
 				<li>DankPyon_Hide_SoftPeltHuge</li>
 				<li>DankPyon_Hide_HeavyPeltHuge</li>
 				<li>DankPyon_Hide_ScaleHuge</li>
+				<li>DankPyon_Hide_ThickScaleHuge</li>
 				<li>DankPyon_Hide_BirdHuge</li>
 				<li>DankPyon_TanningLiquor</li>
 

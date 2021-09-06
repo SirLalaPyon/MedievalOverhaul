@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DankPyon_DoBillsRusticCookingTable.label>cozinhar refeição</DankPyon_DoBillsRusticCookingTable.label>
+  <DankPyon_DoBillsRusticCookingTable.verb>cozinhar</DankPyon_DoBillsRusticCookingTable.verb>
+  <DankPyon_DoBillsRusticCookingTable.gerund>cozinhando em</DankPyon_DoBillsRusticCookingTable.gerund>
+
+  <DankPyon_DoBillsStewPot.label>cozinhar sopa</DankPyon_DoBillsStewPot.label>
+  <DankPyon_DoBillsStewPot.verb>cozinhar</DankPyon_DoBillsStewPot.verb>
+  <DankPyon_DoBillsStewPot.gerund>cozinhando em</DankPyon_DoBillsStewPot.gerund>
+
+  <DankPyon_DoBillsStoneOven.label>assar massas</DankPyon_DoBillsStoneOven.label>
+  <DankPyon_DoBillsStoneOven.verb>assar</DankPyon_DoBillsStoneOven.verb>
+  <DankPyon_DoBillsStoneOven.gerund>assando em</DankPyon_DoBillsStoneOven.gerund>
+
+  <DankPyon_DoBillsSpinningWheel.label>tecer algodão</DankPyon_DoBillsSpinningWheel.label>
+  <DankPyon_DoBillsSpinningWheel.verb>tecer</DankPyon_DoBillsSpinningWheel.verb>
+  <DankPyon_DoBillsSpinningWheel.gerund>tecendo em</DankPyon_DoBillsSpinningWheel.gerund>
+
+  <DankPyon_DoBillsMillstone.label>moer grãos</DankPyon_DoBillsMillstone.label>
+  <DankPyon_DoBillsMillstone.verb>moer</DankPyon_DoBillsMillstone.verb>
+  <DankPyon_DoBillsMillstone.gerund>moendo em</DankPyon_DoBillsMillstone.gerund>
+
+  <DankPyon_DoBillsGrill.label>grelhar</DankPyon_DoBillsGrill.label>
+  <DankPyon_DoBillsGrill.verb>grelhar</DankPyon_DoBillsGrill.verb>
+  <DankPyon_DoBillsGrill.gerund>grelhando em</DankPyon_DoBillsGrill.gerund>
+
+
+  <!-- WorkGiverDef>
+    <defName>TakeAleOutOfFermentingBarrel</defName>
+    <label>take Ale out of fermenting barrels</label>
+    <giverClass>WorkGiver_TakeAleOutOfFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>take Ale</verb>
+    <gerund>taking Ale from</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef -->
+
+  <DankPyon_DoBillsMineshaft.label>minerar pedra</DankPyon_DoBillsMineshaft.label>
+  <DankPyon_DoBillsMineshaft.verb>minerar</DankPyon_DoBillsMineshaft.verb>
+  <DankPyon_DoBillsMineshaft.gerund>minerando</DankPyon_DoBillsMineshaft.gerund>
+
+  <DankPyon_DoBillsWorkbench.label>criar itens</DankPyon_DoBillsWorkbench.label>
+  <DankPyon_DoBillsWorkbench.verb>criar</DankPyon_DoBillsWorkbench.verb>
+  <DankPyon_DoBillsWorkbench.gerund>criando em</DankPyon_DoBillsWorkbench.gerund>
+
+
+  <!-- WorkGiverDef>
+      <defName>DankPyon_DoBillsDishwasher</defName>
+      <label>wash items</label>
+      <giverClass>WorkGiver_DoBill</giverClass>
+      <workType>Crafting</workType>
+      <priorityInType>80</priorityInType>
+        <fixedBillGiverDefs>
+          <li>DankPyon_Dishwasher</li>
+        </fixedBillGiverDefs>
+      <verb>wash</verb>
+      <gerund>washing at</gerund>
+      <requiredCapacities>
+          <li>Manipulation</li>
+      </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+      </WorkGiverDef -->
+
+  <DankPyon_DoBillsFurnace.label>refinar lingotes</DankPyon_DoBillsFurnace.label>
+  <DankPyon_DoBillsFurnace.verb>refinar</DankPyon_DoBillsFurnace.verb>
+  <DankPyon_DoBillsFurnace.gerund>refinando em</DankPyon_DoBillsFurnace.gerund>
+
+  <DankPyon_DoBillsTanningRack.label>tratar pele</DankPyon_DoBillsTanningRack.label>
+  <DankPyon_DoBillsTanningRack.verb>tratar pele</DankPyon_DoBillsTanningRack.verb>
+  <DankPyon_DoBillsTanningRack.gerund>tratando pele em</DankPyon_DoBillsTanningRack.gerund>
+
+  <DankPyon_DoBillsButcherFlesh.label>esquarteja criatura</DankPyon_DoBillsButcherFlesh.label>
+  <DankPyon_DoBillsButcherFlesh.verb>esquarteja</DankPyon_DoBillsButcherFlesh.verb>
+  <DankPyon_DoBillsButcherFlesh.gerund>esquartejando em</DankPyon_DoBillsButcherFlesh.gerund>
+
+  <DankPyon_DoBillsMakeApparel.label>costurar roupa</DankPyon_DoBillsMakeApparel.label>
+  <DankPyon_DoBillsMakeApparel.verb>costurar</DankPyon_DoBillsMakeApparel.verb>
+  <DankPyon_DoBillsMakeApparel.gerund>costurando em</DankPyon_DoBillsMakeApparel.gerund>
+
+  <DankPyon_DoBillsStonecut.label>cortar bloco de pedra</DankPyon_DoBillsStonecut.label>
+  <DankPyon_DoBillsStonecut.verb>corte de pedra</DankPyon_DoBillsStonecut.verb>
+  <DankPyon_DoBillsStonecut.gerund>cortando bloco de pedra em</DankPyon_DoBillsStonecut.gerund>
+
+  <DankPyon_DoBillsMakeWeapons.label>forjar arma</DankPyon_DoBillsMakeWeapons.label>
+  <DankPyon_DoBillsMakeWeapons.verb>forjar</DankPyon_DoBillsMakeWeapons.verb>
+  <DankPyon_DoBillsMakeWeapons.gerund>forjando em</DankPyon_DoBillsMakeWeapons.gerund>
+
+
+  <!-- WorkGiverDef>
+    <defName>TakeAleOutOfFermentingBarrel</defName>
+    <label>pegar cerveja de barris de fermentação</label>
+    <giverClass>WorkGiver_TakeAleOutOfFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>pegue cerveja</verb>
+    <gerund>pegando cerveja de</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef -->
+  <!-- WorkGiverDef>
+      <defName>DankPyon_DoBillsDishwasher</defName>
+      <label>lavar itens</label>
+      <giverClass>WorkGiver_DoBill</giverClass>
+      <workType>Crafting</workType>
+      <priorityInType>80</priorityInType>
+        <fixedBillGiverDefs>
+          <li>DankPyon_Dishwasher</li>
+        </fixedBillGiverDefs>
+      <verb>lavagem</verb>
+      <gerund>lavando em</gerund>
+      <requiredCapacities>
+          <li>Manipulation</li>
+      </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+      </WorkGiverDef -->
+
+</LanguageData>

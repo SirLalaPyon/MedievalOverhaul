@@ -23,8 +23,8 @@
 			<MaxHitPoints>115</MaxHitPoints>
 			<WorkToMake>1000</WorkToMake>
 			<Mass>0.25</Mass>
-			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1</EquipDelay>
 		</statBases>
@@ -52,6 +52,11 @@
 				<li>DankPyon_Archer</li>
                 <li>DankPyon_Footman</li>
                 <li>DankPyon_Billman</li>
+
+				<li>MedievalBasic</li>
+				<li>MedievalAdvanced</li>
+                <li>MedievalMilitaryBasic</li>
+                <li>MedievalMilitaryDecent</li>
             </tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -59,7 +64,7 @@
 		</apparel>
 
 		<recipeMaker>
-			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
@@ -94,8 +99,8 @@
 			<MaxHitPoints>115</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
 			<Mass>0.5</Mass>
-			<StuffEffectMultiplierArmor>0.63</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierArmor>0.378</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2.5</EquipDelay>
 		</statBases>
@@ -121,6 +126,9 @@
 				<li>DankPyon_MercenaryHeavy</li>
 				<li>DankPyon_Footman</li>
                 <li>DankPyon_Billman</li>
+
+				<li>MedievalMilitaryBasic</li>
+                <li>MedievalMilitaryDecent</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -143,7 +151,7 @@
 
     <!-- ===== Plate Gloves ===== -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>DankPyon_Handwear_PlateGloves</defName>
+		<defName>DankPyon_Handwear_GlovesPlate</defName>
 		<label>plate gloves</label>
 		<description>A pair of meticulously crafted plate gloves. Offers protection as great as its cost. Wearing plate gloves will reduce the workspeed and shooting accuracy of the pawn.</description>
 		<graphicData>
@@ -163,8 +171,8 @@
 			<MaxHitPoints>140</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
 			<Mass>1</Mass>
-			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierArmor>0.438</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2.5</EquipDelay>
 		</statBases>
@@ -188,6 +196,9 @@
 			<tags>
 				<li>DankPyon_Knight</li>
 				<li>DankPyon_HedgeKnight</li>
+
+				<li>MedievalMilitaryAdvanced</li>
+                <li>MedievalPrestigeCombatGear</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

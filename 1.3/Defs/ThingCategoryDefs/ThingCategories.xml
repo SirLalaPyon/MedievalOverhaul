@@ -19,16 +19,23 @@
 
     <ThingCategoryDef>
       <defName>DankPyon_Handwear</defName>
-      <label>Handwear</label>
+      <label>handwear</label>
       <parent>Apparel</parent>
       <iconPath>Apparel/Handwear/GlovesPlate</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
       <defName>DankPyon_Footwear</defName>
-      <label>Footwear</label>
+      <label>footwear</label>
       <parent>Apparel</parent>
       <iconPath>Apparel/Footwear/BootsPlate</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>DankPyon_NonAlcoholic</defName>
+      <label>non-alcoholic</label>
+      <parent>Foods</parent>
+      <iconPath>Drug/Cider/Cider_a</iconPath>
     </ThingCategoryDef>
 
 </Defs>

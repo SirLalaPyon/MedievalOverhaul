@@ -11,11 +11,11 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Plant_Cotton"]</xpath>
+		<xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant</xpath>
 		<value>
-			<researchPrerequisites>
-				<li>DankPyon_Textiles</li>
-			</researchPrerequisites>
+			<sowResearchPrerequisites>
+				<li>DankPyon_TextileSpinning</li>
+			</sowResearchPrerequisites>
 		</value>
 	</Operation>
 
@@ -90,6 +90,23 @@
     			<prerequisites>
     			  <li>DankPyon_ChainArmor</li>
     			</prerequisites>   
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<!-- Replace Plate Armor research-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>Brewing</defName>
+    			<label>brewing</label>
+    			<description>Research the basics of brewing and learn how to make simple alcoholics or concoctions.</description>
+    			<baseCost>400</baseCost>
+				<tab>DankPyon_MedievalResearchTab</tab>
+    			<techLevel>Neolithic</techLevel>
+				<researchViewX>10</researchViewX>
+				<researchViewY>4.2</researchViewY>
 			</ResearchProjectDef>
 		</value>
 	</Operation>

@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<!-- Cheese Presser -->
-	<DankPyon_InsertMilkDesc>Insert milk to press.</DankPyon_InsertMilkDesc>
-	<DankPyon_InsertMilk>Insert Milk</DankPyon_InsertMilk>
-	<DankPyon_InsertMilkVariable>Insert {0}</DankPyon_InsertMilkVariable>
-	<DankPyon_NoMilksFound>No milks found in this map.</DankPyon_NoMilksFound>
-	<DankPyon_SelectMilk>Select a type of milk to be pressed</DankPyon_SelectMilk>
-	<DankPyon_StartInsertionMilk>Bring Milk</DankPyon_StartInsertionMilk>
-	<DankPyon_StartInsertionMilkDesc>Bring milk to the cheese press to start pressing</DankPyon_StartInsertionMilkDesc>
-	<DankPyon_RemoveMilk>Remove Milk</DankPyon_RemoveMilk>
-	<DankPyon_RemoveMilkDesc>Remove the milk from the press. This can only be done before you start pressing it.</DankPyon_RemoveMilkDesc>	
-	<DankPyon_CancelBringingMilk>Cancel Bringing Milk</DankPyon_CancelBringingMilk>
-	<DankPyon_CancelBringingMilkDesc>Cancel bringing milk to the cheese press.</DankPyon_CancelBringingMilkDesc>
-	<DankPyon_WaitTillJobsEndMilk>Wait until the milk has been brought to the cheese press, or cancel the job.</DankPyon_WaitTillJobsEndMilk>
-	<DankPyon_EngageMilk>Press Into Cheese</DankPyon_EngageMilk>
-	<DankPyon_EngageMilkDesc>Start pressing milk. This process takes 5 days and can't be interrupted, or the milk will be destroyed.</DankPyon_EngageMilkDesc>
-	<DankPyon_CheeseFinished>A cheese has finished ripening in the cheese press</DankPyon_CheeseFinished>
-	<DankPyon_CheeseInProgress>A {0} is pressing. It will be ready in {1}</DankPyon_CheeseInProgress>
-	<DankPyon_CheeseReady>A cheese has finished pressing and is waiting for pickup</DankPyon_CheeseReady>
-	<DankPyon_MilkImproperlyDefined>This milk has been improperly defined to work with the cheese press, contact the milk mod's author</DankPyon_MilkImproperlyDefined>
-	<DankPyon_RemoveCheese>Remove Cheese ({0})</DankPyon_RemoveCheese>
-	<DankPyon_RemoveCheeseDesc>Remove cheese from the cheese press.</DankPyon_RemoveCheeseDesc>
+	<!-- Presser -->
+	<DankPyon_InsertResourceDesc>Insert resource to press.</DankPyon_InsertResourceDesc>
+	<DankPyon_InsertResource>Insert Resource</DankPyon_InsertResource>
+	<DankPyon_InsertResourceVariable>Insert {0}</DankPyon_InsertResourceVariable>
+	<DankPyon_NoResourcesFound>No pressable resources found in this map.</DankPyon_NoResourcesFound>
+	<DankPyon_SelectResource>Select a type of resource to be pressed</DankPyon_SelectResource>
+	<DankPyon_StartInsertionResource>Bring Resource</DankPyon_StartInsertionResource>
+	<DankPyon_StartInsertionResourceDesc>Bring resource to the press to start pressing</DankPyon_StartInsertionResourceDesc>
+	<DankPyon_RemoveResource>Remove Resource</DankPyon_RemoveResource>
+	<DankPyon_RemoveResourceDesc>Remove the resource from the press. This can only be done before you start pressing it.</DankPyon_RemoveResourceDesc>	
+	<DankPyon_CancelBringingResource>Cancel Bringing Resource</DankPyon_CancelBringingResource>
+	<DankPyon_CancelBringingResourceDesc>Cancel bringing resource to the press.</DankPyon_CancelBringingResourceDesc>
+	<DankPyon_WaitTillJobsEndResource>Wait until the resource has been brought to the press, or cancel the job.</DankPyon_WaitTillJobsEndResource>
+	<DankPyon_EngageResource>Press Into Resource</DankPyon_EngageResource>
+	<DankPyon_EngageResourceDesc>Start pressing resource. This process takes 5 days and can't be interrupted, or the resource will be destroyed.</DankPyon_EngageResourceDesc>
+	<DankPyon_ResourceFinished>A resource has finished processing in the press</DankPyon_ResourceFinished>
+	<DankPyon_ResourceInProgress>A {0} is pressing. It will be ready in {1}</DankPyon_ResourceInProgress>
+	<DankPyon_ResourceReady>A resource has finished pressing and is waiting for pickup</DankPyon_ResourceReady>
+	<DankPyon_ResourceImproperlyDefined>This resource has been improperly defined to work with the press, contact the resource mod's author</DankPyon_ResourceImproperlyDefined>
+	<DankPyon_RemoveProduct>Remove Product ({0})</DankPyon_RemoveProduct>
+	<DankPyon_RemoveProductDesc>Remove product from the press.</DankPyon_RemoveProductDesc>
 	
-	<DankPyon_CheesePressEmpty>Cheese press is empty right now</DankPyon_CheesePressEmpty>
-	<DankPyon_CheesePressFilled>Cheese press filled with {0}</DankPyon_CheesePressFilled>
-	<DankPyon_CheesePressWorking>Cheese press is working:</DankPyon_CheesePressWorking>
+	<DankPyon_PressEmpty>Press is empty right now</DankPyon_PressEmpty>
+	<DankPyon_PressFilled>Press filled with {0}</DankPyon_PressFilled>
+	<DankPyon_PressWorking>Press is working:</DankPyon_PressWorking>
 	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
 
 	<!-- Smoker -->
@@ -51,7 +51,7 @@
 	
 	<DankPyon_SmokerEmpty>Smoker is empty right now</DankPyon_SmokerEmpty>
 	<DankPyon_SmokerFilled>Smoker filled with {0}</DankPyon_SmokerFilled>
-	<DankPyon_SmokerWorking>Cheese press is working:</DankPyon_SmokerWorking>
+	<DankPyon_SmokerWorking>Smoker is working:</DankPyon_SmokerWorking>
 	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
 
 	<!-- Drying Rack Meat -->
@@ -106,4 +106,15 @@
 	<DankPyon_DryingRackWorking>Drying rack is working:</DankPyon_DryingRackWorking>
 	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
 
+	<!-- Ale -->
+	<DankPyon_InsertAleOrMustDesc>Wort or Must to Insert</DankPyon_InsertAleOrMustDesc>
+	<DankPyon_StartInsertionAleOrMust>Bring Wort or Must</DankPyon_StartInsertionAleOrMust>
+	<DankPyon_StartInsertionAleOrMustDesc>Bring wort or must to the fermenting barrel to start fermentation</DankPyon_StartInsertionAleOrMustDesc>
+	<DankPyon_CancelBringingAleOrMust>Cancel Bringing Wort or Must</DankPyon_CancelBringingAleOrMust>
+	<DankPyon_CancelBringingAleOrMustDesc>Cancel bringing wort or must must to the fermenting barrel.</DankPyon_CancelBringingAleOrMustDesc>
+
+	<DankPyon_JuiceAppleMaturing>Apple juice is maturing</DankPyon_JuiceAppleMaturing>
+	<DankPyon_JuiceAppleCurrentlyFrozen>This unfermented apple juice is frozen and will not mature into cider</DankPyon_JuiceAppleCurrentlyFrozen>
+	<DankPyon_JuiceAppleCurrentlyRefrigerated>This unfermented apple juice is refrigerated and will not mature into cider as fast as it could (matures in {0})</DankPyon_JuiceAppleCurrentlyRefrigerated>
+	<DankPyon_JuiceAppleMaturingCorrectly>This unfermented apple juice is maturing into cider correctly (matures in {0})</DankPyon_JuiceAppleMaturingCorrectly>
 </LanguageData>

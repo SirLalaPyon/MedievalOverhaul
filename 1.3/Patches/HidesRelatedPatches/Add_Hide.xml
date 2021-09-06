@@ -635,6 +635,7 @@
 				</value>
 			</li>
 		
+		
 			<!-- fails for somereason-->
 			<!--li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "Human"]/butcherProducts</xpath>
@@ -646,6 +647,31 @@
 			</li-->
 		</operations>
 	</Operation>
+	
+	<!-- fix by v3rv41n-->
+	<Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+          <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName = "Human"]/butcherProducts</xpath>
+              <success>Invert</success>
+          </li>
+
+          <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName = "Human"]</xpath>
+              <value>
+                  <butcherProducts/>
+              </value>
+          </li>
+      </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "Human"]/butcherProducts</xpath>
+		<value>
+			<DankPyon_Hide_Human>1</DankPyon_Hide_Human>
+		</value>
+  </Operation>
 	
 	<!-- Change the leather amounts on the following creatures. First we remove this tag in case some other mod may have added it -->
 	<Operation Class="PatchOperationRemove">

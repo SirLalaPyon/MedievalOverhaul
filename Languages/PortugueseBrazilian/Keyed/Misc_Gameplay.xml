@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Cheese Presser -->
+  <DankPyon_InsertMilkDesc>Insira o leite no processador.</DankPyon_InsertMilkDesc>
+  <DankPyon_InsertMilk>Inserir leite</DankPyon_InsertMilk>
+  <DankPyon_InsertMilkVariable>Insira {0}</DankPyon_InsertMilkVariable>
+  <DankPyon_NoMilksFound>Nenhum leite encontrado neste mapa.</DankPyon_NoMilksFound>
+  <DankPyon_SelectMilk>Selecione um tipo de leite no processador</DankPyon_SelectMilk>
+  <DankPyon_StartInsertionMilk>Trazer o leite</DankPyon_StartInsertionMilk>
+  <DankPyon_StartInsertionMilkDesc>Leve o leite para o processador de queijo para começar.</DankPyon_StartInsertionMilkDesc>
+  <DankPyon_RemoveMilk>Remova o leite</DankPyon_RemoveMilk>
+  <DankPyon_RemoveMilkDesc>Retira o leite do processador. Isso só pode ser feito antes de você começar a processa-lo.</DankPyon_RemoveMilkDesc>
+  <DankPyon_CancelBringingMilk>Cancelar transporte do Leite</DankPyon_CancelBringingMilk>
+  <DankPyon_CancelBringingMilkDesc>Cancele o transporte do leite para o processador de queijo.</DankPyon_CancelBringingMilkDesc>
+  <DankPyon_WaitTillJobsEndMilk>Espere até que o leite seja transportado para o processador de queijo ou cancele o trabalho.</DankPyon_WaitTillJobsEndMilk>
+  <DankPyon_EngageMilk>Transforma em queijo</DankPyon_EngageMilk>
+  <DankPyon_EngageMilkDesc>Comece a processar o leite. Este processo leva 5 dias e não pode ser interrompido, ou o leite será destruído.</DankPyon_EngageMilkDesc>
+  <DankPyon_CheeseFinished>O queijo terminou de ser processado no processador</DankPyon_CheeseFinished>
+  <DankPyon_CheeseInProgress>Um {0} está processando. Estará pronto em {1}</DankPyon_CheeseInProgress>
+  <DankPyon_CheeseReady>Um queijo acabou de ser processado e está esperando para ser retirado</DankPyon_CheeseReady>
+  <DankPyon_MilkImproperlyDefined>Este leite foi não foi definido para funcionar com o processador de queijo, entre em contato com o autor do mod do leite</DankPyon_MilkImproperlyDefined>
+  <DankPyon_RemoveCheese>Remova o queijo ({0})</DankPyon_RemoveCheese>
+  <DankPyon_RemoveCheeseDesc>Recolher o queijo.</DankPyon_RemoveCheeseDesc>
+
+  <DankPyon_CheesePressEmpty>Processador de queijo está vazio agora</DankPyon_CheesePressEmpty>
+  <DankPyon_CheesePressFilled>Processador de queijo esta cheio de {0}</DankPyon_CheesePressFilled>
+  <DankPyon_CheesePressWorking>Processador de queijo está funcionando:</DankPyon_CheesePressWorking>
+  <DankPyon_ResourcePercentage>({0} de {1})</DankPyon_ResourcePercentage>
+
+  <!-- Smoker -->
+  <DankPyon_InsertMeatDesc>Insira a carne para secar.</DankPyon_InsertMeatDesc>
+  <DankPyon_InsertMeat>Inserir Carne</DankPyon_InsertMeat>
+  <DankPyon_InsertMeatVariable>Insira {0}</DankPyon_InsertMeatVariable>
+  <DankPyon_NoMeatsFound>Nenhuma carne encontrada neste mapa.</DankPyon_NoMeatsFound>
+  <DankPyon_SelectMeat>Selecione um tipo de carne para secar</DankPyon_SelectMeat>
+  <DankPyon_StartInsertionMeat>Trazer carne</DankPyon_StartInsertionMeat>
+  <DankPyon_StartInsertionMeatDesc>Leve a carne para o secador de carne para começar a secar</DankPyon_StartInsertionMeatDesc>
+  <DankPyon_RemoveMeat>Remover Carne</DankPyon_RemoveMeat>
+  <DankPyon_RemoveMeatDesc>Retire a carne do secador. Isso só pode ser feito antes de começar a secar.</DankPyon_RemoveMeatDesc>
+  <DankPyon_CancelBringingMeat>Cancelar Transporte de Carne</DankPyon_CancelBringingMeat>
+  <DankPyon_CancelBringingMeatDesc>Cancele o transporte de carne para o secador de carnes.</DankPyon_CancelBringingMeatDesc>
+  <DankPyon_WaitTillJobsEndMeat>Espere até que a carne seja levada para o secador de carnes ou cancele o trabalho.</DankPyon_WaitTillJobsEndMeat>
+  <DankPyon_EngageMeat>Conservar a carne</DankPyon_EngageMeat>
+  <DankPyon_EngageMeatDesc>Comece a secar a carne. Esse processo leva um dia e não pode ser interrompido, ou a carne será destruída.</DankPyon_EngageMeatDesc>
+  <DankPyon_SmokedMeatFinished>Carnes defumadas terminaram de conservar no defumador</DankPyon_SmokedMeatFinished>
+  <DankPyon_SmokedMeatInProgress>Um {0} está sendo defumado. Estará pronto em {1}</DankPyon_SmokedMeatInProgress>
+  <DankPyon_SmokedMeatReady>Carnes terminaram de defumar e estão esperando para serem retiradas</DankPyon_SmokedMeatReady>
+  <DankPyon_MeatImproperlyDefined>Este feno não foi definido para funcionar com a prateleira de pratos, entre em contato com o autor do mod do feno</DankPyon_MeatImproperlyDefined>
+  <DankPyon_RemoveSmokedMeat>Recolher carne defumada ({0})</DankPyon_RemoveSmokedMeat>
+
+  <DankPyon_SmokerEmpty>O defumador está vazio agora</DankPyon_SmokerEmpty>
+  <DankPyon_SmokerFilled>Defumador esta cheio de {0}</DankPyon_SmokerFilled>
+  <DankPyon_SmokerWorking>Processador de queijo está funcionando:</DankPyon_SmokerWorking>
+  <DankPyon_ResourcePercentage>({0} de {1})</DankPyon_ResourcePercentage>
+
+  <!-- Drying Rack Meat -->
+  <DankPyon_InsertMeatDesc>Insira a carne para secar.</DankPyon_InsertMeatDesc>
+  <DankPyon_InsertMeat>Inserir Carne</DankPyon_InsertMeat>
+  <DankPyon_InsertMeatVariable>Insira {0}</DankPyon_InsertMeatVariable>
+  <DankPyon_NoMeatsFound>Nenhuma carne encontrada neste mapa.</DankPyon_NoMeatsFound>
+  <DankPyon_SelectMeat>Selecione um tipo de carne para secar</DankPyon_SelectMeat>
+  <DankPyon_StartInsertionMeat>Trazer carne</DankPyon_StartInsertionMeat>
+  <DankPyon_StartInsertionMeatDesc>Leve a carne para o secador de carne para começar a secar</DankPyon_StartInsertionMeatDesc>
+  <DankPyon_RemoveMeat>Remover Carne</DankPyon_RemoveMeat>
+  <DankPyon_RemoveMeatDesc>Retire a carne do secador. Isso só pode ser feito antes de começar a secar.</DankPyon_RemoveMeatDesc>
+  <DankPyon_CancelBringingMeat>Cancelar Transporte de Carne</DankPyon_CancelBringingMeat>
+  <DankPyon_CancelBringingMeatDesc>Cancele o transporte de carne para o secador de carnes.</DankPyon_CancelBringingMeatDesc>
+  <DankPyon_WaitTillJobsEndMeat>Espere até que a carne seja levada para o secador de carnes ou cancele o trabalho.</DankPyon_WaitTillJobsEndMeat>
+  <DankPyon_EngageMeat>Conservar a carne</DankPyon_EngageMeat>
+  <DankPyon_EngageMeatDesc>Comece a secar a carne. Esse processo leva um dia e não pode ser interrompido, ou a carne será destruída.</DankPyon_EngageMeatDesc>
+  <DankPyon_DriedMeatFinished>Carnes secas terminaram de secar no secador</DankPyon_DriedMeatFinished>
+  <DankPyon_DriedMeatInProgress>Um {0} está secando. Estará pronto em {1}</DankPyon_DriedMeatInProgress>
+  <DankPyon_DriedMeatReady>As carnes terminaram de secar e estão esperando para serem recolhidas</DankPyon_DriedMeatReady>
+  <DankPyon_MeatImproperlyDefined>Este feno nçao foi definido para funcionar com a prateleira de pratos, entre em contato com o autor do mod do feno</DankPyon_MeatImproperlyDefined>
+  <DankPyon_RemoveDriedMeat>Recolher carne seca ({0})</DankPyon_RemoveDriedMeat>
+
+  <DankPyon_DryingRackEmpty>O secador de carne está vazio agora</DankPyon_DryingRackEmpty>
+  <DankPyon_DryingRackFilled>Secador de carne está cheio com {0}</DankPyon_DryingRackFilled>
+  <DankPyon_DryingRackWorking>O secador de carne está funcionando:</DankPyon_DryingRackWorking>
+  <DankPyon_ResourcePercentage>({0} de {1})</DankPyon_ResourcePercentage>
+
+  <!-- Hay Rack Meat -->
+  <DankPyon_InsertHayDesc>Insira o feno para secar.</DankPyon_InsertHayDesc>
+  <DankPyon_InsertHay>Inserir feno</DankPyon_InsertHay>
+  <DankPyon_InsertHayVariable>Insira {0}</DankPyon_InsertHayVariable>
+  <DankPyon_NoHayFound>Nenhum feno encontrado neste mapa.</DankPyon_NoHayFound>
+  <DankPyon_SelectHay>Selecione o feno para secar</DankPyon_SelectHay>
+  <DankPyon_StartInsertionHay>Trazer feno</DankPyon_StartInsertionHay>
+  <DankPyon_StartInsertionHayDesc>Leve o feno para o suporte para começar a secar</DankPyon_StartInsertionHayDesc>
+  <DankPyon_RemoveHay>Remover feno</DankPyon_RemoveHay>
+  <DankPyon_RemoveHayDesc>Remova o feno do suporte. Isso só pode ser feito antes de começar a secar.</DankPyon_RemoveHayDesc>
+  <DankPyon_CancelBringingHay>Cancelar transporte de feno</DankPyon_CancelBringingHay>
+  <DankPyon_CancelBringingHayDesc>Cancele o transporte de feno para o suporte.</DankPyon_CancelBringingHayDesc>
+  <DankPyon_WaitTillJobsEndHay>Espere até que o feno seja levado para o suporte de secagem ou cancele o trabalho.</DankPyon_WaitTillJobsEndHay>
+  <DankPyon_EngageHay>Secar a palha</DankPyon_EngageHay>
+  <DankPyon_EngageHayDesc>Comece a secar o feno. Este processo leva 3 dias.</DankPyon_EngageHayDesc>
+  <DankPyon_StrawFinished>A palha terminou de secar no suporte</DankPyon_StrawFinished>
+  <DankPyon_StrawInProgress>Um {0} está secando. Estará pronto em {1}</DankPyon_StrawInProgress>
+  <DankPyon_StrawReady>O feno terminou de secar e está esperando a coleta</DankPyon_StrawReady>
+  <DankPyon_MeatImproperlyDefined>Este feno nãoo foi definido para funcionar com o suporte de feno, entre em contato com o autor do mod do feno</DankPyon_MeatImproperlyDefined>
+  <DankPyon_RemoveStraw>Recolher palha ({0})</DankPyon_RemoveStraw>
+
+  <DankPyon_DryingRackEmpty>O secador de carne está vazio agora</DankPyon_DryingRackEmpty>
+  <DankPyon_DryingRackFilled>Secador de carne está cheio com {0}</DankPyon_DryingRackFilled>
+  <DankPyon_DryingRackWorking>O secador de carne está funcionando:</DankPyon_DryingRackWorking>
+  <DankPyon_ResourcePercentage>({0} de {1})</DankPyon_ResourcePercentage>
+
+</LanguageData>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Basic domestic furniture -->
+
+  <DankPyon_RusticStool.label>banquinho redondo rústico</DankPyon_RusticStool.label>
+  <DankPyon_RusticStool.description>A simple platform on which to sit. Not very comfortable, but much better than nothing.Commonly seen at taverns and inns. Can be used at tables, work stations, and elsewhere.</DankPyon_RusticStool.description>
+
+  <DankPyon_RusticChair.label>cadeira rústica</DankPyon_RusticChair.label>
+  <DankPyon_RusticChair.description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</DankPyon_RusticChair.description>
+
+  <DankPyon_RusticEndTable.label>mesa de cabeceira rústica</DankPyon_RusticEndTable.label>
+  <DankPyon_RusticEndTable.description>Uma pequena mesa de cabeceira que torna as camas próximas um pouco mais confortáveis. Deve ser colocado diretamente ao lado da cabeceira da cama. Colocar mais de uma perto da mesma cama não tem efeito.</DankPyon_RusticEndTable.description>
+
+  <DankPyon_RusticTable1x2c.label>mesa (1x2)</DankPyon_RusticTable1x2c.label>
+  <DankPyon_ReinforcedRusticTable1x2c.label>mesa (1x2)</DankPyon_ReinforcedRusticTable1x2c.label>
+  <DankPyon_RusticTable2x2c.label>mesa (2x2)</DankPyon_RusticTable2x2c.label>
+  <DankPyon_ReinforcedRusticTable2x2c.label>mesa reforçada (2x2)</DankPyon_ReinforcedRusticTable2x2c.label>
+  <DankPyon_RusticRoundTable2x2c.label>mesa redonda (2x2)</DankPyon_RusticRoundTable2x2c.label>
+  <DankPyon_Table2x4c.label>mesa (2x4)</DankPyon_Table2x4c.label>
+  <DankPyon_ReinforcedTable2x4c.label>mesa reforçada (2x4)</DankPyon_ReinforcedTable2x4c.label>
+
+
+  <!-- ThingDef ParentName="DankPyon_BuildingBase">
+		<defName>DankPyon_RusticCandles</defName>
+		<label>candelabro</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>Uma vela para evitar que a escuridão se infiltre em seu quarto.</description>
+		<graphicData>
+			<texPath>Furniture/RusticCandle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>			
+		</graphicData>
+		<uiIconPath>Furniture/RusticCandle_MenuIcon</uiIconPath>
+		<costList>
+			<WoodLog>10</WoodLog>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+		</costList>
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>		
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>75</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.2</Mass>	  
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>0.5</heatPerSecond>
+				<heatPushMaxTemperature>5</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+	</ThingDef -->
+
+  <DankPyon_Candles.label>vela</DankPyon_Candles.label>
+  <DankPyon_Candles.description>Uma vela para evitar que a escuridão se infiltre em seu quarto. Pode ser reabastecido com gordura animal ou sebo.</DankPyon_Candles.description>
+  <DankPyon_Candles_Blueprint.label>Candles (blueprint)</DankPyon_Candles_Blueprint.label>
+  <DankPyon_Candles_Blueprint_Install.label>Candles (blueprint)</DankPyon_Candles_Blueprint_Install.label>
+  <DankPyon_Candles_Frame.label>Candles (building)</DankPyon_Candles_Frame.label>
+  <DankPyon_Candles_Frame.description>Uma vela para evitar que a escuridão se infiltre em seu quarto. Pode ser reabastecido com gordura animal ou sebo.</DankPyon_Candles_Frame.description>
+
+
+  <!-- Storage (Chest) -->
+
+  <DankPyon_RusticChest.label>baú</DankPyon_RusticChest.label>
+  <DankPyon_RusticChest.description>Um baú de madeira confiável para guardar seus pertences pessoais. Os itens armazenados nele não afetarão a beleza do ambiente e não se deteriorarão, mesmo se estiverem do lado de fora. Vários baús não acumulam bônus de conforto.</DankPyon_RusticChest.description>
+
+  <DankPyon_MetalStrongbox.label>cofre de metal</DankPyon_MetalStrongbox.label>
+  <DankPyon_MetalStrongbox.description>Um cofre de metal confiável para guardar seus pertences pessoais. Os itens armazenados nele não afetarão a beleza do ambiente e não se deteriorarão, mesmo que sejam do lado de fora. Vários baús não acumulam bônus de conforto.</DankPyon_MetalStrongbox.description>
+
+  <DankPyon_RoyalChest.label>baú real</DankPyon_RoyalChest.label>
+  <DankPyon_RoyalChest.description>Um baú real ornamentada pelos nobres. Os itens armazenados nele não afetarão a beleza do ambiente e não se deteriorarão, mesmo se estiverem do lado de fora. Vários baús não acumulam bônus de conforto.</DankPyon_RoyalChest.description>
+
+
+  <!-- Dressers -->
+
+  <DankPyon_RusticDresser.label>cômoda</DankPyon_RusticDresser.label>
+  <DankPyon_RusticDresser.description>Uma cômoda. Oferece um pequeno bônus de conforto para todas as camas próximas. Colocar mais de uma cômoda perto da mesma cama não tem efeito.</DankPyon_RusticDresser.description>
+
+
+  <!-- Closet -->
+
+  <DankPyon_RusticCloset.label>armário</DankPyon_RusticCloset.label>
+  <DankPyon_RusticCloset.description>Um armário para guardar roupas com eficiência e beleza. Coloque perto de camas para um leve bônus de conforto</DankPyon_RusticCloset.description>
+
+
+  <!-- Bookshelf -->
+
+  <DankPyon_RusticBookshelf.label>estante de livros</DankPyon_RusticBookshelf.label>
+  <DankPyon_RusticBookshelf.description>Aumenta a velocidade de pesquisa quando colocado perto da mesa de pesquisa. Cada bancada de pesquisa pode usar duas estantes.</DankPyon_RusticBookshelf.description>
+
+  <DankPyon_RusticHearth.label>lareira</DankPyon_RusticHearth.label>
+  <DankPyon_RusticHearth.description>Uma lareira de pedra para o calor e uma atmosfera caseira. Pode ser usado para cozinhar em velocidade reduzida.</DankPyon_RusticHearth.description>
+
+
+  <!-- Beds -->
+
+  <DankPyon_BedWicker.label>cama de vimeiro</DankPyon_BedWicker.label>
+  <DankPyon_BedWicker.description>Uma cama de vimeiro, simples e rápida de fazer.</DankPyon_BedWicker.description>
+
+  <DankPyon_BedWickerDouble.label>cama de casal de vimeiro</DankPyon_BedWickerDouble.label>
+  <DankPyon_BedWickerDouble.description>Uma cama de vimeiro, simples e rápida de fazer.</DankPyon_BedWickerDouble.description>
+
+  <DankPyon_StrawBed.label>cama de palha</DankPyon_StrawBed.label>
+  <DankPyon_StrawBed.description>Uma cama de vime simples e rápida de fazer, forrada com palha para maior conforto.</DankPyon_StrawBed.description>
+
+  <DankPyon_StrawBedDouble.label>cama de casal de palha</DankPyon_StrawBedDouble.label>
+  <DankPyon_StrawBedDouble.description>Uma cama de vime simples e rápida de fazer, forrada com palha para maior conforto.</DankPyon_StrawBedDouble.description>
+
+  <DankPyon_BedFur.label>cama de pele</DankPyon_BedFur.label>
+  <DankPyon_BedFur.description>Uma cama aconchegante feita com pedaços de pele macia e confortável.</DankPyon_BedFur.description>
+
+  <DankPyon_BedFurDouble.label>cama de casal de pele</DankPyon_BedFurDouble.label>
+  <DankPyon_BedFurDouble.description>Uma acolhedora cama de casal larga que acomoda duas pessoas.</DankPyon_BedFurDouble.description>
+
+
+  <!-- ThingDef ParentName="DankPyon_BuildingBase">
+		<defName>DankPyon_RusticCandles</defName>
+		<label>velas</label>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<clearBuildingArea>false</clearBuildingArea>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<description>Uma vela para evitar que a escuridão se infiltre em seu quarto.</description>
+		<graphicData>
+			<texPath>Furniture/RusticCandle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>			
+		</graphicData>
+		<uiIconPath>Furniture/RusticCandle_MenuIcon</uiIconPath>
+		<costList>
+			<WoodLog>10</WoodLog>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+		</costList>
+		<rotatable>false</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<passability>Standable</passability>
+		<pathCost>8</pathCost>		
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<WorkToBuild>75</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.2</Mass>	  
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>0.5</heatPerSecond>
+				<heatPushMaxTemperature>5</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+	</ThingDef -->
+
+</LanguageData>

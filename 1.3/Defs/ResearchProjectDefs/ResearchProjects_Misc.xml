@@ -72,7 +72,7 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
-    <defName>DankPyon_Textiles</defName>
+    <defName>DankPyon_TextileSpinning</defName>
     <label>textile spinning</label>
     <description>Learn how to plant cotton and harvest them to tailor clothing.</description>
     <baseCost>600</baseCost>
@@ -97,6 +97,17 @@
     </tags>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0.7</researchViewY>       
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Presser</defName>
+    <label>presser</label>
+    <description>Contstruct a pressing machine to press the juices out of fruits or whey from curds.</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.4</researchViewY>  
   </ResearchProjectDef>
 
   <!--=========================== Engineering ==============================-->
@@ -216,6 +227,60 @@
     </prerequisites>    
   </ResearchProjectDef>
 
+  <!--=========================== Alcoholics ==============================-->
+  <!--ResearchProjectDef>
+    <defName>DankPyon_Brewing</defName>
+    <label>rustic brewing</label>
+    <description>Research the basics of brewing and learn how to make simple alcoholics or concoctions.</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Neolithic</techLevel>
+		<researchViewX>10</researchViewX>
+		<researchViewY>4.2</researchViewY>  
+  </ResearchProjectDef-->
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BrewingCider</defName>
+    <label>cider</label>
+    <description>Ale is made from fermented malted grains. Gives of a fruity and rich flavor.</description>
+    <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>11</researchViewX>
+		<researchViewY>4.6</researchViewY>  
+    <prerequisites>
+      <li>Brewing</li>
+    </prerequisites>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BrewingAle</defName>
+    <label>ale</label>
+    <description>Ale is made from fermented malted grains. Gives of a fruity and rich flavor.</description>
+    <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>12</researchViewX>
+		<researchViewY>4.6</researchViewY>  
+    <prerequisites>
+      <li>Brewing</li>
+    </prerequisites>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_BrewingWine</defName>
+    <label>wine</label>
+    <description>Wine is made from fermented pressed grapes. A drink that symbolizes nobility.</description>
+    <baseCost>500</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>13</researchViewX>
+		<researchViewY>4.6</researchViewY>  
+    <prerequisites>
+      <li>Brewing</li>
+    </prerequisites>  
+  </ResearchProjectDef>
+
   <!--=========================== Apparel ==============================-->
   <ResearchProjectDef>
     <defName>DankPyon_Tailoring</defName>
@@ -276,7 +341,7 @@
     <defName>DankPyon_WarBow</defName>
     <label>war bow</label>
     <description>Craft the ultimate longbow, dangerous especially at long range</description>
-    <baseCost>500</baseCost>
+    <baseCost>700</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>8</researchViewX>
@@ -711,7 +776,7 @@
     </prerequisites>   
   </ResearchProjectDef>
   
-  <ResearchProjectDef>
+  <!--ResearchProjectDef>
     <defName>DankPyon_CheeseMaking</defName>
     <label>cheese making</label>
     <description>Learn how to make a cheese press to produce cheese from milk.</description>
@@ -723,7 +788,7 @@
     <prerequisites>
       <li>DankPyon_FoodPreservation</li>
     </prerequisites>   
-  </ResearchProjectDef>
+  </ResearchProjectDef-->
 
   <ResearchProjectDef>
     <defName>DankPyon_Smoker</defName>
@@ -733,7 +798,7 @@
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
 		<researchViewX>3</researchViewX>
-		<researchViewY>5.3</researchViewY>
+		<researchViewY>4.2</researchViewY>
     <prerequisites>
       <li>DankPyon_FoodPreservation</li>
     </prerequisites>    

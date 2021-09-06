@@ -21,7 +21,6 @@
 
 	<!-- ======= Drinks based thoughts ========= -->
 
-
 	<ThoughtDef>	
 		<defName>DankPyon_DrankAle</defName>
 		<showBubble>true</showBubble>
@@ -31,12 +30,25 @@
 			<li>
 				<label>Good ol' Ale</label>
 				<description>Nothing like good Ale to keep the horrors out of my mind.</description>
-				<baseMoodEffect>6</baseMoodEffect>
+				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>	
-		
 	</ThoughtDef>
 	
+	<ThoughtDef>	
+		<defName>DankPyon_DrankWine</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.4</durationDays>
+		<stages>
+			<li>
+				<label>classy wine</label>
+				<description>Makes me feel like a noble... and maybe think like one.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+
 	<!-- ======= Food Quality Thoughts ========= -->
 	<!-- Hearty Stew -->
 	<ThoughtDef>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_MiningSpot</defName>
+    <label>salt mining spot</label>
+    <description>A place for mining salt. Production here is slow because of the lack of tools.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/CraftingSpot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+      <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+    </statBases>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>false</useHitPoints>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>Standable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>SmashCorpseMechanoid</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li>
+        <compClass>CompReportWorkSpeed</compClass>
+      </li>
+    </comps>
+    <designationHotKey>Misc1</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef -->
+
+  <DankPyon_ResearchingSpot.label>local de pesquisa</DankPyon_ResearchingSpot.label>
+  <DankPyon_ResearchingSpot.description>Um lugar para pesquisar conceitos simples. Pesquisar aqui é lento devido à falta de ferramentas.</DankPyon_ResearchingSpot.description>
+
+  <DankPyon_StonecuttingSpot.label>local de lapidação</DankPyon_StonecuttingSpot.label>
+  <DankPyon_StonecuttingSpot.description>Um lugar para cortar pedras umas nas outras. A produção aqui é lenta devido à falta de ferramentas.</DankPyon_StonecuttingSpot.description>
+
+  <DankPyon_ButchersBlock.label>tronco de açougueiro</DankPyon_ButchersBlock.label>
+  <DankPyon_ButchersBlock.description>Um local para esfolar criaturas mortas em pedaços de carne crua.</DankPyon_ButchersBlock.description>
+
+  <DankPyon_RusticCookingTable.label>bancada de cozinha</DankPyon_RusticCookingTable.label>
+  <DankPyon_RusticCookingTable.description>Um forno a lenha com uma bancada anexa para preparar refeições.</DankPyon_RusticCookingTable.description>
+
+  <DankPyon_StoneOven.label>forno</DankPyon_StoneOven.label>
+  <DankPyon_StoneOven.description>Uma mesa para cozinhar com forno de pedra desenhada para assar refeições.</DankPyon_StoneOven.description>
+
+  <DankPyon_Grill.label>grelha</DankPyon_Grill.label>
+  <DankPyon_Grill.description>Uma grelha a lenha utilizado para cozinhar refeições com fogo aberto.</DankPyon_Grill.description>
+
+  <DankPyon_StewPot.label>caldeirão de ensopado</DankPyon_StewPot.label>
+  <DankPyon_StewPot.description>Um grande caldeirão de metal que pode cozinhar sopas deliciosas.</DankPyon_StewPot.description>
+
+  <DankPyon_Millstone.label>moedor</DankPyon_Millstone.label>
+  <DankPyon_Millstone.description>Uma pequena pedra redonda para moer plantas brutas.</DankPyon_Millstone.description>
+
+
+  <!-- ThingDef ParentName="BenchBase">
+    <defName>DankPyon_Dishwasher</defName>
+    <label>dishwasher</label>
+    <description>A bucket full of water to wash the dirt dishes.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Production/Dishwasher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.25,1.25)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+
+    <costList>
+      <DankPyon_IronIngot>5</DankPyon_IronIngot>
+    </costList>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.2</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <designationHotKey>Misc3</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>DankPyon_BasicCooking</li>
+    </researchPrerequisites>
+  </ThingDef -->
+
+  <DankPyon_AdvancedResearchBench.label>mesa de pesquisa avançada</DankPyon_AdvancedResearchBench.label>
+  <DankPyon_AdvancedResearchBench.description>Maior tecnologia requer maior inteligência e, portanto, a simples bancada de pesquisa deve ser atualizada para atender às necessidades de inventores inovadores e pesquisadores talentosos. Da engenharia à alquimia, a bancada de pesquisa avançada permite que uma colônia impulsione sua tecnologia para uma nova era de guerra e medicina avançadas.</DankPyon_AdvancedResearchBench.description>
+
+
+  <!-- Rack -->
+
+  <DankPyon_DryingRack.label>secador de carne</DankPyon_DryingRack.label>
+  <DankPyon_DryingRack.description>Uma prateleira de madeira para secar produtos ao sol para preservação e uso prolongado.</DankPyon_DryingRack.description>
+
+
+  <!-- Hay Rack -->
+
+  <DankPyon_HayRack.label>suporte de feno</DankPyon_HayRack.label>
+  <DankPyon_HayRack.description>Um suporte de madeira para secar o feno ao sol para preservação e uso prolongado.</DankPyon_HayRack.description>
+
+
+  <!-- Gardening Box -->
+
+  <DankPyon_Post.label>poste</DankPyon_Post.label>
+  <DankPyon_Post.description>Um poste de apoio para permitir que as plantas vinhas cresçam de forma eficaz</DankPyon_Post.description>
+
+  <DankPyon_Presser.label>processador de queijo</DankPyon_Presser.label>
+  <DankPyon_Presser.description>Uma engenhoca de madeira para espremer o soro da coalhada, que transforma o leite em um delicioso queijo.</DankPyon_Presser.description>
+
+  <DankPyon_Smoker.label>defumador</DankPyon_Smoker.label>
+  <DankPyon_Smoker.description>A fumaça gerada pela madeira queimada empilhada no fundo do defumador envolve a carne, proporcionando calor indireto e um rico sabor de fumaça. Isso também adiciona uma camada protetora e permite que a carne defumada dure mais.</DankPyon_Smoker.description>
+
+  <DankPyon_Workbench.label>Bancada de trabalho</DankPyon_Workbench.label>
+  <DankPyon_Workbench.description>Uma mesa de trabalho equipada com ferramentas para criar e projetar itens.</DankPyon_Workbench.description>
+
+  <DankPyon_TanningRack.label>suporte de curtume</DankPyon_TanningRack.label>
+  <DankPyon_TanningRack.description>Um suporte vertical para tratar peles cruas para se tornarem couros úteis.</DankPyon_TanningRack.description>
+
+  <DankPyon_SpinningWheel.label>tear</DankPyon_SpinningWheel.label>
+  <DankPyon_SpinningWheel.description>Uma engenhoca rolante que transforma algodão cru em tecidos.</DankPyon_SpinningWheel.description>
+
+  <DankPyon_TailorsBench.label>bancada de alfaiate</DankPyon_TailorsBench.label>
+  <DankPyon_TailorsBench.description>Uma mesa de trabalho de madeira para costurar e produzir roupas vestíveis.</DankPyon_TailorsBench.description>
+
+  <DankPyon_Furnace.label>fornalha</DankPyon_Furnace.label>
+  <DankPyon_Furnace.description>Uma grande fornalha de pedra usada para fundir minérios brutos e refinar recursos.</DankPyon_Furnace.description>
+
+  <DankPyon_Anvil.label>bigorna</DankPyon_Anvil.label>
+  <DankPyon_Anvil.description>Uma grande ferramenta de metalurgia com uma superfície superior achatada para golpear objetos como armas e armaduras.</DankPyon_Anvil.description>
+
+
+  <!-- Mine Shaft -->
+
+  <DankPyon_MineShaft.label>poço de mina</DankPyon_MineShaft.label>
+  <DankPyon_MineShaft.description>Uma plataforma robusta equipada com um elevador primitivo construído no topo de um túnel vertical. Pode ser usado para mineração de recursos.</DankPyon_MineShaft.description>
+
+  <DankPyon_GardeningBox.label>caixa de jardinagem</DankPyon_GardeningBox.label>
+  <DankPyon_GardeningBox.description>Uma caixa cheia de terra para cultivar plantas.</DankPyon_GardeningBox.description>
+
+
+  <!-- ThingDef ParentName="BenchBase">
+    <defName>DankPyon_Dishwasher</defName>
+    <label>lava louças</label>
+    <description>Um balde cheio de água para lavar a louça suja.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Production/Dishwasher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.25,1.25)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+
+    <costList>
+      <DankPyon_IronIngot>5</DankPyon_IronIngot>
+    </costList>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.2</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <designationHotKey>Misc3</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>DankPyon_BasicCooking</li>
+    </researchPrerequisites>
+  </ThingDef -->
+
+</LanguageData>

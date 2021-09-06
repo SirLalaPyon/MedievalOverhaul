@@ -268,6 +268,7 @@
 	<description>Bake 2 breads from flour.</description>
 	<jobString>Baking bread.</jobString>  
 	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 	<ingredients>
 	   <li>
 		  <filter>
@@ -309,6 +310,7 @@
 	<description>Bake 10 breads from flour.</description>
 	<jobString>Baking bread.</jobString>  
 	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 	<ingredients>
 	   <li>
 		  <filter>
@@ -316,7 +318,7 @@
 				<li>DankPyon_Flour</li>
 			 </thingDefs>
 		  </filter>
-		  <count>2.5</count>
+		  <count>5.0</count>
 	   </li>
 	</ingredients>
 	<products>
@@ -3699,19 +3701,19 @@
         <li>DankPyon_StoneOven</li>		  	  
       </recipeUsers>	
     <ingredients>
-			<!--li>
+			<li>
 				<filter>
 					<thingDefs>
 						<li>DankPyon_GriffonBerry</li>
-          </thingDefs>
+					</thingDefs>
 				</filter>
-				<count>0.3</count>
-			</li>-->
+				<count>0.35</count>
+			</li>
 			<li>
 				<filter>
 					<thingDefs>
 						<li>DankPyon_Flour</li>
-          </thingDefs>
+					</thingDefs>
 				</filter>
 				<count>0.15</count>
 			</li>
@@ -3719,7 +3721,7 @@
 				<filter>
 					<thingDefs>
 						<li>DankPyon_Sugar</li>
-          </thingDefs>
+					</thingDefs>
 				</filter>
 				<count>0.1</count>
 			</li>
@@ -3727,7 +3729,7 @@
 				<filter>
 					<categories>
 						<li>EggsUnfertilized</li>
-          </categories>
+					</categories>
 				</filter>
 				<count>0.25</count>
 			</li>
@@ -3735,7 +3737,7 @@
 				<filter>
 					<thingDefs>
 						<li>DankPyon_RawLemons</li>
-          </thingDefs>
+					</thingDefs>
 				</filter>
 				<count>0.09</count>
 			</li>
@@ -3790,14 +3792,14 @@
         <li>DankPyon_StoneOven</li>		  	  
 	  </recipeUsers>
     <ingredients>
-			<!--li>
+			<li>
 				<filter>
 					<thingDefs>
 						<li>DankPyon_GriffonBerry</li>
           </thingDefs>
 				</filter>
-				<count>0.9</count>
-			</li>-->
+				<count>1.05</count>
+			</li>
 			<li>
 				<filter>
 					<thingDefs>

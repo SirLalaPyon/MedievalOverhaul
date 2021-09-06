@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Linkables -->
+
+  <DankPyon_ToolRack.label>porta ferramenta</DankPyon_ToolRack.label>
+  <DankPyon_ToolRack.description>Uma coleção de ferramentas de forja. Aumenta a velocidade de trabalho quando colocado perto de bancadas medievais.</DankPyon_ToolRack.description>
+
+  <DankPyon_QuenchingBucket.label>balde de resfriamento</DankPyon_QuenchingBucket.label>
+  <DankPyon_QuenchingBucket.description>Um balde cheio de óleo usado para extinguir metais fumegantes. Aumenta a velocidade de trabalho quando colocado perto de bancadas medievais.</DankPyon_QuenchingBucket.description>
+
+  <DankPyon_Grinder.label>rebolo</DankPyon_Grinder.label>
+  <DankPyon_Grinder.description>Usado para afiar armas. Aumenta a velocidade de trabalho quando colocado perto de bancadas medievais.</DankPyon_Grinder.description>
+
+  <DankPyon_Bellows.label>fole</DankPyon_Bellows.label>
+  <DankPyon_Bellows.description>Usado para fornecer uma forte rajada de ar. Aumenta a velocidade de trabalho quando colocado perto de bancadas medievais.</DankPyon_Bellows.description>
+
+
+  <!-- ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_RusticCupboard</defName>
+		<label>tableware shelf</label>
+		<description>A shelf for Tableware. Increases Cook speed when placed near rustic cooking table.</description>
+		<graphicData>
+			<texPath>Misc/RusticCupboard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<uiIconScale>1</uiIconScale>
+		<uiIconPath>Misc/RusticCupboard_MenuIcon</uiIconPath>
+		<uiIconOffset>(0, 0)</uiIconOffset>
+		<size>(2,1)</size>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+
+		<costList>
+			<DankPyon_IronIngot>75</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.10</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>2</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+	</ThingDef -->
+
+  <DankPyon_RusticCookingTools.label>utensílio de cozinha</DankPyon_RusticCookingTools.label>
+  <DankPyon_RusticCookingTools.description>Uma mesa cheia de equipamentos úteis para cozinhar. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de cozinha rústica.</DankPyon_RusticCookingTools.description>
+
+
+  <!-- Medieval Comms -->
+
+  <DankPyon_BirdPost.label>poste de pássaro</DankPyon_BirdPost.label>
+  <DankPyon_BirdPost.description>Alguns pássaros, quando ensinados por treinadores experientes, são capazes de voar para um local designado antes de retornar ao seu poleiro. Isso permite a comunicação com as facções vizinhas, supondo que se possa arcar com os custosos requisitos de obter e treinar o pássaro, bem como alimentar os animais com carne. Requer a mesa do escriba para correspondência.</DankPyon_BirdPost.description>
+
+  <DankPyon_ScribeTable.label>mesa de escriba</DankPyon_ScribeTable.label>
+  <DankPyon_ScribeTable.description>Uma mesa contendo tabuletas de cera, que contêm registros e recibos. Ao lado dos comprimidos, havia pergaminhos, um selo, penas e tinta para permitir a correspondência. Quando usadas junto com o poste de pássaro, as cartas escritas podem chegar a terras distantes mais rápido do que um mensageiro. Pode-se convidar aliados para festas, rivais para um desafio ou facções neutras para o comércio.</DankPyon_ScribeTable.description>
+
+
+  <!-- ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_RusticCupboard</defName>
+		<label>prateleira de talheres</label>
+		<description>Uma prateleira para talheres. Aumenta a velocidade de trabalho quando colocado perto de uma mesa de cozinha rústica.</description>
+		<graphicData>
+			<texPath>Misc/RusticCupboard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<uiIconScale>1</uiIconScale>
+		<uiIconPath>Misc/RusticCupboard_MenuIcon</uiIconPath>
+		<uiIconOffset>(0, 0)</uiIconOffset>
+		<size>(2,1)</size>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+
+		<costList>
+			<DankPyon_IronIngot>75</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.10</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>2</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+	</ThingDef -->
+
+</LanguageData>

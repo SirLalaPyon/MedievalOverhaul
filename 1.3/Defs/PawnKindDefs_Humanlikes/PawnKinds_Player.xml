@@ -51,4 +51,40 @@
     <initialResistanceRange>9~15</initialResistanceRange>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>DankPyon_PlayerMercenary</defName>
+    <label>mercenary</label>
+    <race>Human</race>
+    <defaultFactionType>DankPyon_MercenaryCompany</defaultFactionType>
+    <backstoryCategories>
+        <li>Tribal</li>
+    </backstoryCategories>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    
+    <weaponMoney>310~500</weaponMoney>
+    <weaponTags>
+      <li>DankPyon_ArmingSword</li>
+      <li>DankPyon_MorningStar</li>
+      <li>DankPyon_MilitaryPick</li>
+      <li>DankPyon_Handaxe</li>
+      <li>DankPyon_Falchion</li>
+      <li>DankPyon_BoarSpear</li>
+      <li>DankPyon_Billhook</li>
+      <li>DankPyon_Polehammer</li>
+      <li>DankPyon_Longsword</li>
+    </weaponTags>
+
+    <apparelMoney>1000~1600</apparelMoney>
+    <apparelTags>
+      <li>DankPyon_Mercneary</li>
+      <li>DankPyon_MercenaryHeavy</li>
+      <li>DankPyon_MercenaryHelmet</li>
+      <li>DankPyon_MercenaryHeavyHelmet</li>
+    </apparelTags>
+
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.0</techHediffsChance>
+    <initialResistanceRange>9~15</initialResistanceRange>
+  </PawnKindDef>
+
 </Defs>

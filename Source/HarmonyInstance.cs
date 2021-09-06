@@ -259,4 +259,29 @@ namespace DankPyon
             }
         }
     }
+
+    [HarmonyPatch(typeof(StatWorker_MarketValue), "CalculableRecipe")]
+    public static class CalculableRecipe_Patch
+    {
+        private static bool Prefix(BuildableDef def)
+        {
+            if (def is ThingDef thingDef && thingDef.IsChunk())
+            {
+                return false;
+            }
+            return true;
+        }
+    
+        private static bool IsChunk(this ThingDef def)
+        {
+            if (!def.thingCategories.NullOrEmpty())
+            {
+                if (!def.thingCategories.Contains(ThingCategoryDefOf.Chunks))
+                {
+                    return def.thingCategories.Contains(ThingCategoryDefOf.StoneChunks);
+                }
+            }
+            return false;
+        }
+    }
 }

@@ -109,8 +109,9 @@
   </ThingDef>
 
   <!--=============== Plates Clean ====================-->
-  
-  <ThingDef ParentName="MakeableShellBase">
+    <!--
+
+  <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_PlateClean</defName>
     <label>Clean Plate</label>
     <description>A clean plate, ready to be used by dishes.</description>
@@ -121,11 +122,12 @@
     <costList>
       <WoodLog>5</WoodLog>
     </costList>
-  </ThingDef>
+  </ThingDef> -->
 
   <!--=============== Plates Dirty ====================-->
-  
-  <ThingDef ParentName="MakeableShellBase">
+    <!--
+
+  <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_PlateDirty</defName>
     <label>Dirty Plate</label>
     <description>A dirty plate, needs to be washed first to be usable.</description>
@@ -136,11 +138,12 @@
     <costList>
       <WoodLog>5</WoodLog>
     </costList>
-  </ThingDef>
+  </ThingDef> -->
 
   <!--=============== Bowls Clean ====================-->
-  
-  <ThingDef ParentName="MakeableShellBase">
+    <!--
+
+  <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_BowlClean</defName>
     <label>Clean Bowl</label>
     <description>A clean bowl, ready to be used in meals.</description>
@@ -151,11 +154,11 @@
     <costList>
       <WoodLog>5</WoodLog>
     </costList>
-  </ThingDef>
+  </ThingDef> -->
 
   <!--=============== Bowls Dirty ====================-->
-  
-  <ThingDef ParentName="MakeableShellBase">
+  <!--
+  <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_BowlDirty</defName>
     <label>Dirty Bowl</label>
     <description>A dirty bowl, needs to be washed first to be usable.</description>
@@ -166,6 +169,6 @@
     <costList>
       <WoodLog>5</WoodLog>
     </costList>
-  </ThingDef>
+  </ThingDef> -->
 
 </Defs>

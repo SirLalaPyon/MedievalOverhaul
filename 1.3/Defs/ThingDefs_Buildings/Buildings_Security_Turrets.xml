@@ -233,7 +233,12 @@
       <turretBurstCooldownTime>42</turretBurstCooldownTime>
       <turretGunDef>DankPyon_Artillery_Trebuchet</turretGunDef>
       <turretTopDrawSize>3</turretTopDrawSize>
-    </building>
+      <buildingTags>
+        <li>Artillery_BaseDestroyer</li>
+        <li>ArtilleryMedieval</li>
+        <li>ArtilleryMedieval_BaseDestroyer</li>
+      </buildingTags>
+	</building>
     <repairEffect>ConstructDirt</repairEffect>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <specialDisplayRadius>29.9</specialDisplayRadius>

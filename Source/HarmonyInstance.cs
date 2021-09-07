@@ -16,6 +16,7 @@ namespace DankPyon
     {
         public static ShaderTypeDef TransparentPlant;
         public static ThingDef DankPyon_Artillery_Trebuchet;
+        public static ThingDef DankPyon_Artillery_Boulder;
     }
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
@@ -37,6 +38,26 @@ namespace DankPyon
                     statMultipliers[extension.hediffDef] = stat;
                 }
             }
+
+            foreach (var def in DefDatabase<ThingDef>.AllDefsListForReading)
+            {
+                if (def.IsChunk() && def.projectileWhenLoaded is null)
+                {
+                    def.projectileWhenLoaded = DankPyonDefOf.DankPyon_Artillery_Boulder;
+                }
+            }
+        }
+
+        public static bool IsChunk(this ThingDef def)
+        {
+            if (!def.thingCategories.NullOrEmpty())
+            {
+                if (!def.thingCategories.Contains(ThingCategoryDefOf.Chunks))
+                {
+                    return def.thingCategories.Contains(ThingCategoryDefOf.StoneChunks);
+                }
+            }
+            return false;
         }
 
         private static Dictionary<Thing, HashSet<IntVec3>> cachedCells = new Dictionary<Thing, HashSet<IntVec3>>();
@@ -202,7 +223,6 @@ namespace DankPyon
             {
                 if (gun.TryGetArtillery(out var group))
                 {
-                    Log.Message($"Trying to get custom ammo for {gun.Label}");
                     StorageSettings allowedShellsSettings = pawn.IsColonist ? gun.gun.TryGetComp<CompChangeableProjectile>().allowedShellsSettings : RetrieveParentSettings(gun);
                     bool validator(Thing t) => !t.IsForbidden(pawn) && pawn.CanReserve(t, 10, 1, null, false) && (allowedShellsSettings == null || allowedShellsSettings.AllowedToAccept(t));
                     __result = GenClosest.ClosestThingReachable(gun.Position, gun.Map, ThingRequest.ForGroup(group), PathEndMode.OnCell, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false),
@@ -223,7 +243,6 @@ namespace DankPyon
     public static class ArtillerySearchGroup
     {
         private static readonly Dictionary<ThingDef, ThingRequestGroup> registeredArtillery = new Dictionary<ThingDef, ThingRequestGroup>();
-
         static ArtillerySearchGroup()
         {
             RegisterArtillery(DankPyonDefOf.DankPyon_Artillery_Trebuchet, ThingRequestGroup.Chunk);
@@ -270,18 +289,6 @@ namespace DankPyon
                 return false;
             }
             return true;
-        }
-    
-        private static bool IsChunk(this ThingDef def)
-        {
-            if (!def.thingCategories.NullOrEmpty())
-            {
-                if (!def.thingCategories.Contains(ThingCategoryDefOf.Chunks))
-                {
-                    return def.thingCategories.Contains(ThingCategoryDefOf.StoneChunks);
-                }
-            }
-            return false;
         }
     }
 }

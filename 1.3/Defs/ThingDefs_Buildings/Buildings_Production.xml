@@ -172,7 +172,7 @@
     <graphicData>
       <texPath>Production/ButcherBlock</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
+	    <shaderType>CutoutComplex</shaderType>
       <drawSize>(1.5,1.5)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -485,7 +485,7 @@
 	<description>A large metal cauldron that can cook delicious soups.</description>
 	<graphicData>
       <texPath>Production/StewPot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(4,4)</drawSize>
       <damageData>
@@ -549,7 +549,6 @@
 	  <isMealSource>true</isMealSource>
 	  <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 	</building>
-	<rotatable>false</rotatable>
   <researchPrerequisites>
     <li>DankPyon_StewPot</li>
   </researchPrerequisites>
@@ -563,7 +562,7 @@
 		<description>A small round stone for grinding raw plants.</description>
 		<graphicData>
 		<texPath>Production/Millstone</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
+		<graphicClass>Graphic_Multi</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 		<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -598,6 +597,7 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 				  <isMealSource>true</isMealSource>
 		</building>
+
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -605,7 +605,7 @@
 				</linkableFacilities>
 			</li>
 		</comps>
-		<rotatable>false</rotatable>
+		
     <researchPrerequisites>
       <li>DankPyon_BasicAgriculture</li>
     </researchPrerequisites>
@@ -872,6 +872,10 @@
 	  <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
+
+    <!--recipe>
+      <li>SmashCorpseMechanoid</li>  why no work unga bunga
+    </recipe-->
 
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
@@ -1303,6 +1307,8 @@
       <Flammability>1.0</Flammability>
       <Cleanliness>-15</Cleanliness>
     </statBases>
+
+    <rotatable>false</rotatable>
     <size>(3,3)</size>
 
     <comps>

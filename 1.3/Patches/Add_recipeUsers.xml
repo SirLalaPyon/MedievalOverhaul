@@ -36,4 +36,11 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "SmokeleafJoint" or defName = "Apparel_WarVeil" or defName = "Apparel_TribalA" or defName = "MeleeWeapon_Club" or defName = "MeleeWeapon_Knife" or defName = "Bow_Short"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_Workbench</li>
+		</value>
+	</Operation>
+
 </Patch>

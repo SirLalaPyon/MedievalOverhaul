@@ -1391,15 +1391,14 @@
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
 
-  <ThingDef ParentName="BenchBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_WoodBurningStove</defName>
     <label>wood burning stove</label>
-    <thingClass>Building_WorkTable</thingClass>
+
     <description>A small wood burning stove to heat up a small room.</description>
     <graphicData>
         <texPath>Furniture/WoodBurningStove</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
-        <shaderType>CutoutComplex</shaderType>
         <drawSize>(2,2)</drawSize>
         <drawRotated>false</drawRotated>
         <damageData>
@@ -1413,11 +1412,11 @@
       <castEdgeShadows>true</castEdgeShadows>
 
     <stuffCategories>
-			<li>Stony</li>
-		</stuffCategories>
-		<costStuffCount>45</costStuffCount>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
 
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
@@ -1434,11 +1433,16 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <drawerType>RealtimeOnly</drawerType>
     <surfaceType>Item</surfaceType>
-    <inspectorTabs>
-      <li>ITab_Bills</li>
-    </inspectorTabs>
+    
     <comps>
+
+        <li Class="DankPyon_MedievalOverhaul.CompProperties_FireOverlaySouth">
+            <fireSize>0.7</fireSize>
+           <offset>(0,0,-0.2)</offset>
+         </li>
+
         <li Class="CompProperties_Glower">
           <glowRadius>5</glowRadius>
           <glowColor>(252,187,113,0)</glowColor>
@@ -1448,9 +1452,9 @@
           <fuelConsumptionRate>6</fuelConsumptionRate>
           <fuelCapacity>30.0</fuelCapacity>
           <fuelFilter>
-        <thingDefs>
-          <li>WoodLog</li>
-        </thingDefs>
+            <thingDefs>
+              <li>WoodLog</li>
+            </thingDefs>
           </fuelFilter>
           <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
         </li>
@@ -1481,9 +1485,7 @@
           </offsets>
         </li>
       </comps>
-    <building>
-      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-    </building>
+  
     <researchPrerequisites>
       <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>

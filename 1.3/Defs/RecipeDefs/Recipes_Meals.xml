@@ -264,7 +264,7 @@
 <!-- Bread -->
 <RecipeDef>
 	<defName>DankPyon_BakeBread</defName>
-	<label>(x2) Bake bread</label>
+	<label>(x2)Bake bread</label>
 	<description>Bake 2 breads from flour.</description>
 	<jobString>Baking bread.</jobString>  
 	<allowMixingIngredients>true</allowMixingIngredients>
@@ -276,11 +276,11 @@
 				<li>DankPyon_Flour</li>
 			 </thingDefs>
 		  </filter>
-		  <count>0.5</count>
+		  <count>0.50</count>
 	   </li>
 	</ingredients>
 	<products>
-	   <DankPyon_MealBread>1</DankPyon_MealBread>
+	   <DankPyon_MealBread>2</DankPyon_MealBread>
 	</products>
 	<fixedIngredientFilter>
 	   <thingDefs>
@@ -294,10 +294,10 @@
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<workSkill>Cooking</workSkill>
 	<effectWorking>Cook</effectWorking>
-	  <soundWorking>Recipe_CookMeal</soundWorking>
-  <researchPrerequisites>
-	  <li>DankPyon_BasicCooking</li>
-  </researchPrerequisites>
+	<soundWorking>Recipe_CookMeal</soundWorking>
+	<researchPrerequisites>
+		<li>DankPyon_BasicCooking</li>
+	</researchPrerequisites>
 	<recipeUsers>
 	  <li>DankPyon_StoneOven</li>
 	</recipeUsers>

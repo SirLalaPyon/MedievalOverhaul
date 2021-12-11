@@ -8,6 +8,12 @@
       <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Styleable" Inherit="False"/>
+    </comps>
   </ThingDef>
 
 
@@ -16,6 +22,12 @@
       <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Styleable" Inherit="False"/>
+    </comps>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="TableBase" Name="DankPyon_TableBase">
@@ -23,6 +35,12 @@
       <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Styleable" Inherit="False"/>
+    </comps>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="FurnitureWithQualityBase" Name="DankPyon_FurnitureWithQualityBase">
@@ -30,6 +48,12 @@
       <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Styleable" Inherit="False"/>
+    </comps>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="ArtableFurnitureBase" Name="DankPyon_ArtableFurnitureBase">
@@ -37,6 +61,12 @@
       <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Styleable" Inherit="False"/>
+    </comps>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="ArtableBedBase" Name="DankPyon_ArtableBedBase">
@@ -44,6 +74,9 @@
       <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="BedWithQualityBase" Name="DankPyon_BedWithQualityBase">
@@ -51,6 +84,9 @@
       <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
   </ThingDef>
 
   <!--======================= Basic domestic furniture ==============================-->
@@ -144,9 +180,6 @@
       <isSittable>true</isSittable>
     </building>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-    <comps>
-      <li Class="CompProperties_Styleable" />
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_TableBase">
@@ -272,6 +305,7 @@
       <Mass>10</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>1</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
 
     <size>(2,2)</size>
@@ -300,6 +334,7 @@
       <Mass>15</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>2</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
 
     <size>(2,2)</size>
@@ -330,6 +365,7 @@
       <Mass>10</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>1</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
     <size>(2,2)</size>
     <costStuffCount>50</costStuffCount>
@@ -355,6 +391,7 @@
       <Mass>20</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>2</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
     </statBases>
     <size>(2,4)</size>
     <costStuffCount>95</costStuffCount>
@@ -383,6 +420,7 @@
       <Mass>35</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>4</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
     </statBases>
     <size>(2,4)</size>
     <costStuffCount>95</costStuffCount>
@@ -396,7 +434,7 @@
 
   <!-- ======================== Lighting ======================= -->
 
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="DankPyon_BuildingBase">
     <defName>DankPyon_Candles</defName>
     <label>candles</label>
     <description>A candle to prevent darkness seeping in your room. Can be refueled with animal tallow.</description>
@@ -502,10 +540,9 @@
     <researchPrerequisites>
       <li>DankPyon_CandleMaking</li>
     </researchPrerequisites>
-    <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="DankPyon_BuildingBase">
     <defName>DankPyon_CandleStand</defName>
     <label>candle stand</label>
     <description>A candle stand to prevent darkness seeping in your room. Can be refueled with tallow.</description>
@@ -815,6 +852,7 @@
       <WorkToBuild>600</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Beauty>30</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
     <size>(1,1)</size>
     <building>
@@ -935,7 +973,8 @@
     <WorkToBuild>7500</WorkToBuild>
     <Mass>40</Mass>
     <Flammability>1.0</Flammability>
-    <Beauty>4</Beauty>
+    <Beauty>5</Beauty>
+    <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">8</StyleDominance>
   </statBases>
 
   <stuffCategories>
@@ -1003,7 +1042,8 @@
 			<WorkToBuild>7500</WorkToBuild>
 			<Mass>40</Mass>
 			<Flammability>1.0</Flammability>
-			<Beauty>4</Beauty>
+			<Beauty>5</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">8</StyleDominance>
 		</statBases>
 		<costList>
 			<Cloth>40</Cloth>
@@ -1124,6 +1164,7 @@
       <Comfort>0.70</Comfort>
       <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
 
     <size>(2,2)</size>
@@ -1244,6 +1285,7 @@
       <Comfort>0.72</Comfort>
       <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
 
     <size>(2,2)</size>
@@ -1366,6 +1408,7 @@
       <BedRestEffectiveness>1</BedRestEffectiveness>
       <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
     <size>(2,2)</size>
 
@@ -1393,7 +1436,7 @@
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="DankPyon_BuildingBase">
     <defName>DankPyon_WoodBurningStove</defName>
     <label>wood burning stove</label>
 
@@ -1429,7 +1472,6 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <size>(1,1)</size>
-    <designationCategory>DankPyon_RusticFurniture</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
@@ -1487,10 +1529,6 @@
           </offsets>
         </li>
       </comps>
-  
-    <researchPrerequisites>
-      <li>DankPyon_RusticFurniture</li>
-    </researchPrerequisites>
     </ThingDef>
 
     <ThingDef ParentName="BenchBase">
@@ -1526,9 +1564,9 @@
         <Flammability>1.0</Flammability>
         <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
         <Beauty>5</Beauty>
+        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">8</StyleDominance>
       </statBases>
       <size>(2,1)</size>
-      <designationCategory>DankPyon_RusticFurniture</designationCategory>
       <passability>PassThroughOnly</passability>
       <pathCost>70</pathCost>
       <hasInteractionCell>True</hasInteractionCell>
@@ -1599,15 +1637,17 @@
         </li>
       </comps>
 
+      <researchPrerequisites>
+        <li>DankPyon_RusticFurniture</li>
+      </researchPrerequisites>
+      <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
+      <designationCategory>DankPyon_RusticFurniture</designationCategory>
+
       <building>
         <isMealSource>true</isMealSource>
         <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       </building>
-
-      <researchPrerequisites>
-        <li>DankPyon_RusticFurniture</li>
-      </researchPrerequisites>
-      </ThingDef>
+    </ThingDef>
   
   <!--============================== Animal Beds ==============================-->
   

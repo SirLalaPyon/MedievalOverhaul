@@ -34,6 +34,7 @@
       <Mass>45</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>30</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
   
     <stuffCategories>
@@ -58,7 +59,6 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-    <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
 <!--Bookshelf -->
@@ -93,6 +93,7 @@
     <Mass>45</Mass>
     <Flammability>1.0</Flammability>
     <Beauty>30</Beauty>
+    <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
   </statBases>
 
   <costList>
@@ -116,7 +117,6 @@
     <li>PlaceWorker_ShowFacilitiesConnections</li>
   </placeWorkers>
   <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-  <designationCategory>DankPyon_RusticFurniture</designationCategory>
 </ThingDef>
 
 
@@ -152,6 +152,7 @@
     <Flammability>1.0</Flammability>
     <Beauty>30</Beauty>
     <Comfort>0.95</Comfort>
+    <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
   </statBases>
 
   <socialPropernessMatters>true</socialPropernessMatters>
@@ -173,7 +174,6 @@
   <researchPrerequisites>
     <li>DankPyon_RoyalRusticFurniture</li>
   </researchPrerequisites>
-  <designationCategory>DankPyon_RusticFurniture</designationCategory>
 </ThingDef>
 
 <!-- Royal Tables -->
@@ -201,6 +201,7 @@
       <Mass>15</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>25</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">15</StyleDominance>
     </statBases>
 
     <costList>
@@ -237,9 +238,10 @@
       <Mass>20</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>2</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">30</StyleDominance>
     </statBases>
-    <size>(2,4)</size>
 
+    <size>(2,4)</size>
     <costStuffCount>95</costStuffCount>
     <costList>
       <Gold>100</Gold>
@@ -251,7 +253,6 @@
     <researchPrerequisites>
       <li>DankPyon_RoyalRusticFurniture</li>
     </researchPrerequisites>
-    <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
   <!-- Royal End Table -->
@@ -275,7 +276,9 @@
       <Mass>5</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>30</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
+
     <placeWorkers>
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
@@ -302,7 +305,6 @@
     <researchPrerequisites>
       <li>DankPyon_RoyalRusticFurniture</li>
     </researchPrerequisites>
-    <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
 <!-- Royal Dresser -->
@@ -346,6 +348,7 @@
       <WorkToBuild>24000</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>5</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
 
     <size>(2,1)</size>
@@ -369,7 +372,6 @@
     <researchPrerequisites>
       <li>DankPyon_RoyalRusticFurniture</li>
     </researchPrerequisites>
-    <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 
 <!-- Royal Tudor Bed -->
@@ -407,6 +409,7 @@
       <Comfort>0.95</Comfort>
       <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">30</StyleDominance>
     </statBases>
 
     <size>(2,2)</size>
@@ -439,7 +442,6 @@
     <researchPrerequisites>
       <li>DankPyon_RoyalRusticFurniture</li>
     </researchPrerequisites>
-	<designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
   
   

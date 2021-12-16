@@ -68,4 +68,54 @@
 		</products>
 	</RecipeDef>
 
+	<RecipeDef ParentName="DankPyon_MakeClothBase">
+		<defName>DankPyon_MakeClothFromWool</defName>
+		<label>Spin wool</label>
+		<description>Spin raw wool into cloth fabric.</description>
+		<jobString>Spinning wool.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+					<li>Wools</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+			<li>Wools</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Cloth>10</Cloth>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MakeClothBase">
+		<defName>DankPyon_Make50ClothFromWool</defName>
+		<label>Spin wool 50x</label>
+		<description>Spin raw wool into cloth fabric.</description>
+		<jobString>Spinning wool.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+					<li>Wools</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+			<fixedIngredientFilter>
+				<categories>
+				<li>Wools</li>
+				</categories>
+			</fixedIngredientFilter>
+			<products>
+				<Cloth>50</Cloth>
+			</products>
+	</RecipeDef>
+
 </Defs>

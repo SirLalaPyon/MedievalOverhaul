@@ -499,12 +499,12 @@
     <pathCost>10</pathCost>
     <ingestible />
     <plant>
+      <dieIfLeafless>False</dieIfLeafless> 
       <sowTags>
         <li>Ground</li>
 			</sowTags>
       <fertilitySensitivity>0.7</fertilitySensitivity>
       <growDays>33</growDays>
-      <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
       <harvestAfterGrowth>0.30</harvestAfterGrowth>
       <harvestedThingDef>DankPyon_RawApples</harvestedThingDef>
@@ -537,12 +537,12 @@
     <pathCost>10</pathCost>
     <ingestible />
       <plant>
+        <dieIfLeafless>False</dieIfLeafless> 
         <sowTags>
           <li>Ground</li>
 			  </sowTags>
         <fertilitySensitivity>0.7</fertilitySensitivity>
         <growDays>33</growDays>
-        <dieIfLeafless>true</dieIfLeafless>
         <harvestTag>Standard</harvestTag>
         <harvestAfterGrowth>0.30</harvestAfterGrowth>
         <harvestedThingDef>DankPyon_RawLemons</harvestedThingDef>
@@ -584,9 +584,9 @@
     <pathCost>14</pathCost>
     <ingestible />
     <plant>
+      <dieIfLeafless>False</dieIfLeafless> 
       <fertilitySensitivity>0.15</fertilitySensitivity>
       <growDays>33</growDays>
-      <dieIfLeafless>true</dieIfLeafless>
       <immatureGraphicPath>Plants_Immature/TreeGriffonBerry</immatureGraphicPath>
       <harvestYield>9</harvestYield>
       <harvestTag>Standard</harvestTag>

@@ -53,6 +53,14 @@
           </thingDefs>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>WoodLog</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
     </building>
 
     <comps>
@@ -101,6 +109,14 @@
           </thingDefs>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>WoodLog</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
     </building>
 
 
@@ -152,6 +168,14 @@
           </thingDefs>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>DankPyon_DarkWoodLog</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
     </building>
 
 
@@ -189,6 +213,14 @@
           </thingDefs>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>DankPyon_DarkWoodLog</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
     </building>
 
     <statBases>
@@ -251,6 +283,14 @@
           </categories>
           </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>StoneBlocks</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
     </building>	
 
 
@@ -301,6 +341,14 @@
           </categories>
           </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>StoneBlocks</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
     </building>	
 
 
@@ -352,6 +400,14 @@
           </categories>
           </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>StoneBlocks</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
     </building>	
 
 
@@ -446,6 +502,14 @@
         </thingDefs>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>WoodLog</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
     </building>	
     <designatorDropdown>DankPyon_Barrels</designatorDropdown>
     
@@ -496,6 +560,14 @@
         </thingDefs>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>DankPyon_IronOre</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
     </building>	
     
     
@@ -546,6 +618,14 @@
         </thingDefs>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>DankPyon_GoldOre</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
     </building>	
     
     
@@ -596,6 +676,14 @@
         </categories>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>Textiles</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
     </building>	
     
     
@@ -646,6 +734,14 @@
           </categories>
           </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>Leathers</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
     </building>	
     
     
@@ -696,6 +792,14 @@
           </thingDefs>
           </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>DankPyon_ComponentBasic</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
     </building>	
     
     
@@ -746,6 +850,7 @@
           </categories>
         </filter>
       </defaultStorageSettings>
+      
     </building>	
     
     
@@ -857,6 +962,14 @@
           </categories>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>Weapons</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
     </building>
 
     <inspectorTabs>
@@ -924,6 +1037,14 @@
           </categories>
         </filter>
       </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>Weapons</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
     </building>
 
     <inspectorTabs>
@@ -981,6 +1102,7 @@
 
     <building>
       <defaultStorageSettings>
+        <priority>Important</priority>
         <filter>
           <categories>
             <li>Weapons</li>

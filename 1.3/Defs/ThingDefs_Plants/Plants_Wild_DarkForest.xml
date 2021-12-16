@@ -21,6 +21,7 @@
 		</statBases>
 		<blockLight>true</blockLight>
 		<plant>
+			<dieIfLeafless>False</dieIfLeafless> 
 			<fertilityMin>0.8</fertilityMin>
 			<harvestedThingDef>DankPyon_DarkWoodLog</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
@@ -68,6 +69,7 @@
 		</statBases>
 		<blockLight>true</blockLight>
 		<plant>
+			<dieIfLeafless>False</dieIfLeafless> 
 			<fertilityMin>0.8</fertilityMin>
 			<harvestedThingDef>DankPyon_DarkWoodLog</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
@@ -110,6 +112,7 @@
 			<Flammability>0.7</Flammability>
 		</statBases>
 		<plant>
+			<dieIfLeafless>False</dieIfLeafless> 
 			<fertilityMin>0.4</fertilityMin>
 			<growDays>18</growDays>
 			<harvestWork>2000</harvestWork>
@@ -155,13 +158,14 @@
       <Beauty>15</Beauty>
     </statBases>
     <plant>
-      <growDays>200</growDays>
-      <leaflessGraphicPath>Plants_Leafless/GreatWillow_Leafless</leaflessGraphicPath>
-      <harvestWork>2000</harvestWork>
-      <harvestYield>100</harvestYield>
-      <wildClusterWeight>32</wildClusterWeight>
-      <wildClusterRadius>5</wildClusterRadius>
-      <visualSizeRange>6~9</visualSizeRange>
+		<dieIfLeafless>False</dieIfLeafless> 
+		<growDays>200</growDays>
+		<leaflessGraphicPath>Plants_Leafless/GreatWillow_Leafless</leaflessGraphicPath>
+		<harvestWork>2000</harvestWork>
+		<harvestYield>100</harvestYield>
+		<wildClusterWeight>32</wildClusterWeight>
+		<wildClusterRadius>5</wildClusterRadius>
+		<visualSizeRange>6~9</visualSizeRange>
     </plant>
   </ThingDef>
 </Defs>

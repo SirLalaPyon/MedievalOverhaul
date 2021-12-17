@@ -1,17 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/TerrainDef/constructEffect[text() = "ConstructMetal"]</xpath>
 		<value>
-			<constructEffect>ConstructWood</constructEffect>
+			<constructEffect>MO_ConstructWood</constructEffect>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef/constructEffect[text() = "ConstructMetal"]</xpath>
 		<value>
-			<constructEffect>ConstructWood</constructEffect>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/stuffProps/constructEffect[text() = "ConstructMetal"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/repairEffect[text() = "ConstructMetal"]</xpath>
+		<value>
+			<repairEffect>MO_ConstructWood</repairEffect>
 		</value>
 	</Operation>
 	

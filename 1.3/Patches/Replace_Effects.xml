@@ -28,7 +28,34 @@
 			<repairEffect>MO_ConstructWood</repairEffect>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef/constructEffect[text() = "ConstructWood"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
 	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/constructEffect[text() = "ConstructWood"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/stuffProps/constructEffect[text() = "ConstructWood"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/repairEffect[text() = "ConstructWood"]</xpath>
+		<value>
+			<repairEffect>MO_ConstructWood</repairEffect>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/EffecterDef[defName="Mine"]/children/li/fleckDef[text() = "SparkFlash"]</xpath>
 		<value>

@@ -62,4 +62,11 @@
 			<moteDef>Mote_StoneBit</moteDef>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/EffecterDef[defName="Mine"]/children/li/scale</xpath>
+		<value>
+			<scale>1~2</scale>
+		</value>
+	</Operation>
 </Patch>

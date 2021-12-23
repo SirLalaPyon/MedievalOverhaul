@@ -206,6 +206,40 @@
 </ThingDef>
 
 <ThingDef ParentName="PlantBase">
+    <defName>DankPyon_Plant_Flax</defName>
+    <label>flax</label>
+    <description>A fibrous wheatlike plant. Its versatile fibre can be utilized for its stringy properties and will make good fabric.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Flammability>1.3</Flammability>
+      <Nutrition>0.3</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Haygrass</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>0.6</fertilitySensitivity>
+      <growDays>7</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Hay</harvestedThingDef>
+      <harvestYield>18</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.3~0.8</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Food</purpose>
+    </plant>
+  </ThingDef>
+
+<ThingDef ParentName="PlantBase">
   <defName>DankPyon_Plant_Sugarcane</defName>
   <label>sugarcane plant</label>
   <description>Sweet, stout stalks of fibrous plant growth. While virtually inedible on its own, they are often processed into sugar for use in numerous meals.</description>
@@ -488,7 +522,7 @@
     <label>apple tree</label>
     <description>A hardwood tree known for its wonderfully sweet, bright-red fruits, which are good both on their own and mixed into a variety of desserts.</description>
     <statBases>
-      <MaxHitPoints>85</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <Nutrition>1.5</Nutrition>
     </statBases>
     <graphicData>
@@ -606,5 +640,4 @@
       <purpose>Food</purpose>
     </plant>
   </ThingDef>
-
 </Defs>

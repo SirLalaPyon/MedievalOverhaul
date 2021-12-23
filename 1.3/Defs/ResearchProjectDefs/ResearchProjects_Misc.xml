@@ -22,8 +22,8 @@
     <baseCost>900</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>2</researchViewX>
-		<researchViewY>1.10</researchViewY>    
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.4</researchViewY>    
     <prerequisites>
       <li>DankPyon_RusticFurniture</li>
     </prerequisites>
@@ -50,7 +50,7 @@
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>3</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>1.1</researchViewY>   
     <prerequisites>
       <li>DankPyon_RusticFurniture</li>
@@ -78,10 +78,38 @@
     <baseCost>600</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>3</researchViewX>
-		<researchViewY>0.4</researchViewY>   
+		<researchViewX>4</researchViewX>
+		<researchViewY>0</researchViewY>   
     <prerequisites>
       <li>DankPyon_RusticFurniture</li>
+    </prerequisites>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_DesertLooming</defName>
+    <label>desert looming</label>
+    <description>Learn the techiniques of the desert rimworlders artisan textile crafts.</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0.4</researchViewY>   
+    <prerequisites>
+      <li>DankPyon_TextileSpinning</li>
+    </prerequisites>  
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Silk</defName>
+    <label>silk</label>
+    <description>Harvest fine stringy material from silkworms</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0.4</researchViewY>  
+    <prerequisites>
+      <li>DankPyon_TextileSpinning</li>
     </prerequisites>  
   </ResearchProjectDef>
 
@@ -118,7 +146,7 @@
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>10</researchViewX>
+		<researchViewX>13</researchViewX>
 		<researchViewY>0</researchViewY> 
     <hiddenPrerequisites>
       <li>DankPyon_RusticFurniture</li>
@@ -132,7 +160,22 @@
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>11</researchViewX>
+		<researchViewX>14</researchViewX>
+		<researchViewY>0.4</researchViewY> 
+    <prerequisites>
+      <li>DankPyon_Engineering</li>
+    </prerequisites>
+    <requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>   
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Windmill</defName>
+    <label>windmill</label>
+    <description>Harness the power of the wind to automate grinding of wheatlike prodducts.</description>
+    <baseCost>300</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>15</researchViewX>
 		<researchViewY>0.4</researchViewY> 
     <prerequisites>
       <li>DankPyon_Engineering</li>
@@ -147,7 +190,7 @@
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>11</researchViewX>
+		<researchViewX>14</researchViewX>
 		<researchViewY>1.10</researchViewY>
     <prerequisites>
       <li>DankPyon_Engineering</li>
@@ -161,7 +204,7 @@
     <baseCost>700</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>12</researchViewX>
+		<researchViewX>15</researchViewX>
 		<researchViewY>1.10</researchViewY>
     <prerequisites>
       <li>DankPyon_Crossbow</li>
@@ -175,7 +218,7 @@
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>13</researchViewX>
+		<researchViewX>16</researchViewX>
 		<researchViewY>1.10</researchViewY>
     <prerequisites>
       <li>DankPyon_HeavyCrossbow</li>
@@ -190,7 +233,7 @@
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>14</researchViewX>
+		<researchViewX>17</researchViewX>
 		<researchViewY>1.10</researchViewY>
     <prerequisites>
       <li>DankPyon_HeavyCrossbow</li>
@@ -206,7 +249,7 @@
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>10</researchViewX>
+		<researchViewX>13</researchViewX>
 		<researchViewY>2.1</researchViewY>
     <hiddenPrerequisites>
       <li>DankPyon_RusticFurniture</li>
@@ -220,7 +263,7 @@
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>11</researchViewX>
+		<researchViewX>14</researchViewX>
 		<researchViewY>2.5</researchViewY>
     <prerequisites>
       <li>DankPyon_Alchemy</li>
@@ -228,14 +271,14 @@
   </ResearchProjectDef>
 
   <!--=========================== Alcoholics ==============================-->
-  <!--ResearchProjectDef>
+  <!--ResearchProjectDef>                                                           <==== IS IN Change_research.xml PATCHES
     <defName>DankPyon_Brewing</defName>
     <label>rustic brewing</label>
     <description>Research the basics of brewing and learn how to make simple alcoholics or concoctions.</description>
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Neolithic</techLevel>
-		<researchViewX>10</researchViewX>
+		<researchViewX>13</researchViewX>
 		<researchViewY>4.2</researchViewY>  
   </ResearchProjectDef-->
 
@@ -246,7 +289,7 @@
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>11</researchViewX>
+		<researchViewX>14</researchViewX>
 		<researchViewY>4.6</researchViewY>  
     <prerequisites>
       <li>Brewing</li>
@@ -260,7 +303,7 @@
     <baseCost>400</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>12</researchViewX>
+		<researchViewX>15</researchViewX>
 		<researchViewY>4.6</researchViewY>  
     <prerequisites>
       <li>Brewing</li>
@@ -274,7 +317,7 @@
     <baseCost>500</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>13</researchViewX>
+		<researchViewX>16</researchViewX>
 		<researchViewY>4.6</researchViewY>  
     <prerequisites>
       <li>Brewing</li>
@@ -289,7 +332,7 @@
     <baseCost>300</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>5</researchViewX>
+		<researchViewX>8</researchViewX>
 		<researchViewY>0</researchViewY>  
   </ResearchProjectDef>
 
@@ -300,7 +343,7 @@
     <baseCost>1000</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>0</researchViewY> 
     <prerequisites>
       <li>DankPyon_Tailoring</li>
@@ -314,7 +357,7 @@
     <baseCost>1500</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>7</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>0</researchViewY>
     <prerequisites>
       <li>DankPyon_ProtectiveClothing</li>
@@ -330,7 +373,7 @@
     <baseCost>500</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>0.7</researchViewY>  
     <prerequisites>
       <li>RecurveBow</li>
@@ -344,7 +387,7 @@
     <baseCost>700</baseCost>
     <tab>DankPyon_MedievalResearchTab</tab>
     <techLevel>Medieval</techLevel>
-		<researchViewX>8</researchViewX>
+		<researchViewX>11</researchViewX>
 		<researchViewY>0.7</researchViewY>  
     <prerequisites>
       <li>Greatbow</li>
@@ -363,7 +406,7 @@
       <li>Smithing</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>5</researchViewX>
+		<researchViewX>8</researchViewX>
 		<researchViewY>1.4</researchViewY>  
   </ResearchProjectDef>
 
@@ -377,7 +420,7 @@
       <li>DankPyon_BasicSpears</li>
     </prerequisites>
     <techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>1.4</researchViewY>  
   </ResearchProjectDef>
 
@@ -391,7 +434,7 @@
       <li>DankPyon_MilitarySpears</li>
     </prerequisites>
     <techLevel>Medieval</techLevel>
-		<researchViewX>7</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>1.4</researchViewY>  
   </ResearchProjectDef>
 
@@ -405,7 +448,7 @@
       <li>Smithing</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>5</researchViewX>
+		<researchViewX>8</researchViewX>
 		<researchViewY>2.1</researchViewY>  
   </ResearchProjectDef>
 
@@ -419,7 +462,7 @@
       <li>DankPyon_BasicPolearms</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>2.1</researchViewY>  
   </ResearchProjectDef>
   
@@ -433,7 +476,7 @@
       <li>DankPyon_MilitaryPolearms</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>7</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>2.1</researchViewY>  
   </ResearchProjectDef>
 
@@ -447,7 +490,7 @@
       <li>Smithing</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>5</researchViewX>
+		<researchViewX>8</researchViewX>
 		<researchViewY>2.8</researchViewY>  
   </ResearchProjectDef>
 
@@ -461,7 +504,7 @@
       <li>DankPyon_BasicMaces</li>
     </prerequisites>
     <techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>2.8</researchViewY>  
   </ResearchProjectDef>
 
@@ -475,7 +518,7 @@
       <li>DankPyon_MilitaryMaces</li>
     </prerequisites>
     <techLevel>Medieval</techLevel>
-		<researchViewX>7</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>2.8</researchViewY>  
   </ResearchProjectDef>
 
@@ -489,7 +532,7 @@
       <li>Smithing</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>5</researchViewX>
+		<researchViewX>8</researchViewX>
 		<researchViewY>3.5</researchViewY>  
   </ResearchProjectDef>
 
@@ -503,7 +546,7 @@
       <li>DankPyon_BasicHammers</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>3.5</researchViewY>  
   </ResearchProjectDef>
 
@@ -517,7 +560,7 @@
       <li>DankPyon_MilitaryHammers</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>7</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>3.5</researchViewY>  
   </ResearchProjectDef>
 
@@ -531,7 +574,7 @@
       <li>Smithing</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>5</researchViewX>
+		<researchViewX>8</researchViewX>
 		<researchViewY>4.2</researchViewY>  
   </ResearchProjectDef>
 
@@ -545,7 +588,7 @@
       <li>DankPyon_BasicAxes</li>
     </prerequisites>
     <techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>4.2</researchViewY>  
   </ResearchProjectDef>
 
@@ -559,7 +602,7 @@
       <li>DankPyon_MilitaryAxes</li>
     </prerequisites>
     <techLevel>Medieval</techLevel>
-		<researchViewX>7</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>4.2</researchViewY>  
   </ResearchProjectDef>
 
@@ -573,7 +616,7 @@
       <li>Smithing</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>5</researchViewX>
+		<researchViewX>8</researchViewX>
 		<researchViewY>4.9</researchViewY>  
   </ResearchProjectDef>
 
@@ -587,7 +630,7 @@
       <li>DankPyon_BasicCleavers</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>4.9</researchViewY>  
   </ResearchProjectDef>
 
@@ -601,7 +644,7 @@
       <li>DankPyon_MilitaryCleavers</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>7</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>4.9</researchViewY>  
   </ResearchProjectDef>
 
@@ -615,7 +658,7 @@
       <li>Smithing</li>
     </prerequisites> 
     <techLevel>Medieval</techLevel>
-		<researchViewX>5</researchViewX>
+		<researchViewX>8</researchViewX>
 		<researchViewY>5.6</researchViewY>  
   </ResearchProjectDef>
 
@@ -629,7 +672,7 @@
       <li>DankPyon_BasicSwords</li>
     </prerequisites>
     <techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>5.6</researchViewY>  
   </ResearchProjectDef>
 
@@ -643,7 +686,7 @@
       <li>DankPyon_MilitarySwords</li>
     </prerequisites>
     <techLevel>Medieval</techLevel>
-		<researchViewX>7</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>5.6</researchViewY>  
   </ResearchProjectDef-->
   

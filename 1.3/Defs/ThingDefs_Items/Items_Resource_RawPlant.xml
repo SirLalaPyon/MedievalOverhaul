@@ -123,8 +123,7 @@
     </thingCategories>
   </ThingDef>
 
-<!-- ==================== Raw Plants Food ======================= -->
-
+<!-- ==================== Berry Food ======================= -->
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>DankPyon_RawTomatoes</defName>
     <label>tomatoes</label>
@@ -146,6 +145,7 @@
     </comps>
   </ThingDef>
 
+<!-- ==================== Raw Plants Food ======================= -->
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>DankPyon_RawApples</defName>
     <label>apples</label>

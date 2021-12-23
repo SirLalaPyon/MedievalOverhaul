@@ -1394,4 +1394,80 @@
     </researchPrerequisites>
   </ThingDef>
 
+  <!--ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_WindMill</defName>
+      <thingClass>Building</thingClass>
+      <drawerType>MapMeshAndRealTime</drawerType>
+    <label>windmill</label>
+    <description>A wind-powered mill to automate grinding of produce. Requires a large clear space in front and behind for optimal air flow.</description>
+    <graphicData>
+      <texPath>Buildings/Windmill/WindmillBody</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,6)</drawSize>
+      <shadowData>
+        <volume>(2.6,1,2.16)</volume>
+        <offset>(-0.20,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rectN>(0.1,1.2,4.75,3.25)</rectN>
+        <rectE>(1.25,0.2,3.5,4.7)</rectE>
+        <rectS>(0.2,1.2,4.7,3.25)</rectS>
+        <rectW>(1.25,0.2,3.5,4.7)</rectW>
+      </damageData>
+    </graphicData>
+
+    <uiIconPath>Building/Windmill/Windmill_MenuIcon</uiIconPath>
+
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+
+    <tickerType>Normal</tickerType>
+    <size>(5,6)</size>
+    <costList>
+      <WoodLog>280</WoodLog>
+      <DankPyon_IronIngot>80</DankPyon_IronIngot>
+      <DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
+    </costList>
+
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantWater</compClass>
+        <basePowerConsumption>-1100</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>WaterMill_Ambience</soundAmbientProducingPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+
+    <rotatable>true</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_WindTurbine</li>
+    </placeWorkers>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <destroySound>BuildingDestroyed_Wood_Big</destroySound>
+    </building>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites><li>WatermillGenerator</li></researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef-->
+
+  
+
 </Defs>

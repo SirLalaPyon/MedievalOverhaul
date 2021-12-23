@@ -68,13 +68,11 @@
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <hasInteractionCell>true</hasInteractionCell>
     <costList>
+      <WoodLog>200</WoodLog>
       <DankPyon_IronIngot>60</DankPyon_IronIngot>
       <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
     </costList>
-    <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
-    <costStuffCount>200</costStuffCount>
+    
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <building>
@@ -204,13 +202,10 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <costList>
+      <WoodLog>250</WoodLog>
       <DankPyon_IronIngot>90</DankPyon_IronIngot>
       <DankPyon_ComponentBasic>15</DankPyon_ComponentBasic>
     </costList>
-    <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
-    <costStuffCount>250</costStuffCount>
     <statBases>
       <MaxHitPoints>450</MaxHitPoints>
       <Flammability>1</Flammability>

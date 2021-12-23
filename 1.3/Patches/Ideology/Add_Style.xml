@@ -7,6 +7,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
+				<!-- Old Worlder -->
 				<li Class="PatchOperationAdd"> 
 					<xpath>Defs/ThingDef[@Name = "DankPyon_BuildingBase" or @Name = "DankPyon_TableGatherSpotBase" or 
 					@Name = "DankPyon_TableBase" or @Name = "DankPyon_FurnitureWithQualityBase" or @Name = "DankPyon_ArtableFurnitureBase" or 
@@ -29,6 +30,15 @@
 						<altitudeLayer>BuildingOnTop</altitudeLayer>
                     </value>
 				</li-->
+
+
+				<!-- Desert -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs/ThingDef[@Name = "DankPyon_BuildingFloorCoveringBase" or @Name = "DankPyon_RitualSeatBase"]</xpath>
+                    <value>
+                        <dominantStyleCategory>DankPyon_Desert</dominantStyleCategory>
+                    </value>
+				</li>
 
 			</operations>
 		</match>

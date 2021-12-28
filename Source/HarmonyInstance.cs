@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using ProcessorFramework;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using Verse.AI;
 
 namespace DankPyon
 {
-    [DefOf]
+    [RimWorld.DefOf]
     public static class DankPyonDefOf
     {
         public static ShaderTypeDef TransparentPlant;
@@ -307,4 +308,105 @@ namespace DankPyon
             }
         }
     }
+
+    public class ProcessorExtension : DefModExtension
+    {
+        public bool outputOnlyButcherProduct;
+    }
+    [HarmonyPatch(typeof(CompProcessor), "TakeOutProduct")]
+    public static class CompProcessor_TakeOutProduct_Patch
+    {
+        public static bool Prefix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
+        {
+            var extension = activeProcess.processDef.GetModExtension<ProcessorExtension>();
+            if (extension != null)
+            {
+                if (extension.outputOnlyButcherProduct)
+                {
+                    __result = TakeOutButcherProduct(__instance, activeProcess);
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static Thing TakeOutButcherProduct(CompProcessor __instance, ActiveProcess activeProcess)
+        {
+            Thing thing = null;
+            if (!activeProcess.Ruined)
+            {
+                var thingDefCount = activeProcess.ingredientThings.FirstOrDefault(x => x.def.butcherProducts.Any()).def.butcherProducts.FirstOrDefault();
+                thing = ThingMaker.MakeThing(thingDefCount.thingDef);
+                thing.stackCount = thingDefCount.count;
+                CompIngredients compIngredients = thing.TryGetComp<CompIngredients>();
+                List<ThingDef> list = new List<ThingDef>();
+                foreach (Thing ingredientThing in activeProcess.ingredientThings)
+                {
+                    List<ThingDef> list2 = ingredientThing.TryGetComp<CompIngredients>()?.ingredients;
+                    if (!list2.NullOrEmpty())
+                    {
+                        list.AddRange(list2);
+                    }
+                }
+                if (compIngredients != null && !list.NullOrEmpty())
+                {
+                    compIngredients.ingredients.AddRange(list);
+                }
+                if (activeProcess.processDef.usesQuality)
+                {
+                    thing.TryGetComp<CompQuality>()?.SetQuality(activeProcess.CurrentQuality, ArtGenerationContext.Colony);
+                }
+                foreach (BonusOutput bonusOutput in activeProcess.processDef.bonusOutputs)
+                {
+                    if (!Rand.Chance(bonusOutput.chance))
+                    {
+                        continue;
+                    }
+                    int num = GenMath.RoundRandom((float)activeProcess.ingredientCount * activeProcess.processDef.capacityFactor / (float)__instance.Props.capacity * (float)bonusOutput.amount);
+                    if (num <= 0)
+                    {
+                        continue;
+                    }
+                    if (bonusOutput.thingDef.race != null)
+                    {
+                        for (int i = 0; i < num; i++)
+                        {
+                            GenSpawn.Spawn(PawnGenerator.GeneratePawn(new PawnGenerationRequest(bonusOutput.thingDef.race.AnyPawnKind, null, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, newborn: true)), __instance.parent.Position, __instance.parent.Map);
+                        }
+                    }
+                    else
+                    {
+                        Thing thing2 = ThingMaker.MakeThing(bonusOutput.thingDef);
+                        thing2.stackCount = num;
+                        GenPlace.TryPlaceThing(thing2, __instance.parent.Position, __instance.parent.Map, ThingPlaceMode.Near);
+                    }
+                }
+            }
+            foreach (Thing ingredientThing2 in activeProcess.ingredientThings)
+            {
+                __instance.innerContainer.Remove(ingredientThing2);
+                ingredientThing2.Destroy();
+            }
+            __instance.activeProcesses.Remove(activeProcess);
+            if (Rand.Chance(activeProcess.processDef.destroyChance * (float)activeProcess.ingredientCount * activeProcess.processDef.capacityFactor / (float)__instance.Props.capacity))
+            {
+                if (PF_Settings.replaceDestroyedProcessors)
+                {
+                    GenConstruct.PlaceBlueprintForBuild_NewTemp(__instance.parent.def, __instance.parent.Position, __instance.parent.Map, __instance.parent.Rotation, Faction.OfPlayer, null);
+                }
+                __instance.parent.Destroy();
+                return thing;
+            }
+            if (__instance.Empty)
+            {
+                __instance.GraphicChange(toEmpty: true);
+            }
+            if (!__instance.activeProcesses.Any((ActiveProcess x) => x.processDef.usesQuality))
+            {
+                __instance.emptyNow = false;
+            }
+            return thing;
+        }
+    }
+
 }

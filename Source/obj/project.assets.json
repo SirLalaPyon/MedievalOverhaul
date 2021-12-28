@@ -9,7 +9,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.3.3080": {
+      "Krafs.Rimworld.Ref/1.3.3209-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -118,16 +118,16 @@
         "krafs.publicizer.nuspec"
       ]
     },
-    "Krafs.Rimworld.Ref/1.3.3080": {
-      "sha512": "w4jSHS9TK0G9CtRX8qh8tq3lBV2QHBrKeOcenoe6Jpi5R6MlJCBxD1DDtJl/ocjWt3jPpYqTdlXjlNHW8Q/Rhg==",
+    "Krafs.Rimworld.Ref/1.3.3209-beta": {
+      "sha512": "fOiG9MfT8U1cRxkhPt8jYbSlx6WFh31Qn6qLZYxasw41JET5qwwP3crZx8ZdOKPU3M7UE21romEXvtL6Jr+DPw==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.3.3080",
+      "path": "krafs.rimworld.ref/1.3.3209-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "icon.png",
-        "krafs.rimworld.ref.1.3.3080.nupkg.sha512",
+        "krafs.rimworld.ref.1.3.3209-beta.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -240,24 +240,24 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
       "Krafs.Publicizer >= 1.0.0",
-      "Krafs.Rimworld.Ref >= 1.3.3080",
+      "Krafs.Rimworld.Ref >= 1.3.3209-beta",
       "Lib.Harmony >= 2.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elijah Panget\\.nuget\\packages\\": {}
+    "C:\\Users\\Vova\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Git\\Source\\DankPyon_MedievalOverhaul.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\DankPyon_MedievalOverhaul.csproj",
       "projectName": "DankPyon_MedievalOverhaul",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Git\\Source\\DankPyon_MedievalOverhaul.csproj",
-      "packagesPath": "C:\\Users\\Elijah Panget\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Git\\Source\\obj\\",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\DankPyon_MedievalOverhaul.csproj",
+      "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Elijah Panget\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vova\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -292,7 +292,7 @@
           },
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.3.3080, )",
+            "version": "[1.3.3209-beta, )",
             "generatePathProperty": true
           },
           "Lib.Harmony": {
@@ -301,7 +301,7 @@
             "version": "[2.1.0, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

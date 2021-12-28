@@ -2,7 +2,6 @@
 using Verse;
 using Verse.AI;
 using UnityEngine;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace DankPyon_MedievalOverhaul
 {
+
     public class CompFireOverlaySouth : CompFireOverlay
     {
 		public override void PostDraw()

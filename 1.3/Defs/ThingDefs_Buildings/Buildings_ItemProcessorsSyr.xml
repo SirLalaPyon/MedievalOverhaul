@@ -153,6 +153,9 @@
       </li>
 
       <li Class="CompProperties_Breakdownable"/>
+	  <li>
+		<compClass>DankPyon_MedievalOverhaul.CompWindMill</compClass>
+	  </li>
     </comps>
 
     <rotatable>true</rotatable>
@@ -204,6 +207,11 @@
   <bonusOutputs>
     <Rat>(1.0, 1)</Rat>
   </bonusOutputs>
+  <modExtensions>
+	<li Class="DankPyon.ProcessorExtension">
+		<outputOnlyButcherProduct>true</outputOnlyButcherProduct>
+	</li>
+  </modExtensions>
 </ProcessorFramework.ProcessDef>
 
 <ProcessorFramework.ProcessDef>

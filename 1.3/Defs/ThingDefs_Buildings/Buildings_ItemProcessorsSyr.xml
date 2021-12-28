@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_TanningRack</defName>
     <label>tanning rack</label>
@@ -87,6 +86,90 @@
 		</researchPrerequisites>
   </ThingDef>
 
+  <!--windmill-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_WindMill</defName>
+      <thingClass>Building</thingClass>
+      <drawerType>MapMeshAndRealTime</drawerType>
+    <label>windmill</label>
+    <description>A wind-powered mill to automate grinding of produce. Requires a large clear space in front and behind for optimal air flow.</description>
+    <graphicData>
+      <texPath>Buildings/Windmill/WindmillBody</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,6)</drawSize>
+      <shadowData>
+        <volume>(2.6,1,2.16)</volume>
+        <offset>(-0.20,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rectN>(0.1,1.2,4.75,3.25)</rectN>
+        <rectE>(1.25,0.2,3.5,4.7)</rectE>
+        <rectS>(0.2,1.2,4.7,3.25)</rectS>
+        <rectW>(1.25,0.2,3.5,4.7)</rectW>
+      </damageData>
+    </graphicData>
+
+    <uiIconPath>Building/Windmill/Windmill_MenuIcon</uiIconPath>
+
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+
+    <tickerType>Normal</tickerType>
+    <size>(5,6)</size>
+    <costList>
+      <WoodLog>280</WoodLog>
+      <DankPyon_IronIngot>80</DankPyon_IronIngot>
+      <DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
+    </costList>
+
+    <comps>
+      <li Class="ProcessorFramework.CompProperties_Processor">
+        <capacity>200</capacity>
+        <independentProcesses>true</independentProcesses>
+        <parallelProcesses>false</parallelProcesses>
+        <dropIngredients>true</dropIngredients>
+        <showProductIcon>true</showProductIcon>
+        <barOffset>(0.0, 0.25)</barOffset>
+        <barScale>(1.0, 1.0)</barScale>
+        <colorCoded>false</colorCoded>
+        <processes>
+          <li>DankPyon_MillProcess</li>
+        </processes>
+      </li>
+
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+
+    <rotatable>true</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_WindTurbine</li>
+    </placeWorkers>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <destroySound>BuildingDestroyed_Wood_Big</destroySound>
+    </building>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites><li>DankPyon_Windmill</li></researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+
   <ProcessorFramework.ProcessDef>
   <defName>DankPyon_HidesProcess</defName>
   <thingDef>Beer</thingDef>
@@ -95,7 +178,43 @@
       <li>DankPyon_Hides</li>
     </categories>
   </ingredientFilter>
-  <processDays>6</processDays> <!-- in days, a day is 60,000 ticks -->
+  <processDays>1</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>1.0</capacityFactor>
+  <efficiency>1.0</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-1.0~99.0</temperatureSafe>
+  <temperatureIdeal>21.0~99.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~0.0</rainFactor>
+  <snowFactor>1.0~0.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix>Filled</filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+  <bonusOutputs>
+    <Rat>(1.0, 1)</Rat>
+  </bonusOutputs>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef>
+  <defName>DankPyon_MillProcess</defName>
+  <thingDef>DankPyon_Flour</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_RawWheat</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>0.5</processDays> <!-- in days, a day is 60,000 ticks -->
   <capacityFactor>1.0</capacityFactor>
   <efficiency>1.0</efficiency>
   <usesTemperature>true</usesTemperature>
@@ -107,7 +226,7 @@
   <sunFactor>1.0~1.0</sunFactor>
   <rainFactor>1.0~1.0</rainFactor>
   <snowFactor>1.0~1.0</snowFactor>
-  <windFactor>1.0~1.0</windFactor>
+  <windFactor>1.0~0.0</windFactor>
   <unpoweredFactor>0.0</unpoweredFactor>
   <unfueledFactor>0.0</unfueledFactor>
   <powerUseFactor>1.0</powerUseFactor>

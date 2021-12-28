@@ -582,6 +582,63 @@
     </comps>
   </ThingDef>
 
+  <!--== Silver Ore Barrel ==-->
+  <ThingDef ParentName="DankPyon_StorageBase" >
+    <defName>DankPyon_BarrelSilverOre</defName>
+    <label>barrel of silver ore</label>
+    <description>A cylindrical barrel reserved for silver ore to save space. Can hold up to 5 stacks of silver ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <graphicData>
+      <texPath>Storage/BarrelSilverOre</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.8,1.8)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Storage/BarrelSilverOre</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
+
+    <costList>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>Silver</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>Silver</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
+    </building>	
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
   <!--== Gold Ore Barrel ==-->
   <ThingDef ParentName="DankPyon_StorageBase" >
     <defName>DankPyon_BarrelGoldOre</defName>
@@ -629,6 +686,63 @@
     </building>	
     
     
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--== Coal Ore Barrel ==-->
+  <ThingDef ParentName="DankPyon_StorageBase" >
+    <defName>DankPyon_BarrelCoalOre</defName>
+    <label>barrel of coal ore</label>
+    <description>A cylindrical barrel reserved for coal ore to save space. Can hold up to 5 stacks of coal ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <graphicData>
+      <texPath>Storage/BarrelCoalOre</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.8,1.8)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Storage/BarrelCoalOre</uiIconPath>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
+
+    <costList>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+        <thingDefs>
+          <li>DankPyon_Coal</li>
+        </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+            <li>DankPyon_Coal</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
+    </building>	
+
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
         <minNumberStacks>1</minNumberStacks>

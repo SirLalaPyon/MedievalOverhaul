@@ -20,12 +20,6 @@ namespace DankPyon_MedievalOverhaul
 		[TweakValue("APSGraphics", 0f, 1f)]
 		private static float SpinRateFactor = 0.035f;
 
-		[TweakValue("APSGraphics", 0f, 80f)]
-		private static float BladeHeight = 11.5f;
-
-		[TweakValue("APSGraphics", 0f, 80f)]
-		private static float BladeWidth = 1.12f;
-
 		private static readonly Material WindTurbineBladesMat = MaterialPool.MatFrom("Buildings/Windmill/WindmillBlades");
 
 		public override void PostSpawnSetup(bool respawningAfterLoad)
@@ -70,34 +64,23 @@ namespace DankPyon_MedievalOverhaul
 			}
 			sustainer.Maintain();
 		}
-		[TweakValue("Graphics", -1f, 3f)]
-		private static float HorizontalBladeOffset = -0.02f;
 
-		[TweakValue("Graphics", 0f, 3f)]
-		private static float VerticalBladeOffset = 2.5f;
 		public override void PostDraw()
 		{
 			base.PostDraw();
-			Vector3 pos = parent.TrueCenter();
-			pos += parent.Rotation.FacingCell.ToVector3() * VerticalBladeOffset;
-			pos += parent.Rotation.RighthandCell.ToVector3() * HorizontalBladeOffset;
-			pos.y += 3f / 74f;
-			float num = BladeHeight * Mathf.Sin(spinPosition);
-			if (num < 0f)
+			Vector3 vector = parent.TrueCenter();
+			vector += parent.Rotation.FacingCell.ToVector3() * 2.36f;
+			for (int i = 0; i < 9; i++)
 			{
-				num *= -1f;
+				float num = spinPosition + (float)Math.PI * 2f * (float)i / 9f;
+				float x = Mathf.Abs(4f * Mathf.Sin(num));
+				bool num2 = num % ((float)Math.PI * 2f) < (float)Math.PI;
+				Vector2 vector2 = new Vector2(x, 1f);
+				Vector3 s = new Vector3(vector2.x, 1f, vector2.y);
+				Matrix4x4 matrix = default(Matrix4x4);
+				matrix.SetTRS(vector + Vector3.up * (3f / 74f) * Mathf.Cos(num), parent.Rotation.AsQuat, s);
+				Graphics.DrawMesh(num2 ? MeshPool.plane10 : MeshPool.plane10Flip, matrix, WindTurbineBladesMat, 0);
 			}
-			bool num2 = spinPosition % (float)Math.PI * 2f < (float)Math.PI;
-			Vector2 vector = new Vector2(num, BladeWidth);
-			Vector3 s = new Vector3(vector.x, 1f, vector.y);
-			Matrix4x4 matrix = default(Matrix4x4);
-			matrix.SetTRS(pos, parent.Rotation.AsQuat, s);
-			Graphics.DrawMesh(num2 ? MeshPool.plane10 : MeshPool.plane10Flip, matrix, WindTurbineBladesMat, 0);
-			pos.y += YOffset;
-			matrix.SetTRS(pos, parent.Rotation.AsQuat, s);
-			Graphics.DrawMesh(num2 ? MeshPool.plane10Flip : MeshPool.plane10, matrix, WindTurbineBladesMat, 0);
 		}
-
-		[TweakValue("APSGraphics", -10f, 10f)] private static float YOffset = -0.02f;
 	}
 }

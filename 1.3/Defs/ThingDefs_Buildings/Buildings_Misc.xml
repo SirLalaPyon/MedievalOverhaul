@@ -240,7 +240,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<!--ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_RusticCupboard</defName>
 		<label>tableware shelf</label>
 		<description>A shelf for Tableware. Increases Cook speed when placed near rustic cooking table.</description>
@@ -301,7 +301,7 @@
 		<clearBuildingArea>false</clearBuildingArea>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
-	</ThingDef>
+	</ThingDef-->
 	
 	<ThingDef ParentName="BuildingBase">
 	<defName>DankPyon_RusticCookingTools</defName>

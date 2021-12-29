@@ -98,7 +98,7 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_HideBaseTiny">
+	<!--ThingDef ParentName="DankPyon_HideBaseTiny">
 		<defName>RatDankPyon_Hide_HideTiny</defName>
 		<label>tiny hide</label>
 		<graphicData>
@@ -110,7 +110,7 @@
 		<stuffProps>
 			<color>(162,106,57)</color>
 		</stuffProps>
-	</ThingDef>
+	</ThingDef-->
 	
 	<!--===== Guide =====
 		Tiny		= 	15 leather
@@ -223,7 +223,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_HideBaseTiny">
+	<ThingDef ParentName="DankPyon_HideBaseSmall">
 		<defName>DankPyon_Hide_ThickHideSmall</defName>
 		<label>small thick hide</label>
 		<graphicData>
@@ -240,7 +240,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_HideBaseTiny">
+	<ThingDef ParentName="DankPyon_HideBaseMedium">
 		<defName>DankPyon_Hide_ThickHideMedium</defName>
 		<label>medium thick hide</label>
 		<graphicData>
@@ -257,7 +257,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_HideBaseTiny">
+	<ThingDef ParentName="DankPyon_HideBaseLarge">
 		<defName>DankPyon_Hide_ThickHideLarge</defName>
 		<label>large thick hide</label>
 		<graphicData>
@@ -274,7 +274,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_HideBaseTiny">
+	<ThingDef ParentName="DankPyon_HideBaseHuge">
 		<defName>DankPyon_Hide_ThickHideHuge</defName>
 		<label>huge thick hide</label>
 		<graphicData>
@@ -515,7 +515,7 @@
 
 	<ThingDef ParentName="DankPyon_HideBaseMedium">
 		<defName>DankPyon_Hide_ScaleMedium</defName>
-		<label>scale hide</label>
+		<label>medium scale hide</label>
 		<graphicData>
 			<texPath>Resources/ScaleMedium</texPath>
 			<color>(101,116,58)</color>
@@ -607,7 +607,7 @@
 
 	<ThingDef ParentName="DankPyon_HideBaseMedium">
 		<defName>DankPyon_Hide_ThickScaleMedium</defName>
-		<label>thick scale hide</label>
+		<label>medium thick scale hide</label>
 		<graphicData>
 			<texPath>Resources/ScaleMedium</texPath>
 			<color>(84,89,61)</color>
@@ -663,7 +663,7 @@
 	<!--===== Market Value = 2 =====-->
 	<ThingDef ParentName="DankPyon_HideBaseTiny">
 		<defName>DankPyon_Hide_BirdTiny</defName>
-		<label>birdskin</label>
+		<label>tiny birdskin</label>
 		<graphicData>
 			<texPath>Resources/HideTiny</texPath>
 			<color>(76,83,99)</color>
@@ -681,7 +681,7 @@
 
 	<ThingDef ParentName="DankPyon_HideBaseSmall">
 		<defName>DankPyon_Hide_BirdSmall</defName>
-		<label>birdskin</label>
+		<label>small birdskin</label>
 		<graphicData>
 			<texPath>Resources/HideSmall</texPath>
 			<color>(76,83,99)</color>
@@ -699,7 +699,7 @@
 
 	<ThingDef ParentName="DankPyon_HideBaseMedium">
 		<defName>DankPyon_Hide_BirdMedium</defName>
-		<label>birdskin</label>
+		<label>medium birdskin</label>
 		<graphicData>
 			<texPath>Resources/HideMedium</texPath>
 			<color>(76,83,99)</color>
@@ -717,7 +717,7 @@
 
 	<ThingDef ParentName="DankPyon_HideBaseLarge">
 		<defName>DankPyon_Hide_BirdLarge</defName>
-		<label>birdskin</label>
+		<label>large birdskin</label>
 		<graphicData>
 			<texPath>Resources/HideLarge</texPath>
 			<color>(76,83,99)</color>
@@ -735,7 +735,7 @@
 
 	<ThingDef ParentName="DankPyon_HideBaseHuge">
 		<defName>DankPyon_Hide_BirdHuge</defName>
-		<label>birdskin</label>
+		<label>huge birdskin</label>
 		<graphicData>
 			<texPath>Resources/HideHuge</texPath>
 			<color>(76,83,99)</color>

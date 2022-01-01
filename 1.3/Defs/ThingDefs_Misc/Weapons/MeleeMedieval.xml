@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 
  <Defs>
 
@@ -490,7 +490,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -499,6 +499,7 @@
         <power>16.2</power>
         <cooldownTime>2</cooldownTime>
         <armorPenetration>0.25</armorPenetration>
+	<meleeReachRange>3</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>

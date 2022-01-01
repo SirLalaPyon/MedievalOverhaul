@@ -25,9 +25,11 @@ namespace DankPyon
         public static Dictionary<Thing, PlantExtension> cachedTransparentablePlants = new Dictionary<Thing, PlantExtension>();
 
         public static Dictionary<HediffDef, StatDef> statMultipliers = new Dictionary<HediffDef, StatDef>();
+
+        public static Harmony harmony;
         static HarmonyInstance()
         {
-            var harmony = new Harmony("lalapyhon.rimworld.medievaloverhaul");
+            harmony = new Harmony("lalapyhon.rimworld.medievaloverhaul");
             harmony.Patch(AccessTools.Method(typeof(Thing), "ButcherProducts", null, null), null,
                 new HarmonyMethod(typeof(HarmonyInstance), "Thing_MakeButcherProducts_FatAndBone_PostFix", null), null);
             harmony.PatchAll();

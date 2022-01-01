@@ -40,7 +40,7 @@
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ProcessorFramework">
+    <Reference Include="ProcessorFramework" ExcludeAssets="runtime">
       <HintPath>..\..\..\..\..\workshop\content\294100\2633514537\1.3\Assemblies\ProcessorFramework.dll</HintPath>
       <CopyLocal>False</CopyLocal>
     </Reference>

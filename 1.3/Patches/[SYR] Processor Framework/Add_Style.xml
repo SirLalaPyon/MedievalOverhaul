@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>Defs/ThingDef[defName="BarrelProcessor"]/comps/li[1]/processes</xpath>
+                    <value>
+                        <li>DankPyon_WortIntoAle</li>
+						<li>DankPyon_MustIntoWine</li>
+                    </value>
+				</li>
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>Defs/ThingDef[defName="BarrelProcessor"]/costList</xpath>
+                    <value>
+                        <costList>
+							<DankPyon_IronIngot>10</DankPyon_IronIngot>
+						</costList>
+                    </value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

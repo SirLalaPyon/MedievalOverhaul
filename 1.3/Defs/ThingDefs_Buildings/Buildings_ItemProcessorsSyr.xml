@@ -166,7 +166,7 @@
       <WorkToBuild>600</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
-      <Cleanliness>-10</Cleanliness>
+      <Cleanliness>-30</Cleanliness>
     </statBases>
     <size>(2,1)</size>
     <designationCategory>Production</designationCategory>
@@ -188,12 +188,20 @@
         <colorCoded>false</colorCoded>
         <processes>
           <li>DankPyon_HidesProcess</li>
+          <li>DankPyon_HyenaRugProcess</li>
+          <li>DankPyon_WolfTimberRugProcess</li>
+          <li>DankPyon_WolfArcticRugProcess</li>
+          <li>DankPyon_CougarRugProcess</li>
+          <li>DankPyon_PantherRugProcess</li>
+          <li>DankPyon_BearGrizzlyRugProcess</li>
+          <li>DankPyon_BearPolarRugProcess</li>
+          <li>DankPyon_ThrumboRugProcess</li>
         </processes>
       </li>
       <li Class="CompProperties_Forbiddable"/>
 
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>80.0</fuelConsumptionRate>
+        <fuelConsumptionRate>10.0</fuelConsumptionRate>
         <fuelCapacity>50.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
@@ -208,7 +216,6 @@
     <tickerType>Rare</tickerType>
 
     <placeWorkers>
-      <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <techLevel>Medieval</techLevel>
@@ -218,7 +225,7 @@
   </ThingDef>
 
   <!-- ===== Presser ===== -->
-  <ThingDef ParentName="DankPyon_ItemProcessorBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Presser</defName>
     <label>Presser</label>
     <description>A wooden contraption to press selected items. Either to bring the juice out or whey from curds.</description>
@@ -250,7 +257,8 @@
       <WoodLog>30</WoodLog>
       <DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
     </costList>
-  
+
+    <designationCategory>Production</designationCategory>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -328,8 +336,8 @@
     <thingClass>Building_WorkTable</thingClass>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>80</fuelConsumptionRate>
-        <fuelCapacity>70.0</fuelCapacity>
+        <fuelConsumptionRate>10</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
             <li>WoodLog</li>
@@ -345,19 +353,19 @@
       </li>
 
        <li Class="ProcessorFramework.CompProperties_Processor">
-          <capacity>100</capacity>
-          <independentProcesses>true</independentProcesses>
-          <parallelProcesses>false</parallelProcesses>
-          <dropIngredients>true</dropIngredients>
-          <showProductIcon>true</showProductIcon>
-          <barOffset>(0.0, 0.25)</barOffset>
-          <barScale>(1.0, 1.0)</barScale>
-          <colorCoded>false</colorCoded>
-          <processes>
-            <li>DankPyon_SmokedMeatProcess</li>
-          </processes>
-        </li>
-        <li Class="CompProperties_Forbiddable"/>
+        <capacity>100</capacity>
+        <independentProcesses>true</independentProcesses>
+        <parallelProcesses>false</parallelProcesses>
+        <dropIngredients>true</dropIngredients>
+        <showProductIcon>true</showProductIcon>
+        <barOffset>(0.0, 0.25)</barOffset>
+        <barScale>(1.0, 1.0)</barScale>
+        <colorCoded>false</colorCoded>
+        <processes>
+          <li>DankPyon_SmokedMeatProcess</li>
+        </processes>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
 
     </comps>
     <tickerType>Rare</tickerType>
@@ -367,7 +375,7 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="DankPyon_ItemProcessorBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_RusticFermentingBarrel</defName>
     <label>rustic fermenting barrel</label>
     <description>A barrel for fermenting raw wort into ale. An alcoholic with a fruity, bitter, and rich taste.</description>
@@ -486,7 +494,7 @@
         <dropIngredients>true</dropIngredients>
         <showProductIcon>true</showProductIcon>
         <barOffset>(0.0, 0.25)</barOffset>
-        <barScale>(1.0, 1.0)</barScale>
+        <barScale>(2.0, 2.0)</barScale>
         <colorCoded>false</colorCoded>
         <processes>
           <li>DankPyon_MillProcess</li>
@@ -501,7 +509,7 @@
 
     <rotatable>true</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
+    <designationCategory>Production</designationCategory>
     <placeWorkers>
       <li>PlaceWorker_WindTurbine</li>
     </placeWorkers>

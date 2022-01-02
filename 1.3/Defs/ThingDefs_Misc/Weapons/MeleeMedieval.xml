@@ -490,7 +490,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li Class="DankPyon.Tool_Melee">
+      <li>
         <label>point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -499,7 +499,6 @@
         <power>16.2</power>
         <cooldownTime>2</cooldownTime>
         <armorPenetration>0.25</armorPenetration>
-	<meleeReachRange>3</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>
@@ -698,7 +697,7 @@
     </weaponTags>
 
     <tools>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>shaft</label>
         <capacities>
           <li>Blunt</li>
@@ -706,8 +705,9 @@
         </capacities>
         <power>13</power>
         <cooldownTime>2</cooldownTime>
+        <meleeReachRange>4</meleeReachRange>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -716,6 +716,7 @@
         <power>21</power>
         <cooldownTime>2.57</cooldownTime>
         <armorPenetration>0.25</armorPenetration>
+        <meleeReachRange>4</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>

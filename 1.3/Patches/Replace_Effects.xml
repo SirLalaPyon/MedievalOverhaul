@@ -51,6 +51,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
 		<xpath>Defs/ThingDef/repairEffect[text() = "ConstructWood"]</xpath>
 		<value>
 			<repairEffect>MO_ConstructWood</repairEffect>

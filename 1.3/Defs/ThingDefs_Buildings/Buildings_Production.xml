@@ -926,7 +926,6 @@
     <graphicData>
       <texPath>Production/SpinningWheel</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
       <drawSize>(2,2)</drawSize>
       <shadowData>
         <volume>(2.8, 0.35, 0.59)</volume>
@@ -940,10 +939,9 @@
       </damageData>
     </graphicData>
 
-	  <costStuffCount>60</costStuffCount>
-	  <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
+	  <costList>
+      <WoodLog>20</WoodLog>
+    </costList>
 
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>

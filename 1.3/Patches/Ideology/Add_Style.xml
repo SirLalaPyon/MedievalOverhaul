@@ -33,12 +33,12 @@
 
 
 				<!-- Desert -->
-				<li Class="PatchOperationAdd"> 
+				<!--li Class="PatchOperationAdd"> 
 					<xpath>Defs/ThingDef[@Name = "DankPyon_BuildingFloorCoveringBase" or @Name = "DankPyon_RitualSeatBase"]</xpath>
                     <value>
                         <dominantStyleCategory>DankPyon_Desert</dominantStyleCategory>
                     </value>
-				</li>
+				</li-->
 
 			</operations>
 		</match>

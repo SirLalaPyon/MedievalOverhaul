@@ -108,7 +108,7 @@
   </ThingDef>
 
   <!--========================= Walls =============================-->
-  <ThingDef ParentName="BuildingBase" Name="Wall">
+  <!--ThingDef ParentName="BuildingBase" Name="Wall">
     <defName>DankPyon_Tent</defName>
     <label>tent wall</label>
     <description>An impassable wall. Capable of holding up a roof.</description>
@@ -155,7 +155,7 @@
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <holdsRoof>true</holdsRoof>
     <designationCategory>Structure</designationCategory>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
@@ -197,6 +197,6 @@
       </li>
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
-  </ThingDef>
+  </ThingDef-->
 
 </Defs>

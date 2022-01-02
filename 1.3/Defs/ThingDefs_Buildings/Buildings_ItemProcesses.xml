@@ -1,47 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <!-- Hides -->
-  <ProcessorFramework.ProcessDef>
-  <defName>DankPyon_HidesProcess</defName>
-  <thingDef>DankPyon_DummyLeather</thingDef>
-  <ingredientFilter>
-    <categories>
-      <li>DankPyon_Hides</li>
-    </categories>
-  </ingredientFilter>
-  <processDays>1</processDays> <!-- in days, a day is 60,000 ticks -->
-  <capacityFactor>1.0</capacityFactor>
-  <efficiency>1.0</efficiency>
-  <usesTemperature>true</usesTemperature>
-  <temperatureSafe>-1.0~99.0</temperatureSafe>
-  <temperatureIdeal>21.0~99.0</temperatureIdeal>
-  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
-  <speedBelowSafe>0.1</speedBelowSafe>
-  <speedAboveSafe>1.0</speedAboveSafe>
-  <sunFactor>1.0~1.0</sunFactor>
-  <rainFactor>1.0~0.0</rainFactor>
-  <snowFactor>1.0~0.0</snowFactor>
-  <windFactor>1.0~1.0</windFactor>
-  <unpoweredFactor>0.0</unpoweredFactor>
-  <unfueledFactor>0.0</unfueledFactor>
-  <powerUseFactor>1.0</powerUseFactor>
-  <fuelUseFactor>1.0</fuelUseFactor>
-  <filledGraphicSuffix>Filled</filledGraphicSuffix>
-  <usesQuality>false</usesQuality>
-  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
-  <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
-  <customLabel></customLabel>
-  <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
-  <modExtensions>
-	<li Class="DankPyon.ProcessorExtension">
-		<outputOnlyButcherProduct>true</outputOnlyButcherProduct>
-	</li>
-  </modExtensions>
-</ProcessorFramework.ProcessDef>
-
 <!-- Flour -->
 <ProcessorFramework.ProcessDef>
   <defName>DankPyon_MillProcess</defName>
@@ -51,10 +9,10 @@
       <li>DankPyon_RawWheat</li>
     </thingDefs>
   </ingredientFilter>
-  <processDays>0.3</processDays> <!-- in days, a day is 60,000 ticks -->
+  <processDays>0.2</processDays> <!-- in days, a day is 60,000 ticks -->
   <capacityFactor>1.0</capacityFactor>
   <efficiency>1.0</efficiency>
-  <usesTemperature>true</usesTemperature>
+  <usesTemperature>false</usesTemperature>
   <temperatureSafe>-1.0~99.0</temperatureSafe>
   <temperatureIdeal>21.0~99.0</temperatureIdeal>
   <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
@@ -63,20 +21,18 @@
   <sunFactor>1.0~1.0</sunFactor>
   <rainFactor>1.0~1.0</rainFactor>
   <snowFactor>1.0~1.0</snowFactor>
-  <windFactor>1.0~0.0</windFactor>
+  <windFactor>0.0~3.0</windFactor>
   <unpoweredFactor>0.0</unpoweredFactor>
   <unfueledFactor>0.0</unfueledFactor>
   <powerUseFactor>1.0</powerUseFactor>
   <fuelUseFactor>1.0</fuelUseFactor>
-  <filledGraphicSuffix>Filled</filledGraphicSuffix>
+  <filledGraphicSuffix></filledGraphicSuffix>
   <usesQuality>false</usesQuality>
   <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+
 </ProcessorFramework.ProcessDef>
 
 <!-- Dried Meat-->
@@ -87,10 +43,13 @@
     <categories>
       <li>MeatRaw</li>
     </categories>
+    <disallowedThingDefs>
+      <li>DankPyon_DriedMeat</li>
+    </disallowedThingDefs>
   </ingredientFilter>
   <processDays>2.5</processDays> <!-- in days, a day is 60,000 ticks -->
   <capacityFactor>1.0</capacityFactor>
-  <efficiency>1.0</efficiency>
+  <efficiency>0.1</efficiency>
   <usesTemperature>true</usesTemperature>
   <temperatureSafe>-99.0~99.0</temperatureSafe>
   <temperatureIdeal>21.0~99.0</temperatureIdeal>
@@ -111,9 +70,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+  
 </ProcessorFramework.ProcessDef>
 
 <!-- Straw -->
@@ -148,9 +105,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+  
 </ProcessorFramework.ProcessDef>
 
 <!-- Smoked Meat-->
@@ -164,7 +119,7 @@
   </ingredientFilter>
   <processDays>1</processDays> <!-- in days, a day is 60,000 ticks -->
   <capacityFactor>1.0</capacityFactor>
-  <efficiency>1.0</efficiency>
+  <efficiency>0.10</efficiency>
   <usesTemperature>true</usesTemperature>
   <temperatureSafe>-99.0~99.0</temperatureSafe>
   <temperatureIdeal>21.0~99.0</temperatureIdeal>
@@ -185,9 +140,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+  
 </ProcessorFramework.ProcessDef>
 
 <!-- Cheese -->
@@ -222,9 +175,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+  
 </ProcessorFramework.ProcessDef>
 
 <!-- Apple Juice -->
@@ -259,9 +210,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+  
 </ProcessorFramework.ProcessDef>
 
 <ProcessorFramework.ProcessDef>
@@ -348,5 +297,128 @@
     <commonality>0.2</commonality>
   </stuffProps>
 </ThingDef>
+
+<!-- Hides -->
+<ProcessorFramework.ProcessDef Abstract="true" Name="DankPyon_BaseHidesProcess">
+  <thingDef>DankPyon_DummyLeather</thingDef>
+  <processDays>1</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>1.0</capacityFactor>
+  <efficiency>1.0</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-99.0~99.0</temperatureSafe>
+  <temperatureIdeal>1.0~99.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~0.0</rainFactor>
+  <snowFactor>1.0~0.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix>Filled</filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef>
+  <defName>DankPyon_HidesProcess</defName>
+  <thingDef>DankPyon_DummyLeather</thingDef>
+  <ingredientFilter>
+    <categories>
+      <li>DankPyon_Hides</li>
+    </categories>
+  </ingredientFilter>
+  <modExtensions>
+	<li Class="DankPyon.ProcessorExtension">
+		<outputOnlyButcherProduct>true</outputOnlyButcherProduct>
+	</li>
+  </modExtensions>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_HyenaRugProcess</defName>
+  <thingDef>DankPyon_RugHyena2x2c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_Hyena</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_WolfTimberRugProcess</defName>
+  <thingDef>DankPyon_RugWolfTimber2x2c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_WolfTimber</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_WolfArcticRugProcess</defName>
+  <thingDef>DankPyon_RugWolfArctic2x2c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_WolfArctic</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_CougarRugProcess</defName>
+  <thingDef>DankPyon_RugCougar2x2c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_Cougar</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_PantherRugProcess</defName>
+  <thingDef>DankPyon_RugPanther2x2c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_Panther</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_BearGrizzlyRugProcess</defName>
+  <thingDef>DankPyon_RugGrizzlyBear3x3c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_BearGrizzly</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_BearPolarRugProcess</defName>
+  <thingDef>DankPyon_RugPolarBear3x3c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_BearPolar</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_ThrumboRugProcess</defName>
+  <thingDef>DankPyon_RugThrumbo3x3c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_Thrumbo</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
 
 </Defs>

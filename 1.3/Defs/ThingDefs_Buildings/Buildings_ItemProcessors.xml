@@ -4,7 +4,7 @@
 
 
   <!-- ===== Item Processor Base ===== -->
-  <ThingDef Abstract="True" ParentName="BuildingBase" Name="DankPyon_ItemProcessorBase">
+  <!--ThingDef Abstract="True" ParentName="BuildingBase" Name="DankPyon_ItemProcessorBase">
     <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
@@ -18,7 +18,7 @@
     <hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-  </ThingDef>
+  </ThingDef-->
 
    <!-- ==================== Rack ======================= -->  
 

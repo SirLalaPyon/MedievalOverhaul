@@ -12,7 +12,7 @@
   <processDays>0.2</processDays> <!-- in days, a day is 60,000 ticks -->
   <capacityFactor>1.0</capacityFactor>
   <efficiency>1.0</efficiency>
-  <usesTemperature>true</usesTemperature>
+  <usesTemperature>false</usesTemperature>
   <temperatureSafe>-1.0~99.0</temperatureSafe>
   <temperatureIdeal>21.0~99.0</temperatureIdeal>
   <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
@@ -21,7 +21,7 @@
   <sunFactor>1.0~1.0</sunFactor>
   <rainFactor>1.0~1.0</rainFactor>
   <snowFactor>1.0~1.0</snowFactor>
-  <windFactor>1.0~0.0</windFactor>
+  <windFactor>0.0~3.0</windFactor>
   <unpoweredFactor>0.0</unpoweredFactor>
   <unfueledFactor>0.0</unfueledFactor>
   <powerUseFactor>1.0</powerUseFactor>
@@ -32,9 +32,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+
 </ProcessorFramework.ProcessDef>
 
 <!-- Dried Meat-->
@@ -72,9 +70,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+  
 </ProcessorFramework.ProcessDef>
 
 <!-- Straw -->
@@ -109,9 +105,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+  
 </ProcessorFramework.ProcessDef>
 
 <!-- Smoked Meat-->
@@ -181,9 +175,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+  
 </ProcessorFramework.ProcessDef>
 
 <!-- Apple Juice -->
@@ -218,9 +210,7 @@
   <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
   <customLabel></customLabel>
   <destroyChance>0.0</destroyChance>
-  <bonusOutputs>
-    <Rat>(1.0, 1)</Rat>
-  </bonusOutputs>
+  
 </ProcessorFramework.ProcessDef>
 
 <ProcessorFramework.ProcessDef>

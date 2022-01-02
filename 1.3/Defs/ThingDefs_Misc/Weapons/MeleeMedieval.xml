@@ -705,7 +705,7 @@
         </capacities>
         <power>13</power>
         <cooldownTime>2</cooldownTime>
-        <meleeReachRange>4</meleeReachRange>
+        <meleeReachRange>3</meleeReachRange>
       </li>
       <li Class="DankPyon.Tool_Melee">
         <label>point</label>
@@ -716,7 +716,7 @@
         <power>21</power>
         <cooldownTime>2.57</cooldownTime>
         <armorPenetration>0.25</armorPenetration>
-        <meleeReachRange>4</meleeReachRange>
+        <meleeReachRange>3</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>
@@ -783,7 +783,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -792,6 +792,7 @@
         <power>23.5</power>
         <cooldownTime>2.72</cooldownTime>
         <armorPenetration>0.25</armorPenetration>
+        <meleeReachRange>3</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>
@@ -850,7 +851,7 @@
     </weaponTags>
 
     <tools>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>shaft</label>
         <capacities>
           <li>Blunt</li>
@@ -858,8 +859,9 @@
         </capacities>
         <power>13</power>
         <cooldownTime>2</cooldownTime>
+        <meleeReachRange>3</meleeReachRange>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -868,6 +870,7 @@
         <power>17.75</power>
         <cooldownTime>2.45</cooldownTime>
         <armorPenetration>0.3</armorPenetration>
+        <meleeReachRange>3</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>
@@ -926,7 +929,7 @@
     </weaponTags>
 
     <tools>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>shaft</label>
         <capacities>
           <li>Blunt</li>
@@ -934,8 +937,9 @@
         </capacities>
         <power>13</power>
         <cooldownTime>2</cooldownTime>
+        <meleeReachRange>3</meleeReachRange>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>blade</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -944,6 +948,7 @@
         <power>23</power>
         <cooldownTime>2.9</cooldownTime>
         <armorPenetration>0.3</armorPenetration>
+        <meleeReachRange>3</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>
@@ -1010,7 +1015,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>blade</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -1019,6 +1024,7 @@
         <power>25</power>
         <cooldownTime>2.9</cooldownTime>
         <armorPenetration>0.3</armorPenetration>
+        <meleeReachRange>3</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>
@@ -1085,7 +1091,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>Point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -1094,6 +1100,7 @@
         <power>25.45</power>
         <cooldownTime>2.95</cooldownTime>
         <armorPenetration>0.3</armorPenetration>
+        <meleeReachRange>3</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>
@@ -1150,7 +1157,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
+      <li Class="DankPyon.Tool_Melee">
         <label>edge</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -1159,6 +1166,7 @@
         <power>25.45</power>
         <cooldownTime>2.95</cooldownTime>
         <armorPenetration>0.3</armorPenetration>
+        <meleeReachRange>3</meleeReachRange>
       </li>
     </tools>
 	  <recipeMaker>

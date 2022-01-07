@@ -326,7 +326,7 @@
   <destroyChance>0.0</destroyChance>
 </ProcessorFramework.ProcessDef>
 
-<ProcessorFramework.ProcessDef>
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
   <defName>DankPyon_HidesProcess</defName>
   <thingDef>DankPyon_DummyLeather</thingDef>
   <ingredientFilter>

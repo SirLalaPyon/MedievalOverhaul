@@ -209,13 +209,32 @@ namespace DankPyon
         {
             if (__instance is Pawn pawn && pawn.RaceProps.IsFlesh && pawn.RaceProps.meatDef != null)
             {
-                Thing Bone = ThingMaker.MakeThing(bone, null);
-                Thing Fat = ThingMaker.MakeThing(fat, null);
-                int amount = Math.Max(1, (int)(GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.MeatAmount, true) * efficiency) * 0.2f));
-                Bone.stackCount = amount;
-                Fat.stackCount = amount;
-                __result = __result.AddItem(Bone);
-                __result = __result.AddItem(Fat);
+                bool boneFlag = true;
+                bool fatFlag = true;
+
+                var butcherProperties = ButcherProperties.Get(__instance.def);
+                if (butcherProperties != null)
+                {
+                    boneFlag = butcherProperties.hasBone;
+                    fatFlag = butcherProperties.hasFat;
+                }
+
+                if (boneFlag || fatFlag)
+                {
+                    int amount = Math.Max(1, (int)(GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.MeatAmount, true) * efficiency) * 0.2f));
+                    if (boneFlag)
+                    {
+                        Thing Bone = ThingMaker.MakeThing(bone, null);
+                        Bone.stackCount = amount;
+                        __result = __result.AddItem(Bone);
+                    }
+                    if (fatFlag)
+                    {
+                        Thing Fat = ThingMaker.MakeThing(fat, null);
+                        Fat.stackCount = amount;
+                        __result = __result.AddItem(Fat);
+                    }
+                }
             }
         }
 

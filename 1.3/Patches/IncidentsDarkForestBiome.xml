@@ -1,0 +1,25 @@
+<Patch>
+<!--Events adding-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "AmbrosiaSprout"]/allowedBiomes</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+			<li>DankPyon_AncientForest</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "HerdMigration"]/allowedBiomes</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+			<li>DankPyon_AncientForest</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName = "Alphabeavers"]/allowedBiomes</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+			<li>DankPyon_AncientForest</li>
+		</value>
+	</Operation>
+
+</Patch>

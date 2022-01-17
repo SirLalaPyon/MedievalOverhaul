@@ -1,0 +1,601 @@
+<Patch>
+<!--Make plants have less unnecessarily confusing nutrition-->
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[
+            defName="DankPyon_RawApples" or
+            defName="DankPyon_RawLemons" or
+            defName="DankPyon_RawGarlic" or
+            defName="DankPyon_RawOnions" or
+            defName="DankPyon_RawLentils"]/statBases/Nutrition</xpath>
+          <value>
+            <Nutrition>0.05</Nutrition>     
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="DankPyon_Tree_Apple"]/plant/harvestYield</xpath>
+          <value>
+            <harvestYield>50</harvestYield>     
+          </value>
+        </Operation>
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="DankPyon_Tree_Lemon"]/plant/harvestYield</xpath>
+          <value>
+            <harvestYield>50</harvestYield>     
+          </value>
+        </Operation>        
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="DankPyon_Plant_Garlic"]/plant/harvestYield</xpath>
+          <value>
+            <harvestYield>6</harvestYield>      <!--5.6-->
+          </value>
+        </Operation>        
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="DankPyon_Plant_Onions"]/plant/harvestYield</xpath>
+          <value>
+            <harvestYield>8</harvestYield>      <!--7.8-->
+          </value>
+        </Operation>        
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="DankPyon_Plant_Lentils"]/plant/harvestYield</xpath>
+          <value>
+            <harvestYield>6</harvestYield>     <!--5.6-->
+          </value>
+        </Operation>
+
+
+<!--Useless quality selector's removal-->
+
+          <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[
+            defName ="DankPyon_DryingRack" or 
+            defName ="DankPyon_HayRack" or
+            defName ="DankPyon_StewPot" or
+            defName ="DankPyon_Presser"]/comps/li[1]/qualitySelector</xpath>
+          <value>
+            <qualitySelector>false</qualitySelector>
+          </value>
+        </Operation>
+
+<!--Drying rack, stewpot and presser size-->
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[
+            defName ="DankPyon_DryingRack" or 
+            defName ="DankPyon_StewPot" or
+            defName ="DankPyon_Presser"]/size</xpath>
+          <value>
+            <size>(1,1)</size>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_Presser"]/graphicData/drawSize</xpath>
+          <value>
+            <drawSize>(1.25,1.25)</drawSize>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_Presser"]/rotatable</xpath>
+          <value>
+            <rotatable>true</rotatable>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_Presser"]/costList</xpath>
+          <value>
+            <costList>
+              <DankPyon_IronIngot>15</DankPyon_IronIngot>
+              <WoodLog>30</WoodLog>
+              <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+            </costList>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_DryingRack"]/graphicData/drawSize</xpath>
+          <value>
+            <drawSize>(1.25,1.25)</drawSize>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_DryingRack"]/costList</xpath>
+          <value>
+            <costList>
+              <WoodLog>30</WoodLog>
+            </costList>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_StewPot"]/graphicData</xpath>
+          <value>
+            <graphicData>
+              <texPath>MO_Production/StewPot</texPath>
+              <graphicClass>Graphic_Multi</graphicClass>
+              <shaderType>CutoutComplex</shaderType>
+              <drawSize>(2,2)</drawSize>
+              <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+              </damageData>
+            </graphicData>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName ="DankPyon_StewPot"]</xpath>
+          <value>
+            <hasInteractionCell>True</hasInteractionCell>
+            <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_StewPot"]/rotatable</xpath>
+          <value>
+            <rotatable>True</rotatable>
+          </value>
+        </Operation>
+      
+
+<!--Dried Meat-->
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_MeatIntoDriedMeat"]/amount</xpath>
+          <value>
+            <amount>
+              <li>60</li>
+            </amount>
+          </value>
+        </Operation>
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_MeatIntoDriedMeat"]/yield</xpath>
+          <value>
+            <yield>45</yield>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationAdd">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_MeatIntoDriedMeat"]</xpath>
+          <value>
+            <disallowedThingDefs>
+              <li>DankPyon_DriedMeat</li>
+              <li>DankPyon_SmokedMeat</li>
+              <li>DankPyon_Sausages</li>
+            </disallowedThingDefs>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_DriedMeat"]</xpath>
+          <value>
+            <ThingDef ParentName="OrganicProductBase">
+              <defName>DankPyon_DriedMeat</defName>
+              <label>Jerky</label>
+              <description>Dried meat to preserve and prolong shelf life</description>
+              <thingClass>ThingWithComps</thingClass>
+              <thingCategories>
+                <li>Foods</li>
+                <li>MeatRaw</li>
+              </thingCategories>
+              <graphicData>
+                <texPath>Meal/DriedMeat</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+              </graphicData>
+              <socialPropernessMatters>true</socialPropernessMatters>
+              <statBases>
+                <MarketValue>1.4</MarketValue>
+                <Mass>0.018</Mass>
+                <Flammability>0.6</Flammability>
+                <DeteriorationRate>2</DeteriorationRate>
+                <Nutrition>0.05</Nutrition>
+              </statBases>
+              <ingestible>
+                <foodType>Meal</foodType>
+                <preferability>MealSimple</preferability>
+                <ingestSound>Meal_Eat</ingestSound>
+                <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+              </ingestible>
+              <comps>
+                <li Class="CompProperties_Rottable">
+                  <daysToRotStart>60</daysToRotStart>
+                  <rotDestroys>true</rotDestroys>
+                </li>
+                <li Class="CompProperties_Ingredients" />
+              </comps>
+            </ThingDef>
+          </value>
+        </Operation>
+
+<!--Smoked Meat-->
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_MeatIntoSmokedMeat"]/amount</xpath>
+          <value>
+            <amount>
+              <li>118</li>
+            </amount>
+          </value>
+        </Operation>
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_MeatIntoSmokedMeat"]/yield</xpath>
+          <value>
+            <yield>100</yield>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationAdd">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_MeatIntoSmokedMeat"]</xpath>
+          <value>
+            <disallowedThingDefs>
+              <li>DankPyon_DriedMeat</li>
+              <li>DankPyon_SmokedMeat</li>
+              <li>DankPyon_Sausages</li>
+            </disallowedThingDefs>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_SmokedMeat"]</xpath>
+          <value>
+            <ThingDef ParentName="OrganicProductBase">
+              <defName>DankPyon_SmokedMeat</defName>
+              <label>Ham</label>
+              <description>Dried meat to preserve and prolong shelf life</description>
+              <thingClass>ThingWithComps</thingClass>
+              <thingCategories>
+                <li>Foods</li>
+                <li>MeatRaw</li>
+              </thingCategories>
+              <graphicData>
+                <texPath>Meal/SmokedMeat</texPath>
+                <graphicClass>Graphic_StackCount</graphicClass>
+              </graphicData>
+              <socialPropernessMatters>true</socialPropernessMatters>
+              <statBases>
+                <MarketValue>1.4</MarketValue>
+                <Mass>0.018</Mass>
+                <Flammability>0.6</Flammability>
+                <DeteriorationRate>2</DeteriorationRate>
+                <Nutrition>0.05</Nutrition>
+              </statBases>
+              <ingestible>
+                <foodType>Meal</foodType>
+                <preferability>MealSimple</preferability>
+                <ingestSound>Meal_Eat</ingestSound>
+                <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+              </ingestible>
+              <comps>
+                <li Class="CompProperties_Rottable">
+                  <daysToRotStart>30</daysToRotStart>
+                  <rotDestroys>true</rotDestroys>
+                </li>
+                <li Class="CompProperties_Ingredients" />
+              </comps>
+            </ThingDef>
+          </value>
+        </Operation>
+
+<!--Sausages-->
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_Sausages"]/label</xpath>
+          <value>
+            <label>Sausage</label>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName ="DankPyon_Sausages"]</xpath>
+          <value>
+            <comps>
+              <li Class="CompProperties_Forbiddable" />
+              <li Class="CompProperties_Ingredients" />
+              <li Class="CompProperties_FoodPoisonable" />
+              <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+              </li>
+            </comps>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName ="DankPyon_Sausages"]/thingCategories</xpath>
+          <value>
+            <li>MeatRaw</li>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[
+            defName="DankPyon_MakeSausages" or
+            defName="DankPyon_MakeSausagesBulk"]</xpath>
+          <value>
+            <defaultIngredientFilter>
+              <categories>
+                <li>MeatRaw</li>
+              </categories>
+              <disallowedCategories>
+                <li>EggsFertilized</li>
+              </disallowedCategories>
+                  <disallowedThingDefs>
+                    <li>DankPyon_DriedMeat</li>
+                    <li>DankPyon_SmokedMeat</li>
+                    <li>DankPyon_Sausages</li>      
+                    <li>Meat_Human</li>
+                    <li>Meat_Megaspider</li>
+                    <li>InsectJelly</li>
+                    <li>Milk</li>				
+                  </disallowedThingDefs>
+              </defaultIngredientFilter>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName ="DankPyon_MakeSausages"]</xpath>
+          <value>
+            <RecipeDef>
+              <defName>DankPyon_MakeSausages</defName>
+              <label>Make sausage (x2)</label>
+              <description>Make sausage from raw meat.</description>
+              <jobString>Making sausage.</jobString>  
+              <allowMixingIngredients>true</allowMixingIngredients>
+              <ingredients>
+                 <li>
+                  <filter>
+                   <categories>
+                    <li>MeatRaw</li>
+                   </categories>
+                  </filter>
+                  <count>8</count>
+                 </li>
+                 <li>
+                <filter>
+                   <thingDefs>
+                    <li>DankPyon_Spices</li>
+                   </thingDefs>
+                </filter>
+                <count>1</count>
+               </li>
+              </ingredients>
+              <products>
+                 <DankPyon_Sausages>2</DankPyon_Sausages>
+              </products>
+              <fixedIngredientFilter>
+                  <categories>
+                    <li>MeatRaw</li>
+                  </categories>
+                <specialFiltersToDisallow>
+                  <li>AllowRotten</li>
+                </specialFiltersToDisallow>
+              </fixedIngredientFilter>
+              <defaultIngredientFilter>
+                <categories>
+                  <li>MeatRaw</li>
+                </categories>
+                <disallowedCategories>
+                  <li>EggsFertilized</li>
+                </disallowedCategories>
+                    <disallowedThingDefs>
+                      <li>DankPyon_DriedMeat</li>
+                      <li>DankPyon_SmokedMeat</li>
+                      <li>DankPyon_Sausages</li>      
+                      <li>Meat_Human</li>
+                      <li>Meat_Megaspider</li>
+                      <li>InsectJelly</li>
+                      <li>Milk</li>				
+                    </disallowedThingDefs>
+                </defaultIngredientFilter>
+              <workAmount>200</workAmount>
+              <workSpeedStat>CookSpeed</workSpeedStat>
+              <workSkill>Cooking</workSkill>
+              <effectWorking>Cook</effectWorking>
+                <soundWorking>Recipe_CookMeal</soundWorking>
+                <researchPrerequisites>
+                  <li>DankPyon_BasicCooking</li>
+                </researchPrerequisites>
+              <recipeUsers>
+                <li>DankPyon_RusticCookingTable</li>
+              </recipeUsers>
+            </RecipeDef>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName ="DankPyon_MakeSausagesBulk"]</xpath>
+          <value>
+            <RecipeDef>
+              <defName>DankPyon_MakeSausagesBulk</defName>
+              <label>make sausage links x10</label>
+              <description>Make 10 sausages from raw meat.</description>
+              <jobString>Making bulk sausages.</jobString>  
+              <allowMixingIngredients>true</allowMixingIngredients>
+              <ingredients>
+                 <li>
+                  <filter>
+                   <categories>
+                    <li>MeatRaw</li>
+                   </categories>
+                  </filter>
+                  <count>40</count>
+                 </li>
+                 <li>
+                <filter>
+                   <thingDefs>
+                    <li>DankPyon_Spices</li>
+                   </thingDefs>
+                </filter>
+                <count>4</count>
+               </li>
+              </ingredients>
+              <products>
+                 <DankPyon_Sausages>10</DankPyon_Sausages>
+              </products>
+              <fixedIngredientFilter>
+                  <categories>
+                    <li>MeatRaw</li>
+                  </categories>
+                <specialFiltersToDisallow>
+                  <li>AllowRotten</li>
+                </specialFiltersToDisallow>
+              </fixedIngredientFilter>
+              <defaultIngredientFilter>
+                <categories>
+                  <li>MeatRaw</li>
+                </categories>
+                <disallowedCategories>
+                  <li>EggsFertilized</li>
+                </disallowedCategories>
+                    <disallowedThingDefs>
+                      <li>DankPyon_DriedMeat</li>
+                      <li>DankPyon_SmokedMeat</li>
+                      <li>DankPyon_Sausages</li>      
+                      <li>Meat_Human</li>
+                      <li>Meat_Megaspider</li>
+                      <li>InsectJelly</li>
+                      <li>Milk</li>				
+                    </disallowedThingDefs>
+                </defaultIngredientFilter>
+              <workAmount>1000</workAmount>
+              <workSpeedStat>CookSpeed</workSpeedStat>
+              <workSkill>Cooking</workSkill>
+              <effectWorking>Cook</effectWorking>
+                <soundWorking>Recipe_CookMeal</soundWorking>
+                <researchPrerequisites>
+                  <li>DankPyon_BasicCooking</li>
+                </researchPrerequisites>
+              <recipeUsers>
+                <li>DankPyon_RusticCookingTable</li>
+              </recipeUsers>
+            </RecipeDef>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName ="DankPyon_MealGrilledSausages"]/statBases/Nutrition</xpath>
+          <value>
+            <Nutrition>0.72</Nutrition>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName ="DankPyon_CookMealGrilledSausages"]/ingredients/li/count</xpath>
+          <value>
+            <count>0.4</count>
+          </value>
+        </Operation>
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/RecipeDef[defName ="DankPyon_CookMealGrilledSausagesBulk"]/ingredients/li/count</xpath>
+          <value>
+            <count>2</count>
+          </value>
+        </Operation>
+
+<!--Cheese-->
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_MilkIntoCheese"]/amount</xpath>
+          <value>
+            <amount>
+              <li>60</li>
+            </amount>
+          </value>
+        </Operation>
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_MilkIntoCheese"]/yield</xpath>
+          <value>
+            <yield>6</yield>
+          </value>
+        </Operation>
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_MilkIntoCheese"]/singleTimeIfNotQualityIncreasing</xpath>
+          <value>
+            <singleTimeIfNotQualityIncreasing>0.5</singleTimeIfNotQualityIncreasing>
+          </value>
+        </Operation>
+
+<!--Straw-->
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_HayIntoStraw"]/amount</xpath>
+          <value>
+            <amount>
+              <li>120</li>
+            </amount>
+          </value>
+        </Operation>
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_HayIntoStraw"]/yield</xpath>
+          <value>
+            <yield>120</yield>
+          </value>
+        </Operation>
+        <Operation Class="PatchOperationReplace">
+          <xpath>Defs/ItemProcessor.CombinationDef[defName ="DankPyon_HayIntoStraw"]/singleTimeIfNotQualityIncreasing</xpath>
+          <value>
+            <singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+          </value>
+        </Operation>
+
+<!--Wine Patch-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_Wine"]/ingestible/outcomeDoers/li[1]/severity</xpath>
+		<value>
+			<severity>0.1</severity>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_Wine"]/ingestible/outcomeDoers/li[2]/severity</xpath>
+		<value>
+			<severity>0.008</severity>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_Wine"]/comps/li[1]/minToleranceToAddict</xpath>
+		<value>
+			<minToleranceToAddict>0.75</minToleranceToAddict>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "DankPyon_Wine"]/comps/li[1]/existingAddictionSeverityOffset</xpath>
+		<value>
+			<existingAddictionSeverityOffset>0.05</existingAddictionSeverityOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/HediffDef[defName = "AlcoholTolerance"]/comps/li[1]/severityPerDay</xpath>
+		<value>
+			<severityPerDay>-0.06</severityPerDay>
+		</value>
+	</Operation>
+
+<!--Candles Patch-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName ="DankPyon_Candles"]/costList</xpath>
+		<value>
+			<costList>
+				<DankPyon_Tallow>12</DankPyon_Tallow>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName ="DankPyon_Candles"]/comps/li[1]</xpath>
+		<value>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>1200000</lifespanTicks>
+			</li>
+		</value>
+	</Operation>
+
+<!-- Make fruit trees survive the winter -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="DankPyon_Tree_Apple" or defName="DankPyon_Tree_Lemon" or defName="DankPyon_Tree_GriffonBerry"]/plant/dieIfLeafless</xpath>
+		<value>
+			<dieIfLeafless>False</dieIfLeafless> 
+		</value>
+	</Operation>
+
+</Patch>

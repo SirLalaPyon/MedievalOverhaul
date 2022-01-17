@@ -1,0 +1,18 @@
+<Patch>
+
+<!-- Beds -->
+	<Operation Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="SleepingSpot" or defName="DoubleSleepingSpot" or defName="Bed" or defName="DoubleBed" or defName="RoyalBed" or defName="HospitalBed" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+			<value>
+				<li>DankPyon_RusticEndTable</li>
+				<li>DankPyon_RusticDresser</li>
+				<li>DankPyon_RusticChest</li>
+				<li>DankPyon_MetalStrongbox</li>
+				<li>DankPyon_RusticCloset</li>
+				<li>DankPyon_RoyalEndTable</li>
+				<li>DankPyon_RoyalDresser</li>
+				<li>DankPyon_RoyalCloset</li>
+			</value>
+	</Operation>
+
+</Patch>

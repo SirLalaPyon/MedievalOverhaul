@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Rimedieval - Medieval Royalty</li>
+	</mods>
+	<nomatch Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		  
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/label</xpath>
+
+				  <value>
+					<label>shattered empire</label>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/description</xpath>
+
+				  <value>
+					<description>A medieval imperial society from distant lands, organized along feudal lines.\n\nThey lived for thousands of years in a stable multi-national empire with a strict caste system, an intricate code of warrior ethics, and enforced cultural stasis. Invaded by powerful outsiders, they fled. Despite losing almost all of their people, their army and fierce determination still make them powerful.\n\nThey will refuse to trade with anyone who lacks the appropriate royal title.</description>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/techLevel</xpath>
+
+				  <value>
+					<techLevel>Medieval</techLevel>
+				  </value>
+				</li>
+									
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/allowedArrivalTemperatureRange</xpath>
+
+				  <value>
+					<allowedArrivalTemperatureRange>-30~40</allowedArrivalTemperatureRange>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/settlementTexturePath</xpath>
+
+				  <value>
+					<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/backstoryFilters</xpath>
+					<value>
+						<backstoryFilters>
+							<li>
+								<categories>
+									<li>Tribal</li>
+								</categories>
+							</li>
+						</backstoryFilters>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/colorSpectrum</xpath>
+
+				  <value>
+					<colorSpectrum>
+						<li>(1, 0.9, 0.6)</li>
+					</colorSpectrum>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/baseTraderKinds</xpath>
+
+				  <value>
+					<baseTraderKinds>
+						<li>DankPyon_Base_Medieval_Standard</li>
+					</baseTraderKinds>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/caravanTraderKinds</xpath>
+
+				  <value>
+					<caravanTraderKinds>
+						<li>DankPyon_Visitor_Medieval_Standard</li>
+					</caravanTraderKinds>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+				  <xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
+
+				  <value>
+					<pawnGroupMakers>
+						<li>
+							<!-- Normal fights, melee with ranged mix-ins -->
+							<kindDef>Combat</kindDef>
+							<commonality>100</commonality>
+							<options>
+								<DankPyon_Medieval_Footman>20</DankPyon_Medieval_Footman>
+								<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+								<DankPyon_Medieval_Arbalester>50</DankPyon_Medieval_Arbalester>
+								<DankPyon_Medieval_Bowman>50</DankPyon_Medieval_Bowman>
+								<DankPyon_Medieval_Knight>20</DankPyon_Medieval_Knight>
+								<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+							</options>
+						</li>
+						<li>
+							<!-- Normal fights, ranged only -->
+							<kindDef>Combat</kindDef>
+							<commonality>30</commonality>
+							<options>
+								<DankPyon_Medieval_Bowman>100</DankPyon_Medieval_Bowman>
+							</options>
+						</li>
+						<li>
+							<!-- Normal fights, melee only -->
+							<kindDef>Combat</kindDef>
+							<commonality>60</commonality>
+							<options>
+								<DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+								<DankPyon_Medieval_Footman>40</DankPyon_Medieval_Footman>
+								<DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+								<DankPyon_Medieval_Knight>25</DankPyon_Medieval_Knight>
+								<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+							</options>
+						</li>
+						<li>
+							<!-- Peaceful -->
+							<kindDef>Peaceful</kindDef>
+							<options>
+								<DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+								<DankPyon_Medieval_Footman>30</DankPyon_Medieval_Footman>
+								<DankPyon_Medieval_Arbalester>40</DankPyon_Medieval_Arbalester>
+								<DankPyon_Medieval_Knight>20</DankPyon_Medieval_Knight>
+								<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+							</options>
+						</li>
+						<li>
+							<kindDef>Trader</kindDef>
+							<traders>
+								<DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+							</traders>
+							<carriers>
+								<Muffalo>6</Muffalo>
+								<Dromedary>5</Dromedary>
+								<Alpaca>2.5</Alpaca>
+								<Elephant>2</Elephant>
+							</carriers>
+							<guards>
+								<DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+								<DankPyon_Medieval_Footman>30</DankPyon_Medieval_Footman>
+								<DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+								<DankPyon_Medieval_Knight>10</DankPyon_Medieval_Knight>
+							</guards>
+						</li>
+						<li>
+							<kindDef>Settlement</kindDef>
+							<options>
+								<DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+								<DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+								<DankPyon_Medieval_Footman>30</DankPyon_Medieval_Footman>
+								<DankPyon_Medieval_Bowman>50</DankPyon_Medieval_Bowman>
+								<DankPyon_Medieval_Knight>25</DankPyon_Medieval_Knight>
+								<DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
+							</options>
+						</li>
+					</pawnGroupMakers>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+					<xpath>Defs/RoyalTitleDef[defName="Esquire"]/permits</xpath>
+					<value>
+						<permits>
+							<li>CallMercenary</li>
+						</permits>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+					<xpath>Defs/RoyalTitleDef[defName="Knight"]/permits</xpath>
+					<value>
+						<permits>
+							<li>TradeSettlement</li>
+							<li>TradeCaravan</li>
+							<li>CallLegion</li>
+						</permits>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+					<xpath>Defs/RoyalTitleDef[defName="Praetor"]/permits</xpath>
+					<value>
+						<permits>
+							<li>TradeSettlement</li>
+							<li>TradeCaravan</li>
+							<li>CallLegion</li>
+							<li>CallKnights</li>
+						</permits>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+					<xpath>Defs/RoyalTitleDef[defName="Baron"]/permits</xpath>
+					<value>
+						<permits>
+							<li>TradeSettlement</li>
+							<li>TradeCaravan</li>
+							<li>CallLegion</li>
+							<li>CallKnights</li>
+							<li>CallBlackKnights</li>
+						</permits>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+					<xpath>Defs/RoyalTitleDef[defName="Count"]/permits</xpath>
+					<value>
+						<permits>
+							<li>TradeSettlement</li>
+							<li>TradeCaravan</li>
+							<li>CallLegion</li>
+							<li>CallKnights</li>
+							<li>CallBlackKnights</li>
+						</permits>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+				  <success>Always</success>
+					<xpath>Defs/RoyalTitleDef[@Name = "BaseEmpireTitleNPC"]/permits</xpath>
+					<value>
+						<permits>
+							<li>TradeSettlement</li>
+							<li>TradeCaravan</li>
+							<li>CallLegion</li>
+							<li>CallKnights</li>
+							<li>CallBlackKnights</li>
+						</permits>
+					</value>
+				</li>
+				
+			</operations>
+		</match>		
+    </nomatch>
+</Operation>
+
+</Patch>

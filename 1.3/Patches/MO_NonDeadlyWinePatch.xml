@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "DankPyon_Wine"]/ingestible/outcomeDoers/li[1]/severity</xpath>
+	<value>
+		<severity>0.1</severity>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "DankPyon_Wine"]/ingestible/outcomeDoers/li[2]/severity</xpath>
+	<value>
+		<severity>0.008</severity>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "DankPyon_Wine"]/comps/li[1]/minToleranceToAddict</xpath>
+	<value>
+		<minToleranceToAddict>0.75</minToleranceToAddict>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName = "DankPyon_Wine"]/comps/li[1]/existingAddictionSeverityOffset</xpath>
+	<value>
+		<existingAddictionSeverityOffset>0.05</existingAddictionSeverityOffset>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName = "AlcoholTolerance"]/comps/li[1]/severityPerDay</xpath>
+	<value>
+		<severityPerDay>-0.06</severityPerDay>
+	</value>
+  </Operation>
+  
+</Patch>

@@ -1,0 +1,54 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Tribal</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!--Recipes-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_HeavyClub"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_LightClub"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_TribalAxe"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_Shiv"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VWE_Sling"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VWE_Throwing_Shards"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VWE_Weapon_FireBomb"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

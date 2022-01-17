@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+			<operations>
+			<!-- Make trees survive the winter -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DankPyon_Tree_Apple" 
+					                  or defName="DankPyon_Tree_Lemon" 
+									  or defName="DankPyon_Tree_GriffonBerry"]/plant/dieIfLeafless</xpath>
+					<value>
+						<dieIfLeafless>False</dieIfLeafless> 
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

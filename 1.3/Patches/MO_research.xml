@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+    <!--Blades-->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DankPyon_BasicSwords"]/label</xpath>
+        <value>
+          <label>basic blades</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="DankPyon_MilitarySwords"]/label</xpath>
+        <value>
+          <label>military blades</label>
+        </value>
+    </Operation>    
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/label</xpath>
+        <value>
+          <label>noble blades</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="DankPyon_MeleeWeapon_Hatchet" or
+            defName="DankPyon_MeleeWeapon_WoodcuttersAxe"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+          <researchPrerequisite>DankPyon_BasicSwords</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="DankPyon_MeleeWeapon_Bardiche" or
+            defName="DankPyon_MeleeWeapon_Handaxe" or
+            defName="DankPyon_MeleeWeapon_Longaxe"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+          <researchPrerequisite>DankPyon_MilitarySwords</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="DankPyon_MeleeWeapon_FightingAxe" or
+            defName="DankPyon_MeleeWeapon_Greataxe"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+          <researchPrerequisite>LongBlades</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <!--Polearms-->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="DankPyon_MeleeWeapon_MilitiaSpear" or
+            defName="DankPyon_MeleeWeapon_Warfork" or
+            defName="MeleeWeapon_Spear"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+            <researchPrerequisite>DankPyon_BasicPolearms</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="DankPyon_MeleeWeapon_Spetum" or
+            defName="DankPyon_MeleeWeapon_BoarSpear"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+            <researchPrerequisite>DankPyon_MilitaryPolearms</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="DankPyon_MeleeWeapon_FightingSpear"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+            <researchPrerequisite>DankPyon_NoblePolearms</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <!--Bludgeons-->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="DankPyon_MeleeWeapon_TwoHandedMallet" or
+            defName="DankPyon_MeleeWeapon_Pickaxe"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+          <researchPrerequisite>DankPyon_BasicMaces</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="DankPyon_MeleeWeapon_MilitaryPick" or
+            defName="DankPyon_MeleeWeapon_TwoHandedHammer" or
+            defName="DankPyon_MeleeWeapon_Polehammer"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+          <researchPrerequisite>DankPyon_MilitaryMaces</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[
+            defName="DankPyon_MeleeWeapon_Warhammer"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+          <researchPrerequisite>DankPyon_NobleMaces</researchPrerequisite>
+        </value>
+    </Operation>
+
+<!--DECLUTTER-->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ResearchProjectDef[
+            defName="DankPyon_BasicSpears" or
+            defName="DankPyon_MilitarySpears" or
+            defName="DankPyon_NobleSpears" or 
+            defName="DankPyon_BasicAxes" or
+            defName="DankPyon_MilitaryAxes" or
+            defName="DankPyon_NobleAxes" or
+            defName="DankPyon_BasicHammers" or
+            defName="DankPyon_MilitaryHammers" or
+            defName="DankPyon_NobleHammers" or
+            defName="DankPyon_BasicCleavers" or
+            defName="DankPyon_MilitaryCleavers" or
+            defName="DankPyon_NobleCleavers"]</xpath>
+    </Operation>
+
+</Patch>

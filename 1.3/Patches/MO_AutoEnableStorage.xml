@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<!-- <success>Always</success> -->
+			<operations>
+				<!-- Enable wood storage for the woodpiles -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x1c" or defName="DankPyon_WoodLogs1x2c"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <thingDefs>
+								<li>WoodLog</li>
+							  </thingDefs>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable dark wood storage for the dark woodpiles -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_DarkWoodLogs1x1c" or defName="DankPyon_DarkWoodLogs1x2c"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <thingDefs>
+								<li>DankPyon_DarkWoodLog</li>
+							  </thingDefs>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable brick storage for the brick piles -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_Bricks1x1c" or defName="DankPyon_Bricks1x2c" or defName="DankPyon_Bricks2x2c"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <categories>
+								<li>StoneBlocks</li>
+							  </categories>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable wood storage for the wood barrel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_BarrelWoodLog"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <thingDefs>
+								<li>WoodLog</li>
+							  </thingDefs>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable iron ore storage for the iron barrel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_BarrelIronOre"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <thingDefs>
+								<li>DankPyon_IronOre</li>
+							  </thingDefs>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable gold ore storage for the gold barrel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_BarrelGoldOre"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <thingDefs>
+								<li>DankPyon_GoldOre</li>
+							  </thingDefs>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable textiles storage for the textiles barrel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_BarrelTextiles"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <categories>
+								<li>Textiles</li>
+							  </categories>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable leather storage for the leather barrel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_BarrelLeather"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <categories>
+								<li>Leathers</li>
+							  </categories>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable component storage for the component barrel -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_BarrelComponentBasic"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <thingDefs>
+								<li>DankPyon_ComponentBasic</li>
+							  </thingDefs>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable weapons storage for the sword rack -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_RackSword"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <categories>
+								<li>Weapons</li>
+							  </categories>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+				<!-- Enable straw storage for the straw pile -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_StrawPile"]/building</xpath>
+					<value>
+					<defaultStorageSettings>
+						<priority>Important</priority>
+						  <filter>
+							  <thingDefs>
+								<li>DankPyon_Straw</li>
+							  </thingDefs>
+						  </filter>
+					  </defaultStorageSettings>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

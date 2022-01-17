@@ -1,0 +1,57 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Medieval</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFEM_Apparel_DameDress"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>90</costStuffCount>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFEM_Apparel_DameDress"]/description</xpath>
+                    <value>
+                        <description>A beautiful full body dress. It is somewhat cumbersome to wear, so the user will not be capable of hauling.</description>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFEM_Apparel_DameDress"]/equippedStatOffsets/SocialImpact</xpath>
+                    <value>
+                        <SocialImpact>0.1</SocialImpact>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFEM_Apparel_DameDress"]/equippedStatOffsets/SlaveSuppressionOffset</xpath>
+                    <value>
+                        <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFEM_Apparel_DameDress"]/modExtensions/li/workDisables/li</xpath>
+                    <value>
+                        <li>Hauling</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFEM_Apparel_JesterOutfit"]/modExtensions</xpath>
+                    <value>
+                        <modExtensions />
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="VFEM_Apparel_JesterOutfit"]/equippedStatOffsets/GlobalLearningFactor</xpath>
+                </li>
+                <!--Recipes-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[defName="VFEM_Make_Candle"]/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

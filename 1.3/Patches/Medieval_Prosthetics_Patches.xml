@@ -1,0 +1,150 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Prosthetics</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+            <!--Workbenches-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="Basic"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="ArtificialMed"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+            <!--Steel to Iron Conversions-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="IronArm"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <DankPyon_IronIngot>50</DankPyon_IronIngot>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ProstheticHook"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <DankPyon_IronIngot>25</DankPyon_IronIngot>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ArtificialMedHand"]/costList/Steel</xpath>
+                    <value>
+                        <DankPyon_IronIngot>55</DankPyon_IronIngot>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ArtificialMedArm"]/costList/Steel</xpath>
+                    <value>
+                        <DankPyon_IronIngot>100</DankPyon_IronIngot>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ArtificialMedLeg"]/costList/Steel</xpath>
+                    <value>
+                        <DankPyon_IronIngot>100</DankPyon_IronIngot>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ArtificialMedFoot"]/costList/Steel</xpath>
+                    <value>
+                        <DankPyon_IronIngot>55</DankPyon_IronIngot>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ArtificialMedToe"]/costList/Steel</xpath>
+                    <value>
+                        <DankPyon_IronIngot>15</DankPyon_IronIngot>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ArtificialMedFinger"]/costList/Steel</xpath>
+                    <value>
+                        <DankPyon_IronIngot>15</DankPyon_IronIngot>
+                    </value>
+                </li>
+            <!--Industrial to Basic Component Conversions-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MechanicalMedHand"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MechanicalMedArm"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>6</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MechanicalMedLeg"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>6</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MechanicalMedFoot"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MechanicalMedToe"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="MechanicalMedFinger"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="AmbroisenMedHand"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="AmbroisenMedArm"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>15</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="AmbroisenMedLeg"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>15</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="AmbroisenMedFoot"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="AmbroisenMedToe"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="AmbroisenMedFinger"]/costList/ComponentIndustrial</xpath>
+                    <value>
+                        <DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

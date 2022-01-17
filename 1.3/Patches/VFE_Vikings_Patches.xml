@@ -1,0 +1,30 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Vikings</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!--Recipes-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VFEV_Apparel_TorchBelt"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>DankPyon_Workbench</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VFEV_Apparel_TorchBelt"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>VFE_Harpoon</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="VFEV_Apparel_TorchBelt"]/recipeMaker/recipeUsers</xpath>
+                    <value>
+                        <li>VFE_Harpoon</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

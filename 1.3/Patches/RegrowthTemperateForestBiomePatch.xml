@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>ReGrowth: Temperate Forest Expansion</li>
+        </mods>
+		
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/BiomeDef[defName="DankPyon_DarkForest"]/wildPlants</xpath>
+            <value>
+                <RG_Plant_Raspberry>0.3</RG_Plant_Raspberry>
+                <RG-TF_Cibarius>0.3</RG-TF_Cibarius>
+                <RG-TF_Plant_TreeCornish>0.25</RG-TF_Plant_TreeCornish>
+                <RG-TF_Plant_MountainDandelion>0.2</RG-TF_Plant_MountainDandelion>
+                <RG-TF_Plant_NordicDandelion>0.2</RG-TF_Plant_NordicDandelion>
+                <RG-TF_Plant_Cathedralis>0.2</RG-TF_Plant_Cathedralis>
+                <RG-TF_Plant_TemperateMoss>1.0</RG-TF_Plant_TemperateMoss>
+                <RG-TF_Plant_TemperateFern>1.0</RG-TF_Plant_TemperateFern>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

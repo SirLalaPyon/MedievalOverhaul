@@ -264,7 +264,7 @@
 <!-- Bread -->
 <RecipeDef>
 	<defName>DankPyon_BakeBread</defName>
-	<label>(x2)Bake bread</label>
+	<label>bake bread x2</label>
 	<description>Bake 2 breads from flour.</description>
 	<jobString>Baking bread.</jobString>  
 	<allowMixingIngredients>true</allowMixingIngredients>
@@ -306,7 +306,7 @@
 <!-- Bread Bulk -->
 	<RecipeDef>
 	<defName>DankPyon_BakeBreadBulk</defName>
-	<label>(x10)Bake bread</label>
+	<label>bake bread x10</label>
 	<description>Bake 10 breads from flour.</description>
 	<jobString>Baking bread.</jobString>  
 	<allowMixingIngredients>true</allowMixingIngredients>
@@ -349,7 +349,7 @@
 <!-- Sausages -->
 	<RecipeDef>
 	<defName>DankPyon_MakeSausages</defName>
-	<label>Make sausage</label>
+	<label>make sausage</label>
 	<description>Make sausage from raw meat.</description>
 	<jobString>Making sausage.</jobString>  
 	<allowMixingIngredients>true</allowMixingIngredients>
@@ -398,7 +398,7 @@
 <!-- Sausages Bulk-->
 <RecipeDef>
   <defName>DankPyon_MakeSausagesBulk</defName>
-  <label>make sausage links x10</label>
+  <label>make sausages x10</label>
   <description>Make 10 sausages from raw meat.</description>
   <jobString>Making bulk sausages.</jobString>  
   <allowMixingIngredients>true</allowMixingIngredients>
@@ -448,9 +448,9 @@
 <!-- Grilled Sausages -->
 <RecipeDef>
     <defName>DankPyon_CookMealGrilledSausages</defName>
-    <label>Cook grilled sausages</label>
+    <label>grill sausages</label>
     <description>Cook a straightforward meal from sausages.</description>
-    <jobString>Grillin' dogs.</jobString>
+    <jobString>Grilling sausages.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -505,9 +505,9 @@
 <!-- Grilled Sausages Bulk -->
   <RecipeDef>
     <defName>DankPyon_CookMealGrilledSausagesBulk</defName>
-    <label>(Bulk x5) cook grilled sausages</label>
-    <description>Cook a straightforward meal from sausages.</description>
-    <jobString>Grillin' dogs.</jobString>
+    <label>grill sausages x5</label>
+    <description>Cook a straightforward meal from sausages in bulk.</description>
+    <jobString>Grilling sausages.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -563,8 +563,8 @@
 <!-- Weak Stew -->
 <RecipeDef> 
   <defName>DankPyon_CookMealWeakStew</defName>
-  <label>(x4)Cook weak stew</label>
-  <description>Cooks 4 light stews from few ingredients.</description>
+  <label>cook weak stew x2</label>
+  <description>Cooks 2 light stews from few ingredients.</description>
   <jobString>Cooking a weak stew.</jobString>
   <workSpeedStat>CookSpeed</workSpeedStat>
   <effectWorking>Cook</effectWorking>
@@ -606,7 +606,7 @@
 
   </ingredients>
   <products>
-	<DankPyon_MealWeakStew>4</DankPyon_MealWeakStew>
+	<DankPyon_MealWeakStew>2</DankPyon_MealWeakStew>
   </products>
   <fixedIngredientFilter>
 	<categories>
@@ -640,8 +640,8 @@
 <!-- Weak Stew Bulk -->
 <RecipeDef> 
   <defName>DankPyon_CookMealWeakStewBulk</defName>
-  <label>(x8) Cook Weak Stew</label>
-  <description>Cooks bulk light stew from few ingredients.</description>
+  <label>Cook Weak Stew x8</label>
+  <description>Cooks light stew in bulk from few ingredients.</description>
   <jobString>Cooking bulk weak stew.</jobString>
   <workSpeedStat>CookSpeed</workSpeedStat>
   <effectWorking>Cook</effectWorking>
@@ -778,9 +778,9 @@
 <!-- Fried Eggs Bulk-->
 <RecipeDef>
   <defName>DankPyon_CookMealFriedEggsBulk</defName>
-  <label>(x5) Cook fried eggs</label>
-  <description>Cook a straightforward meal from eggs.</description>
-  <jobString>Frying eggs</jobString>
+  <label>cook fried eggs x5</label>
+  <description>Cook a straightforward meal from eggs in bulk.</description>
+  <jobString>Frying eggs x5</jobString>
   <workSpeedStat>CookSpeed</workSpeedStat>
   <requiredGiverWorkType>Cooking</requiredGiverWorkType>
   <effectWorking>Cook</effectWorking>
@@ -837,7 +837,7 @@
 <!-- Mashed Potatoes -->
 <RecipeDef>
 	<defName>DankPyon_CookMealMashedPotatoes</defName>
-	<label>Cook mashed potatoes</label>
+	<label>cook mashed potatoes</label>
 	<description>Cook mashed potatoes.</description>
 	<jobString>Cooking mashed potatoes.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -905,9 +905,9 @@
 <!-- Mashed Potatoes Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealMashedPotatoesBulk</defName>
-	<label>(Bulk x5) Cook mashed potatoes</label>
-	<description>Cook 5 mashed potatoes.</description>
-	<jobString>Cooking 5 mashed potatoes.</jobString>
+	<label>cook mashed potatoes x5</label>
+	<description>Cook 5 mashed potatoes meals.</description>
+	<jobString>Cooking mashed potatoes x5.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -974,7 +974,7 @@
 <!-- Winter Lentil Soup -->
 <RecipeDef>
 	<defName>DankPyon_CookMealWinterLentilSoup</defName>
-	<label>Cook winter lentil soup</label>
+	<label>cook winter lentil soup</label>
 	<description>Cook winter lentil soup.</description>
 	<jobString>Cooking winter lentil soup.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -1030,9 +1030,9 @@
 <!-- Winter Lentil Soup Bulk-->
 <RecipeDef>
 	<defName>DankPyon_CookMealWinterLentilSoupBulk</defName>
-	<label>(5x) Cook winter lentil soup</label>
-	<description>Cook 5 winter lentil soup.</description>
-	<jobString>Cooking 5 winter lentil soup.</jobString>
+	<label>cook winter lentil soup x5</label>
+	<description>Cook 5 portions of winter lentil soup.</description>
+	<jobString>Cooking winter lentil soup x5.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -1087,7 +1087,7 @@
 <!-- Mushroom Soup -->
 <RecipeDef>
 	<defName>DankPyon_CookMealMushroomSoup</defName>
-	<label>Cook mushroom soup</label>
+	<label>cook mushroom soup</label>
 	<description>Cook mushroom soup.</description>
 	<jobString>Cooking mushroom soup.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -1143,9 +1143,9 @@
 <!-- Mushroom Soup Bulk-->
 <RecipeDef>
 	<defName>DankPyon_CookMealMushroomSoupBulk</defName>
-	<label>(Bulk x5) Cook mushroom soup</label>
-	<description>Cook 5 mushroom soups.</description>
-	<jobString>Cooking 5 mushroom soups.</jobString>
+	<label>cook mushroom soup x5</label>
+	<description>Cook 5 portions of mushroom soup.</description>
+	<jobString>Cooking mushroom soup x5.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -1200,9 +1200,9 @@
 <!-- Vegetable Pot  -->
 <RecipeDef>
 	<defName>DankPyon_CookMealVegetablePot</defName>
-	<label>Cook vegetable pot</label>
+	<label>cook vegetable pot</label>
 	<description>Cook vegetable pot.</description>
-	<jobString>Cooking vegetable pot</jobString>
+	<jobString>Cooking vegetable pot.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -1256,7 +1256,7 @@
 <!-- Vegetable Pot Bulk  -->
 <RecipeDef>
 	<defName>DankPyon_CookMealVegetablePotBulk</defName>
-	<label>(Bulk x5) Cook vegetable pots</label>
+	<label>cook vegetable pot x5</label>
 	<description>Cook 5 vegetable pots.</description>
 	<jobString>Cooking 5 vegetable pots.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -1313,7 +1313,7 @@
 <!-- Pumpkin Fritters -->
   <RecipeDef>
 		<defName>DankPyon_CookMealPumpkinFritters</defName>
-		<label>(x3) Cook pumpkin fritters</label>
+		<label>cook pumpkin fritters x3</label>
 		<description>Cook 3 pumpkin fritters.</description>
 		<jobString>Cooking 3 pumpkin fritters.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
@@ -1378,7 +1378,7 @@
   <!-- Pumpkin Fritters Bulk -->
   <RecipeDef>
 		<defName>DankPyon_CookMealPumpkinFrittersBulk</defName>
-		<label>(Bulk x6) Cook pumpkin fritters</label>
+		<label>cook pumpkin fritters x6</label>
 		<description>Cook 6 pumpkin fritters.</description>
 		<jobString>Cooking 6 pumpkin fritters.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
@@ -1444,9 +1444,9 @@
 <!-- Boiled Bean and Onion -->
 <RecipeDef>
 	<defName>DankPyon_CookMealBoiledBeansAndOnion</defName>
-	<label>Cook boiled lentils and onion</label>
-	<description>Cook boiled beans and onion.</description>
-	<jobString>Cooking boiled beans and onion.</jobString>
+	<label>cook boiled lentils with onion</label>
+	<description>Cook boiled lentils with onion.</description>
+	<jobString>Cooking boiled lentils with onion.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -1516,9 +1516,9 @@
 <!-- Boiled Bean and Onion Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealBoiledBeanAndOnionBulk</defName>
-	<label>(Bulk x5) Cook boiled lentils and onion</label>
-	<description>Cook 5 boiled lentils and onion.</description>
-	<jobString>Cooking 5 boiled lentils and onion.</jobString>
+	<label>cook boiled lentils with onion x5</label>
+	<description>Cook 5 portions of boiled lentils with onion.</description>
+	<jobString>Cooking 5 portions of boiled lentils with onion.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -1589,7 +1589,7 @@
 <!-- Grilled Skewers -->
 <RecipeDef>
 	<defName>DankPyon_CookMealGrilledSkewers</defName>
-	<label>Cook grilled skewers</label>
+	<label>cook grilled skewers</label>
 	<description>Cook grilled skewers.</description>
 	<jobString>Cooking grilled skewers</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -1653,9 +1653,9 @@
 <!-- Grilled Skewers Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealGrilledSkewersBulk</defName>
-	<label>(x5) Cook grilled skewers</label>
+	<label>cook grilled skewers x5</label>
 	<description>Cook 5 grilled skewers.</description>
-	<jobString>Grillin' 5 meat skewers.</jobString>
+	<jobString>Cooking 5 grilled skewers.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -1719,9 +1719,9 @@
 <!-- Hearty Stew -->
 <RecipeDef>
 	<defName>DankPyon_CookMealHeartyStew</defName>
-	<label>Cook Hearty Stew.</label>
+	<label>cook hearty stew</label>
 	<description>Cooks a somewhat complex meal from a combination of raw meat and raw plant ingredients.</description>
-	<jobString>Cooking a hearty stew.</jobString>
+	<jobString>Cooking hearty stew.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -1811,9 +1811,9 @@
 <!-- Hearty Stew Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealHeartyStewBulk</defName>
-	<label>(Bulk x8) Cook Hearty Stew.</label>
+	<label>cook hearty stew x8</label>
 	<description>Cooks 8 hearty stews.</description>
-	<jobString>Cooking bulk hearty stew</jobString>
+	<jobString>Cooking hearty stew x8</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -1903,7 +1903,7 @@
 <!-- Bread Soup -->
 <RecipeDef> 
 <defName>DankPyon_CookMealBreadSoup</defName>
-<label>Cook Bread Soup</label>
+<label>cook bread soup</label>
 <description>Cooks a straightforward soup from few ingredients.</description>
 <jobString>Cooking bread soup.</jobString>
 <workSpeedStat>CookSpeed</workSpeedStat>
@@ -1968,9 +1968,9 @@
 <!-- Bread Soup Bulk -->
 <RecipeDef> 
 <defName>DankPyon_CookMealBreadSoupBulk</defName>
-<label>(x5) Cook bread soup</label>
-<description>Cooks a straightforward soup from few ingredients.</description>
-<jobString>Cooking bread soup</jobString>
+<label>cook bread soup x5</label>
+<description>Cooks a straightforward soup from few ingredients in bulk.</description>
+<jobString>Cooking bread soup x5</jobString>
 <workSpeedStat>CookSpeed</workSpeedStat>
 <effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -2034,7 +2034,7 @@
 <!-- Apple Pie -->
 <RecipeDef>
 	<defName>DankPyon_CookMealApplePie</defName>
-	<label>Bake apple pie</label>
+	<label>bake apple pie</label>
 	<description>Bake a fine apple pie.</description>
 	<jobString>Baking an apple pie.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -2109,7 +2109,7 @@
 <!-- Apple Pie Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealApplePieBulk</defName>
-	<label>(Bulk x5) Bake apple pie</label>
+	<label>bake apple pie x5</label>
 	<description>Bake 5 fine apple pies.</description>
 	<jobString>Baking 5 apple pies.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -2185,7 +2185,7 @@
 <!-- Hunters Stew -->
 <RecipeDef>
 	<defName>DankPyon_CookMealHuntersStew</defName>
-	<label>(x4) Cook hunter's stew</label>
+	<label>cook hunter's stew x4</label>
 	<description>Cook 4 hunter's stews.</description>
 	<jobString>Cooking hunter's stew.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -2268,7 +2268,7 @@
 <!-- Hunters Stew Bulk -->
 <RecipeDef>
 <defName>DankPyon_CookMealHuntersStewBulk</defName>
-<label>(x8) Cook hunter's stew</label>
+<label>cook hunter's stew x8</label>
 <description>Cook 8 hunter's stews.</description>
 <jobString>Cooking hunter's stew.</jobString>
 <workSpeedStat>CookSpeed</workSpeedStat>
@@ -2352,9 +2352,9 @@
 <!-- Grilled Cheese -->
 <RecipeDef>
 	<defName>DankPyon_CookMealGrilledCheese</defName>
-	<label>Cook grilled cheese</label>
+	<label>cook grilled cheese</label>
 	<description>Cook grilled cheese.</description>
-	<jobString>Grillin' cheese.</jobString>
+	<jobString>Grilling cheese.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -2411,9 +2411,9 @@
 <!-- Grilled Cheese Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealGrilledCheeseBulk</defName>
-	<label>(Bulk x5) Cook grilled cheese</label>
+	<label>cook grilled cheese x5</label>
 	<description>Cook 5 grilled cheese.</description>
-	<jobString>Grillin' 5 cheese.</jobString>
+	<jobString>Grilling cheese x5</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
 <soundWorking>Recipe_CookMeal</soundWorking>
@@ -2471,7 +2471,7 @@
 <!-- Quiche -->
 <RecipeDef>
 	<defName>DankPyon_CookMealQuiche</defName>
-	<label>Cook quiche</label>
+	<label>cook quiche</label>
 	<description>Cook quiche.</description>
 	<jobString>Cooking quiche.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -2554,7 +2554,7 @@
 <!-- Quiche Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealQuicheBulk</defName>
-	<label>(Bulk x5) Cook quiche</label>
+	<label>cook quiche x5</label>
 	<description>Cook 5 quiche.</description>
 	<jobString>Cooking 5 quiche.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -2638,7 +2638,7 @@
 <!-- Sweet Pancakes -->
 <RecipeDef>
 	<defName>DankPyon_CookMealSweetPancakes</defName>
-	<label>Cook sweet pancakes</label>
+	<label>cook sweet pancakes</label>
 	<description>Cook sweet pancakes.</description>
 	<jobString>Cooking sweet pancakes.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -2722,7 +2722,7 @@
 <!-- Sweet Pancakes Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealSweetPancakesBulk</defName>
-	<label>(Bulk x5) Cook sweet pancakes</label>
+	<label>cook sweet pancakes x5</label>
 	<description>Cook 5 sweet pancakes.</description>
 	<jobString>Cooking 5 sweet pancakes.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -2806,7 +2806,7 @@
 <!-- Tomato Omelette -->
 <RecipeDef>
 	<defName>DankPyon_CookMealTomatoOmelette</defName>
-	<label>Cook tomato omelette</label>
+	<label>cook tomato omelette</label>
 	<description>Cook tomato omelette.</description>
 	<jobString>Cooking tomato omelette.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -2879,7 +2879,7 @@
 <!-- Tomato Omelette Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealTomatoOmeletteBulk</defName>
-	<label>(Bulk x3) Cook tomato omelette</label>
+	<label>cook tomato omelette x3</label>
 	<description>Cook 3 tomato omelettes.</description>
 	<jobString>Cooking 3 tomato omelettes.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -2952,7 +2952,7 @@
 <!-- Pumpkin Soup -->
 <RecipeDef>
 	<defName>DankPyon_CookMealPumpkinSoup</defName>
-	<label>(x3) Cook pumpkin soup</label>
+	<label>cook pumpkin soup x3</label>
 	<description>Cook 3 pumpkin soup.</description>
 	<jobString>Cooking 3 pumpkin soup.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -3016,7 +3016,7 @@
 <!-- Pumpkin Soup Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealPumpkinSoupBulk</defName>
-	<label>(x6) Cook pumpkin soup</label>
+	<label>cook pumpkin soup x6</label>
 	<description>Cook 6 pumpkin soup.</description>
 	<jobString>Cooking 6 pumpkin soup.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -3081,7 +3081,7 @@
 <!-- Pumpkin Pie -->
 <RecipeDef>
 	<defName>DankPyon_CookMealPumpkinPie</defName>
-	<label>(x3) Cook pumpkin pies</label>
+	<label>cook pumpkin pies x3</label>
 	<description>Cook 3 pumpkin pies.</description>
 	<jobString>Cooking 3 pumpkin pies.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -3153,7 +3153,7 @@
 <!-- Pumpkin Pie Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealPumpkinPieBulk</defName>
-	<label>(Bulk x6) Cook pumpkin pies</label>
+	<label>cook pumpkin pies x6</label>
 	<description>Cook 6 pumpkin pies.</description>
 	<jobString>Cooking 6 pumpkin pies.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -3227,7 +3227,7 @@
 <!-- Cheese Soup -->
 <RecipeDef>
 	<defName>DankPyon_CookMealCheeseSoup</defName>
-	<label>Cook cheese soup</label>
+	<label>cook cheese soup</label>
 	<description>Cook cheese soup.</description>
 	<jobString>Cooking cheese soup.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -3300,7 +3300,7 @@
 <!-- Cheese Soup Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealCheeseSoupBulk</defName>
-	<label>(Bulk x3) Cook cheese soup</label>
+	<label>cook cheese soup x3</label>
 	<description>Cook 3 cheese soup.</description>
 	<jobString>Cooking 3 cheese soup.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -3373,7 +3373,7 @@
 <!-- Steak with Wine -->
 <RecipeDef>
 	<defName>DankPyon_CookMealSteakWithWine</defName>
-	<label>Cook steak with wine</label>
+	<label>cook steak with wine</label>
 	<description>Cook steak with wine.</description>
 	<jobString>Cooking steak with wine</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -3453,7 +3453,7 @@
 <!-- Steak with Wine Bulk-->
 <RecipeDef>
 	<defName>DankPyon_CookMealSteakWithWineBulk</defName>
-	<label>(x3) Cook steak with wine</label>
+	<label>cook steak with wine x3</label>
 	<description>Cook 3 steak with wine.</description>
 	<jobString>Cooking bulk steak with wine</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
@@ -3537,8 +3537,8 @@
 <!-- TODO: Bulk recipe once specific meat def gets input -->
 <RecipeDef>
 	<defName>DankPyon_CookMealRoxSteak</defName>
-	<label>Cook Rox steak</label>
-	<description>Cooks an extravagant steak from a Rox.</description>
+	<label>cook rox steak</label>
+	<description>Cooks an extravagant steak from Rox meat.</description>
 	<jobString>Cooking a rox steak.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
@@ -3612,8 +3612,8 @@
 <!-- Rox Steak Bulk -->
 <RecipeDef>
 	<defName>DankPyon_CookMealRoxSteakBulk</defName>
-	<label>(Bulk x2) Cook Rox steak</label>
-	<description>Cooks extravagant steaks from a Rox.</description>
+	<label>cook rox steak x2</label>
+	<description>Cooks extravagant steaks from Rox meat.</description>
 	<jobString>Cooking two rox steaks.</jobString>
 	<workSpeedStat>CookSpeed</workSpeedStat>
 	<effectWorking>Cook</effectWorking>
@@ -3688,7 +3688,7 @@
 <!-- Griffon Berry Pie -->
   <RecipeDef>
 		<defName>DankPyon_CookMealGriffonBerryPie</defName>
-		<label>Bake griffon berry pie</label>
+		<label>bake griffon berry pie</label>
 		<description>Bake an extravagant pie from griffon berries.</description>
 		<jobString>Baking a griffon berry pie.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
@@ -3779,7 +3779,7 @@
 <!-- Griffon Berry Pie Bulk -->
   <RecipeDef>
 		<defName>DankPyon_CookMealGriffonBerryPieBulk</defName>
-		<label>(Bulk x3) Bake griffon berry pie</label>
+		<label>bake griffon berry pie x3</label>
 		<description>Bake an extravagant pie from griffon berries.</description>
 		<jobString>Baking a griffon berry pie.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>

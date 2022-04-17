@@ -183,7 +183,7 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
-        <li>Neck</li>
+        
 			</bodyPartGroups>
 			<layers>
 				<li>Overhead</li>
@@ -298,7 +298,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/PaddedNasalHelm/PaddedNasalHelm</wornGraphicPath>
       <tags>
@@ -318,7 +318,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_PaddedKettle</defName>
     <label>padded kettle</label>
-    <description>A wide-rimmed kettle helmet paired with a thick padded coif, offering good protection of the head and neck.</description>
+    <description>A wide-rimmed kettle helmet paired with a thick padded coif, offering good protection of the head.</description>
     <graphicData>
       <texPath>Headgear/PaddedKettle/PaddedKettle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -358,7 +358,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
       <tags>
@@ -378,7 +378,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_PaddedFlatTop</defName>
     <label>padded flat top</label>
-    <description>A thick padded coif coupled with a simple flat-top nasal helmet. Offers good protection of the head and neck, and is also quite insulating in cold weather.</description>
+    <description>A thick padded coif coupled with a simple flat-top nasal helmet. Offers good protection of the head, and is also quite insulating in cold weather.</description>
     <graphicData>
       <texPath>Headgear/PaddedFlatTop/PaddedFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -418,7 +418,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/PaddedFlatTop/PaddedFlatTop</wornGraphicPath>
       <tags>
@@ -439,7 +439,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainCoif</defName>
     <label>chain coif</label>
-    <description>A thick hood forged from chains of metal provides excellent protection to the head and neck against slashing and thrusting attacks.</description>
+    <description>A thick hood forged from chains of metal provides excellent protection to the head against slashing and thrusting attacks.</description>
     <graphicData>
       <texPath>Headgear/ChainCoif/ChainCoif</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -475,7 +475,7 @@
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainCoif/ChainCoif</wornGraphicPath>
       <tags>
@@ -495,7 +495,7 @@
 <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainCoifClosed</defName>
     <label>closed chain coif</label>
-    <description>A thick hood forged from chains of metal with additional protection reinforcing the lower face and neck. Provides excellent protection to the entire head and neck against piercing and slashing attacks.</description>
+    <description>A thick hood forged from chains of metal with additional protection reinforcing the lower face. Provides excellent protection to the entire head against piercing and slashing attacks.</description>
     <graphicData>
       <texPath>Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -531,7 +531,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
       <tags>
@@ -551,7 +551,7 @@
 <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainCoifFull</defName>
     <label>full chain coif</label>
-    <description>A thick hood forged from chains of metal with an added plate-metal noseguard to almost entirely protect the face, head, and neck. Makes it a bit difficult to see, but otherwise offers excellent protection against cuts.</description>
+    <description>A thick hood forged from chains of metal with an added plate-metal noseguard to almost entirely protect the face, head,. Makes it a bit difficult to see, but otherwise offers excellent protection against cuts.</description>
     <graphicData>
       <texPath>Headgear/ChainCoifFull/ChainCoifFull</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -587,7 +587,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainCoifFull/ChainCoifFull</wornGraphicPath>
       <tags>
@@ -608,7 +608,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainNasalHelm</defName>
     <label>chain nasal helm</label>
-    <description>A chainmail coif coupled with a simple round nasal helmet, offering excellent protection of the head and neck.</description>
+    <description>A chainmail coif coupled with a simple round nasal helmet, offering excellent protection of the head.</description>
     <graphicData>
       <texPath>Headgear/ChainNasalHelm/ChainNasalHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -647,7 +647,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainNasalHelm/ChainNasalHelm</wornGraphicPath>
       <tags>
@@ -666,7 +666,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainNasalHelmRed</defName>
     <label>chain nasal helm red</label>
-    <description>A variation of the chain skull cap crafted as a chainmail coif coupled with a nasal helmet. Offers the same level of protection for the head and neck, but the strip of red cloth tied around the forehead displays status.</description>
+    <description>A variation of the chain skull cap crafted as a chainmail coif coupled with a nasal helmet. Offers the same level of protection for the head, but the strip of red cloth tied around the forehead displays status.</description>
     <graphicData>
       <texPath>Headgear/ChainNasalHelmRed/ChainNasalHelmRed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -705,7 +705,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainNasalHelmRed/ChainNasalHelmRed</wornGraphicPath>
       <tags>
@@ -724,7 +724,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainKettle</defName>
     <label>chain kettle</label>
-    <description>A wide-rimmed kettle helmet paired with a chainmail coif, offering excellent protection of the head and neck while providing comfortable shade from the sun.</description>
+    <description>A wide-rimmed kettle helmet paired with a chainmail coif, offering excellent protection of the head while providing comfortable shade from the sun.</description>
     <graphicData>
       <texPath>Headgear/ChainKettle/ChainKettle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -763,7 +763,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainKettle/ChainKettle</wornGraphicPath>
       <tags>
@@ -822,7 +822,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
       <tags>
@@ -841,7 +841,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainClosedFlatTop</defName>
     <label>chain closed flat top</label>
-    <description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head and neck, but hinders eyesight and breathing.</description>
+    <description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head, but hinders eyesight and breathing.</description>
     <graphicData>
       <texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -957,7 +957,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ClosedBascinetHelmet</defName>
     <label>closed bascinet helmet</label>
-    <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head and neck, but is hindering to see and difficult to breathe in.</description>
+    <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
     <graphicData>
       <texPath>Headgear/BascinetHelmet/BascinetHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -998,7 +998,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/BascinetHelmet/BascinetHelmet</wornGraphicPath>
       <tags>
@@ -1058,7 +1058,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/HounskullHelmet/HounskullHelmet</wornGraphicPath>
       <tags>
@@ -1077,7 +1077,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_SalletHelmet</defName>
     <label>sallet helmet</label>
-    <description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, and neck respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
+    <description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
     <graphicData>
       <texPath>Headgear/SalletHelmet/SalletHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1118,7 +1118,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/SalletHelmet/SalletHelmet</wornGraphicPath>
       <tags>
@@ -1237,7 +1237,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/KlappvisierHelmetOpen/KlappvisierHelmetOpen</wornGraphicPath>
       <tags>
@@ -1297,7 +1297,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/GreatHelm/GreatHelm</wornGraphicPath>
       <tags>
@@ -1357,7 +1357,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/CrusaderGreatHelm/CrusaderGreatHelm</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
@@ -1419,7 +1419,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/RoyalGreatHelm/RoyalGreatHelm</wornGraphicPath>
       <tags>
@@ -1480,7 +1480,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/GreatHelmHorn/GreatHelmHorn</wornGraphicPath>
       <tags>
@@ -1500,7 +1500,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_Armet</defName>
     <label>armet</label>
-    <description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face, and neck, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
+    <description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
     <graphicData>
       <texPath>Headgear/Armet/Armet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1541,7 +1541,7 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        <li>Neck</li>
+        
       </bodyPartGroups>
       <wornGraphicPath>Headgear/Armet/Armet</wornGraphicPath>
       <tags>

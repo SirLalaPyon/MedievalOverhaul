@@ -3555,9 +3555,9 @@
 <ingredients>
 		<li>
 			<filter>
-				<categories>
-					<li>MeatRaw</li> <!-- SPECIFY ROX MEAT SOMEHOW -->
-	  </categories>
+				<thingDefs>
+					<li>Meat_DankPyon_Rox</li> 
+	  			</thingDefs>
 			</filter>
 			<count>0.5</count>
 		</li>
@@ -3631,7 +3631,7 @@
 		<li>
 			<filter>
 				<thingDefs>
-					<li>Meat_DankPyon_Rox</li> <!-- SPECIFY ROX MEAT SOMEHOW -->
+					<li>Meat_DankPyon_Rox</li> 
 	  			</thingDefs>
 			</filter>
 			<count>2.5</count>

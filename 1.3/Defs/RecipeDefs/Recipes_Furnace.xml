@@ -17,7 +17,7 @@
 	</RecipeDef>
   
  <!-- Coal --> 
- 	<!--RecipeDef>
+ 	<RecipeDef>
 		<defName>DankPyon_MakeChunk_Coal</defName>
 		<label>make charcoal from wood</label>
 		<description>Make a batch of coal by burning wood.</description>
@@ -45,7 +45,7 @@
 		<products>
 			<DankPyon_Coal>100</DankPyon_Coal>
 		</products>
-	</RecipeDef-->
+	</RecipeDef>
   
  <!-- Iron Ingots --> 
  	<RecipeDef ParentName="DankPyon_SmelterBase">

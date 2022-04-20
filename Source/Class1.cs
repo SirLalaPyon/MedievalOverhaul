@@ -116,36 +116,69 @@ namespace DankPyon
                 {
                     var verbToUse = curJob.verbToUse ?? actor.meleeVerbs.curMeleeVerb ?? actor.meleeVerbs.TryGetMeleeVerb(thing);
                     var meleeReachRange = actor.GetMeleeReachRange(verbToUse);
-                    if (actor.Position.DistanceTo(thing.Position) > meleeReachRange)
+                    if (meleeReachRange <= 1.42f)
                     {
-                        CastPositionRequest newReq = default(CastPositionRequest);
-                        newReq.caster = followAndAttack.actor;
-                        newReq.target = thing;
-                        newReq.verb = verbToUse;
-                        newReq.maxRangeFromTarget = meleeReachRange;
-                        newReq.wantCoverFromTarget = false;
-                        verbToUse.verbProps.range = meleeReachRange;
-                        if (!CastPositionFinder.TryFindCastPosition(newReq, out var dest))
+                        LocalTargetInfo localTargetInfo = target;
+                        PathEndMode peMode = PathEndMode.Touch;
+                        if (standPositionInd != 0)
                         {
-                            followAndAttack.actor.jobs.EndCurrentJob(JobCondition.Incompletable);
+                            LocalTargetInfo target2 = curJob.GetTarget(standPositionInd);
+                            if (target2.IsValid)
+                            {
+                                localTargetInfo = target2;
+                                peMode = PathEndMode.OnCell;
+                            }
                         }
-                        else
+                        if (localTargetInfo != actor.pather.Destination || (!actor.pather.Moving && !actor.CanReachImmediate(target, PathEndMode.Touch)))
                         {
-                            followAndAttack.actor.pather.StartPath(dest, PathEndMode.OnCell);
-                            actor.Map.pawnDestinationReservationManager.Reserve(actor, curJob, dest);
+                            actor.pather.StartPath(localTargetInfo, peMode);
+                        }
+                        else if (actor.CanReachImmediate(target, PathEndMode.Touch))
+                        {
+                            if (pawn != null && pawn.Downed && !curJob.killIncappedTarget)
+                            {
+                                curDriver.ReadyForNextToil();
+                            }
+                            else
+                            {
+                                hitAction();
+                            }
                         }
                     }
                     else
                     {
-                        if (pawn != null && pawn.Downed && !curJob.killIncappedTarget)
+                        if (actor.Position.DistanceTo(thing.Position) > meleeReachRange)
                         {
-                            curDriver.ReadyForNextToil();
+                            CastPositionRequest newReq = default(CastPositionRequest);
+                            newReq.caster = followAndAttack.actor;
+                            newReq.target = thing;
+                            newReq.verb = verbToUse;
+                            newReq.maxRangeFromTarget = meleeReachRange;
+                            newReq.wantCoverFromTarget = false;
+                            verbToUse.verbProps.range = meleeReachRange;
+                            if (!CastPositionFinder.TryFindCastPosition(newReq, out var dest))
+                            {
+                                followAndAttack.actor.jobs.EndCurrentJob(JobCondition.Incompletable);
+                            }
+                            else
+                            {
+                                followAndAttack.actor.pather.StartPath(dest, PathEndMode.OnCell);
+                                actor.Map.pawnDestinationReservationManager.Reserve(actor, curJob, dest);
+                            }
                         }
                         else
                         {
-                            hitAction();
+                            if (pawn != null && pawn.Downed && !curJob.killIncappedTarget)
+                            {
+                                curDriver.ReadyForNextToil();
+                            }
+                            else
+                            {
+                                hitAction();
+                            }
                         }
                     }
+
                 }
             };
             followAndAttack.activeSkill = () => SkillDefOf.Melee;

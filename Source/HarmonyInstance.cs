@@ -22,7 +22,8 @@ namespace DankPyon
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
     {
-        public static Dictionary<Thing, PlantExtension> cachedTransparentablePlants = new Dictionary<Thing, PlantExtension>();
+        public static Dictionary<Thing, PlantExtension> cachedTransparentablePlantsByExtensions = new Dictionary<Thing, PlantExtension>();
+        public static Dictionary<Map, List<Thing>> cachedTransparentablePlantsByMaps = new Dictionary<Map, List<Thing>>();
 
         public static Dictionary<HediffDef, StatDef> statMultipliers = new Dictionary<HediffDef, StatDef>();
 
@@ -142,15 +143,47 @@ namespace DankPyon
                 }
             }
         }
-        [HarmonyPatch(typeof(Thing), "SpawnSetup")]
+
+        [HarmonyPatch(typeof(SavedGameLoaderNow), "LoadGameFromSaveFileNow")]
+        public class SavedGameLoaderNow_LoadGameFromSaveFileNow
+        {
+            public static void Prefix()
+            {
+                cachedTransparentablePlantsByExtensions.Clear();
+                cachedTransparentablePlantsByMaps.Clear();
+            }
+        }
+
+        [HarmonyPatch(typeof(Plant), "SpawnSetup")]
         public class Thing_SpawnSetup_Patch
         {
-            private static void Prefix(Thing __instance)
+            private static void Postfix(Thing __instance)
             {
                 var extension = __instance.def.GetModExtension<PlantExtension>();
                 if (extension != null && extension.transparencyWhenPawnOrItemIsBehind)
                 {
-                    cachedTransparentablePlants[__instance] = extension;
+                    cachedTransparentablePlantsByExtensions[__instance] = extension;
+                    if (!cachedTransparentablePlantsByMaps.TryGetValue(__instance.Map, out var list))
+                    {
+                        cachedTransparentablePlantsByMaps[__instance.Map] = list = new List<Thing>();
+                    }
+                    if (!list.Contains(__instance))
+                    {
+                        list.Add(__instance);
+                    }
+                }
+            }
+        }
+
+        [HarmonyPatch(typeof(Plant), "DeSpawn")]
+        public class Thing_DeSpawn_Patch
+        {
+            private static void Prefix(Thing __instance)
+            {
+                if (cachedTransparentablePlantsByExtensions.Remove(__instance) && __instance.Map != null
+                    && cachedTransparentablePlantsByMaps.TryGetValue(__instance.Map, out var list))
+                {
+                    list.Remove(__instance);
                 }
             }
         }
@@ -158,16 +191,26 @@ namespace DankPyon
         [HarmonyPatch(typeof(Thing), "Position", MethodType.Setter)]
         public class Thing_Position_Patch
         {
-            private static void Postfix(Thing __instance)
+            public static void Prefix(Thing __instance, out bool __state, IntVec3 value)
             {
-                if (BaseItemMatches(__instance) && __instance.Map != null)
+                if (BaseItemMatches(__instance) && __instance.Map != null && __instance.positionInt != value)
                 {
-                    foreach (var data in cachedTransparentablePlants)
+                    __state = true;
+                }
+                else
+                {
+                    __state = false;
+                }
+            }
+            public static void Postfix(Thing __instance, bool __state)
+            {
+                if (__state && cachedTransparentablePlantsByMaps.TryGetValue(__instance.Map, out var list))
+                {
+                    foreach (var plant in list)
                     {
-                        var plant = data.Key;
                         if (__instance.positionInt.z > plant.positionInt.z && plant.positionInt.DistanceTo(__instance.positionInt) < 13)
                         {
-                            RecheckTransparency(plant, __instance, data.Value);
+                            RecheckTransparency(plant, __instance, plant.def.GetModExtension<PlantExtension>());
                         }
                     }
                 }
@@ -180,7 +223,7 @@ namespace DankPyon
         {
             private static void Postfix(Plant __instance, ref Graphic __result)
             {
-                if (cachedTransparentablePlants.TryGetValue(__instance, out var extension))
+                if (cachedTransparentablePlantsByExtensions.TryGetValue(__instance, out var extension))
                 {
                     var cells = GetTransparentCheckArea(__instance, extension);
                     bool anyItemsExistsInArea = cells.Any(x => HasItemsInCell(x, __instance.Map, extension));

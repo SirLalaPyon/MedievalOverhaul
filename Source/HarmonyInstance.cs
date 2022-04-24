@@ -159,17 +159,20 @@ namespace DankPyon
         {
             private static void Postfix(Thing __instance)
             {
-                var extension = __instance.def.GetModExtension<PlantExtension>();
-                if (extension != null && extension.transparencyWhenPawnOrItemIsBehind)
+                if (MedievalOverhaulMod.settings.enableTreeTransparency)
                 {
-                    cachedTransparentablePlantsByExtensions[__instance] = extension;
-                    if (!cachedTransparentablePlantsByMaps.TryGetValue(__instance.Map, out var list))
+                    var extension = __instance.def.GetModExtension<PlantExtension>();
+                    if (extension != null && extension.transparencyWhenPawnOrItemIsBehind)
                     {
-                        cachedTransparentablePlantsByMaps[__instance.Map] = list = new List<Thing>();
-                    }
-                    if (!list.Contains(__instance))
-                    {
-                        list.Add(__instance);
+                        cachedTransparentablePlantsByExtensions[__instance] = extension;
+                        if (!cachedTransparentablePlantsByMaps.TryGetValue(__instance.Map, out var list))
+                        {
+                            cachedTransparentablePlantsByMaps[__instance.Map] = list = new List<Thing>();
+                        }
+                        if (!list.Contains(__instance))
+                        {
+                            list.Add(__instance);
+                        }
                     }
                 }
             }
@@ -180,7 +183,7 @@ namespace DankPyon
         {
             private static void Prefix(Thing __instance)
             {
-                if (cachedTransparentablePlantsByExtensions.Remove(__instance) && __instance.Map != null
+                if (MedievalOverhaulMod.settings.enableTreeTransparency && cachedTransparentablePlantsByExtensions.Remove(__instance) && __instance.Map != null
                     && cachedTransparentablePlantsByMaps.TryGetValue(__instance.Map, out var list))
                 {
                     list.Remove(__instance);
@@ -193,7 +196,7 @@ namespace DankPyon
         {
             public static void Prefix(Thing __instance, out bool __state, IntVec3 value)
             {
-                if (BaseItemMatches(__instance) && __instance.Map != null && __instance.positionInt != value)
+                if (MedievalOverhaulMod.settings.enableTreeTransparency && BaseItemMatches(__instance) && __instance.Map != null && __instance.positionInt != value)
                 {
                     __state = true;
                 }
@@ -223,7 +226,8 @@ namespace DankPyon
         {
             private static void Postfix(Plant __instance, ref Graphic __result)
             {
-                if (cachedTransparentablePlantsByExtensions.TryGetValue(__instance, out var extension))
+                if (MedievalOverhaulMod.settings.enableTreeTransparency 
+                    && cachedTransparentablePlantsByExtensions.TryGetValue(__instance, out var extension))
                 {
                     var cells = GetTransparentCheckArea(__instance, extension);
                     bool anyItemsExistsInArea = cells.Any(x => HasItemsInCell(x, __instance.Map, extension));

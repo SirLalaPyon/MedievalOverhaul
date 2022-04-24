@@ -71,7 +71,7 @@ namespace DankPyon
 
         public static bool IsVanillaMeleeAttack(Verb verb)
         {
-            if (verb.Caster is Pawn pawn && pawn.GetMeleeReachRange(verb) > ShootTuning.MeleeRange)
+            if (MedievalOverhaulMod.settings.enableMultiTileMeleeAttacks && verb.Caster is Pawn pawn && pawn.GetMeleeReachRange(verb) > ShootTuning.MeleeRange)
             {
                 return false;
             }
@@ -93,8 +93,12 @@ namespace DankPyon
     {
         private static bool Prefix(ref Toil __result, TargetIndex targetInd, TargetIndex standPositionInd, Action hitAction)
         {
-            __result = FollowAndMeleeAttackModified(targetInd, standPositionInd, hitAction);
-            return false;
+            if (MedievalOverhaulMod.settings.enableMultiTileMeleeAttacks)
+            {
+                __result = FollowAndMeleeAttackModified(targetInd, standPositionInd, hitAction);
+                return false;
+            }
+            return true;
         }
 
         public static Toil FollowAndMeleeAttackModified(TargetIndex targetInd, TargetIndex standPositionInd, Action hitAction)

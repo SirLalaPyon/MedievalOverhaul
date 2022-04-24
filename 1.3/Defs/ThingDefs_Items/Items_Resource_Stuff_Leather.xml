@@ -71,6 +71,30 @@
   </ThingDef-->
 
   <!--========== Super leathers ============-->
+  <ThingDef ParentName="LeatherBase">
+    <defName>DankPyon_Leather_Daer</defName>
+    <label>daer leather</label>
+    <description>The fabled leather of a daer, made from skinning one of the mighty beasts. Though somewhat rough in its raw form, none can deny its incredible insulating capabilities due to the sheer density of daer hairs. That same density as well as innate composition makes it surprisingly flame- retardent, preventing oxygen from reaching any smoldering embers on the fur. That said, it is a heavy material to work with.</description>
+    <graphicData>
+      <texPath>Resources/HeavyFurHuge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>15.0</MarketValue>
+      <StuffPower_Armor_Sharp>2.20</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>34</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(93,81,70)</color>
+      <commonality>0.0025</commonality>
+      <statFactors>
+        <MaxHitPoints>2.0</MaxHitPoints>
+        <Beauty>6</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
 
   <ThingDef ParentName="LeatherBase">
     <defName>DankPyon_Leather_Lindwurm</defName>
@@ -94,6 +118,23 @@
         <MaxHitPoints>2.0</MaxHitPoints>
         <Beauty>8</Beauty>
       </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <!--========== Wool ============-->
+  <ThingDef ParentName="WoolBase">
+    <defName>DankPyon_WoolRox</defName>
+    <label>rox wool</label>
+    <description>Thick, coarse and provides very good insulation. Rox wool clothes can keep the body warm even in very cold conditions.</description>
+    <statBases>
+      <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <graphicData>
+      <color>(80,75,72)</color>
+    </graphicData>
+    <stuffProps>
+      <color>(80,75,72)</color>
     </stuffProps>
   </ThingDef>
 

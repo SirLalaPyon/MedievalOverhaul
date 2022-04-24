@@ -626,14 +626,14 @@
 					</butcherBodyPart>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
+			<!--li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef [defName = "Thrumbo"]</xpath>
 				<value>
 					<butcherProducts>
 						<ThrumboHorn>1</ThrumboHorn>
 					</butcherProducts>
 				</value>
-			</li>
+			</li-->
 		
 		</operations>
 	</Operation>

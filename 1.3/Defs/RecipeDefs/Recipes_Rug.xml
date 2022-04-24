@@ -353,7 +353,7 @@
 		<defName>DankPyon_MakeThrumboRug</defName>
 		<label>make thrumbo rug </label>
 		<description>Treat a raw thrumbo pelt into a soft and beautiful rug.</description>
-		<jobString>Making a polar bear rug.</jobString>
+		<jobString>Making a thrumbo rug.</jobString>
 		<workAmount>12000</workAmount>
 		<ingredients>
 
@@ -385,4 +385,42 @@
 			<DankPyon_RugThrumbo3x3c>1</DankPyon_RugThrumbo3x3c>
 		</products>
 	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_RugBase">
+		<defName>DankPyon_MakeDaerRug</defName>
+		<label>make daer rug </label>
+		<description>Treat a raw daer pelt into a soft and beautiful rug.</description>
+		<jobString>Making a daer rug.</jobString>
+		<workAmount>12000</workAmount>
+		<ingredients>
+
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Hide_Daer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_TanningLiquor</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Hide_Daer</li>
+				<li>DankPyon_TanningLiquor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_RugDaer4x4c>1</DankPyon_RugDaer4x4c>
+		</products>
+	</RecipeDef>
+
 </Defs>

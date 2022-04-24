@@ -884,6 +884,25 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_HideBaseHuge">
+		<defName>DankPyon_Hide_DireBoar</defName>
+		<label>huge dire boar hide</label>
+		<graphicData>
+			<color>(123,92,87)</color>
+		</graphicData>
+		<statBases>
+			<Mass>19.5</Mass>
+			<MarketValue>175.5</MarketValue>
+		</statBases>
+		<butcherProducts Inherit="False">
+			<Leather_Bear>65</Leather_Bear>
+			<DankPyon_DireBoarTusk>2</DankPyon_DireBoarTusk>
+		</butcherProducts>
+		<stuffProps>
+			<color>(123,92,87)</color>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideBaseHuge">
 		<defName>DankPyon_Hide_BearGrizzly</defName>
 		<label>huge grizzly bear hide</label>
 		<graphicData>
@@ -995,6 +1014,25 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_HideBaseHuge">
+		<defName>DankPyon_Hide_Daer</defName>
+		<label>huge daer pelt</label>
+		<graphicData>
+			<texPath>Resources/HeavyFurHuge</texPath>
+			<color>(80,75,72)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1512</MarketValue>
+			<Mass>36</Mass>
+		</statBases>
+		<butcherProducts Inherit="False">
+			<Leather_Bear>120</Leather_Bear>
+		</butcherProducts>
+		<stuffProps>
+			<color>(93,81,70)</color>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideBaseHuge">
 		<defName>DankPyon_Hide_Thrumbo</defName>
 		<label>huge thrumbo pelt</label>
 		<graphicData>
@@ -1007,6 +1045,7 @@
 		</statBases>
 		<butcherProducts Inherit="False">
 			<Leather_Thrumbo>120</Leather_Thrumbo>
+			<ThrumboHorn>1</ThrumboHorn>
 		</butcherProducts>
 		<stuffProps>
 			<color>(233,233,233)</color>

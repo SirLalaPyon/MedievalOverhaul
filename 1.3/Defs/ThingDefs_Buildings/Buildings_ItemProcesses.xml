@@ -412,11 +412,31 @@
 </ProcessorFramework.ProcessDef>
 
 <ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_RoxRugProcess</defName>
+  <thingDef>DankPyon_RugRox3x3c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_Rox</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
   <defName>DankPyon_ThrumboRugProcess</defName>
   <thingDef>DankPyon_RugThrumbo3x3c</thingDef>
   <ingredientFilter>
     <thingDefs>
       <li>DankPyon_Hide_Thrumbo</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_DaerRugProcess</defName>
+  <thingDef>DankPyon_RugDaer4x4c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_Daer</li>
     </thingDefs>
   </ingredientFilter>
 </ProcessorFramework.ProcessDef>

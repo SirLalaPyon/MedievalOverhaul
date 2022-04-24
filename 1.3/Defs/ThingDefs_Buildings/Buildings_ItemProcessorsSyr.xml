@@ -41,7 +41,7 @@
     <comps>
       <li Class="ProcessorFramework.CompProperties_Processor">
         <capacity>100</capacity>
-        <independentProcesses>true</independentProcesses>
+        <independentProcesses>false</independentProcesses>
         <parallelProcesses>false</parallelProcesses>
         <dropIngredients>true</dropIngredients>
         <showProductIcon>true</showProductIcon>
@@ -105,7 +105,7 @@
     <comps>
       <li Class="ProcessorFramework.CompProperties_Processor">
         <capacity>200</capacity>
-        <independentProcesses>true</independentProcesses>
+        <independentProcesses>false</independentProcesses>
         <parallelProcesses>false</parallelProcesses>
         <dropIngredients>true</dropIngredients>
         <showProductIcon>true</showProductIcon>
@@ -196,6 +196,7 @@
           <li>DankPyon_BearGrizzlyRugProcess</li>
           <li>DankPyon_BearPolarRugProcess</li>
           <li>DankPyon_ThrumboRugProcess</li>
+          <li>DankPyon_DaerRugProcess</li>
         </processes>
       </li>
       <li Class="CompProperties_Forbiddable"/>
@@ -275,7 +276,7 @@
       <comps>
         <li Class="ProcessorFramework.CompProperties_Processor">
           <capacity>100</capacity>
-          <independentProcesses>true</independentProcesses>
+          <independentProcesses>false</independentProcesses>
           <parallelProcesses>false</parallelProcesses>
           <dropIngredients>true</dropIngredients>
           <showProductIcon>true</showProductIcon>
@@ -355,7 +356,7 @@
 
        <li Class="ProcessorFramework.CompProperties_Processor">
         <capacity>100</capacity>
-        <independentProcesses>true</independentProcesses>
+        <independentProcesses>false</independentProcesses>
         <parallelProcesses>false</parallelProcesses>
         <dropIngredients>true</dropIngredients>
         <showProductIcon>true</showProductIcon>
@@ -491,7 +492,7 @@
     <comps>
       <li Class="ProcessorFramework.CompProperties_Processor">
         <capacity>200</capacity>
-        <independentProcesses>true</independentProcesses>
+        <independentProcesses>false</independentProcesses>
         <parallelProcesses>false</parallelProcesses>
         <dropIngredients>true</dropIngredients>
         <showProductIcon>true</showProductIcon>

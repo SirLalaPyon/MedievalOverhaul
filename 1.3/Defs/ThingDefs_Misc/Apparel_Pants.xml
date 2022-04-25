@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ApparelMakeableBase" Name="DankPyon_Base_Pants">
+    <defName>DankPyon_Apparel_Hose</defName>
+    <label>hose</label>
+    <description>A standard pair of clothing for burghers and nobility alike.</description>
+    <recipeMaker>
+      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/Hose</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>110</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>1</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.31</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>DankPyon_Peasant</li>
+		<li>DankPyon_Bandit</li>
+		<li>DankPyon_Mercenary</li>
+		<li>DankPyon_MercenaryHeavy</li>
+		<li>DankPyon_Archer</li>
+		<li>DankPyon_Footman</li>
+		<li>DankPyon_Billman</li>
+		<li>DankPyon_Knight</li>
+		<li>DankPyon_HedgeKnight</li>
+
+		<li>MedievalMilitaryBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_Base_Pants">
+    <defName>DankPyon_Apparel_Trousers</defName>
+    <label>trousers</label>
+    <description>A standard pair of clothing for burghers and nobility alike.</description>
+    <graphicData>
+      <texPath>Apparel/Trousers</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_Base_Pants">
+    <defName>DankPyon_Apparel_Braies</defName>
+    <label>braies</label>
+    <description>Braies are underhose, usually of linen, although in some cultures they serve also as an outer garment.</description>
+    <graphicData>
+      <texPath>Apparel/Braies</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

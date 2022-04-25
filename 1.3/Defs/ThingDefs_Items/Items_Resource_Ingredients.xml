@@ -121,28 +121,6 @@
 </ThingDef>  
 
 <ThingDef ParentName="RoughPlantBase">
-  <defName>DankPyon_Flax</defName>
-  <label>Flax</label>
-  <description>Stalks of plant fibre. Its fibre can be utilized for its stringy properties and will make good fabric.</description>
-  <stackLimit>200</stackLimit>
-  <graphicData>
-    <texPath>Resources/Flax</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <statBases>
-    <MarketValue>0.7</MarketValue>
-    <Mass>0.010</Mass>
-    <Flammability>1.8</Flammability>
-  </statBases>
-  <thingCategories>
-    <li>Foods</li>
-  </thingCategories>
-  <ingestible>
-    <optimalityOffsetFeedingAnimals>6</optimalityOffsetFeedingAnimals>
-  </ingestible>	
-</ThingDef>   
-
-<ThingDef ParentName="RoughPlantBase">
   <defName>DankPyon_Salt</defName>
   <label>Salt</label>
   <description>Salt is a common mineral, often found in natural rocky deposits and in abundance in the ocean. It is often used for food preservation, and as a seasoning in meals.</description>

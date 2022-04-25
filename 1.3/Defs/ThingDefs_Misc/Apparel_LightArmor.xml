@@ -66,7 +66,6 @@
 		<graphicData>
 			<texPath>Apparel/LightArmor/Leather_Tunic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
@@ -139,9 +138,10 @@
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
 
-		<costList>
-			<Cloth>60</Cloth>
-		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
 
 		<thingCategories>
 			<li>Apparel</li>
@@ -203,9 +203,10 @@
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
 
-		<costList>
-			<Cloth>70</Cloth>
-		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
 
 		<thingCategories>
 			<li>Apparel</li>
@@ -294,6 +295,69 @@
 				<li>Torso</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LightArmor/Padded_Leather</wornGraphicPath>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_Bandit</li>
+                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Archer</li>
+                <li>DankPyon_Footman</li>
+                <li>DankPyon_Billman</li>
+                <li>DankPyon_Knight</li>
+                <li>DankPyon_HedgeKnight</li>
+
+				<li>MedievalMilitaryBasic</li>
+            </tags>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>DankPyon_Apparel_Light_Lamellar</defName>
+		<label>light lamellar</label>
+		<description>A leather lamellar built up of overlapping leather plates that can provide a substantial ammount of protection.</description>
+		<graphicData>
+			<texPath>Apparel/LightArmor/Lamellar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+		</recipeMaker>
+
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.52</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LightArmor/Lamellar</wornGraphicPath>
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_Bandit</li>

@@ -4,6 +4,29 @@
 
 <!-- ==================== Raw Plants Resource ======================= -->  
 
+<ThingDef ParentName="RoughPlantBase">
+  <defName>DankPyon_RawFlax</defName>
+  <label>Flax</label>
+  <description>Stalks of plant fibre. Its fibre can be utilized for its stringy properties and will make good fabric.</description>
+  <stackLimit>200</stackLimit>
+  <graphicData>
+    <texPath>Plants/Flax</texPath>
+    <graphicClass>Graphic_StackCount</graphicClass>
+  </graphicData>
+  <statBases>
+    <MarketValue>0.7</MarketValue>
+    <Mass>0.010</Mass>
+    <Flammability>1.8</Flammability>
+  </statBases>
+  <thingCategories>
+    <li>Foods</li>
+  </thingCategories>
+  <ingestible>
+    <optimalityOffsetFeedingAnimals>6</optimalityOffsetFeedingAnimals>
+  </ingestible>	
+</ThingDef>   
+
+
 <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_RawCotton</defName>
     <label>cotton</label>

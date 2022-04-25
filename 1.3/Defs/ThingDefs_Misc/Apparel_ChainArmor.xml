@@ -17,9 +17,10 @@
             <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
         </recipeMaker>
        
-		<costList>
-			<DankPyon_IronIngot>80</DankPyon_IronIngot>
-		</costList>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+		<costStuffCount>80</costStuffCount>
 
         <statBases>
             <WorkToMake>27000</WorkToMake>
@@ -83,19 +84,20 @@
             <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
         </recipeMaker>
         
-		<costList>
-			<DankPyon_IronIngot>100</DankPyon_IronIngot>
-		</costList>
+		<stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+		<costStuffCount>100</costStuffCount>
 
         <statBases>
             <WorkToMake>28000</WorkToMake>
             <MaxHitPoints>250</MaxHitPoints>
             <Mass>8</Mass>
-            <ArmorRating_Sharp>0.5355</ArmorRating_Sharp>
-      		<ArmorRating_Blunt>0.2394</ArmorRating_Blunt>
-			<Insulation_Cold>0</Insulation_Cold>
+            <ArmorRating_Sharp>0.6155</ArmorRating_Sharp>
+      		<ArmorRating_Blunt>0.2694</ArmorRating_Blunt>
+			<Insulation_Cold>1</Insulation_Cold>
       		<ArmorRating_Heat>0</ArmorRating_Heat>
-            <EquipDelay>10</EquipDelay>
+            <EquipDelay>15</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.5</MoveSpeed>

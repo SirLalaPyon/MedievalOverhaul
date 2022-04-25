@@ -29,21 +29,21 @@
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_AllThingsAnyOfAreGlowing"][labelKey="RoomRequirementAllBraziersMustBeLit"]/things</xpath>
+					<xpath>Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Brazier"]/things</xpath>
 					<value>
 						<li>DankPyon_CandleStand</li>
 					</value>
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Brazier"]/things</xpath>
+					<xpath>Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_AllThingsAnyOfAreGlowing"][labelKey="RoomRequirementAllBraziersMustBeLit"]/things</xpath>
 					<value>
 						<li>DankPyon_CandleStand</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Column"]/things</xpath>
+					<xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Column"]/things</xpath>
 					<value>
 						<li>DankPyon_RoyalColumn</li>
 					</value>

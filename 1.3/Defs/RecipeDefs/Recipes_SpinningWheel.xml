@@ -67,6 +67,56 @@
 			<Cloth>50</Cloth>
 		</products>
 	</RecipeDef>
+	
+	<RecipeDef ParentName="DankPyon_MakeClothBase">
+		<defName>DankPyon_MakeLinen</defName>
+		<jobString>Spinning flax.</jobString>
+		<label>spin linen</label>
+		<description>Spin raw flax into linen fabric.</description>
+		<products>
+			<DankPyon_Linen>10</DankPyon_Linen>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawFlax</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_RawFlax</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MakeClothBase">
+		<defName>DankPyon_MakeLinenBulk</defName>
+		<jobString>Spinning flax.</jobString>
+		<label>spin linen x50</label>
+		<description>Spin raw flax into 50 linen fabric.</description>
+		<products>
+			<DankPyon_Linen>50</DankPyon_Linen>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawFlax</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_RawFlax</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
 
 	<RecipeDef ParentName="DankPyon_MakeClothBase">
 		<defName>DankPyon_MakeClothFromWool</defName>

@@ -80,7 +80,7 @@
           </colorGenerator>
     </ThingDef>
 
-	 <ThingDef ParentName="ArmorSmithableBase">
+	<!--ThingDef ParentName="ArmorSmithableBase">
         <defName>DankPyon_Apparel_CoatOfPlates</defName>
         <label>coat of plates</label>
         <description>Two layers of armor give way to this fantastically protective, yet cumbersome, suit, consisting of strong-forged chains beset by overlapping layers of metal plates to protect vitals and extremities.</description>
@@ -158,7 +158,7 @@
               </li>
             </options>
           </colorGenerator>
-    </ThingDef>
+    </ThingDef-->
 
     <ThingDef ParentName="ArmorSmithableBase">
         <defName>DankPyon_Apparel_Breast_Plate</defName>
@@ -167,7 +167,6 @@
         <graphicData>
 			<texPath>Apparel/HeavyArmor/Chest_Plate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
         </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -204,7 +203,7 @@
                 <li>Shoulders</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/HeavyArmor/Chest_Plate</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
+			<useWornGraphicMask>false</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
             </layers>
@@ -245,7 +244,6 @@
         <graphicData>
 			<texPath>Apparel/HeavyArmor/Chest_Plate_Full</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
         </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -285,7 +283,7 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/HeavyArmor/Chest_Plate_Full</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
+			<useWornGraphicMask>false</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
             </layers>

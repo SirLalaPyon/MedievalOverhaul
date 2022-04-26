@@ -70,6 +70,9 @@
       <li>DankPyon_Peasant</li>
       <li>DankPyon_PeasantHelmet</li>
     </apparelTags>
+    <apparelRequired>
+      <li>DankPyon_Footwear_BootsLeather</li>
+    </apparelRequired>
     <weaponMoney>250~400</weaponMoney>
     <weaponTags>
       <li>DankPyon_Bludgeon</li>
@@ -106,6 +109,9 @@
     </weaponTags>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>14~22</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
   </PawnKindDef>
 
   <PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
@@ -133,6 +139,9 @@
     </weaponTags>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>15~24</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
   </PawnKindDef>
 
   <!-- ===== Soldiers ===== -->
@@ -156,6 +165,9 @@
     </weaponTags>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>14~22</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
   </PawnKindDef>
 
   <PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
@@ -184,6 +196,9 @@
     </weaponTags>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>14~22</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
   </PawnKindDef>
 
   <PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
@@ -214,6 +229,18 @@
     </weaponTags>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>14~22</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+     <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~14</range>
+      </li>
+    </skills>
   </PawnKindDef>
 
   <PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
@@ -243,6 +270,18 @@
     </weaponTags>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>14~22</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~15</range>
+      </li>
+    </skills>
   </PawnKindDef>
 
   <PawnKindDef Name="DankPyon_Medieval_Knight" ParentName="DankPyon_MedievalPawnKindBase">
@@ -260,8 +299,15 @@
       <li>DankPyon_Greatsword</li>
       <li>DankPyon_TwoHandedHammer</li>
     </weaponTags>
+    <apparelRequired>
+      <li>DankPyon_Footwear_BootsPlate</li>
+      <li>DankPyon_Handwear_GlovesPlate</li>
+    </apparelRequired>
     <initialWillRange>2~4</initialWillRange>
     <initialResistanceRange>17~25</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
   </PawnKindDef>
 
   <PawnKindDef ParentName="DankPyon_Medieval_Knight">
@@ -281,6 +327,9 @@
     <weaponMoney>500~700</weaponMoney>
     <initialWillRange>3~5</initialWillRange>
     <initialResistanceRange>20~30</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
   </PawnKindDef>
 
 

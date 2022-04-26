@@ -12,7 +12,11 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>LWM.DeepStorage</li>
 		<li>syrchalis.processor.framework</li>
+		<li>OskarPotocki.VanillaExpanded.RoyaltyPatches</li>
 	</loadAfter>
+	<forceLoadAfter>
+		<li>OskarPotocki.VanillaExpanded.RoyaltyPatches</li>
+	</forceLoadAfter>
 	<modDependencies>
 	  <li>
 		<packageId>brrainz.harmony</packageId>

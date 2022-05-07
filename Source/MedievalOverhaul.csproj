@@ -46,10 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ButcherProperties.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="DankPyonDefOf.cs" />
+    <Compile Include="Tool_Melee.cs" />
     <Compile Include="CompFireOverlaySouth.cs" />
     <Compile Include="CompProperties_FireOverlaySouth.cs" />
     <Compile Include="CompWindMill.cs" />
+    <Compile Include="Core.cs" />
     <Compile Include="DankPyon_AdditionalProjectileProperties.cs" />
     <Compile Include="DankPyon_BiomeWorker_AncientForest.cs" />
     <Compile Include="DankPyon_BiomeWorker_DarkForest.cs" />
@@ -59,6 +61,7 @@
     <Compile Include="DankPyon_PlantExtension.cs" />
     <Compile Include="HarmonyInstance.cs" />
     <Compile Include="MedievalOverhaulMod.cs" />
+    <Compile Include="Patch_FollowAndMeleeAttack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

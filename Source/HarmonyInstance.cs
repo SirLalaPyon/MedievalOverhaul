@@ -12,13 +12,6 @@ using Verse.AI;
 
 namespace DankPyon
 {
-    [RimWorld.DefOf]
-    public static class DankPyonDefOf
-    {
-        public static ShaderTypeDef TransparentPlant;
-        public static ThingDef DankPyon_Artillery_Trebuchet;
-        public static ThingDef DankPyon_Artillery_Boulder;
-    }
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
     {
@@ -140,6 +133,30 @@ namespace DankPyon
                     {
                         otherThing.Map.mapDrawer.MapMeshDirty(plant.Position, MapMeshFlag.Things);
                     }
+                }
+            }
+        }
+
+        [HarmonyPatch(typeof(GenConstruct), "CanBuildOnTerrain")]
+        public static class GenConstruct_CanBuildOnTerrain_Patch
+        {
+            public static void Postfix(ref bool __result, BuildableDef entDef, IntVec3 c, Map map, Rot4 rot, Thing thingToIgnore = null, ThingDef stuffDef = null)
+            {
+                if (entDef == DankPyonDefOf.DankPyon_PlowedSoil && !c.GetTerrain(map).IsSoil)
+                {
+                    __result = false;
+                }
+            }
+        }
+
+        [HarmonyPatch(typeof(GenConstruct), "CanPlaceBlueprintOver")]
+        public static class GenConstruct_CanPlaceBlueprintOver_Patch
+        {
+            public static void Postfix(ref bool __result, BuildableDef newDef, ThingDef oldDef)
+            {
+                if (newDef is ThingDef def && def.building != null && !def.building.isEdifice && oldDef.building != null && !oldDef.building.isEdifice)
+                {
+                    __result = false;
                 }
             }
         }

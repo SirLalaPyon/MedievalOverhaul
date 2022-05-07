@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using Verse.Noise;
 
 namespace DankPyon
 {
@@ -149,14 +150,29 @@ namespace DankPyon
             }
         }
 
-        [HarmonyPatch(typeof(GenConstruct), "CanPlaceBlueprintOver")]
+        [HarmonyPatch(typeof(GenConstruct), "CanPlaceBlueprintAt")]
         public static class GenConstruct_CanPlaceBlueprintOver_Patch
         {
-            public static void Postfix(ref bool __result, BuildableDef newDef, ThingDef oldDef)
+            public static void Postfix(ref AcceptanceReport __result, BuildableDef entDef, IntVec3 center, Rot4 rot, Map map, bool godMode = false, Thing thingToIgnore = null, Thing thing = null, ThingDef stuffDef = null)
             {
-                if (newDef is ThingDef def && def.building != null && !def.building.isEdifice && oldDef.building != null && !oldDef.building.isEdifice)
+                CellRect cellRect = GenAdj.OccupiedRect(center, rot, entDef.Size);
+                foreach (IntVec3 cell in cellRect)
                 {
-                    __result = false;
+                    var thingList = cell.GetThingList(map);
+                    for (int m = 0; m < thingList.Count; m++)
+                    {
+                        Thing thing2 = thingList[m];
+                        if (thing2 != thingToIgnore && (thing2.def.building != null || thing2.def.entityDefToBuild != null))
+                        {
+                            if (entDef is ThingDef def && def.building != null && !def.building.isEdifice
+                                || thing2.def.entityDefToBuild != null && thing2.def.entityDefToBuild is ThingDef otherDef
+                                    && otherDef.building != null && !otherDef.building.isEdifice)
+                            {
+                                __result = new AcceptanceReport("SpaceAlreadyOccupied".Translate());
+                                return;
+                            }
+                        }
+                    }
                 }
             }
         }

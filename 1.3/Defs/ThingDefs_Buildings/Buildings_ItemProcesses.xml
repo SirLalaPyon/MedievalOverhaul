@@ -441,4 +441,14 @@
   </ingredientFilter>
 </ProcessorFramework.ProcessDef>
 
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_HumanRugProcess</defName>
+  <thingDef>DankPyon_RugHuman1x2c</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>DankPyon_Hide_Human</li>
+    </thingDefs>
+  </ingredientFilter>
+</ProcessorFramework.ProcessDef>
+
 </Defs>

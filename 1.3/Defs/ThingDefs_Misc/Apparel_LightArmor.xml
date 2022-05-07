@@ -57,6 +57,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -120,6 +121,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -133,7 +135,7 @@
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
@@ -141,20 +143,19 @@
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
 		<statBases>
-			<MaxHitPoints>140</MaxHitPoints>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>2</Mass>
-			<ArmorRating_Sharp>0.126</ArmorRating_Sharp>
-      		<ArmorRating_Blunt>0</ArmorRating_Blunt>
-			<Insulation_Cold>5.4</Insulation_Cold>
-      		<Insulation_Heat>2.7</Insulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
 			<bodyPartGroups>
@@ -216,10 +217,9 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
 			<Mass>4</Mass>
-			<ArmorRating_Sharp>0.162</ArmorRating_Sharp>
-      		<ArmorRating_Blunt>0</ArmorRating_Blunt>
-			<Insulation_Cold>9</Insulation_Cold>
-			<Insulation_Heat>2.7</Insulation_Heat>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 
@@ -230,7 +230,7 @@
 				<li>Torso</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LightArmor/Gambeson</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
+			<useWornGraphicMask>false</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_Bandit</li>
@@ -295,6 +295,7 @@
 				<li>Torso</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/LightArmor/Padded_Leather</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_Bandit</li>
@@ -316,6 +317,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">

@@ -2067,7 +2067,7 @@
 			<filter>
 				<thingDefs>
 					<li>DankPyon_RawApples</li>
-	  </thingDefs>
+	  			</thingDefs>
 			</filter>
 			<count>0.32</count>
 		</li>
@@ -3865,6 +3865,152 @@
 	<researchPrerequisites>
 		<li>DankPyon_AdvancedCooking</li>
 	</researchPrerequisites>
+  </RecipeDef>
+
+  <!--=================================== Survival meal ==========================================-->
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>DankPyon_CookMealRations</defName>
+    <label>cook packaged rations</label>
+    <description>Prepare a packaged ration from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    <jobString>Cooking ration.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>0.30</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.30</count>
+      </li>
+    </ingredients>
+    <products>
+      <DankPyon_MealRations>1</DankPyon_MealRations>
+    </products>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>DankPyon_FoodPreservation</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>DankPyon_CookMealRationsBulk</defName>
+    <label>cook packaged rations x5</label>
+    <description>Prepare 5 packaged rations from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    <jobString>Cooking 5 rations.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+        </filter>
+        <count>1.50</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>1.50</count>
+      </li>
+    </ingredients>
+    <products>
+      <DankPyon_MealRations>5</DankPyon_MealRations>
+    </products>
+    <skillRequirements>
+      <Cooking>10</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>DankPyon_FoodPreservation</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>DankPyon_CookMealRationsVegan</defName>
+    <label>cook vegetarian packaged rations</label>
+    <description>Prepare a vegetarian packaged ration from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    <jobString>Cooking ration.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+      <filter>
+			 <thingDefs>
+				<li>DankPyon_RawMacci</li>
+			 </thingDefs>
+		  </filter>
+        <count>0.85</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <DankPyon_MealRationsVegetarian>1</DankPyon_MealRationsVegetarian>
+    </products>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>DankPyon_FoodPreservation</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>DankPyon_CookMealRationsVeganBulk</defName>
+    <label>cook vegetarian packaged rations</label>
+    <description>Prepare a vegetarian packaged ration from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+    <jobString>Cooking ration.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+       <filter>
+			 <thingDefs>
+				<li>DankPyon_RawMacci</li>
+			 </thingDefs>
+		  </filter>
+        <count>4.25</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <products>
+      <DankPyon_MealRationsVegetarian>5</DankPyon_MealRationsVegetarian>
+    </products>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>DankPyon_FoodPreservation</researchPrerequisite>
   </RecipeDef>
 
 </Defs>

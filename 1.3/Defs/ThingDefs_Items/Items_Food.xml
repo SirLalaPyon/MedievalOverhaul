@@ -5,10 +5,10 @@
 
 <!--============== Preserved Food ===============-->
   <!-- Rations --> 
-  <ThingDef ParentName="MealBase">
+  <ThingDef ParentName="MealBase" Name="DankPyon_RationsBase">
     <defName>DankPyon_MealRations</defName>
     <label>packaged rations</label>
-    <description>A hearty and nutritious packaged meal, packed for use in survival situations. While it never rots, it can still deteriorate if left outside. Great for adventuring.</description>
+    <description>A hearty and nutritious packaged meal, packed for use in survival situations. It takes a long time to rot but it can still deteriorate if left outside. Great for adventuring.</description>
     <graphicData>
       <texPath>Meal/Rations</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -27,6 +27,32 @@
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>120</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_RationsBase">
+    <defName>DankPyon_MealRationsVegetarian</defName>
+    <label>packaged macci</label>
+    <description>A hearty and nutritious packaged bread, typically prepared by wood rangers. It takes a long time to rot but it can still deteriorate if left outside. Great for adventuring.</description>
+    <graphicData>
+      <texPath>Meal/Macci</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      </li>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>120</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
     <rotatable>false</rotatable>
   </ThingDef>
   

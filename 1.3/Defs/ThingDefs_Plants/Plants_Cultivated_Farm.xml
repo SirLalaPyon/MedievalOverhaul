@@ -640,4 +640,42 @@
       <purpose>Food</purpose>
     </plant>
   </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>DankPyon_MacciPlant</defName>
+    <label>macci plant</label>
+    <description>A tall grain plant which produces ears of soft, edible seeds. While macci takes a long time to grow, it yields lots of food compared to other crops. Harvested macci takes a long time to spoil.</description>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Nutrition>0.4</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/MacciPlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.70</fertilityMin>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>DankPyon_RawMacci</harvestedThingDef>
+      <harvestYield>22</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>DankPyon_AdvancedAgriculture</li>
+      </sowResearchPrerequisites>	 
+      <topWindExposure>0.35</topWindExposure>
+      <growDays>11.3</growDays>
+      <immatureGraphicPath>Plants_Immature/MacciPlant</immatureGraphicPath>
+      <visualSizeRange>0.3~1.4</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+    
+  </ThingDef>
 </Defs>

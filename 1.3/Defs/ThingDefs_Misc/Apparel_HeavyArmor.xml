@@ -237,7 +237,7 @@
     </ThingDef>
 	
 	
-	    <ThingDef ParentName="ArmorSmithableBase">
+	<ThingDef ParentName="ArmorSmithableBase">
         <defName>DankPyon_Apparel_FullPlate</defName>
         <label>full plate</label>
         <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war.</description>
@@ -284,6 +284,211 @@
             </bodyPartGroups>
             <wornGraphicPath>Apparel/HeavyArmor/Chest_Plate_Full</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>DankPyon_Knight</li>
+
+                <li>MedievalMilitary</li>
+                <li>MedievalMilitaryAdvanced</li>
+                <li>MedievalPrestigeCombatGear</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+              <li>
+                <weight>10</weight>
+                <only>(0.33,0.33,0.33)</only>
+              </li>
+              <li>
+                <weight>10</weight>
+                <only>(0.65,0.65,0.65)</only>
+              </li>
+              <li>
+                <weight>6</weight>
+                <min>(0.3,0.3,0.3)</min>
+                <max>(0.5,0.5,0.5)</max>
+              </li>
+            </options>
+          </colorGenerator>
+    </ThingDef>
+
+    <ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_HeraldicPlate">
+        <defName>DankPyon_Apparel_HeraldicFullPlate1c</defName>
+        <label>heraldic full plate (Amboise)</label>
+        <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war. \n\nThis full plate carries the colours of house Amboise.</description>
+        <graphicData>
+			<texPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <colorTwo>(99,99, 99)</colorTwo>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <recipeUsers Inherit="False">
+            </recipeUsers>
+        </recipeMaker>
+
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>200</costStuffCount>
+
+        <statBases>
+            <WorkToMake>45000</WorkToMake>
+            <MaxHitPoints>310</MaxHitPoints>
+            <Mass>17</Mass>
+            <StuffEffectMultiplierArmor>0.92</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>20</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-1.2</MoveSpeed>
+        </equippedStatOffsets>
+
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>DankPyon_HeraldicPlate1</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+       <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_HeraldicPlate">
+        <defName>DankPyon_Apparel_HeraldicFullPlate2c</defName>
+        <label>heraldic full plate (Soren)</label>
+        <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war. \n\nThis full plate carries the colours of house Soren.</description>
+        <graphicData>
+            <colorTwo>(83,124,80)</colorTwo>
+        </graphicData>
+
+        <apparel>
+            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <tags>
+                <li>DankPyon_HeraldicPlate2</li>
+            </tags>
+        </apparel>
+       <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_HeraldicPlate">
+        <defName>DankPyon_Apparel_HeraldicFullPlate3c</defName>
+        <label>heraldic full plate (Oswin)</label>
+        <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war. \n\nThis full plate carries the colours of house Oswin.</description>
+        <graphicData>
+            <colorTwo>(64,103,137)</colorTwo>
+        </graphicData>
+
+        <apparel>
+            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <tags>
+                <li>DankPyon_HeraldicPlate3</li>
+            </tags>
+        </apparel>
+       <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_HeraldicPlate">
+        <defName>DankPyon_Apparel_HeraldicFullPlate4c</defName>
+        <label>heraldic full plate (Hesse)</label>
+        <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war. \n\nThis full plate carries the colours of house Hesse.</description>
+        <graphicData>
+            <colorTwo>(207,207,207)</colorTwo>
+        </graphicData>
+
+        <apparel>
+            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <tags>
+                <li>DankPyon_HeraldicPlate4</li>
+            </tags>
+        </apparel>
+       <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>DankPyon_Apparel_FullPlateGilded</defName>
+        <label>gilded full plate</label>
+        <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war.</description>
+        <graphicData>
+			<texPath>Apparel/HeavyArmor/Chest_PlateGilded_Full</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>16</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+        </recipeMaker>
+
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>200</costStuffCount>
+        <costList>
+            <Gold>5</Gold>
+        </costList>
+
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+            <MaxHitPoints>310</MaxHitPoints>
+            <Mass>17</Mass>
+            <StuffEffectMultiplierArmor>0.92</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>20</EquipDelay>
+        </statBases>
+
+        <equippedStatOffsets>
+            <MoveSpeed>-1.2</MoveSpeed>
+            <SocialImpact>0.30</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateGilded_Full</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
             </layers>

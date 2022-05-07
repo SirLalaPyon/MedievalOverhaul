@@ -19,7 +19,7 @@
         <enabled>false</enabled>
       </damageData>
     </graphicData>
-    <stuffCategories>
+    <stuffCategories Inherit="False">
       <li>Woody</li>
     </stuffCategories>
     <uiIconPath>Buildings/RusticDoor_MenuIcon</uiIconPath>
@@ -38,17 +38,41 @@
       <texPath>Buildings/Gate_Mover</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <damageData>
-        <!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
         <enabled>false</enabled>
       </damageData>
     </graphicData>
 
-    <stuffCategories>
+    <stuffCategories Inherit="False">
       <li>Metallic</li>
+      <li>Woody</li>
     </stuffCategories>
     <uiIconPath>Buildings/Gate_MenuIcon</uiIconPath>
     <costStuffCount>35</costStuffCount>
+    <designationHotKey>Misc1</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="DoorBase">
+    <defName>DankPyon_SlabDoor</defName>
+    <label>slab door</label>
+    <description>A block of stone repurposed as a slow and heavy door. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the gate is made of.</description>
+    <statBases>
+      <MaxHitPoints>320</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <DoorOpenSpeed>0.4</DoorOpenSpeed>
+    </statBases>
+    <graphicData>
+      <texPath>Buildings/SlabDoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+
+    <stuffCategories Inherit="False">
+      <li>Stony</li>
+    </stuffCategories>
+    <uiIconPath>Buildings/SlabDoor_MenuIcon</uiIconPath>
+    <costStuffCount>55</costStuffCount>
     <designationHotKey>Misc1</designationHotKey>
   </ThingDef>
 
@@ -108,6 +132,148 @@
   </ThingDef>
 
   <!--========================= Walls =============================-->
+
+  <ThingDef ParentName="BuildingBase" Name="Wall">
+    <defName>DankPyon_Palisade</defName>
+    <label>palisades</label>
+    <description>An impassable wall.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Linked/Palisade_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+				<li>Fences</li>
+			</linkFlags>
+    </graphicData>
+    <uiIconPath>Buildings/Linked/Palisade_MenuIcon</uiIconPath>
+   
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <WorkToBuild>355</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+    <costStuffCount>8</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>false</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>0.8</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <fertility>0</fertility>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <building>
+      <isInert>true</isInert>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Buildings/Linked/Palisade_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>Door</li>
+        <li>Autodoor</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+	 <defName>DankPyon_CavalrySpike</defName>
+    <label>cavalry spikes</label>
+    <description>An organized collection of stakes designed to keep intruders out. n/n/Walking through the spikes can hurt pawns.</description>
+    <thingClass>Building_TrapDamager</thingClass>
+    <category>Building</category>
+    <graphicData>
+     <texPath>Buildings/Linked/Spike_Atlas</texPath>
+     <graphicClass>Graphic_Single</graphicClass>
+     <linkType>Basic</linkType>
+	  <linkFlags>
+		  <li>Custom4</li>
+	  </linkFlags>
+    </graphicData>
+    <costStuffCount>8</costStuffCount>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+	  <blockLight>false</blockLight>
+    <uiIconPath>Buildings/Linked/Spike_MenuIcon</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>150</pathCost>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.30</fillPercent>
+    <coversFloor>false</coversFloor>
+	  <holdsRoof>false</holdsRoof>
+	  <castEdgeShadows>false</castEdgeShadows>
+	  <tickerType>Normal</tickerType>    
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <TrapMeleeDamage>10</TrapMeleeDamage>
+      <TrapSpringChance>0.8</TrapSpringChance>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <WorkToBuild>75</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>	
+
+    <building>
+      <allowAutoroof>false</allowAutoroof>
+	    <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>		  
+	    <trapDamageCategory>Sharp</trapDamageCategory>
+	    <ai_chillDestination>false</ai_chillDestination>
+	    <expandHomeArea>false</expandHomeArea>	
+      <isInert>true</isInert>
+      <blueprintGraphicData>
+        <texPath>Buildings/Linked/Spike_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	  <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <repairEffect>ConstructWood</repairEffect>
+	</ThingDef>
+
   <!--ThingDef ParentName="BuildingBase" Name="Wall">
     <defName>DankPyon_Tent</defName>
     <label>tent wall</label>

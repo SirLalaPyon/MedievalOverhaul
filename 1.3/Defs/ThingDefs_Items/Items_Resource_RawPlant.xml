@@ -379,4 +379,27 @@
     </comps>
   </ThingDef>
 
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawMacci</defName>
+    <label>macci</label>
+    <description>Raw macci.</description>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>Plants/RawMacci</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
 </Defs>

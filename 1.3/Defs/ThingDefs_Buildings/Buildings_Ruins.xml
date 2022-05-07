@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+  <defName>DankPyon_WoodenDebris</defName>
+  <label>Debris</label>
+  <description>A pile of ruined furniture seemingly stacked together in a deliberate fashion.</description>
+  <graphicData>
+    <texPath>Buildings/Ruin/WoodenDebris</texPath>
+    <graphicClass>Graphic_Random</graphicClass>
+    <drawSize>4</drawSize>
+  </graphicData>
+
+  <thingClass>Building</thingClass>
+  <category>Building</category>
+  <uiIconScale>0.8</uiIconScale>
+  <size>(2,2)</size>
+  <altitudeLayer>Building</altitudeLayer>
+  <passability>PassThroughOnly</passability>
+  <castEdgeShadows>true</castEdgeShadows>
+  <fillPercent>0.7</fillPercent>
+  <canOverlapZones>false</canOverlapZones>
+  <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  <statBases>
+    <MaxHitPoints>200</MaxHitPoints>
+    <WorkToBuild>800</WorkToBuild>
+    <Mass>40</Mass>
+    <Flammability>1.0</Flammability>
+  </statBases>
+
+  <stuffCategories>
+    <li>Woody</li>
+  </stuffCategories>
+  <costStuffCount>50</costStuffCount>
+
+  <building>
+    <isInert>true</isInert>
+    <ai_chillDestination>false</ai_chillDestination>
+    <claimable>false</claimable>
+    <!--alwaysDeconstructible>true</alwaysDeconstructible-->
+  </building>
+
+  <designationCategory>DankPyon_RuinFurniture</designationCategory>
+</ThingDef>
+
+
+	
+
+</Defs> 

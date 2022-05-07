@@ -655,7 +655,7 @@
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
   </ThingDef>
 	
-	<!--ThingDef ParentName="DankPyon_BuildingBase">
+	<ThingDef ParentName="DankPyon_BuildingBase">
 		<defName>DankPyon_RusticLamp</defName>
 		<label>lamp</label>
 		<thingClass>Building</thingClass>
@@ -705,7 +705,7 @@
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
 
-	</ThingDef-->
+	</ThingDef>
 
   <!--============================== Storage (Chest) ==============================-->
 

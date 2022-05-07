@@ -63,6 +63,9 @@
 
     <tickerType>Rare</tickerType>
     <designationCategory>Production</designationCategory>
+    <researchPrerequisites>
+      <li>DankPyon_FoodPreservation</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <!-- Drying Rack 2x2-->
@@ -195,6 +198,7 @@
           <li>DankPyon_PantherRugProcess</li>
           <li>DankPyon_BearGrizzlyRugProcess</li>
           <li>DankPyon_BearPolarRugProcess</li>
+          <li>DankPyon_RoxRugProcess</li>
           <li>DankPyon_ThrumboRugProcess</li>
           <li>DankPyon_DaerRugProcess</li>
         </processes>

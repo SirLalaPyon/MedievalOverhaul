@@ -123,10 +123,9 @@
 		<statBases>
 			<WorkToMake>2200</WorkToMake>
 			<Mass>0.15</Mass>
-			<ArmorRating_Sharp>0.09</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0</ArmorRating_Blunt>
-			<Insulation_Cold>1.8</Insulation_Cold>
-			<Insulation_Heat>0.9</Insulation_Heat>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 
@@ -175,10 +174,9 @@
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.20</Mass>
-			<ArmorRating_Sharp>0.108</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0</ArmorRating_Blunt>
-			<Insulation_Cold>2.7</Insulation_Cold>
-			<Insulation_Heat>0.9</Insulation_Heat>
+		  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 
@@ -229,8 +227,8 @@
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.5</Mass>
-			<StuffEffectMultiplierArmor>0.32</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
@@ -283,10 +281,9 @@
       <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>140</MaxHitPoints>
       <Mass>2.75</Mass>
-      <ArmorRating_Sharp>0.663</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.2964</ArmorRating_Blunt>
-      <Insulation_Cold>2.7</Insulation_Cold>
-      <Insulation_Heat>0.9</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>4</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -321,9 +318,10 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-  <!--ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_PaddedKettleHelmet</defName>
     <label>padded kettle</label>
     <description>A wide-rimmed kettle helmet paired with a thick padded coif, offering good protection of the head.</description>
@@ -348,10 +346,9 @@
       <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>140</MaxHitPoints>
       <Mass>2.75</Mass>
-      <ArmorRating_Sharp>0.663</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.2964</ArmorRating_Blunt>
-      <Insulation_Cold>2.7</Insulation_Cold>
-      <Insulation_Heat>0.9</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>4</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -385,7 +382,8 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-  </ThingDef-->
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
 
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_PaddedFlatTopHelmet</defName>
@@ -413,10 +411,9 @@
       <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>140</MaxHitPoints>
       <Mass>2.75</Mass>
-      <ArmorRating_Sharp>0.663</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.2964</ArmorRating_Blunt>
-      <Insulation_Cold>2.7</Insulation_Cold>
-      <Insulation_Heat>0.9</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>4</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -452,6 +449,7 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
   <!-- ==================== Chain ==================== -->
@@ -480,10 +478,9 @@
       <WorkToMake>8000</WorkToMake>
       <MaxHitPoints>125</MaxHitPoints>
       <Mass>2</Mass>
-      <ArmorRating_Sharp>0.4675</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.209</ArmorRating_Blunt>
-      <Insulation_Cold>0</Insulation_Cold>
-      <Insulation_Heat>0</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>4</EquipDelay>
     </statBases>
     
@@ -537,10 +534,9 @@
       <WorkToMake>8000</WorkToMake>
       <MaxHitPoints>125</MaxHitPoints>
       <Mass>2</Mass>
-      <ArmorRating_Sharp>0.4675</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.209</ArmorRating_Blunt>
-      <Insulation_Cold>0</Insulation_Cold>
-      <Insulation_Heat>0</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>4</EquipDelay>
     </statBases>
 
@@ -594,10 +590,9 @@
       <WorkToMake>10000</WorkToMake>
       <MaxHitPoints>125</MaxHitPoints>
       <Mass>2</Mass>
-      <ArmorRating_Sharp>0.4675</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.209</ArmorRating_Blunt>
-      <Insulation_Cold>0</Insulation_Cold>
-      <Insulation_Heat>0</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>4</EquipDelay>
     </statBases>
 
@@ -652,10 +647,9 @@
       <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>3</Mass>
-      <ArmorRating_Sharp>0.748</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.3344</ArmorRating_Blunt>
-      <Insulation_Cold>0.45</Insulation_Cold>
-      <Insulation_Heat>0</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -712,10 +706,9 @@
       <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>3</Mass>
-      <ArmorRating_Sharp>0.748</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.3344</ArmorRating_Blunt>
-      <Insulation_Cold>0.45</Insulation_Cold>
-      <Insulation_Heat>0</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -745,6 +738,7 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
   <ThingDef ParentName="ArmorHelmetMakeableBase">
@@ -772,10 +766,9 @@
       <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>3</Mass>
-      <ArmorRating_Sharp>0.748</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.3344</ArmorRating_Blunt>
-      <Insulation_Cold>0.45</Insulation_Cold>
-      <Insulation_Heat>0</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -832,10 +825,9 @@
       <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>3</Mass>
-      <ArmorRating_Sharp>0.748</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.3344</ArmorRating_Blunt>
-      <Insulation_Cold>0.45</Insulation_Cold>
-      <Insulation_Heat>0</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -892,10 +884,9 @@
       <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>3</Mass>
-      <ArmorRating_Sharp>0.748</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.3344</ArmorRating_Blunt>
-      <Insulation_Cold>0.45</Insulation_Cold>
-      <Insulation_Heat>0</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -953,10 +944,9 @@
       <WorkToMake>18000</WorkToMake>
       <MaxHitPoints>180</MaxHitPoints>
       <Mass>3.5</Mass>
-      <ArmorRating_Sharp>0.799</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.3572</ArmorRating_Blunt>
-      <Insulation_Cold>0.45</Insulation_Cold>
-      <Insulation_Heat>0</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -1072,13 +1062,13 @@
       <Mass>3.5</Mass>
       <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>10</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.3</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<stuffCategories>
@@ -1138,7 +1128,7 @@
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.3</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<stuffCategories>
@@ -1192,13 +1182,13 @@
       <Mass>3.5</Mass>
       <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>10</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.3</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<stuffCategories>
@@ -1252,13 +1242,13 @@
       <Mass>3.5</Mass>
       <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>10</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.3</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<stuffCategories>
@@ -1317,7 +1307,7 @@
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.3</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<stuffCategories>
@@ -1371,13 +1361,13 @@
       <Mass>3.5</Mass>
       <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>10</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.3</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<stuffCategories>
@@ -1437,7 +1427,7 @@
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.3</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<stuffCategories>
@@ -1499,7 +1489,7 @@
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.3</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<stuffCategories>
@@ -1526,12 +1516,12 @@
     </apparel>
   </ThingDef-->
   
-  <!--ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_HeraldicGreatHelm</defName>
-    <label>heraldic great helm</label>
-    <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle.</description>
+  <ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_HeraldicGreatHelm">
+    <defName>DankPyon_Headgear_HeraldicGreatHelm1c</defName>
+    <label>heraldic great helm (Amboise)</label>
+    <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Amboise.</description>
     <graphicData>
-      <texPath>Headgear/GreatHelmHorn/GreatHelmHorn</texPath>
+      <texPath>Headgear/HeraldicHelm1/HeraldicHelm1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1560,7 +1550,7 @@
   <equippedStatOffsets>
     <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
     <PainShockThreshold>0.10</PainShockThreshold>
-    <SocialImpact>0.5</SocialImpact>
+    <SocialImpact>0.1</SocialImpact>
   </equippedStatOffsets>
 
   <stuffCategories>
@@ -1573,11 +1563,11 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/GreatHelmHorn/GreatHelmHorn</wornGraphicPath>
+      <wornGraphicPath>Headgear/HeraldicHelm1/HeraldicHelm1</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
-        <li>DankPyon_LordHelmet</li>
+        <li>DankPyon_HeraldicHelm1</li>
 			</tags>
-	    <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -1585,7 +1575,65 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-  </ThingDef-->
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_HeraldicGreatHelm">
+    <defName>DankPyon_Headgear_HeraldicGreatHelm2c</defName>
+    <label>heraldic great helm (Soren)</label>
+    <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Soren.</description>
+    <graphicData>
+      <texPath>Headgear/HeraldicHelm2/HeraldicHelm2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+
+    <apparel>
+      <wornGraphicPath>Headgear/HeraldicHelm2/HeraldicHelm2</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <tags>
+        <li>DankPyon_HeraldicHelm2</li>
+			</tags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_HeraldicGreatHelm">
+    <defName>DankPyon_Headgear_HeraldicGreatHelm3c</defName>
+    <label>heraldic great helm (Oswin)</label>
+    <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Oswin.</description>
+    <graphicData>
+      <texPath>Headgear/HeraldicHelm3/HeraldicHelm3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+
+    <apparel>
+      <wornGraphicPath>Headgear/HeraldicHelm1/HeraldicHelm3</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <tags>
+        <li>DankPyon_HeraldicHelm3</li>
+			</tags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_HeraldicGreatHelm">
+    <defName>DankPyon_Headgear_HeraldicGreatHelm4c</defName>
+    <label>heraldic great helm (Hesse)</label>
+    <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Hesse.</description>
+    <graphicData>
+      <texPath>Headgear/HeraldicHelm4/HeraldicHelm4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+
+    <apparel>
+      <wornGraphicPath>Headgear/HeraldicHelm4/HeraldicHelm4</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <tags>
+        <li>DankPyon_HeraldicHelm4</li>
+			</tags>
+    </apparel>
+  </ThingDef>
 
   <!-- ==================== Super Helmets ==================== -->
   <ThingDef ParentName="ArmorHelmetMakeableBase">
@@ -1610,18 +1658,17 @@
     </recipeMaker>
 
     <statBases>
-      <WorkToMake>20000</WorkToMake>
-      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>25000</WorkToMake>
+      <MaxHitPoints>270</MaxHitPoints>
       <Mass>3.5</Mass>
       <StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>10</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
-      <PainShockThreshold>0.15</PainShockThreshold>
-      <SocialImpact>0.35</SocialImpact>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<stuffCategories>
@@ -1646,6 +1693,72 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>DankPyon_Headgear_ArmetGilded</defName>
+    <label>gilded armet</label>
+    <description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
+    <graphicData>
+      <texPath>Headgear/ArmetGilded/ArmetGilded</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li>DankPyon_Anvil</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>16</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+    </recipeMaker>
+
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <MaxHitPoints>270</MaxHitPoints>
+      <Mass>3.5</Mass>
+      <StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
+      <PainShockThreshold>0.15</PainShockThreshold>
+      <SocialImpact>0.35</SocialImpact>
+    </equippedStatOffsets>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	  <costStuffCount>80</costStuffCount>
+    <costList>
+      <Gold>2</Gold>
+    </costList>
+
+    <apparel>
+       <bodyPartGroups>
+        <li>FullHead</li>
+        
+      </bodyPartGroups>
+      <wornGraphicPath>Headgear/ArmetGilded/ArmetGilded</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <tags>
+        <li>DankPyon_LordHelmet</li>
+        <li>DankPyon_Champion</li>
+			</tags>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
   
 

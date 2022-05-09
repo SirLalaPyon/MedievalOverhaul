@@ -32,6 +32,7 @@
     <label>gate</label>
     <description>A reinforced gate that divides rooms. Simple gates must be manually opened, which slows people down. The amount of slowdown depends on what the gate is made of.</description>
     <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
       <WorkToBuild>1200</WorkToBuild>
     </statBases>
     <graphicData>

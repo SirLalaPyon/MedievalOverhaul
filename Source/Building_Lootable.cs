@@ -1,0 +1,157 @@
+﻿using System.Collections.Generic;
+using UnityEngine;
+using RimWorld;
+using Verse;
+
+namespace MedievalOverhaul
+{
+    [StaticConstructorOnStartup]
+    // Need the constructor for GraphicEmpty initialization on game load.
+    public class Building_Lootable : Building_Crate, IOpenable
+    {
+        public bool Searched;
+        public System.Random RandInt = new ();
+        public static Graphic GraphicEmpty = GraphicDatabase.Get<Graphic_Random>("Buildings/Ruin/RuinBonePile1x1", ShaderDatabase.Cutout, Vector2.one, Color.white);
+
+        public override void TickRare()
+        {
+            base.TickRare();
+            innerContainer.ThingOwnerTickRare();
+        }
+        
+        public override void Tick()
+        {
+            base.Tick();
+            innerContainer.ThingOwnerTick();
+        }
+
+        /// <summary>
+        /// Can only be opened if the contents inside are not known.
+        /// Contents not known by default.
+        /// </summary>
+        public override bool CanOpen
+        {
+            get
+            {
+                if (contentsKnown == false)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Random loot generation. Loot is stored in buildings' innerContainer.
+        /// Contents unknown until opened by a pawn.
+        /// </summary>
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            BuildingLootableExtension lootableExt = def.GetModExtension<BuildingLootableExtension>();
+
+            if (!respawningAfterLoad)
+            {
+
+                if (!Searched)
+                {
+                    if (RandInt.NextDouble() <= lootableExt.lootChance)
+                    {
+                        ThingDef lootableTD;
+                        // Random search results.
+                        if (lootableExt.isRandom == true)
+                        {
+                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
+                            if (lootableTD != null)
+                            {
+                                Thing thing1 = ThingMaker.MakeThing(lootableTD, null);
+                                thing1.stackCount = lootableExt.lootCount.RandomInRange;
+                                innerContainer.TryAdd(thing1, lootableExt.lootCount.RandomInRange);
+                            }
+                        }
+                        // Non-random search results.
+                        else
+                        {
+                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
+                            if (lootableTD != null)
+                            {
+                                Thing thing2 = ThingMaker.MakeThing(lootableTD, null);
+                                thing2.stackCount = lootableExt.lootCount.RandomInRange;
+                                innerContainer.TryAdd(thing2, lootableExt.lootCount.RandomInRange);
+                            }
+                        }
+                    }
+
+                    // Dangerous enemy spawn results.
+                    if (RandInt.NextDouble() <= lootableExt.enemySpawnChance)
+                    {
+                        PawnGenerationRequest request = new (PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()), 
+                            null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, false, false);
+                        Pawn pawn = PawnGenerator.GeneratePawn(request);
+                        innerContainer.TryAdd(pawn, lootableExt.enemySpawnCount);
+                    }
+
+                    // Contents not know because container has not been opened yet.
+                    contentsKnown = false;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Opens the innerContainer and emits a visual effect.
+        /// Once called, the contents of the container are known.
+        /// </summary>
+        public override void Open()
+        {
+            base.Open();
+            contentsKnown = true;
+            BuildingLootableExtension lootableExt = def.GetModExtension<BuildingLootableExtension>();
+            // Now that the contents are known, this building cannot be searched again.
+
+            if (lootableExt.searchEffect != null)
+            {
+                FleckCreationData fCD = FleckMaker.GetDataStatic(DrawPos, Map, lootableExt.searchEffect, lootableExt.effectSize);
+                fCD.rotationRate = Rand.RangeInclusive(-240, 240);
+                fCD.velocitySpeed = Rand.Range(0.1f, 0.8f);
+                Map.flecks.CreateFleck(fCD);
+            }
+        }
+
+        /// <summary>
+        /// Once innerContainer is opened, contents thrown out to valid cell.
+        /// </summary>
+        public override void EjectContents()
+        {
+            innerContainer.TryDropAll(Position, Map, ThingPlaceMode.Near, nearPlaceValidator: c => c.GetEdifice(Map) == null);
+            contentsKnown = true;
+        }
+
+        /// <summary>
+        /// Changes the building's graphic after its been searched for loot.
+        /// Regardless if it contained anything or not.
+        /// </summary>
+        public override Graphic Graphic
+        {
+            get
+            {
+                Map.mapDrawer.MapMeshDirty(Position, MapMeshFlag.Things, true, false);
+                if (!def.HasModExtension<BuildingLootableExtension>()) return DefaultGraphic;
+
+                if (contentsKnown == true)
+                {
+                    return GraphicEmpty;
+                }
+
+                return DefaultGraphic;
+            }
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Deep.Look(ref innerContainer, "innerContainer", this);
+            Scribe_Values.Look(ref contentsKnown, "contentsKnown", defaultValue: false);
+            Scribe_Values.Look(ref Searched, "Searched", defaultValue: false);
+        }
+    }
+}

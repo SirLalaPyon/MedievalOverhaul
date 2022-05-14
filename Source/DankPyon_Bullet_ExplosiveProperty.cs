@@ -10,7 +10,7 @@ namespace DankPyon
 
         private ProjectileProperties AdditionalProjProps => (def.GetModExtension<AdditionalProjectileProperties>() ?? AdditionalProjectileProperties.defaultValues).projectile2;
 
-        public override void Impact(Thing hitThing)
+        protected override void Impact(Thing hitThing)
         {
             var usedTargetInfo = hitThing ?? new TargetInfo(usedTarget.Cell, Map);
             DoExplosion(usedTargetInfo);

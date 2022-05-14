@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+        <defName>DankPyon_ChaliceSilver</defName>
+        <label>silver chalice</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/ChaliceSilver</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <Silver>50</Silver>
+        </costList>
+
+        <stackLimit>10</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+       
+        <thingCategories>
+            <li>DankPyon_Loot</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>DankPyon_ChaliceGold</defName>
+        <label>gold chalice</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/ChaliceGold</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <Gold>50</Gold>
+        </costList>
+
+        <stackLimit>10</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+       
+        <thingCategories>
+            <li>DankPyon_Loot</li>
+        </thingCategories>
+    </ThingDef>
+	
+	
+	
+
+</Defs>

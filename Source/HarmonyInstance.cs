@@ -229,7 +229,7 @@ namespace DankPyon
         {
             public static void Prefix(Thing __instance, out bool __state, IntVec3 value)
             {
-                if (MedievalOverhaulMod.settings.enableTreeTransparency && BaseItemMatches(__instance) && __instance.Map != null && __instance.positionInt != value)
+                if (MedievalOverhaulMod.settings.enableTreeTransparency && BaseItemMatches(__instance) && __instance.Map != null && __instance.Position != value)
                 {
                     __state = true;
                 }
@@ -244,7 +244,7 @@ namespace DankPyon
                 {
                     foreach (var plant in list)
                     {
-                        if (__instance.positionInt.z > plant.positionInt.z && plant.positionInt.DistanceTo(__instance.positionInt) < 13)
+                        if (__instance.Position.z > plant.Position.z && plant.Position.DistanceTo(__instance.Position) < 13)
                         {
                             RecheckTransparency(plant, __instance, plant.def.GetModExtension<PlantExtension>());
                         }

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Large Cobra -->
+  <ThingDef ParentName="EggFertBase">
+    <defName>DankPyon_EggLargeForestCobraFertilized</defName>
+    <label>large forest cobra egg (fert.)</label>
+    <description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>AnimalProductRaw/LargeCobraEgg</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>30.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7.5</hatcherDaystoHatch>
+        <hatcherPawn>DankPyon_LargeCobraForest</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>DankPyon_EggLargeCobraCaveFertilized</defName>
+    <label>large cave cobra egg (fert.)</label>
+    <description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>AnimalProductRaw/LargeCaveCobraEgg</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>30.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7.5</hatcherDaystoHatch>
+        <hatcherPawn>DankPyon_LargeCobraCave</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Giant Constrictor -->
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>DankPyon_EggConstrictorForestFertilized</defName>
+    <label>giant forest constrictor egg (fert.)</label>
+    <description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>AnimalProductRaw/GiantEgg</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>20.5</hatcherDaystoHatch>
+        <hatcherPawn>DankPyon_GiantConstrictorCave</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>DankPyon_EggConstrictorCaveFertilized</defName>
+    <label>giant cave constrictor egg (fert.)</label>
+    <description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>AnimalProductRaw/GiantCaveEgg</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>20.5</hatcherDaystoHatch>
+        <hatcherPawn>DankPyon_GiantConstrictorCave</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

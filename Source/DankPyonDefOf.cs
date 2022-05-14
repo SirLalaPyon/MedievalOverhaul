@@ -1,8 +1,9 @@
 ﻿using Verse;
+using RimWorld;
 
 namespace DankPyon
 {
-    [RimWorld.DefOf]
+    [DefOf]
     public static class DankPyonDefOf
     {
         public static ShaderTypeDef TransparentPlant;

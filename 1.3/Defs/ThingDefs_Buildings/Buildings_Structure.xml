@@ -211,9 +211,9 @@
     </damageMultipliers>
   </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase" Name="DankPyon_SpikeBase">
 	 <defName>DankPyon_CavalrySpike</defName>
-    <label>cavalry spikes</label>
+    <label>wooden cavalry spikes</label>
     <description>An organized collection of stakes designed to keep intruders out. n/n/Walking through the spikes can hurt pawns.</description>
     <thingClass>Building_TrapDamager</thingClass>
     <category>Building</category>
@@ -225,11 +225,12 @@
 		  <li>Custom4</li>
 	  </linkFlags>
     </graphicData>
-    <costStuffCount>8</costStuffCount>
-    <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
-    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+
+    <costList>
+      <WoodLog>8</WoodLog>
+    </costList>
+
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
 	  <blockLight>false</blockLight>
     <uiIconPath>Buildings/Linked/Spike_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
@@ -273,6 +274,48 @@
     <designationCategory>Security</designationCategory>
 	  <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <repairEffect>ConstructWood</repairEffect>
+
+    <designatorDropdown>DankPyon_CavalrySpikeWalls</designatorDropdown>
+	</ThingDef>
+
+  <ThingDef ParentName="DankPyon_SpikeBase">
+	 <defName>DankPyon_DarkCavalrySpike</defName>
+    <label>dark wooden cavalry spikes</label>
+    <description>An organized collection of stakes designed to keep intruders out. n/n/Walking through the spikes can hurt pawns.</description>
+    <graphicData>
+     <texPath>Buildings/Linked/DarkSpike_Atlas</texPath>
+     <graphicClass>Graphic_Single</graphicClass>
+     <linkType>Basic</linkType>
+	  <linkFlags>
+		  <li>Custom4</li>
+	  </linkFlags>
+    </graphicData>
+
+    <costList Inherit="False">
+      <DankPyon_DarkWoodLog>8</DankPyon_DarkWoodLog>
+    </costList>
+
+    <statBases>
+      <TrapMeleeDamage>10</TrapMeleeDamage>
+      <TrapSpringChance>0.8</TrapSpringChance>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <WorkToBuild>75</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+
+    <building>
+      <allowAutoroof>false</allowAutoroof>
+	    <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>		  
+	    <trapDamageCategory>Sharp</trapDamageCategory>
+	    <ai_chillDestination>false</ai_chillDestination>
+	    <expandHomeArea>false</expandHomeArea>	
+      <isInert>true</isInert>
+      <blueprintGraphicData>
+        <texPath>Buildings/Linked/Spike_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
 	</ThingDef>
 
   <!--ThingDef ParentName="BuildingBase" Name="Wall">

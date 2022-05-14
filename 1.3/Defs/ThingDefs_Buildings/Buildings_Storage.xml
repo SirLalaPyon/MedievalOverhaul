@@ -1181,7 +1181,7 @@
   </ThingDef>
 
 <!--======================= Shelf ==============================-->
-  <ThingDef ParentName="DankPyon_StorageBase">
+  <ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_ShelfBase">
     <defName>DankPyon_ShelfEmpty</defName>
     <label>empty shelf</label>
     <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
@@ -1242,7 +1242,30 @@
 		    <overlayType>None</overlayType>
       </li>
     </comps>
+  </ThingDef>
 
+   <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilled1c</defName>
+    <label>filled shelf</label>
+    <graphicData>
+      <texPath>Storage/ShelfHerb</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Storage/ShelfHerb_north</uiIconPath>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilled2c</defName>
+    <label>filled shelf</label>
+    <graphicData>
+      <texPath>Storage/ShelfFilledA</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Storage/ShelfFilledA_north</uiIconPath>
   </ThingDef>
 
   <!--ThingDef ParentName="DankPyon_StorageBase">

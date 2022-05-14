@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="SculptureBase">
+    <defName>DankPyon_Bust</defName>
+    <label>bust</label>
+    <description>A torso-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Art/Bust</texPath>
+    </graphicData>
+    <fillPercent>0.35</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>3</Mass>
+      <Beauty>50</Beauty>
+      <WorkToMake>18000</WorkToMake>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+    </statBases>
+    <researchPrerequisites>
+      <li>DankPyon_RusticFurniture</li>
+    </researchPrerequisites>
+    <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
+
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+  </ThingDef>
+  
+  <ThingDef ParentName="SculptureBase">
+    <defName>DankPyon_ArmorStatue</defName>
+    <label>armor statue</label>
+
+    <description>A lifesize replica of a knight.</description>
+    <graphicData>
+        <texPath>Art/ArmorStatue</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(2,2)</drawSize>
+        <damageData>
+          <cornerTL>Damage/Corner</cornerTL>
+          <cornerTR>Damage/Corner</cornerTR>
+          <cornerBL>Damage/Corner</cornerBL>
+          <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+      </graphicData>
+      <uiIconScale>0.5</uiIconScale>
+      <castEdgeShadows>true</castEdgeShadows>
+
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+
+    <statBases>
+      <SellPriceFactor>1.10</SellPriceFactor>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>10</Mass>
+      <Beauty>50</Beauty>
+      <WorkToMake>22000</WorkToMake>
+    </statBases>
+
+    <size>(1,1)</size>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+
+    <researchPrerequisites>
+      <li>DankPyon_RusticFurniture</li>
+    </researchPrerequisites>
+    <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
+    </ThingDef>
+  
+
+</Defs> 

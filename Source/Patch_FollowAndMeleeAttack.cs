@@ -36,7 +36,7 @@ namespace DankPyon
                 }
                 else
                 {
-                    var verbToUse = curJob.verbToUse ?? actor.meleeVerbs.curMeleeVerb ?? actor.meleeVerbs.TryGetMeleeVerb(thing);
+                    var verbToUse = curJob.verbToUse ?? actor.meleeVerbs.TryGetMeleeVerb(thing);
                     var meleeReachRange = actor.GetMeleeReachRange(verbToUse);
                     if (meleeReachRange <= 1.42f)
                     {

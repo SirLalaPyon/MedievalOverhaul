@@ -3,46 +3,54 @@
 
  
     <ThingCategoryDef>
-      <defName>DankPyon_Condiments</defName>
-      <label>condiments</label>
-      <parent>Foods</parent>
-      <resourceReadoutRoot>true</resourceReadoutRoot>
-      <iconPath>Resources/Salt</iconPath>
+        <defName>DankPyon_Condiments</defName>
+        <label>condiments</label>
+        <parent>Foods</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Resources/Salt</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
-      <defName>DankPyon_Hides</defName>
-      <label>hides</label>
-      <parent>ResourcesRaw</parent>
-      <iconPath>Resources/HideLarge</iconPath>
+        <defName>DankPyon_Hides</defName>
+        <label>hides</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Resources/HideLarge</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
-      <defName>DankPyon_Handwear</defName>
-      <label>handwear</label>
-      <parent>Apparel</parent>
-      <iconPath>Apparel/Handwear/GlovesPlate</iconPath>
+        <defName>DankPyon_Loot</defName>
+        <label>loot</label>
+        <parent>Manufactured</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>UI/LootIcon</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
-      <defName>DankPyon_Footwear</defName>
-      <label>footwear</label>
-      <parent>Apparel</parent>
-      <iconPath>Apparel/Footwear/BootsPlate</iconPath>
+        <defName>DankPyon_Handwear</defName>
+        <label>handwear</label>
+        <parent>Apparel</parent>
+        <iconPath>Apparel/Handwear/GlovesPlate</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
-      <defName>DankPyon_Shields</defName>
-      <label>shields</label>
-      <parent>Apparel</parent>
-      <iconPath>Apparel/Utility/IconHeater</iconPath>
+        <defName>DankPyon_Footwear</defName>
+        <label>footwear</label>
+        <parent>Apparel</parent>
+        <iconPath>Apparel/Footwear/BootsPlate</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
-      <defName>DankPyon_NonAlcoholic</defName>
-      <label>non-alcoholic</label>
-      <parent>Foods</parent>
-      <iconPath>Drug/Cider/Cider_a</iconPath>
+        <defName>DankPyon_Shields</defName>
+        <label>shields</label>
+        <parent>Apparel</parent>
+        <iconPath>Apparel/Utility/IconHeater</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_NonAlcoholic</defName>
+        <label>non-alcoholic</label>
+        <parent>Foods</parent>
+        <iconPath>Drug/Cider/Cider_a</iconPath>
     </ThingCategoryDef>
 
 </Defs>

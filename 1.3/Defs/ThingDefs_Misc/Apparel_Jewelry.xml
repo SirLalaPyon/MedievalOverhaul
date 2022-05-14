@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--ThingDef Name="DankPyon_NecklaceBase" ParentName="ApparelBase" Abstract="True">
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Accessories</li>
+            </layers>
+            <tags>
+                <li>DankPyon_Jewelry</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>DankPyon_Jewelry</li>
+        </tradeTags>
+
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <effectWorking>CutStone</effectWorking>
+            <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+            <recipeUsers>
+                <li>LaserTableSculpting</li>
+                <li>TableSculpting</li>
+            </recipeUsers>
+            <researchPrerequisite>DankPyon_Jewelry</researchPrerequisite>
+            <workSkill>Artistic</workSkill>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+                <Artistic>4</Artistic>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+
+     <ThingDef ParentName="DankPyon_NecklaceBase">
+    <defName>DankPyon_NecklaceAmber</defName>
+    <label>amber necklace</label>
+    <description>A beautiful necklace made from gold and a priceless gem. It improves the wearer's social skill, trade skill and beauty.</description>
+    <graphicData>
+      <texPath>Apparel/AmberNecklace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+      <Mass>0.10</Mass>
+      <EquipDelay>0.25</EquipDelay>
+      <MarketValue>300</MarketValue>
+      <Beauty>10</Beauty>
+      <WorkToMake>4000</WorkToMake>
+    </statBases>
+
+    <equippedStatOffsets>
+      <TradePriceImprovement>0.05</TradePriceImprovement>
+      <SocialImpact>0.2</SocialImpact>
+    </equippedStatOffsets>
+    
+    <costList>
+      <DankPyon_Amber>20</DankPyon_Amber>
+    </costList>
+  </ThingDef-->
+  
+ 
+  
+  
+</Defs>

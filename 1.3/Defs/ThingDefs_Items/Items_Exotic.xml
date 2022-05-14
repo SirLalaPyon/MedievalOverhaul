@@ -1,178 +1,184 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--=============== Rox horn ====================-->
-  
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>DankPyon_RoxHorn</defName>
-    <label>Rox Horn</label>
-    <description>A Rox's horn. It is heavy, durable, and valuable. It is too bulky to be used as a weapon.</description>
-    <graphicData>
-      <texPath>Special/RoxHorn</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <equippedAngleOffset>-20</equippedAngleOffset>
-    <statBases>
-      <MarketValue>100</MarketValue>
-      <MaxHitPoints>200</MaxHitPoints>
-      <Mass>2</Mass>
-      <Flammability>0.5</Flammability>
-      <DeteriorationRate>0.5</DeteriorationRate>
-    </statBases>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>10</stackLimit>
-    <relicChance>2</relicChance>
-    <comps>
-      <li Class="CompProperties_Styleable"></li>
-    </comps>
-    <weaponClasses>
-      <li>Melee</li>
-      <li>MeleeBlunt</li>
-    </weaponClasses>
-    <tools>
-      <li>
-        <label>ram</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>16.2</power>
-        <cooldownTime>2.7</cooldownTime>
-      </li>
-      <li>
-        <label>base</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-        <chanceFactor>0.5</chanceFactor>
-      </li>
-    </tools>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags>
-    <thingSetMakerTags>
-      <li>AnimalPart</li>
-    </thingSetMakerTags>
-  </ThingDef>
+	<!--=============== Rox horn ====================-->
+	
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>DankPyon_RoxHorn</defName>
+		<label>Rox Horn</label>
+		<description>A Rox's horn. It is heavy, durable, and valuable. It is too bulky to be used as a weapon.</description>
+		<graphicData>
+			<texPath>Special/RoxHorn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
 
-  <!--=============== Daer Antler ====================-->
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
 
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>DankPyon_DaerAntler</defName>
-    <label>daer antler</label>
-    <description>A daers's antler. It's heavy, rock-hard, and priceless in most markets. This is a true trophy that brings awe to whoever beholds upon it.</description>
-    <graphicData>
-      <texPath>Special/DaerAntler</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <equippedAngleOffset>-20</equippedAngleOffset>
-    <statBases>
-      <MarketValue>1200</MarketValue>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Mass>2</Mass>
-      <Flammability>0.4</Flammability>
-      <DeteriorationRate>0.5</DeteriorationRate>
-    </statBases>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>10</stackLimit>
-    <relicChance>3</relicChance>
-    <comps>
-      <li Class="CompProperties_Styleable"></li>
-    </comps>
-    <weaponClasses>
-      <li>Melee</li>
-      <li>MeleePiercer</li>
-    </weaponClasses>
-    <tools>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Scratch</li>
-          <li>Stab</li>
-        </capacities>
-        <power>28</power>
-        <cooldownTime>2.8</cooldownTime>
-      </li>
-      <li>
-        <label>base</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags>
-    <thingSetMakerTags>
-      <li>AnimalPart</li>
-    </thingSetMakerTags>
-  </ThingDef>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>10</stackLimit>
+		<relicChance>2</relicChance>
 
-  <!--=============== Dire Boar Tusk ====================-->
-   <ThingDef ParentName="ResourceVerbBase">
-    <defName>DankPyon_DireBoarTusk</defName>
-    <label>dire boar tusk</label>
-    <description>A dire boar's tusk. It is very durable and valuable. While somewhat unwieldy as a melee weapon, it can still be deadly.</description>
-    <graphicData>
-      <texPath>Special/DireBoarTusk</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <equippedAngleOffset>-20</equippedAngleOffset>
-    <statBases>
-      <MarketValue>80</MarketValue>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Mass>1.8</Mass>
-      <Flammability>0.9</Flammability>
-      <DeteriorationRate>0.5</DeteriorationRate>
-    </statBases>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>10</stackLimit>
-    <relicChance>2</relicChance>
-    <comps>
-      <li Class="CompProperties_Styleable"></li>
-    </comps>
-    <weaponClasses>
-      <li>Melee</li>
-      <li>MeleePiercer</li>
-    </weaponClasses>
-    <tools>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Scratch</li>
-          <li>Stab</li>
-        </capacities>
-        <power>16.2</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-      <li>
-        <label>base</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-        <chanceFactor>0.5</chanceFactor>
-      </li>
-    </tools>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags>
-    <thingSetMakerTags>
-      <li>AnimalPart</li>
-    </thingSetMakerTags>
-  </ThingDef>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tools>
+		<li>
+			<label>ram</label>
+			<capacities>
+			<li>Blunt</li>
+			</capacities>
+			<power>16.2</power>
+			<cooldownTime>2.7</cooldownTime>
+		</li>
+		<li>
+			<label>base</label>
+			<capacities>
+			<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+			<chanceFactor>0.5</chanceFactor>
+		</li>
+		</tools>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>AnimalPart</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--=============== Daer Antler ====================-->
+
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>DankPyon_DaerAntler</defName>
+		<label>daer antler</label>
+		<description>A daers's antler. It's heavy, rock-hard, and priceless in most markets. This is a true trophy that brings awe to whoever beholds upon it.</description>
+		<graphicData>
+			<texPath>Special/DaerAntler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>10</stackLimit>
+		<relicChance>3</relicChance>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tools>
+		<li>
+			<label>point</label>
+			<capacities>
+			<li>Scratch</li>
+			<li>Stab</li>
+			</capacities>
+			<power>28</power>
+			<cooldownTime>2.8</cooldownTime>
+		</li>
+		<li>
+			<label>base</label>
+			<capacities>
+			<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		</li>
+		</tools>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>AnimalPart</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!--=============== Dire Boar Tusk ====================-->
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>DankPyon_DireBoarTusk</defName>
+		<label>dire boar tusk</label>
+		<description>A dire boar's tusk. It is very durable and valuable. While somewhat unwieldy as a melee weapon, it can still be deadly.</description>
+		<graphicData>
+			<texPath>Special/DireBoarTusk</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+
+		<statBases>
+			<MarketValue>80</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.8</Mass>
+			<Flammability>0.9</Flammability>
+			<DeteriorationRate>0.5</DeteriorationRate>
+		</statBases>
+
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>10</stackLimit>
+		<relicChance>2</relicChance>
+		<comps>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tools>
+		<li>
+			<label>point</label>
+			<capacities>
+			<li>Scratch</li>
+			<li>Stab</li>
+			</capacities>
+			<power>16.2</power>
+			<cooldownTime>2.6</cooldownTime>
+		</li>
+		<li>
+			<label>base</label>
+			<capacities>
+			<li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+			<chanceFactor>0.5</chanceFactor>
+		</li>
+		</tools>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>AnimalPart</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
 
 </Defs>

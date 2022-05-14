@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--======================= Shelf ==============================-->
+    <ThingDef ParentName="DankPyon_RuinedBuildingBase">
+        <defName>DankPyon_RuinedShelfEmpty</defName>
+        <label>ruined shelf</label>
+        <description>A ruined shelf.</description>
+        <graphicData>
+            <texPath>Buildings/Ruin/RuinedShelf</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2.75,2.75)</drawSize>
+        </graphicData>
+
+        <tickerType>Normal</tickerType>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>65</costStuffCount>
+
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>12</Mass>
+            <WorkToBuild>900</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <size>(2,1)</size>
+        <defaultPlacingRot>South</defaultPlacingRot>
+    </ThingDef>
+
+
+    <!--======================= Lootable Shelf ==============================-->
+    <ThingDef ParentName="DankPyon_RuinedBuildingBase" Name="DankPyon_RuinedShelfBase">
+        <defName>DankPyon_LootableShelf_ChaliceSilver</defName>
+        <label>filled shelf</label>
+        <description>A ruined shelf.</description>
+        <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+        <graphicData>
+            <texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2.75,2.75)</drawSize>
+        </graphicData>
+
+        <building>
+            <destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+        </building>
+
+        <tickerType>Normal</tickerType>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        
+        <costList>
+            <WoodLog>65</WoodLog>
+        </costList>
+
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>12</Mass>
+            <WorkToBuild>900</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <size>(2,1)</size>
+        <defaultPlacingRot>South</defaultPlacingRot>
+
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+
+				<!--emptyGraphicPath>Buildings/Ruin/ShelfLootEmpty</emptyGraphicPath-->
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound> <!-- SoundDef -->
+				<searchEffect>DustPuff</searchEffect> <!-- FleckDef -->
+				<effectSize>2.5</effectSize>
+				<lootCount>2~5</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+				<li>DankPyon_ChaliceSilver</li>
+				<li>DankPyon_ChaliceSilver</li>
+                <li>DankPyon_ChaliceSilver</li>
+                <li>DankPyon_ChaliceSilver</li>
+                <li>DankPyon_ChaliceSilver</li>
+                <li>DankPyon_ChaliceSilver</li>
+                <li>DankPyon_ChaliceSilver</li>
+                <li>DankPyon_ChaliceSilver</li>
+                <li>DankPyon_ChaliceGold</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+    
+
+</Defs> 

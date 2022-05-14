@@ -480,14 +480,14 @@
 
 <ThingDef ParentName="BenchBase">
 	<defName>DankPyon_StewPot</defName>
-	<label>Stew Pot</label>
+	<label>stew pot</label>
 	<thingClass>Building_WorkTable_HeatPush</thingClass>
 	<description>A large metal cauldron that can cook delicious soups.</description>
 	<graphicData>
       <texPath>Production/StewPot</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(4,4)</drawSize>
+      <drawSize>(2,2)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -511,7 +511,7 @@
 	  <Flammability>1.0</Flammability>
 	</statBases>
 
-	<size>(2,2)</size>
+	<size>(2,1)</size>
 	<designationCategory>Production</designationCategory>
 	<passability>PassThroughOnly</passability>
 	<pathCost>70</pathCost>
@@ -561,10 +561,11 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<description>A small round stone for grinding raw plants.</description>
 		<graphicData>
-		<texPath>Production/Millstone</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(1,1)</drawSize>
+      <texPath>Production/Millstone</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
 		</graphicData>
 
     		<stuffCategories>

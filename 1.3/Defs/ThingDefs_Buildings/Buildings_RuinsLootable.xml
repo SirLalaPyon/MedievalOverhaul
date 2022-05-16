@@ -38,6 +38,7 @@
         <label>filled shelf</label>
         <description>A ruined shelf.</description>
         <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+        <drawerType>RealtimeOnly</drawerType>
         <graphicData>
             <texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -52,10 +53,14 @@
         <castEdgeShadows>true</castEdgeShadows>
         <pathCost>50</pathCost>
         <fillPercent>0.4</fillPercent>
-        
-        <costList>
+
+        <stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+        <!-- <costList>
             <WoodLog>65</WoodLog>
-        </costList>
+        </costList> -->
 
         <statBases>
             <MaxHitPoints>90</MaxHitPoints>
@@ -69,31 +74,35 @@
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
-				<li>Rat</li>
+				    <li>Rat</li>
 				</enemysToSpawn>
 				<enemySpawnChance>0.10</enemySpawnChance>
-
-				<!--emptyGraphicPath>Buildings/Ruin/ShelfLootEmpty</emptyGraphicPath-->
-				<searchSound>BuildingDestroyed_Wood_Medium</searchSound> <!-- SoundDef -->
-				<searchEffect>DustPuff</searchEffect> <!-- FleckDef -->
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Buildings/Ruin/RuinedShelf</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>(2.75,2.75)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>2~5</lootCount>
-				<lootChance>1</lootChance>
+				<lootChance>0.90</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
-				<li>DankPyon_ChaliceSilver</li>
-				<li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceGold</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceGold</li>
 				</randomItems>
 			</li>
 		</modExtensions>
     </ThingDef>
-    
 
-</Defs> 
+</Defs>

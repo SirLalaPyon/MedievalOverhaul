@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using RimWorld;
 using Verse;
@@ -9,53 +10,43 @@ namespace MedievalOverhaul
     // Need the constructor for GraphicEmpty initialization on game load.
     public class Building_Lootable : Building_Crate, IOpenable
     {
-        public bool Searched;
-        public System.Random RandInt = new ();
-        public static Graphic GraphicEmpty = GraphicDatabase.Get<Graphic_Random>("Buildings/Ruin/RuinBonePile1x1", ShaderDatabase.Cutout, Vector2.one, Color.white);
+        private bool Searched;
+        private bool RespawningAfterLoad;
+        private Graphic emptyColoredGraphic;
 
-        public override void TickRare()
+        private void DetermineEmptyGraphicColor()
         {
-            base.TickRare();
-            innerContainer.ThingOwnerTickRare();
+            BuildingLootableExtension lootableExt = def.GetModExtension<BuildingLootableExtension>();
+            if (lootableExt == null)
+                return;
+            emptyColoredGraphic = lootableExt.emptyGraphicData?.GraphicColoredFor(this);
         }
-        
-        public override void Tick()
+
+        public override void PostMake()
         {
-            base.Tick();
-            innerContainer.ThingOwnerTick();
+            base.PostMake();
+            DetermineEmptyGraphicColor();
         }
 
         /// <summary>
         /// Can only be opened if the contents inside are not known.
         /// Contents not known by default.
         /// </summary>
-        public override bool CanOpen
-        {
-            get
-            {
-                if (contentsKnown == false)
-                {
-                    return true;
-                }
-                return false;
-            }
-        }
+        public override bool CanOpen => !contentsKnown;
 
         /// <summary>
-        /// Random loot generation. Loot is stored in buildings' innerContainer.
-        /// Contents unknown until opened by a pawn.
+        /// Randomly generates and stores items for a player to find via looting, stored inside the innerContainer.
+        /// Contents of the ThingOwner are unknown until the building is searched.
         /// </summary>
-        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        private void LootGeneration()
         {
-            base.SpawnSetup(map, respawningAfterLoad);
             BuildingLootableExtension lootableExt = def.GetModExtension<BuildingLootableExtension>();
 
-            if (!respawningAfterLoad)
+            if (!RespawningAfterLoad)
             {
-
                 if (!Searched)
                 {
-                    if (RandInt.NextDouble() <= lootableExt.lootChance)
+                    if (Rand.Chance(lootableExt.enemySpawnChance))
                     {
                         ThingDef lootableTD;
                         // Random search results.
@@ -81,20 +72,44 @@ namespace MedievalOverhaul
                             }
                         }
                     }
+                    contentsKnown = false;
+                }
+            }
+        }
 
-                    // Dangerous enemy spawn results.
-                    if (RandInt.NextDouble() <= lootableExt.enemySpawnChance)
+        /// <summary>
+        /// Randomly generates and stores a pawn for a player to find via looting, stored inside the innerContainer.
+        /// Contents of the ThingOwner are unknown until the building is searched.
+        /// </summary>
+        private void EnemyGeneration()
+        {
+            BuildingLootableExtension lootableExt = def.GetModExtension<BuildingLootableExtension>();
+
+            if (!RespawningAfterLoad)
+            {
+                if (!Searched)
+                {
+                    if (Rand.Chance(lootableExt.enemySpawnChance))
                     {
-                        PawnGenerationRequest request = new (PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()), 
+                        PawnGenerationRequest request = new(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()),
                             null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, false, false);
                         Pawn pawn = PawnGenerator.GeneratePawn(request);
                         innerContainer.TryAdd(pawn, lootableExt.enemySpawnCount);
                     }
-
-                    // Contents not know because container has not been opened yet.
                     contentsKnown = false;
                 }
             }
+        }
+
+        /// <summary>
+        /// Random loot generation. Loot is stored in buildings' innerContainer.
+        /// Contents unknown until opened by a pawn.
+        /// </summary>
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            LootGeneration();
+            EnemyGeneration();
         }
 
         /// <summary>
@@ -122,7 +137,25 @@ namespace MedievalOverhaul
         /// </summary>
         public override void EjectContents()
         {
+            BuildingLootableExtension lootableExt = def.GetModExtension<BuildingLootableExtension>();
+
+            List<Pawn> pawns = innerContainer
+                .Where(thing => thing is Pawn)
+                .Cast<Pawn>()
+                .ToList();
+
             innerContainer.TryDropAll(Position, Map, ThingPlaceMode.Near, nearPlaceValidator: c => c.GetEdifice(Map) == null);
+            foreach (Pawn pawn in pawns)
+            {
+                if (pawn.RaceProps.Animal && lootableExt.hostileEnemy == true)
+                {
+                    pawn.mindState?.mentalStateHandler?.TryStartMentalState(MentalStateDefOf.ManhunterPermanent);
+                }
+                else if (!pawn.RaceProps.Animal && lootableExt.hostileEnemy == true)
+                {
+                    pawn.mindState?.mentalStateHandler?.TryStartMentalState(MentalStateDefOf.Berserk);
+                }
+            }
             contentsKnown = true;
         }
 
@@ -135,11 +168,10 @@ namespace MedievalOverhaul
             get
             {
                 Map.mapDrawer.MapMeshDirty(Position, MapMeshFlag.Things, true, false);
-                if (!def.HasModExtension<BuildingLootableExtension>()) return DefaultGraphic;
 
-                if (contentsKnown == true)
+                if (contentsKnown == true && emptyColoredGraphic != null)
                 {
-                    return GraphicEmpty;
+                    return emptyColoredGraphic;
                 }
 
                 return DefaultGraphic;

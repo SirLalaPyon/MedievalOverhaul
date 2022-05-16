@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 using Verse;
 
 namespace MedievalOverhaul
@@ -10,17 +11,34 @@ namespace MedievalOverhaul
         public float lootChance = 1f;
         public string itemDefName = null;
         public IntRange lootCount = new (1, 2);
-        public List<string> randomItems = null;
+        public List<string> randomItems = new ();
         public float effectSize = 1f;
         public SoundDef searchSound = null;
         public FleckDef searchEffect = null;
 
         // Enemy stuff.
-        public List<string> enemysToSpawn = null;
+        public List<string> enemysToSpawn = new();
+        public bool hostileEnemy = false;
         public int enemySpawnCount = 1;
         public float enemySpawnChance = 0.01f;
 
         // Empty graphic stuff.
-        public string emptyGraphicPath;
+        public GraphicData emptyGraphicData;
+
+        public override IEnumerable<string> ConfigErrors()
+        {
+            foreach(string error in base.ConfigErrors())
+            {
+                yield return error;
+            }
+            if (emptyGraphicData == null)
+            {
+                yield return "If using an empty graphic, provide the required emptyGraphicData";
+            }
+            if (randomItems == null)
+            {
+                yield return "If <isRandom> is set to true, list multiple itemDefName's";
+            }
+        }
     }
 }

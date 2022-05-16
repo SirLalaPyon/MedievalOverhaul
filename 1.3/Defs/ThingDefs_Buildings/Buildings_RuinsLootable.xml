@@ -38,11 +38,9 @@
         <label>filled shelf</label>
         <description>A shelf filled with items.</description>
         <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
-        <drawerType>RealtimeOnly</drawerType>
         <graphicData>
             <texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
             <drawSize>(2.75,2.75)</drawSize>
         </graphicData>
 
@@ -79,7 +77,6 @@
                 <emptyGraphicData>
                     <texPath>Buildings/Ruin/RuinedShelf</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <shaderType>CutoutComplex</shaderType>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
@@ -111,7 +108,6 @@
         <graphicData>
             <texPath>Buildings/Ruin/ShelfEmerald</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
             <drawSize>(2.75,2.75)</drawSize>
         </graphicData>
 
@@ -125,7 +121,6 @@
                 <emptyGraphicData>
                     <texPath>Buildings/Ruin/RuinedShelf</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <shaderType>CutoutComplex</shaderType>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>

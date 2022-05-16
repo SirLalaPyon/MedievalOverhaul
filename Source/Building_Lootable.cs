@@ -90,7 +90,7 @@ namespace MedievalOverhaul
             {
                 if (!Searched)
                 {
-                    if (RandInt.NextDouble() <= lootableExt.lootChance)
+                    if (RandInt.NextDouble() <= lootableExt.enemySpawnChance)
                     {
                         PawnGenerationRequest request = new(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()),
                             null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, false, false);

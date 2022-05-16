@@ -1,20 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <ThingDef ParentName="ResourceBase" Name="DankPyon_LootBase" Abstract="True">
 
-	<ThingDef ParentName="ResourceBase">
-        <defName>DankPyon_ChaliceSilver</defName>
-        <label>silver chalice</label>
-        <description>PLACEHOLDER.</description>
-        <graphicData>
-            <texPath>Special/ChaliceSilver</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-        </graphicData>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <stackLimit>10</stackLimit>
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Standard_Drop</soundDrop>
+
+        <thingCategories>
+            <li>DankPyon_Loot</li>
+        </thingCategories>
+  </ThingDef>
+
+    <!--==================== Books ====================-->
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_Book_TheBeginning</defName>
+        <label>the beginning</label>
+        <description>The Beginning \nA survival guide into the wilderness \n\n1.Hides and Leather \nUsuable leather can be obtained by treating hides with tanning liquor in a tanning rack. After waiting an ample amount of time, the treated leather is ready for use \n\n2.Where is my food \nFresh meat spoils fast, better act quick! Meat can be preserved by putting them in drying racks, prolonging their expected shelf life. Later on, packaged rations or the vegetarian alternative, macci, can be made to eliminate any problem of spoilage. \n\n3.Metallurgy \nGood swords need good iron, refining raw metal ores is neccessary to make weapons. Raw ores can be smelt on the furnace to produce ingots that can be used for crafting and smithing.</description>
+        <graphicData>
+            <texPath>Special/TheBeginning</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
 
          <statBases>
             <MaxHitPoints>70</MaxHitPoints>
             <!--MarketValue>150</MarketValue-->
+            <Beauty>0</Beauty>
             <Mass>1</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>1.0</DeteriorationRate>
@@ -23,29 +34,45 @@
         <costList>
             <Silver>50</Silver>
         </costList>
-
-        <stackLimit>10</stackLimit>
-        <healthAffectsPrice>false</healthAffectsPrice>
-       
-        <thingCategories>
-            <li>DankPyon_Loot</li>
-        </thingCategories>
     </ThingDef>
 
-    <ThingDef ParentName="ResourceBase">
-        <defName>DankPyon_ChaliceGold</defName>
-        <label>gold chalice</label>
-        <description>PLACEHOLDER.</description>
+
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_Book_IntoTheRuins</defName>
+        <label>into the ruins</label>
+        <description>Into the ruins. \nA guide to dungoneering. \n\n1. What lies ahead \nDeep inside the dungeons harbors treasures and loot as ancient as the great under-empires. The golden era of unsurmounted age of productivity and most importantly, wealth.</description>
         <graphicData>
-            <texPath>Special/ChaliceGold</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Special/GuideRuins</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>150</MarketValue>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <healthAffectsPrice>false</healthAffectsPrice>
+    </ThingDef>
+
+
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_Book_AncientCodex</defName>
+        <label>ancient codex</label>
+        <description>An ancient tome intricately made with a golden finish. Contains scriptures detailing the historical accounts of the under empires. /n/nCan be sold for a pretty penny for interested collectors and the like.</description>
+        <graphicData>
+            <texPath>Special/AncientCodex</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Standard_Drop</soundDrop>
 
          <statBases>
-            <MaxHitPoints>70</MaxHitPoints>
-            <!--MarketValue>150</MarketValue-->
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>60</Beauty>
             <Mass>1</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>1.0</DeteriorationRate>
@@ -55,15 +82,313 @@
             <Gold>50</Gold>
         </costList>
 
-        <stackLimit>10</stackLimit>
         <healthAffectsPrice>false</healthAffectsPrice>
-       
-        <thingCategories>
-            <li>DankPyon_Loot</li>
-        </thingCategories>
+    </ThingDef>
+
+    <!--==================== Notes ====================-->
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_TornNote_Song1c</defName>
+        <label>artist's legacy</label>
+        <description>He was crab, she was a crab
+            \ncould they they be any more oblivious
+            \nHe was a drone, she was a queen
+            \nThey just wanted to make a scene
+            \nHe wanted her, she wanted eggs
+            \nSecretly she admired his legs
+            \nBut all the crabs had to propose
+            \nthey didnt like his crabby toes
+
+            \n\nhe had a bigger claw, she had a lobster tail 
+            \nHe was buttered up for her
+            \nShe wasnt very meek and could molt twice a week
+            \nShe had the thiccist armor
+
+            \n\nA few months from now, shes all alone
+            \nfeeding the eggs with her bio-foam
+            \nshe waits all day, waiting to see
+            \nwhat her drone would say
+            \nAll of the while, she had a smile
+            \nmaking armor for me
+
+            \n\nHe had a bigger claw, she had a lobster tail 
+            \nHe was butterd up for her
+            \nNow hes in thick armor
+            \nkilling some rimworlders
+            \ncould it be better now
+            \nI really dont see how
+            \nthe best race is the Brachyura.</description>
+        <graphicData>
+            <texPath>Special/TornNote1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+         <statBases>
+            <MaxHitPoints>10</MaxHitPoints>
+            <Mass>0.1</Mass>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <DankPyon_Paper>10</DankPyon_Paper>
+        </costList>
+
+        <healthAffectsPrice>false</healthAffectsPrice>
+    </ThingDef>
+
+    <!--==================== Chalice ====================-->
+	<ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_ChaliceSilver</defName>
+        <label>silver chalice</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/ChaliceSilver</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Beauty>10</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>4000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Silver>30</Silver>
+        </costList>
+    </ThingDef>
+    
+
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_ChaliceGold</defName>
+        <label>ancient golden chalice</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/ChaliceGold</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Beauty>60</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>9000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Gold>30</Gold>
+            <DankPyon_Ruby>10</DankPyon_Ruby>
+        </costList>
+    </ThingDef>
+
+    <!--==================== Bowls ====================-->
+	<ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_BowlSilver</defName>
+        <label>silver bowl</label>
+        <description>An elaborate bowl made out of silver.</description>
+        <graphicData>
+            <texPath>Special/BowlSilver</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Beauty>10</Beauty>
+            <Mass>2</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>4000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Silver>50</Silver>
+        </costList>
+    </ThingDef>
+    
+
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_BowlGold</defName>
+        <label>golden bowl</label>
+        <description>An elaborate bowl made out of gold.</description>
+        <graphicData>
+            <texPath>Special/BowlGold</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Beauty>25</Beauty>
+            <Mass>2</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>9000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Gold>50</Gold>
+        </costList>
     </ThingDef>
 	
+	<!--==================== Skulls ====================-->
+	<ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_SkullBase">
+        <defName>DankPyon_SkullGold</defName>
+        <label>gold skull</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/SkullGold</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>75</Beauty>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>15000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Gold>50</Gold>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_SkullBase">
+        <defName>DankPyon_SkullEmerald</defName>
+        <label>emerald skull</label>
+        <graphicData>
+            <texPath>Special/SkullEmerald</texPath>
+        </graphicData>
+
+        <statBases>
+            <Beauty>85</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Emerald>50</DankPyon_Emerald>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_SkullBase">
+        <defName>DankPyon_SkullSapphire</defName>
+        <label>sapphire skull</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/SkullSapphire</texPath>
+        </graphicData>
+
+         <statBases>
+            <Beauty>95</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Sapphire>50</DankPyon_Sapphire>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_SkullBase">
+        <defName>DankPyon_SkullRuby</defName>
+        <label>ruby skull</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/SkullRuby</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <Beauty>105</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Ruby>50</DankPyon_Ruby>
+        </costList>
+    </ThingDef>
+
+    <!--==================== Dice ====================-->
+	<ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_DiceBase">
+        <defName>DankPyon_DiceGold</defName>
+        <label>golden dice</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/Dice/DiceGold</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Beauty>25</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>4000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Gold>20</Gold>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_DiceBase">
+        <defName>DankPyon_DiceEmerald</defName>
+        <label>emerald dice</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/Dice/DiceEmerald</texPath>
+        </graphicData>
+
+         <statBases>
+            <Beauty>25</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Emerald>20</DankPyon_Emerald>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_DiceBase">
+        <defName>DankPyon_DiceSapphire</defName>
+        <label>sapphire dice</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/Dice/DiceSapphire</texPath>
+        </graphicData>
+
+         <statBases>
+            <Beauty>35</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Ruby>20</DankPyon_Ruby>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_DiceBase">
+        <defName>DankPyon_DiceRuby</defName>
+        <label>ruby dice</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Special/Dice/DiceRuby</texPath>
+        </graphicData>
+
+         <statBases>
+            <Beauty>45</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Ruby>20</DankPyon_Ruby>
+        </costList>
+    </ThingDef>
 	
-	
+    
 
 </Defs>

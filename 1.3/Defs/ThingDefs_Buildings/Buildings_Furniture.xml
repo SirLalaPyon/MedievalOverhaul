@@ -718,8 +718,9 @@
     <graphicData>
       <texPath>Furniture/RusticChest</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(2,2)</drawSize>
     </graphicData>
+
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.3</fillPercent>
@@ -766,7 +767,6 @@
         <maxDistance>6</maxDistance>
       </li>
     </comps>
-	<rotatable>false</rotatable>
   </ThingDef>
   
     <ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
@@ -834,8 +834,8 @@
     <thingClass>Building_Storage</thingClass>
     <graphicData>
       <texPath>Furniture/RoyalChest</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -885,7 +885,6 @@
       </li>
   </comps>
   <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	<rotatable>false</rotatable>
   </ThingDef>
   <!--============================== Dressers ==============================-->
 

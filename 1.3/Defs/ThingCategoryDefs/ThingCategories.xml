@@ -18,14 +18,6 @@
     </ThingCategoryDef>
 
     <ThingCategoryDef>
-        <defName>DankPyon_Loot</defName>
-        <label>loot</label>
-        <parent>Manufactured</parent>
-        <resourceReadoutRoot>true</resourceReadoutRoot>
-        <iconPath>UI/LootIcon</iconPath>
-    </ThingCategoryDef>
-
-    <ThingCategoryDef>
         <defName>DankPyon_Handwear</defName>
         <label>handwear</label>
         <parent>Apparel</parent>
@@ -53,4 +45,19 @@
         <iconPath>Drug/Cider/Cider_a</iconPath>
     </ThingCategoryDef>
 
+    <ThingCategoryDef>
+        <defName>DankPyon_Treatise</defName>
+        <label>treatise</label>
+        <parent>Items</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>Special/Treatise/TreatiseMelee</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Loot</defName>
+        <label>loot</label>
+        <parent>Items</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>UI/LootIcon</iconPath>
+    </ThingCategoryDef>
 </Defs>

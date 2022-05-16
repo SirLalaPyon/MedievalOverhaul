@@ -33,14 +33,16 @@
 
 
     <!--======================= Lootable Shelf ==============================-->
-    <ThingDef ParentName="DankPyon_RuinedBuildingBase" Name="DankPyon_RuinedShelfBase">
+    <ThingDef ParentName="DankPyon_RuinedBuildingBase" Name="DankPyon_LootShelfBase">
         <defName>DankPyon_LootableShelf_ChaliceSilver</defName>
         <label>filled shelf</label>
-        <description>A ruined shelf.</description>
+        <description>A shelf filled with items.</description>
         <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+        <drawerType>RealtimeOnly</drawerType>
         <graphicData>
             <texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
             <drawSize>(2.75,2.75)</drawSize>
         </graphicData>
 
@@ -52,10 +54,11 @@
         <castEdgeShadows>true</castEdgeShadows>
         <pathCost>50</pathCost>
         <fillPercent>0.4</fillPercent>
-        
-        <costList>
-            <WoodLog>65</WoodLog>
-        </costList>
+
+        <stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>65</costStuffCount>
 
         <statBases>
             <MaxHitPoints>90</MaxHitPoints>
@@ -69,31 +72,81 @@
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
-				<li>Rat</li>
+				    <li>Rat</li>
 				</enemysToSpawn>
 				<enemySpawnChance>0.10</enemySpawnChance>
-
-				<!--emptyGraphicPath>Buildings/Ruin/ShelfLootEmpty</emptyGraphicPath-->
-				<searchSound>BuildingDestroyed_Wood_Medium</searchSound> <!-- SoundDef -->
-				<searchEffect>DustPuff</searchEffect> <!-- FleckDef -->
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Buildings/Ruin/RuinedShelf</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>(2.75,2.75)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~5</lootCount>
-				<lootChance>1</lootChance>
+				<lootCount>1~3</lootCount>
+				<lootChance>0.90</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
-				<li>DankPyon_ChaliceSilver</li>
-				<li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceSilver</li>
-                <li>DankPyon_ChaliceGold</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceSilver</li>
+                    <li>DankPyon_ChaliceGold</li>
 				</randomItems>
 			</li>
 		</modExtensions>
     </ThingDef>
-    
 
-</Defs> 
+
+    <ThingDef ParentName="DankPyon_LootShelfBase">
+        <defName>DankPyon_LootableShelf_Emerald</defName>
+        <label>filled shelf</label>
+        <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+        <graphicData>
+            <texPath>Buildings/Ruin/ShelfEmerald</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2.75,2.75)</drawSize>
+        </graphicData>
+
+        <modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Buildings/Ruin/RuinedShelf</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>(2.75,2.75)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~3</lootCount>
+				<lootChance>0.90</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_Emerald</li>
+                    <li>DankPyon_Emerald</li>
+                    <li>DankPyon_Emerald</li>
+                    <li>DankPyon_Emerald</li>
+                    <li>DankPyon_Emerald</li>
+                    <li>DankPyon_Emerald</li>
+                    <li>DankPyon_Emerald</li>
+                    <li>DankPyon_Emerald</li>
+                    <li>DankPyon_TornNote_Song1c</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    </ThingDef>
+
+</Defs>

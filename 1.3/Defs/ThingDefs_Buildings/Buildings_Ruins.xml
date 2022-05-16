@@ -3,12 +3,11 @@
    <ThingDef Abstract="True" ParentName="BuildingBase" Name="DankPyon_RuinedBuildingBase">
     <designationCategory>DankPyon_RuinFurniture</designationCategory>
      <building>
-      <isInert>true</isInert>
-      <ai_chillDestination>false</ai_chillDestination>
-      <claimable>false</claimable>
-      <!--alwaysDeconstructible>true</alwaysDeconstructible-->
+		<isInert>true</isInert>
+		<ai_chillDestination>false</ai_chillDestination>
+		<claimable>false</claimable>
+		<!--alwaysDeconstructible>true</alwaysDeconstructible-->
     </building>
-
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
   </ThingDef>
@@ -19,23 +18,20 @@
 		<label>blocked door</label>
 		<description>A door that has been permanently locked by fixing wooden planks between its doors. Needs destroyed in order to pass through</description>
 		<graphicData>
-		<texPath>Buildings/Ruin/RuinedRusticDoor</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Buildings/Ruin/RuinedRusticDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<statBases>
-		<MaxHitPoints>55</MaxHitPoints>
-		<WorkToBuild>100</WorkToBuild>
-		<Mass>3</Mass>
-		<Flammability>1.0</Flammability>
+			<MaxHitPoints>55</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
-		<li>Woody</li>
+			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<pathCost>30</pathCost>
-
 		<passability>Impassable</passability>
 	</ThingDef>
 
@@ -44,23 +40,20 @@
 		<label>ruined slab door</label>
 		<description>Crumbled into a pile of stone. Traversing through is impossible. Needs destroyed in order to pass through</description>
 		<graphicData>
-		<texPath>Buildings/Ruin/RuinedSlabDoor</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Buildings/Ruin/RuinedSlabDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<statBases>
-		<MaxHitPoints>105</MaxHitPoints>
-		<WorkToBuild>100</WorkToBuild>
-		<Mass>3</Mass>
-		<Flammability>1.0</Flammability>
+			<MaxHitPoints>105</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
-		<li>Stony</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
 		<pathCost>30</pathCost>
-
 		<passability>Impassable</passability>
 	</ThingDef>
 
@@ -69,27 +62,25 @@
 		<label>ruined column</label>
 		<description>A simple platform on which to sit. Not very comfortable, but much better than nothing.Commonly seen at taverns and inns. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-		<texPath>Buildings/Ruin/RuinedColumn</texPath>
-		<graphicClass>Graphic_Random</graphicClass>
-		<drawRotated>false</drawRotated>
-		<shadowData>
-			<volume>(0.3, 0.5, 0.3)</volume>
-			<offset>(0,0,-0.23)</offset>
-		</shadowData>
-		<damageData>
-			<rect>(0.2,0.2,0.6,0.6)</rect>
-		</damageData>
-		<drawSize>(1,1.25)</drawSize>
-		<drawOffset>(0,0,0.2)</drawOffset>
+			<texPath>Buildings/Ruin/RuinedColumn</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<drawSize>(1,1.25)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
 		</graphicData>
-
 		<statBases>
-		<MaxHitPoints>105</MaxHitPoints>
-		<WorkToBuild>200</WorkToBuild>
-		<Mass>10</Mass>
-		<Flammability>1.0</Flammability>
+			<MaxHitPoints>105</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -123,14 +114,12 @@
 				<volume>(0.18, 0.23, 0.18)</volume>
 			</shadowData>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>35</MaxHitPoints>
 			<WorkToBuild>200</WorkToBuild>
 			<Mass>3</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -139,7 +128,6 @@
 		<fillPercent>0.20</fillPercent>
 		<uiIconOffset>(0, -0.05)</uiIconOffset>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_WoodenDebris</defName>
@@ -151,7 +139,6 @@
 			<drawSize>4</drawSize>
 		</graphicData>
 		<rotatable>false</rotatable>
-
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<uiIconScale>0.8</uiIconScale>
@@ -160,19 +147,16 @@
 		<fillPercent>0.7</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>800</WorkToBuild>
 			<Mass>40</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-
 		<passability>Impassable</passability>
 	</ThingDef>
 
@@ -187,7 +171,6 @@
 			<drawSize>3</drawSize>
 		</graphicData>
 		<rotatable>false</rotatable>
-
 		<thingClass>Building</thingClass>
 		<uiIconScale>0.65</uiIconScale>
 		<size>(1,1)</size>
@@ -195,14 +178,12 @@
 		<fillPercent>0.6</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<WorkToBuild>600</WorkToBuild>
 			<Mass>10</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -221,23 +202,19 @@
 			<drawSize>3</drawSize>
 		</graphicData>
 		<rotatable>false</rotatable>
-
 		<thingClass>Building</thingClass>
 		<uiIconScale>0.65</uiIconScale>
 		<size>(1,1)</size>
-		
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.6</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<WorkToBuild>600</WorkToBuild>
 			<Mass>10</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -254,20 +231,17 @@
             <graphicClass>Graphic_Single</graphicClass>
 	    </graphicData>
         <rotatable>false</rotatable>
-
         <statBases>
             <MaxHitPoints>25</MaxHitPoints>
             <WorkToBuild>100</WorkToBuild>
             <Mass>3</Mass>
             <Flammability>1.0</Flammability>
         </statBases>
-
         <stuffCategories>
             <li>Woody</li>
         </stuffCategories>
         <costStuffCount>10</costStuffCount>
         <pathCost>30</pathCost>
-
 	    <passability>PassThroughOnly</passability>
     </ThingDef>
 
@@ -470,42 +444,45 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
-				<li>DankPyon_Direwolf</li>
-				<li>DankPyon_Direwolf</li>
-				<li>DankPyon_Direwolf</li>
-				<li>DankPyon_Daer</li>
-				<li>DankPyon_DireBoar</li>
-				<li>DankPyon_Rox</li>
+					<li>DankPyon_Medieval_Knight</li>
+					<li>DankPyon_Medieval_Arbalester</li>
+					<li>DankPyon_Medieval_Bowman</li>
 				</enemysToSpawn>
-				<enemySpawnChance>0.04</enemySpawnChance> <!-- 4% chance an enemy will spawn -->
-				<emptyGraphicPath>Buildings/Ruin/RuinBonePile1x1</emptyGraphicPath>
-				<searchSound>BuildingDestroyed_Wood_Medium</searchSound> <!-- SoundDef -->
-				<searchEffect>DustPuff</searchEffect> <!-- FleckDef -->
+				<enemySpawnChance>0.15</enemySpawnChance>
+				<hostileEnemy>true</hostileEnemy>
+				<emptyGraphicData>
+                    <texPath>Buildings/Ruin/RuinBonePile1x1</texPath>
+					<graphicClass>Graphic_Random</graphicClass>
+					<drawSize>(1,1)</drawSize>
+					<color>(199,181,129)</color>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>2~25</lootCount>
-				<lootChance>0.25</lootChance> <!-- 25% chance you'll find loot -->
+				<lootChance>0.33</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
-				<li>Gold</li>
-				<li>Gold</li>
-				<li>Silver</li>
-				<li>Silver</li>
-				<li>Silver</li>
-				<li>Silver</li>
-				<li>Silver</li>
-				<li>Silver</li>
-				<li>Silver</li>
-				<li>Silver</li>
-				<li>Jade</li>
-				<li>DankPyon_RoxHorn</li>
-				<li>DankPyon_DaerAntler</li>
-				<li>DankPyon_DireBoarTusk</li>
-				<li>DankPyon_IronOre</li>
-				<li>DankPyon_IronIngot</li>
-				<li>DankPyon_GoldOre</li>
-				<li>DankPyon_Linen</li>
-				<li>DankPyon_Bone</li>
-				<li>DankPyon_Bone</li>
+					<li>Gold</li>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Jade</li>
+					<li>DankPyon_RoxHorn</li>
+					<li>DankPyon_DaerAntler</li>
+					<li>DankPyon_DireBoarTusk</li>
+					<li>DankPyon_IronOre</li>
+					<li>DankPyon_IronIngot</li>
+					<li>DankPyon_GoldOre</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Bone</li>
+					<li>DankPyon_Bone</li>
 				</randomItems>
 			</li>
 		</modExtensions>

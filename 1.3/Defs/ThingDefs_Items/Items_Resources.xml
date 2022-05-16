@@ -510,26 +510,26 @@
         </statBases>
 
         <stuffProps>
-        <stuffAdjective>bone</stuffAdjective>
-        <categories>
+          <stuffAdjective>bone</stuffAdjective>
+          <categories>
             <li>Woody</li>
-        </categories>
-        <commonality>1.00</commonality>
-        <color>(199,181,129)</color>
-        <constructEffect>ConstructWood</constructEffect>
-        <appearance>Planks</appearance>
-        <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
-        <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-        <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-        <statFactors>
-            <MaxHitPoints>0.4</MaxHitPoints>
-            <Beauty>1</Beauty>
-            <Flammability>0</Flammability>
-            <WorkToMake>0.7</WorkToMake>
-            <WorkToBuild>0.7</WorkToBuild>
-            <DoorOpenSpeed>1.2</DoorOpenSpeed>
-            <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
-        </statFactors>
+          </categories>
+          <commonality>1.00</commonality>
+          <color>(199,181,129)</color>
+          <constructEffect>ConstructWood</constructEffect>
+          <appearance>Planks</appearance>
+          <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+          <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+          <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+          <statFactors>
+              <MaxHitPoints>0.4</MaxHitPoints>
+              <Beauty>1</Beauty>
+              <Flammability>0</Flammability>
+              <WorkToMake>0.7</WorkToMake>
+              <WorkToBuild>0.7</WorkToBuild>
+              <DoorOpenSpeed>1.2</DoorOpenSpeed>
+              <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+          </statFactors>
         </stuffProps>
         <thingCategories>
         <li>ResourcesRaw</li>

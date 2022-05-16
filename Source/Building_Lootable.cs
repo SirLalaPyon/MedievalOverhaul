@@ -11,7 +11,8 @@ namespace MedievalOverhaul
     public class Building_Lootable : Building_Crate, IOpenable
     {
         private bool Searched;
-        private bool RespawningAfterLoad;
+        private readonly bool RespawningAfterLoad;
+        private readonly System.Random RandInt = new();
         private Graphic emptyColoredGraphic;
 
         private void DetermineEmptyGraphicColor()
@@ -46,7 +47,7 @@ namespace MedievalOverhaul
             {
                 if (!Searched)
                 {
-                    if (Rand.Chance(lootableExt.enemySpawnChance))
+                    if (RandInt.NextDouble() <= lootableExt.lootChance)
                     {
                         ThingDef lootableTD;
                         // Random search results.
@@ -89,7 +90,7 @@ namespace MedievalOverhaul
             {
                 if (!Searched)
                 {
-                    if (Rand.Chance(lootableExt.enemySpawnChance))
+                    if (RandInt.NextDouble() <= lootableExt.lootChance)
                     {
                         PawnGenerationRequest request = new(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()),
                             null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, false, false);

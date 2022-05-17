@@ -164,11 +164,11 @@ namespace DankPyon
                         Thing thing2 = thingList[m];
                         if (thing2 != thingToIgnore && (thing2.def.building != null || thing2.def.entityDefToBuild != null))
                         {
-                            if (entDef is ThingDef def && def.building != null && !def.building.isEdifice
-                                || thing2.def.entityDefToBuild != null && thing2.def.entityDefToBuild is ThingDef otherDef
+                            if (entDef is ThingDef def && def.building != null && !def.building.isEdifice && !thing2.def.building.isEdifice
+                                || thing2.def.IsBlueprint && thing2.def.entityDefToBuild != null && thing2.def.entityDefToBuild is ThingDef otherDef
                                     && otherDef.building != null && !otherDef.building.isEdifice)
                             {
-                                __result = new AcceptanceReport("SpaceAlreadyOccupied".Translate());
+                               __result = new AcceptanceReport("SpaceAlreadyOccupied".Translate());
                                 return;
                             }
                         }

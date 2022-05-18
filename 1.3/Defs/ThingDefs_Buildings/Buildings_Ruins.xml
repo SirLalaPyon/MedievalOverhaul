@@ -131,6 +131,79 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
+		<defName>DankPyon_RuinedBedWicker</defName>
+		<label>wicker bed</label>
+		<description>A simple and quick to make wicker bed.</description>
+		<graphicData>
+		<texPath>Buildings/Ruin/RuinedBedWicker</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		<damageData>
+			<rect>(0,0.05,1,1.95)</rect>
+		</damageData>
+		</graphicData>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<WorkToBuild>550</WorkToBuild>
+			<Mass>20</Mass>
+		</statBases>
+
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<uiIconScale>0.90</uiIconScale>
+	</ThingDef>
+
+
+	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
+		<defName>DankPyon_RuinedBedWickerDouble</defName>
+		<label>ruined double wicker bed</label>
+		<description>A ruined simple and quick to make wicker bed.</description>
+		<graphicData>
+			<texPath>Buildings/Ruin/RuinedBedWickerDouble</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.05,2.05)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>40</Mass>
+		</statBases>
+
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>
+
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<uiIconScale>0.90</uiIconScale>
+	</ThingDef>	
+
+
+	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_WoodenDebris</defName>
 		<label>Debris</label>
 		<description>A pile of ruined furniture seemingly stacked together in a deliberate fashion.</description>

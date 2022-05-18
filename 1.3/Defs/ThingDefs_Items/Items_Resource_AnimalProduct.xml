@@ -56,7 +56,7 @@
     <comps>
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>20.5</hatcherDaystoHatch>
-        <hatcherPawn>DankPyon_GiantConstrictorCave</hatcherPawn>
+        <hatcherPawn>DankPyon_GiantConstrictorForest</hatcherPawn>
       </li>
     </comps>
   </ThingDef>
@@ -76,6 +76,45 @@
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>20.5</hatcherDaystoHatch>
         <hatcherPawn>DankPyon_GiantConstrictorCave</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Lindwurm -->
+  <ThingDef ParentName="EggFertBase">
+    <defName>DankPyon_EggLindwurmForestFertilized</defName>
+    <label>giant forest lindwurm egg (fert.)</label>
+    <description>A large fertilized forest lindwurm egg. If all goes well, it should hatch into a baby lindwurm. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>AnimalProductRaw/GiantEgg</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>40.5</hatcherDaystoHatch>
+        <hatcherPawn>DankPyon_LindwurmForest</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>DankPyon_EggLindwurmCaveFertilized</defName>
+    <label>giant cave lindwurm egg (fert.)</label>
+    <description>A large fertilized forest lindwurm egg. If all goes well, it should hatch into a baby lindwurm. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>AnimalProductRaw/GiantCaveEgg</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>40.5</hatcherDaystoHatch>
+        <hatcherPawn>DankPyon_LindwurmCave</hatcherPawn>
       </li>
     </comps>
   </ThingDef>

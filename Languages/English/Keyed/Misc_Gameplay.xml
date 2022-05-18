@@ -55,24 +55,19 @@
 	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
 
 	<!-- Drying Rack Meat -->
-	<DankPyon_InsertMeatDesc>Insert meat to dry.</DankPyon_InsertMeatDesc>
-	<DankPyon_InsertMeat>Insert Meat</DankPyon_InsertMeat>
-	<DankPyon_InsertMeatVariable>Insert {0}</DankPyon_InsertMeatVariable>
-	<DankPyon_NoMeatsFound>No meats found in this map.</DankPyon_NoMeatsFound>
-	<DankPyon_SelectMeat>Select a type of meat to be dried</DankPyon_SelectMeat>
-	<DankPyon_StartInsertionMeat>Bring Meat</DankPyon_StartInsertionMeat>
-	<DankPyon_StartInsertionMeatDesc>Bring meat to the drying rack to start drying</DankPyon_StartInsertionMeatDesc>
-	<DankPyon_RemoveMeat>Remove Meat</DankPyon_RemoveMeat>
-	<DankPyon_RemoveMeatDesc>Remove the meat from the drying rack. This can only be done before you start drying it.</DankPyon_RemoveMeatDesc>	
-	<DankPyon_CancelBringingMeat>Cancel Bringing Meat</DankPyon_CancelBringingMeat>
-	<DankPyon_CancelBringingMeatDesc>Cancel bringing meat to the drying rack.</DankPyon_CancelBringingMeatDesc>
-	<DankPyon_WaitTillJobsEndMeat>Wait until the meat has been brought to the drying rack, or cancel the job.</DankPyon_WaitTillJobsEndMeat>
-	<DankPyon_EngageMeat>Dry Into Dried Meat</DankPyon_EngageMeat>
-	<DankPyon_EngageMeatDesc>Start drying meat. This process takes a day and can't be interrupted, or the meat will be destroyed.</DankPyon_EngageMeatDesc>
+	<DankPyon_InsertMeatRackDesc>Insert meat to dry.</DankPyon_InsertMeatRackDesc>
+	<DankPyon_InsertRackMeat>Insert Meat</DankPyon_InsertRackMeat>
+	<DankPyon_InsertMeatRackVariable>Insert {0}</DankPyon_InsertMeatRackVariable>
+	<DankPyon_StartInsertionMeatRackDesc>Bring meat to the drying rack to start drying</DankPyon_StartInsertionMeatRackDesc>
+	<DankPyon_RemoveMeatRackDesc>Remove the meat from the drying rack. This can only be done before you start drying it.</DankPyon_RemoveMeatRackDesc>	
+	<DankPyon_CancelBringingMeatRackDesc>Cancel bringing meat to the drying rack.</DankPyon_CancelBringingMeatRackDesc>
+	<DankPyon_WaitTillJobsEndMeatRack>Wait until the meat has been brought to the drying rack, or cancel the job.</DankPyon_WaitTillJobsEndMeatRack>
+	<DankPyon_EngageMeatRack>Dry Into Dried Meat</DankPyon_EngageMeatRack>
+	<DankPyon_EngageMeatRackDesc>Start drying meat. This process takes a day and can't be interrupted, or the meat will be destroyed.</DankPyon_EngageMeatRackDesc>
 	<DankPyon_DriedMeatFinished>Dried meats have finished drying in the drying rack</DankPyon_DriedMeatFinished>
 	<DankPyon_DriedMeatInProgress>A {0} is being dried. It will be ready in {1}</DankPyon_DriedMeatInProgress>
-	<DankPyon_DriedMeatReady>meats have finished drying and is waiting for pickup</DankPyon_DriedMeatReady>
-	<DankPyon_MeatImproperlyDefined>This meat has been improperly defined to work with the drying rack, contact the meat mod's author</DankPyon_MeatImproperlyDefined>
+	<DankPyon_DriedMeatRackReady>meats have finished drying and is waiting for pickup</DankPyon_DriedMeatRackReady>
+	<DankPyon_MeatRackImproperlyDefined>This meat has been improperly defined to work with the drying rack, contact the meat mod's author</DankPyon_MeatRackImproperlyDefined>
 	<DankPyon_RemoveDriedMeat>Remove Dried Meat ({0})</DankPyon_RemoveDriedMeat>
 	
 	<DankPyon_DryingRackEmpty>Drying rack is empty right now</DankPyon_DryingRackEmpty>

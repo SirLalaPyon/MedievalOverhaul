@@ -138,6 +138,20 @@
 		<researchViewY>1.4</researchViewY>  
   </ResearchProjectDef>
 
+  <ResearchProjectDef>
+    <defName>DankPyon_Jewelry</defName>
+    <label>jewelry</label>
+    <description>Refine valuable jewels into wearable accessories.</description>
+    <baseCost>600</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1.4</researchViewY>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>  
+  </ResearchProjectDef>
+
   <!--=========================== Engineering ==============================-->
   <ResearchProjectDef>
     <defName>DankPyon_Engineering</defName>

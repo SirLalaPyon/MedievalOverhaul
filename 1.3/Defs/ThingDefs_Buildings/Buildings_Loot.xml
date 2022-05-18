@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--==================== Base ====================-->
+<ThingDef ParentName="BuildingBase" Name="DankPyon_LootBuildingBase" Abstract="True">
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+        <li>BuildingsArt</li>
+    </thingCategories>
+
+    <statBases>
+      <Flammability>0</Flammability>
+      <SellPriceFactor>1.10</SellPriceFactor>
+      <MeditationFocusStrength>0.0</MeditationFocusStrength>
+    </statBases>
+   
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+</ThingDef>
+
+<!-- Skulls -->
+<ThingDef ParentName="DankPyon_LootBuildingBase">
+    <defName>DankPyon_Building_ChaliceSilver</defName>
+    <label>stool</label>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Stool</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+</ThingDef>
+
+
+</Defs>

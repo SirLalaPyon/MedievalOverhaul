@@ -1,70 +1,217 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!--ThingDef Name="DankPyon_NecklaceBase" ParentName="ApparelBase" Abstract="True">
+    <!-- Jewelry Base -->
+    <ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_NecklaceBase" Abstract="True">
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>0.5</Mass>
+            <EquipDelay>0.5</EquipDelay>
+            <Flammability>0</Flammability>
+        </statBases>
+
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>DankPyon_JewelryBench</li>
+            </recipeUsers>
+            <researchPrerequisite>DankPyon_Jewelry</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+                <Artistic>3</Artistic>
+            </skillRequirements>
+            <researchPrerequisites>
+                <li>DankPyon_Jewelry</li>
+            </researchPrerequisites>
+        </recipeMaker>
+
         <thingCategories>
-            <li>Apparel</li>
+            <li>DankPyon_ApparelJewelry</li>
         </thingCategories>
+
         <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <bodyPartGroups>
                 <li>Neck</li>
             </bodyPartGroups>
             <layers>
-                <li>Accessories</li>
+                <li>DankPyon_NecklaceLayer</li>
             </layers>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
             <tags>
-                <li>DankPyon_Jewelry</li>
+                <li>Royal</li>
             </tags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
         </apparel>
-        <tradeTags>
-            <li>DankPyon_Jewelry</li>
-        </tradeTags>
 
-        <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <effectWorking>CutStone</effectWorking>
-            <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-            <recipeUsers>
-                <li>LaserTableSculpting</li>
-                <li>TableSculpting</li>
-            </recipeUsers>
-            <researchPrerequisite>DankPyon_Jewelry</researchPrerequisite>
-            <workSkill>Artistic</workSkill>
-            <skillRequirements>
-                <Crafting>4</Crafting>
-                <Artistic>4</Artistic>
-            </skillRequirements>
-            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-        </recipeMaker>
+        <equippedStatOffsets>
+            <PawnBeauty>+1</PawnBeauty>
+            <SocialImpact>0.1</SocialImpact>
+            <TradePriceImprovement>0.05</TradePriceImprovement>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+
+        
+    </ThingDef>
+  
+    <!-- Jewelry -->
+    <ThingDef ParentName="DankPyon_NecklaceBase">
+        <defName>DankPyon_Necklace_Citrine</defName>
+        <label>citrine necklace</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/CitrineNecklace</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToMake>10500</WorkToMake>
+            <Beauty>8</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Citrine>25</DankPyon_Citrine>
+        </costList>
     </ThingDef>
 
-     <ThingDef ParentName="DankPyon_NecklaceBase">
-    <defName>DankPyon_NecklaceAmber</defName>
-    <label>amber necklace</label>
-    <description>A beautiful necklace made from gold and a priceless gem. It improves the wearer's social skill, trade skill and beauty.</description>
-    <graphicData>
-      <texPath>Apparel/AmberNecklace</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+    <ThingDef ParentName="DankPyon_NecklaceBase">
+        <defName>DankPyon_Necklace_Jade</defName>
+        <label>jade necklace</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/JadeNecklace</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
 
-    <statBases>
-      <Mass>0.10</Mass>
-      <EquipDelay>0.25</EquipDelay>
-      <MarketValue>300</MarketValue>
-      <Beauty>10</Beauty>
-      <WorkToMake>4000</WorkToMake>
-    </statBases>
+        <statBases>
+            <WorkToMake>9800</WorkToMake>
+            <Beauty>10</Beauty>
+        </statBases>
 
-    <equippedStatOffsets>
-      <TradePriceImprovement>0.05</TradePriceImprovement>
-      <SocialImpact>0.2</SocialImpact>
-    </equippedStatOffsets>
-    
-    <costList>
-      <DankPyon_Amber>20</DankPyon_Amber>
-    </costList>
-  </ThingDef-->
-  
- 
-  
+        <costList>
+            <Jade>25</Jade>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_NecklaceBase">
+        <defName>DankPyon_Necklace_Amber</defName>
+        <label>amber necklace</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/AmberNecklace</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToMake>6800</WorkToMake>
+            <Beauty>12</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Amber>25</DankPyon_Amber>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_NecklaceBase">
+        <defName>DankPyon_Necklace_Onyx</defName>
+        <label>onyx necklace</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/OnyxNecklace</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToMake>10500</WorkToMake>
+            <Beauty>14</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Onyx>25</DankPyon_Onyx>
+        </costList>
+    </ThingDef>
+
+    <!--Gold and Above tier-->
+    <ThingDef ParentName="DankPyon_NecklaceBase" Name="DankPayon_NecklaceBaseRoyal" Abstract="True">
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+                <Artistic>6</Artistic>
+            </skillRequirements>
+        </recipeMaker>
+
+        <equippedStatOffsets>
+            <PawnBeauty>+2</PawnBeauty>
+            <SocialImpact>0.2</SocialImpact>
+            <TradePriceImprovement>0.10</TradePriceImprovement>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPayon_NecklaceBaseRoyal">
+        <defName>DankPyon_Necklace_Emerald</defName>
+        <label>emerald necklace</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/EmeraldNecklace</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <WorkToMake>11200</WorkToMake>
+            <Beauty>20</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Emerald>25</DankPyon_Emerald>
+            <Gold>2</Gold>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPayon_NecklaceBaseRoyal">
+        <defName>DankPyon_Necklace_Sapphire</defName>
+        <label>sapphire necklace</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/SapphireNecklace</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToMake>13300</WorkToMake>
+            <Beauty>24</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Emerald>25</DankPyon_Emerald>
+            <Gold>2</Gold>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPayon_NecklaceBaseRoyal">
+        <defName>DankPyon_Necklace_Ruby</defName>
+        <label>ruby necklace</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/RubyNecklace</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToMake>13300</WorkToMake>
+            <Beauty>28</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Ruby>25</DankPyon_Ruby>
+            <Gold>2</Gold>
+        </costList>
+    </ThingDef>
   
 </Defs>

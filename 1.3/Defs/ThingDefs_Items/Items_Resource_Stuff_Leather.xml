@@ -78,19 +78,20 @@
     <graphicData>
       <texPath>Resources/HeavyFurHuge</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(80,75,72)</color>
     </graphicData>
     <statBases>
-      <MarketValue>15.0</MarketValue>
+      <MarketValue>17.0</MarketValue>
       <StuffPower_Armor_Sharp>2.20</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
       <StuffPower_Insulation_Cold>34</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
-      <color>(93,81,70)</color>
-      <commonality>0.0025</commonality>
+      <color>(80,75,72)</color>
+      <commonality>0.0005</commonality>
       <statFactors>
-        <MaxHitPoints>2.0</MaxHitPoints>
+        <MaxHitPoints>2.15</MaxHitPoints>
         <Beauty>6</Beauty>
       </statFactors>
     </stuffProps>
@@ -98,7 +99,7 @@
 
   <ThingDef ParentName="LeatherBase">
     <defName>DankPyon_Leather_Lindwurm</defName>
-    <label>Lindwurm Scales</label>
+    <label>lindwurm scales</label>
     <description>A broad green husks size of a hand, tinting the reflected light emerald. Material both durable and elegant, attracting envious glances.</description>
     <graphicData>
       <texPath>Resources/LindwurmScales</texPath>
@@ -108,14 +109,14 @@
       <MarketValue>20.0</MarketValue>
       <StuffPower_Armor_Sharp>2.20</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
-      <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+      <StuffPower_Insulation_Cold>9</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>34</StuffPower_Insulation_Heat>
     </statBases>
     <stuffProps>
-      <color>(97,127,40)</color>
-      <commonality>0.0025</commonality>
+      <color>(126,145,65)</color>
+      <commonality>0.0005</commonality>
       <statFactors>
-        <MaxHitPoints>2.0</MaxHitPoints>
+        <MaxHitPoints>2.5</MaxHitPoints>
         <Beauty>8</Beauty>
       </statFactors>
     </stuffProps>

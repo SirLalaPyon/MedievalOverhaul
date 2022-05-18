@@ -3896,6 +3896,14 @@
         </filter>
         <count>0.30</count>
       </li>
+	  	<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_Salt</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
     </ingredients>
     <products>
       <DankPyon_MealRations>1</DankPyon_MealRations>
@@ -3922,23 +3930,31 @@
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>MeatRaw</li>
-            <li>AnimalProductRaw</li>
-          </categories>
-        </filter>
-        <count>1.50</count>
-      </li>
-      <li>
-        <filter>
-          <categories>
-            <li>PlantFoodRaw</li>
-          </categories>
-        </filter>
-        <count>1.50</count>
-      </li>
+		<li>
+			<filter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</categories>
+			</filter>
+			<count>1.50</count>
+		</li>
+		<li>
+			<filter>
+			<categories>
+				<li>PlantFoodRaw</li>
+			</categories>
+			</filter>
+			<count>1.50</count>
+		</li>
+	  	<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_Salt</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
     </ingredients>
     <products>
       <DankPyon_MealRations>5</DankPyon_MealRations>

@@ -46,6 +46,10 @@
 					<li>ChunkSandstone</li>
 				</ignoredThings>
 			</li>
+			<li Class="VanillaPlantsExpanded.DualCropExtension">
+				<secondaryOutput>DankPyon_Amber</secondaryOutput>
+				<outPutAmount>20</outPutAmount>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -84,6 +88,10 @@
 					<li>ChunkGranite</li>
 					<li>ChunkSandstone</li>
 				</ignoredThings>
+			</li>
+			<li Class="VanillaPlantsExpanded.DualCropExtension">
+				<secondaryOutput>DankPyon_Amber</secondaryOutput>
+				<outPutAmount>5</outPutAmount>
 			</li>
 		</modExtensions>
 	</ThingDef>

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="ResourceBase" Name="DankPyon_LootBase" Abstract="True">
-
         <healthAffectsPrice>false</healthAffectsPrice>
         <stackLimit>10</stackLimit>
         <soundInteract>Metal_Drop</soundInteract>
@@ -225,7 +224,7 @@
         </statBases>
 
         <costList>
-            <Gold>30</Gold>
+            <Gold>3</Gold>
             <DankPyon_Ruby>10</DankPyon_Ruby>
         </costList>
     </ThingDef>
@@ -276,7 +275,7 @@
         </statBases>
 
         <costList>
-            <Gold>50</Gold>
+            <Gold>5</Gold>
         </costList>
     </ThingDef>
 	
@@ -292,7 +291,7 @@
 
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
-            <Beauty>75</Beauty>
+            <Beauty>220</Beauty>
             <Mass>5</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>1.0</DeteriorationRate>
@@ -300,7 +299,7 @@
         </statBases>
 
         <costList>
-            <Gold>50</Gold>
+            <Gold>5</Gold>
         </costList>
     </ThingDef>
 
@@ -312,7 +311,7 @@
         </graphicData>
 
         <statBases>
-            <Beauty>85</Beauty>
+            <Beauty>220</Beauty>
         </statBases>
 
         <costList>
@@ -329,7 +328,7 @@
         </graphicData>
 
          <statBases>
-            <Beauty>95</Beauty>
+            <Beauty>249</Beauty>
         </statBases>
 
         <costList>
@@ -347,7 +346,7 @@
         </graphicData>
 
          <statBases>
-            <Beauty>105</Beauty>
+            <Beauty>288</Beauty>
         </statBases>
 
         <costList>
@@ -375,7 +374,7 @@
         </statBases>
 
         <costList>
-            <Gold>20</Gold>
+            <Gold>2</Gold>
         </costList>
     </ThingDef>
 
@@ -477,7 +476,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                         <skillDefName>Shooting</skillDefName>
-                        <xpAmount>25000</xpAmount>
+                        <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -493,7 +492,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Melee</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -509,7 +508,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Construction</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -525,7 +524,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Mining</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -541,7 +540,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Cooking</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -557,7 +556,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Plants</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -573,7 +572,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Animals</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -589,7 +588,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Crafting</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -605,7 +604,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Artistic</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -621,7 +620,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Medicine</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -637,7 +636,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Social</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>
@@ -653,7 +652,7 @@
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Intellectual</skillDefName>
-                <xpAmount>25000</xpAmount>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>

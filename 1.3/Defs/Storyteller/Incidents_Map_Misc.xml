@@ -28,4 +28,29 @@
 		</modExtensions>
 		
 	</IncidentDef>
+
+	<IncidentDef>
+		<defName>DankPyon_LindwurmPasses</defName>
+		<label>rare lindwurms</label>
+		<letterLabel>{0} wanders in</letterLabel>	<!-- {0} corresponds to the pawn kind label -->
+		<letterText>A pack of {1} have wandered into the area, and will leave after a while. Be warned {1} are extremely dangerous but are highly sought after for their robust fur and majestic horns.</letterText>	<!-- {0} is the number, {1} is the pawn kind label  -->
+		<letterDef>PositiveEvent</letterDef> <!-- also ThreatSmall, ThreatBig, NeutralEvent, PositiveEvent -->
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<baseChance>0.7</baseChance>
+		<minRefireDays>30</minRefireDays>
+		
+		<workerClass>GenericWandersIn.IncidentWorker_GenericWandersIn</workerClass>	<!-- don't change this -->
+		<modExtensions>
+			<!-- needs this -->
+			<li Class="GenericWandersIn.IncidentProperties">
+				<kindDef>DankPyon_LindwurmForest</kindDef>	<!-- the kind to spawn -->
+				<max>1~2</max>	<!-- the maximum number that can spawn -->
+				<leaveMapAfterTime>true</leaveMapAfterTime>	<!-- whether they leave the map after a random amount of time -->
+            </li>
+		</modExtensions>
+		
+	</IncidentDef>
 </Defs>

@@ -1014,11 +1014,30 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_HideBaseHuge">
+		<defName>DankPyon_Hide_GiantConstrictor</defName>
+		<label>huge constrictor scales</label>
+		<graphicData>
+			<texPath>Resources/ScaleHuge</texPath>
+			<color>(80,75,72)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1712</MarketValue>
+			<Mass>36</Mass>
+		</statBases>
+		<butcherProducts Inherit="False">
+			<Leather_Rhinoceros>120</Leather_Rhinoceros>
+		</butcherProducts>
+		<stuffProps>
+			<color>(93,81,70)</color>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideBaseHuge">
 		<defName>DankPyon_Hide_Daer</defName>
 		<label>huge daer pelt</label>
 		<graphicData>
 			<texPath>Resources/HeavyFurHuge</texPath>
-			<color>(80,75,72)</color>
+			<color>(93,71,62)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>1512</MarketValue>
@@ -1026,6 +1045,25 @@
 		</statBases>
 		<butcherProducts Inherit="False">
 			<DankPyon_Leather_Daer>120</DankPyon_Leather_Daer>
+		</butcherProducts>
+		<stuffProps>
+			<color>(93,71,62)</color>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideBaseHuge">
+		<defName>DankPyon_Hide_Lindwurm</defName>
+		<label>huge lindwurm scales</label>
+		<graphicData>
+			<texPath>Resources/ScaleHuge</texPath>
+			<color>(80,75,72)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1712</MarketValue>
+			<Mass>36</Mass>
+		</statBases>
+		<butcherProducts Inherit="False">
+			<DankPyon_Leather_Lindwurm>120</DankPyon_Leather_Lindwurm>
 		</butcherProducts>
 		<stuffProps>
 			<color>(93,81,70)</color>

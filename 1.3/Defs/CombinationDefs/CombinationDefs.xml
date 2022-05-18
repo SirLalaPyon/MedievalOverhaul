@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!--ItemProcessor.CombinationDef>
+	<ItemProcessor.CombinationDef>
 		<defName>DankPyon_MilkIntoCheese</defName>
 		<building>DankPyon_Presser</building>
 		<items>
@@ -11,7 +11,7 @@
 			<li>100</li>
 		</amount>
 		<result>DankPyon_MealCheese</result>	
-		<yield>50</yield>
+		<yield>10</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>5</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
@@ -58,7 +58,7 @@
 			<li>100</li>
 		</amount>
 		<result>DankPyon_DriedMeat</result>	
-		<yield>10</yield>
+		<yield>9</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>2.5</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
@@ -106,5 +106,5 @@
 		<yield>5</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
-	</ItemProcessor.CombinationDef-->
+	</ItemProcessor.CombinationDef>
 </Defs>

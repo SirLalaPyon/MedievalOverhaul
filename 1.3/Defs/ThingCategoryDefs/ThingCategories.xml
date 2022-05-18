@@ -60,4 +60,10 @@
         <resourceReadoutRoot>true</resourceReadoutRoot>
         <iconPath>UI/LootIcon</iconPath>
     </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>DankPyon_ApparelJewelry</defName>
+      <label>jewelry</label>
+      <parent>Apparel</parent>
+    </ThingCategoryDef>
 </Defs>

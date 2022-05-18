@@ -46,6 +46,10 @@
 					<li>ChunkSandstone</li>
 				</ignoredThings>
 			</li>
+			<li Class="VanillaPlantsExpanded.DualCropExtension">
+				<secondaryOutput>DankPyon_Amber</secondaryOutput>
+				<outPutAmount>20</outPutAmount>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	
@@ -94,6 +98,10 @@
 					<li>ChunkSandstone</li>
 				</ignoredThings>
 			</li>
+			<li Class="VanillaPlantsExpanded.DualCropExtension">
+				<secondaryOutput>DankPyon_Amber</secondaryOutput>
+				<outPutAmount>20</outPutAmount>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -135,6 +143,10 @@
 					<li>ChunkLimestone</li>
 				</ignoredThings>
 			</li>
+			<li Class="VanillaPlantsExpanded.DualCropExtension">
+				<secondaryOutput>DankPyon_Amber</secondaryOutput>
+				<outPutAmount>5</outPutAmount>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	
@@ -167,5 +179,24 @@
 		<wildClusterRadius>5</wildClusterRadius>
 		<visualSizeRange>6~9</visualSizeRange>
     </plant>
+		<modExtensions>
+			<li Class="DankPyon.PlantExtension">
+				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+				<firstAreaOffset>(-1, 0)</firstAreaOffset>
+				<firstArea>(3, 3)</firstArea>
+				<secondAreaOffset>(0, 3)</secondAreaOffset>
+				<secondArea>(1, 2)</secondArea>
+				<ignoredThings>
+					<li>ChunkMarble</li>
+					<li>ChunkGranite</li>
+					<li>ChunkSandstone</li>
+					<li>ChunkLimestone</li>
+				</ignoredThings>
+			</li>
+			<li Class="VanillaPlantsExpanded.DualCropExtension">
+				<secondaryOutput>DankPyon_Amber</secondaryOutput>
+				<outPutAmount>5</outPutAmount>
+			</li>
+		</modExtensions>
   </ThingDef>
 </Defs>

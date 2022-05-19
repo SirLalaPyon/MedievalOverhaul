@@ -1,37 +1,239 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    
 <!--==================== Base ====================-->
 <ThingDef ParentName="BuildingBase" Name="DankPyon_LootBuildingBase" Abstract="True">
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
+    <pathCost>20</pathCost>
     <useHitPoints>true</useHitPoints>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <fillPercent>0.35</fillPercent>
+    <rotatable>false</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+
     <thingCategories>
-        <li>BuildingsArt</li>
+        <li>DankPyon_BuildingsLoot</li>
     </thingCategories>
+    <size>(1,1)</size>
+    <building>
+        <isEdifice>false</isEdifice>
+    </building>
 
     <statBases>
       <Flammability>0</Flammability>
       <SellPriceFactor>1.10</SellPriceFactor>
       <MeditationFocusStrength>0.0</MeditationFocusStrength>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
    
     <tradeTags>
-      <li>Art</li>
+      <li>DankPyon_Loot</li>
     </tradeTags>
+
+    <comps>
+      <li Class="CompProperties_Styleable"/>
+    </comps>
+    <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
 </ThingDef>
 
-<!-- Skulls -->
+<!-- Chalice -->
 <ThingDef ParentName="DankPyon_LootBuildingBase">
     <defName>DankPyon_Building_ChaliceSilver</defName>
-    <label>stool</label>
+    <label>silver chalice</label>
     <graphicData>
-      <texPath>Things/Building/Furniture/Stool</texPath>
+      <texPath>Buildings/Ruin/ChaliceSilver</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
     </graphicData>
+    
+    <statBases>
+        <MaxHitPoints>70</MaxHitPoints>
+        <Beauty>26</Beauty>
+        <Mass>1</Mass>
+        <WorkToMake>4000</WorkToMake>
+    </statBases>
 
+    <costList>
+        <Silver>30</Silver>
+    </costList>
 </ThingDef>
 
+<ThingDef ParentName="DankPyon_LootBuildingBase">
+    <defName>DankPyon_Building_ChaliceGold</defName>
+    <label>Ancient golden chalice</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ChaliceGold</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+
+    <statBases>
+        <MaxHitPoints>70</MaxHitPoints>
+        <Beauty>100</Beauty>
+        <Mass>1</Mass>
+        <WorkToMake>9000</WorkToMake>
+    </statBases>
+
+    <costList>
+        <Gold>3</Gold>
+        <DankPyon_Ruby>10</DankPyon_Ruby>
+    </costList>
+</ThingDef>
+
+<!--==================== Bowls ====================-->
+<ThingDef ParentName="DankPyon_LootBuildingBase">
+    <defName>DankPyon_Building_BowlSilver</defName>
+    <label>silver bowl</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/BowlSilver</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+
+    <statBases>
+        <MaxHitPoints>85</MaxHitPoints>
+        <Beauty>26</Beauty>
+        <Mass>2</Mass>
+        <WorkToMake>4000</WorkToMake>
+    </statBases>
+
+    <costList>
+        <Silver>30</Silver>
+    </costList>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_LootBuildingBase">
+    <defName>DankPyon_Building_BowlGold</defName>
+    <label>gold bowl</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/BowlGold</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+
+    <statBases>
+        <MaxHitPoints>85</MaxHitPoints>
+        <Beauty>60</Beauty>
+        <Mass>2</Mass>
+        <WorkToMake>9000</WorkToMake>
+    </statBases>
+
+    <costList>
+        <Gold>3</Gold>
+    </costList>
+</ThingDef>
+
+<!--==================== Skull ====================-->
+<ThingDef ParentName="DankPyon_LootBuildingBase">
+    <defName>DankPyon_Building_SkullGold</defName>
+    <label>gold skull</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/SkullGold</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Beauty>220</Beauty>
+        <Mass>2</Mass>
+        <WorkToMake>15000</WorkToMake>
+        <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+
+    <costList>
+        <Gold>5</Gold>
+    </costList>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_LootBuildingBase">
+    <defName>DankPyon_Building_SkullEmerald</defName>
+    <label>emerald skull</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/SkullEmerald</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Beauty>220</Beauty>
+        <Mass>2</Mass>
+        <WorkToMake>15000</WorkToMake>
+        <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+
+    <costList>
+        <DankPyon_Emerald>50</DankPyon_Emerald>
+    </costList>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_LootBuildingBase">
+    <defName>DankPyon_Building_SkullSapphire</defName>
+    <label>sapphire skull</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/SkullSapphire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Beauty>249</Beauty>
+        <Mass>2</Mass>
+        <WorkToMake>15000</WorkToMake>
+        <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+
+    <costList>
+        <DankPyon_Sapphire>50</DankPyon_Sapphire>
+    </costList>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_LootBuildingBase">
+    <defName>DankPyon_Building_SkullRuby</defName>
+    <label>ruby skull</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/SkullRuby</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Beauty>288</Beauty>
+        <Mass>2</Mass>
+        <WorkToMake>15000</WorkToMake>
+        <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+
+    <costList>
+        <DankPyon_Ruby>50</DankPyon_Ruby>
+    </costList>
+</ThingDef>
+
+<!--==================== Book ====================-->
+<ThingDef ParentName="DankPyon_LootBuildingBase">
+    <defName>DankPyon_Building_AncientCodex</defName>
+    <label>ancient codex</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/AncientCodex</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Beauty>60</Beauty>
+        <Mass>1</Mass>
+        <Flammability>0</Flammability>
+        <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+
+    <costList>
+        <Gold>5</Gold>
+    </costList>
+</ThingDef>
 
 </Defs>

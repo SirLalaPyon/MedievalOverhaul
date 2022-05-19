@@ -109,7 +109,7 @@
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Standard_Drop</soundDrop>
 
-         <statBases>
+        <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>60</Beauty>
             <Mass>1</Mass>
@@ -118,7 +118,7 @@
         </statBases>
 
         <costList>
-            <Gold>50</Gold>
+            <Gold>5</Gold>
         </costList>
 
         <healthAffectsPrice>false</healthAffectsPrice>
@@ -191,7 +191,7 @@
          <statBases>
             <MaxHitPoints>70</MaxHitPoints>
             <!--MarketValue>150</MarketValue-->
-            <Beauty>10</Beauty>
+            <Beauty>26</Beauty>
             <Mass>1</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>1.0</DeteriorationRate>
@@ -216,7 +216,7 @@
          <statBases>
             <MaxHitPoints>70</MaxHitPoints>
             <!--MarketValue>150</MarketValue-->
-            <Beauty>60</Beauty>
+            <Beauty>100</Beauty>
             <Mass>1</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>1.0</DeteriorationRate>
@@ -294,7 +294,7 @@
             <Beauty>220</Beauty>
             <Mass>5</Mass>
             <Flammability>0</Flammability>
-            <DeteriorationRate>1.0</DeteriorationRate>
+            <DeteriorationRate>0</DeteriorationRate>
             <WorkToMake>15000</WorkToMake>
         </statBases>
 

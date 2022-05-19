@@ -66,4 +66,11 @@
       <label>jewelry</label>
       <parent>Apparel</parent>
     </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_BuildingsLoot</defName>
+        <label>polished loot</label>
+        <parent>Buildings</parent>
+        <iconPath>UI/LootIcon</iconPath>
+    </ThingCategoryDef>
 </Defs>

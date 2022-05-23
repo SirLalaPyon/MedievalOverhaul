@@ -1040,7 +1040,7 @@
     <graphicData>
       <texPath>Storage/RackEmpty</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
 
     <altitudeLayer>Building</altitudeLayer>
@@ -1106,16 +1106,16 @@
   </ThingDef>
 
   <!-- Weapon Rack -->
-  <ThingDef ParentName="DankPyon_StorageBase">
+  <ThingDef ParentName="DankPyon_StorageBase"  Name="DankPyon_StorageRackBase">
     <defName>DankPyon_RackSword</defName>
     <label>sword rack</label>
     <description>A rack for storing swords in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
     <thingClass>Building_Storage</thingClass>
     <graphicData>
-      <texPath>Storage/RackSword</texPath>
+      <texPath>Storage/RackFilled1</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
 
     <altitudeLayer>Building</altitudeLayer>
@@ -1178,6 +1178,32 @@
 		    <overlayType>None</overlayType>
       </li>
     </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_StorageRackBase">
+    <defName>DankPyon_RackSpear</defName>
+    <label>spear rack</label>
+    <description>A rack for storing spears in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/RackFilled3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_StorageRackBase">
+    <defName>DankPyon_RackMixed</defName>
+    <label>weapon rack</label>
+    <description>A rack for storing weapons in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Storage/RackFilled2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
   </ThingDef>
 
 <!--======================= Shelf ==============================-->

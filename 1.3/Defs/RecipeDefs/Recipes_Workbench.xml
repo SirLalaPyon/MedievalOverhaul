@@ -15,9 +15,7 @@
 </RecipeDef>	
 
 <!-- Ammuniation: Ballista Bolts --> 
-
-
-<RecipeDef ParentName="DankPyon_SmelterBase">
+<RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
 	<defName>DankPyon_MakeBullet_BallistaBolt</defName>
 	<workAmount>200</workAmount>		
 	<label>craft ballista bolts x10</label>
@@ -55,7 +53,7 @@
 	</products>		
 </RecipeDef>
 
-<RecipeDef ParentName="DankPyon_SmelterBase">
+<RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
 	<defName>DankPyon_MakeBullet_BallistaBoltBulk</defName>
 	<workAmount>200</workAmount>		
 	<label>craft ballista bolts x50</label>
@@ -90,6 +88,65 @@
 	</fixedIngredientFilter>
 	<products>
 		<DankPyon_BallistaBolt>50</DankPyon_BallistaBolt>
+	</products>		
+</RecipeDef>
+
+<!-- Ammuniation: Stone Boulder --> 
+<RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
+	<defName>DankPyon_MakeBullet_StoneBoulder</defName>
+	<workAmount>800</workAmount>		
+	<label>cut stone chunk into boulder</label>
+	<jobString>Cutting stone chunk into a boulder.</jobString>
+	<targetCountAdjustment>5</targetCountAdjustment>	
+    <researchPrerequisites>
+        <li>DankPyon_Trebuchet</li>
+    </researchPrerequisites>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+            <li>StoneChunks</li>
+        </categories>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+        <li>StoneChunks</li>
+    </categories>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_StoneBoulder>1</DankPyon_StoneBoulder>
+	</products>		
+</RecipeDef>
+
+<RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
+	<defName>DankPyon_MakeBullet_StoneBoulderBulk</defName>
+	<workAmount>3200</workAmount>		
+	<label>cut stone into boulder x5</label>
+	<jobString>Cutting 5 stone chunks into 5 boulders.</jobString>
+	<targetCountAdjustment>50</targetCountAdjustment>	
+  <researchPrerequisites>
+    <li>DankPyon_Trebuchet</li>
+  </researchPrerequisites>
+	<ingredients>
+		<li>
+			<filter>
+				<categories>
+                    <li>StoneChunks</li>
+                </categories>
+			</filter>
+			<count>5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+        <li>StoneChunks</li>
+    </categories>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_StoneBoulder>5</DankPyon_StoneBoulder>
 	</products>		
 </RecipeDef>
 

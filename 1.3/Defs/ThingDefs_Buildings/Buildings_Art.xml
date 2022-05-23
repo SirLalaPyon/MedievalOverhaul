@@ -7,6 +7,8 @@
     </researchPrerequisites>
 
     <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
+
+    <designationCategory>DankPyon_RuinFurniture</designationCategory>
 </ThingDef>
 
 <!-- Ancient Base -->
@@ -20,6 +22,7 @@
     </researchPrerequisites-->
 
     <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
+    <designationCategory>DankPyon_RuinFurniture</designationCategory>
 </ThingDef>
 
 <!--Grand Statue Base-->
@@ -154,7 +157,7 @@
     <uiIconScale>0.5</uiIconScale>
     <castEdgeShadows>true</castEdgeShadows>
     <rotatable>True</rotatable>
-    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <altitudeLayer>Pawn</altitudeLayer>
 
     <stuffCategories>
         <li>Metallic</li>
@@ -164,14 +167,18 @@
     <costStuffCount>100</costStuffCount>
 
     <statBases>
-        <MaxHitPoints>150</MaxHitPoints>
+        <MaxHitPoints>800</MaxHitPoints>
         <Mass>7</Mass>
         <Beauty>100</Beauty>
         <WorkToMake>30000</WorkToMake>
         <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
     </statBases>
-
+    
+    <holdsRoof>true</holdsRoof>
     <size>(1,1)</size>
+    <recipeMaker>
+      <recipeUsers Inherit="False"/>
+    </recipeMaker>
 </ThingDef>
 
 <ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">

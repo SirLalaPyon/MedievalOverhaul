@@ -32,7 +32,7 @@
     <label>gate</label>
     <description>A reinforced gate that divides rooms. Simple gates must be manually opened, which slows people down. The amount of slowdown depends on what the gate is made of.</description>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
+      <MaxHitPoints>250</MaxHitPoints>
       <WorkToBuild>1200</WorkToBuild>
     </statBases>
     <graphicData>
@@ -408,5 +408,101 @@
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
   </ThingDef-->
+
+  <ThingDef ParentName="BuildingBase" Name="DankPyon_CastleWallBase">
+    <defName>DankPyon_CastleWall</defName>
+    <label>castle wall</label>
+    <description>An impassable high wall. Sturdy and capable of holding up a roof, but beware that due to its height  it is weak under the explosion</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Linked/CastleWall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Buildings/Linked/CastleWall_icon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+    <costStuffCount>15</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.5</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <fertility>0</fertility>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Buildings/Linked/CastleWall_blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>4</multiplier>
+      </li>
+    </damageMultipliers>
+    <designationHotKey>Misc3</designationHotKey>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+  
+   <ThingDef ParentName="DankPyon_CastleWallBase">
+    <defName>DankPyon_CastleWallEmbrasures</defName>
+    <label>castle wall embrasures</label>
+    <graphicData>
+      <texPath>Buildings/Linked/CastleWallEmbrasures</texPath>
+    </graphicData>
+    <uiIconPath>Buildings/Linked/CastleWallEmbrasures_icon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+    </statBases>
+    <costStuffCount>10</costStuffCount>
+    <fillPercent>0.85</fillPercent>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Buildings/Linked/CastleWallEmbrasures_blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+  </ThingDef>
 
 </Defs>

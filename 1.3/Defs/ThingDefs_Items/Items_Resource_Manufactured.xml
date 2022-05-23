@@ -78,7 +78,6 @@
   </ThingDef>
 
   <!--=============== Ballista Bolts ====================-->
-
   <ThingDef ParentName="MakeableShellBase">
     <defName>DankPyon_BallistaBolt</defName>
     <label>ballista bolts</label>
@@ -101,11 +100,61 @@
     </statBases>
     <techLevel>Medieval</techLevel>
     <thingCategories Inherit="False">
-			<li>Manufactured</li>
-		</thingCategories>
+		<li>Manufactured</li>
+	</thingCategories>
     <recipeMaker>
       <researchPrerequisite>DankPyon_Ballista</researchPrerequisite>
     </recipeMaker>
+  </ThingDef>
+
+  <!--=============== Stone Boulder ====================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_StoneBoulder</defName>
+    <label>stone boulder</label>
+    <description>A heavy chunk of rock, robust and round.</description>
+
+    <projectileWhenLoaded>DankPyon_Artillery_Boulder</projectileWhenLoaded>
+    <graphicData>
+      <texPath>Resources/StoneBoulder</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>20</MarketValue>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+
+    <thingCategories>
+      <li>DankPyon_TrebuchetAmmo</li>
+    </thingCategories>
+
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>DankPyon_Artillery_Boulder</defName>
+    <label>boulder</label>
+    <graphicData>
+      <texPath>Projectile/BoulderBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>33</speed>
+      <explosionRadius>2</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>DankPyon_Boulder</damageDef>
+      <damageAmountBase>80</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <preExplosionSpawnChance>0.4</preExplosionSpawnChance>
+      <preExplosionSpawnThingDef>Filth_RubbleRock</preExplosionSpawnThingDef>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>DankPyon_Explosion_Boulder</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>    
+    </projectile>
   </ThingDef>
 
   <!--=============== Plates Clean ====================-->

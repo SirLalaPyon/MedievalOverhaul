@@ -30,7 +30,7 @@
 	</Operation>
 
 	<!-- Add tags for pants-->
-	<Operation Class="PatchOperationAdd">
+	<!--Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName = "Apparel_Pants"]/apparel/tags</xpath>
 		<value>
 			<li>DankPyon_Peasant</li>
@@ -44,7 +44,7 @@
 			<li>DankPyon_HedgeKnight</li>
 			<li>DankPyon_Lord</li>
 		</value>
-	</Operation>
+	</Operation-->
 
 	<!-- Replace Long Blades research-->
 	<Operation Class="PatchOperationReplace">

@@ -6,7 +6,7 @@
     <rootMinPoints>350</rootMinPoints>
     <canGiveRoyalFavor>true</canGiveRoyalFavor>
     <expireDaysRange>4~8</expireDaysRange>
-    <!--successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">Raided_BanditCamp</successHistoryEvent-->
+    <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">Raided_BanditCamp</successHistoryEvent>
     <questNameRules>
         <rulesStrings>
             <li>questName->The [bandit] [camp]</li>
@@ -62,7 +62,7 @@
           <storeAs>sitePartDefs</storeAs>
           <storeFactionAs>siteFaction</storeFactionAs>
           <sitePartsTags>
-            <li><tag>KCSG_EnnemiesPresence</tag></li>
+            <li><tag>DankPyon_EnnemiesPresence_Brigand</tag></li>
             <li><tag>DankPyon_Small_Ruin</tag></li>
           </sitePartsTags>
           <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>

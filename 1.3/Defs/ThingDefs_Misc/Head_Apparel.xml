@@ -40,7 +40,7 @@
 			</layers>
 			<wornGraphicPath>Headgear/RedBandana/RedBandana</wornGraphicPath>
 			<tags>
-				<li>DankPyon_BanditHelmet</li>
+				<li>DankPyon_BrigandThug</li>
         <li>DankPyon_PeasantHelmet</li>
         <li>DankPyon_BillmanHelmet</li>
 			</tags>
@@ -89,7 +89,7 @@
 			</layers>
 			<wornGraphicPath>Headgear/Hood/Hood</wornGraphicPath>
 			<tags>
-				<li>DankPyon_BanditHelmet</li>
+				<li>DankPyon_BrigandThug</li>
         <li>DankPyon_PeasantHelmet</li>
         <li>DankPyon_BillmanHelmet</li>
 			</tags>
@@ -138,7 +138,7 @@
 			</layers>
 			<wornGraphicPath>Headgear/Coif/Coif</wornGraphicPath>
 			<tags>
-				<li>DankPyon_BanditHelmet</li>
+				<li>DankPyon_BrigandThug</li>
         <li>DankPyon_PeasantHelmet</li>
         <li>DankPyon_BillmanHelmet</li>
 			</tags>
@@ -188,8 +188,7 @@
 			<wornGraphicPath>Headgear/ArmingCap/ArmingCap</wornGraphicPath>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
-        <li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_BanditHelmet</li>
+        <li>DankPyon_BrigandThug</li>
         <li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
@@ -240,8 +239,7 @@
 			<wornGraphicPath>Headgear/ArmingCapFull/ArmingCapFull</wornGraphicPath>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
-				<li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_BanditHelmet</li>
+        <li>DankPyon_BrigandThug</li>
         <li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
@@ -356,6 +354,7 @@
       <wornGraphicPath>Headgear/PaddedNasal/PaddedNasal</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
+        <li>DankPyon_BrigandRaider</li>
         <li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_BillmanHelmet</li>
         <li>DankPyon_MercenaryHeavyHelmet</li>
@@ -420,6 +419,7 @@
       <wornGraphicPath>Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
+        <li>DankPyon_BrigandRaider</li>
         <li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_BillmanHelmet</li>
         <li>DankPyon_MercenaryHeavyHelmet</li>
@@ -487,6 +487,7 @@
       <wornGraphicPath>Headgear/PaddedFlatTop/PaddedFlatTop</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
+        <li>DankPyon_BrigandRaider</li>
         <li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_Billman</li>
         <li>DankPyon_MercenaryHeavy</li>
@@ -545,6 +546,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainCoif/ChainCoif</wornGraphicPath>
       <tags>
+        <li>DankPyon_BrigandRaider</li>
 				<li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_ArbalesterHelmet</li>
         <li>DankPyon_MercenaryHelmet</li>
@@ -601,6 +603,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
       <tags>
+        <li>DankPyon_BrigandRaider</li>
         <li>DankPyon_ArbalesterHelmet</li>
 				<li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHelmet</li>
@@ -657,6 +660,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainCoifFull/ChainCoifFull</wornGraphicPath>
       <tags>
+        <li>DankPyon_BrigandRaider</li>
         <li>DankPyon_ArbalesterHelmet</li>
 				<li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHelmet</li>
@@ -717,6 +721,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainNasal/ChainNasal</wornGraphicPath>
       <tags>
+        <li>DankPyon_BrigandLeader</li>
 				<li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHeavy</li>
 			</tags>
@@ -777,6 +782,8 @@
       <wornGraphicPath>Headgear/ChainNasalRed/ChainNasalRed</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
+        <li>DankPyon_BrigandRaider</li>
+        <li>DankPyon_BrigandLeader</li>
         <li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHeavy</li>
 			</tags>
@@ -836,6 +843,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainKettle/ChainKettle</wornGraphicPath>
       <tags>
+        <li>DankPyon_BrigandLeader</li>
 				<li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHeavy</li>
 			</tags>
@@ -895,6 +903,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
       <tags>
+        <li>DankPyon_BrigandLeader</li>
         <li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHelmet</li>
 			</tags>
@@ -954,6 +963,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
       <tags>
+        <li>DankPyon_BrigandLeader</li>
         <li>DankPyon_FootmanHelmet</li>
         <li>DankPyon_MercenaryHelmet</li>
 			</tags>
@@ -1610,12 +1620,12 @@
     <apparel>
        <bodyPartGroups>
         <li>FullHead</li>
-        
       </bodyPartGroups>
+
       <wornGraphicPath>Headgear/HeraldicHelm1/HeraldicHelm1</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
-        <li>DankPyon_HeraldicHelm1</li>
+        <li>DankPyon_HeraldicHelmAmboise</li>
 			</tags>
       <layers>
         <li>Overhead</li>
@@ -1640,8 +1650,8 @@
     <apparel>
       <wornGraphicPath>Headgear/HeraldicHelm2/HeraldicHelm2</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_HeraldicHelm2</li>
+      <tags Inherit="False">
+        <li>DankPyon_HeraldicHelmSoren</li>
 			</tags>
     </apparel>
   </ThingDef>
@@ -1657,10 +1667,10 @@
     </graphicData>
 
     <apparel>
-      <wornGraphicPath>Headgear/HeraldicHelm1/HeraldicHelm3</wornGraphicPath>
+      <wornGraphicPath>Headgear/HeraldicHelm3/HeraldicHelm3</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_HeraldicHelm3</li>
+      <tags Inherit="False">
+        <li>DankPyon_HeraldicHelmOswin</li>
 			</tags>
     </apparel>
   </ThingDef>
@@ -1678,8 +1688,8 @@
     <apparel>
       <wornGraphicPath>Headgear/HeraldicHelm4/HeraldicHelm4</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_HeraldicHelm4</li>
+      <tags Inherit="False">
+        <li>DankPyon_HeraldicHelmHesse</li>
 			</tags>
     </apparel>
   </ThingDef>
@@ -1808,6 +1818,67 @@
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>DankPyon_Headgear_ArmetNamed</defName>
+    <label>named armet</label>
+    <description>An ancient ornate armet masterfully smithed by the under-forges of the ancient empire. It gives great protection for one's visage and embelishes an awe inspiring grace.</description>
+    <graphicData>
+      <texPath>Headgear/ArmetNamed/ArmetNamed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <recipeUsers Inherit="False"/>
+      <skillRequirements>
+        <Crafting>16</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+
+    <statBases>
+      <MarketValue>3940</MarketValue>
+      <WorkToMake>25000</WorkToMake>
+      <MaxHitPoints>755</MaxHitPoints>
+      <DeteriorationRate>0.2</DeteriorationRate>
+      <Mass>3.5</Mass>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.04</ArmorRating_Blunt>
+      <Insulation_Cold>5</Insulation_Cold>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
+      <PainShockThreshold>0.15</PainShockThreshold>
+      <SocialImpact>0.35</SocialImpact>
+    </equippedStatOffsets>
+
+    <costList>
+      <Gold>2</Gold>
+      <Plasteel>80</Plasteel>
+    </costList>
+
+    <apparel>
+       <bodyPartGroups>
+        <li>FullHead</li>
+        
+      </bodyPartGroups>
+      <wornGraphicPath>Headgear/ArmetNamed/ArmetNamed</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <tags>
+        <li>DankPyon_ArmetNamed</li>
+			</tags>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+
+    <comps Inherit="False"/>
   </ThingDef>
   
 

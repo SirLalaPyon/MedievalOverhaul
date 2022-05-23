@@ -23,7 +23,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>55</MaxHitPoints>
+			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
 			<Mass>3</Mass>
 			<Flammability>1.0</Flammability>
@@ -34,6 +34,7 @@
 		<costStuffCount>25</costStuffCount>
 		<pathCost>30</pathCost>
 		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
@@ -45,7 +46,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>105</MaxHitPoints>
+			<MaxHitPoints>320</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
 			<Mass>3</Mass>
 			<Flammability>1.0</Flammability>
@@ -56,6 +57,30 @@
 		<costStuffCount>55</costStuffCount>
 		<pathCost>30</pathCost>
 		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
+		<defName>DankPyon_RuinedGate</defName>
+		<label>locked gate</label>
+		<description>A locked metal gate, the only way in is to break the door.</description>
+		<graphicData>
+			<texPath>Buildings/Ruin/LockedGate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<pathCost>30</pathCost>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
@@ -91,6 +116,48 @@
 		<pathCost>30</pathCost>
 		<fillPercent>0.20</fillPercent>
 	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SculptureBase">
+    <defName>DankPyon_Ruined_AncientColumn</defName>
+    <label>ancient column</label>
+    <description>A tall pillar of ornate design.</description>
+    <graphicData>
+        <texPath>Buildings/Ruin/RuinedAncientColumn1x1</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(5,5)</drawSize>
+        <damageData>
+          <cornerTL>Damage/Corner</cornerTL>
+          <cornerTR>Damage/Corner</cornerTR>
+          <cornerBL>Damage/Corner</cornerBL>
+          <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+    </graphicData>
+    <uiIconScale>0.5</uiIconScale>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Pawn</altitudeLayer>
+
+    <stuffCategories>
+        <li>Metallic</li>
+        <li>Woody</li>
+        <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+
+    <statBases>
+        <MaxHitPoints>400</MaxHitPoints>
+        <Mass>7</Mass>
+        <Beauty>50</Beauty>
+        <WorkToMake>30000</WorkToMake>
+        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+    </statBases>
+    
+    <holdsRoof>false</holdsRoof>
+    <size>(1,1)</size>
+    <recipeMaker>
+      <recipeUsers Inherit="False"/>
+    </recipeMaker>
+</ThingDef>
 
 	<!--==================== Wooden Ruins ====================-->
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
@@ -218,7 +285,7 @@
 		<uiIconScale>0.8</uiIconScale>
 		<size>(2,2)</size>
 		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>0.7</fillPercent>
+		<fillPercent>1</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<statBases>
@@ -249,7 +316,7 @@
 		<uiIconScale>0.65</uiIconScale>
 		<size>(1,1)</size>
 		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>0.6</fillPercent>
+		<fillPercent>1</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<statBases>
@@ -280,7 +347,7 @@
 		<uiIconScale>0.65</uiIconScale>
 		<size>(1,1)</size>
 		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>0.6</fillPercent>
+		<fillPercent>1</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<statBases>
@@ -518,9 +585,7 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
-					<li>DankPyon_Medieval_Knight</li>
-					<li>DankPyon_Medieval_Arbalester</li>
-					<li>DankPyon_Medieval_Bowman</li>
+					<li>Rat</li>
 				</enemysToSpawn>
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
@@ -869,7 +934,7 @@
         
         <size>(2,2)</size>
         <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
+            <MaxHitPoints>320</MaxHitPoints>
             <Flammability>0</Flammability>
             <Beauty>-20</Beauty>
             <WorkToBuild>12000</WorkToBuild>
@@ -880,9 +945,37 @@
         </stuffCategories>
         <costStuffCount>200</costStuffCount>
         
-        <fillPercent>0.50</fillPercent>
+        <fillPercent>1</fillPercent>
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<passability>Impassable</passability>
     </ThingDef>
+
+	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
+		<defName>DankPyon_StoneDebrisSmall</defName>
+		<label>stone debris small</label>
+		<description>A collapsed chunk of stone bricks, resembling of old ruins and dungeons.\n\n It still contains useful resources which you can acquire by deconstructing it.</description>
+		<graphicData>
+			<texPath>Buildings/Ruin/SmallStoneDebris</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawRotated>false</drawRotated>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Beauty>-20</Beauty>
+			<Mass>10</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>1</fillPercent>
+		<passability>Impassable</passability>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+	</ThingDef>
 
 
 	

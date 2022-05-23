@@ -367,7 +367,7 @@
     </ThingDef>
 	
   <!-- ===== Ale Fermenter ===== -->
-	<!--ThingDef ParentName="DankPyon_ItemProcessorBase">
+	<ThingDef ParentName="DankPyon_ItemProcessorBase">
     <defName>DankPyon_RusticFermentingBarrel</defName>
     <label>rustic fermenting barrel</label>
     <description>A barrel for fermenting raw wort into ale. An alcoholic with a fruity, bitter, and rich taste.</description>
@@ -439,6 +439,6 @@
     <researchPrerequisites>
       <li>Brewing</li>
     </researchPrerequisites>
-  </ThingDef-->
+  </ThingDef>
 
 </Defs>

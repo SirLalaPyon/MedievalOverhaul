@@ -86,7 +86,7 @@
             <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>MedievalBasic</li>
+                    <li>DankPyon_RoundShield</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -147,7 +147,7 @@
             <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>MedievalBasic</li>
+                    <li>DankPyon_ShieldKite</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -208,7 +208,7 @@
             <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>MedievalDecent</li>
+                    <li>DankPyon_ShieldHeater</li>
                 </shieldTags>
                 <useDeflectMetalEffect>true</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -240,6 +240,225 @@
                 </offHandHoldOffset>
             </li>
         </comps>
+    </ThingDef>
+
+    <!-- Cant make the above as a parent because for some reason it inherits the offhand graphic data-->
+    <ThingDef ParentName="DankPyon_BaseShield" Name="DankPyon_ShieldHeaterBase" Abstract="True">
+        <label>heater shield</label>
+        <description>A light triangular wooden shield.</description>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>60</costStuffCount>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Flammability>1</Flammability>
+            <StuffEffectMultiplierArmor>0.44</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>4</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ShieldHeaterBase">
+        <defName>DankPyon_ShieldHeater_Amboise</defName>
+        <label>heater shield (Amboise)</label>
+        <graphicData>
+            <texPath>Apparel/Utility/HeaterAmboise/HeaterAmboise</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags Inherit="False">
+                    <li>DankPyon_ShieldHeater_Amboise</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <offHandGraphicData Inherit="False">
+                    <texPath>Apparel/Utility/HeaterAmboise/HeaterAmboise</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.5</drawSize>
+                </offHandGraphicData>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.05, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.05, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <recipeMaker>
+            <recipeUsers Inherit="False"/>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ShieldHeaterBase">
+        <defName>DankPyon_ShieldHeater_Soren</defName>
+        <label>heater shield (Soren)</label>
+        <graphicData>
+            <texPath>Apparel/Utility/HeaterSoren/HeaterSoren</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags Inherit="False">
+                    <li>DankPyon_ShieldHeater_Soren</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <offHandGraphicData>
+                    <texPath>Apparel/Utility/HeaterSoren/HeaterSoren</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.5</drawSize>
+                </offHandGraphicData>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.05, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.05, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <recipeMaker>
+            <recipeUsers Inherit="False"/>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ShieldHeaterBase">
+        <defName>DankPyon_ShieldHeater_Oswin</defName>
+        <label>heater shield (Oswin)</label>
+        <graphicData>
+            <texPath>Apparel/Utility/HeaterOswin/HeaterOswin</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags Inherit="False">
+                    <li>DankPyon_ShieldHeater_Oswin</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <offHandGraphicData>
+                    <texPath>Apparel/Utility/HeaterOswin/HeaterOswin</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.5</drawSize>
+                </offHandGraphicData>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.05, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.05, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <recipeMaker>
+            <recipeUsers Inherit="False"/>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ShieldHeaterBase">
+        <defName>DankPyon_ShieldHeater_Hesse</defName>
+        <label>heater shield (Hesse)</label>
+        <graphicData>
+            <texPath>Apparel/Utility/HeaterHesse/HeaterHesse</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags Inherit="False">
+                    <li>DankPyon_ShieldHeater_Hesse</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <offHandGraphicData>
+                    <texPath>Apparel/Utility/HeaterHesse/HeaterHesse</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.5</drawSize>
+                </offHandGraphicData>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.05, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.05, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <recipeMaker>
+            <recipeUsers Inherit="False"/>
+        </recipeMaker>
     </ThingDef>
 
 </Defs>

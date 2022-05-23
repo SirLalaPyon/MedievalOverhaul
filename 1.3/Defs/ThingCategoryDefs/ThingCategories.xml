@@ -73,4 +73,11 @@
         <parent>Buildings</parent>
         <iconPath>UI/LootIcon</iconPath>
     </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_TrebuchetAmmo</defName>
+        <label>trebuchet ammo</label>
+        <parent>Manufactured</parent>
+        <iconPath>Overlays/StoneBoulder_Icon</iconPath>
+    </ThingCategoryDef>
 </Defs>

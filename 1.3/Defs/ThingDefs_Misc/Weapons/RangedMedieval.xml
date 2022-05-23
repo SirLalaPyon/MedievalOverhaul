@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- ======================================================== -->
-
+  <!-- ============================== Crossbows ========================== -->
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>DankPyon_Crossbow</defName>
     <label>crossbow</label>
@@ -36,7 +35,7 @@
       <li>RangedHeavy</li>
     </weaponClasses>
     <recipeMaker>
-      <recipeUsers>
+      <recipeUsers Inherit="False">
         <li>DankPyon_Workbench</li>
       </recipeUsers>
       <researchPrerequisite>DankPyon_Crossbow</researchPrerequisite>
@@ -118,7 +117,7 @@
       <li>RangedHeavy</li>
     </weaponClasses>
     <recipeMaker>
-      <recipeUsers>
+      <recipeUsers Inherit="False">
         <li>DankPyon_Workbench</li>
       </recipeUsers>
       <researchPrerequisite>DankPyon_HeavyCrossbow</researchPrerequisite>

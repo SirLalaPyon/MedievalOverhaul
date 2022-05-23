@@ -51,7 +51,7 @@
             </bodyPartGroups>
             <wornGraphicPath>Apparel/ChainArmor/Chain_Mail</wornGraphicPath>
             <tags>
-				<li>DankPyon_Bandit</li>
+				<li>DankPyon_BrigandRaider</li>
                 <li>DankPyon_Mercenary</li>
 				<li>DankPyon_MercenaryHeavy</li>
 				<li>DankPyon_Archer</li>
@@ -123,6 +123,8 @@
             </bodyPartGroups>
             <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_Pad</wornGraphicPath>
             <tags>
+                <li>DankPyon_BrigandRaider</li>
+                <li>DankPyon_BrigandLeader</li>
                 <li>DankPyon_Mercenary</li>
 				<li>DankPyon_Archer</li>
                 <li>DankPyon_Footman</li>
@@ -191,7 +193,7 @@
             <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic1</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
-                <li>DankPyon_HeraldicChainMail1</li>
+                <li>DankPyon_HeraldicChainMailAmboise</li>
             </tags>
             <layers>
                 <li>Middle</li>
@@ -216,7 +218,7 @@
             <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic2</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags Inherit="False">
-                <li>DankPyon_HeraldicChainMail2</li>
+                <li>DankPyon_HeraldicChainMailSoren</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -233,7 +235,7 @@
             <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic3</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags Inherit="False">
-                <li>DankPyon_HeraldicChainMail2</li>
+                <li>DankPyon_HeraldicChainMailOswin</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -250,7 +252,7 @@
             <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic4</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags Inherit="False">
-                <li>DankPyon_HeraldicChainMail2</li>
+                <li>DankPyon_HeraldicChainMailHesse</li>
             </tags>
         </apparel>
     </ThingDef>

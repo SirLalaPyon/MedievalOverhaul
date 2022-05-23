@@ -596,63 +596,6 @@
     </researchPrerequisites>
 
 	</ThingDef>
-	
-	<!--ThingDef ParentName="BuildingBase">
-    <defName>DankPyon_RusticFermentingBarrel</defName>
-    <label>rustic fermenting barrel</label>
-    <description>A barrel for fermenting raw wort into ale</description>
-    <thingClass>Building_FermentingBarrel</thingClass>
-    <graphicData>
-      <texPath>Production/RusticFermentingBarrel</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-	  <drawSize>1.5,1.5</drawSize>
-      <damageData>
-        <rect>(0.05,0.1,0.9,0.9)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(0.75, 0.35, 0.33)</volume>
-      </shadowData>
-    </graphicData>
-	  <uiIconPath>Production/RusticFermentingBarrel_MenuIcon</uiIconPath>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.45</fillPercent>
-    <pathCost>42</pathCost>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
-    <statBases>
-      <WorkToBuild>600</WorkToBuild>
-      <Mass>10</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <costList>
-      <DankPyon_IronIngot>10</DankPyon_IronIngot>
-      <WoodLog>30</WoodLog>
-    </costList>
-    <comps>
-      <li Class="CompProperties_TemperatureRuinable">
-        <minSafeTemperature>-1</minSafeTemperature>
-        <maxSafeTemperature>32</maxSafeTemperature>
-        <progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
-      </li>
-    </comps>
-    <tickerType>Rare</tickerType>
-    <rotatable>true</rotatable>
-    <designationCategory>Production</designationCategory>
-    <constructEffect>ConstructWood</constructEffect>
-    <building>
-      <buildingTags>
-        <li>Production</li>
-      </buildingTags>
-      <destroySound>BuildingDestroyed_Wood_Small</destroySound>
-    </building>
-    <researchPrerequisites>
-      <li>Brewing</li>
-    </researchPrerequisites>
-  </ThingDef-->
 
   <!--ThingDef ParentName="BenchBase">
     <defName>DankPyon_Dishwasher</defName>

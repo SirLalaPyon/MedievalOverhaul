@@ -1035,7 +1035,7 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality" Name="DankPyon_PikeBase">
     <defName>DankPyon_MeleeWeapon_Pike</defName>
     <label>Pike</label>
     <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.</description>
@@ -1108,6 +1108,94 @@
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_PikeBase">
+    <defName>DankPyon_MeleeWeapon_PikeAmboise</defName>
+    <label>pike (Amboise)</label>
+    <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline. \n\n This pike carries the colors of house Amboise.</description>
+    <graphicData>
+      <texPath>WeaponMelee/Polearms/StandardAmboise</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <WoodLog>55</WoodLog>
+      <Cloth>50</Cloth>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>DankPyon_PikeAmboise</li>
+    </weaponTags>
+	  <recipeMaker>
+      <recipeUsers Inherit="False"/>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_PikeBase">
+    <defName>DankPyon_MeleeWeapon_PikeSoren</defName>
+    <label>pike (Soren)</label>
+    <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline. \n\n This pike carries the colors of house Soren.</description>
+    <graphicData>
+      <texPath>WeaponMelee/Polearms/StandardSoren</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <WoodLog>55</WoodLog>
+      <Cloth>50</Cloth>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>DankPyon_PikeSoren</li>
+    </weaponTags>
+	  <recipeMaker>
+      <recipeUsers Inherit="False"/>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_PikeBase">
+    <defName>DankPyon_MeleeWeapon_PikeOswin</defName>
+    <label>pike (Oswin)</label>
+    <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline. \n\n This pike carries the colors of house Oswin.</description>
+    <graphicData>
+      <texPath>WeaponMelee/Polearms/StandardOswin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <WoodLog>55</WoodLog>
+      <Cloth>50</Cloth>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>DankPyon_PikeOswin</li>
+    </weaponTags>
+	  <recipeMaker>
+      <recipeUsers Inherit="False"/>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_PikeBase">
+    <defName>DankPyon_MeleeWeapon_PikeHesse</defName>
+    <label>pike (Hesse)</label>
+    <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline. \n\n This pike carries the colors of house Hesse.</description>
+    <graphicData>
+      <texPath>WeaponMelee/Polearms/StandardHesse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	    <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <WoodLog>55</WoodLog>
+      <Cloth>50</Cloth>
+    </costList>
+    <weaponTags Inherit="False">
+      <li>DankPyon_PikeHesse</li>
+    </weaponTags>
+	  <recipeMaker>
+      <recipeUsers Inherit="False"/>
     </recipeMaker>
   </ThingDef>
   
@@ -2754,7 +2842,7 @@
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
-    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedAngleOffset>-45</equippedAngleOffset>
 
     <statBases>
         <MaxHitPoints>300</MaxHitPoints>

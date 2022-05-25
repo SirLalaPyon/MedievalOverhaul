@@ -12,29 +12,16 @@
     </tags>
   </SitePartDef>
 
+  <!-- Big Ruin -->
   <SitePartDef>
-    <defName>DankPyon_EnnemiesPresence_Brigand</defName>
-    <label>brigand gathering</label>
-    <description>Brigands are present in this ruin.</description>
-    <workerClass>SitePartWorker_Ambush</workerClass>
-    <siteTexture>WorldObjects/MedievalSettlement</siteTexture>
+    <defName>DankPyon_Big_Snake_Ruin</defName>
+    <label>snake infested ruin</label>
+    <description>A large snake infested ruin.</description>
+    <siteTexture>WorldObjects/Ruins</siteTexture>
     <expandingIconTexture>WorldObjects/Ruins</expandingIconTexture>
     <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
-    <wantsThreatPoints>true</wantsThreatPoints>
     <tags>
-      <li>DankPyon_EnnemiesPresence_Brigand</li>
+      <li>DankPyon_Big_Snake_Ruin</li>
     </tags>
   </SitePartDef>
-
-  <GenStepDef>
-    <defName>DankPyon_EnnemiesPresence_Brigand</defName>
-    <linkWithSite>DankPyon_EnnemiesPresence_Brigand</linkWithSite>
-    <order>400</order>
-    <genStep Class="KCSG.GenStep_EnnemiesPresence">
-      <forcedfaction>DankPyon_BrigandFaction</forcedfaction>
-      <spawnOnEdge>false</spawnOnEdge>
-      <defaultPointsRange>300~500</defaultPointsRange> <!-- Settlement alike -->
-      <pointMultiplier>1.0</pointMultiplier>
-    </genStep>
-  </GenStepDef>
 </Defs>

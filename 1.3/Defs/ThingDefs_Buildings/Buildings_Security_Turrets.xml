@@ -80,7 +80,7 @@
       <turretGunDef>DankPyon_Gun_BallistaTurret</turretGunDef>
       <turretBurstCooldownTime>5</turretBurstCooldownTime>
       <turretBurstWarmupTime>2</turretBurstWarmupTime>
-      <turretTopDrawSize>3</turretTopDrawSize>
+      <turretTopDrawSize>3.5</turretTopDrawSize>
       <turretTopOffset>(0, 0)</turretTopOffset>
     </building>
     <repairEffect>ConstructDirt</repairEffect>
@@ -238,7 +238,7 @@
     <label>trebuchet</label>
     <description>The trebuchet relies on powerful torsion to launch stones over a great distance and with such power to destroy walls. This makes the trebuchet a fearsome siege weapon capable of ravaging defenses; where siege attackers used to climb palisades under enemy missiles, they can now create openings before the battle even begins. Upon seeing the great trebuchet deployed to fields, defenders should attempt to destroy it quickly.</description>
     <comps>
-        <li Class="CompProperties_Refuelable">
+        <!--li Class="CompProperties_Refuelable">
             <fuelLabel>Stone boulder</fuelLabel>
             <fuelGizmoLabel>stone boulders</fuelGizmoLabel>
             <outOfFuelMessage>Cannot shoot: Needs stone boulders</outOfFuelMessage>
@@ -252,7 +252,7 @@
             <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
             <autoRefuelPercent>0</autoRefuelPercent>
             <fuelIconPath>Overlays/StoneBoulder_Icon</fuelIconPath>
-        </li>
+        </li-->
     </comps>
     <designationHotKey>Misc5</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -283,10 +283,10 @@
             <verbClass>Verb_Shoot</verbClass>
             <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
             <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>DankPyon_Artillery_Boulder</defaultProjectile>
             <warmupTime>4.0</warmupTime>
             <forcedMissRadius>9</forcedMissRadius>
             <requireLineOfSight>false</requireLineOfSight>
+            <isMortar>true</isMortar>
             <minRange>19</minRange>
             <range>500</range>
             <burstShotCount>1</burstShotCount>
@@ -298,6 +298,25 @@
             </targetParams>
         </li>
     </verbs>
+    <comps>
+      <li Class="CompProperties_ChangeableProjectile" />
+    </comps>
+    <building>
+        <fixedStorageSettings>
+            <filter>
+                <categories>
+                    <li>DankPyon_TrebuchetAmmo</li>
+                </categories>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings>
+            <filter>
+                <categories>
+                    <li>DankPyon_TrebuchetAmmo</li>
+                </categories>
+            </filter>
+        </defaultStorageSettings>
+    </building>
   </ThingDef>
 
 </Defs>

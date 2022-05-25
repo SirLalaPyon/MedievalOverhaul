@@ -150,6 +150,81 @@
 	</products>		
 </RecipeDef>
 
+<!-- Ammuniation: Stone Boulder --> 
+<RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
+	<defName>DankPyon_MakeBullet_StoneBoulderTarred</defName>
+	<workAmount>200</workAmount>		
+	<label>tar stone boulder</label>
+	<jobString>Covering boulder with tar.</jobString>
+	<targetCountAdjustment>5</targetCountAdjustment>	
+    <researchPrerequisites>
+        <li>DankPyon_Tar</li>
+    </researchPrerequisites>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+            <li>DankPyon_StoneBoulder</li>
+        </thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+    <li>
+			<filter>
+				<thingDefs>
+            <li>DankPyon_Tar</li>
+        </thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+			<thingDefs>
+          <li>DankPyon_StoneBoulder</li>
+      </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_StoneBoulderTarred>1</DankPyon_StoneBoulderTarred>
+	</products>		
+</RecipeDef>
+
+<RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
+	<defName>DankPyon_MakeBullet_StoneBoulderTarredBulk</defName>
+	<workAmount>1000</workAmount>		
+	<label>tar stone boulder x5</label>
+	<jobString>Covering 5 boulders with tar.</jobString>
+	<targetCountAdjustment>5</targetCountAdjustment>	
+    <researchPrerequisites>
+        <li>DankPyon_Tar</li>
+    </researchPrerequisites>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+            <li>DankPyon_StoneBoulder</li>
+        </thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+     <li>
+			<filter>
+				<thingDefs>
+            <li>DankPyon_Tar</li>
+        </thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+			<thingDefs>
+          <li>DankPyon_StoneBoulder</li>
+      </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_StoneBoulderTarred>5</DankPyon_StoneBoulderTarred>
+	</products>		
+</RecipeDef>
+
  <!-- Make Component Basic  --> 
  <RecipeDef>
     <defName>DankPyon_Make_ComponentBasic</defName>
@@ -194,7 +269,7 @@
   <!-- Make Component Basic Bulk --> 
  <RecipeDef>
     <defName>DankPyon_Make_ComponentBasicBulk</defName>
-    <label>(Bulk x4) Make medieval component</label>
+    <label>make medieval component x4</label>
     <description>Make 4 basic components.</description>
     <jobString>Making 4 basic components.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

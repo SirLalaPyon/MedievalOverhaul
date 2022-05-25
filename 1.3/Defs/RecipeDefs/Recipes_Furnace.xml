@@ -1,78 +1,140 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
- <!-- Ingots: Base Class --> 
-	<RecipeDef Name="DankPyon_SmelterBase" Abstract="True">
-		<description>Smelts raw ores into usuable ingots.</description>
-		<workSpeedStat>SmeltingSpeed</workSpeedStat>
-		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.25</workSkillLearnFactor>
-		<effectWorking>Smelt</effectWorking>
-		<allowMixingIngredients>false</allowMixingIngredients>	
-		<soundWorking>Recipe_Smelt</soundWorking>
-			<recipeUsers>
-				<li>DankPyon_Furnace</li>
-				<li>ElectricSmelter</li>
-			</recipeUsers>	
-	</RecipeDef>
-  
- <!-- Coal --> 
- 	<RecipeDef>
-		<defName>DankPyon_MakeChunk_Coal</defName>
-		<label>make charcoal from wood</label>
-		<description>Make a batch of coal by burning wood.</description>
-		<jobString>Burning wood into coal.</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>2000</workAmount>
-		<targetCountAdjustment>50</targetCountAdjustment>	
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
-				</filter>
-				<count>50</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>WoodLog</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<DankPyon_Coal>100</DankPyon_Coal>
-		</products>
-	</RecipeDef>
-  
- <!-- Iron Ingots --> 
- 	<RecipeDef ParentName="DankPyon_SmelterBase">
-		<defName>DankPyon_MakeIngots_Iron</defName>
-		<workAmount>100</workAmount>		
-		<label>Smelt an iron ore into an ingot</label>
-		<jobString>Smelting an iron ore into 1 ingot.</jobString>
-		<targetCountAdjustment>1</targetCountAdjustment>	
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>DankPyon_IronOre</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_IronOre</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-    <products>
-      <DankPyon_IronIngot>1</DankPyon_IronIngot>
-    </products>		
-  </RecipeDef> 
+<!-- Tar --> 
+<RecipeDef Name="DankPyon_TarBase">
+	<defName>DankPyon_Make_Tar</defName>
+	<label>make tar from wood x5</label>
+	<description>Make a batch of tar by burning wood.</description>
+	<jobString>Burning 10 wood into 5 tar.</jobString>
+	<effectWorking>Cremate</effectWorking>
+	<soundWorking>Recipe_Cremate</soundWorking>
+	<workAmount>450</workAmount>
+	<targetCountAdjustment>5</targetCountAdjustment>	
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>WoodLog</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_Tar>5</DankPyon_Tar>
+	</products>
+	<recipeUsers>
+		<li>Campfire</li>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+		<li>DankPyon_RusticCookingTable</li>
+		<li>DankPyon_Furnace</li>
+	</recipeUsers>
+	<researchPrerequisites>
+		<li>DankPyon_Tar</li>
+	</researchPrerequisites>
+</RecipeDef>
+
+<RecipeDef ParentName="DankPyon_TarBase">
+	<defName>DankPyon_Make_TarBulk</defName>
+	<label>make tar from wood x25</label>
+	<description>Make a batch of tar by burning wood.</description>
+	<jobString>Burning 50 wood into 25 tar.</jobString>
+	<workAmount>2000</workAmount>
+	<targetCountAdjustment>25</targetCountAdjustment>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
+	</ingredients>
+	<products>
+		<DankPyon_Tar>25</DankPyon_Tar>
+	</products>
+</RecipeDef>	
+
+<!-- Coal --> 
+<RecipeDef>
+	<defName>DankPyon_MakeChunk_Coal</defName>
+	<label>make charcoal from wood</label>
+	<description>Make a batch of coal by burning wood.</description>
+	<jobString>Burning wood into coal.</jobString>
+	<effectWorking>Cremate</effectWorking>
+	<soundWorking>Recipe_Cremate</soundWorking>
+	<workAmount>2000</workAmount>
+	<targetCountAdjustment>50</targetCountAdjustment>	
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>WoodLog</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_Coal>100</DankPyon_Coal>
+	</products>
+</RecipeDef>
+
+<!-- Ingots: Base Class --> 
+<RecipeDef Name="DankPyon_SmelterBase" Abstract="True">
+	<description>Smelts raw ores into usuable ingots.</description>
+	<workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<workSkillLearnFactor>0.25</workSkillLearnFactor>
+	<effectWorking>Smelt</effectWorking>
+	<allowMixingIngredients>false</allowMixingIngredients>	
+	<soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>DankPyon_Furnace</li>
+			<li>ElectricSmelter</li>
+		</recipeUsers>	
+</RecipeDef>
+
+<!-- Iron Ingots --> 
+<RecipeDef ParentName="DankPyon_SmelterBase">
+	<defName>DankPyon_MakeIngots_Iron</defName>
+	<workAmount>100</workAmount>		
+	<label>Smelt an iron ore into an ingot</label>
+	<jobString>Smelting an iron ore into 1 ingot.</jobString>
+	<targetCountAdjustment>1</targetCountAdjustment>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_IronOre</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_IronOre</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_IronIngot>1</DankPyon_IronIngot>
+	</products>		
+</RecipeDef> 
 
   <RecipeDef ParentName="DankPyon_SmelterBase">
 	<defName>DankPyon_MakeIngots_IronBulk</defName>

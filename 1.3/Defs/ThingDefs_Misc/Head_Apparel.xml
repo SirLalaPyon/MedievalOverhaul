@@ -266,7 +266,7 @@
       <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
     </recipeMaker>
 
-		<costStuffCount>35</costStuffCount>
+		<costStuffCount>55</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
@@ -281,6 +281,7 @@
 		</statBases>
     <equippedStatOffsets>
       <PainShockThreshold>0.10</PainShockThreshold>
+      <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
 
 		<apparel>
@@ -1036,6 +1037,149 @@
     </apparel>
   </ThingDef>
 
+<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_ZweihanderHelmBase">
+    <defName>DankPyon_Headgear_ZweihanderHelm</defName>
+    <label>zweihander helm</label>
+    <description>A sturdy metal helmet adorned with a flamboyant colored large baggy feathered hat to display one's status.</description>
+    <graphicData>
+        <texPath>Headgear/ZweihanderHelmP/ZweihanderHelmP</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+
+    <recipeMaker>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+            <li>DankPyon_Anvil</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+    </recipeMaker>
+
+    <statBases>
+        <WorkToMake>18000</WorkToMake>
+        <MaxHitPoints>180</MaxHitPoints>
+        <Mass>3.5</Mass>
+        <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+        <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+        <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+        <EquipDelay>8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
+        <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+
+    <stuffCategories>
+        <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+
+    <costList>
+        <Cloth>55</Cloth>
+    </costList>
+
+    <apparel>
+       <bodyPartGroups>
+            <li>FullHead</li>
+        </bodyPartGroups>
+        <wornGraphicPath>Headgear/ZweihanderHelmP/ZweihanderHelmP</wornGraphicPath>
+        <useWornGraphicMask>true</useWornGraphicMask>
+        <tags>
+            <li>DankPyon_ZweihanderHelm</li>
+        </tags>
+        <layers>
+            <li>Overhead</li>
+        </layers>
+        <defaultOutfitTags>
+            <li>Soldier</li>
+        </defaultOutfitTags>
+    </apparel>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
+    <defName>DankPyon_Headgear_ZweihanderHelmAmboise</defName>
+    <label>zweihander helm (Amboise)</label>
+    <graphicData>
+        <texPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+        <recipeUsers Inherit="False"/>
+    </recipeMaker>
+
+    <apparel>
+        <wornGraphicPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</wornGraphicPath>
+        <tags>
+            <li>DankPyon_ZweihanderHelmAmboise</li>
+        </tags>
+    </apparel>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
+    <defName>DankPyon_Headgear_ZweihanderHelmSoren</defName>
+    <label>zweihander helm (Soren)</label>
+    <graphicData>
+        <texPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+        <recipeUsers Inherit="False"/>
+    </recipeMaker>
+
+    <apparel>
+        <wornGraphicPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</wornGraphicPath>
+        <tags>
+            <li>DankPyon_ZweihanderHelmSoren</li>
+        </tags>
+    </apparel>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
+    <defName>DankPyon_Headgear_ZweihanderHelmOswin</defName>
+    <label>zweihander helm (Oswin)</label>
+    <graphicData>
+        <texPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+        <recipeUsers Inherit="False"/>
+    </recipeMaker>
+
+    <apparel>
+        <wornGraphicPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</wornGraphicPath>
+        <tags>
+            <li>DankPyon_ZweihanderHelmOswin</li>
+        </tags>
+    </apparel>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
+    <defName>DankPyon_Headgear_ZweihanderHelmHesse</defName>
+    <label>zweihander helm (Hesse)</label>
+    <graphicData>
+        <texPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <recipeMaker>
+        <recipeUsers Inherit="False"/>
+    </recipeMaker>
+
+    <apparel>
+        <wornGraphicPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</wornGraphicPath>
+        <tags>
+            <li>DankPyon_ZweihanderHelmHesse</li>
+        </tags>
+    </apparel>
+</ThingDef>
   <!-- ==================== Plate Helmets ==================== -->
   <!--ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_VisoredKettleHelmet</defName>

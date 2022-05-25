@@ -66,6 +66,7 @@
       <li>DankPyon_Caravan_Medieval_ArtPatron</li>
       <li>DankPyon_Caravan_Medieval_Armorsmith</li>
       <li>DankPyon_Caravan_Medieval_Weaponsmith</li>
+      <li>DankPyon_Caravan_Medieval_RuinsMerchant</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>DankPyon_Visitor_Medieval_Standard</li>
@@ -175,7 +176,8 @@
             <DankPyon_StandardAmboise>30</DankPyon_StandardAmboise>
             <DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
             <DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
-            <DankPyon_KnightAmboise>20</DankPyon_KnightAmboise>
+            <DankPyon_ZweihanderAmboise>25</DankPyon_ZweihanderAmboise>
+            <DankPyon_KnightAmboise>30</DankPyon_KnightAmboise>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
         </li>
@@ -196,6 +198,7 @@
             <DankPyon_FootmanAmboise>40</DankPyon_FootmanAmboise>
             <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
             <DankPyon_StandardAmboise>30</DankPyon_StandardAmboise>
+            <DankPyon_ZweihanderAmboise>30</DankPyon_ZweihanderAmboise>
             <DankPyon_KnightAmboise>25</DankPyon_KnightAmboise>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -230,7 +233,8 @@
             <DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
             <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
-            <DankPyon_KnightAmboise>10</DankPyon_KnightAmboise>
+            <DankPyon_ZweihanderAmboise>10</DankPyon_ZweihanderAmboise>
+            <DankPyon_KnightAmboise>5</DankPyon_KnightAmboise>
           </guards>
         </li>
         <li>
@@ -241,6 +245,7 @@
             <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
             <DankPyon_StandardAmboise>20</DankPyon_StandardAmboise>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderAmboise>25</DankPyon_ZweihanderAmboise>
             <DankPyon_KnightAmboise>25</DankPyon_KnightAmboise>
             <DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
           </options>
@@ -277,6 +282,7 @@
             <DankPyon_StandardSoren>30</DankPyon_StandardSoren>
             <DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
             <DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderSoren>25</DankPyon_ZweihanderSoren>
             <DankPyon_KnightSoren>20</DankPyon_KnightSoren>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -298,6 +304,7 @@
             <DankPyon_FootmanSoren>40</DankPyon_FootmanSoren>
             <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
             <DankPyon_StandardSoren>30</DankPyon_StandardSoren>
+            <DankPyon_ZweihanderSoren>25</DankPyon_ZweihanderSoren>
             <DankPyon_KnightSoren>25</DankPyon_KnightSoren>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -310,6 +317,7 @@
             <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
             <DankPyon_StandardSoren>30</DankPyon_StandardSoren>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderSoren>10</DankPyon_ZweihanderSoren>
             <DankPyon_KnightSoren>10</DankPyon_KnightSoren>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -332,6 +340,7 @@
             <DankPyon_StandardSoren>10</DankPyon_StandardSoren>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
             <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderSoren>10</DankPyon_ZweihanderSoren>
             <DankPyon_KnightSoren>10</DankPyon_KnightSoren>
           </guards>
         </li>
@@ -343,6 +352,7 @@
             <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
             <DankPyon_StandardSoren>20</DankPyon_StandardSoren>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderSoren>25</DankPyon_ZweihanderSoren>
             <DankPyon_KnightSoren>25</DankPyon_KnightSoren>
             <DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
           </options>
@@ -379,6 +389,7 @@
             <DankPyon_StandardOswin>30</DankPyon_StandardOswin>
             <DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
             <DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderOswin>25</DankPyon_ZweihanderOswin>
             <DankPyon_KnightOswin>20</DankPyon_KnightOswin>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -400,6 +411,7 @@
             <DankPyon_FootmanOswin>40</DankPyon_FootmanOswin>
             <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
             <DankPyon_StandardOswin>30</DankPyon_StandardOswin>
+            <DankPyon_ZweihanderOswin>25</DankPyon_ZweihanderOswin>
             <DankPyon_KnightOswin>25</DankPyon_KnightOswin>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -412,6 +424,7 @@
             <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
             <DankPyon_StandardOswin>30</DankPyon_StandardOswin>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderOswin>10</DankPyon_ZweihanderOswin>
             <DankPyon_KnightOswin>10</DankPyon_KnightOswin>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -434,6 +447,7 @@
             <DankPyon_StandardOswin>10</DankPyon_StandardOswin>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
             <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderOswin>10</DankPyon_ZweihanderOswin>
             <DankPyon_KnightOswin>10</DankPyon_KnightOswin>
           </guards>
         </li>
@@ -445,6 +459,7 @@
             <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
             <DankPyon_StandardOswin>20</DankPyon_StandardOswin>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderOswin>25</DankPyon_ZweihanderOswin>
             <DankPyon_KnightOswin>25</DankPyon_KnightOswin>
             <DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
           </options>
@@ -483,6 +498,7 @@
             <DankPyon_StandardHesse>30</DankPyon_StandardHesse>
             <DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
             <DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderOswin>20</DankPyon_ZweihanderOswin>
             <DankPyon_KnightHesse>20</DankPyon_KnightHesse>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -504,6 +520,7 @@
             <DankPyon_FootmanHesse>40</DankPyon_FootmanHesse>
             <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
             <DankPyon_StandardHesse>30</DankPyon_StandardHesse>
+            <DankPyon_ZweihanderHesse>25</DankPyon_ZweihanderHesse>
             <DankPyon_KnightHesse>25</DankPyon_KnightHesse>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -516,6 +533,7 @@
             <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
             <DankPyon_StandardHesse>30</DankPyon_StandardHesse>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderHesse>15</DankPyon_ZweihanderHesse>
             <DankPyon_KnightHesse>10</DankPyon_KnightHesse>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
           </options>
@@ -538,6 +556,7 @@
             <DankPyon_StandardHesse>10</DankPyon_StandardHesse>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
             <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderHesse>10</DankPyon_ZweihanderHesse>
             <DankPyon_KnightHesse>10</DankPyon_KnightHesse>
           </guards>
         </li>
@@ -549,6 +568,7 @@
             <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
             <DankPyon_StandardHesse>20</DankPyon_StandardHesse>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderHesse>25</DankPyon_ZweihanderHesse>
             <DankPyon_KnightHesse>25</DankPyon_KnightHesse>
             <DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
           </options>

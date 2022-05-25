@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="DankPyon_RingBase" Name="DankPyon_Ruin_Ring" Abstract="True">
+        <tradeTags Inherit="False">
+			<li>DankPyon_Ruin_Rings</li>
+		</tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_Ruin_Ring">
+        <defName>DankPyon_Ring_Holding</defName>
+        <label>ring of holding</label>
+        <description>A treasure to merchants and traveling warriors alike, this ring grants increased carrying capacity for those long campaigns and trading caravans.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/RingHolding</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>550</MarketValue>
+            <WorkToMake>10500</WorkToMake>
+            <Beauty>8</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Citrine>25</DankPyon_Citrine>
+            <Gold>20</Gold>
+        </costList>
+
+        <equippedStatOffsets>
+            <CarryingCapacity>50</CarryingCapacity>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_Ruin_Ring">
+        <defName>DankPyon_Ring_Haste</defName>
+        <label>ring of haste</label>
+        <description>An enchanted ring that bestows upon the wearer additional movement speed—perfect for explorers looking to quickly cover ground and escape dangerous expeditions.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/RingHolding</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <MarketValue>550</MarketValue>
+            <WorkToMake>11200</WorkToMake>
+            <Beauty>25</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Emerald>25</DankPyon_Emerald>
+            <Gold>20</Gold>
+        </costList>
+
+        <equippedStatOffsets>
+            <MoveSpeed>0.6</MoveSpeed>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_Ruin_Ring">
+        <defName>DankPyon_Ring_Tending</defName>
+        <label>ring of tending</label>
+        <description>A healer's basic ring, slippin on this garment imbues the hands with better tending quality and while also increasing the wearer's vitality.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/RingTending</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>750</MarketValue>
+            <WorkToMake>11200</WorkToMake>
+            <Beauty>25</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Ruby>25</DankPyon_Ruby>
+            <Steel>20</Steel>
+        </costList>
+
+        <equippedStatOffsets>
+            <InjuryHealingFactor>0.1</InjuryHealingFactor>
+            <MedicalTendQuality>0.2</MedicalTendQuality>
+        </equippedStatOffsets>
+    </ThingDef>
+  
+</Defs>

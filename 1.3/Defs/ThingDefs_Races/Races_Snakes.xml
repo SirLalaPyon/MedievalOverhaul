@@ -144,7 +144,7 @@
    <ThingDef ParentName="DankPyon_LargeCobraBase">
     <defName>DankPyon_LargeCobraCave</defName>
     <label>large cobra</label>
-    <description>Larger than their cousins and more resilient, large cobras prove to be deadlier and more agressive when it hunts for its pray. Their bite injects toxic venom into the victim.</description>
+    <description>A venomous snake with a hood along its head that it rears when threatened. This giant creature dwells in caves and will not hesitate to protect its territory.</description>
     <statBases>
       <MoveSpeed>4.5</MoveSpeed>
       <MarketValue>350</MarketValue>
@@ -153,7 +153,7 @@
     </statBases>
     <uiIconScale>1.5</uiIconScale>
 
-    <comps>
+    <comps Inherit="False">
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>DankPyon_EggLargeCobraCaveFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
@@ -179,6 +179,7 @@
     <defName>DankPyon_LargeCobraCave</defName>
     <label>large cave cobra</label>
     <race>DankPyon_LargeCobraCave</race>
+    <defaultFactionType>DankPyon_SnakeCave_Faction</defaultFactionType>
     <combatPower>75</combatPower>
     <ecoSystemWeight>0.25</ecoSystemWeight>
     <lifeStages>
@@ -219,7 +220,7 @@
   <ThingDef ParentName="AnimalThingBase" Name="DankPyon_GiantConstrictorBase">
     <defName>DankPyon_GiantConstrictorForest</defName>
     <label>giant constrictor</label>
-    <description>A primadorial snake, gigantic in size and .</description>
+    <description>A primadorial snake, gigantic in size and old as the forlorn trees.</description>
     <statBases>
       <MoveSpeed>5.2</MoveSpeed>
       <MarketValue>3000</MarketValue>
@@ -349,9 +350,9 @@
   <ThingDef ParentName="DankPyon_GiantConstrictorBase">
     <defName>DankPyon_GiantConstrictorCave</defName>
     <label>giant cave constrictor</label>
-    <description>A primadorial snake, gigantic in size and .</description>
+    <description>One of the most enormous variants of snakes, this creature has a jaw capable of opening wide enough to swallow a man whole.</description>
 
-    <comps>
+    <comps Inherit="False">
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>DankPyon_EggConstrictorCaveFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
@@ -373,6 +374,7 @@
 
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>DankPyon_GiantConstrictorCave</defName>
+    <defaultFactionType>DankPyon_SnakeCave_Faction</defaultFactionType>
     <label>giant cave constrictor</label>
     <race>DankPyon_GiantConstrictorCave</race>
     <combatPower>450</combatPower>
@@ -620,13 +622,17 @@
   <ThingDef ParentName="DankPyon_LindwurmBase">
     <defName>DankPyon_LindwurmCave</defName>
     <label>cave lindwurm</label>
-    <comps>
+    <comps Inherit="False">
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>DankPyon_EggLindwurmCaveFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>60</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>1~2</eggCountRange>
+      </li>
+
+      <li>
+        <compClass>CompAttachBase</compClass>
       </li>
     </comps>
 
@@ -639,6 +645,7 @@
     <defName>DankPyon_LindwurmCave</defName>
     <label>lindwurm</label>
     <race>DankPyon_LindwurmCave</race>
+    <defaultFactionType>DankPyon_SnakeCave_Faction</defaultFactionType>
     <combatPower>700</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
     <ecoSystemWeight>1</ecoSystemWeight>

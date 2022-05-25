@@ -54,7 +54,6 @@
     </ThingDef>
     
     <!--============================ Resource rocks ===============================-->
-    
     <ThingDef ParentName="RockBase">
         <defName>DankPyon_MineableGold</defName>
         <label>gold ore</label>
@@ -260,6 +259,38 @@
         </building>
     </ThingDef>
 
+    <!-- Buildings -->
+    <ThingDef ParentName="BuildingNaturalBase">
+    <defName>DankPyon_TarPit</defName>
+    <label>tar pit</label>
+    <description>A natural source of tar. \n\nDeconstruct to harvest resources.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Natural/TarPit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
 
+    <uiIconScale>0.5</uiIconScale>
+    <altitudeLayer>Floor</altitudeLayer>
+    <rotatable>false</rotatable>
+    <destroyable>true</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <selectable>true</selectable>
+    <size>(2,2)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+    <building>
+      <isEdifice>false</isEdifice>
+      <claimable>false</claimable>
+      <deconstructible>true</deconstructible>
+    </building>
+
+    <costList>
+      <DankPyon_Tar>200</DankPyon_Tar>
+    </costList>
+  </ThingDef>
 
 </Defs> 

@@ -1294,6 +1294,231 @@
     <uiIconPath>Storage/ShelfFilledA_north</uiIconPath>
   </ThingDef>
 
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledEmerald</defName>
+    <label>emerald filled shelf</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ShelfEmerald</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Buildings/Ruin/ShelfEmerald_north</uiIconPath>
+    <costList>
+      <DankPyon_Emerald>1</DankPyon_Emerald>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledSapphire</defName>
+    <label>sapphire filled shelf</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ShelfSapphire</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Buildings/Ruin/ShelfSapphire_north</uiIconPath>
+    <costList>
+      <DankPyon_ChaliceSilver>1</DankPyon_ChaliceSilver>
+      <DankPyon_Sapphire>1</DankPyon_Sapphire>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledRuby</defName>
+    <label>ruby filled shelf</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ShelfRuby</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Buildings/Ruin/ShelfRuby_north</uiIconPath>
+    <costList>
+      <DankPyon_ChaliceGold>1</DankPyon_ChaliceGold>
+      <DankPyon_Ruby>1</DankPyon_Ruby>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledSilverware</defName>
+    <label>silverware filled shelf</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ShelfBowl</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Buildings/Ruin/ShelfBowl_north</uiIconPath>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledChaliceSilver</defName>
+    <label>silver chalice filled shelf</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Buildings/Ruin/ShelfChaliceSilver_north</uiIconPath>
+    <costList>
+      <DankPyon_ChaliceSilver>2</DankPyon_ChaliceSilver>
+      <DankPyon_Book>1</DankPyon_Book>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledChaliceGold</defName>
+    <label>gold chalice filled shelf</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Buildings/Ruin/ShelfChaliceSilver_north</uiIconPath>
+    <costList>
+      <DankPyon_ChaliceSilver>2</DankPyon_ChaliceSilver>
+      <DankPyon_BowlSilver>1</DankPyon_BowlSilver>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledWine</defName>
+    <label>wine filled shelf</label>
+    <graphicData>
+      <texPath>Storage/ShelfFilledWine</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Storage/ShelfFilledWine_north</uiIconPath>
+
+    <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Drugs</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>Drugs</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledFood</defName>
+    <label>food filled shelf</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ShelfRations</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Buildings/Ruin/ShelfRations_north</uiIconPath>
+
+    <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>FoodMeals</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>FoodMeals</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledIngot</defName>
+    <label>ingot filled shelf</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ShelfIngotIron</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Buildings/Ruin/ShelfIngotIron_north</uiIconPath>
+
+    <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+            <li>ResourcesRaw</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_ShelfBase">
+    <defName>DankPyon_ShelfFilledBook</defName>
+    <label>book filled shelf</label>
+    <graphicData>
+      <texPath>Buildings/Ruin/ShelfBook</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.75,2.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Buildings/Ruin/ShelfBook_north</uiIconPath>
+    
+    <costList>
+      <DankPyon_Book>2</DankPyon_Book>
+    </costList>
+
+    <building>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_Book</li>
+            <li>DankPyon_Book_AncientCodex</li>
+            <li>DankPyon_Book_IntoTheRuins</li>
+            <li>DankPyon_Book_TheBeginning</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <thingDefs>
+              <li>DankPyon_Book</li>
+              <li>DankPyon_Book_AncientCodex</li>
+              <li>DankPyon_Book_IntoTheRuins</li>
+              <li>DankPyon_Book_TheBeginning</li>
+            </thingDefs>
+          </filter>
+			</defaultStorageSettings>
+    </building>
+  </ThingDef>
+
   <!--ThingDef ParentName="DankPyon_StorageBase">
     <defName>DankPyon_ShelfPlates</defName>
     <label>shelf of plates</label>

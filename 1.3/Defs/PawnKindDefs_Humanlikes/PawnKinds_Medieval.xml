@@ -424,8 +424,66 @@
     </skills>
   </PawnKindDef>
 
+  <PawnKindDef Name="DankPyon_Zweihander" ParentName="DankPyon_MedievalPawnKindBase" Abstract="True">
+    <label>zweihander</label>
+    <combatPower>100</combatPower>
+    <isFighter>true</isFighter>
+    <apparelMoney>1000~1600</apparelMoney>
+    <weaponMoney>400~700</weaponMoney>
+    <weaponTags>
+      <li>DankPyon_Greatsword</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>DankPyon_Apparel_FullPlate</li>
+      <li>DankPyon_Footwear_BootsPlate</li>
+      <li>DankPyon_Handwear_GlovesPlate</li>
+    </apparelRequired>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>17~25</initialResistanceRange>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>12~18</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DankPyon_Zweihander">
+    <defName>DankPyon_ZweihanderAmboise</defName>
+    <defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+    <apparelRequired>
+      <li>DankPyon_Headgear_ZweihanderHelmAmboise</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DankPyon_Zweihander">
+    <defName>DankPyon_ZweihanderSoren</defName>
+    <defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+    <apparelRequired>
+      <li>DankPyon_Headgear_ZweihanderHelmSoren</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DankPyon_Zweihander">
+    <defName>DankPyon_ZweihanderOswin</defName>
+    <defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+    <apparelRequired>
+      <li>DankPyon_Headgear_ZweihanderHelmOswin</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DankPyon_Zweihander">
+    <defName>DankPyon_ZweihanderHesse</defName>
+    <defaultFactionType>DankPyon_NobleHouseSavage</defaultFactionType>
+    <apparelRequired>
+      <li>DankPyon_Headgear_ZweihanderHelmHesse</li>
+    </apparelRequired>
+  </PawnKindDef>
+
   <PawnKindDef Name="DankPyon_Medieval_Knight" ParentName="DankPyon_MedievalPawnKindBase" Abstract="True">
-    <defName>DankPyon_Medieval_Knight</defName>
     <label>knight</label>
     <combatPower>110</combatPower>
     <isFighter>true</isFighter>

@@ -284,6 +284,34 @@
     </prerequisites>    
   </ResearchProjectDef>
 
+  <ResearchProjectDef>
+    <defName>DankPyon_Tar</defName>
+    <label>tar</label>
+    <description>Discover how to make tar</description>
+    <baseCost>400</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>15</researchViewX>
+		<researchViewY>2.5</researchViewY>
+    <prerequisites>
+      <li>DankPyon_Alchemy</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>DankPyon_Gunpowder</defName>
+    <label>gunpowder</label>
+    <description>Discover the perfect formula in utilizing gunpowder for weapponry</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>16</researchViewX>
+		<researchViewY>2.5</researchViewY>
+    <prerequisites>
+      <li>DankPyon_Alchemy</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
   <!--=========================== Alcoholics ==============================-->
   <!--ResearchProjectDef>                                                           <==== IS IN Change_research.xml PATCHES
     <defName>DankPyon_Brewing</defName>

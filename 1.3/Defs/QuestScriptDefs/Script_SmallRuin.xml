@@ -62,15 +62,21 @@
           <storeAs>sitePartDefs</storeAs>
           <storeFactionAs>siteFaction</storeFactionAs>
           <sitePartsTags>
-            <li><tag>DankPyon_EnnemiesPresence_Brigand</tag></li>
             <li><tag>DankPyon_Small_Ruin</tag></li>
           </sitePartsTags>
           <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
         </li>
 
+        <li Class="VFECore.QuestNode_GetFaction">
+					<allowEnemy>true</allowEnemy>
+					<mustBePermanentEnemy>true</mustBePermanentEnemy>
+					<storeAs>enemyFaction</storeAs>
+					<factionDef>DankPyon_BrigandFaction</factionDef>
+				</li>
+
         <li Class="QuestNode_GetDefaultSitePartsParams">
           <tile>$siteTile</tile>
-          <faction>$siteFaction</faction>
+          <faction>$enemyFaction</faction>
           <sitePartDefs>$sitePartDefs</sitePartDefs>
           <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
         </li>

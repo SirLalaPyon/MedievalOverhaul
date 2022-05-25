@@ -9,6 +9,9 @@
         <thingCategories>
             <li>DankPyon_Loot</li>
         </thingCategories>
+        <tradeTags>
+            <li>DankPyon_Loot</li>
+        </tradeTags>
   </ThingDef>
 
     <!--==================== Books ====================-->
@@ -283,7 +286,7 @@
 	<ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_SkullBase">
         <defName>DankPyon_SkullGold</defName>
         <label>gold skull</label>
-        <description>PLACEHOLDER.</description>
+        <description>Found within the depths of ruins, the gold skull speaks of an ornate treasure held by those who walk as undead.</description>
         <graphicData>
             <texPath>Special/SkullGold</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -306,6 +309,7 @@
     <ThingDef ParentName="DankPyon_SkullBase">
         <defName>DankPyon_SkullEmerald</defName>
         <label>emerald skull</label>
+        <description>A skull formed from the materials of a rare and prestigious gemstone. Although valuable, ruin delvers should tread carefully, for such a rich treasure would not go unprotected.</description>
         <graphicData>
             <texPath>Special/SkullEmerald</texPath>
         </graphicData>
@@ -322,7 +326,7 @@
     <ThingDef ParentName="DankPyon_SkullBase">
         <defName>DankPyon_SkullSapphire</defName>
         <label>sapphire skull</label>
-        <description>PLACEHOLDER.</description>
+        <description>Glistening a blue hue, the skull of sapphire radiates with every curvature of its head. A treasure like this would surely fetch much wealth or would do well to be displayed in a great hall.</description>
         <graphicData>
             <texPath>Special/SkullSapphire</texPath>
         </graphicData>
@@ -339,7 +343,7 @@
     <ThingDef ParentName="DankPyon_SkullBase">
         <defName>DankPyon_SkullRuby</defName>
         <label>ruby skull</label>
-        <description>PLACEHOLDER.</description>
+        <description>A grand prize of valuable gemstones, the ruby skull draws the attention of every lord, warrior, explorer, and merchant alike. A collector's prized possession.</description>
         <graphicData>
             <texPath>Special/SkullRuby</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -358,7 +362,7 @@
 	<ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_DiceBase">
         <defName>DankPyon_DiceGold</defName>
         <label>golden dice</label>
-        <description>PLACEHOLDER.</description>
+        <description>A set of dice of varying valuable gemstones; although small, each die is worth more than a pretty coin.</description>
         <graphicData>
             <texPath>Special/Dice/DiceGold</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -381,7 +385,6 @@
     <ThingDef ParentName="DankPyon_DiceBase">
         <defName>DankPyon_DiceEmerald</defName>
         <label>emerald dice</label>
-        <description>PLACEHOLDER.</description>
         <graphicData>
             <texPath>Special/Dice/DiceEmerald</texPath>
         </graphicData>
@@ -398,7 +401,6 @@
     <ThingDef ParentName="DankPyon_DiceBase">
         <defName>DankPyon_DiceSapphire</defName>
         <label>sapphire dice</label>
-        <description>PLACEHOLDER.</description>
         <graphicData>
             <texPath>Special/Dice/DiceSapphire</texPath>
         </graphicData>
@@ -415,7 +417,6 @@
     <ThingDef ParentName="DankPyon_DiceBase">
         <defName>DankPyon_DiceRuby</defName>
         <label>ruby dice</label>
-        <description>PLACEHOLDER.</description>
         <graphicData>
             <texPath>Special/Dice/DiceRuby</texPath>
         </graphicData>

@@ -162,5 +162,101 @@
       <speed>60</speed>
     </projectile>
   </ThingDef>
+
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>DankPyon_Handgonne</defName>
+    <label>handgonne</label>
+    <description>War changes as the handgonnes take to the field; through powder and ignition, warriors fire hot shrapnel forward to pierce multiple targets. The long handle and heavy barrel make the weapon cumbersome to carry, but one skilled shot can turn the tides of battle in an instant.</description>
+    <graphicData>
+        <texPath>WeaponRanged/Handgonne</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.17,1.17)</drawSize>
+    </graphicData>
+    <comps>
+        <li><compClass>CompOversizedWeapon.CompOversizedWeapon</compClass></li>
+    </comps>
+    <techLevel>Medieval</techLevel>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <costList>
+        <WoodLog>20</WoodLog>
+        <DankPyon_IronIngot>65</DankPyon_IronIngot>
+    </costList>
+    <statBases>
+        <WorkToMake>12000</WorkToMake>
+        <Mass>4</Mass>
+        <AccuracyTouch>0.87</AccuracyTouch>
+        <AccuracyShort>0.83</AccuracyShort>
+        <AccuracyMedium>0.73</AccuracyMedium>
+        <AccuracyLong>0.61</AccuracyLong>
+        <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+        <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <weaponTags>
+        <li>DankPyon_Arbelest</li>
+    </weaponTags>
+    <weaponClasses>
+        <li>ShortShots</li>
+    </weaponClasses>
+    <recipeMaker>
+        <recipeUsers Inherit="False">
+            <li>DankPyon_Workbench</li>
+        </recipeUsers>
+        <researchPrerequisite>DankPyon_Gunpowder</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DankPyon_Bullet_Handgonne</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>12.9</range>
+        <soundCast>Shot_Shotgun</soundCast>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+        <li>
+            <label>stock</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+        </li>
+        <li>
+            <label>barrel</label>
+            <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+        </li>
+    </tools>
+  </ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>DankPyon_Bullet_Handgonne</defName>
+    <label>handgonne blast</label>
+    <graphicData>
+        <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+        <damageDef>Bullet</damageDef>
+        <damageAmountBase>15</damageAmountBase>
+        <stoppingPower>3</stoppingPower>
+        <armorPenetrationBase>0.10</armorPenetrationBase>
+        <speed>70</speed>
+    </projectile>
+</ThingDef>
   
 </Defs>

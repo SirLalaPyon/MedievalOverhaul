@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
    <ThingDef Abstract="True" ParentName="BuildingBase" Name="DankPyon_RuinedBuildingBase">
-    <designationCategory>DankPyon_RuinFurniture</designationCategory>
+    <!--designationCategory>DankPyon_RuinFurniture</designationCategory-->
      <building>
 		<isInert>true</isInert>
 		<ai_chillDestination>false</ai_chillDestination>

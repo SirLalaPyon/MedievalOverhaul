@@ -12,6 +12,18 @@
     </tags>
   </SitePartDef>
 
+  <SitePartDef>
+    <defName>DankPyon_Medium_Ruin</defName>
+    <label>large ruin</label>
+    <description>A large ruin.</description>
+    <siteTexture>WorldObjects/Ruins</siteTexture>
+    <expandingIconTexture>WorldObjects/Ruins</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>DankPyon_Medium_Ruin</li>
+    </tags>
+  </SitePartDef>
+
   <!-- Big Ruin -->
   <SitePartDef>
     <defName>DankPyon_Big_Snake_Ruin</defName>

@@ -53,6 +53,10 @@
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsChance>0.0</techHediffsChance>
     <initialResistanceRange>9~15</initialResistanceRange>
+
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BasePlayerPawnKind">
@@ -89,6 +93,10 @@
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsChance>0.0</techHediffsChance>
     <initialResistanceRange>9~15</initialResistanceRange>
+
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
   </PawnKindDef>
 
 </Defs>

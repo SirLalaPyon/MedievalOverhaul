@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\MedievalOverhaul.csproj": {}
+    "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\MedievalOverhaul.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\MedievalOverhaul.csproj": {
+    "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\MedievalOverhaul.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\MedievalOverhaul.csproj",
+        "projectUniqueName": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\MedievalOverhaul.csproj",
         "projectName": "MedievalOverhaul",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\MedievalOverhaul.csproj",
-        "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\obj\\",
+        "projectPath": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\MedievalOverhaul.csproj",
+        "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
+        "outputPath": "S:\\Games\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\Source\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\Vova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,14 +32,7 @@
         }
       },
       "frameworks": {
-        "net472": {
-          "dependencies": {
-            "Lib.Harmony": {
-              "target": "Package",
-              "version": "[2.2.1, )"
-            }
-          }
-        }
+        "net472": {}
       },
       "runtimes": {
         "win": {

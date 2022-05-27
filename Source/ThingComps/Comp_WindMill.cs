@@ -7,7 +7,7 @@ using Verse.Sound;
 namespace DankPyon_MedievalOverhaul
 {
     [StaticConstructorOnStartup]
-	public class CompWindMill : ThingComp
+	public class Comp_WindMill : ThingComp
 	{
 		public int updateWeatherEveryXTicks = 250;
 

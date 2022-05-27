@@ -9,10 +9,11 @@ namespace DankPyon
         public List<RulePackDef> nameMakers;
         public CompProperties_RandomName()
         {
-            this.compClass = typeof(CompRandomName);
+            compClass = typeof(Comp_RandomName);
         }
     }
-    public class CompRandomName : ThingComp
+
+    public class Comp_RandomName : ThingComp
     {
         public CompProperties_RandomName Props => base.props as CompProperties_RandomName;
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	
+
+	<StandaloneSettlementPreference_ModName>Standalone Settlement Preference</StandaloneSettlementPreference_ModName>
+	<StandaloneSettlementPreference_ResetSettings>Reset Settings</StandaloneSettlementPreference_ResetSettings>
+
+	<StandaloneSettlementPreference_Logging>Enable log messages for settlement preference</StandaloneSettlementPreference_Logging>
+	<StandaloneSettlementPreference_LoggingTooltip>Enables a few log messages for the settlement preference Harmony patch. These will appear during world creation, when factions are settling the world, and can help diagnose any issues that may be occuring.</StandaloneSettlementPreference_LoggingTooltip>
+	<StandaloneSettlementPreference_LoggingExtended>Enable additional log messages for settlement preference</StandaloneSettlementPreference_LoggingExtended>
+	<StandaloneSettlementPreference_LoggingExtendedTooltip>Enables additional log messages for the settlement preference Harmony patch. These will appear during world creation, when factions are settling the world, and can help diagnose any issues that may be occuring.\n\nThese messages will quickly fill up the log. It is recommended that only a single faction is enabled at a time when using this.</StandaloneSettlementPreference_LoggingExtendedTooltip>
+	<StandaloneSettlementPreference_EnableSettlementPreference>Enable the settlement preference Harmony patch</StandaloneSettlementPreference_EnableSettlementPreference>
+	<StandaloneSettlementPreference_EnableSettlementPreferenceTooltip>If enabled, factions that have the settlement preference mod extension will be more likely to settle in specific locations.\n\nThis can be toggled at any time, but will obviously require a new world to take effect.\n\nThis affects:</StandaloneSettlementPreference_EnableSettlementPreferenceTooltip>
+	<StandaloneSettlementPreference_Iterations>Maximum number of iterations for settlement preference</StandaloneSettlementPreference_Iterations>
+	<StandaloneSettlementPreference_IterationsTooltip>If settlement preference is unable to find a desirable tile within this number of iterations, it will revert control to RimWorld.\n\nDecreasing this may improve world generation times, while increasing it may allow for more desirable settlement locations.</StandaloneSettlementPreference_IterationsTooltip>
+
+</LanguageData>

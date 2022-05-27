@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -58,34 +62,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ButcherProperties.cs" />
-    <Compile Include="Building_Lootable.cs" />
-    <Compile Include="CompProperties_PawnSpawnerOnDestroy.cs" />
-    <Compile Include="CompRandomName.cs" />
-    <Compile Include="Comp_PawnSpawnerOnDestroy.cs" />
-    <Compile Include="DankPyon_BuildingLootableExtension.cs" />
-    <Compile Include="DankPyonDefOf.cs" />
-    <Compile Include="Tool_Melee.cs" />
-    <Compile Include="CompFireOverlaySouth.cs" />
-    <Compile Include="CompProperties_FireOverlaySouth.cs" />
-    <Compile Include="CompWindMill.cs" />
+    <Compile Include="ThingClasses\DefModExtensions\ButcherProperties.cs" />
+    <Compile Include="ThingClasses\Building_Lootable.cs" />
+    <Compile Include="ThingComps\CompProps\CompProperties_PawnSpawnerOnDestroy.cs" />
+    <Compile Include="ThingComps\Comp_RandomName.cs" />
+    <Compile Include="ThingComps\Comp_PawnSpawnerOnDestroy.cs" />
+    <Compile Include="ThingClasses\DefModExtensions\BuildingLootableExtension.cs" />
+    <Compile Include="DefOfs\DankPyonDefOf.cs" />
+    <Compile Include="Tools\Tool_Melee.cs" />
+    <Compile Include="ThingComps\Comp_FireOverlaySouth.cs" />
+    <Compile Include="ThingComps\CompProps\CompProperties_FireOverlaySouth.cs" />
+    <Compile Include="ThingComps\Comp_WindMill.cs" />
     <Compile Include="Core.cs" />
-    <Compile Include="DankPyon_AdditionalProjectileProperties.cs" />
-    <Compile Include="DankPyon_BiomeWorker_AncientForest.cs" />
-    <Compile Include="DankPyon_BiomeWorker_DarkForest.cs" />
-    <Compile Include="DankPyon_Bullet_ExplosiveProperty.cs" />
-    <Compile Include="DankPyon_DamagerWorker_ExplosionNoFlash.cs" />
-    <Compile Include="DankPyon_HediffComp_HealScars.cs" />
-    <Compile Include="DankPyon_PlantExtension.cs" />
-    <Compile Include="HarmonyInstance.cs" />
-    <Compile Include="MedievalOverhaulMod.cs" />
-    <Compile Include="Patch_FollowAndMeleeAttack.cs" />
+    <Compile Include="ThingClasses\DefModExtensions\AdditionalProjectileProperties.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_AncientForest.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_DarkForest.cs" />
+    <Compile Include="ThingClasses\Bullet_ExplosiveProperty.cs" />
+    <Compile Include="DamageWorkers\DamagerWorker_ExplosionNoFlash.cs" />
+    <Compile Include="HediffComps\HediffComp_HealScars.cs" />
+    <Compile Include="ThingClasses\DefModExtensions\PlantExtension.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Settings\MedievalOverhaulMod.cs" />
+    <Compile Include="Harmony\Patch_FollowAndMeleeAttack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Lib.Harmony">
-      <Version>2.2.1</Version>
-    </PackageReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

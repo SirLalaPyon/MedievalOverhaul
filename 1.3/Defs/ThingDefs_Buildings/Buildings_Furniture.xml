@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 
@@ -540,6 +540,9 @@
     <researchPrerequisites>
       <li>DankPyon_CandleMaking</li>
     </researchPrerequisites>
+	<modExtensions>
+		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+	</modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_BuildingBase">
@@ -653,6 +656,9 @@
       <li>DankPyon_CandleMaking</li>
     </researchPrerequisites>
     <designationCategory>DankPyon_RusticFurniture</designationCategory>
+	<modExtensions>
+		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+	</modExtensions>
   </ThingDef>
 	
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -704,7 +710,9 @@
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
-
+	<modExtensions>
+		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+	</modExtensions>
 	</ThingDef>
 
   <!--============================== Storage (Chest) ==============================-->

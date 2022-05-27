@@ -33,6 +33,22 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<visualSizeRange>8~12</visualSizeRange>
 		</plant>
+
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
+				<kindToSpawn>DankPyon_Schrat_Dark</kindToSpawn>
+				<chance>0.10</chance>
+				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
+				<faction>DankPyon_Forest_Faction</faction>
+				<mentalStateDef>Manhunter</mentalStateDef>
+				<numberToSpawn>1~1</numberToSpawn>
+				<letterLabel>Angry Schrat</letterLabel>
+				<letterDescription>An ancient shcrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
+				<letterDef>ThreatBig</letterDef>
+				<notToxicFallout>false</notToxicFallout>
+			</li>
+		</comps>
+
 		<modExtensions>
 			<li Class="DankPyon.PlantExtension">
 				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
@@ -85,6 +101,22 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<visualSizeRange>8~12</visualSizeRange>
 		</plant>
+
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
+				<kindToSpawn>DankPyon_Schrat_Dark</kindToSpawn>
+				<chance>0.10</chance>
+				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
+				<faction>DankPyon_Forest_Faction</faction>
+				<mentalStateDef>Manhunter</mentalStateDef>
+				<numberToSpawn>1~1</numberToSpawn>
+				<letterLabel>Angry Schrat</letterLabel>
+				<letterDescription>An ancient shcrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
+				<letterDef>ThreatBig</letterDef>
+				<notToxicFallout>false</notToxicFallout>
+			</li>
+		</comps>
+
 		<modExtensions>
 			<li Class="DankPyon.PlantExtension">
 				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
@@ -129,6 +161,7 @@
 			<wildClusterRadius>5</wildClusterRadius>
 			<visualSizeRange>3~5</visualSizeRange>
 		</plant>
+
 		<modExtensions>
 			<li Class="DankPyon.PlantExtension">
 				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
@@ -150,7 +183,7 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<ThingDef ParentName="DeciduousTreeBase">
+<ThingDef ParentName="DeciduousTreeBase">
     <defName>DankPyon_GreatWillow</defName>
     <label>great Willow</label>
     <description>A willow tree that has managed to live for thousands of years.</description>
@@ -179,24 +212,40 @@
 		<wildClusterRadius>5</wildClusterRadius>
 		<visualSizeRange>6~9</visualSizeRange>
     </plant>
-		<modExtensions>
-			<li Class="DankPyon.PlantExtension">
-				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
-				<firstAreaOffset>(-1, 0)</firstAreaOffset>
-				<firstArea>(3, 3)</firstArea>
-				<secondAreaOffset>(0, 3)</secondAreaOffset>
-				<secondArea>(1, 2)</secondArea>
-				<ignoredThings>
-					<li>ChunkMarble</li>
-					<li>ChunkGranite</li>
-					<li>ChunkSandstone</li>
-					<li>ChunkLimestone</li>
-				</ignoredThings>
-			</li>
-			<li Class="VanillaPlantsExpanded.DualCropExtension">
-				<secondaryOutput>DankPyon_Amber</secondaryOutput>
-				<outPutAmount>2</outPutAmount>
-			</li>
-		</modExtensions>
-  </ThingDef>
+
+	<comps>
+		<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
+			<kindToSpawn>DankPyon_Schrat_Dark</kindToSpawn>
+			<chance>0.10</chance>
+			<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
+			<faction>DankPyon_Forest_Faction</faction>
+			<mentalStateDef>Manhunter</mentalStateDef>
+			<numberToSpawn>1~1</numberToSpawn>
+			<letterLabel>Angry Schrat</letterLabel>
+			<letterDescription>An ancient shcrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
+			<letterDef>ThreatBig</letterDef>
+			<notToxicFallout>false</notToxicFallout>
+		</li>
+	</comps>
+
+	<modExtensions>
+		<li Class="DankPyon.PlantExtension">
+			<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+			<firstAreaOffset>(-1, 0)</firstAreaOffset>
+			<firstArea>(3, 3)</firstArea>
+			<secondAreaOffset>(0, 3)</secondAreaOffset>
+			<secondArea>(1, 2)</secondArea>
+			<ignoredThings>
+				<li>ChunkMarble</li>
+				<li>ChunkGranite</li>
+				<li>ChunkSandstone</li>
+				<li>ChunkLimestone</li>
+			</ignoredThings>
+		</li>
+		<li Class="VanillaPlantsExpanded.DualCropExtension">
+			<secondaryOutput>DankPyon_Amber</secondaryOutput>
+			<outPutAmount>2</outPutAmount>
+		</li>
+	</modExtensions>
+</ThingDef>
 </Defs>

@@ -2661,6 +2661,10 @@
             </nameMakers>
         </li>
     </comps>
+
+    <thingCategories>
+		    <li>DankPyon_WeaponsMeleeNamed</li>
+		</thingCategories>
 </ThingDef>
 
 <ThingDef ParentName="BaseMeleeWeapon_Sharp" Name="DankPyon_NamedWeaponPierce" Abstract="True">
@@ -2678,6 +2682,10 @@
             </nameMakers>
         </li>
     </comps>
+
+    <thingCategories>
+        <li>DankPyon_WeaponsMeleeNamed</li>
+    </thingCategories>
 </ThingDef>
 
 <ThingDef ParentName="BaseMeleeWeapon_Blunt" Name="DankPyon_NamedWeaponBlunt" Abstract="True">
@@ -2695,6 +2703,10 @@
             </nameMakers>
         </li>
     </comps>
+
+    <thingCategories>
+        <li>DankPyon_WeaponsMeleeNamed</li>
+    </thingCategories>
 </ThingDef>
 
 

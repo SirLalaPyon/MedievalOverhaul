@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- 
     <ThingCategoryDef>
         <defName>DankPyon_Condiments</defName>
         <label>condiments</label>
@@ -62,6 +61,14 @@
     </ThingCategoryDef>
 
     <ThingCategoryDef>
+        <defName>DankPyon_AlchemyIngredients</defName>
+        <label>loot</label>
+        <parent>Items</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>UI/Alchemy_Icon</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
       <defName>DankPyon_ApparelJewelry</defName>
       <label>jewelry</label>
       <parent>Apparel</parent>
@@ -79,6 +86,18 @@
         <label>trebuchet ammo</label>
         <parent>Manufactured</parent>
         <iconPath>Overlays/StoneBoulder_Icon</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_CorpsesMonsters</defName>
+        <label>monster corpses</label>
+        <parent>Corpses</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_WeaponsMeleeNamed</defName>
+        <label>named weapons</label>
+        <parent>Weapons</parent>
     </ThingCategoryDef>
     
 </Defs>

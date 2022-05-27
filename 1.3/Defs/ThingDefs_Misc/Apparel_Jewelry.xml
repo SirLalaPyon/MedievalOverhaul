@@ -202,7 +202,7 @@
 
         <costList>
             <DankPyon_Emerald>25</DankPyon_Emerald>
-            <Gold>20</Gold>
+            <Gold>2</Gold>
         </costList>
     </ThingDef>
 
@@ -222,8 +222,8 @@
         </statBases>
 
         <costList>
-            <DankPyon_Emerald>25</DankPyon_Emerald>
-            <Gold>20</Gold>
+            <DankPyon_Sapphire>25</DankPyon_Sapphire>
+            <Gold>2</Gold>
         </costList>
     </ThingDef>
 
@@ -244,7 +244,7 @@
 
         <costList>
             <DankPyon_Ruby>25</DankPyon_Ruby>
-            <Gold>20</Gold>
+            <Gold>2</Gold>
         </costList>
     </ThingDef>
 
@@ -314,7 +314,7 @@
         <label>onyx ring</label>
         <description>This ring, black as onyx itself, speaks of more incredible wealth than the average man or woman as the gem inside continues to glint despite its dark color.</description>
         <graphicData>
-            <texPath>Apparel/Jewelry/OnyxNecklace</texPath>
+            <texPath>Apparel/Jewelry/OnyxRing</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1</drawSize>
         </graphicData>
@@ -383,7 +383,7 @@
         </statBases>
 
         <costList>
-            <DankPyon_Emerald>25</DankPyon_Emerald>
+            <DankPyon_Sapphire>25</DankPyon_Sapphire>
             <Gold>2</Gold>
         </costList>
     </ThingDef>

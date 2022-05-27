@@ -786,6 +786,45 @@
     </placeWorkers>
 </ThingDef>
 
+<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+    <defName>DankPyon_AlchemyBench</defName>
+    <label>alchemy bench</label>
+    <description>A heavy wooden table, secured with a layer of thick leather. Stocked with all sorts of thingamajigs, it’s useless to uneducated mind whilst perfectly functional for an adept of forbidden arts. It’s everything an aspiring alchemist could wish for to mix ingredients and prepare oddly specific reagents.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+        <texPath>Production/AlchemyWorkbench</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+        <drawSize>(3.5,1.5)</drawSize>
+        <shadowData>
+            <volume>(2.8, 0.35, 0.59)</volume>
+            <offset>(0, 0, 0.08)</offset>
+        </shadowData>
+        <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+    </graphicData>
+
+	<costStuffCount>100</costStuffCount>
+	<stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+
+    <building>
+        <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <placeWorkers>
+        <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+
+    <researchPrerequisites>
+        <li>DankPyon_Alchemy</li>
+    </researchPrerequisites>
+</ThingDef>
+
   <ThingDef ParentName="BenchBase">
     <defName>DankPyon_AdvancedResearchBench</defName>
     <label>advanced research bench</label>

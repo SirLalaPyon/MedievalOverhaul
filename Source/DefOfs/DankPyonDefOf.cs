@@ -10,6 +10,7 @@ namespace DankPyon
         public static ThingDef DankPyon_Artillery_Trebuchet;
         public static ThingDef DankPyon_Artillery_Boulder;
         public static TerrainDef DankPyon_PlowedSoil;
+        public static DamageDef DankPyon_SchratCollapse;
     }
 
 }

@@ -81,6 +81,32 @@
     <combatLogRules>Damage_Bomb</combatLogRules>
   </DamageDef>
 
+  <DamageDef>
+    <defName>DankPyon_SchratCollapse</defName>
+    <label>schrat collapse</label>
+    <workerClass>DankPyon.DamagerWorker_ExplosionNoFlash</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been squashed to death by a schrat's trunk.</deathMessage>
+    <hediff>Crush</hediff>
+    <hediffSkin>Bruise</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <overkillPctToDestroyPart>0~0.67</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <isExplosive>true</isExplosive>
+    <minDamageToFragment>4</minDamageToFragment>
+    <defaultDamage>10</defaultDamage>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <explosionCellFleck>DustPuff</explosionCellFleck>
+    <explosionColorCenter>(1, 1, 1, 0.9)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 1, 0.6)</explosionColorEdge>
+    <soundExplosion>DankPyon_Explosion_Boulder</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+
   <!--DamageDef>
     <defName>DankPyon_Damage_Flash</defName>
     <label>flash pot</label>

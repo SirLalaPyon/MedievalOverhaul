@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="DankPyon_BaseShield">
+    <defName>DankPyon_ShieldSchrat</defName>
+    <label>living shield</label>
+    <description>A wooden shield made out of a schrat's remains. A slight pulse can be felt when holding the shield.</description>
+    <graphicData>
+        <texPath>Apparel/Utility/HeaterSchrat/HeaterSchrat</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>0.75</drawSize>
+    </graphicData>
+    <costList>
+        <DankPyon_AncientWood>1</DankPyon_AncientWood>
+        <DankPyon_GlowingResin>1</DankPyon_GlowingResin>
+    </costList>
+    <costStuffCount>60</costStuffCount>
+    <statBases>
+        <MaxHitPoints>120</MaxHitPoints>
+        <Flammability>1</Flammability>
+        <ArmorRating_Sharp>0.3552</ArmorRating_Sharp>
+        <ArmorRating_Blunt>0.3052</ArmorRating_Blunt>
+        <Insulation_Cold>1</Insulation_Cold>
+        <ArmorRating_Heat>0.3552</ArmorRating_Heat>
+        <WorkToMake>14000</WorkToMake>
+        <Mass>6</Mass>
+    </statBases>
+
+    <recipeMaker>
+        <recipeUsers Inherit="False">
+            <li>DankPyon_AlchemyBench</li>
+        </recipeUsers>
+    </recipeMaker>
+
+    <tickerType>Long</tickerType>
+    <comps>
+        <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
+        <li Class="VFECore.CompProperties_Shield">
+            <shieldTags>
+                <!--li>DankPyon_ShieldHeater</li-->
+            </shieldTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <coveredBodyPartGroups>
+                <li>Torso</li>
+                <li>Arms</li>
+                <li>Hands</li>
+            </coveredBodyPartGroups>
+            <offHandGraphicData>
+                <texPath>Apparel/Utility/HeaterSchrat/HeaterSchrat</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+                <drawSize>1.5</drawSize>
+            </offHandGraphicData>
+            <offHandHoldOffset>
+                <northDefault>
+                    <offset>(0, 0, 0.2)</offset>
+                    <behind>true</behind>
+                </northDefault>
+                <east>
+                    <offset>(-0.05, 0, 0.2)</offset>
+                    <behind>true</behind>
+                </east>
+                <south>
+                    <offset>(0, -0.04, 0.2)</offset>
+                </south>
+                <west>
+                    <offset>(0.05, 0, 0.2)</offset>
+                </west>
+            </offHandHoldOffset>
+        </li>
+        <li Class="CompProperties_SelfhealHitpoints">
+            <ticksPerHeal>2000</ticksPerHeal> <!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+        </li>
+    </comps>
+</ThingDef>
+
+   
+</Defs>

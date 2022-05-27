@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DamageWorkers\DeathActionWorker_DustPuff.cs" />
     <Compile Include="Harmony\CannotBePlacedTogetherWithThisModExtension.cs" />
     <Compile Include="ThingClasses\DefModExtensions\ButcherProperties.cs" />
     <Compile Include="ThingClasses\Building_Lootable.cs" />

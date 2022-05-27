@@ -4,6 +4,10 @@
         <tradeTags Inherit="False">
 			<li>DankPyon_Ruin_Rings</li>
 		</tradeTags>
+
+        <recipeMaker>
+            <recipeUsers Inherit="False"/>
+        </recipeMaker>
     </ThingDef>
 
     <ThingDef ParentName="DankPyon_Ruin_Ring">
@@ -38,7 +42,7 @@
         <label>ring of haste</label>
         <description>An enchanted ring that bestows upon the wearer additional movement speed—perfect for explorers looking to quickly cover ground and escape dangerous expeditions.</description>
         <graphicData>
-            <texPath>Apparel/Jewelry/RingHolding</texPath>
+            <texPath>Apparel/Jewelry/RingHaste</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1</drawSize>
         </graphicData>

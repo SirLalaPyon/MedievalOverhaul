@@ -1730,11 +1730,7 @@
     </graphicData>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
+      <recipeUsers Inherit="False"/>
     <skillRequirements>
       <Crafting>8</Crafting>
     </skillRequirements>

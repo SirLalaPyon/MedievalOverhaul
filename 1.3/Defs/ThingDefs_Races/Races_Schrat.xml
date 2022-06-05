@@ -9,7 +9,7 @@
       It’s said that Waldschrats relish the blood of intrusive lumberjacks and overzealous hunters.</description>
     
     <statBases>
-        <MoveSpeed>3.9</MoveSpeed>
+        <MoveSpeed>4.4</MoveSpeed>
         <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
         <ArmorRating_Sharp>0.22</ArmorRating_Sharp>
         <PsychicSensitivity>0.5</PsychicSensitivity>
@@ -54,7 +54,7 @@
         <lifeExpectancy>2500</lifeExpectancy>
         <bloodDef>Filth_RubbleBuilding</bloodDef>
 
-        <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+        <deathActionWorkerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</deathActionWorkerClass>
         <intelligence>ToolUser</intelligence> <!--Probably could use it for tree log weapons in the future -->
         <thinkTreeMain>Mechanoid</thinkTreeMain>
         <lifeStageAges>

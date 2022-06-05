@@ -35,6 +35,9 @@
       <li Class="CompProperties_Styleable"/>
     </comps>
     <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
+    <modExtensions>
+		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+	</modExtensions>
 </ThingDef>
 
 <!-- Chalice -->

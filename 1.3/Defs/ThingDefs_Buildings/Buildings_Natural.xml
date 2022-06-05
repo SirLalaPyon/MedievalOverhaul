@@ -284,9 +284,13 @@
     <blockPlants>true</blockPlants>
     <building>
       <isEdifice>false</isEdifice>
-      <claimable>false</claimable>
+      <claimable>true</claimable>
       <deconstructible>true</deconstructible>
     </building>
+
+    <statBases>
+        <WorkToMake>30000</WorkToMake>
+    </statBases>
 
     <costList>
       <DankPyon_Tar>200</DankPyon_Tar>

@@ -246,6 +246,41 @@
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 	</ThingDef>
-	
 
+	<!--=============== Unhold Drops ====================-->
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_UnholdBones</defName>
+		<label>heart of the forest</label>
+		<description>A sphere of life energy, still feeding few writhing vines. Its pulsing rate increases when held in hand, greedily drawing heat from the limb. An important ingredient in numerous occult rituals, certainly a valuable possession.</description>
+		<graphicData>
+			<texPath>Special/SchratHeart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_UnholdFur</defName>
+		<label>unhold fur</label>
+		<description>A sphere of life energy, still feeding few writhing vines. Its pulsing rate increases when held in hand, greedily drawing heat from the limb. An important ingredient in numerous occult rituals, certainly a valuable possession.</description>
+		<graphicData>
+			<texPath>Special/SchratHeart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
 </Defs>

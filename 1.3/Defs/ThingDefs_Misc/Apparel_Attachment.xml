@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Armor Attachment Base-->
+    <ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_ArmorAttachmentBase" Abstract="True">
+		<modExtensions>
+		<li Class="VFECore.ApparelDrawPosExtension">
+			<apparelDrawSettings>
+				<drawPosNorthOffset>(0, 0.2, 0)</drawPosNorthOffset>
+				<drawPosSouthOffset>(0, 0.006, 0)</drawPosSouthOffset>
+				<drawPosWestOffset>(0, 0.2, 0)</drawPosWestOffset>
+				<drawPosEastOffset>(0, 0.2, 0)</drawPosEastOffset>
+			</apparelDrawSettings>
+		</li>
+	    </modExtensions>
+
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>DankPyon_AlchemyBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+
+        <tradeability>None</tradeability>
+        <techLevel>Medieval</techLevel>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+        <defName>DankPyon_Apparel_DirewolfPelt</defName>
+        <label>direwolf pelt</label>
+        <description>A warm robust coat sewn from a direwolf's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious wolf to don the trophy. While intimidating the fearful, the pelt also grants strength and confidence in battle.</description>
+        <graphicData>
+			<texPath>Apparel/Attachments/DirewolfPelt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(85,79,74)</color>
+        </graphicData>
+
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        
+        <costList>
+            <DankPyon_Hide_WolfDirewolf>3</DankPyon_Hide_WolfDirewolf>
+        </costList>
+        
+        <statBases>
+            <MarketValue>450</MarketValue>
+            <WorkToMake>19000</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>4</Mass>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </equippedStatOffsets>
+        
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Attachments/DirewolfPelt</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+            <layers>
+                <li>DankPyon_ShellAttachment</li>
+            </layers>
+            <tags>
+                <li>DankPyon_Attachment</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+        <defName>DankPyon_Apparel_HyenaPelt</defName>
+        <label>hyena pelt</label>
+        <description>A warm robust coat sewn from a hyena's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious hyena to don the trophy. While intimidating the fearful, the pelt also grants strength and confidence in battle.</description>
+        <graphicData>
+			<texPath>Apparel/Attachments/HyenaPelt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        
+        <costList>
+            <DankPyon_Hide_Hyena>3</DankPyon_Hide_Hyena>
+        </costList>
+        
+        <statBases>
+            <MarketValue>450</MarketValue>
+            <WorkToMake>19000</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>4</Mass>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </equippedStatOffsets>
+        
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Attachments/HyenaPelt</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+            <layers>
+                <li>DankPyon_ShellAttachment</li>
+            </layers>
+            <tags>
+                <li>DankPyon_Attachment</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+</Defs>

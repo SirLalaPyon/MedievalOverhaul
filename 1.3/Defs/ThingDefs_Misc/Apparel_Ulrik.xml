@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_AdornedArmorBase" Abstract="True">
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>DankPyon_Anvil</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!--==================== Body Armor ====================-->
+    <ThingDef ParentName="DankPyon_AdornedArmorBase">
+        <defName>DankPyon_Apparel_AdornedMailShirt</defName>
+        <label>mail shirt (Adorned)</label>
+        <description>A robust mail shirt, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
+        <graphicData>
+			<texPath>Apparel/Adorned/Adorned_MailShirt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+       
+        <costList>
+            <Steel>100</Steel>
+            <Cloth>70</Cloth>
+        </costList>
+        
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <MaxHitPoints>270</MaxHitPoints>
+            <Mass>12</Mass>
+            <ArmorRating_Sharp>0.587</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3035</ArmorRating_Blunt>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.5</MoveSpeed>
+        </equippedStatOffsets>
+
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt</wornGraphicPath>
+            <tags>
+				<li>DankPyon_Initiate</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_AdornedArmorBase">
+        <defName>DankPyon_Apparel_AdornedWarriorArmor</defName>
+        <label>warrior's armor (Adorned)</label>
+        <description>A robust mail shirt, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
+        <graphicData>
+			<texPath>Apparel/Adorned/Adorned_MailShirt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+       
+        <costList>
+            <Steel>100</Steel>
+            <Cloth>70</Cloth>
+        </costList>
+        
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <MaxHitPoints>270</MaxHitPoints>
+            <Mass>12</Mass>
+            <ArmorRating_Sharp>0.587</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3035</ArmorRating_Blunt>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.5</MoveSpeed>
+        </equippedStatOffsets>
+
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt</wornGraphicPath>
+            <tags>
+				<li>DankPyon_Initiate</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_AdornedArmorBase">
+        <defName>DankPyon_Apparel_AdornedHeavyPlate</defName>
+        <label>warrior's armor (Adorned)</label>
+        <description>A heavy plate coverd by a thick riveted jacket and reinforced vambraces. The layered structure provides an ample amount of warmth. Typically worn by the oathbound, the best of the oathtakers, finely decorated with trophies and religious symbols.</description>
+        <graphicData>
+			<texPath>Apparel/Adorned/Adorned_MailShirt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+       
+        <costList>
+            <Steel>100</Steel>
+            <Cloth>70</Cloth>
+        </costList>
+        
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <MaxHitPoints>270</MaxHitPoints>
+            <Mass>12</Mass>
+            <ArmorRating_Sharp>0.587</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3035</ArmorRating_Blunt>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.5</MoveSpeed>
+        </equippedStatOffsets>
+
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt</wornGraphicPath>
+            <tags>
+				<li>DankPyon_Initiate</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <!--==================== Headgear ====================-->
+
+</Defs>

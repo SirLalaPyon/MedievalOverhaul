@@ -540,9 +540,9 @@
     <researchPrerequisites>
       <li>DankPyon_CandleMaking</li>
     </researchPrerequisites>
-	<modExtensions>
-		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
-	</modExtensions>
+    <modExtensions>
+      <li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_BuildingBase">

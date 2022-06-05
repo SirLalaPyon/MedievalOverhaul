@@ -29,7 +29,7 @@
 
         <costList>
             <DankPyon_Citrine>25</DankPyon_Citrine>
-            <Gold>20</Gold>
+            <Gold>2</Gold>
         </costList>
 
         <equippedStatOffsets>
@@ -56,7 +56,7 @@
 
         <costList>
             <DankPyon_Emerald>25</DankPyon_Emerald>
-            <Gold>20</Gold>
+            <Gold>2</Gold>
         </costList>
 
         <equippedStatOffsets>
@@ -89,6 +89,36 @@
         <equippedStatOffsets>
             <InjuryHealingFactor>0.1</InjuryHealingFactor>
             <MedicalTendQuality>0.2</MedicalTendQuality>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_Ruin_Ring">
+        <defName>DankPyon_Ring_Research</defName>
+        <label>ring of research</label>
+        <description>Through perseverance and wit brings the wonders of the world. Upon wearing this ring, will bless enlightenment to open the mind into the depths of madness and ingenuity.</description>
+        <graphicData>
+            <texPath>Apparel/Jewelry/RingResearch</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>1120</MarketValue>
+            <WorkToMake>11200</WorkToMake>
+            <Beauty>25</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Sapphire>25</DankPyon_Sapphire>
+            <Gold>2</Gold>
+        </costList>
+
+        <equippedStatOffsets>
+            <PainShockThreshold>-0.3</PainShockThreshold>
+            <GlobalLearningFactor>0.2</GlobalLearningFactor>
+            <PsychicSensitivity>0.3</PsychicSensitivity>
+            <MentalBreakThreshold>-0.2</MentalBreakThreshold>
         </equippedStatOffsets>
     </ThingDef>
   

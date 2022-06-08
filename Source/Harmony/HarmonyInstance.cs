@@ -325,6 +325,19 @@ namespace DankPyon
                 }
             }
 
+            var additionalButcherOptions = __instance.def.GetModExtension<AdditionalButcherProducts>();
+            if (additionalButcherOptions != null)
+            {
+                foreach (var option in additionalButcherOptions.butcherOptions)
+                {
+                    if (Rand.Chance(option.chance))
+                    {
+                        Thing bone = ThingMaker.MakeThing(option.thingDef, null);
+                        bone.stackCount = option.amount.RandomInRange;
+                        yield return bone;
+                    }
+                }
+            }
             if (__instance.RaceProps.IsFlesh && __instance.RaceProps.meatDef != null)
             {
                 bool boneFlag = true;

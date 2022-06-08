@@ -175,6 +175,19 @@
 			<color>(162,106,57)</color>
 		</stuffProps>
 	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_HideBase">
+		<defName>DankPyon_Hide_HideGeneric</defName>
+		<label>hide</label>
+		<statBases>
+			<MarketValue>45</MarketValue>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>DankPyon.CompGenericHide</compClass>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_HideBaseLarge">
 		<defName>DankPyon_Hide_HideLarge</defName>

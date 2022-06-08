@@ -10,6 +10,17 @@ using Verse.AI;
 
 namespace DankPyon
 {
+    public class CompGenericHide : ThingComp
+    {
+        public ThingDef pawnSource;
+        public int leatherAmount;
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_Defs.Look(ref pawnSource, "pawnSource");
+            Scribe_Values.Look(ref leatherAmount, "leatherAmount");
+        }
+    }
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
     {
@@ -22,8 +33,8 @@ namespace DankPyon
         static HarmonyInstance()
         {
             harmony = new Harmony("lalapyhon.rimworld.medievaloverhaul");
-            harmony.Patch(AccessTools.Method(typeof(Thing), "ButcherProducts", null, null), null,
-                new HarmonyMethod(typeof(HarmonyInstance), "Thing_MakeButcherProducts_FatAndBone_PostFix", null), null);
+            harmony.Patch(AccessTools.Method(typeof(Pawn), "ButcherProducts", null, null), null,
+                postfix: new HarmonyMethod(typeof(HarmonyInstance), nameof(MakeButcherProducts_Postfix), null), null);
             harmony.PatchAll();
             foreach (var stat in DefDatabase<StatDef>.AllDefs)
             {
@@ -39,6 +50,20 @@ namespace DankPyon
                 if (def.IsChunk() && def.projectileWhenLoaded is null)
                 {
                     def.projectileWhenLoaded = DankPyonDefOf.DankPyon_Artillery_Boulder;
+                }
+            }
+
+            foreach (var pawnKindDef in DefDatabase<PawnKindDef>.AllDefsListForReading)
+            {
+                if (pawnKindDef.RaceProps.Animal && pawnKindDef.race.race.leatherDef != null && pawnKindDef.lifeStages != null 
+                    && pawnKindDef.lifeStages.Last().butcherBodyPart is null && !pawnKindDef.RaceProps.Dryad && !pawnKindDef.RaceProps.Insect)
+                {
+                    pawnKindDef.lifeStages.Last().butcherBodyPart = new BodyPartToDrop
+                    {
+                        bodyPartGroup = DankPyonDefOf.HeadAttackTool,
+                        thing = DankPyonDefOf.DankPyon_Hide_HideGeneric,
+                        allowFemale = true
+                    };
                 }
             }
         }
@@ -277,11 +302,30 @@ namespace DankPyon
             }
         }
 
-        private static ThingDef fat = ThingDef.Named("DankPyon_Fat");
-        private static ThingDef bone = ThingDef.Named("DankPyon_Bone");
-        private static void Thing_MakeButcherProducts_FatAndBone_PostFix(Thing __instance, ref IEnumerable<Thing> __result, Pawn butcher, float efficiency)
+        private static IEnumerable<Thing> MakeButcherProducts_Postfix(IEnumerable<Thing> __result, Pawn __instance, Pawn butcher, float efficiency)
         {
-            if (__instance is Pawn pawn && pawn.RaceProps.IsFlesh && pawn.RaceProps.meatDef != null)
+            foreach (var r in __result)
+            {
+                if (r.def.IsLeather)
+                {
+                    continue;
+                }
+                else
+                {
+                    if (r.def == DankPyonDefOf.DankPyon_Hide_HideGeneric)
+                    {
+                        var comp = r.TryGetComp<CompGenericHide>();
+                        if (comp != null)
+                        {
+                            comp.pawnSource = __instance.def;
+                            comp.leatherAmount = GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.LeatherAmount) * efficiency);
+                        }
+                    }
+                    yield return r;
+                }
+            }
+
+            if (__instance.RaceProps.IsFlesh && __instance.RaceProps.meatDef != null)
             {
                 bool boneFlag = true;
                 bool fatFlag = true;
@@ -298,15 +342,15 @@ namespace DankPyon
                     int amount = Math.Max(1, (int)(GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.MeatAmount, true) * efficiency) * 0.2f));
                     if (boneFlag)
                     {
-                        Thing Bone = ThingMaker.MakeThing(bone, null);
-                        Bone.stackCount = amount;
-                        __result = __result.AddItem(Bone);
+                        Thing bone = ThingMaker.MakeThing(DankPyonDefOf.DankPyon_Bone, null);
+                        bone.stackCount = amount;
+                        yield return bone;
                     }
                     if (fatFlag)
                     {
-                        Thing Fat = ThingMaker.MakeThing(fat, null);
-                        Fat.stackCount = amount;
-                        __result = __result.AddItem(Fat);
+                        Thing fat = ThingMaker.MakeThing(DankPyonDefOf.DankPyon_Fat, null);
+                        fat.stackCount = amount;
+                        yield return fat;
                     }
                 }
             }
@@ -418,19 +462,37 @@ namespace DankPyon
             {
                 if (extension.outputOnlyButcherProduct)
                 {
-                    __result = TakeOutButcherProduct(__instance, activeProcess);
-                    return false;
+                    foreach (var thing in activeProcess.ingredientThings)
+                    {
+                        if (thing.def.butcherProducts?.Any() ?? false)
+                        {
+                            var thingDefCount = thing.def.butcherProducts.FirstOrDefault();
+                            __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
+                            return false;
+                        }
+                        else if (thing.def == DankPyonDefOf.DankPyon_Hide_HideGeneric)
+                        {
+                            var comp = thing.TryGetComp<CompGenericHide>();
+                            var thingDefCount = new ThingDefCountClass
+                            {
+                                count = comp.leatherAmount,
+                                thingDef = comp.pawnSource.race.leatherDef
+                            };
+                            __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
+                            return false;
+                        }
+                    }
+
                 }
             }
             return true;
         }
 
-        public static Thing TakeOutButcherProduct(CompProcessor __instance, ActiveProcess activeProcess)
+        public static Thing TakeOutButcherProduct(CompProcessor __instance, ThingDefCountClass thingDefCount, ActiveProcess activeProcess)
         {
             Thing thing = null;
             if (!activeProcess.Ruined)
             {
-                var thingDefCount = activeProcess.ingredientThings.FirstOrDefault(x => x.def.butcherProducts.Any()).def.butcherProducts.FirstOrDefault();
                 thing = ThingMaker.MakeThing(thingDefCount.thingDef);
                 thing.stackCount = thingDefCount.count;
                 CompIngredients compIngredients = thing.TryGetComp<CompIngredients>();

@@ -71,9 +71,16 @@
 	<jobString>Burning wood into coal.</jobString>
 	<effectWorking>Cremate</effectWorking>
 	<soundWorking>Recipe_Cremate</soundWorking>
+	<workSkill>Crafting</workSkill>
+	<workSkillLearnFactor>0.25</workSkillLearnFactor>
 	<workAmount>2000</workAmount>
 	<targetCountAdjustment>50</targetCountAdjustment>	
 	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<allowMixingIngredients>false</allowMixingIngredients>	
+	<recipeUsers>
+		<li>DankPyon_Furnace</li>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
 	<ingredients>
 		<li>
 			<filter>
@@ -103,10 +110,10 @@
 	<effectWorking>Smelt</effectWorking>
 	<allowMixingIngredients>false</allowMixingIngredients>	
 	<soundWorking>Recipe_Smelt</soundWorking>
-		<recipeUsers>
-			<li>DankPyon_Furnace</li>
-			<li>ElectricSmelter</li>
-		</recipeUsers>	
+	<recipeUsers>
+		<li>DankPyon_Furnace</li>
+		<li>ElectricSmelter</li>
+	</recipeUsers>	
 </RecipeDef>
 
 <!-- Iron Ingots --> 

@@ -406,6 +406,34 @@
     </prerequisites>    
   </ResearchProjectDef>
 
+  <!--ResearchProjectDef>
+    <defName>PlateArmor</defName>
+    <label>plate armor</label>
+    <description>Learn the techniques of properly smithing and tempering metal plates to craft expensive plate armors</description>
+    <baseCost>2000</baseCost>
+      <tab>DankPyon_MedievalResearchTab</tab>
+      <techLevel>Medieval</techLevel>
+    <researchViewX>11</researchViewX>
+    <researchViewY>0</researchViewY>
+      <prerequisites>
+        <li>DankPyon_ChainArmor</li>
+      </prerequisites>   
+  </ResearchProjectDef-->
+
+  <ResearchProjectDef>
+    <defName>DankPyon_AdornedArmor</defName>
+    <label>adorned armor</label>
+    <description>Learn the techniques of creating robust yet fashionable armor.</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>11</researchViewX>
+		<researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>PlateArmor</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
   <!--=========================== Ranged Weapons ==============================-->
 
   <ResearchProjectDef>

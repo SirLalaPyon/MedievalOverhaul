@@ -11,11 +11,12 @@
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
-            <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+            <researchPrerequisite>DankPyon_AdornedArmor</researchPrerequisite>
         </recipeMaker>
         <thingCategories>
             <li>ApparelArmor</li>
         </thingCategories>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 
     <!--==================== Body Armor ====================-->
@@ -56,6 +57,7 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
 				<li>DankPyon_Initiate</li>
             </tags>
@@ -74,13 +76,13 @@
         <label>warrior's armor (Adorned)</label>
         <description>A robust mail shirt, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
         <graphicData>
-			<texPath>Apparel/Adorned/Adorned_MailShirt</texPath>
+			<texPath>Apparel/Adorned/Adorned_Warrior</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
        
         <costList>
-            <Steel>100</Steel>
-            <Cloth>70</Cloth>
+            <DankPyon_Linen>70</DankPyon_Linen>
         </costList>
         
         <statBases>
@@ -106,6 +108,7 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
 				<li>DankPyon_Initiate</li>
             </tags>
@@ -121,16 +124,21 @@
 
     <ThingDef ParentName="DankPyon_AdornedArmorBase">
         <defName>DankPyon_Apparel_AdornedHeavyPlate</defName>
-        <label>warrior's armor (Adorned)</label>
+        <label>full plate(Adorned)</label>
         <description>A heavy plate coverd by a thick riveted jacket and reinforced vambraces. The layered structure provides an ample amount of warmth. Typically worn by the oathbound, the best of the oathtakers, finely decorated with trophies and religious symbols.</description>
         <graphicData>
-			<texPath>Apparel/Adorned/Adorned_MailShirt</texPath>
+			<texPath>Apparel/Adorned/Adorned_FullPlate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
        
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>200</costStuffCount>
         <costList>
-            <Steel>100</Steel>
-            <Cloth>70</Cloth>
+            <Gold>5</Gold>
+            <DankPyon_Linen>70</DankPyon_Linen>
         </costList>
         
         <statBases>
@@ -147,6 +155,12 @@
             <MoveSpeed>-0.5</MoveSpeed>
         </equippedStatOffsets>
 
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+
         <apparel>
             <bodyPartGroups>
                 <li>Torso</li>
@@ -156,6 +170,7 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
 				<li>DankPyon_Initiate</li>
             </tags>

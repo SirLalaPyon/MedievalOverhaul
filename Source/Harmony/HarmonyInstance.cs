@@ -13,11 +13,12 @@ namespace DankPyon
     public class CompGenericHide : ThingComp
     {
         public ThingDef pawnSource;
-
+        public int leatherAmount;
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Defs.Look(ref pawnSource, "pawnSource");
+            Scribe_Values.Look(ref leatherAmount, "leatherAmount");
         }
     }
     [StaticConstructorOnStartup]
@@ -54,7 +55,7 @@ namespace DankPyon
 
             foreach (var pawnKindDef in DefDatabase<PawnKindDef>.AllDefsListForReading)
             {
-                if (pawnKindDef.RaceProps.Animal && pawnKindDef.race.race.leatherDef is null && pawnKindDef.lifeStages != null 
+                if (pawnKindDef.RaceProps.Animal && pawnKindDef.race.race.leatherDef != null && pawnKindDef.lifeStages != null 
                     && pawnKindDef.lifeStages.Last().butcherBodyPart is null && !pawnKindDef.RaceProps.Dryad && !pawnKindDef.RaceProps.Insect)
                 {
                     pawnKindDef.lifeStages.Last().butcherBodyPart = new BodyPartToDrop
@@ -303,20 +304,27 @@ namespace DankPyon
 
         private static IEnumerable<Thing> MakeButcherProducts_Postfix(IEnumerable<Thing> __result, Pawn __instance, Pawn butcher, float efficiency)
         {
-            Log.Message("Thing_MakeButcherProducts_FatAndBone_PostFix");
             foreach (var r in __result)
             {
-                Log.Message("r: " + r);
                 if (r.def.IsLeather)
                 {
                     continue;
                 }
                 else
                 {
-                    Log.Message("YIeld: " + r);
+                    if (r.def == DankPyonDefOf.DankPyon_Hide_HideGeneric)
+                    {
+                        var comp = r.TryGetComp<CompGenericHide>();
+                        if (comp != null)
+                        {
+                            comp.pawnSource = __instance.def;
+                            comp.leatherAmount = GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.LeatherAmount) * efficiency);
+                        }
+                    }
                     yield return r;
                 }
             }
+
             if (__instance.RaceProps.IsFlesh && __instance.RaceProps.meatDef != null)
             {
                 bool boneFlag = true;
@@ -456,7 +464,7 @@ namespace DankPyon
                 {
                     foreach (var thing in activeProcess.ingredientThings)
                     {
-                        if (thing.def.butcherProducts.Any())
+                        if (thing.def.butcherProducts?.Any() ?? false)
                         {
                             var thingDefCount = thing.def.butcherProducts.FirstOrDefault();
                             __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
@@ -465,7 +473,13 @@ namespace DankPyon
                         else if (thing.def == DankPyonDefOf.DankPyon_Hide_HideGeneric)
                         {
                             var comp = thing.TryGetComp<CompGenericHide>();
-
+                            var thingDefCount = new ThingDefCountClass
+                            {
+                                count = comp.leatherAmount,
+                                thingDef = comp.pawnSource.race.leatherDef
+                            };
+                            __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
+                            return false;
                         }
                     }
 

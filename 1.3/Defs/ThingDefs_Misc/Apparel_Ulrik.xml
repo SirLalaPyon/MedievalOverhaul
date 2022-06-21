@@ -22,26 +22,29 @@
     <!--==================== Body Armor ====================-->
     <ThingDef ParentName="DankPyon_AdornedArmorBase">
         <defName>DankPyon_Apparel_AdornedMailShirt</defName>
-        <label>mail shirt (Adorned)</label>
-        <description>A robust mail shirt, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
+        <label>heavy hauberk (Adorned)</label>
+        <description>A thick and robust hauberk, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
         <graphicData>
-			<texPath>Apparel/Adorned/Adorned_MailShirt</texPath>
+			<texPath>Apparel/Adorned/Adorned_MailShirt/Adorned_MailShirt</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
        
+       <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
         <costList>
-            <Steel>100</Steel>
-            <Cloth>70</Cloth>
+            <DankPyon_Linen>70</DankPyon_Linen>
         </costList>
         
         <statBases>
             <WorkToMake>30000</WorkToMake>
             <MaxHitPoints>270</MaxHitPoints>
             <Mass>12</Mass>
-            <ArmorRating_Sharp>0.587</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.3035</ArmorRating_Blunt>
-			<Insulation_Cold>15</Insulation_Cold>
-			<Insulation_Heat>4</Insulation_Heat>
+            <StuffEffectMultiplierArmor>0.64</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <Insulation_Cold>15</Insulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>15</EquipDelay>
         </statBases>
         <equippedStatOffsets>
@@ -56,13 +59,12 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt</wornGraphicPath>
+            <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt/Adorned_MailShirt</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
 				<li>DankPyon_Initiate</li>
             </tags>
             <layers>
-                <li>Middle</li>
                 <li>Shell</li>
             </layers>
             <defaultOutfitTags>
@@ -76,27 +78,30 @@
         <label>warrior's armor (Adorned)</label>
         <description>A robust mail shirt, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
         <graphicData>
-			<texPath>Apparel/Adorned/Adorned_Warrior</texPath>
+			<texPath>Apparel/Adorned/Adorned_Warrior/Adorned_Warrior</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
        
+       <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>170</costStuffCount>
         <costList>
             <DankPyon_Linen>70</DankPyon_Linen>
         </costList>
-        
+
         <statBases>
-            <WorkToMake>30000</WorkToMake>
-            <MaxHitPoints>270</MaxHitPoints>
-            <Mass>12</Mass>
-            <ArmorRating_Sharp>0.587</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.3035</ArmorRating_Blunt>
-			<Insulation_Cold>15</Insulation_Cold>
-			<Insulation_Heat>4</Insulation_Heat>
-            <EquipDelay>15</EquipDelay>
+            <WorkToMake>38000</WorkToMake>
+            <MaxHitPoints>290</MaxHitPoints>
+            <Mass>15</Mass>
+            <StuffEffectMultiplierArmor>0.76</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <Insulation_Cold>15</Insulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.5</MoveSpeed>
+            <MoveSpeed>-0.8</MoveSpeed>
         </equippedStatOffsets>
 
         <apparel>
@@ -107,13 +112,12 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt</wornGraphicPath>
+            <wornGraphicPath>Apparel/Adorned/Adorned_Warrior/Adorned_Warrior</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
-				<li>DankPyon_Initiate</li>
+				<li>DankPyon_Oathtaker</li>
             </tags>
             <layers>
-                <li>Middle</li>
                 <li>Shell</li>
             </layers>
             <defaultOutfitTags>
@@ -127,7 +131,7 @@
         <label>full plate(Adorned)</label>
         <description>A heavy plate coverd by a thick riveted jacket and reinforced vambraces. The layered structure provides an ample amount of warmth. Typically worn by the oathbound, the best of the oathtakers, finely decorated with trophies and religious symbols.</description>
         <graphicData>
-			<texPath>Apparel/Adorned/Adorned_FullPlate</texPath>
+			<texPath>Apparel/Adorned/Adorned_FullPlate/Adorned_FullPlate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
@@ -142,17 +146,19 @@
         </costList>
         
         <statBases>
-            <WorkToMake>30000</WorkToMake>
-            <MaxHitPoints>270</MaxHitPoints>
-            <Mass>12</Mass>
-            <ArmorRating_Sharp>0.587</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.3035</ArmorRating_Blunt>
-			<Insulation_Cold>15</Insulation_Cold>
-			<Insulation_Heat>4</Insulation_Heat>
-            <EquipDelay>15</EquipDelay>
+            <WorkToMake>45000</WorkToMake>
+            <MaxHitPoints>310</MaxHitPoints>
+            <Mass>17</Mass>
+            <StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <Insulation_Cold>15</Insulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>20</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.5</MoveSpeed>
+            <MoveSpeed>-1.2</MoveSpeed>
+            <SocialImpact>0.30</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
         </equippedStatOffsets>
 
         <recipeMaker>
@@ -169,10 +175,10 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Adorned/Adorned_MailShirt</wornGraphicPath>
+            <wornGraphicPath>Apparel/Adorned/Adorned_FullPlate/Adorned_FullPlate</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
-				<li>DankPyon_Initiate</li>
+				<li>DankPyon_Oathbound</li>
             </tags>
             <layers>
                 <li>Middle</li>

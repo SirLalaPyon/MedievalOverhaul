@@ -134,7 +134,132 @@
 
   <!--========================= Walls =============================-->
 
-  <ThingDef ParentName="BuildingBase" Name="Wall">
+  <ThingDef ParentName="Wall">
+    <defName>DankPyon_LogWall</defName>
+    <label>log wall</label>
+    <description>An impassable wall. Capable of holding up a roof.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Linked/LogWall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Buildings/Linked/LogWall_MenuIcon</uiIconPath>
+    <uiIconPathsStuff Inherit="False"/>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>535</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+
+    <stuffCategories Inherit="False">
+      <li>DankPyon_RawWood</li>
+    </stuffCategories>
+    <costStuffCount>5</costStuffCount>
+
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <designationHotKey Inherit="False"/>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_TentWall</defName>
+    <label>tent</label>
+    <description>An impassable wall. Capable of holding up a roof.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Linked/Tent_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Buildings/Linked/Tent_MenuIcon</uiIconPath>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>135</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costStuffCount>5</costStuffCount>
+
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>false</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <fertility>0</fertility>
+    <building>
+      <isInert>true</isInert>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Buildings/Linked/Tent_Blueprint</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>Door</li>
+        <li>Autodoor</li>
+      </relatedBuildCommands>
+    </building>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+    </damageMultipliers>
+    <designationHotKey>Misc3</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Palisade</defName>
     <label>palisades</label>
     <description>An impassable wall.</description>
@@ -177,14 +302,14 @@
     <canOverlapZones>false</canOverlapZones>
     <fertility>0</fertility>
     <stuffCategories>
-      <li>Woody</li>
+      <li>DankPyon_RawWood</li>
     </stuffCategories>
     <building>
       <isInert>true</isInert>
       <isPlaceOverableWall>true</isPlaceOverableWall>
       <ai_chillDestination>false</ai_chillDestination>
       <blueprintGraphicData>
-        <texPath>Buildings/Linked/Palisade_Blueprint_Atlas</texPath>
+        <texPath>Buildings/Linked/Palisade_Blueprint</texPath>
       </blueprintGraphicData>
       <relatedBuildCommands>
         <li>Door</li>
@@ -226,9 +351,10 @@
 	  </linkFlags>
     </graphicData>
 
-    <costList>
-      <WoodLog>8</WoodLog>
-    </costList>
+    <stuffCategories>
+      <li>DankPyon_RawWood</li>
+    </stuffCategories>
+    <costStuffCount>8</costStuffCount>
 
     <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
 	  <blockLight>false</blockLight>
@@ -274,140 +400,7 @@
     <designationCategory>Security</designationCategory>
 	  <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <repairEffect>ConstructWood</repairEffect>
-
-    <designatorDropdown>DankPyon_CavalrySpikeWalls</designatorDropdown>
 	</ThingDef>
-
-  <ThingDef ParentName="DankPyon_SpikeBase">
-	 <defName>DankPyon_DarkCavalrySpike</defName>
-    <label>dark wooden cavalry spikes</label>
-    <description>An organized collection of stakes designed to keep intruders out. n/n/Walking through the spikes can hurt pawns.</description>
-    <graphicData>
-     <texPath>Buildings/Linked/DarkSpike_Atlas</texPath>
-     <graphicClass>Graphic_Single</graphicClass>
-     <linkType>Basic</linkType>
-	  <linkFlags>
-		  <li>Custom4</li>
-	  </linkFlags>
-    </graphicData>
-
-    <costList Inherit="False">
-      <DankPyon_DarkWoodLog>8</DankPyon_DarkWoodLog>
-    </costList>
-
-    <statBases>
-      <TrapMeleeDamage>10</TrapMeleeDamage>
-      <TrapSpringChance>0.8</TrapSpringChance>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Beauty>-10</Beauty>
-      <WorkToBuild>75</WorkToBuild>
-      <Flammability>0.5</Flammability>
-    </statBases>
-
-    <building>
-      <allowAutoroof>false</allowAutoroof>
-	    <isTrap>true</isTrap>
-      <trapDestroyOnSpring>false</trapDestroyOnSpring>		  
-	    <trapDamageCategory>Sharp</trapDamageCategory>
-	    <ai_chillDestination>false</ai_chillDestination>
-	    <expandHomeArea>false</expandHomeArea>	
-      <isInert>true</isInert>
-      <blueprintGraphicData>
-        <texPath>Buildings/Linked/Spike_Blueprint_Atlas</texPath>
-      </blueprintGraphicData>
-    </building>
-	</ThingDef>
-
-  <!--ThingDef ParentName="BuildingBase" Name="Wall">
-    <defName>DankPyon_Tent</defName>
-    <label>tent wall</label>
-    <description>An impassable wall. Capable of holding up a roof.</description>
-    <thingClass>Building</thingClass>
-    <category>Building</category>
-    <graphicData>
-      <texPath>Buildings/Linked/Tent_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>Basic</linkType>
-      <linkFlags>
-        <li>Wall</li>
-        <li>Rock</li>
-      </linkFlags>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Building/Linked/Tent</uiIconPath>
-    <uiIconPathsStuff>
-      <li>
-        <appearance>Planks</appearance>
-        <iconPath>Things/Building/Linked/WallPlanks_MenuIcon</iconPath>
-      </li>
-    </uiIconPathsStuff>
-    <statBases>
-			<MaxHitPoints>25</MaxHitPoints>
-			<WorkToBuild>5</WorkToBuild>
-			<Flammability>1.0</Flammability>
-		</statBases>
-    <costStuffCount>5</costStuffCount>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
-    <coversFloor>true</coversFloor>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
-    <tickerType>Never</tickerType>
-    <rotatable>false</rotatable>
-    <selectable>true</selectable>
-    <neverMultiSelect>true</neverMultiSelect>
-    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <holdsRoof>true</holdsRoof>
-    <designationCategory>Structure</designationCategory>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <blockLight>true</blockLight>
-    <canOverlapZones>false</canOverlapZones>
-    <fertility>0</fertility>
-    <stuffCategories>
-      <li>Fabric</li>
-			<li>Leathery</li>
-    </stuffCategories>
-    <building>
-      <isInert>true</isInert>
-      <isPlaceOverableWall>true</isPlaceOverableWall>
-      <ai_chillDestination>false</ai_chillDestination>
-      <blueprintGraphicData>
-        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-      </blueprintGraphicData>
-      <relatedBuildCommands>
-        <li>Door</li>
-        <li>Autodoor</li>
-      </relatedBuildCommands>
-    </building>
-    <comps>
-      <li Class="CompProperties_MeditationFocus">
-        <statDef>MeditationFocusStrength</statDef>
-        <focusTypes>
-          <li>Minimal</li>
-        </focusTypes>
-      </li>
-    </comps>
-    <damageMultipliers>
-      <li>
-        <damageDef>Bomb</damageDef>
-        <multiplier>2</multiplier>
-      </li>
-      <li>
-        <damageDef>Flame</damageDef>
-        <multiplier>2</multiplier>
-      </li>
-    </damageMultipliers>
-    <designationHotKey>Misc3</designationHotKey>
-  </ThingDef-->
 
   <ThingDef ParentName="BuildingBase" Name="DankPyon_CastleWallBase">
     <defName>DankPyon_CastleWall</defName>

@@ -89,8 +89,245 @@
     </statBases>
   </ThingDef>
 
-  <!--======================= Basic domestic furniture ==============================-->
+    <!--======================= Tribal Furniture ==============================-->
+    <ThingDef ParentName="DankPyon_TableGatherSpotBase">
+        <defName>DankPyon_LogTable1x2c</defName>
+        <label>log table (1x2)</label>
+        <graphicData>
+            <texPath>Furniture/LogTable1x2</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,4)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <uiIconScale>0.8</uiIconScale>
 
+        <statBases>
+        <MaxHitPoints>225</MaxHitPoints>
+        <WorkToBuild>2250</WorkToBuild>
+        <Mass>15</Mass>
+        <Flammability>1.0</Flammability>
+        <Beauty>1</Beauty>
+        </statBases>
+
+        <size>(1,2)</size>
+        <stuffCategories Inherit="False">
+            <li>DankPyon_RawWood</li>
+        </stuffCategories>
+        <costStuffCount>28</costStuffCount>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TableGatherSpotBase">
+        <defName>DankPyon_LogTable1x3c</defName>
+        <label>log table (1x3)</label>
+        <graphicData>
+            <texPath>Furniture/LogTable1x3</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,5)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <uiIconScale>0.8</uiIconScale>
+
+        <statBases>
+        <MaxHitPoints>225</MaxHitPoints>
+        <WorkToBuild>3375</WorkToBuild>
+        <Mass>20</Mass>
+        <Flammability>1.0</Flammability>
+        <Beauty>1</Beauty>
+        </statBases>
+
+        <size>(1,3)</size>
+        <stuffCategories Inherit="False">
+            <li>DankPyon_RawWood</li>
+        </stuffCategories>
+        <costStuffCount>52</costStuffCount>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TableGatherSpotBase">
+        <defName>DankPyon_LogTable1x4c</defName>
+        <label>log table (1x4)</label>
+        <graphicData>
+            <texPath>Furniture/LogTable1x4</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,6)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <uiIconScale>0.8</uiIconScale>
+
+        <statBases>
+        <MaxHitPoints>225</MaxHitPoints>
+        <WorkToBuild>4375</WorkToBuild>
+        <Mass>25</Mass>
+        <Flammability>1.0</Flammability>
+        <Beauty>1</Beauty>
+        </statBases>
+
+        <size>(1,4)</size>
+        <stuffCategories Inherit="False">
+            <li>DankPyon_RawWood</li>
+        </stuffCategories>
+        <costStuffCount>72</costStuffCount>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+        <defName>DankPyon_LogChair</defName>
+        <label>log chair</label>
+        <description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
+        <graphicData>
+            <texPath>Furniture/LogChair</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        <shadowData>
+            <volume>(0.23, 0.26, 0.23)</volume>
+        </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>2250</WorkToBuild>
+            <Mass>5</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>8</Beauty>
+            <Comfort>0.70</Comfort>
+        </statBases>
+        <socialPropernessMatters>true</socialPropernessMatters>
+
+        <stuffCategories Inherit="False">
+            <li>DankPyon_RawWood</li>
+        </stuffCategories>
+        <costStuffCount>25</costStuffCount>
+
+        <pathCost>30</pathCost>
+        <designationHotKey>Misc7</designationHotKey>
+        <fillPercent>0.35</fillPercent>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <building>
+            <isSittable>true</isSittable>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+        <defName>DankPyon_LogBench1x2c</defName>
+        <label>log bench (1x2)</label>
+        <description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
+        <graphicData>
+            <texPath>Furniture/LogBench1x2</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1,2)</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToBuild>3375</WorkToBuild>
+            <Mass>10</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>8</Beauty>
+            <Comfort>0.70</Comfort>
+        </statBases>
+        <socialPropernessMatters>true</socialPropernessMatters>
+
+        <stuffCategories Inherit="False">
+            <li>DankPyon_RawWood</li>
+        </stuffCategories>
+        <costStuffCount>45</costStuffCount>
+
+        <pathCost>30</pathCost>
+        <designationHotKey>Misc7</designationHotKey>
+        <fillPercent>0.35</fillPercent>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <building>
+            <isSittable>true</isSittable>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+        <defName>DankPyon_LogBench1x3c</defName>
+        <label>log bench (1x3)</label>
+        <description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
+        <graphicData>
+            <texPath>Furniture/LogBench1x3</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1,3)</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>4500</WorkToBuild>
+            <Mass>15</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>8</Beauty>
+            <Comfort>0.70</Comfort>
+        </statBases>
+        <socialPropernessMatters>true</socialPropernessMatters>
+
+        <stuffCategories Inherit="False">
+            <li>DankPyon_RawWood</li>
+        </stuffCategories>
+        <costStuffCount>70</costStuffCount>
+
+        <pathCost>30</pathCost>
+        <designationHotKey>Misc7</designationHotKey>
+        <fillPercent>0.35</fillPercent>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <building>
+            <isSittable>true</isSittable>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+        <defName>DankPyon_LogBench1x4c</defName>
+        <label>log bench (1x4)</label>
+        <description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
+        <graphicData>
+            <texPath>Furniture/LogBench1x4</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1,4)</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>5625</WorkToBuild>
+            <Mass>20</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>8</Beauty>
+            <Comfort>0.70</Comfort>
+        </statBases>
+        <socialPropernessMatters>true</socialPropernessMatters>
+
+        <stuffCategories Inherit="False">
+            <li>DankPyon_RawWood</li>
+        </stuffCategories>
+        <costStuffCount>95</costStuffCount>
+
+        <pathCost>30</pathCost>
+        <designationHotKey>Misc7</designationHotKey>
+        <fillPercent>0.35</fillPercent>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <building>
+            <isSittable>true</isSittable>
+        </building>
+    </ThingDef>
+
+
+  <!--======================= Basic domestic furniture ==============================-->
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
     <defName>DankPyon_RusticStool</defName>
     <label>rustic round stool</label>

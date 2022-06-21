@@ -66,6 +66,7 @@
     <Compile Include="ModExtensions.cs" />
     <Compile Include="ThingClasses\DefModExtensions\ButcherProperties.cs" />
     <Compile Include="ThingClasses\Building_Lootable.cs" />
+    <Compile Include="RecipeCounter\RecipeWorkerCounter_MakeWoodPlanks.cs" />
     <Compile Include="ThingComps\CompProps\CompProperties_PawnSpawnerOnDestroy.cs" />
     <Compile Include="ThingComps\Comp_RandomName.cs" />
     <Compile Include="ThingComps\Comp_PawnSpawnerOnDestroy.cs" />

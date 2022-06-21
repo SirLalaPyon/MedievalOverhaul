@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef Name="MakeStoneBlocksBase" Abstract="True">
+    <jobString>Sawing wood planks from logs.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking><!--Replace with sawing wood sfx-->
+    <targetCountAdjustment>20</targetCountAdjustment>
+    <recipeUsers>
+      	<li>DankPyon_Trestle</li>
+    </recipeUsers>
+</RecipeDef>
+
+<RecipeDef ParentName="MakeStoneBlocksBase">
+	<defName>Make_StoneBlocksAny</defName>
+	<label>make any stone blocks</label>
+	<description>Cut rock chunks into usable stone blocks.</description>
+	<jobString>Cutting stone blocks from chunk.</jobString>
+	<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass> <!--Make custom counter-->
+	
+	<ingredients>
+		<li>
+		<filter>
+			<categories>
+			<li>StoneChunks</li>
+			</categories>
+		</filter>
+		<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+		<li>StoneChunks</li>
+		</categories>
+	</fixedIngredientFilter>
+	<specialProducts>
+		<li>Butchery</li>
+	</specialProducts>
+</RecipeDef>
+
+</Defs>

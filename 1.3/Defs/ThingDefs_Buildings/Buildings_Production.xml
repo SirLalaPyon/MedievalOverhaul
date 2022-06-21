@@ -597,112 +597,97 @@
 
 	</ThingDef>
 
-  <!--ThingDef ParentName="BenchBase">
-    <defName>DankPyon_Dishwasher</defName>
-    <label>dishwasher</label>
-    <description>A bucket full of water to wash the dirt dishes.</description>
-    <thingClass>Building_WorkTable</thingClass>
-    <graphicData>
-      <texPath>Production/Dishwasher</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-      <drawSize>(1.25,1.25)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
+    <ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+        <defName>DankPyon_Trestle</defName>
+        <label>trestle</label>
+        <description>A simple platform to saw raw wood into planks.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Production/Trestle</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3.5,1.5)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.35, 0.59)</volume>
+                <offset>(0, 0, 0.08)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
 
-    <costList>
-      <DankPyon_IronIngot>5</DankPyon_IronIngot>
-    </costList>
-    <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
-    <costStuffCount>30</costStuffCount>
+        <costStuffCount>100</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
 
-    <altitudeLayer>Building</altitudeLayer>
-    <fillPercent>0.2</fillPercent>
-    <useHitPoints>True</useHitPoints>
-    <statBases>
-      <WorkToBuild>1500</WorkToBuild>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <Cleanliness>-5</Cleanliness>
-    </statBases>
-    <size>(1,1)</size>
-    <designationCategory>Production</designationCategory>
-    <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
-    <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <surfaceType>Item</surfaceType>
-    <inspectorTabs>
-      <li>ITab_Bills</li>
-    </inspectorTabs>
-    <building>
-      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-    </building>
-    <designationHotKey>Misc3</designationHotKey>
-    <placeWorkers>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-    </placeWorkers>
-    <techLevel>Medieval</techLevel>
-    <researchPrerequisites>
-      <li>DankPyon_BasicCooking</li>
-    </researchPrerequisites>
-  </ThingDef-->
-  <ThingDef ParentName="DankPyon_1X3WorkbenchBase">
-    <defName>DankPyon_Workbench</defName>
-    <label>workbench</label>
-    <description>A work table equipped with tools for crafting and designing items.</description>
-    <thingClass>Building_WorkTable</thingClass>
-    <graphicData>
-      <texPath>Production/Workbench</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(3.5,1.5)</drawSize>
-      <shadowData>
-        <volume>(2.8, 0.35, 0.59)</volume>
-        <offset>(0, 0, 0.08)</offset>
-      </shadowData>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>DankPyon_ToolRack</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+    </ThingDef>
 
-	<costStuffCount>100</costStuffCount>
-	<stuffCategories>
-        <li>Woody</li>
-    </stuffCategories>
+    <ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+        <defName>DankPyon_Workbench</defName>
+        <label>workbench</label>
+        <description>A work table equipped with tools for crafting and designing items.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Production/Workbench</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3.5,1.5)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.35, 0.59)</volume>
+                <offset>(0, 0, 0.08)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
 
-    <!--recipe>
-      <li>SmashCorpseMechanoid</li>  why no work unga bunga
-    </recipe-->
+        <costStuffCount>100</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
 
-    <building>
-      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-    </building>
-    <comps>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>DankPyon_Grinder</li>
-		      <li>DankPyon_Bellows</li>
-		      <li>DankPyon_QuenchingBucket</li>
-		      <li>DankPyon_ToolRack</li>
-        </linkableFacilities>
-      </li>
-    </comps>
-    <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-    </placeWorkers>
-  </ThingDef>
+        <!--recipe>
+        <li>SmashCorpseMechanoid</li>  why no work unga bunga
+        </recipe-->
+
+        <building>
+        <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <comps>
+        <li Class="CompProperties_AffectedByFacilities">
+            <linkableFacilities>
+            <li>DankPyon_Grinder</li>
+                <li>DankPyon_Bellows</li>
+                <li>DankPyon_QuenchingBucket</li>
+                <li>DankPyon_ToolRack</li>
+            </linkableFacilities>
+        </li>
+        </comps>
+        <placeWorkers>
+        <li>PlaceWorker_ShowFacilitiesConnections</li>
+        <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+    </ThingDef>
 
   <ThingDef ParentName="DankPyon_1X3WorkbenchBase">
     <defName>DankPyon_JewelryBench</defName>

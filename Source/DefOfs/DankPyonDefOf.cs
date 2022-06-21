@@ -16,6 +16,8 @@ namespace DankPyon
 
         public static ThingDef DankPyon_Fat;
         public static ThingDef DankPyon_Bone;
+
+        public static ThingCategoryDef DankPyon_Wood;
     }
 
 }

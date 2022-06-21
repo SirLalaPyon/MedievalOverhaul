@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WoodLog"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Resources/WoodPlank</texPath>
+      			<graphicClass>Graphic_StackCount</graphicClass>
+				<color>(142,99,47)</color>
+			</graphicData>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="WoodLog"]</xpath>
+		<value>
+			<butcherProducts>
+            	<DankPyon_WoodLog_Plank>2</DankPyon_WoodLog_Plank>
+        	</butcherProducts>
+		</value>
+	</Operation>
+</Patch>	

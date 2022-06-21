@@ -5,7 +5,6 @@
         <defName>DankPyon_Condiments</defName>
         <label>condiments</label>
         <parent>Foods</parent>
-        <resourceReadoutRoot>true</resourceReadoutRoot>
         <iconPath>Resources/Salt</iconPath>
     </ThingCategoryDef>
 
@@ -17,10 +16,33 @@
     </ThingCategoryDef>
 
     <ThingCategoryDef>
+        <defName>DankPyon_RawWood</defName>
+        <label>raw wood</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>UI/IconRawWood</iconPath>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Wood</defName>
+        <label>wood</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>UI/IconWood</iconPath>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
         <defName>DankPyon_Handwear</defName>
         <label>handwear</label>
         <parent>Apparel</parent>
         <iconPath>Apparel/Handwear/GlovesPlate</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Legwear</defName>
+        <label>legwear</label>
+        <parent>Apparel</parent>
+        <iconPath>Apparel/Legwear/ChaussesPlate</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>

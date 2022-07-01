@@ -15,7 +15,7 @@ namespace MedievalOverhaul
 			}
 		}
 
-		/* ==========[Used to check if the thing is taking specific damag types]========== */
+		/* ==========[Used to check if the thing is taking specific damage types]========== */
 
 		public bool takingAgeDamage = false;
 

@@ -95,6 +95,11 @@ namespace MedievalOverhaul
                             null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, false, false);
                         Pawn pawn = PawnGenerator.GeneratePawn(request);
                         innerContainer.TryAdd(pawn, lootableExt.enemySpawnCount);
+
+                        if (pawn.def.defName.Contains("Empire_"))
+                        {
+                            pawn.SetFaction(Faction.OfEmpire);
+                        }
                     }
                     contentsKnown = false;
                 }
@@ -182,8 +187,8 @@ namespace MedievalOverhaul
         {
             base.ExposeData();
             Scribe_Deep.Look(ref innerContainer, "innerContainer", this);
-            Scribe_Values.Look(ref contentsKnown, "contentsKnown", defaultValue: false);
-            Scribe_Values.Look(ref Searched, "Searched", defaultValue: false);
+            Scribe_Values.Look(ref contentsKnown, "contentsKnown");
+            Scribe_Values.Look(ref Searched, "Searched");
         }
     }
 }

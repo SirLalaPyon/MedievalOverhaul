@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<RecipeDef Name="MakeStoneBlocksBase" Abstract="True">
-    <jobString>Sawing wood planks from logs.</jobString>
-    <workAmount>800</workAmount>
+<RecipeDef Name="DankPyon_MakeTimberBase" Abstract="True">
+    <jobString>Sawing timber from logs.</jobString>
+    <workAmount>600</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_MakeStoneBlocks</soundWorking><!--Replace with sawing wood sfx-->
@@ -13,18 +13,19 @@
     </recipeUsers>
 </RecipeDef>
 
-<RecipeDef ParentName="MakeStoneBlocksBase">
-	<defName>Make_StoneBlocksAny</defName>
-	<label>make any stone blocks</label>
-	<description>Cut rock chunks into usable stone blocks.</description>
-	<jobString>Cutting stone blocks from chunk.</jobString>
-	<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass> <!--Make custom counter-->
-	
+<RecipeDef ParentName="DankPyon_MakeTimberBase">
+	<defName>DankPyon_Make_TimberAny</defName>
+	<label>make any timber</label>
+	<description>Cut raw wood into timber.</description>
+	<jobString>Cutting timber from raw wood.</jobString>
+	<workerCounterClass>DankPyon_MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass> <!--Make custom counter-->
+	<workAmount>30</workAmount>
+
 	<ingredients>
 		<li>
 		<filter>
 			<categories>
-			<li>StoneChunks</li>
+				<li>DankPyon_RawWood</li>
 			</categories>
 		</filter>
 		<count>1</count>
@@ -32,12 +33,214 @@
 	</ingredients>
 	<fixedIngredientFilter>
 		<categories>
-		<li>StoneChunks</li>
+			<li>DankPyon_RawWood</li>
 		</categories>
 	</fixedIngredientFilter>
 	<specialProducts>
 		<li>Butchery</li>
 	</specialProducts>
+</RecipeDef>
+
+<RecipeDef ParentName="DankPyon_MakeTimberBase">
+	<defName>DankPyon_Make_TimberAnyBulk</defName>
+	<label>make any timber x20</label>
+	<description>Cut raw wood into timber.</description>
+	<jobString>Cutting timber from raw wood.</jobString>
+	<workerCounterClass>DankPyon_MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
+	
+	<ingredients>
+		<li>
+		<filter>
+			<categories>
+				<li>DankPyon_RawWood</li>
+			</categories>
+		</filter>
+		<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>DankPyon_RawWood</li>
+		</categories>
+	</fixedIngredientFilter>
+	<specialProducts>
+		<li>Butchery</li>
+	</specialProducts>
+</RecipeDef>
+
+<RecipeDef ParentName="DankPyon_MakeTimberBase">
+	<defName>DankPyon_Make_TimberAnyBulkExtra</defName>
+	<label>make any timber x100</label>
+	<description>Cut raw wood into timber.</description>
+	<jobString>Cutting timber from raw wood.</jobString>
+	<workerCounterClass>DankPyon_MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
+	<workAmount>3000</workAmount>
+	<ingredients>
+		<li>
+		<filter>
+			<categories>
+				<li>DankPyon_RawWood</li>
+			</categories>
+		</filter>
+		<count>100</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<categories>
+			<li>DankPyon_RawWood</li>
+		</categories>
+	</fixedIngredientFilter>
+	<specialProducts>
+		<li>Butchery</li>
+	</specialProducts>
+</RecipeDef>
+
+<RecipeDef ParentName="DankPyon_MakeTimberBase">
+    <defName>DankPyon_Make_Timber</defName>
+    <label>make timber</label>
+    <description>Cuts raw wood into timber.</description>
+    <workAmount>30</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_RawWood</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_RawWood</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+			<WoodLog>2</WoodLog>
+		</products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DankPyon_MakeTimberBase">
+    <defName>DankPyon_Make_TimberBulk</defName>
+    <label>make timber x20</label>
+    <description>Cuts raw wood into timber.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_RawWood</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_RawWood</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+			<WoodLog>40</WoodLog>
+		</products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DankPyon_MakeTimberBase">
+    <defName>DankPyon_Make_TimberBulkExtra</defName>
+    <label>make timber x100</label>
+    <description>Cuts raw wood into timber.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_RawWood</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_RawWood</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <WoodLog>200</WoodLog>
+    </products>
+  </RecipeDef>
+
+<RecipeDef ParentName="DankPyon_MakeTimberBase">
+    <defName>DankPyon_Make_TimberDark</defName>
+    <label>make dark timber</label>
+    <description>Cuts raw wood into timber.</description>
+    <workAmount>30</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_RawDarkWood</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_RawDarkWood</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <DankPyon_DarkWoodLog>2</DankPyon_DarkWoodLog>
+    </products>
+</RecipeDef>
+
+<RecipeDef ParentName="DankPyon_MakeTimberBase">
+    <defName>DankPyon_Make_TimberDarkBulk</defName>
+    <label>make dark timber x20</label>
+    <description>Cuts raw wood into timber.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_RawDarkWood</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_RawDarkWood</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <DankPyon_DarkWoodLog>40</DankPyon_DarkWoodLog>
+    </products>
+</RecipeDef>
+
+<RecipeDef ParentName="DankPyon_MakeTimberBase">
+    <defName>DankPyon_Make_TimberDarkBulkExtra</defName>
+    <label>make dark timber</label>
+    <description>Cuts raw wood into timber.</description>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DankPyon_RawDarkWood</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DankPyon_RawDarkWood</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+        <DankPyon_DarkWoodLog>200</DankPyon_DarkWoodLog>
+    </products>
 </RecipeDef>
 
 </Defs>

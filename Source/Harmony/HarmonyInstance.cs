@@ -14,12 +14,17 @@ namespace DankPyon
     {
         public ThingDef pawnSource;
         public int leatherAmount;
+        public int MarketValue;
+
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Defs.Look(ref pawnSource, "pawnSource");
             Scribe_Values.Look(ref leatherAmount, "leatherAmount");
+            Scribe_Values.Look(ref MarketValue, "MarketValue");
         }
+
+        public override string TransformLabel(string label) => pawnSource == null ? label : pawnSource.label + " " + label;
     }
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
@@ -319,6 +324,7 @@ namespace DankPyon
                         {
                             comp.pawnSource = __instance.def;
                             comp.leatherAmount = GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.LeatherAmount) * efficiency);
+                            comp.MarketValue = GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.LeatherAmount) * comp.pawnSource.race.leatherDef.GetStatValueAbstract(StatDefOf.MarketValue));
                         }
                     }
                     yield return r;

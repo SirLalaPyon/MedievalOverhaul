@@ -2,9 +2,12 @@
 
 <Defs>
     <!--============================== Raw Wood ==============================-->
-    <!-- Raw wood will have the same stats as their processed counterpart-->
+    <!-- Raw wood will have the same stats as their processed counterpart except for the following
+        Mass is x3
+        MarketValue is x2
+    -->
     <ThingDef ParentName="ResourceVerbBase">
-        <defName>DankPyon_WoodLog_Plank</defName>
+        <defName>DankPyon_RawWood</defName>
         <label>raw wood</label>
         <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
         <graphicData>
@@ -16,8 +19,8 @@
         <soundInteract>Wood_Drop</soundInteract>
         <soundDrop>Wood_Drop</soundDrop>
         <statBases>
-            <MarketValue>1.2</MarketValue>
-            <MaxHitPoints>200</MaxHitPoints>
+            <MarketValue>0.8</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
             <Mass>1.2</Mass> 
             <Flammability>1.0</Flammability>
             <DeteriorationRate>0.5</DeteriorationRate>
@@ -78,10 +81,12 @@
         </tools>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>150</allowedArchonexusCount>
+        <butcherProducts>
+            <WoodLog>2</WoodLog>
+        </butcherProducts>
     </ThingDef>
 
-    <!-- Dark Wood -->
-    <ThingDef ParentName="DankPyon_DarkWoodLog">
+    <ThingDef ParentName="ResourceVerbBase">
         <defName>DankPyon_RawDarkWood</defName>
         <label>raw dark wood</label>
         <description>A darkish hard and old type of wood that has withstand the test of time. Useful for building structures and weapons. It is a good fuel for campfires.</description>
@@ -90,38 +95,74 @@
             <graphicClass>Graphic_StackCount</graphicClass>
             <color>(112,91,76)</color>
         </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
         <statBases>
-            <MarketValue>1.6</MarketValue>
+            <MarketValue>3.2</MarketValue>
+            <MaxHitPoints>200</MaxHitPoints>
             <Mass>1.8</Mass> 
+            <Flammability>0.95</Flammability>
+            <DeteriorationRate>0.4</DeteriorationRate>
+            <StuffPower_Armor_Sharp>0.58</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.58</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1.05</BluntDamageMultiplier>
         </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>10</minRewardCount>
         <stuffProps>
+            <stuffAdjective>dark</stuffAdjective>
             <categories>
                 <li>DankPyon_RawWood</li>
             </categories>
-            <appearance Inherit="False"/>
+            <commonality>1.00</commonality>
+            <color>(112,91,76)</color>
+            <constructEffect>ConstructWood</constructEffect>
+            <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+            <statFactors>
+                <MaxHitPoints>0.75</MaxHitPoints>
+                <Beauty>2</Beauty>
+                <Flammability>0.95</Flammability>
+                <WorkToMake>0.85</WorkToMake>
+                <WorkToBuild>0.85</WorkToBuild>
+                <DoorOpenSpeed>1.25</DoorOpenSpeed>
+            </statFactors>
         </stuffProps>
-        <tools>
-            <li>
-                <label>log</label>
-                <capacities>
-                <li>Blunt</li>
-                </capacities>
-                <power>12</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-        <butcherProducts Inherit="False"/>
-        <thingCategories Inherit="False">
+        <isTechHediff>true</isTechHediff>
+        <thingCategories>
             <li>DankPyon_RawWood</li>
         </thingCategories>
+        <techHediffsTags>
+        <li>Poor</li>
+        </techHediffsTags>
+        <tools>
+        <li>
+            <label>log</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>12</power>
+            <cooldownTime>2</cooldownTime>
+        </li>
+        </tools>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <butcherProducts>
+            <DankPyon_DarkWoodLog>2</DankPyon_DarkWoodLog>
+        </butcherProducts>
     </ThingDef>
 
   <!--============================== Processed Wood ==============================-->
   <!-- Dark Wood -->
     <ThingDef ParentName="ResourceVerbBase" Name="DankPyon_DarkWoodLog">
         <defName>DankPyon_DarkWoodLog</defName>
-        <label>dark wood</label>
+        <label>dark timber</label>
         <description>A darkish hard and old type of wood that has withstand the test of time. Useful for building structures and weapons. It is a good fuel for campfires.</description>
         <graphicData>
             <texPath>Resources/WoodPlank</texPath>
@@ -187,85 +228,83 @@
         </li>
         </tools>
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <butcherProducts>
-            <DankPyon_WoodLog_Plank>2</DankPyon_WoodLog_Plank>
-        </butcherProducts>
     </ThingDef>
 
   <!-- Elven Wood -->
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>DankPyon_ElvenWoodLog</defName>
-    <label>elven wood</label>
-    <description>Nimble but resilient, highly sought for its beauty and strength. Useful for building structures and weapons. It is a good fuel for campfires.</description>
-    <graphicData>
-      <texPath>Resources/ElvenWoodLog</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <equippedAngleOffset>-20</equippedAngleOffset>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <statBases>
-      <MarketValue>2</MarketValue>
-      <MaxHitPoints>220</MaxHitPoints>
-      <Mass>0.2</Mass> 
-      <Flammability>0.90</Flammability>
-      <DeteriorationRate>0.2</DeteriorationRate>
-      <StuffPower_Armor_Sharp>0.62</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.62</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>0.50</SharpDamageMultiplier>
-      <BluntDamageMultiplier>1.10</BluntDamageMultiplier>
-    </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
-    <minRewardCount>10</minRewardCount>
-    <stuffProps>
-      <stuffAdjective>elven</stuffAdjective>
-      <categories>
-        <li>Woody</li>
-      </categories>
-      <commonality>0.50</commonality>
-      <color>(131,158,67)</color>
-      <constructEffect>ConstructWood</constructEffect>
-      <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
-      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-      <statFactors>
-        <MaxHitPoints>0.75</MaxHitPoints>
-        <Beauty>4</Beauty>
-        <Flammability>0.95</Flammability>
-        <WorkToMake>0.85</WorkToMake>
-        <WorkToBuild>0.85</WorkToBuild>
-        <DoorOpenSpeed>1.25</DoorOpenSpeed>
-      </statFactors>
-    </stuffProps>
-    <isTechHediff>true</isTechHediff>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-    <tools>
-      <li>
-        <label>log</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-  </ThingDef>
+    <ThingDef ParentName="ResourceVerbBase" Name="DankPyon_ElvenWoodLog">
+        <defName>DankPyon_ElvenWoodLog</defName>
+        <label>elven timber</label>
+        <description>Nimble but resilient, highly sought for its beauty and strength. Useful for building structures and weapons. It is a good fuel for campfires.</description>
+        <graphicData>
+            <texPath>Resources/WoodPlank</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(131,158,67)</color>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <statBases>
+            <MarketValue>2</MarketValue>
+            <MaxHitPoints>220</MaxHitPoints>
+            <Mass>0.2</Mass> 
+            <Flammability>0.90</Flammability>
+            <DeteriorationRate>0.2</DeteriorationRate>
+            <StuffPower_Armor_Sharp>0.62</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.62</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>0.50</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1.10</BluntDamageMultiplier>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>10</minRewardCount>
+        <stuffProps>
+        <stuffAdjective>elven</stuffAdjective>
+        <categories>
+            <li>Woody</li>
+        </categories>
+        <commonality>0.50</commonality>
+        <color>(131,158,67)</color>
+        <constructEffect>ConstructWood</constructEffect>
+        <appearance>Planks</appearance>
+        <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+        <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+        <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+        <statFactors>
+            <MaxHitPoints>0.75</MaxHitPoints>
+            <Beauty>4</Beauty>
+            <Flammability>0.95</Flammability>
+            <WorkToMake>0.85</WorkToMake>
+            <WorkToBuild>0.85</WorkToBuild>
+            <DoorOpenSpeed>1.25</DoorOpenSpeed>
+        </statFactors>
+        </stuffProps>
+        <isTechHediff>true</isTechHediff>
+        <thingCategories>
+            <li>DankPyon_Wood</li>
+        </thingCategories>
+        <techHediffsTags>
+        <li>Poor</li>
+        </techHediffsTags>
+        <tools>
+        <li>
+            <label>log</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>12</power>
+            <cooldownTime>2</cooldownTime>
+        </li>
+        </tools>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    </ThingDef>
 
   <!-- Dryad Wood -->
   <ThingDef ParentName="ResourceVerbBase">
     <defName>DankPyon_DryadWoodLog</defName>
-    <label>dryad wood</label>
+    <label>dryad timber</label>
     <description>Nimble but reslient, highly sought for its beauty and strength. Useful for building structures and weapons. It is a good fuel for campfires.</description>
     <graphicData>
       <texPath>Resources/DryadWoodLog</texPath>
@@ -333,7 +372,7 @@
   <!-- Ancient Wood -->
   <ThingDef ParentName="ResourceVerbBase">
     <defName>DankPyon_AncientWoodLog</defName>
-    <label>ancient wood</label>
+    <label>ancient timber</label>
     <description>PLACEHOLDER. Useful for building structures and weapons. It is a good fuel for campfires.</description>
     <graphicData>
       <texPath>Resources/AncientWoodLog</texPath>

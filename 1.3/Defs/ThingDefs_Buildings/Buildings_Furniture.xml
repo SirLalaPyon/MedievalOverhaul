@@ -107,14 +107,14 @@
         <uiIconScale>0.8</uiIconScale>
 
         <statBases>
-        <MaxHitPoints>225</MaxHitPoints>
-        <WorkToBuild>2250</WorkToBuild>
-        <Mass>15</Mass>
-        <Flammability>1.0</Flammability>
-        <Beauty>1</Beauty>
+            <MaxHitPoints>225</MaxHitPoints>
+            <WorkToBuild>2250</WorkToBuild>
+            <Mass>15</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
         </statBases>
-
         <size>(1,2)</size>
+        
         <stuffCategories Inherit="False">
             <li>DankPyon_RawWood</li>
         </stuffCategories>
@@ -138,14 +138,14 @@
         <uiIconScale>0.8</uiIconScale>
 
         <statBases>
-        <MaxHitPoints>225</MaxHitPoints>
-        <WorkToBuild>3375</WorkToBuild>
-        <Mass>20</Mass>
-        <Flammability>1.0</Flammability>
-        <Beauty>1</Beauty>
+            <MaxHitPoints>225</MaxHitPoints>
+            <WorkToBuild>3375</WorkToBuild>
+            <Mass>20</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
         </statBases>
-
         <size>(1,3)</size>
+
         <stuffCategories Inherit="False">
             <li>DankPyon_RawWood</li>
         </stuffCategories>
@@ -169,19 +169,51 @@
         <uiIconScale>0.8</uiIconScale>
 
         <statBases>
-        <MaxHitPoints>225</MaxHitPoints>
-        <WorkToBuild>4375</WorkToBuild>
-        <Mass>25</Mass>
-        <Flammability>1.0</Flammability>
-        <Beauty>1</Beauty>
+            <MaxHitPoints>225</MaxHitPoints>
+            <WorkToBuild>4375</WorkToBuild>
+            <Mass>25</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
         </statBases>
-
         <size>(1,4)</size>
+
         <stuffCategories Inherit="False">
             <li>DankPyon_RawWood</li>
         </stuffCategories>
         <costStuffCount>72</costStuffCount>
     </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TableGatherSpotBase">
+        <defName>DankPyon_LogTable2x4c</defName>
+        <label>log table (2x4)</label>
+        <graphicData>
+            <texPath>Furniture/LogTable2x4</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(4,6)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <uiIconScale>0.8</uiIconScale>
+
+        <statBases>
+            <MaxHitPoints>225</MaxHitPoints>
+            <WorkToBuild>6375</WorkToBuild>
+            <Mass>45</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+        </statBases>
+        <size>(2,4)</size>
+
+        <stuffCategories Inherit="False">
+            <li>DankPyon_RawWood</li>
+        </stuffCategories>
+        <costStuffCount>144</costStuffCount>
+    </ThingDef>
+
 
     <ThingDef ParentName="DankPyon_ArtableFurnitureBase">
         <defName>DankPyon_LogChair</defName>
@@ -240,6 +272,7 @@
             <Beauty>8</Beauty>
             <Comfort>0.70</Comfort>
         </statBases>
+        <size>(1,2)</size>
         <socialPropernessMatters>true</socialPropernessMatters>
 
         <stuffCategories Inherit="False">
@@ -275,6 +308,7 @@
             <Beauty>8</Beauty>
             <Comfort>0.70</Comfort>
         </statBases>
+        <size>(1,3)</size>
         <socialPropernessMatters>true</socialPropernessMatters>
 
         <stuffCategories Inherit="False">
@@ -300,6 +334,7 @@
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(1,4)</drawSize>
         </graphicData>
+        <size>(1,4)</size>
         <altitudeLayer>Building</altitudeLayer>
         
         <statBases>

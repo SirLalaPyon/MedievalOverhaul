@@ -305,4 +305,21 @@
         </requiredCapacities>
         <prioritizeSustains>true</prioritizeSustains>
     </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>DankPyon_DoBillsMakeTimber</defName>
+        <label>make timber</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>115</priorityInType>
+        <fixedBillGiverDefs>
+            <li>DankPyon_Trestle</li>
+        </fixedBillGiverDefs>
+        <verb>craft</verb>
+        <gerund>crafting at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
 </Defs>

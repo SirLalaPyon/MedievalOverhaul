@@ -21,44 +21,44 @@
   <!-- ==================== Wood Logs ==================== -->
   <ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_WoodLogs1x1c</defName>
-		<label>wood logs</label>
+		<label>raw wood</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/WoodLogs1x1</texPath>
+			<texPath>Storage/RawWood1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    <uiIconPath>Storage/WoodLogs1x1_south</uiIconPath>
+    <uiIconPath>Storage/RawWood1x1_north</uiIconPath>
     <uiIconScale>1</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
 		<statBases>
-			<MaxHitPoints>70</MaxHitPoints>
+			<MaxHitPoints>150</MaxHitPoints>
       <WorkToBuild>100</WorkToBuild>
       <Mass>5</Mass>
       <Flammability>1</Flammability>
 		</statBases>
-    <designatorDropdown>DankPyon_WoodLogs1x1a</designatorDropdown>
     
-		<costList>
-			<WoodLog>45</WoodLog>
-		</costList>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
 
     <building>
       <fixedStorageSettings>
         <filter>
-          <thingDefs>
-            <li>WoodLog</li>
-          </thingDefs>
+          <categories>
+            <li>DankPyon_RawWood</li>
+          </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <priority>Important</priority>
           <filter>
-            <thingDefs>
-            <li>WoodLog</li>
-            </thingDefs>
+            <categories>
+              <li>DankPyon_RawWood</li>
+            </categories>
           </filter>
 			</defaultStorageSettings>
     </building>
@@ -72,49 +72,48 @@
 		    <overlayType>None</overlayType>
       </li>
     </comps>
-    <researchPrerequisites Inherit="false">
-    </researchPrerequisites>
+    <researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
   <!--== Wood Logs 1x2 ==-->
   <ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_WoodLogs1x2c</defName>
-		<label>wood logs (1x2)</label>
+		<label>raw wood (1x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/WoodLogs1x2</texPath>
+			<texPath>Storage/RawWood1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(4,3)</drawSize>
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
     <size>(2,1)</size>
 
 		<statBases>
-			<MaxHitPoints>70</MaxHitPoints>
+			<MaxHitPoints>200</MaxHitPoints>
       <WorkToBuild>200</WorkToBuild>
       <Mass>10</Mass>
       <Flammability>1</Flammability>
 		</statBases>
-    <designatorDropdown>DankPyon_WoodLogs1x2a</designatorDropdown>
     
-		<costList>
-			<WoodLog>90</WoodLog>
-		</costList>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
 
     <building>
       <fixedStorageSettings>
         <filter>
-          <thingDefs>
-            <li>WoodLog</li>
-          </thingDefs>
+          <categories>
+            <li>DankPyon_RawWood</li>
+          </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <priority>Important</priority>
           <filter>
-            <thingDefs>
-            <li>WoodLog</li>
-            </thingDefs>
+            <categories>
+              <li>DankPyon_RawWood</li>
+            </categories>
           </filter>
 			</defaultStorageSettings>
     </building>
@@ -129,55 +128,106 @@
 		    <overlayType>None</overlayType>
       </li>
     </comps>
-    <researchPrerequisites Inherit="false">
-    </researchPrerequisites>
+    <researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
-  <!--== Dark Wood Logs 1x1 ==-->
+  <!--== Wood Logs 2x2 ==-->
   <ThingDef ParentName="DankPyon_StorageBase">
-		<defName>DankPyon_DarkWoodLogs1x1c</defName>
-		<label>dark wood logs</label>
+		<defName>DankPyon_WoodLogs2x2c</defName>
+		<label>raw wood (2x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/DarkWoodLogs1x1</texPath>
+			<texPath>Storage/RawWood2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1</Flammability>
+		</statBases>
+    
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>180</costStuffCount>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>DankPyon_RawWood</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+              <li>DankPyon_RawWood</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
+    </building>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+    <researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+  <!--== Timber 1x1 ==-->
+  <ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Timber1x1c</defName>
+		<label>timber (1x1)</label>
+		<description>Timber that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Timber1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    <uiIconPath>Storage/DarkWoodLogs1x1_south</uiIconPath>
-    <uiIconScale>1</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
 		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToBuild>200</WorkToBuild>
-			<Mass>5</Mass>
-			<Flammability>0.95</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1</Flammability>
 		</statBases>
-    <designatorDropdown>DankPyon_WoodLogs1x1a</designatorDropdown>
     
-		<costList>
-			<DankPyon_DarkWoodLog>45</DankPyon_DarkWoodLog>
-		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
 
     <building>
       <fixedStorageSettings>
         <filter>
-          <thingDefs>
-            <li>DankPyon_DarkWoodLog</li>
-          </thingDefs>
+          <categories>
+            <li>DankPyon_Wood</li>
+          </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <priority>Important</priority>
           <filter>
-            <thingDefs>
-            <li>DankPyon_DarkWoodLog</li>
-            </thingDefs>
+            <categories>
+              <li>DankPyon_Wood</li>
+            </categories>
           </filter>
 			</defaultStorageSettings>
     </building>
-
 
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
@@ -188,52 +238,51 @@
 		    <overlayType>None</overlayType>
       </li>
     </comps>
-    <researchPrerequisites Inherit="false">
-    </researchPrerequisites>
+    <researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
-  <!--== Dark Wood Logs 1x2 ==-->
+  <!--== Timber 1x2 ==-->
   <ThingDef ParentName="DankPyon_StorageBase">
-		<defName>DankPyon_DarkWoodLogs1x2c</defName>
-		<label>dark wood logs 1x2</label>
-		<description>Logs that are stacked in an efficient manner to save more space.</description>
+		<defName>DankPyon_Timber1x2c</defName>
+		<label>timber (1x2)</label>
+		<description>Timber that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/DarkWoodLogs1x2</texPath>
+			<texPath>Storage/Timber1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(4,3)</drawSize>
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
     <size>(2,1)</size>
 
-		<building>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1</Flammability>
+		</statBases>
+    
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+
+    <building>
       <fixedStorageSettings>
         <filter>
-          <thingDefs>
-            <li>DankPyon_DarkWoodLog</li>
-          </thingDefs>
+          <categories>
+            <li>DankPyon_Wood</li>
+          </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <priority>Important</priority>
           <filter>
-            <thingDefs>
-            <li>DankPyon_DarkWoodLog</li>
-            </thingDefs>
+            <categories>
+              <li>DankPyon_Wood</li>
+            </categories>
           </filter>
 			</defaultStorageSettings>
     </building>
-
-    <statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToBuild>200</WorkToBuild>
-			<Mass>10</Mass>
-			<Flammability>0.95</Flammability>
-		</statBases>
-    <designatorDropdown>DankPyon_WoodLogs1x2a</designatorDropdown>
-
-		<costList>
-			<DankPyon_DarkWoodLog>90</DankPyon_DarkWoodLog>
-		</costList>
 
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
@@ -244,8 +293,62 @@
 		    <overlayType>None</overlayType>
       </li>
     </comps>
-    <researchPrerequisites Inherit="false">
-    </researchPrerequisites>
+    <researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+  <!--== Timber 1x2 ==-->
+  <ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Timber2x2c</defName>
+		<label>timber (2x2)</label>
+		<description>Timber that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Timber2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1</Flammability>
+		</statBases>
+    
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>180</costStuffCount>
+
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>DankPyon_Wood</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+          <filter>
+            <categories>
+              <li>DankPyon_Wood</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
+    </building>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+    <researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
   <!--== Bricks ==-->
@@ -427,17 +530,54 @@
   <!--======================= Resource Barrel ==============================-->
   <!-- ==================== Barrels ==================== -->
   <ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RusticBarrelStack</defName>
+		<label>Barrel Shelf</label>
+		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelStack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,3)</drawSize>
+		</graphicData>
+    <uiIconPath>Storage/BarrelStack</uiIconPath>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(3,1)</size>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
+    
+		<costList>
+      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
+    </costList>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+
+	</ThingDef>
+
+  <ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_RusticBarrelClosed</defName>
 		<label>Barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Furniture/BarrelClosed</texPath>
+			<texPath>Storage/BarrelClosed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1.8,1.8)</drawSize>
+			<drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
 		</graphicData>
-    <uiIconPath>Furniture/BarrelClosed</uiIconPath>
+    <uiIconPath>Storage/BarrelClosed</uiIconPath>
 		<castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
@@ -449,10 +589,10 @@
 			<Beauty>0.5</Beauty>
 		</statBases>
     
-		<stuffCategories>
-			<li>Woody</li>
-		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costList>
+      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
+    </costList>
 
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
@@ -463,7 +603,6 @@
 		<overlayType>None</overlayType>
       </li>
     </comps>
-    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
 	</ThingDef>
 
@@ -511,7 +650,6 @@
           </filter>
 			</defaultStorageSettings>
     </building>	
-    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
     
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
@@ -550,7 +688,6 @@
     <costList>
       <WoodLog>30</WoodLog>
     </costList>
-    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -608,7 +745,6 @@
     <costList>
       <WoodLog>30</WoodLog>
     </costList>
-    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -665,7 +801,6 @@
     <costList>
       <WoodLog>30</WoodLog>
     </costList>
-    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -723,7 +858,6 @@
     <costList>
       <WoodLog>30</WoodLog>
     </costList>
-    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -780,7 +914,6 @@
     <costList>
       <WoodLog>30</WoodLog>
     </costList>
-    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -838,7 +971,6 @@
     <costList>
       <WoodLog>30</WoodLog>
     </costList>
-    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>
@@ -896,7 +1028,6 @@
     <costList>
       <WoodLog>30</WoodLog>
     </costList>
-    <designatorDropdown>DankPyon_Barrels</designatorDropdown>
 
     <building>
       <fixedStorageSettings>

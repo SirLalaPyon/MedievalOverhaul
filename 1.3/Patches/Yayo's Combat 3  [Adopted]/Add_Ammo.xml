@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Huge thanks for owl for permission-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Yayo's Combat 3 [Adopted]</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive" or defName="Make_yy_ammo_primitive10"]/ingredients/li[1]/filter/thingDefs</xpath>
+					<value>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_RawDarkWood</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive" or defName="Make_yy_ammo_primitive10"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_RawDarkWood</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive" or defName="Make_yy_ammo_primitive10"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_RawDarkWood</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

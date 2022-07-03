@@ -9,9 +9,6 @@ namespace MedievalOverhaul
     // Need the constructor for GraphicEmpty initialization on game load.
     public class Building_Lootable : Building_Crate, IOpenable
     {
-        private bool Searched;
-        private readonly bool RespawningAfterLoad;
-        private readonly System.Random RandInt = new();
         private Graphic emptyColoredGraphic;
 
         private void DetermineEmptyGraphicColor()
@@ -22,10 +19,20 @@ namespace MedievalOverhaul
             emptyColoredGraphic = lootableExt.emptyGraphicData?.GraphicColoredFor(this);
         }
 
-        public override void PostMake()
+        private Graphic EmptyColoredGraphic
         {
-            base.PostMake();
-            DetermineEmptyGraphicColor();
+            get
+            {
+                if (Scribe.mode != LoadSaveMode.Inactive)
+                {
+                    return null;
+                }
+                if (emptyColoredGraphic == null)
+                {
+                    DetermineEmptyGraphicColor();
+                }
+                return emptyColoredGraphic;
+            }
         }
 
         /// <summary>
@@ -42,38 +49,35 @@ namespace MedievalOverhaul
         {
             BuildingLootableExtension lootableExt = def.GetModExtension<BuildingLootableExtension>();
 
-            if (!RespawningAfterLoad)
+            if (!contentsKnown)
             {
-                if (!Searched)
+                if (Rand.Chance(lootableExt.lootChance))
                 {
-                    if (RandInt.NextDouble() <= lootableExt.lootChance)
+                    ThingDef lootableTD;
+                    // Random search results.
+                    if (lootableExt.isRandom == true)
                     {
-                        ThingDef lootableTD;
-                        // Random search results.
-                        if (lootableExt.isRandom == true)
+                        lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
+                        if (lootableTD != null)
                         {
-                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
-                            if (lootableTD != null)
-                            {
-                                Thing thing1 = ThingMaker.MakeThing(lootableTD, null);
-                                thing1.stackCount = lootableExt.lootCount.RandomInRange;
-                                innerContainer.TryAdd(thing1, lootableExt.lootCount.RandomInRange);
-                            }
-                        }
-                        // Non-random search results.
-                        else
-                        {
-                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
-                            if (lootableTD != null)
-                            {
-                                Thing thing2 = ThingMaker.MakeThing(lootableTD, null);
-                                thing2.stackCount = lootableExt.lootCount.RandomInRange;
-                                innerContainer.TryAdd(thing2, lootableExt.lootCount.RandomInRange);
-                            }
+                            Thing thing1 = ThingMaker.MakeThing(lootableTD, null);
+                            thing1.stackCount = lootableExt.lootCount.RandomInRange;
+                            innerContainer.TryAdd(thing1, lootableExt.lootCount.RandomInRange);
                         }
                     }
-                    contentsKnown = false;
+                    // Non-random search results.
+                    else
+                    {
+                        lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
+                        if (lootableTD != null)
+                        {
+                            Thing thing2 = ThingMaker.MakeThing(lootableTD, null);
+                            thing2.stackCount = lootableExt.lootCount.RandomInRange;
+                            innerContainer.TryAdd(thing2, lootableExt.lootCount.RandomInRange);
+                        }
+                    }
                 }
+                contentsKnown = false;
             }
         }
 
@@ -85,24 +89,23 @@ namespace MedievalOverhaul
         {
             BuildingLootableExtension lootableExt = def.GetModExtension<BuildingLootableExtension>();
 
-            if (!RespawningAfterLoad)
+            if (!contentsKnown)
             {
-                if (!Searched)
+                //if (Rand.Chance(lootableExt.enemySpawnChance))
+                if (true)
                 {
-                    if (RandInt.NextDouble() <= lootableExt.enemySpawnChance)
-                    {
-                        PawnGenerationRequest request = new(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()),
-                            null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, false, false);
-                        Pawn pawn = PawnGenerator.GeneratePawn(request);
-                        innerContainer.TryAdd(pawn, lootableExt.enemySpawnCount);
+                    PawnGenerationRequest request = new(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()),
+                        null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, false, false);
+                    Pawn pawn = PawnGenerator.GeneratePawn(request);
+                    innerContainer.TryAdd(pawn, lootableExt.enemySpawnCount);
 
-                        if (pawn.def.defName.Contains("Empire_"))
-                        {
-                            pawn.SetFaction(Faction.OfEmpire);
-                        }
+                    if (pawn.kindDef.defName.Contains("Empire_"))
+                    {
+                        pawn.SetFaction(Faction.OfEmpire);
+                        Log.Message(pawn.Faction.ToString());
                     }
-                    contentsKnown = false;
                 }
+                contentsKnown = false;
             }
         }
 
@@ -135,6 +138,8 @@ namespace MedievalOverhaul
                 fCD.velocitySpeed = Rand.Range(0.1f, 0.8f);
                 Map.flecks.CreateFleck(fCD);
             }
+
+            Map.mapDrawer.MapMeshDirty(Position, MapMeshFlag.Things, true, false);
         }
 
         /// <summary>
@@ -172,11 +177,9 @@ namespace MedievalOverhaul
         {
             get
             {
-                Map.mapDrawer.MapMeshDirty(Position, MapMeshFlag.Things, true, false);
-
-                if (contentsKnown == true && emptyColoredGraphic != null)
+                if (contentsKnown == true && EmptyColoredGraphic != null)
                 {
-                    return emptyColoredGraphic;
+                    return EmptyColoredGraphic;
                 }
 
                 return DefaultGraphic;
@@ -186,9 +189,6 @@ namespace MedievalOverhaul
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Deep.Look(ref innerContainer, "innerContainer", this);
-            Scribe_Values.Look(ref contentsKnown, "contentsKnown");
-            Scribe_Values.Look(ref Searched, "Searched");
         }
     }
 }

@@ -88,6 +88,7 @@
     <Compile Include="Settings\MedievalOverhaulMod.cs" />
     <Compile Include="Harmony\Patch_FollowAndMeleeAttack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\DebugTools.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

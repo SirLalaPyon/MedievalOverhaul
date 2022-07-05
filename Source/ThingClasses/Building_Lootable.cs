@@ -60,9 +60,9 @@ namespace MedievalOverhaul
                         lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
                         if (lootableTD != null)
                         {
-                            Thing thing1 = ThingMaker.MakeThing(lootableTD, null);
-                            thing1.stackCount = lootableExt.lootCount.RandomInRange;
-                            innerContainer.TryAdd(thing1, lootableExt.lootCount.RandomInRange);
+                            Thing t1 = ThingMaker.MakeThing(lootableTD, null);
+                            t1.stackCount = lootableExt.lootCount.RandomInRange;
+                            innerContainer.TryAdd(t1, lootableExt.lootCount.RandomInRange);
                         }
                     }
                     // Non-random search results.
@@ -71,9 +71,9 @@ namespace MedievalOverhaul
                         lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
                         if (lootableTD != null)
                         {
-                            Thing thing2 = ThingMaker.MakeThing(lootableTD, null);
-                            thing2.stackCount = lootableExt.lootCount.RandomInRange;
-                            innerContainer.TryAdd(thing2, lootableExt.lootCount.RandomInRange);
+                            Thing t2 = ThingMaker.MakeThing(lootableTD, null);
+                            t2.stackCount = lootableExt.lootCount.RandomInRange;
+                            innerContainer.TryAdd(t2, lootableExt.lootCount.RandomInRange);
                         }
                     }
                 }
@@ -92,7 +92,7 @@ namespace MedievalOverhaul
             if (!contentsKnown)
             {
                 //if (Rand.Chance(lootableExt.enemySpawnChance))
-                if (true)
+                if (Rand.Chance(lootableExt.enemySpawnChance))
                 {
                     PawnGenerationRequest request = new(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()),
                         null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, false, false);

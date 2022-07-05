@@ -326,21 +326,21 @@
   </ThingDef>
 
 <ThingDef ParentName="DankPyon_1X3WorkbenchBase">
-	  <defName>DankPyon_StoneOven</defName>
-	  <label>oven</label>
-	  <thingClass>Building_WorkTable_HeatPush</thingClass>
-	  <description>A cooking table with a stone oven designed for baking meals.</description>
-	  <graphicData>
-      <texPath>Production/Oven</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(3.5,1.5)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
+	<defName>DankPyon_StoneOven</defName>
+	<label>oven</label>
+	<thingClass>Building_WorkTable_HeatPush</thingClass>
+	<description>A cooking table with a stone oven designed for baking meals.</description>
+	<graphicData>
+	<texPath>Production/Oven</texPath>
+	<graphicClass>Graphic_Multi</graphicClass>
+	<shaderType>CutoutComplex</shaderType>
+	<drawSize>(3.5,1.5)</drawSize>
+	<damageData>
+		<cornerTL>Damage/Corner</cornerTL>
+		<cornerTR>Damage/Corner</cornerTR>
+		<cornerBL>Damage/Corner</cornerBL>
+		<cornerBR>Damage/Corner</cornerBR>
+	</damageData>
     </graphicData>
 	  <staticSunShadowHeight>0.3</staticSunShadowHeight>
 
@@ -374,6 +374,63 @@
 	<building>
 	  <isMealSource>true</isMealSource>
 	  <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	</building>
+    <researchPrerequisites>
+        <li>DankPyon_Oven</li>
+    </researchPrerequisites>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+	<defName>DankPyon_StoneOvenLarge</defName>
+	<label>large oven</label>
+	<thingClass>Building_WorkTable_HeatPush</thingClass>
+	<description>A cooking table with a stone oven designed for baking meals.</description>
+	<graphicData>
+		<texPath>Production/LargeStoneOven</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(4,4)</drawSize>
+		<damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		</damageData>
+    </graphicData>
+	<size>(2,2)</size>
+
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>120</costStuffCount>
+
+	<statBases>
+        <WorkToBuild>4000</WorkToBuild>
+        <MaxHitPoints>200</MaxHitPoints>
+        <Flammability>0</Flammability>
+    </statBases>
+	
+	<comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>DankPyon_RusticCookingTools</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>100.0</fuelConsumptionRate>
+        <fuelCapacity>200.0</fuelCapacity>
+        <fuelFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>DankPyon_Coal</li>
+			</thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+	<building>
+		<isMealSource>true</isMealSource>
+		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 	</building>
     <researchPrerequisites>
         <li>DankPyon_Oven</li>

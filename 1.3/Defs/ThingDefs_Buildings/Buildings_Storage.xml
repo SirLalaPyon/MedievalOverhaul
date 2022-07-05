@@ -16,6 +16,7 @@
     <researchPrerequisites Inherit="false">
       <li>DankPyon_RusticStorage</li>
     </researchPrerequisites>
+    <designationCategory Inherit="False">DankPyon_RusticStorage</designationCategory>
   </ThingDef>
 
   <!-- ==================== Wood Logs ==================== -->
@@ -527,33 +528,33 @@
     </researchPrerequisites>
 	</ThingDef>
 
-  <!--======================= Resource Barrel ==============================-->
-  <!-- ==================== Barrels ==================== -->
-  <ThingDef ParentName="DankPyon_StorageBase">
-		<defName>DankPyon_RusticBarrelStack</defName>
-		<label>Barrel Shelf</label>
-		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
-		<graphicData>
-			<texPath>Storage/BarrelStack</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(5,3)</drawSize>
-		</graphicData>
-    <uiIconPath>Storage/BarrelStack</uiIconPath>
-		<castEdgeShadows>true</castEdgeShadows>
+<!--======================= Cupboard ==============================-->
+<ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_RusticCupboardEmpty</defName>
+    <label>cupboard</label>
+    <description>An open cupboard to store and display objects in an efficient manner.</description>
+    <graphicData>
+        <texPath>Storage/CupboardEmpty</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(5,3)</drawSize>
+    </graphicData>
     <size>(3,1)</size>
+    <uiIconPath>Storage/CupboardEmpty_north</uiIconPath>
+    <uiIconScale>2</uiIconScale>
+    <castEdgeShadows>true</castEdgeShadows>
 
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>600</WorkToBuild>
-			<Mass>10</Mass>
-			<Flammability>1</Flammability>
-			<Beauty>0.5</Beauty>
-		</statBases>
-    
-		<costList>
-      <WoodLog>30</WoodLog>
-      <Steel>5</Steel>
-    </costList>
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToBuild>600</WorkToBuild>
+        <Mass>10</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>90</costStuffCount>
 
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
@@ -564,12 +565,193 @@
 		<overlayType>None</overlayType>
       </li>
     </comps>
+</ThingDef>
 
+<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_CupboardBase">
+    <defName>DankPyon_RusticCupboardBread</defName>
+    <label>bread cupboard</label>
+    <description>An open cupboard to store and display objects in an efficient manner.</description>
+    <graphicData>
+        <texPath>Storage/CupboardBread</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+        <drawSize>(5,3)</drawSize>
+    </graphicData>
+    <size>(3,1)</size>
+    <uiIconPath>Storage/CupboardBread_north</uiIconPath>
+    <uiIconScale>2</uiIconScale>
+    <castEdgeShadows>true</castEdgeShadows>
+
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToBuild>600</WorkToBuild>
+        <Mass>10</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>90</costStuffCount>
+
+    <building>
+        <fixedStorageSettings Inherit="False">
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_MealBread</li>
+                </thingDefs>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings Inherit="False">
+            <priority>Important</priority>
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_MealBread</li>
+                </thingDefs>
+            </filter>
+		</defaultStorageSettings>
+    </building>	
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+</ThingDef>
+
+<!--======================= Resource Barrel ==============================-->
+<!-- ==================== Barrels ==================== -->
+  <ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RusticBarrelBigClosed</defName>
+		<label>large barrel</label>
+		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelBig</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+      <drawRotated>false</drawRotated>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2400</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
+    
+		<costList>
+      <Steel>20</Steel>
+    </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>160</costStuffCount>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
 	</ThingDef>
 
-  <ThingDef ParentName="DankPyon_StorageBase">
+<ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_RusticBarrelBigClosedDown</defName>
+    <label>large barrel</label>
+    <description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <graphicData>
+        <texPath>Storage/BarrelBigDown</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+
+    <statBases>
+        <MaxHitPoints>200</MaxHitPoints>
+        <WorkToBuild>2400</WorkToBuild>
+        <Mass>40</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+    
+		<costList>
+      <Steel>20</Steel>
+    </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>160</costStuffCount>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		    <overlayType>None</overlayType>
+      </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_RusticBarrelStack</defName>
+    <label>barrel shelf</label>
+    <description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+    <graphicData>
+        <texPath>Storage/BarrelStack</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(5,3)</drawSize>
+    </graphicData>
+    <size>(3,1)</size>
+    <uiIconPath>Storage/BarrelStack_north</uiIconPath>
+    <uiIconScale>2</uiIconScale>
+    <castEdgeShadows>true</castEdgeShadows>
+
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToBuild>600</WorkToBuild>
+        <Mass>10</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <costList>
+        <Steel>15</Steel>
+    </costList>
+
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>90</costStuffCount>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_RusticBarrelClosed</defName>
-		<label>Barrel</label>
+		<label>barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelClosed</texPath>
@@ -578,21 +760,26 @@
       <drawRotated>false</drawRotated>
 		</graphicData>
     <uiIconPath>Storage/BarrelClosed</uiIconPath>
+    <uiIconScale>1.5</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
     <size>(1,1)</size>
 
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>600</WorkToBuild>
-			<Mass>10</Mass>
-			<Flammability>1</Flammability>
-			<Beauty>0.5</Beauty>
-		</statBases>
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToBuild>600</WorkToBuild>
+        <Mass>10</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
     
-		<costList>
-      <WoodLog>30</WoodLog>
-      <Steel>5</Steel>
+	<costList>
+        <Steel>5</Steel>
     </costList>
+
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <comps>
       <li Class="LWM.DeepStorage.Properties" >
@@ -604,7 +791,7 @@
       </li>
     </comps>
 
-	</ThingDef>
+</ThingDef>
 
   <!--== WoodLog Barrel ==-->
   <ThingDef ParentName="DankPyon_StorageBase" >
@@ -614,7 +801,8 @@
     <graphicData>
       <texPath>Storage/BarrelWoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.8,1.8)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Storage/BarrelWoodLog</uiIconPath>
@@ -630,8 +818,13 @@
 		</statBases>
 
     <costList>
-      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
     </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <building>
       <fixedStorageSettings>
@@ -670,7 +863,8 @@
     <graphicData>
       <texPath>Storage/BarrelIronOre</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.8,1.8)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Storage/BarrelIronOre</uiIconPath>
@@ -686,8 +880,13 @@
 		</statBases>
 
     <costList>
-      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
     </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <building>
       <fixedStorageSettings>
@@ -727,7 +926,8 @@
     <graphicData>
       <texPath>Storage/BarrelSilverOre</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.8,1.8)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Storage/BarrelSilverOre</uiIconPath>
@@ -743,8 +943,13 @@
 		</statBases>
 
     <costList>
-      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
     </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <building>
       <fixedStorageSettings>
@@ -783,7 +988,8 @@
     <graphicData>
       <texPath>Storage/BarrelGoldOre</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.8,1.8)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Storage/BarrelGoldOre</uiIconPath>
@@ -799,8 +1005,13 @@
 		</statBases>
 
     <costList>
-      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
     </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <building>
       <fixedStorageSettings>
@@ -840,7 +1051,8 @@
     <graphicData>
       <texPath>Storage/BarrelCoalOre</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.8,1.8)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Storage/BarrelCoalOre</uiIconPath>
@@ -856,8 +1068,13 @@
 		</statBases>
 
     <costList>
-      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
     </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <building>
       <fixedStorageSettings>
@@ -896,7 +1113,8 @@
     <graphicData>
       <texPath>Storage/BarrelTextiles</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.8,1.8)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Storage/BarrelTextiles</uiIconPath>
@@ -912,8 +1130,13 @@
 		</statBases>
 
     <costList>
-      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
     </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <building>
       <fixedStorageSettings>
@@ -953,6 +1176,7 @@
     <graphicData>
       <texPath>Storage/BarrelLeather</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
       <drawSize>(1.8,1.8)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
@@ -969,8 +1193,13 @@
 		</statBases>
 
     <costList>
-      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
     </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <building>
       <fixedStorageSettings>
@@ -1010,7 +1239,8 @@
     <graphicData>
       <texPath>Storage/BarrelComponentBasic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.8,1.8)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
     </graphicData>
     <uiIconPath>Storage/BarrelComponentBasic</uiIconPath>
@@ -1026,8 +1256,13 @@
 		</statBases>
 
     <costList>
-      <WoodLog>30</WoodLog>
+      <Steel>5</Steel>
     </costList>
+
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <building>
       <fixedStorageSettings>
@@ -1058,6 +1293,508 @@
       </li>
     </comps>
   </ThingDef>
+
+<!--======================= Large Shelf ==============================-->
+<ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_LargeShelfEmpty</defName>
+    <label>large empty shelf</label>
+    <description>A large square platform designed to store things, keeping them clean and off the ground.</description>
+    <graphicData>
+        <texPath>Storage/StackEmpty</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+
+    <statBases>
+        <MaxHitPoints>200</MaxHitPoints>
+        <WorkToBuild>2000</WorkToBuild>
+        <Mass>40</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>160</costStuffCount>
+
+    <comps>
+        <li Class="LWM.DeepStorage.Properties" >
+            <minNumberStacks>1</minNumberStacks>
+            <maxNumberStacks>5</maxNumberStacks>
+            <timeStoringTakes>120</timeStoringTakes>
+            <showContents>false</showContents>
+            <overlayType>None</overlayType>
+        </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_LargeShelfBase">
+    <defName>DankPyon_LargeShelf_Bread</defName>
+    <label>large bread shelf</label>
+    <description>A large square platform designed to store things, keeping them clean and off the ground.</description>
+    <graphicData>
+        <texPath>Storage/StackBread</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+        <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <size>(2,2)</size>
+
+    <statBases>
+        <MaxHitPoints>200</MaxHitPoints>
+        <WorkToBuild>2000</WorkToBuild>
+        <Mass>40</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>160</costStuffCount>
+
+    <building>
+        <fixedStorageSettings Inherit="False">
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_MealBread</li>
+                </thingDefs>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings Inherit="False">
+            <priority>Important</priority>
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_MealBread</li>
+                </thingDefs>
+            </filter>
+		</defaultStorageSettings>
+    </building>	
+    
+    <comps>
+        <li Class="LWM.DeepStorage.Properties" >
+            <minNumberStacks>1</minNumberStacks>
+            <maxNumberStacks>5</maxNumberStacks>
+            <timeStoringTakes>120</timeStoringTakes>
+            <showContents>false</showContents>
+            <overlayType>None</overlayType>
+        </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_LargeShelfBase">
+    <defName>DankPyon_LargeShelf_Grain</defName>
+    <label>large grain shelf</label>
+    <graphicData>
+        <texPath>Storage/StackFlour</texPath>
+    </graphicData>
+
+    <building>
+        <fixedStorageSettings>
+            <filter>
+                <thingDefs Inherit="False">
+                    <li>DankPyon_Flour</li>
+                    <li>DankPyon_RawWheat</li>
+                </thingDefs>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings>
+            <filter>
+                <thingDefs Inherit="False">
+                    <li>DankPyon_Flour</li>
+                    <li>DankPyon_RawWheat</li>
+                </thingDefs>
+            </filter>
+		</defaultStorageSettings>
+    </building>	
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_LargeShelfBase">
+    <defName>DankPyon_LargeShelf_Meat</defName>
+    <label>large meat shelf</label>
+    <graphicData>
+        <texPath>Storage/StackMeat</texPath>
+    </graphicData>
+
+    <building>
+        <fixedStorageSettings Inherit="False">
+            <filter>
+                <categories>
+                    <li>MeatRaw</li>
+                </categories>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings Inherit="False">
+            <filter>
+                <categories>
+                    <li>MeatRaw</li>
+                </categories>
+            </filter>
+		</defaultStorageSettings>
+    </building>	
+</ThingDef>
+
+  <ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Cheese</defName>
+		<label>large cheese shelf</label>
+		<graphicData>
+			<texPath>Storage/StackCheese</texPath>
+		</graphicData>
+
+    <building>
+      <fixedStorageSettings Inherit="False">
+        <filter>
+          <categories>
+            <li>DankPyon_Cheese</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings Inherit="False">
+        <priority>Important</priority>
+          <filter>
+            <categories>
+              <li>DankPyon_Cheese</li>
+            </categories>
+          </filter>
+			</defaultStorageSettings>
+    </building>	
+	</ThingDef>
+
+    <ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Wine</defName>
+		<label>large wine shelf</label>
+		<graphicData>
+			<texPath>Storage/StackDrug</texPath>
+		</graphicData>
+
+        <building>
+            <fixedStorageSettings Inherit="False">
+                <filter>
+                    <thingDefs>
+                        <li>DankPyon_Wine</li>
+                    </thingDefs>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings Inherit="False">
+                <priority>Important</priority>
+                <filter>
+                    <thingDefs>
+                        <li>DankPyon_Wine</li>
+                    </thingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </building>	
+	</ThingDef>
+
+    <ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Mead</defName>
+		<label>large mead shelf</label>
+		<graphicData>
+			<texPath>Storage/StackMead</texPath>
+		</graphicData>
+
+        <building>
+            <fixedStorageSettings Inherit="False">
+                <filter>
+                    <thingDefs>
+                        <li>DankPyon_Wine</li>
+                    </thingDefs>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings Inherit="False">
+                <priority>Important</priority>
+                <filter>
+                    <thingDefs>
+                        <li>DankPyon_Wine</li>
+                    </thingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </building>	
+	</ThingDef>
+
+    <ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Vegetables</defName>
+		<label>large vegetables shelf</label>
+		<graphicData>
+			<texPath>Storage/StackVegetables</texPath>
+		</graphicData>
+
+        <building>
+            <fixedStorageSettings Inherit="False">
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings Inherit="False">
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </building>	
+	</ThingDef>
+
+<!--====================Sack====================-->
+<ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_SackClosed</defName>
+    <label>sack</label>
+    <description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+    <graphicData>
+        <texPath>Storage/SackClosed</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+        <drawRotated>false</drawRotated>
+    </graphicData>
+	<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+        <MaxHitPoints>60</MaxHitPoints>
+        <WorkToBuild>300</WorkToBuild>
+        <Mass>2</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <costList>
+      <DankPyon_Linen>30</DankPyon_Linen>
+    </costList>
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>5</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+    <designatorDropdown>DankPyon_Sack</designatorDropdown>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_SackFlour</defName>
+    <label>sack of flour</label>
+    <description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+    <graphicData>
+        <texPath>Storage/SackFlour</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+        <drawRotated>false</drawRotated>
+    </graphicData>
+	<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+        <MaxHitPoints>60</MaxHitPoints>
+        <WorkToBuild>300</WorkToBuild>
+        <Mass>2</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <costList>
+      <DankPyon_Linen>30</DankPyon_Linen>
+    </costList>
+
+    <building>
+        <fixedStorageSettings>
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_Flour</li>
+                </thingDefs>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings>
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_Flour</li>
+                </thingDefs>
+            </filter>
+		</defaultStorageSettings>
+    </building>	
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+    <designatorDropdown>DankPyon_Sack</designatorDropdown>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_SackWheat</defName>
+    <label>sack of wheat</label>
+    <description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+    <graphicData>
+        <texPath>Storage/SackWheat</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+        <drawRotated>false</drawRotated>
+    </graphicData>
+	<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+        <MaxHitPoints>60</MaxHitPoints>
+        <WorkToBuild>300</WorkToBuild>
+        <Mass>2</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <costList>
+      <DankPyon_Linen>30</DankPyon_Linen>
+    </costList>
+
+    <building>
+        <fixedStorageSettings>
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_RawWheat</li>
+                </thingDefs>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings>
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_RawWheat</li>
+                </thingDefs>
+            </filter>
+		</defaultStorageSettings>
+    </building>	
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+    <designatorDropdown>DankPyon_Sack</designatorDropdown>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_SackPotato</defName>
+    <label>sack of potatoes</label>
+    <description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+    <graphicData>
+        <texPath>Storage/SackPotato</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+        <drawRotated>false</drawRotated>
+    </graphicData>
+	<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+        <MaxHitPoints>60</MaxHitPoints>
+        <WorkToBuild>300</WorkToBuild>
+        <Mass>2</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <costList>
+        <DankPyon_Linen>30</DankPyon_Linen>
+    </costList>
+
+    <building>
+        <fixedStorageSettings>
+            <filter>
+                <thingDefs>
+                    <li>RawPotatoes</li>
+                </thingDefs>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings>
+            <filter>
+                <thingDefs>
+                    <li>RawPotatoes</li>
+                </thingDefs>
+            </filter>
+		</defaultStorageSettings>
+    </building>	
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+    <designatorDropdown>DankPyon_Sack</designatorDropdown>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_StorageBase">
+    <defName>DankPyon_SackApple</defName>
+    <label>sack of apples</label>
+    <description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+    <graphicData>
+        <texPath>Storage/SackApple</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,2)</drawSize>
+        <drawRotated>false</drawRotated>
+    </graphicData>
+	<castEdgeShadows>true</castEdgeShadows>
+    <size>(1,1)</size>
+
+    <statBases>
+        <MaxHitPoints>60</MaxHitPoints>
+        <WorkToBuild>300</WorkToBuild>
+        <Mass>2</Mass>
+        <Flammability>1</Flammability>
+        <Beauty>0.5</Beauty>
+    </statBases>
+
+    <costList>
+        <DankPyon_Linen>30</DankPyon_Linen>
+    </costList>
+
+    <building>
+        <fixedStorageSettings>
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_RawApples</li>
+                </thingDefs>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings>
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_RawApples</li>
+                </thingDefs>
+            </filter>
+		</defaultStorageSettings>
+    </building>	
+
+    <comps>
+      <li Class="LWM.DeepStorage.Properties" >
+        <minNumberStacks>1</minNumberStacks>
+        <maxNumberStacks>6</maxNumberStacks>
+        <timeStoringTakes>120</timeStoringTakes>
+        <showContents>false</showContents>
+		<overlayType>None</overlayType>
+      </li>
+    </comps>
+    <designatorDropdown>DankPyon_Sack</designatorDropdown>
+</ThingDef>
 
   <!--======================= Crate ==============================-->
   <ThingDef ParentName="DankPyon_StorageBase" >
@@ -1095,7 +1832,6 @@
           </categories>
         </filter>
       </defaultStorageSettings>
-      
     </building>	
     
     

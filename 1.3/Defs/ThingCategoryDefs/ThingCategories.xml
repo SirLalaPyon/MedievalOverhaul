@@ -67,6 +67,20 @@
     </ThingCategoryDef>
 
     <ThingCategoryDef>
+        <defName>DankPyon_Milk</defName>
+        <label>milk</label>
+        <parent>AnimalProductRaw</parent>
+        <iconPath>Drug/Milk/Milk_a</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DankPyon_Cheese</defName>
+        <label>cheese</label>
+        <parent>FoodMeals</parent>
+        <iconPath>Meal/Cheese/Cheese_a</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
         <defName>DankPyon_Treatise</defName>
         <label>treatise</label>
         <parent>Items</parent>

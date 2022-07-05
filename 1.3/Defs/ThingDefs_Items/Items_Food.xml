@@ -110,6 +110,46 @@
     </comps>
     <rotatable>false</rotatable>
   </ThingDef> 
+
+  <!--Milk-->
+  <ThingDef ParentName="OrganicProductBase" Name="DankPyon_MilkBase">
+    <defName>DankPyon_GoatMilk</defName>
+    <label>goat milk</label>
+    <description>Milk from a goat.</description>
+    <graphicData>
+      <texPath>Drug/Milk</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct, Fluid</foodType>
+    </ingestible>
+    <thingCategories>
+      <li>DankPyon_Milk</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_MilkBase">
+    <defName>DankPyon_SheepMilk</defName>
+    <label>sheep milk</label>
+    <description>Milk from a sheep.</description>
+  </ThingDef>
   
   <!-- Cheese -->
   <ThingDef ParentName="MealBase">
@@ -119,7 +159,7 @@
     <graphicData>
       <texPath>Meal/Cheese</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <drawSize>0.65</drawSize>
+      <drawSize>1</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>10</MarketValue>
@@ -141,6 +181,77 @@
     <researchPrerequisites>
 			<li>DankPyon_Presser</li>
 		</researchPrerequisites>
+    <thingCategories>
+      <li>DankPyon_Cheese</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealGoatCheese</defName>
+    <label>goat cheese</label>
+    <description>A sharp-tasting wheel of cheese, created by a special process of pursposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
+    <graphicData>
+      <texPath>Meal/GoatCheese</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+		<Nutrition>0.85</Nutrition>
+    </statBases>	
+    <ingestible>
+      <preferability>MealSimple</preferability>
+	    <tasteThought>DankPyon_AteCheese</tasteThought>	  
+      <optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>   
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>45</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <researchPrerequisites>
+			<li>DankPyon_Presser</li>
+		</researchPrerequisites>
+    <thingCategories>
+      <li>DankPyon_Cheese</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>DankPyon_MealSheepCheese</defName>
+    <label>sheep cheese</label>
+    <description>A sharp-tasting wheel of cheese, created by a special process of pursposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
+    <graphicData>
+      <texPath>Meal/SheepCheese</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+		<Nutrition>0.85</Nutrition>
+    </statBases>	
+    <ingestible>
+      <preferability>MealSimple</preferability>
+	    <tasteThought>DankPyon_AteCheese</tasteThought>	  
+      <optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>   
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>45</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <researchPrerequisites>
+			<li>DankPyon_Presser</li>
+		</researchPrerequisites>
+    <thingCategories>
+      <li>DankPyon_Cheese</li>
+    </thingCategories>
   </ThingDef>
 
 <!--============== Tier 4 Meals ===============-->

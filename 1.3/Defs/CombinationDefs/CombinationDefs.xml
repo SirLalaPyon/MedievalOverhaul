@@ -17,6 +17,36 @@
 	</ItemProcessor.CombinationDef>
 
 	<ItemProcessor.CombinationDef>
+		<defName>DankPyon_MilkIntoGoatCheese</defName>
+		<building>DankPyon_Presser</building>
+		<items>
+			<li>DankPyon_GoatMilk</li>
+		</items>	
+		<amount>
+			<li>100</li>
+		</amount>
+		<result>DankPyon_MealGoatCheese</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>5</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>DankPyon_MilkIntoSheepCheese</defName>
+		<building>DankPyon_Presser</building>
+		<items>
+			<li>DankPyon_SheepMilk</li>
+		</items>	
+		<amount>
+			<li>100</li>
+		</amount>
+		<result>DankPyon_MealSheepCheese</result>	
+		<yield>10</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>5</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
 		<defName>DankPyon_MincedAppleIntoJuiceApple</defName>
 		<building>DankPyon_Presser</building>
 		<items>

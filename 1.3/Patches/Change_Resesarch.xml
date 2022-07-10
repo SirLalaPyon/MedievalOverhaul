@@ -158,7 +158,32 @@
 		</value>
 	</Operation>
 
-	<!-- Add engineering researchPrerequisite to electricity -->
+	<!-- Add medieval research requirements to industrial versions
+	
+	Textile Spinning	->	ComplexClothing
+	Rustic Furniture	->	ComplexFurniture
+	Engineering			->	Electricity
+
+	-->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName = "ComplexClothing"]</xpath>
+		<value>
+			<prerequisites>
+				<li>DankPyon_TextileSpinning</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]</xpath>
+		<value>
+			<prerequisites>
+				<li>DankPyon_RusticFurniture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ResearchProjectDef[defName = "Electricity"]</xpath>
 		<value>

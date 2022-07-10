@@ -12,7 +12,7 @@
     </statBases>
     <graphicData>
       <texPath>Buildings/RusticDoor_Mover</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Multi</graphicClass>
       <damageData>
         <!--  no damage marks because they don't move with the door
         <rect>(0,0.12,1,0.76)</rect>-->
@@ -25,6 +25,13 @@
     <uiIconPath>Buildings/RusticDoor_MenuIcon</uiIconPath>
     <costStuffCount>25</costStuffCount>
     <designationHotKey>Misc1</designationHotKey>
+
+    <building>
+				<blueprintGraphicData>
+					<texPath>Things/Building/Door/Door_Blueprint</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</blueprintGraphicData>
+			</building>
   </ThingDef>
 
   <ThingDef ParentName="DoorBase">

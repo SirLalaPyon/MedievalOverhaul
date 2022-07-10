@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <!--ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_MiningSpot</defName>
-    <label>salt mining spot</label>
+    <label>mining spot</label>
     <description>A place for mining salt. Production here is slow because of the lack of tools.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
@@ -26,6 +26,7 @@
     <recipes>
       <li>SmashCorpseMechanoid</li>
     </recipes>
+    <terrainAffordanceNeeded>SmoothableStone</terrainAffordanceNeeded>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -55,7 +56,7 @@
       <li>PlaceWorker_ReportWorkSpeedPenalties</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
-  </ThingDef-->
+  </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_ResearchingSpot</defName>
@@ -117,7 +118,7 @@
     </graphicData>
 
     <costList>
-      <WoodLog>10</WoodLog>
+      <DankPyon_RawWood>10</DankPyon_RawWood>
     </costList>
 
     <altitudeLayer>Building</altitudeLayer>
@@ -679,6 +680,7 @@
         <costStuffCount>100</costStuffCount>
         <stuffCategories>
             <li>Woody</li>
+            <li>DankPyon_RawWood</li>
         </stuffCategories>
 
         <building>
@@ -943,9 +945,9 @@
     <description>A support post to let viny plants grow effectively</description>	
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
-      <texPath>Production/Post1x4</texPath>
+      <texPath>Production/Post</texPath>
       <graphicClass>Graphic_Multi</graphicClass>	  
-      <drawSize>(1,4)</drawSize>
+      <drawSize>(6,3)</drawSize>
     </graphicData>
     <stuffCategories>
       <li>Metallic</li>
@@ -954,27 +956,27 @@
     </stuffCategories>
     <costStuffCount>20</costStuffCount>	
     <statBases>
-		<MaxHitPoints>50</MaxHitPoints> 
-		<WorkToBuild>300</WorkToBuild>
-		<Flammability>1.0</Flammability>
-		<Cleanliness>-5</Cleanliness>
-		<Mass>10</Mass>	  
+        <MaxHitPoints>80</MaxHitPoints> 
+        <WorkToBuild>300</WorkToBuild>
+        <Flammability>1.0</Flammability>
+        <Cleanliness>-5</Cleanliness>
+        <Mass>10</Mass>	  
     </statBases>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
-    <size>(1,4)</size>
+    <size>(4,1)</size>
     <useHitPoints>True</useHitPoints>	
-	  <tickerType>Rare</tickerType>
+	    <tickerType>Rare</tickerType>
     <fillPercent>0.25</fillPercent>	
     <fertility>1.0</fertility>
     <passability>Standable</passability>
     <pathCost>35</pathCost>	
     <terrainAffordanceNeeded>DankPyon_GrowSoilVine</terrainAffordanceNeeded>
     <building>
-      <defaultPlantToGrow>DankPyon_Plant_Grape</defaultPlantToGrow>
-      <sowTag>DankPyon_Post</sowTag>
-      <buildingTags>
-        <li>Production</li>
-      </buildingTags>
+        <defaultPlantToGrow>DankPyon_Plant_Grape</defaultPlantToGrow>
+        <sowTag>DankPyon_Post</sowTag>
+        <buildingTags>
+            <li>Production</li>
+        </buildingTags>
     </building>
     <thingCategories>
       <li>BuildingsProduction</li>
@@ -982,7 +984,7 @@
     <designationCategory>Production</designationCategory>	
     <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
-      <li>DankPyon_AdvancedAgriculture</li>
+        <li>DankPyon_AdvancedAgriculture</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -1280,6 +1282,7 @@
 
     <costList>
       <DankPyon_IronIngot>60</DankPyon_IronIngot>
+      <DankPyon_RawWood>100</DankPyon_RawWood>
       <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
     </costList>
     <stuffCategories>

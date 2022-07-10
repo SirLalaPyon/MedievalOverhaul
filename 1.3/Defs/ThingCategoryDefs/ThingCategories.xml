@@ -16,6 +16,14 @@
     </ThingCategoryDef>
 
     <ThingCategoryDef>
+        <defName>DankPyon_RawOres</defName>
+        <label>raw ore</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Resources/IronIngot/IronIngot_b</iconPath>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
         <defName>DankPyon_RawWood</defName>
         <label>raw wood</label>
         <parent>ResourcesRaw</parent>
@@ -84,7 +92,7 @@
         <defName>DankPyon_Treatise</defName>
         <label>treatise</label>
         <parent>Items</parent>
-        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <resourceReadoutRoot>false</resourceReadoutRoot>
         <iconPath>Special/Treatise/TreatiseMelee</iconPath>
     </ThingCategoryDef>
 
@@ -92,7 +100,7 @@
         <defName>DankPyon_Loot</defName>
         <label>loot</label>
         <parent>Items</parent>
-        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <resourceReadoutRoot>false</resourceReadoutRoot>
         <iconPath>UI/LootIcon</iconPath>
     </ThingCategoryDef>
 
@@ -100,7 +108,7 @@
         <defName>DankPyon_AlchemyIngredients</defName>
         <label>loot</label>
         <parent>Items</parent>
-        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <resourceReadoutRoot>false</resourceReadoutRoot>
         <iconPath>UI/Alchemy_Icon</iconPath>
     </ThingCategoryDef>
 

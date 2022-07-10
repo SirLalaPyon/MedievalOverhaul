@@ -54,7 +54,7 @@
 	  <size>(2,2)</size>   
 
     <costList>
-      <WoodLog>100</WoodLog>
+      <DankPyon_RawWood>50</DankPyon_RawWood>
     </costList>
 
     <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
@@ -139,7 +139,7 @@
 	  <size>(2,1)</size>   
 
     <costList>
-      <WoodLog>50</WoodLog>
+      <DankPyon_RawWood>25</DankPyon_RawWood>
     </costList>
 
     <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
@@ -290,12 +290,9 @@
     <label>Presser</label>
     <description>A wooden contraption to press selected items. Either to bring the juice out or whey from curds.</description>
     <graphicData>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(4,3)</drawSize>
       <texPath>Production/Presser/Presser</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <damageData>
-        <rect>(0.05,0.1,0.9,0.9)</rect>
-      </damageData>
       <shadowData>
         <volume>(0.75, 0.35, 0.33)</volume>
       </shadowData>
@@ -326,7 +323,6 @@
       </buildingTags>
     </building>
     <size>(2,1)</size>
-    <rotatable>false</rotatable>
     <constructEffect>ConstructWood</constructEffect>
   
     <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
@@ -367,7 +363,7 @@
     </ThingDef>
 	
   <!-- ===== Ale Fermenter ===== -->
-	<ThingDef ParentName="DankPyon_ItemProcessorBase">
+	<!--ThingDef ParentName="DankPyon_ItemProcessorBase">
     <defName>DankPyon_RusticFermentingBarrel</defName>
     <label>rustic fermenting barrel</label>
     <description>A barrel for fermenting raw wort into ale. An alcoholic with a fruity, bitter, and rich taste.</description>
@@ -439,6 +435,6 @@
     <researchPrerequisites>
       <li>Brewing</li>
     </researchPrerequisites>
-  </ThingDef>
+  </ThingDef-->
 
 </Defs>

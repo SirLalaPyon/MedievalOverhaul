@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Door"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<damageData>
+					<!--  no damage marks because they don't move with the door
+					<rect>(0,0.12,1,0.76)</rect>-->
+					<enabled>false</enabled>
+				</damageData>
+			</graphicData>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Door"]</xpath>
+		<value>
+			<building>
+				<blueprintGraphicData>
+					<texPath>Things/Building/Door/Door_Blueprint</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</blueprintGraphicData>
+			</building>
+		</value>
+	</Operation>
+
+</Patch>	

@@ -377,7 +377,7 @@
     </researchPrerequisites>
   </ThingDef-->
 
-  <!--ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_RusticFermentingBarrel</defName>
     <label>rustic fermenting barrel</label>
     <description>A barrel for fermenting raw wort into ale. An alcoholic with a fruity, bitter, and rich taste.</description>
@@ -406,8 +406,12 @@
 
     <costList>
       <DankPyon_IronIngot>10</DankPyon_IronIngot>
-      <WoodLog>30</WoodLog>
     </costList>
+
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <comps>
       <li Class="ProcessorFramework.CompProperties_Processor">
@@ -428,7 +432,7 @@
     </comps>
 
     <tickerType>Rare</tickerType>
-    <constructEffect>ConstructWood</constructEffect>
+    <!--constructEffect>ConstructWood</constructEffect-->
     <building>
       <buildingTags>
         <li>Production</li>
@@ -439,7 +443,92 @@
     <researchPrerequisites>
       <li>Brewing</li>
     </researchPrerequisites>
-  </ThingDef-->
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_Smelter</defName>
+    <label>smelter</label>
+    <description>A stone smelter used to refine scrap and raw resources or cremate dead bodies.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Production/Smelter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+
+    <stuffCategories>
+        <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-30</Cleanliness>
+    </statBases>
+    <size>(2,2)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+
+    <comps Inherit="false">
+      <li Class="ProcessorFramework.CompProperties_Processor">
+        <capacity>200</capacity>
+        <independentProcesses>true</independentProcesses>
+        <parallelProcesses>false</parallelProcesses>
+        <dropIngredients>true</dropIngredients>
+        <showProductIcon>true</showProductIcon>
+        <barOffset>(0.0, 0.25)</barOffset>
+        <barScale>(1.0, 1.0)</barScale>
+        <colorCoded>false</colorCoded>
+        <processes>
+          <li>DankPyon_SmeltingOre_Iron</li>
+          <li>DankPyon_SmeltingOre_Steel</li>
+          <li>DankPyon_SmeltingOre_Silver</li>
+          <li>DankPyon_SmeltingOre_Gold</li>
+          <li>DankPyon_SmeltingOre_Coal</li>
+          <li>DankPyon_SmeltingOre_Tar</li>
+        </processes>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>10.0</fuelConsumptionRate>
+        <fuelCapacity>100.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>DankPyon_Coal</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+    
+    <tickerType>Rare</tickerType>
+
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+			<li>DankPyon_LeatherTanning</li>
+		</researchPrerequisites>
+  </ThingDef>
 
   <!-- Windmill -->
   <ThingDef ParentName="BuildingBase">

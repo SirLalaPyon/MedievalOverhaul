@@ -41,7 +41,7 @@
                 <li>DankPyon_RawWood</li>
             </categories>
             <commonality>1.00</commonality>
-            <color>(142,99,47)</color>
+            <color>(133,97,67)</color>
             <constructEffect>ConstructWood</constructEffect>
             <appearance>Planks</appearance>
             <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
@@ -486,7 +486,7 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <li>ResourcesRaw</li>
+      <li>DankPyon_RawOres</li>
     </thingCategories>
     <deepCommonality>5</deepCommonality>
     <deepCountPerPortion>45</deepCountPerPortion>
@@ -566,7 +566,7 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
-      <li>ResourcesRaw</li>
+      <li>DankPyon_RawOres</li>
     </thingCategories>
     <deepCommonality>0.5</deepCommonality>
     <deepCountPerPortion>70</deepCountPerPortion>
@@ -625,7 +625,7 @@
         </statBases>
 
         <thingCategories>
-            <li>ResourcesRaw</li>
+            <li>DankPyon_RawOres</li>
         </thingCategories>
 
         <stackLimit>500</stackLimit>
@@ -718,16 +718,16 @@
         </graphicData>
 
         <statBases>
-            <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Sharp>0.40</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
-            <MaxHitPoints>80</MaxHitPoints>
-            <MarketValue>1.5</MarketValue>
+            <StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+            <MaxHitPoints>90</MaxHitPoints>
+            <MarketValue>1.6</MarketValue>
             <Mass>0.026</Mass>
             <Flammability>1.2</Flammability>
-            <DeteriorationRate>4</DeteriorationRate>
+            <DeteriorationRate>3.5</DeteriorationRate>
         </statBases>
 
         <burnableByRecipe>true</burnableByRecipe>

@@ -10,7 +10,7 @@
   <description>Stalks of plant fibre. Its fibre can be utilized for its stringy properties and will make good fabric.</description>
   <stackLimit>200</stackLimit>
   <graphicData>
-    <texPath>Plants/Flax</texPath>
+    <texPath>Plants/RawFlax</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
   </graphicData>
   <statBases>
@@ -26,6 +26,31 @@
   </ingestible>	
 </ThingDef>   
 
+<ThingDef ParentName="RoughPlantBase">
+    <defName>DankPyon_Silkworm</defName>
+    <label>silkworm</label>
+    <description>Small wormy critters that produces silk for their cocoons that can be harvested to create fine silk.</description>
+    <graphicData>
+      <texPath>Resources/Silkworm</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>	
+    </graphicData>
+    <statBases>
+      <MarketValue>5</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Seed</foodType>
+ 	    <preferability>NeverForNutrition</preferability>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>FoodRaw</li>
+    </thingCategories>
+  </ThingDef>
 
 <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_RawCotton</defName>

@@ -69,6 +69,7 @@
     <hasInteractionCell>true</hasInteractionCell>
     <costList>
       <WoodLog>200</WoodLog>
+      <DankPyon_RawWood>75</DankPyon_RawWood>
       <DankPyon_IronIngot>60</DankPyon_IronIngot>
       <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
     </costList>
@@ -192,11 +193,14 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+
     <costList>
       <WoodLog>250</WoodLog>
+      <DankPyon_RawWood>75</DankPyon_RawWood>
       <DankPyon_IronIngot>90</DankPyon_IronIngot>
       <DankPyon_ComponentBasic>15</DankPyon_ComponentBasic>
     </costList>
+
     <inspectorTabs>
       <li>ITab_Shells</li>
     </inspectorTabs>

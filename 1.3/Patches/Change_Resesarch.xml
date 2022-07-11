@@ -86,7 +86,24 @@
 		</value>
 	</Operation>
 
-	<!-- Replace Plate Armor research-->
+	<!-- Relocate Stonecutting research-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>Stonecutting</defName>
+				<label>stonecutting</label>
+				<description>Cut rock chunks into stone blocks for use in construction. Build beautiful stone tile floors or ugly concrete walkways.</description>
+				<baseCost>300</baseCost>
+    			<tab>DankPyon_MedievalResearchTab</tab>
+    			<techLevel>Medieval</techLevel>
+				<researchViewX>0</researchViewX>
+				<researchViewY>5.6</researchViewY>
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<!-- Relocate Plate Armor research-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
 		<value>

@@ -394,7 +394,7 @@
         <wildOrder>2</wildOrder>
         <immatureGraphicPath>Plants_Immature/GrapePlant</immatureGraphicPath>
         <purpose>Food</purpose>
-        <visualSizeRange>1.8~2</visualSizeRange>
+        <visualSizeRange>1~2</visualSizeRange>
       </plant>
   </ThingDef>
 
@@ -430,7 +430,7 @@
         </sowTags>
         <topWindExposure>0.1</topWindExposure>
         <wildOrder>2</wildOrder>
-        <visualSizeRange>1.1~1.3</visualSizeRange>
+        <visualSizeRange>1~2.0</visualSizeRange>
         <immatureGraphicPath>Plants_Immature/TomatoPlant</immatureGraphicPath>
         <purpose>Food</purpose>
       </plant>
@@ -591,6 +591,51 @@
         <immatureGraphicPath>Plants_Immature/TreeLemon</immatureGraphicPath>
         <purpose>Food</purpose>
       </plant>
+  </ThingDef>
+
+    <ThingDef ParentName="TreeBase">
+    <defName>DankPyon_Tree_Mulberry</defName>
+    <label>mulberry tree</label>
+    <description>A small and fast growing tree they yields sweet mulberries. They are commonly known to host mulberry worms that can produce previous silk.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Nutrition>1.5</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/TreeMulberry</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <dieIfLeafless>False</dieIfLeafless> 
+      <sowTags>
+        <li>Ground</li>
+			</sowTags>
+      <fertilitySensitivity>0.7</fertilitySensitivity>
+      <growDays>19.5</growDays>
+      <harvestTag>Standard</harvestTag>
+      <harvestAfterGrowth>0.30</harvestAfterGrowth>
+      <harvestedThingDef>DankPyon_RawMulberry</harvestedThingDef>
+      <harvestYield>12</harvestYield>
+      <sowMinSkill>3</sowMinSkill>
+      <mustBeWildToSow>false</mustBeWildToSow>
+      <sowResearchPrerequisites>
+        <li>DankPyon_FruitTreeSowing</li>
+      </sowResearchPrerequisites> 
+      <topWindExposure>0.1</topWindExposure>
+      <wildOrder>2</wildOrder>
+      <immatureGraphicPath>Plants_Immature/TreeMulberry</immatureGraphicPath>
+      <purpose>Food</purpose>
+    </plant>
+
+    <modExtensions>
+      <li Class="VanillaPlantsExpanded.DualCropExtension">
+        <secondaryOutput>DankPyon_Silkworm</secondaryOutput>
+        <outPutAmount>3</outPutAmount>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 <!--=========================== Griffon Berry ==============================-->

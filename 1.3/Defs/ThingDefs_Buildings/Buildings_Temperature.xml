@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_IceChest</defName>
+    <label>ice chest</label>
+    <description>An insulated chest to store ice and passively refrigerate the surrounding environment.</description>
+    <category>Building</category>
+    <graphicData>
+        <texPath>Misc/IceChest</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(4,3)</drawSize>
+        <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+    </graphicData>
+    <size>(2,1)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+
+    <tickerType>Normal</tickerType>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToBuild>1000</WorkToBuild>
+        <Flammability>1</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+
+    <costList>
+        <DankPyon_Straw>40</DankPyon_Straw>
+        <DankPyon_IronIngot>10</DankPyon_IronIngot>
+    </costList>
+
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+        <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+        <li Class="CompProperties_HeatPusher">
+            <compClass>CompHeatPusherPowered</compClass>
+            <heatPerSecond>-11</heatPerSecond>
+            <heatPushMinTemperature>-10</heatPushMinTemperature>
+        </li>
+       <li Class="CompProperties_Refuelable">
+            <fuelConsumptionRate>1.5</fuelConsumptionRate>
+            <fuelCapacity>20.0</fuelCapacity>
+            <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+            <fuelFilter>
+                <thingDefs>
+                    <li>Ice_Resource_IceBlocks</li>
+                </thingDefs>
+            </fuelFilter>
+            <initialFuelPercent>0</initialFuelPercent>
+            <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+        <li>Ice_IceCurving</li>
+        <li>DankPyon_RusticFurniture</li>
+    </researchPrerequisites>
+</ThingDef>
+
+</Defs>

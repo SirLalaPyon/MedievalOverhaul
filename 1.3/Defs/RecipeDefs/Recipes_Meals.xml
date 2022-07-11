@@ -4,6 +4,48 @@
 
 	<!--============== Ingredients ===============-->
 	<RecipeDef>
+		<defName>DankPyon_Butcher_Honeycomb</defName>
+		<label>harvest honey and wax from honeycomb</label>
+		<description>Harvest honeycombs to obtain wax and honey.</description>
+		<jobString>Harvesting 1 honeycomb.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>100</workAmount> 
+		<recipeUsers>	  
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>DankPyon_RusticCookingTable</li>	  	  
+		</recipeUsers>
+		<uiIconThing>DankPyon_Honeycomb</uiIconThing>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Honeycomb</li>
+					  </thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+	
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+	
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Honeycomb</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisites>
+			<li>DankPyon_BasicCooking</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
 		<defName>DankPyon_MakeTallow</defName>
 		<label>make tallow</label>
 		<description>Render fat to make tallow.</description>
@@ -43,7 +85,8 @@
 	
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_Tallow</li>
+				<li>DankPyon_Fat</li>
+				<li>DankPyon_Salt</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workSkill>Cooking</workSkill>
@@ -61,12 +104,12 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>100</workAmount> 
-			  <recipeUsers>	  
+			<recipeUsers>	  
 				<li>Campfire</li>
 				<li>FueledStove</li>
 				<li>ElectricStove</li>
 				<li>DankPyon_RusticCookingTable</li>			  	  
-			  </recipeUsers>	
+			</recipeUsers>	
 		<ingredients>
 			<li>
 				<filter>
@@ -111,9 +154,9 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>100</workAmount> 
-			  <recipeUsers>	  
+			<recipeUsers>	  
 				<li>DankPyon_RusticCookingTable</li>		  	  
-			  </recipeUsers>	
+			</recipeUsers>	
 		<ingredients>
 			<li>
 				<filter>

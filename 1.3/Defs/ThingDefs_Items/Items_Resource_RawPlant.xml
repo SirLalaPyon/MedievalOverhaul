@@ -243,6 +243,31 @@
   </ThingDef>
 
   <ThingDef ParentName="PlantFoodRawBase">
+    <defName>DankPyon_RawMulberry</defName>
+    <label>mulberry</label>
+    <description>Raw mulberry.</description>
+    <graphicData>
+      <texPath>Plants/RawMulberry</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.92</MarketValue>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible Inherit="False">
+      <preferability>RawBad</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>15</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
     <defName>DankPyon_RawCabbages</defName>
     <label>cabbages</label>
     <description>Raw cabbages.</description>

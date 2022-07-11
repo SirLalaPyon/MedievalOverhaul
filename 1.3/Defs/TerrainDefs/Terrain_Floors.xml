@@ -46,4 +46,33 @@
     </researchPrerequisites>
   </TerrainDef>
 
+<!--==================== Ice ====================-->
+  <TerrainDef ParentName="Ice">
+    <defName>Ice_IceShallow</defName>
+    <label>shallow ice</label>
+    <changeable>false</changeable>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>Ice_FrozenMarsh</defName>
+    <label>frozen marsh</label>
+    <texturePath>Terrain/Ice_FrozenMarsh</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>338</renderPrecedence>
+    <pathCost>13</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Diggable</li>
+      <li>Bridgeable</li>
+    </affordances>
+    <fertility>0.0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <extinguishesFire>true</extinguishesFire>
+  </TerrainDef>
+
 </Defs>

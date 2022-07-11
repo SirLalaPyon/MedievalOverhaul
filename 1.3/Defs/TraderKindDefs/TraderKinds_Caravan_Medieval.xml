@@ -52,6 +52,14 @@
         <categoryDef>Textiles</categoryDef>
       </li>
       <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+
+       <li Class="StockGenerator_SingleDef">
+            <thingDef>Ice_Resource_IceBlocks</thingDef>
+            <countRange>
+            <min>0</min>
+            <max>30</max>
+            </countRange>
+        </li>
     </stockGenerators>
   </TraderKindDef>
 

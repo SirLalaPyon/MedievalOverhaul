@@ -259,17 +259,17 @@
         </building>
     </ThingDef>
 
-    <!-- Buildings -->
-    <ThingDef ParentName="BuildingNaturalBase">
+<!-- Buildings -->
+<ThingDef ParentName="BuildingNaturalBase">
     <defName>DankPyon_TarPit</defName>
     <label>tar pit</label>
     <description>A natural source of tar. \n\nDeconstruct to harvest resources.</description>
     <thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Natural/TarPit</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>Transparent</shaderType>
-      <drawSize>(4,4)</drawSize>
+        <texPath>Natural/TarPit</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>Transparent</shaderType>
+        <drawSize>(4,4)</drawSize>
     </graphicData>
 
     <uiIconScale>0.5</uiIconScale>
@@ -283,9 +283,9 @@
     <neverOverlapFloors>true</neverOverlapFloors>
     <blockPlants>true</blockPlants>
     <building>
-      <isEdifice>false</isEdifice>
-      <claimable>true</claimable>
-      <deconstructible>true</deconstructible>
+        <isEdifice>false</isEdifice>
+        <claimable>true</claimable>
+        <deconstructible>true</deconstructible>
     </building>
 
     <statBases>
@@ -293,8 +293,43 @@
     </statBases>
 
     <costList>
-      <DankPyon_Tar>200</DankPyon_Tar>
+        <DankPyon_Tar>200</DankPyon_Tar>
     </costList>
-  </ThingDef>
+</ThingDef>
+
+<ThingDef ParentName="BuildingNaturalBase">
+    <defName>DankPyon_BeeHive</defName>
+    <label>bee hive</label>
+    <description>A bee hive. \n\nDeconstruct to obtain a queen bee.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+        <texPath>Natural/BeeHive</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>1.6</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+
+    <uiIconScale>0.65</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>130</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <pathCost>42</pathCost>
+
+    <killedLeavings>
+        <DankPyon_Honeycomb>20</DankPyon_Honeycomb>
+        <DankPyon_QueenBee>1</DankPyon_QueenBee>
+    </killedLeavings>
+    
+    <building>
+        <isEdifice>false</isEdifice>
+        <claimable>true</claimable>
+        <deconstructible>true</deconstructible>
+    </building>
+
+</ThingDef>
 
 </Defs> 

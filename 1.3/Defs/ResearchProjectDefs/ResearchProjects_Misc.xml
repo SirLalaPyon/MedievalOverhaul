@@ -874,6 +874,17 @@
   </ResearchProjectDef>
 
   <!--=========================== Food Preservation ==============================-->
+  <ResearchProjectDef>
+    <defName>Ice_IceCurving</defName>
+    <label>ice preservation</label>
+    <description>Learn the proper way to store ice.</description>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <baseCost>200</baseCost>
+    <techLevel>Medieval</techLevel>
+      <researchViewX>1</researchViewX>
+			<researchViewY>5.6</researchViewY>
+  </ResearchProjectDef>
+
 
   <ResearchProjectDef>
     <defName>DankPyon_FoodPreservation</defName>

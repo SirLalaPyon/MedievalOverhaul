@@ -28,7 +28,38 @@
 
     <building>
 				<blueprintGraphicData>
-					<texPath>Things/Building/Door/Door_Blueprint</texPath>
+					<texPath>Buildings/RusticDoor_Blueprint</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</blueprintGraphicData>
+			</building>
+  </ThingDef>
+
+  <ThingDef ParentName="DoorBase">
+    <defName>DankPyon_LogGate</defName>
+    <label>log gate</label>
+    <description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+    <statBases>
+      <WorkToBuild>1200</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Buildings/LogGate_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <stuffCategories Inherit="False">
+      <li>DankPyon_RawWood</li>
+    </stuffCategories>
+    <uiIconPath>Buildings/LogGate_MenuIcon</uiIconPath>
+    <costStuffCount>25</costStuffCount>
+    <designationHotKey>Misc1</designationHotKey>
+
+    <building>
+				<blueprintGraphicData>
+					<texPath>Buildings/LogGate_Blueprint</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 				</blueprintGraphicData>
 			</building>
@@ -84,60 +115,48 @@
     <designationHotKey>Misc1</designationHotKey>
   </ThingDef>
 
-<!--========================= Column =============================-->
-  <ThingDef ParentName="BuildingBase">
-    <defName>DankPyon_RoyalColumn</defName>
-    <label>royal column</label>
-    <description>A beautiful gold-fitted column capable of holding a roof. Does not block sight or movement and looks quite nice.</description>
-    <designationCategory>Structure</designationCategory>
-    <altitudeLayer>Building</altitudeLayer>
+
+
+<!--========================= Frames =============================-->
+<ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_Frame_Log</defName>
+    <label>log gate frame</label>
+    <description>A wooden frame to be placed on top of doors.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+        <texPath>Buildings/LogFrame</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <uiIconScale>0.5</uiIconScale>
+
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <passability>PassThroughOnly</passability>
-    <fillPercent>0.25</fillPercent>
+    <fillPercent>0.3</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
     <pathCost>0</pathCost>
 
+    <stuffCategories>
+        <li>DankPyon_RawWood</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+
     <statBases>
-      <MaxHitPoints>180</MaxHitPoints>
-      <WorkToBuild>7500</WorkToBuild>
-      <Mass>10</Mass>
-      <Flammability>1.0</Flammability>
-      <Beauty>30</Beauty>
+        <MaxHitPoints>250</MaxHitPoints>
+        <WorkToBuild>1200</WorkToBuild>
+        <Mass>10</Mass>
+        <Flammability>1</Flammability>
+        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
     </statBases>
 
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-      <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>20</costStuffCount>
-    <costList>
-      <Gold>20</Gold>
-    </costList>
-
-    <holdsRoof>true</holdsRoof>
-    <canOverlapZones>false</canOverlapZones>
-    <rotatable>false</rotatable>
-    <fertility>0</fertility>
-    <specialDisplayRadius>6.9</specialDisplayRadius> <!-- must be kept in sync with roof hold-up radius -->
     <building>
-      <isInert>true</isInert>
-      <ai_chillDestination>false</ai_chillDestination>
+      <isEdifice>false</isEdifice>
     </building>
-
-    <graphicData>
-      <drawSize>(1,1.25)</drawSize>
-      <drawOffset>(0,0,0.2)</drawOffset>
-      <texPath>Furniture/RoyalColumn</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <shadowData>
-        <volume>(0.3, 0.5, 0.3)</volume>
-        <offset>(0,0,-0.23)</offset>
-      </shadowData>
-      <damageData>
-        <rect>(0.2,0.2,0.6,0.6)</rect>
-      </damageData>
-    </graphicData>
-  </ThingDef>
+    
+    <surfaceType>Item</surfaceType>
+    <designationCategory>Structure</designationCategory>
+</ThingDef>
 
   <!--========================= Walls =============================-->
 
@@ -594,6 +613,115 @@
         <texPath>Buildings/Linked/CastleWallEmbrasures_blueprint</texPath>
       </blueprintGraphicData>
     </building>
+  </ThingDef>
+
+  <ThingDef ParentName="Wall">
+    <defName>Ice_Wall_Ice</defName>
+    <label>Ice Wall</label>
+    <description>This is an ice wall that will cool its surroundings but needs to be refueled.</description>
+
+    <graphicData>
+      <texPath>Buildings/Linked/IceWall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>	
+      <shaderType>Transparent</shaderType>
+      <color>(180,210,230)</color>
+    </graphicData>
+    <uiIconPath>Buildings/Linked/IceWall_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToBuild>350</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>2</Beauty>	  
+    </statBases>
+
+    <costList>
+	    <Ice_Resource_IceBlocks>5</Ice_Resource_IceBlocks>
+    </costList>		
+
+    <tickerType>Normal</tickerType>
+    <costStuffCount>0</costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <stuffCategories Inherit="false"/>
+    <building>
+      <repairable>false</repairable>
+    </building>
+  
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="Ice.CompProperties_HitpointRefuelable">  
+        <fuelConsumptionRate>1.25</fuelConsumptionRate>
+        <destroyOnNoFuel>true</destroyOnNoFuel>
+        <fuelCapacity>5.0</fuelCapacity>	
+        <fuelLabel>Ice Thickness</fuelLabel>
+        <initialFuelPercent>1</initialFuelPercent>
+        <fuelFilter><thingDefs><li>Ice_Resource_IceBlocks</li></thingDefs></fuelFilter>
+      </li>	
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>-1</heatPerSecond>
+        <heatPushMinTemperature>1</heatPushMinTemperature>	
+      </li>
+    </comps>
+	
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+</ThingDef>
+
+  <!--========================= Column =============================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_RoyalColumn</defName>
+    <label>royal column</label>
+    <description>A beautiful gold-fitted column capable of holding a roof. Does not block sight or movement and looks quite nice.</description>
+    <designationCategory>Structure</designationCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <pathCost>0</pathCost>
+
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>7500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>30</Beauty>
+    </statBases>
+
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <costList>
+      <Gold>20</Gold>
+    </costList>
+
+    <holdsRoof>true</holdsRoof>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>false</rotatable>
+    <fertility>0</fertility>
+    <specialDisplayRadius>6.9</specialDisplayRadius> <!-- must be kept in sync with roof hold-up radius -->
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+
+    <graphicData>
+      <drawSize>(1,1.25)</drawSize>
+      <drawOffset>(0,0,0.2)</drawOffset>
+      <texPath>Furniture/RoyalColumn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
   </ThingDef>
 
 </Defs>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/TraderKindDef[defName='Base_Neolithic_Standard']</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/TraderKindDef[defName='Base_Neolithic_Standard']/stockGenerators</xpath>
+                <order>Append</order>
+                <value>
+                    <li Class="Ice.IceStockGenerator" />
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/TraderKindDef[defName='Caravan_Neolithic_BulkGoods']</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/TraderKindDef[defName='Caravan_Neolithic_BulkGoods']/stockGenerators</xpath>
+                <order>Append</order>
+                <value>
+                    <li Class="Ice.IceStockGenerator" />
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAttributeAdd">
+        <xpath>Defs/TerrainDef[defName="Ice"]</xpath>
+        <attribute>Name</attribute>
+        <value>Ice</value>
+    </Operation>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/TerrainDef[defName='Ice']/affordances</xpath>
+                <order>Append</order>
+                <value>
+                    <li>Diggable</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/TraderKindDef[defName='Caravan_Neolithic_BulkGoods']/stockGenerators</xpath>
+                <order>Append</order>
+                <value>
+                    <li Class="StockGenerator_SingleDef">
+                        <thingDef>Ice_Resource_IceBlocks</thingDef>
+                        <countRange>
+                        <min>0</min>
+                        <max>30</max>
+                        </countRange>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/TraderKindDef[defName='Base_Neolithic_Standard']/stockGenerators</xpath>
+                <order>Append</order>
+                <value>
+                    <li Class="StockGenerator_SingleDef">
+                        <thingDef>Ice_Resource_IceBlocks</thingDef>
+                        <countRange>
+                        <min>0</min>
+                        <max>300</max>
+                        </countRange>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/TraderKindDef[defName='Base_Outlander_Standard']/stockGenerators</xpath>
+                <order>Append</order>
+                <value>
+                    <li Class="StockGenerator_SingleDef">
+                        <thingDef>Ice_Resource_IceBlocks</thingDef>
+                        <countRange>
+                        <min>0</min>
+                        <max>600</max>
+                        </countRange>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/TraderKindDef[defName='Caravan_Outlander_BulkGoods']/stockGenerators</xpath>
+                <order>Append</order>
+                <value>
+                    <li Class="StockGenerator_SingleDef">
+                        <thingDef>Ice_Resource_IceBlocks</thingDef>
+                        <countRange>
+                        <min>0</min>
+                        <max>60</max>
+                        </countRange>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

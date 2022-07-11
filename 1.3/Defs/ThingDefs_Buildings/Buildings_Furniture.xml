@@ -733,7 +733,7 @@
 
   <!-- ======================== Lighting ======================= -->
 
-  <ThingDef ParentName="DankPyon_BuildingBase">
+  <ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleBase">
     <defName>DankPyon_Candles</defName>
     <label>candles</label>
     <description>A candle to prevent darkness seeping in your room. Can be refueled with animal tallow.</description>
@@ -839,14 +839,24 @@
     <researchPrerequisites>
       <li>DankPyon_CandleMaking</li>
     </researchPrerequisites>
+    <designatorDropdown>DankPyon_Candles</designatorDropdown>
     <modExtensions>
       <li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="DankPyon_BuildingBase">
+  <ThingDef ParentName="DankPyon_CandleBase">
+    <defName>DankPyon_Candles_Beeswax</defName>
+    <label>candles</label>
+
+    <costList Inherit="False">
+      <DankPyon_Wax>5</DankPyon_Wax>
+    </costList>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleStandBase">
     <defName>DankPyon_CandleStand</defName>
-    <label>candle stand</label>
+    <label>candle stand (tallow)</label>
     <description>A candle stand to prevent darkness seeping in your room. Can be refueled with tallow.</description>
     <graphicData>
       <texPath>Furniture/CandleStand</texPath>
@@ -959,6 +969,15 @@
 		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
 	</modExtensions>
   </ThingDef>
+
+  <ThingDef ParentName="DankPyon_CandleStandBase">
+    <defName>DankPyon_CandleStand_Beeswax</defName>
+    <label>candle stand (beeswax)</label>
+
+    <costList Inherit="False">
+      <DankPyon_Wax>5</DankPyon_Wax>
+    </costList>
+</ThingDef>
 	
 	<ThingDef ParentName="DankPyon_BuildingBase">
 		<defName>DankPyon_RusticLamp</defName>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="DankPyon_DrugBase">
+    <ThingDef ParentName="DankPyon_DrugBase" Name="DankPyon_WineBase">
         <defName>DankPyon_Wine</defName>
         <label>wine</label>
         <description>Liquor of many faces. Old vintages are dainty drinks intended for connoisseurs and rather finicky tongues - mandatory positions at royal parties, feasts and masquerades. Younger are often sold to peasants in roadside inns, diluted with water as much as innkeepers conscience allows.</description>
@@ -71,7 +71,7 @@
 		</researchPrerequisites>
     </ThingDef>
 
-    <ThingDef ParentName="ResourceBase">
+    <ThingDef ParentName="ResourceBase" Name="DankPyon_MustWineBase">
         <defName>DankPyon_MustWine</defName>
         <label>grape must</label>
         <description>Crushed grapes. Needs to undergo fermentation in order to become wine.</description>
@@ -98,6 +98,26 @@
                 <rotDestroys>true</rotDestroys>
             </li>
         </comps>
+    </ThingDef>
+
+
+    <!--================== Mulberry Wine ==================-->
+    <ThingDef ParentName="DankPyon_WineBase">
+        <defName>DankPyon_Wine_Mulberry</defName>
+        <label>mulberry wine</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Drug/MulberryWine</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_MustWineBase">
+        <defName>DankPyon_MustWine_Mulberry</defName>
+        <label>mulberry must</label>
+        <graphicData>
+            <texPath>Resources/MustWine</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
     </ThingDef>
 
 </Defs>

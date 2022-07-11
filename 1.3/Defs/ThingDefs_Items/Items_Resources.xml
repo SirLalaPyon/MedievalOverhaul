@@ -465,6 +465,199 @@
     <smeltable>false</smeltable>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
+<!--============================== Ice ==============================-->
+<ThingDef Name="IceResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>15</stackLimit>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+    <tradeTags><li>ResourcesRaw</li></tradeTags>	
+  </ThingDef>
+
+  <ThingDef ParentName="IceResourceBase">
+    <defName>Ice_Resource_IceBlocks</defName>
+    <label>Ice</label>
+    <description>Water which has been frozen to create blocks of ice. Will melt in temperatures above freezing.</description>
+    <graphicData>
+      <texPath>Resources/IceBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>	
+      <MarketValue>3.5</MarketValue>
+      <DeteriorationRate>15</DeteriorationRate>
+      <Mass>1.35</Mass>	  
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+      <stuffAdjective>Ice</stuffAdjective>
+      <appearance>Bricks</appearance>	  
+      <categories>
+        <li>Ice_Ice</li>		
+      </categories>  
+      <color>(180,210,230)</color>
+      <commonality>0.01</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>2</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <Beauty>1.2</Beauty>
+        <WorkToMake>1.2</WorkToMake>
+      </statFactors>	  
+    </stuffProps>
+      <tickerType>Rare</tickerType>		
+    <comps>
+      <li>
+        <compClass>Ice.CompStackMelter</compClass>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>-1</heatPerSecond>
+        <heatPushMinTemperature>1</heatPushMinTemperature>	
+      </li>
+    </comps>	
+  </ThingDef>
+<!--============================== Beekeeping ==============================-->
+<ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_Wax</defName>
+    <label>wax</label>
+    <description>An organic compound, solid at room temperature, which allows it to be stored for extended periods of time. Can be made into candles.</description>
+    <stackLimit>75</stackLimit>	
+    <graphicData>
+        <texPath>Resources/Wax</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+        <MarketValue>1.5</MarketValue>
+        <Mass>0.25</Mass>
+    </statBases>
+    <thingCategories>
+        <li>ResourcesRaw</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>
+    <comps>
+        <li Class="CompProperties_Rottable">
+        <daysToRotStart>90</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+        </li>
+    </comps>
+</ThingDef> 
+
+<ThingDef ParentName="ResourceBase">
+    <defName>DankPyon_QueenBee</defName>
+    <label>oswin queen</label>
+    <description>The matriarch of a bee colony originating from the regions of house oswin. They feed on carrions and are able to produce honey of it.</description>
+    <stackLimit>1</stackLimit>	
+    <graphicData>
+        <texPath>Resources/QueenBee</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+        <MarketValue>200</MarketValue>
+        <Mass>0.025</Mass>
+    </statBases>
+    <thingCategories>
+        <li>ResourcesRaw</li>
+    </thingCategories>
+</ThingDef> 
+
+<ThingDef ParentName="OrganicProductBase">
+    <defName>DankPyon_Honey</defName>
+    <label>honey</label>
+    <description>A sweet and viscous liquid substance that can be used as a preservative or fermented into an alcoholic drink.</description>
+    <graphicData>
+        <texPath>Resources/HoneyLiquid</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+
+    <statBases>
+        <MarketValue>7.0</MarketValue>
+        <Mass>0.025</Mass>
+        <Nutrition>0.05</Nutrition>
+        <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <allowedArchonexusCount>150</allowedArchonexusCount>
+
+    <ingestible>
+        <foodType>AnimalProduct</foodType>
+        <preferability>MealFine</preferability>
+        <joy>0.08</joy>
+        <joyKind>Gluttonous</joyKind>
+        <ingestEffect>EatVegetarian</ingestEffect>
+        <ingestSound>Meal_Eat</ingestSound>
+        <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+
+    <thingCategories>
+        <li>AnimalProductRaw</li>
+    </thingCategories>
+</ThingDef>
+
+<ThingDef ParentName="OrganicProductBase">
+    <defName>DankPyon_Honeycomb</defName>
+    <label>honey</label>
+    <description>A sweet and viscous liquid substance that can be used as a preservative or fermented into an alcoholic drink.</description>
+    <graphicData>
+        <texPath>Resources/Honeycomb</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <socialPropernessMatters>true</socialPropernessMatters>
+
+    <statBases>
+        <MarketValue>7.0</MarketValue>
+        <Mass>0.025</Mass>
+        <Nutrition>0.05</Nutrition>
+        <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <allowedArchonexusCount>150</allowedArchonexusCount>
+
+    <ingestible>
+        <foodType>AnimalProduct</foodType>
+        <preferability>MealFine</preferability>
+        <joy>0.08</joy>
+        <joyKind>Gluttonous</joyKind>
+        <ingestEffect>EatVegetarian</ingestEffect>
+        <ingestSound>Meal_Eat</ingestSound>
+        <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+
+    <thingCategories>
+        <li>AnimalProductRaw</li>
+    </thingCategories>
+    <butcherProducts>
+        <DankPyon_Wax>5</DankPyon_Wax>
+        <DankPyon_Honey>3</DankPyon_Honey>
+    </butcherProducts>
+</ThingDef>
   
   <!--============================== Metals ==============================-->
   <!--=============== Iron ====================-->
@@ -750,6 +943,75 @@
 
         <thingCategories>
         <li>Textiles</li>
+        </thingCategories>
+        <comps>
+        <li>
+            <compClass>CompColorable</compClass>
+        </li>
+        </comps>
+        <colorGeneratorInTraderStock Class="ColorGenerator_Options">
+        <options>
+            <li>
+            <weight>5</weight>
+            <only>(0.33,0.33,0.33,1)</only>
+            </li>
+            <li>
+            <weight>10</weight>
+            <min>(0.3,0.3,0.3,1)</min>
+            <max>(0.9,0.9,0.9,1)</max>
+            </li>
+            <li>
+            <weight>5</weight>
+            <only>(0.9,0.9,0.9,1)</only>
+            </li>
+        </options>
+        </colorGeneratorInTraderStock>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>DankPyon_Silk</defName>
+        <label>silk</label>
+        <description>A soft and luxurious fabric frequently tailored for noble apparel.</description>
+        <graphicData>
+        <texPath>Resources/SilkFabric</texPath>
+        <graphicClass>Graphic_StackCount</graphicClass>
+        <!--color>(202,195,170)</color-->
+        </graphicData>
+
+        <statBases>
+            <StuffPower_Armor_Sharp>0.20</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>11</StuffPower_Insulation_Heat>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>5</MarketValue>
+            <Mass>0.010</Mass>
+            <Flammability>2</Flammability>
+            <DeteriorationRate>2.5</DeteriorationRate>
+        </statBases>
+
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>30</minRewardCount>
+
+        <stuffProps>
+            <statFactors>
+                <Flammability>1.2</Flammability>
+                <Beauty>2</Beauty>
+            </statFactors>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+            <color>(216,215,216)</color>
+            <commonality>1.4</commonality>
+            <allowColorGenerators>true</allowColorGenerators>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+
+        <thingCategories>
+          <li>Textiles</li>
         </thingCategories>
         <comps>
         <li>

@@ -28,9 +28,23 @@
 		<durationDays>0.4</durationDays>
 		<stages>
 			<li>
-				<label>Good ol' Ale</label>
+				<label>good ol' ale</label>
 				<description>Nothing like good Ale to keep the horrors out of my mind.</description>
 				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>	
+	</ThoughtDef>
+
+	<ThoughtDef>	
+		<defName>DankPyon_DrankMead</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.4</durationDays>
+		<stages>
+			<li>
+				<label>good ol' mead</label>
+				<description>Warm and sweet, it's distinct tone of honey is somewhat satisfying.</description>
+				<baseMoodEffect>6</baseMoodEffect>
 			</li>
 		</stages>	
 	</ThoughtDef>

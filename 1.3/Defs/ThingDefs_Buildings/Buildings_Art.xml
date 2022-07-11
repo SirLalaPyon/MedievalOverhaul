@@ -388,5 +388,185 @@
     </comps>
 </ThingDef>
   
+<!--  =========== Ice Base Classes ============ --> 
+<!-- Artwork Base Class -->
+  <ThingDef Name="IceArtworkBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building_Art</thingClass>
 
+    <graphicData>	
+	  <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>	
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+		
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <castEdgeShadows>true</castEdgeShadows>
+    <useHitPoints>true</useHitPoints>
+	<altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>	
+	<passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>	
+    <fillPercent>0.5</fillPercent>
+    <building>
+      <repairable>false</repairable>
+    </building>
+  
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>-1</heatPerSecond>
+        <heatPushMinTemperature>1</heatPushMinTemperature>	
+      </li>
+      <li><compClass>CompQuality</compClass></li>
+    </comps>
+
+    <inspectorTabs><li>ITab_Art</li></inspectorTabs>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>TableSculpting</li>
+      </recipeUsers>
+    </recipeMaker>
+    <tradeTags><li>Exotic</li></tradeTags>		
+  </ThingDef>
+  
+ <!-- Artwork Sculpture Class -->   
+  <ThingDef Name="IceArtworkSculpture" ParentName="IceArtworkBase" Abstract="True"> 
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+    </comps>
+  </ThingDef> 
+
+  
+<!--  =========== Actual Artwork Buildings ============ -->
+<!-- ========= Sculptures ========= -->
+<!-- Small Ice Sculpture --> 
+  <ThingDef ParentName="IceArtworkSculpture">
+    <defName>Ice_IceSculptureSmall</defName>
+    <label>Small Ice Sculpture</label>
+    <description>A torso-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/Art/SculptureSmall</texPath>
+      <color>(180,210,230)</color>	  
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tickerType>Normal</tickerType>	
+    <fillPercent>0.35</fillPercent>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>20</Mass>
+      <Beauty>30</Beauty>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+	  <Ice_Resource_IceBlocks>50</Ice_Resource_IceBlocks>
+    </costList>	
+    <comps>
+      <li Class="Ice.CompProperties_HitpointRefuelable">  
+        <fuelConsumptionRate>1.25</fuelConsumptionRate>
+        <destroyOnNoFuel>true</destroyOnNoFuel>
+        <fuelCapacity>15.0</fuelCapacity>	
+        <fuelLabel>Ice Thickness</fuelLabel>
+        <initialFuelPercent>1</initialFuelPercent>
+        <fuelFilter><thingDefs><li>Ice_Resource_IceBlocks</li></thingDefs></fuelFilter>
+      </li>	
+    </comps>
+  </ThingDef>
+
+<!-- Large Ice Sculpture -->   
+  <ThingDef ParentName="IceArtworkSculpture">
+    <defName>Ice_IceSculptureLarge</defName>
+    <label>Large Ice Sculpture</label>
+    <description>A person-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/Art/SculptureLarge</texPath>
+      <drawSize>(3,3)</drawSize>
+      <color>(180,210,230)</color>	  
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tickerType>Normal</tickerType>	
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>90</Mass>
+      <Beauty>80</Beauty>
+			<WorkToMake>20000</WorkToMake>
+	</statBases>
+    <costList>
+	  <Ice_Resource_IceBlocks>75</Ice_Resource_IceBlocks>
+    </costList>	
+    <comps>
+      <li Class="Ice.CompProperties_HitpointRefuelable">  
+        <fuelConsumptionRate>1.25</fuelConsumptionRate>
+        <destroyOnNoFuel>true</destroyOnNoFuel>
+        <fuelCapacity>30.0</fuelCapacity>	
+        <fuelLabel>Ice Thickness</fuelLabel>
+        <initialFuelPercent>1</initialFuelPercent>
+        <fuelFilter><thingDefs><li>Ice_Resource_IceBlocks</li></thingDefs></fuelFilter>
+      </li>	
+    </comps>
+  </ThingDef>
+
+<!-- Grand Ice Sculpture -->   
+  <ThingDef ParentName="IceArtworkSculpture">
+    <defName>Ice_IceSculptureGrand</defName>
+    <label>Grand Ice Sculpture</label>
+    <description>A car-sized piece of material sculpted into an artistic form.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/Art/SculptureGrand</texPath>
+      <drawSize>(4,4)</drawSize>
+      <color>(180,210,230)</color>	  
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tickerType>Normal</tickerType>	
+    <fillPercent>0.5</fillPercent>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>170</Beauty>
+      <Mass>350</Mass>
+			<WorkToMake>45000</WorkToMake>
+    </statBases>
+    <costList>
+	  <Ice_Resource_IceBlocks>150</Ice_Resource_IceBlocks>
+    </costList>	
+    <comps>
+      <li Class="Ice.CompProperties_HitpointRefuelable">  
+        <fuelConsumptionRate>1.25</fuelConsumptionRate>
+        <destroyOnNoFuel>true</destroyOnNoFuel>
+        <fuelCapacity>50.0</fuelCapacity>	
+        <fuelLabel>Ice Thickness</fuelLabel>
+        <initialFuelPercent>1</initialFuelPercent>
+        <fuelFilter><thingDefs><li>Ice_Resource_IceBlocks</li></thingDefs></fuelFilter>
+      </li>	
+    </comps>
+  </ThingDef>
 </Defs> 

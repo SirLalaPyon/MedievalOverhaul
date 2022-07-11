@@ -378,15 +378,16 @@
   </ThingDef-->
 
   <ThingDef ParentName="BuildingBase">
-    <defName>DankPyon_RusticFermentingBarrel</defName>
-    <label>rustic fermenting barrel</label>
-    <description>A barrel for fermenting raw wort into ale. An alcoholic with a fruity, bitter, and rich taste.</description>
+    <defName>DankPyon_SilkBed</defName>
+    <label>silk bed</label>
+    <description>A wooden platform designed to hold silkworms during their cocoon life cycle and are harvested for silk once they have after fully spinning the cocoon.</description>
     <thingClass>Building_WorkTable</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Production/RusticFermentingBarrel</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-	    <drawSize>1.5,1.5</drawSize>
+      <texPath>Production/SilkBed/SilkBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+	    <drawSize>2,2</drawSize>
       <damageData>
         <rect>(0.05,0.1,0.9,0.9)</rect>
       </damageData>
@@ -411,7 +412,7 @@
     <stuffCategories>
         <li>Woody</li>
     </stuffCategories>
-    <costStuffCount>30</costStuffCount>
+    <costStuffCount>60</costStuffCount>
 
     <comps>
       <li Class="ProcessorFramework.CompProperties_Processor">
@@ -424,8 +425,7 @@
           <barScale>(1.0, 1.0)</barScale>
           <colorCoded>false</colorCoded>
           <processes>
-            <li>DankPyon_WortIntoAle</li>
-            <li>DankPyon_MustIntoWine</li>
+            <li>DankPyon_SilkwormIntoSilk</li>
           </processes>
         </li>
         <li Class="CompProperties_Forbiddable"/>
@@ -440,8 +440,9 @@
       <destroySound>BuildingDestroyed_Wood_Small</destroySound>
     </building>
 
+    <designationCategory>Production</designationCategory>
     <researchPrerequisites>
-      <li>Brewing</li>
+      <li>DankPyon_Silk</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -517,6 +518,15 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
       </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>11</heatPerSecond>
+        <heatPushMaxTemperature>28</heatPushMaxTemperature>
+      </li>
     </comps>
     
     <tickerType>Rare</tickerType>
@@ -526,8 +536,78 @@
     </placeWorkers>
     <techLevel>Medieval</techLevel>
     <researchPrerequisites>
-			<li>DankPyon_LeatherTanning</li>
+			<li>Smithing</li>
 		</researchPrerequisites>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_RusticFermentingBarrel</defName>
+    <label>rustic fermenting barrel</label>
+    <description>A barrel for fermenting raw wort into ale. An alcoholic with a fruity, bitter, and rich taste.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Production/RusticFermentingBarrel</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	    <drawSize>2,2</drawSize>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.75, 0.35, 0.33)</volume>
+      </shadowData>
+    </graphicData>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>42</pathCost>
+
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+
+    <costList>
+      <DankPyon_IronIngot>10</DankPyon_IronIngot>
+    </costList>
+
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+
+    <comps>
+      <li Class="ProcessorFramework.CompProperties_Processor">
+          <capacity>25</capacity>
+          <independentProcesses>false</independentProcesses>
+          <parallelProcesses>false</parallelProcesses>
+          <dropIngredients>true</dropIngredients>
+          <showProductIcon>true</showProductIcon>
+          <barOffset>(0.0, 0.25)</barOffset>
+          <barScale>(1.0, 1.0)</barScale>
+          <colorCoded>false</colorCoded>
+          <processes>
+            <li>DankPyon_WortIntoAle</li>
+            <li>DankPyon_MustIntoWine</li>
+            <li>DankPyon_HoneyIntoMead</li>
+          </processes>
+        </li>
+        <li Class="CompProperties_Forbiddable"/>
+    </comps>
+
+    <tickerType>Rare</tickerType>
+    <!--constructEffect>ConstructWood</constructEffect-->
+    <building>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Wood_Small</destroySound>
+    </building>
+
+    <researchPrerequisites>
+      <li>Brewing</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <!-- Windmill -->

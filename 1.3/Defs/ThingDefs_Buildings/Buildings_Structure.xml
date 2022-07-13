@@ -115,8 +115,6 @@
     <designationHotKey>Misc1</designationHotKey>
   </ThingDef>
 
-
-
 <!--========================= Frames =============================-->
 <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Frame_Log</defName>
@@ -158,76 +156,75 @@
     <designationCategory>Structure</designationCategory>
 </ThingDef>
 
-  <!--========================= Walls =============================-->
-
-  <ThingDef ParentName="Wall">
+<!--========================= Walls =============================-->
+<ThingDef ParentName="Wall">
     <defName>DankPyon_LogWall</defName>
     <label>log wall</label>
     <description>An impassable wall. Capable of holding up a roof.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>Buildings/Linked/LogWall_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+        <texPath>Buildings/Linked/LogWall_Atlas</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconPath>Buildings/Linked/LogWall_MenuIcon</uiIconPath>
     <uiIconPathsStuff Inherit="False"/>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToBuild>535</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        <MaxHitPoints>400</MaxHitPoints>
+        <WorkToBuild>535</WorkToBuild>
+        <Flammability>1.0</Flammability>
+        <MeditationFocusStrength>0.22</MeditationFocusStrength>
     </statBases>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 
     <stuffCategories Inherit="False">
-      <li>DankPyon_RawWood</li>
+        <li>DankPyon_RawWood</li>
     </stuffCategories>
     <costStuffCount>5</costStuffCount>
 
     <building>
-      <blueprintGraphicData>
-        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-      </blueprintGraphicData>
+        <blueprintGraphicData>
+            <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+        </blueprintGraphicData>
     </building>
     <designationHotKey Inherit="False"/>
-  </ThingDef>
+</ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
+<ThingDef ParentName="BuildingBase">
     <defName>DankPyon_HideTentWall</defName>
     <label>hide tent</label>
     <description>A patchleather tent made up of raw hide. Fast and easy to build but can be easily destroyed.\n\nDismantling the tent will return all resources.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>Buildings/Linked/HideTent_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>Basic</linkType>
-      <linkFlags>
-        <li>Custom10</li>
-      </linkFlags>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-        <edgeTop>Damage/Edge</edgeTop>
-        <edgeBot>Damage/Edge</edgeBot>
-        <edgeLeft>Damage/Edge</edgeLeft>
-        <edgeRight>Damage/Edge</edgeRight>
-      </damageData>
+        <texPath>Buildings/Linked/HideTent_Atlas</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <linkType>Basic</linkType>
+        <linkFlags>
+            <li>Custom10</li>
+        </linkFlags>
+        <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+            <edgeTop>Damage/Edge</edgeTop>
+            <edgeBot>Damage/Edge</edgeBot>
+            <edgeLeft>Damage/Edge</edgeLeft>
+            <edgeRight>Damage/Edge</edgeRight>
+        </damageData>
     </graphicData>
     <uiIconPath>Buildings/Linked/HideTent_MenuIcon</uiIconPath>
 
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>50</WorkToBuild>
-      <Flammability>2.0</Flammability>
-      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        <MaxHitPoints>100</MaxHitPoints>
+        <WorkToBuild>50</WorkToBuild>
+        <Flammability>2.0</Flammability>
+        <MeditationFocusStrength>0.22</MeditationFocusStrength>
     </statBases>
 
     <stuffCategories>
-      <li>Leathery</li>
+        <li>Leathery</li>
     </stuffCategories>
     <costStuffCount>5</costStuffCount>
 
@@ -283,33 +280,33 @@
       </li>
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
-  </ThingDef>
+</ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
+<ThingDef ParentName="BuildingBase">
     <defName>DankPyon_TentWall</defName>
     <label>tent</label>
     <description>A tent made up of soft fabric. Fast and easy to build but can be easily destroyed.\n\nDismantling the tent will return all resources.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>Buildings/Linked/Tent_Atlas</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>Basic</linkType>
-      <linkFlags>
-        <li>Custom10</li>
-      </linkFlags>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-        <edgeTop>Damage/Edge</edgeTop>
-        <edgeBot>Damage/Edge</edgeBot>
-        <edgeLeft>Damage/Edge</edgeLeft>
-        <edgeRight>Damage/Edge</edgeRight>
-      </damageData>
+        <texPath>Buildings/Linked/Tent_Atlas</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <linkType>Basic</linkType>
+        <linkFlags>
+            <li>Custom10</li>
+        </linkFlags>
+        <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+            <edgeTop>Damage/Edge</edgeTop>
+            <edgeBot>Damage/Edge</edgeBot>
+            <edgeLeft>Damage/Edge</edgeLeft>
+            <edgeRight>Damage/Edge</edgeRight>
+        </damageData>
     </graphicData>
-    <uiIconPath>Buildings/Linked/Tent_MenuIcon</uiIconPath>
+<uiIconPath>Buildings/Linked/Tent_MenuIcon</uiIconPath>
 
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -374,7 +371,7 @@
       </li>
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
-  </ThingDef>
+</ThingDef>
 
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Palisade</defName>
@@ -692,7 +689,7 @@
     </building>
   </ThingDef>
 
-  <ThingDef ParentName="Wall">
+<ThingDef ParentName="Wall">
     <defName>Ice_Wall_Ice</defName>
     <label>Ice Wall</label>
     <description>This is an ice wall that will cool its surroundings but needs to be refueled.</description>
@@ -742,9 +739,131 @@
 	
     <designationCategory>Temperature</designationCategory>
     <researchPrerequisites>
-      <li>Stonecutting</li>
+        <li>Stonecutting</li>
     </researchPrerequisites>
 </ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+	<defName>DankPyon_Trench</defName>
+    <label>trenchs</label>
+    <description>A basic, unreinforced ditch that obstructs movement. Requires only labour to construct, but can be collapsed by damage.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+     <texPath>Buildings/Linked/Trench_Atlas</texPath>
+     <graphicClass>Graphic_Single</graphicClass>
+     <linkType>Basic</linkType>
+	 <linkFlags>
+		<li>Custom5</li>
+	 </linkFlags>
+    </graphicData>
+	<damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>10</multiplier>
+      </li>
+    </damageMultipliers>
+	<blockLight>false</blockLight>
+    <uiIconPath>Buildings/Linked/Trench_MenuIcon</uiIconPath>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <pathCost>300</pathCost>
+    <passability>Standable</passability>
+    <fillPercent>0</fillPercent>
+    <coversFloor>false</coversFloor>
+	<holdsRoof>false</holdsRoof>
+	<castEdgeShadows>false</castEdgeShadows>  
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>	
+    <building>
+      <allowAutoroof>false</allowAutoroof>
+	  <ai_chillDestination>false</ai_chillDestination>
+	  <expandHomeArea>false</expandHomeArea>	
+      <isInert>true</isInert>
+      <blueprintGraphicData>
+        <texPath>Buildings/Linked/Trench_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <constructEffect>ConstructDirt</constructEffect>
+    <repairEffect>ConstructDirt</repairEffect>
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+	 <defName>DankPyon_RTrench</defName>
+    <label>reinforced trench</label>
+    <description>A reinforced trench that obstructs movement.which is deeper to make anyone or anything hard to crossover.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+     <texPath>Buildings/Linked/RTrench_Atlas</texPath>
+     <graphicClass>Graphic_Single</graphicClass>
+     <linkType>Basic</linkType>
+	 <linkFlags>
+		<li>Custom5</li>
+	 </linkFlags>
+    </graphicData>
+	<damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.25</multiplier>
+      </li>
+    </damageMultipliers>
+	<blockLight>false</blockLight>
+    <uiIconPath>Buildings/Linked/RTrench_MenuIcon</uiIconPath>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <pathCost>300</pathCost>
+    <passability>Standable</passability>
+    <fillPercent>0</fillPercent>
+    <coversFloor>false</coversFloor>
+	<holdsRoof>false</holdsRoof>
+	<castEdgeShadows>false</castEdgeShadows>  
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Beauty>-5</Beauty>
+      <WorkToBuild>1200</WorkToBuild>
+    </statBases>
+
+	<stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>5</costStuffCount>
+    
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>	
+    <building>
+      <allowAutoroof>false</allowAutoroof>
+	  <ai_chillDestination>false</ai_chillDestination>
+	  <expandHomeArea>false</expandHomeArea>	
+      <isInert>true</isInert>
+      <blueprintGraphicData>
+        <texPath>Buildings/Linked/RTrench_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+  </ThingDef>
 
   <!--========================= Column =============================-->
   <ThingDef ParentName="BuildingBase">

@@ -45,6 +45,27 @@
       <li>DankPyon_BasicAgriculture</li>
     </researchPrerequisites>
   </TerrainDef>
+<!--==================== Ice ====================-->
+<!--TerrainDef>
+    <defName>DankPyon_TrenchTerrain</defName>
+    <label>trench</label>
+    <texturePath>Terrain/Surfaces/Soil</texturePath>
+    <layerable>true</layerable>
+    <pathCost>12</pathCost>
+    <fertility>0</fertility>
+    <edgeType>Fade</edgeType>
+    <renderPrecedence>320</renderPrecedence>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <modExtensions>
+      <li Class="VFESecurity.TerrainDefExtension">
+        <allowCrouching>true</allowCrouching>
+        <pathCostEntering>50</pathCostEntering>
+        <pathCostLeaving>200</pathCostLeaving>
+        <coverEffectiveness>0.65</coverEffectiveness>
+        <rangeFactor>1</rangeFactor>
+      </li>
+    </modExtensions>
+</TerrainDef-->
 
 <!--==================== Ice ====================-->
   <TerrainDef ParentName="Ice">

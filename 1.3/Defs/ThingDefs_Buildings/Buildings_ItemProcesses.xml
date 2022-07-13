@@ -512,6 +512,21 @@
 </ProcessorFramework.ProcessDef-->
 
 <ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+  <defName>DankPyon_RawHidesProcess</defName>
+  <thingDef>DankPyon_Leather_Rawhide</thingDef>
+  <ingredientFilter>
+    <categories>
+      <li>DankPyon_Hides</li>
+    </categories>
+  </ingredientFilter>
+  <modExtensions>
+	<li Class="DankPyon.ProcessorExtension">
+		<outputOnlyButcherProduct>true</outputOnlyButcherProduct>
+	</li>
+  </modExtensions>
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
   <defName>DankPyon_HidesProcess</defName>
   <thingDef>DankPyon_DummyLeather</thingDef>
   <ingredientFilter>

@@ -1400,6 +1400,7 @@
         <drawRotated>false</drawRotated>
     </graphicData>
     <size>(1,1)</size>
+    <uiIconScale>0.5</uiIconScale>
 
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -1443,7 +1444,7 @@
                 </li>
                 <li>
                     <thingDef>DankPyon_QueenBee</thingDef>
-                    <countRange>-9~1</countRange>
+                    <countRange>-25~1</countRange>
                     <weight>1</weight>
                 </li>
             </items>

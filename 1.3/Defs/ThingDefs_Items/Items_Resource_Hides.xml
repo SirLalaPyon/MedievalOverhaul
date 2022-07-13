@@ -179,6 +179,10 @@
 	<ThingDef ParentName="DankPyon_HideBase">
 		<defName>DankPyon_Hide_HideGeneric</defName>
 		<label>hide</label>
+		<graphicData>
+			<texPath>Resources/HideLarge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 		<statBases>
 			<MarketValue>45</MarketValue>
 		</statBases>
@@ -1126,20 +1130,20 @@
 	<ThingDef ParentName="LeatherBase">
 		<defName>DankPyon_Leather_Rawhide</defName>
 		<label>rawhide</label>
-		<description>A weak textile created by cutting up and sewing together various types of leathers. Regardless of what kind of leather is used to create it, patchleather's irregular seams make it less tough and less insulating than any intact leather.</description>
+		<description>A weak patch of leather that has not been exposed to tanning. Its hard and inflexible when dry but is very susceptible to water.</description>
 		<graphicData>
-			<color>(207,179,137)</color>
+			<color>(140,118,88)</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.1</MarketValue>
-			<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.22</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
-			<StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
+			<StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.19</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>9</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>9</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
-			<color>(207,179,137)</color>
+			<color>(140,118,88)</color>
 			<commonality>0.075</commonality>
 			<statFactors>
 				<MaxHitPoints>0.33</MaxHitPoints>

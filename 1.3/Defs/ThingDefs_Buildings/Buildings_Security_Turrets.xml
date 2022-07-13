@@ -1,6 +1,178 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- Scorpio -->
+<ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_Turret_Scorpio</defName>
+    <label>scorpio</label>
+    <description>Developed during ancient times, the scorpio is a powerful missile weapon capable of launching large darts over long distances. Effective in both siege and defense, the precise design strikes fear into enemies but must be reloaded after every bolt fired.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+        <texPath>Security/TurretScorpio/TurretScorpio_Base</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.5,1.5)</drawSize>
+        <damageData>
+            <rect>(0.2,0.2,0.6,0.6)</rect>
+        </damageData>
+        <shadowData>
+            <volume>(1.5,0.35,1.4)</volume>
+            <offset>(0,0,-0.05)</offset>
+        </shadowData>
+    </graphicData>
+    <size>(1,1)</size>
+    <uiIconPath>Security/TurretScorpio/TurretScorpio_MenuIcon</uiIconPath>
+
+    <techLevel>Medieval</techLevel>
+    <uiIconScale>0.95</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>true</rotatable>
+    <blockWind>false</blockWind>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+
+    <statBases>
+        <MaxHitPoints>150</MaxHitPoints>
+        <Flammability>1</Flammability>
+        <WorkToBuild>2000</WorkToBuild>
+        <Beauty>-20</Beauty>
+        <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+
+    <tickerType>Normal</tickerType>
+    <comps>
+        <li Class="CompProperties_Mannable">
+            <manWorkType>Violent</manWorkType>
+        </li>
+        <li Class="CompProperties_Refuelable">
+            <fuelLabel>Scorpio bolts</fuelLabel>
+            <fuelGizmoLabel>Scorpio bolts</fuelGizmoLabel>
+            <showFuelGizmo>true</showFuelGizmo>
+            <fuelFilter>
+            <thingDefs>
+                <li>DankPyon_ScorpioBolt</li>
+            </thingDefs>
+            </fuelFilter>
+            <fuelConsumptionRate>1</fuelConsumptionRate>
+            <fuelCapacity>5</fuelCapacity>
+            <autoRefuelPercent>0.25</autoRefuelPercent>
+            <minimumFueledThreshold>1</minimumFueledThreshold>
+            <fuelMultiplier>1</fuelMultiplier>
+            <factorByDifficulty>true</factorByDifficulty>
+            <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+            <outOfFuelMessage>Cannot shoot: Needs scorpio bolts</outOfFuelMessage>
+            <fuelIconPath>Overlays/FuelBallistaBolt</fuelIconPath>
+            <initialFuelPercent>0</initialFuelPercent>
+        </li>
+    </comps>
+
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+
+    <costList>
+        <WoodLog>100</WoodLog>
+        <DankPyon_RawWood>25</DankPyon_RawWood>
+        <DankPyon_IronIngot>30</DankPyon_IronIngot>
+        <DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+    </costList>
+    
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <building>
+        <ai_combatDangerous>true</ai_combatDangerous>
+        <turretGunDef>DankPyon_Gun_ScorpioTurret</turretGunDef>
+        <turretBurstCooldownTime>5</turretBurstCooldownTime>
+        <turretBurstWarmupTime>2</turretBurstWarmupTime>
+        <turretTopDrawSize>2</turretTopDrawSize>
+        <turretTopOffset>(0, 0)</turretTopOffset>
+    </building>
+    <repairEffect>ConstructDirt</repairEffect>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <researchPrerequisites>
+        <li>DankPyon_Ballista</li>
+    </researchPrerequisites>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <placeWorkers>
+      <li>PlaceWorker_ShowTurretRadius</li>
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>DankPyon_Bullet_Scorpio</defName>
+    <label>scorpio bolt</label>
+    <graphicData>
+        <texPath>Projectile/BallistaBullet</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <thingClass>DankPyon.Bullet_ExplosiveProperty</thingClass>
+    <projectile>
+        <flyOverhead>false</flyOverhead>
+        <damageDef>RangedStab</damageDef>
+        <damageAmountBase>22</damageAmountBase>
+        <stoppingPower>2</stoppingPower>
+        <armorPenetrationBase>0.25</armorPenetrationBase>
+        <speed>60</speed>
+    </projectile>
+    <modExtensions>
+      <li Class="DankPyon.AdditionalProjectileProperties">
+        <projectile2>
+          <damageDef>DankPyon_Damage_BallistaBolt</damageDef>
+          <damageAmountBase>5</damageAmountBase>
+          <explosionRadius>1.9</explosionRadius>
+          <soundExplode>BulletImpact_Wood</soundExplode>
+          <armorPenetrationBase>0.10</armorPenetrationBase>
+        </projectile2>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>DankPyon_Gun_ScorpioTurret</defName>
+    <label>scorpio</label>
+    <description>An ancient military siege engine in a form of a crossbow mounted on a wooden construct.</description>
+    <graphicData>
+      <texPath>Security/TurretScorpio/TurretScorpio_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+        <AccuracyTouch>0.77</AccuracyTouch>
+        <AccuracyShort>0.70</AccuracyShort>
+        <AccuracyMedium>0.56</AccuracyMedium>
+        <AccuracyLong>0.42</AccuracyLong>
+        <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+        <DeteriorationRate>0</DeteriorationRate>
+        <Mass>25</Mass>
+        <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+        <li>DankPyon_Ballista</li>
+    </weaponTags>
+    <verbs>
+        <li>
+            <verbClass>Verb_Shoot</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>DankPyon_Bullet_Scorpio</defaultProjectile>
+            <warmupTime>1</warmupTime>
+            <minRange>0</minRange>
+            <range>28.9</range>
+            <soundCast>Bow_Large</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>0</muzzleFlashScale>
+            <consumeFuelPerShot>1</consumeFuelPerShot>
+        </li>
+    </verbs>
+  </ThingDef>
+
   <!-- Ballista -->
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_Turret_Ballista</defName>
@@ -62,7 +234,7 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs ballista bolts</outOfFuelMessage>
         <fuelIconPath>Overlays/FuelBallistaBolt</fuelIconPath>
-        <initialFuelPercent>1</initialFuelPercent>
+        <initialFuelPercent>0</initialFuelPercent>
       </li>
     </comps>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>

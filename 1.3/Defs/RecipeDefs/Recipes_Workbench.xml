@@ -14,10 +14,87 @@
 		</recipeUsers>	
 </RecipeDef>	
 
+<!-- Ammuniation: Scorpio Bolts --> 
+<RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
+	<defName>DankPyon_MakeBullet_ScorpioBolt</defName>
+	<workAmount>400</workAmount>		
+	<label>craft scorpio bolts x10</label>
+	<jobString>Crafting 10 scorpio bolts.</jobString>
+	<targetCountAdjustment>5</targetCountAdjustment>	
+  <researchPrerequisites>
+    <li>DankPyon_Ballista</li>
+  </researchPrerequisites>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_IronIngot</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>30</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_IronIngot</li>
+			<li>WoodLog</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_ScorpioBolt>10</DankPyon_ScorpioBolt>
+	</products>		
+</RecipeDef>
+
+<RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
+	<defName>DankPyon_MakeBullet_ScorpioBoltBulk</defName>
+	<workAmount>2000</workAmount>		
+	<label>craft ballista bolts x50</label>
+	<jobString>Crafting 50 ballista bolts.</jobString>
+	<targetCountAdjustment>50</targetCountAdjustment>	
+  <researchPrerequisites>
+    <li>DankPyon_Ballista</li>
+  </researchPrerequisites>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_IronIngot</li>
+				</thingDefs>
+			</filter>
+			<count>50</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+			</filter>
+			<count>150</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_IronIngot</li>
+			<li>WoodLog</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_ScorpioBolt>50</DankPyon_ScorpioBolt>
+	</products>		
+</RecipeDef>
+
 <!-- Ammuniation: Ballista Bolts --> 
 <RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
 	<defName>DankPyon_MakeBullet_BallistaBolt</defName>
-	<workAmount>200</workAmount>		
+	<workAmount>800</workAmount>		
 	<label>craft ballista bolts x10</label>
 	<jobString>Crafting 10 ballista bolts.</jobString>
 	<targetCountAdjustment>5</targetCountAdjustment>	
@@ -31,7 +108,7 @@
 					<li>DankPyon_IronIngot</li>
 				</thingDefs>
 			</filter>
-			<count>5</count>
+			<count>10</count>
 		</li>
 		<li>
 			<filter>
@@ -39,7 +116,7 @@
 					<li>WoodLog</li>
 				</thingDefs>
 			</filter>
-			<count>5</count>
+			<count>50</count>
 		</li>
 	</ingredients>
 	<fixedIngredientFilter>
@@ -55,7 +132,7 @@
 
 <RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
 	<defName>DankPyon_MakeBullet_BallistaBoltBulk</defName>
-	<workAmount>200</workAmount>		
+	<workAmount>4000</workAmount>		
 	<label>craft ballista bolts x50</label>
 	<jobString>Crafting 50 ballista bolts.</jobString>
 	<targetCountAdjustment>50</targetCountAdjustment>	
@@ -69,7 +146,7 @@
 					<li>DankPyon_IronIngot</li>
 				</thingDefs>
 			</filter>
-			<count>25</count>
+			<count>50</count>
 		</li>
 		<li>
 			<filter>
@@ -77,7 +154,7 @@
 					<li>WoodLog</li>
 				</thingDefs>
 			</filter>
-			<count>25</count>
+			<count>250</count>
 		</li>
 	</ingredients>
 	<fixedIngredientFilter>

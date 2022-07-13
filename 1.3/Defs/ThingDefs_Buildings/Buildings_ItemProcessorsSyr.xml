@@ -134,6 +134,76 @@
     </researchPrerequisites>
   </ThingDef-->
 
+  <!-- Drying Rack -->
+  <ThingDef ParentName="BuildingBase">
+      <defName>DankPyon_DryRack</defName>
+      <label>drying rack (hide)</label>
+      <description>A standing rack for treating raw hides to become useful leathers.</description>
+      <thingClass>Building_WorkTable</thingClass>
+      <drawerType>MapMeshAndRealTime</drawerType>
+      <graphicData>
+        <texPath>Production/DryRack/DryingRack</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
+        <drawSize>(4,3)</drawSize>
+        <damageData>
+          <cornerTL>Damage/Corner</cornerTL>
+          <cornerTR>Damage/Corner</cornerTR>
+          <cornerBL>Damage/Corner</cornerBL>
+          <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+      </graphicData>
+
+      <stuffCategories>
+        <li>DankPyon_RawWood</li>
+      </stuffCategories>
+      <costStuffCount>30</costStuffCount>
+
+      <altitudeLayer>Building</altitudeLayer>
+      <fillPercent>0.5</fillPercent>
+      <useHitPoints>True</useHitPoints>
+      <statBases>
+        <WorkToBuild>600</WorkToBuild>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Flammability>1.0</Flammability>
+        <Cleanliness>-30</Cleanliness>
+      </statBases>
+      <size>(2,1)</size>
+      <designationCategory>Production</designationCategory>
+      <passability>PassThroughOnly</passability>
+      <pathCost>50</pathCost>
+      <hasInteractionCell>True</hasInteractionCell>
+      <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+      <surfaceType>Item</surfaceType>
+
+      <comps Inherit="false">
+        <li Class="ProcessorFramework.CompProperties_Processor">
+          <capacity>1</capacity>
+          <independentProcesses>false</independentProcesses>
+          <parallelProcesses>false</parallelProcesses>
+          <dropIngredients>true</dropIngredients>
+          <showProductIcon>true</showProductIcon>
+          <barOffset>(0.0, 0.25)</barOffset>
+          <barScale>(1.0, 1.0)</barScale>
+          <colorCoded>false</colorCoded>
+          <processes>
+            <!--li>DankPyon_RawHideProcess</li-->
+          </processes>
+        </li>
+        <li Class="CompProperties_Forbiddable"/>
+      </comps>
+      
+      <tickerType>Rare</tickerType>
+
+      <placeWorkers>
+        <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+      </placeWorkers>
+      <techLevel>Medieval</techLevel>
+      <researchPrerequisites>
+        <li>DankPyon_LeatherTanning</li>
+      </researchPrerequisites>
+  </ThingDef>
+
   <!-- Tanning Rack -->
   <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_TanningRack</defName>
@@ -145,7 +215,7 @@
       <texPath>Production/TanningRack/TanningRack</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(4,3)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -154,9 +224,10 @@
       </damageData>
     </graphicData>
 
-	  <costList>
-      <WoodLog>60</WoodLog>
-    </costList>
+	  <stuffCategories>
+      <li>DankPyon_RawWood</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
 
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
@@ -453,8 +524,9 @@
     <thingClass>Building_WorkTable</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Production/Smelter</texPath>
+      <texPath>Production/Smelter/Smelter</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
       <drawSize>(4,4)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -524,8 +596,8 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>11</heatPerSecond>
-        <heatPushMaxTemperature>28</heatPushMaxTemperature>
+        <heatPerSecond>15</heatPerSecond>
+        <heatPushMaxTemperature>18</heatPushMaxTemperature>
       </li>
     </comps>
     

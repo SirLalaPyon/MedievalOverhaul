@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef Abstract="True" Name="DankPyon_HideBase" ParentName="ResourceBase">
 		<description>These raw hides and pelts were removed from a creature, and with the right skills and tools, could be processed into tanned leather.</description>
@@ -179,6 +179,7 @@
 	<ThingDef ParentName="DankPyon_HideBase">
 		<defName>DankPyon_Hide_HideGeneric</defName>
 		<label>hide</label>
+		<thingClass>DankPyon.HideGeneric</thingClass>
 		<graphicData>
 			<texPath>Resources/HideLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

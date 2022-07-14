@@ -1,5 +1,7 @@
 ﻿using Verse;
 using RimWorld;
+using ProcessorFramework;
+using DefOf = RimWorld.DefOf;
 
 namespace DankPyon
 {
@@ -18,6 +20,8 @@ namespace DankPyon
         public static ThingDef DankPyon_Bone;
 
         public static ThingCategoryDef DankPyon_Wood;
+        public static ThingDef DankPyon_Leather_Rawhide;
+        public static ProcessDef DankPyon_RawHidesProcess;
     }
 
 }

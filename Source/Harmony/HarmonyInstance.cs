@@ -10,20 +10,29 @@ using Verse.AI;
 
 namespace DankPyon
 {
+
     public class CompGenericHide : ThingComp
     {
         public ThingDef pawnSource;
         public int leatherAmount;
-        public int MarketValue;
+        public int marketValue;
 
+        public override bool AllowStackWith(Thing other)
+        {
+            var comp = other.TryGetComp<CompGenericHide>();
+            if (comp?.pawnSource != this.pawnSource)
+            {
+                return false;
+            }
+            return true;
+        }
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Defs.Look(ref pawnSource, "pawnSource");
             Scribe_Values.Look(ref leatherAmount, "leatherAmount");
-            Scribe_Values.Look(ref MarketValue, "MarketValue");
+            Scribe_Values.Look(ref marketValue, "MarketValue");
         }
-
         public override string TransformLabel(string label) => pawnSource == null ? label : pawnSource.label + " " + label;
     }
     [StaticConstructorOnStartup]
@@ -317,14 +326,17 @@ namespace DankPyon
                 }
                 else
                 {
-                    if (r.def == DankPyonDefOf.DankPyon_Hide_HideGeneric)
+                    if (r is HideGeneric hideGeneric)
                     {
                         var comp = r.TryGetComp<CompGenericHide>();
                         if (comp != null)
                         {
                             comp.pawnSource = __instance.def;
+                            var leatherDef = comp.pawnSource.race.leatherDef;
                             comp.leatherAmount = GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.LeatherAmount) * efficiency);
-                            comp.MarketValue = GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.LeatherAmount) * comp.pawnSource.race.leatherDef.GetStatValueAbstract(StatDefOf.MarketValue));
+                            var leatherCost = leatherDef.GetStatValueAbstract(StatDefOf.MarketValue);
+                            comp.marketValue = (int)((int)(comp.leatherAmount * leatherCost) - ((comp.leatherAmount * leatherCost) * 0.2f));
+                            hideGeneric.drawColorOverride = leatherDef.graphicData.color;
                         }
                     }
                     yield return r;
@@ -375,6 +387,19 @@ namespace DankPyon
             }
         }
 
+        [HarmonyPatch(typeof(StatExtension), nameof(StatExtension.GetStatValue))]
+        public static class StatExtension_GetStatValue_Patch
+        {
+            private static void Postfix(Thing thing, StatDef stat, bool applyPostProcess, ref float __result)
+            {
+                if (thing.def == DankPyonDefOf.DankPyon_Hide_HideGeneric && stat == StatDefOf.MarketValue)
+                {
+                    var comp = thing.TryGetComp<CompGenericHide>();
+                    __result = comp.marketValue;
+                }
+            }
+        }
+
         [HarmonyPatch(typeof(JobDriver_ManTurret), nameof(JobDriver_ManTurret.FindAmmoForTurret))]
         public static class Patch_TryFindRandomShellDef
         {
@@ -396,6 +421,8 @@ namespace DankPyon
                 return gun.gun.TryGetComp<CompChangeableProjectile>().GetParentStoreSettings();
             }
         }
+
+
     }
 
     [StaticConstructorOnStartup]
@@ -501,11 +528,27 @@ namespace DankPyon
                             return false;
                         }
                     }
-
                 }
             }
             return true;
         }
+        public static void Postfix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
+        {
+            if (activeProcess.processDef == DankPyonDefOf.DankPyon_RawHidesProcess)
+            {
+                foreach (var thing in activeProcess.ingredientThings)
+                {
+                    var comp = thing.TryGetComp<CompGenericHide>();
+                    if (comp != null)
+                    {
+                        __result.stackCount = comp.leatherAmount;
+                        Log.Message("__result.stackCount: " + __result.stackCount);
+                    }
+                }
+            }
+        }
+
+
 
         public static Thing TakeOutButcherProduct(CompProcessor __instance, ThingDefCountClass thingDefCount, ActiveProcess activeProcess)
         {

@@ -23,6 +23,9 @@
 			<color>(180,173,150)</color>
 		</stuffProps>
 		<comps>
+			<li>
+				<compClass>DankPyon.CompGenericHide</compClass>
+			</li>
 			<li Class="CompProperties_Rottable">
 			  <daysToRotStart>5</daysToRotStart>
 			  <rotDestroys>true</rotDestroys>
@@ -187,11 +190,6 @@
 		<statBases>
 			<MarketValue>45</MarketValue>
 		</statBases>
-		<comps>
-			<li>
-				<compClass>DankPyon.CompGenericHide</compClass>
-			</li>
-		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_HideBaseLarge">

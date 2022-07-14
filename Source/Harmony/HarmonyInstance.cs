@@ -24,7 +24,7 @@ namespace DankPyon
             {
                 return false;
             }
-            return true;
+            return base.AllowStackWith(other);
         }
         public override void PostExposeData()
         {
@@ -326,16 +326,16 @@ namespace DankPyon
                 }
                 else
                 {
-                    if (r is HideGeneric hideGeneric)
+                    var comp = r.TryGetComp<CompGenericHide>();
+                    if (comp != null)
                     {
-                        var comp = r.TryGetComp<CompGenericHide>();
-                        if (comp != null)
+                        comp.pawnSource = __instance.def;
+                        var leatherDef = comp.pawnSource.race.leatherDef;
+                        comp.leatherAmount = GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.LeatherAmount) * efficiency);
+                        var leatherCost = leatherDef.GetStatValueAbstract(StatDefOf.MarketValue);
+                        comp.marketValue = (int)((int)(comp.leatherAmount * leatherCost) - ((comp.leatherAmount * leatherCost) * 0.2f));
+                        if (r is HideGeneric hideGeneric)
                         {
-                            comp.pawnSource = __instance.def;
-                            var leatherDef = comp.pawnSource.race.leatherDef;
-                            comp.leatherAmount = GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.LeatherAmount) * efficiency);
-                            var leatherCost = leatherDef.GetStatValueAbstract(StatDefOf.MarketValue);
-                            comp.marketValue = (int)((int)(comp.leatherAmount * leatherCost) - ((comp.leatherAmount * leatherCost) * 0.2f));
                             hideGeneric.drawColorOverride = leatherDef.graphicData.color;
                         }
                     }
@@ -392,10 +392,13 @@ namespace DankPyon
         {
             private static void Postfix(Thing thing, StatDef stat, bool applyPostProcess, ref float __result)
             {
-                if (thing.def == DankPyonDefOf.DankPyon_Hide_HideGeneric && stat == StatDefOf.MarketValue)
+                if (stat == StatDefOf.MarketValue)
                 {
                     var comp = thing.TryGetComp<CompGenericHide>();
-                    __result = comp.marketValue;
+                    if (comp != null)
+                    {
+                        __result = comp.marketValue;
+                    }
                 }
             }
         }
@@ -510,20 +513,20 @@ namespace DankPyon
                 {
                     foreach (var thing in activeProcess.ingredientThings)
                     {
-                        if (thing.def.butcherProducts?.Any() ?? false)
+                        var comp = thing.TryGetComp<CompGenericHide>();
+                        if (comp != null)
                         {
-                            var thingDefCount = thing.def.butcherProducts.FirstOrDefault();
-                            __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
-                            return false;
-                        }
-                        else if (thing.def == DankPyonDefOf.DankPyon_Hide_HideGeneric)
-                        {
-                            var comp = thing.TryGetComp<CompGenericHide>();
                             var thingDefCount = new ThingDefCountClass
                             {
                                 count = comp.leatherAmount,
                                 thingDef = comp.pawnSource.race.leatherDef
                             };
+                            __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
+                            return false;
+                        }
+                        else if (thing.def.butcherProducts?.Any() ?? false)
+                        {
+                            var thingDefCount = thing.def.butcherProducts.FirstOrDefault();
                             __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
                             return false;
                         }
@@ -542,7 +545,6 @@ namespace DankPyon
                     if (comp != null)
                     {
                         __result.stackCount = comp.leatherAmount;
-                        Log.Message("__result.stackCount: " + __result.stackCount);
                     }
                 }
             }

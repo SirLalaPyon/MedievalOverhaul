@@ -149,7 +149,7 @@
         <stuffCategories Inherit="False">
             <li>DankPyon_RawWood</li>
         </stuffCategories>
-        <costStuffCount>52</costStuffCount>
+        <costStuffCount>60</costStuffCount>
     </ThingDef>
 
     <ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -2139,6 +2139,22 @@
     <researchPrerequisites>
       <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_SignBase">
+    <defName>DankPyon_Sign_Bread</defName>
+    <label>bakery sign</label>
+    <graphicData>
+        <texPath>Furniture/SignBakery</texPath>
+    </graphicData>
+</ThingDef>
+
+<ThingDef ParentName="DankPyon_SignBase">
+    <defName>DankPyon_Sign_Butcher</defName>
+    <label>butcher sign</label>
+    <graphicData>
+        <texPath>Furniture/SignButcher</texPath>
+    </graphicData>
 </ThingDef>
 
 <ThingDef ParentName="DankPyon_SignBase">

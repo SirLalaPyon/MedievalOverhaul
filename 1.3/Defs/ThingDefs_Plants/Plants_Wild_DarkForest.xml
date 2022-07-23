@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<ThingDef ParentName="TreeBase">
@@ -50,8 +50,9 @@
 		</comps>
 
 		<modExtensions>
-			<li Class="DankPyon.PlantExtension">
-				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+			<li Class="TransparentThings.ThingExtension">
+				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
+				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
 				<firstAreaOffset>(-1, 0)</firstAreaOffset>
 				<firstArea>(3, 7)</firstArea>
 				<secondArea>(11, 4)</secondArea>
@@ -118,8 +119,9 @@
 		</comps>
 
 		<modExtensions>
-			<li Class="DankPyon.PlantExtension">
-				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+			<li Class="TransparentThings.ThingExtension">
+				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
+				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
 				<firstAreaOffset>(-3, 0)</firstAreaOffset>
 				<firstArea>(7, 6)</firstArea>
 				<secondArea>(6, 5)</secondArea>
@@ -163,8 +165,9 @@
 		</plant>
 
 		<modExtensions>
-			<li Class="DankPyon.PlantExtension">
-				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+			<li Class="TransparentThings.ThingExtension">
+				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
+				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
 				<firstAreaOffset>(-1, 0)</firstAreaOffset>
 				<firstArea>(3, 3)</firstArea>
 				<secondAreaOffset>(0, 3)</secondAreaOffset>
@@ -229,8 +232,9 @@
 	</comps>
 
 	<modExtensions>
-		<li Class="DankPyon.PlantExtension">
-			<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+		<li Class="TransparentThings.ThingExtension">
+			<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
+			<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
 			<firstAreaOffset>(-1, 0)</firstAreaOffset>
 			<firstArea>(3, 3)</firstArea>
 			<secondAreaOffset>(0, 3)</secondAreaOffset>

@@ -10,37 +10,9 @@ using Verse.AI;
 
 namespace DankPyon
 {
-
-    public class CompGenericHide : ThingComp
-    {
-        public ThingDef pawnSource;
-        public int leatherAmount;
-        public int marketValue;
-
-        public override bool AllowStackWith(Thing other)
-        {
-            var comp = other.TryGetComp<CompGenericHide>();
-            if (comp?.pawnSource != this.pawnSource)
-            {
-                return false;
-            }
-            return base.AllowStackWith(other);
-        }
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_Defs.Look(ref pawnSource, "pawnSource");
-            Scribe_Values.Look(ref leatherAmount, "leatherAmount");
-            Scribe_Values.Look(ref marketValue, "MarketValue");
-        }
-        public override string TransformLabel(string label) => pawnSource == null ? label : pawnSource.label + " " + label;
-    }
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
     {
-        public static Dictionary<Thing, PlantExtension> cachedTransparentablePlantsByExtensions = new Dictionary<Thing, PlantExtension>();
-        public static Dictionary<Map, List<Thing>> cachedTransparentablePlantsByMaps = new Dictionary<Map, List<Thing>>();
-
         public static Dictionary<HediffDef, StatDef> statMultipliers = new Dictionary<HediffDef, StatDef>();
 
         public static Harmony harmony;
@@ -94,86 +66,6 @@ namespace DankPyon
             return false;
         }
 
-        private static Dictionary<Thing, HashSet<IntVec3>> cachedCells = new Dictionary<Thing, HashSet<IntVec3>>();
-        public static HashSet<IntVec3> GetTransparentCheckArea(this Thing plant, PlantExtension extension)
-        {
-            if (!cachedCells.TryGetValue(plant, out var cells))
-            {
-                cachedCells[plant] = cells = GetTransparentCheckAreaInt(plant, extension);
-            }
-            return cells;
-        }
-        private static HashSet<IntVec3> GetTransparentCheckAreaInt(Thing plant, PlantExtension extension)
-        {
-            var cellRect = new CellRect(plant.Position.x, plant.Position.z, extension.firstArea.x, extension.firstArea.z);
-            if (extension.firstAreaOffset != IntVec2.Zero)
-            {
-                cellRect = cellRect.MovedBy(extension.firstAreaOffset);
-            }
-            var cells = cellRect.Cells.ToList();
-            if (extension.secondArea != IntVec2.Zero)
-            {
-                var cells2 = new CellRect(plant.Position.x, plant.Position.z, extension.secondArea.x, extension.secondArea.z);
-                if (extension.secondAreaOffset != IntVec2.Zero)
-                {
-                    cells2 = cells2.MovedBy(extension.secondAreaOffset);
-                }
-                cells.AddRange(cells2);
-            }
-            return cells.Where(x => x.InBounds(plant.Map)).ToHashSet();
-        }
-        public static bool HasItemsInCell(IntVec3 cell, Map map, PlantExtension extension)
-        {
-            foreach (var thing in cell.GetThingList(map))
-            {
-                if (ItemMatches(thing, extension))
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-        public static bool BaseItemMatches(Thing thing)
-        {
-            return thing is Pawn || thing.def.category == ThingCategory.Item;
-        }
-        public static bool ItemMatches(Thing thing, PlantExtension extension)
-        {
-            return (thing is Pawn || thing.def.category == ThingCategory.Item) && (extension.ignoredThings is null || !extension.ignoredThings.Contains(thing.def));
-        }
-
-        public static Dictionary<Thing, Shader> lastCachedShaders = new Dictionary<Thing, Shader>();
-        public static void RecheckTransparency(Thing plant, Thing otherThing, PlantExtension extension)
-        {
-            if (plant != otherThing && plant.Spawned && plant.Map == otherThing.Map)
-            {
-                if (!lastCachedShaders.TryGetValue(plant, out var shader))
-                {
-                    lastCachedShaders[plant] = shader = plant.Graphic.Shader;
-                }
-
-                bool isTransparent = shader == DankPyonDefOf.TransparentPlant.Shader;
-                if (!isTransparent && ItemMatches(otherThing, extension))
-                {
-                    var cells = GetTransparentCheckArea(plant, extension);
-                    if (cells.Contains(otherThing.Position))
-                    {
-                        otherThing.Map.mapDrawer.MapMeshDirty(plant.Position, MapMeshFlag.Things);
-                        return;
-                    }
-                }
-
-                if (isTransparent)
-                {
-                    var cells = GetTransparentCheckArea(plant, extension);
-                    if (!cells.Any(x => HasItemsInCell(x, otherThing.Map, extension)))
-                    {
-                        otherThing.Map.mapDrawer.MapMeshDirty(plant.Position, MapMeshFlag.Things);
-                    }
-                }
-            }
-        }
-
         [HarmonyPatch(typeof(GenConstruct), "CanBuildOnTerrain")]
         public static class GenConstruct_CanBuildOnTerrain_Patch
         {
@@ -205,112 +97,6 @@ namespace DankPyon
                             __result = new AcceptanceReport("SpaceAlreadyOccupied".Translate());
                             return;
                         }
-                    }
-                }
-            }
-        }
-
-        [HarmonyPatch(typeof(SavedGameLoaderNow), "LoadGameFromSaveFileNow")]
-        public class SavedGameLoaderNow_LoadGameFromSaveFileNow
-        {
-            public static void Prefix()
-            {
-                cachedTransparentablePlantsByExtensions.Clear();
-                cachedTransparentablePlantsByMaps.Clear();
-            }
-        }
-
-        [HarmonyPatch(typeof(Plant), "SpawnSetup")]
-        public class Thing_SpawnSetup_Patch
-        {
-            private static void Postfix(Thing __instance)
-            {
-                if (MedievalOverhaulMod.settings.enableTreeTransparency)
-                {
-                    var extension = __instance.def.GetModExtension<PlantExtension>();
-                    if (extension != null && extension.transparencyWhenPawnOrItemIsBehind)
-                    {
-                        cachedTransparentablePlantsByExtensions[__instance] = extension;
-                        if (!cachedTransparentablePlantsByMaps.TryGetValue(__instance.Map, out var list))
-                        {
-                            cachedTransparentablePlantsByMaps[__instance.Map] = list = new List<Thing>();
-                        }
-                        if (!list.Contains(__instance))
-                        {
-                            list.Add(__instance);
-                        }
-                    }
-                }
-            }
-        }
-
-        [HarmonyPatch(typeof(Plant), "DeSpawn")]
-        public class Thing_DeSpawn_Patch
-        {
-            private static void Prefix(Thing __instance)
-            {
-                if (MedievalOverhaulMod.settings.enableTreeTransparency && cachedTransparentablePlantsByExtensions.Remove(__instance) && __instance.Map != null
-                    && cachedTransparentablePlantsByMaps.TryGetValue(__instance.Map, out var list))
-                {
-                    list.Remove(__instance);
-                }
-            }
-        }
-
-        [HarmonyPatch(typeof(Thing), "Position", MethodType.Setter)]
-        public class Thing_Position_Patch
-        {
-            public static void Prefix(Thing __instance, out bool __state, IntVec3 value)
-            {
-                if (MedievalOverhaulMod.settings.enableTreeTransparency && BaseItemMatches(__instance) && __instance.Map != null && __instance.Position != value)
-                {
-                    __state = true;
-                }
-                else
-                {
-                    __state = false;
-                }
-            }
-            public static void Postfix(Thing __instance, bool __state)
-            {
-                if (__state && cachedTransparentablePlantsByMaps.TryGetValue(__instance.Map, out var list))
-                {
-                    foreach (var plant in list)
-                    {
-                        if (__instance.Position.z > plant.Position.z && plant.Position.DistanceTo(__instance.Position) < 13)
-                        {
-                            RecheckTransparency(plant, __instance, plant.def.GetModExtension<PlantExtension>());
-                        }
-                    }
-                }
-            }
-        }
-
-
-        [HarmonyPatch(typeof(Plant), "Graphic", MethodType.Getter)]
-        public class Patch_Graphic_Postfix
-        {
-            private static void Postfix(Plant __instance, ref Graphic __result)
-            {
-                if (MedievalOverhaulMod.settings.enableTreeTransparency 
-                    && cachedTransparentablePlantsByExtensions.TryGetValue(__instance, out var extension))
-                {
-                    var cells = GetTransparentCheckArea(__instance, extension);
-                    bool anyItemsExistsInArea = cells.Any(x => HasItemsInCell(x, __instance.Map, extension));
-                    if (anyItemsExistsInArea)
-                    {
-                        __result = GraphicDatabase.Get(__result.GetType(), "Transparent/" + __result.path, DankPyonDefOf.TransparentPlant.Shader,
-                            __instance.def.graphicData.drawSize, __result.color, __result.colorTwo);
-                        __instance.Map.mapDrawer.MapMeshDirty(__instance.Position, MapMeshFlag.Things);
-                        lastCachedShaders[__instance] = DankPyonDefOf.TransparentPlant.Shader;
-
-                    }
-                    else
-                    {
-                        __result = GraphicDatabase.Get(__result.GetType(), __instance.def.graphicData.texPath, __instance.def.graphicData.shaderType.Shader,
-                            __instance.def.graphicData.drawSize, __result.color, __result.colorTwo);
-                        __instance.Map.mapDrawer.MapMeshDirty(__instance.Position, MapMeshFlag.Things);
-                        lastCachedShaders[__instance] = __instance.def.graphicData.shaderType.Shader;
                     }
                 }
             }

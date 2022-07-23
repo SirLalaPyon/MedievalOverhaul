@@ -34,8 +34,9 @@
 			<visualSizeRange>8~12</visualSizeRange>
 		</plant>
 		<modExtensions>
-			<li Class="DankPyon.PlantExtension">
-				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+			<li Class="TransparentThings.ThingExtension">
+				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
+				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
 				<firstAreaOffset>(-1, 0)</firstAreaOffset>
 				<firstArea>(3, 7)</firstArea>
 				<secondArea>(10, 4)</secondArea>
@@ -78,8 +79,9 @@
 			<visualSizeRange>3~5</visualSizeRange>
 		</plant>
 		<modExtensions>
-			<li Class="DankPyon.PlantExtension">
-				<transparencyWhenPawnOrItemIsBehind>true</transparencyWhenPawnOrItemIsBehind>
+			<li Class="TransparentThings.ThingExtension">
+				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
+				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
 				<firstArea>(1, 2)</firstArea>
 				<secondArea>(5, 3)</secondArea>
 				<secondAreaOffset>(-2, 2)</secondAreaOffset>

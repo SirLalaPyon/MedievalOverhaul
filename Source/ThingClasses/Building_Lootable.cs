@@ -60,7 +60,7 @@ namespace MedievalOverhaul
                         lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
                         if (lootableTD != null)
                         {
-                            Thing t1 = ThingMaker.MakeThing(lootableTD, null);
+                            Thing t1 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
                             t1.stackCount = lootableExt.lootCount.RandomInRange;
                             innerContainer.TryAdd(t1, lootableExt.lootCount.RandomInRange);
                         }
@@ -71,7 +71,7 @@ namespace MedievalOverhaul
                         lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
                         if (lootableTD != null)
                         {
-                            Thing t2 = ThingMaker.MakeThing(lootableTD, null);
+                            Thing t2 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
                             t2.stackCount = lootableExt.lootCount.RandomInRange;
                             innerContainer.TryAdd(t2, lootableExt.lootCount.RandomInRange);
                         }

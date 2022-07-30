@@ -25,9 +25,9 @@
     <statBases>
       <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
     </statBases>
-    <comps>
+    <!--comps>
       <li Class="CompProperties_Styleable" Inherit="False"/>
-    </comps>
+    </comps-->
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="TableBase" Name="DankPyon_TableBase">
@@ -1078,13 +1078,14 @@
     </building>
     <inspectorTabs>
       <li>ITab_Storage</li>
+	  <li>LWM.DeepStorage.ITab_DeepStorage_Inventory</li>
     </inspectorTabs>
     <designationHotKey>Misc12</designationHotKey>
 	<designationCategory>DankPyon_RusticFurniture</designationCategory>
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <surfaceType>Item</surfaceType>
     <canOverlapZones>false</canOverlapZones>
-	    <comps>
+	<comps>
       <li Class="CompProperties_Facility">
         <statOffsets>
           <Comfort>0.05</Comfort>
@@ -1092,6 +1093,13 @@
         <maxSimultaneous>1</maxSimultaneous>
         <maxDistance>6</maxDistance>
       </li>
+	  <li Class="LWM.DeepStorage.Properties">
+		<minNumberStacks>1</minNumberStacks>
+		<maxNumberStacks>5</maxNumberStacks>
+		<timeStoringTakes>80</timeStoringTakes>
+		<showContents>false</showContents>
+		<overlayType>None</overlayType>
+	  </li>
     </comps>
   </ThingDef>
   
@@ -1195,6 +1203,7 @@
     </building>
     <inspectorTabs>
       <li>ITab_Storage</li>
+	  <li>LWM.DeepStorage.ITab_DeepStorage_Inventory</li>
     </inspectorTabs>
     <designationHotKey>Misc12</designationHotKey>
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
@@ -1209,6 +1218,13 @@
         <maxSimultaneous>1</maxSimultaneous>
         <maxDistance>6</maxDistance>
       </li>
+	  <li Class="LWM.DeepStorage.Properties">
+		<minNumberStacks>1</minNumberStacks>
+		<maxNumberStacks>5</maxNumberStacks>
+		<timeStoringTakes>60</timeStoringTakes>
+		<showContents>false</showContents>
+		<overlayType>None</overlayType>
+	  </li>
   </comps>
   <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>

@@ -297,24 +297,30 @@ namespace DankPyon
             {
                 if (extension.outputOnlyButcherProduct)
                 {
-                    foreach (var thing in activeProcess.ingredientThings)
+                    if (activeProcess.ingredientThings != null)
                     {
-                        var comp = thing.TryGetComp<CompGenericHide>();
-                        if (comp != null)
+                        foreach (var thing in activeProcess.ingredientThings)
                         {
-                            var thingDefCount = new ThingDefCountClass
+                            if (thing != null)
                             {
-                                count = comp.leatherAmount,
-                                thingDef = comp.pawnSource.race.leatherDef
-                            };
-                            __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
-                            return false;
-                        }
-                        else if (thing.def.butcherProducts?.Any() ?? false)
-                        {
-                            var thingDefCount = thing.def.butcherProducts.FirstOrDefault();
-                            __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
-                            return false;
+                                var comp = thing.TryGetComp<CompGenericHide>();
+                                if (comp?.pawnSource?.race != null)
+                                {
+                                    var thingDefCount = new ThingDefCountClass
+                                    {
+                                        count = comp.leatherAmount,
+                                        thingDef = comp.pawnSource.race.leatherDef
+                                    };
+                                    __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
+                                    return false;
+                                }
+                                else if (thing.def.butcherProducts?.Any() ?? false)
+                                {
+                                    var thingDefCount = thing.def.butcherProducts.FirstOrDefault();
+                                    __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
+                                    return false;
+                                }
+                            }
                         }
                     }
                 }

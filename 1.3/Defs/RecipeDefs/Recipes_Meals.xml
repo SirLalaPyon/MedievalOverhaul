@@ -319,7 +319,7 @@
 				<li>DankPyon_Flour</li>
 			 </thingDefs>
 		  </filter>
-		  <count>0.50</count>
+		  <count>0.25</count>
 	   </li>
 	</ingredients>
 	<products>
@@ -361,7 +361,7 @@
 				<li>DankPyon_Flour</li>
 			 </thingDefs>
 		  </filter>
-		  <count>5.0</count>
+		  <count>1.25</count>
 	   </li>
 	</ingredients>
 	<products>
@@ -396,6 +396,7 @@
 	<description>Make sausage from raw meat.</description>
 	<jobString>Making sausage.</jobString>  
 	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 	<ingredients>
 	   <li>
 		  <filter>
@@ -445,6 +446,7 @@
   <description>Make 10 sausages from raw meat.</description>
   <jobString>Making 10 sausages.</jobString>  
   <allowMixingIngredients>true</allowMixingIngredients>
+  <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
   <ingredients>
 	  <li>
 		  <filter>

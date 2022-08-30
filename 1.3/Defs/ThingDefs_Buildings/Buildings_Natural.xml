@@ -283,7 +283,7 @@
     <neverOverlapFloors>true</neverOverlapFloors>
     <blockPlants>true</blockPlants>
     <building>
-        <isEdifice>false</isEdifice>
+        <isEdifice>true</isEdifice>
         <claimable>true</claimable>
         <deconstructible>true</deconstructible>
     </building>
@@ -327,7 +327,7 @@
     <building>
         <isEdifice>false</isEdifice>
         <claimable>true</claimable>
-        <deconstructible>true</deconstructible>
+        <deconstructible>false</deconstructible>
     </building>
 
 </ThingDef>

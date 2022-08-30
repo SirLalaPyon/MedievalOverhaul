@@ -80,6 +80,24 @@
     <graphicData>
         <texPath>Tents/MarketDairy</texPath>
     </graphicData>
+
+    <building>
+        <fixedStorageSettings Inherit="False">
+            <filter>
+                <categories>
+                    <li>DankPyon_Cheese</li>
+                </categories>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings Inherit="False">
+            <priority>Important</priority>
+            <filter>
+                <categories>
+                    <li>DankPyon_Cheese</li>
+                </categories>
+            </filter>
+		    </defaultStorageSettings>
+    </building>	
 </ThingDef>
 
 <ThingDef ParentName="DankPyon_TableMarket">
@@ -89,6 +107,24 @@
     <graphicData>
         <texPath>Tents/MarketBread</texPath>
     </graphicData>
+
+    <building>
+        <fixedStorageSettings Inherit="False">
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_MealBread</li>
+                </thingDefs>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings Inherit="False">
+            <priority>Important</priority>
+            <filter>
+                <thingDefs>
+                    <li>DankPyon_MealBread</li>
+                </thingDefs>
+            </filter>
+		    </defaultStorageSettings>
+    </building>	
 </ThingDef>
 
 

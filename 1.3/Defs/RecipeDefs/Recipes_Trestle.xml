@@ -19,7 +19,6 @@
 	<description>Cut raw wood into timber.</description>
 	<jobString>Cutting timber from raw wood.</jobString>
 	<workerCounterClass>DankPyon_MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass> <!--Make custom counter-->
-	<workAmount>30</workAmount>
 
 	<ingredients>
 		<li>
@@ -29,60 +28,6 @@
 			</categories>
 		</filter>
 		<count>1</count>
-		</li>
-	</ingredients>
-	<fixedIngredientFilter>
-		<categories>
-			<li>DankPyon_RawWood</li>
-		</categories>
-	</fixedIngredientFilter>
-	<specialProducts>
-		<li>Butchery</li>
-	</specialProducts>
-</RecipeDef>
-
-<RecipeDef ParentName="DankPyon_MakeTimberBase">
-	<defName>DankPyon_Make_TimberAnyBulk</defName>
-	<label>make any timber x20</label>
-	<description>Cut raw wood into timber.</description>
-	<jobString>Cutting timber from raw wood.</jobString>
-	<workerCounterClass>DankPyon_MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
-	
-	<ingredients>
-		<li>
-		<filter>
-			<categories>
-				<li>DankPyon_RawWood</li>
-			</categories>
-		</filter>
-		<count>1</count>
-		</li>
-	</ingredients>
-	<fixedIngredientFilter>
-		<categories>
-			<li>DankPyon_RawWood</li>
-		</categories>
-	</fixedIngredientFilter>
-	<specialProducts>
-		<li>Butchery</li>
-	</specialProducts>
-</RecipeDef>
-
-<RecipeDef ParentName="DankPyon_MakeTimberBase">
-	<defName>DankPyon_Make_TimberAnyBulkExtra</defName>
-	<label>make any timber x100</label>
-	<description>Cut raw wood into timber.</description>
-	<jobString>Cutting timber from raw wood.</jobString>
-	<workerCounterClass>DankPyon_MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
-	<workAmount>3000</workAmount>
-	<ingredients>
-		<li>
-		<filter>
-			<categories>
-				<li>DankPyon_RawWood</li>
-			</categories>
-		</filter>
-		<count>100</count>
 		</li>
 	</ingredients>
 	<fixedIngredientFilter>

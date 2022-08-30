@@ -10,9 +10,7 @@
 		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<targetCountAdjustment>10</targetCountAdjustment>
-		<products>
-			<Cloth>10</Cloth>
-		</products>
+		
 		<recipeUsers>
 			<li>DankPyon_SpinningWheel</li>
 			<li>HandTailoringBench</li>
@@ -42,6 +40,9 @@
 				<li>DankPyon_RawCotton</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<products>
+			<Cloth>10</Cloth>
+		</products>
 	</RecipeDef>
 
 	<RecipeDef ParentName="DankPyon_MakeClothBase">

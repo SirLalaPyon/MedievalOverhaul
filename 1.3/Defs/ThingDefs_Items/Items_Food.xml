@@ -81,6 +81,7 @@
       </li>
     </comps>
     <rotatable>false</rotatable>
+    <tradeability>Buyable</tradeability>
   </ThingDef> 
 
   <!-- Dried Meats -->
@@ -109,6 +110,7 @@
       </li>
     </comps>
     <rotatable>false</rotatable>
+    <tradeability>Buyable</tradeability>
   </ThingDef> 
 
   <!--Milk-->
@@ -184,6 +186,7 @@
     <thingCategories>
       <li>DankPyon_Cheese</li>
     </thingCategories>
+    <tradeability>Buyable</tradeability>
   </ThingDef>
 
   <ThingDef ParentName="MealBase">
@@ -218,6 +221,7 @@
     <thingCategories>
       <li>DankPyon_Cheese</li>
     </thingCategories>
+    <tradeability>Buyable</tradeability>
   </ThingDef>
 
   <ThingDef ParentName="MealBase">
@@ -252,6 +256,7 @@
     <thingCategories>
       <li>DankPyon_Cheese</li>
     </thingCategories>
+    <tradeability>Buyable</tradeability>
   </ThingDef>
 
 <!--============== Tier 4 Meals ===============-->

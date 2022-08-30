@@ -1991,8 +1991,8 @@
         </li>
         <li Class="CompProperties_HeatPusher">
           <compClass>CompHeatPusherPowered</compClass>
-          <heatPerSecond>21</heatPerSecond>
-          <heatPushMaxTemperature>28</heatPushMaxTemperature>
+          <heatPerSecond>32</heatPerSecond>
+          <heatPushMaxTemperature>21</heatPushMaxTemperature>
         </li>
         <li Class="CompProperties_MeditationFocus">
           <statDef>MeditationFocusStrength</statDef>
@@ -2112,10 +2112,6 @@
     <fillPercent>0.3</fillPercent>
     <castEdgeShadows>true</castEdgeShadows>
     <pathCost>0</pathCost>
-
-    <costList>
-        <DankPyon_IronIngot>5</DankPyon_IronIngot>
-    </costList>
 
     <stuffCategories>
         <li>Woody</li>

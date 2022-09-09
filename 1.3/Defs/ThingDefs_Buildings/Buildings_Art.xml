@@ -264,7 +264,7 @@
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 
-    <comps>
+    <comps Inherit="False">
       <li Class="CompProperties_Styleable" />
       <li Class="CompProperties_Glower">
         <glowRadius>18</glowRadius>
@@ -304,6 +304,15 @@
           </li>
         </offsets>
       </li>
+	  <!-- SculptureBase comps -->
+	  <li>
+		<compClass>CompQuality</compClass>
+	  </li>
+	  <li Class="CompProperties_Art">
+		<nameMaker>NamerArtSculpture</nameMaker>
+		<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+	  </li>
     </comps>
 </ThingDef>
 
@@ -345,8 +354,8 @@
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 
-    <comps>
-      <li Class="CompProperties_Styleable" />
+    <comps Inherit="False">
+      <li Class="CompProperties_Styleable" /> <!-- Duplicate -->
       <li Class="CompProperties_Glower">
         <glowRadius>10</glowRadius>
         <glowColor>(252,187,113,0)</glowColor>
@@ -360,7 +369,7 @@
         <fireSize>0.8</fireSize>
         <offset>(0,0,0.6)</offset>
       </li>
-      <li Class="CompProperties_MeditationFocus">
+      <li Class="CompProperties_MeditationFocus"> <!-- Duplicate -->
         <statDef>MeditationFocusStrength</statDef>
         <focusTypes><li>Flame</li></focusTypes>
         <offsets>
@@ -385,6 +394,15 @@
           </li>
         </offsets>
       </li>
+	  <!-- SculptureBase comps -->
+	  <li>
+		<compClass>CompQuality</compClass>
+	  </li>
+	  <li Class="CompProperties_Art">
+		<nameMaker>NamerArtSculpture</nameMaker>
+		<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+	  </li>
     </comps>
 </ThingDef>
   

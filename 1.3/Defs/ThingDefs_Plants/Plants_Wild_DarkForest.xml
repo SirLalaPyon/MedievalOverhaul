@@ -13,7 +13,7 @@
 				<offset>(0,0,-0.25)</offset>
 			</shadowData>
 		</graphicData>
-		<altitudeLayer>Skyfaller</altitudeLayer>
+		<altitudeLayer>Pawn</altitudeLayer>
 		<statBases>
 			<Beauty>15</Beauty>
 			<MaxHitPoints>400</MaxHitPoints>
@@ -23,7 +23,7 @@
 		<plant>
 			<dieIfLeafless>False</dieIfLeafless> 
 			<fertilityMin>0.8</fertilityMin>
-			<harvestedThingDef>DankPyon_DarkWoodLog</harvestedThingDef>
+			<harvestedThingDef>DankPyon_RawDarkWood</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<leaflessGraphicPath>Plants_Leafless/GreatOak_Leafless</leaflessGraphicPath>
 			<growDays>300</growDays>
@@ -43,7 +43,7 @@
 				<mentalStateDef>Manhunter</mentalStateDef>
 				<numberToSpawn>1~1</numberToSpawn>
 				<letterLabel>Angry Schrat</letterLabel>
-				<letterDescription>An ancient shcrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
+				<letterDescription>An ancient schrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
 				<letterDef>ThreatBig</letterDef>
 				<notToxicFallout>false</notToxicFallout>
 			</li>
@@ -92,7 +92,7 @@
 		<plant>
 			<dieIfLeafless>False</dieIfLeafless> 
 			<fertilityMin>0.8</fertilityMin>
-			<harvestedThingDef>DankPyon_DarkWoodLog</harvestedThingDef>
+			<harvestedThingDef>DankPyon_RawDarkWood</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
 			<leaflessGraphicPath>Plants_Leafless/GreatIter_Leafless</leaflessGraphicPath>
 			<growDays>300</growDays>
@@ -112,7 +112,7 @@
 				<mentalStateDef>Manhunter</mentalStateDef>
 				<numberToSpawn>1~1</numberToSpawn>
 				<letterLabel>Angry Schrat</letterLabel>
-				<letterDescription>An ancient shcrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
+				<letterDescription>An ancient schrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
 				<letterDef>ThreatBig</letterDef>
 				<notToxicFallout>false</notToxicFallout>
 			</li>
@@ -156,6 +156,7 @@
 		<plant>
 			<dieIfLeafless>False</dieIfLeafless> 
 			<fertilityMin>0.4</fertilityMin>
+			<harvestedThingDef>DankPyon_RawDarkWood</harvestedThingDef>
 			<growDays>18</growDays>
 			<harvestWork>2000</harvestWork>
 			<harvestYield>150</harvestYield>
@@ -225,7 +226,7 @@
 			<mentalStateDef>Manhunter</mentalStateDef>
 			<numberToSpawn>1~1</numberToSpawn>
 			<letterLabel>Angry Schrat</letterLabel>
-			<letterDescription>An ancient shcrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
+			<letterDescription>An ancient schrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
 			<letterDef>ThreatBig</letterDef>
 			<notToxicFallout>false</notToxicFallout>
 		</li>

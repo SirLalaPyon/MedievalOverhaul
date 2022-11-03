@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+	
+
+	<StandaloneSettlementPreference_ModName>Préférences pour les colonies indépendantes</StandaloneSettlementPreference_ModName>
+	<StandaloneSettlementPreference_ResetSettings>Réinitialiser les paramètres</StandaloneSettlementPreference_ResetSettings>
+
+	<StandaloneSettlementPreference_Logging>Messages du log pour Settlement Preference</StandaloneSettlementPreference_Logging>
+	<StandaloneSettlementPreference_LoggingTooltip>Active quelques messages de log pour le patch entre Harmony et Settlement Preference. Ceux-ci apparaîtront durant la création du monde, quand les factions sont implémentées dans le monde, et peut aider à diagnostiquer des soucis susceptibles d'avoir lieu.</StandaloneSettlementPreference_LoggingTooltip>
+	<StandaloneSettlementPreference_LoggingExtended>Active des messages de log additionnels pour Settlement Preference</StandaloneSettlementPreference_LoggingExtended>
+	<StandaloneSettlementPreference_LoggingExtendedTooltip>Active quelques messages de log pour le patch entre Harmony et Settlement Preference. Ceux-ci apparaîtront durant la création du monde, quand les factions sont implémentées dans le monde, et peut aider à diagnostiquer des soucis susceptibles d'avoir lieu.\n\nCes messages rempliront rapidement le log. Il est recommander de n'activer qu'une seule faction à la fois lors de son usage.</StandaloneSettlementPreference_LoggingExtendedTooltip>
+	<StandaloneSettlementPreference_EnableSettlementPreference>Activer le patch de Settlement Preference et Harmony</StandaloneSettlementPreference_EnableSettlementPreference>
+	<StandaloneSettlementPreference_EnableSettlementPreferenceTooltip>Si activé, les factions qui bénéficient du mod Settlement Preference seront davantage susceptibles de s'installer dans des endroits spécifiques.\n\nCette option peut être désactivable à tout moment, mais requerra forcément un nouveau monde pour prendre effet.\n\nCela affecte :</StandaloneSettlementPreference_EnableSettlementPreferenceTooltip>
+	<StandaloneSettlementPreference_Iterations>Nombre maximum d'itérations pour Settlement Preference</StandaloneSettlementPreference_Iterations>
+	<StandaloneSettlementPreference_IterationsTooltip>Si Settlement Preference n'est pas capable de trouver une case désirable dans ce nombre d'itérations, cela basculera le contrôle à RimWorld.\n\Baisser cette valeur pourrait améliorer le temps de génération du monde, alors que l'augmenter permettrait des emplacements de colonies plus désirables.</StandaloneSettlementPreference_IterationsTooltip>
+
+</LanguageData>

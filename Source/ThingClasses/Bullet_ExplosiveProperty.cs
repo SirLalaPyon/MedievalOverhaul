@@ -9,7 +9,7 @@ namespace DankPyon
 
         private ProjectileProperties AdditionalProjProps => (def.GetModExtension<AdditionalProjectileProperties>() ?? AdditionalProjectileProperties.defaultValues).projectile2;
 
-        protected override void Impact(Thing hitThing)
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             var usedTargetInfo = hitThing ?? new TargetInfo(usedTarget.Cell, Map);
             DoExplosion(usedTargetInfo);
@@ -48,7 +48,7 @@ namespace DankPyon
             float chanceToStartFire = projProps.explosionChanceToStartFire;
             bool damageFalloff = projProps.explosionDamageFalloff;
 
-            GenExplosion.DoExplosion(centre, map, radius, damType, instigator, damAmount, armourPenetration, explosionSound, weapon, projectile, intendedTarget, postExplosionSpawnThingDef, postExplosionSpawnChance, postExplosionSpawnThingCount,
+            GenExplosion.DoExplosion(centre, map, radius, damType, instigator, damAmount, armourPenetration, explosionSound, weapon, projectile, intendedTarget, postExplosionSpawnThingDef, postExplosionSpawnChance, postExplosionSpawnThingCount, null,
                 applyDamageToExplosionCellsNeighbours, preExplosionSpawnThingDef, preExplosionSpawnChance, preExplosionSpawnThingCount, chanceToStartFire, damageFalloff);
         }
 

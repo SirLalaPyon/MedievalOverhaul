@@ -56,6 +56,8 @@
     </comps>
   </ThingDef>
 
+  <!-- NEW STORAGE BASE  ; replace top one-->
+
   <ThingDef Abstract="True" ParentName="ArtableFurnitureBase" Name="DankPyon_ArtableFurnitureBase">
     <researchPrerequisites>
       <li>DankPyon_RusticFurniture</li>

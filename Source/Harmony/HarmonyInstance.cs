@@ -405,7 +405,7 @@ namespace DankPyon
             {
                 if (PF_Settings.replaceDestroyedProcessors)
                 {
-                    GenConstruct.PlaceBlueprintForBuild_NewTemp(__instance.parent.def, __instance.parent.Position, __instance.parent.Map, __instance.parent.Rotation, Faction.OfPlayer, null);
+                    GenConstruct.PlaceBlueprintForBuild(__instance.parent.def, __instance.parent.Position, __instance.parent.Map, __instance.parent.Rotation, Faction.OfPlayer, null);
                 }
                 __instance.parent.Destroy();
                 return thing;

@@ -685,7 +685,7 @@
     <deepCountPerPortion>45</deepCountPerPortion>
     <deepLumpSizeRange>20~30</deepLumpSizeRange>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
+    <!--smeltable>true</smeltable-->
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
   
@@ -765,7 +765,7 @@
     <deepCountPerPortion>70</deepCountPerPortion>
     <deepLumpSizeRange>2~10</deepLumpSizeRange>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
+    <!--smeltable>true</smeltable-->
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
 
@@ -827,7 +827,7 @@
         <deepCountPerPortion>8</deepCountPerPortion>
         <deepLumpSizeRange>1~4</deepLumpSizeRange>
         <burnableByRecipe>false</burnableByRecipe>
-        <smeltable>true</smeltable>
+        <!--smeltable>true</smeltable-->
     </ThingDef>
 
     <!--============================== Misc ==============================-->

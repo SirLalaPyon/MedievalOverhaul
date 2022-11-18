@@ -95,7 +95,7 @@ namespace MedievalOverhaul
                 if (Rand.Chance(lootableExt.enemySpawnChance))
                 {
                     PawnGenerationRequest request = new(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()),
-                        null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, false, 1f, false, true, true, false, false);
+                        null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, 0f, false, false, true, true, false, false);
                     Pawn pawn = PawnGenerator.GeneratePawn(request);
                     innerContainer.TryAdd(pawn, lootableExt.enemySpawnCount);
 

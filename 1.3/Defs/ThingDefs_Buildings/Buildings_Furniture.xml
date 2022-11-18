@@ -57,6 +57,19 @@
   </ThingDef>
 
   <!-- NEW STORAGE BASE  ; replace top one-->
+  <ThingDef Abstract="True" ParentName="ShelfBase" Name="DankPyon_VanillaShelfBase">
+    <researchPrerequisites>
+      <li>DankPyon_RusticFurniture</li>
+    </researchPrerequisites>
+    <designationCategory>DankPyon_RusticFurniture</designationCategory>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Styleable" Inherit="False"/>
+    </comps>
+  </ThingDef>
+  
 
   <ThingDef Abstract="True" ParentName="ArtableFurnitureBase" Name="DankPyon_ArtableFurnitureBase">
     <researchPrerequisites>
@@ -1035,186 +1048,112 @@
 	</modExtensions>
 	</ThingDef>
 
-  <!--============================== Storage (Chest) ==============================-->
+	<!--============================== Storage (Chest) ==============================-->
+	<ThingDef ParentName="DankPyon_VanillaShelfBase">
+		<defName>DankPyon_RusticChest</defName>
+		<label>rustic chest</label>
+		<description>A trusty wooden chest to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.</description>
+		<graphicData>
+			<texPath>Furniture/RusticChest</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 
+		<comps>
+		<li Class="CompProperties_Facility">
+			<statOffsets>
+				<Comfort>0.05</Comfort>
+			</statOffsets>
+			<maxSimultaneous>1</maxSimultaneous>
+			<maxDistance>6</maxDistance>
+		</li>
+		</comps>
+	</ThingDef>
 
-  <ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
-    <defName>DankPyon_RusticChest</defName>
-    <label>chest</label>
-    <description>A trusty wooden chest to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.</description>
-    <thingClass>Building_Storage</thingClass>
-    <graphicData>
-      <texPath>Furniture/RusticChest</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize>
-    </graphicData>
+	<ThingDef ParentName="DankPyon_VanillaShelfBase">
+		<defName>DankPyon_MetalStrongbox</defName>
+		<label>metal strongbox</label>
+		<description>A trusty metal strongbox to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.Multiple chests do not stack comfort bonuses.</description>
+		<graphicData>
+			<texPath>Furniture/MetalStrongbox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+		<Mass>10</Mass>
+		<WorkToBuild>560</WorkToBuild>
+		<Flammability>0.0</Flammability>
+		<Beauty>3</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<rotatable>false</rotatable>
 
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.3</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
-    <pathCost>30</pathCost>
-    <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
-    <costStuffCount>20</costStuffCount>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>8</Mass>
-      <WorkToBuild>500</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <Beauty>3</Beauty>
-    </statBases>
-    <size>(1,1)</size>
-    <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-        <filter>
-          <categories>
-            <li>Weapons</li>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-    <inspectorTabs>
-      <li>ITab_Storage</li>
-    </inspectorTabs>
-    <designationHotKey>Misc12</designationHotKey>
-	<designationCategory>DankPyon_RusticFurniture</designationCategory>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <surfaceType>Item</surfaceType>
-    <canOverlapZones>false</canOverlapZones>
-	    <comps>
-      <li Class="CompProperties_Facility">
-        <statOffsets>
-          <Comfort>0.05</Comfort>
-        </statOffsets>
-        <maxSimultaneous>1</maxSimultaneous>
-        <maxDistance>6</maxDistance>
-      </li>
-    </comps>
-  </ThingDef>
-  
-    <ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
-    <defName>DankPyon_MetalStrongbox</defName>
-    <label>metal strongbox</label>
-    <description>A trusty metal strongbox to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.Multiple chests do not stack comfort bonuses.</description>
-    <thingClass>Building_Storage</thingClass>
-    <graphicData>
-      <texPath>Furniture/MetalStrongbox</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.3</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
-    <pathCost>30</pathCost>
-	<costList>
-		<DankPyon_IronIngot>30</DankPyon_IronIngot>
-	</costList>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <Mass>10</Mass>
-      <WorkToBuild>560</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>3</Beauty>
-    </statBases>
-    <size>(1,1)</size>
-    <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-        <filter>
-          <categories>
-            <li>Weapons</li>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-    <inspectorTabs>
-      <li>ITab_Storage</li>
-    </inspectorTabs>
-    <designationHotKey>Misc12</designationHotKey>
-	<designationCategory>DankPyon_RusticFurniture</designationCategory>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <surfaceType>Item</surfaceType>
-    <canOverlapZones>false</canOverlapZones>
-	    <comps>
-      <li Class="CompProperties_Facility">
-        <statOffsets>
-          <Comfort>0.05</Comfort>
-        </statOffsets>
-        <maxSimultaneous>1</maxSimultaneous>
-        <maxDistance>6</maxDistance>
-      </li>
-    </comps>
-	<rotatable>false</rotatable>
-  </ThingDef>
-  
-      <ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
-    <defName>DankPyon_RoyalChest</defName>
-    <label>royal chest</label>
-    <description>An ornate chest store by the nobles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.</description>
-    <thingClass>Building_Storage</thingClass>
-    <graphicData>
-      <texPath>Furniture/RoyalChest</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.3</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
-    <pathCost>30</pathCost>
-	<costList>
-		<DankPyon_IronIngot>30</DankPyon_IronIngot>
-		<Gold>10</Gold>
-	</costList>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <Mass>10</Mass>
-      <WorkToBuild>600</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>30</Beauty>
-      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
-    </statBases>
-    <size>(1,1)</size>
-    <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-        <filter>
-          <categories>
-            <li>Weapons</li>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-    <inspectorTabs>
-      <li>ITab_Storage</li>
-    </inspectorTabs>
-    <designationHotKey>Misc12</designationHotKey>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <surfaceType>Item</surfaceType>
-    <canOverlapZones>false</canOverlapZones>
-    
-	<comps>
-      <li Class="CompProperties_Facility">
-        <statOffsets>
-          <Comfort>0.1</Comfort>
-        </statOffsets>
-        <maxSimultaneous>1</maxSimultaneous>
-        <maxDistance>6</maxDistance>
-      </li>
-  </comps>
-  <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-  </ThingDef>
+		<costList>
+			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+		</costList>
 
+		<comps>
+		<li Class="CompProperties_Facility">
+			<statOffsets>
+			<Comfort>0.05</Comfort>
+			</statOffsets>
+			<maxSimultaneous>1</maxSimultaneous>
+			<maxDistance>6</maxDistance>
+		</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_VanillaShelfBase">
+		<defName>DankPyon_RoyalChest</defName>
+		<label>royal chest</label>
+		<description>An ornate chest store by the nobles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.</description>
+    	<graphicData>
+			<texPath>Furniture/RoyalChest</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>10</Mass>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>30</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+			</statBases>
+		<size>(1,1)</size>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+
+		<costList>
+			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+			<Gold>10</Gold>
+		</costList>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.1</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+  		</comps>
+	</ThingDef>
+	
   <!--====================Misc====================-->
 <ThingDef ParentName="BuildingBase">
     <defName>DankPyon_BarrelWater</defName>

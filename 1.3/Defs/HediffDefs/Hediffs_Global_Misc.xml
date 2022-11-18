@@ -20,10 +20,10 @@
 		</comps>
 		<stages>
 			<li>  
+				<hungerRateFactorOffset>-0.4</hungerRateFactorOffset>
 				<statOffsets>
 					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
 					<ImmunityGainSpeedFactor>0.40</ImmunityGainSpeedFactor>
-					<HungerRateMultiplier>-0.4</HungerRateMultiplier>	
 				</statOffsets> 
 				<capMods>
 					<li>
@@ -74,10 +74,10 @@
 		</comps>
 		<stages>
 			<li>  
+				<hungerRateFactorOffset>-0.4</hungerRateFactorOffset>
 				<statOffsets>
 					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
-					<ImmunityGainSpeedFactor>0.40</ImmunityGainSpeedFactor>
-					<HungerRateMultiplier>-0.4</HungerRateMultiplier>	
+					<ImmunityGainSpeedFactor>0.40</ImmunityGainSpeedFactor>	
 				</statOffsets> 
 				<capMods>
 					<li>
@@ -180,8 +180,8 @@
 		</comps>
 		<stages>
 			<li>  
+				<hungerRateFactorOffset>-0.15</hungerRateFactorOffset>
 				<statOffsets>
-					<HungerRateMultiplier>-0.15</HungerRateMultiplier>	
 				</statOffsets> 
 				<capMods>
 					<li>
@@ -291,10 +291,8 @@
 			  </li>
 		</comps>
 		<stages>
-			<li>  
-				<statOffsets>
-					<HungerRateMultiplier>-0.05</HungerRateMultiplier>					
-				</statOffsets>
+			<li> 
+				<hungerRateFactorOffset>-0.15</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -373,9 +371,7 @@
 		</comps>
 		<stages>
 			<li>  
-				<statOffsets>
-					<HungerRateMultiplier>-0.05</HungerRateMultiplier>					
-				</statOffsets>
+				<hungerRateFactorOffset>-0.05</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -413,9 +409,7 @@
 		</comps>
 		<stages>
 			<li>  
-				<statOffsets>
-					<HungerRateMultiplier>-0.1</HungerRateMultiplier>					
-				</statOffsets>
+				<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -453,9 +447,7 @@
 		</comps>
 		<stages>
 			<li>  
-				<statOffsets>
-					<HungerRateMultiplier>-0.2</HungerRateMultiplier>					
-				</statOffsets>
+				<hungerRateFactorOffset>-0.2</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>

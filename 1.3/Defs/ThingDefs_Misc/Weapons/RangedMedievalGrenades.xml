@@ -212,7 +212,7 @@
       <damageDef>Smoke</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionDelay>100</explosionDelay>
-      <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
+      <!--postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef got fucked in 1.4-->
       <postExplosionSpawnChance>1</postExplosionSpawnChance>
       <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>

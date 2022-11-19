@@ -384,7 +384,7 @@ namespace DankPyon
                     {
                         for (int i = 0; i < num; i++)
                         {
-                            GenSpawn.Spawn(PawnGenerator.GeneratePawn(new PawnGenerationRequest(bonusOutput.thingDef.race.AnyPawnKind, null, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, newborn: true)), __instance.parent.Position, __instance.parent.Map);
+                            GenSpawn.Spawn(PawnGenerator.GeneratePawn(new PawnGenerationRequest(bonusOutput.thingDef.race.AnyPawnKind, null, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, fixedBiologicalAge: 0)), __instance.parent.Position, __instance.parent.Map);
                         }
                     }
                     else

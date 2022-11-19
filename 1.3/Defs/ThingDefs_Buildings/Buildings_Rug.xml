@@ -7,13 +7,6 @@
     <thingCategories>
       <li>BuildingsFurniture</li>
     </thingCategories>
-	<building>
-      	<isEdifice>false</isEdifice>
-    </building>
-	<rotatable>true</rotatable>
-	<altitudeLayer>FloorCoverings</altitudeLayer>
-	<useHitPoints>False</useHitPoints>
-
 	<researchPrerequisites>
 		<li>DankPyon_LeatherTanning</li>
 	</researchPrerequisites>
@@ -38,7 +31,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
-		
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+    
 		<statBases>
 			<WorkToMake>3000</WorkToMake>
 			<Beauty>3</Beauty>
@@ -49,7 +47,10 @@
       		<li>Leathery</li>
     	</stuffCategories>
     	<costStuffCount>25</costStuffCount>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(1,1)</size>
+		<passability>Standable</passability>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -62,6 +63,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>5000</WorkToMake>
@@ -73,7 +79,10 @@
       		<li>Leathery</li>
     	</stuffCategories>
     	<costStuffCount>50</costStuffCount>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(2,2)</size>
+		<passability>Standable</passability>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -86,6 +95,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
@@ -97,7 +111,10 @@
       		<li>Leathery</li>
     	</stuffCategories>
     	<costStuffCount>100</costStuffCount>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(3,3)</size>
+		<passability>Standable</passability>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -110,6 +127,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
@@ -120,7 +142,10 @@
 		<costList>
 			<DankPyon_Hide_Hyena>1</DankPyon_Hide_Hyena>
 		</costList>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(2,2)</size>
+		<passability>Standable</passability>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -133,6 +158,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
@@ -143,7 +173,10 @@
 		<costList>
 			<DankPyon_Hide_WolfTimber>1</DankPyon_Hide_WolfTimber>
 		</costList>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(2,2)</size>
+		<passability>Standable</passability>
  </ThingDef>
 
  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -156,6 +189,11 @@
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(2,2)</drawSize>
 	</graphicData>
+	<building>
+		  <isEdifice>false</isEdifice>
+	</building>
+	<rotatable>true</rotatable>
+	<altitudeLayer>FloorEmplacement</altitudeLayer>
 
 	<statBases>
 		<WorkToMake>7000</WorkToMake>
@@ -167,7 +205,10 @@
 		<DankPyon_Hide_WolfArctic>1</DankPyon_Hide_WolfArctic>
 		<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
 	</costList>
+
+	<useHitPoints>False</useHitPoints>
 	<size>(2,2)</size>
+	<passability>Standable</passability>
 </ThingDef>
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -180,6 +221,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
@@ -191,7 +237,10 @@
 			<DankPyon_Hide_Cougar>1</DankPyon_Hide_Cougar>
 			<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
 		</costList>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(2,2)</size>
+		<passability>Standable</passability>
 	</ThingDef>
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -204,6 +253,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
@@ -215,7 +269,10 @@
 			<DankPyon_Hide_Panther>1</DankPyon_Hide_Panther>
 			<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
 		</costList>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(2,2)</size>
+		<passability>Standable</passability>
 	</ThingDef>
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -228,6 +285,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
@@ -239,7 +301,10 @@
 			<DankPyon_Hide_BearGrizzly>1</DankPyon_Hide_BearGrizzly>
 			<DankPyon_TanningLiquor>12</DankPyon_TanningLiquor>
 		</costList>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(3,3)</size>
+		<passability>Standable</passability>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -252,6 +317,11 @@
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(3,3)</drawSize>
 	</graphicData>
+	<building>
+  		<isEdifice>false</isEdifice>
+	</building>
+	<rotatable>true</rotatable>
+	<altitudeLayer>FloorEmplacement</altitudeLayer>
 
 	<statBases>
 		<WorkToMake>12000</WorkToMake>
@@ -263,31 +333,10 @@
 		<DankPyon_Hide_BearPolar>1</DankPyon_Hide_BearPolar>
 		<DankPyon_TanningLiquor>12</DankPyon_TanningLiquor>
 	</costList>
+
+	<useHitPoints>False</useHitPoints>
 	<size>(3,3)</size>
-  </ThingDef>
-
-  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
-	<defName>DankPyon_RugRox3x3c</defName>
-	<label>rox rug (3x3)</label>
-	<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The polar bears found in frozen climates host great white fur that makes for cold-resistant rugs. Especially valuable to homesteads found in cold temperatures.</description>
-	<thingClass>Building</thingClass>
-	<graphicData>
-		<texPath>Furniture/RugRox3x3</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(3,3)</drawSize>
-	</graphicData>
-
-	<statBases>
-		<WorkToMake>12000</WorkToMake>
-		<Beauty>15</Beauty>
-		<Mass>9</Mass>
-	</statBases>
-
-	<costList>
-		<DankPyon_Hide_Rox>1</DankPyon_Hide_Rox>
-		<DankPyon_TanningLiquor>12</DankPyon_TanningLiquor>
-	</costList>
-	<size>(3,3)</size>
+	<passability>Standable</passability>
   </ThingDef>
 
   <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
@@ -300,6 +349,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>15000</WorkToMake>
@@ -310,33 +364,13 @@
 		<costList>
 			<DankPyon_Hide_Thrumbo>1</DankPyon_Hide_Thrumbo>
 		</costList>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(3,3)</size>
+		<passability>Standable</passability>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
-		<defName>DankPyon_RugDaer4x4c</defName>
-		<label>daer rug (4x4)</label>
-		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Few hunters can craft a trophy with a more refined and resistant coat than that of the thrumbo rug. Its long fur can catch the eye of any colonist, but the strong hide requires much work to tailor. Beware the horn while walking.</description>
-		<thingClass>Building</thingClass>
-		<graphicData>
-			<texPath>Furniture/RugDaer4x4</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(4,4)</drawSize>
-		</graphicData>
-    
-		<statBases>
-			<WorkToMake>15000</WorkToMake>
-			<Beauty>30</Beauty>
-			<Mass>9</Mass>
-		</statBases>
-    
-		<costList>
-			<DankPyon_Hide_Daer>1</DankPyon_Hide_Daer>
-		</costList>
-		<size>(4,4)</size>
-	</ThingDef>
-
-  	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+  <ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
 		<defName>DankPyon_RugHuman1x2c</defName>
 		<label>human rug (1x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Human rugs are prized trophies admired by some and loathed by others, but like-minded cannibals will find comfort in its decor.</description>
@@ -346,6 +380,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+    	<building>
+      		<isEdifice>false</isEdifice>
+    	</building>
+		<rotatable>true</rotatable>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
     
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
@@ -356,7 +395,10 @@
 		<costList>
 			<DankPyon_Hide_Human>1</DankPyon_Hide_Human>
 		</costList>
+
+		<useHitPoints>False</useHitPoints>
 		<size>(1,2)</size>
+		<passability>Standable</passability>
 	</ThingDef>
 	
   

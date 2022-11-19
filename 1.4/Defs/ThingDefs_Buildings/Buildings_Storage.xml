@@ -1,0 +1,1995 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Specific storage buildings will have a max stack of 4 while general storage buildings will use the vanilla max stack 3
+	
+		Raw wood = 4 stacks
+		Cloth Sack = 3 stacks
+	-->
+
+	<!-- ==================== Storage Base ==================== -->
+
+	<ThingDef Name="DankPyon_StorageBase" ParentName="ShelfBase" Abstract="True">
+		<researchPrerequisites Inherit="false">
+			<li>DankPyon_RusticStorage</li>
+		</researchPrerequisites>
+		<designationCategory>DankPyon_RusticStorage</designationCategory>
+
+		<comps>
+			<li Class="CompProperties_Styleable" Inherit="False"/>
+		</comps>
+	</ThingDef>
+
+  	<!-- ==================== Wood Logs ==================== -->
+  	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_WoodLogs1x1c</defName>
+		<label>raw wood pile</label>
+		<description>Logs that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/RawWood1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Storage/RawWood1x1_north</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+	
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+				<categories Inherit = "false">
+					<li>DankPyon_RawWood</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+
+		<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+  	<!--== Wood Logs 1x2 ==-->
+  	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_WoodLogs1x2c</defName>
+		<label>raw wood (1x2)</label>
+		<description>Logs that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/RawWood1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<size>(2,1)</size>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+	
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+				<categories Inherit = "false">
+					<li>DankPyon_RawWood</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+	<!--== Wood Logs 2x2 ==-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_WoodLogs2x2c</defName>
+		<label>raw wood (2x2)</label>
+		<description>Logs that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/RawWood2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.75</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+	
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+				<categories Inherit = "false">
+					<li>DankPyon_RawWood</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+   
+		<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+	<!--== Timber 1x1 ==-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Timber1x1c</defName>
+		<label>timber (1x1)</label>
+		<description>Timber that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Timber1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<size>(1,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+	
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+				<categories Inherit = "false">
+					<li>DankPyon_Wood</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>DankPyon_Wood</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+
+		<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+	<!--== Timber 1x2 ==-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Timber1x2c</defName>
+		<label>timber (1x2)</label>
+		<description>Timber that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Timber1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<size>(2,1)</size>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+	
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+   		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+				<categories Inherit = "false">
+					<li>DankPyon_Wood</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>DankPyon_Wood</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+
+		<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+	<!--== Timber 2x2 ==-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Timber2x2c</defName>
+		<label>timber (2x2)</label>
+		<description>Timber that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Timber2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<size>(2,2)</size>
+		<uiIconScale>0.75</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+	
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+				<categories Inherit = "false">
+					<li>DankPyon_Wood</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>DankPyon_Wood</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+
+		<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+	<!--== Bricks ==-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Bricks1x1c</defName>
+		<label>bricks(1x1)</label>
+		<description>Bricks that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Bricks1x1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+	  		<drawRotated>false</drawRotated>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+	
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+				<categories Inherit = "false">
+					<li>StoneBlocks</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>StoneBlocks</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+ 
+	<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+	<!--== Bricks 1x2 ==-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Bricks1x2c</defName>
+		<label>bricks(1x2)</label>
+		<description>Bricks that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Bricks1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+	
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+				<categories Inherit = "false">
+					<li>StoneBlocks</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>StoneBlocks</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+
+		<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+	<!--== Bricks 2x2 ==-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Bricks2x2c</defName>
+		<label>bricks</label>
+		<description>Bricks that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/Bricks2x2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+	  	<drawRotated>false</drawRotated>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.75</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+	
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+				<categories Inherit = "false">
+					<li>StoneBlocks</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>StoneBlocks</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	
+		<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+	<!--======================= Cupboard ==============================-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RusticCupboardEmpty</defName>
+		<label>cupboard</label>
+		<description>An open cupboard to store and display objects in an efficient manner.</description>
+		<graphicData>
+			<texPath>Storage/CupboardEmpty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,3)</drawSize>
+		</graphicData>
+		<size>(3,1)</size>
+		<uiIconPath>Storage/CupboardEmpty_north</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints> 
+			<Mass>12</Mass>
+			<WorkToBuild>750</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">7.5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_CupboardBase">
+		<defName>DankPyon_RusticCupboardBread</defName>
+		<label>bread cupboard</label>
+		<description>An open cupboard to store and display objects in an efficient manner.</description>
+		<graphicData>
+			<texPath>Storage/CupboardBread</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5,3)</drawSize>
+		</graphicData>
+		<size>(3,1)</size>
+		<uiIconPath>Storage/CupboardBread_north</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints> 
+			<Mass>12</Mass>
+			<WorkToBuild>750</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">7.5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_MealBread</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_MealBread</li>
+					</thingDefs>
+				</filter>
+				</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_CupboardBase">
+		<defName>DankPyon_RusticCupboardCheese</defName>
+		<label>cheese cupboard</label>
+		<graphicData>
+			<texPath>Storage/CupboardCheese</texPath>
+		</graphicData>
+		<uiIconPath>Storage/CupboardCheese_north</uiIconPath>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>DankPyon_Cheese</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>DankPyon_Cheese</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_CupboardBase">
+		<defName>DankPyon_RusticCupboardWine</defName>
+		<label>wine cupboard</label>
+		<graphicData>
+			<texPath>Storage/CupboardDrug</texPath>
+		</graphicData>
+		<uiIconPath>Storage/CupboardDrug_north</uiIconPath>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Wine</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Wine</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--======================= Resource Barrel ==============================-->
+	<!-- ==================== Barrels ==================== -->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RusticBarrelBigClosed</defName>
+		<label>large barrel</label>
+		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelBig</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.75</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RusticBarrelBigGrape</defName>
+		<label>large grape barrel</label>
+		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelBigGrape</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+		<drawRotated>false</drawRotated>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.75</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RusticBarrelBigClosedDown</defName>
+		<label>large barrel</label>
+		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelBigDown</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<size>(2,2)</size>
+		<uiIconScale>0.75</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RusticBarrelStack</defName>
+		<label>barrel shelf</label>
+		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelStack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,3)</drawSize>
+		</graphicData>
+		<size>(3,1)</size>
+		<uiIconPath>Storage/BarrelStack_north</uiIconPath>
+		<uiIconScale>2</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints> 
+			<Mass>12</Mass>
+			<WorkToBuild>750</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">7.5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RusticBarrelClosed</defName>
+		<label>barrel</label>
+		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelClosed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelClosed</uiIconPath>
+		<uiIconScale>1.5</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+		<size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+	</ThingDef>
+
+	<!--== WoodLog Barrel ==-->
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_BarrelBase">
+		<defName>DankPyon_BarrelWoodLog</defName>
+		<label>barrel of wood</label>
+		<description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelWoodLog</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelWoodLog</uiIconPath>
+		<uiIconScale>1.5</uiIconScale>
+		<size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+  	<!--== Iron Ore Barrel ==-->
+	<ThingDef ParentName="DankPyon_BarrelBase" >
+		<defName>DankPyon_BarrelIronOre</defName>
+		<label>barrel of iron ore</label>
+		<description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 5 stacks of iron ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelIronOre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelIronOre</uiIconPath>
+
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+				<thingDefs>
+					<li>DankPyon_IronOre</li>
+				</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+					<li>DankPyon_IronOre</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--== Silver Ore Barrel ==-->
+	<ThingDef ParentName="DankPyon_BarrelBase">
+		<defName>DankPyon_BarrelSilverOre</defName>
+		<label>barrel of silver ore</label>
+		<description>A cylindrical barrel reserved for silver ore to save space. Can hold up to 5 stacks of silver ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelSilverOre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelSilverOre</uiIconPath>
+		
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_SilverOre</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_SilverOre</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--== Gold Ore Barrel ==-->
+	<ThingDef ParentName="DankPyon_BarrelBase" >
+		<defName>DankPyon_BarrelGoldOre</defName>
+		<label>barrel of gold ore</label>
+		<description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 5 stacks of gold ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelGoldOre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelGoldOre</uiIconPath>
+
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_GoldOre</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+					<li>DankPyon_GoldOre</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--== Coal Ore Barrel ==-->
+	<ThingDef ParentName="DankPyon_BarrelBase" >
+		<defName>DankPyon_BarrelCoalOre</defName>
+		<label>barrel of coal ore</label>
+		<description>A cylindrical barrel reserved for coal ore to save space. Can hold up to 5 stacks of coal ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelCoalOre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelCoalOre</uiIconPath>
+
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+					<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--== Textiles Barrel ==-->
+	<ThingDef ParentName="DankPyon_BarrelBase" >
+		<defName>DankPyon_BarrelTextiles</defName>
+		<label>barrel of textiles</label>
+		<description>A cylindrical barrel reserved for textiles to save space. Can hold up to 5 stacks of textiles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+		<texPath>Storage/BarrelTextiles</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(2,2)</drawSize>
+		<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelTextiles</uiIconPath>
+
+		<building>
+			<fixedStorageSettings Inherit = "fasle">
+				<filter>
+				<categories>
+				<li>Textiles</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "fasle">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>Textiles</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--== Leather Barrel ==-->
+	<ThingDef ParentName="DankPyon_BarrelBase" >
+		<defName>DankPyon_BarrelLeather</defName>
+		<label>barrel of leather</label>
+		<description>A cylindrical barrel reserved for leather to save space. Can hold up to 5 stacks of leather. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelLeather</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.8,1.8)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelLeather</uiIconPath>
+
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+				<categories>
+					<li>Leathers</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>Leathers</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--== Basic Component ==-->
+	<ThingDef ParentName="DankPyon_BarrelBase" >
+		<defName>DankPyon_BarrelComponentBasic</defName>
+		<label>barrel of basic components</label>
+		<description>A cylindrical barrel reserved for basic components to save space. Can hold up to 5 stacks of basic components. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelComponentBasic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelComponentBasic</uiIconPath>
+		<uiIconScale>1.5</uiIconScale>
+
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+				<thingDefs>
+					<li>DankPyon_ComponentBasic</li>
+				</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+					<li>DankPyon_ComponentBasic</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--== Grape Barrel ==-->
+	<ThingDef ParentName="DankPyon_BarrelBase" >
+		<defName>DankPyon_BarrelGrape</defName>
+		<label>barrel of grape</label>
+		<description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelGrape</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelGrape</uiIconPath>
+		
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<thingDefs>
+					<li>DankPyon_RawGrapes</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+					<li>DankPyon_RawGrapes</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--======================= Large Shelf ==============================-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_LargeShelfEmpty</defName>
+		<label>large empty shelf</label>
+		<description>A large square platform designed to store things, keeping them clean and off the ground.</description>
+		<graphicData>
+			<texPath>Storage/StackEmpty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Bread</defName>
+		<label>large bread shelf</label>
+		<description>A large square platform designed to store things, keeping them clean and off the ground.</description>
+		<graphicData>
+			<texPath>Storage/StackBread</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_MealBread</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_MealBread</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Grain</defName>
+		<label>large grain shelf</label>
+		<graphicData>
+			<texPath>Storage/StackFlour</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<thingDefs Inherit="False">
+						<li>DankPyon_Flour</li>
+						<li>DankPyon_RawWheat</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<thingDefs Inherit="False">
+						<li>DankPyon_Flour</li>
+						<li>DankPyon_RawWheat</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Meat</defName>
+		<label>large meat shelf</label>
+		<graphicData>
+			<texPath>Storage/StackMeat</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Cheese</defName>
+		<label>large cheese shelf</label>
+		<graphicData>
+			<texPath>Storage/StackCheese</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+				<categories>
+					<li>DankPyon_Cheese</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>DankPyon_Cheese</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Wine</defName>
+		<label>large wine shelf</label>
+		<graphicData>
+			<texPath>Storage/StackDrug</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Wine</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Wine</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Mead</defName>
+		<label>large mead shelf</label>
+		<graphicData>
+			<texPath>Storage/StackMead</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Wine</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Wine</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LargeShelfBase">
+		<defName>DankPyon_LargeShelf_Vegetables</defName>
+		<label>large vegetables shelf</label>
+		<graphicData>
+			<texPath>Storage/StackVegetables</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--====================Sack====================-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_SackClosed</defName>
+		<label>sack</label>
+		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+		<graphicData>
+			<texPath>Storage/SackClosed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<DankPyon_Linen>10</DankPyon_Linen>
+		</costList>
+
+		<designatorDropdown>DankPyon_Sack</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_SackBase">
+		<defName>DankPyon_SackFlour</defName>
+		<label>sack of flour</label>
+		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+		<graphicData>
+			<texPath>Storage/SackFlour</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<size>(1,1)</size>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<DankPyon_Linen>30</DankPyon_Linen>
+		</costList>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+
+		<designatorDropdown>DankPyon_Sack</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SackBase">
+		<defName>DankPyon_SackWheat</defName>
+		<label>sack of wheat</label>
+		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+		<graphicData>
+			<texPath>Storage/SackWheat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawWheat</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawWheat</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SackBase">
+		<defName>DankPyon_SackPotato</defName>
+		<label>sack of potatoes</label>
+		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+		<graphicData>
+			<texPath>Storage/SackPotato</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SackBase">
+		<defName>DankPyon_SackApple</defName>
+		<label>sack of apples</label>
+		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
+		<graphicData>
+			<texPath>Storage/SackApple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawApples</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawApples</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<!--======================= Crate ==============================-->
+	<ThingDef ParentName="DankPyon_StorageBase" >
+		<defName>DankPyon_Crate1x1c</defName>
+		<label>crate</label>
+		<description>A wooden box made up of planks desinged to store resources. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/Crate1x1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+	</ThingDef>
+
+	<!-- Crate 1x2 -->
+	<ThingDef ParentName="DankPyon_StorageBase" >
+		<defName>DankPyon_Crate1x2c</defName>
+		<label>crate</label>
+		<description>A wooden box made up of planks desinged to store resources. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/Crate1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<size>(2,1)</size>
+		<defaultPlacingRot>North</defaultPlacingRot>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+	</ThingDef>
+
+	<!--======================= Weapon Rack ==============================-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_RackEmpty</defName>
+		<label>empty rack</label>
+		<description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Storage/RackEmpty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>Weapons</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<!-- Weapon Rack -->
+	<ThingDef ParentName="DankPyon_StorageBase"  Name="DankPyon_StorageRackBase">
+		<defName>DankPyon_RackSword</defName>
+		<label>sword rack</label>
+		<description>A rack for storing swords in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Storage/RackFilled1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+  <ThingDef ParentName="DankPyon_StorageRackBase">
+	<defName>DankPyon_RackSpear</defName>
+	<label>spear rack</label>
+	<description>A rack for storing spears in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+	<thingClass>Building_Storage</thingClass>
+	<graphicData>
+	  <texPath>Storage/RackFilled3</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(3,3)</drawSize>
+	</graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="DankPyon_StorageRackBase">
+	<defName>DankPyon_RackMixed</defName>
+	<label>weapon rack</label>
+	<description>A rack for storing weapons in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+	<thingClass>Building_Storage</thingClass>
+	<graphicData>
+	  <texPath>Storage/RackFilled2</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(3,3)</drawSize>
+	</graphicData>
+  </ThingDef>
+
+	<!--======================= Shelf ==============================-->
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfEmpty</defName>
+		<label>empty shelf</label>
+		<description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Storage/ShelfEmpty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/ShelfEmpty_north</uiIconPath>
+		<uiIconScale>1.25</uiIconScale>
+		<size>(2,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<building>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+				<categories>
+					<li>Weapons</li>
+				</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilled1c</defName>
+		<label>filled shelf</label>
+		<graphicData>
+		<texPath>Storage/ShelfHerb</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/ShelfHerb_north</uiIconPath>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilled2c</defName>
+		<label>filled shelf</label>
+		<graphicData>
+		<texPath>Storage/ShelfFilledA</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/ShelfFilledA_north</uiIconPath>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledEmerald</defName>
+		<label>emerald filled shelf</label>
+		<graphicData>
+		<texPath>Buildings/Ruin/ShelfEmerald</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfEmerald_north</uiIconPath>
+		<costList>
+		<DankPyon_Emerald>1</DankPyon_Emerald>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledSapphire</defName>
+		<label>sapphire filled shelf</label>
+		<graphicData>
+		<texPath>Buildings/Ruin/ShelfSapphire</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfSapphire_north</uiIconPath>
+		<costList>
+		<DankPyon_ChaliceSilver>1</DankPyon_ChaliceSilver>
+		<DankPyon_Sapphire>1</DankPyon_Sapphire>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledRuby</defName>
+		<label>ruby filled shelf</label>
+		<graphicData>
+		<texPath>Buildings/Ruin/ShelfRuby</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfRuby_north</uiIconPath>
+		<costList>
+		<DankPyon_ChaliceGold>1</DankPyon_ChaliceGold>
+		<DankPyon_Ruby>1</DankPyon_Ruby>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledSilverware</defName>
+		<label>silverware filled shelf</label>
+		<graphicData>
+		<texPath>Buildings/Ruin/ShelfBowl</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfBowl_north</uiIconPath>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledChaliceSilver</defName>
+		<label>silver chalice filled shelf</label>
+		<graphicData>
+		<texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfChaliceSilver_north</uiIconPath>
+		<costList>
+		<DankPyon_ChaliceSilver>2</DankPyon_ChaliceSilver>
+		<DankPyon_Book>1</DankPyon_Book>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledChaliceGold</defName>
+		<label>gold chalice filled shelf</label>
+		<graphicData>
+		<texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfChaliceSilver_north</uiIconPath>
+		<costList>
+		<DankPyon_ChaliceSilver>2</DankPyon_ChaliceSilver>
+		<DankPyon_BowlSilver>1</DankPyon_BowlSilver>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledWine</defName>
+		<label>wine filled shelf</label>
+		<graphicData>
+		<texPath>Storage/ShelfFilledWine</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/ShelfFilledWine_north</uiIconPath>
+
+		<building>
+		<fixedStorageSettings>
+			<priority>Important</priority>
+			<filter>
+			<categories>
+				<li>Drugs</li>
+			</categories>
+			</filter>
+		</fixedStorageSettings>
+		<defaultStorageSettings>
+			<priority>Important</priority>
+			<filter>
+				<categories>
+				<li>Drugs</li>
+				</categories>
+			</filter>
+				</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledFood</defName>
+		<label>food filled shelf</label>
+		<graphicData>
+		<texPath>Buildings/Ruin/ShelfRations</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfRations_north</uiIconPath>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+				<categories>
+					<li>FoodMeals</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>FoodMeals</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledIngot</defName>
+		<label>ingot filled shelf</label>
+		<graphicData>
+		<texPath>Buildings/Ruin/ShelfIngotIron</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfIngotIron_north</uiIconPath>
+
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+				<categories>
+					<li>ResourcesRaw</li>
+				</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+					<li>ResourcesRaw</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledBook</defName>
+		<label>book filled shelf</label>
+		<graphicData>
+		<texPath>Buildings/Ruin/ShelfBook</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2.75,2.75)</drawSize>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfBook_north</uiIconPath>
+		
+		<costList>
+			<DankPyon_Book>2</DankPyon_Book>
+		</costList>
+
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+				<thingDefs>
+					<li>DankPyon_Book</li>
+					<li>DankPyon_Book_AncientCodex</li>
+					<li>DankPyon_Book_IntoTheRuins</li>
+					<li>DankPyon_Book_TheBeginning</li>
+				</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+					<li>DankPyon_Book</li>
+					<li>DankPyon_Book_AncientCodex</li>
+					<li>DankPyon_Book_IntoTheRuins</li>
+					<li>DankPyon_Book_TheBeginning</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+  <!--ThingDef ParentName="DankPyon_StorageBase">
+	<defName>DankPyon_ShelfPlates</defName>
+	<label>shelf of plates</label>
+	<description>A shelf for reserved for clean plates. Items stored in this will not affect room beauty.</description>
+	<thingClass>Building_Storage</thingClass>
+	<graphicData>
+	  <texPath>Storage/ShelfPlate</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2.70,2.70)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<uiIconPath>Storage/ShelfPlate_north</uiIconPath>
+
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<fillPercent>0.4</fillPercent>
+	<castEdgeShadows>true</castEdgeShadows>
+	<pathCost>50</pathCost>
+	
+	<stuffCategories>
+	  <li>Woody</li>
+	</stuffCategories>
+
+	<costStuffCount>65</costStuffCount>
+	<statBases>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>12</Mass>
+	  <WorkToBuild>900</WorkToBuild>
+	  <Flammability>1.0</Flammability>
+	  <Beauty>0.5</Beauty>
+	</statBases>
+	<size>(2,1)</size>
+	<defaultPlacingRot>South</defaultPlacingRot>
+
+	<building>
+	  <fixedStorageSettings>
+		<filter>
+		<thingDefs>
+		  <li>DankPyon_PlateClean</li>
+		</thingDefs>
+		</filter>
+	  </fixedStorageSettings>
+	</building>
+
+	<inspectorTabs>
+	  <li>ITab_Storage</li>
+	</inspectorTabs>
+	<designationHotKey>Misc12</designationHotKey>
+	<staticSunShadowHeight>0.5</staticSunShadowHeight>
+	<canOverlapZones>false</canOverlapZones>
+
+	<comps>
+	  <li Class="LWM.DeepStorage.Properties" >
+		<minNumberStacks>1</minNumberStacks>
+		<maxNumberStacks>10</maxNumberStacks>
+		<timeStoringTakes>120</timeStoringTakes>
+		<showContents>false</showContents>
+		<overlayType>None</overlayType>
+	  </li>
+	</comps>
+  </ThingDef-->
+
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_StrawPile</defName>
+		<label>straw pile</label>
+		<description>A pile of dry stalks of cereal plants such as wheat, rice, oats, barley, and rye.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Storage/StrawPile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.70,2.70)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<size>(2,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+
+		<costList>
+			<DankPyon_Straw>20</DankPyon_Straw>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Straw</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Straw</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+</Defs>

@@ -7,26 +7,16 @@
 
   <ThingDef ParentName="AnimalThingBase">
     <defName>DankPyon_Rox</defName>
-    <label>rox</label>
-    <description>A huge herding herbivore of unknown origins. Most rox have considerably large horns they use to gore attackers. A dead rox's valuable horns can be recovered by butchering it.\n\nIntelligent creatures with complex social relationships, rox can be used as pack animals or trained to carry out the most complex of tasks. They live a long time, and are known to remember events and relationships from many decades before.</description>
+    <label>Rox</label>
+    <description>A gigantic, graceful creature of unknown origin. The Rox is gentle by nature, but extremely dangerous when enraged. While its long fur is exceptionally beautiful, its hide is also incredibly resistant to damage. Its razor-sharp horn fetches a huge price.\n\nLegends say that an old Rox is the wisest creature in the universe - it simply chooses not to speak.</description>
     <statBases>
-      <MoveSpeed>4.9</MoveSpeed>
-      <MarketValue>850</MarketValue>
-      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
-      <ComfyTemperatureMax>45</ComfyTemperatureMax>
-      <FilthRate>24</FilthRate>
-      <PsychicSensitivity>0</PsychicSensitivity>
-      <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+      <MoveSpeed>5.7</MoveSpeed>
+      <MarketValue>4000</MarketValue>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+	  <PsychicSensitivity>0</PsychicSensitivity>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
     </statBases>
     <uiIconScale>1.75</uiIconScale>
-     <comps>
-      <li Class="CompProperties_Shearable">
-        <woolDef>DankPyon_WoolRox</woolDef>
-        <shearIntervalDays>15</shearIntervalDays>
-        <woolAmount>160</woolAmount>
-      </li>
-    </comps>
-
     <tools>
       <li>
         <label>horn</label>
@@ -34,67 +24,70 @@
           <li>Scratch</li>
           <li>Stab</li>
         </capacities>
-        <power>26</power>
-        <cooldownTime>2.55</cooldownTime>
+        <power>35</power>
+        <cooldownTime>0.85</cooldownTime>
         <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
       </li>
-
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>1.65</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-      </li>
-
+	  <li>
+		<label>horn</label>
+		<capacities>
+			<li>Blunt</li>
+		</capacities>
+		<power>27</power>
+		<cooldownTime>1.7</cooldownTime>
+		<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<capacities>
+			<li>Bite</li>
+		</capacities>
+		<power>12</power>
+		<cooldownTime>1.65</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+	  </li>
       <li>
         <label>left foot</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>17.2</power>
+        <power>24</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
       </li>
-
       <li>
         <label>right foot</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>17.2</power>
+        <power>24</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
       </li>
-
       <li>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>15</power>
+        <power>17</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
-
     <race>
-      <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithHoovesAndHorn</body>
-      <baseHungerRate>1.605</baseHungerRate>
-      <baseBodySize>4</baseBodySize>
-      <baseHealthScale>4.0</baseHealthScale>
+      <herdMigrationAllowed>false</herdMigrationAllowed>
+      <baseBodySize>5</baseBodySize>
+      <baseHungerRate>3.5</baseHungerRate>
+      <baseHealthScale>30.0</baseHealthScale>
       <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
       <!--leatherDef>DankPyon_Leather_Rox</leatherDef-->
-      <wildness>0.75</wildness>
       <trainability>Advanced</trainability>
-      <gestationPeriodDays>14</gestationPeriodDays>
+      <gestationPeriodDays>60</gestationPeriodDays>
       <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
-      <packAnimal>true</packAnimal>
-      <lifeExpectancy>200</lifeExpectancy>
+      <wildness>0.985</wildness>
+      <lifeExpectancy>260</lifeExpectancy>
       <willNeverEat>
         <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
       </willNeverEat>
@@ -123,26 +116,22 @@
     <tradeTags>
       <li>AnimalExotic</li>
     </tradeTags>
-    <butcherProducts>
-      <DankPyon_RoxHorn>2</DankPyon_RoxHorn>
-    </butcherProducts>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>DankPyon_Rox</defName>
-    <label>rox</label>
+    <label>Rox</label>
     <race>DankPyon_Rox</race>
-    <combatPower>350</combatPower>
-    <ecoSystemWeight>2.0</ecoSystemWeight>
-    <wildGroupSize>3~7</wildGroupSize>
+    <combatPower>750</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>1</ecoSystemWeight>
     <lifeStages>
       <li>
         <label>Rox calf</label>
         <labelPlural>Rox calves</labelPlural>
         <bodyGraphicData>
           <texPath>Animal/Rox</texPath>
-          <drawSize>2.2</drawSize>
+          <drawSize>3.0</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -150,13 +139,13 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/Dessicated_Rox</texPath>
-          <drawSize>2.2</drawSize>
+          <drawSize>3.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Animal/Rox</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>4.8</drawSize>
           <shadowData>
             <volume>(0.7, 0.6, 0.4)</volume>
             <offset>(0,0,-0.25)</offset>
@@ -164,13 +153,13 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/Dessicated_Rox</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>4.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Animal/Rox</texPath>
-          <drawSize>4.2</drawSize>
+          <drawSize>5.4</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
             <offset>(0,0,-0.5)</offset>
@@ -178,7 +167,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/Dessicated_Rox</texPath>
-          <drawSize>4.2</drawSize>
+          <drawSize>5.4</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>
           <bodyPartGroup>HeadAttackTool</bodyPartGroup>

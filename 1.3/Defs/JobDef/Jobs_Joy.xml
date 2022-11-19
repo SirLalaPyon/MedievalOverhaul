@@ -13,11 +13,5 @@
     <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
-  <JobDef>
-		<defName>Ice_DigIce</defName>
-		<driverClass>Ice.JobDriver_DigIce</driverClass>
-		<reportString>digging ice blocks.</reportString>
-	</JobDef>
   
 </Defs>

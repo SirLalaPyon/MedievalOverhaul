@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+
+  <!-- ====================================================== -->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>DankPyon_Rox</defName>
+    <label>rox</label>
+    <description>A huge herding herbivore of unknown origins. Most rox have considerably large horns they use to gore attackers. A dead rox's valuable horns can be recovered by butchering it.\n\nIntelligent creatures with complex social relationships, rox can be used as pack animals or trained to carry out the most complex of tasks. They live a long time, and are known to remember events and relationships from many decades before.</description>
+    <statBases>
+      <MoveSpeed>4.9</MoveSpeed>
+      <MarketValue>850</MarketValue>
+      <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+      <ComfyTemperatureMax>45</ComfyTemperatureMax>
+      <FilthRate>24</FilthRate>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+    </statBases>
+    <uiIconScale>1.75</uiIconScale>
+     <comps>
+      <li Class="CompProperties_Shearable">
+        <woolDef>DankPyon_WoolRox</woolDef>
+        <shearIntervalDays>15</shearIntervalDays>
+        <woolAmount>160</woolAmount>
+      </li>
+    </comps>
+
+    <tools>
+      <li>
+        <label>horn</label>
+        <capacities>
+          <li>Scratch</li>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.55</cooldownTime>
+        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+      </li>
+
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.65</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+
+      <li>
+        <label>left foot</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+
+      <li>
+        <label>right foot</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+
+    <race>
+      <herdAnimal>true</herdAnimal>
+      <body>QuadrupedAnimalWithHoovesAndHorn</body>
+      <baseHungerRate>1.605</baseHungerRate>
+      <baseBodySize>4</baseBodySize>
+      <baseHealthScale>4.0</baseHealthScale>
+      <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+      <!--leatherDef>DankPyon_Leather_Rox</leatherDef-->
+      <wildness>0.75</wildness>
+      <trainability>Advanced</trainability>
+      <gestationPeriodDays>14</gestationPeriodDays>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <packAnimal>true</packAnimal>
+      <lifeExpectancy>200</lifeExpectancy>
+      <willNeverEat>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+      </willNeverEat>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>2.0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>4.0</minAge>
+          <soundCall>Pawn_Thrumbo_Call</soundCall>
+          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+    </tradeTags>
+    <butcherProducts>
+      <DankPyon_RoxHorn>2</DankPyon_RoxHorn>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>DankPyon_Rox</defName>
+    <label>rox</label>
+    <race>DankPyon_Rox</race>
+    <combatPower>350</combatPower>
+    <ecoSystemWeight>2.0</ecoSystemWeight>
+    <wildGroupSize>3~7</wildGroupSize>
+    <canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <label>Rox calf</label>
+        <labelPlural>Rox calves</labelPlural>
+        <bodyGraphicData>
+          <texPath>Animal/Rox</texPath>
+          <drawSize>2.2</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/Dessicated_Rox</texPath>
+          <drawSize>2.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/Rox</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.6, 0.4)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/Dessicated_Rox</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/Rox</texPath>
+          <drawSize>4.2</drawSize>
+          <shadowData>
+            <volume>(1, 0.8, 0.5)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/Dessicated_Rox</texPath>
+          <drawSize>4.2</drawSize>
+        </dessicatedBodyGraphicData>
+        <butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_Rox</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

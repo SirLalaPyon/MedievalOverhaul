@@ -21,21 +21,22 @@
     </wounds>
   </FleshTypeDef-->
 
-  <FleshTypeDef>
-    <defName>DankPyon_Schrat</defName>
-    <corpseCategory>DankPyon_CorpsesMonsters</corpseCategory>
-    <damageEffecter>Damage_HitMechanoid</damageEffecter>
-    <genericWounds>
-      <li>
-        <texture>Things/Pawn/Wounds/WoundMechA</texture>
-      </li>
-      <li>
-        <texture>Things/Pawn/Wounds/WoundMechB</texture>
-      </li>
-      <li>
-        <texture>Things/Pawn/Wounds/WoundMechC</texture>
-      </li>
-    </genericWounds>
-  </FleshTypeDef>
+<!-- Schrat -->
 
+  <!--FleshTypeDef>
+    <defName>DankPyon_FleshTypeSchrat</defName>
+    <corpseCategory>CorpsesMechanoid</corpseCategory>
+    <damageEffecter>Damage_HitMechanoid</damageEffecter>
+    <wounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundC</texture>
+      </li>
+    </wounds>
+  </FleshTypeDef-->
 </Defs>

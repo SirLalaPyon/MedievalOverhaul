@@ -37,7 +37,9 @@
 	<!-- Several neolith bits of furniture can be made of logs -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Fence" or 
-			defName="HorseshoesPin" or 
+			defName="HorseshoesPin" or
+			defName="HoopstoneRing" or 
+			defName="GameOfUrBoard" or   
 			defName="PenMarker" or 
 			defName="MeleeWeapon_Club" or 
 			defName="MeleeWeapon_Spear" or 
@@ -86,9 +88,17 @@
 		</match>
 	</Operation>
 
-	<!-- Make Wood Fired Generator use logs instead of lumber -->
+	<!-- Make Wood Fired Generator use logs -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+			<li>DankPyon_RawWood</li>
+		</value>
+	</Operation>
+
+	<!-- Make campfire use logs -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 		<value>
 			<li>DankPyon_RawWood</li>
 		</value>
@@ -103,6 +113,26 @@
 					defName="VFE_IndustrialWoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 			<name>DankPyon_RawWood</name>
 		</match>
+	</Operation>
+
+	<!-- Make Passive cooler use raw logs-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/costList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>DankPyon_RawWood</li>
+				<li>Woody</li>
+			</stuffCategories>
+			<costStuffCount>100</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
 	</Operation>
 
 	<!-- Caravans sell logs -->

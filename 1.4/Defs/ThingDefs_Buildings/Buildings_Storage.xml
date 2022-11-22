@@ -14,10 +14,6 @@
 			<li>DankPyon_RusticStorage</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticStorage</designationCategory>
-
-		<comps>
-			<li Class="CompProperties_Styleable" Inherit="False"/>
-		</comps>
 	</ThingDef>
 
   	<!-- ==================== Wood Logs ==================== -->
@@ -1967,6 +1963,8 @@
 			<DankPyon_Straw>20</DankPyon_Straw>
 		</costList>
 
+		<stuffCategories Inherit="falase"/>
+
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints> 
 			<Mass>8</Mass>
@@ -1975,6 +1973,7 @@
 		</statBases>
 
 		<building>
+			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings Inherit="false">
 				<filter>
 					<thingDefs>

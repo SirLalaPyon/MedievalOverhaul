@@ -5,9 +5,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="HandTailoringBench" or defName="ElectricTailoringBench"]/researchPrerequisites</xpath>
 		<value>
-		
-				<li>ComplexFurniture</li>
-			
+			<li>ComplexFurniture</li>
 		</value>
 	</Operation>
 

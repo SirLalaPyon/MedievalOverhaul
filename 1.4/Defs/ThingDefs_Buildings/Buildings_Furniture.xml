@@ -1367,6 +1367,10 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+
+		<stuffCategories Inherit="false">
+			<li>Woody</li>
+		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints> 
@@ -1401,7 +1405,6 @@
 		<size>(1,1)</size>
 		<defaultPlacingRot>North</defaultPlacingRot>
 
-		<costStuffCount>20</costStuffCount>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints> 
 			<Mass>8</Mass>
@@ -1413,8 +1416,11 @@
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<rotatable>false</rotatable>
 
+		<stuffCategories Inherit="false"/>
+		<costStuffCount Inherit="false"/>
+
 		<costList>
-			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+			<DankPyon_IronIngot>20</DankPyon_IronIngot>
 		</costList>
 	
 		<comps>
@@ -1437,7 +1443,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<costStuffCount>20</costStuffCount>
+		
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>10</Mass>
@@ -1450,8 +1456,11 @@
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 
+		<stuffCategories Inherit="false"/>
+		<costStuffCount Inherit="false"/>
+
 		<costList>
-			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+			<DankPyon_IronIngot>20</DankPyon_IronIngot>
 			<Gold>10</Gold>
 		</costList>
 

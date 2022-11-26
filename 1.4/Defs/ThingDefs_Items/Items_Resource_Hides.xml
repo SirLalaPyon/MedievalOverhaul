@@ -26,15 +26,22 @@
 			<li>
 				<compClass>DankPyon.CompGenericHide</compClass>
 			</li>
-			<li Class="CompProperties_Rottable">
-			  <daysToRotStart>5</daysToRotStart>
-			  <rotDestroys>true</rotDestroys>
-			</li>
 		  </comps>
 		  <tickerType>Rare</tickerType>
 	</ThingDef>
 
-	<ThingDef Abstract="True" Name="DankPyon_HideBaseTiny" ParentName="DankPyon_HideBase">
+	<ThingDef Abstract="True" Name="DankPyon_Hide_NonGeneric" ParentName="DankPyon_HideBase">
+		
+		<comps Inherit="false">
+			<li Class="CompProperties_Rottable">
+			  <daysToRotStart>5</daysToRotStart>
+			  <rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		  </comps>
+	</ThingDef>
+
+	<ThingDef Abstract="True" Name="DankPyon_HideBaseTiny" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
 			<texPath>Resources/HideTiny</texPath>
 		</graphicData>
@@ -47,7 +54,7 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<ThingDef Abstract="True" Name="DankPyon_HideBaseSmall" ParentName="DankPyon_HideBase">
+	<ThingDef Abstract="True" Name="DankPyon_HideBaseSmall" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
 			<texPath>Resources/HideSmall</texPath>
 		</graphicData>
@@ -60,7 +67,7 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<ThingDef Abstract="True" Name="DankPyon_HideBaseMedium" ParentName="DankPyon_HideBase">
+	<ThingDef Abstract="True" Name="DankPyon_HideBaseMedium" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
 			<texPath>Resources/HideMedium</texPath>
 		</graphicData>
@@ -73,7 +80,7 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<ThingDef Abstract="True" Name="DankPyon_HideBaseLarge" ParentName="DankPyon_HideBase">
+	<ThingDef Abstract="True" Name="DankPyon_HideBaseLarge" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
 			<texPath>Resources/HideLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -87,7 +94,7 @@
 		</butcherProducts>
 	</ThingDef>
 
-	<ThingDef Abstract="True" Name="DankPyon_HideBaseHuge" ParentName="DankPyon_HideBase">
+	<ThingDef Abstract="True" Name="DankPyon_HideBaseHuge" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
 			<texPath>Resources/HideHuge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1065,6 +1072,13 @@
 		<stuffProps>
 			<color>(93,71,62)</color>
 		</stuffProps>
+
+		<comps Inherit="false">
+			<li Class="CompProperties_Rottable">
+			  <daysToRotStart>5</daysToRotStart>
+			  <rotDestroys>true</rotDestroys>
+			</li>
+		  </comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_HideBaseHuge">
@@ -1106,7 +1120,7 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_HideBase">
+	<ThingDef ParentName="DankPyon_Hide_NonGeneric">
 		<defName>DankPyon_Hide_Human</defName>
 		<label>human skin</label>
 		<graphicData>

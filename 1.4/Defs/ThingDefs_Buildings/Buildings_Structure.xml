@@ -689,7 +689,7 @@
     </building>
   </ThingDef>
 
-<ThingDef ParentName="Wall">
+<!--ThingDef ParentName="Wall">
     <defName>Ice_Wall_Ice</defName>
     <label>Ice Wall</label>
     <description>This is an ice wall that will cool its surroundings but needs to be refueled.</description>
@@ -741,7 +741,7 @@
     <researchPrerequisites>
         <li>Stonecutting</li>
     </researchPrerequisites>
-</ThingDef>
+</ThingDef-->
 
 <ThingDef ParentName="BuildingBase">
 	<defName>DankPyon_Trench</defName>
@@ -863,6 +863,57 @@
       <li>Stonecutting</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DankPyon_LogColumn</defName>
+    <label>log column</label>
+    <description>A column capable of holding a roof. Does not block sight or movement and looks quite nice.</description>
+    <graphicData>
+      <drawSize>(1,1.25)</drawSize>
+      <drawOffset>(0,0,0.2)</drawOffset>
+      <texPath>Furniture/LogColumn</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+
+    <designationCategory>Structure</designationCategory>
+    <uiOrder>2040</uiOrder>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <pathCost>0</pathCost>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+    </statBases>
+    <stuffCategories>
+      <li>DankPyon_RawWood</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <holdsRoof>true</holdsRoof>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>false</rotatable>
+    <fertility>0</fertility>
+    <specialDisplayRadius>6.9</specialDisplayRadius> <!-- must be kept in sync with roof hold-up radius -->
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <paintable>true</paintable>
+    </building>
+    <comps>
+      <li Class="CompProperties_Styleable" />
+    </comps>
   </ThingDef>
 
   <!--========================= Column =============================-->

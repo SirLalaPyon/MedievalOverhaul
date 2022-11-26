@@ -38,10 +38,22 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+      <!-- Apparel -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+      <!-- Nudity -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
     </disallowedPrecepts>
     <structureMemeWeights>
       <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0</Structure_TheistEmbodied>
@@ -66,6 +78,7 @@
       <li>DankPyon_Caravan_Medieval_Armorsmith</li>
       <li>DankPyon_Caravan_Medieval_Weaponsmith</li>
       <li>DankPyon_Caravan_Medieval_RuinsMerchant</li>
+      <li>DankPyon_Caravan_Medieval_Scholar</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>DankPyon_Visitor_Medieval_Standard</li>
@@ -196,7 +209,7 @@
             <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
             <DankPyon_FootmanAmboise>40</DankPyon_FootmanAmboise>
             <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
-            <DankPyon_StandardAmboise>30</DankPyon_StandardAmboise>
+            <DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
             <DankPyon_ZweihanderAmboise>30</DankPyon_ZweihanderAmboise>
             <DankPyon_KnightAmboise>25</DankPyon_KnightAmboise>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
@@ -208,7 +221,7 @@
             <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
             <DankPyon_FootmanAmboise>40</DankPyon_FootmanAmboise>
             <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
-            <DankPyon_StandardAmboise>20</DankPyon_StandardAmboise>
+            <DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
             <DankPyon_KnightAmboise>10</DankPyon_KnightAmboise>
             <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
@@ -229,7 +242,7 @@
             <DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
             <DankPyon_FootmanAmboise>20</DankPyon_FootmanAmboise>
             <DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
-            <DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
+            <DankPyon_StandardAmboise>5</DankPyon_StandardAmboise>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
             <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
             <DankPyon_ZweihanderAmboise>10</DankPyon_ZweihanderAmboise>
@@ -242,7 +255,7 @@
             <DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
             <DankPyon_FootmanAmboise>30</DankPyon_FootmanAmboise>
             <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
-            <DankPyon_StandardAmboise>20</DankPyon_StandardAmboise>
+            <DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
             <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
             <DankPyon_ZweihanderAmboise>25</DankPyon_ZweihanderAmboise>
             <DankPyon_KnightAmboise>25</DankPyon_KnightAmboise>

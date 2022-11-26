@@ -1213,7 +1213,7 @@
 			<fixedStorageSettings Inherit="False">
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Wine</li>
+						<li>DankPyon_Mead</li>
 					</thingDefs>
 				</filter>
 			</fixedStorageSettings>
@@ -1221,7 +1221,7 @@
 				<priority>Important</priority>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Wine</li>
+						<li>DankPyon_Mead</li>
 					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
@@ -1963,7 +1963,7 @@
 			<DankPyon_Straw>20</DankPyon_Straw>
 		</costList>
 
-		<stuffCategories Inherit="falase"/>
+		<stuffCategories Inherit="false"/>
 
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints> 

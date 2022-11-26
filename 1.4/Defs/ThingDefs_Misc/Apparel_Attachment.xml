@@ -1,5 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    <!-- Hood Base -->
+    <ThingDef Name="DankPyon_AnimalHoodBase" ParentName="HatMakeableBase" Abstract="True">
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>DankPyon_AlchemyBench</li>
+            </recipeUsers>
+        </recipeMaker>
+
+        <tradeability>None</tradeability>
+        <techLevel>Medieval</techLevel>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_AnimalHoodBase" Name="DankPyon_WolfHoodBase">
+		<defName>DankPyon_Headgear_WolfTimber</defName>
+		<label>wolf hood (timber)</label>
+		<description>A warm robust coat sewn from a wolf's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious wolf to don the trophy.</description>
+		<graphicData>
+			<texPath>Headgear/HelmetWolf/HelmetWolf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <color>(107,103,99)</color>
+		</graphicData>
+
+        <costList>
+            <DankPyon_Hide_WolfTimber>1</DankPyon_Hide_WolfTimber>
+            <DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+        </costList>
+
+		<statBases>
+            <MarketValue>350</MarketValue>
+			<WorkToMake>14000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.306</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+            <Insulation_Cold>12</Insulation_Cold>
+            <Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<wornGraphicPath>Headgear/HelmetWolf/HelmetWolf</wornGraphicPath>
+			<defaultOutfitTags>
+				<li>Worker</li>
+                <li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+    <ThingDef ParentName="DankPyon_WolfHoodBase">
+		<defName>DankPyon_Headgear_WolfArctic</defName>
+		<label>wolf hood (timber)</label>
+		<graphicData>
+            <color>(249,243,222)</color>
+		</graphicData>
+
+        <costList Inherit="false">
+            <DankPyon_Hide_WolfArctic>1</DankPyon_Hide_WolfArctic>
+            <DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+        </costList>
+	</ThingDef>
+
+    <ThingDef ParentName="DankPyon_AnimalHoodBase" Name="DankPyon_BearHoodBase">
+		<defName>DankPyon_Headgear_BearGrizzly</defName>
+		<label>bear hood (grizzly)</label>
+		<description>A warm robust coat sewn from a bears's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious bear to don the trophy.</description>
+		<graphicData>
+			<texPath>Headgear/HelmetBear/HelmetBear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <color>(112,82,65)</color>
+		</graphicData>
+
+        <costList>
+            <DankPyon_Hide_BearGrizzly>1</DankPyon_Hide_BearGrizzly>
+            <DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+        </costList>
+
+		<statBases>
+            <MarketValue>550</MarketValue>
+			<WorkToMake>17000</WorkToMake>
+            <MaxHitPoints>140</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.336</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+            <Insulation_Cold>22</Insulation_Cold>
+            <Insulation_Heat>9</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<wornGraphicPath>Headgear/HelmetBear/HelmetBear</wornGraphicPath>
+			<defaultOutfitTags>
+				<li>Worker</li>
+                <li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+    <ThingDef ParentName="DankPyon_BearHoodBase">
+		<defName>DankPyon_Headgear_BearPolar</defName>
+		<label>bear hood (polar)</label>
+		<graphicData>
+            <color>(180,180,180)</color>
+		</graphicData>
+
+        <costList Inherit="false">
+            <DankPyon_Hide_BearPolar>1</DankPyon_Hide_BearPolar>
+            <DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+        </costList>
+	</ThingDef>
 
     <!-- Armor Attachment Base-->
     <ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_ArmorAttachmentBase" Abstract="True">
@@ -30,7 +151,7 @@
     <ThingDef ParentName="DankPyon_ArmorAttachmentBase">
         <defName>DankPyon_Apparel_DirewolfPelt</defName>
         <label>direwolf pelt</label>
-        <description>A warm robust coat sewn from a direwolf's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious wolf to don the trophy. While intimidating the fearful, the pelt also grants strength and confidence in battle.</description>
+        <description>A warm robust coat sewn from a direwolf's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious wolf to don the trophy.</description>
         <graphicData>
 			<texPath>Apparel/Attachments/DirewolfPelt</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -45,6 +166,7 @@
         
         <costList>
             <DankPyon_Hide_WolfDirewolf>1</DankPyon_Hide_WolfDirewolf>
+            <DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
         </costList>
         
         <statBases>
@@ -95,6 +217,7 @@
         
         <costList>
             <DankPyon_Hide_Hyena>1</DankPyon_Hide_Hyena>
+            <DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
         </costList>
         
         <statBases>

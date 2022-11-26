@@ -126,6 +126,13 @@
     </ThingCategoryDef>
 
     <ThingCategoryDef>
+        <defName>DankPyon_BuildingsBook</defName>
+        <label>books</label>
+        <parent>Buildings</parent>
+        <iconPath>Special/Book</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
         <defName>DankPyon_TrebuchetAmmo</defName>
         <label>trebuchet ammo</label>
         <parent>Manufactured</parent>

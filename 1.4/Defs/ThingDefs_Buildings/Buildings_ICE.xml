@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<RecipeDef>
+	<!--RecipeDef>
 		<defName>Ice_Make_Ice</defName>
 		<label>make ice</label>
 		<description>Make ice from water.</description>
@@ -16,7 +16,6 @@
 		</products>
 	</RecipeDef>
 
-	<!--========UNUSED========-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>Ice_Cellar</defName>
 		<label>сellar</label>
@@ -84,8 +83,7 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
-	<!--========UNUSED========-->
-	<ThingDef ParentName="LWM_DeepStorage">
+	<ThingDef ParentName="ShelfBase">
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<defName>Ice_MedievalFridge</defName>
 		<label>Medieval fridge</label>
@@ -112,16 +110,10 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>9000</WorkToBuild>
 			<Flammability>1.0</Flammability>
+			<Mass>50</Mass>
 		</statBases>
 		<size>(2,1)</size>
 		<comps>
-			<li Class='LWM.DeepStorage.Properties'>
-				<maxNumberStacks>5</maxNumberStacks>
-				<minTimeStoringTakes>25</minTimeStoringTakes>
-				<additionalTimeEachDef>30</additionalTimeEachDef><!-- Got to sort things! -->
-				<showContents>false</showContents>
-				<overlayType>None</overlayType>
-			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
@@ -155,5 +147,5 @@
 		<staticSunShadowHeight>0.6</staticSunShadowHeight>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<designationCategory Inherit="False"/>
-	</ThingDef>
+	</ThingDef-->
 </Defs>

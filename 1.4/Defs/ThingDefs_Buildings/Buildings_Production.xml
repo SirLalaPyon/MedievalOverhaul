@@ -379,6 +379,7 @@
 	</building>
     <researchPrerequisites>
         <li>DankPyon_Oven</li>
+        <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
 </ThingDef>
 
@@ -436,6 +437,7 @@
 	</building>
     <researchPrerequisites>
         <li>DankPyon_Oven</li>
+        <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
 </ThingDef>
 
@@ -594,6 +596,7 @@
 	</building>
   <researchPrerequisites>
     <li>DankPyon_StewPot</li>
+    <li>DankPyon_RusticFurniture</li>
   </researchPrerequisites>
   </ThingDef>
 
@@ -697,6 +700,9 @@
         <placeWorkers>
             <li>PlaceWorker_ShowFacilitiesConnections</li>
         </placeWorkers>
+        <researchPrerequisites>
+          <li>DankPyon_Lumber</li>
+        </researchPrerequisites>
     </ThingDef>
 
     <ThingDef ParentName="DankPyon_1X3WorkbenchBase">

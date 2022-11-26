@@ -11,7 +11,6 @@
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
-            <researchPrerequisite>DankPyon_AdornedArmor</researchPrerequisite>
         </recipeMaker>
         <thingCategories>
             <li>ApparelArmor</li>
@@ -50,6 +49,13 @@
         <equippedStatOffsets>
             <MoveSpeed>-0.5</MoveSpeed>
         </equippedStatOffsets>
+
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>DankPyon_AdornedArmor</li>
+                <li>DankPyon_ChainArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
 
         <apparel>
             <bodyPartGroups>
@@ -103,6 +109,13 @@
         <equippedStatOffsets>
             <MoveSpeed>-0.8</MoveSpeed>
         </equippedStatOffsets>
+
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>DankPyon_AdornedArmor</li>
+                <li>DankPyon_ChainArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
 
         <apparel>
             <bodyPartGroups>
@@ -165,6 +178,10 @@
             <skillRequirements>
                 <Crafting>12</Crafting>
             </skillRequirements>
+            <researchPrerequisites>
+                <li>DankPyon_AdornedArmor</li>
+                <li>PlateArmor</li>
+            </researchPrerequisites>
         </recipeMaker>
 
         <apparel>

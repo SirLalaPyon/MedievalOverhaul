@@ -69,7 +69,7 @@
 </TerrainDef-->
 
 <!--==================== Ice ====================-->
-  <TerrainDef ParentName="Ice">
+  <!--TerrainDef ParentName="Ice">
     <defName>Ice_IceShallow</defName>
     <label>shallow ice</label>
     <changeable>false</changeable>
@@ -95,6 +95,6 @@
     <fertility>0.0</fertility>
     <takeFootprints>True</takeFootprints>
     <extinguishesFire>true</extinguishesFire>
-  </TerrainDef>
+  </TerrainDef-->
 
 </Defs>

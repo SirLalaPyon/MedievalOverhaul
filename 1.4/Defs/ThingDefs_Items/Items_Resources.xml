@@ -484,7 +484,7 @@
     <tradeTags><li>ResourcesRaw</li></tradeTags>	
   </ThingDef>
 
-  <ThingDef ParentName="IceResourceBase">
+  <!--ThingDef ParentName="IceResourceBase">
     <defName>Ice_Resource_IceBlocks</defName>
     <label>Ice</label>
     <description>Water which has been frozen to create blocks of ice. Will melt in temperatures above freezing.</description>
@@ -536,7 +536,7 @@
         <heatPushMinTemperature>1</heatPushMinTemperature>	
       </li>
     </comps>	
-  </ThingDef>
+  </ThingDef-->
 <!--============================== Beekeeping ==============================-->
 <ThingDef ParentName="ResourceBase">
     <defName>DankPyon_Wax</defName>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- ============================ Core Tab Change ========================== -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ResearchProjectDef[defName="Devilstrand" or
+					defName="Stonecutting" or 
+					defName="PsychoidBrewing" or
+					defName="Smithing" or
+					defName="RoyalApparel" or
+					defName="CarpetMaking" or
+					defName="NobleApparel" or
+					defName="PassiveCooler" or
+					defName="ComplexFurniture" or
+					defName="TreeSowing" or
+					defName="Harp" or
+					defName="Cocoa" or
+					defName="Pemmican"]</xpath>
+				<value>
+					<tab>DankPyon_MedievalResearchTab</tab>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<!-- ============================ Core Research Project Removal ========================== -->
+	
+	<!-- ============================ Tweaked by pre-existing patches ========================== -->
+	<!-- defName="Brewing" or -->
+	<!-- defName="RecurveBow" or -->
+	<!-- defName="Greatbow" or -->
+	<!-- defName="PlateArmor" or -->
+	<!-- ============================ Core Research Project Prerequisite Add ========================== -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+		<value>
+				<prerequisites>
+					<li>DankPyon_RusticFurniture</li>
+				</prerequisites>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<value>
+				<prerequisites>
+					<li>DankPyon_RusticFurniture</li>
+				</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName = "ComplexClothing"]</xpath>
+		<value>
+			<prerequisites>
+				<li>DankPyon_TextileSpinning</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]</xpath>
+		<value>
+			<prerequisites>
+				<li>DankPyon_RusticFurniture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName = "Electricity"]</xpath>
+		<value>
+			<prerequisites>
+				<li>DankPyon_Engineering</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	<!-- ============================ Core Research Project Replace ========================== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="Cocoa"]/label</xpath>
+		<value>
+				<label>Fruit tree sowing</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="Pemmican"]/label</xpath>
+		<value>
+				<label>Food preservation</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>LongBlades</defName>
+				<label>noble blades</label>
+				<description>Learn how to craft stronger and better swords, fit for a noble.</description>
+				<baseCost>1000</baseCost>
+				<tab>DankPyon_MedievalResearchTab</tab>
+				<techLevel>Medieval</techLevel>
+				<researchViewX>11.00</researchViewX>
+				<researchViewY>3.30</researchViewY>
+				<prerequisites>
+					<li>DankPyon_MilitaryBlades</li>
+				</prerequisites>  
+				<requiredResearchFacilities>
+					<li>DankPyon_Book_NobleBlades</li>
+				</requiredResearchFacilities>
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="PlateArmor"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>PlateArmor</defName>
+				<label>plate armor</label>
+				<description>Learn the techniques of properly smithing and tempering metal plates to craft expensive plate armors</description>
+				<baseCost>2000</baseCost>
+				<tab>DankPyon_MedievalResearchTab</tab>
+				<techLevel>Medieval</techLevel>
+				<researchViewX>11</researchViewX>
+				<researchViewY>1.1</researchViewY>
+				<prerequisites>
+					<li>DankPyon_ChainArmor</li>
+				</prerequisites>   
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>Stonecutting</defName>
+				<label>stonecutting</label>
+				<description>Cut rock chunks into stone blocks for use in construction. Build beautiful stone tile floors or ugly concrete walkways.</description>
+				<baseCost>300</baseCost>
+    			<tab>DankPyon_MedievalResearchTab</tab>
+    			<techLevel>Medieval</techLevel>
+				<researchViewX>5</researchViewX>
+				<researchViewY>2.7</researchViewY>
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>Brewing</defName>
+    			<label>brewing</label>
+    			<description>Research the basics of brewing and learn how to make simple alcoholics or concoctions.</description>
+    			<baseCost>400</baseCost>
+				<tab>DankPyon_MedievalResearchTab</tab>
+    			<techLevel>Neolithic</techLevel>
+				<researchViewX>4.00</researchViewX>
+				<researchViewY>1.50</researchViewY>
+				<prerequisites>
+    			  <li>DankPyon_RusticFurniture</li>
+    			</prerequisites>
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>RecurveBow</defName>
+    			<label>recurve bow</label>
+    			<description>Build the recurve bow, an effective and inexpensive ranged weapon.</description>
+    			<baseCost>400</baseCost>
+    			<tab>DankPyon_MedievalResearchTab</tab>
+    			<techLevel>Medieval</techLevel>
+				<researchViewY>7.30</researchViewY>
+				<researchViewX>8.00</researchViewX>
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>Greatbow</defName>
+    			<label>greatbow</label>
+    			<description>Craft greatbows for killing enemies at great range.</description>
+    			<baseCost>600</baseCost>
+    			<tab>DankPyon_MedievalResearchTab</tab>
+    			<techLevel>Medieval</techLevel>
+    			<prerequisites>
+    			  <li>DankPyon_HuntingBow</li>
+    			</prerequisites>
+				<researchViewX>10.00</researchViewX>
+				<researchViewY>7.30</researchViewY>
+				<requiredResearchBuilding>DankPyon_Book_GreatBow</requiredResearchBuilding>  
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>NobleApparel</defName>
+				<label>noble apparel</label>
+				<description>Tailor noble-specific apparel like formal shirts and royal robes.</description>
+				<baseCost>400</baseCost>
+				<tab>DankPyon_MedievalResearchTab</tab>
+				<techLevel>Medieval</techLevel>
+    			<prerequisites>
+    			  	<li>DankPyon_Tailoring</li>
+    			</prerequisites>
+				<researchViewX>12.00</researchViewX>
+				<researchViewY>0.70</researchViewY>
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>RoyalApparel</defName>
+				<label>royal apparel</label>
+				<description>Tailor royal apparel of the highest tier, like royal robes and crowns.</description>
+				<baseCost>400</baseCost>
+				<techLevel>Medieval</techLevel>
+				<tab>DankPyon_MedievalResearchTab</tab>
+    			<prerequisites>
+    			  	<li>NobleApparel</li>
+    			</prerequisites>
+				<hiddenPrerequisites>
+					<li>Smithing</li>
+				</hiddenPrerequisites>
+				<researchViewX>13.00</researchViewX>
+				<researchViewY>0.70</researchViewY>
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+		<xpath>Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>Harpsichord</defName>
+				<label>harpsichord</label>
+				<description>Craft the harpsichord, a complex stationary musical instrument.</description>
+				<tab>DankPyon_MedievalResearchTab</tab>
+				<baseCost>500</baseCost>
+				<techLevel>Medieval</techLevel>
+				<researchViewX>6</researchViewX>
+				<researchViewY>5.2</researchViewY> 
+				<prerequisites>
+					<li>ComplexFurniture</li>
+				</prerequisites>   
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+		<xpath>Defs/ResearchProjectDef[defName="Piano"]</xpath>
+		<value>
+			<ResearchProjectDef>
+				<defName>Piano</defName>
+				<label>piano</label>
+				<description>Craft the harpsichord, a complex stationary musical instrument.</description>
+				<baseCost>500</baseCost>
+				<tab>DankPyon_MedievalResearchTab</tab>
+				<techLevel>Medieval</techLevel>
+				<researchViewX>6</researchViewX>
+				<researchViewY>5.8</researchViewY> 
+				<prerequisites>
+				<li>ComplexFurniture</li>
+				</prerequisites>   
+			</ResearchProjectDef>
+		</value>
+	</Operation>
+	<!-- ============================ Core ThingDef Research Prerequisite Replace ========================== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Apparel_Pants"]/recipeMaker</xpath>
+		<value>
+			<recipeMaker>
+				<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			</recipeMaker>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]/recipeMaker/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_BasicPolearms</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HandTailoringBench" or defName="ElectricTailoringBench"]/researchPrerequisites</xpath>
+		<value>
+			<li>ComplexFurniture</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TableSculpting" or defName="FueledStove" or defName="TableButcher"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>ComplexFurniture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_RusticFurniture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	
+	<!-- ============================ Core Research Project Coordinates ========================== -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Pemmican"]/researchViewX</xpath>
+				<value>
+					<researchViewX>1.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Pemmican"]/researchViewY</xpath>
+				<value>
+					<researchViewY>1.40</researchViewY>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Cocoa"]/researchViewX</xpath>
+				<value>
+					<researchViewX>1.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Cocoa"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.00</researchViewY>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="TreeSowing"]/researchViewX</xpath>
+				<value>
+					<researchViewX>0.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="TreeSowing"]/researchViewY</xpath>
+				<value>
+					<researchViewY>0.00</researchViewY>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="PsychoidBrewing"]/researchViewX</xpath>
+				<value>
+					<researchViewX>0.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="PsychoidBrewing"]/researchViewY</xpath>
+				<value>
+					<researchViewY>1.40</researchViewY>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="PassiveCooler"]/researchViewX</xpath>
+				<value>
+					<researchViewX>0.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="PassiveCooler"]/researchViewY</xpath>
+				<value>
+					<researchViewY>2.10</researchViewY>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Smithing"]/researchViewX</xpath>
+				<value>
+					<researchViewX>8.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Smithing"]/researchViewY</xpath>
+				<value>
+					<researchViewY>3.50</researchViewY>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]/researchViewX</xpath>
+				<value>
+					<researchViewX>0.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]/researchViewY</xpath>
+				<value>
+					<researchViewY>2.80</researchViewY>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="CarpetMaking"]/researchViewX</xpath>
+				<value>
+					<researchViewX>5.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="CarpetMaking"]/researchViewY</xpath>
+				<value>
+					<researchViewY>3.30</researchViewY>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/researchViewX</xpath>
+				<value>
+					<researchViewX>5.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.20</researchViewY>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewX</xpath>
+				<value>
+					<researchViewX>6.00</researchViewX>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewY</xpath>
+				<value>
+					<researchViewY>4.60</researchViewY>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+</Patch>

@@ -466,7 +466,7 @@
 <!--  =========== Actual Artwork Buildings ============ -->
 <!-- ========= Sculptures ========= -->
 <!-- Small Ice Sculpture --> 
-  <ThingDef ParentName="IceArtworkSculpture">
+  <!--ThingDef ParentName="IceArtworkSculpture">
     <defName>Ice_IceSculptureSmall</defName>
     <label>Small Ice Sculpture</label>
     <description>A torso-sized piece of material sculpted into an artistic form.</description>
@@ -497,10 +497,10 @@
         <fuelFilter><thingDefs><li>Ice_Resource_IceBlocks</li></thingDefs></fuelFilter>
       </li>	
     </comps>
-  </ThingDef>
+  </ThingDef-->
 
 <!-- Large Ice Sculpture -->   
-  <ThingDef ParentName="IceArtworkSculpture">
+  <!--ThingDef ParentName="IceArtworkSculpture">
     <defName>Ice_IceSculptureLarge</defName>
     <label>Large Ice Sculpture</label>
     <description>A person-sized piece of material sculpted into an artistic form.</description>
@@ -532,10 +532,10 @@
         <fuelFilter><thingDefs><li>Ice_Resource_IceBlocks</li></thingDefs></fuelFilter>
       </li>	
     </comps>
-  </ThingDef>
+  </ThingDef-->
 
 <!-- Grand Ice Sculpture -->   
-  <ThingDef ParentName="IceArtworkSculpture">
+  <!--ThingDef ParentName="IceArtworkSculpture">
     <defName>Ice_IceSculptureGrand</defName>
     <label>Grand Ice Sculpture</label>
     <description>A car-sized piece of material sculpted into an artistic form.</description>
@@ -568,5 +568,5 @@
         <fuelFilter><thingDefs><li>Ice_Resource_IceBlocks</li></thingDefs></fuelFilter>
       </li>	
     </comps>
-  </ThingDef>
+  </ThingDef-->
 </Defs> 

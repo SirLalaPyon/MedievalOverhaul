@@ -187,7 +187,7 @@
           <barScale>(1.0, 1.0)</barScale>
           <colorCoded>false</colorCoded>
           <processes>
-            <!--li>DankPyon_RawHideProcess</li-->
+            <li>DankPyon_RawHidesProcess</li>
           </processes>
         </li>
         <li Class="CompProperties_Forbiddable"/>
@@ -199,9 +199,6 @@
         <li>PlaceWorker_PreventInteractionSpotOverlap</li>
       </placeWorkers>
       <techLevel>Medieval</techLevel>
-      <researchPrerequisites>
-        <li>DankPyon_LeatherTanning</li>
-      </researchPrerequisites>
   </ThingDef>
 
   <!-- Tanning Rack -->
@@ -268,7 +265,6 @@
           <li>DankPyon_RoxRugProcess</li>
           <li>DankPyon_ThrumboRugProcess</li>
           <li>DankPyon_DaerRugProcess</li>
-          <li>DankPyon_RawHidesProcess</li>
         </processes>
       </li>
       <li Class="CompProperties_Forbiddable"/>

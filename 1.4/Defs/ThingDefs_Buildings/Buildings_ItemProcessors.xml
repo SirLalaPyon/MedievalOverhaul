@@ -102,7 +102,7 @@
     <tickerType>Rare</tickerType>
     <designationCategory>Production</designationCategory>
     <researchPrerequisites>
-      <li>DankPyon_FoodPreservation</li>
+      <li>Pemmican</li>
     </researchPrerequisites>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -186,7 +186,7 @@
     <tickerType>Rare</tickerType>
     <designationCategory>Production</designationCategory>
     <researchPrerequisites>
-      <li>DankPyon_FoodPreservation</li>
+      <li>Pemmican</li>
     </researchPrerequisites>
     <rotatable>false</rotatable>
   </ThingDef>
@@ -283,6 +283,7 @@
     <designationCategory>Production</designationCategory>
     <researchPrerequisites>
       <li>DankPyon_Smoker</li>
+      <li>DankPyon_RusticFurniture</li>
     </researchPrerequisites>
   </ThingDef>
 

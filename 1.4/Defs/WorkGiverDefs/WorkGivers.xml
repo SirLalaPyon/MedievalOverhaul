@@ -323,6 +323,23 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
+	<WorkGiverDef>
+		<defName>DankPyon_DoBillsWorkAlchemy</defName>
+		<label>do alchemy</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>115</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_AlchemyBench</li>
+		</fixedBillGiverDefs>
+		<verb>craft</verb>
+		<gerund>crafting at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
 	<!--WorkGiverDef>
 		<defName>Ice_DigIce</defName>
 		<label>Dig ice blocks</label>

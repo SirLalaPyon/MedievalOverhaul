@@ -912,14 +912,14 @@
 		<uiIconPath>Storage/BarrelTextiles</uiIconPath>
 
 		<building>
-			<fixedStorageSettings Inherit = "fasle">
+			<fixedStorageSettings Inherit = "false">
 				<filter>
 				<categories>
 				<li>Textiles</li>
 				</categories>
 				</filter>
 			</fixedStorageSettings>
-			<defaultStorageSettings Inherit = "fasle">
+			<defaultStorageSettings Inherit = "false">
 				<priority>Important</priority>
 				<filter>
 					<categories>
@@ -939,7 +939,7 @@
 			<texPath>Storage/BarrelLeather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1.8,1.8)</drawSize>
+			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<uiIconPath>Storage/BarrelLeather</uiIconPath>
@@ -1700,8 +1700,8 @@
 		</graphicData>
 		<uiIconPath>Buildings/Ruin/ShelfRuby_north</uiIconPath>
 		<costList>
-		<DankPyon_ChaliceGold>1</DankPyon_ChaliceGold>
-		<DankPyon_Ruby>1</DankPyon_Ruby>
+			<DankPyon_ChaliceGold>1</DankPyon_ChaliceGold>
+			<DankPyon_Ruby>1</DankPyon_Ruby>
 		</costList>
 	</ThingDef>
 
@@ -1715,6 +1715,26 @@
 		<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconPath>Buildings/Ruin/ShelfBowl_north</uiIconPath>
+		<costList>
+			<DankPyon_ChaliceSilver>2</DankPyon_ChaliceSilver>
+			<DankPyon_BowlSilver>3</DankPyon_BowlSilver>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_ShelfFilledGoldware</defName>
+		<label>goldware filled shelf</label>
+		<graphicData>
+			<texPath>Buildings/Ruin/ShelfBowlGold</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Buildings/Ruin/ShelfBowlGold_north</uiIconPath>
+		<costList>
+			<DankPyon_ChaliceGold>2</DankPyon_ChaliceGold>
+			<DankPyon_BowlGold>3</DankPyon_BowlGold>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ShelfBase">
@@ -1728,8 +1748,8 @@
 		</graphicData>
 		<uiIconPath>Buildings/Ruin/ShelfChaliceSilver_north</uiIconPath>
 		<costList>
-		<DankPyon_ChaliceSilver>2</DankPyon_ChaliceSilver>
-		<DankPyon_Book>1</DankPyon_Book>
+			<DankPyon_ChaliceSilver>2</DankPyon_ChaliceSilver>
+			<DankPyon_Book>1</DankPyon_Book>
 		</costList>
 	</ThingDef>
 
@@ -1737,15 +1757,15 @@
 		<defName>DankPyon_ShelfFilledChaliceGold</defName>
 		<label>gold chalice filled shelf</label>
 		<graphicData>
-		<texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
+		<texPath>Buildings/Ruin/ShelfChaliceGold</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(2.75,2.75)</drawSize>
 		<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfChaliceSilver_north</uiIconPath>
+		<uiIconPath>Buildings/Ruin/ShelfChaliceGold_north</uiIconPath>
 		<costList>
-		<DankPyon_ChaliceSilver>2</DankPyon_ChaliceSilver>
-		<DankPyon_BowlSilver>1</DankPyon_BowlSilver>
+		<DankPyon_ChaliceGold>2</DankPyon_ChaliceGold>
+		<DankPyon_Book>1</DankPyon_Book>
 		</costList>
 	</ThingDef>
 

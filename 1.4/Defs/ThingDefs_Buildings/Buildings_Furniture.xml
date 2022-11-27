@@ -121,6 +121,15 @@
 		</graphicData>
 		<uiIconPath>Furniture/RusticTorch_MenuIcon</uiIconPath>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+
+		<costList Inherit="false"/>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+
+		<constructEffect Inherit="false"/>
+		<soundImpactDefault Inherit="false"/>
 	</ThingDef>
 
 
@@ -1443,7 +1452,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		
+
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>10</Mass>
@@ -1781,9 +1790,7 @@
 
 		<size>(1,2)</size>
 		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
+			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
 

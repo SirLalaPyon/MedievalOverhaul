@@ -242,6 +242,23 @@
 		<defName>DankPyon_DoBillsStonecut</defName>
 		<label>make stone blocks</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>90</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_MiningSpot</li>
+		</fixedBillGiverDefs>
+		<verb>mine</verb>
+		<gerund>mining at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DankPyon_DoBillsMining</defName>
+		<label>mine</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>90</priorityInType>
 		<fixedBillGiverDefs>

@@ -159,18 +159,18 @@
 				<li>DankPyon_Ballista</li>
 		</weaponTags>
 		<verbs>
-				<li>
-						<verbClass>Verb_Shoot</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>DankPyon_Bullet_Scorpio</defaultProjectile>
-						<warmupTime>1</warmupTime>
-						<minRange>0</minRange>
-						<range>28.9</range>
-						<soundCast>Bow_Large</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<muzzleFlashScale>0</muzzleFlashScale>
-						<consumeFuelPerShot>1</consumeFuelPerShot>
-				</li>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DankPyon_Bullet_Scorpio</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<minRange>0</minRange>
+				<range>28.9</range>
+				<soundCast>Bow_Large</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
 		</verbs>
 	</ThingDef>
 
@@ -230,7 +230,7 @@
 				<fuelCapacity>5</fuelCapacity>
 				<autoRefuelPercent>0.75</autoRefuelPercent>
 				<minimumFueledThreshold>1</minimumFueledThreshold>
-				<fuelMultiplier>0.2</fuelMultiplier>
+				<fuelMultiplier>1</fuelMultiplier>
 				<factorByDifficulty>true</factorByDifficulty>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<outOfFuelMessage>Cannot shoot: Needs ballista bolts</outOfFuelMessage>

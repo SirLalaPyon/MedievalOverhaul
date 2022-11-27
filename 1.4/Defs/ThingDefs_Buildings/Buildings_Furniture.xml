@@ -25,9 +25,6 @@
 		<statBases>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		<comps>
-			<li Class="CompProperties_Styleable" Inherit="False"/>
-		</comps>
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="TableBase" Name="DankPyon_TableBase">
@@ -39,7 +36,7 @@
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_Styleable" Inherit="False"/>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 	</ThingDef>
 
@@ -52,7 +49,7 @@
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_Styleable" Inherit="False"/>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 	</ThingDef>
 
@@ -65,9 +62,6 @@
 		<statBases>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		<comps>
-			<li Class="CompProperties_Styleable" Inherit="False"/>
-		</comps>
 	</ThingDef>
 	
 
@@ -1184,6 +1178,61 @@
 		<costList Inherit="False">
 			<DankPyon_Wax>5</DankPyon_Wax>
 		</costList>
+
+		<comps  Inherit="false">
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelCapacity>20</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+						<thingDefs>
+								<li>DankPyon_Wax</li>
+						</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			 </li>
+			 <li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+				<li Class="CompProperties_Glower">
+					<glowRadius>5</glowRadius>
+					<glowColor>(252,187,113,0)</glowColor>
+				</li>
+				<li Class="CompProperties_FireOverlay">
+					 <fireSize>0.5</fireSize>
+					<offset>(0,0,0.75)</offset>
+				</li>
+				<li Class="CompProperties_MeditationFocus">
+					<statDef>MeditationFocusStrength</statDef>
+					<focusTypes><li>Flame</li></focusTypes>
+					<offsets>
+						<li Class="FocusStrengthOffset_Lit">
+							<offset>0.1</offset>
+						</li>
+						<li Class="FocusStrengthOffset_BuildingDefsLit">
+							<defs>
+								<li>Campfire</li>
+								<li>TorchLamp</li>
+								<li>DankPyon_Candles</li>
+								<li>DankPyon_CandleStand</li>
+								<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+							</defs>
+							<offsetPerBuilding>0.01</offsetPerBuilding>
+							<radius>9.9</radius>
+							<maxBuildings>8</maxBuildings>
+							<explanationKey>MeditationFocusPerFlame</explanationKey>
+							<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						</li>
+					</offsets>
+				</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleStandBase">
@@ -1241,18 +1290,18 @@
 			<isEdifice>true</isEdifice>
 		</building>
 		<comps>
-				<li Class="CompProperties_Refuelable">
-					<fuelConsumptionRate>1.0</fuelConsumptionRate>
-					<fuelCapacity>20</fuelCapacity>
-					<initialFuelPercent>1</initialFuelPercent>
-					<fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
-					<fuelFilter>
-							<thingDefs>
-									<li>DankPyon_Tallow</li>
-							</thingDefs>
-					</fuelFilter>
-					<destroyOnNoFuel>false</destroyOnNoFuel>
-					<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelCapacity>20</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+						<thingDefs>
+								<li>DankPyon_Tallow</li>
+						</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			 </li>
 			 <li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -1310,6 +1359,61 @@
 		<costList Inherit="False">
 			<DankPyon_Wax>5</DankPyon_Wax>
 		</costList>
+
+		<comps Inherit="false">
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelCapacity>20</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+						<thingDefs>
+								<li>DankPyon_Wax</li>
+						</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			 </li>
+			 <li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+				<li Class="CompProperties_Glower">
+					<glowRadius>5</glowRadius>
+					<glowColor>(252,187,113,0)</glowColor>
+				</li>
+				<li Class="CompProperties_FireOverlay">
+					 <fireSize>0.5</fireSize>
+					<offset>(0,0,0.95)</offset>
+				</li>
+				<li Class="CompProperties_MeditationFocus">
+					<statDef>MeditationFocusStrength</statDef>
+					<focusTypes><li>Flame</li></focusTypes>
+					<offsets>
+						<li Class="FocusStrengthOffset_Lit">
+							<offset>0.1</offset>
+						</li>
+						<li Class="FocusStrengthOffset_BuildingDefsLit">
+							<defs>
+								<li>Campfire</li>
+								<li>TorchLamp</li>
+								<li>DankPyon_Candles</li>
+								<li>DankPyon_CandleStand</li>
+								<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+							</defs>
+							<offsetPerBuilding>0.01</offsetPerBuilding>
+							<radius>9.9</radius>
+							<maxBuildings>8</maxBuildings>
+							<explanationKey>MeditationFocusPerFlame</explanationKey>
+							<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						</li>
+					</offsets>
+				</li>
+		</comps>
 </ThingDef>
 	
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -1536,7 +1640,7 @@
 					<maxSimultaneous>1</maxSimultaneous>
 					<maxDistance>6</maxDistance>
 			</li>
-			<li Class="CompProperties_Styleable" Inherit="False"/>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 
 		<researchPrerequisites>
@@ -2484,7 +2588,7 @@
 		
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<comps>
-			<li Class="CompProperties_Styleable" Inherit="False"/>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 
 		<researchPrerequisites>

@@ -26,10 +26,10 @@
 </RecipeDef>
 
 <!-- Salt Chunks -->
-<RecipeDef ParentName="DankPyon_MineShaftBase">
+<RecipeDef ParentName="DankPyon_MiningSpotBase">
 	<defName>DankPyon_Gather_Salt</defName>
 	<description>Mine deep down underground to obtain salt</description>
-	<workAmount>1000</workAmount>		
+	<workAmount>600</workAmount>		
 	<label>gather salt x5</label>
 	<jobString>Mining 5 salt</jobString>
     <products>

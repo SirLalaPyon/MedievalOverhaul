@@ -19,4 +19,18 @@
     </comps>
   </ThingDef>
 
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>DankPyon_UnfinishedHideArmor</defName>
+    <label>unfinished hide armor</label>
+    <description>An unfinished piece of hide armor.</description>
+    <statBases>
+      <Flammability>1</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Unfinished/UnfinishedHide</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
 </Defs>

@@ -305,44 +305,86 @@
 	
 <!-- Bread Bulk -->
 	<RecipeDef>
-	<defName>DankPyon_BakeBreadBulk</defName>
-	<label>bake bread x10</label>
-	<description>Bake 10 breads from flour.</description>
-	<jobString>Baking 10 bread.</jobString>  
-	<allowMixingIngredients>true</allowMixingIngredients>
-	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-	<ingredients>
-	   <li>
-		  <filter>
-			 <thingDefs>
-				<li>DankPyon_Flour</li>
-			 </thingDefs>
-		  </filter>
-		  <count>5.0</count>
-	   </li>
-	</ingredients>
-	<products>
-	   <DankPyon_MealBread>10</DankPyon_MealBread>
-	</products>
-	<fixedIngredientFilter>
-	   <thingDefs>
-		  <li>DankPyon_Flour</li>
-	   </thingDefs>
-	<specialFiltersToDisallow>
-	  <li>AllowRotten</li>
-	</specialFiltersToDisallow>
-	</fixedIngredientFilter>
-	<workAmount>1750</workAmount>
-	<workSpeedStat>CookSpeed</workSpeedStat>
-	<workSkill>Cooking</workSkill>
-	<effectWorking>Cook</effectWorking>
-	  <soundWorking>Recipe_CookMeal</soundWorking>
-	  <researchPrerequisites>
-		  <li>DankPyon_BasicCooking</li>
-	  </researchPrerequisites>
-	<recipeUsers>
-	  <li>DankPyon_StoneOven</li>
-	</recipeUsers>
+		<defName>DankPyon_BakeBreadBulk</defName>
+		<label>bake bread x10</label>
+		<description>Bake 10 breads from flour.</description>
+		<jobString>Baking 10 bread.</jobString>  
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_Flour</li>
+				</thingDefs>
+			</filter>
+			<count>5.0</count>
+		</li>
+		</ingredients>
+		<products>
+		<DankPyon_MealBread>10</DankPyon_MealBread>
+		</products>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_Flour</li>
+		</thingDefs>
+		<specialFiltersToDisallow>
+		<li>AllowRotten</li>
+		</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<workAmount>1750</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<researchPrerequisites>
+			<li>DankPyon_BasicCooking</li>
+		</researchPrerequisites>
+		<recipeUsers>
+		<li>DankPyon_StoneOven</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- Mega (Milk) Bread Bulk -->
+	<RecipeDef>
+		<defName>DankPyon_BakeBreadMegaBulk</defName>
+		<label>bake bread x100</label>
+		<description>Bake 100 breads from flour.</description>
+		<jobString>Baking 100 bread.</jobString>  
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_Flour</li>
+				</thingDefs>
+			</filter>
+			<count>50.0</count>
+		</li>
+		</ingredients>
+		<products>
+		<DankPyon_MealBread>100</DankPyon_MealBread>
+		</products>
+		<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_Flour</li>
+		</thingDefs>
+		<specialFiltersToDisallow>
+			<li>AllowRotten</li>
+		</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<workAmount>10000</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<researchPrerequisites>
+			<li>DankPyon_BasicCooking</li>
+		</researchPrerequisites>
+		<recipeUsers>
+		<li>DankPyon_StoneOvenLarge</li>
+		</recipeUsers>
 	</RecipeDef>
 
 <!-- ======= Sausages ====== -->

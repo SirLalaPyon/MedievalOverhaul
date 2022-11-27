@@ -40,11 +40,11 @@
 				<chance>0.10</chance>
 				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
 				<faction>DankPyon_Forest_Faction</faction>
-				<mentalStateDef>Manhunter</mentalStateDef>
+				<!--mentalStateDef>Manhunter</mentalStateDef-->
 				<numberToSpawn>1~1</numberToSpawn>
-				<letterLabel>Angry Schrat</letterLabel>
-				<letterDescription>An ancient shcrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
-				<letterDef>ThreatBig</letterDef>
+				<letterLabel>Awakened Schrat</letterLabel>
+				<letterDescription>An ancient schrat has been awakened due to the cutting of great trees. Make sure to not anger it!</letterDescription>
+				<letterDef>NeutralEvent</letterDef>
 				<notToxicFallout>false</notToxicFallout>
 			</li>
 		</comps>
@@ -109,11 +109,11 @@
 				<chance>0.10</chance>
 				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
 				<faction>DankPyon_Forest_Faction</faction>
-				<mentalStateDef>Manhunter</mentalStateDef>
+				<!--mentalStateDef>Manhunter</mentalStateDef-->
 				<numberToSpawn>1~1</numberToSpawn>
-				<letterLabel>Angry Schrat</letterLabel>
-				<letterDescription>An ancient shcrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
-				<letterDef>ThreatBig</letterDef>
+				<letterLabel>Awakened Schrat</letterLabel>
+				<letterDescription>An ancient schrat has been awakened due to the cutting of great trees. Make sure to not anger it!</letterDescription>
+				<letterDef>NeutralEvent</letterDef>
 				<notToxicFallout>false</notToxicFallout>
 			</li>
 		</comps>
@@ -222,11 +222,11 @@
 			<chance>0.10</chance>
 			<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
 			<faction>DankPyon_Forest_Faction</faction>
-			<mentalStateDef>Manhunter</mentalStateDef>
+			<!--mentalStateDef>Manhunter</mentalStateDef-->
 			<numberToSpawn>1~1</numberToSpawn>
-			<letterLabel>Angry Schrat</letterLabel>
-			<letterDescription>An ancient shcrat has been angered due to the cutting of trees. Prepare yourself!</letterDescription>
-			<letterDef>ThreatBig</letterDef>
+			<letterLabel>Awakened Schrat</letterLabel>
+			<letterDescription>An ancient schrat has been awakened due to the cutting of great trees. Make sure to not anger it!</letterDescription>
+			<letterDef>NeutralEvent</letterDef>
 			<notToxicFallout>false</notToxicFallout>
 		</li>
 	</comps>

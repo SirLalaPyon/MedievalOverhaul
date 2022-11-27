@@ -265,9 +265,38 @@
       </li>
     </modExtensions>
   </ThingDef>
+  
+  <!-- ==================== Two-Handed Base==================== -->
+
+  <ThingDef Name="DankPyon_Base_Blunt_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponDraftedDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.30)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.30)</drawOffset>
+					<angleOffset>-122</angleOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.30)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.30)</drawOffset>
+					<angleOffset>122</angleOffset>
+				</west>
+			</weaponDraftedDrawOffsets>		
+		</li>
+	</modExtensions>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
 
   <!-- ==================== Two-Handed Maces ==================== -->
-  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+  <ThingDef ParentName="DankPyon_Base_Blunt_NormalSize">
     <defName>DankPyon_MeleeWeapon_Goedendag</defName>
     <label>goedendag</label>
     <description>A simple, yet ingenious weapon which merges the utility of a spear with the brute force of a club. Capable of delivering both deadly thrusts and rib-crushing smashes with its weighted, spiked head.</description>
@@ -278,7 +307,6 @@
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Medieval</techLevel>
-    <equippedAngleOffset>-65</equippedAngleOffset>
 
     <statBases>
       <WorkToMake>11000</WorkToMake>
@@ -325,7 +353,8 @@
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
-    </recipeMaker>
+    </recipeMaker>	
+	
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
@@ -446,9 +475,36 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
+  <!-- ==================== Spears Base==================== -->
 
+  <ThingDef Name="DankPyon_Base_Sharp_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<modExtensions>
+		<li Class="VFECore.ThingDefExtension">
+			<weaponDraftedDrawOffsets>
+				<north>
+					<drawOffset>(0.34,0,0.30)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</north>
+				<east>
+					<drawOffset>(-0.34,0,0.30)</drawOffset>
+					<angleOffset>-122</angleOffset>
+				</east>
+				<south>
+					<drawOffset>(-0.34,0,0.30)</drawOffset>
+					<angleOffset>-143</angleOffset>
+				</south>
+				<west>
+					<drawOffset>(0.34,0,0.30)</drawOffset>
+					<angleOffset>122</angleOffset>
+				</west>
+			</weaponDraftedDrawOffsets>		
+		</li>
+	</modExtensions>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
   <!-- ==================== Spears ==================== -->
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="DankPyon_Base_Sharp_NormalSize">
     <defName>DankPyon_MeleeWeapon_MilitiaSpear</defName>
     <label>militia spear</label>
     <description>Since ancient times, lords provided militia spears to their fyrd, the peasants who take up arms during wartime. Their reasoning was simple: rather than practice the bow or sword, one with low melee skill will be more effective hidden behind a shield and jabbing with a long, pointy stick. Low damage, but decent armor penetration and easy to use.</description>
@@ -459,7 +515,6 @@
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Medieval</techLevel>
-    <equippedAngleOffset>-65</equippedAngleOffset>
 
     <statBases>
       <WorkToMake>9000</WorkToMake>
@@ -515,7 +570,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="DankPyon_Base_Sharp_NormalSize">
     <defName>DankPyon_MeleeWeapon_BoarSpear</defName>
     <label>boar spear</label>
     <description>The two wings found at the base of the spear socket act as barriers to halt oncoming attacks. They also prevent the spear from penetrating too far and thus getting stuck, making the boar spear effective for hunting as well as quick thrusts.</description>
@@ -526,7 +581,6 @@
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Medieval</techLevel>
-    <equippedAngleOffset>-65</equippedAngleOffset>
 
     <statBases>
       <WorkToMake>10000</WorkToMake>
@@ -582,7 +636,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="DankPyon_Base_Sharp_NormalSize">
     <defName>DankPyon_MeleeWeapon_FightingSpear</defName>
     <label>fighting spear</label>
     <description>A spear most effective for combat, the fighting spear is long and sturdy to help frontlines maintain their spear wall. Borrowing the wing design from the boar spear, the fighting spear also features two protruding points, which can help stop enemy swings.</description>
@@ -593,7 +647,6 @@
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Medieval</techLevel>
-    <equippedAngleOffset>-65</equippedAngleOffset>
 
     <statBases>
       <WorkToMake>16000</WorkToMake>
@@ -655,19 +708,19 @@
 		<li Class="VFECore.ThingDefExtension">
 			<weaponDraftedDrawOffsets>
 				<north>
-					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<drawOffset>(0.34,0,0.60)</drawOffset>
 					<angleOffset>-143</angleOffset>
 				</north>
 				<east>
-					<drawOffset>(-0.34,0,0.70)</drawOffset>
+					<drawOffset>(-0.34,0,0.60)</drawOffset>
 					<angleOffset>-122</angleOffset>
 				</east>
 				<south>
-					<drawOffset>(-0.34,0,0.70)</drawOffset>
+					<drawOffset>(-0.34,0,0.60)</drawOffset>
 					<angleOffset>-143</angleOffset>
 				</south>
 				<west>
-					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<drawOffset>(0.34,0,0.60)</drawOffset>
 					<angleOffset>122</angleOffset>
 				</west>
 			</weaponDraftedDrawOffsets>		
@@ -1133,7 +1186,7 @@
   </ThingDef>
   
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="DankPyon_Base_Sharp_Oversize">
     <defName>DankPyon_MeleeWeapon_Swordlance</defName>
     <label>swordlance</label>
     <description>Variation of the pike, although the curved blade allows for fierce slashing at a distance. This trades armor penetration for raw damage, making the swordlance deadly in experienced hands.</description>
@@ -1145,7 +1198,6 @@
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Medieval</techLevel>
-    <equippedAngleOffset>-100</equippedAngleOffset>
 
     <statBases>
       <WorkToMake>15000</WorkToMake>

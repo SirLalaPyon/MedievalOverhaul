@@ -334,6 +334,24 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_IntermediateCooking</defName>
+		<label>intermediate cooking schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/IntermediateCooking_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
 		<defName>DankPyon_Book_AdvancedCooking</defName>
 		<label>advanced cooking schematics</label>
 		<graphicData>
@@ -343,7 +361,25 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>600</MarketValue>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_BallistaRepeater</defName>
+		<label>ballista repeater schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/BallistaRepeater_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>2500</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Beauty>20</Beauty>
 			<Mass>1</Mass>

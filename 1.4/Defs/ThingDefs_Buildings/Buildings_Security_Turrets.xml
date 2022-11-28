@@ -2,23 +2,23 @@
 <Defs>
 
 <!-- Scorpio -->
-<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Turret_Scorpio</defName>
 		<label>scorpio</label>
 		<description>Developed during ancient times, the scorpio is a powerful missile weapon capable of launching large darts over long distances. Effective in both siege and defense, the precise design strikes fear into enemies but must be reloaded after every bolt fired.</description>
 		<thingClass>Building_TurretGun</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-				<texPath>Security/TurretScorpio/TurretScorpio_Base</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(1.5,1.5)</drawSize>
-				<damageData>
-						<rect>(0.2,0.2,0.6,0.6)</rect>
-				</damageData>
-				<shadowData>
-						<volume>(1.5,0.35,1.4)</volume>
-						<offset>(0,0,-0.05)</offset>
-				</shadowData>
+			<texPath>Security/TurretScorpio/TurretScorpio_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<damageData>
+					<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+					<volume>(1.5,0.35,1.4)</volume>
+					<offset>(0,0,-0.05)</offset>
+			</shadowData>
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconPath>Security/TurretScorpio/TurretScorpio_MenuIcon</uiIconPath>
@@ -48,24 +48,24 @@
 						<manWorkType>Violent</manWorkType>
 				</li>
 				<li Class="CompProperties_Refuelable">
-						<fuelLabel>Scorpio bolts</fuelLabel>
-						<fuelGizmoLabel>Scorpio bolts</fuelGizmoLabel>
-						<showFuelGizmo>true</showFuelGizmo>
-						<fuelFilter>
-						<thingDefs>
-								<li>DankPyon_ScorpioBolt</li>
-						</thingDefs>
-						</fuelFilter>
-						<fuelConsumptionRate>1</fuelConsumptionRate>
-						<fuelCapacity>5</fuelCapacity>
-						<autoRefuelPercent>0.25</autoRefuelPercent>
-						<minimumFueledThreshold>1</minimumFueledThreshold>
-						<fuelMultiplier>1</fuelMultiplier>
-						<factorByDifficulty>true</factorByDifficulty>
-						<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-						<outOfFuelMessage>Cannot shoot: Needs scorpio bolts</outOfFuelMessage>
-						<fuelIconPath>Overlays/FuelBallistaBolt</fuelIconPath>
-						<initialFuelPercent>0</initialFuelPercent>
+					<fuelLabel>Scorpio bolts</fuelLabel>
+					<fuelGizmoLabel>Scorpio bolts</fuelGizmoLabel>
+					<showFuelGizmo>true</showFuelGizmo>
+					<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_ScorpioBolt</li>
+					</thingDefs>
+					</fuelFilter>
+					<fuelConsumptionRate>1</fuelConsumptionRate>
+					<fuelCapacity>5</fuelCapacity>
+					<autoRefuelPercent>0.25</autoRefuelPercent>
+					<minimumFueledThreshold>1</minimumFueledThreshold>
+					<fuelMultiplier>1</fuelMultiplier>
+					<factorByDifficulty>true</factorByDifficulty>
+					<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+					<outOfFuelMessage>Cannot shoot: Needs scorpio bolts</outOfFuelMessage>
+					<fuelIconPath>Overlays/FuelScorpioBolt</fuelIconPath>
+					<initialFuelPercent>0</initialFuelPercent>
 				</li>
 		</comps>
 
@@ -495,6 +495,146 @@
 						</filter>
 				</defaultStorageSettings>
 		</building>
+	</ThingDef>
+
+	<!-- Ballista Repeater -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Turret_RepeaterBallista</defName>
+		<label>Ballista repeater</label>
+		<description>Developed during ancient times, the ballista repeater is a pinnacle of medieval engineering, it is a powerful missile weapon capable of launching multiple large darts over a quick sucession. Effective in both siege and defense, the precise design strikes fear into enemies but must be reloaded after every bolt fired.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Security/TurretRepeaterBallista/TurretRepeaterBallista_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.3, 4.3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(1.5,0.35,1.4)</volume>
+				<offset>(0,0,-0.05)</offset>
+			</shadowData>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<uiIconPath>Security/TurretRepeaterBallista/TurretRepeaterBallista_MenuIcon</uiIconPath>
+		<uiIconScale>0.95</uiIconScale>
+		<size>(2,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+		<blockWind>true</blockWind>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<WorkToBuild>9600</WorkToBuild>
+			<Beauty>-20</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Ballista bolts</fuelLabel>
+				<fuelGizmoLabel>Ballista bolts</fuelGizmoLabel>
+				<showFuelGizmo>true</showFuelGizmo>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_BallistaBolt</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelConsumptionRate>1</fuelConsumptionRate>
+				<fuelCapacity>15</fuelCapacity>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<fuelMultiplier>1</fuelMultiplier>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot shoot: Needs ballista bolts</outOfFuelMessage>
+				<fuelIconPath>Overlays/FuelBallistaBolt</fuelIconPath>
+				<initialFuelPercent>0</initialFuelPercent>
+			</li>
+		</comps>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<costList>
+			<WoodLog>300</WoodLog>
+			<DankPyon_RawWood>125</DankPyon_RawWood>
+			<Steel>120</Steel>
+			<DankPyon_ComponentBasic>20</DankPyon_ComponentBasic>
+		</costList>
+		
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>DankPyon_Gun_RepeaterBallistaTurret</turretGunDef>
+			<turretBurstCooldownTime>4</turretBurstCooldownTime>
+			<turretBurstWarmupTime>2</turretBurstWarmupTime>
+			<turretTopDrawSize>4.5</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+		</building>
+		<repairEffect>ConstructDirt</repairEffect>
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>DankPyon_Ballista</li>
+			<li>DankPyon_RepeaterBallista</li>
+		</researchPrerequisites>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_ShowTurretRadius</li>
+			<li>PlaceWorker_TurretTop</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>DankPyon_Gun_RepeaterBallistaTurret</defName>
+		<label>ballista repeater turret</label>
+		<description>An ancient military siege engine in a form of a crossbow mounted on a wooden construct.</description>
+		<graphicData>
+			<texPath>Security/TurretRepeaterBallista/TurretRepeaterBallista_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>45</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>DankPyon_Ballista</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DankPyon_Bullet_Ballista</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<minRange>4</minRange>
+				<range>45</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<soundCast>Bow_Large</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
 	</ThingDef>
 
 </Defs>

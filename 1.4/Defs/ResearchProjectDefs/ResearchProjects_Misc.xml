@@ -278,6 +278,24 @@
     <requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>     
   </ResearchProjectDef>
 
+  <ResearchProjectDef>
+    <defName>DankPyon_RepeaterBallista</defName>
+    <label>ballista repeater</label>
+    <description>Research how to construct a huge ballista repeater. Fires powerful and deadly shots in quick sucession but takes a long time to reload.</description>
+    <baseCost>2500</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>17</researchViewX>
+		<researchViewY>3.3</researchViewY>
+    <prerequisites>
+      <li>DankPyon_Engineering</li>
+    </prerequisites>
+    <requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>    
+    <requiredResearchFacilities>
+      <li>DankPyon_Book_BallistaRepeater</li>
+    </requiredResearchFacilities>  
+  </ResearchProjectDef>
+
   <!--=========================== Alchemy ==============================-->
   <ResearchProjectDef>
     <defName>DankPyon_Alchemy</defName>
@@ -652,6 +670,9 @@
     </prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>5.6</researchViewY>    
+    <requiredResearchFacilities>
+      <li>DankPyon_Book_IntermediateCooking</li>
+    </requiredResearchFacilities>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -665,7 +686,10 @@
       <li>DankPyon_IntermediateCooking</li>
     </prerequisites>
 		<researchViewX>4</researchViewX>
-		<researchViewY>5.6</researchViewY>    
+		<researchViewY>5.6</researchViewY>   
+    <requiredResearchFacilities>
+      <li>DankPyon_Book_AdvancedCooking</li>
+    </requiredResearchFacilities> 
   </ResearchProjectDef>
 
   <!--=========================== Food Preservation ==============================-->

@@ -332,4 +332,23 @@
 			<Flammability>1</Flammability>
 		</statBases>
 	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_AdvancedCooking</defName>
+		<label>advanced cooking schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/AdvancedCooking_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+	
 </Defs>

@@ -226,7 +226,9 @@
     <prerequisites>
       <li>Smithing</li>
     </prerequisites>
-    <requiredResearchBuilding>DankPyon_Crossbow</requiredResearchBuilding>  
+    <requiredResearchFacilities>
+      <li>DankPyon_Book_Crossbow</li>
+    </requiredResearchFacilities>  
   </ResearchProjectDef>
 
   <ResearchProjectDef>

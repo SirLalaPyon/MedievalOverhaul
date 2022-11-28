@@ -191,9 +191,9 @@
 	<soundWorking>Recipe_CookMeal</soundWorking>
 	<allowMixingIngredients>true</allowMixingIngredients>
 	<workAmount>300</workAmount> 
-  		<recipeUsers>	  
-			<li>DankPyon_StewPot</li>		  	  
-  		</recipeUsers>	
+	<recipeUsers>	  
+		<li>DankPyon_StewPot</li>		  	  
+	</recipeUsers>	
 	<ingredients>
 		<li>
 			<filter>
@@ -217,6 +217,7 @@
 	<workSkill>Cooking</workSkill>
 	<researchPrerequisites>
 		<li>DankPyon_BasicCooking</li>
+		<li>DankPyon_StewPot</li>
 	</researchPrerequisites>
 </RecipeDef>
 
@@ -231,9 +232,9 @@
 	<soundWorking>Recipe_CookMeal</soundWorking>
 	<allowMixingIngredients>true</allowMixingIngredients>
 	<workAmount>1500</workAmount> 
-  		<recipeUsers>	  
-			<li>DankPyon_StewPot</li>		  	  
-  		</recipeUsers>	
+	<recipeUsers>	  
+		<li>DankPyon_StewPot</li>		  	  
+	</recipeUsers>	
 	<ingredients>
 		<li>
 			<filter>
@@ -257,6 +258,7 @@
 	<workSkill>Cooking</workSkill>
 	<researchPrerequisites>
 		<li>DankPyon_BasicCooking</li>
+		<li>DankPyon_StewPot</li>
 	</researchPrerequisites>
 </RecipeDef>
 
@@ -297,6 +299,7 @@
 	<soundWorking>Recipe_CookMeal</soundWorking>
 	<researchPrerequisites>
 		<li>DankPyon_BasicCooking</li>
+		<li>DankPyon_Oven</li>
 	</researchPrerequisites>
 	<recipeUsers>
 	  <li>DankPyon_StoneOven</li>
@@ -339,6 +342,7 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<researchPrerequisites>
 			<li>DankPyon_BasicCooking</li>
+			<li>DankPyon_Oven</li>
 		</researchPrerequisites>
 		<recipeUsers>
 		<li>DankPyon_StoneOven</li>
@@ -381,6 +385,7 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<researchPrerequisites>
 			<li>DankPyon_BasicCooking</li>
+			<li>DankPyon_Oven</li>
 		</researchPrerequisites>
 		<recipeUsers>
 		<li>DankPyon_StoneOvenLarge</li>
@@ -541,6 +546,7 @@
     </defaultIngredientFilter>
 	<researchPrerequisites>
 		<li>DankPyon_BasicCooking</li>
+		<li>DankPyon_Grill</li>
 	</researchPrerequisites>
   </RecipeDef>
 
@@ -598,6 +604,7 @@
     </defaultIngredientFilter>
 	<researchPrerequisites>
 		<li>DankPyon_BasicCooking</li>
+		<li>DankPyon_Grill</li>
 	</researchPrerequisites>
   </RecipeDef>
 
@@ -675,6 +682,7 @@
   <workSkill>Cooking</workSkill>
   <researchPrerequisites>
 	  <li>DankPyon_BasicCooking</li>
+	  <li>DankPyon_StewPot</li>
   </researchPrerequisites>
 </RecipeDef>
 
@@ -755,6 +763,7 @@
   </skillRequirements>
   <researchPrerequisites>
 	  <li>DankPyon_BasicCooking</li>
+	  <li>DankPyon_StewPot</li>
   </researchPrerequisites>	
 </RecipeDef>
 
@@ -1066,6 +1075,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1122,6 +1132,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1179,6 +1190,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1235,6 +1247,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1292,6 +1305,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1348,6 +1362,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1366,7 +1381,6 @@
     <workAmount>750</workAmount> 
       <recipeUsers>	  
         <li>DankPyon_RusticCookingTable</li>
-				  	  
       </recipeUsers>
     <ingredients>
 			<li>
@@ -1551,6 +1565,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1623,6 +1638,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1688,6 +1704,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_Grill</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1752,6 +1769,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_BasicCooking</li>
+	<li>DankPyon_Grill</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1845,6 +1863,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -1937,6 +1956,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -2144,6 +2164,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_Oven</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -2189,23 +2210,23 @@
 		</li>
 	</ingredients>
 	<products>
-  <DankPyon_MealApplePie>5</DankPyon_MealApplePie>
-</products>
+		<DankPyon_MealApplePie>5</DankPyon_MealApplePie>
+	</products>
 	<fixedIngredientFilter>
 		<categories>
 			<li>FoodRaw</li>
 		</categories>
-  <specialFiltersToDisallow>
-	<li>AllowPlantFood</li>
-  </specialFiltersToDisallow>
+	<specialFiltersToDisallow>
+		<li>AllowPlantFood</li>
+	</specialFiltersToDisallow>
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<categories>
 			<li>FoodRaw</li>
 		</categories>
-  <disallowedCategories>
-	<li>EggsFertilized</li>
-  </disallowedCategories>
+	<disallowedCategories>
+		<li>EggsFertilized</li>
+	</disallowedCategories>
 		<disallowedThingDefs>
 			<li>Meat_Human</li>
 			<li>Meat_Megaspider</li>
@@ -2216,10 +2237,11 @@
 	<skillRequirements>
 			<Cooking>8</Cooking>
 	</skillRequirements>
-<workSkill>Cooking</workSkill>
-<researchPrerequisites>
-	<li>DankPyon_IntermediateCooking</li>
-</researchPrerequisites>
+	<workSkill>Cooking</workSkill>
+	<researchPrerequisites>
+		<li>DankPyon_IntermediateCooking</li>
+		<li>DankPyon_Oven</li>
+	</researchPrerequisites>
 </RecipeDef>
 
 <!-- ======= Hunters Stew ====== -->
@@ -2303,90 +2325,92 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
 <!-- Hunters Stew Bulk -->
 <RecipeDef>
-<defName>DankPyon_CookMealHuntersStewBulk</defName>
-<label>cook hunter's stew x8</label>
-<description>Cook 8 hunter's stews.</description>
-<jobString>Cooking 8 hunter's stew.</jobString>
-<workSpeedStat>CookSpeed</workSpeedStat>
-<effectWorking>Cook</effectWorking>
-<soundWorking>Recipe_CookMeal</soundWorking>
-<allowMixingIngredients>true</allowMixingIngredients>
-<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-<workAmount>3200</workAmount> 
-<recipeUsers>	  
-<li>DankPyon_StewPot</li>		  	  
-</recipeUsers>	
-<ingredients>
-	<li>
-		<filter>
-			<thingDefs>
-				<li>DankPyon_Sausages</li>
-  </thingDefs>
-		</filter>
-		<count>1.6</count>
-	</li>
-	<li>
-		<filter>
-			<thingDefs>
-				<li>DankPyon_RawCabbages</li>
-  </thingDefs>
-		</filter>
-		<count>0.8</count>
-	</li>
-	<li>
-		<filter>
-			<thingDefs>
-				<li>DankPyon_RawOnions</li>
-  </thingDefs>
-		</filter>
-		<count>0.72</count>
-	</li>
-	<li>
-		<filter>
-			<thingDefs>
-				<li>DankPyon_RawGarlic</li>
-  </thingDefs>
-		</filter>
-		<count>0.80</count>
-	</li>
-</ingredients>
-<products>
-<DankPyon_MealHuntersStew>8</DankPyon_MealHuntersStew>
-</products>
-<fixedIngredientFilter>
-	<categories>
-		<li>FoodRaw</li>
-	</categories>
-<specialFiltersToDisallow>
-<li>AllowPlantFood</li>
-</specialFiltersToDisallow>
-</fixedIngredientFilter>
-<defaultIngredientFilter>
-	<categories>
-		<li>FoodRaw</li>
-	</categories>
-<disallowedCategories>
-<li>EggsFertilized</li>
-</disallowedCategories>
-	<disallowedThingDefs>
-		<li>Meat_Human</li>
-		<li>Meat_Megaspider</li>
-		<li>InsectJelly</li>
-		<li>Milk</li>
-	</disallowedThingDefs>
-</defaultIngredientFilter>
-<skillRequirements>
-		<Cooking>8</Cooking>
-</skillRequirements>
-<workSkill>Cooking</workSkill>
-<researchPrerequisites>
-<li>DankPyon_IntermediateCooking</li>
-</researchPrerequisites>
+	<defName>DankPyon_CookMealHuntersStewBulk</defName>
+	<label>cook hunter's stew x8</label>
+	<description>Cook 8 hunter's stews.</description>
+	<jobString>Cooking 8 hunter's stew.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_CookMeal</soundWorking>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<workAmount>3200</workAmount> 
+	<recipeUsers>	  
+		<li>DankPyon_StewPot</li>		  	  
+	</recipeUsers>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_Sausages</li>
+	</thingDefs>
+			</filter>
+			<count>1.6</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_RawCabbages</li>
+	</thingDefs>
+			</filter>
+			<count>0.8</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_RawOnions</li>
+	</thingDefs>
+			</filter>
+			<count>0.72</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_RawGarlic</li>
+	</thingDefs>
+			</filter>
+			<count>0.80</count>
+		</li>
+	</ingredients>
+	<products>
+	<DankPyon_MealHuntersStew>8</DankPyon_MealHuntersStew>
+	</products>
+	<fixedIngredientFilter>
+		<categories>
+			<li>FoodRaw</li>
+		</categories>
+	<specialFiltersToDisallow>
+	<li>AllowPlantFood</li>
+	</specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>FoodRaw</li>
+		</categories>
+	<disallowedCategories>
+	<li>EggsFertilized</li>
+	</disallowedCategories>
+		<disallowedThingDefs>
+			<li>Meat_Human</li>
+			<li>Meat_Megaspider</li>
+			<li>InsectJelly</li>
+			<li>Milk</li>
+		</disallowedThingDefs>
+	</defaultIngredientFilter>
+	<skillRequirements>
+			<Cooking>8</Cooking>
+	</skillRequirements>
+	<workSkill>Cooking</workSkill>
+	<researchPrerequisites>
+		<li>DankPyon_IntermediateCooking</li>
+		<li>DankPyon_StewPot</li>
+	</researchPrerequisites>
 </RecipeDef>
 
 <!-- ======= Grilled Cheese ====== -->
@@ -2505,6 +2529,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_Grill</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -2589,6 +2614,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_Oven</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -2672,6 +2698,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_Oven</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -3051,6 +3078,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -3115,6 +3143,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_StewPot</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -3188,6 +3217,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_Oven</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -3260,6 +3290,7 @@
 <workSkill>Cooking</workSkill>
 <researchPrerequisites>
 	<li>DankPyon_IntermediateCooking</li>
+	<li>DankPyon_Oven</li>
 </researchPrerequisites>
 </RecipeDef>
 
@@ -3279,7 +3310,7 @@
 	<workAmount>650</workAmount> 
   	<recipeUsers>	  
 		<li>DankPyon_RusticCookingTable</li>
-	<li>DankPyon_RusticHearth</li>
+		<li>DankPyon_RusticHearth</li>
   	</recipeUsers>
 	<ingredients>
 		<li>
@@ -3814,6 +3845,7 @@
     <workSkill>Cooking</workSkill>
 	<researchPrerequisites>
 		<li>DankPyon_AdvancedCooking</li>
+		<li>DankPyon_Oven</li>
 	</researchPrerequisites>
   </RecipeDef>
 
@@ -3905,6 +3937,7 @@
     <workSkill>Cooking</workSkill>
 	<researchPrerequisites>
 		<li>DankPyon_AdvancedCooking</li>
+		<li>DankPyon_Oven</li>
 	</researchPrerequisites>
   </RecipeDef>
 

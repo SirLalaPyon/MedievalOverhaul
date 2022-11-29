@@ -201,84 +201,105 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
-		<value>
-			<ResearchProjectDef>
-				<defName>NobleApparel</defName>
-				<label>noble apparel</label>
-				<description>Tailor noble-specific apparel like formal shirts and royal robes.</description>
-				<baseCost>400</baseCost>
-				<tab>DankPyon_MedievalResearchTab</tab>
-				<techLevel>Medieval</techLevel>
-    			<prerequisites>
-    			  	<li>DankPyon_Tailoring</li>
-    			</prerequisites>
-				<researchViewX>12.00</researchViewX>
-				<researchViewY>0.70</researchViewY>
-			</ResearchProjectDef>
-		</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
+			<value>
+				<ResearchProjectDef>
+					<defName>NobleApparel</defName>
+					<label>noble apparel</label>
+					<description>Tailor noble-specific apparel like formal shirts and royal robes.</description>
+					<baseCost>400</baseCost>
+					<tab>DankPyon_MedievalResearchTab</tab>
+					<techLevel>Medieval</techLevel>
+					<prerequisites>
+						<li>DankPyon_Tailoring</li>
+					</prerequisites>
+					<researchViewX>12.00</researchViewX>
+					<researchViewY>0.70</researchViewY>
+				</ResearchProjectDef>
+			</value>
+		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
-		<value>
-			<ResearchProjectDef>
-				<defName>RoyalApparel</defName>
-				<label>royal apparel</label>
-				<description>Tailor royal apparel of the highest tier, like royal robes and crowns.</description>
-				<baseCost>400</baseCost>
-				<techLevel>Medieval</techLevel>
-				<tab>DankPyon_MedievalResearchTab</tab>
-    			<prerequisites>
-    			  	<li>NobleApparel</li>
-    			</prerequisites>
-				<hiddenPrerequisites>
-					<li>Smithing</li>
-				</hiddenPrerequisites>
-				<researchViewX>13.00</researchViewX>
-				<researchViewY>0.70</researchViewY>
-			</ResearchProjectDef>
-		</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
+			<value>
+				<ResearchProjectDef>
+					<defName>RoyalApparel</defName>
+					<label>royal apparel</label>
+					<description>Tailor royal apparel of the highest tier, like royal robes and crowns.</description>
+					<baseCost>400</baseCost>
+					<techLevel>Medieval</techLevel>
+					<tab>DankPyon_MedievalResearchTab</tab>
+					<prerequisites>
+						<li>NobleApparel</li>
+					</prerequisites>
+					<hiddenPrerequisites>
+						<li>Smithing</li>
+					</hiddenPrerequisites>
+					<researchViewX>13.00</researchViewX>
+					<researchViewY>0.70</researchViewY>
+				</ResearchProjectDef>
+			</value>
+		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
-		<xpath>Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
-		<value>
-			<ResearchProjectDef>
-				<defName>Harpsichord</defName>
-				<label>harpsichord</label>
-				<description>Craft the harpsichord, a complex stationary musical instrument.</description>
-				<tab>DankPyon_MedievalResearchTab</tab>
-				<baseCost>500</baseCost>
-				<techLevel>Medieval</techLevel>
-				<researchViewX>6</researchViewX>
-				<researchViewY>5.2</researchViewY> 
-				<prerequisites>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
+			<value>
+				<ResearchProjectDef>
+					<defName>Harpsichord</defName>
+					<label>harpsichord</label>
+					<description>Craft the harpsichord, a complex stationary musical instrument.</description>
+					<tab>DankPyon_MedievalResearchTab</tab>
+					<baseCost>500</baseCost>
+					<techLevel>Medieval</techLevel>
+					<researchViewX>6</researchViewX>
+					<researchViewY>5.2</researchViewY> 
+					<prerequisites>
+						<li>ComplexFurniture</li>
+					</prerequisites>   
+				</ResearchProjectDef>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="Piano"]</xpath>
+			<value>
+				<ResearchProjectDef>
+					<defName>Piano</defName>
+					<label>piano</label>
+					<description>Craft the harpsichord, a complex stationary musical instrument.</description>
+					<baseCost>500</baseCost>
+					<tab>DankPyon_MedievalResearchTab</tab>
+					<techLevel>Medieval</techLevel>
+					<researchViewX>6</researchViewX>
+					<researchViewY>5.8</researchViewY> 
+					<prerequisites>
 					<li>ComplexFurniture</li>
-				</prerequisites>   
-			</ResearchProjectDef>
-		</value>
+					</prerequisites>   
+				</ResearchProjectDef>
+			</value>
+		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
-		<xpath>Defs/ResearchProjectDef[defName="Piano"]</xpath>
-		<value>
-			<ResearchProjectDef>
-				<defName>Piano</defName>
-				<label>piano</label>
-				<description>Craft the harpsichord, a complex stationary musical instrument.</description>
-				<baseCost>500</baseCost>
-				<tab>DankPyon_MedievalResearchTab</tab>
-				<techLevel>Medieval</techLevel>
-				<researchViewX>6</researchViewX>
-				<researchViewY>5.8</researchViewY> 
-				<prerequisites>
-				<li>ComplexFurniture</li>
-				</prerequisites>   
-			</ResearchProjectDef>
-		</value>
-	</Operation>
 	<!-- ============================ Core ThingDef Research Prerequisite Replace ========================== -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName = "Apparel_Pants"]/recipeMaker</xpath>
@@ -322,6 +343,28 @@
 	</Operation>
 	
 	<!-- ============================ Core Research Project Coordinates ========================== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewX</xpath>
+					<value>
+						<researchViewX>6.00</researchViewX>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewY</xpath>
+					<value>
+						<researchViewY>4.60</researchViewY>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -434,18 +477,7 @@
 					<researchViewY>4.20</researchViewY>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewX</xpath>
-				<value>
-					<researchViewX>6.00</researchViewX>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewY</xpath>
-				<value>
-					<researchViewY>4.60</researchViewY>
-				</value>
-			</li>
+			
 			
 		</operations>
 	</Operation>

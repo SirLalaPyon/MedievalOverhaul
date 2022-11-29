@@ -329,6 +329,9 @@
 			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
 		</comps>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -413,6 +416,9 @@
 			</li>
 		</comps>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<!--======================= Tribal Furniture ==============================-->

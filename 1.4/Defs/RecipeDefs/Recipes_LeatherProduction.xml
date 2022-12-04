@@ -31,17 +31,19 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
 				</filter>
 				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>WoodLog</li>
-			</thingDefs>
+			<categories>
+				<li>DankPyon_RawWood</li>
+				<li>DankPyon_Wood</li>
+			</categories>
 		</fixedIngredientFilter>
 	</RecipeDef>
 
@@ -82,15 +84,17 @@
 			<li>
 				<filter>
 					<categories>
-					   <li>MeatRaw</li>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
 					</categories>
-				 </filter>
+				</filter>
 				<count>28</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
-				<li>MeatRaw</li>
+				<li>DankPyon_RawWood</li>
+				<li>DankPyon_Wood</li>
 			</categories>
 		</fixedIngredientFilter>
 	</RecipeDef>
@@ -128,17 +132,19 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
 				</filter>
 				<count>100</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>WoodLog</li>
-			</thingDefs>
+			<categories>
+				<li>DankPyon_RawWood</li>
+				<li>DankPyon_Wood</li>
+			</categories>
 		</fixedIngredientFilter>
 	</RecipeDef>
 

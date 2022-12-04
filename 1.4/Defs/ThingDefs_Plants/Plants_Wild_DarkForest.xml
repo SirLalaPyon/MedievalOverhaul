@@ -37,13 +37,13 @@
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
 				<kindToSpawn>DankPyon_Schrat_Dark</kindToSpawn>
-				<chance>0.10</chance>
+				<chance>0.05</chance>
 				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
 				<faction>DankPyon_Forest_Faction</faction>
-				<!--mentalStateDef>Manhunter</mentalStateDef-->
+				<mentalStateDef>BerserkMechanoid</mentalStateDef>
 				<numberToSpawn>1~1</numberToSpawn>
 				<letterLabel>Awakened Schrat</letterLabel>
-				<letterDescription>An ancient schrat has been awakened due to the cutting of great trees. Make sure to not anger it!</letterDescription>
+				<letterDescription>An ancient schrat has been angered due to the cutting of great trees. Make sure to not anger it!</letterDescription>
 				<letterDef>NeutralEvent</letterDef>
 				<notToxicFallout>false</notToxicFallout>
 			</li>
@@ -106,13 +106,13 @@
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
 				<kindToSpawn>DankPyon_Schrat_Dark</kindToSpawn>
-				<chance>0.10</chance>
+				<chance>0.05</chance>
 				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
 				<faction>DankPyon_Forest_Faction</faction>
-				<!--mentalStateDef>Manhunter</mentalStateDef-->
+				<mentalStateDef>BerserkMechanoid</mentalStateDef>
 				<numberToSpawn>1~1</numberToSpawn>
 				<letterLabel>Awakened Schrat</letterLabel>
-				<letterDescription>An ancient schrat has been awakened due to the cutting of great trees. Make sure to not anger it!</letterDescription>
+				<letterDescription>An ancient schrat has been angered due to the cutting of great trees. Make sure to not anger it!</letterDescription>
 				<letterDef>NeutralEvent</letterDef>
 				<notToxicFallout>false</notToxicFallout>
 			</li>
@@ -219,13 +219,13 @@
 	<comps>
 		<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
 			<kindToSpawn>DankPyon_Schrat_Dark</kindToSpawn>
-			<chance>0.10</chance>
+			<chance>0.05</chance>
 			<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
 			<faction>DankPyon_Forest_Faction</faction>
-			<!--mentalStateDef>Manhunter</mentalStateDef-->
+			<mentalStateDef>BerserkMechanoid</mentalStateDef>
 			<numberToSpawn>1~1</numberToSpawn>
 			<letterLabel>Awakened Schrat</letterLabel>
-			<letterDescription>An ancient schrat has been awakened due to the cutting of great trees. Make sure to not anger it!</letterDescription>
+			<letterDescription>An ancient schrat has been angered due to the cutting of great trees. Make sure to not anger it!</letterDescription>
 			<letterDef>NeutralEvent</letterDef>
 			<notToxicFallout>false</notToxicFallout>
 		</li>

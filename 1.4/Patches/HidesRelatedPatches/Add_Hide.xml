@@ -7,6 +7,28 @@
 			<!--=============== Start of adding pelts to butcher products ===============-->
 
 			<!--=============== Ruggable ===============-->
+			<!-- Timber Wolf -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef [defName = "Wolf_Timber"]/lifeStages/li[3]</xpath>
+                <value>
+                    <butcherBodyPart>
+                        <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+                        <thing>DankPyon_Hide_WolfTimber</thing>
+                        <allowFemale>true</allowFemale>
+                    </butcherBodyPart>
+                </value>
+            </li>
+            <!-- Arctic Wolf -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/PawnKindDef [defName = "Wolf_Arctic"]/lifeStages/li[3]</xpath>
+                <value>
+                    <butcherBodyPart>
+                        <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+                        <thing>DankPyon_Hide_WolfArctic</thing>
+                        <allowFemale>true</allowFemale>
+                    </butcherBodyPart>
+                </value>
+            </li>
 			<!-- Panther -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef [defName = "Panther"]/lifeStages/li[3]</xpath>

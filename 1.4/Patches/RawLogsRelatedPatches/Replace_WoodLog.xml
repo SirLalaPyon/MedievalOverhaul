@@ -89,22 +89,22 @@
 	</Operation>
 
 	<!-- Make Wood Fired Generator use logs -->
-	<Operation Class="PatchOperationAdd">
+	<!--Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 		<value>
 			<li>DankPyon_RawWood</li>
 		</value>
-	</Operation>
+	</Operation-->
 
 	<!-- Make campfire use logs -->
-	<Operation Class="PatchOperationAdd">
+	<!--Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 		<value>
 			<li>DankPyon_RawWood</li>
 		</value>
-	</Operation>
+	</Operation-->
 
-	<Operation Class="PatchOperationFindMod">
+	<!--Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Furniture Expanded - Power</li>
 		</mods>
@@ -113,7 +113,7 @@
 					defName="VFE_IndustrialWoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 			<name>DankPyon_RawWood</name>
 		</match>
-	</Operation>
+	</Operation-->
 
 	<!-- Make Passive cooler use raw logs-->
 	<Operation Class="PatchOperationRemove">

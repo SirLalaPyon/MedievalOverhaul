@@ -33,4 +33,18 @@
     <stuffCategories Inherit="false" />
   </ThingDef>
 
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>DankPyon_UnfinishedLivingShield</defName>
+    <label>unfinished shield</label>
+    <description>An unfinished shield.</description>
+    <statBases>
+      <Flammability>1</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Unfinished/UnfinishedLivingShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
 </Defs>

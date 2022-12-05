@@ -53,4 +53,37 @@
     </genStep>
 </GenStepDef>
 
+
+<!-- Battlefield -->
+<GenStepDef>
+    <order>550</order>
+    <defName>DankPyon_AmbushedCaravan</defName>
+    <genStep Class="GenStep_ScatterGroup">
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <minSpacing>50</minSpacing>
+      <count>1</count>
+      <validators>
+        <li Class="ScattererValidator_Buildable">
+          <radius>5</radius>
+          <affordance>Heavy</affordance>
+        </li>
+      </validators>
+      <groups>
+        <li>
+          <things>
+            <AncientMechDetritus>1</AncientMechDetritus>
+          </things>
+          <spawnAtCenter>AncientMechDropBeacon</spawnAtCenter>
+          <spawnAtCenterFilthDef>Filth_MachineBits</spawnAtCenterFilthDef>
+          <indoorRuin>false</indoorRuin>
+          <coveredCellsPer10Cells>0.2~0.4</coveredCellsPer10Cells>
+          <filthDef>Filth_MachineBits</filthDef>
+          <filthExpandBy>1</filthExpandBy>
+          <filthChance>0.4</filthChance>
+          <clusterRectRadius>8~10</clusterRectRadius>
+        </li>
+      </groups>
+    </genStep>
+  </GenStepDef>
+
 </Defs>

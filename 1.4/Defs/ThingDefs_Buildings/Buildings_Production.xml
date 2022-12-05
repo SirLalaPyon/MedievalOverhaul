@@ -617,13 +617,13 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 
-				<stuffCategories>
-					<li>Stony</li>
-				</stuffCategories>
-				<costStuffCount>30</costStuffCount>
-				<costList>
-					<WoodLog>20</WoodLog>
-				</costList>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
 
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -645,7 +645,7 @@
 		<designationCategory>Production</designationCategory>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-					<isMealSource>true</isMealSource>
+			<isMealSource>true</isMealSource>
 		</building>
 
 		<comps>

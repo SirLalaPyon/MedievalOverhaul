@@ -461,4 +461,77 @@
         </recipeMaker>
     </ThingDef>
 
+    <ThingDef ParentName="DankPyon_BaseShield">
+        <defName>DankPyon_ShieldLiving</defName>
+        <label>living shield</label>
+        <description>A shiled carved out of a remains of a living tree, slowly regrows any sustained damage.</description>
+        <graphicData>
+            <texPath>Apparel/Utility/HeaterSchrat/HeaterSchrat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+
+        <statBases>
+            <MarketValue>400</MarketValue>
+            <MaxHitPoints>160</MaxHitPoints>
+            <Flammability>0.3</Flammability>
+            <StuffEffectMultiplierArmor>0.44</StuffEffectMultiplierArmor>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>4</Mass>
+        </statBases>
+
+        <costList>
+            <DankPyon_AncientWood>2</DankPyon_AncientWood>
+            <DankPyon_GlowingResin>1</DankPyon_GlowingResin>
+        </costList>
+
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_SelfhealHitpoints">
+                <ticksPerHeal>2000</ticksPerHeal> <!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+            </li>
+            <!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>DankPyon_ShieldSchrat</li>
+                </shieldTags>
+                <useDeflectMetalEffect>true</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Apparel/Utility/HeaterSchrat/HeaterSchrat</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.5</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.05, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.05, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>DankPyon_AlchemyBench</li>
+            </recipeUsers>
+            <researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
+            <unfinishedThingDef>DankPyon_UnfinishedLivingShield</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+
 </Defs>

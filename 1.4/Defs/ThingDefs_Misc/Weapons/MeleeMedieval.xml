@@ -486,7 +486,7 @@
 					<angleOffset>-143</angleOffset>
 				</north>
 				<east>
-					<drawOffset>(-0.34,0,0.30)</drawOffset>
+					<drawOffset>(0.1,0,0.30)</drawOffset>
 					<angleOffset>-122</angleOffset>
 				</east>
 				<south>
@@ -494,7 +494,7 @@
 					<angleOffset>-143</angleOffset>
 				</south>
 				<west>
-					<drawOffset>(0.34,0,0.30)</drawOffset>
+					<drawOffset>(-0.1,0,0.30)</drawOffset>
 					<angleOffset>122</angleOffset>
 				</west>
 			</weaponDraftedDrawOffsets>		
@@ -712,7 +712,7 @@
 					<angleOffset>-143</angleOffset>
 				</north>
 				<east>
-					<drawOffset>(-0.34,0,0.60)</drawOffset>
+					<drawOffset>(0.1,0,0.60)</drawOffset>
 					<angleOffset>-122</angleOffset>
 				</east>
 				<south>
@@ -720,7 +720,7 @@
 					<angleOffset>-143</angleOffset>
 				</south>
 				<west>
-					<drawOffset>(0.34,0,0.60)</drawOffset>
+					<drawOffset>(-0.1,0,0.60)</drawOffset>
 					<angleOffset>122</angleOffset>
 				</west>
 			</weaponDraftedDrawOffsets>		
@@ -884,11 +884,6 @@
       <li>MedievalMeleeBasic</li>
     </weaponTags>
 
-    <equippedStatOffsets>
-      <PlantHarvestYield>0.15</PlantHarvestYield>
-      <PlantWorkSpeed>0.15</PlantWorkSpeed>
-    </equippedStatOffsets>
-    
     <tools>
       <li Class="DankPyon.Tool_Melee">
         <label>shaft</label>
@@ -1518,19 +1513,19 @@
 		<li Class="VFECore.ThingDefExtension">
 			<weaponDraftedDrawOffsets>
 				<north>
-					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<drawOffset>(0.34,0,0.60)</drawOffset>
 					<angleOffset>-143</angleOffset>
 				</north>
 				<east>
-					<drawOffset>(-0.34,0,0.70)</drawOffset>
+					<drawOffset>(0.1,0,0.60)</drawOffset>
 					<angleOffset>-122</angleOffset>
 				</east>
 				<south>
-					<drawOffset>(-0.34,0,0.70)</drawOffset>
+					<drawOffset>(-0.34,0,0.60)</drawOffset>
 					<angleOffset>-143</angleOffset>
 				</south>
 				<west>
-					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<drawOffset>(-0.1,0,0.60)</drawOffset>
 					<angleOffset>122</angleOffset>
 				</west>
 			</weaponDraftedDrawOffsets>		
@@ -2441,27 +2436,27 @@
   <ThingDef Name="DankPyon_Base_SharpSword_Oversize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
 	<modExtensions>
 		<li Class="VFECore.ThingDefExtension">
-			<weaponDraftedDrawOffsets >
+			<weaponDraftedDrawOffsets>
 				<north>
-					<drawOffset>(0.30,0.0,0.40)</drawOffset>
-					<angleOffset>-90</angleOffset>
+					<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->
+					<angleOffset>115</angleOffset>
 				</north>
 				<east>
-					<drawOffset>(0.30,0.20,0.40)</drawOffset>
-					<angleOffset>-90</angleOffset>
+					<drawOffset>(0.30,0.00,0.20)</drawOffset> <!--0.30,0.2,0.40-->
+					<angleOffset>-45</angleOffset>
 				</east>
 				<south>
-					<drawOffset>(0.30,0.20,0.40)</drawOffset>
-					<angleOffset>-90</angleOffset>
+					<drawOffset>(0.30,0.00,0.20)</drawOffset>
+					<angleOffset>-45</angleOffset>
 				</south>
 				<west>
-					<drawOffset>(-0.30,0.20,0.40)</drawOffset>
-					<angleOffset>90</angleOffset>
+					<drawOffset>(-0.30,0.0,0.20)</drawOffset>
+					<angleOffset>45</angleOffset>
 				</west>
-			</weaponDraftedDrawOffsets >
+			</weaponDraftedDrawOffsets>
 		</li>
 	</modExtensions> 
-    <equippedAngleOffset>30</equippedAngleOffset> 
+    <!--equippedAngleOffset>-45</equippedAngleOffset--> 
 	<techLevel>Medieval</techLevel>
   </ThingDef>
 <!-- ==================== Two-Handed Sword ==================== -->
@@ -2653,27 +2648,27 @@
   </graphicData>
 	<modExtensions>
 		<li Class="VFECore.ThingDefExtension">
-			<weaponDraftedDrawOffsets >
+			<weaponDraftedDrawOffsets>
 				<north>
-					<drawOffset>(0.30,0.0,0.40)</drawOffset>
-					<angleOffset>-90</angleOffset>
+					<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->
+					<angleOffset>115</angleOffset>
 				</north>
 				<east>
-					<drawOffset>(0.30,0.20,0.40)</drawOffset>
-					<angleOffset>-90</angleOffset>
+					<drawOffset>(0.30,0.00,0.20)</drawOffset> <!--0.30,0.2,0.40-->
+					<angleOffset>-45</angleOffset>
 				</east>
 				<south>
-					<drawOffset>(0.30,0.20,0.40)</drawOffset>
-					<angleOffset>-90</angleOffset>
+					<drawOffset>(0.30,0.00,0.20)</drawOffset>
+					<angleOffset>-45</angleOffset>
 				</south>
 				<west>
-					<drawOffset>(-0.30,0.20,0.40)</drawOffset>
-					<angleOffset>90</angleOffset>
+					<drawOffset>(-0.30,0.0,0.20)</drawOffset>
+					<angleOffset>45</angleOffset>
 				</west>
-			</weaponDraftedDrawOffsets >
+			</weaponDraftedDrawOffsets>
 		</li>
 	</modExtensions> 
-    <equippedAngleOffset>30</equippedAngleOffset> 
+    <!--equippedAngleOffset>30</equippedAngleOffset--> 
 
     <statBases>
         <MaxHitPoints>280</MaxHitPoints>
@@ -2909,19 +2904,19 @@
 		<li Class="VFECore.ThingDefExtension">
 			<weaponDraftedDrawOffsets>
 				<north>
-					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<drawOffset>(0.34,0,0.60)</drawOffset>
 					<angleOffset>-143</angleOffset>
 				</north>
 				<east>
-					<drawOffset>(-0.34,0,0.70)</drawOffset>
+					<drawOffset>(0.1,0,0.60)</drawOffset>
 					<angleOffset>-122</angleOffset>
 				</east>
 				<south>
-					<drawOffset>(-0.34,0,0.70)</drawOffset>
+					<drawOffset>(-0.34,0,0.60)</drawOffset>
 					<angleOffset>-143</angleOffset>
 				</south>
 				<west>
-					<drawOffset>(0.34,0,0.70)</drawOffset>
+					<drawOffset>(-0.1,0,0.60)</drawOffset>
 					<angleOffset>122</angleOffset>
 				</west>
 			</weaponDraftedDrawOffsets>		

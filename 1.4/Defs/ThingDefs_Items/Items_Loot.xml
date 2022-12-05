@@ -468,9 +468,7 @@
             <li Class="CompProperties_UseEffectPlaySound">
                 <soundOnUsed>MechSerumUsed</soundOnUsed>
             </li>
-            <li Class="CompProperties_UseEffect">
-                <compClass>CompUseEffect_DestroySelf</compClass>
-            </li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
         </comps>
     </ThingDef>
 
@@ -484,8 +482,8 @@
 
         <comps>
             <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
-                        <skillDefName>Shooting</skillDefName>
-                        <xpAmount>15000</xpAmount>
+                <skillDefName>Shooting</skillDefName>
+                <xpAmount>15000</xpAmount>
             </li>
         </comps>
     </ThingDef>

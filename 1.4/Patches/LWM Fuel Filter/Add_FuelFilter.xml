@@ -58,28 +58,7 @@
 				</li>
 
 				
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../..</xpath>
-					<value>
-						<inspectorTabs>
-							<li>ESCP_FuelExtension.ITab_Fuel</li>
-						</inspectorTabs>
-					</value>
-				</li>
-
-					<!-- If there is no ESCP_FuelExtension.ITab_Fuel, add ESCP_FuelExtension.ITab_Fuel-->
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../../inspectorTabs[li="ESCP_FuelExtension.ITab_Fuel"]</xpath>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../../inspectorTabs</xpath>
-						<value>
-							<li>ESCP_FuelExtension.ITab_Fuel</li>
-						</value>
-					</nomatch>
-				</li>
-				
-				<!-- If there is no ESCP_FuelExtension.ITab_Fuel, add ESCP_FuelExtension.ITab_Fuel-->
+				<!-- If there is no inspector tab, add inspector tab AND ESCP_FuelExtension.ITab_Fuel-->
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../../inspectorTabs</xpath>
 					<nomatch Class="PatchOperationAdd">
@@ -88,6 +67,17 @@
 							<inspectorTabs>
 								<li>ESCP_FuelExtension.ITab_Fuel</li>
 							</inspectorTabs>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- If there is no ESCP_FuelExtension.ITab_Fuel inside an existing inspectorTab, add ESCP_FuelExtension.ITab_Fuel-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../../inspectorTabs[li="ESCP_FuelExtension.ITab_Fuel"]</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../../inspectorTabs</xpath>
+						<value>
+							<li>ESCP_FuelExtension.ITab_Fuel</li>
 						</value>
 					</nomatch>
 				</li>

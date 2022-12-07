@@ -69,6 +69,8 @@
   <ItemGroup>
     <Compile Include="DamageWorkers\DeathActionWorker_DustPuff.cs" />
     <Compile Include="Harmony\CompGenericHide.cs" />
+    <Compile Include="HediffComps\Hediff_UnpleasantAftermathSet.cs" />
+    <Compile Include="HediffComps\Hediff_UnpleasantAftermath.cs" />
     <Compile Include="ThingClasses\HideGeneric.cs" />
     <Compile Include="ModExtensions.cs" />
     <Compile Include="ThingClasses\DefModExtensions\ButcherProperties.cs" />

@@ -588,7 +588,10 @@
             </defaultOutfitTags>
         </apparel>
 
-        <comps Inherit="False"/>
+        <comps Inherit="False">
+            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
     </ThingDef>
 
 

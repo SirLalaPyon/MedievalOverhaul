@@ -579,8 +579,7 @@
 	<graphicData>
       <texPath>Misc/Cart</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2.5,2.5)</drawSize>
+      <drawSize>(4,4)</drawSize>
       <damageData>
         <rect>(0.1,0.1,1.8,1.8)</rect>
       </damageData>
@@ -603,11 +602,6 @@
       <WorkToBuild>2000</WorkToBuild>
     </statBases>
 
-    <killedLeavings>
-      <WoodLog>40</WoodLog>
-      <DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
-    </killedLeavings>
-
     <costList>
       <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
     </costList>
@@ -629,7 +623,6 @@
       <alwaysDeconstructible>true</alwaysDeconstructible>
     </building>
     <selectable>true</selectable>
-    <soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
     <drawerType>MapMeshAndRealTime</drawerType>
     <repairEffect>ConstructDirt</repairEffect>
 	<designationCategory>Misc</designationCategory>

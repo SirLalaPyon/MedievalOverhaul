@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mote_TempRoof"]/graphicData/texPath</xpath>
+		<value>
+				<texPath>Mote/TempRoof_Medieval</texPath>
+		</value>
+	</Operation>
+
+</Patch>	

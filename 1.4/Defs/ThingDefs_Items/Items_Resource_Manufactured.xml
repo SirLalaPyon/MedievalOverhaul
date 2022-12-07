@@ -95,6 +95,12 @@
         <Flammability>2</Flammability>
         <MaxHitPoints>60</MaxHitPoints>
     </statBases>
+
+    <comps>
+        <li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+            <rate>8</rate>
+        </li>
+    </comps>
 </ThingDef>
 
 <!--=============== Gunpowder ====================-->

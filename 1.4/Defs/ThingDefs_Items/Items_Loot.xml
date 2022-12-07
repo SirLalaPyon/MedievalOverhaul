@@ -14,6 +14,33 @@
         </tradeTags>
   </ThingDef>
 
+    <!--==================== Scrap ====================-->
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_BrokenWeapons</defName>
+        <label>broken weapons</label>
+        <description>Metal weapon scraps thare are broken and unusable. Can be smelted to recover resources.</description>
+        <graphicData>
+            <texPath>Special/BrokenWeapons</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <soundDrop>ChunkSlag_Drop</soundDrop>
+        <smeltable>true</smeltable>
+
+        <smeltProducts>
+            <Steel>2</Steel>
+            <DankPyon_IronIngot>5</DankPyon_IronIngot>
+        </smeltProducts>
+    </ThingDef>
+
     <!--==================== Books ====================-->
     <ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_Book</defName>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 	<!-- ============================ Core Tab Change ========================== -->
-	<Operation Class="PatchOperationSequence">
+	<!--Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ResearchProjectDef[defName="Devilstrand" or
@@ -22,7 +22,78 @@
 				</value>
 			</li>
 		</operations>
+	</Operation-->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Devilstrand" or
+					defName="Stonecutting" or 
+					defName="PsychoidBrewing" or
+					defName="Smithing" or
+					defName="RoyalApparel" or
+					defName="CarpetMaking" or
+					defName="NobleApparel" or
+					defName="PassiveCooler" or
+					defName="ComplexFurniture" or
+					defName="TreeSowing" or
+					defName="Harp" or
+					defName="Cocoa" or
+					defName="Pemmican"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="Devilstrand" or
+					defName="Stonecutting" or 
+					defName="PsychoidBrewing" or
+					defName="Smithing" or
+					defName="RoyalApparel" or
+					defName="CarpetMaking" or
+					defName="NobleApparel" or
+					defName="PassiveCooler" or
+					defName="ComplexFurniture" or
+					defName="TreeSowing" or
+					defName="Harp" or
+					defName="Cocoa" or
+					defName="Pemmican"]/tab</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</match>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Devilstrand" or
+					defName="Stonecutting" or 
+					defName="PsychoidBrewing" or
+					defName="Smithing" or
+					defName="RoyalApparel" or
+					defName="CarpetMaking" or
+					defName="NobleApparel" or
+					defName="PassiveCooler" or
+					defName="ComplexFurniture" or
+					defName="TreeSowing" or
+					defName="Harp" or
+					defName="Cocoa" or
+					defName="Pemmican"][not(tab)]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Devilstrand" or
+					defName="Stonecutting" or 
+					defName="PsychoidBrewing" or
+					defName="Smithing" or
+					defName="RoyalApparel" or
+					defName="CarpetMaking" or
+					defName="NobleApparel" or
+					defName="PassiveCooler" or
+					defName="ComplexFurniture" or
+					defName="TreeSowing" or
+					defName="Harp" or
+					defName="Cocoa" or
+					defName="Pemmican"][not(tab)]</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</match>
+	</Operation>
+
+	
+	
 	<!-- ============================ Core Research Project Removal ========================== -->
 	
 	<!-- ============================ Tweaked by pre-existing patches ========================== -->
@@ -58,13 +129,22 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]</xpath>
-		<value>
-			<prerequisites>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]/prerequisites</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]/prerequisites</xpath>
+			<value>
 				<li>DankPyon_RusticFurniture</li>
-			</prerequisites>
-		</value>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]</xpath>
+			<value>
+				<prerequisites>
+					<li>DankPyon_RusticFurniture</li>
+				</prerequisites>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">

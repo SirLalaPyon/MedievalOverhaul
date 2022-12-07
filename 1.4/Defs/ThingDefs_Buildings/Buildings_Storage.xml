@@ -1888,7 +1888,7 @@
 					<li>DankPyon_Book_IntoTheRuins</li>
 					<li>DankPyon_Book_TheBeginning</li>
 
-          			<li>DankPyon_Book_MilitaryBlades</li>
+		  			<li>DankPyon_Book_MilitaryBlades</li>
 					<li>DankPyon_Book_NobleBlades</li>
 					<li>DankPyon_Book_MilitaryMaces</li>
 					<li>DankPyon_Book_NobleMaces</li>
@@ -1917,7 +1917,7 @@
 					<li>DankPyon_Book_TheBeginning</li>
 
 					<li>DankPyon_RusticBookshelf</li>
-          			<li>DankPyon_Book_MilitaryBlades</li>
+		  			<li>DankPyon_Book_MilitaryBlades</li>
 					<li>DankPyon_Book_NobleBlades</li>
 					<li>DankPyon_Book_MilitaryMaces</li>
 					<li>DankPyon_Book_NobleMaces</li>
@@ -2046,5 +2046,158 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
+	</ThingDef>
+
+	<!-- Carts -->
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_CartBase">
+		<defName>DankPyon_Storage_Cart_Empty</defName>
+		<label>empty cart</label>
+		<description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. Can be used to store items.</description>
+		<graphicData>
+			<texPath>Storage/Cart_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<size>(2,2)</size>
+
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories Inherit="false">
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>2500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_CartBase">
+		<defName>DankPyon_Storage_Cart_Assorted</defName>
+		<label>assorted cart</label>
+		<graphicData>
+			<texPath>Storage/Cart_Assorted</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_CartBase">
+		<defName>DankPyon_Storage_Cart_Ore</defName>
+		<label>ore cart</label>
+		<graphicData>
+			<texPath>Storage/Cart_Ore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<categories>
+						<li>DankPyon_RawOres</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>DankPyon_RawOres</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_CartBase">
+		<defName>DankPyon_Storage_Cart_PlantRaw</defName>
+		<label>raw plant cart</label>
+		<graphicData>
+			<texPath>Storage/Cart_PlantRaw</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_CartBase">
+		<defName>DankPyon_Storage_Cart_Textiles</defName>
+		<label>textiles cart</label>
+		<graphicData>
+			<texPath>Storage/Cart_Textiles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<categories>
+						<li>DankPyon_Hides</li>
+						<li>Textiles</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>DankPyon_Hides</li>
+						<li>Textiles</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_CartBase">
+		<defName>DankPyon_Storage_Cart_RawWood</defName>
+		<label>raw wood cart</label>
+		<graphicData>
+			<texPath>Storage/Cart_WoodLog</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<categories>
+						<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>	
 	</ThingDef>
 </Defs>

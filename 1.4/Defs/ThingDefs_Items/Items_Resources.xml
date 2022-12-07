@@ -84,6 +84,12 @@
 		<butcherProducts>
 			<WoodLog>2</WoodLog>
 		</butcherProducts>
+
+		<comps>
+			<li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+				<rate>2</rate>
+			</li>
+    	</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceVerbBase">
@@ -156,6 +162,12 @@
 		<butcherProducts>
 			<DankPyon_DarkWoodLog>2</DankPyon_DarkWoodLog>
 		</butcherProducts>
+
+		<comps>
+			<li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+				<rate>2</rate>
+			</li>
+    	</comps>
 	</ThingDef>
 
   <!--============================== Processed Wood ==============================-->
@@ -228,6 +240,12 @@
 		</li>
 		</tools>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+
+		<comps>
+			<li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+				<rate>1</rate>
+			</li>
+    	</comps>
 	</ThingDef>
 
   <!-- Elven Wood -->
@@ -299,6 +317,12 @@
 		</li>
 		</tools>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+
+		<comps>
+			<li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+				<rate>5</rate>
+			</li>
+    	</comps>
 	</ThingDef>
 
   <!-- Dryad Wood -->
@@ -367,6 +391,12 @@
 	  </li>
 	</tools>
 	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+
+		<comps>
+			<li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+				<rate>5</rate>
+			</li>
+    	</comps>
   </ThingDef>
 
   <!-- Ancient Wood -->
@@ -464,6 +494,12 @@
 	<burnableByRecipe>false</burnableByRecipe>
 	<smeltable>false</smeltable>
 	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+
+	<comps>
+        <li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+            <rate>4</rate>
+        </li>
+    </comps>
   </ThingDef>
 <!--============================== Ice ==============================-->
 <ThingDef Name="IceResourceBase" Abstract="True">

@@ -53,7 +53,6 @@
 		</comps>
 	</ThingDef>
 
-	<!-- NEW STORAGE BASE  ; replace top one-->
 	<ThingDef Abstract="True" ParentName="ShelfBase" Name="DankPyon_VanillaShelfBase">
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
@@ -1813,7 +1812,7 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-			<WorkToBuild>7500</WorkToBuild>
+			<WorkToBuild>2500</WorkToBuild>
 			<Mass>40</Mass>
 			<Flammability>1.0</Flammability>
 			<Beauty>5</Beauty>

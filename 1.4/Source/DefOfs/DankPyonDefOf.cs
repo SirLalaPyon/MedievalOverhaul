@@ -21,6 +21,8 @@ namespace DankPyon
         public static ThingCategoryDef DankPyon_Wood;
         public static ThingDef DankPyon_Leather_Rawhide;
         public static ProcessDef DankPyon_RawHidesProcess;
+
+        public static HediffDef DankPyon_UnpleasantAftermath;
     }
 
 }

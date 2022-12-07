@@ -16,6 +16,10 @@
 
 		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<drawerType>MapMeshAndRealTime</drawerType>
+
+		<building>
+			<deconstructible>false</deconstructible>
+		</building>
 	</ThingDef>
 
 
@@ -82,6 +86,7 @@
 		<defName>DankPyon_AncientFootman</defName>
 		<label>footman remains</label>
 		<description>The remains of a soldier. Can be scavenged for resources.</description>
+		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<graphicData>
 			<texPath>Ruins/FootmanRemains</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -101,8 +106,7 @@
 		<pathCost>50</pathCost>
 
 		<costList>
-			<DankPyon_BrokenWeapons>1</DankPyon_BrokenWeapons>
-			<DankPyon_Linen>5</DankPyon_Linen>
+			<DankPyon_Bone>1</DankPyon_Bone>
 		</costList>
 
 		<modExtensions>
@@ -121,10 +125,37 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>1~1</lootCount>
-				<lootChance>0.5</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
 					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Linen</li>
 					<li>DankPyon_BrokenWeapons</li>
 					<li>DankPyon_BrokenWeapons</li>
 					<li>DankPyon_Apparel_Hauberk</li>
@@ -154,6 +185,7 @@
 		<defName>DankPyon_RustedHauberk</defName>
 		<label>rusted hauberk</label>
 		<description>an old and rusty piece of chainmail. Can be salvaged for resources.</description>
+		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<graphicData>
 			<texPath>Ruins/RustedHauberk</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -199,6 +231,7 @@
 		<defName>DankPyon_RustedHelmet</defName>
 		<label>rusted helmet</label>
 		<description>Remains of a battlefield. Full of rusted weapons and armor. Can be salvaged for resources</description>
+		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<graphicData>
 			<texPath>Ruins/RustedHelm</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -250,6 +283,7 @@
 		<defName>DankPyon_RustedSwords</defName>
 		<label>rusted swords</label>
 		<description>Remains of a battlefield. Full of rusted weapons and armor. Can be salvaged for resources</description>
+		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<graphicData>
 			<texPath>Ruins/RustedSwords</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -314,6 +348,7 @@
 		<defName>DankPyon_AncientRuinedCart</defName>
 		<label>ancient ruined cart</label>
 		<description>An ambushed caravan. There are still some goods left behind. Can be salvaged for resources</description>
+		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<graphicData>
 			<texPath>Ruins/Cart_Ruined</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -379,6 +414,7 @@
 		<defName>DankPyon_AncientRuinedCrate</defName>
 		<label>ancient ruined crate</label>
 		<description>An old and ruined empty crate. Can be salvaged for resources</description>
+		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<graphicData>
 			<texPath>Ruins/RuinedCrate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -399,7 +435,7 @@
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-                    <texPath>Ruins/RuinedBarrel</texPath>
+                    <texPath>Ruins/Looted_RuinedCrate</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 					<color>(119,94,75)</color>
@@ -447,7 +483,49 @@
 			<color>(119,94,75)</color>
 		</graphicData>
 
-		
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.15</enemySpawnChance>
+				<hostileEnemy>true</hostileEnemy>
+				<emptyGraphicData>
+                    <texPath>Ruins/Looted_RuinedBarrel</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2,2)</drawSize>
+					<color>(119,94,75)</color>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>2~5</lootCount>
+				<lootChance>0.75</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>Gold</li>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Silver</li>
+					<li>Jade</li>
+					<li>DankPyon_RoxHorn</li>
+					<li>DankPyon_DaerAntler</li>
+					<li>DankPyon_DireBoarTusk</li>
+					<li>DankPyon_IronOre</li>
+					<li>DankPyon_IronIngot</li>
+					<li>DankPyon_GoldOre</li>
+					<li>DankPyon_Linen</li>
+					<li>DankPyon_Bone</li>
+					<li>DankPyon_Bone</li>
+				</randomItems>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 </Defs> 

@@ -43,4 +43,16 @@
 		</value>
 	</Operation>
 
+
+	<!-- For every workbench that contains extract metal from slag recipe, add extract metal from scrap recipe-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[recipes[li="ExtractMetalFromSlag"]]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[recipes[li="ExtractMetalFromSlag"]]/recipes</xpath>
+			<value>
+				<li>DankPyon_ExtractMetalFromScrap</li>
+			</value>
+		</match>
+	</Operation>
+
 </Patch>

@@ -56,8 +56,8 @@
 <RecipeDef ParentName="DankPyon_MakeableAmmunitionBase">
 	<defName>DankPyon_MakeBullet_ScorpioBoltBulk</defName>
 	<workAmount>2000</workAmount>		
-	<label>craft ballista bolts x50</label>
-	<jobString>Crafting 50 ballista bolts.</jobString>
+	<label>craft scorpio bolts x50</label>
+	<jobString>Crafting 50 scorpio bolts.</jobString>
 	<targetCountAdjustment>50</targetCountAdjustment>	
   <researchPrerequisites>
     <li>DankPyon_Ballista</li>
@@ -379,7 +379,7 @@
       <DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
     </products>
     <skillRequirements>
-      <Crafting>9</Crafting>
+      <Crafting>6</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
   </RecipeDef>

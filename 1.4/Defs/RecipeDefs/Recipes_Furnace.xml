@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+<RecipeDef>
+    <defName>DankPyon_ExtractMetalFromScrap</defName>
+    <label>smelt metal from scrap</label>
+    <description>Use heat and strong electromagnets to extract useful metal from scrap.</description>
+    <jobString>Smelting metal from slag.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_BrokenWeapons</li>
+				</thingDefs>
+				</filter>
+			<count>1</count>
+		</li>
+    </ingredients>
+    <specialProducts>
+      	<li>Smelted</li>
+    </specialProducts>
+    <fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_BrokenWeapons</li>
+		</thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
 <!-- Tar --> 
 <RecipeDef Name="DankPyon_TarBase">
 	<defName>DankPyon_Make_Tar</defName>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Add neolithic tech for @ParentName instead of @Name because patches are applied first before inheritance -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Primitive Core</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@ParentName="VBY_PrimitiveProductionBase" or 
+								@ParentName="VBY_NeolithicStorageBase" or 
+								@ParentName="VBY_ColdStorageBase" or
+								@ParentName="VBY_Hay_DoorBase" or
+								@ParentName="VBY_PrimWall" or
+								@ParentName="VBY_PrimitiveBenchBase"]</xpath>
+			<value>
+				<techLevel>Neolithic</techLevel>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>El's Tribal Water</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="AdvancedPassiveCooler" or 
+								defName="JellyCooler" or  
+								defName="WaterTank" or 
+								defName="LongTorchLamp"]</xpath>
+			<value>
+				<techLevel>Neolithic</techLevel>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Tribal Signal Fire (Continued)</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="SignalFire"]</xpath>
+			<value>
+				<techLevel>Neolithic</techLevel>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Replace every WoodLog to be DankPyon_RawWood for every neolithic building-->
+	<Operation Class="PatchOperationSetName">
+		<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]/costList/WoodLog</xpath>
+		<name>DankPyon_RawWood</name>
+	</Operation>
+
+	<!-- Add every WoodLog to have DankPyon_RawWood stuff category for every neolithic building that has woody stuff category-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]/stuffCategories</xpath>
+		<value>
+			<li>DankPyon_RawWood</li>
+		</value>
+	</Operation>
+</Patch>	

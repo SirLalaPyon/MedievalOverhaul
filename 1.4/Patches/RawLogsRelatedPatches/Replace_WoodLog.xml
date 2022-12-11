@@ -117,22 +117,51 @@
 
 	<!-- Make Passive cooler use raw logs-->
 	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="PassiveCooler"]/costList</xpath>
+		<xpath>Defs/ThingDef[defName="PassiveCooler" or defName="TorchLamp"]/costList</xpath>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
+		<xpath>Defs/ThingDef[defName="PassiveCooler" or defName="TorchLamp"]</xpath>
 		<value>
 			<stuffCategories>
 				<li>DankPyon_RawWood</li>
 				<li>Woody</li>
 			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
+		<value>
 			<costStuffCount>100</costStuffCount>
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TorchLamp"]</xpath>
+		<value>
+			<costStuffCount>20</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TorchLamp"]/graphicData</xpath>
+		<value>
+			<shaderType>CutoutComplex</shaderType>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
+		<xpath>Defs/ThingDef[defName="TorchLamp"]/uiIconPath</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TorchLamp"]/uiIconScale</xpath>
+	</Operation>
+	
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="PassiveCooler" or defName="TorchLamp"]/constructEffect</xpath>
 	</Operation>
 
 	<!-- Caravans sell logs -->

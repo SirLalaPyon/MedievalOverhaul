@@ -118,6 +118,7 @@
 		<costList Inherit="false"/>
 		<stuffCategories>
 			<li>Woody</li>
+			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
 
@@ -708,8 +709,7 @@
 		<description>A simple platform on which to sit. Not very comfortable, but much better than nothing.Commonly seen at taverns and inns. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
 			<texPath>Furniture/RusticRoundStool</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawRotated>false</drawRotated>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
 				<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
@@ -749,12 +749,12 @@
 
 	<ThingDef ParentName="DankPyon_ArtableFurnitureBase">
 		<defName>DankPyon_RusticChair</defName>
-		<label>rustic chair</label>
+		<label>rustic dining chair</label>
 		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
 			<texPath>Furniture/RusticChair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(2,2)</drawSize>
 			<damageData>
 				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
 				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
@@ -778,7 +778,6 @@
 		<socialPropernessMatters>true</socialPropernessMatters>
 
 		<stuffCategories>
-			<li>Metallic</li>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
@@ -791,6 +790,51 @@
 			<isSittable>true</isSittable>
 		</building>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+		<defName>DankPyon_RusticNobleChair</defName>
+		<label>rustic noble chair</label>
+		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
+		<graphicData>
+			<texPath>Furniture/RusticNobleChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Mass>7</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>12</Beauty>
+			<Comfort>0.72</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+
+		<pathCost>30</pathCost>
+		<designationHotKey>Misc7</designationHotKey>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableBase">
@@ -836,8 +880,67 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
+		<defName>DankPyon_RusticTable1x1c</defName>
+		<label>rustic table (1x1)</label>
+		<graphicData>
+			<texPath>Furniture/RusticTable1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>38</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>2.5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
+
+		<size>(1,1)</size>
+		<costStuffCount>15</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
+		<defName>DankPyon_ReinforcedRusticTable1x1c</defName>
+		<label>reinforced table (1x1)</label>
+		<graphicData>
+			<texPath>Furniture/ReinforcedRusticTable1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>625</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+
+		<size>(1,1)</size>
+		<costStuffCount>15</costStuffCount>
+		<costList>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
 		<defName>DankPyon_RusticTable1x2c</defName>
-		<label>table (1x2)</label>
+		<label>rustic table (1x2)</label>
 		<graphicData>
 			<texPath>Furniture/RusticTable1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -865,7 +968,7 @@
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
 		<defName>DankPyon_ReinforcedRusticTable1x2c</defName>
-		<label>table (1x2)</label>
+		<label>reinforced table (1x2)</label>
 		<graphicData>
 			<texPath>Furniture/ReinforcedRusticTable1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -896,7 +999,7 @@
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
 		<defName>DankPyon_RusticTable2x2c</defName>
-		<label>table (2x2)</label>
+		<label>rustic table (2x2)</label>
 		<graphicData>
 			<texPath>Furniture/RusticTable2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -957,7 +1060,7 @@
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
 		<defName>DankPyon_RusticRoundTable2x2c</defName>
-		<label>round table (2x2)</label>
+		<label>rustic round table (2x2)</label>
 		<graphicData>
 			<texPath>Furniture/RusticRoundTable2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -984,7 +1087,7 @@
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
 		<defName>DankPyon_Table2x4c</defName>
-		<label>table (2x4)</label>
+		<label>rustic table (2x4)</label>
 		<graphicData>
 			<texPath>Furniture/RusticTable2x4</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

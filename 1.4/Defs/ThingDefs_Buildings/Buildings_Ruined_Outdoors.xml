@@ -109,7 +109,7 @@
 			<DankPyon_Bone>1</DankPyon_Bone>
 		</costList>
 
-		<modExtensions>
+		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 					<li>Rat</li>
@@ -177,7 +177,7 @@
 					<li>DankPyon_Handaxe</li>
 				</randomItems>
 			</li>
-		</modExtensions>
+		</modExtensions-->
 	</ThingDef>
 
 
@@ -198,7 +198,7 @@
 			<DankPyon_IronOre>5</DankPyon_IronOre>
 		</costList>
 
-		<modExtensions>
+		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 					<li>Rat</li>
@@ -224,7 +224,7 @@
 					<li>DankPyon_Apparel_Heavy_Hauberk</li>
 				</randomItems>
 			</li>
-		</modExtensions>
+		</modExtensions-->
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SmallRuin" Name="DankPyon_RustedHelmetBase">
@@ -243,7 +243,7 @@
 			<DankPyon_IronOre>3</DankPyon_IronOre>
 		</costList>
 
-		<modExtensions>
+		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 					<li>Rat</li>
@@ -265,18 +265,13 @@
 					<li>DankPyon_BrokenWeapons</li>
 					<li>DankPyon_BrokenWeapons</li>
 					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
+					<li>DankPyon_BrokenWeapons</li>
 					<li>DankPyon_Headgear_ChainCoif</li>
 					<li>DankPyon_Headgear_ChainCoifClosed</li>
-					<li>DankPyon_Headgear_ChainCoifFull</li>
-					<li>DankPyon_Headgear_ChainNasalHelmet</li>
-					<li>DankPyon_Headgear_ChainNasalRedHelmet</li>
-					<li>DankPyon_Headgear_ChainKettleHelmet</li>
-					<li>DankPyon_Headgear_Chain_FlatTopHelmet</li>
-					<li>DankPyon_Headgear_ClosedChain_FlatTopHelmet</li>
-					<li>DankPyon_Headgear_ChainClosedFlatTopHelmet</li>
 				</randomItems>
 			</li>
-		</modExtensions>
+		</modExtensions-->
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SmallRuin" Name="DankPyon_RustedSwordsBase">
@@ -294,7 +289,8 @@
 		<costList>
 			<DankPyon_BrokenWeapons>2</DankPyon_BrokenWeapons>
 		</costList>
-		<modExtensions>
+
+		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 					<li>Rat</li>
@@ -324,7 +320,7 @@
 					<li>DankPyon_Handaxe</li>
 				</randomItems>
 			</li>
-		</modExtensions>
+		</modExtensions-->
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SmallRuin">
@@ -365,7 +361,7 @@
 			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
 		</costList>
 
-		<modExtensions>
+		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 					<li>Rat</li>
@@ -407,7 +403,7 @@
 					<li>DankPyon_Bone</li>
 				</randomItems>
 			</li>
-		</modExtensions>
+		</modExtensions-->
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SmallRuin" Name="DankPyon_RuinedCrateBase">
@@ -427,7 +423,7 @@
 			<WoodLog>5</WoodLog>
 		</costList>
 
-		<modExtensions>
+		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 					<li>Rat</li>
@@ -469,7 +465,7 @@
 					<li>DankPyon_Bone</li>
 				</randomItems>
 			</li>
-		</modExtensions>
+		</modExtensions-->
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RuinedCrateBase">
@@ -483,7 +479,7 @@
 			<color>(119,94,75)</color>
 		</graphicData>
 
-		<modExtensions>
+		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 					<li>Rat</li>
@@ -525,7 +521,7 @@
 					<li>DankPyon_Bone</li>
 				</randomItems>
 			</li>
-		</modExtensions>
+		</modExtensions-->
 	</ThingDef>
 
 </Defs> 

@@ -86,7 +86,7 @@
 		<defName>DankPyon_AncientFootman</defName>
 		<label>footman remains</label>
 		<description>The remains of a soldier. Can be scavenged for resources.</description>
-		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
 			<texPath>Ruins/FootmanRemains</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -185,7 +185,7 @@
 		<defName>DankPyon_RustedHauberk</defName>
 		<label>rusted hauberk</label>
 		<description>an old and rusty piece of chainmail. Can be salvaged for resources.</description>
-		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
 			<texPath>Ruins/RustedHauberk</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -231,7 +231,7 @@
 		<defName>DankPyon_RustedHelmet</defName>
 		<label>rusted helmet</label>
 		<description>Remains of a battlefield. Full of rusted weapons and armor. Can be salvaged for resources</description>
-		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
 			<texPath>Ruins/RustedHelm</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -278,7 +278,7 @@
 		<defName>DankPyon_RustedSwords</defName>
 		<label>rusted swords</label>
 		<description>Remains of a battlefield. Full of rusted weapons and armor. Can be salvaged for resources</description>
-		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
 			<texPath>Ruins/RustedSwords</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -344,7 +344,7 @@
 		<defName>DankPyon_AncientRuinedCart</defName>
 		<label>ancient ruined cart</label>
 		<description>An ambushed caravan. There are still some goods left behind. Can be salvaged for resources</description>
-		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
 			<texPath>Ruins/Cart_Ruined</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -410,7 +410,7 @@
 		<defName>DankPyon_AncientRuinedCrate</defName>
 		<label>ancient ruined crate</label>
 		<description>An old and ruined empty crate. Can be salvaged for resources</description>
-		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
 			<texPath>Ruins/RuinedCrate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

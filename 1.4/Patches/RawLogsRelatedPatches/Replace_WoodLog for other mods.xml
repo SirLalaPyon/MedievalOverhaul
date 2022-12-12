@@ -12,6 +12,7 @@
 								@ParentName="VBY_ColdStorageBase" or
 								@ParentName="VBY_Hay_DoorBase" or
 								@ParentName="VBY_PrimWall" or
+								@ParentName="VBY_TotemPoleBase" or
 								@ParentName="VBY_PrimitiveBenchBase"]</xpath>
 			<value>
 				<techLevel>Neolithic</techLevel>
@@ -46,17 +47,47 @@
 		</match>
 	</Operation>
 
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Primitive moisture pump</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="TVG_PrimitiveMoisturePump"]</xpath>
+			<value>
+				<techLevel>Neolithic</techLevel>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Tribal Crib</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Nej_TribalCrib"]</xpath>
+			<value>
+				<techLevel>Neolithic</techLevel>
+			</value>
+		</match>
+	</Operation>
+
 	<!-- Replace every WoodLog to be DankPyon_RawWood for every neolithic building-->
-	<Operation Class="PatchOperationSetName">
-		<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]/costList/WoodLog</xpath>
-		<name>DankPyon_RawWood</name>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]</xpath>
+		<match Class="PatchOperationSetName">
+			<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]/costList/WoodLog</xpath>
+			<name>DankPyon_RawWood</name>
+		</match>
 	</Operation>
 
 	<!-- Add every WoodLog to have DankPyon_RawWood stuff category for every neolithic building that has woody stuff category-->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]/stuffCategories</xpath>
-		<value>
-			<li>DankPyon_RawWood</li>
-		</value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]/stuffCategories</xpath>
+			<value>
+				<li>DankPyon_RawWood</li>
+			</value>
+		</match>
 	</Operation>
 </Patch>	

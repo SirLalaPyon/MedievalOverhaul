@@ -276,7 +276,9 @@
     			</prerequisites>
 				<researchViewX>10.00</researchViewX>
 				<researchViewY>7.30</researchViewY>
-				<requiredResearchBuilding>DankPyon_Book_GreatBow</requiredResearchBuilding>  
+				<requiredResearchFacilities>
+					<li>DankPyon_Book_GreatBow</li>
+				</requiredResearchFacilities>
 			</ResearchProjectDef>
 		</value>
 	</Operation>

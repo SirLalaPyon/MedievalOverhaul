@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DamageWorkers\DeathActionWorker_DustPuff.cs" />
+    <Compile Include="MapComps\GreatTreesClassUpdate_MapComponent.cs" />
     <Compile Include="Harmony\CompGenericHide.cs" />
     <Compile Include="HediffComps\Hediff_UnpleasantAftermathSet.cs" />
     <Compile Include="HediffComps\Hediff_UnpleasantAftermath.cs" />

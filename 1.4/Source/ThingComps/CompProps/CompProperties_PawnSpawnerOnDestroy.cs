@@ -24,13 +24,8 @@ namespace MedievalOverhaul
         public string letterDescription;
         public LetterDef letterDef;
 
-        /* Disables spawning if destroyed by specific damage types
-         * You probably don't want angry tree people spawning from trees that die of old age
-         */
-        public bool notRot = true;
-        public bool notFlame = true;
-        public bool notDeterioration = true;
-        /* disables spawning if there is currently a toxic fallout active */
-        public bool notToxicFallout = true;
+        public bool onlyIfHarvestable = false;
+        //remvove in 1.5
+        public bool disableCompDestroy = false;
     }
 }

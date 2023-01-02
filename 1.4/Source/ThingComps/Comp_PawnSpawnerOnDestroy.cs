@@ -15,29 +15,25 @@ namespace MedievalOverhaul
 			}
 		}
 
-		/* ==========[Used to check if the thing is taking specific damage types]========== */
-
-		public bool takingAgeDamage = false;
-
-		public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
-		{
-			takingAgeDamage = (dinfo.Def == DamageDefOf.Rotting && Props.notRot) || (dinfo.Def == DamageDefOf.Deterioration && Props.notDeterioration) || (dinfo.Def == DamageDefOf.Flame && Props.notFlame);
-			base.PostPostApplyDamage(dinfo, totalDamageDealt);
-		}
-
-        /* ==========[Checks n shit]========== */
-
+        /// <summary>
+        /// Should be fairly self explanatory
+        /// Doesn't run PawnSpawnerWorker if the class of the parent is Plant_SpawnerOnDestroy, as that handles everything instead
+        /// </summary>
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
-            if (takingAgeDamage || (Props.notToxicFallout && previousMap.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout)))
+            if (parent is not Plant_SpawnerOnDestroy && !Props.disableCompDestroy)
             {
-                base.PostDestroy(mode, previousMap);
-                return;
+                PawnSpawnerWorker(previousMap);
             }
+            base.PostDestroy(mode, previousMap);
+        }
+
+        public void PawnSpawnerWorker(Map previousMap)
+        {
             if (Props.kindToSpawn != null && Rand.Chance(Props.chance))
             {
                 int target = Props.numberToSpawn.RandomInRange;
-                List<Pawn> pawns = new List<Pawn> { };
+                List<Pawn> pawns = new() { };
                 for (int i = 0; i < target; i++)
                 {
                     pawns.Add(PawnSpawner(previousMap));
@@ -47,11 +43,7 @@ namespace MedievalOverhaul
                     Find.LetterStack.ReceiveLetter(Props.letterLabel, Props.letterDescription, Props.letterDef, pawns);
                 }
             }
-
-            base.PostDestroy(mode, previousMap);
         }
-
-        /* ==========[The actual spawning part]========== */
 
         public Pawn PawnSpawner(Map map)
         {

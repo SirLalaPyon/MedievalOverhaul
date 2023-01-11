@@ -2609,7 +2609,77 @@
 		</ThingDef>
 
 	
+	<ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+		<defName>DankPyon_Fountain1x1c</defName>
+		<label>small fountain</label>
+		<graphicData>
+			<texPath>Furniture/Fountain1x1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.8</uiIconScale>
 
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>60</Beauty>
+			<WorkToMake>20000</WorkToMake>
+			<SellPriceFactor>1.10</SellPriceFactor>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+		</statBases>
+
+		<stuffCategories Inherit="False">
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+		
+	<ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+		<defName>DankPyon_Fountain2x2c</defName>
+		<label>large fountain</label>
+		<graphicData>
+			<texPath>Furniture/Fountain2x2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.8</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>250</Beauty>
+			<Mass>28</Mass>
+			<WorkToMake>50000</WorkToMake>
+			<SellPriceFactor>1.10</SellPriceFactor>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+		</statBases>
+
+		<stuffCategories Inherit="False">
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>400</costStuffCount>
+
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
 		
 	
 	<!--============================== Animal Beds ==============================-->

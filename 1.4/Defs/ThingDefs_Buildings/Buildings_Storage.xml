@@ -17,6 +17,223 @@
 		<stuffCategories Inherit = "false"/>
 	</ThingDef>
 
+	<!-- ==================== Hay Pile ==================== -->
+  	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_Bale1x2Base">
+		<defName>DankPyon_Bale1x2c</defName>
+		<label>hay bale</label>
+		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
+		<graphicData>
+			<texPath>Storage/Bale1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<color>(137,132,0)</color>
+		</graphicData>
+		<size>(2,1)</size>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<costList Inherit="false">
+			<Hay>20</Hay>
+		</costList>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Straw</li>
+						<li>DankPyon_RawFlax</li>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Straw</li>
+						<li>DankPyon_RawFlax</li>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<designatorDropdown>DankPyon_Bale1x2c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Bale1x2Base">
+		<defName>DankPyon_StrawBale1x2c</defName>
+		<label>straw bale</label>
+		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
+		<graphicData>
+			<texPath>Storage/Bale1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<color>(229,186,90)</color>
+		</graphicData>
+
+		<costList Inherit="false">
+			<DankPyon_Straw>20</DankPyon_Straw>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Bale1x2Base">
+		<defName>DankPyon_FlaxBale1x2c</defName>
+		<label>flax bale</label>
+		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
+		<graphicData>
+			<texPath>Storage/Bale1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<color>(158,145,94)</color>
+		</graphicData>
+
+		<costList Inherit="false">
+			<DankPyon_RawFlax>20</DankPyon_RawFlax>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Bale1x2Base" Name="DankPyon_Bale2x2Base">
+		<defName>DankPyon_HayBale2x2c</defName>
+		<label>hay bale(2x2)</label>
+		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
+		<graphicData>
+			<texPath>Storage/Bale2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<color>(137,132,0)</color>
+		</graphicData>
+		<size>(2,2)</size>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<costList Inherit="false">
+			<Hay>40</Hay>
+		</costList>
+		<designatorDropdown>DankPyon_Bale2x2c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Bale2x2Base">
+		<defName>DankPyon_StrawBale2x2c</defName>
+		<label>straw bale(2x2)</label>
+		<graphicData>
+			<texPath>Storage/Bale2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<color>(229,186,90)</color>
+		</graphicData>
+
+		<costList Inherit="false">
+			<DankPyon_Straw>40</DankPyon_Straw>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Bale2x2Base">
+		<defName>DankPyon_FlaxBale2x2c</defName>
+		<label>flax bale(2x2)</label>
+		<graphicData>
+			<texPath>Storage/Bale2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<color>(158,145,94)</color>
+		</graphicData>
+
+		<costList Inherit="false">
+			<DankPyon_RawFlax>40</DankPyon_RawFlax>
+		</costList>
+	</ThingDef>
+
+	<!-- Pile -->
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_Pile1x2Base">
+		<defName>DankPyon_HayPile1x2c</defName>
+		<label>hay pile</label>
+		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
+		<graphicData>
+			<texPath>Storage/Pile1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<color>(137,132,0)</color>
+		</graphicData>
+		<size>(2,1)</size>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<costList Inherit="false">
+			<Hay>20</Hay>
+		</costList>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings Inherit = "false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Straw</li>
+						<li>DankPyon_RawFlax</li>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit = "false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Straw</li>
+						<li>DankPyon_RawFlax</li>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<designatorDropdown>DankPyon_Pile1x2c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Pile1x2Base">
+		<defName>DankPyon_StrawPile1x2c</defName>
+		<label>straw pile</label>
+		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
+		<graphicData>
+			<texPath>Storage/Pile1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<color>(229,186,90)</color>
+		</graphicData>
+
+		<costList Inherit="false">
+			<DankPyon_Straw>20</DankPyon_Straw>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Pile1x2Base">
+		<defName>DankPyon_FlaxPile1x2c</defName>
+		<label>flax pile</label>
+		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
+		<graphicData>
+			<texPath>Storage/Pile1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<color>(158,145,94)</color>
+		</graphicData>
+
+		<costList Inherit="false">
+			<DankPyon_RawFlax>20</DankPyon_RawFlax>
+		</costList>
+	</ThingDef>
+
   	<!-- ==================== Wood Logs ==================== -->
   	<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_WoodLogs1x1c</defName>
@@ -346,7 +563,7 @@
 			</defaultStorageSettings>
 		</building>
  
-	<researchPrerequisites Inherit="false"/>
+		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
 	<!--== Bricks 1x2 ==-->
@@ -441,6 +658,392 @@
 		</building>
 	
 		<researchPrerequisites Inherit="false"/>
+	</ThingDef>
+
+	
+	<!--== iron Ingots ==-->
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_IronIngotStackBase">
+		<defName>DankPyon_IronIngots1x1c</defName>
+		<label>iron ingot stack(1x1)</label>
+		<description>Ingots that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/IronIngotStack1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<DankPyon_IronIngot>10</DankPyon_IronIngot>
+		</costList>
+		
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter Inherit = "false">
+				<thingDefs>
+					<li>DankPyon_IronIngot</li>
+				</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_IronIngot</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+ 
+		<researchPrerequisites Inherit="false"/>
+		<designatorDropdown>DankPyon_IngotStack1x1c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_IronIngotStackBase">
+		<defName>DankPyon_IronIngots1x2c</defName>
+		<label>iron ingot stack(1x2)</label>
+		<graphicData>
+			<texPath>Storage/IronIngotStack1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<DankPyon_IronIngot>20</DankPyon_IronIngot>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack1x2c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_IronIngotStackBase">
+		<defName>DankPyon_IronIngots2x2c</defName>
+		<label>iron ingot stack(2x2)</label>
+		<graphicData>
+			<texPath>Storage/IronIngotStack2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
+		<costList>
+			<DankPyon_IronIngot>40</DankPyon_IronIngot>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack2x2c</designatorDropdown>
+	</ThingDef>
+
+	<!--== Steel Ingots ==-->
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_SteelIngotStackBase">
+		<defName>DankPyon_SteelIngots1x1c</defName>
+		<label>steel ingot stack(1x1)</label>
+		<description>Ingots that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/IngotStack1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<color>(105,105,105)</color>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter Inherit = "false">
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+ 
+		<researchPrerequisites Inherit="false"/>
+		<designatorDropdown>DankPyon_IngotStack1x1c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SteelIngotStackBase">
+		<defName>DankPyon_SteelIngots1x2c</defName>
+		<label>steel ingot stack(1x2)</label>
+		<graphicData>
+			<texPath>Storage/IngotStack1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+			<color>(105,105,105)</color>
+		</graphicData>
+		<size>(2,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack1x2c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SteelIngotStackBase">
+		<defName>DankPyon_SteelIngots2x2c</defName>
+		<label>steel ingot stack(2x2)</label>
+		<graphicData>
+			<texPath>Storage/IngotStack2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<color>(105,105,105)</color>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack2x2c</designatorDropdown>
+	</ThingDef>
+	
+	<!--== Silver Ingots ==-->
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_SilverIngotStackBase">
+		<defName>DankPyon_SilverIngots1x1c</defName>
+		<label>silver ingot stack(1x1)</label>
+		<description>Ingots that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/SilverIngotStack1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<Silver>10</Silver>
+		</costList>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter Inherit = "false">
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+ 
+		<researchPrerequisites Inherit="false"/>
+		<designatorDropdown>DankPyon_IngotStack1x1c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SilverIngotStackBase">
+		<defName>DankPyon_SilverIngots1x2c</defName>
+		<label>silver ingot stack(1x2)</label>
+		<graphicData>
+			<texPath>Storage/SilverIngotStack1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<Silver>20</Silver>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack1x2c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SilverIngotStackBase">
+		<defName>DankPyon_SilverIngots2x2c</defName>
+		<label>silver ingot stack(2x2)</label>
+		<graphicData>
+			<texPath>Storage/SilverIngotStack2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
+		<costList>
+			<Silver>40</Silver>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack2x2c</designatorDropdown>
+	</ThingDef>
+
+	<!--== Gold Ingots ==-->
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_GoldIngotStackBase">
+		<defName>DankPyon_GoldIngots1x1c</defName>
+		<label>gold ingot stack(1x1)</label>
+		<description>Ingots that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/GoldIngotStack1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints> 
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<Gold>10</Gold>
+		</costList>
+
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter Inherit = "false">
+				<thingDefs>
+					<li>Gold</li>
+				</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+ 
+		<researchPrerequisites Inherit="false"/>
+		<designatorDropdown>DankPyon_IngotStack1x1c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_GoldIngotStackBase">
+		<defName>DankPyon_GoldIngots1x2c</defName>
+		<label>gold ingot stack(1x2)</label>
+		<graphicData>
+			<texPath>Storage/GoldIngotStack1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints> 
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<Gold>20</Gold>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack1x2c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_GoldIngotStackBase">
+		<defName>DankPyon_GoldIngots2x2c</defName>
+		<label>gold ingot stack(2x2)</label>
+		<graphicData>
+			<texPath>Storage/GoldIngotStack2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.5</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints> 
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
+		<costList>
+			<Gold>40</Gold>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack2x2c</designatorDropdown>
 	</ThingDef>
 
 	<!--======================= Cupboard ==============================-->
@@ -1847,17 +2450,13 @@
 			<fixedStorageSettings Inherit="false">
 				<priority>Important</priority>
 				<filter>
-				<categories>
-					<li>ResourcesRaw</li>
-				</categories>
+				<categories/> <!-- Added through patch -->
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings Inherit="false">
 				<priority>Important</priority>
 				<filter>
-					<categories>
-					<li>ResourcesRaw</li>
-					</categories>
+					<categories/>
 				</filter>
 			</defaultStorageSettings>
 		</building>
@@ -2001,52 +2600,7 @@
 	</comps>
   </ThingDef-->
 
-	<ThingDef ParentName="DankPyon_StorageBase">
-		<defName>DankPyon_StrawPile</defName>
-		<label>straw pile</label>
-		<description>A pile of dry stalks of cereal plants such as wheat, rice, oats, barley, and rye.</description>
-		<thingClass>Building_Storage</thingClass>
-		<graphicData>
-			<texPath>Storage/StrawPile</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2.70,2.70)</drawSize>
-			<drawRotated>false</drawRotated>
-		</graphicData>
-		<size>(2,1)</size>
-		<defaultPlacingRot>South</defaultPlacingRot>
-
-		<costList>
-			<DankPyon_Straw>20</DankPyon_Straw>
-		</costList>
-
-		<stuffCategories Inherit="false"/>
-
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints> 
-			<Mass>8</Mass>
-			<WorkToBuild>500</WorkToBuild>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
-		</statBases>
-
-		<building>
-			<maxItemsInCell>4</maxItemsInCell>
-			<fixedStorageSettings Inherit="false">
-				<filter>
-					<thingDefs>
-						<li>DankPyon_Straw</li>
-					</thingDefs>
-				</filter>
-			</fixedStorageSettings>
-			<defaultStorageSettings Inherit="false">
-				<priority>Important</priority>
-				<filter>
-					<thingDefs>
-						<li>DankPyon_Straw</li>
-					</thingDefs>
-				</filter>
-			</defaultStorageSettings>
-		</building>
-	</ThingDef>
+	
 
 	<!-- Carts -->
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_CartBase">

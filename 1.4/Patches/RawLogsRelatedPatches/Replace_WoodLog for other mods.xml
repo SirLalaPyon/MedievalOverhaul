@@ -71,6 +71,18 @@
 		</match>
 	</Operation>
 
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Dryad_Woodmaker"]/comps/li[@Class="CompProperties_Spawner"]/thingToSpawn[text()="WoodLog"]</xpath>
+			<value>
+				<thingToSpawn>DankPyon_RawWood</thingToSpawn>
+			</value>
+		</match>
+	</Operation>
+
 	<!-- Replace every WoodLog to be DankPyon_RawWood for every neolithic building-->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]</xpath>

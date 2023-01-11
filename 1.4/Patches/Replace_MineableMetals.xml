@@ -61,5 +61,19 @@
 		</value>
 	</Operation>
 	
+	<!-- Replace Plasteel name -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plasteel"]/label</xpath>
+		<value>
+			<label>Mithril</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plasteel"]/description</xpath>
+		<value>
+			<description>A precious lightweight structural material. Mithril is extremely strong due to its unique molecular structure.</description>
+		</value>
+	</Operation>
 	
 </Patch>

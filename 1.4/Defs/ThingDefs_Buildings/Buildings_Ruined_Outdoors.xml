@@ -82,7 +82,7 @@
 
 
 	<!-- Bodies -->
-	<ThingDef ParentName="BuildingBase" Name="DankPyon_AncientDeadBodyBase">
+	<ThingDef ParentName="DankPyon_SmallRuin" Name="DankPyon_AncientDeadBodyBase">
 		<defName>DankPyon_AncientFootman</defName>
 		<label>footman remains</label>
 		<description>The remains of a soldier. Can be scavenged for resources.</description>
@@ -105,9 +105,10 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 
-		<costList>
-			<DankPyon_Bone>1</DankPyon_Bone>
-		</costList>
+		<killedLeavings>
+			<DankPyon_Bone>5</DankPyon_Bone>
+			<DankPyon_Linen>5</DankPyon_Linen>
+		</killedLeavings>
 
 		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">

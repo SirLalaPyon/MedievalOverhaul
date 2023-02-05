@@ -52,6 +52,7 @@
 					can remove in 1.5
 				-->
 				<disableCompDestroy>true</disableCompDestroy>
+				<notToxicFallout>false</notToxicFallout>
 			</li>
 		</comps>
 
@@ -127,6 +128,7 @@
 					can remove in 1.5
 				-->
 				<disableCompDestroy>true</disableCompDestroy>
+				<notToxicFallout>false</notToxicFallout>
 			</li>
 		</comps>
 
@@ -242,10 +244,11 @@
 			<letterDef>ThreatBig</letterDef>
 			<onlyIfHarvestable>true</onlyIfHarvestable>
 			<!-- 
-					so the update map comp doesn't spawn thousands of schrat
-					can remove in 1.5
-				-->
-				<disableCompDestroy>true</disableCompDestroy>
+				so the update map comp doesn't spawn thousands of schrat
+				can remove in 1.5
+			-->
+			<disableCompDestroy>true</disableCompDestroy>
+			<notToxicFallout>false</notToxicFallout>
 		</li>
 	</comps>
 

@@ -16,6 +16,14 @@
     </ThingCategoryDef>
 
     <ThingCategoryDef>
+        <defName>DankPyon_Metallic</defName>
+        <label>metallics</label>
+        <parent>ResourcesRaw</parent>
+        <iconPath>Resources/SteelIngot/SteelIngot_b</iconPath>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
         <defName>DankPyon_RawOres</defName>
         <label>raw ore</label>
         <parent>ResourcesRaw</parent>

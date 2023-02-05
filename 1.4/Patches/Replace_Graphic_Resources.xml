@@ -38,4 +38,11 @@
 			</li>
 		</value>
 	</Operation>
+
+	<!--Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gold"]/stuffProps/color</xpath>
+		<value>
+			<color>(221,182,58)</color>
+		</value>
+	</Operation-->
 </Patch>	

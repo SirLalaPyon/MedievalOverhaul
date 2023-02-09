@@ -390,7 +390,7 @@
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.5</fuelConsumptionRate>
 				<fuelCapacity>40.0</fuelCapacity>
-				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<!--fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain-->
 				<fuelFilter>
 				<thingDefs>
 					<li>WoodLog</li>
@@ -2294,6 +2294,7 @@
 					<li>DankPyon_RusticCloset</li>
 				</linkableFacilities>
 			</li>
+			<li MayRequire="OskarPotocki.VFE.Vikings" Class="VFEV.CompProperties_CureHypothermia" />
 		</comps>
 
 		<statBases>
@@ -2355,6 +2356,7 @@
 						<li>DankPyon_RusticCloset</li>
 				</linkableFacilities>
 			</li>
+			<li MayRequire="OskarPotocki.VFE.Vikings" Class="VFEV.CompProperties_CureHypothermia" />
 		</comps>
 
 		<statBases>

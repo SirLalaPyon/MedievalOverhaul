@@ -603,7 +603,7 @@
 <ThingDef ParentName="ResourceBase">
 	<defName>DankPyon_QueenBee</defName>
 	<label>oswin queen</label>
-	<description>The matriarch of a bee colony originating from the regions of house oswin. They feed on carrions and are able to produce honey of it.</description>
+	<description>The matriarch of a vulture bee colony originating from the regions of house oswin. Unlike typical bees, they consume carrion and produce a smokey and savory honey.</description>
 	<stackLimit>1</stackLimit>	
 	<graphicData>
 		<texPath>Resources/QueenBee</texPath>
@@ -621,8 +621,8 @@
 
 <ThingDef ParentName="OrganicProductBase">
 	<defName>DankPyon_Honey</defName>
-	<label>honey</label>
-	<description>A sweet and viscous liquid substance that can be used as a preservative or fermented into an alcoholic drink.</description>
+	<label>smokey honey</label>
+	<description>A smokey and savory liquid substance made by vulture bees that can be used as a preservative or fermented into an alcoholic drink.</description>
 	<graphicData>
 		<texPath>Resources/HoneyLiquid</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
@@ -657,8 +657,8 @@
 
 <ThingDef ParentName="OrganicProductBase">
 	<defName>DankPyon_Honeycomb</defName>
-	<label>honey</label>
-	<description>A sweet and viscous liquid substance that can be used as a preservative or fermented into an alcoholic drink.</description>
+	<label>smokey honeycomb</label>
+	<description>Raw smokey honeycombs that contain vulture bee honey. \n\nCan be extracted to gain wax and smokey honey.</description>
 	<graphicData>
 		<texPath>Resources/Honeycomb</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>

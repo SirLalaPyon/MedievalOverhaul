@@ -22,12 +22,19 @@
 			</categories>
 			<color>(180,173,150)</color>
 		</stuffProps>
+
 		<comps>
 			<li>
 				<compClass>DankPyon.CompGenericHide</compClass>
 			</li>
-		  </comps>
-		  <tickerType>Rare</tickerType>
+			<li Class="CompProperties_Rottable">
+			  <daysToRotStart>5</daysToRotStart>
+			  <rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+
+		<tickerType>Rare</tickerType>
 	</ThingDef>
 
 	<ThingDef Abstract="True" Name="DankPyon_Hide_NonGeneric" ParentName="DankPyon_HideBase">
@@ -1096,7 +1103,7 @@
 			<DankPyon_Leather_Lindwurm>120</DankPyon_Leather_Lindwurm>
 		</butcherProducts>
 		<stuffProps>
-			<color>(93,81,70)</color>
+			<color>(115,122,88)</color>
 		</stuffProps>
 	</ThingDef>
 

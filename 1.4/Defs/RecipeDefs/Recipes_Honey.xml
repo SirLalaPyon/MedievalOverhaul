@@ -25,9 +25,9 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workSkill>Cooking</workSkill>
-		<products>
-			<DankPyon_Honey>3</DankPyon_Honey>
-		</products>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
 
 		<recipeUsers>	  
 			<li>DankPyon_RusticCookingTable</li>
@@ -63,6 +63,7 @@
 		<workSkill>Cooking</workSkill>
 		<products>
 			<DankPyon_Honey>15</DankPyon_Honey>
+			<DankPyon_Wax>25</DankPyon_Wax>
 		</products>
 
 		<recipeUsers>	  

@@ -140,6 +140,11 @@ namespace MedievalOverhaul
             }
 
             Map.mapDrawer.MapMeshDirty(Position, MapMeshFlag.Things, true, false);
+
+            if(lootableExt.isDestroyed == true)
+            {
+                base.Destroy();
+            }
         }
 
         /// <summary>

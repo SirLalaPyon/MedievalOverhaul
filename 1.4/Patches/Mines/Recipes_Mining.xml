@@ -18,10 +18,10 @@
 					<xpath>Defs/RecipeDef[defName="Excavate_Steel"]</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingeDef[defName="Mine"]/recipes/Excavate_Steel</xpath>
+					<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[text()="Excavate_Steel"]</xpath>
 				</li>
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingeDef[defName="Mine"]/recipes/Excavate_ComponentIndustrial</xpath>
+					<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[text()="Excavate_ComponentIndustrial"]</xpath>
 				</li>
 			</operations>
 		</match>

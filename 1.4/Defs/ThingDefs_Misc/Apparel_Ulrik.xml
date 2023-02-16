@@ -105,6 +105,7 @@
             <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
             <Insulation_Cold>15</Insulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>15</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.8</MoveSpeed>
@@ -335,7 +336,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>DankPyon_Adorned_GreatHelm</defName>
         <label>great helm (adorned)</label>
-        <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Amboise.</description>
+        <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of the Ulrik order.</description>
         <graphicData>
         <texPath>Headgear/Adorned_GreatHelm/Adorned_GreatHelm</texPath>
         <graphicClass>Graphic_Single</graphicClass>

@@ -6,7 +6,8 @@ namespace MedievalOverhaul
     public class BuildingLootableExtension : DefModExtension
     {
         // Loot stuff.
-        public bool isRandom = false;
+        public bool isRandom = true;
+        public bool isDestroyed = false;
         public float lootChance = 1f;
         public string itemDefName = null;
         public IntRange lootCount = new (1, 2);

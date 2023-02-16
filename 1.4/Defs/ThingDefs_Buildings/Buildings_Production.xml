@@ -251,7 +251,7 @@
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_RusticCookingTable</defName>
-		<label>cooking table</label>
+		<label>rustic cooking table</label>
 		<description>A wood-fueled oven with an attached countertop for preparing meals.</description>
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
@@ -296,6 +296,8 @@
 			<li>CookMealSurvivalBulk</li>
 			<li>Make_Pemmican</li>
 			<li>Make_PemmicanBulk</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
 		</recipes>
 		
 		<comps>
@@ -329,7 +331,7 @@
 
 <ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 	<defName>DankPyon_StoneOven</defName>
-	<label>oven</label>
+	<label>rustic oven</label>
 	<thingClass>Building_WorkTable_HeatPush</thingClass>
 	<description>A cooking table with a stone oven designed for baking meals.</description>
 	<graphicData>

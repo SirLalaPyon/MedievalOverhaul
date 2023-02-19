@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Crushing/Catching -->
+
+	<ESCP_Tools_Catching_Failed>{0} a échoué à attraper quelque chose.</ESCP_Tools_Catching_Failed>
+	<ESCP_Tools_Catching_Special>{0} a attrapé {1} !</ESCP_Tools_Catching_Special>
+
+	<ESCP_Tools_Crushing_Failed>{0} n'a rien trouvé du tout.</ESCP_Tools_Crushing_Failed>
+	<ESCP_Tools_Crushing_Special>{0} a obtenu {1} !</ESCP_Tools_Crushing_Special>
+	
+	<!-- Fuel stuff -->
+	<ESCP_Tools_FuelExtension_CurrentFuel>Type de carburant actuel : {0}</ESCP_Tools_FuelExtension_CurrentFuel>
+	
+	<!-- Thing producer -->
+	<ESCP_Tools_ThingProducer_Progress>{0} progression avant la prochaine production</ESCP_Tools_ThingProducer_Progress>
+	<ESCP_Tools_ThingProducer_Message>{0} a produit des ressources !</ESCP_Tools_ThingProducer_Message>
+	<ESCP_Tools_ThingProducer_Paused>la progression a été mis en pause à cause de : {0}</ESCP_Tools_ThingProducer_Paused>
+	<ESCP_Tools_ThingProducer_Reason_time>se repose(nt) la nuit</ESCP_Tools_ThingProducer_Reason_time>
+	<ESCP_Tools_ThingProducer_Reason_weather>mauvaise météo</ESCP_Tools_ThingProducer_Reason_weather>
+	<ESCP_Tools_ThingProducer_Reason_temperature>mauvaise température</ESCP_Tools_ThingProducer_Reason_temperature>
+	<ESCP_Tools_ThingProducer_Reason_roofed>est sous un toit</ESCP_Tools_ThingProducer_Reason_roofed>
+	<ESCP_Tools_ThingProducer_Reason_fuel>pas de carburant</ESCP_Tools_ThingProducer_Reason_fuel>
+	<ESCP_Tools_ThingProducer_Reason_power>pas d'énergie</ESCP_Tools_ThingProducer_Reason_power>
+	
+</LanguageData>

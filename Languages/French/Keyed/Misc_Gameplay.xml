@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!-- Note : À moins de trouver des valeurs plus précises, impossible de supprimer les Duplicate keys suivantes : DankPyon_ResourcePercentage ; DankPyon_MeatImproperlyDefined ; DankPyon_DryingRackEmpty ; DankPyon_DryingRackFilled ; DankPyon_DryingRackWorking. Cela ne devrait pas gêner le bon déroulement du jeu.-->
+
+	<!-- Presser -->
+	<DankPyon_InsertResourceDesc>Insère des ressources à presser.</DankPyon_InsertResourceDesc>
+	<DankPyon_InsertResource>Insérer des ressources</DankPyon_InsertResource>
+	<DankPyon_InsertResourceVariable>Insérer {0}</DankPyon_InsertResourceVariable>
+	<DankPyon_NoResourcesFound>Aucune ressource pouvant être pressée trouvée sur la carte.</DankPyon_NoResourcesFound>
+	<DankPyon_SelectResource>Sélectionner un type de ressource destiné à être pressée</DankPyon_SelectResource>
+	<DankPyon_StartInsertionResource>Apporter la ressource</DankPyon_StartInsertionResource>
+	<DankPyon_StartInsertionResourceDesc>Apporte la ressource à la presse pour commencer le pressage</DankPyon_StartInsertionResourceDesc>
+	<DankPyon_RemoveResource>Retirer la ressource</DankPyon_RemoveResource>
+	<DankPyon_RemoveResourceDesc>Retire la ressource de la presse. Cela ne peut être effectué qu'avant le pressage.</DankPyon_RemoveResourceDesc>	
+	<DankPyon_CancelBringingResource>Annuler l'ordre Apporter la ressource</DankPyon_CancelBringingResource>
+	<DankPyon_CancelBringingResourceDesc>Annule l'ordre d'apporter la ressource à la presse.</DankPyon_CancelBringingResourceDesc>
+	<DankPyon_WaitTillJobsEndResource>Attendez que la ressource ait été apportée à la presse ou annulez le travail.</DankPyon_WaitTillJobsEndResource>
+	<DankPyon_EngageResource>Presser la ressource</DankPyon_EngageResource>
+	<DankPyon_EngageResourceDesc>Commence le pressage de la ressource. Ce procédé prend 5 jours et ne peut être interrompu, ou la ressource sera détruite.</DankPyon_EngageResourceDesc>
+	<DankPyon_ResourceFinished>Une ressource a terminé son procédé dans la presse</DankPyon_ResourceFinished>
+	<DankPyon_ResourceInProgress>Un(e) {0} est en cours de pressage. Le procédé prendra fin dans {1}</DankPyon_ResourceInProgress>
+	<DankPyon_ResourceReady>Une ressource ayant terminé son procédé de pressage est en attente d'être retirée</DankPyon_ResourceReady>
+	<DankPyon_ResourceImproperlyDefined>Cette ressource a été improprement définie pour fonctionner avec la presse, veuillez contacter l'auteur du mod de la ressource en question.</DankPyon_ResourceImproperlyDefined>
+	<DankPyon_RemoveProduct>Retirer le produit ({0})</DankPyon_RemoveProduct>
+	<DankPyon_RemoveProductDesc>Retire le produit de la presse.</DankPyon_RemoveProductDesc>
+	
+	<DankPyon_PressEmpty>La presse est vide actuellement</DankPyon_PressEmpty>
+	<DankPyon_PressFilled>La presse est remplie de {0}</DankPyon_PressFilled>
+	<DankPyon_PressWorking>La presse est en fonctionnement :</DankPyon_PressWorking>
+	<DankPyon_ResourcePercentage> (remplie à {0} de {1})</DankPyon_ResourcePercentage>
+
+	<!-- Smoker -->
+	<DankPyon_InsertMeatDesc>Insère de la viande à fumer.</DankPyon_InsertMeatDesc>
+	<DankPyon_InsertMeat>Insérer de la viande</DankPyon_InsertMeat>
+	<DankPyon_InsertMeatVariable>Insérer {0}</DankPyon_InsertMeatVariable>
+	<DankPyon_NoMeatsFound>Aucune viande trouvée sur la carte.</DankPyon_NoMeatsFound>
+	<DankPyon_SelectMeat>Sélectionnez un type de viande destinée à être fumée</DankPyon_SelectMeat>
+	<DankPyon_StartInsertionMeat>Apporter de la viande</DankPyon_StartInsertionMeat>
+	<DankPyon_StartInsertionMeatDesc>Apporte de la viande au fumoir pour commencer le fumage</DankPyon_StartInsertionMeatDesc>
+	<DankPyon_RemoveMeat>Retirer la viande</DankPyon_RemoveMeat>
+	<DankPyon_RemoveMeatDesc>Retire la viande du fumoir. Cela ne peut être effectué qu'avant le fumage.</DankPyon_RemoveMeatDesc>	
+	<DankPyon_CancelBringingMeat>Annuler l'ordre d'apporter de la viande</DankPyon_CancelBringingMeat>
+	<DankPyon_CancelBringingMeatDesc>Annule l'ordre d'apporter de la viande au fumoir.</DankPyon_CancelBringingMeatDesc>
+	<DankPyon_WaitTillJobsEndMeat>Attendez que la viande ait été apportée au fumoir ou annulez le travail.</DankPyon_WaitTillJobsEndMeat>
+	<DankPyon_EngageMeat>Fumer la viande</DankPyon_EngageMeat>
+	<DankPyon_EngageMeatDesc>Commence à fumer la viande. Ce procédé prend un jour et ne peut être interrompu, ou la viande sera perdue.</DankPyon_EngageMeatDesc>
+	<DankPyon_SmokedMeatFinished>De la viande fumée ayant terminé son procédé de fumage est en attente d'être retirée</DankPyon_SmokedMeatFinished>
+	<DankPyon_SmokedMeatInProgress>Un(e) {0} est en cours de fumage. Le procédé prendra fin dans {1}</DankPyon_SmokedMeatInProgress>
+	<DankPyon_SmokedMeatReady>De la viande ayant terminé son fumage est en attente d'être retirée</DankPyon_SmokedMeatReady>
+	<DankPyon_MeatImproperlyDefined>Cette viande a été improprement définie pour fonctionner avec le fumoir, veuillez contacter l'auteur du mod de la viande en question.</DankPyon_MeatImproperlyDefined>
+	<DankPyon_RemoveSmokedMeat>Retirer la viande fumée ({0})</DankPyon_RemoveSmokedMeat>
+	
+	<DankPyon_SmokerEmpty>Le fumoir est vide actuellement</DankPyon_SmokerEmpty>
+	<DankPyon_SmokerFilled>Le fumoir est rempli de {0}</DankPyon_SmokerFilled>
+	<DankPyon_SmokerWorking>Le fumoir est en fonctionnement :</DankPyon_SmokerWorking>
+	<DankPyon_ResourcePercentage> (rempli à {0} de {1})</DankPyon_ResourcePercentage>
+
+	<!-- Drying Rack Meat -->
+	<DankPyon_InsertMeatRackDesc>Insère de la viande à sécher.</DankPyon_InsertMeatRackDesc>
+	<DankPyon_InsertRackMeat>Insérer de la viande</DankPyon_InsertRackMeat>
+	<DankPyon_InsertMeatRackVariable>Insérer {0}</DankPyon_InsertMeatRackVariable>
+	<DankPyon_StartInsertionMeatRackDesc>Apporte de la viande sur la grille de séchage pour commencer le séchage</DankPyon_StartInsertionMeatRackDesc>
+	<DankPyon_RemoveMeatRackDesc>Retire la viande de la grille de séchage. Cela ne peut être effectué qu'avant le fumage.</DankPyon_RemoveMeatRackDesc>	
+	<DankPyon_CancelBringingMeatRackDesc>Annule l'ordre d'apporter de la viande à la grille de séchage.</DankPyon_CancelBringingMeatRackDesc>
+	<DankPyon_WaitTillJobsEndMeatRack>Attendez que la viande ait été apportée à la grille de séchage ou annulez le travail.</DankPyon_WaitTillJobsEndMeatRack>
+	<DankPyon_EngageMeatRack>Sécher la viande</DankPyon_EngageMeatRack>
+	<DankPyon_EngageMeatRackDesc>Commence à sécher la viande. Ce procédé prend un jour et ne peut être interrompu, ou la viande sera perdue.</DankPyon_EngageMeatRackDesc>
+	<DankPyon_DriedMeatFinished>La viande séchée a terminé son procédé de séchage</DankPyon_DriedMeatFinished>
+	<DankPyon_DriedMeatInProgress>Un(e) {0} est en cours de séchage. Le procédé prendra fin dans {1}</DankPyon_DriedMeatInProgress>
+	<DankPyon_DriedMeatRackReady>De la viande ayant terminé son séchage est en attente d'être retirée</DankPyon_DriedMeatRackReady>
+	<DankPyon_MeatRackImproperlyDefined>Cette viande a été improprement définie pour fonctionner avec la grille de séchage, veuillez contacter l'auteur du mod de la viande en question.</DankPyon_MeatRackImproperlyDefined>
+	<DankPyon_RemoveDriedMeat>Retirer la viande séchée ({0})</DankPyon_RemoveDriedMeat>
+	
+	<DankPyon_DryingRackEmpty>La grille de séchage est vide actuellement</DankPyon_DryingRackEmpty>
+	<DankPyon_DryingRackFilled>La grille de séchage est remplie de {0}</DankPyon_DryingRackFilled>
+	<DankPyon_DryingRackWorking>La grille de séchage est en fonctionnement :</DankPyon_DryingRackWorking>
+	<DankPyon_ResourcePercentage> (remplie à {0} de {1})</DankPyon_ResourcePercentage>
+
+	<!-- Hay Rack Meat -->
+	<DankPyon_InsertHayDesc>Insère du foin à sécher.</DankPyon_InsertHayDesc>
+	<DankPyon_InsertHay>Insérer du foin</DankPyon_InsertHay>
+	<DankPyon_InsertHayVariable>Insérer {0}</DankPyon_InsertHayVariable>
+	<DankPyon_NoHayFound>Aucun foin trouvé sur la carte.</DankPyon_NoHayFound>
+	<DankPyon_SelectHay>Sélectionner du foin à sécher</DankPyon_SelectHay>
+	<DankPyon_StartInsertionHay>Apporter le foin</DankPyon_StartInsertionHay>
+	<DankPyon_StartInsertionHayDesc>Apporte le foin au râtelier à foin pour commencer la fenaison</DankPyon_StartInsertionHayDesc>
+	<DankPyon_RemoveHay>Retirer le foin</DankPyon_RemoveHay>
+	<DankPyon_RemoveHayDesc>Retire le foin du râtelier à foin. Cela ne peut être effectué qu'avant la fenaison.</DankPyon_RemoveHayDesc>	
+	<DankPyon_CancelBringingHay>Annuler l'ordre d'apporter du foin</DankPyon_CancelBringingHay>
+	<DankPyon_CancelBringingHayDesc>Annule l'ordre d'apporter du foin au râtelier à foin.</DankPyon_CancelBringingHayDesc>
+	<DankPyon_WaitTillJobsEndHay>Attendez que le foin ait été apporté au râtelier à foin ou annulez le travail.</DankPyon_WaitTillJobsEndHay>
+	<DankPyon_EngageHay>Sécher le foin</DankPyon_EngageHay>
+	<DankPyon_EngageHayDesc>Commencer à sécher le foin. Ce procédé prend 3 jours.</DankPyon_EngageHayDesc>
+	<DankPyon_StrawFinished>La paille a terminé son procédé de fenaison</DankPyon_StrawFinished>
+	<DankPyon_StrawInProgress>Un(e) {0} est en cours de fenaison. Le procédé prendra fin dans {1}</DankPyon_StrawInProgress>
+	<DankPyon_StrawReady>De la paille ayant terminé son séchage est en attente d'être retirée</DankPyon_StrawReady>
+	<DankPyon_MeatImproperlyDefined>Ce foin a été improprement défini pour fonctionner avec le râtelier à foin, veuillez contacter l'auteur du mod du foin en question.</DankPyon_MeatImproperlyDefined>
+	<DankPyon_RemoveStraw>Retirer la paille ({0})</DankPyon_RemoveStraw>
+	
+	<DankPyon_DryingRackEmpty>Le râtelier à foin est vide actuellement</DankPyon_DryingRackEmpty>
+	<DankPyon_DryingRackFilled>Le râtelier à foin est rempli de {0}</DankPyon_DryingRackFilled>
+	<DankPyon_DryingRackWorking>Le râtelier à foin est en fonctionnement :</DankPyon_DryingRackWorking>
+	<DankPyon_ResourcePercentage> (rempli à {0} de {1})</DankPyon_ResourcePercentage>
+
+	<!-- Ale -->
+	<DankPyon_InsertAleOrMustDesc>Insère du moût</DankPyon_InsertAleOrMustDesc>
+	<DankPyon_StartInsertionAleOrMust>Apporter du moût</DankPyon_StartInsertionAleOrMust>
+	<DankPyon_StartInsertionAleOrMustDesc>Apporte du moût au tonneau de fermentation pour commencer la fermentation</DankPyon_StartInsertionAleOrMustDesc>
+	<DankPyon_CancelBringingAleOrMust>Annuler l'ordre d'Apporter du moût</DankPyon_CancelBringingAleOrMust>
+	<DankPyon_CancelBringingAleOrMustDesc>Annule l'ordre d'apporter du moût au tonneau de fermentation.</DankPyon_CancelBringingAleOrMustDesc>
+
+	<DankPyon_JuiceAppleMaturing>Du jus de pommes est en maturation</DankPyon_JuiceAppleMaturing>
+	<DankPyon_JuiceAppleCurrentlyFrozen>Ce jus de pommes infermenté est gelé et ne pourra pas se transformer en cidre</DankPyon_JuiceAppleCurrentlyFrozen>
+	<DankPyon_JuiceAppleCurrentlyRefrigerated>Ce jus de pommes infermenté est réfrigéré et ne pourra pas se transformer en cidre aussi vite qu'il pourrait (arrive à maturité dans {0})</DankPyon_JuiceAppleCurrentlyRefrigerated>
+	<DankPyon_JuiceAppleMaturingCorrectly>Ce jus de pommes infermenté se transforme correctement en cidre (arrive à maturité dans {0})</DankPyon_JuiceAppleMaturingCorrectly>
+	
+	<MO.EnableTreeTransparency>Active la transparence des arbres</MO.EnableTreeTransparency>
+	<MO.EnableMultiTileMeleeAttacks>Active les attaques de mêlée sur plusieurs cases</MO.EnableMultiTileMeleeAttacks>
+
+	<!-- UI -->
+	<DankPyon_GizmoSearch>Chercher du butin</DankPyon_GizmoSearch>
+
+</LanguageData>

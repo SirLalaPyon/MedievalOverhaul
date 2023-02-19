@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!--============================== Raw Wood ==============================-->
+
+  <DankPyon_RawWood.label>bois brut</DankPyon_RawWood.label>
+  <DankPyon_RawWood.description>Bois d'arbres ou d'autres plantes fibreuses. Utile pour construire des structures et des armes. C'est un bon combustible pour les feux de camp et les générateurs, peut être raffiné en chemfuel. À la limite, un morceau de bois peut servir d'arme ou de jambe.</DankPyon_RawWood.description>
+  <DankPyon_RawWood.stuffProps.stuffAdjective>bois</DankPyon_RawWood.stuffProps.stuffAdjective>
+  <DankPyon_RawWood.tools.log.label>rondin</DankPyon_RawWood.tools.log.label>
+
+  <DankPyon_RawDarkWood.label>bois sombre brut</DankPyon_RawDarkWood.label>
+  <DankPyon_RawDarkWood.description>Un type de bois sombre, dur et ancien qui a résisté à l'épreuve du temps. Utile pour construire des structures et des armes. C'est un bon combustible pour les feux de camp.</DankPyon_RawDarkWood.description>
+  <DankPyon_RawDarkWood.stuffProps.stuffAdjective>bois sombre</DankPyon_RawDarkWood.stuffProps.stuffAdjective>
+  <DankPyon_RawDarkWood.tools.log.label>rondin</DankPyon_RawDarkWood.tools.log.label>
+
+<!--============================== Wood ==============================-->
+<!-- Dark Wood -->
+
+  <DankPyon_DarkWoodLog.label>planches sombres</DankPyon_DarkWoodLog.label>
+  <DankPyon_DarkWoodLog.description>Un type de bois sombre coupé en planches, dur et ancien qui a résisté à l'épreuve du temps. Utile pour construire des structures et des armes. C'est un bon combustible pour les feux de camp.</DankPyon_DarkWoodLog.description>
+  <DankPyon_DarkWoodLog.stuffProps.stuffAdjective>planches sombres</DankPyon_DarkWoodLog.stuffProps.stuffAdjective>
+  <DankPyon_DarkWoodLog.tools.plank.label>planche</DankPyon_DarkWoodLog.tools.plank.label>
+
+<!-- Elven Wood -->
+
+  <DankPyon_ElvenWoodLog.label>planches elfiques</DankPyon_ElvenWoodLog.label>
+  <DankPyon_ElvenWoodLog.description>Léger mais résistant, très recherché pour sa beauté et sa solidité. Utile pour construire des structures et des armes. C'est un bon combustible pour les feux de camp.</DankPyon_ElvenWoodLog.description>
+  <DankPyon_ElvenWoodLog.stuffProps.stuffAdjective>bois elfique</DankPyon_ElvenWoodLog.stuffProps.stuffAdjective>
+  <DankPyon_ElvenWoodLog.tools.log.label>rondin</DankPyon_ElvenWoodLog.tools.log.label>
+
+<!-- Dryad Wood -->
+
+  <DankPyon_DryadWoodLog.label>planches de dryade</DankPyon_DryadWoodLog.label>
+  <DankPyon_DryadWoodLog.description>Léger mais solide et ferme, très recherché pour sa beauté et sa robustesse. Utile pour construire des structures et des armes. C'est un bon combustible pour les feux de camp.</DankPyon_DryadWoodLog.description>
+  <DankPyon_DryadWoodLog.stuffProps.stuffAdjective>enchanté(e)</DankPyon_DryadWoodLog.stuffProps.stuffAdjective>
+  <DankPyon_DryadWoodLog.tools.log.label>rondin</DankPyon_DryadWoodLog.tools.log.label>
+
+<!-- Ancient Wood -->
+
+  <DankPyon_AncientWoodLog.label>planches en bois ancien</DankPyon_AncientWoodLog.label>
+  <DankPyon_AncientWoodLog.description>Bois issu d'arbres millénaires situées dans des forêts ancestrales. Une magie mystique semble émaner de l'écorce. Utile pour construire des structures et des armes. C'est un bon combustible pour les feux de camp.</DankPyon_AncientWoodLog.description>
+  <DankPyon_AncientWoodLog.stuffProps.stuffAdjective>bois ancien</DankPyon_AncientWoodLog.stuffProps.stuffAdjective>
+  <DankPyon_AncientWoodLog.tools.log.label>rondin</DankPyon_AncientWoodLog.tools.log.label>
+  
+  <DankPyon_Coal.label>charbon</DankPyon_Coal.label>
+  <DankPyon_Coal.description>Le charbon est un morceau de roche noir combustible formé principalement de carbone. Une bonne source de combustible pour les poêles et les fournaises.</DankPyon_Coal.description>
+
+<!--============================== Ice ==============================-->
+  
+  <Ice_Resource_IceBlocks.label>glace</Ice_Resource_IceBlocks.label>
+  <Ice_Resource_IceBlocks.description>Eau ayant été gelée pour créer des blocs de glace. Fondra dans des températures au-dessus du point de congélation.</Ice_Resource_IceBlocks.description>
+  <Ice_Resource_IceBlocks.stuffProps.stuffAdjective>glace</Ice_Resource_IceBlocks.stuffProps.stuffAdjective>
+
+<!--============================== Beekeeping ==============================-->
+  
+  <DankPyon_Wax.label>cire</DankPyon_Wax.label>
+  <DankPyon_Wax.description>Un composé organique, solide à température ambiante, ce qui lui permet d'être stocké pendant de longues périodes. Peut être transformé en bougies.</DankPyon_Wax.description>
+  
+  <DankPyon_QueenBee.label>reine abeille d'Oswin</DankPyon_QueenBee.label>
+  <DankPyon_QueenBee.description>La matriarche d'une colonie d'abeilles originaire des régions de la maison Oswin. Elles se nourrissent de charognes et sont capables d'en produire du miel.</DankPyon_QueenBee.description>
+  
+  <DankPyon_Honey.label>miel</DankPyon_Honey.label>
+  <DankPyon_Honey.description>Une substance liquide sucrée et visqueuse qui peut être utilisée comme conservateur ou fermentée en une boisson alcoolisée.</DankPyon_Honey.description>
+  
+  <DankPyon_Honeycomb.label>rayon de miel</DankPyon_Honeycomb.label>
+  <DankPyon_Honeycomb.description>Une substance liquide sucrée et visqueuse croisée avec de la cire qui peut être utilisée comme conservateur ou fermentée en une boisson alcoolisée. Le miel en rayon peut aussi être consommé telle une pâtisserie.</DankPyon_Honeycomb.description>
+
+<!--============================== Metals ==============================-->
+<!--=============== Iron ====================-->
+
+  <DankPyon_IronOre.label>minerai de fer</DankPyon_IronOre.label>
+  <DankPyon_IronOre.description>Un minerai de fer brut. Doit être débarrassé de ses impuretés en étant transformé en lingot dans une fonderie pour être utilisable.</DankPyon_IronOre.description>
+
+  <DankPyon_IronIngot.label>lingot de fer</DankPyon_IronIngot.label>
+  <DankPyon_IronIngot.description>Une barre de fer. Prête à être utilisée dans l'artisanat et la construction.</DankPyon_IronIngot.description>
+  <DankPyon_IronIngot.stuffProps.stuffAdjective>fer</DankPyon_IronIngot.stuffProps.stuffAdjective>
+
+<!--=============== Silver ====================-->
+
+  <DankPyon_SilverOre.label>minerai d'argent</DankPyon_SilverOre.label>
+  <DankPyon_SilverOre.description>Un minerai d'argent brut. Doit être débarrassé de ses impuretés en étant transformé en lingot dans une fonderie pour être utilisable.</DankPyon_SilverOre.description>
+
+  <!--DankPyon_SilverIngot.label>lingot d'argent</DankPyon_SilverIngot.label>
+  <DankPyon_SilverIngot.description>Une barre d'argent. Prête à être utilisée dans l'artisanat et la construction. Peut être fondue dans un moule pour fabriquer des pièces d'argent.</DankPyon_SilverIngot.description-->
+
+<!--=============== Gold Ore ====================-->
+
+  <DankPyon_GoldOre.label>minerai d'or</DankPyon_GoldOre.label>
+  <DankPyon_GoldOre.description>Un minerai d'or brut. Doit être débarrassé de ses impuretés en étant transformé en lingot dans une fonderie pour être utilisable.</DankPyon_GoldOre.description>
+
+  <!--DankPyon_GoldIngot.label>lingot d'or</DankPyon_GoldIngot.label>
+  <DankPyon_GoldIngot.description>Une barre d'or. Prête à être utilisée dans l'artisanat et la construction.</DankPyon_GoldIngot.description-->
+
+<!--============================== Misc ==============================-->
+<!--=============== Bone ====================-->
+
+  <DankPyon_Bone.label>os</DankPyon_Bone.label>
+  <DankPyon_Bone.description>Les os d'animaux, y compris humains, peuvent être utilisés comme matériau général. Les armes et armures en os offrent une faible durabilité mais une protection accessible. Les bâtiments et l'art incrustés d'os et d'ivoire décorent des matériaux autrement pauvres ou ternes. Bien que facile à acquérir, la décision d'utiliser des os pour des structures entières, comme un mur ou une porte, doit être prise avec  précaution. La meilleure utilisation de l'os, que ce soit pour l'armure ou l'art, devrait être de mettre en valeur d'autres matériaux.</DankPyon_Bone.description>
+  <DankPyon_Bone.stuffProps.stuffAdjective>os</DankPyon_Bone.stuffProps.stuffAdjective>
+
+<!--============================== Fabric ==============================-->
+
+  <DankPyon_Linen.label>toile de lin</DankPyon_Linen.label>
+  <DankPyon_Linen.description>Un tissu résistant fabriqué à partir de fibres de lin séchées.</DankPyon_Linen.description>
+
+  <DankPyon_Silk.label>soie</DankPyon_Silk.label>
+  <DankPyon_Silk.description>Un tissu doux et luxueux fréquemment utilisé pour confectionner des vêtements nobles.</DankPyon_Silk.description>
+
+<!--============================== Gemstones ==============================-->
+<!--=============== Citrine ====================-->
+
+  <DankPyon_Citrine.label>citrine</DankPyon_Citrine.label>
+  <DankPyon_Citrine.description>Le quartz jaune pâle connu sous le nom de citrine est l'un des cristaux les moins appréciés. Décorer des bijoux avec cette gemme augmente la richesse, même si la valeur ajoutée sera moindre par rapport aux gemmes plus précieuses.</DankPyon_Citrine.description>
+
+<!--=============== Amber ====================-->
+
+  <DankPyon_Amber.label>ambre</DankPyon_Amber.label>
+  <DankPyon_Amber.description>Une gemme durcie de résine d'arbre fossilisée. Communément admirée pour sa teinte naturelle orange jaunâtre, elle est souvent utilisée pour les ornements et les décorations. Cependant, elle est trop molle pour être utilisée pour les armes.</DankPyon_Amber.description>
+
+<!--=============== Onyx ====================-->
+
+  <DankPyon_Onyx.label>onyx</DankPyon_Onyx.label>
+  <DankPyon_Onyx.description>Ce minéral noir et blanc alterne ses couleurs par bandes parallèles, tantôt en harmonie, tantôt en désordre. Cependant, les couleurs chaotiques ne dévalorisent pas ce joyau, mais augmentent plutôt sa richesse, en particulier dans les sculptures et les bijoux.</DankPyon_Onyx.description>
+
+<!--=============== Emerald ====================-->
+
+  <DankPyon_Emerald.label>émeraude</DankPyon_Emerald.label>
+  <DankPyon_Emerald.description>Une pierre précieuse robuste avec une teinte principalement verte. La préciosité apportée par ce cristal ajoute de la valeur à n'importe quel ornement, qu'il s'agisse d'un joyau sur un pommeau d'épée ou d'un sertissage sur un anneau.</DankPyon_Emerald.description>
+
+<!--=============== Sapphire ====================-->
+
+  <DankPyon_Sapphire.label>saphir</DankPyon_Sapphire.label>
+  <DankPyon_Sapphire.description>L'une des pierres précieuses les plus convoitées et les plus recherchées en raison de sa facette cristalline. Son ton bleu et son éclat rendent n'importe quel bijoux esthétiques, bien que la gemme a suffisamment de valeur pour attirer l'attention de dangereux vagabonds.</DankPyon_Sapphire.description>
+
+<!--=============== Ruby ====================-->
+
+  <DankPyon_Ruby.label>rubis</DankPyon_Ruby.label>
+  <DankPyon_Ruby.description>La pierre précieuse la plus recherchée avec une couleur aussi sanglante que le sacrifice que les gens font pour l'obtenir. Les cultures au travers des terres se retrouvent attirées par le joyau esthétiquement riche, utilisé pour le commerce, la fabrication de bijoux et même en exposition.</DankPyon_Ruby.description>
+
+</LanguageData>

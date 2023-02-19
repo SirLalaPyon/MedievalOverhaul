@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- ==================== Doors ==================== -->
+
+  <DankPyon_RusticDoor.label>porte rustique</DankPyon_RusticDoor.label>
+  <DankPyon_RusticDoor.description>Divise les pièces. Les portes simples doivent être ouvertes manuellement, ce qui ralentit les gens. Le niveau de ralentissement dépend de la composition de la porte.</DankPyon_RusticDoor.description>
+
+  <DankPyon_LogGate.label>portail en rondin</DankPyon_LogGate.label>
+  <DankPyon_LogGate.description>Divise les pièces. Les portes simples doivent être ouvertes manuellement, ce qui ralentit les gens. Le niveau de ralentissement dépend de la composition de la porte.</DankPyon_LogGate.description>
+
+  <DankPyon_Gate.label>herse</DankPyon_Gate.label>
+  <DankPyon_Gate.description>Une porte blindée qui divise les pièces. Les portes simples doivent être ouvertes manuellement, ce qui ralentit les gens. Le niveau de ralentissement dépend de la composition de la porte.</DankPyon_Gate.description>
+
+  <DankPyon_SlabDoor.label>porte en dalle</DankPyon_SlabDoor.label>
+  <DankPyon_SlabDoor.description>Un bloc de pierre reconverti en porte lente et lourde. Les portes simples doivent être ouvertes manuellement, ce qui ralentit les gens. Le niveau de ralentissement dépend de la composition de la porte.</DankPyon_SlabDoor.description>
+
+<!--========================= Frames =============================-->
+
+  <DankPyon_Frame_Log.label>encadrement de portail en rondin</DankPyon_Frame_Log.label>
+  <DankPyon_Frame_Log.description>Un encadrement en bois à placer au-dessus des portes.</DankPyon_Frame_Log.description>
+
+<!--========================= Walls =============================-->
+
+  <DankPyon_LogWall.label>mur en rondin</DankPyon_LogWall.label>
+  <DankPyon_LogWall.description>Un mur infranchissable. Capable de soutenir un toit.</DankPyon_LogWall.description>
+
+  <DankPyon_HideTentWall.label>tente en cuir</DankPyon_HideTentWall.label>
+  <DankPyon_HideTentWall.description>Une tente en cuirs rapiécés. Rapide et facile à fabriquer mais peut être facilement détruite.\n\nDémanteler la tente permet de récupérer toutes les ressources.</DankPyon_HideTentWall.description>
+
+  <DankPyon_TentWall.label>tente</DankPyon_TentWall.label>
+  <DankPyon_TentWall.description>Une tente en tissu léger. Rapide et facile à fabriquer mais peut être facilement détruite.\n\nDémanteler la tente permet de récupérer toutes les ressources.</DankPyon_TentWall.description>
+
+  <DankPyon_Palisade.label>palissade</DankPyon_Palisade.label>
+  <DankPyon_Palisade.description>Un mur infranchissable.</DankPyon_Palisade.description>
+
+  <DankPyon_EmbPalisade.label>meurtrière de palissade</DankPyon_EmbPalisade.label>
+  <DankPyon_EmbPalisade.description>Un mur infranchissable qui permet de tirer au travers.</DankPyon_EmbPalisade.description>
+
+  <DankPyon_CavalrySpike.label>pieux de cavalerie en bois</DankPyon_CavalrySpike.label>
+  <DankPyon_CavalrySpike.description>Un assemblement méticuleux de pics conçus pour empêcher les intrus d'entrer. /n/nTraverser les pieux peut blesser les colons.</DankPyon_CavalrySpike.description>
+
+  <!--DankPyon_DarkCavalrySpike.label>pieux de cavalerie en bois sombre</DankPyon_DarkCavalrySpike.label>
+  <DankPyon_DarkCavalrySpike.description>Un assemblement méticuleux de pics conçus pour empêcher les intrus d'entrer. /n/nTraverser les pieux peut blesser les colons.</DankPyon_DarkCavalrySpike.description-->
+
+  <DankPyon_CastleWall.label>rempart de château</DankPyon_CastleWall.label>
+  <DankPyon_CastleWall.description>Une haute muraille infranchissable. Robuste et capable de supporter un toit. Attention car en raison de sa hauteur, le rempart est faible face aux explosions.</DankPyon_CastleWall.description>
+
+  <DankPyon_CastleWallEmbrasures.label>meurtrière de château</DankPyon_CastleWallEmbrasures.label>
+  <DankPyon_CastleWallEmbrasures.description>Une haute muraille infranchissable qui permet de tirer au travers. Robuste et capable de supporter un toit. Attention car en raison de sa hauteur, le rempart est faible face aux explosions.</DankPyon_CastleWallEmbrasures.description>
+
+  <Ice_Wall_Ice.label>mur en glace</Ice_Wall_Ice.label>
+  <Ice_Wall_Ice.description>Un mur de glace qui refroidit son environnement mais qui doit être ravitaillé régulièrement en glace.</Ice_Wall_Ice.description>
+  <Ice_Wall_Ice.comps.CompHitpointRefuelable.fuelLabel>épaisseur de glace</Ice_Wall_Ice.comps.CompHitpointRefuelable.fuelLabel>
+
+  <DankPyon_Trench.label>tranchée</DankPyon_Trench.label>
+  <DankPyon_Trench.description>Un fossé de base non renforcé qui entrave le mouvement. Ne nécessite que de la main-d'œuvre pour être construit, mais peut s'effondrer en cas de dégâts.</DankPyon_Trench.description>
+
+  <DankPyon_RTrench.label>tranchée renforcée</DankPyon_RTrench.label>
+  <DankPyon_RTrench.description>Un fossé renforcé qui entrave le mouvement, plus profond afin de rendre sa traversée longue et difficile.</DankPyon_RTrench.description>
+
+<!--========================= Column =============================-->
+
+  <DankPyon_RoyalColumn.label>pilier royal</DankPyon_RoyalColumn.label>
+  <DankPyon_RoyalColumn.description>Un beau pilier garni d'or capable de supporter un toit. Ne bloque pas la vue ou le mouvement et a une belle apparence.</DankPyon_RoyalColumn.description>
+
+</LanguageData>

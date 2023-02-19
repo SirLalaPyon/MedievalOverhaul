@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DankPyon_OpportunitySite_SmallRuin.questDescriptionRules.rulesStrings.0>questDescription->[asker_nameFull], [asker_faction_leaderTitle] de [asker_faction_name], nous a envoyé un message. Apparemment, [siteFaction_pawnsPlural] habitant dans une ruine voisine a pillé leurs caravanes. La ruine est contrôlée par [siteFaction_name].\n\n[asker_nameDef] nous demande de nettoyer les ruines, ce qui signifie éliminer tous les ennemis. [asker_label] indique que [sitePart0_description].</DankPyon_OpportunitySite_SmallRuin.questDescriptionRules.rulesStrings.0>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.0>questName->Le [camp] de [bandit]</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.0>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.1>questName->[camp] de [bandit]</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.1>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.2>questName->[asker_nameDef] et le [camp]</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.2>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.3>camp->Camp</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.3>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.4>camp->Ruines</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.4>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.5>camp->Repaire</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.5>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.6>camp->Labyrinthe</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.6>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.7>bandit->Bandits</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.7>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.8>bandit->Pillards</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.8>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.9>bandit->Hors-la-loi</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.9>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.10>bandit->Desperados</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.10>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.11>bandit->Fugitifs</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.11>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.12>bandit->Maraudeurs</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.12>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.13>bandit->Voleurs</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.13>
+  <DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.14>bandit->Brigands</DankPyon_OpportunitySite_SmallRuin.questNameRules.rulesStrings.14>
+
+  <DankPyon_OpportunitySite_SmallRuin.LetterLabelQuestExpired.slateRef>Quête expirée : [resolvedQuestName]</DankPyon_OpportunitySite_SmallRuin.LetterLabelQuestExpired.slateRef>
+  <DankPyon_OpportunitySite_SmallRuin.LetterTextQuestExpired.slateRef>Les bandits ont pillé les ruines et sont partis. La quête [resolvedQuestName] a expiré.</DankPyon_OpportunitySite_SmallRuin.LetterTextQuestExpired.slateRef>
+  <DankPyon_OpportunitySite_SmallRuin.LetterLabelQuestFailed.slateRef>Quête échouée : [resolvedQuestName]</DankPyon_OpportunitySite_SmallRuin.LetterLabelQuestFailed.slateRef>
+  <DankPyon_OpportunitySite_SmallRuin.LetterTextQuestFailed.slateRef>Après avoir été découvert, le camp de bandits s'est dispersé. La quête [resolvedQuestName] est terminée.</DankPyon_OpportunitySite_SmallRuin.LetterTextQuestFailed.slateRef>
+  <DankPyon_OpportunitySite_SmallRuin.LetterLabelPaymentArrived.slateRef>Le paiement est arrivé.</DankPyon_OpportunitySite_SmallRuin.LetterLabelPaymentArrived.slateRef>
+  <DankPyon_OpportunitySite_SmallRuin.LetterTextPaymentArrived.slateRef>Vous avez nettoyé les ruines !\n\nLe paiement de [asker_faction_name] est arrivé.</DankPyon_OpportunitySite_SmallRuin.LetterTextPaymentArrived.slateRef>
+  <DankPyon_OpportunitySite_SmallRuin.LetterLabelFavorReceiver.slateRef>[asker_faction_royalFavorLabel]</DankPyon_OpportunitySite_SmallRuin.LetterLabelFavorReceiver.slateRef>
+  <DankPyon_OpportunitySite_SmallRuin.LetterTextFavorReceiver.slateRef>Ces colons ont participé à la victoire de la quête [resolvedQuestName]. [asker_definite] veut savoir qui devrait recevoir les [royalFavorReward_amount] [asker_faction_royalFavorLabel] pour ce service.</DankPyon_OpportunitySite_SmallRuin.LetterTextFavorReceiver.slateRef>
+
+</LanguageData>

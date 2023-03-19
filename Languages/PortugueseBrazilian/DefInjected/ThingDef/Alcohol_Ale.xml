@@ -1,12 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <DankPyon_Ale.label>cerveja</DankPyon_Ale.label>
-  <DankPyon_Ale.description>Bebida fermentada de cor dourada profunda, uma verdadeira força vital da vida social por aqui. Poucas canecas na taverna são tudo o que você precisa para esquecer as dificuldades do trabalho de campo, os perigos que aguardam na estrada ou os votos matrimoniais mal pensados. Deixe a névoa quente da embriaguez envolvê-lo, não precisa se preocupar com nada. Hoje nao.</DankPyon_Ale.description>
-  <DankPyon_Ale.ingestible.ingestCommandString>Beber {0}</DankPyon_Ale.ingestible.ingestCommandString>
-  <DankPyon_Ale.ingestible.ingestReportString>Bebendo {0}.</DankPyon_Ale.ingestible.ingestReportString>
+<DankPyon_Ale.label>cerveja ale</DankPyon_Ale.label>
+<DankPyon_Ale.description>Bebida fermentada de cor dourada profunda, uma verdadeira força vital da vida social por aqui. Poucas canecas na taverna são tudo o que você precisa para esquecer as dificuldades do trabalho de campo, os perigos que aguardam na estrada ou os votos matrimoniais mal pensados. Deixe a névoa quente da embriaguez envolvê-lo, não precisa se preocupar com nada. Hoje nao.</DankPyon_Ale.description>
+<DankPyon_Ale.ingestible.ingestCommandString>Beber {0}</DankPyon_Ale.ingestible.ingestCommandString>
+<DankPyon_Ale.ingestible.ingestReportString>Bebendo {0}.</DankPyon_Ale.ingestible.ingestReportString>
+<DankPyon_Ale.tools.bottle.label>garrafa</DankPyon_Ale.tools.bottle.label>
+<DankPyon_Ale.tools.neck.label>gargalo</DankPyon_Ale.tools.neck.label>
+  
+<DankPyon_WortAle.label>mosto de cerveja ale</DankPyon_WortAle.label>
+<DankPyon_WortAle.description>Cerveja não fermentada. Essa substância precisa fermentar em um barril de fermentação antes de se tornar cerveja potável.</DankPyon_WortAle.description>
 
-  <DankPyon_WortAle.label>cerveja Wort</DankPyon_WortAle.label>
-  <DankPyon_WortAle.description>Cerveja não fermentada. Essa substância precisa fermentar em um barril de fermentação antes de se tornar cerveja potável.</DankPyon_WortAle.description>
+<DankPyon_Mead.label>hidromel</DankPyon_Mead.label>
+<DankPyon_Mead.description>Bebida fermentada de cor dourada intensa como mel, uma verdadeira força vital da vida social por aqui. Poucas canecas na taverna são tudo o que você precisa para esquecer as dificuldades do trabalho de campo, os perigos que aguardam na estrada ou os votos matrimoniais mal pensados. Deixe a névoa quente da embriaguez envolvê-lo, não precisa se preocupar com nada. Hoje não.</DankPyon_Mead.description>
+<DankPyon_Mead.ingestible.ingestCommandString>Beber {0}</DankPyon_Mead.ingestible.ingestCommandString>
+<DankPyon_Mead.ingestible.ingestReportString>Bebendo{0}.</DankPyon_Mead.ingestible.ingestReportString>
+<DankPyon_Mead.tools.bottle.label>garrafa</DankPyon_Mead.tools.bottle.label>
+<DankPyon_Mead.tools.neck.label>gargalo</DankPyon_Mead.tools.neck.label>
+  
+<DankPyon_Cider.label>sidra</DankPyon_Cider.label>
+<DankPyon_Cider.description>Bebida de maçã fermentada durante alguns dias para desenvolver o seu teor alcoólico. O consumo excessivo de sidra pode deixá-lo bêbado.</DankPyon_Cider.description>
+<DankPyon_Cider.ingestible.ingestCommandString>Beber {0}</DankPyon_Cider.ingestible.ingestCommandString>
+<DankPyon_Cider.ingestible.ingestReportString>Bebendo {0}.</DankPyon_Cider.ingestible.ingestReportString>
+<DankPyon_Cider.tools.bottle.label>garrafa</DankPyon_Cider.tools.bottle.label>
+<DankPyon_Cider.tools.neck.label>gargalo</DankPyon_Cider.tools.neck.label>
 
 </LanguageData>

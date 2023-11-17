@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Tribals</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Hay/Straw processor -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_HayRack"]/researchPrerequisites</xpath>
+					<value>
+						<li>VFET_Agriculture</li>
+					</value>
+				</li>
+
+				<!-- Leather/Hide processor -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_DryRack" and not(researchPrerequisites)]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFET_Hunting</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
+				<!-- Butcher's Block -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock" and not(researchPrerequisites)]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFET_Hunting</li>
+							<li>VFET_Construction</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
+				<!-- Mining Spot -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="DankPyon_MiningSpot" and not(researchPrerequisites)]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>VFET_Mining</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
+				<!-- Butcher Table is complex -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[(
+							defName="TableButcher"
+						)]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>DankPyon_RusticFurniture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
+				<!-- Large Fire (wood logs) -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VFET_LargeFire"]/costList</xpath>
+					<value>
+						<costList>
+							<DankPyon_RawWood>150</DankPyon_RawWood>
+						</costList>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

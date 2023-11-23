@@ -92,32 +92,33 @@
 		</match>
 	</Operation>
 
-	
-	
+
+
 	<!-- ============================ Core Research Project Removal ========================== -->
-	
+
 	<!-- ============================ Tweaked by pre-existing patches ========================== -->
 	<!-- defName="Brewing" or -->
 	<!-- defName="RecurveBow" or -->
 	<!-- defName="Greatbow" or -->
 	<!-- defName="PlateArmor" or -->
 	<!-- ============================ Core Research Project Prerequisite Add ========================== -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ResearchProjectDef[defName="Smithing"]</xpath>
-		<value>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Smithing" or defName="Brewing" or defName="ComplexFurniture"]/prerequisites</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Smithing" or defName="Brewing" or defName="ComplexFurniture"]/prerequisites</xpath>
+			<value>
+				<li>DankPyon_RusticFurniture</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Smithing" or defName="Brewing" or defName="ComplexFurniture"]</xpath>
+			<value>
 				<prerequisites>
 					<li>DankPyon_RusticFurniture</li>
 				</prerequisites>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
-		<value>
-				<prerequisites>
-					<li>DankPyon_RusticFurniture</li>
-				</prerequisites>
-		</value>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
@@ -127,24 +128,6 @@
 				<li>DankPyon_TextileSpinning</li>
 			</prerequisites>
 		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]/prerequisites</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]/prerequisites</xpath>
-			<value>
-				<li>DankPyon_RusticFurniture</li>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ResearchProjectDef[defName = "ComplexFurniture"]</xpath>
-			<value>
-				<prerequisites>
-					<li>DankPyon_RusticFurniture</li>
-				</prerequisites>
-			</value>
-		</nomatch>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
@@ -391,7 +374,7 @@
 			</recipeMaker>
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]/recipeMaker/researchPrerequisite</xpath>
 		<value>
@@ -406,24 +389,42 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="TableSculpting" or defName="FueledStove" or defName="TableButcher"]</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>ComplexFurniture</li>
-			</researchPrerequisites>
-		</value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="TableSculpting" or defName="SimpleResearchBench"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="TableSculpting" or defName="SimpleResearchBench"]/researchPrerequisites</xpath>
+			<value>
+				<li>DankPyon_RusticFurniture</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="TableSculpting" or defName="SimpleResearchBench"]</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DankPyon_RusticFurniture</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>DankPyon_RusticFurniture</li>
-			</researchPrerequisites>
-		</value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="TableSculpting" or defName="FueledStove" or defName="TableButcher"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="TableSculpting" or defName="FueledStove" or defName="TableButcher"]/researchPrerequisites</xpath>
+			<value>
+				<li>ComplexFurniture</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="TableSculpting" or defName="FueledStove" or defName="TableButcher"]</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>ComplexFurniture</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
 	</Operation>
-	
+
 	<!-- ============================ Core Research Project Coordinates ========================== -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>

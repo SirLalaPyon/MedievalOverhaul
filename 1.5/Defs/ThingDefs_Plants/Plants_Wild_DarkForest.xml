@@ -22,7 +22,7 @@
 		</statBases>
 		<blockLight>true</blockLight>
 		<plant>
-			<dieIfLeafless>False</dieIfLeafless> 
+			<dieIfLeafless>False</dieIfLeafless>
 			<fertilityMin>0.8</fertilityMin>
 			<harvestedThingDef>DankPyon_RawDarkWood</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
@@ -70,9 +70,11 @@
 					<li>ChunkSandstone</li>
 				</ignoredThings>
 			</li>
-			<li Class="VanillaPlantsExpanded.DualCropExtension">
-				<secondaryOutput>DankPyon_Amber</secondaryOutput>
-				<outPutAmount>10</outPutAmount>
+			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
+				<secondaryDrop>DankPyon_Amber</secondaryDrop>
+				<secondaryDropAmountRange>10</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>false</secondaryNotWhenLeafless>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -98,7 +100,7 @@
 		</statBases>
 		<blockLight>true</blockLight>
 		<plant>
-			<dieIfLeafless>False</dieIfLeafless> 
+			<dieIfLeafless>False</dieIfLeafless>
 			<fertilityMin>0.8</fertilityMin>
 			<harvestedThingDef>DankPyon_RawDarkWood</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
@@ -146,9 +148,11 @@
 					<li>ChunkSandstone</li>
 				</ignoredThings>
 			</li>
-			<li Class="VanillaPlantsExpanded.DualCropExtension">
-				<secondaryOutput>DankPyon_Amber</secondaryOutput>
-				<outPutAmount>10</outPutAmount>
+			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
+				<secondaryDrop>DankPyon_Amber</secondaryDrop>
+				<secondaryDropAmountRange>10</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>false</secondaryNotWhenLeafless>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -168,7 +172,7 @@
 			<Flammability>0.7</Flammability>
 		</statBases>
 		<plant>
-			<dieIfLeafless>False</dieIfLeafless> 
+			<dieIfLeafless>False</dieIfLeafless>
 			<fertilityMin>0.4</fertilityMin>
 			<growDays>18</growDays>
 			<harvestWork>2000</harvestWork>
@@ -193,84 +197,88 @@
 					<li>ChunkLimestone</li>
 				</ignoredThings>
 			</li>
-			<li Class="VanillaPlantsExpanded.DualCropExtension">
-				<secondaryOutput>DankPyon_Amber</secondaryOutput>
-				<outPutAmount>2</outPutAmount>
+			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
+				<secondaryDrop>DankPyon_Amber</secondaryDrop>
+				<secondaryDropAmountRange>2</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>false</secondaryNotWhenLeafless>
 			</li>
 		</modExtensions>
 	</ThingDef>
 	
-<ThingDef ParentName="DeciduousTreeBase">
-    <defName>DankPyon_GreatWillow</defName>
-    <label>great Willow</label>
-    <description>A willow tree that has managed to live for thousands of years.</description>
-    <thingClass>MedievalOverhaul.Plant_SpawnerOnDestroy</thingClass>
-	<graphicData>
-      <texPath>Plants/GreatWillow</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <shadowData>
-        <volume>(0.2, 0.3, 0.13)</volume>
-        <offset>(0,0,-0.44)</offset>
-      </shadowData>
-      <shaderParameters>
-        <_FallColorSource>(0.373, 0.427, 0.313)</_FallColorSource>
-        <_FallTransitionRange>(0.02, 0.14)</_FallTransitionRange>
-      </shaderParameters>
-    </graphicData>
-    <statBases>
-      <Beauty>15</Beauty>
-    </statBases>
-    <plant>
-		<dieIfLeafless>False</dieIfLeafless> 
-		<growDays>200</growDays>
-		<leaflessGraphicPath>Plants_Leafless/GreatWillow_Leafless</leaflessGraphicPath>
-		<harvestWork>2000</harvestWork>
-		<harvestYield>100</harvestYield>
-		<wildClusterWeight>32</wildClusterWeight>
-		<wildClusterRadius>5</wildClusterRadius>
-		<visualSizeRange>6~9</visualSizeRange>
-    </plant>
+	<ThingDef ParentName="DeciduousTreeBase">
+		<defName>DankPyon_GreatWillow</defName>
+		<label>great Willow</label>
+		<description>A willow tree that has managed to live for thousands of years.</description>
+		<thingClass>MedievalOverhaul.Plant_SpawnerOnDestroy</thingClass>
+		<graphicData>
+			<texPath>Plants/GreatWillow</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(0,0,-0.44)</offset>
+			</shadowData>
+			<shaderParameters>
+				<_FallColorSource>(0.373, 0.427, 0.313)</_FallColorSource>
+				<_FallTransitionRange>(0.02, 0.14)</_FallTransitionRange>
+			</shaderParameters>
+		</graphicData>
+		<statBases>
+			<Beauty>15</Beauty>
+		</statBases>
+		<plant>
+			<dieIfLeafless>False</dieIfLeafless>
+			<growDays>200</growDays>
+			<leaflessGraphicPath>Plants_Leafless/GreatWillow_Leafless</leaflessGraphicPath>
+			<harvestWork>2000</harvestWork>
+			<harvestYield>100</harvestYield>
+			<wildClusterWeight>32</wildClusterWeight>
+			<wildClusterRadius>5</wildClusterRadius>
+			<visualSizeRange>6~9</visualSizeRange>
+		</plant>
 
-	<comps>
-		<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
-			<kindToSpawn>DankPyon_Schrat_Dark</kindToSpawn>
-			<chance>0.05</chance>
-			<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
-			<faction>DankPyon_Forest_Faction</faction>
-			<mentalStateDef>BerserkMechanoid</mentalStateDef>
-			<numberToSpawn>1~1</numberToSpawn>
-			<letterLabel>Awakened Schrat</letterLabel>
-			<letterDescription>An ancient schrat has been angered due to the cutting of great trees. Make sure to not anger it!</letterDescription>
-			<letterDef>ThreatBig</letterDef>
-			<onlyIfHarvestable>true</onlyIfHarvestable>
-			<!-- 
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
+				<kindToSpawn>DankPyon_Schrat_Dark</kindToSpawn>
+				<chance>0.05</chance>
+				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
+				<faction>DankPyon_Forest_Faction</faction>
+				<mentalStateDef>BerserkMechanoid</mentalStateDef>
+				<numberToSpawn>1~1</numberToSpawn>
+				<letterLabel>Awakened Schrat</letterLabel>
+				<letterDescription>An ancient schrat has been angered due to the cutting of great trees. Make sure to not anger it!</letterDescription>
+				<letterDef>ThreatBig</letterDef>
+				<onlyIfHarvestable>true</onlyIfHarvestable>
+				<!-- 
 				so the update map comp doesn't spawn thousands of schrat
 				can remove in 1.5
 			-->
-			<disableCompDestroy>true</disableCompDestroy>
-			<!-- <notToxicFallout>false</notToxicFallout> -->
-		</li>
-	</comps>
+				<disableCompDestroy>true</disableCompDestroy>
+				<!-- <notToxicFallout>false</notToxicFallout> -->
+			</li>
+		</comps>
 
-	<modExtensions>
-		<li Class="TransparentThings.ThingExtension">
-			<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
-			<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
-			<firstAreaOffset>(-1, 0)</firstAreaOffset>
-			<firstArea>(3, 3)</firstArea>
-			<secondAreaOffset>(0, 3)</secondAreaOffset>
-			<secondArea>(1, 2)</secondArea>
-			<ignoredThings>
-				<li>ChunkMarble</li>
-				<li>ChunkGranite</li>
-				<li>ChunkSandstone</li>
-				<li>ChunkLimestone</li>
-			</ignoredThings>
-		</li>
-		<li Class="VanillaPlantsExpanded.DualCropExtension">
-			<secondaryOutput>DankPyon_Amber</secondaryOutput>
-			<outPutAmount>2</outPutAmount>
-		</li>
-	</modExtensions>
-</ThingDef>
+		<modExtensions>
+			<li Class="TransparentThings.ThingExtension">
+				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
+				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
+				<firstAreaOffset>(-1, 0)</firstAreaOffset>
+				<firstArea>(3, 3)</firstArea>
+				<secondAreaOffset>(0, 3)</secondAreaOffset>
+				<secondArea>(1, 2)</secondArea>
+				<ignoredThings>
+					<li>ChunkMarble</li>
+					<li>ChunkGranite</li>
+					<li>ChunkSandstone</li>
+					<li>ChunkLimestone</li>
+				</ignoredThings>
+			</li>
+			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
+				<secondaryDrop>DankPyon_Amber</secondaryDrop>
+				<secondaryDropAmountRange>2</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>false</secondaryNotWhenLeafless>
+			</li>
+		</modExtensions>
+	</ThingDef>
 </Defs>

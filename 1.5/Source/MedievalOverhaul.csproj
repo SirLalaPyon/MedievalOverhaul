@@ -54,11 +54,13 @@
     <Compile Include="ESCP_FuelExtension\Main.cs" />
     <Compile Include="ESCP_FuelExtension\Utility.cs" />
     <Compile Include="ESCP_FuelExtension\UtilityOnStartup.cs" />
+    <Compile Include="Medieval Overhaul\Extensions\FileName.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\Plant_SecondaryDrop.cs" />
     <Compile Include="Medieval Overhaul\MapComps\GreatTreesClassUpdate_MapComponent.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CompGenericHide.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermathSet.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermath.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Plant_SpawnerOnDestroy.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\Plant_SpawnerOnDestroy.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\HideGeneric.cs" />
     <Compile Include="Medieval Overhaul\ModExtensions.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ButcherProperties.cs" />

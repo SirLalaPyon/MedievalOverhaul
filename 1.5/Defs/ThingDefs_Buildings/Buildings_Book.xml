@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--================================ Lecturn ================================-->
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>DankPyon_Lecturn</defName>
+		<label>lecturn</label>
+		<description>A simple lecturn to place scriptures or books to be easily read.</description>
+		<graphicData>
+			<texPath>Furniture/Lecturn</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Comfort>0.5</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+
+		<pathCost>30</pathCost>
+		<fillPercent>0.20</fillPercent>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Styleable" />
+		</comps>
+
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+  </ThingDef>
+
+  	<!--================================ Books ================================-->
+	<ThingDef ParentName="BuildingBase" Name="DankPyon_BookBuildingBase" Abstract="True">
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>20</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<clearBuildingArea>false</clearBuildingArea>
+		<size>(1,1)</size>
+		<building>
+			<isEdifice>false</isEdifice>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+
+		<thingCategories>
+			<li>DankPyon_BuildingsBook</li>
+		</thingCategories>
+
+		<statBases>
+			<Flammability>0</Flammability>
+			<SellPriceFactor>1.30</SellPriceFactor>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		
+	
+		<tradeTags>
+			<li>DankPyon_Book</li>
+		</tradeTags>
+
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
+		<modExtensions>
+			<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- books -->
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_MilitaryBlades</defName>
+		<label>military blade schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/BladesMilitary_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_NobleBlades</defName>
+		<label>noble blade schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/BladesNoble_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_MilitaryMaces</defName>
+		<label>military mace schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/BluntsMilitary_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_NobleMaces</defName>
+		<label>noble mace schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/BluntsNoble_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_MilitaryPolearms</defName>
+		<label>military polearm schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/PolearmsMilitary_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_NoblePolearms</defName>
+		<label>noble polearm schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/PolearmsNoble_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_Crossbow</defName>
+		<label>crossbow schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/Crossbow_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_HeavyCrossbow</defName>
+		<label>arbalest schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/Arbalest_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_Steel</defName>
+		<label>metallurgy schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/Steel_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>700</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_Gunpowder</defName>
+		<label>black powder schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/Gunpowder_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_Tar</defName>
+		<label>tar schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/Tar_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_GreatBow</defName>
+		<label>greatbow schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/GreatBow_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>650</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_WarBow</defName>
+		<label>warbow schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/WarBow_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_IntermediateCooking</defName>
+		<label>intermediate cooking schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/IntermediateCooking_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_AdvancedCooking</defName>
+		<label>advanced cooking schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/AdvancedCooking_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BookBuildingBase">
+		<defName>DankPyon_Book_BallistaRepeater</defName>
+		<label>ballista repeater schematics</label>
+		<graphicData>
+		<texPath>Misc/Books/BallistaRepeater_Book</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

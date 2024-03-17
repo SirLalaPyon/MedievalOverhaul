@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BasePawn" Name="DankPyon_SchratBase">
+    <defName>DankPyon_Schrat</defName>
+    <label>schrat</label>
+    <description>A gnarled tangle of branches, roots and mud, roughly shaped after a human being.
+     Gifted with a twisted, sinister will, Schrats slowly shuffle through the undergrowth in search of the living.
+      It’s said that Waldschrats relish the blood of intrusive lumberjacks and overzealous hunters.</description>
+    
+    <statBases>
+        <MoveSpeed>4.4</MoveSpeed>
+        <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+        <PsychicSensitivity>0.5</PsychicSensitivity>
+        <ToxicResistance>1</ToxicResistance>
+        <Flammability>1</Flammability>
+        <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+        <ComfyTemperatureMax>250</ComfyTemperatureMax>
+        <MeatAmount>0</MeatAmount>
+    </statBases>
+
+    <tools>
+        <li>
+            <label>left fist</label>
+            <capacities>
+                <li>Blunt</li>
+            </capacities>
+            <power>21</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        </li>
+        <li>
+            <label>right fist</label>
+            <capacities>
+                <li>Blunt</li>
+            </capacities>
+            <power>21</power>
+            <cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        </li>
+    </tools>
+
+    <race>
+        <body>DankPyon_SchratBody</body>
+        <fleshType>DankPyon_Schrat</fleshType>
+        <baseBodySize>4</baseBodySize>
+        <baseHealthScale>8.32</baseHealthScale>
+        <needsRest>false</needsRest>
+        <hasGenders>false</hasGenders>
+        <foodType>None</foodType>
+        <lifeExpectancy>2500</lifeExpectancy>
+        <bloodDef>Filth_RubbleBuilding</bloodDef>
+        <deathAction>
+			<workerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</workerClass>
+		</deathAction>
+        <intelligence>ToolUser</intelligence> <!--Probably could use it for tree log weapons in the future -->
+        <thinkTreeMain>Mechanoid</thinkTreeMain>
+        <lifeStageAges>
+            <li>
+                <def>MechanoidFullyFormed</def>
+                <minAge>0</minAge>
+                <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+                <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+                <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+            </li>
+        </lifeStageAges>
+        <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+        <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+        <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+        <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <butcherProducts>
+      <DankPyon_RawDarkWood>110</DankPyon_RawDarkWood>
+    </butcherProducts>
+
+    <comps>
+        <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+            <resourceDef>DankPyon_SchratHeart</resourceDef>
+            <resourceAmount>1</resourceAmount>
+            <dropChance>0.5</dropChance>			
+        </li>
+        <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+            <resourceDef>DankPyon_AncientWood</resourceDef>
+            <resourceAmount>1</resourceAmount>
+            <dropChance>0.5</dropChance>			
+        </li>
+        <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+            <resourceDef>DankPyon_GlowingResin</resourceDef>
+            <resourceAmount>1</resourceAmount>
+            <dropChance>0.5</dropChance>			
+        </li>
+    </comps>
+</ThingDef>
+
+
+<PawnKindDef>
+    <defName>DankPyon_Schrat_Dark</defName>
+    <label>dark schrat</label>
+    <race>DankPyon_Schrat</race>
+    <combatPower>400</combatPower>
+    
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/SchratDark</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+
+    <defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+</PawnKindDef>
+
+<!--==================== Schrat Plains ====================-->
+<ThingDef ParentName="DankPyon_SchratBase">
+    <defName>DankPyon_SchratPlain</defName>
+
+    <race>
+        <body>DankPyon_SchratBody</body>
+        <fleshType>DankPyon_Schrat</fleshType>
+        <baseBodySize>4</baseBodySize>
+        <baseHealthScale>6.32</baseHealthScale>
+    </race>
+
+    <butcherProducts Inherit="False">
+      <WoodLog>100</WoodLog>
+      <DankPyon_SchratHeart>1</DankPyon_SchratHeart>
+    </butcherProducts>
+</ThingDef>
+
+<PawnKindDef>
+    <defName>DankPyon_Schrat_Plain</defName>
+    <label>schrat</label>
+    <race>DankPyon_SchratPlain</race>
+    <combatPower>400</combatPower>
+    
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/SchratPlain</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+
+    <defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+</PawnKindDef>
+    
+</Defs>

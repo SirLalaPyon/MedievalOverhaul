@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>DankPyon_Apparel_Hauberk</defName>
+        <label>hauberk</label>
+        <description>A basic and simple hauberk. Offers decent and affordable protection against slashing and piercing attacks.</description>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>DankPyon_Anvil</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+        </recipeMaker>
+       
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+		<costStuffCount>80</costStuffCount>
+
+        <statBases>
+            <WorkToMake>27000</WorkToMake>
+            <MaxHitPoints>230</MaxHitPoints>
+            <Mass>6</Mass>
+            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail</wornGraphicPath>
+            <tags>
+				<li>DankPyon_BrigandRaider</li>
+                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Archer</li>
+                <li>DankPyon_Footman</li>
+                <li>DankPyon_Billman</li>
+                <li>DankPyon_Knight</li>
+                <li>DankPyon_HedgeKnight</li>
+
+                <li>MedievalMilitaryDecent</li>
+                <li>MedievalMilitaryBasic</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+	
+	<ThingDef ParentName="ArmorSmithableBase">
+        <defName>DankPyon_Apparel_Heavy_Hauberk</defName>
+        <label>heavy hauberk</label>
+        <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective.</description>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail_Pad</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>DankPyon_Anvil</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+        </recipeMaker>
+        
+		<stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+		<costStuffCount>100</costStuffCount>
+
+        <statBases>
+            <WorkToMake>28000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>8</Mass>
+            <StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.5</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_Pad</wornGraphicPath>
+            <tags>
+                <li>DankPyon_BrigandRaider</li>
+                <li>DankPyon_BrigandLeader</li>
+                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_Archer</li>
+                <li>DankPyon_Footman</li>
+                <li>DankPyon_Billman</li>
+
+                <li>MedievalMilitaryDecent</li>
+                <li>MedievalMilitaryBasic</li>
+            </tags>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+   <ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_HeraldicHauberkBase">
+        <defName>DankPyon_Apparel_Heraldic_Hauberk1c</defName>
+        <label>heraldic heavy hauberk (Amboise)</label>
+        <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective. \n\nThis heavy hauberk carries the colours of house Amboise.</description>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+            <recipeUsers Inherit="False">
+            </recipeUsers>
+        </recipeMaker>
+        
+		<stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+		<costStuffCount>100</costStuffCount>
+
+        <statBases>
+            <WorkToMake>28000</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>8</Mass>
+            <StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.5</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic1</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <tags>
+                <li>DankPyon_HeraldicChainMailAmboise</li>
+            </tags>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_HeraldicHauberkBase">
+        <defName>DankPyon_Apparel_Heraldic_Hauberk2c</defName>
+        <label>heraldic heavy hauberk (Soren)</label>
+        <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective. \n\nThis heavy hauberk carries the colours of house Soren.</description>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic2</texPath>
+        </graphicData>
+
+        <apparel>
+            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic2</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <tags Inherit="False">
+                <li>DankPyon_HeraldicChainMailSoren</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_HeraldicHauberkBase">
+        <defName>DankPyon_Apparel_Heraldic_Hauberk3c</defName>
+        <label>heraldic heavy hauberk (Oswin)</label>
+        <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective. \n\nThis heavy hauberk carries the colours of house Oswin.</description>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic3</texPath>
+        </graphicData>
+
+        <apparel>
+            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic3</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <tags Inherit="False">
+                <li>DankPyon_HeraldicChainMailOswin</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_HeraldicHauberkBase">
+        <defName>DankPyon_Apparel_Heraldic_Hauberk4c</defName>
+        <label>heraldic heavy hauberk (Hesse)</label>
+        <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective. \n\nThis heavy hauberk carries the colours of house Hesse.</description>
+        <graphicData>
+			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic4</texPath>
+        </graphicData>
+
+        <apparel>
+            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic4</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <tags Inherit="False">
+                <li>DankPyon_HeraldicChainMailHesse</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+
+</Defs>

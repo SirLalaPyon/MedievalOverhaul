@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef [defName="TemperateForest"]/wildAnimals</xpath>
+		<value>
+            <DankPyon_DireBoar>0.07</DankPyon_DireBoar>
+            <DankPyon_NorthernBoar>0.07</DankPyon_NorthernBoar>
+            <DankPyon_Rox>0.07</DankPyon_Rox>
+			<DankPyon_Direwolf>0.04</DankPyon_Direwolf>
+        </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef [defName="BorealForest"]/wildAnimals</xpath>
+		<value>
+			<DankPyon_Direwolf>0.04</DankPyon_Direwolf>
+			<DankPyon_NorthernBoar>0.3</DankPyon_NorthernBoar>
+			<DankPyon_DireBoar>0.3</DankPyon_DireBoar>
+			<DankPyon_Rox>0.3</DankPyon_Rox>
+        </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef [defName="Tundra"]/wildAnimals</xpath>
+		<value>
+			<DankPyon_Direwolf>0.04</DankPyon_Direwolf>
+			<DankPyon_NorthernBoar>0.3</DankPyon_NorthernBoar>
+			<DankPyon_DireBoar>0.03</DankPyon_DireBoar>
+			<DankPyon_Rox>0.4</DankPyon_Rox>
+        </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef [defName="ColdBog"]/wildAnimals</xpath>
+		<value>
+			<DankPyon_Direwolf>0.04</DankPyon_Direwolf>
+			<DankPyon_NorthernBoar>0.3</DankPyon_NorthernBoar>
+			<DankPyon_DireBoar>0.3</DankPyon_DireBoar>
+			<DankPyon_Rox>0.4</DankPyon_Rox>
+        </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef [defName="IceSheet"]/wildAnimals</xpath>
+		<value>
+			<DankPyon_Direwolf>0.04</DankPyon_Direwolf>
+			<DankPyon_Rox>0.1</DankPyon_Rox>
+        </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef [defName="SeaIce"]/wildAnimals</xpath>
+		<value>
+			<DankPyon_Direwolf>0.04</DankPyon_Direwolf>
+			<DankPyon_Rox>0.1</DankPyon_Rox>
+        </value>
+	</Operation>
+
+
+</Patch>

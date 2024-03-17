@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef>
+    <defName>DankPyon_PlowedSoil</defName>
+    <label>plowed soil</label>
+	<description>Plow the soil to increase its fertility.</description>
+
+  <texturePath>Terrain/PlowedSoil</texturePath>
+  <edgeType>FadeRough</edgeType>
+  <renderPrecedence>350</renderPrecedence>
+  <layerable>true</layerable>
+  <pathCost>8</pathCost>
+  <filthAcceptanceMask>
+    <li>Unnatural</li>
+  </filthAcceptanceMask>
+  <designationCategory>Floors</designationCategory>
+	<constructEffect>ConstructDirt</constructEffect>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+	  <WorkToBuild>500</WorkToBuild>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+
+    <affordances>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+      <li>Light</li>
+    </affordances>
+
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>1.25</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>dirt</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>DirtInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <researchPrerequisites>
+      <li>DankPyon_BasicAgriculture</li>
+    </researchPrerequisites>
+  </TerrainDef>
+<!--==================== Ice ====================-->
+<!--TerrainDef>
+    <defName>DankPyon_TrenchTerrain</defName>
+    <label>trench</label>
+    <texturePath>Terrain/Surfaces/Soil</texturePath>
+    <layerable>true</layerable>
+    <pathCost>12</pathCost>
+    <fertility>0</fertility>
+    <edgeType>Fade</edgeType>
+    <renderPrecedence>320</renderPrecedence>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <modExtensions>
+      <li Class="VFESecurity.TerrainDefExtension">
+        <allowCrouching>true</allowCrouching>
+        <pathCostEntering>50</pathCostEntering>
+        <pathCostLeaving>200</pathCostLeaving>
+        <coverEffectiveness>0.65</coverEffectiveness>
+        <rangeFactor>1</rangeFactor>
+      </li>
+    </modExtensions>
+</TerrainDef-->
+
+<!--==================== Ice ====================-->
+  <!--TerrainDef ParentName="Ice">
+    <defName>Ice_IceShallow</defName>
+    <label>shallow ice</label>
+    <changeable>false</changeable>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>Ice_FrozenMarsh</defName>
+    <label>frozen marsh</label>
+    <texturePath>Terrain/Ice_FrozenMarsh</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>338</renderPrecedence>
+    <pathCost>13</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Diggable</li>
+      <li>Bridgeable</li>
+    </affordances>
+    <fertility>0.0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <extinguishesFire>true</extinguishesFire>
+  </TerrainDef-->
+
+</Defs>

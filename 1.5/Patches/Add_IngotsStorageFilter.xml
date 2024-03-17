@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[stuffProps/categories[li="Metallic"]]/thingCategories/li[text()="ResourcesRaw"]</xpath>
+		<value>
+			<li>DankPyon_Metallic</li>
+		</value>
+	</Operation>
+</Patch>	

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Fishing Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
+					<value>
+						<li>DankPyon_DarkForest</li>
+						<li>DankPyon_AncientForest</li>
+							
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+	
+</Patch>

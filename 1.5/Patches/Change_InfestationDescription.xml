@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Replace Incident Description-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/IncidentDef[defName="DeepDrillInfestation"]/letterText</xpath>
+		<value>
+			<letterText>
+			The noise caused by your mining have grabbed the attention of some underground dwellers. 
+			Now they're tunneling upwards to seek revenge!\n\nBeware - unkown entities have been angered 
+			and will try to destroy your base.
+			</letterText>
+		</value>
+	</Operation>
+</Patch>	

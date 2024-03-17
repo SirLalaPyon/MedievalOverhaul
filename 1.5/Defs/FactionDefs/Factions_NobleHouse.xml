@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase" Name="DankPyon_NobleHouseFactionBase" Abstract="True">
+    <pawnSingular>subject</pawnSingular>
+    <pawnsPlural>subjects</pawnsPlural>
+    <!--categoryTag>Outlander</categoryTag-->
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>duke</leaderTitle>
+    <fixedLeaderKinds>
+      <li>DankPyon_Medieval_Lord</li>
+    </fixedLeaderKinds>
+    <factionIconPath>WorldObjects/Castle</factionIconPath>
+    <techLevel>Medieval</techLevel>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <allowedCultures><li>DankPyon_OldWorlder</li></allowedCultures>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">BodyMod_Approved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator_Preferred</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge_Preferred</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AgeReversal_Demanded</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+      <!-- Apparel -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+      <!-- Nudity -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">2</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">2</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <caravanTraderKinds>
+      <li>DankPyon_Caravan_Medieval_BulkGoodsMerchant</li>
+      <li>DankPyon_Caravan_Medieval_ArtPatron</li>
+      <li>DankPyon_Caravan_Medieval_Armorsmith</li>
+      <li>DankPyon_Caravan_Medieval_Weaponsmith</li>
+      <li>DankPyon_Caravan_Medieval_RuinsMerchant</li>
+      <li>DankPyon_Caravan_Medieval_Scholar</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>DankPyon_Visitor_Medieval_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>DankPyon_Base_Medieval_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <raidLootMaker>DankPyon_MedievalRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
+
+    <modExtensions>
+      <li Class="StandaloneSettlementPreference.SettlementPreference">
+        <chance>0.8</chance>
+        <onlyRoad>true</onlyRoad>
+        <useTemperatureRange>true</useTemperatureRange>
+        <temperatureRangeMin>-10</temperatureRangeMin>
+        <temperatureRangeMax>45</temperatureRangeMax>
+        <useSwampinessRange>true</useSwampinessRange>
+        <swampinessRangeMin>0.0</swampinessRangeMin>
+        <swampinessRangeMax>0.8</swampinessRangeMax>
+        <IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
+      </li>
+    </modExtensions>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>DankPyon_MedievalRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Jade</li>
+            <li>MedicineHerbal</li>
+            <li>DankPyon_MealBread</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+  <FactionDef ParentName="DankPyon_NobleHouseFactionBase">
+    <defName>DankPyon_NobleHouseCivil</defName>
+    <label>civil noble house</label>
+    <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+    <colorSpectrum>
+      <li>(99, 99, 99)</li>
+    </colorSpectrum>
+    <fixedName>House Amboise</fixedName>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+    <pawnGroupMakers>
+      <li>
+          <!-- Normal fights, standard mix -->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <DankPyon_FootmanAmboise>50</DankPyon_FootmanAmboise>
+            <DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+            <DankPyon_StandardAmboise>30</DankPyon_StandardAmboise>
+            <DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+            <DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderAmboise>25</DankPyon_ZweihanderAmboise>
+            <DankPyon_KnightAmboise>30</DankPyon_KnightAmboise>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <!-- Normal fights, ranged only -->
+        <!--li>
+          <kindDef>Combat</kindDef>
+          <commonality>30</commonality>
+          <options>
+            <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
+          </options>
+        </li-->
+        <li>
+          <!-- Normal fights, melee only -->
+          <kindDef>Combat</kindDef>
+          <commonality>60</commonality>
+          <options>
+            <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanAmboise>40</DankPyon_FootmanAmboise>
+            <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+            <DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
+            <DankPyon_ZweihanderAmboise>30</DankPyon_ZweihanderAmboise>
+            <DankPyon_KnightAmboise>25</DankPyon_KnightAmboise>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <li>
+          <kindDef>Peaceful</kindDef>
+          <options>
+            <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanAmboise>40</DankPyon_FootmanAmboise>
+            <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+            <DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_KnightAmboise>10</DankPyon_KnightAmboise>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <li>
+          <kindDef>Trader</kindDef>
+          <traders>
+            <DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+          </traders>
+          <carriers>
+            <Muffalo>6</Muffalo>
+            <Dromedary>5</Dromedary>
+            <Donkey>2</Donkey>
+            <Elephant>1</Elephant>
+          </carriers>
+          <guards>
+            <DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanAmboise>20</DankPyon_FootmanAmboise>
+            <DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
+            <DankPyon_StandardAmboise>5</DankPyon_StandardAmboise>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderAmboise>10</DankPyon_ZweihanderAmboise>
+            <DankPyon_KnightAmboise>5</DankPyon_KnightAmboise>
+          </guards>
+        </li>
+        <li>
+          <kindDef>Settlement</kindDef>
+          <options>
+            <DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanAmboise>30</DankPyon_FootmanAmboise>
+            <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
+            <DankPyon_StandardAmboise>10</DankPyon_StandardAmboise>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderAmboise>25</DankPyon_ZweihanderAmboise>
+            <DankPyon_KnightAmboise>25</DankPyon_KnightAmboise>
+            <DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+      </pawnGroupMakers>
+  </FactionDef>
+
+  <FactionDef ParentName="DankPyon_NobleHouseFactionBase">
+    <defName>DankPyon_NobleHouseCivil2</defName>
+    <label>civil noble house</label>
+    <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+    <colorSpectrum>
+      <li>(83, 124, 80)</li>
+    </colorSpectrum>
+    <fixedName>House Soren</fixedName>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+
+    <pawnGroupMakers>
+      <li>
+          <!-- Normal fights, standard mix -->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <DankPyon_FootmanSoren>50</DankPyon_FootmanSoren>
+            <DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+            <DankPyon_StandardSoren>30</DankPyon_StandardSoren>
+            <DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+            <DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderSoren>25</DankPyon_ZweihanderSoren>
+            <DankPyon_KnightSoren>20</DankPyon_KnightSoren>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <!-- Normal fights, ranged only -->
+        <!--li>
+          <kindDef>Combat</kindDef>
+          <commonality>30</commonality>
+          <options>
+            <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
+          </options>
+        </li-->
+        <li>
+          <!-- Normal fights, melee only -->
+          <kindDef>Combat</kindDef>
+          <commonality>60</commonality>
+          <options>
+            <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanSoren>40</DankPyon_FootmanSoren>
+            <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+            <DankPyon_StandardSoren>30</DankPyon_StandardSoren>
+            <DankPyon_ZweihanderSoren>25</DankPyon_ZweihanderSoren>
+            <DankPyon_KnightSoren>25</DankPyon_KnightSoren>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <li>
+          <kindDef>Peaceful</kindDef>
+          <options>
+            <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanSoren>40</DankPyon_FootmanSoren>
+            <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+            <DankPyon_StandardSoren>30</DankPyon_StandardSoren>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderSoren>10</DankPyon_ZweihanderSoren>
+            <DankPyon_KnightSoren>10</DankPyon_KnightSoren>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <li>
+          <kindDef>Trader</kindDef>
+          <traders>
+            <DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+          </traders>
+          <carriers>
+            <Muffalo>6</Muffalo>
+            <Dromedary>5</Dromedary>
+            <Donkey>2</Donkey>
+            <Elephant>1</Elephant>
+          </carriers>
+          <guards>
+            <DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanSoren>20</DankPyon_FootmanSoren>
+            <DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
+            <DankPyon_StandardSoren>10</DankPyon_StandardSoren>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderSoren>10</DankPyon_ZweihanderSoren>
+            <DankPyon_KnightSoren>10</DankPyon_KnightSoren>
+          </guards>
+        </li>
+        <li>
+          <kindDef>Settlement</kindDef>
+          <options>
+            <DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanSoren>30</DankPyon_FootmanSoren>
+            <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
+            <DankPyon_StandardSoren>20</DankPyon_StandardSoren>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderSoren>25</DankPyon_ZweihanderSoren>
+            <DankPyon_KnightSoren>25</DankPyon_KnightSoren>
+            <DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+      </pawnGroupMakers>
+  </FactionDef>
+
+  <FactionDef ParentName="DankPyon_NobleHouseFactionBase">
+    <defName>DankPyon_NobleHouseFierce</defName>
+    <label>fierce noble house</label>
+    <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
+    <colorSpectrum>
+      <li>(64, 103, 137)</li>
+    </colorSpectrum>
+    <fixedName>House Oswin</fixedName>
+    <factionIconPath>WorldObjects/CastleRough</factionIconPath>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <naturalEnemy>true</naturalEnemy>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>50</configurationListOrderPriority>
+
+    <pawnGroupMakers>
+      <li>
+          <!-- Normal fights, standard mix -->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <DankPyon_FootmanOswin>50</DankPyon_FootmanOswin>
+            <DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+            <DankPyon_StandardOswin>30</DankPyon_StandardOswin>
+            <DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+            <DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderOswin>25</DankPyon_ZweihanderOswin>
+            <DankPyon_KnightOswin>20</DankPyon_KnightOswin>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <!-- Normal fights, ranged only -->
+        <!--li>
+          <kindDef>Combat</kindDef>
+          <commonality>30</commonality>
+          <options>
+            <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
+          </options>
+        </li-->
+        <li>
+          <!-- Normal fights, melee only -->
+          <kindDef>Combat</kindDef>
+          <commonality>60</commonality>
+          <options>
+            <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanOswin>40</DankPyon_FootmanOswin>
+            <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+            <DankPyon_StandardOswin>30</DankPyon_StandardOswin>
+            <DankPyon_ZweihanderOswin>25</DankPyon_ZweihanderOswin>
+            <DankPyon_KnightOswin>25</DankPyon_KnightOswin>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <li>
+          <kindDef>Peaceful</kindDef>
+          <options>
+            <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanOswin>40</DankPyon_FootmanOswin>
+            <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+            <DankPyon_StandardOswin>30</DankPyon_StandardOswin>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderOswin>10</DankPyon_ZweihanderOswin>
+            <DankPyon_KnightOswin>10</DankPyon_KnightOswin>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <li>
+          <kindDef>Trader</kindDef>
+          <traders>
+            <DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+          </traders>
+          <carriers>
+            <Muffalo>6</Muffalo>
+            <Dromedary>5</Dromedary>
+            <Donkey>2</Donkey>
+            <Elephant>1</Elephant>
+          </carriers>
+          <guards>
+            <DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanOswin>20</DankPyon_FootmanOswin>
+            <DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
+            <DankPyon_StandardOswin>10</DankPyon_StandardOswin>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderOswin>10</DankPyon_ZweihanderOswin>
+            <DankPyon_KnightOswin>10</DankPyon_KnightOswin>
+          </guards>
+        </li>
+        <li>
+          <kindDef>Settlement</kindDef>
+          <options>
+            <DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanOswin>30</DankPyon_FootmanOswin>
+            <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
+            <DankPyon_StandardOswin>20</DankPyon_StandardOswin>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderOswin>25</DankPyon_ZweihanderOswin>
+            <DankPyon_KnightOswin>25</DankPyon_KnightOswin>
+            <DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+      </pawnGroupMakers>
+  </FactionDef>
+
+  <FactionDef ParentName="DankPyon_NobleHouseFactionBase">
+    <defName>DankPyon_NobleHouseSavage</defName>
+    <label>savage noble house</label>
+    <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe is driven by a blood-and-honor culture; you will not be able to ally with them!</description>
+    <colorSpectrum>
+      <li>(215, 215, 215)</li>
+    </colorSpectrum>
+    <fixedName>House Hesse</fixedName>
+    <factionIconPath>WorldObjects/CastleSavage</factionIconPath>
+    <permanentEnemy>true</permanentEnemy>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>60</configurationListOrderPriority>
+
+    <pawnGroupMakers>
+      <li>
+          <!-- Normal fights, standard mix -->
+          <kindDef>Combat</kindDef>
+          <commonality>100</commonality>
+          <options>
+            <DankPyon_FootmanHesse>50</DankPyon_FootmanHesse>
+            <DankPyon_Medieval_Billman>50</DankPyon_Medieval_Billman>
+            <DankPyon_StandardHesse>30</DankPyon_StandardHesse>
+            <DankPyon_Medieval_Arbalester>30</DankPyon_Medieval_Arbalester>
+            <DankPyon_Medieval_Bowman>40</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderOswin>20</DankPyon_ZweihanderOswin>
+            <DankPyon_KnightHesse>20</DankPyon_KnightHesse>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <!-- Normal fights, ranged only -->
+        <!--li>
+          <kindDef>Combat</kindDef>
+          <commonality>30</commonality>
+          <options>
+            <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
+          </options>
+        </li-->
+        <li>
+          <!-- Normal fights, melee only -->
+          <kindDef>Combat</kindDef>
+          <commonality>60</commonality>
+          <options>
+            <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanHesse>40</DankPyon_FootmanHesse>
+            <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+            <DankPyon_StandardHesse>30</DankPyon_StandardHesse>
+            <DankPyon_ZweihanderHesse>25</DankPyon_ZweihanderHesse>
+            <DankPyon_KnightHesse>25</DankPyon_KnightHesse>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <li>
+          <kindDef>Peaceful</kindDef>
+          <options>
+            <DankPyon_Medieval_Peasant>15</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanHesse>40</DankPyon_FootmanHesse>
+            <DankPyon_Medieval_Billman>40</DankPyon_Medieval_Billman>
+            <DankPyon_StandardHesse>30</DankPyon_StandardHesse>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderHesse>15</DankPyon_ZweihanderHesse>
+            <DankPyon_KnightHesse>10</DankPyon_KnightHesse>
+            <DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+        <li>
+          <kindDef>Trader</kindDef>
+          <traders>
+            <DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+          </traders>
+          <carriers>
+            <Muffalo>6</Muffalo>
+            <Dromedary>5</Dromedary>
+            <Donkey>2</Donkey>
+            <Elephant>1</Elephant>
+          </carriers>
+          <guards>
+            <DankPyon_Medieval_Peasant>3</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanHesse>20</DankPyon_FootmanHesse>
+            <DankPyon_Medieval_Billman>7</DankPyon_Medieval_Billman>
+            <DankPyon_StandardHesse>10</DankPyon_StandardHesse>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_Medieval_Bowman>10</DankPyon_Medieval_Bowman>
+            <DankPyon_ZweihanderHesse>10</DankPyon_ZweihanderHesse>
+            <DankPyon_KnightHesse>10</DankPyon_KnightHesse>
+          </guards>
+        </li>
+        <li>
+          <kindDef>Settlement</kindDef>
+          <options>
+            <DankPyon_Medieval_Peasant>30</DankPyon_Medieval_Peasant>
+            <DankPyon_FootmanHesse>30</DankPyon_FootmanHesse>
+            <DankPyon_Medieval_Billman>30</DankPyon_Medieval_Billman>
+            <DankPyon_StandardHesse>20</DankPyon_StandardHesse>
+            <DankPyon_Medieval_Arbalester>10</DankPyon_Medieval_Arbalester>
+            <DankPyon_ZweihanderHesse>25</DankPyon_ZweihanderHesse>
+            <DankPyon_KnightHesse>25</DankPyon_KnightHesse>
+            <DankPyon_Medieval_Lord>60</DankPyon_Medieval_Lord>
+          </options>
+        </li>
+      </pawnGroupMakers>
+  </FactionDef>
+
+
+</Defs>

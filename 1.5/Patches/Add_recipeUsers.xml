@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name = "ApparelMakeableBase"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_TailorsBench</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name = "ArmorSmithableBase"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_Anvil</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "Apparel_SimpleHelmet" or @Name = "BaseWeaponNeolithic"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_Anvil</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name = "BaseMeleeWeapon"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_Anvil</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "PsychiteTea"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_RusticCookingTable</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "SmokeleafJoint" or defName = "Apparel_WarVeil" or defName = "Apparel_TribalA" or defName = "MeleeWeapon_Club" or defName = "MeleeWeapon_Knife" or defName = "Bow_Short"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_Workbench</li>
+		</value>
+	</Operation>
+
+
+	<!-- For every workbench that contains extract metal from slag recipe, add extract metal from scrap recipe-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[recipes[li="ExtractMetalFromSlag"]]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[recipes[li="ExtractMetalFromSlag"]]/recipes</xpath>
+			<value>
+				<li>DankPyon_ExtractMetalFromScrap</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

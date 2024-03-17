@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ResourceBase" Name="DankPyon_LootBase" Abstract="True">
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <stackLimit>10</stackLimit>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+        <thingCategories>
+            <li>DankPyon_Loot</li>
+        </thingCategories>
+        <tradeTags>
+            <li>DankPyon_Loot</li>
+        </tradeTags>
+  </ThingDef>
+
+    <!--==================== Scrap ====================-->
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_BrokenWeapons</defName>
+        <label>broken weapons</label>
+        <description>Metal weapon scraps thare are broken and unusable. Can be smelted to recover resources.</description>
+        <graphicData>
+            <texPath>Special/BrokenWeapons</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <soundDrop>ChunkSlag_Drop</soundDrop>
+        <smeltable>true</smeltable>
+
+        <smeltProducts>
+            <Steel>2</Steel>
+            <DankPyon_IronIngot>5</DankPyon_IronIngot>
+        </smeltProducts>
+    </ThingDef>
+
+    <!--==================== Books ====================-->
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_Book</defName>
+        <label>book</label>
+        <description>A book filled with information about a particular subject. Can be sold to interested traders.</description>
+        <graphicData>
+            <texPath>Special/Book</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>50</MarketValue>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <DankPyon_Paper>50</DankPyon_Paper>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_Book_TheBeginning</defName>
+        <label>the beginning</label>
+        <description>The Beginning
+            \nA survival guide into the wilderness
+            \n\n1.Hides and Leather
+            \nUsuable leather can be obtained by treating hides with tanning liquor in a tanning rack.
+             After waiting an ample amount of time, the treated leather is ready for use
+            
+            \n\n2.Where is my food 
+            \nFresh meat spoils fast, better act quick! Meat can be preserved by putting them in drying racks, prolonging their expected shelf life.
+             Later on, packaged rations or the vegetarian alternative, macci, can be made to eliminate any problem of spoilage.
+             
+             \n\n3.Metallurgy \nGood swords need good iron, refining raw metal ores is neccessary to make weapons. 
+             Raw ores can be smelt on the furnace to produce ingots that can be used for crafting and smithing.
+             
+             \n\n4.Where is steel?
+             \nWhy is there only iron in the map? To obtain steel production, you first need to research alchemy
+              in the far right of the research tab. Afterward, you are now able to convert pieces of iron into steel.</description>
+        <graphicData>
+            <texPath>Special/TheBeginning</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>150</MarketValue>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <DankPyon_Paper>50</DankPyon_Paper>
+        </costList>
+    </ThingDef>
+
+
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_Book_IntoTheRuins</defName>
+        <label>into the ruins</label>
+        <description>Into the ruins.
+            \nA guide to dungoneering.
+            \n\n1. What lies ahead
+            \nDeep inside the dungeons harbors treasures and loot as ancient as the great under-empires.
+             The golden era of unsurmounted age of productivity and most importantly, wealth.
+             \n\n2.Creatures of the Dark
+             \nMonsters of disproportionate sizes can be encountered while exploring the dungeons. 
+             Snakes, trolls, and dragons inhabit the ruins to build nests for their offspring. Mischevious
+              bandits also come to occupy the ruins to serve as their base of operations, looting and raiding the nearby towns.</description>
+        <graphicData>
+            <texPath>Special/GuideRuins</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>150</MarketValue>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <DankPyon_Paper>50</DankPyon_Paper>
+        </costList>
+    </ThingDef>
+
+
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_Book_AncientCodex</defName>
+        <label>ancient codex</label>
+        <description>An ancient tome intricately made with a golden finish. Contains scriptures detailing the historical accounts of the under empires. /n/nCan be sold for a pretty penny for interested collectors and the like.</description>
+        <graphicData>
+            <texPath>Special/AncientCodex</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>60</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <Gold>5</Gold>
+        </costList>
+
+        <healthAffectsPrice>false</healthAffectsPrice>
+    </ThingDef>
+
+    <!--==================== Notes ====================-->
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_TornNote_Song1c</defName>
+        <label>artist's legacy</label>
+        <description>Volume 1
+            \n\nHe was crab, she was a crab
+            \ncould they they be any more oblivious
+            \nHe was a drone, she was a queen
+            \nThey just wanted to make a scene
+            \nHe wanted her, she wanted eggs
+            \nSecretly she admired his legs
+            \nBut all the crabs had to propose
+            \nthey didnt like his crabby toes
+
+            \n\nhe had a bigger claw, she had a lobster tail 
+            \nHe was buttered up for her
+            \nShe wasnt very meek and could molt twice a week
+            \nShe had the thiccist armor
+
+            \n\nA few months from now, shes all alone
+            \nfeeding the eggs with her bio-foam
+            \nshe waits all day, waiting to see
+            \nwhat her drone would say
+            \nAll of the while, she had a smile
+            \nmaking armor for me
+
+            \n\nHe had a bigger claw, she had a lobster tail 
+            \nHe was butterd up for her
+            \nNow hes in thick armor
+            \nkilling some rimworlders
+            \ncould it be better now
+            \nI really dont see how
+            \nthe best race is the Brachyura.</description>
+        <graphicData>
+            <texPath>Special/TornNote1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+         <statBases>
+            <MaxHitPoints>10</MaxHitPoints>
+            <Mass>0.1</Mass>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <DankPyon_Paper>10</DankPyon_Paper>
+        </costList>
+
+        <healthAffectsPrice>false</healthAffectsPrice>
+    </ThingDef>
+
+    <!--==================== Chalice ====================-->
+	<ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_ChaliceSilver</defName>
+        <label>silver chalice</label>
+        <description>A chalice most often used for drinking wine; this footed cup is made from silver, providing for an affordable way to improve the aesthetic of a hall.</description>
+        <graphicData>
+            <texPath>Special/ChaliceSilver</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Beauty>26</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>4000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Silver>30</Silver>
+        </costList>
+    </ThingDef>
+    
+
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_ChaliceGold</defName>
+        <label>golden chalice</label>
+        <description>A chalice most often used for drinking wine; this footed cup is made from gold, more greatly increasing the aesthetic of a hall to flaunt its wealth.</description>
+        <graphicData>
+            <texPath>Special/ChaliceGold</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Beauty>100</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>9000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Gold>3</Gold>
+            <DankPyon_Ruby>10</DankPyon_Ruby>
+        </costList>
+    </ThingDef>
+
+    <!--==================== Bowls ====================-->
+	<ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_BowlSilver</defName>
+        <label>silver bowl</label>
+        <description>An elaborate bowl made out of silver.</description>
+        <graphicData>
+            <texPath>Special/BowlSilver</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Beauty>10</Beauty>
+            <Mass>2</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>4000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Silver>50</Silver>
+        </costList>
+    </ThingDef>
+    
+
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_BowlGold</defName>
+        <label>golden bowl</label>
+        <description>An elaborate bowl made out of gold.</description>
+        <graphicData>
+            <texPath>Special/BowlGold</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <!--MarketValue>150</MarketValue-->
+            <Beauty>25</Beauty>
+            <Mass>2</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>9000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Gold>5</Gold>
+        </costList>
+    </ThingDef>
+	
+	<!--==================== Skulls ====================-->
+	<ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_SkullBase">
+        <defName>DankPyon_SkullGold</defName>
+        <label>gold skull</label>
+        <description>Found within the depths of ruins, the gold skull speaks of an ornate treasure held by those who walk as undead.</description>
+        <graphicData>
+            <texPath>Special/SkullGold</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>220</Beauty>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+            <WorkToMake>15000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Gold>5</Gold>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_SkullBase">
+        <defName>DankPyon_SkullEmerald</defName>
+        <label>emerald skull</label>
+        <description>A skull formed from the materials of a rare and prestigious gemstone. Although valuable, ruin delvers should tread carefully, for such a rich treasure would not go unprotected.</description>
+        <graphicData>
+            <texPath>Special/SkullEmerald</texPath>
+        </graphicData>
+
+        <statBases>
+            <Beauty>220</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Emerald>50</DankPyon_Emerald>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_SkullBase">
+        <defName>DankPyon_SkullSapphire</defName>
+        <label>sapphire skull</label>
+        <description>Glistening a blue hue, the skull of sapphire radiates with every curvature of its head. A treasure like this would surely fetch much wealth or would do well to be displayed in a great hall.</description>
+        <graphicData>
+            <texPath>Special/SkullSapphire</texPath>
+        </graphicData>
+
+         <statBases>
+            <Beauty>249</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Sapphire>50</DankPyon_Sapphire>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_SkullBase">
+        <defName>DankPyon_SkullRuby</defName>
+        <label>ruby skull</label>
+        <description>A grand prize of valuable gemstones, the ruby skull draws the attention of every lord, warrior, explorer, and merchant alike. A collector's prized possession.</description>
+        <graphicData>
+            <texPath>Special/SkullRuby</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <Beauty>288</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Ruby>50</DankPyon_Ruby>
+        </costList>
+    </ThingDef>
+
+    <!--==================== Dice ====================-->
+	<ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_DiceBase">
+        <defName>DankPyon_DiceGold</defName>
+        <label>golden dice</label>
+        <description>A set of dice of varying valuable gemstones; although small, each die is worth more than a pretty coin.</description>
+        <graphicData>
+            <texPath>Special/Dice/DiceGold</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Beauty>25</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+            <WorkToMake>4000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Gold>2</Gold>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_DiceBase">
+        <defName>DankPyon_DiceEmerald</defName>
+        <label>emerald dice</label>
+        <graphicData>
+            <texPath>Special/Dice/DiceEmerald</texPath>
+        </graphicData>
+
+         <statBases>
+            <Beauty>25</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Emerald>20</DankPyon_Emerald>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_DiceBase">
+        <defName>DankPyon_DiceSapphire</defName>
+        <label>sapphire dice</label>
+        <graphicData>
+            <texPath>Special/Dice/DiceSapphire</texPath>
+        </graphicData>
+
+         <statBases>
+            <Beauty>35</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Ruby>20</DankPyon_Ruby>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_DiceBase">
+        <defName>DankPyon_DiceRuby</defName>
+        <label>ruby dice</label>
+        <graphicData>
+            <texPath>Special/Dice/DiceRuby</texPath>
+        </graphicData>
+
+         <statBases>
+            <Beauty>45</Beauty>
+        </statBases>
+
+        <costList>
+            <DankPyon_Ruby>20</DankPyon_Ruby>
+        </costList>
+    </ThingDef>
+	
+    <!--==================== Skill Books ====================-->
+    <ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_TreatiseBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <description>An enchanted tome made back in the golden age. Each page seems to be immeasurably steeped in ambiguity, imbued with signs of magic. Its undecipherable phrases slowly turn into a recognizable language when stared upon. Uttering its words will surely grant change, however, rendering the book useless.</description>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.2</Mass>
+        </statBases>
+        <techLevel>Medieval</techLevel>
+        <stackLimit>10</stackLimit>
+        <tradeNeverStack>true</tradeNeverStack>
+        
+        <thingSetMakerTags>
+            <li>RewardSpecial</li>
+        </thingSetMakerTags>
+
+        <thingCategories Inherit="False">
+            <li>DankPyon_Treatise</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <compClass>CompUsable</compClass>
+                <useJob>UseItem</useJob>
+                <useLabel>Read treatise to learn shooting</useLabel>
+                <useDuration>2000</useDuration>
+            </li>
+            <li Class="CompProperties_UseEffectPlaySound">
+                <soundOnUsed>MechSerumUsed</soundOnUsed>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Shooting</defName>
+        <label>treatise (shooting)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseShooting</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Shooting</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Melee</defName>
+        <label>treatise (melee)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseMelee</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Melee</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Construction</defName>
+        <label>treatise (construction)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseConstruction</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Construction</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Mining</defName>
+        <label>treatise (mining)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseMining</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Mining</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Cooking</defName>
+        <label>treatise (cooking)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseCooking</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Cooking</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Plants</defName>
+        <label>treatise (plants)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatisePlants</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Plants</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Animals</defName>
+        <label>treatise (animals)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseAnimals</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Animals</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Crafting</defName>
+        <label>treatise (crafting)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseCrafting</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Crafting</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Artistic</defName>
+        <label>treatise (artistic)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseArtistic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Artistic</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Medicine</defName>
+        <label>treatise (medicine)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseMedicine</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Medicine</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Social</defName>
+        <label>treatise (social)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseSocial</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Social</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_TreatiseBase">
+        <defName>DankPyon_Treatise_Intellectual</defName>
+        <label>treatise (intellectual)</label>
+        <graphicData>
+            <texPath>Special/Treatise/TreatiseIntellectual</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+
+        <comps>
+            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+                <skillDefName>Intellectual</skillDefName>
+                <xpAmount>15000</xpAmount>
+            </li>
+        </comps>
+    </ThingDef>
+
+
+</Defs>

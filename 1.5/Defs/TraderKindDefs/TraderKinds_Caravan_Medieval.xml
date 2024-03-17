@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TraderKindDef>
+		<defName>DankPyon_Caravan_Medieval_BulkGoodsMerchant</defName>
+		<label>bulk goods merchant</label>
+		<commonality>3</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Straw</thingDef>
+				<countRange>350~1000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Kibble</thingDef>
+				<countRange>150~450</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>WoodLog</thingDef>
+				<countRange>100~450</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Cloth</thingDef>
+				<countRange>100~400</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Linen</thingDef>
+				<countRange>100~400</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>0~24</countRange>
+			</li>
+			<li Class="StockGenerator_Animals">
+				<maxWildness>0.70</maxWildness>
+				<tradeTagsSell>
+					<li>AnimalFarm</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalExotic</li>
+				</tradeTagsBuy>
+				<kindCountRange>2~6</kindCountRange>
+				<countRange>4~8</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Textiles</categoryDef>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+
+			<!--li Class="StockGenerator_SingleDef">
+				<thingDef>Ice_Resource_IceBlocks</thingDef>
+				<countRange>
+					<min>0</min>
+					<max>30</max>
+				</countRange>
+			</li-->
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>DankPyon_Caravan_Medieval_ArtPatron</defName>
+		<label>art patron</label>
+		<commonality>1</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Gold</thingDef>
+				<countRange>50~120</countRange>
+			</li>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>Artifact</tradeTag>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<countRange>1~1</countRange>
+			</li>
+			<li Class="StockGenerator_Animals">
+				<checkTemperature>false</checkTemperature>
+				<tradeTagsSell>
+				<li>AnimalUncommon</li>
+				<li>AnimalFighter</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+				<li>AnimalExotic</li>
+				</tradeTagsBuy>
+				<kindCountRange>1~2</kindCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+			<li Class="StockGenerator_MultiDef">
+				<thingDefs>
+				<li>Chocolate</li>
+				</thingDefs>
+			</li>
+
+			<!-- Buildings -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Art</tradeTag>
+				<countRange>5~10</countRange>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>DankPyon_Caravan_Medieval_Armorsmith</defName>
+		<label>armorsmith</label>
+		<commonality>2</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>BasicClothing</tradeTag>
+				<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+				<countRange>7~7</countRange>
+			</li>
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Clothing</tradeTag>
+				<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+				<countRange>3~3</countRange>
+			</li>
+
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Armor</tradeTag>
+				<countRange>5~5</countRange>
+			</li>
+
+			<!--li Class="StockGenerator_Category">
+				<categoryDef>DankPyon_Shields</categoryDef>
+				<thingDefCountRange>2~3</thingDefCountRange>
+				<totalPriceRange>500~800</totalPriceRange>
+			</li-->
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>DankPyon_Caravan_Medieval_Weaponsmith</defName>
+		<label>weaponsmith</label>
+		<commonality>2</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_MealBread</thingDef>
+				<countRange>10~20</countRange>
+			</li>
+			<!-- Weapons -->
+            <li Class="StockGenerator_MarketValue">
+                <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+                <tradeTag>WeaponRanged</tradeTag>
+                <countRange>-1~2</countRange>
+            </li>
+			
+			<li Class="StockGenerator_Category">
+				<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+				<categoryDef>WeaponsMelee</categoryDef>
+				<thingDefCountRange>4~4</thingDefCountRange>
+				<countRange>2~3</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>10~40</countRange>
+			</li>
+			<li Class="StockGenerator_Animals">
+				<tradeTagsSell>
+				<li>AnimalFighter</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+				<li>AnimalExotic</li>
+				</tradeTagsBuy>
+				<kindCountRange>1~2</kindCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>DankPyon_Caravan_Medieval_RuinsMerchant</defName>
+		<label>ruins explorer</label>
+		<commonality>1</commonality>
+		<stockGenerators>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>Silver</thingDef>
+			<countRange>750~1200</countRange>
+		</li>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>DankPyon_MealRations</thingDef>
+			<countRange>5~15</countRange>
+		</li>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>DankPyon_MealRationsVegetarian</thingDef>
+			<countRange>5~15</countRange>
+		</li>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>MedicineHerbal</thingDef>
+			<countRange>0~24</countRange>
+		</li>
+		<li Class="StockGenerator_Animals">
+			<maxWildness>0.70</maxWildness>
+			<tradeTagsSell>
+			<li>AnimalExotic</li>
+			</tradeTagsSell>
+			<tradeTagsBuy>
+			<li>AnimalExotic</li>
+			</tradeTagsBuy>
+			<kindCountRange>2~6</kindCountRange>
+			<countRange>4~8</countRange>
+		</li>
+
+		<li Class="StockGenerator_Tag">
+			<tradeTag>DankPyon_Necklaces</tradeTag>
+			<thingDefCountRange>1~4</thingDefCountRange>
+			<countRange>1~2</countRange>
+		</li>
+		<li Class="StockGenerator_Tag">
+			<tradeTag>DankPyon_Rings</tradeTag>
+			<thingDefCountRange>1~4</thingDefCountRange>
+			<countRange>1~2</countRange>
+		</li>
+		<li Class="StockGenerator_Tag">
+			<tradeTag>DankPyon_Loot</tradeTag>
+			<thingDefCountRange>3~6</thingDefCountRange>
+			<countRange>1~4</countRange>
+		</li>
+
+		<li Class="StockGenerator_Tag">
+			<tradeTag>DankPyon_Ruin_Rings</tradeTag>
+			<thingDefCountRange>1~3</thingDefCountRange>
+			<countRange>1~1</countRange>
+		</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef>
+		<defName>DankPyon_Caravan_Medieval_Scholar</defName>
+		<label>scholar</label>
+		<stockGenerators>
+
+			<!-- Resources -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+
+			<!-- Building -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>DankPyon_Book</tradeTag>
+				<countRange>1~3</countRange>
+			</li>
+
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Book</tag></li>
+		
+		</stockGenerators>
+  	</TraderKindDef>
+
+</Defs>

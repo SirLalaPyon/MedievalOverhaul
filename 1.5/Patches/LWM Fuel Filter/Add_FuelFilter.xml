@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Fuel Filter</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!-- Find all refuelable that has WoodLogs, replace with DankPyon_Coal-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]/li</xpath>
+					<value>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
+					</value>
+				</li>
+
+				<!-- add fuel filters to refuelable things that has coal. 
+
+				if they use coal, which was originally WoodLog, big chance that they do 
+				not use specific fuel such as torches, campfires as opposed to tanning racks 
+				or apiaries or chemfuel generators-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath>
+						<value>
+							<li>DankPyon_RawWood</li>
+							<li>DankPyon_Wood</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/..</xpath>
+						<value>
+							<categories>
+								<li>DankPyon_RawWood</li>
+								<li>DankPyon_Wood</li>
+							</categories>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../..</xpath>
+					<value>
+						<li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
+					</value>
+				</li>
+
+				<!-- Add CompProperties_StoreFuelThing to every thingdef that has a refuelable comp and coal in their fuel filter-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../li[@Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"]</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../..</xpath>
+						<value>
+							<li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- If there is no ESCP_FuelExtension.ITab_Fuel inside an existing inspectorTab, add ESCP_FuelExtension.ITab_Fuel inside that inspectorTab-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]]/inspectorTabs</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]]/inspectorTabs</xpath>
+						<value>
+							<li>ESCP_FuelExtension.ITab_Fuel</li>
+						</value>
+					</match>
+				</li>
+
+				<!-- If there is no inspector tab, add inspector tab AND ESCP_FuelExtension.ITab_Fuel-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>ESCP_FuelExtension.ITab_Fuel</li>
+							</inspectorTabs>
+						</value>
+					</match>
+				</li>
+
+			</operations>
+		</nomatch>
+	</Operation>
+
+	
+</Patch>	

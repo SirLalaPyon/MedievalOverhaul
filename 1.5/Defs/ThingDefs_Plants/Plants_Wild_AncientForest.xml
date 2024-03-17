@@ -5,6 +5,7 @@
 		<defName>DankPyon_TreeLylses</defName>
 		<label>lylses</label>
 		<description>The lylses, native to ancient biomes, stands taller than (or rivals the height of) the vanilla oak. Its long hardy bark and branches hold up bright green leaves that flourish in sunlight. Felled lylses produces elven timber more durable, yet also lighter, than oak, making lylses logs desirable for construction and woodworking.</description>
+		<thingClass>MedievalOverhaul.Plant_SecondaryDrop</thingClass>
 		<graphicData>
 			<texPath>Plants/TreeLylses</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -47,9 +48,11 @@
 					<li>ChunkSandstone</li>
 				</ignoredThings>
 			</li>
-			<li Class="VanillaPlantsExpanded.DualCropExtension">
-				<secondaryOutput>DankPyon_Amber</secondaryOutput>
-				<outPutAmount>20</outPutAmount>
+			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
+				<secondaryDrop>DankPyon_Amber</secondaryDrop>
+				<secondaryDropAmountRange>20</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>false</secondaryNotWhenLeafless>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -58,6 +61,7 @@
 		<defName>DankPyon_TreeScara</defName>
 		<label>scara</label>
 		<description>Scara trees, while often quadruple the size of other trees, still dwarfs its sister genus, the lylses. Its wide trunk supports a wide array of autumn-stained leaves and foliage that quickly shadows the ground in large groups. The elven wood harvested from scaras are more durable and lighter than vanilla wood, and thus consecutively more expensive and stronger.</description>
+		<thingClass>MedievalOverhaul.Plant_SecondaryDrop</thingClass>
 		<graphicData>
 			<texPath>Plants/TreeScara</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -91,9 +95,11 @@
 					<li>ChunkSandstone</li>
 				</ignoredThings>
 			</li>
-			<li Class="VanillaPlantsExpanded.DualCropExtension">
-				<secondaryOutput>DankPyon_Amber</secondaryOutput>
-				<outPutAmount>5</outPutAmount>
+			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
+				<secondaryDrop>DankPyon_Amber</secondaryDrop>
+				<secondaryDropAmountRange>5</secondaryDropAmountRange>
+				<secondaryDropChance>1</secondaryDropChance>
+				<secondaryNotWhenLeafless>false</secondaryNotWhenLeafless>
 			</li>
 		</modExtensions>
 	</ThingDef>

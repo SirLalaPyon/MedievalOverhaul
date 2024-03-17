@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using Verse.Sound;
 
-namespace DankPyon_MedievalOverhaul
+namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
 	public class Comp_WindMill : ThingComp

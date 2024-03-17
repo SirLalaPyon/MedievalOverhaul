@@ -886,7 +886,7 @@
     </weaponTags>
 
     <tools>
-      <li Class="DankPyon.Tool_Melee">
+      <li Class="MedievalOverhaul.Tool_Melee">
         <label>shaft</label>
         <capacities>
           <li>Blunt</li>
@@ -896,7 +896,7 @@
         <cooldownTime>2</cooldownTime>
         <!--meleeReachRange>3</meleeReachRange-->
       </li>
-      <li Class="DankPyon.Tool_Melee">
+      <li Class="MedievalOverhaul.Tool_Melee">
         <label>point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -948,7 +948,7 @@
     </weaponTags>
 
     <tools>
-      <li Class="DankPyon.Tool_Melee">
+      <li Class="MedievalOverhaul.Tool_Melee">
         <label>shaft</label>
         <capacities>
           <li>Blunt</li>
@@ -958,7 +958,7 @@
         <cooldownTime>2</cooldownTime>
         <!--meleeReachRange>3</meleeReachRange-->
       </li>
-      <li Class="DankPyon.Tool_Melee">
+      <li Class="MedievalOverhaul.Tool_Melee">
         <label>blade</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -1018,7 +1018,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li Class="DankPyon.Tool_Melee">
+      <li Class="MedievalOverhaul.Tool_Melee">
         <label>blade</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -1078,7 +1078,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li Class="DankPyon.Tool_Melee">
+      <li Class="MedievalOverhaul.Tool_Melee">
         <label>Point</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -1229,7 +1229,7 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li Class="DankPyon.Tool_Melee">
+      <li Class="MedievalOverhaul.Tool_Melee">
         <label>edge</label>
         <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
@@ -2582,7 +2582,7 @@
         <Beauty>65</Beauty>
     </statBases>
     <comps>
-        <li Class="DankPyon.CompProperties_RandomName">
+        <li Class="MedievalOverhaul.CompProperties_RandomName">
             <nameMakers>
                 <li>DankPyon_Namer_WeaponsSlash</li>
             </nameMakers>
@@ -2603,7 +2603,7 @@
         <Beauty>65</Beauty>
     </statBases>
     <comps>
-        <li Class="DankPyon.CompProperties_RandomName">
+        <li Class="MedievalOverhaul.CompProperties_RandomName">
             <nameMakers>
                 <li>DankPyon_Namer_WeaponsPierce</li>
             </nameMakers>
@@ -2624,7 +2624,7 @@
         <Beauty>65</Beauty>
     </statBases>
     <comps>
-        <li Class="DankPyon.CompProperties_RandomName">
+        <li Class="MedievalOverhaul.CompProperties_RandomName">
             <nameMakers>
                 <li>DankPyon_Namer_WeaponsBlunt</li>
             </nameMakers>

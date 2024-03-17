@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
     public class CompGenericHide : ThingComp
     {

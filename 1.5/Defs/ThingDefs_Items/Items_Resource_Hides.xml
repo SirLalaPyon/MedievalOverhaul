@@ -25,7 +25,7 @@
 
 		<comps>
 			<li>
-				<compClass>DankPyon.CompGenericHide</compClass>
+				<compClass>MedievalOverhaul.CompGenericHide</compClass>
 			</li>
 			<li Class="CompProperties_Rottable">
 			  <daysToRotStart>5</daysToRotStart>
@@ -196,7 +196,7 @@
 	<ThingDef ParentName="DankPyon_HideBase">
 		<defName>DankPyon_Hide_HideGeneric</defName>
 		<label>hide</label>
-		<thingClass>DankPyon.HideGeneric</thingClass>
+		<thingClass>MedievalOverhaul.HideGeneric</thingClass>
 		<graphicData>
 			<texPath>Resources/HideLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

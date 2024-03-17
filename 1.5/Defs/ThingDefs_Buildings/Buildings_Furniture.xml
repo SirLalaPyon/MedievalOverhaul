@@ -1283,7 +1283,7 @@
 		</researchPrerequisites>
 		<designatorDropdown>DankPyon_Candles</designatorDropdown>
 		<modExtensions>
-			<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"></li>
 		</modExtensions>
 	</ThingDef>
 
@@ -1464,7 +1464,7 @@
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 	<modExtensions>
-		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+		<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"></li>
 	</modExtensions>
 	</ThingDef>
 
@@ -1582,7 +1582,7 @@
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
 	<modExtensions>
-		<li Class="DankPyon.CannotBePlacedTogetherWithThisModExtension"></li>
+		<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"></li>
 	</modExtensions>
 	</ThingDef>
 
@@ -2443,7 +2443,7 @@
 		
 		<comps>
 				<li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
-				<li Class="DankPyon_MedievalOverhaul.CompProperties_FireOverlaySouth">
+				<li Class="MedievalOverhaul.CompProperties_FireOverlaySouth">
 						<fireSize>0.7</fireSize>
 					 <offset>(0,0,-0.2)</offset>
 				 </li>
@@ -2592,7 +2592,7 @@
 						</li>
 					</offsets>
 				</li>
-				<li Class="DankPyon_MedievalOverhaul.CompProperties_FireOverlaySouth">
+				<li Class="MedievalOverhaul.CompProperties_FireOverlaySouth">
 					<fireSize>0.8</fireSize>
 					<offset>(0,0,0.1)</offset>
 				</li>

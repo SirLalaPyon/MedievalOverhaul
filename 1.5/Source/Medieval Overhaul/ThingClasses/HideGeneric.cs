@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Verse;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
     public class HideGeneric : ThingWithComps
     {

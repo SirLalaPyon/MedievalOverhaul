@@ -1,11 +1,11 @@
-﻿using DankPyon;
+﻿using MedievalOverhaul;
 using System.Collections.Generic;
 using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Diagnostics;
 
-namespace DankPyon_MedievalOverhaul
+namespace MedievalOverhaul
 {
 	public class RecipeWorkerCounter_MakeWoodPlanks : RecipeWorkerCounter
 	{
@@ -17,7 +17,7 @@ namespace DankPyon_MedievalOverhaul
 		public override int CountProducts(Bill_Production bill)
 		{
 			int num = 0;
-			List<ThingDef> childThingDefs = DankPyonDefOf.DankPyon_Wood.childThingDefs;
+			List<ThingDef> childThingDefs = MedievalOverhaulDefOf.DankPyon_Wood.childThingDefs;
 			for (int i = 0; i < childThingDefs.Count; i++)
 			{
 				num += bill.Map.resourceCounter.GetCount(childThingDefs[i]);
@@ -27,7 +27,7 @@ namespace DankPyon_MedievalOverhaul
 
 		public override string ProductsDescription(Bill_Production bill)
 		{
-			return DankPyonDefOf.DankPyon_Wood.label;
+			return MedievalOverhaulDefOf.DankPyon_Wood.label;
 		}
 
 		public override bool CanPossiblyStore(Bill_Production bill, ISlotGroup slotGroup)

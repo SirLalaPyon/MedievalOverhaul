@@ -2,7 +2,7 @@
 using Verse;
 using Verse.Grammar;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
     public class CompProperties_RandomName : CompProperties
     {

@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
 
     public class Bullet_ExplosiveProperty : Bullet

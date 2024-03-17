@@ -5,7 +5,7 @@ using System.Reflection.Emit;
 using Verse;
 using Verse.AI;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
     public static class Core

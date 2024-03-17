@@ -3,10 +3,10 @@ using RimWorld;
 using ProcessorFramework;
 using DefOf = RimWorld.DefOf;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
     [DefOf]
-    public static class DankPyonDefOf
+    public static class MedievalOverhaulDefOf
     {
         public static ThingDef DankPyon_Artillery_Trebuchet;
         public static ThingDef DankPyon_Artillery_Boulder;

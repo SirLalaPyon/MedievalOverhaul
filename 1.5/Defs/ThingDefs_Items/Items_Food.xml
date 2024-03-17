@@ -753,6 +753,8 @@
         <daysToRotStart>8</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
+	<li Class="CompProperties_Forbiddable"/>
+	<li Class="CompProperties_FoodPoisonable"/>
     </comps>
     <rotatable>false</rotatable>
   </ThingDef>

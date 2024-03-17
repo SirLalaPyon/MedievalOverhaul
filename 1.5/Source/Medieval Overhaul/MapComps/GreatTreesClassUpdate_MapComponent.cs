@@ -36,7 +36,7 @@
 //    //            for (int i = count; i >= 0; i--)
 //    //            {
 //    //                {
-//    //                    if (plantList[i].def.defName == "DankPyon_GreatOak" || plantList[i].def.defName == "DankPyon_GreatIter" || plantList[i].def.defName == "DankPyon_GreatWillow")
+//    //                    if (plantList[i].def.defName == "MedievalOverhaul_GreatOak" || plantList[i].def.defName == "MedievalOverhaul_GreatIter" || plantList[i].def.defName == "MedievalOverhaul_GreatWillow")
 //    //                    {
 //    //                        UpdateTree(map, plantList[i] as Plant);
 //    //                    }

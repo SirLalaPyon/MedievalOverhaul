@@ -110,7 +110,7 @@
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
-		<thingClass>DankPyon.Bullet_ExplosiveProperty</thingClass>
+		<thingClass>MedievalOverhaul.Bullet_ExplosiveProperty</thingClass>
 		<projectile>
 				<flyOverhead>false</flyOverhead>
 				<damageDef>RangedStab</damageDef>
@@ -120,7 +120,7 @@
 				<speed>60</speed>
 		</projectile>
 		<modExtensions>
-			<li Class="DankPyon.AdditionalProjectileProperties">
+			<li Class="MedievalOverhaul.AdditionalProjectileProperties">
 				<projectile2>
 					<damageDef>DankPyon_Damage_BallistaBolt</damageDef>
 					<damageAmountBase>5</damageAmountBase>
@@ -278,7 +278,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.2,1.2)</drawSize>
 		</graphicData>
-		<thingClass>DankPyon.Bullet_ExplosiveProperty</thingClass>
+		<thingClass>MedievalOverhaul.Bullet_ExplosiveProperty</thingClass>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>RangedStab</damageDef>
@@ -288,7 +288,7 @@
 			<speed>60</speed>
 		</projectile>
 		<modExtensions>
-			<li Class="DankPyon.AdditionalProjectileProperties">
+			<li Class="MedievalOverhaul.AdditionalProjectileProperties">
 				<projectile2>
 					<damageDef>DankPyon_Damage_BallistaBolt</damageDef>
 					<damageAmountBase>20</damageAmountBase>

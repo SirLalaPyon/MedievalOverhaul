@@ -399,6 +399,7 @@
 	<description>Make sausage from raw meat.</description>
 	<jobString>Making sausage.</jobString>  
 	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 	<ingredients>
 	   <li>
 		  <filter>
@@ -448,6 +449,7 @@
   <description>Make 10 sausages from raw meat.</description>
   <jobString>Making 10 sausages.</jobString>  
   <allowMixingIngredients>true</allowMixingIngredients>
+  <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
   <ingredients>
 	  <li>
 		  <filter>
@@ -1533,7 +1535,7 @@
 					<li>DankPyon_RawGarlic</li>
 				  </thingDefs>
 			</filter>
-			<count>0.6</count>
+			<count>0.06</count>
 		</li>
 </ingredients>
 <products>

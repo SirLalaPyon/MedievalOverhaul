@@ -8,7 +8,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
@@ -35,7 +35,7 @@ namespace DankPyon
             {
                 if (def.IsChunk() && def.projectileWhenLoaded is null)
                 {
-                    def.projectileWhenLoaded = DankPyonDefOf.DankPyon_Artillery_Boulder;
+                    def.projectileWhenLoaded = MedievalOverhaulDefOf.DankPyon_Artillery_Boulder;
                 }
             }
 
@@ -46,8 +46,8 @@ namespace DankPyon
                 {
                     pawnKindDef.lifeStages.Last().butcherBodyPart = new BodyPartToDrop
                     {
-                        bodyPartGroup = DankPyonDefOf.HeadAttackTool,
-                        thing = DankPyonDefOf.DankPyon_Hide_HideGeneric,
+                        bodyPartGroup = MedievalOverhaulDefOf.HeadAttackTool,
+                        thing = MedievalOverhaulDefOf.DankPyon_Hide_HideGeneric,
                         allowFemale = true
                     };
                 }
@@ -71,7 +71,7 @@ namespace DankPyon
         {
             public static void Postfix(ref bool __result, BuildableDef entDef, IntVec3 c, Map map, Rot4 rot, Thing thingToIgnore = null, ThingDef stuffDef = null)
             {
-                if (entDef == DankPyonDefOf.DankPyon_PlowedSoil && !c.GetTerrain(map).IsSoil)
+                if (entDef == MedievalOverhaulDefOf.DankPyon_PlowedSoil && !c.GetTerrain(map).IsSoil)
                 {
                     __result = false;
                 }
@@ -159,13 +159,13 @@ namespace DankPyon
                     int amount = Math.Max(1, (int)(GenMath.RoundRandom(__instance.GetStatValue(StatDefOf.MeatAmount, true) * efficiency) * 0.2f));
                     if (boneFlag)
                     {
-                        Thing bone = ThingMaker.MakeThing(DankPyonDefOf.DankPyon_Bone, null);
+                        Thing bone = ThingMaker.MakeThing(MedievalOverhaulDefOf.DankPyon_Bone, null);
                         bone.stackCount = amount;
                         yield return bone;
                     }
                     if (fatFlag)
                     {
-                        Thing fat = ThingMaker.MakeThing(DankPyonDefOf.DankPyon_Fat, null);
+                        Thing fat = ThingMaker.MakeThing(MedievalOverhaulDefOf.DankPyon_Fat, null);
                         fat.stackCount = amount;
                         yield return fat;
                     }
@@ -220,7 +220,7 @@ namespace DankPyon
         private static readonly Dictionary<ThingDef, ThingRequestGroup> registeredArtillery = new Dictionary<ThingDef, ThingRequestGroup>();
         static ArtillerySearchGroup()
         {
-            RegisterArtillery(DankPyonDefOf.DankPyon_Artillery_Trebuchet, ThingRequestGroup.Chunk);
+            RegisterArtillery(MedievalOverhaulDefOf.DankPyon_Artillery_Trebuchet, ThingRequestGroup.Chunk);
         }
 
         public static bool RegisterArtillery(ThingDef def, ThingRequestGroup ammoGroup)
@@ -329,7 +329,7 @@ namespace DankPyon
         }
         public static void Postfix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
         {
-            if (activeProcess.processDef == DankPyonDefOf.DankPyon_RawHidesProcess)
+            if (activeProcess.processDef == MedievalOverhaulDefOf.DankPyon_RawHidesProcess)
             {
                 foreach (var thing in activeProcess.ingredientThings)
                 {

@@ -3,7 +3,7 @@ using System.Linq;
 using RimWorld;
 using Verse;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
     public class Hediff_UnpleasantAftermathSet : Hediff_High
     {
@@ -14,13 +14,13 @@ namespace DankPyon
 			base.Tick();
 			if (pawn.IsHashIntervalTick(300) && HangoverSusceptible(pawn))
 			{
-				Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(DankPyonDefOf.DankPyon_UnpleasantAftermath);
+				Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(MedievalOverhaulDefOf.DankPyon_UnpleasantAftermath);
 				if (firstHediffOfDef != null)
 				{
 					firstHediffOfDef.Severity = 1f;
 					return;
 				}
-				firstHediffOfDef = HediffMaker.MakeHediff(DankPyonDefOf.DankPyon_UnpleasantAftermath, pawn);
+				firstHediffOfDef = HediffMaker.MakeHediff(MedievalOverhaulDefOf.DankPyon_UnpleasantAftermath, pawn);
 				firstHediffOfDef.Severity = 1f;
 				pawn.health.AddHediff(firstHediffOfDef);
 			}

@@ -2,7 +2,7 @@
 using Verse;
 using UnityEngine;
 
-namespace DankPyon_MedievalOverhaul
+namespace MedievalOverhaul
 {
     public class Comp_FireOverlaySouth : CompFireOverlay
     {

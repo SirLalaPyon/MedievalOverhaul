@@ -1,6 +1,6 @@
 ﻿using RimWorld;
 
-namespace DankPyon_MedievalOverhaul
+namespace MedievalOverhaul
 {
     public class CompProperties_FireOverlaySouth : CompProperties_FireOverlay
     {

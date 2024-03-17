@@ -3,7 +3,7 @@ using System.Linq;
 using RimWorld;
 using Verse;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
 	public class Hediff_UnpleasantAftermath : HediffWithComps
 	{
@@ -11,7 +11,7 @@ namespace DankPyon
 		{
 			get
 			{
-				if (pawn.health.hediffSet.HasHediff(DankPyonDefOf.DankPyon_UnpleasantAftermath))
+				if (pawn.health.hediffSet.HasHediff(MedievalOverhaulDefOf.DankPyon_UnpleasantAftermath))
 				{
 					return false;
 				}

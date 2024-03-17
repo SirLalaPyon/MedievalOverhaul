@@ -4,7 +4,7 @@ using System;
 using Verse;
 using Verse.AI;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
     [HarmonyPatch(typeof(Toils_Combat), "FollowAndMeleeAttack", new Type[] { typeof(TargetIndex), typeof(TargetIndex), typeof(Action) })]
     public static class Patch_FollowAndMeleeAttack

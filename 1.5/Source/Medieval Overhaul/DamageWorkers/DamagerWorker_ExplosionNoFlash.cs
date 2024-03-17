@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Verse;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
-	// use with DankPyon.DamagerWorker_ExplosionNoFlash
+	// use with MedievalOverhaul.DamagerWorker_ExplosionNoFlash
 	public class DamagerWorker_ExplosionNoFlash : DamageWorker_AddInjury
     {
         public override void ExplosionStart(Explosion explosion, List<IntVec3> cellsToAffect)

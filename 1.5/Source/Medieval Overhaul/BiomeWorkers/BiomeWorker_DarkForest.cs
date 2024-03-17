@@ -2,7 +2,7 @@
 using RimWorld.Planet;
 using Verse;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
     class BiomeWorker_DarkForest : BiomeWorker_BorealForest
     {

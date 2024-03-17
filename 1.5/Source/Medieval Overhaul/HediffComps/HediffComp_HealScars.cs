@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
 	public class HediffComp_HealScars : HediffComp
 	{

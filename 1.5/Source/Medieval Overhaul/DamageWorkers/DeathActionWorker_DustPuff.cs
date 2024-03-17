@@ -1,10 +1,10 @@
 ﻿using RimWorld;
 using Verse;
 using UnityEngine;
-using DankPyon;
+using MedievalOverhaul;
 using Verse.AI.Group;
 
-namespace DankPyon
+namespace MedievalOverhaul
 {
 	public class DeathActionWorker_DustPuff : DeathActionWorker_SmallExplosion
 	{
@@ -14,7 +14,7 @@ namespace DankPyon
 
 		public override void PawnDied(Corpse corpse, Lord prevLord)
 		{
-			GenExplosion.DoExplosion(corpse.Position, corpse.Map, 1.9f, DankPyonDefOf.DankPyon_SchratCollapse, corpse.InnerPawn);
+			GenExplosion.DoExplosion(corpse.Position, corpse.Map, 1.9f, MedievalOverhaulDefOf.DankPyon_SchratCollapse, corpse.InnerPawn);
 		}
 	}
 }

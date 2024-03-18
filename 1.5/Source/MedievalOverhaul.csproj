@@ -96,13 +96,6 @@
     <Compile Include="StandaloneSettlementPreference\Main.cs" />
     <Compile Include="StandaloneSettlementPreference\SettlementPreference.cs" />
     <Compile Include="StandaloneSettlementPreference\SettlementPreferenceUtility.cs" />
-    <Compile Include="TransparentThings\Core.cs" />
-    <Compile Include="TransparentThings\TransparentThingsSettings.cs" />
-    <Compile Include="TransparentThings\TransparentThingsMod.cs" />
-    <Compile Include="TransparentThings\TransparentThingsDefOf.cs" />
-    <Compile Include="TransparentThings\ThingWithExtension.cs" />
-    <Compile Include="TransparentThings\ThingExtension.cs" />
-    <Compile Include="TransparentThings\RoofSetter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="0Harmony">

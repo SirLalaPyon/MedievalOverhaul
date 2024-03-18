@@ -35,7 +35,7 @@
 			<visualSizeRange>8~12</visualSizeRange>
 		</plant>
 		<modExtensions>
-			<li Class="TransparentThings.ThingExtension">
+			<!--li Class="TransparentThings.ThingExtension">
 				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
 				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
 				<firstAreaOffset>(-1, 0)</firstAreaOffset>
@@ -47,7 +47,7 @@
 					<li>ChunkGranite</li>
 					<li>ChunkSandstone</li>
 				</ignoredThings>
-			</li>
+			</li-->
 			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
 				<secondaryDrop>DankPyon_Amber</secondaryDrop>
 				<secondaryDropAmountRange>20</secondaryDropAmountRange>
@@ -83,7 +83,7 @@
 			<visualSizeRange>3~5</visualSizeRange>
 		</plant>
 		<modExtensions>
-			<li Class="TransparentThings.ThingExtension">
+			<!--li Class="TransparentThings.ThingExtension">
 				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
 				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
 				<firstArea>(1, 2)</firstArea>
@@ -94,7 +94,7 @@
 					<li>ChunkGranite</li>
 					<li>ChunkSandstone</li>
 				</ignoredThings>
-			</li>
+			</li-->
 			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
 				<secondaryDrop>DankPyon_Amber</secondaryDrop>
 				<secondaryDropAmountRange>5</secondaryDropAmountRange>

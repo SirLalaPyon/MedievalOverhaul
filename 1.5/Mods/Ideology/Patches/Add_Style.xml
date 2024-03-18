@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		@Name="DankPyon_BuildingBase" or
+		@Name="DankPyon_TableGatherSpotBase" or
+		@Name="DankPyon_TableBase" or
+		@Name="DankPyon_FurnitureWithQualityBase" or
+		@Name="DankPyon_ArtableFurnitureBase" or
+		@Name="DankPyon_ArtableBedBase" or
+		@Name="DankPyon_BedWithQualityBase"]
+		</xpath>
+		<value>
+			<dominantStyleCategory>DankPyon_OldWorld</dominantStyleCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IdeoIconDef[
+		defName="KnivesDown" or
+		defName="Steer" or
+		defName="TechLighthouse" or
+		defName="TechPulse"]/cultures</xpath>
+		<value>
+			<li>DankPyon_OldWorlder</li>
+		</value>
+	</Operation>
+
+	<!--li Class="PatchOperationAdd"> 
+					<xpath>Defs/ThingDef[defName = "Altar_Grand"]</xpath>
+                    <value>
+						<altitudeLayer>BuildingOnTop</altitudeLayer>
+                    </value>
+				</li-->
+
+
+	<!-- Desert -->
+	<!--li Class="PatchOperationAdd"> 
+					<xpath>Defs/ThingDef[@Name = "DankPyon_BuildingFloorCoveringBase" or @Name = "DankPyon_RitualSeatBase"]</xpath>
+                    <value>
+                        <dominantStyleCategory>DankPyon_Desert</dominantStyleCategory>
+                    </value>
+				</li-->
+
+</Patch>

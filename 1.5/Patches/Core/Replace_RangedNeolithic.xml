@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Bow_Recurve"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<recipeUsers>
+				<li>DankPyon_Workbench</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Bow_Great"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<recipeUsers>
+				<li>DankPyon_Workbench</li>
+			</recipeUsers>
+		</value>
+	</Operation>
+
+</Patch>

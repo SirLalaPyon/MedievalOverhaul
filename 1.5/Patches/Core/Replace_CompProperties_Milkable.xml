@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Goat"]/comps/li[@Class="CompProperties_Milkable"]/milkDef</xpath>
+		<value>
+			<milkDef>DankPyon_GoatMilk</milkDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Sheep"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Milkable">
+				<milkDef>DankPyon_SheepMilk</milkDef>
+				<milkIntervalDays>3</milkIntervalDays>
+				<milkAmount>12</milkAmount>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>	

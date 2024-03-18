@@ -13,14 +13,6 @@
 		</operations>	
 	</Operation>
 
-	<!-- Replace graphicData Steel-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName = "Steel"]/graphicData/texPath</xpath>
-		<value>
-			<texPath>Resources/SteelIngot</texPath>
-		</value>
-	</Operation>
-
 	<!-- Replace label Steel -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName = "Steel"]/label</xpath>
@@ -42,14 +34,6 @@
 		<xpath>/Defs/ThingDef[defName = "MineableSilver"]/building/mineableThing</xpath>
 		<value>
 			<mineableThing>DankPyon_SilverOre</mineableThing>
-		</value>
-	</Operation>
-
-	<!-- Replace graphicData Gold-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName = "Gold"]/graphicData/texPath</xpath>
-		<value>
-			<texPath>Resources/GoldIngot</texPath>
 		</value>
 	</Operation>
 

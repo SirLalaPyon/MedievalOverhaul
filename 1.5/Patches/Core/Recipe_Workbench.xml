@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-
     <!-- Add Vanilla Recipes to Anvil -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[techLevel="Medieval" and (verbs/li or tools/li) and not(apparel) and recipeMaker]/recipeMaker/recipeUsers</xpath>
@@ -20,5 +19,5 @@
 			</value>
 		</nomatch>
 	</Operation>
-    
+
 </Patch>

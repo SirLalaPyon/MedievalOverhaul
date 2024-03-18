@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Milk"]/graphicData</xpath>
+		<xpath>Defs/ThingDef[defName="Milk"]/graphicData/texPath</xpath>
 		<value>
-			<graphicData>
-				<texPath>Drug/Milk</texPath>
-				<graphicClass>Graphic_StackCount</graphicClass>
-			</graphicData>
+			<texPath>Things/Item/Resource/Milk</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
 		</value>
 	</Operation>
 
@@ -18,4 +17,5 @@
 			</thingCategories>
 		</value>
 	</Operation>
+
 </Patch>	

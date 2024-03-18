@@ -886,7 +886,7 @@
     </weaponTags>
 
     <tools>
-      <li Class="MedievalOverhaul.Tool_Melee">
+      <li>
         <label>shaft</label>
         <capacities>
           <li>Blunt</li>
@@ -894,18 +894,15 @@
         </capacities>
         <power>13</power>
         <cooldownTime>2</cooldownTime>
-        <!--meleeReachRange>3</meleeReachRange-->
       </li>
-      <li Class="MedievalOverhaul.Tool_Melee">
+      <li>
         <label>point</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
         <capacities>
           <li>Stab</li>
         </capacities>
         <power>17.75</power>
         <cooldownTime>2.45</cooldownTime>
         <armorPenetration>0.3</armorPenetration>
-        <!--meleeReachRange>3</meleeReachRange-->
       </li>
     </tools>
 	  <recipeMaker>
@@ -948,7 +945,7 @@
     </weaponTags>
 
     <tools>
-      <li Class="MedievalOverhaul.Tool_Melee">
+      <li>
         <label>shaft</label>
         <capacities>
           <li>Blunt</li>
@@ -958,9 +955,9 @@
         <cooldownTime>2</cooldownTime>
         <!--meleeReachRange>3</meleeReachRange-->
       </li>
-      <li Class="MedievalOverhaul.Tool_Melee">
+      <li>
         <label>blade</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
+        <!--labelUsedInLogging>false</labelUsedInLogging-->
         <capacities>
           <li>Cut</li>
         </capacities>
@@ -1018,9 +1015,9 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li Class="MedievalOverhaul.Tool_Melee">
+      <li>
         <label>blade</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
+        <!--labelUsedInLogging>false</labelUsedInLogging-->
         <capacities>
           <li>Cut</li>
         </capacities>
@@ -1078,9 +1075,9 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li Class="MedievalOverhaul.Tool_Melee">
+      <li>
         <label>Point</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
+        <!--labelUsedInLogging>false</labelUsedInLogging-->
         <capacities>
           <li>Stab</li>
         </capacities>
@@ -1229,9 +1226,9 @@
         <power>13</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li Class="MedievalOverhaul.Tool_Melee">
+      <li>
         <label>edge</label>
-        <labelUsedInLogging>false</labelUsedInLogging>
+        <!--labelUsedInLogging>false</labelUsedInLogging-->
         <capacities>
           <li>Cut</li>
         </capacities>

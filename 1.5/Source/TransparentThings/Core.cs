@@ -52,7 +52,7 @@ namespace TransparentThings
           Thing thing,
           ThingExtension extension)
         {
-            IntVec3 bottomLeft = thing.OccupiedRect().Min;
+            IntVec3 bottomLeft = thing.OccupiedRect().Min; // Probably wrong
             CellRect cellRect = new CellRect(bottomLeft.x, bottomLeft.z, extension.firstArea.x, extension.firstArea.z);
             if (extension.firstAreaOffset != IntVec2.Zero)
                 cellRect = cellRect.MovedBy(extension.firstAreaOffset);

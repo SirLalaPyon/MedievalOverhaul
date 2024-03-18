@@ -1,5 +1,4 @@
-﻿using GenericWandersIn;
-using RimWorld;
+﻿using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace GenericWandersIn
+namespace MedievalOverhaul
 {
     internal class IncidentWorker_GenericWandersIn : IncidentWorker
     {

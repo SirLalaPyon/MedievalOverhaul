@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace GenericWandersIn
+namespace MedievalOverhaul
 {
     internal class IncidentProperties : DefModExtension
     {

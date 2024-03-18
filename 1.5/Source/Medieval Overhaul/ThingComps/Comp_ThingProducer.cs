@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace ESCP_ThingProducer
+namespace MedievalOverhaul
 {
     public class Comp_ThingProducer : ThingComp
     {

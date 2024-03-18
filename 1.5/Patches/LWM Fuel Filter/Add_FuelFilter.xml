@@ -40,15 +40,15 @@
 					</nomatch>
 				</li>
 
-				<li Class="PatchOperationAdd">
+				<!--li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../..</xpath>
 					<value>
 						<li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
 					</value>
-				</li>
+				</li-->
 
 				<!-- Add CompProperties_StoreFuelThing to every thingdef that has a refuelable comp and coal in their fuel filter-->
-				<li Class="PatchOperationConditional">
+				<!--li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../li[@Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"]</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../..</xpath>
@@ -56,10 +56,10 @@
 							<li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
 						</value>
 					</nomatch>
-				</li>
+				</li-->
 
 				<!-- If there is no ESCP_FuelExtension.ITab_Fuel inside an existing inspectorTab, add ESCP_FuelExtension.ITab_Fuel inside that inspectorTab-->
-				<li Class="PatchOperationConditional">
+				<!--li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]]/inspectorTabs</xpath>
 					<match Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]]/inspectorTabs</xpath>
@@ -67,10 +67,10 @@
 							<li>ESCP_FuelExtension.ITab_Fuel</li>
 						</value>
 					</match>
-				</li>
+				</li-->
 
 				<!-- If there is no inspector tab, add inspector tab AND ESCP_FuelExtension.ITab_Fuel-->
-				<li Class="PatchOperationConditional">
+				<!--li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
 					<match Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
@@ -80,7 +80,7 @@
 							</inspectorTabs>
 						</value>
 					</match>
-				</li>
+				</li-->
 
 			</operations>
 		</nomatch>

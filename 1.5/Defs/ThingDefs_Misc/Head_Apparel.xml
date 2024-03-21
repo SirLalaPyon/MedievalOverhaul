@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+<!--
 
+<dataNorth>
+	<layer>X</layer>
+</dataNorth>
+
+X
+> 60 Above Head, below body
+> 90 Above body
+
+
+<dataSouth>
+	<layer>X</layer>
+</dataSouth>
+
+X
+< 50 below helmet, above head
+< 40 below head
+-->
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_ArmorHelmetMakeableBase" Abstract="True">
+	<apparel>
+		<drawData>
+			<dataNorth>
+				<layer>95</layer>
+			</dataNorth>
+		</drawData>
+    </apparel>
+  </ThingDef>
 
   <ThingDef ParentName="HatMakeableBase">
 		<defName>DankPyon_Headgear_RedBandana</defName>
@@ -305,7 +333,7 @@
 	</ThingDef>
 
   <!-- ==================== Padded Helmets ==================== -->
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_PaddedNasalHelmet</defName>
     <label>padded nasal helm</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
@@ -372,7 +400,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_PaddedKettleHelmet</defName>
     <label>padded kettle</label>
     <description>A wide-rimmed kettle helmet paired with a thick padded coif, offering good protection of the head.</description>
@@ -437,7 +465,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_PaddedFlatTopHelmet</defName>
     <label>padded flat top</label>
     <description>A thick padded coif coupled with a simple flat-top nasal helmet. Offers good protection of the head, and is also quite insulating in cold weather.</description>
@@ -506,7 +534,7 @@
   </ThingDef>
 
   <!-- ==================== Chain ==================== -->
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainCoif</defName>
     <label>chain coif</label>
     <description>A thick hood forged from chains of metal provides excellent protection to the head against slashing and thrusting attacks.</description>
@@ -563,7 +591,7 @@
     </apparel>
   </ThingDef>
 
-<ThingDef ParentName="ArmorHelmetMakeableBase">
+<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainCoifClosed</defName>
     <label>closed chain coif</label>
     <description>A thick hood forged from chains of metal with additional protection reinforcing the lower face. Provides excellent protection to the entire head against piercing and slashing attacks.</description>
@@ -620,7 +648,7 @@
     </apparel>
   </ThingDef>
 
-<ThingDef ParentName="ArmorHelmetMakeableBase">
+<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainCoifFull</defName>
     <label>full chain coif</label>
     <description>A thick hood forged from chains of metal with an added plate-metal noseguard to almost entirely protect the face, head,. Makes it a bit difficult to see, but otherwise offers excellent protection against cuts.</description>
@@ -678,7 +706,7 @@
   </ThingDef>
 
   <!-- ==================== Heavy Helm ==================== -->
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainNasalHelmet</defName>
     <label>chain nasal helm</label>
     <description>A chainmail coif coupled with a simple round nasal helmet, offering excellent protection of the head.</description>
@@ -737,7 +765,7 @@
     </apparel>
   </ThingDef>
   
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainNasalRedHelmet</defName>
     <label>chain nasal helm (bandana)</label>
     <description>A variation of the chain skull cap crafted as a chainmail coif coupled with a nasal helmet. Offers the same level of protection for the head, but the strip of red cloth tied around the forehead displays authority.</description>
@@ -800,7 +828,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainKettleHelmet</defName>
     <label>chain kettle helm</label>
     <description>A wide-rimmed kettle helmet paired with a chainmail coif, offering excellent protection of the head while providing comfortable shade from the sun.</description>
@@ -859,7 +887,7 @@
     </apparel>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_Chain_FlatTopHelmet</defName>
     <label>chain flat-top</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
@@ -919,7 +947,7 @@
     </apparel>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ClosedChain_FlatTopHelmet</defName>
     <label>closed chain flat-top</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
@@ -978,7 +1006,7 @@
     </apparel>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ChainClosedFlatTopHelmet</defName>
     <label>chain closed flat-top</label>
     <description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head, but hinders eyesight and breathing.</description>
@@ -1036,7 +1064,7 @@
     </apparel>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_HeavyBarbrute</defName>
     <label>heavy barbrute</label>
     <description>PLACEHOLDER.</description>
@@ -1094,7 +1122,7 @@
     </apparel>
   </ThingDef>
 
-<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_T3HelmetBase">
+<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_T3HelmetBase">
     <defName>DankPyon_Headgear_OpenBascinet</defName>
     <label>open bascinet</label>
     <description>PLACEHOLDER.</description>
@@ -1152,7 +1180,7 @@
     </apparel>
 </ThingDef>
 
-<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_ZweihanderHelmBase">
+<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_ZweihanderHelmBase">
     <defName>DankPyon_Headgear_ZweihanderHelm</defName>
     <label>zweihander helm</label>
     <description>A sturdy metal helmet adorned with a flamboyant colored large baggy feathered hat to display one's status.</description>
@@ -1296,7 +1324,7 @@
     </apparel>
 </ThingDef>
   <!-- ==================== Plate Helmets ==================== -->
-  <!--ThingDef ParentName="ArmorHelmetMakeableBase">
+  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_VisoredKettleHelmet</defName>
     <label>visored kettle helmet</label>
     <description>A broadly-rimmed nasal helmet that extends down past the eyes, with slits that allow the wearer to see. Provides great protection of the head and face, but leaves the neck exposed and hinders ones eyesight.</description>
@@ -1353,7 +1381,7 @@
     </apparel>
   </ThingDef-->
   
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ClosedBascinetHelmet</defName>
     <label>closed bascinet helmet</label>
     <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
@@ -1413,7 +1441,7 @@
     </apparel>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_WolfBascinet</defName>
     <label>wolf-ribs bascinet</label>
     <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
@@ -1473,7 +1501,7 @@
     </apparel>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_KlappvisorBascinet</defName>
     <label>klappviser bascinet</label>
     <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
@@ -1533,7 +1561,7 @@
     </apparel>
   </ThingDef>
   
-  <!--ThingDef ParentName="ArmorHelmetMakeableBase">
+  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_HounskullHelmet</defName>
     <label>hounskull helmet</label>
     <description>A thick plate bascinet helmet coupled with an extended pig-faced visor, which allows for easier breathing. Still quite hindering to see out of, however.</description>
@@ -1593,7 +1621,7 @@
     </apparel>
   </ThingDef-->
   
-<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_SalletBase">
+<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_SalletBase">
     <defName>DankPyon_Headgear_SalletHelmet</defName>
     <label>visored sallet</label>
     <description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
@@ -1680,7 +1708,7 @@
     </apparel>
 </ThingDef>
   
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_Bascinet_KlappvisierHelmetClosed</defName>
     <label>closed klappvisier helmet</label>
     <description>A simple plate bascinet helmet with an affixed flip-up visor. Offers good protection of the head and face, but it hinders one's eyesight while wearing it.</description>
@@ -1739,7 +1767,7 @@
     </apparel>
   </ThingDef>
   
-  <!--ThingDef ParentName="ArmorHelmetMakeableBase">
+  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPoyn_Headgear_KlappvisierHelmetOpen</defName>
     <label>open klappvisier helmet</label>
     <description>A simple plate bascinet helmet with a flipped-up klappviser. Forgoes protection of the face in exchange for better eyesight.</description>
@@ -1799,7 +1827,7 @@
     </apparel>
   </ThingDef-->
   
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_GreatHelm</defName>
     <label>great helm</label>
     <description>An early design of the close helm, which is worn over a very thickly padded fabric coif. Provides excellent protection to the entire head, but, like with most full-face helmets, limits one's field of vision and constricts breathing when worn.</description>
@@ -1859,7 +1887,7 @@
     </apparel>
   </ThingDef>
   
-  <!--ThingDef ParentName="ArmorHelmetMakeableBase">
+  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_CrusaderGreatHelm</defName>
     <label>crusader's great helm</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
@@ -1920,7 +1948,7 @@
     </apparel>
   </ThingDef-->
   
-  <!--ThingDef ParentName="ArmorHelmetMakeableBase">
+  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_RoyalGreatHelm</defName>
     <label>royal great helm</label>
     <description>An ornamented construction of an archaic full-head helmet, which provides excellent protection of the entire head and face at the cost of hindered eyesight and constricted breathing.</description>
@@ -1981,7 +2009,7 @@
     </apparel>
   </ThingDef-->
   
-  <ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_HeraldicGreatHelm">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_HeraldicGreatHelm">
     <defName>DankPyon_Headgear_HeraldicGreatHelm1c</defName>
     <label>heraldic great helm (Amboise)</label>
     <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Amboise.</description>
@@ -2035,6 +2063,11 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
+		<drawData>
+			<dataNorth>
+				<layer>200</layer>
+			</dataNorth>
+		</drawData>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
@@ -2097,7 +2130,7 @@
   </ThingDef>
 
   <!-- ==================== Super Helmets ==================== -->
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_Armet</defName>
     <label>armet</label>
     <description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
@@ -2156,7 +2189,7 @@
     </apparel>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ArmetGilded</defName>
     <label>gilded armet</label>
     <description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
@@ -2222,7 +2255,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_ArmetNamed</defName>
     <label>named armet</label>
     <description>An ancient ornate armet masterfully smithed by the under-forges of the ancient empire. It gives great protection for one's visage and embelishes an awe inspiring grace.</description>

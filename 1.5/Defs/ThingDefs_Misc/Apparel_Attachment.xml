@@ -126,16 +126,22 @@
 
     <!-- Armor Attachment Base-->
     <ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_ArmorAttachmentBase" Abstract="True">
-		<modExtensions>
-		<li Class="VFECore.ApparelDrawPosExtension">
-			<apparelDrawSettings>
-				<drawPosNorthOffset>(0, 0.2, 0)</drawPosNorthOffset>
-				<drawPosSouthOffset>(0, 0.006, 0)</drawPosSouthOffset>
-				<drawPosWestOffset>(0, 0.2, 0)</drawPosWestOffset>
-				<drawPosEastOffset>(0, 0.2, 0)</drawPosEastOffset>
-			</apparelDrawSettings>
-		</li>
-	    </modExtensions>
+		<apparel>
+			<drawData>
+				<dataNorth>
+					<layer>90</layer>
+				</dataNorth>
+				<dataEast>
+					<layer>70</layer>
+				</dataEast>
+				<dataSouth>
+					<layer>40</layer>
+				</dataSouth>
+				<dataWest>
+					<layer>70</layer>
+				</dataWest>
+			</drawData>
+		</apparel>
 
         <recipeMaker>
             <recipeUsers Inherit="False">

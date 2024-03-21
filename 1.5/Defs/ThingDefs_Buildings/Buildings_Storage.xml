@@ -10,6 +10,7 @@
 	<!-- ==================== Storage Base ==================== -->
 
 	<ThingDef Name="DankPyon_StorageBase" ParentName="ShelfBase" Abstract="True">
+		<thingClass>Building_Storage</thingClass>
 		<researchPrerequisites Inherit="false">
 			<li>DankPyon_RusticStorage</li>
 		</researchPrerequisites>

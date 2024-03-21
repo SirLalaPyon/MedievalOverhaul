@@ -372,5 +372,39 @@
 			<li>Manipulation</li>
 		</requiredCapacities>
 	</WorkGiverDef-->
+	
+	<WorkGiverDef>
+		<defName>DankPyon_DoBillsCookHearth</defName>
+		<label>cook meals at hearth</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>97</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_RusticHearth</li>
+		</fixedBillGiverDefs>
+		<verb>cook</verb>
+		<gerund>cooking at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DankPyon_DoBillsHaulHearth</defName>
+		<label>do bills at hearth</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Hauling</workType>
+		<priorityInType>30</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_RusticHearth</li>
+		</fixedBillGiverDefs>
+		<verb>work at</verb>
+		<gerund>working at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
 
 </Defs>

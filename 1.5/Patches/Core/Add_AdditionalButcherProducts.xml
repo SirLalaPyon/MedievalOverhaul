@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Thrumbo"]</xpath>
+		<value>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+				<butcherOptions>
+					<li>
+						<thingDef>ThrumboHorn</thingDef>
+						<amount>1</amount>
+						<chance>100</chance>
+					</li>
+				</butcherOptions>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-
 	<HediffDef ParentName="ChronicDiseaseBase">
 		<defName>DankPyon_Intoxication</defName>
 		<initialSeverity>0.01</initialSeverity>
@@ -18,7 +16,6 @@
 				<label>negligible (no effect)</label>
 				<becomeVisible>true</becomeVisible>
 			</li>
-			
 			<li>
 				<label>minor</label>
 				<minSeverity>0.25</minSeverity>
@@ -37,7 +34,6 @@
 					</li>
 				</capMods>
 			</li>
-
 			<li>
 				<label>major</label>
 				<minSeverity>0.5</minSeverity>

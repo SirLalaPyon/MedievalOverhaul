@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <TraderKindDef>
-        <defName>DankPyon_Visitor_Medieval_Standard</defName>
-        <label>trader</label>
-        <stockGenerators>
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>Silver</thingDef>
-                <countRange>
-                    <min>50</min>
-                    <max>250</max>
-                </countRange>
-            </li>
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>Pemmican</thingDef>
-                <countRange>
-                    <min>60</min>
-                    <max>120</max>
-                </countRange>
-            </li>
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>MedicineHerbal</thingDef>
-                <countRange>
-                    <min>1</min>
-                    <max>6</max>
-                </countRange>
-            </li>
-            <!-- Weapons -->
-            <li Class="StockGenerator_MarketValue">
-                <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
-                <tradeTag>WeaponRanged</tradeTag>
-                <countRange>-1~2</countRange>
-            </li>
-            <li Class="StockGenerator_Category">
-                <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
-                <categoryDef>WeaponsMelee</categoryDef>
-                <countRange>
-                    <min>0</min>
-                    <max>1</max>
-                </countRange>
-            </li>
-            <!-- Apparel -->
-            <li Class="StockGenerator_MarketValue">
-                <tradeTag>BasicClothing</tradeTag>
-                <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
-                <countRange>7~7</countRange>
-            </li>
-            <li Class="StockGenerator_MarketValue">
-                <tradeTag>Clothing</tradeTag>
-                <maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
-                <countRange>3~3</countRange>
-            </li>
+	<TraderKindDef>
+		<defName>DankPyon_Visitor_Medieval_Standard</defName>
+		<label>trader</label>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>
+					<min>50</min>
+					<max>250</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Pemmican</thingDef>
+				<countRange>
+					<min>60</min>
+					<max>120</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>6</max>
+				</countRange>
+			</li>
+			<!-- Weapons -->
+			<li Class="StockGenerator_MarketValue">
+				<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+				<tradeTag>WeaponRanged</tradeTag>
+				<countRange>-1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+				<categoryDef>WeaponsMelee</categoryDef>
+				<countRange>
+					<min>0</min>
+					<max>1</max>
+				</countRange>
+			</li>
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>BasicClothing</tradeTag>
+				<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+				<countRange>7~7</countRange>
+			</li>
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Clothing</tradeTag>
+				<maxTechLevelGenerate>Medieval</maxTechLevelGenerate>
+				<countRange>3~3</countRange>
+			</li>
 
-            <!-- Apparel -->
-            <li Class="StockGenerator_MarketValue">
-                <tradeTag>Armor</tradeTag>
-                <countRange>5~5</countRange>
-            </li>
-            <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
-            <li Class="StockGenerator_MultiDef">
-                <thingDefs>
-                    <li>Cloth</li>
-                    <li>Chocolate</li>
-                </thingDefs>
-            </li>
-        </stockGenerators>
-    </TraderKindDef>
+			<!-- Apparel -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>Armor</tradeTag>
+				<countRange>5~5</countRange>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_MultiDef">
+				<thingDefs>
+					<li>Cloth</li>
+					<li>Chocolate</li>
+				</thingDefs>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
 
 </Defs>

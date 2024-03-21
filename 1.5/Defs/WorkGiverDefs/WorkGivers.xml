@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Defs>
 
 	<WorkGiverDef>
@@ -8,15 +7,15 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_RusticCookingTable</li>
-			</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DankPyon_RusticCookingTable</li>
+		</fixedBillGiverDefs>
 		<verb>cook</verb>
 		<gerund>cooking at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
-			<prioritizeSustains>true</prioritizeSustains>
+		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
 	<WorkGiverDef>
@@ -25,15 +24,15 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_StewPot</li>
-			</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DankPyon_StewPot</li>
+		</fixedBillGiverDefs>
 		<verb>cook</verb>
 		<gerund>cooking at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
-			<prioritizeSustains>true</prioritizeSustains>
+		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
 	<WorkGiverDef>
@@ -42,14 +41,14 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_StoneOven</li>
-				<li>DankPyon_StoneOvenLarge</li>
-			</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DankPyon_StoneOven</li>
+			<li>DankPyon_StoneOvenLarge</li>
+		</fixedBillGiverDefs>
 		<verb>bake</verb>
 		<gerund>baking at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
@@ -60,18 +59,18 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>110</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_SpinningWheel</li>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DankPyon_SpinningWheel</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</fixedBillGiverDefs>
 		<verb>spin</verb>
 		<gerund>spinning at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
-			<prioritizeSustains>true</prioritizeSustains>
-		</WorkGiverDef>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
 
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsMillstone</defName>
@@ -81,7 +80,7 @@
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
 			<li>DankPyon_Millstone</li>
-	 	</fixedBillGiverDefs>
+		</fixedBillGiverDefs>
 		<verb>mill</verb>
 		<gerund>milling at</gerund>
 		<requiredCapacities>
@@ -90,7 +89,7 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
- 	<WorkGiverDef>
+	<WorkGiverDef>
 		<defName>DankPyon_DoBillsGrill</defName>
 		<label>grill</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
@@ -98,7 +97,7 @@
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
 			<li>DankPyon_Grill</li>
-	 	</fixedBillGiverDefs>
+		</fixedBillGiverDefs>
 		<verb>grill</verb>
 		<gerund>grilling at</gerund>
 		<requiredCapacities>
@@ -126,13 +125,13 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Mining</workType>
 		<priorityInType>110</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_MineShaft</li>
-			</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DankPyon_MineShaft</li>
+		</fixedBillGiverDefs>
 		<verb>mine</verb>
 		<gerund>mining at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
@@ -143,15 +142,15 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>110</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_Workbench</li>
-			</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DankPyon_Workbench</li>
+		</fixedBillGiverDefs>
 		<verb>craft</verb>
 		<gerund>crafting at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
-			<prioritizeSustains>true</prioritizeSustains>
+		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
 	<!--WorkGiverDef>
@@ -177,15 +176,15 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>80</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_Furnace</li>
-			</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DankPyon_Furnace</li>
+		</fixedBillGiverDefs>
 		<verb>refine</verb>
 		<gerund>refining at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
-			<prioritizeSustains>true</prioritizeSustains>
+		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
 	<WorkGiverDef>
@@ -194,15 +193,15 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>70</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_TanningRack</li>
-			</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DankPyon_TanningRack</li>
+		</fixedBillGiverDefs>
 		<verb>treat hide</verb>
 		<gerund>treating hide at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
-			<prioritizeSustains>true</prioritizeSustains>
+		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
 	<WorkGiverDef>
@@ -263,12 +262,12 @@
 		<workType>Crafting</workType>
 		<priorityInType>90</priorityInType>
 		<fixedBillGiverDefs>
-		<li>DankPyon_StonecuttingSpot</li>
+			<li>DankPyon_StonecuttingSpot</li>
 		</fixedBillGiverDefs>
 		<verb>stonecut</verb>
 		<gerund>cutting stone blocks at</gerund>
 		<requiredCapacities>
-		<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
@@ -280,12 +279,12 @@
 		<workType>Smithing</workType>
 		<priorityInType>115</priorityInType>
 		<fixedBillGiverDefs>
-				<li>DankPyon_Anvil</li>
+			<li>DankPyon_Anvil</li>
 		</fixedBillGiverDefs>
 		<verb>smith</verb>
 		<gerund>smithing at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
@@ -296,15 +295,15 @@
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>80</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_CleaningBench</li>
-			</fixedBillGiverDefs>
+		<fixedBillGiverDefs>
+			<li>DankPyon_CleaningBench</li>
+		</fixedBillGiverDefs>
 		<verb>clean</verb>
 		<gerund>cleaning at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
-			<prioritizeSustains>true</prioritizeSustains>
+		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
 	<WorkGiverDef>
@@ -314,12 +313,12 @@
 		<workType>Smithing</workType>
 		<priorityInType>115</priorityInType>
 		<fixedBillGiverDefs>
-				<li>DankPyon_JewelryBench</li>
+			<li>DankPyon_JewelryBench</li>
 		</fixedBillGiverDefs>
 		<verb>craft</verb>
 		<gerund>crafting at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
@@ -331,12 +330,12 @@
 		<workType>Crafting</workType>
 		<priorityInType>115</priorityInType>
 		<fixedBillGiverDefs>
-				<li>DankPyon_Trestle</li>
+			<li>DankPyon_Trestle</li>
 		</fixedBillGiverDefs>
 		<verb>craft</verb>
 		<gerund>crafting at</gerund>
 		<requiredCapacities>
-				<li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>

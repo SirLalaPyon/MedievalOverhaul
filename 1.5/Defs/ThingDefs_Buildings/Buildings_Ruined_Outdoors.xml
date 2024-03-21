@@ -44,7 +44,7 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<statBases>
-		<MaxHitPoints>1000</MaxHitPoints>
+			<MaxHitPoints>1000</MaxHitPoints>
 		</statBases>
 		<killedLeavings>
 			<WoodLog>100</WoodLog>
@@ -71,7 +71,7 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<statBases>
-		<MaxHitPoints>1000</MaxHitPoints>
+			<MaxHitPoints>1000</MaxHitPoints>
 		</statBases>
 		<killedLeavings>
 			<WoodLog>150</WoodLog>
@@ -525,4 +525,4 @@
 		</modExtensions-->
 	</ThingDef>
 
-</Defs> 
+</Defs>

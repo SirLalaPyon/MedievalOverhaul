@@ -2,7 +2,7 @@
 <Defs>
 
 
-<!--============================== Linkables ==============================-->
+	<!--============================== Linkables ==============================-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_ToolRack</defName>
 		<label>Tool Rack</label>
@@ -74,8 +74,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
-        	<volume>(0.18, 0.23, 0.18)</volume>
-      		</shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<thingClass>Building</thingClass>
@@ -304,45 +304,45 @@
 	</ThingDef-->
 	
 	<ThingDef ParentName="BuildingBase">
-	<defName>DankPyon_RusticCookingTools</defName>
-	<label>Cooking Tools</label>
-	<description>A table full of useful cooking equipment. Increases work speed when placed near a rustic cooking table.</description>
-	<graphicData>
-		<texPath>Misc/RusticCookingTools</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(2,2)</drawSize>
-		<damageData>
-			<rect>(0,0.05,1,1.95)</rect>
-		</damageData>
-	</graphicData>
+		<defName>DankPyon_RusticCookingTools</defName>
+		<label>Cooking Tools</label>
+		<description>A table full of useful cooking equipment. Increases work speed when placed near a rustic cooking table.</description>
+		<graphicData>
+			<texPath>Misc/RusticCookingTools</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
 
-	<size>(2,1)</size>
-	<minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
-	<canOverlapZones>false</canOverlapZones>
-	<pathCost>42</pathCost>
-	<thingCategories>
-		<li>BuildingsMisc</li>
-	</thingCategories>
+		<size>(2,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
 
-	<statBases>
-		<MaxHitPoints>100</MaxHitPoints>
-		<WorkToBuild>1800</WorkToBuild>
-		<Mass>15</Mass>
-		<Flammability>1.0</Flammability>
-	</statBases>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
 
-	<stuffCategories>
-		<li>Woody</li>
-	  </stuffCategories>
-	  <costStuffCount>150</costStuffCount>
-	<costList>
-	  <DankPyon_IronIngot>50</DankPyon_IronIngot>
-    </costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<costList>
+			<DankPyon_IronIngot>50</DankPyon_IronIngot>
+		</costList>
 
 		<comps>
 			<li Class="CompProperties_Facility">
@@ -354,15 +354,15 @@
 			</li>
 		</comps>
 
-	<placeWorkers>
-		<li>PlaceWorker_ShowFacilitiesConnections</li>
-	</placeWorkers>
-	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-	<researchPrerequisites>
-      <li>DankPyon_RusticFurniture</li>
-    </researchPrerequisites>
-	<designationCategory>Misc</designationCategory>
-  </ThingDef>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+	</ThingDef>
 
 	<!--Dough-->
 	<ThingDef ParentName="BuildingBase">
@@ -403,229 +403,229 @@
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
 
-			<comps>
-				<li Class="CompProperties_Facility">
-					<statOffsets>
-						<WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
-					</statOffsets>
-					<maxDistance>6</maxDistance>
-					<maxSimultaneous>2</maxSimultaneous>
-				</li>
-			</comps>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
 
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<researchPrerequisites>
-		<li>DankPyon_RusticFurniture</li>
+			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>Misc</designationCategory>
 	</ThingDef>
 
-  <!--============== Medieval Comms ===============-->
+	<!--============== Medieval Comms ===============-->
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>DankPyon_BirdPost</defName>
-    <label>bird post</label>
-	<description>Some birds, when taught by expert trainers, are capable of flying to a designated location before returning to their home roost. This allows for communication with neighboring factions, assuming one can afford the costly requirements of obtaining and training the bird, as well as feeding the animals with meat. Requires the scribe table for correspondence.</description>
-	<thingClass>Building</thingClass>
-    <graphicData>
-      <texPath>Misc/BirdPost</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-      <drawSize>(1,1)</drawSize>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>30</pathCost>
-    <fillPercent>0.15</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_BirdPost</defName>
+		<label>bird post</label>
+		<description>Some birds, when taught by expert trainers, are capable of flying to a designated location before returning to their home roost. This allows for communication with neighboring factions, assuming one can afford the costly requirements of obtaining and training the bird, as well as feeding the animals with meat. Requires the scribe table for correspondence.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Misc/BirdPost</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
 
-    <statBases>
-      <MaxHitPoints>30</MaxHitPoints>
-      <WorkToBuild>750</WorkToBuild>
-	  <Mass>5</Mass>
-      <Flammability>1.0</Flammability>
-	  <Cleanliness>-5</Cleanliness>
-    </statBases>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
 
-    <tickerType>Normal</tickerType>
-    <size>(1,1)</size>
-    <building>
-		<ai_chillDestination>false</ai_chillDestination>
-    </building>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
 	
-	<costList>
-      <DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
-    </costList>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Stony</li>
-	  <li>Woody</li>
-    </stuffCategories>
-    <costStuffCount>30</costStuffCount>
+		<costList>
+			<DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerPlant</compClass>
-        <basePowerConsumption>-1</basePowerConsumption>
-        <transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>2.2</fuelConsumptionRate>
-        <fuelCapacity>10.0</fuelCapacity>
-        <fuelFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
-			<thingDefs>
-				<li>Hay</li>
-				<li>Kibble</li>
-			</thingDefs>
-        </fuelFilter>
-		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-      </li>
-    </comps>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.2</fuelConsumptionRate>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelFilter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+						<li>Kibble</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+		</comps>
 
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Misc</designationCategory>
-    <researchPrerequisites>
-      <li>DankPyon_CarrierBirds</li>
-    </researchPrerequisites>
-	<minifiedDef>MinifiedThing</minifiedDef>
-	<thingCategories>
-      <li>BuildingsMisc</li>
-    </thingCategories>
-  </ThingDef>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_CarrierBirds</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+	</ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>DankPyon_ScribeTable</defName>
-    <label>scribe table</label>
-    <description>A table housing wax tablets, which contain records and receipts. Alongside the tablets lay parchments, a seal, quills, and ink to allow for correspondence. When used alongside the bird post, the written letters can reach far lands quicker than a messenger. One can invite allies for feasts, rivals for a challenge, or neutral factions for trade.</description>
-    <thingClass>Building_CommsConsole</thingClass>
-    <graphicData>
-      <texPath>Misc/TableScribe</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-      <drawSize>(5,4)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-	<size>(3,2)</size>
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_ScribeTable</defName>
+		<label>scribe table</label>
+		<description>A table housing wax tablets, which contain records and receipts. Alongside the tablets lay parchments, a seal, quills, and ink to allow for correspondence. When used alongside the bird post, the written letters can reach far lands quicker than a messenger. One can invite allies for feasts, rivals for a challenge, or neutral factions for trade.</description>
+		<thingClass>Building_CommsConsole</thingClass>
+		<graphicData>
+			<texPath>Misc/TableScribe</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(3,2)</size>
 
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
-    <blockWind>false</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-	<staticSunShadowHeight>0.20</staticSunShadowHeight>
-    <fillPercent>0.5</fillPercent>
-    <canOverlapZones>false</canOverlapZones>
-    <statBases>
-      <MaxHitPoints>250</MaxHitPoints>
-      <WorkToBuild>2800</WorkToBuild>
-      <Flammability>0.6</Flammability>
-	  <Mass>15</Mass>
-    </statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>2800</WorkToBuild>
+			<Flammability>0.6</Flammability>
+			<Mass>15</Mass>
+		</statBases>
 
-	<stuffCategories>
-		<li>Metallic</li>
-		<li>Woody</li>
-		<li>Stony</li>
-	  </stuffCategories>
-	  <costStuffCount>100</costStuffCount>
-    <costList>
-      <DankPyon_IronIngot>20</DankPyon_IronIngot>
-      <DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
-    </costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<DankPyon_IronIngot>20</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+		</costList>
 
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <hasInteractionCell>true</hasInteractionCell>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Misc</designationCategory>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
 
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <shortCircuitInRain>false</shortCircuitInRain>
-        <basePowerConsumption>1</basePowerConsumption>
-      </li>
-    </comps>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>1</basePowerConsumption>
+			</li>
+		</comps>
 
-    <designationHotKey>Misc3</designationHotKey>
-    <placeWorkers>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-    </placeWorkers>
-    <researchPrerequisites>
-		<li>DankPyon_CarrierBirds</li>
-	</researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-	<thingCategories>
-		<li>BuildingsMisc</li>
-	</thingCategories>
-	<minifiedDef>MinifiedThing</minifiedDef>
-  </ThingDef>
+		<designationHotKey>Misc3</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>DankPyon_CarrierBirds</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>DankPyon_Cart</defName>
-    <label>cart</label>
-    <description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. n/n/Required for long distance trading, you can only sell goods to other factions if they're near a cart.</description>
-    <thingClass>Building_OrbitalTradeBeacon</thingClass>
-	<graphicData>
-      <texPath>Misc/Cart</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(4,4)</drawSize>
-      <damageData>
-        <rect>(0.1,0.1,1.8,1.8)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(1.39,0.5,1.25)</volume>
-      </shadowData>
-    </graphicData>
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Cart</defName>
+		<label>cart</label>
+		<description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. n/n/Required for long distance trading, you can only sell goods to other factions if they're near a cart.</description>
+		<thingClass>Building_OrbitalTradeBeacon</thingClass>
+		<graphicData>
+			<texPath>Misc/Cart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0.1,0.1,1.8,1.8)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(1.39,0.5,1.25)</volume>
+			</shadowData>
+		</graphicData>
 
-    <rotatable>false</rotatable>
-    <altitudeLayer>Building</altitudeLayer>
-    <pathCost>42</pathCost>
-    <blockWind>true</blockWind>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.50</fillPercent>
-    <size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.50</fillPercent>
+		<size>(2,2)</size>
 
-    <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Flammability>1</Flammability>
-      <WorkToBuild>2000</WorkToBuild>
-    </statBases>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+		</statBases>
 
-    <costList>
-      <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
-    </costList>
-	<stuffCategories>
-		<li>Woody</li>
-	</stuffCategories>
-	<costStuffCount>120</costStuffCount>
+		<costList>
+			<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
 	
-	<placeWorkers>
-      <li>PlaceWorker_ShowTradeBeaconRadius</li>
-    </placeWorkers>
-	<researchPrerequisites>
-		<li>DankPyon_CarrierBirds</li>
-	</researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowTradeBeaconRadius</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>DankPyon_CarrierBirds</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 
-    <building>
-      <claimable>false</claimable>
-      <alwaysDeconstructible>true</alwaysDeconstructible>
-    </building>
-    <selectable>true</selectable>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <repairEffect>ConstructDirt</repairEffect>
-	<designationCategory>Misc</designationCategory>
-  </ThingDef>
+		<building>
+			<claimable>false</claimable>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<repairEffect>ConstructDirt</repairEffect>
+		<designationCategory>Misc</designationCategory>
+	</ThingDef>
 
 </Defs>

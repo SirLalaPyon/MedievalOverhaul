@@ -24,7 +24,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 		</disallowedMemes>
 		<disallowedPrecepts>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
@@ -85,7 +85,7 @@
 		</maxPawnCostPerTotalPointsCurve>
 
 		<pawnGroupMakers>
-		<li MayRequire="Ludeon.RimWorld.Ideology">
+			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Miners</kindDef>
 				<commonality>1</commonality>
 				<options>
@@ -140,7 +140,7 @@
 				<kindDef>Trader</kindDef>
 
 				<traders>
-						<DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+					<DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -163,14 +163,14 @@
 		<hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
 	</FactionDef>
 
-<FactionDef ParentName="DankPyon_UlrikFactionBase">
+	<FactionDef ParentName="DankPyon_UlrikFactionBase">
 		<defName>DankPyon_UlrikFaction</defName>
 		<label>knights of ulrik</label>
 		<description>Looters and pillagers, the laws are nothing for them. Brigands are frequently encountered encroaching nearby settlement with ill intents.</description>
 		
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>60</configurationListOrderPriority>
-</FactionDef>
+	</FactionDef>
 
 
 </Defs>

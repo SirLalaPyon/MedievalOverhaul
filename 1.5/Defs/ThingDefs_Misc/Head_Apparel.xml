@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!--
+	<!--
 
 <dataNorth>
 	<layer>X</layer>
@@ -20,17 +20,17 @@ X
 < 40 below head
 -->
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_ArmorHelmetMakeableBase" Abstract="True">
-	<apparel>
-		<drawData>
-			<dataNorth>
-				<layer>95</layer>
-			</dataNorth>
-		</drawData>
-    </apparel>
-  </ThingDef>
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_ArmorHelmetMakeableBase" Abstract="True">
+		<apparel>
+			<drawData>
+				<dataNorth>
+					<layer>95</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+	</ThingDef>
 
-  <ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="HatMakeableBase">
 		<defName>DankPyon_Headgear_RedBandana</defName>
 		<label>Red bandana</label>
 		<description>A simple headwrap tied from a long strip of dark-red cloth. Provides a bit of warmth and padding for the noggin'.</description>
@@ -40,14 +40,14 @@ X
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-    <generateCommonality>0.95</generateCommonality>
+		<generateCommonality>0.95</generateCommonality>
 
-    <recipeMaker>
-      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
-    </recipeMaker>
-    <smeltable>false</smeltable>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</recipeMaker>
+		<smeltable>false</smeltable>
 
-    <costList>
+		<costList>
 			<Cloth>20</Cloth>
 		</costList>
 
@@ -55,7 +55,7 @@ X
 			<WorkToMake>1200</WorkToMake>
 			<Mass>0.05</Mass>
 			<ArmorRating_Sharp>0.0432</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
 			<Insulation_Cold>0.9</Insulation_Cold>
 			<Insulation_Heat>1.8</Insulation_Heat>
 			<EquipDelay>0.4</EquipDelay>
@@ -70,8 +70,8 @@ X
 			<wornGraphicPath>Headgear/RedBandana/RedBandana</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
-        <li>DankPyon_PeasantHelmet</li>
-        <li>DankPyon_BillmanHelmet</li>
+				<li>DankPyon_PeasantHelmet</li>
+				<li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -79,7 +79,7 @@ X
 		</apparel>
 	</ThingDef>
 
-  <ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="HatMakeableBase">
 		<defName>DankPyon_Headgear_Hood</defName>
 		<label>hood</label>
 		<description>A draped hood which covers the head and ears.</description>
@@ -89,11 +89,11 @@ X
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-    <generateCommonality>0.95</generateCommonality>
+		<generateCommonality>0.95</generateCommonality>
 
-    <recipeMaker>
-      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
-    </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</recipeMaker>
 
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
@@ -119,8 +119,8 @@ X
 			<wornGraphicPath>Headgear/Hood/Hood</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
-        <li>DankPyon_PeasantHelmet</li>
-        <li>DankPyon_BillmanHelmet</li>
+				<li>DankPyon_PeasantHelmet</li>
+				<li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -138,11 +138,11 @@ X
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-    <generateCommonality>0.95</generateCommonality>
+		<generateCommonality>0.95</generateCommonality>
 
-    <recipeMaker>
-      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
-    </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</recipeMaker>
 
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
@@ -168,8 +168,8 @@ X
 			<wornGraphicPath>Headgear/Coif/Coif</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
-        <li>DankPyon_PeasantHelmet</li>
-        <li>DankPyon_BillmanHelmet</li>
+				<li>DankPyon_PeasantHelmet</li>
+				<li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -187,11 +187,11 @@ X
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-    <generateCommonality>0.50</generateCommonality>
+		<generateCommonality>0.50</generateCommonality>
 
-    <recipeMaker>
-      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
-    </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</recipeMaker>
 
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
@@ -202,8 +202,8 @@ X
 			<WorkToMake>2200</WorkToMake>
 			<Mass>0.15</Mass>
 			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 
@@ -217,17 +217,17 @@ X
 			<wornGraphicPath>Headgear/ArmingCap/ArmingCap</wornGraphicPath>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
-        <li>DankPyon_BrigandThug</li>
-        <li>DankPyon_BillmanHelmet</li>
+				<li>DankPyon_BrigandThug</li>
+				<li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-        <li>Soldier</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
-  <ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="HatMakeableBase">
 		<defName>DankPyon_Headgear_FullArmingCap</defName>
 		<label>full arming cap</label>
 		<description>A thickly padded hood most often worn beneath heavier helmets for an additional layer of protection. Very insulating and offers a bit of blunt protection on its own.</description>
@@ -237,11 +237,11 @@ X
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-    <generateCommonality>0.95</generateCommonality>
+		<generateCommonality>0.95</generateCommonality>
 
-    <recipeMaker>
-      <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
-    </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</recipeMaker>
 
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
@@ -251,9 +251,9 @@ X
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.20</Mass>
-		  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 
@@ -268,18 +268,18 @@ X
 			<wornGraphicPath>Headgear/ArmingCapFull/ArmingCapFull</wornGraphicPath>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
-        <li>DankPyon_BrigandThug</li>
-        <li>DankPyon_BillmanHelmet</li>
+				<li>DankPyon_BrigandThug</li>
+				<li>DankPyon_BillmanHelmet</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-        <li>Soldier</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
 
-  <ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="HatMakeableBase">
 		<defName>DankPyon_Headgear_ZweihandersHat</defName>
 		<label>zweihander's hat</label>
 		<description>A thick, ornamented hat. Protective simply due to its size and shape, but mainly worn for decoration and as a status symbol.</description>
@@ -289,11 +289,11 @@ X
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-    <generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.25</generateCommonality>
 
-    <recipeMaker>
-      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
-    </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+		</recipeMaker>
 
 		<costStuffCount>55</costStuffCount>
 		<stuffCategories>
@@ -308,10 +308,10 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
-    <equippedStatOffsets>
-      <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
 
 		<apparel>
 			<bodyPartGroups>
@@ -326,1005 +326,1005 @@ X
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-        <li>Soldier</li>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-    <colorGenerator Class="ColorGenerator_StandardApparel" />
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
 
-  <!-- ==================== Padded Helmets ==================== -->
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_PaddedNasalHelmet</defName>
-    <label>padded nasal helm</label>
-    <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
-    <graphicData>
-      <texPath>Headgear/PaddedNasal/PaddedNasal</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
-    </recipeMaker>
+	<!-- ==================== Padded Helmets ==================== -->
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_PaddedNasalHelmet</defName>
+		<label>padded nasal helm</label>
+		<description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
+		<graphicData>
+			<texPath>Headgear/PaddedNasal/PaddedNasal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>12000</WorkToMake>
-      <MaxHitPoints>140</MaxHitPoints>
-      <Mass>2.75</Mass>
-      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>4</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
-    </equippedStatOffsets>
-
-    <stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-    <costStuffCount>55</costStuffCount>
-
-		<costList>
-      <Cloth>10</Cloth>
-    </costList>
-
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-        
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/PaddedNasal/PaddedNasal</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_BrigandRaider</li>
-        <li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_BillmanHelmet</li>
-        <li>DankPyon_MercenaryHeavyHelmet</li>
-			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_StandardApparel" />
-  </ThingDef>
-
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_PaddedKettleHelmet</defName>
-    <label>padded kettle</label>
-    <description>A wide-rimmed kettle helmet paired with a thick padded coif, offering good protection of the head.</description>
-    <graphicData>
-      <texPath>Headgear/PaddedKettle/PaddedKettle</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>   
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
-    </recipeMaker>
-
-    <statBases>
-      <WorkToMake>12000</WorkToMake>
-      <MaxHitPoints>140</MaxHitPoints>
-      <Mass>2.75</Mass>
-      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>4</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
-    </equippedStatOffsets>
-
-    <stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-    <costStuffCount>55</costStuffCount>
-		<costList>
-      <Cloth>10</Cloth>
-    </costList>
-
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-        
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_BrigandRaider</li>
-        <li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_BillmanHelmet</li>
-        <li>DankPyon_MercenaryHeavyHelmet</li>
-			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_StandardApparel" />
-  </ThingDef>
-
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_PaddedFlatTopHelmet</defName>
-    <label>padded flat top</label>
-    <description>A thick padded coif coupled with a simple flat-top nasal helmet. Offers good protection of the head, and is also quite insulating in cold weather.</description>
-    <graphicData>
-      <texPath>Headgear/PaddedFlatTop/PaddedFlatTop</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
-    </recipeMaker>
-
-   <statBases>
-      <WorkToMake>12000</WorkToMake>
-      <MaxHitPoints>140</MaxHitPoints>
-      <Mass>2.75</Mass>
-      <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>4</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
-    </equippedStatOffsets>
-
-
-    <stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-    <costStuffCount>55</costStuffCount>
-
-		<costList>
-      <Cloth>10</Cloth>
-    </costList>
-
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-        
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/PaddedFlatTop/PaddedFlatTop</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_BrigandRaider</li>
-        <li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_Billman</li>
-        <li>DankPyon_MercenaryHeavy</li>
-			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_StandardApparel" />
-  </ThingDef>
-
-  <!-- ==================== Chain ==================== -->
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ChainCoif</defName>
-    <label>chain coif</label>
-    <description>A thick hood forged from chains of metal provides excellent protection to the head against slashing and thrusting attacks.</description>
-    <graphicData>
-      <texPath>Headgear/ChainCoif/ChainCoif</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
-
-    <statBases>
-      <WorkToMake>8000</WorkToMake>
-      <MaxHitPoints>125</MaxHitPoints>
-      <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>4</EquipDelay>
-    </statBases>
-    
-    <stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-	  <costStuffCount>50</costStuffCount> 
-
-    <apparel>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-        
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainCoif/ChainCoif</wornGraphicPath>
-      <tags>
-        <li>DankPyon_BrigandRaider</li>
-				<li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_ArbalesterHelmet</li>
-        <li>DankPyon_MercenaryHelmet</li>
-			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
-
-<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ChainCoifClosed</defName>
-    <label>closed chain coif</label>
-    <description>A thick hood forged from chains of metal with additional protection reinforcing the lower face. Provides excellent protection to the entire head against piercing and slashing attacks.</description>
-    <graphicData>
-      <texPath>Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
-    
-    <statBases>
-      <WorkToMake>8000</WorkToMake>
-      <MaxHitPoints>125</MaxHitPoints>
-      <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>4</EquipDelay>
-    </statBases>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Mass>2.75</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-	  <costStuffCount>50</costStuffCount> 
+		<costStuffCount>55</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<costList>
+			<Cloth>10</Cloth>
+		</costList>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
-      <tags>
-        <li>DankPyon_BrigandRaider</li>
-        <li>DankPyon_ArbalesterHelmet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/PaddedNasal/PaddedNasal</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_BrigandRaider</li>
 				<li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_MercenaryHelmet</li>
+				<li>DankPyon_BillmanHelmet</li>
+				<li>DankPyon_MercenaryHeavyHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ChainCoifFull</defName>
-    <label>full chain coif</label>
-    <description>A thick hood forged from chains of metal with an added plate-metal noseguard to almost entirely protect the face, head,. Makes it a bit difficult to see, but otherwise offers excellent protection against cuts.</description>
-    <graphicData>
-      <texPath>Headgear/ChainCoifFull/ChainCoifFull</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_PaddedKettleHelmet</defName>
+		<label>padded kettle</label>
+		<description>A wide-rimmed kettle helmet paired with a thick padded coif, offering good protection of the head.</description>
+		<graphicData>
+			<texPath>Headgear/PaddedKettle/PaddedKettle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>10000</WorkToMake>
-      <MaxHitPoints>125</MaxHitPoints>
-      <Mass>2</Mass>
-      <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>4</EquipDelay>
-    </statBases>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Mass>2.75</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 
-    <stuffCategories>
+		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-    <costStuffCount>65</costStuffCount>
+		<costStuffCount>55</costStuffCount>
+		<costList>
+			<Cloth>10</Cloth>
+		</costList>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainCoifFull/ChainCoifFull</wornGraphicPath>
-      <tags>
-        <li>DankPyon_BrigandRaider</li>
-        <li>DankPyon_ArbalesterHelmet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_BrigandRaider</li>
 				<li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_MercenaryHelmet</li>
+				<li>DankPyon_BillmanHelmet</li>
+				<li>DankPyon_MercenaryHeavyHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
 
-  <!-- ==================== Heavy Helm ==================== -->
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ChainNasalHelmet</defName>
-    <label>chain nasal helm</label>
-    <description>A chainmail coif coupled with a simple round nasal helmet, offering excellent protection of the head.</description>
-    <graphicData>
-      <texPath>Headgear/ChainNasal/ChainNasal</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_PaddedFlatTopHelmet</defName>
+		<label>padded flat top</label>
+		<description>A thick padded coif coupled with a simple flat-top nasal helmet. Offers good protection of the head, and is also quite insulating in cold weather.</description>
+		<graphicData>
+			<texPath>Headgear/PaddedFlatTop/PaddedFlatTop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>16000</WorkToMake>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Mass>3</Mass>
-      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Mass>2.75</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>55</costStuffCount>
+
+		<costList>
+			<Cloth>10</Cloth>
+		</costList>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+        
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/PaddedFlatTop/PaddedFlatTop</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_BrigandRaider</li>
+				<li>DankPyon_FootmanHelmet</li>
+				<li>DankPyon_Billman</li>
+				<li>DankPyon_MercenaryHeavy</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+	<!-- ==================== Chain ==================== -->
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ChainCoif</defName>
+		<label>chain coif</label>
+		<description>A thick hood forged from chains of metal provides excellent protection to the head against slashing and thrusting attacks.</description>
+		<graphicData>
+			<texPath>Headgear/ChainCoif/ChainCoif</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
     
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-    <costStuffCount>70</costStuffCount>
-    
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<costStuffCount>50</costStuffCount>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainNasal/ChainNasal</wornGraphicPath>
-      <tags>
-        <li>DankPyon_BrigandLeader</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ChainCoif/ChainCoif</wornGraphicPath>
+			<tags>
+				<li>DankPyon_BrigandRaider</li>
 				<li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_ArbalesterHelmet</li>
+				<li>DankPyon_MercenaryHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ChainCoifClosed</defName>
+		<label>closed chain coif</label>
+		<description>A thick hood forged from chains of metal with additional protection reinforcing the lower face. Provides excellent protection to the entire head against piercing and slashing attacks.</description>
+		<graphicData>
+			<texPath>Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
+    
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+        
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
+			<tags>
+				<li>DankPyon_BrigandRaider</li>
+				<li>DankPyon_ArbalesterHelmet</li>
+				<li>DankPyon_FootmanHelmet</li>
+				<li>DankPyon_MercenaryHelmet</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ChainCoifFull</defName>
+		<label>full chain coif</label>
+		<description>A thick hood forged from chains of metal with an added plate-metal noseguard to almost entirely protect the face, head,. Makes it a bit difficult to see, but otherwise offers excellent protection against cuts.</description>
+		<graphicData>
+			<texPath>Headgear/ChainCoifFull/ChainCoifFull</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>65</costStuffCount>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+        
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ChainCoifFull/ChainCoifFull</wornGraphicPath>
+			<tags>
+				<li>DankPyon_BrigandRaider</li>
+				<li>DankPyon_ArbalesterHelmet</li>
+				<li>DankPyon_FootmanHelmet</li>
+				<li>DankPyon_MercenaryHelmet</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<!-- ==================== Heavy Helm ==================== -->
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ChainNasalHelmet</defName>
+		<label>chain nasal helm</label>
+		<description>A chainmail coif coupled with a simple round nasal helmet, offering excellent protection of the head.</description>
+		<graphicData>
+			<texPath>Headgear/ChainNasal/ChainNasal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+    
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+    
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+        
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ChainNasal/ChainNasal</wornGraphicPath>
+			<tags>
+				<li>DankPyon_BrigandLeader</li>
+				<li>DankPyon_FootmanHelmet</li>
+				<li>DankPyon_MercenaryHeavy</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
   
-    <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ChainNasalRedHelmet</defName>
-    <label>chain nasal helm (bandana)</label>
-    <description>A variation of the chain skull cap crafted as a chainmail coif coupled with a nasal helmet. Offers the same level of protection for the head, but the strip of red cloth tied around the forehead displays authority.</description>
-    <graphicData>
-      <texPath>Headgear/ChainNasalRed/ChainNasalRed</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ChainNasalRedHelmet</defName>
+		<label>chain nasal helm (bandana)</label>
+		<description>A variation of the chain skull cap crafted as a chainmail coif coupled with a nasal helmet. Offers the same level of protection for the head, but the strip of red cloth tied around the forehead displays authority.</description>
+		<graphicData>
+			<texPath>Headgear/ChainNasalRed/ChainNasalRed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>16000</WorkToMake>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Mass>3</Mass>
-      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
+		</equippedStatOffsets>
     
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-    <costStuffCount>70</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainNasalRed/ChainNasalRed</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_BrigandRaider</li>
-        <li>DankPyon_BrigandLeader</li>
-        <li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_MercenaryHeavy</li>
-			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_StandardApparel" />
-  </ThingDef>
-
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ChainKettleHelmet</defName>
-    <label>chain kettle helm</label>
-    <description>A wide-rimmed kettle helmet paired with a chainmail coif, offering excellent protection of the head while providing comfortable shade from the sun.</description>
-    <graphicData>
-      <texPath>Headgear/ChainKettle/ChainKettle</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
-
-    <statBases>
-      <WorkToMake>16000</WorkToMake>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Mass>3</Mass>
-      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
-    </equippedStatOffsets>
-    
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-    <costStuffCount>70</costStuffCount>
-
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-        
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainKettle/ChainKettle</wornGraphicPath>
-      <tags>
-        <li>DankPyon_BrigandLeader</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ChainNasalRed/ChainNasalRed</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_BrigandRaider</li>
+				<li>DankPyon_BrigandLeader</li>
 				<li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_MercenaryHeavy</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
 
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_Chain_FlatTopHelmet</defName>
-    <label>chain flat-top</label>
-    <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
-    <graphicData>
-      <texPath>Headgear/ChainFlatTop/ChainFlatTop</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ChainKettleHelmet</defName>
+		<label>chain kettle helm</label>
+		<description>A wide-rimmed kettle helmet paired with a chainmail coif, offering excellent protection of the head while providing comfortable shade from the sun.</description>
+		<graphicData>
+			<texPath>Headgear/ChainKettle/ChainKettle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>16000</WorkToMake>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Mass>3</Mass>
-      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
+		</equippedStatOffsets>
     
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-    <costStuffCount>70</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
-      <tags>
-        <li>DankPyon_BrigandLeader</li>
-        <li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_MercenaryHelmet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ChainKettle/ChainKettle</wornGraphicPath>
+			<tags>
+				<li>DankPyon_BrigandLeader</li>
+				<li>DankPyon_FootmanHelmet</li>
+				<li>DankPyon_MercenaryHeavy</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ClosedChain_FlatTopHelmet</defName>
-    <label>closed chain flat-top</label>
-    <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
-    <graphicData>
-      <texPath>Headgear/ChainFlatTop/ChainFlatTop</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_Chain_FlatTopHelmet</defName>
+		<label>chain flat-top</label>
+		<description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
+		<graphicData>
+			<texPath>Headgear/ChainFlatTop/ChainFlatTop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>16000</WorkToMake>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Mass>3</Mass>
-      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
+		</equippedStatOffsets>
     
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-    <costStuffCount>70</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
-      <tags>
-        <li>DankPyon_BrigandLeader</li>
-        <li>DankPyon_FootmanHelmet</li>
-        <li>DankPyon_MercenaryHelmet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
+			<tags>
+				<li>DankPyon_BrigandLeader</li>
+				<li>DankPyon_FootmanHelmet</li>
+				<li>DankPyon_MercenaryHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ChainClosedFlatTopHelmet</defName>
-    <label>chain closed flat-top</label>
-    <description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head, but hinders eyesight and breathing.</description>
-    <graphicData>
-      <texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ClosedChain_FlatTopHelmet</defName>
+		<label>closed chain flat-top</label>
+		<description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
+		<graphicData>
+			<texPath>Headgear/ChainFlatTop/ChainFlatTop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>18000</WorkToMake>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+    
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+        
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
+			<tags>
+				<li>DankPyon_BrigandLeader</li>
+				<li>DankPyon_FootmanHelmet</li>
+				<li>DankPyon_MercenaryHelmet</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ChainClosedFlatTopHelmet</defName>
+		<label>chain closed flat-top</label>
+		<description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head, but hinders eyesight and breathing.</description>
+		<graphicData>
+			<texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-    <costStuffCount>80</costStuffCount>
+		<costStuffCount>80</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</wornGraphicPath>
-      <tags>
-        <li>DankPyon_MercenaryHeavy</li>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_HedgeKnightHelmet</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</wornGraphicPath>
+			<tags>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_HeavyBarbrute</defName>
-    <label>heavy barbrute</label>
-    <description>PLACEHOLDER.</description>
-    <graphicData>
-      <texPath>Headgear/HeavyBarbrute/HeavyBarbrute</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_HeavyBarbrute</defName>
+		<label>heavy barbrute</label>
+		<description>PLACEHOLDER.</description>
+		<graphicData>
+			<texPath>Headgear/HeavyBarbrute/HeavyBarbrute</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>16000</WorkToMake>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-    <costStuffCount>70</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/HeavyBarbrute/HeavyBarbrute</wornGraphicPath>
-      <tags>
-        <li>DankPyon_MercenaryHeavy</li>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_HedgeKnightHelmet</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/HeavyBarbrute/HeavyBarbrute</wornGraphicPath>
+			<tags>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_T3HelmetBase">
-    <defName>DankPyon_Headgear_OpenBascinet</defName>
-    <label>open bascinet</label>
-    <description>PLACEHOLDER.</description>
-    <graphicData>
-      <texPath>Headgear/OpenBascinet/OpenBascinet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_T3HelmetBase">
+		<defName>DankPyon_Headgear_OpenBascinet</defName>
+		<label>open bascinet</label>
+		<description>PLACEHOLDER.</description>
+		<graphicData>
+			<texPath>Headgear/OpenBascinet/OpenBascinet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>16000</WorkToMake>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-    <costStuffCount>70</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/OpenBascinet/OpenBascinet</wornGraphicPath>
-      <tags>
-        <li>DankPyon_MercenaryHeavy</li>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_HedgeKnightHelmet</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/OpenBascinet/OpenBascinet</wornGraphicPath>
+			<tags>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-</ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_ZweihanderHelmBase">
-    <defName>DankPyon_Headgear_ZweihanderHelm</defName>
-    <label>zweihander helm</label>
-    <description>A sturdy metal helmet adorned with a flamboyant colored large baggy feathered hat to display one's status.</description>
-    <graphicData>
-        <texPath>Headgear/ZweihanderHelmP/ZweihanderHelmP</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_ZweihanderHelmBase">
+		<defName>DankPyon_Headgear_ZweihanderHelm</defName>
+		<label>zweihander helm</label>
+		<description>A sturdy metal helmet adorned with a flamboyant colored large baggy feathered hat to display one's status.</description>
+		<graphicData>
+			<texPath>Headgear/ZweihanderHelmP/ZweihanderHelmP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
 
-    <recipeMaker>
-        <recipeUsers>
-            <li>ElectricSmithy</li>
-            <li>FueledSmithy</li>
-            <li>DankPyon_Anvil</li>
-        </recipeUsers>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-    </recipeMaker>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-        <WorkToMake>18000</WorkToMake>
-        <MaxHitPoints>180</MaxHitPoints>
-        <Mass>3.5</Mass>
-        <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-        <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-        <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-        <EquipDelay>8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-        <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-        <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
 
-    <stuffCategories>
-        <li>Metallic</li>
-    </stuffCategories>
-    <costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
 
-    <costList>
-        <Cloth>55</Cloth>
-    </costList>
+		<costList>
+			<Cloth>55</Cloth>
+		</costList>
 
-    <apparel>
-       <bodyPartGroups>
-            <li>FullHead</li>
-        </bodyPartGroups>
-        <wornGraphicPath>Headgear/ZweihanderHelmP/ZweihanderHelmP</wornGraphicPath>
-        <useWornGraphicMask>true</useWornGraphicMask>
-        <tags>
-            <li>DankPyon_ZweihanderHelm</li>
-        </tags>
-        <layers>
-            <li>Overhead</li>
-        </layers>
-        <defaultOutfitTags>
-            <li>Soldier</li>
-        </defaultOutfitTags>
-    </apparel>
-</ThingDef>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ZweihanderHelmP/ZweihanderHelmP</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_ZweihanderHelm</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
-    <defName>DankPyon_Headgear_ZweihanderHelmAmboise</defName>
-    <label>zweihander helm (Amboise)</label>
-    <graphicData>
-        <texPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+	<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
+		<defName>DankPyon_Headgear_ZweihanderHelmAmboise</defName>
+		<label>zweihander helm (Amboise)</label>
+		<graphicData>
+			<texPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 
-    <recipeMaker>
-        <recipeUsers Inherit="False"/>
-    </recipeMaker>
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+		</recipeMaker>
 
-    <apparel>
-        <wornGraphicPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</wornGraphicPath>
-        <tags>
-            <li>DankPyon_ZweihanderHelmAmboise</li>
-        </tags>
-    </apparel>
-</ThingDef>
+		<apparel>
+			<wornGraphicPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</wornGraphicPath>
+			<tags>
+				<li>DankPyon_ZweihanderHelmAmboise</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
-    <defName>DankPyon_Headgear_ZweihanderHelmSoren</defName>
-    <label>zweihander helm (Soren)</label>
-    <graphicData>
-        <texPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+	<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
+		<defName>DankPyon_Headgear_ZweihanderHelmSoren</defName>
+		<label>zweihander helm (Soren)</label>
+		<graphicData>
+			<texPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 
-    <recipeMaker>
-        <recipeUsers Inherit="False"/>
-    </recipeMaker>
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+		</recipeMaker>
 
-    <apparel>
-        <wornGraphicPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</wornGraphicPath>
-        <tags>
-            <li>DankPyon_ZweihanderHelmSoren</li>
-        </tags>
-    </apparel>
-</ThingDef>
+		<apparel>
+			<wornGraphicPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</wornGraphicPath>
+			<tags>
+				<li>DankPyon_ZweihanderHelmSoren</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
-    <defName>DankPyon_Headgear_ZweihanderHelmOswin</defName>
-    <label>zweihander helm (Oswin)</label>
-    <graphicData>
-        <texPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+	<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
+		<defName>DankPyon_Headgear_ZweihanderHelmOswin</defName>
+		<label>zweihander helm (Oswin)</label>
+		<graphicData>
+			<texPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 
-    <recipeMaker>
-        <recipeUsers Inherit="False"/>
-    </recipeMaker>
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+		</recipeMaker>
 
-    <apparel>
-        <wornGraphicPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</wornGraphicPath>
-        <tags>
-            <li>DankPyon_ZweihanderHelmOswin</li>
-        </tags>
-    </apparel>
-</ThingDef>
+		<apparel>
+			<wornGraphicPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</wornGraphicPath>
+			<tags>
+				<li>DankPyon_ZweihanderHelmOswin</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
-    <defName>DankPyon_Headgear_ZweihanderHelmHesse</defName>
-    <label>zweihander helm (Hesse)</label>
-    <graphicData>
-        <texPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+	<ThingDef ParentName="DankPyon_ZweihanderHelmBase">
+		<defName>DankPyon_Headgear_ZweihanderHelmHesse</defName>
+		<label>zweihander helm (Hesse)</label>
+		<graphicData>
+			<texPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
 
-    <recipeMaker>
-        <recipeUsers Inherit="False"/>
-    </recipeMaker>
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+		</recipeMaker>
 
-    <apparel>
-        <wornGraphicPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</wornGraphicPath>
-        <tags>
-            <li>DankPyon_ZweihanderHelmHesse</li>
-        </tags>
-    </apparel>
-</ThingDef>
-  <!-- ==================== Plate Helmets ==================== -->
-  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<apparel>
+			<wornGraphicPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</wornGraphicPath>
+			<tags>
+				<li>DankPyon_ZweihanderHelmHesse</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	<!-- ==================== Plate Helmets ==================== -->
+	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_VisoredKettleHelmet</defName>
     <label>visored kettle helmet</label>
     <description>A broadly-rimmed nasal helmet that extends down past the eyes, with slits that allow the wearer to see. Provides great protection of the head and face, but leaves the neck exposed and hinders ones eyesight.</description>
@@ -1381,187 +1381,187 @@ X
     </apparel>
   </ThingDef-->
   
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ClosedBascinetHelmet</defName>
-    <label>closed bascinet helmet</label>
-    <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
-    <graphicData>
-      <texPath>Headgear/BascinetHelmet/BascinetHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>8</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ClosedBascinetHelmet</defName>
+		<label>closed bascinet helmet</label>
+		<description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
+		<graphicData>
+			<texPath>Headgear/BascinetHelmet/BascinetHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>20000</WorkToMake>
-      <MaxHitPoints>250</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-      <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
-
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-	  <costStuffCount>80</costStuffCount> 
-
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-        
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/BascinetHelmet/BascinetHelmet</wornGraphicPath>
-      <tags>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_HedgeKnightHelmet</li>
-			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
-
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_WolfBascinet</defName>
-    <label>wolf-ribs bascinet</label>
-    <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
-    <graphicData>
-      <texPath>Headgear/WolfBascinet/WolfBascinet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>8</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
-
-    <statBases>
-      <WorkToMake>20000</WorkToMake>
-      <MaxHitPoints>250</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-      <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-	  <costStuffCount>80</costStuffCount> 
+		<costStuffCount>80</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/WolfBascinet/WolfBascinet</wornGraphicPath>
-      <tags>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_HedgeKnightHelmet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/BascinetHelmet/BascinetHelmet</wornGraphicPath>
+			<tags>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_KlappvisorBascinet</defName>
-    <label>klappviser bascinet</label>
-    <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
-    <graphicData>
-      <texPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>8</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_WolfBascinet</defName>
+		<label>wolf-ribs bascinet</label>
+		<description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
+		<graphicData>
+			<texPath>Headgear/WolfBascinet/WolfBascinet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>20000</WorkToMake>
-      <MaxHitPoints>250</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-      <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-	  <costStuffCount>80</costStuffCount> 
+		<costStuffCount>80</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</wornGraphicPath>
-      <tags>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_HedgeKnightHelmet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/WolfBascinet/WolfBascinet</wornGraphicPath>
+			<tags>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_KlappvisorBascinet</defName>
+		<label>klappviser bascinet</label>
+		<description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
+		<graphicData>
+			<texPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+        
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</wornGraphicPath>
+			<tags>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
   
-  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_HounskullHelmet</defName>
     <label>hounskull helmet</label>
     <description>A thick plate bascinet helmet coupled with an extended pig-faced visor, which allows for easier breathing. Still quite hindering to see out of, however.</description>
@@ -1621,153 +1621,153 @@ X
     </apparel>
   </ThingDef-->
   
-<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_SalletBase">
-    <defName>DankPyon_Headgear_SalletHelmet</defName>
-    <label>visored sallet</label>
-    <description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
-    <graphicData>
-        <texPath>Headgear/SalletVisored/SalletVisored</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-        <recipeUsers>
-            <li>ElectricSmithy</li>
-            <li>FueledSmithy</li>
-            <li>DankPyon_Anvil</li>
-        </recipeUsers>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_SalletBase">
+		<defName>DankPyon_Headgear_SalletHelmet</defName>
+		<label>visored sallet</label>
+		<description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
+		<graphicData>
+			<texPath>Headgear/SalletVisored/SalletVisored</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-        <WorkToMake>20000</WorkToMake>
-        <MaxHitPoints>250</MaxHitPoints>
-        <Mass>3.5</Mass>
-        <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
-        <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-        <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-        <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-        <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-        <PainShockThreshold>0.10</PainShockThreshold>
-        <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
-
-    <stuffCategories>
-        <li>Metallic</li>
-    </stuffCategories>
-    <costStuffCount>80</costStuffCount> 
-
-    <apparel>
-        <bodyPartGroups>
-            <li>FullHead</li>
-        </bodyPartGroups>
-        <wornGraphicPath>Headgear/SalletVisored/SalletVisored</wornGraphicPath>
-        <tags>
-            <li>DankPyon_KnightHelmet</li>
-            <li>DankPyon_HedgeKnightHelmet</li>
-	    </tags>
-        <layers>
-            <li>Overhead</li>
-        </layers>
-        <defaultOutfitTags>
-            <li>Soldier</li>
-        </defaultOutfitTags>
-    </apparel>
- </ThingDef>
-
-<ThingDef ParentName="DankPyon_SalletBase">
-    <defName>DankPyon_Headgear_SalletBellowFace</defName>
-    <label>bellow face sallet</label>
-    <description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
-    <graphicData>
-        <texPath>Headgear/SalletBellowFace/SalletBellowFace</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    
-    <apparel>
-        <wornGraphicPath>Headgear/SalletBellowFace/SalletBellowFace</wornGraphicPath>
-    </apparel>
-</ThingDef>
-
-<ThingDef ParentName="DankPyon_SalletBase">
-    <defName>DankPyon_Headgear_SalletGryphon</defName>
-    <label>gryphon sallet</label>
-    <description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
-    <graphicData>
-        <texPath>Headgear/SalletGryphon/SalletGryphon</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    
-    <apparel>
-        <wornGraphicPath>Headgear/SalletGryphon/SalletGryphon</wornGraphicPath>
-    </apparel>
-</ThingDef>
-  
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_Bascinet_KlappvisierHelmetClosed</defName>
-    <label>closed klappvisier helmet</label>
-    <description>A simple plate bascinet helmet with an affixed flip-up visor. Offers good protection of the head and face, but it hinders one's eyesight while wearing it.</description>
-    <graphicData>
-      <texPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>8</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
-
-    <statBases>
-      <WorkToMake>20000</WorkToMake>
-      <MaxHitPoints>250</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-      <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-	  <costStuffCount>80</costStuffCount> 
+		<costStuffCount>80</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</wornGraphicPath>
-      <tags>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_HedgeKnightHelmet</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/SalletVisored/SalletVisored</wornGraphicPath>
+			<tags>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SalletBase">
+		<defName>DankPyon_Headgear_SalletBellowFace</defName>
+		<label>bellow face sallet</label>
+		<description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
+		<graphicData>
+			<texPath>Headgear/SalletBellowFace/SalletBellowFace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    
+		<apparel>
+			<wornGraphicPath>Headgear/SalletBellowFace/SalletBellowFace</wornGraphicPath>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SalletBase">
+		<defName>DankPyon_Headgear_SalletGryphon</defName>
+		<label>gryphon sallet</label>
+		<description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
+		<graphicData>
+			<texPath>Headgear/SalletGryphon/SalletGryphon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    
+		<apparel>
+			<wornGraphicPath>Headgear/SalletGryphon/SalletGryphon</wornGraphicPath>
+		</apparel>
+	</ThingDef>
   
-  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_Bascinet_KlappvisierHelmetClosed</defName>
+		<label>closed klappvisier helmet</label>
+		<description>A simple plate bascinet helmet with an affixed flip-up visor. Offers good protection of the head and face, but it hinders one's eyesight while wearing it.</description>
+		<graphicData>
+			<texPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</wornGraphicPath>
+			<tags>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+  
+	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPoyn_Headgear_KlappvisierHelmetOpen</defName>
     <label>open klappvisier helmet</label>
     <description>A simple plate bascinet helmet with a flipped-up klappviser. Forgoes protection of the face in exchange for better eyesight.</description>
@@ -1827,67 +1827,67 @@ X
     </apparel>
   </ThingDef-->
   
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_GreatHelm</defName>
-    <label>great helm</label>
-    <description>An early design of the close helm, which is worn over a very thickly padded fabric coif. Provides excellent protection to the entire head, but, like with most full-face helmets, limits one's field of vision and constricts breathing when worn.</description>
-    <graphicData>
-      <texPath>Headgear/GreatHelm/GreatHelm</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>8</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_GreatHelm</defName>
+		<label>great helm</label>
+		<description>An early design of the close helm, which is worn over a very thickly padded fabric coif. Provides excellent protection to the entire head, but, like with most full-face helmets, limits one's field of vision and constricts breathing when worn.</description>
+		<graphicData>
+			<texPath>Headgear/GreatHelm/GreatHelm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <WorkToMake>20000</WorkToMake>
-      <MaxHitPoints>250</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-      <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-	  <costStuffCount>80</costStuffCount> 
+		<costStuffCount>80</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/GreatHelm/GreatHelm</wornGraphicPath>
-      <tags>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_HedgeKnightHelmet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/GreatHelm/GreatHelm</wornGraphicPath>
+			<tags>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
   
-  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_CrusaderGreatHelm</defName>
     <label>crusader's great helm</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
@@ -1948,7 +1948,7 @@ X
     </apparel>
   </ThingDef-->
   
-  <!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_RoyalGreatHelm</defName>
     <label>royal great helm</label>
     <description>An ornamented construction of an archaic full-head helmet, which provides excellent protection of the entire head and face at the cost of hindered eyesight and constricted breathing.</description>
@@ -2009,315 +2009,315 @@ X
     </apparel>
   </ThingDef-->
   
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_HeraldicGreatHelm">
-    <defName>DankPyon_Headgear_HeraldicGreatHelm1c</defName>
-    <label>heraldic great helm (Amboise)</label>
-    <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Amboise.</description>
-    <graphicData>
-      <texPath>Headgear/HeraldicHelm1/HeraldicHelm1</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers Inherit="False"/>
-    <skillRequirements>
-      <Crafting>8</Crafting>
-    </skillRequirements>
-    <researchPrerequisite>PlateArmor</researchPrerequisite>
-  </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_HeraldicGreatHelm">
+		<defName>DankPyon_Headgear_HeraldicGreatHelm1c</defName>
+		<label>heraldic great helm (Amboise)</label>
+		<description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Amboise.</description>
+		<graphicData>
+			<texPath>Headgear/HeraldicHelm1/HeraldicHelm1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
 
-  <statBases>
-    <WorkToMake>20000</WorkToMake>
-    <MaxHitPoints>250</MaxHitPoints>
-    <Mass>3.5</Mass>
-    <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
-    <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-    <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-    <EquipDelay>10</EquipDelay>
-  </statBases>
-  <equippedStatOffsets>
-    <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-    <PainShockThreshold>0.10</PainShockThreshold>
-    <SocialImpact>0.1</SocialImpact>
-  </equippedStatOffsets>
-
-  <stuffCategories>
-    <li>Metallic</li>
-  </stuffCategories>
-  <costStuffCount>80</costStuffCount> 
-
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
-
-      <wornGraphicPath>Headgear/HeraldicHelm1/HeraldicHelm1</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_HeraldicHelmAmboise</li>
-			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-		<drawData>
-			<dataNorth>
-				<layer>200</layer>
-			</dataNorth>
-		</drawData>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_StandardApparel" />
-  </ThingDef>
-
-  <ThingDef ParentName="DankPyon_HeraldicGreatHelm">
-    <defName>DankPyon_Headgear_HeraldicGreatHelm2c</defName>
-    <label>heraldic great helm (Soren)</label>
-    <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Soren.</description>
-    <graphicData>
-      <texPath>Headgear/HeraldicHelm2/HeraldicHelm2</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-
-    <apparel>
-      <wornGraphicPath>Headgear/HeraldicHelm2/HeraldicHelm2</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags Inherit="False">
-        <li>DankPyon_HeraldicHelmSoren</li>
-			</tags>
-    </apparel>
-  </ThingDef>
-
-  <ThingDef ParentName="DankPyon_HeraldicGreatHelm">
-    <defName>DankPyon_Headgear_HeraldicGreatHelm3c</defName>
-    <label>heraldic great helm (Oswin)</label>
-    <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Oswin.</description>
-    <graphicData>
-      <texPath>Headgear/HeraldicHelm3/HeraldicHelm3</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-
-    <apparel>
-      <wornGraphicPath>Headgear/HeraldicHelm3/HeraldicHelm3</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags Inherit="False">
-        <li>DankPyon_HeraldicHelmOswin</li>
-			</tags>
-    </apparel>
-  </ThingDef>
-
-  <ThingDef ParentName="DankPyon_HeraldicGreatHelm">
-    <defName>DankPyon_Headgear_HeraldicGreatHelm4c</defName>
-    <label>heraldic great helm (Hesse)</label>
-    <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Hesse.</description>
-    <graphicData>
-      <texPath>Headgear/HeraldicHelm4/HeraldicHelm4</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-
-    <apparel>
-      <wornGraphicPath>Headgear/HeraldicHelm4/HeraldicHelm4</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags Inherit="False">
-        <li>DankPyon_HeraldicHelmHesse</li>
-			</tags>
-    </apparel>
-  </ThingDef>
-
-  <!-- ==================== Super Helmets ==================== -->
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_Armet</defName>
-    <label>armet</label>
-    <description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
-    <graphicData>
-      <texPath>Headgear/Armet/Armet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>12</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
-
-    <statBases>
-      <WorkToMake>25000</WorkToMake>
-      <MaxHitPoints>270</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-      <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.1</SocialImpact>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-	  <costStuffCount>80</costStuffCount>
+		<costStuffCount>80</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-        
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/Armet/Armet</wornGraphicPath>
-      <tags>
-        <li>DankPyon_LordHelmet</li>
-        <li>DankPyon_Champion</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+
+			<wornGraphicPath>Headgear/HeraldicHelm1/HeraldicHelm1</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_HeraldicHelmAmboise</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>200</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
 
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ArmetGilded</defName>
-    <label>gilded armet</label>
-    <description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
-    <graphicData>
-      <texPath>Headgear/ArmetGilded/ArmetGilded</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>16</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_HeraldicGreatHelm">
+		<defName>DankPyon_Headgear_HeraldicGreatHelm2c</defName>
+		<label>heraldic great helm (Soren)</label>
+		<description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Soren.</description>
+		<graphicData>
+			<texPath>Headgear/HeraldicHelm2/HeraldicHelm2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
 
-    <statBases>
-      <WorkToMake>25000</WorkToMake>
-      <MaxHitPoints>270</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-      <PainShockThreshold>0.15</PainShockThreshold>
-      <SocialImpact>0.35</SocialImpact>
-    </equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Headgear/HeraldicHelm2/HeraldicHelm2</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>DankPyon_HeraldicHelmSoren</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HeraldicGreatHelm">
+		<defName>DankPyon_Headgear_HeraldicGreatHelm3c</defName>
+		<label>heraldic great helm (Oswin)</label>
+		<description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Oswin.</description>
+		<graphicData>
+			<texPath>Headgear/HeraldicHelm3/HeraldicHelm3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<apparel>
+			<wornGraphicPath>Headgear/HeraldicHelm3/HeraldicHelm3</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>DankPyon_HeraldicHelmOswin</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HeraldicGreatHelm">
+		<defName>DankPyon_Headgear_HeraldicGreatHelm4c</defName>
+		<label>heraldic great helm (Hesse)</label>
+		<description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Hesse.</description>
+		<graphicData>
+			<texPath>Headgear/HeraldicHelm4/HeraldicHelm4</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<apparel>
+			<wornGraphicPath>Headgear/HeraldicHelm4/HeraldicHelm4</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>DankPyon_HeraldicHelmHesse</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<!-- ==================== Super Helmets ==================== -->
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_Armet</defName>
+		<label>armet</label>
+		<description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
+		<graphicData>
+			<texPath>Headgear/Armet/Armet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<MaxHitPoints>270</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
 
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-	  <costStuffCount>80</costStuffCount>
-    <costList>
-      <Gold>2</Gold>
-    </costList>
+		<costStuffCount>80</costStuffCount>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ArmetGilded/ArmetGilded</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_LordHelmet</li>
-        <li>DankPyon_Champion</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/Armet/Armet</wornGraphicPath>
+			<tags>
+				<li>DankPyon_LordHelmet</li>
+				<li>DankPyon_Champion</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_StandardApparel" />
-  </ThingDef>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
-  <ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_ArmetNamed</defName>
-    <label>named armet</label>
-    <description>An ancient ornate armet masterfully smithed by the under-forges of the ancient empire. It gives great protection for one's visage and embelishes an awe inspiring grace.</description>
-    <graphicData>
-      <texPath>Headgear/ArmetNamed/ArmetNamed</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers Inherit="False"/>
-      <skillRequirements>
-        <Crafting>16</Crafting>
-      </skillRequirements>
-    </recipeMaker>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ArmetGilded</defName>
+		<label>gilded armet</label>
+		<description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
+		<graphicData>
+			<texPath>Headgear/ArmetGilded/ArmetGilded</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
 
-    <statBases>
-      <MarketValue>3940</MarketValue>
-      <WorkToMake>25000</WorkToMake>
-      <MaxHitPoints>755</MaxHitPoints>
-      <DeteriorationRate>0.2</DeteriorationRate>
-      <Mass>3.5</Mass>
-      <ArmorRating_Sharp>2</ArmorRating_Sharp>
-      <ArmorRating_Blunt>1.04</ArmorRating_Blunt>
-      <Insulation_Cold>5</Insulation_Cold>
-      <ArmorRating_Heat>0</ArmorRating_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-      <PainShockThreshold>0.15</PainShockThreshold>
-      <SocialImpact>0.35</SocialImpact>
-    </equippedStatOffsets>
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<MaxHitPoints>270</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.15</PainShockThreshold>
+			<SocialImpact>0.35</SocialImpact>
+		</equippedStatOffsets>
 
-    <costList>
-      <Gold>2</Gold>
-      <Plasteel>80</Plasteel>
-    </costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Gold>2</Gold>
+		</costList>
 
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
         
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/ArmetNamed/ArmetNamed</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <tags>
-        <li>DankPyon_ArmetNamed</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ArmetGilded/ArmetGilded</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_LordHelmet</li>
+				<li>DankPyon_Champion</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
 
-    <comps Inherit="False">
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Forbiddable"/>
-    </comps>
-  </ThingDef>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_ArmetNamed</defName>
+		<label>named armet</label>
+		<description>An ancient ornate armet masterfully smithed by the under-forges of the ancient empire. It gives great protection for one's visage and embelishes an awe inspiring grace.</description>
+		<graphicData>
+			<texPath>Headgear/ArmetNamed/ArmetNamed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+
+		<statBases>
+			<MarketValue>3940</MarketValue>
+			<WorkToMake>25000</WorkToMake>
+			<MaxHitPoints>755</MaxHitPoints>
+			<DeteriorationRate>0.2</DeteriorationRate>
+			<Mass>3.5</Mass>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.04</ArmorRating_Blunt>
+			<Insulation_Cold>5</Insulation_Cold>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.15</PainShockThreshold>
+			<SocialImpact>0.35</SocialImpact>
+		</equippedStatOffsets>
+
+		<costList>
+			<Gold>2</Gold>
+			<Plasteel>80</Plasteel>
+		</costList>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+        
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/ArmetNamed/ArmetNamed</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_ArmetNamed</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+
+		<comps Inherit="False">
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
   
 
 </Defs>

@@ -35,7 +35,7 @@
 			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
-		  </statBases>
+		</statBases>
 		<apparel>
 			<bodyPartGroups>
 				<li>Neck</li>
@@ -48,7 +48,7 @@
 				<li>DankPyon_BrigandThug</li>
 
 				<li>MedievalBasic</li>
-            </tags>
+			</tags>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -57,7 +57,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -103,16 +103,16 @@
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_BrigandThug</li>
-                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_Mercenary</li>
 				<li>DankPyon_MercenaryHeavy</li>
 				<li>DankPyon_Archer</li>
-                <li>DankPyon_Footman</li>
-                <li>DankPyon_Billman</li>
-                <li>DankPyon_Knight</li>
-                <li>DankPyon_HedgeKnight</li>
+				<li>DankPyon_Footman</li>
+				<li>DankPyon_Billman</li>
+				<li>DankPyon_Knight</li>
+				<li>DankPyon_HedgeKnight</li>
 
 				<li>MedievalBasic</li>
-            </tags>
+			</tags>
 			<layers>
 				<li>Middle</li>
 			</layers>
@@ -121,7 +121,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -167,16 +167,16 @@
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_BrigandThug</li>
-                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_Mercenary</li>
 				<li>DankPyon_MercenaryHeavy</li>
 				<li>DankPyon_Archer</li>
-                <li>DankPyon_Footman</li>
-                <li>DankPyon_Billman</li>
-                <li>DankPyon_Knight</li>
-                <li>DankPyon_HedgeKnight</li>
+				<li>DankPyon_Footman</li>
+				<li>DankPyon_Billman</li>
+				<li>DankPyon_Knight</li>
+				<li>DankPyon_HedgeKnight</li>
 
 				<li>MedievalMilitaryBasic</li>
-            </tags>
+			</tags>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -234,16 +234,16 @@
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_BrigandThug</li>
-                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_Mercenary</li>
 				<li>DankPyon_MercenaryHeavy</li>
 				<li>DankPyon_Archer</li>
-                <li>DankPyon_Footman</li>
-                <li>DankPyon_Billman</li>
-                <li>DankPyon_Knight</li>
-                <li>DankPyon_HedgeKnight</li>
+				<li>DankPyon_Footman</li>
+				<li>DankPyon_Billman</li>
+				<li>DankPyon_Knight</li>
+				<li>DankPyon_HedgeKnight</li>
 
 				<li>MedievalMilitaryBasic</li>
-            </tags>
+			</tags>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -299,11 +299,11 @@
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_BrigandRaider</li>
-                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_Mercenary</li>
 				<li>DankPyon_Archer</li>
 
 				<li>MedievalMilitaryBasic</li>
-            </tags>
+			</tags>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -312,7 +312,7 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -358,11 +358,11 @@
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_BrigandRaider</li>
-                <li>DankPyon_Mercenary</li>
+				<li>DankPyon_Mercenary</li>
 				<li>DankPyon_Archer</li>
 
 				<li>MedievalMilitaryBasic</li>
-            </tags>
+			</tags>
 			<layers>
 				<li>Shell</li>
 			</layers>

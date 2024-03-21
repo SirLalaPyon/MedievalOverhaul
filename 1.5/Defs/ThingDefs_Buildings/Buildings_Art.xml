@@ -1,472 +1,472 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<ThingDef ParentName="SculptureBase" Name="DankPyon_SculptureBase" Abstract="True">
-    <rotatable>false</rotatable>
-    <researchPrerequisites>
-      <li>DankPyon_RusticFurniture</li>
-    </researchPrerequisites>
+	<ThingDef ParentName="SculptureBase" Name="DankPyon_SculptureBase" Abstract="True">
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
 
-    <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
+		<dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
 
-    <!--designationCategory>DankPyon_RuinFurniture</designationCategory-->
-</ThingDef>
+		<!--designationCategory>DankPyon_RuinFurniture</designationCategory-->
+	</ThingDef>
 
-<!-- Ancient Base -->
-<ThingDef ParentName="SculptureBase" Name="DankPyon_AncientArtBase" Abstract="True">
-    <recipeMaker>
-        <recipeUsers Inherit="False"/>
-    </recipeMaker>
-    <rotatable>false</rotatable>
-    <!--researchPrerequisites>
+	<!-- Ancient Base -->
+	<ThingDef ParentName="SculptureBase" Name="DankPyon_AncientArtBase" Abstract="True">
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+		</recipeMaker>
+		<rotatable>false</rotatable>
+		<!--researchPrerequisites>
       <li>DankPyon_AncientArchitecture</li>
     </researchPrerequisites-->
 
-    <dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
-    <!--designationCategory>DankPyon_RuinFurniture</designationCategory-->
-</ThingDef>
+		<dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
+		<!--designationCategory>DankPyon_RuinFurniture</designationCategory-->
+	</ThingDef>
 
-<!--Grand Statue Base-->
-<ThingDef ParentName="DankPyon_AncientArtBase" Name="DankPyon_Ancient_GrandSculptureBase" Abstract="True">
-    <fillPercent>0.5</fillPercent>
-    <rotatable>false</rotatable>
-    <size>(2,2)</size>
-    <canOverlapZones>false</canOverlapZones>
-    <statBases>
-        <MaxHitPoints>300</MaxHitPoints>
-        <Beauty>600</Beauty>
-        <Mass>28</Mass>
-        <WorkToMake>205000</WorkToMake>
-        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">60</StyleDominance>
-    </statBases>
-    <stuffCategories>
-        <li>Metallic</li>
-        <li>Woody</li>
-        <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>400</costStuffCount>
-    <castEdgeShadows>true</castEdgeShadows>
-    <altitudeLayer>BuildingOnTop</altitudeLayer>
-</ThingDef>
-<!--============================================================-->
+	<!--Grand Statue Base-->
+	<ThingDef ParentName="DankPyon_AncientArtBase" Name="DankPyon_Ancient_GrandSculptureBase" Abstract="True">
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<size>(2,2)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>600</Beauty>
+			<Mass>28</Mass>
+			<WorkToMake>205000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">60</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>400</costStuffCount>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+	</ThingDef>
+	<!--============================================================-->
 
-<ThingDef ParentName="DankPyon_SculptureBase">
-    <defName>DankPyon_Bust</defName>
-    <label>bust</label>
-    <description>A torso-sized piece of material sculpted into an artistic form.</description>
-    <graphicData>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>Art/Bust</texPath>
-    </graphicData>
-    <fillPercent>0.35</fillPercent>
-    <statBases>
-        <MaxHitPoints>90</MaxHitPoints>
-        <Mass>3</Mass>
-        <Beauty>50</Beauty>
-        <WorkToMake>18000</WorkToMake>
-        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
-    </statBases>
+	<ThingDef ParentName="DankPyon_SculptureBase">
+		<defName>DankPyon_Bust</defName>
+		<label>bust</label>
+		<description>A torso-sized piece of material sculpted into an artistic form.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Art/Bust</texPath>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>3</Mass>
+			<Beauty>50</Beauty>
+			<WorkToMake>18000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
   
-    <stuffCategories>
-        <li>Metallic</li>
-        <li>Woody</li>
-        <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>50</costStuffCount>
-</ThingDef>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_SculptureBase">
-    <defName>DankPyon_Pedestal</defName>
-    <label>pedestal</label>
-    <description>A stand that acts as a base to display your items.</description>
-    <graphicData>
-        <texPath>Art/Pedestal</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <statBases>
-        <MaxHitPoints>90</MaxHitPoints>
-        <Mass>3</Mass>
-        <Beauty>20</Beauty>
-        <WorkToMake>9000</WorkToMake>
-        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
-    </statBases>
-    <fillPercent>0.35</fillPercent>
+	<ThingDef ParentName="DankPyon_SculptureBase">
+		<defName>DankPyon_Pedestal</defName>
+		<label>pedestal</label>
+		<description>A stand that acts as a base to display your items.</description>
+		<graphicData>
+			<texPath>Art/Pedestal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>3</Mass>
+			<Beauty>20</Beauty>
+			<WorkToMake>9000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<fillPercent>0.35</fillPercent>
     
-    <stuffCategories>
-        <li>Metallic</li>
-        <li>Woody</li>
-        <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>50</costStuffCount>
-</ThingDef>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+	</ThingDef>
   
-<ThingDef ParentName="DankPyon_SculptureBase">
-    <defName>DankPyon_ArmorStatue</defName>
-    <label>armor statue</label>
-    <description>A lifesize replica of a knight.</description>
-    <graphicData>
-        <texPath>Art/ArmorStatue</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(2,2)</drawSize>
-        <damageData>
-          <cornerTL>Damage/Corner</cornerTL>
-          <cornerTR>Damage/Corner</cornerTR>
-          <cornerBL>Damage/Corner</cornerBL>
-          <cornerBR>Damage/Corner</cornerBR>
-        </damageData>
-    </graphicData>
-    <uiIconScale>0.5</uiIconScale>
-    <castEdgeShadows>true</castEdgeShadows>
-    <rotatable>True</rotatable>
+	<ThingDef ParentName="DankPyon_SculptureBase">
+		<defName>DankPyon_ArmorStatue</defName>
+		<label>armor statue</label>
+		<description>A lifesize replica of a knight.</description>
+		<graphicData>
+			<texPath>Art/ArmorStatue</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+		<rotatable>True</rotatable>
 
-    <stuffCategories>
-        <li>Metallic</li>
-        <li>Woody</li>
-        <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
 
-    <statBases>
-        <MaxHitPoints>150</MaxHitPoints>
-        <Mass>7</Mass>
-        <Beauty>100</Beauty>
-        <WorkToMake>30000</WorkToMake>
-        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
-    </statBases>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>100</Beauty>
+			<WorkToMake>30000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+		</statBases>
 
-    <size>(1,1)</size>
-</ThingDef>
+		<size>(1,1)</size>
+	</ThingDef>
 
-<!--==================== Ancient Statues ====================-->
-<!--Large Ancient Statues-->
-<ThingDef ParentName="DankPyon_SculptureBase">
-    <defName>DankPyon_Ancient_Column</defName>
-    <label>ancient column</label>
-    <description>A tall pillar of ornate design.</description>
-    <graphicData>
-        <texPath>Art/Column1x1</texPath>
-        <graphicClass>Graphic_Multi</graphicClass>
-        <drawSize>(5,5)</drawSize>
-        <damageData>
-          <cornerTL>Damage/Corner</cornerTL>
-          <cornerTR>Damage/Corner</cornerTR>
-          <cornerBL>Damage/Corner</cornerBL>
-          <cornerBR>Damage/Corner</cornerBR>
-        </damageData>
-    </graphicData>
-    <uiIconScale>0.5</uiIconScale>
-    <castEdgeShadows>true</castEdgeShadows>
-    <rotatable>True</rotatable>
-    <altitudeLayer>Pawn</altitudeLayer>
+	<!--==================== Ancient Statues ====================-->
+	<!--Large Ancient Statues-->
+	<ThingDef ParentName="DankPyon_SculptureBase">
+		<defName>DankPyon_Ancient_Column</defName>
+		<label>ancient column</label>
+		<description>A tall pillar of ornate design.</description>
+		<graphicData>
+			<texPath>Art/Column1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<castEdgeShadows>true</castEdgeShadows>
+		<rotatable>True</rotatable>
+		<altitudeLayer>Pawn</altitudeLayer>
 
-    <stuffCategories>
-        <li>Metallic</li>
-        <li>Woody</li>
-        <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
 
-    <statBases>
-        <MaxHitPoints>800</MaxHitPoints>
-        <Mass>7</Mass>
-        <Beauty>100</Beauty>
-        <WorkToMake>30000</WorkToMake>
-        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
-    </statBases>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>100</Beauty>
+			<WorkToMake>30000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+		</statBases>
     
-    <holdsRoof>true</holdsRoof>
-    <size>(1,1)</size>
-    <recipeMaker>
-      <recipeUsers Inherit="False"/>
-    </recipeMaker>
-</ThingDef>
+		<holdsRoof>true</holdsRoof>
+		<size>(1,1)</size>
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+		</recipeMaker>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
-    <defName>DankPyon_RNGLarge2x2c</defName>
-    <label>grand dice god sculpture</label>
-    <description>One of the many deities that the under-empire worships. The dice god is known to be at times merciful... but most of the time as ruthless.</description>
-    <castEdgeShadows>true</castEdgeShadows>
-    <graphicData>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>Art/RNGLarge2x2</texPath>
-        <drawSize>(4,4)</drawSize>
-    </graphicData>
-</ThingDef>
+	<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
+		<defName>DankPyon_RNGLarge2x2c</defName>
+		<label>grand dice god sculpture</label>
+		<description>One of the many deities that the under-empire worships. The dice god is known to be at times merciful... but most of the time as ruthless.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Art/RNGLarge2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
-    <defName>DankPyon_RNG2x2c</defName>
-    <label>grand dice god obelisk sculpture</label>
-    <description>One of the many deities that the under-empire worships. The dice god is known to be at times merciful... but most of the time as ruthless.</description>
-    <castEdgeShadows>true</castEdgeShadows>
-    <graphicData>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>Art/RNG2x2</texPath>
-        <drawSize>(4,4)</drawSize>
-    </graphicData>
-</ThingDef>
+	<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
+		<defName>DankPyon_RNG2x2c</defName>
+		<label>grand dice god obelisk sculpture</label>
+		<description>One of the many deities that the under-empire worships. The dice god is known to be at times merciful... but most of the time as ruthless.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Art/RNG2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
-    <defName>DankPyon_ArchonSculpture2x2c</defName>
-    <label>grand archon sculpture</label>
-    <description>An avatar of a once prominent ruler.</description>
-    <castEdgeShadows>true</castEdgeShadows>
-    <graphicData>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>Art/ArchonLarge2x2</texPath>
-        <drawSize>(4,4)</drawSize>
-    </graphicData>
-</ThingDef>
+	<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
+		<defName>DankPyon_ArchonSculpture2x2c</defName>
+		<label>grand archon sculpture</label>
+		<description>An avatar of a once prominent ruler.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Art/ArchonLarge2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
-    <defName>DankPyon_ArchonObeliskSculpture2x2c</defName>
-    <label>grand archon obelisk sculpture</label>
-    <description>An avatar of a once prominent ruler.</description>
-    <castEdgeShadows>true</castEdgeShadows>
-    <graphicData>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>Art/Archon2x2</texPath>
-        <drawSize>(5,5)</drawSize>
-    </graphicData>
-</ThingDef>
+	<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
+		<defName>DankPyon_ArchonObeliskSculpture2x2c</defName>
+		<label>grand archon obelisk sculpture</label>
+		<description>An avatar of a once prominent ruler.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Art/Archon2x2</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
-    <defName>DankPyon_Obelisk2x2c</defName>
-    <label>grand obelisk</label>
-    <description>An ancient monument carved with inscriptions of an unknown language.</description>
-    <castEdgeShadows>true</castEdgeShadows>
-    <graphicData>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>Art/Obelisk2x2</texPath>
-        <drawSize>(5,5)</drawSize>
-    </graphicData>
-</ThingDef>
+	<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
+		<defName>DankPyon_Obelisk2x2c</defName>
+		<label>grand obelisk</label>
+		<description>An ancient monument carved with inscriptions of an unknown language.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Art/Obelisk2x2</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
-    <defName>DankPyon_Brazier2x2c</defName>
-    <label>ancient obelisk brazier</label>
-    <description>An ancient monument with a brazier atop, burning ever so brightly.</description>
+	<ThingDef ParentName="DankPyon_Ancient_GrandSculptureBase">
+		<defName>DankPyon_Brazier2x2c</defName>
+		<label>ancient obelisk brazier</label>
+		<description>An ancient monument with a brazier atop, burning ever so brightly.</description>
     
-    <graphicData>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>Art/AncientBrazier2x2</texPath>
-        <drawSize>(5,5)</drawSize>
-        <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <costList>
-      <Gold>100</Gold>
-    </costList>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Art/AncientBrazier2x2</texPath>
+			<drawSize>(5,5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<Gold>100</Gold>
+		</costList>
 
-    <tickerType>Normal</tickerType>
-    <drawerType>RealtimeOnly</drawerType>
-    <placeWorkers>
-        <li>PlaceWorker_Heater</li>
-        <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
-    </placeWorkers>
-    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 
-    <comps>
-      <li Class="CompProperties_Styleable" />
-      <li Class="CompProperties_Glower">
-        <glowRadius>18</glowRadius>
-        <glowColor>(252,187,113,0)</glowColor>
-      </li>
-      <li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>6.5</heatPerSecond>
-        <heatPushMaxTemperature>29</heatPushMaxTemperature>
-      </li>
-      <li Class="CompProperties_FireOverlay">
-        <fireSize>1.5</fireSize>
-        <offset>(0,0,1.9)</offset>
-      </li>
-      <li Class="CompProperties_MeditationFocus">
-        <statDef>MeditationFocusStrength</statDef>
-        <focusTypes><li>Flame</li></focusTypes>
-        <offsets>
-          <li Class="FocusStrengthOffset_Lit">
-            <offset>0.1</offset>
-          </li>
-          <li Class="FocusStrengthOffset_BuildingDefsLit">
-            <defs>
-              <li>Campfire</li>
-                <li>TorchLamp</li>
-                <li>DankPyon_Candles</li>
-                <li>DankPyon_CandleStand</li>
-                <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-                <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-                <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-            </defs>
-            <offsetPerBuilding>0.01</offsetPerBuilding>
-            <radius>9.9</radius>
-            <maxBuildings>8</maxBuildings>
-            <explanationKey>MeditationFocusPerFlame</explanationKey>
-            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-          </li>
-        </offsets>
-      </li>
-    </comps>
-</ThingDef>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>18</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>6.5</heatPerSecond>
+				<heatPushMaxTemperature>29</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>1.5</fireSize>
+				<offset>(0,0,1.9)</offset>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes><li>Flame</li></focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_CandleStand</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_AncientArtBase">
-    <defName>DankPyon_Brazier1x1c</defName>
-    <label>ancient brazier</label>
-    <description>An ancient brazier, burning ever so brightly.</description>
+	<ThingDef ParentName="DankPyon_AncientArtBase">
+		<defName>DankPyon_Brazier1x1c</defName>
+		<label>ancient brazier</label>
+		<description>An ancient brazier, burning ever so brightly.</description>
     
-    <graphicData>
-        <graphicClass>Graphic_Single</graphicClass>
-        <texPath>Art/AncientBrazier1x1</texPath>
-        <drawSize>(2,2)</drawSize>
-        <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Art/AncientBrazier1x1</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
     
-    <statBases>
-        <MaxHitPoints>90</MaxHitPoints>
-        <Mass>3</Mass>
-        <Beauty>50</Beauty>
-        <WorkToMake>18000</WorkToMake>
-        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
-    </statBases>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>3</Mass>
+			<Beauty>50</Beauty>
+			<WorkToMake>18000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
   
-    <stuffCategories>
-        <li>Metallic</li>
-        <li>Woody</li>
-        <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>50</costStuffCount>
-    <costList>
-      <Gold>25</Gold>
-    </costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Gold>25</Gold>
+		</costList>
 
-    <tickerType>Normal</tickerType>
-    <drawerType>RealtimeOnly</drawerType>
-    <placeWorkers>
-        <li>PlaceWorker_Heater</li>
-        <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
-    </placeWorkers>
-    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 
-    <comps>
-      <li Class="CompProperties_Styleable" />
-      <li Class="CompProperties_Glower">
-        <glowRadius>10</glowRadius>
-        <glowColor>(252,187,113,0)</glowColor>
-      </li>
-      <li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>6.5</heatPerSecond>
-        <heatPushMaxTemperature>29</heatPushMaxTemperature>
-      </li>
-      <li Class="CompProperties_FireOverlay">
-        <fireSize>0.8</fireSize>
-        <offset>(0,0,0.6)</offset>
-      </li>
-      <li Class="CompProperties_MeditationFocus">
-        <statDef>MeditationFocusStrength</statDef>
-        <focusTypes><li>Flame</li></focusTypes>
-        <offsets>
-          <li Class="FocusStrengthOffset_Lit">
-            <offset>0.1</offset>
-          </li>
-          <li Class="FocusStrengthOffset_BuildingDefsLit">
-            <defs>
-              <li>Campfire</li>
-                <li>TorchLamp</li>
-                <li>DankPyon_Candles</li>
-                <li>DankPyon_CandleStand</li>
-                <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-                <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-                <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-            </defs>
-            <offsetPerBuilding>0.01</offsetPerBuilding>
-            <radius>9.9</radius>
-            <maxBuildings>8</maxBuildings>
-            <explanationKey>MeditationFocusPerFlame</explanationKey>
-            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-          </li>
-        </offsets>
-      </li>
-    </comps>
-</ThingDef>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>6.5</heatPerSecond>
+				<heatPushMaxTemperature>29</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.8</fireSize>
+				<offset>(0,0,0.6)</offset>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes><li>Flame</li></focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_CandleStand</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+	</ThingDef>
   
-<!--  =========== Ice Base Classes ============ --> 
-<!-- Artwork Base Class -->
-  <ThingDef Name="IceArtworkBase" Abstract="True">
-    <category>Building</category>
-    <thingClass>Building_Art</thingClass>
+	<!--  =========== Ice Base Classes ============ -->
+	<!-- Artwork Base Class -->
+	<ThingDef Name="IceArtworkBase" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building_Art</thingClass>
 
-    <graphicData>	
-	  <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-        <edgeTop>Damage/Edge</edgeTop>
-        <edgeBot>Damage/Edge</edgeBot>
-        <edgeLeft>Damage/Edge</edgeLeft>
-        <edgeRight>Damage/Edge</edgeRight>
-      </damageData>
-    </graphicData>	
-    <thingCategories>
-      <li>BuildingsArt</li>
-    </thingCategories>
+		<graphicData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsArt</li>
+		</thingCategories>
 		
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <repairEffect>Repair</repairEffect>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
-    <castEdgeShadows>true</castEdgeShadows>
-    <useHitPoints>true</useHitPoints>
-	<altitudeLayer>Building</altitudeLayer>
-    <rotatable>false</rotatable>
-    <selectable>true</selectable>	
-	<passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>	
-    <fillPercent>0.5</fillPercent>
-    <building>
-      <repairable>false</repairable>
-    </building>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<castEdgeShadows>true</castEdgeShadows>
+		<useHitPoints>true</useHitPoints>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<building>
+			<repairable>false</repairable>
+		</building>
   
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusher</compClass>
-        <heatPerSecond>-1</heatPerSecond>
-        <heatPushMinTemperature>1</heatPushMinTemperature>	
-      </li>
-      <li><compClass>CompQuality</compClass></li>
-    </comps>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>-1</heatPerSecond>
+				<heatPushMinTemperature>1</heatPushMinTemperature>
+			</li>
+			<li><compClass>CompQuality</compClass></li>
+		</comps>
 
-    <inspectorTabs><li>ITab_Art</li></inspectorTabs>
-    <recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Artistic</workSkill>
-      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
-      <effectWorking>Sculpt</effectWorking>
-      <soundWorking>Recipe_Sculpt</soundWorking>
-      <recipeUsers>
-        <li>TableSculpting</li>
-      </recipeUsers>
-    </recipeMaker>
-    <tradeTags><li>Exotic</li></tradeTags>		
-  </ThingDef>
+		<inspectorTabs><li>ITab_Art</li></inspectorTabs>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Artistic</workSkill>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tradeTags><li>Exotic</li></tradeTags>
+	</ThingDef>
   
- <!-- Artwork Sculpture Class -->   
-  <ThingDef Name="IceArtworkSculpture" ParentName="IceArtworkBase" Abstract="True"> 
-    <comps>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtSculpture</nameMaker>
-        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+	<!-- Artwork Sculpture Class -->
+	<ThingDef Name="IceArtworkSculpture" ParentName="IceArtworkBase" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
 				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
-      </li>
-    </comps>
-  </ThingDef> 
+			</li>
+		</comps>
+	</ThingDef>
 
   
-<!--  =========== Actual Artwork Buildings ============ -->
-<!-- ========= Sculptures ========= -->
-<!-- Small Ice Sculpture --> 
-  <!--ThingDef ParentName="IceArtworkSculpture">
+	<!--  =========== Actual Artwork Buildings ============ -->
+	<!-- ========= Sculptures ========= -->
+	<!-- Small Ice Sculpture -->
+	<!--ThingDef ParentName="IceArtworkSculpture">
     <defName>Ice_IceSculptureSmall</defName>
     <label>Small Ice Sculpture</label>
     <description>A torso-sized piece of material sculpted into an artistic form.</description>
@@ -499,8 +499,8 @@
     </comps>
   </ThingDef-->
 
-<!-- Large Ice Sculpture -->   
-  <!--ThingDef ParentName="IceArtworkSculpture">
+	<!-- Large Ice Sculpture -->
+	<!--ThingDef ParentName="IceArtworkSculpture">
     <defName>Ice_IceSculptureLarge</defName>
     <label>Large Ice Sculpture</label>
     <description>A person-sized piece of material sculpted into an artistic form.</description>
@@ -534,8 +534,8 @@
     </comps>
   </ThingDef-->
 
-<!-- Grand Ice Sculpture -->   
-  <!--ThingDef ParentName="IceArtworkSculpture">
+	<!-- Grand Ice Sculpture -->
+	<!--ThingDef ParentName="IceArtworkSculpture">
     <defName>Ice_IceSculptureGrand</defName>
     <label>Grand Ice Sculpture</label>
     <description>A car-sized piece of material sculpted into an artistic form.</description>
@@ -569,4 +569,4 @@
       </li>	
     </comps>
   </ThingDef-->
-</Defs> 
+</Defs>

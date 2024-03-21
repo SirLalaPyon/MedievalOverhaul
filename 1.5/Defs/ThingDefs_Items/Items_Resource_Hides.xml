@@ -18,7 +18,7 @@
 		</thingCategories>
 		<stuffProps>
 			<categories>
-			  <li>DankPyon_Hide</li>
+				<li>DankPyon_Hide</li>
 			</categories>
 			<color>(180,173,150)</color>
 		</stuffProps>
@@ -28,8 +28,8 @@
 				<compClass>MedievalOverhaul.CompGenericHide</compClass>
 			</li>
 			<li Class="CompProperties_Rottable">
-			  <daysToRotStart>5</daysToRotStart>
-			  <rotDestroys>true</rotDestroys>
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
@@ -41,11 +41,11 @@
 		
 		<comps Inherit="false">
 			<li Class="CompProperties_Rottable">
-			  <daysToRotStart>5</daysToRotStart>
-			  <rotDestroys>true</rotDestroys>
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
-		  </comps>
+		</comps>
 	</ThingDef>
 
 	<ThingDef Abstract="True" Name="DankPyon_HideBaseTiny" ParentName="DankPyon_Hide_NonGeneric">
@@ -497,7 +497,7 @@
 		<statBases>
 			<MarketValue>124.2</MarketValue>
 		</statBases>
-		<butcherProducts Inherit="False"> 
+		<butcherProducts Inherit="False">
 			<Leather_Bluefur>60</Leather_Bluefur>
 		</butcherProducts>
 		<stuffProps>
@@ -1082,10 +1082,10 @@
 
 		<comps Inherit="false">
 			<li Class="CompProperties_Rottable">
-			  <daysToRotStart>5</daysToRotStart>
-			  <rotDestroys>true</rotDestroys>
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
 			</li>
-		  </comps>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_HideBaseHuge">

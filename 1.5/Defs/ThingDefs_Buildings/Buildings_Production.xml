@@ -222,32 +222,32 @@
 		<techLevel>Medieval</techLevel>
 	</ThingDef>
 
-		 <!--1x3 Bench Base-->
-		<ThingDef ParentName="BenchBase" Name="DankPyon_1X3WorkbenchBase" Abstract="True">
-				<altitudeLayer>Building</altitudeLayer>
-				<fillPercent>0.5</fillPercent>
-				<useHitPoints>True</useHitPoints>
-				<statBases>
-				<WorkToBuild>2000</WorkToBuild>
-				<MaxHitPoints>180</MaxHitPoints>
-				<Flammability>1.0</Flammability>
-				</statBases>
-				<size>(3,1)</size>
-				<designationCategory>Production</designationCategory>
-				<passability>PassThroughOnly</passability>
-				<pathCost>50</pathCost>
-				<hasInteractionCell>True</hasInteractionCell>
-				<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-				<surfaceType>Item</surfaceType>
+	<!--1x3 Bench Base-->
+	<ThingDef ParentName="BenchBase" Name="DankPyon_1X3WorkbenchBase" Abstract="True">
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
 
-				<inspectorTabs>
-						<li>ITab_Bills</li>
-				</inspectorTabs>
-				<techLevel>Medieval</techLevel>
-				<placeWorkers>
-						<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-				</placeWorkers>
-		</ThingDef>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<techLevel>Medieval</techLevel>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_RusticCookingTable</defName>
@@ -257,7 +257,7 @@
 		<graphicData>
 			<texPath>Production/RusticCookingTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -270,7 +270,7 @@
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 
 		<costList>
-				<WoodLog>60</WoodLog>
+			<WoodLog>60</WoodLog>
 		</costList>
 		<costStuffCount>20</costStuffCount>
 		<stuffCategories>
@@ -329,22 +329,22 @@
 		</building>
 	</ThingDef>
 
-<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
-	<defName>DankPyon_StoneOven</defName>
-	<label>rustic oven</label>
-	<thingClass>Building_WorkTable_HeatPush</thingClass>
-	<description>A cooking table with a stone oven designed for baking meals.</description>
-	<graphicData>
-	<texPath>Production/Oven</texPath>
-	<graphicClass>Graphic_Multi</graphicClass>
-	<shaderType>CutoutComplex</shaderType>
-	<drawSize>(3.5,1.5)</drawSize>
-	<damageData>
-		<cornerTL>Damage/Corner</cornerTL>
-		<cornerTR>Damage/Corner</cornerTR>
-		<cornerBL>Damage/Corner</cornerBL>
-		<cornerBR>Damage/Corner</cornerBR>
-	</damageData>
+	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+		<defName>DankPyon_StoneOven</defName>
+		<label>rustic oven</label>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<description>A cooking table with a stone oven designed for baking meals.</description>
+		<graphicData>
+			<texPath>Production/Oven</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
 		</graphicData>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
 
@@ -356,7 +356,7 @@
 			<WoodLog>20</WoodLog>
 		</costList>
 
-	<comps>
+		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticCookingTools</li>
@@ -367,56 +367,56 @@
 				<fuelConsumptionRate>100.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
-			<thingDefs>
-				<li>WoodLog</li>
-				<li>DankPyon_Coal</li>
-			</thingDefs>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
-	<building>
-		<isMealSource>true</isMealSource>
-		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-	</building>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<researchPrerequisites>
-				<li>DankPyon_Oven</li>
-				<li>DankPyon_RusticFurniture</li>
+			<li>DankPyon_Oven</li>
+			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
-</ThingDef>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
-	<defName>DankPyon_StoneOvenLarge</defName>
-	<label>large oven</label>
-	<thingClass>Building_WorkTable_HeatPush</thingClass>
-	<description>A cooking table with a stone oven designed for baking meals.</description>
-	<graphicData>
-		<texPath>Production/LargeStoneOven</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<drawSize>(4,4)</drawSize>
-		<damageData>
-			<cornerTL>Damage/Corner</cornerTL>
-			<cornerTR>Damage/Corner</cornerTR>
-			<cornerBL>Damage/Corner</cornerBL>
-			<cornerBR>Damage/Corner</cornerBR>
-		</damageData>
+	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+		<defName>DankPyon_StoneOvenLarge</defName>
+		<label>large oven</label>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<description>A cooking table with a stone oven designed for baking meals.</description>
+		<graphicData>
+			<texPath>Production/LargeStoneOven</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
 		</graphicData>
-	<size>(2,2)</size>
-	<uiIconScale>0.85</uiIconScale>
+		<size>(2,2)</size>
+		<uiIconScale>0.85</uiIconScale>
 
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
 
-	<statBases>
-				<WorkToBuild>4000</WorkToBuild>
-				<MaxHitPoints>200</MaxHitPoints>
-				<Flammability>0</Flammability>
+		<statBases>
+			<WorkToBuild>4000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
 		</statBases>
 	
-	<comps>
+		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticCookingTools</li>
@@ -427,31 +427,31 @@
 				<fuelConsumptionRate>100.0</fuelConsumptionRate>
 				<fuelCapacity>200.0</fuelCapacity>
 				<fuelFilter>
-			<thingDefs>
-				<li>WoodLog</li>
-				<li>DankPyon_Coal</li>
-			</thingDefs>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
-	<building>
-		<isMealSource>true</isMealSource>
-		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-	</building>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<researchPrerequisites>
-				<li>DankPyon_Oven</li>
-				<li>DankPyon_RusticFurniture</li>
+			<li>DankPyon_Oven</li>
+			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
-</ThingDef>
+	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
-	<defName>DankPyon_Grill</defName>
-	<label>grill</label>
-	<thingClass>Building_WorkTable_HeatPush</thingClass>
-	<description>A wood fueled grill used for cooking meals with an open fire.</description>
-	<graphicData>
+		<defName>DankPyon_Grill</defName>
+		<label>grill</label>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<description>A wood fueled grill used for cooking meals with an open fire.</description>
+		<graphicData>
 			<texPath>Production/Grill</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
@@ -463,38 +463,38 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-	<staticSunShadowHeight>0.3</staticSunShadowHeight>
+		<staticSunShadowHeight>0.3</staticSunShadowHeight>
 		<stuffCategories>
 			<li>Stony</li>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
-	<altitudeLayer>Building</altitudeLayer>
-	<fillPercent>0.5</fillPercent>
-	<useHitPoints>True</useHitPoints>
-	<statBases>
-		<WorkToBuild>2000</WorkToBuild>
-		<MaxHitPoints>180</MaxHitPoints>
-		<Flammability>1.0</Flammability>
-	</statBases>
-	<size>(2,1)</size>
-	<designationCategory>Production</designationCategory>
-	<passability>PassThroughOnly</passability>
-	<pathCost>70</pathCost>
-	<hasInteractionCell>True</hasInteractionCell>
-	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
-	<surfaceType>Item</surfaceType>
-	<inspectorTabs>
-		<li>ITab_Bills</li>
-	</inspectorTabs>
-	<comps>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticCookingTools</li>
 				</linkableFacilities>
 			</li>
-			 <li Class="CompProperties_FireOverlay">
+			<li Class="CompProperties_FireOverlay">
 				<fireSize>0.4</fireSize>
 				<offset>(0,0,0.2)</offset>
 			</li>
@@ -511,29 +511,29 @@
 				<fuelConsumptionRate>100.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
-			<thingDefs>
-				<li>WoodLog</li>
-			</thingDefs>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
-	<building>
-		<isMealSource>true</isMealSource>
-		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-	</building>
-	<researchPrerequisites>
-		<li>DankPyon_Grill</li>
-	</researchPrerequisites>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>DankPyon_Grill</li>
+		</researchPrerequisites>
 	</ThingDef>
 
-<ThingDef ParentName="BenchBase">
-	<defName>DankPyon_StewPot</defName>
-	<label>stew pot</label>
-	<thingClass>Building_WorkTable_HeatPush</thingClass>
-	<description>A large metal cauldron that can cook delicious soups.</description>
-	<graphicData>
+	<ThingDef ParentName="BenchBase">
+		<defName>DankPyon_StewPot</defName>
+		<label>stew pot</label>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<description>A large metal cauldron that can cook delicious soups.</description>
+		<graphicData>
 			<texPath>Production/StewPot</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
@@ -551,28 +551,28 @@
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
 
-	<altitudeLayer>Building</altitudeLayer>
-	<fillPercent>0.5</fillPercent>
-	<useHitPoints>True</useHitPoints>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
 
-	<statBases>
-		<WorkToBuild>2000</WorkToBuild>
-		<MaxHitPoints>180</MaxHitPoints>
-		<Flammability>1.0</Flammability>
-	</statBases>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
 
-	<size>(2,1)</size>
-	<designationCategory>Production</designationCategory>
-	<passability>PassThroughOnly</passability>
-	<pathCost>70</pathCost>
-	<hasInteractionCell>True</hasInteractionCell>
-	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<size>(2,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
-	<surfaceType>Item</surfaceType>
-	<inspectorTabs>
-		<li>ITab_Bills</li>
-	</inspectorTabs>
-	<comps>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticCookingTools</li>
@@ -595,14 +595,14 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
-	<building>
-		<isMealSource>true</isMealSource>
-		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-	</building>
-	<researchPrerequisites>
-		<li>DankPyon_StewPot</li>
-		<li>DankPyon_RusticFurniture</li>
-	</researchPrerequisites>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>DankPyon_StewPot</li>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 
@@ -664,101 +664,101 @@
 
 	</ThingDef>
 
-		<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
-				<defName>DankPyon_Trestle</defName>
-				<label>trestle</label>
-				<description>A simple platform to saw raw wood into planks.</description>
-				<thingClass>Building_WorkTable</thingClass>
-				<graphicData>
-						<texPath>Production/Trestle</texPath>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<shaderType>CutoutComplex</shaderType>
-						<drawSize>(3.5,1.5)</drawSize>
-						<shadowData>
-								<volume>(2.8, 0.35, 0.59)</volume>
-								<offset>(0, 0, 0.08)</offset>
-						</shadowData>
-						<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
-						</damageData>
-				</graphicData>
+	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+		<defName>DankPyon_Trestle</defName>
+		<label>trestle</label>
+		<description>A simple platform to saw raw wood into planks.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Production/Trestle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(2.8, 0.35, 0.59)</volume>
+				<offset>(0, 0, 0.08)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
 
-				<costStuffCount>100</costStuffCount>
-				<stuffCategories>
-						<li>DankPyon_RawWood</li>
-						<li>Woody</li>
-				</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+			<li>Woody</li>
+		</stuffCategories>
 
-				<building>
-						<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-				</building>
-				<comps>
-						<li Class="CompProperties_AffectedByFacilities">
-								<linkableFacilities>
-										<li>DankPyon_ToolRack</li>
-								</linkableFacilities>
-						</li>
-				</comps>
-				<placeWorkers>
-						<li>PlaceWorker_ShowFacilitiesConnections</li>
-				</placeWorkers>
-				<researchPrerequisites>
-					<li>DankPyon_Lumber</li>
-				</researchPrerequisites>
-		</ThingDef>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>DankPyon_ToolRack</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
+	</ThingDef>
 
-		<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
-				<defName>DankPyon_Workbench</defName>
-				<label>workbench</label>
-				<description>A work table equipped with tools for crafting and designing items.</description>
-				<thingClass>Building_WorkTable</thingClass>
-				<graphicData>
-						<texPath>Production/Workbench</texPath>
-						<graphicClass>Graphic_Multi</graphicClass>
-						<shaderType>CutoutComplex</shaderType>
-						<drawSize>(3.5,1.5)</drawSize>
-						<shadowData>
-								<volume>(2.8, 0.35, 0.59)</volume>
-								<offset>(0, 0, 0.08)</offset>
-						</shadowData>
-						<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
-						</damageData>
-				</graphicData>
+	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+		<defName>DankPyon_Workbench</defName>
+		<label>workbench</label>
+		<description>A work table equipped with tools for crafting and designing items.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Production/Workbench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(2.8, 0.35, 0.59)</volume>
+				<offset>(0, 0, 0.08)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
 
-				<costStuffCount>100</costStuffCount>
-				<stuffCategories>
-						<li>Woody</li>
-				</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
 
-				<!--recipe>
+		<!--recipe>
 				<li>SmashCorpseMechanoid</li>  why no work unga bunga
 				</recipe-->
 
-				<building>
-				<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-				</building>
-				<comps>
-				<li Class="CompProperties_AffectedByFacilities">
-						<linkableFacilities>
-						<li>DankPyon_Grinder</li>
-								<li>DankPyon_Bellows</li>
-								<li>DankPyon_QuenchingBucket</li>
-								<li>DankPyon_ToolRack</li>
-						</linkableFacilities>
-				</li>
-				</comps>
-				<placeWorkers>
-				<li>PlaceWorker_ShowFacilitiesConnections</li>
-				<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-				</placeWorkers>
-		</ThingDef>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>DankPyon_Grinder</li>
+					<li>DankPyon_Bellows</li>
+					<li>DankPyon_QuenchingBucket</li>
+					<li>DankPyon_ToolRack</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_JewelryBench</defName>
@@ -782,9 +782,9 @@
 			</damageData>
 		</graphicData>
 
-	<costStuffCount>100</costStuffCount>
-	<stuffCategories>
-				<li>Woody</li>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
 		</stuffCategories>
 
 		<building>
@@ -807,7 +807,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_CleaningBench</defName>
 		<label>cleaning bench</label>
 		<description>A table to clean loot and ready them for display.</description>
@@ -829,57 +829,57 @@
 			</damageData>
 		</graphicData>
 
-	<costStuffCount>100</costStuffCount>
-	<stuffCategories>
-				<li>Woody</li>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
 		</stuffCategories>
 
 		<building>
-				<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
-</ThingDef>
+	</ThingDef>
 
-<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_AlchemyBench</defName>
 		<label>alchemy bench</label>
 		<description>A heavy wooden table, secured with a layer of thick leather. Stocked with all sorts of thingamajigs, it’s useless to uneducated mind whilst perfectly functional for an adept of forbidden arts. It’s everything an aspiring alchemist could wish for to mix ingredients and prepare oddly specific reagents.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-				<texPath>Production/AlchemyWorkbench</texPath>
-				<graphicClass>Graphic_Multi</graphicClass>
-				<shaderType>CutoutComplex</shaderType>
-				<drawSize>(3.5,1.5)</drawSize>
-				<shadowData>
-						<volume>(2.8, 0.35, 0.59)</volume>
-						<offset>(0, 0, 0.08)</offset>
-				</shadowData>
-				<damageData>
-						<cornerTL>Damage/Corner</cornerTL>
-						<cornerTR>Damage/Corner</cornerTR>
-						<cornerBL>Damage/Corner</cornerBL>
-						<cornerBR>Damage/Corner</cornerBR>
-				</damageData>
+			<texPath>Production/AlchemyWorkbench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(2.8, 0.35, 0.59)</volume>
+				<offset>(0, 0, 0.08)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
 		</graphicData>
 
-	<costStuffCount>100</costStuffCount>
-	<stuffCategories>
-				<li>Woody</li>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
 		</stuffCategories>
 
 		<building>
-				<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
 		<placeWorkers>
-				<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 
 		<researchPrerequisites>
-				<li>DankPyon_Alchemy</li>
+			<li>DankPyon_Alchemy</li>
 		</researchPrerequisites>
-</ThingDef>
+	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_AdvancedResearchBench</defName>
@@ -970,11 +970,11 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Post</defName>
 		<label>Post</label>
-		<description>A support post to let viny plants grow effectively</description>	
+		<description>A support post to let viny plants grow effectively</description>
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
 			<texPath>Production/Post</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>	  
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(6,3)</drawSize>
 		</graphicData>
 		<stuffCategories>
@@ -982,37 +982,37 @@
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>	
+		<costStuffCount>20</costStuffCount>
 		<statBases>
-				<MaxHitPoints>80</MaxHitPoints> 
-				<WorkToBuild>300</WorkToBuild>
-				<Flammability>1.0</Flammability>
-				<Cleanliness>-5</Cleanliness>
-				<Mass>10</Mass>	  
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+			<Mass>10</Mass>
 		</statBases>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<size>(4,1)</size>
-		<useHitPoints>True</useHitPoints>	
-			<tickerType>Rare</tickerType>
-		<fillPercent>0.25</fillPercent>	
+		<useHitPoints>True</useHitPoints>
+		<tickerType>Rare</tickerType>
+		<fillPercent>0.25</fillPercent>
 		<fertility>1.0</fertility>
 		<passability>Standable</passability>
-		<pathCost>35</pathCost>	
+		<pathCost>35</pathCost>
 		<terrainAffordanceNeeded>DankPyon_GrowSoilVine</terrainAffordanceNeeded>
 		<building>
-				<defaultPlantToGrow>DankPyon_Plant_Grape</defaultPlantToGrow>
-				<sowTag>DankPyon_Post</sowTag>
-				<buildingTags>
-						<li>Production</li>
-				</buildingTags>
+			<defaultPlantToGrow>DankPyon_Plant_Grape</defaultPlantToGrow>
+			<sowTag>DankPyon_Post</sowTag>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
 		</building>
 		<thingCategories>
 			<li>BuildingsProduction</li>
-		</thingCategories>	
-		<designationCategory>Production</designationCategory>	
+		</thingCategories>
+		<designationCategory>Production</designationCategory>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<researchPrerequisites>
-				<li>DankPyon_AdvancedAgriculture</li>
+			<li>DankPyon_AdvancedAgriculture</li>
 		</researchPrerequisites>
 		<techLevel>Medieval</techLevel>
 	</ThingDef>
@@ -1335,7 +1335,7 @@
 		<size>(3,3)</size>
 
 		<comps>
-			<li Class="CompProperties_CreatesInfestations" />
+			<li Class="CompProperties_CreatesInfestations"/>
 		</comps>
 
 		<passability>Standable</passability>
@@ -1441,21 +1441,21 @@
 		<pathCost>45</pathCost>
 
 		<costList>
-				<DankPyon_IronIngot>5</DankPyon_IronIngot>
-				<DankPyon_QueenBee>1</DankPyon_QueenBee>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+			<DankPyon_QueenBee>1</DankPyon_QueenBee>
 		</costList>
 
 		<stuffCategories>
-				<li>Woody</li>
+			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
 
 		<statBases>
-				<MaxHitPoints>100</MaxHitPoints>
-				<WorkToBuild>2000</WorkToBuild>
-				<Mass>10</Mass>
-				<Flammability>1</Flammability>
-				<Beauty>0.5</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
 		</statBases>
 		
 		<tickerType>Normal</tickerType>
@@ -1463,23 +1463,23 @@
 		<canOverlapZones>false</canOverlapZones>
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_ThingProducer">
-					<requireFuel>true</requireFuel>
-					<restAtNight>true</restAtNight>
-					<viableTempRange>13,37</viableTempRange>
-					<timeRequired>300000</timeRequired><!-- 60 000 ticks equal 1 day-->
-					<random>false</random>
-					<items>
-						<li>
-							<thingDef>DankPyon_Honeycomb</thingDef>
-							<countRange>3~6</countRange>
-							<weight>1</weight>
-						</li>
-						<li>
-							<thingDef>DankPyon_QueenBee</thingDef>
-							<countRange>-25~1</countRange>
-							<weight>1</weight>
-						</li>
-					</items>
+				<requireFuel>true</requireFuel>
+				<restAtNight>true</restAtNight>
+				<viableTempRange>13,37</viableTempRange>
+				<timeRequired>300000</timeRequired><!-- 60 000 ticks equal 1 day-->
+				<random>false</random>
+				<items>
+					<li>
+						<thingDef>DankPyon_Honeycomb</thingDef>
+						<countRange>3~6</countRange>
+						<weight>1</weight>
+					</li>
+					<li>
+						<thingDef>DankPyon_QueenBee</thingDef>
+						<countRange>-25~1</countRange>
+						<weight>1</weight>
+					</li>
+				</items>
 			</li>
 
 			<li Class="CompProperties_Refuelable">
@@ -1489,9 +1489,9 @@
 				<initialFuelPercent>0</initialFuelPercent>
 				<fuelConsumptionPerTickInRain>0.00006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
-						<categories>
-								<li>MeatRaw</li>
-						</categories>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
 				<destroyOnNoFuel>false</destroyOnNoFuel>

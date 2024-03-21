@@ -21,7 +21,7 @@
 		<statBases>
 			<MarketValue>0.8</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
-			<Mass>1.2</Mass> 
+			<Mass>1.2</Mass>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>0.5</DeteriorationRate>
 			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
@@ -69,14 +69,14 @@
 			<li>Neolithic</li>
 		</weaponClasses>
 		<tools>
-		<li>
-			<label>log</label>
-			<capacities>
-			<li>Blunt</li>
-			</capacities>
-			<power>10</power>
-			<cooldownTime>2</cooldownTime>
-		</li>
+			<li>
+				<label>log</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
 		</tools>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<allowedArchonexusCount>150</allowedArchonexusCount>
@@ -88,7 +88,7 @@
 			<!--li Class="ESCP_FuelExtension.CompProperties_FuelRate">
 				<rate>2</rate>
 			</li-->
-    	</comps>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceVerbBase">
@@ -106,7 +106,7 @@
 		<statBases>
 			<MarketValue>3.2</MarketValue>
 			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>1.8</Mass> 
+			<Mass>1.8</Mass>
 			<Flammability>0.95</Flammability>
 			<DeteriorationRate>0.4</DeteriorationRate>
 			<StuffPower_Armor_Sharp>0.58</StuffPower_Armor_Sharp>
@@ -144,17 +144,17 @@
 			<li>DankPyon_RawWood</li>
 		</thingCategories>
 		<techHediffsTags>
-		<li>Poor</li>
+			<li>Poor</li>
 		</techHediffsTags>
 		<tools>
-		<li>
-			<label>log</label>
-			<capacities>
-			<li>Blunt</li>
-			</capacities>
-			<power>12</power>
-			<cooldownTime>2</cooldownTime>
-		</li>
+			<li>
+				<label>log</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
 		</tools>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<butcherProducts>
@@ -165,11 +165,11 @@
 			<!--li Class="ESCP_FuelExtension.CompProperties_FuelRate">
 				<rate>2</rate>
 			</li-->
-    	</comps>
+		</comps>
 	</ThingDef>
 
-  <!--============================== Processed Wood ==============================-->
-  <!-- Dark Wood -->
+	<!--============================== Processed Wood ==============================-->
+	<!-- Dark Wood -->
 	<ThingDef ParentName="ResourceVerbBase" Name="DankPyon_DarkWoodLog">
 		<defName>DankPyon_DarkWoodLog</defName>
 		<label>dark timber</label>
@@ -185,7 +185,7 @@
 		<statBases>
 			<MarketValue>1.6</MarketValue>
 			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>0.6</Mass> 
+			<Mass>0.6</Mass>
 			<Flammability>0.95</Flammability>
 			<DeteriorationRate>0.4</DeteriorationRate>
 			<StuffPower_Armor_Sharp>0.58</StuffPower_Armor_Sharp>
@@ -200,41 +200,41 @@
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<minRewardCount>10</minRewardCount>
 		<stuffProps>
-		<stuffAdjective>dark</stuffAdjective>
-		<categories>
-			<li>Woody</li>
-		</categories>
-		<commonality>1.00</commonality>
-		<color>(112,91,76)</color>
-		<constructEffect>ConstructWood</constructEffect>
-		<appearance>Planks</appearance>
-		<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-		<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-		<statFactors>
-			<MaxHitPoints>0.75</MaxHitPoints>
-			<Beauty>2</Beauty>
-			<Flammability>0.95</Flammability>
-			<WorkToMake>0.85</WorkToMake>
-			<WorkToBuild>0.85</WorkToBuild>
-			<DoorOpenSpeed>1.25</DoorOpenSpeed>
-		</statFactors>
+			<stuffAdjective>dark</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>1.00</commonality>
+			<color>(112,91,76)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.75</MaxHitPoints>
+				<Beauty>2</Beauty>
+				<Flammability>0.95</Flammability>
+				<WorkToMake>0.85</WorkToMake>
+				<WorkToBuild>0.85</WorkToBuild>
+				<DoorOpenSpeed>1.25</DoorOpenSpeed>
+			</statFactors>
 		</stuffProps>
 		<isTechHediff>true</isTechHediff>
 		<thingCategories>
 			<li>DankPyon_Wood</li>
 		</thingCategories>
 		<techHediffsTags>
-		<li>Poor</li>
+			<li>Poor</li>
 		</techHediffsTags>
 		<tools>
-		<li>
-			<label>plank</label>
-			<capacities>
-			<li>Blunt</li>
-			</capacities>
-			<power>12</power>
-			<cooldownTime>2</cooldownTime>
-		</li>
+			<li>
+				<label>plank</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
 		</tools>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 
@@ -242,10 +242,10 @@
 			<!--li Class="ESCP_FuelExtension.CompProperties_FuelRate">
 				<rate>1</rate>
 			</li-->
-    	</comps>
+		</comps>
 	</ThingDef>
 
-  <!-- Elven Wood -->
+	<!-- Elven Wood -->
 	<ThingDef ParentName="ResourceVerbBase" Name="DankPyon_ElvenWoodLog">
 		<defName>DankPyon_ElvenWoodLog</defName>
 		<label>elven timber</label>
@@ -261,7 +261,7 @@
 		<statBases>
 			<MarketValue>2</MarketValue>
 			<MaxHitPoints>220</MaxHitPoints>
-			<Mass>0.2</Mass> 
+			<Mass>0.2</Mass>
 			<Flammability>0.90</Flammability>
 			<DeteriorationRate>0.2</DeteriorationRate>
 			<StuffPower_Armor_Sharp>0.62</StuffPower_Armor_Sharp>
@@ -276,41 +276,41 @@
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<minRewardCount>10</minRewardCount>
 		<stuffProps>
-		<stuffAdjective>elven</stuffAdjective>
-		<categories>
-			<li>Woody</li>
-		</categories>
-		<commonality>0.50</commonality>
-		<color>(131,158,67)</color>
-		<constructEffect>ConstructWood</constructEffect>
-		<appearance>Planks</appearance>
-		<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-		<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-		<statFactors>
-			<MaxHitPoints>0.75</MaxHitPoints>
-			<Beauty>4</Beauty>
-			<Flammability>0.95</Flammability>
-			<WorkToMake>0.85</WorkToMake>
-			<WorkToBuild>0.85</WorkToBuild>
-			<DoorOpenSpeed>1.25</DoorOpenSpeed>
-		</statFactors>
+			<stuffAdjective>elven</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>0.50</commonality>
+			<color>(131,158,67)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.75</MaxHitPoints>
+				<Beauty>4</Beauty>
+				<Flammability>0.95</Flammability>
+				<WorkToMake>0.85</WorkToMake>
+				<WorkToBuild>0.85</WorkToBuild>
+				<DoorOpenSpeed>1.25</DoorOpenSpeed>
+			</statFactors>
 		</stuffProps>
 		<isTechHediff>true</isTechHediff>
 		<thingCategories>
 			<li>DankPyon_Wood</li>
 		</thingCategories>
 		<techHediffsTags>
-		<li>Poor</li>
+			<li>Poor</li>
 		</techHediffsTags>
 		<tools>
-		<li>
-			<label>log</label>
-			<capacities>
-			<li>Blunt</li>
-			</capacities>
-			<power>12</power>
-			<cooldownTime>2</cooldownTime>
-		</li>
+			<li>
+				<label>log</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
 		</tools>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 
@@ -318,203 +318,203 @@
 			<!--li Class="ESCP_FuelExtension.CompProperties_FuelRate">
 				<rate>5</rate>
 			</li-->
-    	</comps>
+		</comps>
 	</ThingDef>
 
-  <!-- Dryad Wood -->
-  <ThingDef ParentName="ResourceVerbBase">
-	<defName>DankPyon_DryadWoodLog</defName>
-	<label>dryad timber</label>
-	<description>Nimble but reslient, highly sought for its beauty and strength. Useful for building structures and weapons. It is a good fuel for campfires.</description>
-	<graphicData>
-	  <texPath>Resources/DryadWoodLog</texPath>
-	  <graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-	<equippedAngleOffset>-20</equippedAngleOffset>
-	<soundInteract>Wood_Drop</soundInteract>
-	<soundDrop>Wood_Drop</soundDrop>
-	<statBases>
-	  <MarketValue>4</MarketValue>
-	  <MaxHitPoints>240</MaxHitPoints>
-	  <Mass>0.3</Mass> 
-	  <Flammability>0.90</Flammability>
-	  <DeteriorationRate>0.2</DeteriorationRate>
-	  <StuffPower_Armor_Sharp>0.68</StuffPower_Armor_Sharp>
-	  <StuffPower_Armor_Blunt>0.68</StuffPower_Armor_Blunt>
-	  <StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat>
-	  <StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
-	  <StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
-	  <SharpDamageMultiplier>0.60</SharpDamageMultiplier>
-	  <BluntDamageMultiplier>1.20</BluntDamageMultiplier>
-	</statBases>
-	<burnableByRecipe>true</burnableByRecipe>
-	<healthAffectsPrice>false</healthAffectsPrice>
-	<minRewardCount>10</minRewardCount>
-	<stuffProps>
-	  <stuffAdjective>enchanted</stuffAdjective>
-	  <categories>
-		<li>Woody</li>
-	  </categories>
-	  <commonality>0.50</commonality>
-	  <color>(115,120,23)</color>
-	  <constructEffect>ConstructWood</constructEffect>
-	  <appearance>Planks</appearance>
-	  <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-	  <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-	  <statFactors>
-		<MaxHitPoints>1</MaxHitPoints>
-		<Beauty>8</Beauty>
-		<Flammability>0.95</Flammability>
-		<DoorOpenSpeed>1.25</DoorOpenSpeed>
-	  </statFactors>
-	</stuffProps>
-	<isTechHediff>true</isTechHediff>
-	<thingCategories>
-	  <li>ResourcesRaw</li>
-	</thingCategories>
-	<techHediffsTags>
-	  <li>Poor</li>
-	</techHediffsTags>
-	<tools>
-	  <li>
-		<label>log</label>
-		<capacities>
-		  <li>Blunt</li>
-		</capacities>
-		<power>14</power>
-		<cooldownTime>2</cooldownTime>
-	  </li>
-	</tools>
-	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<!-- Dryad Wood -->
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>DankPyon_DryadWoodLog</defName>
+		<label>dryad timber</label>
+		<description>Nimble but reslient, highly sought for its beauty and strength. Useful for building structures and weapons. It is a good fuel for campfires.</description>
+		<graphicData>
+			<texPath>Resources/DryadWoodLog</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<MaxHitPoints>240</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Flammability>0.90</Flammability>
+			<DeteriorationRate>0.2</DeteriorationRate>
+			<StuffPower_Armor_Sharp>0.68</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.68</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.60</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.20</BluntDamageMultiplier>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>10</minRewardCount>
+		<stuffProps>
+			<stuffAdjective>enchanted</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>0.50</commonality>
+			<color>(115,120,23)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>1</MaxHitPoints>
+				<Beauty>8</Beauty>
+				<Flammability>0.95</Flammability>
+				<DoorOpenSpeed>1.25</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<isTechHediff>true</isTechHediff>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<tools>
+			<li>
+				<label>log</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 
 		<comps>
 			<!--li Class="ESCP_FuelExtension.CompProperties_FuelRate">
 				<rate>5</rate>
 			</li-->
-    	</comps>
-  </ThingDef>
+		</comps>
+	</ThingDef>
 
-  <!-- Ancient Wood -->
-  <ThingDef ParentName="ResourceVerbBase">
-	<defName>DankPyon_AncientWoodLog</defName>
-	<label>ancient timber</label>
-	<description>PLACEHOLDER. Useful for building structures and weapons. It is a good fuel for campfires.</description>
-	<graphicData>
-	  <texPath>Resources/AncientWoodLog</texPath>
-	  <graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-	<equippedAngleOffset>-20</equippedAngleOffset>
-	<soundInteract>Wood_Drop</soundInteract>
-	<soundDrop>Wood_Drop</soundDrop>
-	<statBases>
-	  <MarketValue>10</MarketValue>
-	  <MaxHitPoints>300</MaxHitPoints>
-	  <Mass>0.6</Mass> 
-	  <Flammability>0.90</Flammability>
-	  <DeteriorationRate>0.2</DeteriorationRate>
-	  <StuffPower_Armor_Sharp>0.82</StuffPower_Armor_Sharp>
-	  <StuffPower_Armor_Blunt>0.72</StuffPower_Armor_Blunt>
-	  <StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
-	  <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
-	  <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
-	  <SharpDamageMultiplier>0.60</SharpDamageMultiplier>
-	  <BluntDamageMultiplier>1.30</BluntDamageMultiplier>
-	</statBases>
-	<burnableByRecipe>true</burnableByRecipe>
-	<healthAffectsPrice>false</healthAffectsPrice>
-	<minRewardCount>10</minRewardCount>
-	<stuffProps>
-	  <stuffAdjective>ancient</stuffAdjective>
-	  <categories>
-		<li>Woody</li>
-	  </categories>
-	  <commonality>0.05</commonality>
-	  <color>(219,181,52)</color>
-	  <constructEffect>ConstructWood</constructEffect>
-	  <appearance>Planks</appearance>
-	  <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-	  <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-	  <statFactors>
-		<MaxHitPoints>2</MaxHitPoints>
-		<Beauty>20</Beauty>
-		<Flammability>0.45</Flammability>
-		<WorkToMake>1.85</WorkToMake>
-		<WorkToBuild>1.85</WorkToBuild>
-		<DoorOpenSpeed>1.25</DoorOpenSpeed>
-	  </statFactors>
-	</stuffProps>
-	<isTechHediff>true</isTechHediff>
-	<thingCategories>
-	  <li>ResourcesRaw</li>
-	</thingCategories>
-	<tools>
-	  <li>
-		<label>log</label>
-		<capacities>
-		  <li>Blunt</li>
-		</capacities>
-		<power>15</power>
-		<cooldownTime>2</cooldownTime>
-	  </li>
-	</tools>
-	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-  </ThingDef>
+	<!-- Ancient Wood -->
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>DankPyon_AncientWoodLog</defName>
+		<label>ancient timber</label>
+		<description>PLACEHOLDER. Useful for building structures and weapons. It is a good fuel for campfires.</description>
+		<graphicData>
+			<texPath>Resources/AncientWoodLog</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>0.6</Mass>
+			<Flammability>0.90</Flammability>
+			<DeteriorationRate>0.2</DeteriorationRate>
+			<StuffPower_Armor_Sharp>0.82</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.72</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.60</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.30</BluntDamageMultiplier>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<minRewardCount>10</minRewardCount>
+		<stuffProps>
+			<stuffAdjective>ancient</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>0.05</commonality>
+			<color>(219,181,52)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>2</MaxHitPoints>
+				<Beauty>20</Beauty>
+				<Flammability>0.45</Flammability>
+				<WorkToMake>1.85</WorkToMake>
+				<WorkToBuild>1.85</WorkToBuild>
+				<DoorOpenSpeed>1.25</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+		<isTechHediff>true</isTechHediff>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tools>
+			<li>
+				<label>log</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</ThingDef>
   
-  <ThingDef ParentName="ResourceBase">
-	<defName>DankPyon_Coal</defName>
-	<label>Coal Chunks</label>
-	<description>Coal is a black combustible chunk of rock formed by mostly carbon. A good source of fuel for stoves and furnaces.</description>
-	<graphicData>
-	  <texPath>Resources/Coal</texPath>
-	  <graphicClass>Graphic_StackCount</graphicClass>
-	  <drawSize>(1,1)</drawSize>	  
-	</graphicData>
-	<soundInteract>ChunkRock_Drop</soundInteract>
-	<soundDrop>ChunkRock_Drop</soundDrop>
-	<useHitPoints>true</useHitPoints>
-	<healthAffectsPrice>false</healthAffectsPrice>
-	<statBases>
-	  <MaxHitPoints>80</MaxHitPoints>
-	  <Flammability>0.8</Flammability>
-	  <MarketValue>1.1</MarketValue>
-	  <Mass>0.008</Mass>
-	</statBases>
-	<thingCategories>
-	  <li>ResourcesRaw</li>
-	</thingCategories>
-	<deepCommonality>5</deepCommonality>
-	<deepCountPerPortion>50</deepCountPerPortion>
-	<deepLumpSizeRange>20~30</deepLumpSizeRange>
-	<burnableByRecipe>false</burnableByRecipe>
-	<smeltable>false</smeltable>
-	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_Coal</defName>
+		<label>Coal Chunks</label>
+		<description>Coal is a black combustible chunk of rock formed by mostly carbon. A good source of fuel for stoves and furnaces.</description>
+		<graphicData>
+			<texPath>Resources/Coal</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<MarketValue>1.1</MarketValue>
+			<Mass>0.008</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>5</deepCommonality>
+		<deepCountPerPortion>50</deepCountPerPortion>
+		<deepLumpSizeRange>20~30</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 
-	<comps>
-        <!--li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+		<comps>
+			<!--li Class="ESCP_FuelExtension.CompProperties_FuelRate">
             <rate>4</rate>
         </li-->
-    </comps>
-  </ThingDef>
-<!--============================== Ice ==============================-->
-<ThingDef Name="IceResourceBase" Abstract="True">
-	<thingClass>ThingWithComps</thingClass>
-	<category>Item</category>
-	<resourceReadoutPriority>Middle</resourceReadoutPriority>
-	<useHitPoints>true</useHitPoints>
-	<selectable>true</selectable>
-	<altitudeLayer>Item</altitudeLayer>
-	<stackLimit>15</stackLimit>
-	<comps>
-	  <li Class="CompProperties_Forbiddable"/>
-	</comps>
-	<alwaysHaulable>true</alwaysHaulable>
-	<drawGUIOverlay>true</drawGUIOverlay>
-	<rotatable>false</rotatable>
-	<pathCost>15</pathCost>
-	<tradeTags><li>ResourcesRaw</li></tradeTags>	
-  </ThingDef>
+		</comps>
+	</ThingDef>
+	<!--============================== Ice ==============================-->
+	<ThingDef Name="IceResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>15</stackLimit>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+		<tradeTags><li>ResourcesRaw</li></tradeTags>
+	</ThingDef>
 
-  <!--ThingDef ParentName="IceResourceBase">
+	<!--ThingDef ParentName="IceResourceBase">
 	<defName>Ice_Resource_IceBlocks</defName>
 	<label>Ice</label>
 	<description>Water which has been frozen to create blocks of ice. Will melt in temperatures above freezing.</description>
@@ -567,238 +567,238 @@
 	  </li>
 	</comps>	
   </ThingDef-->
-<!--============================== Beekeeping ==============================-->
-<ThingDef ParentName="ResourceBase">
-	<defName>DankPyon_Wax</defName>
-	<label>wax</label>
-	<description>An organic compound, solid at room temperature, which allows it to be stored for extended periods of time. Can be made into candles.</description>
-	<stackLimit>75</stackLimit>	
-	<graphicData>
-		<texPath>Resources/Wax</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
-		<drawSize>(1,1)</drawSize>
-	</graphicData>
-	<statBases>
-		<MarketValue>1.5</MarketValue>
-		<Mass>0.25</Mass>
-	</statBases>
-	<thingCategories>
-		<li>ResourcesRaw</li>
-	</thingCategories>
-	<tickerType>Rare</tickerType>
-	<comps>
-		<li Class="CompProperties_Rottable">
-		<daysToRotStart>90</daysToRotStart>
-		<rotDestroys>true</rotDestroys>
-		</li>
-	</comps>
-</ThingDef> 
+	<!--============================== Beekeeping ==============================-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_Wax</defName>
+		<label>wax</label>
+		<description>An organic compound, solid at room temperature, which allows it to be stored for extended periods of time. Can be made into candles.</description>
+		<stackLimit>75</stackLimit>
+		<graphicData>
+			<texPath>Resources/Wax</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<Mass>0.25</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>90</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
 
-<ThingDef ParentName="ResourceBase">
-	<defName>DankPyon_QueenBee</defName>
-	<label>oswin queen</label>
-	<description>The matriarch of a vulture bee colony originating from the regions of house oswin. Unlike typical bees, they consume carrion and produce a smokey and savory honey.</description>
-	<stackLimit>1</stackLimit>	
-	<graphicData>
-		<texPath>Resources/QueenBee</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(1,1)</drawSize>
-	</graphicData>
-	<statBases>
-		<MarketValue>200</MarketValue>
-		<Mass>0.025</Mass>
-	</statBases>
-	<thingCategories>
-		<li>ResourcesRaw</li>
-	</thingCategories>
-</ThingDef> 
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_QueenBee</defName>
+		<label>oswin queen</label>
+		<description>The matriarch of a vulture bee colony originating from the regions of house oswin. Unlike typical bees, they consume carrion and produce a smokey and savory honey.</description>
+		<stackLimit>1</stackLimit>
+		<graphicData>
+			<texPath>Resources/QueenBee</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<Mass>0.025</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
 
-<ThingDef ParentName="OrganicProductBase">
-	<defName>DankPyon_Honey</defName>
-	<label>smokey honey</label>
-	<description>A smokey and savory liquid substance made by vulture bees that can be used as a preservative or fermented into an alcoholic drink.</description>
-	<graphicData>
-		<texPath>Resources/HoneyLiquid</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-	<healthAffectsPrice>false</healthAffectsPrice>
-	<rotatable>false</rotatable>
-	<stackLimit>25</stackLimit>
-	<socialPropernessMatters>true</socialPropernessMatters>
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>DankPyon_Honey</defName>
+		<label>smokey honey</label>
+		<description>A smokey and savory liquid substance made by vulture bees that can be used as a preservative or fermented into an alcoholic drink.</description>
+		<graphicData>
+			<texPath>Resources/HoneyLiquid</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<socialPropernessMatters>true</socialPropernessMatters>
 
-	<statBases>
-		<MarketValue>7.0</MarketValue>
-		<Mass>0.025</Mass>
-		<Nutrition>0.05</Nutrition>
-		<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
-	</statBases>
-	<allowedArchonexusCount>150</allowedArchonexusCount>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+			<Mass>0.025</Mass>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<allowedArchonexusCount>150</allowedArchonexusCount>
 
-	<ingestible>
-		<foodType>AnimalProduct</foodType>
-		<preferability>MealFine</preferability>
-		<joy>0.08</joy>
-		<joyKind>Gluttonous</joyKind>
-		<ingestEffect>EatVegetarian</ingestEffect>
-		<ingestSound>Meal_Eat</ingestSound>
-		<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-	</ingestible>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+			<preferability>MealFine</preferability>
+			<joy>0.08</joy>
+			<joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
 
-	<thingCategories>
-		<li>AnimalProductRaw</li>
-	</thingCategories>
-</ThingDef>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+	</ThingDef>
 
-<ThingDef ParentName="OrganicProductBase">
-	<defName>DankPyon_Honeycomb</defName>
-	<label>smokey honeycomb</label>
-	<description>Raw smokey honeycombs that contain vulture bee honey. \n\nCan be extracted to gain wax and smokey honey.</description>
-	<graphicData>
-		<texPath>Resources/Honeycomb</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-	<healthAffectsPrice>false</healthAffectsPrice>
-	<rotatable>false</rotatable>
-	<stackLimit>25</stackLimit>
-	<socialPropernessMatters>true</socialPropernessMatters>
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>DankPyon_Honeycomb</defName>
+		<label>smokey honeycomb</label>
+		<description>Raw smokey honeycombs that contain vulture bee honey. \n\nCan be extracted to gain wax and smokey honey.</description>
+		<graphicData>
+			<texPath>Resources/Honeycomb</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<socialPropernessMatters>true</socialPropernessMatters>
 
-	<statBases>
-		<MarketValue>7.0</MarketValue>
-		<Mass>0.025</Mass>
-		<Nutrition>0.05</Nutrition>
-		<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
-	</statBases>
-	<allowedArchonexusCount>150</allowedArchonexusCount>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+			<Mass>0.025</Mass>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<allowedArchonexusCount>150</allowedArchonexusCount>
 
-	<ingestible>
-		<foodType>AnimalProduct</foodType>
-		<preferability>MealFine</preferability>
-		<joy>0.08</joy>
-		<joyKind>Gluttonous</joyKind>
-		<ingestEffect>EatVegetarian</ingestEffect>
-		<ingestSound>Meal_Eat</ingestSound>
-		<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-	</ingestible>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+			<preferability>MealFine</preferability>
+			<joy>0.08</joy>
+			<joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
 
-	<thingCategories>
-		<li>AnimalProductRaw</li>
-	</thingCategories>
-	<butcherProducts>
-		<DankPyon_Wax>5</DankPyon_Wax>
-		<DankPyon_Honey>3</DankPyon_Honey>
-	</butcherProducts>
-</ThingDef>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<butcherProducts>
+			<DankPyon_Wax>5</DankPyon_Wax>
+			<DankPyon_Honey>3</DankPyon_Honey>
+		</butcherProducts>
+	</ThingDef>
   
-  <!--============================== Metals ==============================-->
-  <!--=============== Iron ====================-->
+	<!--============================== Metals ==============================-->
+	<!--=============== Iron ====================-->
   
-  <ThingDef ParentName="ResourceBase">
-	<defName>DankPyon_IronOre</defName>
-	<label>iron ore</label>
-	<description>A raw iron ore, needs to be processed into ingots at a smelter to be usable.</description>
-	<graphicData>
-	  <texPath>Resources/IronOre</texPath>
-	  <graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-	<soundInteract>Metal_Drop</soundInteract>
-	<soundDrop>Metal_Drop</soundDrop>
-	<statBases>
-	  <MarketValue>0.4</MarketValue>
-	  <Mass>0.3</Mass>
-	</statBases>
-	<useHitPoints>false</useHitPoints>
-	<healthAffectsPrice>false</healthAffectsPrice>
-	<thingCategories>
-	  <li>DankPyon_RawOres</li>
-	</thingCategories>
-	<deepCommonality>5</deepCommonality>
-	<deepCountPerPortion>45</deepCountPerPortion>
-	<deepLumpSizeRange>20~30</deepLumpSizeRange>
-	<burnableByRecipe>false</burnableByRecipe>
-	<!--smeltable>true</smeltable-->
-	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-  </ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_IronOre</defName>
+		<label>iron ore</label>
+		<description>A raw iron ore, needs to be processed into ingots at a smelter to be usable.</description>
+		<graphicData>
+			<texPath>Resources/IronOre</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>0.4</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>DankPyon_RawOres</li>
+		</thingCategories>
+		<deepCommonality>5</deepCommonality>
+		<deepCountPerPortion>45</deepCountPerPortion>
+		<deepLumpSizeRange>20~30</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<!--smeltable>true</smeltable-->
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
   
-  <ThingDef ParentName="ResourceBase">
-	<defName>DankPyon_IronIngot</defName>
-	<label>iron ingot</label>
-	<description>A bar of iron. Ready to be used in crafting and construction.</description>
-	<graphicData>
-	  <texPath>Resources/IronIngot</texPath>
-	  <graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-	<soundInteract>Metal_Drop</soundInteract>
-	<soundDrop>Metal_Drop</soundDrop>
-	<statBases>
-	  <MarketValue>1.5</MarketValue>
-	  <Mass>0.5</Mass>
-	  <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
-	  <StuffPower_Armor_Blunt>0.38</StuffPower_Armor_Blunt>
-	  <StuffPower_Armor_Heat>0.58</StuffPower_Armor_Heat>
-	  <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-	  <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-	  <SharpDamageMultiplier>0.9</SharpDamageMultiplier>
-	  <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
-	</statBases>
-	<useHitPoints>false</useHitPoints>
-	<healthAffectsPrice>false</healthAffectsPrice>
-	<thingCategories>
-	  <li>ResourcesRaw</li>
-	</thingCategories>
-	<deepCommonality>5</deepCommonality>
-	<deepCountPerPortion>45</deepCountPerPortion>
-	<deepLumpSizeRange>20~30</deepLumpSizeRange>
-	<burnableByRecipe>false</burnableByRecipe>
-	<smeltable>true</smeltable>
-	<stuffProps>
-	  <stuffAdjective>iron</stuffAdjective>
-	  <categories>
-		<li>Metallic</li>
-	  </categories>
-	  <commonality>1.00</commonality>
-	  <constructEffect>ConstructMetal</constructEffect>
-	  <color>(112, 108, 101)</color>
-	  <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-	  <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-	  <statFactors>
-		<MaxHitPoints>0.9</MaxHitPoints>
-		<Beauty>1</Beauty>
-		<Flammability>0.42</Flammability>
-	  </statFactors>
-	</stuffProps>
-	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-  </ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_IronIngot</defName>
+		<label>iron ingot</label>
+		<description>A bar of iron. Ready to be used in crafting and construction.</description>
+		<graphicData>
+			<texPath>Resources/IronIngot</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.38</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.58</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>0.9</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>5</deepCommonality>
+		<deepCountPerPortion>45</deepCountPerPortion>
+		<deepLumpSizeRange>20~30</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<stuffAdjective>iron</stuffAdjective>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<commonality>1.00</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(112, 108, 101)</color>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.9</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0.42</Flammability>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
 
-  <!--=============== Silver ====================-->
+	<!--=============== Silver ====================-->
   
-  <ThingDef ParentName="ResourceBase">
-	<defName>DankPyon_SilverOre</defName>
-	<label>silver ore</label>
-	<description>A raw silver ore, needs to be processed into ingots at a smelter to be usable.</description>
-	<graphicData>
-	  <texPath>Resources/SilverOre</texPath>
-	  <graphicClass>Graphic_StackCount</graphicClass>
-	</graphicData>
-	<soundInteract>Metal_Drop</soundInteract>
-	<soundDrop>Metal_Drop</soundDrop>
-	<statBases>
-	  <MarketValue>1</MarketValue>
-	  <Mass>0.04</Mass>
-	</statBases>
-	<useHitPoints>false</useHitPoints>
-	<healthAffectsPrice>false</healthAffectsPrice>
-	<thingCategories>
-	  <li>DankPyon_RawOres</li>
-	</thingCategories>
-	<deepCommonality>0.5</deepCommonality>
-	<deepCountPerPortion>70</deepCountPerPortion>
-	<deepLumpSizeRange>2~10</deepLumpSizeRange>
-	<burnableByRecipe>false</burnableByRecipe>
-	<!--smeltable>true</smeltable-->
-	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-  </ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_SilverOre</defName>
+		<label>silver ore</label>
+		<description>A raw silver ore, needs to be processed into ingots at a smelter to be usable.</description>
+		<graphicData>
+			<texPath>Resources/SilverOre</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1</MarketValue>
+			<Mass>0.04</Mass>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>DankPyon_RawOres</li>
+		</thingCategories>
+		<deepCommonality>0.5</deepCommonality>
+		<deepCountPerPortion>70</deepCountPerPortion>
+		<deepLumpSizeRange>2~10</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<!--smeltable>true</smeltable-->
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
 
-  <!--ThingDef ParentName="ResourceBase">
+	<!--ThingDef ParentName="ResourceBase">
 	<defName>DankPyon_SilverIngot</defName>
 	<label>silver ingot</label>
 	<description>A bar of silver. A more compact form of silver. Can be minted into silver coins</description>
@@ -825,7 +825,7 @@
 	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef-->
   
-  <!--=============== Gold Ore ====================-->
+	<!--=============== Gold Ore ====================-->
   
   
 	<ThingDef ParentName="ResourceBase">
@@ -890,40 +890,40 @@
 		</statBases>
 
 		<stuffProps>
-		  <stuffAdjective>bone</stuffAdjective>
-		  <categories>
-			<li>Woody</li>
-		  </categories>
-		  <commonality>1.00</commonality>
-		  <color>(199,181,129)</color>
-		  <constructEffect>ConstructWood</constructEffect>
-		  <appearance>Planks</appearance>
-		  <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-		  <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-		  <statFactors>
-			  <MaxHitPoints>0.4</MaxHitPoints>
-			  <Beauty>1</Beauty>
-			  <Flammability>0</Flammability>
-			  <WorkToMake>0.7</WorkToMake>
-			  <WorkToBuild>0.7</WorkToBuild>
-			  <DoorOpenSpeed>1.2</DoorOpenSpeed>
-			  <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
-		  </statFactors>
+			<stuffAdjective>bone</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>1.00</commonality>
+			<color>(199,181,129)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statFactors>
+				<MaxHitPoints>0.4</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0</Flammability>
+				<WorkToMake>0.7</WorkToMake>
+				<WorkToBuild>0.7</WorkToBuild>
+				<DoorOpenSpeed>1.2</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
 		</stuffProps>
 		<thingCategories>
-		<li>ResourcesRaw</li>
+			<li>ResourcesRaw</li>
 		</thingCategories>
 		<techHediffsTags>
-		<li>Poor</li>
+			<li>Poor</li>
 		</techHediffsTags>
 		<tools>
-		<li>
-			<capacities>
-			<li>Blunt</li>
-			</capacities>
-			<power>4</power>
-			<cooldownTime>2.2</cooldownTime>
-		</li>
+			<li>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2.2</cooldownTime>
+			</li>
 		</tools>
 	</ThingDef>
 
@@ -933,9 +933,9 @@
 		<label>linen</label>
 		<description>A resillient fabric made out of dried fibres of flax.</description>
 		<graphicData>
-		<texPath>Resources/Linen</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
-		<color>(202,195,170)</color>
+			<texPath>Resources/Linen</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(202,195,170)</color>
 		</graphicData>
 
 		<statBases>
@@ -973,26 +973,26 @@
 			<li>Textiles</li>
 		</thingCategories>
 		<comps>
-		<li>
-			<compClass>CompColorable</compClass>
-		</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
 		</comps>
 		<colorGeneratorInTraderStock Class="ColorGenerator_Options">
-		<options>
-			<li>
-			<weight>5</weight>
-			<only>(0.33,0.33,0.33,1)</only>
-			</li>
-			<li>
-			<weight>10</weight>
-			<min>(0.3,0.3,0.3,1)</min>
-			<max>(0.9,0.9,0.9,1)</max>
-			</li>
-			<li>
-			<weight>5</weight>
-			<only>(0.9,0.9,0.9,1)</only>
-			</li>
-		</options>
+			<options>
+				<li>
+					<weight>5</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.9,0.9,0.9,1)</max>
+				</li>
+				<li>
+					<weight>5</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
 		</colorGeneratorInTraderStock>
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
@@ -1002,9 +1002,9 @@
 		<label>silk</label>
 		<description>A soft and luxurious fabric frequently tailored for noble apparel.</description>
 		<graphicData>
-		<texPath>Resources/SilkFabric</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
-		<!--color>(202,195,170)</color-->
+			<texPath>Resources/SilkFabric</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<!--color>(202,195,170)</color-->
 		</graphicData>
 
 		<statBases>
@@ -1039,29 +1039,29 @@
 		</stuffProps>
 
 		<thingCategories>
-		  <li>Textiles</li>
+			<li>Textiles</li>
 		</thingCategories>
 		<comps>
-		<li>
-			<compClass>CompColorable</compClass>
-		</li>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
 		</comps>
 		<colorGeneratorInTraderStock Class="ColorGenerator_Options">
-		<options>
-			<li>
-			<weight>5</weight>
-			<only>(0.33,0.33,0.33,1)</only>
-			</li>
-			<li>
-			<weight>10</weight>
-			<min>(0.3,0.3,0.3,1)</min>
-			<max>(0.9,0.9,0.9,1)</max>
-			</li>
-			<li>
-			<weight>5</weight>
-			<only>(0.9,0.9,0.9,1)</only>
-			</li>
-		</options>
+			<options>
+				<li>
+					<weight>5</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.9,0.9,0.9,1)</max>
+				</li>
+				<li>
+					<weight>5</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
 		</colorGeneratorInTraderStock>
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
@@ -1136,7 +1136,7 @@
 				<Flammability>0</Flammability>
 			</statFactors>
 		</stuffProps>
-  </ThingDef>
+	</ThingDef>
 
 	<!--=============== Amber ====================-->
 	<ThingDef ParentName="DankPyon_GemBase">
@@ -1176,7 +1176,7 @@
 				<Flammability>0</Flammability>
 			</statFactors>
 		</stuffProps>
-  </ThingDef>
+	</ThingDef>
 
 	<!--=============== Onyx ====================-->
 	<ThingDef ParentName="DankPyon_GemBase">

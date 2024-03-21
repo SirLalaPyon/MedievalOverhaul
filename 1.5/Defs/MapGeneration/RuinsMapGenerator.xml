@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<GenStepDef>
-    <defName>DankPyon_Small_Ruin_Gen</defName>
-    <linkWithSite>DankPyon_Small_Ruin</linkWithSite>
-    <order>460</order>
-    <genStep Class="KCSG.GenStep_CustomStructureGen">
-    <structureLayoutDefs>
-        <li>DankPyon_SmallHideout1c</li>
-        <li>DankPyon_SmallHideout2c</li>
-    </structureLayoutDefs>
-    </genStep>
-</GenStepDef>
+	<GenStepDef>
+		<defName>DankPyon_Small_Ruin_Gen</defName>
+		<linkWithSite>DankPyon_Small_Ruin</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+			<structureLayoutDefs>
+				<li>DankPyon_SmallHideout1c</li>
+				<li>DankPyon_SmallHideout2c</li>
+			</structureLayoutDefs>
+		</genStep>
+	</GenStepDef>
 
-<GenStepDef>
-    <defName>DankPyon_Medium_Ruin_Gen</defName>
-    <linkWithSite>DankPyon_Medium_Ruin</linkWithSite>
-    <order>460</order>
-    <genStep Class="KCSG.GenStep_CustomStructureGen">
-    <structureLayoutDefs>
-        <li>DankPyon_Medium_Ruin_Brigand1c</li>
-        <li>DankPyon_Medium_Ruin_Brigand2c</li>
-    </structureLayoutDefs>
-    </genStep>
-</GenStepDef>
+	<GenStepDef>
+		<defName>DankPyon_Medium_Ruin_Gen</defName>
+		<linkWithSite>DankPyon_Medium_Ruin</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+			<structureLayoutDefs>
+				<li>DankPyon_Medium_Ruin_Brigand1c</li>
+				<li>DankPyon_Medium_Ruin_Brigand2c</li>
+			</structureLayoutDefs>
+		</genStep>
+	</GenStepDef>
 
-<!--GenStepDef> DOESNT WORK UNGA BUNGA
+	<!--GenStepDef> DOESNT WORK UNGA BUNGA
     <defName>DankPyon_Big_Ruin_Snake_Gen</defName>
     <linkWithSite>DankPyon_Big_Snake_Ruin</linkWithSite>
     <order>460</order>

@@ -26,30 +26,30 @@
 		<relicChance>2</relicChance>
 
 		<comps>
-			<li Class="CompProperties_Styleable"></li>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<weaponClasses>
 			<li>Melee</li>
 			<li>MeleeBlunt</li>
 		</weaponClasses>
 		<tools>
-		<li>
-			<label>ram</label>
-			<capacities>
-			<li>Blunt</li>
-			</capacities>
-			<power>16.2</power>
-			<cooldownTime>2.7</cooldownTime>
-		</li>
-		<li>
-			<label>base</label>
-			<capacities>
-			<li>Blunt</li>
-			</capacities>
-			<power>9</power>
-			<cooldownTime>2</cooldownTime>
-			<chanceFactor>0.5</chanceFactor>
-		</li>
+			<li>
+				<label>ram</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16.2</power>
+				<cooldownTime>2.7</cooldownTime>
+			</li>
+			<li>
+				<label>base</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
 		</tools>
 		<thingCategories>
 			<li>Items</li>
@@ -84,30 +84,30 @@
 		<stackLimit>10</stackLimit>
 		<relicChance>3</relicChance>
 		<comps>
-			<li Class="CompProperties_Styleable"></li>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<weaponClasses>
 			<li>Melee</li>
 			<li>MeleePiercer</li>
 		</weaponClasses>
 		<tools>
-		<li>
-			<label>point</label>
-			<capacities>
-			<li>Scratch</li>
-			<li>Stab</li>
-			</capacities>
-			<power>28</power>
-			<cooldownTime>2.8</cooldownTime>
-		</li>
-		<li>
-			<label>base</label>
-			<capacities>
-			<li>Blunt</li>
-			</capacities>
-			<power>9</power>
-			<cooldownTime>2</cooldownTime>
-		</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>2.8</cooldownTime>
+			</li>
+			<li>
+				<label>base</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
 		</tools>
 		<thingCategories>
 			<li>Items</li>
@@ -143,31 +143,31 @@
 		<stackLimit>10</stackLimit>
 		<relicChance>2</relicChance>
 		<comps>
-			<li Class="CompProperties_Styleable"></li>
+			<li Class="CompProperties_Styleable"/>
 		</comps>
 		<weaponClasses>
 			<li>Melee</li>
 			<li>MeleePiercer</li>
 		</weaponClasses>
 		<tools>
-		<li>
-			<label>point</label>
-			<capacities>
-			<li>Scratch</li>
-			<li>Stab</li>
-			</capacities>
-			<power>16.2</power>
-			<cooldownTime>2.6</cooldownTime>
-		</li>
-		<li>
-			<label>base</label>
-			<capacities>
-			<li>Blunt</li>
-			</capacities>
-			<power>9</power>
-			<cooldownTime>2</cooldownTime>
-			<chanceFactor>0.5</chanceFactor>
-		</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>16.2</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>base</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
 		</tools>
 		<thingCategories>
 			<li>Items</li>

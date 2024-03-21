@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RecipeDef Abstract="True" Name="DankPyon_MakeTanningLiquorBase">
+	<RecipeDef Abstract="True" Name="DankPyon_MakeTanningLiquorBase">
 		<jobString>Boiling wood into 6 tanning liquor.</jobString>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
@@ -84,7 +84,7 @@
 			<li>
 				<filter>
 					<categories>
-					   <li>MeatRaw</li>
+						<li>MeatRaw</li>
 					</categories>
 				</filter>
 				<count>28</count>
@@ -99,7 +99,7 @@
 
 	<!-- 10X -->
 	
-    <RecipeDef Abstract="True" Name="DankPyon_MakeTanningLiquorBase10X">
+	<RecipeDef Abstract="True" Name="DankPyon_MakeTanningLiquorBase10X">
 		<jobString>Boiling wood into 60 tanning liquor.</jobString>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
@@ -183,9 +183,9 @@
 			<li>
 				<filter>
 					<categories>
-					   <li>MeatRaw</li>
+						<li>MeatRaw</li>
 					</categories>
-				 </filter>
+				</filter>
 				<count>280</count>
 			</li>
 		</ingredients>

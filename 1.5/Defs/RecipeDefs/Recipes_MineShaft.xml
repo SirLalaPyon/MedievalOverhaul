@@ -1,216 +1,216 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!-- Stone Chunks Base Class --> 
-<RecipeDef Name="DankPyon_MineShaftBase" Abstract="True">
-	<description>Mine deep down underground to obtain rock chunks.</description>
-	<workSpeedStat>MiningSpeed</workSpeedStat>
-	<workSkill>Mining</workSkill>
-	<workSkillLearnFactor>0.25</workSkillLearnFactor>
-	<effectWorking>CutStone</effectWorking>
-	<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+	<!-- Stone Chunks Base Class -->
+	<RecipeDef Name="DankPyon_MineShaftBase" Abstract="True">
+		<description>Mine deep down underground to obtain rock chunks.</description>
+		<workSpeedStat>MiningSpeed</workSpeedStat>
+		<workSkill>Mining</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<recipeUsers>
-			<li>DankPyon_MineShaft</li>	  
-		</recipeUsers>	
-</RecipeDef>
+			<li>DankPyon_MineShaft</li>
+		</recipeUsers>
+	</RecipeDef>
 
-<!-- Coal Chunks -->
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeStoneChunks_Coal</defName>
-	<description>Mine deep down underground to obtain coal chunks.</description>		
-	<workAmount>2000</workAmount>		
-	<label>Mine coal chunks x25</label>
-	<jobString>Mining 25 coal chunks.</jobString>
-	<targetCountAdjustment>25</targetCountAdjustment>		
-	<recipeUsers>
-		<li>DankPyon_MineShaft</li>	  
-	</recipeUsers>		  
-	<products>
-		<DankPyon_Coal>25</DankPyon_Coal>
-	</products>	
-</RecipeDef>
+	<!-- Coal Chunks -->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Coal</defName>
+		<description>Mine deep down underground to obtain coal chunks.</description>
+		<workAmount>2000</workAmount>
+		<label>Mine coal chunks x25</label>
+		<jobString>Mining 25 coal chunks.</jobString>
+		<targetCountAdjustment>25</targetCountAdjustment>
+		<recipeUsers>
+			<li>DankPyon_MineShaft</li>
+		</recipeUsers>
+		<products>
+			<DankPyon_Coal>25</DankPyon_Coal>
+		</products>
+	</RecipeDef>
   
-<!-- Stone Chunks: Sandstone --> 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeStoneChunks_Sandstone</defName>
-	<workAmount>2250</workAmount>		
-	<label>gather sandstone chunk</label>
-	<jobString>Mining 1 sandstone chunk.</jobString>
-	<products>
-		<ChunkSandstone>1</ChunkSandstone>
-	</products>		
-</RecipeDef> 
+	<!-- Stone Chunks: Sandstone -->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Sandstone</defName>
+		<workAmount>2250</workAmount>
+		<label>gather sandstone chunk</label>
+		<jobString>Mining 1 sandstone chunk.</jobString>
+		<products>
+			<ChunkSandstone>1</ChunkSandstone>
+		</products>
+	</RecipeDef>
 
- <!-- Stone Chunks: Granite --> 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeStoneChunks_Granite</defName>
-	<workAmount>2975</workAmount>		
-	<label>gather granite chunk</label>
-	<jobString>Mining 1 granite chunk.</jobString>
-	<products>
-		<ChunkGranite>1</ChunkGranite>
-	</products>		
-</RecipeDef> 
+	<!-- Stone Chunks: Granite -->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Granite</defName>
+		<workAmount>2975</workAmount>
+		<label>gather granite chunk</label>
+		<jobString>Mining 1 granite chunk.</jobString>
+		<products>
+			<ChunkGranite>1</ChunkGranite>
+		</products>
+	</RecipeDef>
 
-<!-- Stone Chunks: Limestone --> 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeStoneChunks_Limestone</defName>
-	<workAmount>2700</workAmount>		
-	<label>gather limestone chunk</label>
-	<jobString>Mining 1 limestone chunk.</jobString>
-	<products>
-		<ChunkLimestone>1</ChunkLimestone>
-	</products>		
-</RecipeDef> 
+	<!-- Stone Chunks: Limestone -->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Limestone</defName>
+		<workAmount>2700</workAmount>
+		<label>gather limestone chunk</label>
+		<jobString>Mining 1 limestone chunk.</jobString>
+		<products>
+			<ChunkLimestone>1</ChunkLimestone>
+		</products>
+	</RecipeDef>
 
-<!-- Stone Chunks: Slate --> 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeStoneChunks_Slate</defName>
-	<workAmount>2275</workAmount>		
-	<label>gather slate chunk</label>
-	<jobString>Mining 1 slate chunk.</jobString>
-	<products>
-		<ChunkSlate>1</ChunkSlate>
-	</products>		
-</RecipeDef>   
+	<!-- Stone Chunks: Slate -->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Slate</defName>
+		<workAmount>2275</workAmount>
+		<label>gather slate chunk</label>
+		<jobString>Mining 1 slate chunk.</jobString>
+		<products>
+			<ChunkSlate>1</ChunkSlate>
+		</products>
+	</RecipeDef>
 
-<!-- Stone Chunks: Marble --> 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeStoneChunks_Marble</defName>
-	<workAmount>2100</workAmount>		
-	<label>gather marble chunk</label>
-	<jobString>Mining 1 marble chunk.</jobString>
-	<products>
-		<ChunkMarble>1</ChunkMarble>
-	</products>		
-</RecipeDef>  
+	<!-- Stone Chunks: Marble -->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeStoneChunks_Marble</defName>
+		<workAmount>2100</workAmount>
+		<label>gather marble chunk</label>
+		<jobString>Mining 1 marble chunk.</jobString>
+		<products>
+			<ChunkMarble>1</ChunkMarble>
+		</products>
+	</RecipeDef>
 
-<!-- ========== Salt ==========-->
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeSalt</defName>
-	<description>Mine deep down underground to obtain salt</description>
-	<workAmount>200</workAmount>		
-	<label>gather salt</label>
-	<jobString>Mining 1 salt</jobString>
+	<!-- ========== Salt ==========-->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeSalt</defName>
+		<description>Mine deep down underground to obtain salt</description>
+		<workAmount>200</workAmount>
+		<label>gather salt</label>
+		<jobString>Mining 1 salt</jobString>
 
-	<products>
-		<DankPyon_Salt>1</DankPyon_Salt>
-	</products>		
-</RecipeDef>  
+		<products>
+			<DankPyon_Salt>1</DankPyon_Salt>
+		</products>
+	</RecipeDef>
 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeSaltBulk</defName>
-	<description>Mine deep down underground to obtain salt</description>
-	<workAmount>2000</workAmount>		
-	<label>gather salt x10</label>
-	<jobString>Mining 10 salt</jobString>
-    <products>
-      	<DankPyon_Salt>10</DankPyon_Salt>
-    </products>		
-</RecipeDef>  
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeSaltBulk</defName>
+		<description>Mine deep down underground to obtain salt</description>
+		<workAmount>2000</workAmount>
+		<label>gather salt x10</label>
+		<jobString>Mining 10 salt</jobString>
+		<products>
+			<DankPyon_Salt>10</DankPyon_Salt>
+		</products>
+	</RecipeDef>
 
-<!-- ========== Tar ==========-->
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeTar</defName>
-	<description>Mine deep down underground to obtain tar</description>
-	<workAmount>700</workAmount>		
-	<label>gather tar</label>
-	<jobString>Mining 1 tar</jobString>
+	<!-- ========== Tar ==========-->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeTar</defName>
+		<description>Mine deep down underground to obtain tar</description>
+		<workAmount>700</workAmount>
+		<label>gather tar</label>
+		<jobString>Mining 1 tar</jobString>
 
-	<products>
-		<DankPyon_Tar>1</DankPyon_Tar>
-	</products>		
-	<researchPrerequisites>
-		<li>DankPyon_Tar</li>
-	</researchPrerequisites>
-</RecipeDef>  
+		<products>
+			<DankPyon_Tar>1</DankPyon_Tar>
+		</products>
+		<researchPrerequisites>
+			<li>DankPyon_Tar</li>
+		</researchPrerequisites>
+	</RecipeDef>
 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeTarBulk</defName>
-	<description>Mine deep down underground to obtain tar</description>
-	<workAmount>3500</workAmount>		
-	<label>gather tar x5</label>
-	<jobString>Mining 5 tar</jobString>
-    <products>
-      	<DankPyon_Tar>5</DankPyon_Tar>
-    </products>
-	<researchPrerequisites>
-		<li>DankPyon_Tar</li>
-	</researchPrerequisites>		
-</RecipeDef>  
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeTarBulk</defName>
+		<description>Mine deep down underground to obtain tar</description>
+		<workAmount>3500</workAmount>
+		<label>gather tar x5</label>
+		<jobString>Mining 5 tar</jobString>
+		<products>
+			<DankPyon_Tar>5</DankPyon_Tar>
+		</products>
+		<researchPrerequisites>
+			<li>DankPyon_Tar</li>
+		</researchPrerequisites>
+	</RecipeDef>
 
-<!-- ========== Gunpowder ==========-->
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeGunpowder</defName>
-	<description>Mine deep down underground to obtain gunpowder</description>
-	<workAmount>700</workAmount>		
-	<label>gather gunpowder</label>
-	<jobString>Mining 1 gunpowder</jobString>
+	<!-- ========== Gunpowder ==========-->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeGunpowder</defName>
+		<description>Mine deep down underground to obtain gunpowder</description>
+		<workAmount>700</workAmount>
+		<label>gather gunpowder</label>
+		<jobString>Mining 1 gunpowder</jobString>
 
-	<products>
-		<DankPyon_Gunpowder>1</DankPyon_Gunpowder>
-	</products>
-	<researchPrerequisites>
-		<li>DankPyon_Gunpowder</li>
-	</researchPrerequisites>		
-</RecipeDef>  
+		<products>
+			<DankPyon_Gunpowder>1</DankPyon_Gunpowder>
+		</products>
+		<researchPrerequisites>
+			<li>DankPyon_Gunpowder</li>
+		</researchPrerequisites>
+	</RecipeDef>
 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeGunpowderBulk</defName>
-	<description>Mine deep down underground to obtain gunpowder</description>
-	<workAmount>3500</workAmount>		
-	<label>gather gunpowder x5</label>
-	<jobString>Mining 5 gunpowder</jobString>
-    <products>
-      	<DankPyon_Gunpowder>5</DankPyon_Gunpowder>
-    </products>		
-	<researchPrerequisites>
-		<li>DankPyon_Gunpowder</li>
-	</researchPrerequisites>
-</RecipeDef>
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeGunpowderBulk</defName>
+		<description>Mine deep down underground to obtain gunpowder</description>
+		<workAmount>3500</workAmount>
+		<label>gather gunpowder x5</label>
+		<jobString>Mining 5 gunpowder</jobString>
+		<products>
+			<DankPyon_Gunpowder>5</DankPyon_Gunpowder>
+		</products>
+		<researchPrerequisites>
+			<li>DankPyon_Gunpowder</li>
+		</researchPrerequisites>
+	</RecipeDef>
 
-<!-- ========== Ores ==========-->
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeOre_IronOre</defName>
-	<description>Mine deep down underground to obtain iron ore</description>
-	<workAmount>900</workAmount>		
-	<label>mine an iron ore</label>
-	<jobString>Mining 1 iron ore.</jobString>
-	<products>
-  		<DankPyon_IronOre>1</DankPyon_IronOre>
-	</products>		
-</RecipeDef> 
+	<!-- ========== Ores ==========-->
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeOre_IronOre</defName>
+		<description>Mine deep down underground to obtain iron ore</description>
+		<workAmount>900</workAmount>
+		<label>mine an iron ore</label>
+		<jobString>Mining 1 iron ore.</jobString>
+		<products>
+			<DankPyon_IronOre>1</DankPyon_IronOre>
+		</products>
+	</RecipeDef>
 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeOre_IronOreBulk</defName>
-	<description>Mine deep down underground to obtain iron ore</description>
-	<workAmount>4500</workAmount>		
-	<label>mine iron ore x5</label>
-	<jobString>Mining 5 iron ores.</jobString>
-	<products>
-  		<DankPyon_IronOre>5</DankPyon_IronOre>
-	</products>		
-</RecipeDef> 
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeOre_IronOreBulk</defName>
+		<description>Mine deep down underground to obtain iron ore</description>
+		<workAmount>4500</workAmount>
+		<label>mine iron ore x5</label>
+		<jobString>Mining 5 iron ores.</jobString>
+		<products>
+			<DankPyon_IronOre>5</DankPyon_IronOre>
+		</products>
+	</RecipeDef>
 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeOre_SilverOre</defName>
-	<description>Mine deep down underground to obtain silver ore</description>
-	<workAmount>600</workAmount>		
-	<label>mine a silver ore</label>
-	<jobString>Mining 1 silver ore.</jobString>
-	<products>
-  		<DankPyon_SilverOre>1</DankPyon_SilverOre>
-	</products>		
-</RecipeDef> 
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeOre_SilverOre</defName>
+		<description>Mine deep down underground to obtain silver ore</description>
+		<workAmount>600</workAmount>
+		<label>mine a silver ore</label>
+		<jobString>Mining 1 silver ore.</jobString>
+		<products>
+			<DankPyon_SilverOre>1</DankPyon_SilverOre>
+		</products>
+	</RecipeDef>
 
-<RecipeDef ParentName="DankPyon_MineShaftBase">
-	<defName>DankPyon_MakeOre_SilverOreBulk</defName>
-	<description>Mine deep down underground to obtain silver ore</description>
-	<workAmount>3000</workAmount>		
-	<label>mine silver ore x5</label>
-	<jobString>Mining 5 silver ore.</jobString>
-	<products>
-  		<DankPyon_SilverOre>5</DankPyon_SilverOre>
-	</products>		
-</RecipeDef> 
+	<RecipeDef ParentName="DankPyon_MineShaftBase">
+		<defName>DankPyon_MakeOre_SilverOreBulk</defName>
+		<description>Mine deep down underground to obtain silver ore</description>
+		<workAmount>3000</workAmount>
+		<label>mine silver ore x5</label>
+		<jobString>Mining 5 silver ore.</jobString>
+		<products>
+			<DankPyon_SilverOre>5</DankPyon_SilverOre>
+		</products>
+	</RecipeDef>
 
 </Defs>

@@ -4,7 +4,7 @@
 	<!-- ======= Griffon Berry thoughts ========= -->
 
 
-	<ThoughtDef>	
+	<ThoughtDef>
 		<defName>DankPyon_AteGriffonBerry</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
@@ -15,13 +15,13 @@
 				<description>PLACEHOLDER</description>
 				<baseMoodEffect>6</baseMoodEffect>
 			</li>
-		</stages>	
+		</stages>
 		
 	</ThoughtDef>
 
 	<!-- ======= Drinks based thoughts ========= -->
 
-	<ThoughtDef>	
+	<ThoughtDef>
 		<defName>DankPyon_DrankAle</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
@@ -32,10 +32,10 @@
 				<description>Nothing like good Ale to keep the horrors out of my mind.</description>
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
-		</stages>	
+		</stages>
 	</ThoughtDef>
 
-	<ThoughtDef>	
+	<ThoughtDef>
 		<defName>DankPyon_DrankMead</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
@@ -46,10 +46,10 @@
 				<description>Warm and sweet, it's distinct tone of honey is somewhat satisfying.</description>
 				<baseMoodEffect>6</baseMoodEffect>
 			</li>
-		</stages>	
+		</stages>
 	</ThoughtDef>
 	
-	<ThoughtDef>	
+	<ThoughtDef>
 		<defName>DankPyon_DrankWine</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
@@ -60,7 +60,7 @@
 				<description>Makes me feel like a noble... and maybe think like one.</description>
 				<baseMoodEffect>8</baseMoodEffect>
 			</li>
-		</stages>	
+		</stages>
 	</ThoughtDef>
 
 	<!-- ======= Food Quality Thoughts ========= -->
@@ -94,15 +94,15 @@
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 		</stages>
-  </ThoughtDef>
+	</ThoughtDef>
   
-  <!-- Cheese -->  
+	<!-- Cheese -->
 	<ThoughtDef>
 		<defName>DankPyon_AteCheese</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate cheese</label>
@@ -112,13 +112,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Rox Steak -->
+	<!-- Rox Steak -->
 	<ThoughtDef>
 		<defName>DankPyon_AteRoxSteak</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate rox steak</label>
@@ -128,13 +128,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Griffon Berry Pie -->
+	<!-- Griffon Berry Pie -->
 	<ThoughtDef>
 		<defName>DankPyon_AteGriffonBerryPie</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate griffon berry pie</label>
@@ -144,13 +144,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Smoked Meat -->
+	<!-- Smoked Meat -->
 	<ThoughtDef>
 		<defName>DankPyon_AteSmokedMeat</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate smoked meat</label>
@@ -160,13 +160,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Bread Soup -->
+	<!-- Bread Soup -->
 	<ThoughtDef>
 		<defName>DankPyon_AteBreadSoup</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate bread soup</label>
@@ -176,13 +176,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Grilled Sausages -->
+	<!-- Grilled Sausages -->
 	<ThoughtDef>
 		<defName>DankPyon_AteGrilledSausages</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate grilled sausages</label>
@@ -192,13 +192,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Apple Pie -->
+	<!-- Apple Pie -->
 	<ThoughtDef>
 		<defName>DankPyon_AteApplePie</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate apple pie</label>
@@ -208,13 +208,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Hunters Stew -->
+	<!-- Hunters Stew -->
 	<ThoughtDef>
 		<defName>DankPyon_AteHuntersStew</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate hunters stew</label>
@@ -224,13 +224,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Mashed Potatoes -->
+	<!-- Mashed Potatoes -->
 	<ThoughtDef>
 		<defName>DankPyon_AteMashedPotatoes</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate mashed potatoes</label>
@@ -240,13 +240,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Grilled Cheese -->
+	<!-- Grilled Cheese -->
 	<ThoughtDef>
 		<defName>DankPyon_AteGrilledCheese</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate grilled cheese</label>
@@ -256,13 +256,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Quiche -->
+	<!-- Quiche -->
 	<ThoughtDef>
 		<defName>DankPyon_AteQuiche</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate quiche</label>
@@ -272,13 +272,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Sweet Pancakes -->
+	<!-- Sweet Pancakes -->
 	<ThoughtDef>
 		<defName>DankPyon_AteSweetPancakes</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate sweet pancakes</label>
@@ -288,13 +288,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Winter Lentil Soup -->
+	<!-- Winter Lentil Soup -->
 	<ThoughtDef>
 		<defName>DankPyon_AteWinterLentilSoup</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate winter lentil soup</label>
@@ -304,13 +304,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Mushroom Soup -->
+	<!-- Mushroom Soup -->
 	<ThoughtDef>
 		<defName>DankPyon_AteMushroomSoup</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate mushroom soup</label>
@@ -320,13 +320,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Tomato Omelette -->
+	<!-- Tomato Omelette -->
 	<ThoughtDef>
 		<defName>DankPyon_AteTomatoOmelette</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate tomato omelette</label>
@@ -336,13 +336,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Vegetable Pot -->
+	<!-- Vegetable Pot -->
 	<ThoughtDef>
 		<defName>DankPyon_AteVegetablePot</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate vegetable pot</label>
@@ -352,13 +352,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Pumpkin Pie -->
+	<!-- Pumpkin Pie -->
 	<ThoughtDef>
 		<defName>DankPyon_AtePumpkinPie</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate pumpkin pie</label>
@@ -368,13 +368,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Pumpkin Fritters -->
+	<!-- Pumpkin Fritters -->
 	<ThoughtDef>
 		<defName>DankPyon_AtePumpkinFritters</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate pumpkin fritters</label>
@@ -384,29 +384,29 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Grilled Skewers -->
+	<!-- Grilled Skewers -->
 	<ThoughtDef>
 		<defName>DankPyon_AteGrilledSkewers</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate grilled skewers</label>
-				<description>Easy to eat and delicious. What else is to say about meat on a stick? </description>
+				<description>Easy to eat and delicious. What else is to say about meat on a stick?</description>
 				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
 
-<!-- Pumpkin Soup -->
+	<!-- Pumpkin Soup -->
 	<ThoughtDef>
 		<defName>DankPyon_AtePumpkinSoup</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate pumpkin soup</label>
@@ -416,13 +416,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Steak with Wine -->
+	<!-- Steak with Wine -->
 	<ThoughtDef>
 		<defName>DankPyon_AteSteakWithWine</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate steak with wine</label>
@@ -432,13 +432,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Boiled Bean and Onion -->
+	<!-- Boiled Bean and Onion -->
 	<ThoughtDef>
 		<defName>DankPyon_AteBoiledBeansAndOnion</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate boiled beans and onion</label>
@@ -448,13 +448,13 @@
 		</stages>
 	</ThoughtDef>
 
-<!-- Cheese Soup -->
+	<!-- Cheese Soup -->
 	<ThoughtDef>
 		<defName>DankPyon_AteCheeseSoup</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
 		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>	
+		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>ate cheese soup</label>

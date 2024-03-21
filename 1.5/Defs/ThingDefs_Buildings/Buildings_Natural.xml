@@ -1,404 +1,404 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--================================ Coal Ore ======================================-->
+	<!--================================ Coal Ore ======================================-->
         
-    <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableCoal</defName>
-        <label>coal ore</label>
-        <description>Rock containing chunks of coal.</description>
-        <graphicData>
-            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(114,114,114)</color>
-            <colorTwo>(57,53,52)</colorTwo>
-        </graphicData>
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableCoal</defName>
+		<label>coal ore</label>
+		<description>Rock containing chunks of coal.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,114,114)</color>
+			<colorTwo>(57,53,52)</colorTwo>
+		</graphicData>
 
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
 
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_Coal</mineableThing>
-            <mineableYield>40</mineableYield>
-            <mineableScatterCommonality>1</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>30~40</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_Coal</mineableThing>
+			<mineableYield>40</mineableYield>
+			<mineableScatterCommonality>1</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>30~40</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
 
-    <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableSalt</defName>
-        <label>salt ore</label>
-        <description>Rock containing chunks of salt.</description>
-        <graphicData>
-        <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(114,114,114)</color>
-            <colorTwo>(248,177,133)</colorTwo>
-        </graphicData>
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableSalt</defName>
+		<label>salt ore</label>
+		<description>Rock containing chunks of salt.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,114,114)</color>
+			<colorTwo>(248,177,133)</colorTwo>
+		</graphicData>
 
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
 
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_Salt</mineableThing>
-            <mineableYield>40</mineableYield>
-            <mineableScatterCommonality>0.75</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>15~20</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_Salt</mineableThing>
+			<mineableYield>40</mineableYield>
+			<mineableScatterCommonality>0.75</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>15~20</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
     
-    <!--============================ Resource rocks ===============================-->
-    <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableGold</defName>
-        <label>gold ore</label>
-        <description>Rock containing bits of gold.</description>
-        <graphicData>
-            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(89,83,68)</color>
-            <colorTwo>(187,173,25)</colorTwo>
-        </graphicData>
+	<!--============================ Resource rocks ===============================-->
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableGold</defName>
+		<label>gold ore</label>
+		<description>Rock containing bits of gold.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(89,83,68)</color>
+			<colorTwo>(187,173,25)</colorTwo>
+		</graphicData>
 
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
 
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_GoldOre</mineableThing>
-            <mineableYield>40</mineableYield>
-            <mineableScatterCommonality>0.07</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>2~8</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_GoldOre</mineableThing>
+			<mineableYield>40</mineableYield>
+			<mineableScatterCommonality>0.07</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~8</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
     
-    <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableIron</defName>
-        <label>iron ore</label>
-        <description>Rock containing bits of iron.</description>
-        <graphicData>
-            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(114,92,83)</color>
-            <colorTwo>(112,108,101)</colorTwo>
-        </graphicData>
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableIron</defName>
+		<label>iron ore</label>
+		<description>Rock containing bits of iron.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,92,83)</color>
+			<colorTwo>(112,108,101)</colorTwo>
+		</graphicData>
 
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
 
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_IronOre</mineableThing>
-            <mineableYield>40</mineableYield>
-            <mineableScatterCommonality>1</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>30~40</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_IronOre</mineableThing>
+			<mineableYield>40</mineableYield>
+			<mineableScatterCommonality>1</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>30~40</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
 
-    <!--============================ Gemstone ===============================-->
-     <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableCitrine</defName>
-        <label>citrine deposit</label>
-        <description>Rock containing bits of citrine.</description>
-        <graphicData>
-            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(114,92,83)</color>
-            <colorTwo>(206,140,80)</colorTwo>
-        </graphicData>
+	<!--============================ Gemstone ===============================-->
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableCitrine</defName>
+		<label>citrine deposit</label>
+		<description>Rock containing bits of citrine.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,92,83)</color>
+			<colorTwo>(206,140,80)</colorTwo>
+		</graphicData>
 
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
 
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_Citrine</mineableThing>
-            <mineableYield>10</mineableYield>
-            <mineableScatterCommonality>0.2</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
-
-
-    <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableAmber</defName>
-        <label>amber deposit</label>
-        <description>Rock containing bits of amber.</description>
-        <graphicData>
-            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(114,92,83)</color>
-            <colorTwo>(206,140,80)</colorTwo>
-        </graphicData>
-
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
-
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_Amber</mineableThing>
-            <mineableYield>10</mineableYield>
-            <mineableScatterCommonality>0.15</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_Citrine</mineableThing>
+			<mineableYield>10</mineableYield>
+			<mineableScatterCommonality>0.2</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
 
 
-    <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableOnyx</defName>
-        <label>onyx deposit</label>
-        <description>Rock containing bits of onyx.</description>
-        <graphicData>
-            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(114,92,83)</color>
-            <colorTwo>(43,43,43)</colorTwo>
-        </graphicData>
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableAmber</defName>
+		<label>amber deposit</label>
+		<description>Rock containing bits of amber.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,92,83)</color>
+			<colorTwo>(206,140,80)</colorTwo>
+		</graphicData>
 
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
 
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_Onyx</mineableThing>
-            <mineableYield>10</mineableYield>
-            <mineableScatterCommonality>0.9</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
-
-
-    <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableEmerald</defName>
-        <label>emerald deposit</label>
-        <description>Rock containing bits of emerald.</description>
-        <graphicData>
-            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(114,92,83)</color>
-            <colorTwo>(117,153,94)</colorTwo>
-        </graphicData>
-
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
-
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_Emerald</mineableThing>
-            <mineableYield>10</mineableYield>
-            <mineableScatterCommonality>0.7</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_Amber</mineableThing>
+			<mineableYield>10</mineableYield>
+			<mineableScatterCommonality>0.15</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
 
 
-    <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableSapphire</defName>
-        <label>sapphire deposit</label>
-        <description>Rock containing bits of sapphire.</description>
-        <graphicData>
-            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(114,92,83)</color>
-            <colorTwo>(60,109,158)</colorTwo>
-        </graphicData>
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableOnyx</defName>
+		<label>onyx deposit</label>
+		<description>Rock containing bits of onyx.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,92,83)</color>
+			<colorTwo>(43,43,43)</colorTwo>
+		</graphicData>
 
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
 
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_Sapphire</mineableThing>
-            <mineableYield>10</mineableYield>
-            <mineableScatterCommonality>0.5</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_Onyx</mineableThing>
+			<mineableYield>10</mineableYield>
+			<mineableScatterCommonality>0.9</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
 
-    <ThingDef ParentName="RockBase">
-        <defName>DankPyon_MineableRuby</defName>
-        <label>ruby deposit</label>
-        <description>Rock containing bits of ruby.</description>
-        <graphicData>
-            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(114,92,83)</color>
-            <colorTwo>(170,49,49)</colorTwo>
-        </graphicData>
 
-        <statBases>
-            <MaxHitPoints>1500</MaxHitPoints>
-        </statBases>
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableEmerald</defName>
+		<label>emerald deposit</label>
+		<description>Rock containing bits of emerald.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,92,83)</color>
+			<colorTwo>(117,153,94)</colorTwo>
+		</graphicData>
 
-        <building>
-            <isResourceRock>true</isResourceRock>
-            <mineableThing>DankPyon_Ruby</mineableThing>
-            <mineableYield>10</mineableYield>
-            <mineableScatterCommonality>0.4</mineableScatterCommonality>
-            <mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
-        </building>
-    </ThingDef>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
 
-<!-- Buildings -->
-<ThingDef ParentName="BuildingNaturalBase">
-    <defName>DankPyon_TarPit</defName>
-    <label>tar pit</label>
-    <description>A natural source of tar. \n\nDeconstruct to harvest resources.</description>
-    <thingClass>Building</thingClass>
-    <graphicData>
-        <texPath>Natural/TarPit</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>Transparent</shaderType>
-        <drawSize>(4,4)</drawSize>
-    </graphicData>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_Emerald</mineableThing>
+			<mineableYield>10</mineableYield>
+			<mineableScatterCommonality>0.7</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
 
-    <uiIconScale>0.5</uiIconScale>
-    <altitudeLayer>Floor</altitudeLayer>
-    <rotatable>false</rotatable>
-    <destroyable>true</destroyable>
-    <useHitPoints>false</useHitPoints>
-    <tickerType>Normal</tickerType>
-    <selectable>true</selectable>
-    <size>(2,2)</size>
-    <neverOverlapFloors>true</neverOverlapFloors>
-    <blocksPlants>true</blocksPlants>
-    <building>
-        <isEdifice>true</isEdifice>
-        <claimable>true</claimable>
-        <deconstructible>true</deconstructible>
-    </building>
 
-    <statBases>
-        <WorkToMake>30000</WorkToMake>
-    </statBases>
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableSapphire</defName>
+		<label>sapphire deposit</label>
+		<description>Rock containing bits of sapphire.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,92,83)</color>
+			<colorTwo>(60,109,158)</colorTwo>
+		</graphicData>
 
-    <costList>
-        <DankPyon_Tar>200</DankPyon_Tar>
-    </costList>
-</ThingDef>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
 
-<ThingDef ParentName="BuildingNaturalBase">
-    <defName>DankPyon_BeeHive</defName>
-    <label>bee hive</label>
-    <description>A bee hive. \n\nDeconstruct to obtain a queen bee.</description>
-    <thingClass>Building</thingClass>
-    <graphicData>
-        <texPath>Natural/BeeHive</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>1.6</drawSize>
-    </graphicData>
-    <size>(1,1)</size>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_Sapphire</mineableThing>
+			<mineableYield>10</mineableYield>
+			<mineableScatterCommonality>0.5</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
 
-    <uiIconScale>0.65</uiIconScale>
-    <altitudeLayer>Building</altitudeLayer>
-    <rotatable>false</rotatable>
-    <fillPercent>0.5</fillPercent>
-    <statBases>
-      <MaxHitPoints>130</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <pathCost>42</pathCost>
+	<ThingDef ParentName="RockBase">
+		<defName>DankPyon_MineableRuby</defName>
+		<label>ruby deposit</label>
+		<description>Rock containing bits of ruby.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,92,83)</color>
+			<colorTwo>(170,49,49)</colorTwo>
+		</graphicData>
 
-    <killedLeavings>
-        <DankPyon_Honeycomb>20</DankPyon_Honeycomb>
-        <DankPyon_QueenBee>1</DankPyon_QueenBee>
-    </killedLeavings>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+		</statBases>
+
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_Ruby</mineableThing>
+			<mineableYield>10</mineableYield>
+			<mineableScatterCommonality>0.4</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+	<!-- Buildings -->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>DankPyon_TarPit</defName>
+		<label>tar pit</label>
+		<description>A natural source of tar. \n\nDeconstruct to harvest resources.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Natural/TarPit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>Floor</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>true</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(2,2)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<blocksPlants>true</blocksPlants>
+		<building>
+			<isEdifice>true</isEdifice>
+			<claimable>true</claimable>
+			<deconstructible>true</deconstructible>
+		</building>
+
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+		</statBases>
+
+		<costList>
+			<DankPyon_Tar>200</DankPyon_Tar>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>DankPyon_BeeHive</defName>
+		<label>bee hive</label>
+		<description>A bee hive. \n\nDeconstruct to obtain a queen bee.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Natural/BeeHive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+
+		<uiIconScale>0.65</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+
+		<killedLeavings>
+			<DankPyon_Honeycomb>20</DankPyon_Honeycomb>
+			<DankPyon_QueenBee>1</DankPyon_QueenBee>
+		</killedLeavings>
     
-    <building>
-        <isEdifice>false</isEdifice>
-        <claimable>true</claimable>
-        <deconstructible>false</deconstructible>
-    </building>
-</ThingDef>
+		<building>
+			<isEdifice>false</isEdifice>
+			<claimable>true</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
 
-<ThingDef ParentName="BuildingNaturalBase" Name="DankPyon_HornetNestBase">
-    <defName>DankPyon_HornetNest</defName>
-    <label>hornet nest</label>
-    <description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable hornet honey.</description>
-    <thingClass>Hive</thingClass>
-    <graphicData>
-      <texPath>Natural/HornetNest</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>4,4</drawSize>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <rotatable>false</rotatable>
-    <fillPercent>0.5</fillPercent>
-    <statBases>
-      <MaxHitPoints>230</MaxHitPoints>
-      <Flammability>0.5</Flammability>
-    </statBases>
-    <pathCost>42</pathCost>
-    <receivesSignals>true</receivesSignals>
-    <blockWind>true</blockWind>
-    <tickerType>Normal</tickerType>
-    <passability>PassThroughOnly</passability>
-    <killedLeavings>
-      <InsectJelly>30</InsectJelly>
-    </killedLeavings>
-    <comps>
-        <li Class="CompProperties_CanBeDormant">
-            <startsDormant>true</startsDormant>
-            <canWakeUpFogged>false</canWakeUpFogged>
-        </li>
-        <li Class="CompProperties_WakeUpDormant" />
-        <li Class="CompProperties_SpawnerPawn">
-            <spawnablePawnKinds>
-                <li>DankPyon_Deathstinger</li>
-            </spawnablePawnKinds>
-            <lordJob>LordJob_DefendAndExpandHive</lordJob>
-            <spawnSound>Hive_Spawn</spawnSound>
-            <initialPawnsPoints>200</initialPawnsPoints>
-            <maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
-        </li>
-        <li Class="CompProperties_SelfhealHitpoints">
-            <ticksPerHeal>6000</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
-        </li>
-        <li Class="CompProperties_SpawnerHives" />
-        <li Class="CompProperties_Spawner">
-            <thingToSpawn>DankPyon_HornetHoney</thingToSpawn>
-            <spawnCount>5</spawnCount>
-            <spawnIntervalRange>26000~30000</spawnIntervalRange>
-            <spawnMaxAdjacent>20</spawnMaxAdjacent>
-            <spawnForbidden>true</spawnForbidden>
-            <saveKeysPrefix>jelly</saveKeysPrefix>
-        </li>
-        <li Class="CompProperties_HeatPusher">
-            <heatPerSecond>6</heatPerSecond>
-            <heatPushMaxTemperature>38</heatPushMaxTemperature>
-        </li>
-        <li Class="CompProperties_SpawnerFilth">
-            <filthDef>Filth_Slime</filthDef>
-            <spawnCountOnSpawn>10</spawnCountOnSpawn>
-            <spawnMtbHours>4</spawnMtbHours>
-            <spawnRadius>5</spawnRadius>
-        </li>
-        <li Class="CompProperties_Maintainable">
-            <ticksHealthy>60000</ticksHealthy>
-            <ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
-            <damagePerTickRare>10</damagePerTickRare>
-        </li>
-    </comps>
-  </ThingDef>
+	<ThingDef ParentName="BuildingNaturalBase" Name="DankPyon_HornetNestBase">
+		<defName>DankPyon_HornetNest</defName>
+		<label>hornet nest</label>
+		<description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable hornet honey.</description>
+		<thingClass>Hive</thingClass>
+		<graphicData>
+			<texPath>Natural/HornetNest</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>4,4</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>230</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<killedLeavings>
+			<InsectJelly>30</InsectJelly>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_CanBeDormant">
+				<startsDormant>true</startsDormant>
+				<canWakeUpFogged>false</canWakeUpFogged>
+			</li>
+			<li Class="CompProperties_WakeUpDormant"/>
+			<li Class="CompProperties_SpawnerPawn">
+				<spawnablePawnKinds>
+					<li>DankPyon_Deathstinger</li>
+				</spawnablePawnKinds>
+				<lordJob>LordJob_DefendAndExpandHive</lordJob>
+				<spawnSound>Hive_Spawn</spawnSound>
+				<initialPawnsPoints>200</initialPawnsPoints>
+				<maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
+			</li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal><!-- 60k ticks = 1 day, 10 hp per day -->
+			</li>
+			<li Class="CompProperties_SpawnerHives"/>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>DankPyon_HornetHoney</thingToSpawn>
+				<spawnCount>5</spawnCount>
+				<spawnIntervalRange>26000~30000</spawnIntervalRange>
+				<spawnMaxAdjacent>20</spawnMaxAdjacent>
+				<spawnForbidden>true</spawnForbidden>
+				<saveKeysPrefix>jelly</saveKeysPrefix>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>6</heatPerSecond>
+				<heatPushMaxTemperature>38</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_SpawnerFilth">
+				<filthDef>Filth_Slime</filthDef>
+				<spawnCountOnSpawn>10</spawnCountOnSpawn>
+				<spawnMtbHours>4</spawnMtbHours>
+				<spawnRadius>5</spawnRadius>
+			</li>
+			<li Class="CompProperties_Maintainable">
+				<ticksHealthy>60000</ticksHealthy>
+				<ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
+				<damagePerTickRare>10</damagePerTickRare>
+			</li>
+		</comps>
+	</ThingDef>
 
-</Defs> 
+</Defs>

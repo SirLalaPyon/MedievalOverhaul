@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<!-- ===== Dish ===== -->
 	<HediffDef>
 		<defName>DankPyon_AteRoxSteak</defName>
@@ -16,15 +17,15 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<hungerRateFactorOffset>-0.4</hungerRateFactorOffset>
 				<statOffsets>
 					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
 					<ImmunityGainSpeedFactor>0.40</ImmunityGainSpeedFactor>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>
@@ -70,15 +71,15 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<hungerRateFactorOffset>-0.4</hungerRateFactorOffset>
 				<statOffsets>
 					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
-					<ImmunityGainSpeedFactor>0.40</ImmunityGainSpeedFactor>	
-				</statOffsets> 
+					<ImmunityGainSpeedFactor>0.40</ImmunityGainSpeedFactor>
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>
@@ -124,13 +125,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
 					<WorkSpeedGlobal>0.20</WorkSpeedGlobal>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>
@@ -176,13 +177,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<hungerRateFactorOffset>-0.15</hungerRateFactorOffset>
 				<statOffsets>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -212,12 +213,12 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
-					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>				
+					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -248,13 +249,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
 					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -288,10 +289,10 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li> 
+			<li>
 				<hungerRateFactorOffset>-0.15</hungerRateFactorOffset>
 				<capMods>
 					<li>
@@ -326,13 +327,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
 					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -367,10 +368,10 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<hungerRateFactorOffset>-0.05</hungerRateFactorOffset>
 				<capMods>
 					<li>
@@ -405,10 +406,10 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
 				<capMods>
 					<li>
@@ -443,10 +444,10 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<hungerRateFactorOffset>-0.2</hungerRateFactorOffset>
 				<capMods>
 					<li>
@@ -482,13 +483,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
 					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -522,13 +523,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
 					<WorkSpeedGlobal>0.10</WorkSpeedGlobal>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -562,13 +563,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-2</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
 					<WorkSpeedGlobal>0.20</WorkSpeedGlobal>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -602,13 +603,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-1</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
 					<ImmunityGainSpeedFactor>0.05</ImmunityGainSpeedFactor>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>
@@ -642,13 +643,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-1</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
 					<ImmunityGainSpeedFactor>0.10</ImmunityGainSpeedFactor>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>
@@ -682,13 +683,13 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-1</severityPerDay>
 				<showHoursToRecover>true</showHoursToRecover>
-			  </li>
+			</li>
 		</comps>
 		<stages>
-			<li>  
+			<li>
 				<statOffsets>
 					<ImmunityGainSpeedFactor>0.20</ImmunityGainSpeedFactor>
-				</statOffsets> 
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>

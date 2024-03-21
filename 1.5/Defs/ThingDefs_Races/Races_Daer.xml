@@ -3,200 +3,200 @@
 
   
 
-  <!-- =========================The Big Bad============================= -->
+	<!-- =========================The Big Bad============================= -->
 
-  <ThingDef ParentName="AnimalThingBase">
-    <defName>DankPyon_Daer</defName>
-    <label>Daer</label>
-    <description>A fabled legend amongst commonfolk, a gigantic deer with with a body of a bear... or was it a bear with the horns of the deer, nevertheless, its maws does not discriminate for when the beast hungers for prey.\n\nA daer's caracass contain majestic antlers that can be recovered by butchering, as well as providing meat that gives a mood bonus.</description>
-    <statBases>
-      <MoveSpeed>5.6</MoveSpeed>
-      <MarketValue>4500</MarketValue>
-      <ComfyTemperatureMin>-65</ComfyTemperatureMin>
-      <ComfyTemperatureMax>50</ComfyTemperatureMax>
-      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.30</ArmorRating_Heat>
-      <FilthRate>24</FilthRate>
-      <PsychicSensitivity>0</PsychicSensitivity>
-      <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
-    </statBases>
-    <uiIconScale>1.75</uiIconScale>
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>DankPyon_Daer</defName>
+		<label>Daer</label>
+		<description>A fabled legend amongst commonfolk, a gigantic deer with with a body of a bear... or was it a bear with the horns of the deer, nevertheless, its maws does not discriminate for when the beast hungers for prey.\n\nA daer's caracass contain majestic antlers that can be recovered by butchering, as well as providing meat that gives a mood bonus.</description>
+		<statBases>
+			<MoveSpeed>5.6</MoveSpeed>
+			<MarketValue>4500</MarketValue>
+			<ComfyTemperatureMin>-65</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<FilthRate>24</FilthRate>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.75</uiIconScale>
 
-    <tools>
+		<tools>
 
-       <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>30.6</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.5</chanceFactor>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>30.6</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
 
-     <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>21</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
 
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>21</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
 
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>18</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
 
-    <race>
-      <herdAnimal>false</herdAnimal>
-      <predator>true</predator>
-      <maxPreyBodySize>4</maxPreyBodySize>
-      <body>QuadrupedAnimalWithPaws</body>
-      <baseHungerRate>1.05</baseHungerRate>
-      <baseBodySize>4.2</baseBodySize>
-      <baseHealthScale>9.0</baseHealthScale>
-      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-      <!--leatherDef>DankPyon_Leather_Daer</leatherDef-->
-      <wildness>0.99</wildness>
-      <trainability>Advanced</trainability>
-      <gestationPeriodDays>15</gestationPeriodDays>
-      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
-      <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
-      <lifeExpectancy>200</lifeExpectancy>
-      <willNeverEat>
-        <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
-      </willNeverEat>
-      <lifeStageAges>
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.75</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>1.332</minAge>
-          <soundCall>Pawn_Thrumbo_Call</soundCall>
-          <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
-          <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
-          <soundDeath>Pawn_Thrumbo_Death</soundDeath>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-    <tradeTags>
-      <li>AnimalExotic</li>
-    </tradeTags>
-    <butcherProducts>
-      <DankPyon_DaerAntler>2</DankPyon_DaerAntler>
-    </butcherProducts>
-  </ThingDef>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>4</maxPreyBodySize>
+			<body>QuadrupedAnimalWithPaws</body>
+			<baseHungerRate>1.05</baseHungerRate>
+			<baseBodySize>4.2</baseBodySize>
+			<baseHealthScale>9.0</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<!--leatherDef>DankPyon_Leather_Daer</leatherDef-->
+			<wildness>0.99</wildness>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>15</gestationPeriodDays>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
+			<lifeExpectancy>200</lifeExpectancy>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.75</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>1.332</minAge>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalExotic</li>
+		</tradeTags>
+		<butcherProducts>
+			<DankPyon_DaerAntler>2</DankPyon_DaerAntler>
+		</butcherProducts>
+	</ThingDef>
 
-  <PawnKindDef ParentName="AnimalKindBase">
-    <defName>DankPyon_Daer</defName>
-    <label>Daer</label>
-    <race>DankPyon_Daer</race>
-    <combatPower>700</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
-    <canArriveManhunter>false</canArriveManhunter>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Animal/Daer</texPath>
-          <drawSize>2.5</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.2)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-          <drawSize>2.5</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Animal/Daer</texPath>
-          <drawSize>4.0</drawSize>
-          <shadowData>
-            <volume>(0.7, 0.6, 0.4)</volume>
-            <offset>(0,0,-0.25)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-          <drawSize>4.0</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Animal/Daer</texPath>
-          <drawSize>4.8</drawSize>
-          <shadowData>
-            <volume>(1, 0.8, 0.5)</volume>
-            <offset>(0,0,-0.5)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-          <drawSize>4.8</drawSize>
-        </dessicatedBodyGraphicData>
-        <butcherBodyPart>
-          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
-          <thing>DankPyon_Hide_Daer</thing>
-        </butcherBodyPart>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DankPyon_Daer</defName>
+		<label>Daer</label>
+		<race>DankPyon_Daer</race>
+		<combatPower>700</combatPower>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Daer</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Daer</texPath>
+					<drawSize>4.0</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.6, 0.4)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<drawSize>4.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Daer</texPath>
+					<drawSize>4.8</drawSize>
+					<shadowData>
+						<volume>(1, 0.8, 0.5)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<drawSize>4.8</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+					<thing>DankPyon_Hide_Daer</thing>
+				</butcherBodyPart>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
   
 </Defs>

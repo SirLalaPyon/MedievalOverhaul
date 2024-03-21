@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- Abstract --> 
+	<!-- Abstract -->
 	<RecipeDef Name="DankPyon_Make_WortBase" Abstract="True">
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
@@ -11,7 +11,7 @@
 		<targetCountAdjustment>1</targetCountAdjustment>
 		<recipeUsers>
 			<li>Brewery</li>
-			<li>DankPyon_RusticCookingTable</li>			
+			<li>DankPyon_RusticCookingTable</li>
 		</recipeUsers>
 	</RecipeDef>
 
@@ -23,20 +23,20 @@
 		<workAmount>1000</workAmount>
 		<ingredients>
 			<li>
-			  <filter>
-				<thingDefs>
-				  <li>DankPyon_RawApples</li>
-				</thingDefs>
-			  </filter>
-			  <count>25</count>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawApples</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>			
+		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_RawApples</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<defaultIngredientFilter>			
+		<defaultIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_RawApples</li>
 			</thingDefs>
@@ -57,20 +57,20 @@
 		<workAmount>200</workAmount>
 		<ingredients>
 			<li>
-			  <filter>
-				<thingDefs>
-				  <li>DankPyon_JuiceApple</li>
-				</thingDefs>
-			  </filter>
-			  <count>5</count>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_JuiceApple</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>			
+		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_JuiceApple</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<defaultIngredientFilter>			
+		<defaultIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_JuiceApple</li>
 			</thingDefs>
@@ -91,20 +91,20 @@
 		<workAmount>1000</workAmount>
 		<ingredients>
 			<li>
-			  <filter>
-				<thingDefs>
-				  <li>DankPyon_RawWheat</li>
-				</thingDefs>
-			  </filter>
-			  <count>25</count>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawWheat</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>			
+		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_RawWheat</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<defaultIngredientFilter>			
+		<defaultIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_RawWheat</li>
 			</thingDefs>
@@ -121,34 +121,34 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-        <defName>DankPyon_MakeMustWine</defName>
-        <label>make grape must</label>
+		<defName>DankPyon_MakeMustWine</defName>
+		<label>make grape must</label>
 		<description>Make grape must by crushing grapes. Needs to undergo fermentation in order to become wine.</description>
 		<jobString>Making grape must.</jobString>
 		<workAmount>1000</workAmount>
-        <recipeUsers>
-            <li>Brewery</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>DankPyon_RawGrapes</li>
-                    </thingDefs>
-                </filter>
-                <count>25</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>DankPyon_RawGrapes</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <DankPyon_MustWine>5</DankPyon_MustWine>
-        </products>
+		<recipeUsers>
+			<li>Brewery</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawGrapes</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_RawGrapes</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_MustWine>5</DankPyon_MustWine>
+		</products>
 		<researchPrerequisites>
 			<li>Brewing</li>
 		</researchPrerequisites>
-    </RecipeDef>
+	</RecipeDef>
 </Defs>

@@ -152,4 +152,36 @@
 		</researchPrerequisites>
 	</RecipeDef>
 
+	<RecipeDef>
+		<defName>DankPyon_MakeMustMulberry</defName>
+		<label>make mulberry must</label>
+		<description>Make mulberry must by crushing mulberries. Needs to undergo fermentation in order to become wine.</description>
+		<jobString>Making mulberry must.</jobString>
+		<workAmount>1000</workAmount>
+		<recipeUsers>
+			<li>Brewery</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawMulberry</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_RawMulberry</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_MustWine_Mulberry>5</DankPyon_MustWine_Mulberry>
+		</products>
+		<researchPrerequisites>
+			<li>Brewing</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
 </Defs>

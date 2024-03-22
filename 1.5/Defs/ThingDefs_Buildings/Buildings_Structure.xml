@@ -530,7 +530,7 @@
 	<ThingDef ParentName="BuildingBase" Name="DankPyon_SpikeBase">
 		<defName>DankPyon_CavalrySpike</defName>
 		<label>wooden cavalry spikes</label>
-		<description>An organized collection of stakes designed to keep intruders out. n/n/Walking through the spikes can hurt pawns.</description>
+		<description>An organized collection of stakes designed to keep intruders out.\n\nWalking through the spikes can hurt pawns.</description>
 		<thingClass>Building_TrapDamager</thingClass>
 		<category>Building</category>
 		<graphicData>

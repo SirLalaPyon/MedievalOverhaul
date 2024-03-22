@@ -1325,7 +1325,7 @@
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelWoodLog</defName>
 		<label>barrel of wood</label>
-		<description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for wood to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelWoodLog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

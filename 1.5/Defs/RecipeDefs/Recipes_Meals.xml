@@ -3749,9 +3749,9 @@
 	<!-- Rox Steak Bulk -->
 	<RecipeDef>
 		<defName>DankPyon_CookMealRoxSteakBulk</defName>
-		<label>cook Rox steak x2</label>
+		<label>cook Rox steak x5</label>
 		<description>Cooks extravagant steaks from a Rox.</description>
-		<jobString>Cooking 2 rox steaks.</jobString>
+		<jobString>Cooking 5 rox steaks.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
@@ -4052,7 +4052,7 @@
 						<li>DankPyon_Salt</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>0.1</count>
 			</li>
 		</ingredients>
 		<products>
@@ -4135,7 +4135,7 @@
 						<li>DankPyon_Salt</li>
 					</thingDefs>
 				</filter>
-				<count>5</count>
+				<count>0.5</count>
 			</li>
 		</ingredients>
 		<products>
@@ -4214,7 +4214,6 @@
 			<Cooking>8</Cooking>
 		</skillRequirements>
 		<researchPrerequisite>Pemmican</researchPrerequisite>
-
 		<recipeUsers>
 			<li>DankPyon_StoneOven</li>
 		</recipeUsers>

@@ -97,4 +97,21 @@
     <extinguishesFire>true</extinguishesFire>
   </TerrainDef-->
 
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>IronTile</defName>
+    <label>iron tile</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Iron tiles, for that rugged look. They are quick to clean and get a small bonus to cleanliness for use in medical settings.</description>
+    <color>(0.3, 0.3, 0.3)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.1</Cleanliness>
+      <CleaningTimeFactor>0.65</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <DankPyon_IronIngot>7</DankPyon_IronIngot>
+    </costList>
+  </TerrainDef>
+
 </Defs>

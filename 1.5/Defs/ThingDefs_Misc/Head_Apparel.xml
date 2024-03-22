@@ -41,16 +41,13 @@ X
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.95</generateCommonality>
-
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
 		<smeltable>false</smeltable>
-
 		<costList>
 			<Cloth>20</Cloth>
 		</costList>
-
 		<statBases>
 			<WorkToMake>1200</WorkToMake>
 			<Mass>0.05</Mass>
@@ -90,16 +87,13 @@ X
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.95</generateCommonality>
-
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
-
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
-
 		<statBases>
 			<WorkToMake>2200</WorkToMake>
 			<Mass>0.07</Mass>
@@ -108,7 +102,6 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -139,16 +132,13 @@ X
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.95</generateCommonality>
-
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
-
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
-
 		<statBases>
 			<WorkToMake>2200</WorkToMake>
 			<Mass>0.07</Mass>
@@ -157,7 +147,6 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -188,16 +177,13 @@ X
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.50</generateCommonality>
-
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
-
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
-
 		<statBases>
 			<WorkToMake>2200</WorkToMake>
 			<Mass>0.15</Mass>
@@ -206,7 +192,6 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -238,7 +223,6 @@ X
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.95</generateCommonality>
-
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
@@ -247,7 +231,6 @@ X
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
-
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.20</Mass>
@@ -256,7 +239,6 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -290,16 +272,13 @@ X
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.25</generateCommonality>
-
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
-
 		<costStuffCount>55</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
-
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
 			<Mass>0.5</Mass>
@@ -312,7 +291,6 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -354,7 +332,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>140</MaxHitPoints>
@@ -367,20 +344,16 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
-
 		<costList>
 			<Cloth>10</Cloth>
 		</costList>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/PaddedNasal/PaddedNasal</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -420,7 +393,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>140</MaxHitPoints>
@@ -433,7 +405,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -441,7 +412,6 @@ X
 		<costList>
 			<Cloth>10</Cloth>
 		</costList>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -486,7 +456,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>140</MaxHitPoints>
@@ -499,21 +468,16 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
-
 		<costList>
 			<Cloth>10</Cloth>
 		</costList>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/PaddedFlatTop/PaddedFlatTop</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -554,7 +518,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
 			<MaxHitPoints>125</MaxHitPoints>
@@ -564,12 +527,10 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
-    
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -611,7 +572,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-    
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
 			<MaxHitPoints>125</MaxHitPoints>
@@ -621,16 +581,13 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
 			<tags>
@@ -668,7 +625,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
 			<MaxHitPoints>125</MaxHitPoints>
@@ -678,16 +634,13 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>65</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ChainCoifFull/ChainCoifFull</wornGraphicPath>
 			<tags>
@@ -739,16 +692,13 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-    
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-    
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ChainNasal/ChainNasal</wornGraphicPath>
 			<tags>
@@ -786,7 +736,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -799,16 +748,13 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-    
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ChainNasalRed/ChainNasalRed</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -848,7 +794,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -861,16 +806,13 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-    
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ChainKettle/ChainKettle</wornGraphicPath>
 			<tags>
@@ -908,7 +850,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -921,16 +862,13 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-    
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
 			<tags>
@@ -952,7 +890,7 @@ X
 		<label>closed chain flat-top</label>
 		<description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
 		<graphicData>
-			<texPath>Headgear/ChainFlatTop/ChainFlatTop</texPath>
+			<texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -967,7 +905,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -980,18 +917,15 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-    
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
-			<wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
+			<wornGraphicPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandLeader</li>
 				<li>DankPyon_FootmanHelmet</li>
@@ -1026,7 +960,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>18000</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -1039,12 +972,10 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -1084,7 +1015,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -1097,12 +1027,10 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -1142,7 +1070,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -1155,12 +1082,10 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -1190,7 +1115,6 @@ X
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
-
 		<recipeMaker>
 			<recipeUsers>
 				<li>ElectricSmithy</li>
@@ -1202,7 +1126,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>18000</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -1216,16 +1139,13 @@ X
 			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<costList>
 			<Cloth>55</Cloth>
 		</costList>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -1251,11 +1171,9 @@ X
 			<texPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
 		</recipeMaker>
-
 		<apparel>
 			<wornGraphicPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</wornGraphicPath>
 			<tags>
@@ -1271,11 +1189,9 @@ X
 			<texPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
 		</recipeMaker>
-
 		<apparel>
 			<wornGraphicPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</wornGraphicPath>
 			<tags>
@@ -1291,11 +1207,9 @@ X
 			<texPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
 		</recipeMaker>
-
 		<apparel>
 			<wornGraphicPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</wornGraphicPath>
 			<tags>
@@ -1311,11 +1225,9 @@ X
 			<texPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
 		</recipeMaker>
-
 		<apparel>
 			<wornGraphicPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</wornGraphicPath>
 			<tags>
@@ -1401,7 +1313,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -1416,16 +1327,13 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/BascinetHelmet/BascinetHelmet</wornGraphicPath>
 			<tags>
@@ -1461,7 +1369,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -1476,16 +1383,13 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/WolfBascinet/WolfBascinet</wornGraphicPath>
 			<tags>
@@ -1521,7 +1425,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -1536,16 +1439,13 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</wornGraphicPath>
 			<tags>
@@ -1641,7 +1541,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -1656,12 +1555,10 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -1688,7 +1585,6 @@ X
 			<texPath>Headgear/SalletBellowFace/SalletBellowFace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-    
 		<apparel>
 			<wornGraphicPath>Headgear/SalletBellowFace/SalletBellowFace</wornGraphicPath>
 		</apparel>
@@ -1702,7 +1598,6 @@ X
 			<texPath>Headgear/SalletGryphon/SalletGryphon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-    
 		<apparel>
 			<wornGraphicPath>Headgear/SalletGryphon/SalletGryphon</wornGraphicPath>
 		</apparel>
@@ -1728,7 +1623,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -1743,12 +1637,10 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
@@ -1847,7 +1739,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -1862,16 +1753,13 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/GreatHelm/GreatHelm</wornGraphicPath>
 			<tags>
@@ -2026,7 +1914,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -2041,17 +1928,14 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.1</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-
 			<wornGraphicPath>Headgear/HeraldicHelm1/HeraldicHelm1</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
@@ -2081,7 +1965,6 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-
 		<apparel>
 			<wornGraphicPath>Headgear/HeraldicHelm2/HeraldicHelm2</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -2100,7 +1983,6 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-
 		<apparel>
 			<wornGraphicPath>Headgear/HeraldicHelm3/HeraldicHelm3</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -2119,7 +2001,6 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-
 		<apparel>
 			<wornGraphicPath>Headgear/HeraldicHelm4/HeraldicHelm4</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -2150,7 +2031,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>25000</WorkToMake>
 			<MaxHitPoints>270</MaxHitPoints>
@@ -2164,16 +2044,13 @@ X
 			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/Armet/Armet</wornGraphicPath>
 			<tags>
@@ -2210,7 +2087,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>25000</WorkToMake>
 			<MaxHitPoints>270</MaxHitPoints>
@@ -2225,7 +2101,6 @@ X
 			<PainShockThreshold>0.15</PainShockThreshold>
 			<SocialImpact>0.35</SocialImpact>
 		</equippedStatOffsets>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -2233,11 +2108,9 @@ X
 		<costList>
 			<Gold>2</Gold>
 		</costList>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ArmetGilded/ArmetGilded</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -2271,7 +2144,6 @@ X
 				<Crafting>16</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-
 		<statBases>
 			<MarketValue>3940</MarketValue>
 			<WorkToMake>25000</WorkToMake>
@@ -2289,16 +2161,13 @@ X
 			<PainShockThreshold>0.15</PainShockThreshold>
 			<SocialImpact>0.35</SocialImpact>
 		</equippedStatOffsets>
-
 		<costList>
 			<Gold>2</Gold>
 			<Plasteel>80</Plasteel>
 		</costList>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ArmetNamed/ArmetNamed</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -2312,7 +2181,6 @@ X
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-
 		<comps Inherit="False">
 			<li Class="CompProperties_Styleable"/>
 			<li Class="CompProperties_Forbiddable"/>

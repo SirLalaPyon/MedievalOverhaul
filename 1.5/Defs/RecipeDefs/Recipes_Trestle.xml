@@ -7,7 +7,6 @@
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
-
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking><!--Replace with sawing wood sfx-->
 		<targetCountAdjustment>20</targetCountAdjustment>
@@ -21,8 +20,8 @@
 		<label>make any timber</label>
 		<description>Cut raw wood into timber.</description>
 		<jobString>Cutting timber from raw wood.</jobString>
-		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass><!--Make custom counter-->
-
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
+		<workAmount Inherit="False">30</workAmount>
 		<ingredients>
 			<li>
 				<filter>

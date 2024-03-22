@@ -1,10 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  
-
 	<!-- =========================The Big Bad============================= -->
-
 	<ThingDef ParentName="AnimalThingBase" Name="DankPyon_LargeCobraBase">
 		<defName>DankPyon_LargeCobraForest</defName>
 		<label>large cobra</label>
@@ -16,7 +13,6 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<uiIconScale>1.5</uiIconScale>
-
 		<tools>
 			<li>
 				<label>venom-fangs</label>
@@ -47,7 +43,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggLargeForestCobraFertilized</eggFertilizedDef>
@@ -57,7 +52,6 @@
 				<eggCountRange>1~2</eggCountRange>
 			</li>
 		</comps>
-
 		<race>
 			<body>Snake</body>
 			<leatherDef>Leather_Rhinoceros</leatherDef><!-- Rhino is turned into heavy scale leather -->
@@ -153,7 +147,6 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<uiIconScale>1.5</uiIconScale>
-
 		<comps Inherit="False">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggLargeCobraCaveFertilized</eggFertilizedDef>
@@ -163,7 +156,6 @@
 				<eggCountRange>1~2</eggCountRange>
 			</li>
 		</comps>
-
 		<race>
 			<body>Snake</body>
 			<predator>true</predator>
@@ -216,7 +208,6 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-  
 
 	<ThingDef ParentName="AnimalThingBase" Name="DankPyon_GiantConstrictorBase">
 		<defName>DankPyon_GiantConstrictorForest</defName>
@@ -229,7 +220,6 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<uiIconScale>1.6</uiIconScale>
-
 		<tools>
 			<li>
 				<capacities>
@@ -251,7 +241,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggConstrictorForestFertilized</eggFertilizedDef>
@@ -261,7 +250,6 @@
 				<eggCountRange>1~2</eggCountRange>
 			</li>
 		</comps>
-
 		<race>
 			<body>Snake</body>
 			<leatherDef>Leather_Rhinoceros</leatherDef><!-- Rhino is turned into heavy scale leather -->
@@ -436,7 +424,6 @@
 			<ArmorRating_Heat>0.62</ArmorRating_Heat>
 		</statBases>
 		<uiIconScale>1.6</uiIconScale>
-
 		<tools>
 			<li>
 				<capacities>
@@ -509,7 +496,6 @@
 				</surpriseAttack>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggLindwurmForestFertilized</eggFertilizedDef>
@@ -519,7 +505,6 @@
 				<eggCountRange>1~2</eggCountRange>
 			</li>
 		</comps>
-
 		<race>
 			<body>DankPyon_LindwurmBody</body>
 			<predator>true</predator>

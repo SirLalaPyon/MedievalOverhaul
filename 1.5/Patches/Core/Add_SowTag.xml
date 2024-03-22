@@ -2,7 +2,7 @@
 <Patch>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/TerrainDef[defName="Soil" or defName="MarshyTerrain" or defName="MossyTerrain" or defName="Gravel"]/affordances</xpath>
+        <xpath>/Defs/TerrainDef[defName="Soil" or defName="SoilRich" or defName="MarshyTerrain" or defName="MossyTerrain" or defName="Gravel"]/affordances</xpath>
         <value>
             <li>DankPyon_GrowSoilVine</li>
         </value>

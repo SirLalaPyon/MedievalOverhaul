@@ -153,12 +153,10 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -180,7 +178,7 @@
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>1</capacity>
 				<independentProcesses>false</independentProcesses>
-				<parallelProcesses>false</parallelProcesses>
+				<parallelProcesses>true</parallelProcesses>
 				<dropIngredients>true</dropIngredients>
 				<showProductIcon>true</showProductIcon>
 				<barOffset>(0.0, 0.25)</barOffset>
@@ -192,9 +190,7 @@
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
-      
 		<tickerType>Rare</tickerType>
-
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
@@ -220,12 +216,10 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -242,7 +236,6 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>1</capacity>
@@ -268,7 +261,6 @@
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
-
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
@@ -281,9 +273,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 		</comps>
-    
 		<tickerType>Rare</tickerType>
-
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>

@@ -486,10 +486,10 @@
 		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
 		<speedBelowSafe>0.1</speedBelowSafe>
 		<speedAboveSafe>1.0</speedAboveSafe>
-		<sunFactor>1.0~1.0</sunFactor>
+		<sunFactor>0.5~1.0</sunFactor>
 		<rainFactor>1.0~0.0</rainFactor>
 		<snowFactor>1.0~0.0</snowFactor>
-		<windFactor>1.0~1.0</windFactor>
+		<windFactor>0.75~1.25</windFactor>
 		<unpoweredFactor>0.0</unpoweredFactor>
 		<unfueledFactor>0.0</unfueledFactor>
 		<powerUseFactor>1.0</powerUseFactor>
@@ -512,6 +512,7 @@
   </ingredientFilter>
 </ProcessorFramework.ProcessDef-->
 
+	<!-- Rawhides -->
 	<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
 		<defName>DankPyon_RawHidesProcess</defName>
 		<thingDef>DankPyon_Leather_Rawhide</thingDef>
@@ -520,7 +521,84 @@
 				<li>DankPyon_Hides</li>
 			</categories>
 		</ingredientFilter>
+		<modExtensions>
+			<li Class="MedievalOverhaul.ProcessorExtension">
+				<outputOnlyButcherProduct>true</outputOnlyButcherProduct>
+			</li>
+		</modExtensions>
 	</ProcessorFramework.ProcessDef>
+	
+	<!--ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+		<defName>DankPyon_RawHidesProcess_Tiny</defName>
+		<thingDef>DankPyon_Leather_Rawhide</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>DankPyon_TinyHides</li>
+			</categories>
+		</ingredientFilter>
+		<efficiency>15.0</efficiency>
+		<capacityFactor>15.0</capacityFactor>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+		<defName>DankPyon_RawHidesProcess_Small</defName>
+		<thingDef>DankPyon_Leather_Rawhide</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>DankPyon_SmallHides</li>
+			</categories>
+		</ingredientFilter>
+		<efficiency>20.0</efficiency>
+		<capacityFactor>20.0</capacityFactor>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+		<defName>DankPyon_RawHidesProcess_Medium</defName>
+		<thingDef>DankPyon_Leather_Rawhide</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>DankPyon_MediumHides</li>
+			</categories>
+		</ingredientFilter>
+		<efficiency>25.0</efficiency>
+		<capacityFactor>25.0</capacityFactor>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+		<defName>DankPyon_RawHidesProcess_Generic</defName>
+		<thingDef>DankPyon_Leather_Rawhide</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>DankPyon_GenericHides</li>
+			</categories>
+		</ingredientFilter>
+		<efficiency>25.0</efficiency>
+		<capacityFactor>25.0</capacityFactor>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+		<defName>DankPyon_RawHidesProcess_Large</defName>
+		<thingDef>DankPyon_Leather_Rawhide</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>DankPyon_LargeHides</li>
+			</categories>
+		</ingredientFilter>
+		<efficiency>30.0</efficiency>
+		<capacityFactor>30.0</capacityFactor>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
+		<defName>DankPyon_RawHidesProcess_Huge</defName>
+		<thingDef>DankPyon_Leather_Rawhide</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>DankPyon_HugeHides</li>
+			</categories>
+		</ingredientFilter>
+		<efficiency>60.0</efficiency>
+		<capacityFactor>60.0</capacityFactor>
+	</ProcessorFramework.ProcessDef-->
 
 	<ProcessorFramework.ProcessDef ParentName="DankPyon_BaseHidesProcess">
 		<defName>DankPyon_HidesProcess</defName>

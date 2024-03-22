@@ -327,29 +327,20 @@ namespace MedievalOverhaul
             }
             return true;
         }
-        public static void Postfix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
-        {
-            if (activeProcess.processDef == MedievalOverhaulDefOf.DankPyon_RawHidesProcess)
-            {
-                foreach (var thing in activeProcess.ingredientThings)
-                {
-                    var comp = thing.TryGetComp<CompGenericHide>();
-                    if (comp != null)
-                    {
-                        __result.stackCount = comp.leatherAmount;
-                    }
-                }
-            }
-        }
-
-
 
         public static Thing TakeOutButcherProduct(CompProcessor __instance, ThingDefCountClass thingDefCount, ActiveProcess activeProcess)
         {
             Thing thing = null;
             if (!activeProcess.Ruined)
             {
-                thing = ThingMaker.MakeThing(thingDefCount.thingDef);
+                if (activeProcess.processDef == MedievalOverhaulDefOf.DankPyon_RawHidesProcess)
+                {
+                    thing = ThingMaker.MakeThing(MedievalOverhaulDefOf.DankPyon_Leather_Rawhide);
+                }
+                else
+                {
+                    thing = ThingMaker.MakeThing(thingDefCount.thingDef);
+                }
                 thing.stackCount = thingDefCount.count;
                 CompIngredients compIngredients = thing.TryGetComp<CompIngredients>();
                 List<ThingDef> list = new List<ThingDef>();

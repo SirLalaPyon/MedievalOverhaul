@@ -35,14 +35,13 @@
 				<count>1</count>
 			</li>
 		</ingredients>
-	
 		<products>
 			<DankPyon_Tallow>1</DankPyon_Tallow>
 		</products>
-	
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_Tallow</li>
+				<li>DankPyon_Salt</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workSkill>Cooking</workSkill>
@@ -84,11 +83,9 @@
 				<count>5</count>
 			</li>
 		</ingredients>
-	
 		<products>
 			<DankPyon_Tallow>5</DankPyon_Tallow>
 		</products>
-	
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_Tallow</li>
@@ -123,11 +120,9 @@
 				<count>1</count>
 			</li>
 		</ingredients>
-	
 		<products>
 			<DankPyon_Spices>1</DankPyon_Spices>
 		</products>
-	
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_RawHerb</li>
@@ -161,11 +156,9 @@
 				<count>10</count>
 			</li>
 		</ingredients>
-	
 		<products>
 			<DankPyon_Spices>10</DankPyon_Spices>
 		</products>
-	
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_RawHerb</li>
@@ -203,11 +196,9 @@
 				<count>10</count>
 			</li>
 		</ingredients>
-
 		<products>
 			<DankPyon_MealBoneSoup>1</DankPyon_MealBoneSoup>
 		</products>
-
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_Bone</li>
@@ -244,11 +235,9 @@
 				<count>50</count>
 			</li>
 		</ingredients>
-
 		<products>
 			<DankPyon_MealBoneSoup>5</DankPyon_MealBoneSoup>
 		</products>
-
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_Bone</li>
@@ -304,7 +293,7 @@
 			<li>DankPyon_StoneOven</li>
 		</recipeUsers>
 	</RecipeDef>
-	
+
 	<!-- Bread Bulk -->
 	<RecipeDef>
 		<defName>DankPyon_BakeBreadBulk</defName>
@@ -422,6 +411,9 @@
 			<DankPyon_Sausages>1</DankPyon_Sausages>
 		</products>
 		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Spices</li>
+			</thingDefs>
 			<categories>
 				<li>MeatRaw</li>
 			</categories>
@@ -429,6 +421,23 @@
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter Inherit="False">
+			<thingDefs>
+				<li>DankPyon_Spices</li>
+			</thingDefs>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
 		<workAmount>200</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
@@ -472,6 +481,9 @@
 			<DankPyon_Sausages>10</DankPyon_Sausages>
 		</products>
 		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Spices</li>
+			</thingDefs>
 			<categories>
 				<li>MeatRaw</li>
 			</categories>
@@ -479,6 +491,23 @@
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter Inherit="False">
+			<thingDefs>
+				<li>DankPyon_Spices</li>
+			</thingDefs>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
 		<workAmount>2000</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
@@ -542,6 +571,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<li>Milk</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -600,6 +630,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<li>Milk</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -677,6 +708,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<li>Milk</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -755,6 +787,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<li>Milk</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -819,6 +852,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<li>Milk</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -877,6 +911,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<li>Milk</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -907,15 +942,16 @@
 				<filter>
 					<thingDefs>
 						<li>RawPotatoes</li>
+						<li MayRequire="ludeon.rimworld.biotech">RawToxipotato</li>
 					</thingDefs>
 				</filter>
 				<count>0.45</count>
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>0.05</count>
 			</li>
@@ -924,8 +960,12 @@
 			<DankPyon_MealMashedPotatoes>1</DankPyon_MealMashedPotatoes>
 		</products>
 		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+				<li MayRequire="ludeon.rimworld.biotech">RawToxipotato</li>
+			</thingDefs>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -942,6 +982,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -975,15 +1016,16 @@
 				<filter>
 					<thingDefs>
 						<li>RawPotatoes</li>
+						<li MayRequire="ludeon.rimworld.biotech">RawToxipotato</li>
 					</thingDefs>
 				</filter>
 				<count>2.25</count>
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>0.25</count>
 			</li>
@@ -992,8 +1034,12 @@
 			<DankPyon_MealMashedPotatoes>5</DankPyon_MealMashedPotatoes>
 		</products>
 		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+				<li MayRequire="ludeon.rimworld.biotech">RawToxipotato</li>
+			</thingDefs>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -1010,6 +1056,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1070,6 +1117,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1127,6 +1175,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1185,6 +1234,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1242,6 +1292,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1300,6 +1351,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1357,6 +1409,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1405,26 +1458,19 @@
 			<DankPyon_MealPumpkinFritters>3</DankPyon_MealPumpkinFritters>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -1469,26 +1515,19 @@
 			<DankPyon_MealPumpkinFritters>6</DankPyon_MealPumpkinFritters>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -1542,26 +1581,21 @@
 			<DankPyon_MealBoiledBeansAndOnion>1</DankPyon_MealBoiledBeansAndOnion>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>DankPyon_RawLentils</li>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawLentils</li>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -1615,26 +1649,21 @@
 			<DankPyon_MealBoiledBeansAndOnion>5</DankPyon_MealBoiledBeansAndOnion>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>DankPyon_RawLentils</li>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawLentils</li>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -1682,16 +1711,22 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
 			</disallowedCategories>
@@ -1699,6 +1734,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1747,16 +1783,22 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
 			</disallowedCategories>
@@ -1764,6 +1806,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1838,16 +1881,28 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawCabbages</li>
+				<li>DankPyon_RawCarrots</li>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawCabbages</li>
+				<li>DankPyon_RawCarrots</li>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
 			</disallowedCategories>
@@ -1855,6 +1910,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<li>Milk</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1931,16 +1987,28 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawCabbages</li>
+				<li>DankPyon_RawCarrots</li>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawCabbages</li>
+				<li>DankPyon_RawCarrots</li>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
 			</disallowedCategories>
@@ -1948,6 +2016,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<li>Milk</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -1976,7 +2045,6 @@
 		<workAmount>150</workAmount>
 		<recipeUsers>
 			<li>DankPyon_RusticCookingTable</li>
-			  	  
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -2001,25 +2069,22 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>PlantFoodRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_MealBread</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>PlantFoodRaw</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_MealBread</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -2066,25 +2131,22 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>PlantFoodRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_MealBread</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>PlantFoodRaw</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_MealBread</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -2138,26 +2200,21 @@
 			<DankPyon_MealApplePie>1</DankPyon_MealApplePie>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>DankPyon_Flour</li>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_RawApples</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_Flour</li>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_RawApples</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>6</Cooking>
@@ -2214,26 +2271,21 @@
 			<DankPyon_MealApplePie>5</DankPyon_MealApplePie>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>DankPyon_Flour</li>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_RawApples</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_Flour</li>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_RawApples</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>8</Cooking>
@@ -2299,26 +2351,23 @@
 			<DankPyon_MealHuntersStew>4</DankPyon_MealHuntersStew>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>DankPyon_Sausages</li>
+				<li>DankPyon_RawCabbages</li>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_Sausages</li>
+				<li>DankPyon_RawCabbages</li>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>6</Cooking>
@@ -2383,26 +2432,23 @@
 			<DankPyon_MealHuntersStew>8</DankPyon_MealHuntersStew>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>DankPyon_Sausages</li>
+				<li>DankPyon_RawCabbages</li>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_Sausages</li>
+				<li>DankPyon_RawCabbages</li>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>8</Cooking>
@@ -2433,9 +2479,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>DankPyon_MealCheese</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Cheese</li>
+					</categories>
 				</filter>
 				<count>0.4</count>
 			</li>
@@ -2445,7 +2491,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Cheese</li>
 			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -2453,17 +2499,8 @@
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Cheese</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>3</Cooking>
@@ -2492,9 +2529,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>DankPyon_MealCheese</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Cheese</li>
+					</categories>
 				</filter>
 				<count>2</count>
 			</li>
@@ -2504,7 +2541,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Cheese</li>
 			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -2512,17 +2549,8 @@
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Cheese</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>5</Cooking>
@@ -2569,9 +2597,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>0.5</count>
 			</li>
@@ -2588,16 +2616,26 @@
 			<DankPyon_MealQuiche>1</DankPyon_MealQuiche>
 		</products>
 		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>MeatRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>MeatRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
@@ -2606,7 +2644,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
-				<!--li>Milk</li-->
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
@@ -2653,9 +2691,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>2.5</count>
 			</li>
@@ -2672,16 +2710,26 @@
 			<DankPyon_MealQuiche>5</DankPyon_MealQuiche>
 		</products>
 		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>MeatRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>MeatRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
@@ -2690,7 +2738,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
-				<!--li>Milk</li-->
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
@@ -2739,9 +2787,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>0.05</count>
 			</li>
@@ -2759,25 +2807,26 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>DankPyon_Milk</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>DankPyon_Milk</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>5</Cooking>
@@ -2822,9 +2871,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>0.25</count>
 			</li>
@@ -2842,25 +2891,26 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>DankPyon_Milk</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>DankPyon_Milk</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>8</Cooking>
@@ -2919,25 +2969,24 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawTomatoes</li>
+				<li>DankPyon_RawOnions</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawTomatoes</li>
+				<li>DankPyon_RawOnions</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -2991,25 +3040,24 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawTomatoes</li>
+				<li>DankPyon_RawOnions</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawTomatoes</li>
+				<li>DankPyon_RawOnions</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -3044,9 +3092,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>0.6</count>
 			</li>
@@ -3056,25 +3104,22 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -3109,9 +3154,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>1.2</count>
 			</li>
@@ -3121,25 +3166,22 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -3183,9 +3225,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>0.3</count>
 			</li>
@@ -3195,25 +3237,24 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -3256,9 +3297,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Milk</li>
+					</categories>
 				</filter>
 				<count>0.6</count>
 			</li>
@@ -3268,25 +3309,24 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Milk</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_RawPumpkins</li>
+				<li>DankPyon_Flour</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -3316,9 +3356,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>DankPyon_MealCheese</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Cheese</li>
+					</categories>
 				</filter>
 				<count>0.4</count>
 			</li>
@@ -3344,25 +3384,24 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Cheese</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_Ale</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Cheese</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_Ale</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -3388,9 +3427,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>DankPyon_MealCheese</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Cheese</li>
+					</categories>
 				</filter>
 				<count>1.2</count>
 			</li>
@@ -3416,25 +3455,24 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Cheese</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_Ale</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>DankPyon_Cheese</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<!--li>Milk</li-->
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_Ale</li>
+				<li>DankPyon_RawGarlic</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -3497,16 +3535,26 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_Salt</li>
+				<li>DankPyon_Wine</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_Salt</li>
+				<li>DankPyon_Wine</li>
+			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
 			</disallowedCategories>
@@ -3514,6 +3562,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -3577,16 +3626,26 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_Salt</li>
+				<li>DankPyon_Wine</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>MeatRaw</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_RawOnions</li>
+				<li>DankPyon_Salt</li>
+				<li>DankPyon_Wine</li>
+			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
 			</disallowedCategories>
@@ -3594,6 +3653,7 @@
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 				<!--li>Milk</li-->
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -3655,17 +3715,21 @@
 			<DankPyon_MealRoxSteak>1</DankPyon_MealRoxSteak>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>Meat_DankPyon_Rox</li>
+				<li>DankPyon_Ale</li>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>Meat_DankPyon_Rox</li>
+				<li>DankPyon_Ale</li>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
 			</disallowedCategories>
@@ -3730,17 +3794,21 @@
 			<DankPyon_MealRoxSteak>5</DankPyon_MealRoxSteak>
 		</products>
 		<fixedIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>Meat_DankPyon_Rox</li>
+				<li>DankPyon_Ale</li>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<categories>
-				<li>FoodRaw</li>
-			</categories>
+			<thingDefs>
+				<li>Meat_DankPyon_Rox</li>
+				<li>DankPyon_Ale</li>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
 			</disallowedCategories>
@@ -3820,25 +3888,28 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_GriffonBerry</li>
+				<li>DankPyon_Flour</li>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_RawLemons</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_GriffonBerry</li>
+				<li>DankPyon_Flour</li>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_RawLemons</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>10</Cooking>
@@ -3912,25 +3983,28 @@
 		</products>
 		<fixedIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
 			</categories>
+			<thingDefs>
+				<li>DankPyon_GriffonBerry</li>
+				<li>DankPyon_Flour</li>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_RawLemons</li>
+			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>FoodRaw</li>
+				<li>EggsUnfertilized</li>
 			</categories>
-			<disallowedCategories>
-				<li>EggsFertilized</li>
-			</disallowedCategories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-				<li>Meat_Megaspider</li>
-				<li>InsectJelly</li>
-				<li>Milk</li>
-			</disallowedThingDefs>
+			<thingDefs>
+				<li>DankPyon_GriffonBerry</li>
+				<li>DankPyon_Flour</li>
+				<li>DankPyon_Sugar</li>
+				<li>DankPyon_RawLemons</li>
+			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>12</Cooking>
@@ -3984,6 +4058,38 @@
 		<products>
 			<DankPyon_MealRations>1</DankPyon_MealRations>
 		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+				<li>PlantFoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+				<li>PlantFoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>8</Cooking>
 		</skillRequirements>
@@ -4035,11 +4141,42 @@
 		<products>
 			<DankPyon_MealRations>5</DankPyon_MealRations>
 		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+				<li>PlantFoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+				<li>PlantFoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>DankPyon_Salt</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>10</Cooking>
 		</skillRequirements>
 		<researchPrerequisite>Pemmican</researchPrerequisite>
-
 		<recipeUsers>
 			<li>DankPyon_RusticCookingTable</li>
 		</recipeUsers>

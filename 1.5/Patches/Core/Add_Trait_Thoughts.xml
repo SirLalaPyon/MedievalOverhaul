@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThoughtDef[defName="ObservedLayingCorpse" or defName="KnowPrisonerDiedInnocent" or defName="PawnWithGoodOpinionDied"]/nullifyingTraits</xpath>
         <value>
@@ -14,4 +15,5 @@
             <li>DankPyon_Veteran</li>
         </value>
     </Operation>
+
 </Patch>

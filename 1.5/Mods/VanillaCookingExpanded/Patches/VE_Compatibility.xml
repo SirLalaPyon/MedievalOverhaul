@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--Adding MO research prerequisites to vanilla meals-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[starts-with(@Name, "CookMealFine")]</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_BasicCooking</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[starts-with(@Name, "CookMealLavish")]</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_IntermediateCooking</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!--Adding MO research prerequisites to VCE gourmet meal-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="VCE_CookMealGourmet"]</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_AdvancedCooking</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!--Adding MO research prerequisites to VCE baking recipes-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[contains(defName, "VCE_CookBakeFine")]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_BasicCooking</li>
+				<li>DankPyon_Oven</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[contains(defName, "VCE_CookBakeLavish")]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_IntermediateCooking</li>
+				<li>DankPyon_Oven</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="VCE_CookBakeGourmet"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_AdvancedCooking</li>
+				<li>DankPyon_Oven</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<!--Adding MO research prerequisites to VCE grill recipes-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[contains(defName, "VCE_CookGrillFine")]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_BasicCooking</li>
+				<li>DankPyon_Grill</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[starts-with(defName, "VCE_CookGrillLavish")]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_IntermediateCooking</li>
+				<li>DankPyon_Grill</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="VCE_CookGrillGourmet"]</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_AdvancedCooking</li>
+				<li>DankPyon_Grill</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<!--Adding MO research prerequisites to VCE desserts-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[contains(defName, "VCE_CookDessertFine")]</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_BasicCooking</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[contains(defName, "VCE_CookDessertLavish")]</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_IntermediateCooking</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="VCE_CookDessertGourmet"]</xpath>
+		<value>
+			<researchPrerequisite>DankPyon_AdvancedCooking</researchPrerequisite>
+		</value>
+	</Operation>
+
+	<!--Adding MO research prerequisites to VCE soups-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="VCE_CookSoupFine"]/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_BasicCooking</li>
+				<li>VCE_SoupCooking</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="VCE_CookSoupLavish"]/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_IntermediateCooking</li>
+				<li>VCE_SoupCooking</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="VCE_CookSoupGourmet"]/researchPrerequisite</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_AdvancedCooking</li>
+				<li>VCE_SoupCooking</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+</Patch>

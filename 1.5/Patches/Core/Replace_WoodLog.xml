@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!--Thanks to owlchemist for giving permission to use his patches-->
-
 
 	<!--Replace every vanilla woodlog to drop Medieval Overhaul raw wood-->
 	<Operation Class="PatchOperationReplace">
@@ -11,11 +9,10 @@
 			</value>
 	</Operation>
 
-	
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="WoodLog"]/*[name()="label" or name()="description" or name()="graphicData" or name()="thingCategories"]</xpath>
 	</Operation>
-			
+
 	<!--Replace every vanilla woodlog to drop Medieval Overhaul raw wood-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="WoodLog"]</xpath>
@@ -47,19 +44,6 @@
 		<value>
 			<li>DankPyon_RawWood</li>
 		</value>
-	</Operation>
-
-	<!--Make buildings require raw wood from other mods-->
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Ideology</li>
-		</mods>
-		<match Class="PatchOperationSetName">
-			<xpath>Defs/ThingDef[defName="ChristmasTree" or 
-				defName="SacrificialFlag" or 
-				defName="IncenseShrine"]/costList/WoodLog</xpath>
-			<name>DankPyon_RawWood</name>
-		</match>
 	</Operation>
 
 	<Operation Class="PatchOperationFindMod">

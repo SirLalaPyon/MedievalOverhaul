@@ -1325,7 +1325,7 @@
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelWoodLog</defName>
 		<label>barrel of wood</label>
-		<description>A cylindrical barrel reserved for wood to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for wood to save space. Can hold up to 4 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelWoodLog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1373,7 +1373,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelIronOre</defName>
 		<label>barrel of iron ore</label>
-		<description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 5 stacks of iron ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 4 stacks of iron ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelIronOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1406,7 +1406,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelSilverOre</defName>
 		<label>barrel of silver ore</label>
-		<description>A cylindrical barrel reserved for silver ore to save space. Can hold up to 5 stacks of silver ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for silver ore to save space. Can hold up to 4 stacks of silver ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelSilverOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1439,7 +1439,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelGoldOre</defName>
 		<label>barrel of gold ore</label>
-		<description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 5 stacks of gold ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 4 stacks of gold ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelGoldOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1472,7 +1472,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelCoalOre</defName>
 		<label>barrel of coal ore</label>
-		<description>A cylindrical barrel reserved for coal ore to save space. Can hold up to 5 stacks of coal ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for coal ore to save space. Can hold up to 4 stacks of coal ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelCoalOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1505,7 +1505,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelTextiles</defName>
 		<label>barrel of textiles</label>
-		<description>A cylindrical barrel reserved for textiles to save space. Can hold up to 5 stacks of textiles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for textiles to save space. Can hold up to 4 stacks of textiles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelTextiles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1538,7 +1538,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelLeather</defName>
 		<label>barrel of leather</label>
-		<description>A cylindrical barrel reserved for leather to save space. Can hold up to 5 stacks of leather. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for leather to save space. Can hold up to 4 stacks of leather. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelLeather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1571,7 +1571,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelComponentBasic</defName>
 		<label>barrel of basic components</label>
-		<description>A cylindrical barrel reserved for basic components to save space. Can hold up to 5 stacks of basic components. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for basic components to save space. Can hold up to 4 stacks of basic components. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelComponentBasic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1605,7 +1605,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelGrape</defName>
 		<label>barrel of grape</label>
-		<description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 4 stacks of grapes. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelGrape</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

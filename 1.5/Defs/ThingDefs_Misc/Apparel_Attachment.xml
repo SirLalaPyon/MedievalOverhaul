@@ -188,9 +188,11 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>4</Mass>
 			<EquipDelay>2</EquipDelay>
+			<Insulation_Cold>2</Insulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.4</MoveSpeed>
+			<SocialImpact>0.10</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
         
 		<apparel>
@@ -239,9 +241,11 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>4</Mass>
 			<EquipDelay>2</EquipDelay>
+			<Insulation_Cold>2</Insulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.4</MoveSpeed>
+			<SocialImpact>0.10</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
         
 		<apparel>

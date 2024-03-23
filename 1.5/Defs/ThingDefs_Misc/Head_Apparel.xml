@@ -20,8 +20,17 @@ X
 < 40 below head
 -->
 
-	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_ArmorHelmetMakeableBase" Abstract="True">
+	<ThingDef ParentName="HatMakeableBase" Name="DankPyon_HatMakeableBase" Abstract="True">
+		<smeltable>false</smeltable>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
 		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
 			<drawData>
 				<dataNorth>
 					<layer>95</layer>
@@ -30,7 +39,7 @@ X
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="DankPyon_HatMakeableBase">
 		<defName>DankPyon_Headgear_RedBandana</defName>
 		<label>Red bandana</label>
 		<description>A simple headwrap tied from a long strip of dark-red cloth. Provides a bit of warmth and padding for the noggin'.</description>
@@ -38,13 +47,10 @@ X
 			<texPath>Headgear/RedBandana/RedBandana</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
-		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.95</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 		</recipeMaker>
-		<smeltable>false</smeltable>
 		<costList>
 			<Cloth>20</Cloth>
 		</costList>
@@ -58,12 +64,6 @@ X
 			<EquipDelay>0.4</EquipDelay>
 		</statBases>
 		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
 			<wornGraphicPath>Headgear/RedBandana/RedBandana</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
@@ -76,7 +76,7 @@ X
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="DankPyon_HatMakeableBase">
 		<defName>DankPyon_Headgear_Hood</defName>
 		<label>hood</label>
 		<description>A draped hood which covers the head and ears.</description>
@@ -84,8 +84,6 @@ X
 			<texPath>Headgear/Hood/Hood</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
-		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.95</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
@@ -103,12 +101,6 @@ X
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
 			<wornGraphicPath>Headgear/Hood/Hood</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
@@ -121,7 +113,7 @@ X
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="DankPyon_HatMakeableBase">
 		<defName>DankPyon_Headgear_coif</defName>
 		<label>coif</label>
 		<description>A close-fitting and lightly padded coif often worn beneath mail or a helmet, or on its own for warmth in cold weather.</description>
@@ -129,8 +121,6 @@ X
 			<texPath>Headgear/Coif/Coif</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
-		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.95</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
@@ -148,12 +138,6 @@ X
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
 			<wornGraphicPath>Headgear/Coif/Coif</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
@@ -166,7 +150,7 @@ X
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="DankPyon_HatMakeableBase">
 		<defName>DankPyon_Headgear_ArmingCap</defName>
 		<label>Arming Cap</label>
 		<description>A thickly padded cap most often worn beneath heavier helmets for an additional layer of protection. Quite insulating and offers a bit of blunt protection on its own.</description>
@@ -174,8 +158,6 @@ X
 			<texPath>Headgear/ArmingCap/ArmingCap</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
-		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.50</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
@@ -193,12 +175,6 @@ X
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
 			<wornGraphicPath>Headgear/ArmingCap/ArmingCap</wornGraphicPath>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
@@ -212,7 +188,7 @@ X
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="DankPyon_HatMakeableBase">
 		<defName>DankPyon_Headgear_FullArmingCap</defName>
 		<label>full arming cap</label>
 		<description>A thickly padded hood most often worn beneath heavier helmets for an additional layer of protection. Very insulating and offers a bit of blunt protection on its own.</description>
@@ -220,8 +196,6 @@ X
 			<texPath>Headgear/ArmingCapFull/ArmingCapFull</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
-		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.95</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
@@ -240,13 +214,6 @@ X
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-        
-			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
 			<wornGraphicPath>Headgear/ArmingCapFull/ArmingCapFull</wornGraphicPath>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
@@ -261,7 +228,7 @@ X
 	</ThingDef>
 
 
-	<ThingDef ParentName="HatMakeableBase">
+	<ThingDef ParentName="DankPyon_HatMakeableBase">
 		<defName>DankPyon_Headgear_ZweihandersHat</defName>
 		<label>zweihander's hat</label>
 		<description>A thick, ornamented hat. Protective simply due to its size and shape, but mainly worn for decoration and as a status symbol.</description>
@@ -269,8 +236,6 @@ X
 			<texPath>Headgear/ZweihandersHat/ZweihandersHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
-		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.25</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
@@ -292,12 +257,6 @@ X
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
-				<li>UpperHead</li>
-			</bodyPartGroups>
-			<layers>
-				<li>Overhead</li>
-			</layers>
 			<wornGraphicPath>Headgear/ZweihandersHat/ZweihandersHat</wornGraphicPath>
 			<tags>
 				<li>DankPyon_Zweihander</li>
@@ -311,6 +270,32 @@ X
 	</ThingDef>
 
 	<!-- ==================== Padded Helmets ==================== -->
+	
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="DankPyon_ArmorHelmetMakeableBase" Abstract="True">
+		<smeltable>true</smeltable>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>		
+		<apparel>
+			<drawData>
+				<dataNorth>
+					<layer>95</layer>
+				</dataNorth>
+			</drawData>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
 		<defName>DankPyon_Headgear_PaddedNasalHelmet</defName>
 		<label>padded nasal helm</label>
@@ -320,13 +305,7 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -344,9 +323,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
 		<costList>
 			<Cloth>10</Cloth>
@@ -366,9 +342,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
@@ -381,13 +354,7 @@ X
 			<texPath>Headgear/PaddedKettle/PaddedKettle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -405,9 +372,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
 		<costList>
 			<Cloth>10</Cloth>
@@ -415,7 +379,6 @@ X
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -428,9 +391,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
@@ -444,13 +404,7 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
@@ -468,9 +422,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
 		<costList>
 			<Cloth>10</Cloth>
@@ -490,9 +441,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
@@ -506,13 +454,7 @@ X
 			<texPath>Headgear/ChainCoif/ChainCoif</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -527,14 +469,10 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
-        
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ChainCoif/ChainCoif</wornGraphicPath>
 			<tags>
@@ -546,9 +484,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -560,13 +495,7 @@ X
 			<texPath>Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -581,9 +510,6 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -599,9 +525,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -613,13 +536,7 @@ X
 			<texPath>Headgear/ChainCoifFull/ChainCoifFull</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -634,9 +551,6 @@ X
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>65</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -652,9 +566,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -667,13 +578,7 @@ X
 			<texPath>Headgear/ChainNasal/ChainNasal</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -692,9 +597,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -709,9 +611,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
   
@@ -724,13 +623,7 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -748,9 +641,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -767,9 +657,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
@@ -782,13 +669,7 @@ X
 			<texPath>Headgear/ChainKettle/ChainKettle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -806,9 +687,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -823,9 +701,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -838,13 +713,7 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -862,9 +731,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -879,9 +745,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -893,13 +756,7 @@ X
 			<texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -917,9 +774,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-1.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -934,9 +788,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -948,13 +799,7 @@ X
 			<texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -972,9 +817,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -989,27 +831,18 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
 		<defName>DankPyon_Headgear_HeavyBarbrute</defName>
 		<label>heavy barbrute</label>
-		<description>PLACEHOLDER.</description>
+		<description>A formidable heavy barbute helmet, crafted from robust and weighty steel. This design, known for its exceptional durability, provides substantial protection while retaining its imposing presence on the battlefield.</description>
 		<graphicData>
 			<texPath>Headgear/HeavyBarbrute/HeavyBarbrute</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -1027,9 +860,6 @@ X
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -1044,27 +874,18 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_T3HelmetBase">
 		<defName>DankPyon_Headgear_OpenBascinet</defName>
 		<label>open bascinet</label>
-		<description>PLACEHOLDER.</description>
+		<description>The open bascinet helmet features a conical shape with a retractable visor, allowing for versatility in protection and visibility. It offers defense to the head while granting improved breathability and vision compared to fully enclosed helmets. Though it sacrifices some protection, its open design ensures greater comfort and ease of movement for wearers in combat scenarios.</description>
 		<graphicData>
 			<texPath>Headgear/OpenBascinet/OpenBascinet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -1080,11 +901,8 @@ X
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>-2.5</ShootingAccuracyPawn>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -1099,9 +917,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -1114,13 +929,7 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -1136,12 +945,9 @@ X
 			<EquipDelay>8</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>-2.5</ShootingAccuracyPawn>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<costList>
 			<Cloth>55</Cloth>
@@ -1158,9 +964,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -1301,13 +1104,7 @@ X
 			<texPath>Headgear/BascinetHelmet/BascinetHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -1327,9 +1124,6 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -1343,9 +1137,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -1357,13 +1148,7 @@ X
 			<texPath>Headgear/WolfBascinet/WolfBascinet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -1383,9 +1168,6 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -1399,9 +1181,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -1413,13 +1192,7 @@ X
 			<texPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -1439,9 +1212,6 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -1455,9 +1225,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
   
@@ -1529,13 +1296,7 @@ X
 			<texPath>Headgear/SalletVisored/SalletVisored</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -1555,9 +1316,6 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -1571,9 +1329,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -1611,13 +1366,7 @@ X
 			<texPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -1637,9 +1386,6 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -1653,9 +1399,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
   
@@ -1727,13 +1470,7 @@ X
 			<texPath>Headgear/GreatHelm/GreatHelm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
@@ -1753,9 +1490,6 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -1769,9 +1503,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
   
@@ -1906,7 +1637,6 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
 			<skillRequirements>
@@ -1928,9 +1658,6 @@ X
 			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.1</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -1938,20 +1665,12 @@ X
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/HeraldicHelm1/HeraldicHelm1</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<tags>
+			<tags Inherit="False">
 				<li>DankPyon_HeraldicHelmAmboise</li>
 			</tags>
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-			<drawData>
-				<dataNorth>
-					<layer>200</layer>
-				</dataNorth>
-			</drawData>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
@@ -2019,13 +1738,7 @@ X
 			<texPath>Headgear/Armet/Armet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>12</Crafting>
 			</skillRequirements>
@@ -2044,9 +1757,6 @@ X
 			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<apparel>
 			<bodyPartGroups>
@@ -2060,9 +1770,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -2075,13 +1782,7 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-				<li>DankPyon_Anvil</li>
-			</recipeUsers>
 			<skillRequirements>
 				<Crafting>16</Crafting>
 			</skillRequirements>
@@ -2101,9 +1802,6 @@ X
 			<PainShockThreshold>0.15</PainShockThreshold>
 			<SocialImpact>0.35</SocialImpact>
 		</equippedStatOffsets>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
 		<costList>
 			<Gold>2</Gold>
@@ -2121,9 +1819,6 @@ X
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
@@ -2137,7 +1832,6 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
 			<skillRequirements>
@@ -2171,7 +1865,7 @@ X
 			</bodyPartGroups>
 			<wornGraphicPath>Headgear/ArmetNamed/ArmetNamed</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<tags>
+			<tags Inherit="False">
 				<li>DankPyon_ArmetNamed</li>
 			</tags>
 			<layers>

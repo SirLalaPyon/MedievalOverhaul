@@ -137,4 +137,19 @@
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>DankPyon_MustIntoMulberryWine</defName>
+		<building>DankPyon_RusticFermentingBarrel</building>
+		<items>
+			<li>DankPyon_MustWine_Mulberry</li>
+		</items>
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>DankPyon_Wine_Mulberry</result>
+		<yield>5</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
 </Defs>

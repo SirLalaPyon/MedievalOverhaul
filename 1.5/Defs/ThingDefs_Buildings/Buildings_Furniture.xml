@@ -622,7 +622,8 @@
 		<fillPercent>0.35</fillPercent>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
-				<isSittable>true</isSittable>
+			<isSittable>true</isSittable>
+			<multiSittable>true</multiSittable>
 		</building>
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
@@ -659,7 +660,8 @@
 		<fillPercent>0.35</fillPercent>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
-				<isSittable>true</isSittable>
+			<isSittable>true</isSittable>
+			<multiSittable>true</multiSittable>
 		</building>
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
@@ -696,7 +698,8 @@
 		<fillPercent>0.35</fillPercent>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
-				<isSittable>true</isSittable>
+			<isSittable>true</isSittable>
+			<multiSittable>true</multiSittable>
 		</building>
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>

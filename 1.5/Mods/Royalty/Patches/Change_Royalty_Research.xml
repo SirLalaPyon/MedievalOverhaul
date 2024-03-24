@@ -16,8 +16,8 @@
 					<prerequisites>
 						<li>DankPyon_Tailoring</li>
 					</prerequisites>
-					<researchViewX>12.00</researchViewX>
-					<researchViewY>0.70</researchViewY>
+					<researchViewX>6.00</researchViewX>
+					<researchViewY>3.60</researchViewY>
 				</ResearchProjectDef>
 			</value>
 		</match>
@@ -39,10 +39,9 @@
 						<li>NobleApparel</li>
 					</prerequisites>
 					<hiddenPrerequisites>
-						<li>Smithing</li>
 					</hiddenPrerequisites>
-					<researchViewX>13.00</researchViewX>
-					<researchViewY>0.70</researchViewY>
+					<researchViewX>7.00</researchViewX>
+					<researchViewY>3.6</researchViewY>
 				</ResearchProjectDef>
 			</value>
 		</match>
@@ -60,8 +59,8 @@
 					<tab>DankPyon_MedievalResearchTab</tab>
 					<baseCost>500</baseCost>
 					<techLevel>Medieval</techLevel>
-					<researchViewX>6</researchViewX>
-					<researchViewY>5.2</researchViewY>
+					<researchViewX>5</researchViewX>
+					<researchViewY>2.4</researchViewY>
 					<prerequisites>
 						<li>ComplexFurniture</li>
 					</prerequisites>
@@ -82,8 +81,8 @@
 					<baseCost>500</baseCost>
 					<tab>DankPyon_MedievalResearchTab</tab>
 					<techLevel>Medieval</techLevel>
-					<researchViewX>6</researchViewX>
-					<researchViewY>5.8</researchViewY>
+					<researchViewX>5</researchViewX>
+					<researchViewY>3</researchViewY>
 					<prerequisites>
 						<li>ComplexFurniture</li>
 					</prerequisites>
@@ -92,13 +91,47 @@
 		</match>
 	</Operation>
 
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/recipeMaker/researchPrerequisite</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/recipeMaker/researchPrerequisite</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/recipeMaker</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RoyalApparel</li>
+				<li>Smithing</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName ="Apparel_Crown"]/recipeMaker/researchPrerequisite</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName="Apparel_Crown"]/recipeMaker/researchPrerequisite</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_Crown"]/recipeMaker</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>RoyalApparel</li>
+				<li>Smithing</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
 	<!-- ============================ Core Research Project Coordinates ========================== -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewX</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewX</xpath>
 			<value>
-				<researchViewX>6.00</researchViewX>
+				<researchViewX>5.00</researchViewX>
 			</value>
 		</match>
 	</Operation>
@@ -108,7 +141,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewY</xpath>
 			<value>
-				<researchViewY>4.60</researchViewY>
+				<researchViewY>1.8</researchViewY>
 			</value>
 		</match>
 	</Operation>

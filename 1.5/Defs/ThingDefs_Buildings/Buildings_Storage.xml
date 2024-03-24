@@ -9,6 +9,24 @@
 
 	<!-- ==================== Storage Base ==================== -->
 
+	<ThingDef Name="DankPyon_LumberStorageBase" ParentName="ShelfBase" Abstract="True">
+		<thingClass>Building_Storage</thingClass>
+		<researchPrerequisites Inherit="false">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
+		<designationCategory>DankPyon_RusticStorage</designationCategory>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+	
+	<ThingDef Name="DankPyon_BrickStorageBase" ParentName="ShelfBase" Abstract="True">
+		<thingClass>Building_Storage</thingClass>
+		<researchPrerequisites Inherit="false">
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<designationCategory>DankPyon_RusticStorage</designationCategory>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
 	<ThingDef Name="DankPyon_StorageBase" ParentName="ShelfBase" Abstract="True">
 		<thingClass>Building_Storage</thingClass>
 		<researchPrerequisites Inherit="false">
@@ -236,7 +254,7 @@
 	</ThingDef>
 
 	<!-- ==================== Wood Logs ==================== -->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs1x1c</defName>
 		<label>raw wood pile</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -284,7 +302,7 @@
 	</ThingDef>
 
 	<!--== Wood Logs 1x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs1x2c</defName>
 		<label>raw wood (1x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -330,7 +348,7 @@
 	</ThingDef>
 
 	<!--== Wood Logs 2x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs2x2c</defName>
 		<label>raw wood (2x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -377,7 +395,7 @@
 	</ThingDef>
 
 	<!--== Timber 1x1 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_Timber1x1c</defName>
 		<label>timber (1x1)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
@@ -420,12 +438,10 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-
-		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
 	<!--== Timber 1x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_Timber1x2c</defName>
 		<label>timber (1x2)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
@@ -467,12 +483,10 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-
-		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
 	<!--== Timber 2x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_Timber2x2c</defName>
 		<label>timber (2x2)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
@@ -515,12 +529,10 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-
-		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
 	<!--== Bricks ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks1x1c</defName>
 		<label>bricks(1x1)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
@@ -568,7 +580,7 @@
 	</ThingDef>
 
 	<!--== Bricks 1x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks1x2c</defName>
 		<label>bricks(1x2)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
@@ -614,7 +626,7 @@
 	</ThingDef>
 
 	<!--== Bricks 2x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks2x2c</defName>
 		<label>bricks</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
@@ -660,7 +672,6 @@
 	
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
-
 	
 	<!--== iron Ingots ==-->
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_IronIngotStackBase">

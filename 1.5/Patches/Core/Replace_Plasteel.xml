@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MineablePlasteel"]/building/mineableThing</xpath>
+			<value>
+				<mineableThing>DankPyon_PlasteelOre</mineableThing>
+			</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plasteel"]/graphicData/texPath</xpath>
+			<value>
+				<texPath>Resources/PlasteelIngot</texPath>
+			</value>
+	</Operation>
+
+</Patch>	

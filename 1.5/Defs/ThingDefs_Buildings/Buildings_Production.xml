@@ -758,6 +758,9 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<researchPrerequisites>
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">

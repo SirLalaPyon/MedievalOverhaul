@@ -203,7 +203,11 @@
         <recipeUsers Inherit="False">
             <li>DankPyon_Workbench</li>
         </recipeUsers>
-        <researchPrerequisite>DankPyon_Gunpowder</researchPrerequisite>
+		<researchPrerequisites>
+			<li>DankPyon_Gunpowder</li>
+			<li>Smithing</li>
+		</researchPrerequisites>
+        <!-- <researchPrerequisite>DankPyon_Gunpowder</researchPrerequisite> -->
         <skillRequirements>
             <Crafting>6</Crafting>
         </skillRequirements>

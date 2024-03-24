@@ -33,14 +33,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DropOnDeath.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\DefGenerator_GenerateImpliedDefs_PreResolve.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\CalculableRecipe_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FileName.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\GenerateImpliedDefs_PreResolve_Postfix.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\CalculableRecipe_Prefix.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\TakeOutProduct_Prefix.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\CanBeResearchedAt_Postfix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\Patch_ButcherProducts_Postfix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\HediffComp_Immunizable_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\Patch_TryFindRandomShellDef.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\GenConstruct_CanPlaceBlueprintOver_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\GenConstruct_CanBuildOnTerrain_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\FindAmmoForTurret_Prefix.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\CanPlaceBlueprintOver_Postfix.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\CanBuildOnTerrain_Postfix.cs" />
     <Compile Include="Medieval Overhaul\ModSettings\MedievalOverhaul_Settings.cs" />
     <Compile Include="Medieval Overhaul\ModSettings\MedievalOverhaulMod.cs" />
     <Compile Include="Medieval Overhaul\Hide Generation\GeneratorUtility.cs" />

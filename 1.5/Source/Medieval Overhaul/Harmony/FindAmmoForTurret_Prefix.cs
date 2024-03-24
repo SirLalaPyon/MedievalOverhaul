@@ -11,7 +11,7 @@ using Verse;
 namespace MedievalOverhaul
 {
     [HarmonyPatch(typeof(JobDriver_ManTurret), nameof(JobDriver_ManTurret.FindAmmoForTurret))]
-    public static class Patch_TryFindRandomShellDef
+    public static class FindAmmoForTurret_Prefix
     {
         private static bool Prefix(Pawn pawn, Building_TurretGun gun, ref Thing __result)
         {

@@ -11,7 +11,7 @@ using Verse;
 namespace MedievalOverhaul
 {
     [HarmonyPatch(typeof(DefGenerator), nameof(DefGenerator.GenerateImpliedDefs_PreResolve))]
-    public static class DefGenerator_GenerateImpliedDefs_PreResolve
+    public static class GenerateImpliedDefs_PreResolve_Postfix
     {
 
         public static void Postfix()

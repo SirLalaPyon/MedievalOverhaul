@@ -6,7 +6,7 @@ using Verse;
 namespace MedievalOverhaul
 {
     [HarmonyPatch(typeof(GenConstruct), "CanBuildOnTerrain")]
-    public static class GenConstruct_CanBuildOnTerrain_Patch
+    public static class CanBuildOnTerrain_Postfix
     {
         public static void Postfix(ref bool __result, BuildableDef entDef, IntVec3 c, Map map, Rot4 rot, Thing thingToIgnore = null, ThingDef stuffDef = null)
         {

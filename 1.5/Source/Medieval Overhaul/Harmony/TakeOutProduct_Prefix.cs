@@ -15,7 +15,7 @@ namespace MedievalOverhaul
         public bool outputOnlyButcherProduct;
     }
     [HarmonyPatch(typeof(CompProcessor), "TakeOutProduct")]
-    public static class CompProcessor_TakeOutProduct_Patch
+    public static class TakeOutProduct_Prefix
     {
         public static bool Prefix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
         {

@@ -16,20 +16,26 @@ namespace MedievalOverhaul
 
             foreach (ThingDef animal in MedievalOverhaul_Settings.AllLeatherAnimals)
             {
-                ThingDef hideDef = new ThingDef();
+                var animalName = animal.defName;
                 ThingDef leatherDef = animal.race.leatherDef;
-                if (GeneratorUtility.LeatherDefsSeen.ContainsKey(leatherDef) && !GeneratorUtility.WhiteList.whiteListRaces.Contains(animal.defName))
+                if (!GeneratorUtility.WhiteList.blackListRaces.Contains(animalName))
                 {
-                    hideDef = GeneratorUtility.LeatherDefsSeen[leatherDef];
+                    ThingDef hideDef = new ThingDef();
+                    
+                    if (GeneratorUtility.LeatherDefsSeen.ContainsKey(leatherDef) && !GeneratorUtility.WhiteList.whiteListRaces.Contains(animalName))
+                    {
+                        hideDef = GeneratorUtility.LeatherDefsSeen[leatherDef];
+                        GeneratorUtility.DetermineButcherProducts(animal, leatherDef, hideDef, 1);
+                        animal.race.leatherDef = hideDef;
+                        continue;
+                    }
+                    hideDef = GeneratorUtility.MakeHideFor(leatherDef, animal);
+                    GeneratorUtility.TryAddEntry(animal, leatherDef, hideDef);
                     GeneratorUtility.DetermineButcherProducts(animal, leatherDef, hideDef, 1);
                     animal.race.leatherDef = hideDef;
-                    continue;
+                    yield return hideDef;
                 }
-                hideDef = GeneratorUtility.MakeHideFor(leatherDef, animal);
-                GeneratorUtility.TryAddEntry(animal, leatherDef, hideDef);
-                GeneratorUtility.DetermineButcherProducts(animal, leatherDef, hideDef, 1);
-                animal.race.leatherDef = hideDef;
-                yield return hideDef;
+                
             }
         }
     }

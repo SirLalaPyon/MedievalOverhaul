@@ -10,7 +10,7 @@ using Verse;
 namespace MedievalOverhaul.Medieval_Overhaul.Harmony
 {
     [HarmonyPatch(typeof(ResearchProjectDef), "CanBeResearchedAt")]
-    public static class ResearchProjectDef_CanBeResearchedAt_Patch
+    public static class CanBeResearchedAt_Postfix
     {
         public static void Postfix(Building_ResearchBench bench, bool ignoreResearchBenchPowerStatus, ResearchProjectDef __instance, ref bool __result)
         {

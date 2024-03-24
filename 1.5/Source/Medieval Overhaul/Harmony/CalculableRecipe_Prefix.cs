@@ -10,7 +10,7 @@ using Verse;
 namespace MedievalOverhaul
 { 
     [HarmonyPatch(typeof(StatWorker_MarketValue), "CalculableRecipe")]
-    public static class CalculableRecipe_Patch
+    public static class CalculableRecipe_Prefix
     {
         private static bool Prefix(BuildableDef def)
         {

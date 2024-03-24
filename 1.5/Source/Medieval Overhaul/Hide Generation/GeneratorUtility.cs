@@ -104,12 +104,6 @@ namespace MedievalOverhaul
             if (!GeneratorUtility.AnimalDefsSeen.ContainsKey(animal))
             {
                 animal.butcherProducts = animal.butcherProducts ?? new List<ThingDefCountClass>();
-
-                //int half = (int)Math.Round(number / 2f);
-                //int mod = half % 5;
-                //mod = (mod == 0) ? 5 : mod;
-                //int count = half + (5 - mod);
-               // Log.Message("Animal: " + animal + " Old Leather: " + leatherDef + " New Hide: " + hideDef);
                 animal.butcherProducts.Add(new ThingDefCountClass { thingDef = hideDef, count = number });
             }
         }

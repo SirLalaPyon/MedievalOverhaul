@@ -151,7 +151,6 @@
 			<WorkToMake>30000</WorkToMake>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
 		</statBases>
-    
 		<holdsRoof>false</holdsRoof>
 		<size>(1,1)</size>
 		<recipeMaker>
@@ -217,7 +216,6 @@
 			<WorkToBuild>550</WorkToBuild>
 			<Mass>20</Mass>
 		</statBases>
-
 		<size>(1,2)</size>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -225,7 +223,6 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
-
 		<fillPercent>0.4</fillPercent>
 		<pathCost>42</pathCost>
 		<staticSunShadowHeight>0.17</staticSunShadowHeight>
@@ -245,7 +242,6 @@
 				<rect>(0,0.05,1,1.95)</rect>
 			</damageData>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -253,7 +249,6 @@
 			<WorkToBuild>1000</WorkToBuild>
 			<Mass>40</Mass>
 		</statBases>
-
 		<size>(2,2)</size>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -261,14 +256,12 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>85</costStuffCount>
-
 		<fillPercent>0.4</fillPercent>
 		<pathCost>42</pathCost>
 		<staticSunShadowHeight>0.17</staticSunShadowHeight>
 		<castEdgeShadows>True</castEdgeShadows>
 		<uiIconScale>0.90</uiIconScale>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_WoodenDebris</defName>
@@ -301,7 +294,6 @@
 		<passability>Impassable</passability>
 	</ThingDef>
 
-
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedCloset</defName>
 		<label>ruined closet</label>
@@ -330,7 +322,6 @@
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 	</ThingDef>
-	
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedBookshelf</defName>
@@ -362,7 +353,6 @@
 		<costStuffCount>50</costStuffCount>
 	</ThingDef>
 
-
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_EmptyBucket</defName>
 		<label>empty bucket</label>
@@ -386,7 +376,6 @@
 		<passability>PassThroughOnly</passability>
 	</ThingDef>
 
-
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedCrate1x1c</defName>
 		<label>ruined crate</label>
@@ -396,23 +385,19 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
-
 		<statBases>
 			<MaxHitPoints>25</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
 			<Mass>3</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>10</costStuffCount>
 		<pathCost>30</pathCost>
-
 		<passability>PassThroughOnly</passability>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedTable1x2c</defName>
@@ -429,7 +414,6 @@
 			</damageData>
 		</graphicData>
 		<uiIconScale>0.8</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>25</MaxHitPoints>
 			<WorkToBuild>750</WorkToBuild>
@@ -437,7 +421,6 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<size>(1,2)</size>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -465,7 +448,6 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<size>(2,4)</size>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -474,7 +456,6 @@
 			<buildingSizeCategory>Medium</buildingSizeCategory>
 		</building>
 	</ThingDef>
-	
 
 	<!--==================== Bones ====================-->
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
@@ -487,15 +468,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<Beauty>5</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-
 		<costList>
-			<DankPyon_Hide_BearGrizzly>1</DankPyon_Hide_BearGrizzly>
+			<Leather_Bear>40</Leather_Bear>
 		</costList>
 		<size>(3,3)</size>
 		<building>
@@ -505,7 +484,6 @@
 		<altitudeLayer>FloorCoverings</altitudeLayer>
 		<useHitPoints>False</useHitPoints>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedBonePile1x1c</defName>
@@ -522,16 +500,12 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<fillPercent>0.2</fillPercent>
 		<pathCost>42</pathCost>
-
 		<defaultPlacingRot>South</defaultPlacingRot>
-
 		<costList>
 			<DankPyon_Bone>10</DankPyon_Bone>
 		</costList>
-
 		<statBases>
 			<MaxHitPoints>30</MaxHitPoints>
 			<Mass>5</Mass>
@@ -543,7 +517,6 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<surfaceType>Item</surfaceType>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedBonePile1x2c</defName>
@@ -562,15 +535,12 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<fillPercent>0.2</fillPercent>
 		<pathCost>42</pathCost>
 		<defaultPlacingRot>South</defaultPlacingRot>
-
 		<costList>
 			<DankPyon_Bone>20</DankPyon_Bone>
 		</costList>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>10</Mass>
@@ -581,7 +551,6 @@
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<castEdgeShadows>false</castEdgeShadows>
 		<surfaceType>Item</surfaceType>
-
 		<modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
@@ -627,7 +596,6 @@
 		</modExtensions>
 	</ThingDef>
 
-
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedBonePile2x2c</defName>
 		<label>massive remains</label>
@@ -643,14 +611,11 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<fillPercent>0.2</fillPercent>
 		<pathCost>42</pathCost>
-
 		<costList>
 			<DankPyon_Bone>40</DankPyon_Bone>
 		</costList>
-
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Mass>10</Mass>
@@ -672,17 +637,14 @@
 			<texPath>Buildings/Ruin/RuinedBust</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-
 		<fillPercent>0.35</fillPercent>
 		<rotatable>false</rotatable>
 		<pathCost>50</pathCost>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>3</Mass>
 			<WorkToMake>18000</WorkToMake>
 		</statBases>
-
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -690,7 +652,6 @@
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedCandles</defName>
@@ -703,14 +664,12 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<uiIconPath>Buildings/Ruin/MenuIcon_RuinedCandles</uiIconPath>
-
 		<rotatable>false</rotatable>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>4</pathCost>
 		<constructEffect>ConstructWood</constructEffect>
 		<fillPercent>0.15</fillPercent>
-
 		<statBases>
 			<Beauty>5</Beauty>
 			<MaxHitPoints>20</MaxHitPoints>
@@ -718,11 +677,9 @@
 			<Flammability>0</Flammability>
 			<Mass>0.2</Mass>
 		</statBases>
-
 		<costList>
 			<DankPyon_Tallow>5</DankPyon_Tallow>
 		</costList>
-
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
@@ -743,20 +700,17 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
-
 		<rotatable>false</rotatable>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>4</pathCost>
 		<fillPercent>0.15</fillPercent>
-
 		<statBases>
 			<Beauty>10</Beauty>
 			<MaxHitPoints>60</MaxHitPoints>
 			<WorkToBuild>600</WorkToBuild>
 			<Mass>0.2</Mass>
 		</statBases>
-
 		<costList>
 			<DankPyon_Tallow>5</DankPyon_Tallow>
 		</costList>
@@ -767,7 +721,6 @@
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedStewPot</defName>
@@ -786,22 +739,18 @@
 			</damageData>
 		</graphicData>
 		<size>(2,1)</size>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
-
 		<fillPercent>0.5</fillPercent>
 		<statBases>
 			<WorkToBuild>2000</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<pathCost>40</pathCost>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedAnvil</defName>
@@ -818,12 +767,10 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -834,10 +781,8 @@
 			<Mass>30</Mass>
 		</statBases>
 		<size>(1,1)</size>
-        
 		<pathCost>50</pathCost>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedHearth</defName>
@@ -856,13 +801,11 @@
 			</damageData>
 		</graphicData>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
-
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
 		<fillPercent>0.5</fillPercent>
-
 		<statBases>
 			<WorkToBuild>2000</WorkToBuild>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -871,7 +814,6 @@
 		<size>(2,1)</size>
 		<passability>Impassable</passability>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedMineShaft</defName>
@@ -889,7 +831,6 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<costList>
 			<DankPyon_IronIngot>60</DankPyon_IronIngot>
 			<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
@@ -898,20 +839,16 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
-
 		<statBases>
 			<WorkToBuild>6000</WorkToBuild>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-15</Cleanliness>
 		</statBases>
-
 		<rotatable>false</rotatable>
 		<size>(3,3)</size>
-
 		<passability>Impassable</passability>
 	</ThingDef>
-
 
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_StoneDebris</defName>
@@ -931,7 +868,6 @@
 		</graphicData>
 		<pathCost>42</pathCost>
 		<blockWind>true</blockWind>
-        
 		<size>(2,2)</size>
 		<statBases>
 			<MaxHitPoints>320</MaxHitPoints>
@@ -939,12 +875,10 @@
 			<Beauty>-20</Beauty>
 			<WorkToBuild>16000</WorkToBuild>
 		</statBases>
-
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
-        
 		<fillPercent>1</fillPercent>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<passability>Impassable</passability>
@@ -976,9 +910,5 @@
 		<passability>Impassable</passability>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 	</ThingDef>
-
-
-	
-  
 
 </Defs>

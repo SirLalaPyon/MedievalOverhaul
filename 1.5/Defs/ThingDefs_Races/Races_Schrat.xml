@@ -76,17 +76,17 @@
 					<li>
 						<thingDef>DankPyon_SchratHeart</thingDef>
 						<amount>1</amount>
-						<chance>0.50</chance>
+						<chance>0.25</chance>
 					</li>
 					<li>
 						<thingDef>DankPyon_AncientWood</thingDef>
 						<amount>1</amount>
-						<chance>0.50</chance>
+						<chance>0.25</chance>
 					</li>
 					<li>
 						<thingDef>DankPyon_GlowingResin</thingDef>
 						<amount>1</amount>
-						<chance>0.50</chance>
+						<chance>0.25</chance>
 					</li>
 				</butcherOptions>
 			</li>
@@ -98,7 +98,6 @@
 		<label>dark schrat</label>
 		<race>DankPyon_Schrat</race>
 		<combatPower>400</combatPower>
-    
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -108,7 +107,6 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
-
 		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
 		<destroyGearOnDrop>true</destroyGearOnDrop>
@@ -117,14 +115,12 @@
 	<!--==================== Schrat Plains ====================-->
 	<ThingDef ParentName="DankPyon_SchratBase">
 		<defName>DankPyon_SchratPlain</defName>
-
 		<race>
 			<body>DankPyon_SchratBody</body>
 			<fleshType>DankPyon_Schrat</fleshType>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>6.32</baseHealthScale>
 		</race>
-
 		<butcherProducts Inherit="False">
 			<WoodLog>100</WoodLog>
 			<DankPyon_SchratHeart>1</DankPyon_SchratHeart>
@@ -136,7 +132,6 @@
 		<label>schrat</label>
 		<race>DankPyon_SchratPlain</race>
 		<combatPower>400</combatPower>
-    
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

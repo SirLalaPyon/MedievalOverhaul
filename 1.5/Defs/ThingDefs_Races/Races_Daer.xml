@@ -1,10 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  
-
 	<!-- =========================The Big Bad============================= -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_Daer</defName>
 		<label>Daer</label>
@@ -22,9 +19,7 @@
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
 		</statBases>
 		<uiIconScale>1.75</uiIconScale>
-
 		<tools>
-
 			<li>
 				<capacities>
 					<li>Bite</li>
@@ -42,7 +37,6 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-
 			<li>
 				<label>left claw</label>
 				<capacities>
@@ -60,7 +54,6 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-
 			<li>
 				<label>right claw</label>
 				<capacities>
@@ -78,7 +71,6 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -91,7 +83,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
@@ -101,7 +92,7 @@
 			<baseBodySize>4.2</baseBodySize>
 			<baseHealthScale>9.0</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<!--leatherDef>DankPyon_Leather_Daer</leatherDef-->
+			<leatherDef>DankPyon_Leather_Daer</leatherDef>
 			<wildness>0.99</wildness>
 			<trainability>Advanced</trainability>
 			<gestationPeriodDays>15</gestationPeriodDays>
@@ -191,10 +182,6 @@
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-					<thing>DankPyon_Hide_Daer</thing>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

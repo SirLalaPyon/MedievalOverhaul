@@ -13,7 +13,6 @@
 		<rotatable>true</rotatable>
 		<altitudeLayer>FloorCoverings</altitudeLayer>
 		<useHitPoints>False</useHitPoints>
-
 		<researchPrerequisites>
 			<li>DankPyon_LeatherTanning</li>
 		</researchPrerequisites>
@@ -38,13 +37,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
-		
 		<statBases>
 			<WorkToMake>3000</WorkToMake>
 			<Beauty>3</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-    
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -92,7 +89,6 @@
 			<Beauty>5</Beauty>
 			<Mass>12</Mass>
 		</statBases>
-    
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -110,15 +106,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
 			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-    
 		<costList>
-			<DankPyon_Hide_Hyena>1</DankPyon_Hide_Hyena>
+			<DankPyon_Leather_Hyena>40</DankPyon_Leather_Hyena>
 		</costList>
 		<size>(2,2)</size>
 	</ThingDef>
@@ -133,15 +127,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
 			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-    
 		<costList>
-			<DankPyon_Hide_WolfTimber>1</DankPyon_Hide_WolfTimber>
+			<Leather_Wolf>40</Leather_Wolf>
 		</costList>
 		<size>(2,2)</size>
 	</ThingDef>
@@ -156,16 +148,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
 			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-
 		<costList>
-			<DankPyon_Hide_WolfArctic>1</DankPyon_Hide_WolfArctic>
-			<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
+			<Leather_Wolf>40</Leather_Wolf>
 		</costList>
 		<size>(2,2)</size>
 	</ThingDef>
@@ -180,16 +169,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
 			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-    
 		<costList>
-			<DankPyon_Hide_Cougar>1</DankPyon_Hide_Cougar>
-			<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
+			<Leather_Panthera>40</Leather_Panthera>
 		</costList>
 		<size>(2,2)</size>
 	</ThingDef>
@@ -204,16 +190,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
 			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-    
 		<costList>
-			<DankPyon_Hide_Panther>1</DankPyon_Hide_Panther>
-			<DankPyon_TanningLiquor>6</DankPyon_TanningLiquor>
+			<Leather_Panthera>40</Leather_Panthera>
 		</costList>
 		<size>(2,2)</size>
 	</ThingDef>
@@ -228,16 +211,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<Beauty>15</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-
 		<costList>
-			<DankPyon_Hide_BearGrizzly>1</DankPyon_Hide_BearGrizzly>
-			<DankPyon_TanningLiquor>12</DankPyon_TanningLiquor>
+			<Leather_Bear>65</Leather_Bear>
 		</costList>
 		<size>(3,3)</size>
 	</ThingDef>
@@ -252,16 +232,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<Beauty>15</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-
 		<costList>
-			<DankPyon_Hide_BearPolar>1</DankPyon_Hide_BearPolar>
-			<DankPyon_TanningLiquor>12</DankPyon_TanningLiquor>
+			<Leather_Bear>65</Leather_Bear>
 		</costList>
 		<size>(3,3)</size>
 	</ThingDef>
@@ -276,15 +253,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<Beauty>15</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-
 		<costList>
-			<DankPyon_Hide_Rox>1</DankPyon_Hide_Rox>
+			<DankPyon_Leather_Rox>65</DankPyon_Leather_Rox>
 			<DankPyon_TanningLiquor>12</DankPyon_TanningLiquor>
 		</costList>
 		<size>(3,3)</size>
@@ -300,15 +275,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<WorkToMake>15000</WorkToMake>
 			<Beauty>30</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-    
 		<costList>
-			<DankPyon_Hide_Thrumbo>1</DankPyon_Hide_Thrumbo>
+			<Leather_Thrumbo>100</Leather_Thrumbo>
 		</costList>
 		<size>(3,3)</size>
 	</ThingDef>
@@ -323,15 +296,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<WorkToMake>15000</WorkToMake>
 			<Beauty>30</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-    
 		<costList>
-			<DankPyon_Hide_Daer>1</DankPyon_Hide_Daer>
+			<DankPyon_Leather_Daer>120</DankPyon_Leather_Daer>
 		</costList>
 		<size>(4,4)</size>
 	</ThingDef>
@@ -346,18 +317,15 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
 			<Beauty>10</Beauty>
 			<Mass>9</Mass>
 		</statBases>
-    
 		<costList>
-			<DankPyon_Hide_Human>1</DankPyon_Hide_Human>
+			<Leather_Human>40</Leather_Human>
 		</costList>
 		<size>(1,2)</size>
 	</ThingDef>
-	
-  
+
 </Defs>

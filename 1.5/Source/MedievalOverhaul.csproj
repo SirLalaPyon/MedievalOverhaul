@@ -33,6 +33,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DropOnDeath.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\DefGenerator_GenerateImpliedDefs_PreResolve.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\CalculableRecipe_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\FileName.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\Patch_ButcherProducts_Postfix.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\HediffComp_Immunizable_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\Patch_TryFindRandomShellDef.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\GenConstruct_CanPlaceBlueprintOver_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\GenConstruct_CanBuildOnTerrain_Patch.cs" />
+    <Compile Include="Medieval Overhaul\ModSettings\MedievalOverhaul_Settings.cs" />
+    <Compile Include="Medieval Overhaul\ModSettings\MedievalOverhaulMod.cs" />
+    <Compile Include="Medieval Overhaul\Hide Generation\GeneratorUtility.cs" />
+    <Compile Include="Medieval Overhaul\Hide Generation\SeperateHideList.cs" />
+    <Compile Include="Medieval Overhaul\Hide Generation\ThingDefGenerator_Hide.cs" />
+    <Compile Include="Medieval Overhaul\ModSettings\PatchOperation.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_ThingProducer.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_ThingProducer.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Item.cs" />
@@ -45,7 +59,6 @@
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GenericWandersIn.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\Plant_SecondaryDrop.cs" />
     <Compile Include="Medieval Overhaul\MapComps\GreatTreesClassUpdate_MapComponent.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\CompGenericHide.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermathSet.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermath.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\Plant_SpawnerOnDestroy.cs" />
@@ -74,6 +87,7 @@
     <Compile Include="Medieval Overhaul\Harmony\HarmonyInstance.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaulMod.cs" />
     <Compile Include="Medieval Overhaul\Harmony\Patch_FollowAndMeleeAttack.cs" />
+    <Compile Include="Medieval Overhaul\Utilities\Utilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Medieval Overhaul\Utilities\DebugTools.cs" />
     <Compile Include="StandaloneSettlementPreference\TooltipStringInit.cs" />

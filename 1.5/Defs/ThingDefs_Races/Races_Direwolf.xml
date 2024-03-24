@@ -2,7 +2,6 @@
 <Defs>
 
 	<!-- ========================== Warg ================================= -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_Direwolf</defName>
 		<label>Direwolf</label>
@@ -86,7 +85,7 @@
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseHealthScale>1.4</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
-			<!--leatherDef>DankPyon_Leather_Direwolf</leatherDef-->
+			<leatherDef>DankPyon_Leather_Direwolf</leatherDef>
 			<gestationPeriodDays>26</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
@@ -179,11 +178,6 @@
 					<texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
 					<drawSize>2.15</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-					<thing>DankPyon_Hide_WolfDirewolf</thing>
-					<allowFemale>true</allowFemale>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

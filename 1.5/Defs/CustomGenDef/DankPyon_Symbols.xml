@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<KCSG.SymbolDef>
+	  <defName>FlagstoneGranite</defName>
+	  <thing>Flagstone</thing>
+	  <stuff>Granite</stuff>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>TileLimestone</defName>
+	  <thing>TileLimestone</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>TileGranite</defName>
+	  <thing>TileGranite</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>Soil</defName>
+	  <thing>Soil</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>SoilRich</defName>
+	  <thing>SoilRich</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>WoodPlankFloor</defName>
+	  <thing>WoodPlankFloor</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>Gravel</defName>
+	  <thing>Gravel</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>Granite_Rough</defName>
+	  <thing>TileGranite</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>Granite_RoughHewn</defName>
+	  <thing>TileGranite</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>WaterShallow</defName>
+	  <thing>WaterShallow</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>Mud</defName>
+	  <thing>Mud</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>CarpetRed</defName>
+	  <thing>CarpetRed</thing>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>Filth_Dirt_North</defName>
+	  <thing>Filth_Dirt</thing>
+	  <rotation>North</rotation>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+	  <defName>Filth_RubbleBuilding_North</defName>
+	  <thing>Filth_Dirt</thing>
+	  <rotation>North</rotation>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
 	  <defName>DankPyon_BarrelWoodLog_WoodLog_South</defName>
 	  <thing>DankPyon_BarrelWoodLog</thing>
 	  <stuff>WoodLog</stuff>
@@ -1694,6 +1767,298 @@
   <rotation>South</rotation>
 </KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticBarrelBigGrape_WoodLog_South</defName>
+  <thing>DankPyon_RusticBarrelBigGrape</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticBarrelBigClosed_WoodLog_South</defName>
+  <thing>DankPyon_RusticBarrelBigClosed</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticBarrelBigClosedDown_WoodLog_South</defName>
+  <thing>DankPyon_RusticBarrelBigClosedDown</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticCupboardWine_WoodLog_South</defName>
+  <thing>DankPyon_RusticCupboardWine</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticBarrelStack_WoodLog_South</defName>
+  <thing>DankPyon_RusticBarrelStack</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BarrelSilverOre_WoodLog_South</defName>
+  <thing>DankPyon_BarrelSilverOre</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BarrelGoldOre_WoodLog_South</defName>
+  <thing>DankPyon_BarrelGoldOre</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BarrelCoalOre_WoodLog_South</defName>
+  <thing>DankPyon_BarrelCoalOre</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BarrelTextiles_WoodLog_South</defName>
+  <thing>DankPyon_BarrelTextiles</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BarrelLeather_WoodLog_South</defName>
+  <thing>DankPyon_BarrelLeather</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BarrelGrape_WoodLog_South</defName>
+  <thing>DankPyon_BarrelGrape</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BarrelComponentBasic_WoodLog_South</defName>
+  <thing>DankPyon_BarrelComponentBasic</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Timber2x2c_WoodLog_South</defName>
+  <thing>DankPyon_Timber2x2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_IronIngots2x2c_South</defName>
+  <thing>DankPyon_IronIngots2x2c</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Timber1x2c_WoodLog_South</defName>
+  <thing>DankPyon_Timber1x2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Timber1x1c_WoodLog_South</defName>
+  <thing>DankPyon_Timber1x1c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_IronIngots1x1c_South</defName>
+  <thing>DankPyon_IronIngots1x1c</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_IronIngots1x2c_South</defName>
+  <thing>DankPyon_IronIngots1x2c</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticCupboardBread_WoodLog_South</defName>
+  <thing>DankPyon_RusticCupboardBread</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticCupboardCheese_WoodLog_South</defName>
+  <thing>DankPyon_RusticCupboardCheese</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticCupboardEmpty_WoodLog_South</defName>
+  <thing>DankPyon_RusticCupboardEmpty</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Storage_Cart_Empty_WoodLog_North</defName>
+  <thing>DankPyon_Storage_Cart_Empty</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Storage_Cart_Assorted_WoodLog_North</defName>
+  <thing>DankPyon_Storage_Cart_Assorted</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Storage_Cart_PlantRaw_WoodLog_North</defName>
+  <thing>DankPyon_Storage_Cart_PlantRaw</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Storage_Cart_Textiles_WoodLog_North</defName>
+  <thing>DankPyon_Storage_Cart_Textiles</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Storage_Cart_RawWood_WoodLog_North</defName>
+  <thing>DankPyon_Storage_Cart_RawWood</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WoodLogs2x2c_DankPyon_RawWood_South</defName>
+  <thing>DankPyon_WoodLogs2x2c</thing>
+  <stuff>DankPyon_RawWood</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ShelfFilledChaliceGold_WoodLog_South</defName>
+  <thing>DankPyon_ShelfFilledChaliceGold</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WoodLogs1x2c_DankPyon_RawWood_South</defName>
+  <thing>DankPyon_WoodLogs1x2c</thing>
+  <stuff>DankPyon_RawWood</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_WoodLogs1x1c_DankPyon_RawWood_South</defName>
+  <thing>DankPyon_WoodLogs1x1c</thing>
+  <stuff>DankPyon_RawWood</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_SackClosed_South</defName>
+  <thing>DankPyon_SackClosed</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ShelfFilledEmerald_WoodLog_South</defName>
+  <thing>DankPyon_ShelfFilledEmerald</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TableMarket_Dairy_WoodLog_South</defName>
+  <thing>DankPyon_TableMarket_Dairy</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TableMarket_Meat_WoodLog_South</defName>
+  <thing>DankPyon_TableMarket_Meat</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TableMarket_Bread_WoodLog_South</defName>
+  <thing>DankPyon_TableMarket_Bread</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LargeShelfEmpty_WoodLog_South</defName>
+  <thing>DankPyon_LargeShelfEmpty</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LargeShelf_Bread_WoodLog_South</defName>
+  <thing>DankPyon_LargeShelf_Bread</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LargeShelf_Grain_WoodLog_South</defName>
+  <thing>DankPyon_LargeShelf_Grain</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LargeShelf_Meat_WoodLog_South</defName>
+  <thing>DankPyon_LargeShelf_Meat</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LargeShelf_Cheese_WoodLog_South</defName>
+  <thing>DankPyon_LargeShelf_Cheese</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LargeShelf_Wine_WoodLog_South</defName>
+  <thing>DankPyon_LargeShelf_Wine</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LargeShelf_Mead_WoodLog_South</defName>
+  <thing>DankPyon_LargeShelf_Mead</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LargeShelf_Vegetables_WoodLog_South</defName>
+  <thing>DankPyon_LargeShelf_Vegetables</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
 <!--==================== Pawns ====================-->
 <KCSG.SymbolDef>
   <defName>DankPyon_BrigandLeader</defName>
@@ -1879,5 +2244,5 @@
   <spawnFilthAround>true</spawnFilthAround> 
   <defendSpawnPoint>true</defendSpawnPoint> 
 </KCSG.SymbolDef>
-  
+
 </Defs>

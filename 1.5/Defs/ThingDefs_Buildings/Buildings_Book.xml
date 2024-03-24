@@ -49,6 +49,18 @@
 
 	<!--================================ Books ================================-->
 	<ThingDef ParentName="BuildingBase" Name="DankPyon_BookBuildingBase" Abstract="True">
+		<description>Schematics are crucial blueprints that allow you to research specific research projects in Medieval Overhaul. To link them with a Research Bench, simply place them around it. Once the connection is established, you can begin researching the corresponding project.
+
+How to obtain Schematics?
+
+BUYING
+The easiest method is by forging alliances with one of the four Houses (Oswin, Hesse, Amboisse, Soren).
+Once you attain Allied status, you can request a Scholar Caravan using the Carrier Birds and the Scribe Table. These caravans always offer schematics.
+
+LOOTING
+Alternatively, you can obtain schematics by plundering ruins.
+Occasionally, you'll receive quests to raid small outposts or ruins. These locations often contain valuable loot, including schematics. With a bit of luck, you might stumble upon schematics during these expeditions.
+Remember, you'll need to actively search through the furnishings in these ruins to find them.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>20</pathCost>

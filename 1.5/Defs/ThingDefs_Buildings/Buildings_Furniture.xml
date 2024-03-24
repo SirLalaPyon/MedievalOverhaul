@@ -1752,13 +1752,13 @@
 			<surfaceType>Item</surfaceType>
 			<canOverlapZones>false</canOverlapZones>
 		<comps>
-			<li Class="CompProperties_Facility">
+			<!--li Class="CompProperties_Facility">
 					<statOffsets>
 					<Comfort>0.05</Comfort>
 					</statOffsets>
 					<maxSimultaneous>1</maxSimultaneous>
 					<maxDistance>6</maxDistance>
-			</li>
+			</li-->
 			<li Class="CompProperties_Styleable"/>
 		</comps>
 
@@ -1902,7 +1902,7 @@
 			<drawSize>3</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<thingClass>Building_Storage</thingClass>
+		<thingClass>Building</thingClass>
 		<uiIconScale>0.65</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(1,1)</size>

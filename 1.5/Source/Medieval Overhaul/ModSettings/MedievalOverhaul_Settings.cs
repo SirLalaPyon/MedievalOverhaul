@@ -22,10 +22,12 @@ namespace MedievalOverhaul
 
         // Production Chains
         public bool leatherChain = true;
+        public bool woodChain = true;
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref leatherChain, "leatherChain", true);
+            Scribe_Values.Look(ref woodChain, "woodChain", true);
             Scribe_Values.Look(ref debugMode, "debugMode", false);
             Scribe_Collections.Look(ref settingMode, "settingMode", LookMode.Value, LookMode.Value);
 

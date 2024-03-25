@@ -20,7 +20,7 @@ namespace MedievalOverhaul
             if (corpse.Map != null)
             {
                 GenExplosion.DoExplosion(corpse.Position, corpse.Map, 3f, MedievalOverhaulDefOf.DankPyon_SchratCollapse, corpse.InnerPawn, -1, -1f, null, null, null, null, null, 0f, 1, null, false, null, 0f, 1, 0f, true, null, null, null, true, 1f, 0f, true, null, 1f, null, null);
-                int range = Rand.Range(3, 4);
+                int range = 2;
                 Log.Message(corpse.InnerPawn.Faction);
                 for (int i = 0; i < range; i++)
                 {

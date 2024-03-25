@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BasePawn" Name="DankPyon_SchratBase">
-		<defName>DankPyon_Schrat</defName>
-		<label>schrat</label>
+	<ThingDef ParentName="BasePawn">
+		<defName>DankPyon_Schrat_Sapling</defName>
+		<label>schrat sapling</label>
 		<description>A gnarled tangle of branches, roots and mud, roughly shaped after a human being.
      Gifted with a twisted, sinister will, Schrats slowly shuffle through the undergrowth in search of the living.
       It’s said that Waldschrats relish the blood of intrusive lumberjacks and overzealous hunters.</description>
 		<statBases>
 			<MoveSpeed>4.4</MoveSpeed>
-			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.11</ArmorRating_Sharp>
 			<PsychicSensitivity>0.5</PsychicSensitivity>
 			<ToxicResistance>1</ToxicResistance>
 			<Flammability>1</Flammability>
@@ -24,7 +24,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>21</power>
+				<power>12</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -34,20 +34,31 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>21</power>
+				<power>12</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
 		<race>
 			<body>DankPyon_SchratBody</body>
 			<fleshType>DankPyon_Schrat</fleshType>
 			<deathAction>
-				<workerClass>MedievalOverhaul.DeathActionWorker_DarkSchratSplit</workerClass>
+				<workerClass>MedievalOverhaul.DeathActionWorker_SchratSplit</workerClass>
 			</deathAction>
-			<baseBodySize>4</baseBodySize>
-			<baseHealthScale>8.32</baseHealthScale>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
 			<foodType>None</foodType>
@@ -71,42 +82,21 @@
 		</race>
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<butcherProducts>
-			<DankPyon_RawDarkWood>110</DankPyon_RawDarkWood>
+			<DankPyon_RawDarkWood>20</DankPyon_RawDarkWood>
 		</butcherProducts>
-		<modExtensions>
-			<li Class="MedievalOverhaul.AdditionalButcherProducts">
-				<butcherOptions>
-					<li>
-						<thingDef>DankPyon_SchratHeart</thingDef>
-						<amount>1</amount>
-						<chance>0.50</chance>
-					</li>
-					<li>
-						<thingDef>DankPyon_AncientWood</thingDef>
-						<amount>1</amount>
-						<chance>0.50</chance>
-					</li>
-					<li>
-						<thingDef>DankPyon_GlowingResin</thingDef>
-						<amount>1</amount>
-						<chance>0.50</chance>
-					</li>
-				</butcherOptions>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef>
-		<defName>DankPyon_Schrat_Dark</defName>
-		<label>dark schrat</label>
-		<race>DankPyon_Schrat</race>
-		<combatPower>400</combatPower>
+		<defName>DankPyon_SchratDark_Sapling</defName>
+		<label>schrat sapling</label>
+		<race>DankPyon_Schrat_Sapling</race>
+		<combatPower>30</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/SchratDark</texPath>
+					<texPath>Animal/SaplingDark</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>4.8</drawSize>
+					<drawSize>3</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
@@ -114,36 +104,32 @@
 		<aiAvoidCover>true</aiAvoidCover>
 		<destroyGearOnDrop>true</destroyGearOnDrop>
 	</PawnKindDef>
-
+	
 	<!--==================== Schrat Plains ====================-->
 	<ThingDef ParentName="DankPyon_SchratBase">
-		<defName>DankPyon_SchratPlain</defName>
+		<defName>DankPyon_SchratPlain_Sapling</defName>
 		<race>
 			<body>DankPyon_SchratBody</body>
 			<fleshType>DankPyon_Schrat</fleshType>
-			<deathAction>
-				<workerClass>MedievalOverhaul.DeathActionWorker_PlainSchratSplit</workerClass>
-			</deathAction>
-			<baseBodySize>4</baseBodySize>
-			<baseHealthScale>6.32</baseHealthScale>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
 		</race>
 		<butcherProducts Inherit="False">
-			<WoodLog>100</WoodLog>
-			<DankPyon_SchratHeart>1</DankPyon_SchratHeart>
+			<WoodLog>30</WoodLog>
 		</butcherProducts>
 	</ThingDef>
 
 	<PawnKindDef>
-		<defName>DankPyon_Schrat_Plain</defName>
+		<defName>DankPyon_SchratPlain_Sapling</defName>
 		<label>schrat</label>
 		<race>DankPyon_SchratPlain</race>
-		<combatPower>400</combatPower>
+		<combatPower>30</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/SchratPlain</texPath>
+					<texPath>Animal/SaplingDark</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>4.2</drawSize>
+					<drawSize>3</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
@@ -151,5 +137,5 @@
 		<aiAvoidCover>true</aiAvoidCover>
 		<destroyGearOnDrop>true</destroyGearOnDrop>
 	</PawnKindDef>
-    
+
 </Defs>

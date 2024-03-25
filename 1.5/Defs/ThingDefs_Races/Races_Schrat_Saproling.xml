@@ -54,9 +54,6 @@
 		<race>
 			<body>DankPyon_SchratBody</body>
 			<fleshType>DankPyon_Schrat</fleshType>
-			<deathAction>
-				<workerClass>MedievalOverhaul.DeathActionWorker_SchratSplit</workerClass>
-			</deathAction>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
 			<needsRest>false</needsRest>
@@ -121,13 +118,13 @@
 
 	<PawnKindDef>
 		<defName>DankPyon_SchratPlain_Sapling</defName>
-		<label>schrat</label>
+		<label>schrat sapling</label>
 		<race>DankPyon_SchratPlain</race>
 		<combatPower>30</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/SaplingDark</texPath>
+					<texPath>Animal/SaplingPlain</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>

@@ -173,10 +173,9 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
-				<capacity>1</capacity>
+				<capacity>60</capacity>
 				<independentProcesses>false</independentProcesses>
 				<parallelProcesses>true</parallelProcesses>
 				<dropIngredients>true</dropIngredients>
@@ -238,9 +237,9 @@
 		<surfaceType>Item</surfaceType>
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
-				<capacity>1</capacity>
+				<capacity>100</capacity>
 				<independentProcesses>false</independentProcesses>
-				<parallelProcesses>false</parallelProcesses>
+				<parallelProcesses>true</parallelProcesses>
 				<dropIngredients>true</dropIngredients>
 				<showProductIcon>true</showProductIcon>
 				<barOffset>(0.0, 0.25)</barOffset>

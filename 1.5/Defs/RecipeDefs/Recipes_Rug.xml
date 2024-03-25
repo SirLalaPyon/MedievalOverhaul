@@ -10,7 +10,6 @@
 		<workSkill>Crafting</workSkill>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
-		<!--unfinishedThingDef>DankPyon_UnfinishedHide</unfinishedThingDef-->
 		<recipeUsers>
 			<li>DankPyon_TanningRack</li>
 		</recipeUsers>
@@ -101,10 +100,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Hide_Hyena</li>
+						<li>DankPyon_Hide_Leather_Hyena</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>65</count>
 			</li>
 			<li>
 				<filter>
@@ -118,7 +117,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_Hide_Hyena</li>
+				<li>DankPyon_Hide_Leather_Hyena</li>
 				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -138,10 +137,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Hide_WolfTimber</li>
+						<li>DankPyon_Hide_Wolf_Timber</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>65</count>
 			</li>
 			<li>
 				<filter>
@@ -151,11 +150,10 @@
 				</filter>
 				<count>6</count>
 			</li>
-
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_Hide_WolfTimber</li>
+				<li>DankPyon_Hide_Wolf_Timber</li>
 				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -171,14 +169,13 @@
 		<jobString>Making a arctic wolf rug.</jobString>
 		<workAmount>7000</workAmount>
 		<ingredients>
-
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Hide_WolfArctic</li>
+						<li>DankPyon_Hide_Wolf_Arctic</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>65</count>
 			</li>
 			<li>
 				<filter>
@@ -192,7 +189,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_Hide_WolfArctic</li>
+				<li>DankPyon_Hide_Wolf_Arctic</li>
 				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -215,7 +212,7 @@
 						<li>DankPyon_Hide_Cougar</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>65</count>
 			</li>
 			<li>
 				<filter>
@@ -225,7 +222,6 @@
 				</filter>
 				<count>6</count>
 			</li>
-
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -252,7 +248,7 @@
 						<li>DankPyon_Hide_Panther</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>65</count>
 			</li>
 			<li>
 				<filter>
@@ -286,10 +282,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Hide_BearGrizzly</li>
+						<li>DankPyon_Hide_Bear_Grizzly</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>80</count>
 			</li>
 			<li>
 				<filter>
@@ -303,7 +299,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_Hide_BearGrizzly</li>
+				<li>DankPyon_Hide_Bear_Grizzly</li>
 				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -323,10 +319,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Hide_BearPolar</li>
+						<li>DankPyon_Hide_Bear_Polar</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>80</count>
 			</li>
 			<li>
 				<filter>
@@ -336,11 +332,10 @@
 				</filter>
 				<count>12</count>
 			</li>
-
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_Hide_BearPolar</li>
+				<li>DankPyon_Hide_Bear_Polar</li>
 				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -356,14 +351,13 @@
 		<jobString>Making a thrumbo rug.</jobString>
 		<workAmount>12000</workAmount>
 		<ingredients>
-
 			<li>
 				<filter>
 					<thingDefs>
 						<li>DankPyon_Hide_Thrumbo</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>150</count>
 			</li>
 			<li>
 				<filter>
@@ -373,7 +367,6 @@
 				</filter>
 				<count>12</count>
 			</li>
-
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -393,14 +386,13 @@
 		<jobString>Making a daer rug.</jobString>
 		<workAmount>12000</workAmount>
 		<ingredients>
-
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_Hide_Daer</li>
+						<li>DankPyon_Hide_Leather_Daer</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>150</count>
 			</li>
 			<li>
 				<filter>
@@ -410,11 +402,10 @@
 				</filter>
 				<count>12</count>
 			</li>
-
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>DankPyon_Hide_Daer</li>
+				<li>DankPyon_Hide_Leather_Daer</li>
 				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
 		</fixedIngredientFilter>

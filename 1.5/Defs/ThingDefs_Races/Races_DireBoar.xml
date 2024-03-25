@@ -1,10 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  
-
 	<!-- =========================The Big Bad============================= -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_DireBoar</defName>
 		<label>dire boar</label>
@@ -18,9 +15,7 @@
 			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
 		</statBases>
 		<uiIconScale>1.75</uiIconScale>
-
 		<tools>
-
 			<li>
 				<label>tusk</label>
 				<capacities>
@@ -31,7 +26,6 @@
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
 			</li>
-
 			<li>
 				<capacities>
 					<li>Bite</li>
@@ -49,7 +43,6 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-
 			<li>
 				<label>left hoof</label>
 				<capacities>
@@ -71,7 +64,6 @@
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -84,7 +76,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -94,6 +85,7 @@
 			<baseBodySize>2.0</baseBodySize>
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
+			<leatherDef>DankPyon_Leather_DireBoar</leatherDef>
 			<wildness>0.80</wildness>
 			<trainability>Advanced</trainability>
 			<meatLabel>pork</meatLabel>
@@ -186,10 +178,6 @@
 					<texPath>Animal/Dessicated_DireBoar</texPath>
 					<drawSize>2.7</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-					<thing>DankPyon_Hide_DireBoar</thing>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

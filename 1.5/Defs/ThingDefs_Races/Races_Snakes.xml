@@ -54,13 +54,13 @@
 		</comps>
 		<race>
 			<body>Snake</body>
-			<leatherDef>Leather_Rhinoceros</leatherDef><!-- Rhino is turned into heavy scale leather -->
 			<predator>true</predator>
 			<maxPreyBodySize>0.80</maxPreyBodySize>
 			<baseBodySize>0.55</baseBodySize>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>0.70</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>Leather_Rhinoceros</leatherDef><!-- Rhino is turned into heavy scale leather -->
 			<meatLabel>cobra meat</meatLabel>
 			<wildness>0.75</wildness>
 			<petness>0.05</petness>
@@ -329,10 +329,6 @@
 					<texPath>Animal/Dessicated_GiantConstrictor</texPath>
 					<drawSize>4.4</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HornAttackTool</bodyPartGroup>
-					<thing>DankPyon_Hide_GiantConstrictor</thing>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
@@ -399,10 +395,6 @@
 					<texPath>Animal/Dessicated_GiantConstrictor</texPath>
 					<drawSize>4.55</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HornAttackTool</bodyPartGroup>
-					<thing>DankPyon_Hide_GiantConstrictor</thing>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
@@ -513,6 +505,7 @@
 			<baseHungerRate>1.05</baseHungerRate>
 			<baseHealthScale>9.0</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>DankPyon_Leather_Lindwurm</leatherDef>
 			<meatLabel>lindwurm meat</meatLabel>
 			<wildness>0.999</wildness>
 			<petness>0.005</petness>
@@ -598,10 +591,6 @@
 					<texPath>Animal/Dessicated_Lindwurm</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-					<thing>DankPyon_Hide_Lindwurm</thing>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
@@ -622,7 +611,6 @@
 				<compClass>CompAttachBase</compClass>
 			</li>
 		</comps>
-
 		<race>
 			<baseHealthScale>9.1</baseHealthScale>
 		</race>
@@ -680,11 +668,8 @@
 					<texPath>Animal/Dessicated_Lindwurm</texPath>
 					<drawSize>4.9</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-					<thing>DankPyon_Hide_Lindwurm</thing>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+
 </Defs>

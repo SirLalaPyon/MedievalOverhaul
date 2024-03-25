@@ -1,10 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  
-
 	<!-- ====================================================== -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_Rox</defName>
 		<label>rox</label>
@@ -88,7 +85,7 @@
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>4.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
-			<!--leatherDef>DankPyon_Leather_Rox</leatherDef-->
+			<leatherDef>DankPyon_Leather_Rox</leatherDef>
 			<wildness>0.75</wildness>
 			<trainability>Advanced</trainability>
 			<gestationPeriodDays>14</gestationPeriodDays>
@@ -180,10 +177,6 @@
 					<texPath>Animal/Dessicated_Rox</texPath>
 					<drawSize>4.2</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
-					<thing>DankPyon_Hide_Rox</thing>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 	</PawnKindDef>

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
 	<!-- Hood Base -->
 	<ThingDef Name="DankPyon_AnimalHoodBase" ParentName="HatMakeableBase" Abstract="True">
 		<recipeMaker>
-			<recipeUsers Inherit="False">
-				<li>DankPyon_AlchemyBench</li>
-			</recipeUsers>
+			<recipeUsers Inherit="False"/>
 			<unfinishedThingDef>DankPyon_UnfinishedHideArmor</unfinishedThingDef>
 		</recipeMaker>
-
 		<tradeability>None</tradeability>
 		<techLevel>Medieval</techLevel>
-        
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_AnimalHoodBase" Name="DankPyon_WolfHoodBase">
@@ -23,15 +20,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(107,103,99)</color>
 		</graphicData>
-
 		<costList>
-			<DankPyon_Hide_WolfTimber>1</DankPyon_Hide_WolfTimber>
-			<DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+			<Leather_Wolf>65</Leather_Wolf> 
 		</costList>
-
 		<statBases>
 			<MarketValue>350</MarketValue>
-			<WorkToMake>14000</WorkToMake>
+			<!-- <WorkToMake>14000</WorkToMake> -->
 			<MaxHitPoints>120</MaxHitPoints>
 			<Mass>2</Mass>
 			<ArmorRating_Sharp>0.306</ArmorRating_Sharp>
@@ -40,7 +34,6 @@
 			<Insulation_Heat>6</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -62,10 +55,8 @@
 		<graphicData>
 			<color>(249,243,222)</color>
 		</graphicData>
-
 		<costList Inherit="false">
-			<DankPyon_Hide_WolfArctic>1</DankPyon_Hide_WolfArctic>
-			<DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+			<Leather_Wolf>65</Leather_Wolf> 
 		</costList>
 	</ThingDef>
 
@@ -78,15 +69,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(112,82,65)</color>
 		</graphicData>
-
 		<costList>
-			<DankPyon_Hide_BearGrizzly>1</DankPyon_Hide_BearGrizzly>
-			<DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+			<Leather_Bear>65</Leather_Bear>
 		</costList>
-
 		<statBases>
 			<MarketValue>550</MarketValue>
-			<WorkToMake>17000</WorkToMake>
 			<MaxHitPoints>140</MaxHitPoints>
 			<Mass>2</Mass>
 			<ArmorRating_Sharp>0.336</ArmorRating_Sharp>
@@ -95,7 +82,6 @@
 			<Insulation_Heat>9</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -117,10 +103,8 @@
 		<graphicData>
 			<color>(180,180,180)</color>
 		</graphicData>
-
 		<costList Inherit="false">
-			<DankPyon_Hide_BearPolar>1</DankPyon_Hide_BearPolar>
-			<DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+			<Leather_Bear>65</Leather_Bear>
 		</costList>
 	</ThingDef>
 
@@ -142,23 +126,14 @@
 				</dataWest>
 			</drawData>
 		</apparel>
-
 		<recipeMaker>
-			<recipeUsers Inherit="False">
-				<li>DankPyon_AlchemyBench</li>
-			</recipeUsers>
-			<effectWorking>Tailor</effectWorking>
-			<soundWorking>Recipe_Tailor</soundWorking>
-			<unfinishedThingDef>DankPyon_UnfinishedHideArmor</unfinishedThingDef>
+			<recipeUsers Inherit="False"/>
 		</recipeMaker>
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
-
 		<tradeability>None</tradeability>
 		<techLevel>Medieval</techLevel>
-
-        
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
@@ -170,18 +145,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(85,79,74)</color>
 		</graphicData>
-
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-        
 		<costList>
-			<DankPyon_Hide_WolfDirewolf>1</DankPyon_Hide_WolfDirewolf>
-			<DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+			<DankPyon_Leather_Direwolf>65</DankPyon_Leather_Direwolf>
 		</costList>
-        
 		<statBases>
 			<MarketValue>450</MarketValue>
 			<WorkToMake>19000</WorkToMake>
@@ -194,7 +165,6 @@
 			<SocialImpact>0.10</SocialImpact>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
-        
 		<apparel>
 			<bodyPartGroups>
 				<li>Neck</li>
@@ -223,21 +193,16 @@
 			<texPath>Apparel/Attachments/HyenaPelt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<recipeMaker>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-        
 		<costList>
-			<DankPyon_Hide_Hyena>1</DankPyon_Hide_Hyena>
-			<DankPyon_TanningLiquor>10</DankPyon_TanningLiquor>
+			<DankPyon_Leather_Hyena>65</DankPyon_Leather_Hyena>
 		</costList>
-        
 		<statBases>
 			<MarketValue>450</MarketValue>
-			<WorkToMake>19000</WorkToMake>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>4</Mass>
 			<EquipDelay>2</EquipDelay>
@@ -247,7 +212,6 @@
 			<SocialImpact>0.10</SocialImpact>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
-        
 		<apparel>
 			<bodyPartGroups>
 				<li>Neck</li>

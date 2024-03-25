@@ -309,7 +309,11 @@ X
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+			<researchPrerequisites>
+				<li>DankPyon_ProtectiveClothing</li>
+				<li>Smithing</li>
+			</researchPrerequisites>
+			<!-- <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite> -->
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
@@ -358,7 +362,11 @@ X
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+			<researchPrerequisites>
+				<li>DankPyon_ProtectiveClothing</li>
+				<li>Smithing</li>
+			</researchPrerequisites>
+			<!-- <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite> -->
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
@@ -408,7 +416,11 @@ X
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+			<researchPrerequisites>
+				<li>DankPyon_ProtectiveClothing</li>
+				<li>Smithing</li>
+			</researchPrerequisites>
+			<!-- <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite> -->
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>

@@ -445,7 +445,7 @@
 		</building>
 		<researchPrerequisites>
 			<li>DankPyon_Oven</li>
-			<li>DankPyon_RusticFurniture</li>
+			<li>Stonecutting</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -618,7 +618,7 @@
 			<texPath>Production/Millstone</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
 
@@ -638,7 +638,7 @@
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-		<size>(1,1)</size>
+		<size>(2,2)</size>
 		<passability>PassThroughOnly</passability>
 		<pathCost>60</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
@@ -761,6 +761,9 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
+		<researchPrerequisites>
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
@@ -938,6 +941,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticBookshelf</li>
+					<li>DankPyon_RoyalBookshelf</li>
 					<li>DankPyon_Book_MilitaryBlades</li>
 					<li>DankPyon_Book_NobleBlades</li>
 					<li>DankPyon_Book_MilitaryMaces</li>
@@ -970,22 +974,17 @@
 	</ThingDef>
 	
 	<!-- Gardening Box -->
-	<ThingDef ParentName="BuildingBase">
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
 		<defName>DankPyon_Post</defName>
 		<label>Post</label>
-		<description>A support post to let viny plants grow effectively</description>
+		<description>A support post to let viny plants grow effectively.</description>
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
 			<texPath>Production/Post</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(6,3)</drawSize>
 		</graphicData>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
-		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<WorkToBuild>300</WorkToBuild>
@@ -995,29 +994,31 @@
 		</statBases>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<size>(4,1)</size>
-		<useHitPoints>True</useHitPoints>
-		<tickerType>Rare</tickerType>
-		<fillPercent>0.25</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
 		<fertility>1.0</fertility>
-		<passability>Standable</passability>
-		<pathCost>35</pathCost>
-		<terrainAffordanceNeeded>DankPyon_GrowSoilVine</terrainAffordanceNeeded>
-		<building>
-			<defaultPlantToGrow>DankPyon_Plant_Grape</defaultPlantToGrow>
-			<sowTag>DankPyon_Post</sowTag>
-			<buildingTags>
-				<li>Production</li>
-			</buildingTags>
-		</building>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
 		<designationCategory>Production</designationCategory>
-		<minifiedDef>MinifiedThing</minifiedDef>
 		<researchPrerequisites>
 			<li>DankPyon_AdvancedAgriculture</li>
 		</researchPrerequisites>
 		<techLevel>Medieval</techLevel>
+		<building>
+			<defaultPlantToGrow>DankPyon_Plant_Grape</defaultPlantToGrow>
+			<sowTag>DankPyon_Post</sowTag>
+			<paintable>false</paintable>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<terrainAffordanceNeeded>DankPyon_GrowSoilVine</terrainAffordanceNeeded>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
@@ -1365,11 +1366,12 @@
 		<techLevel>Medieval</techLevel>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="FurnitureWithQualityBase">
 		<defName>DankPyon_GardeningBox</defName>
 		<label>gardening box</label>
 		<description>A box filled with dirt to grow plants.</description>
 		<thingClass>Building_PlantGrower</thingClass>
+		<techLevel>Medieval</techLevel>
 		<graphicData>
 			<texPath>Production/GardeningBox</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -1382,22 +1384,16 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<castEdgeShadows>true</castEdgeShadows>
-		<altitudeLayer>LowPlant</altitudeLayer>
-		<defaultPlacingRot>East</defaultPlacingRot>
-		<passability>PassThroughOnly</passability>
-		<pathCost>30</pathCost>
-		<fillPercent>0.30</fillPercent>
-		<canOverlapZones>false</canOverlapZones>
-		<constructionSkillPrerequisite>1</constructionSkillPrerequisite>
 		<statBases>
-			<WorkToBuild>1500</WorkToBuild>
-			<MaxHitPoints>180</MaxHitPoints>
-			<Flammability>0.5</Flammability>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1.0</Flammability>
 			<Cleanliness>-5</Cleanliness>
+			<Mass>10</Mass>
 		</statBases>
+		<altitudeLayer>LowPlant</altitudeLayer>
 		<size>(1,4)</size>
-
+		<passability>PassThroughOnly</passability>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -1405,23 +1401,24 @@
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
-
-		<fertility>2.8</fertility>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<fertility>0.8</fertility>
+		<designationCategory>Production</designationCategory>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<researchPrerequisites>
+			<li>DankPyon_BasicAgriculture</li>
+		</researchPrerequisites>
 		<building>
 			<defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
 			<sowTag>Ground</sowTag>
+			<paintable>false</paintable>
 			<buildingTags>
 				<li>Production</li>
 			</buildingTags>
 		</building>
-		<tickerType>Rare</tickerType>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<designationCategory>Production</designationCategory>
-		<researchPrerequisites>
-			<li>DankPyon_BasicAgriculture</li>
-		</researchPrerequisites>
-		<techLevel>Medieval</techLevel>
-	</ThingDef>
+	</ThingDef>	
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Apiary</defName>

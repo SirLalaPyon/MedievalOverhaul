@@ -9,6 +9,24 @@
 
 	<!-- ==================== Storage Base ==================== -->
 
+	<ThingDef Name="DankPyon_LumberStorageBase" ParentName="ShelfBase" Abstract="True">
+		<thingClass>Building_Storage</thingClass>
+		<researchPrerequisites Inherit="false">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
+		<designationCategory>DankPyon_RusticStorage</designationCategory>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+	
+	<ThingDef Name="DankPyon_BrickStorageBase" ParentName="ShelfBase" Abstract="True">
+		<thingClass>Building_Storage</thingClass>
+		<researchPrerequisites Inherit="false">
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<designationCategory>DankPyon_RusticStorage</designationCategory>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
 	<ThingDef Name="DankPyon_StorageBase" ParentName="ShelfBase" Abstract="True">
 		<thingClass>Building_Storage</thingClass>
 		<researchPrerequisites Inherit="false">
@@ -236,7 +254,7 @@
 	</ThingDef>
 
 	<!-- ==================== Wood Logs ==================== -->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs1x1c</defName>
 		<label>raw wood pile</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -284,7 +302,7 @@
 	</ThingDef>
 
 	<!--== Wood Logs 1x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs1x2c</defName>
 		<label>raw wood (1x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -330,7 +348,7 @@
 	</ThingDef>
 
 	<!--== Wood Logs 2x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs2x2c</defName>
 		<label>raw wood (2x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
@@ -377,7 +395,7 @@
 	</ThingDef>
 
 	<!--== Timber 1x1 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_Timber1x1c</defName>
 		<label>timber (1x1)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
@@ -420,12 +438,10 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-
-		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
 	<!--== Timber 1x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_Timber1x2c</defName>
 		<label>timber (1x2)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
@@ -467,12 +483,10 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-
-		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
 	<!--== Timber 2x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_Timber2x2c</defName>
 		<label>timber (2x2)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
@@ -515,12 +529,10 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-
-		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
 	<!--== Bricks ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks1x1c</defName>
 		<label>bricks(1x1)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
@@ -568,7 +580,7 @@
 	</ThingDef>
 
 	<!--== Bricks 1x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks1x2c</defName>
 		<label>bricks(1x2)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
@@ -614,7 +626,7 @@
 	</ThingDef>
 
 	<!--== Bricks 2x2 ==-->
-	<ThingDef ParentName="DankPyon_StorageBase">
+	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks2x2c</defName>
 		<label>bricks</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
@@ -660,7 +672,6 @@
 	
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
-
 	
 	<!--== iron Ingots ==-->
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_IronIngotStackBase">
@@ -1325,7 +1336,7 @@
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelWoodLog</defName>
 		<label>barrel of wood</label>
-		<description>A cylindrical barrel reserved for wood to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for wood to save space. Can hold up to 4 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelWoodLog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1373,7 +1384,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelIronOre</defName>
 		<label>barrel of iron ore</label>
-		<description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 5 stacks of iron ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 4 stacks of iron ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelIronOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1406,7 +1417,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelSilverOre</defName>
 		<label>barrel of silver ore</label>
-		<description>A cylindrical barrel reserved for silver ore to save space. Can hold up to 5 stacks of silver ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for silver ore to save space. Can hold up to 4 stacks of silver ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelSilverOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1439,7 +1450,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelGoldOre</defName>
 		<label>barrel of gold ore</label>
-		<description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 5 stacks of gold ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 4 stacks of gold ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelGoldOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1472,7 +1483,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelCoalOre</defName>
 		<label>barrel of coal ore</label>
-		<description>A cylindrical barrel reserved for coal ore to save space. Can hold up to 5 stacks of coal ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for coal ore to save space. Can hold up to 4 stacks of coal ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelCoalOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1505,7 +1516,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelTextiles</defName>
 		<label>barrel of textiles</label>
-		<description>A cylindrical barrel reserved for textiles to save space. Can hold up to 5 stacks of textiles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for textiles to save space. Can hold up to 4 stacks of textiles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelTextiles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1538,7 +1549,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelLeather</defName>
 		<label>barrel of leather</label>
-		<description>A cylindrical barrel reserved for leather to save space. Can hold up to 5 stacks of leather. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for leather to save space. Can hold up to 4 stacks of leather. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelLeather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1571,7 +1582,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelComponentBasic</defName>
 		<label>barrel of basic components</label>
-		<description>A cylindrical barrel reserved for basic components to save space. Can hold up to 5 stacks of basic components. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for basic components to save space. Can hold up to 4 stacks of basic components. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelComponentBasic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1605,7 +1616,7 @@
 	<ThingDef ParentName="DankPyon_BarrelBase">
 		<defName>DankPyon_BarrelGrape</defName>
 		<label>barrel of grape</label>
-		<description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 4 stacks of grapes. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BarrelGrape</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

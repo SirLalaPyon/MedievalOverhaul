@@ -5,7 +5,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MineablePlasteel" or defName = "MineableComponentsIndustrial"  or defName = "MineableSteel"]/building/mineableScatterCommonality</xpath>
+				<xpath>/Defs/ThingDef[defName = "MineableComponentsIndustrial"  or defName = "MineableSteel"]/building/mineableScatterCommonality</xpath>
 				<value>
 					<mineableScatterCommonality>0</mineableScatterCommonality>
 				</value>
@@ -42,21 +42,6 @@
 		<xpath>/Defs/ThingDef[defName = "MineableGold"]/building/mineableThing</xpath>
 		<value>
 			<mineableThing>DankPyon_GoldOre</mineableThing>
-		</value>
-	</Operation>
-	
-	<!-- Replace Plasteel name -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName = "Plasteel"]/label</xpath>
-		<value>
-			<label>Mithril</label>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName = "Plasteel"]/description</xpath>
-		<value>
-			<description>A precious lightweight structural material. Mithril is extremely strong due to its unique molecular structure.</description>
 		</value>
 	</Operation>
 	

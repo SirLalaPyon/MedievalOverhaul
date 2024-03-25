@@ -47,13 +47,14 @@
     <Compile Include="Medieval Overhaul\Hide Generation\SeperateHideList.cs" />
     <Compile Include="Medieval Overhaul\Hide Generation\ThingDefGenerator_Hide.cs" />
     <Compile Include="Medieval Overhaul\ModSettings\PatchOperation.cs" />
+    <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_PlainSchratSplit.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_ThingProducer.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_ThingProducer.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Item.cs" />
     <Compile Include="ImprovedNeutrotrainer\CompPropertiesUseEffect_LearnSkillImproved.cs" />
     <Compile Include="ImprovedNeutrotrainer\CompUseEffect_LearnSkillImproved.cs" />
     <Compile Include="ImprovedNeutrotrainer\Main.cs" />
-    <Compile Include="Medieval Overhaul\DamageWorkers\DeathActionWorker_DustPuff.cs" />
+    <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DarkSchratSplit.cs" />
     <Compile Include="Medieval Overhaul\Extensions\SecondaryPlantDropExtension.cs" />
     <Compile Include="Medieval Overhaul\Extensions\IncidentProperties.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GenericWandersIn.cs" />
@@ -294,6 +295,8 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

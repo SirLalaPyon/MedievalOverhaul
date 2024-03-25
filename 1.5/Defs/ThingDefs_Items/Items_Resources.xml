@@ -858,6 +858,35 @@
 		<burnableByRecipe>false</burnableByRecipe>
 		<!--smeltable>true</smeltable-->
 	</ThingDef>
+	
+	<!--=============== Plasteel ====================-->	
+  
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_PlasteelOre</defName>
+		<label>raw plasteel</label>
+		<description>Raw plasteel, needs to be processed into ingots at a smelter to be usable.</description>
+		<graphicData>
+			<texPath>Resources/PlasteelOre</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>0.4</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>DankPyon_RawOres</li>
+		</thingCategories>
+		<deepCommonality>5</deepCommonality>
+		<deepCountPerPortion>45</deepCountPerPortion>
+		<deepLumpSizeRange>20~30</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<!--smeltable>true</smeltable-->
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
 
 	<!--============================== Misc ==============================-->
 	<!--=============== Bone ====================-->

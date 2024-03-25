@@ -23,7 +23,14 @@ namespace MedievalOverhaul
         public static ProcessDef DankPyon_RawHidesProcess;
 
         public static HediffDef DankPyon_UnpleasantAftermath;
+
         public static ThingCategoryDef DankPyon_Hides;
+
+        public static PawnKindDef DankPyon_Schrat_Dark;
+        public static PawnKindDef DankPyon_SchratDark_Sapling;
+        public static PawnKindDef DankPyon_SchratPlain_Sapling;
+        public static FactionDef DankPyon_Forest_Faction;
+
     }
 
 }

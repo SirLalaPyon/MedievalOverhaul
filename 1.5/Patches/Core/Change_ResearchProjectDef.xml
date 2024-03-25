@@ -207,7 +207,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="Smithing"]</xpath>
 		<value>
 			<prerequisites>
-				<li>DankPyon_RusticFurniture</li>
+				<li>Stonecutting</li>
 			</prerequisites>
 		</value>
 	</Operation>
@@ -283,8 +283,8 @@
 					<baseCost>1000</baseCost>
 					<tab>DankPyon_MedievalResearchTab</tab>
 					<techLevel>Medieval</techLevel>
-					<researchViewX>11.00</researchViewX>
-					<researchViewY>3.30</researchViewY>
+					<researchViewX>10.00</researchViewX>
+					<researchViewY>3.6</researchViewY>
 					<prerequisites>
 						<li>DankPyon_MilitaryBlades</li>
 					</prerequisites>
@@ -308,8 +308,8 @@
 					<baseCost>2000</baseCost>
 					<tab>DankPyon_MedievalResearchTab</tab>
 					<techLevel>Medieval</techLevel>
-					<researchViewX>11</researchViewX>
-					<researchViewY>1.1</researchViewY>
+					<researchViewX>10</researchViewX>
+					<researchViewY>1.8</researchViewY>
 					<prerequisites>
 						<li>DankPyon_ChainArmor</li>
 					</prerequisites>
@@ -331,7 +331,10 @@
 					<tab>DankPyon_MedievalResearchTab</tab>
 					<techLevel>Medieval</techLevel>
 					<researchViewX>5</researchViewX>
-					<researchViewY>2.7</researchViewY>
+					<researchViewY>4.2</researchViewY>
+					<prerequisites>
+						<li>DankPyon_RusticFurniture</li>
+					</prerequisites>
 				</ResearchProjectDef>
 			</value>
 		</match>
@@ -350,7 +353,7 @@
 					<tab>DankPyon_MedievalResearchTab</tab>
 					<techLevel>Neolithic</techLevel>
 					<researchViewX>4.00</researchViewX>
-					<researchViewY>1.50</researchViewY>
+					<researchViewY>0.00</researchViewY>
 					<prerequisites>
 						<li>DankPyon_RusticFurniture</li>
 					</prerequisites>
@@ -371,8 +374,11 @@
 					<baseCost>400</baseCost>
 					<tab>DankPyon_MedievalResearchTab</tab>
 					<techLevel>Medieval</techLevel>
-					<researchViewY>7.30</researchViewY>
-					<researchViewX>8.00</researchViewX>
+					<prerequisites>
+						<li>DankPyon_Lumber</li>
+					</prerequisites>
+					<researchViewX>3</researchViewX>
+					<researchViewY>4.8</researchViewY>
 				</ResearchProjectDef>
 			</value>
 		</match>
@@ -393,8 +399,8 @@
 					<prerequisites>
 						<li>DankPyon_HuntingBow</li>
 					</prerequisites>
-					<researchViewX>10.00</researchViewX>
-					<researchViewY>7.30</researchViewY>
+					<researchViewX>5</researchViewX>
+					<researchViewY>4.8</researchViewY>
 					<requiredResearchFacilities>
 						<li>DankPyon_Book_GreatBow</li>
 					</requiredResearchFacilities>
@@ -461,7 +467,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="Cocoa"]/researchViewX</xpath>
 		<value>
-			<researchViewX>1.00</researchViewX>
+			<researchViewX>2.00</researchViewX>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -510,13 +516,13 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="Smithing"]/researchViewX</xpath>
 		<value>
-			<researchViewX>8.00</researchViewX>
+			<researchViewX>7.00</researchViewX>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="Smithing"]/researchViewY</xpath>
 		<value>
-			<researchViewY>3.50</researchViewY>
+			<researchViewY>4.2</researchViewY>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
@@ -540,19 +546,27 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="CarpetMaking"]/researchViewY</xpath>
 		<value>
-			<researchViewY>3.30</researchViewY>
+			<researchViewY>0.0</researchViewY>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+		<value>
+			<prerequisites>
+				<li>DankPyon_TextileSpinning</li>
+			</prerequisites>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/researchViewX</xpath>
 		<value>
-			<researchViewX>5.00</researchViewX>
+			<researchViewX>4.00</researchViewX>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/researchViewY</xpath>
 		<value>
-			<researchViewY>4.20</researchViewY>
+			<researchViewY>2.4</researchViewY>
 		</value>
 	</Operation>
 

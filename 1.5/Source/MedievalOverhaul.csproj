@@ -32,7 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DropOnDeath.cs" />
     <Compile Include="Medieval Overhaul\Harmony\GenerateImpliedDefs_PreResolve_Postfix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CalculableRecipe_Prefix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\TakeOutProduct_Prefix.cs" />

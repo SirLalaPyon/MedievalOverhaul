@@ -219,8 +219,10 @@
     <!--==================== Chalice ====================-->
 	<ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_ChaliceSilver</defName>
-        <label>silver chalice</label>
-        <description>A chalice most often used for drinking wine; this footed cup is made from silver, providing for an affordable way to improve the aesthetic of a hall.</description>
+        <label>dirt covered silver chalice</label>
+        <description>A chalice most often used for drinking wine; this footed cup is made from silver, providing for an affordable way to improve the aesthetic of a hall. 
+		
+		Be sure to clean it with the cleaning table before placing it on your table!</description>
         <graphicData>
             <texPath>Special/ChaliceSilver</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -228,7 +230,7 @@
 
          <statBases>
             <MaxHitPoints>70</MaxHitPoints>
-            <!--MarketValue>150</MarketValue-->
+            <MarketValue>150</MarketValue>
             <Beauty>26</Beauty>
             <Mass>1</Mass>
             <Flammability>0</Flammability>
@@ -244,8 +246,10 @@
 
     <ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_ChaliceGold</defName>
-        <label>golden chalice</label>
-        <description>A chalice most often used for drinking wine; this footed cup is made from gold, more greatly increasing the aesthetic of a hall to flaunt its wealth.</description>
+        <label>dirt covered golden chalice</label>
+        <description>A chalice most often used for drinking wine; this footed cup is made from gold, more greatly increasing the aesthetic of a hall to flaunt its wealth. 
+		
+		Be sure to clean it with the cleaning table before placing it on your table!</description>
         <graphicData>
             <texPath>Special/ChaliceGold</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -253,7 +257,7 @@
 
          <statBases>
             <MaxHitPoints>70</MaxHitPoints>
-            <!--MarketValue>150</MarketValue-->
+            <MarketValue>150</MarketValue>
             <Beauty>100</Beauty>
             <Mass>1</Mass>
             <Flammability>0</Flammability>
@@ -270,8 +274,10 @@
     <!--==================== Bowls ====================-->
 	<ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_BowlSilver</defName>
-        <label>silver bowl</label>
-        <description>An elaborate bowl made out of silver.</description>
+        <label>dirt covered silver bowl</label>
+        <description>An elaborate silver bowl covered in dirt. 
+		
+		Be sure to clean it with the cleaning table before placing it on your table!</description>
         <graphicData>
             <texPath>Special/BowlSilver</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -279,7 +285,7 @@
 
          <statBases>
             <MaxHitPoints>85</MaxHitPoints>
-            <!--MarketValue>150</MarketValue-->
+            <MarketValue>150</MarketValue>
             <Beauty>10</Beauty>
             <Mass>2</Mass>
             <Flammability>0</Flammability>
@@ -295,8 +301,10 @@
 
     <ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_BowlGold</defName>
-        <label>golden bowl</label>
-        <description>An elaborate bowl made out of gold.</description>
+        <label>dirt covered golden bowl</label>
+        <description>An elaborate gold bowl covered in dirt. 
+		
+		Be sure to clean it with the cleaning table before placing it on your table!</description>
         <graphicData>
             <texPath>Special/BowlGold</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -304,7 +312,7 @@
 
          <statBases>
             <MaxHitPoints>85</MaxHitPoints>
-            <!--MarketValue>150</MarketValue-->
+            <MarketValue>150</MarketValue>
             <Beauty>25</Beauty>
             <Mass>2</Mass>
             <Flammability>0</Flammability>
@@ -320,8 +328,10 @@
 	<!--==================== Skulls ====================-->
 	<ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_SkullBase">
         <defName>DankPyon_SkullGold</defName>
-        <label>gold skull</label>
-        <description>Found within the depths of ruins, the gold skull speaks of an ornate treasure held by those who walk as undead.</description>
+        <label>dirt covered gold skull</label>
+        <description>Found within the depths of ruins, the gold skull speaks of an ornate treasure held by those who walk as undead. 
+		
+		Be sure to clean it with the cleaning table before placing it on your table!</description>
         <graphicData>
             <texPath>Special/SkullGold</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -330,6 +340,7 @@
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <Beauty>220</Beauty>
+			<MarketValue>110</MarketValue>
             <Mass>5</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>0</DeteriorationRate>
@@ -343,14 +354,17 @@
 
     <ThingDef ParentName="DankPyon_SkullBase">
         <defName>DankPyon_SkullEmerald</defName>
-        <label>emerald skull</label>
-        <description>A skull formed from the materials of a rare and prestigious gemstone. Although valuable, ruin delvers should tread carefully, for such a rich treasure would not go unprotected.</description>
+        <label>dirt covered emerald skull</label>
+        <description>A skull formed from the materials of a rare and prestigious gemstone. Although valuable, ruin delvers should tread carefully, for such a rich treasure would not go unprotected.
+		
+		Be sure to clean it with the cleaning table before placing it on your table!</description>
         <graphicData>
             <texPath>Special/SkullEmerald</texPath>
         </graphicData>
 
         <statBases>
             <Beauty>220</Beauty>
+			<MarketValue>120</MarketValue>
         </statBases>
 
         <costList>
@@ -360,14 +374,17 @@
 
     <ThingDef ParentName="DankPyon_SkullBase">
         <defName>DankPyon_SkullSapphire</defName>
-        <label>sapphire skull</label>
-        <description>Glistening a blue hue, the skull of sapphire radiates with every curvature of its head. A treasure like this would surely fetch much wealth or would do well to be displayed in a great hall.</description>
+        <label>dirt covered sapphire skull</label>
+        <description>Glistening a blue hue, the skull of sapphire radiates with every curvature of its head. A treasure like this would surely fetch much wealth or would do well to be displayed in a great hall.
+		
+		Be sure to clean it with the cleaning table before placing it on your table!</description>
         <graphicData>
             <texPath>Special/SkullSapphire</texPath>
         </graphicData>
 
          <statBases>
             <Beauty>249</Beauty>
+			<MarketValue>124</MarketValue>
         </statBases>
 
         <costList>
@@ -377,8 +394,10 @@
 
     <ThingDef ParentName="DankPyon_SkullBase">
         <defName>DankPyon_SkullRuby</defName>
-        <label>ruby skull</label>
-        <description>A grand prize of valuable gemstones, the ruby skull draws the attention of every lord, warrior, explorer, and merchant alike. A collector's prized possession.</description>
+        <label>dirt covered ruby skull</label>
+        <description>A grand prize of valuable gemstones, the ruby skull draws the attention of every lord, warrior, explorer, and merchant alike. A collector's prized possession.
+		
+		Be sure to clean it with the cleaning table before placing it on your table!</description>
         <graphicData>
             <texPath>Special/SkullRuby</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -386,6 +405,7 @@
 
          <statBases>
             <Beauty>288</Beauty>
+			<MarketValue>144</MarketValue>
         </statBases>
 
         <costList>

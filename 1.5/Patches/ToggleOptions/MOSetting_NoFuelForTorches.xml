@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>leatherChain</settings>
+		<inverse>true</inverse>
+		<operations>
+		
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[
+			defName="TorchLamp" or 
+			defName="DankPyon_RusticTorchLamp" or
+			defName="DankPyon_WallTorch" or
+			defName="DankPyon_WallLamp" or
+			defName="DankPyon_LampPost"
+			]/comps/li[@Class="CompProperties_HeatPusher"]</xpath>
+			<match Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[
+				defName="TorchLamp" or 
+				defName="DankPyon_RusticTorchLamp" or
+				defName="DankPyon_WallTorch" or
+				defName="DankPyon_WallLamp" or
+				defName="DankPyon_LampPost"
+				]/comps/li[@Class="CompProperties_HeatPusher"]</xpath>
+			</match>
+		</li>
+		
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[
+			defName="TorchLamp" or 
+			defName="DankPyon_RusticTorchLamp" or
+			defName="DankPyon_WallTorch" or
+			defName="DankPyon_WallLamp" or
+			defName="DankPyon_LampPost"
+			]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+			<match Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[
+				defName="TorchLamp" or 
+				defName="DankPyon_RusticTorchLamp" or
+				defName="DankPyon_WallTorch" or
+				defName="DankPyon_WallLamp" or
+				defName="DankPyon_LampPost"
+				]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+			</match>
+		</li>
+		
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[
+			defName="TorchLamp" or 
+			defName="DankPyon_RusticTorchLamp" or
+			defName="DankPyon_WallTorch" or
+			defName="DankPyon_WallLamp" or
+			defName="DankPyon_LampPost"
+			]/inspectorTabs</xpath>
+			<match Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[
+				defName="TorchLamp" or 
+				defName="DankPyon_RusticTorchLamp" or
+				defName="DankPyon_WallTorch" or
+				defName="DankPyon_WallLamp" or
+				defName="DankPyon_LampPost"
+				]/inspectorTabs</xpath>
+			</match>
+		</li>
+		
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[
+			defName="TorchLamp" or 
+			defName="DankPyon_RusticTorchLamp" or
+			defName="DankPyon_WallTorch" or
+			defName="DankPyon_WallLamp" or
+			defName="DankPyon_LampPost"
+			]/comps/li[@Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"]</xpath>
+			<match Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[
+				defName="TorchLamp" or 
+				defName="DankPyon_RusticTorchLamp" or
+				defName="DankPyon_WallTorch" or
+				defName="DankPyon_WallLamp" or
+				defName="DankPyon_LampPost"
+				]/comps/li[@Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"]</xpath>
+			</match>
+		</li>
+
+	</operations>
+  </Operation>
+</Patch>

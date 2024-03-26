@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>leatherChain</settings>
+		<inverse>true</inverse>
+		<operations>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="DankPyon_HornetNest"]</xpath>
+			</li>
+			
+		</operations>
+	</Operation>
+</Patch>	

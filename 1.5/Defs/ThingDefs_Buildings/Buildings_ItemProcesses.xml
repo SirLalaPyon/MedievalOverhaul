@@ -140,6 +140,17 @@
 		<processDays>0.02</processDays>
 	</ProcessorFramework.ProcessDef>
 
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+		<defName>DankPyon_SmeltingOre_Plasteel</defName>
+		<thingDef>Plasteel</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_PlasteelOre</li>
+			</thingDefs>
+		</ingredientFilter>
+		<efficiency>1.5</efficiency>
+	</ProcessorFramework.ProcessDef>	
+
 	<!-- Flour -->
 	<ProcessorFramework.ProcessDef>
 		<defName>DankPyon_MillProcess</defName>

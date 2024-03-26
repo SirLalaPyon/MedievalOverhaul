@@ -473,4 +473,93 @@
 		</researchPrerequisites>
 	</RecipeDef>
 
+
+	<!-- Plasteel Ingots -->
+	<RecipeDef ParentName="DankPyon_SmelterBase">
+		<defName>DankPyon_MakeIngots_Plasteel</defName>
+		<workAmount>400</workAmount>
+		<label>refine raw plasteel into an ingot</label>
+		<jobString>Refining raw plasteel into 1 plasteel ingot.</jobString>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_PlasteelOre</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_PlasteelOre</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Plasteel>1</Plasteel>
+		</products>
+		<researchPrerequisites>
+			<li>DankPyon_Plasteel</li>
+		</researchPrerequisites>
+	</RecipeDef>
+  
+	<RecipeDef ParentName="DankPyon_SmelterBase">
+		<defName>DankPyon_MakeIngots_PlasteelBulk</defName>
+		<workAmount>1600</workAmount>
+		<label>refine raw plasteel into 30 ingots</label>
+		<jobString>Refining raw plasteel into 30 plasteel ingot.</jobString>
+		<targetCountAdjustment>30</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_PlasteelOre</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_PlasteelOre</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Plasteel>30</Plasteel>
+		</products>
+		<researchPrerequisites>
+			<li>DankPyon_Plasteel</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_SmelterBase">
+		<defName>DankPyon_MakeIngots_PlasteelExtraBulk</defName>
+		<workAmount>2800</workAmount>
+		<label>refine raw plasteel into 60 ingots</label>
+		<jobString>Refining raw plasteel into 60 plasteel ingot.</jobString>
+		<targetCountAdjustment>60</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_PlasteelOre</li>
+					</thingDefs>
+				</filter>
+				<count>240</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_PlasteelOre</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Plasteel>60</Plasteel>
+		</products>
+		<researchPrerequisites>
+			<li>DankPyon_Plasteel</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
 </Defs>

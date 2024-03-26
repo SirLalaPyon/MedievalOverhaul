@@ -562,6 +562,7 @@
 					<li>DankPyon_SmeltingOre_Gold</li>
 					<li>DankPyon_SmeltingOre_Coal</li>
 					<!--li>DankPyon_SmeltingOre_Tar</li-->
+					<li>DankPyon_SmeltingOre_Plasteel</li>
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
@@ -595,7 +596,7 @@
 		</placeWorkers>
 		<techLevel>Medieval</techLevel>
 		<researchPrerequisites>
-			<li>Smithing</li>
+			<li>DankPyon_Plasteel</li>
 		</researchPrerequisites>
 	</ThingDef>
 

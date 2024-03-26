@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--===== Rustic Furniture Group =====-->
-	<ResearchProjectDef>
+	<!--ResearchProjectDef>
 		<defName>DankPyon_PrimitiveFurniture</defName>
 		<label>Primitive furniture</label>
 		<description>Construct primitiv furniture like log beds, log tables, and more.</description>
@@ -14,7 +14,7 @@
 		</tags>
 		<researchViewX>1</researchViewX>
 		<researchViewY>4.2</researchViewY>
-	</ResearchProjectDef>
+	</ResearchProjectDef-->
 	
 
 	<ResearchProjectDef>
@@ -29,9 +29,6 @@
 		</tags>
 		<researchViewX>2</researchViewX>
 		<researchViewY>4.2</researchViewY>
-		<prerequisites>
-			<li>DankPyon_PrimitiveFurniture</li>
-		</prerequisites>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -328,7 +325,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>7</researchViewX>
-		<researchViewY>6</researchViewY>
+		<researchViewY>6.6</researchViewY>
 		<hiddenPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</hiddenPrerequisites>
@@ -336,17 +333,36 @@
 
 	<ResearchProjectDef>
 		<defName>DankPyon_Steel</defName>
-		<label>steel</label>
-		<description>Discover the basics of metallurgy and manufacture steel</description>
-		<baseCost>1000</baseCost>
+		<label>Intermediate metallurgy</label>
+		<description>Discover new techniqures of metallurgy and steel manufacturing.</description>
+		<baseCost>2000</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>8</researchViewX>
-		<researchViewY>5.4</researchViewY>
+		<researchViewY>6</researchViewY>
 		<prerequisites>
 			<li>Smithing</li>
 			<li>DankPyon_Alchemy</li>
 		</prerequisites>
+		<!--requiredResearchFacilities>
+			<li>DankPyon_Book_Steel</li>
+		</requiredResearchFacilities-->
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>DankPyon_Plasteel</defName>
+		<label>Advanced metallurgy</label>
+		<description>Discover advanced techniques of metallurgy and Plasteel manufacturing.</description>
+		<baseCost>1000</baseCost>
+		<tab>DankPyon_MedievalResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>12</researchViewX>
+		<researchViewY>6</researchViewY>
+		<prerequisites>
+			<li>DankPyon_Engineering</li>
+			<li>DankPyon_Steel</li>
+		</prerequisites>
+		<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>		
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_Steel</li>
 		</requiredResearchFacilities>
@@ -360,7 +376,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>8</researchViewX>
-		<researchViewY>6.0</researchViewY>
+		<researchViewY>6.6</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Alchemy</li>
 		</prerequisites>
@@ -377,7 +393,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>8</researchViewX>
-		<researchViewY>6.6</researchViewY>
+		<researchViewY>7.4</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Alchemy</li>
 		</prerequisites>

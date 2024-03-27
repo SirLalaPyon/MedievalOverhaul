@@ -13,11 +13,10 @@
 		</statBases>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
-
 		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<drawerType>MapMeshAndRealTime</drawerType>
-
 		<building>
+			<claimable>false</claimable>
 			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
@@ -95,7 +94,6 @@
 		<size>(1,1)</size>
 		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
 		<rotatable>true</rotatable>
-
 		<fillPercent>0.25</fillPercent>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -104,12 +102,14 @@
 		</statBases>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
-
+		<building>
+			<claimable>false</claimable>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
 		<killedLeavings>
 			<DankPyon_Bone>5</DankPyon_Bone>
 			<DankPyon_Linen>5</DankPyon_Linen>
 		</killedLeavings>
-
 		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
@@ -194,11 +194,9 @@
 		</graphicData>
 		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
 		<rotatable>true</rotatable>
-
 		<costList>
 			<DankPyon_IronOre>5</DankPyon_IronOre>
 		</costList>
-
 		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
@@ -238,12 +236,10 @@
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
-
 		<costList>
 			<DankPyon_BrokenWeapons>1</DankPyon_BrokenWeapons>
 			<DankPyon_IronOre>3</DankPyon_IronOre>
 		</costList>
-
 		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
@@ -286,11 +282,9 @@
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
-
 		<costList>
 			<DankPyon_BrokenWeapons>2</DankPyon_BrokenWeapons>
 		</costList>
-
 		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
@@ -335,7 +329,6 @@
 		</graphicData>
 		<randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
 		<rotatable>true</rotatable>
-
 		<costList>
 			<DankPyon_Linen>10</DankPyon_Linen>
 		</costList>
@@ -354,14 +347,12 @@
 		</graphicData>
 		<size>2,2</size>
 		<rotatable>true</rotatable>
-
 		<costList>
 			<DankPyon_BrokenWeapons>3</DankPyon_BrokenWeapons>
 			<WoodLog>100</WoodLog>
 			<DankPyon_RawWood>10</DankPyon_RawWood>
 			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
 		</costList>
-
 		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
@@ -419,11 +410,9 @@
 			<color>(119,94,75)</color>
 		</graphicData>
 		<rotatable>false</rotatable>
-
 		<costList>
 			<WoodLog>5</WoodLog>
 		</costList>
-
 		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
@@ -479,7 +468,6 @@
 			<drawSize>(2,2)</drawSize>
 			<color>(119,94,75)</color>
 		</graphicData>
-
 		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>

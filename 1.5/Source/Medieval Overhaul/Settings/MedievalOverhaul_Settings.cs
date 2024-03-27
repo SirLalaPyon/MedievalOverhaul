@@ -24,6 +24,8 @@ namespace MedievalOverhaul
         public bool woodChain = true;
 
         // Map Generation Stuff
+        public bool industrialJunk = true;
+        public bool exostriderRemains = true;
         public bool hornetNest = false;
         public bool vanillaMine = false;
 
@@ -34,6 +36,8 @@ namespace MedievalOverhaul
             base.ExposeData();
             Scribe_Values.Look(ref leatherChain, "leatherChain", true);
             Scribe_Values.Look(ref woodChain, "woodChain", true);
+            Scribe_Values.Look(ref industrialJunk, "industrialJunk", true);
+            Scribe_Values.Look(ref exostriderRemains, "exostriderRemains", true);
             Scribe_Values.Look(ref hornetNest, "hornetNest", false);
             Scribe_Values.Look(ref vanillaMine, "vanillaMine", false);
             Scribe_Values.Look(ref refuelableTorch, "refuelableTorch", false);
@@ -67,6 +71,8 @@ namespace MedievalOverhaul
             listingStandard.GapLine();
             listingStandard.Gap();
             listingStandard.Label((string)"DankPyon_Settings_MapGen".Translate());
+            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_IndustrialJunk".Translate(), ref this.industrialJunk);
+            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_ExostriderRemains".Translate(), ref this.exostriderRemains);
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_HornetNest".Translate(), ref this.hornetNest);
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_VanillaMine".Translate(), ref this.vanillaMine);
             listingStandard.Gap();

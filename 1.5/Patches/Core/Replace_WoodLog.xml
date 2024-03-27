@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!--Replace every vanilla woodlog to drop Medieval Overhaul raw wood-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef/plant/harvestedThingDef[text()="WoodLog"]</xpath>
-			<value>
-				<harvestedThingDef>DankPyon_RawWood</harvestedThingDef>
-			</value>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="WoodLog"]/*[name()="label" or name()="description" or name()="graphicData" or name()="thingCategories"]</xpath>
-	</Operation>
-
-	<!--Replace every vanilla woodlog to drop Medieval Overhaul raw wood-->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="WoodLog"]</xpath>
-		<value>
-			<label>timber</label>
-			<description>Timber is processed wood. It has been cut into more manageable sizes making it more manageable to build with.</description>
-			<graphicData>
-				<texPath>Resources/WoodPlank</texPath>
-      			<graphicClass>Graphic_StackCount</graphicClass>
-				<color>(133,97,67)</color>
-			</graphicData>
-			<uiIconPath>UI/IconWood</uiIconPath>
-			<thingCategories>
-				<li>DankPyon_Wood</li>
-			</thingCategories>
-		</value>
-	</Operation>
-
 	<!-- Several neolith bits of furniture can be made of logs -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Fence" or 

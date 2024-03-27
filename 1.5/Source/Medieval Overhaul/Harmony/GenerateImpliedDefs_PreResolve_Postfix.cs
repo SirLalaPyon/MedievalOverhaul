@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using MedievalOverhaul.Wood;
 
 namespace MedievalOverhaul
 {
@@ -16,9 +17,14 @@ namespace MedievalOverhaul
 
         public static void Postfix()
         {
-            //Do this first because I need this list to contain all possible animals regardless of whether they get converted
-            GeneratorUtility.MakeListOfShearables();
+            
+            GeneratorUtility.MakeListOfAnimals();
+            GeneratorUtilities.MakeListOfTrees();
             foreach (ThingDef def in ThingDefGenerator_Hide.ImpliedHideDefs())
+            {
+                DefGenerator.AddImpliedDef(def);
+            }
+            foreach (ThingDef def in ThingDefGenerator_Timber.ImpliedTreeDefs())
             {
                 DefGenerator.AddImpliedDef(def);
             }

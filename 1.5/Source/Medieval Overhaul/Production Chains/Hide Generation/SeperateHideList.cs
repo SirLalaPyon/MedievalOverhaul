@@ -12,5 +12,6 @@ namespace MedievalOverhaul
         public List<string> whiteListRaces;
         public List<string> whiteListLeathers;
         public List<string> blackListRaces;
+        public List<string> blackListLeathers;
     }
 }

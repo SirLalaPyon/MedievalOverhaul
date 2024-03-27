@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_MiningSpot</defName>
 		<label>mining spot</label>
@@ -119,15 +120,14 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
-		<costList>
-			<DankPyon_RawWood>10</DankPyon_RawWood>
-		</costList>
-
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
-
 		<statBases>
 			<WorkToBuild>200</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
@@ -135,11 +135,9 @@
 			<Cleanliness>-5</Cleanliness>
 			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
 		</statBases>
-
 		<recipes>
 			<li>Make_StoneBlocksAny</li>
 		</recipes>
-
 		<size>(1,1)</size>
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
@@ -184,13 +182,11 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.2</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -242,7 +238,6 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
@@ -271,7 +266,6 @@
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-
 		<costList>
 			<WoodLog>60</WoodLog>
 		</costList>
@@ -279,7 +273,6 @@
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
-
 		<recipes>
 			<li>CookMealSimple</li>
 			<li>CookMealFine</li>
@@ -302,7 +295,6 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
 		</recipes>
-		
 		<comps>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>160.0</fuelConsumptionRate>
@@ -350,7 +342,6 @@
 			</damageData>
 		</graphicData>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
-
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
@@ -358,7 +349,6 @@
 		<costList>
 			<WoodLog>20</WoodLog>
 		</costList>
-
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -407,18 +397,15 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconScale>0.85</uiIconScale>
-
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
-
 		<statBases>
 			<WorkToBuild>4000</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
-	
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -548,22 +535,18 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
-
 		<statBases>
 			<WorkToBuild>2000</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<size>(2,1)</size>
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
@@ -608,7 +591,6 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_Millstone</defName>
 		<label>millstone</label>
@@ -621,7 +603,6 @@
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
@@ -629,7 +610,6 @@
 		<costList>
 			<WoodLog>20</WoodLog>
 		</costList>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -652,7 +632,6 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<isMealSource>true</isMealSource>
 		</building>
-
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -660,11 +639,9 @@
 				</linkableFacilities>
 			</li>
 		</comps>
-		
 		<researchPrerequisites>
 			<li>DankPyon_BasicAgriculture</li>
 		</researchPrerequisites>
-
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
@@ -688,13 +665,11 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 			<li>Woody</li>
 		</stuffCategories>
-
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
@@ -734,16 +709,13 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-
 		<!--recipe>
 				<li>SmashCorpseMechanoid</li>  why no work unga bunga
 				</recipe-->
-
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
@@ -792,7 +764,6 @@
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
@@ -807,7 +778,6 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
-
 		<researchPrerequisites>
 			<li>DankPyon_Jewelry</li>
 		</researchPrerequisites>
@@ -834,12 +804,10 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
@@ -869,19 +837,16 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
-
 		<researchPrerequisites>
 			<li>DankPyon_Alchemy</li>
 		</researchPrerequisites>
@@ -905,7 +870,6 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -916,27 +880,23 @@
 			<DankPyon_IronIngot>25</DankPyon_IronIngot>
 			<DankPyon_ComponentBasic>25</DankPyon_ComponentBasic>
 		</costList>
-
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
-
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>2800</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<ResearchSpeedFactor>1</ResearchSpeedFactor>
 		</statBases>
-
 		<fillPercent>0.5</fillPercent>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<designationCategory>Production</designationCategory>
 		<surfaceType>Item</surfaceType>
 		<techLevel>Medieval</techLevel>
-
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -966,7 +926,6 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
-		
 		<researchPrerequisites>
 			<li>DankPyon_Engineering</li>
 			<li>DankPyon_Alchemy</li>
@@ -974,7 +933,6 @@
 	</ThingDef>
 	
 	<!-- Gardening Box -->
-
 	<ThingDef ParentName="FurnitureWithQualityBase">
 		<defName>DankPyon_Post</defName>
 		<label>Post</label>
@@ -1041,11 +999,9 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<costList>
 			<WoodLog>20</WoodLog>
 		</costList>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -1095,12 +1051,10 @@
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -1114,11 +1068,9 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-
 		<recipes>
 			<li>Make_Patchleather</li>
 		</recipes>
-
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
@@ -1149,22 +1101,18 @@
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-
 		<costStuffCount>120</costStuffCount>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
-		
 		<statBases>
 			<WorkToBuild>3000</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
-
 		<size>(3,2)</size>
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
@@ -1214,7 +1162,6 @@
 					<li>DankPyon_ToolRack</li>
 				</linkableFacilities>
 			</li>
-		
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -1246,12 +1193,10 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -1312,7 +1257,6 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<costList>
 			<DankPyon_IronIngot>60</DankPyon_IronIngot>
 			<DankPyon_RawWood>100</DankPyon_RawWood>
@@ -1322,9 +1266,7 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
-
 		<designationCategory>Production</designationCategory>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -1334,14 +1276,11 @@
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-15</Cleanliness>
 		</statBases>
-
 		<rotatable>false</rotatable>
 		<size>(3,3)</size>
-
 		<comps>
 			<li Class="CompProperties_CreatesInfestations"/>
 		</comps>
-
 		<passability>Standable</passability>
 		<pathCost>50</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
@@ -1354,7 +1293,6 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-
 		<designationHotKey>Misc3</designationHotKey>
 		<placeWorkers>
 			<!--li>PlaceWorker_ShowFacilitiesConnections</li-->
@@ -1433,23 +1371,19 @@
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.45</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<pathCost>45</pathCost>
-
 		<costList>
 			<DankPyon_IronIngot>5</DankPyon_IronIngot>
 			<DankPyon_QueenBee>1</DankPyon_QueenBee>
 		</costList>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>2000</WorkToBuild>
@@ -1457,7 +1391,6 @@
 			<Flammability>1</Flammability>
 			<Beauty>0.5</Beauty>
 		</statBases>
-		
 		<tickerType>Normal</tickerType>
 		<surfaceType>Item</surfaceType>
 		<canOverlapZones>false</canOverlapZones>
@@ -1481,7 +1414,6 @@
 					</li>
 				</items>
 			</li>
-
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>4.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
@@ -1502,7 +1434,6 @@
 				<fuelGizmoLabel>Meat</fuelGizmoLabel>
 			</li>
 		</comps>
-
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>

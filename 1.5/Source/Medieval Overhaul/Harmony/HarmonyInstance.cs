@@ -18,8 +18,6 @@ namespace MedievalOverhaul
         public static Harmony harmony;
         static HarmonyInstance()
         {
-            harmony = new Harmony("lalapyhon.rimworld.medievaloverhaul");
-            harmony.PatchAll();
             foreach (var stat in DefDatabase<StatDef>.AllDefs)
             {
                 var extension = stat.GetModExtension<HediffFallRateMultiplier>();
@@ -28,7 +26,6 @@ namespace MedievalOverhaul
                     statMultipliers[extension.hediffDef] = stat;
                 }
             }
-
             foreach (var def in DefDatabase<ThingDef>.AllDefsListForReading)
             {
                 if (def.IsChunk() && def.projectileWhenLoaded is null)

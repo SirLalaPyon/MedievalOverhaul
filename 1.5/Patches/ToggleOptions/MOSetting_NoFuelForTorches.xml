@@ -2,8 +2,7 @@
 <Patch>
 
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>leatherChain</settings>
-		<inverse>true</inverse>
+		<settings>refuelableTorch</settings>
 		<operations>
 		
 		<li Class="PatchOperationConditional">

@@ -25,6 +25,7 @@ namespace MedievalOverhaul
         public static HediffDef DankPyon_UnpleasantAftermath;
 
         public static ThingCategoryDef DankPyon_Hides;
+        public static ThingCategoryDef DankPyon_RawWood;
 
         public static PawnKindDef DankPyon_Schrat_Dark;
         public static PawnKindDef DankPyon_SchratDark_Sapling;

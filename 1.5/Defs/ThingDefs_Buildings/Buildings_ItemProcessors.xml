@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-
-
 	<!-- ===== Item Processor Base ===== -->
 	<ThingDef Abstract="True" ParentName="BuildingBase" Name="DankPyon_ItemProcessorBase">
 		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
@@ -21,7 +19,6 @@
 	</ThingDef>
 
 	<!-- ==================== Rack ======================= -->
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_DryingRack</defName>
 		<label>meat rack (2x2)</label>
@@ -43,20 +40,17 @@
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.5</fillPercent>
 		<pathCost>70</pathCost>
-
 		<statBases>
 			<WorkToBuild>500</WorkToBuild>
 			<Mass>10</Mass>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<size>(2,2)</size>
-
-		<costList>
-			<DankPyon_RawWood>50</DankPyon_RawWood>
-		</costList>
-
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
 		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
 		<comps>
 			<li Class="ItemProcessor.CompProperties_ItemProcessor">
@@ -65,40 +59,30 @@
 				<qualitySelector>false</qualitySelector>
 				<isCategoryBuilding>true</isCategoryBuilding>
 				<showProgressBar>true</showProgressBar>
-
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
 				<transfersIngredientLists>false</transfersIngredientLists>
 				<isAutoDropper>true</isAutoDropper>
 				<InsertFirstItemDesc>DankPyon_InsertMeatRackDesc</InsertFirstItemDesc>
-
 				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
 				<resetSemiautomaticIcon>UI/ResetMeat_Icon</resetSemiautomaticIcon>
 				<chooseIngredientsIcon>UI/EmptyMeat_Icon</chooseIngredientsIcon>
-
 				<bringIngredientsText>DankPyon_StartInsertionMeat</bringIngredientsText>
 				<bringIngredientsDesc>DankPyon_StartInsertionMeatRackDesc</bringIngredientsDesc>
 				<bringIngredientsIcon>UI/InsertMeat_Icon</bringIngredientsIcon>
-
 				<cancelIngredientsText>DankPyon_CancelBringingMeat</cancelIngredientsText>
 				<cancelIngredientsDesc>DankPyon_CancelBringingMeatRackDesc</cancelIngredientsDesc>
 				<cancelIngredientsIcon>UI/CancelMeat_Icon</cancelIngredientsIcon>
-
 				<noPowerDestroysProgress>false</noPowerDestroysProgress>
-
 				<removeProductText>DankPyon_RemoveDriedMeat</removeProductText>
 				<removeProductDesc>DankPyon_RemoveDriedMeatDesc</removeProductDesc>
 				<removeProductIcon>UI/RemoveDriedMeat_Icon</removeProductIcon>
-
 				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
 				<destroyIngredientsAtAwfulQuality>false</destroyIngredientsAtAwfulQuality>
-
 			</li>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-
 		<tickerType>Rare</tickerType>
 		<designationCategory>Production</designationCategory>
 		<researchPrerequisites>
@@ -136,9 +120,10 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<size>(2,1)</size>
-		<costList>
-			<DankPyon_RawWood>25</DankPyon_RawWood>
-		</costList>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
 		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
 		<comps>
 			<li Class="ItemProcessor.CompProperties_ItemProcessor">
@@ -199,22 +184,21 @@
 		</thingCategories>
 		<passability>PassThroughOnly</passability>
 		<uiIconScale>0.8</uiIconScale>
-
 		<statBases>
 			<WorkToBuild>2000</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<Mass>10</Mass>
 		</statBases>
-
 		<size>(2,1)</size>
 		<castEdgeShadows>true</castEdgeShadows>
-
 		<costList>
-			<WoodLog>60</WoodLog>
 			<DankPyon_IronIngot>60</DankPyon_IronIngot>
 		</costList>
-
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
 		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
 		<comps>
 			<li Class="CompProperties_Refuelable">
@@ -233,7 +217,6 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>9</heatPerSecond>
 			</li>
-
 			<li Class="ItemProcessor.CompProperties_ItemProcessor">
 				<buildingOnGraphic>Production/Smoker/SmokerFilled</buildingOnGraphic>
 				<numberOfInputs>1</numberOfInputs>
@@ -243,26 +226,20 @@
 				<showProgressBar>true</showProgressBar>
 				<InsertFirstItemDesc>DankPyon_InsertMeatDesc</InsertFirstItemDesc>
 				<transfersIngredientLists>false</transfersIngredientLists>
-
 				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
 				<resetSemiautomaticIcon>UI/ResetMeat_Icon</resetSemiautomaticIcon>
 				<chooseIngredientsIcon>UI/EmptyMeat_Icon</chooseIngredientsIcon>
-
 				<bringIngredientsText>DankPyon_StartInsertionMeat</bringIngredientsText>
 				<bringIngredientsDesc>DankPyon_StartInsertionMeatDesc</bringIngredientsDesc>
 				<bringIngredientsIcon>UI/InsertMeat_Icon</bringIngredientsIcon>
-
 				<cancelIngredientsText>DankPyon_CancelBringingMeat</cancelIngredientsText>
 				<cancelIngredientsDesc>DankPyon_CancelBringingMeatDesc</cancelIngredientsDesc>
 				<cancelIngredientsIcon>UI/CancelMeat_Icon</cancelIngredientsIcon>
-
 				<removeProductText>DankPyon_RemoveSmokedMeat</removeProductText>
 				<removeProductDesc>DankPyon_RemoveSmokedMeatDesc</removeProductDesc>
 				<removeProductIcon>UI/RemoveSmokedMeat_Icon</removeProductIcon>
-
 				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
 				<noPowerDestroysProgress>true</noPowerDestroysProgress>
-
 			</li>
 		</comps>
 		<tickerType>Rare</tickerType>
@@ -289,20 +266,20 @@
 		<neverMultiSelect>true</neverMultiSelect>
 		<fillPercent>0.45</fillPercent>
 		<pathCost>60</pathCost>
-  
 		<statBases>
 			<WorkToBuild>600</WorkToBuild>
 			<Mass>10</Mass>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-  
 		<costList>
 			<DankPyon_IronIngot>30</DankPyon_IronIngot>
-			<WoodLog>30</WoodLog>
 			<DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
 		</costList>
-  
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -312,8 +289,6 @@
 			</buildingTags>
 		</building>
 		<size>(2,1)</size>
-		<constructEffect>ConstructWood</constructEffect>
-  
 		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
@@ -323,27 +298,20 @@
 				<qualitySelector>false</qualitySelector>
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
 				<InsertFirstItemDesc>DankPyon_InsertResourceDesc</InsertFirstItemDesc>
-  
-				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+  				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
 				<resetSemiautomaticIcon>UI/ResetResource_Icon</resetSemiautomaticIcon>
 				<chooseIngredientsIcon>UI/EmptyResource_Icon</chooseIngredientsIcon>
-  
-				<bringIngredientsText>DankPyon_StartInsertionResource</bringIngredientsText>
+  				<bringIngredientsText>DankPyon_StartInsertionResource</bringIngredientsText>
 				<bringIngredientsDesc>DankPyon_StartInsertionResourceDesc</bringIngredientsDesc>
 				<bringIngredientsIcon>UI/InsertResource_Icon</bringIngredientsIcon>
-  
-				<cancelIngredientsText>DankPyon_CancelBringingResource</cancelIngredientsText>
+  				<cancelIngredientsText>DankPyon_CancelBringingResource</cancelIngredientsText>
 				<cancelIngredientsDesc>DankPyon_CancelBringingResourceDesc</cancelIngredientsDesc>
 				<cancelIngredientsIcon>UI/CancelResource_Icon</cancelIngredientsIcon>
-  
 				<noPowerDestroysProgress>false</noPowerDestroysProgress>
-  
 				<removeProductText>DankPyon_RemoveProduct</removeProductText>
 				<removeProductDesc>DankPyon_RemoveProductDesc</removeProductDesc>
 				<removeProductIcon>UI/RemoveProduct_Icon</removeProductIcon>
-  
 				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
-  
 			</li>
 		</comps>
 		<researchPrerequisites>

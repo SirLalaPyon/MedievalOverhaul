@@ -1,41 +1,37 @@
-﻿using UnityEngine;
+﻿using HarmonyLib;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 namespace MedievalOverhaul
 {
-    //public class MedievalOverhaulMod : Mod
-    //{
-    //    public static MedievalOverhaulSettings settings;
-    //    public MedievalOverhaulMod(ModContentPack pack) : base(pack)
-    //    {
-    //        settings = GetSettings<MedievalOverhaulSettings>();
-    //    }
-    //    public override void DoSettingsWindowContents(Rect inRect)
-    //    {
-    //        base.DoSettingsWindowContents(inRect);
-    //        settings.DoSettingsWindowContents(inRect);
-    //    }
-    //    public override string SettingsCategory()
-    //    {
-    //        return this.Content.Name;
-    //    }
-    //}
+    public class MedievalOverhaulSettings : Mod
+    {
+        public static MedievalOverhaul_Settings settings;
 
-    //public class MedievalOverhaulSettings : ModSettings
-    //{
-    //    public bool enableMultiTileMeleeAttacks;
-    //    public override void ExposeData()
-    //    {
-    //        base.ExposeData();
-    //        Scribe_Values.Look(ref enableMultiTileMeleeAttacks, "enableMultiTileMeleeAttacks");
-    //    }
-    //    public void DoSettingsWindowContents(Rect inRect)
-    //    {
-    //        Rect rect = new Rect(inRect.x, inRect.y, inRect.width, inRect.height);
-    //        var ls = new Listing_Standard();
-    //        ls.Begin(rect);
-    //        ls.CheckboxLabeled("MO.EnableMultiTileMeleeAttacks".Translate(), ref enableMultiTileMeleeAttacks);
-    //        ls.End();
-    //    }
-    //}
+        public MedievalOverhaulSettings(ModContentPack content) : base(content)
+        {
+            settings = GetSettings<MedievalOverhaul_Settings>();
+            Harmony harmony = new Harmony(id: "medievalOverhaul");
+            harmony.PatchAll();
+        }
+
+        public override string SettingsCategory()
+        {
+            return "MedievalOverhaul.ModNameShort".Translate();
+        }
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            settings.DoSettingsWindowContents(inRect);
+        }
+        public override void WriteSettings()
+        {
+            base.WriteSettings();
+        }
+
+    }
 }

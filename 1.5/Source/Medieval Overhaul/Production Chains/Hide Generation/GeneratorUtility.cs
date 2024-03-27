@@ -12,12 +12,13 @@ namespace MedievalOverhaul
 {
     public static class GeneratorUtility
     {
+        public static List<ThingDef> AllLeatherAnimals = new List<ThingDef>();
         public static Dictionary<ThingDef, ThingDef> LeatherDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static Dictionary<ThingDef, ThingDef> AnimalDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static SeperateHideList WhiteList = DefDatabase<SeperateHideList>.GetNamed("WhiteList");
         private static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
 
-        public static void MakeListOfShearables()
+        public static void MakeListOfAnimals()
         {
             if (MedievalOverhaulSettings.settings.leatherChain)
             {
@@ -25,7 +26,7 @@ namespace MedievalOverhaul
                 {
                     if (animal.race.leatherDef != null && animal.race.IsFlesh && !animal.race.Insect)
                     {
-                        MedievalOverhaul_Settings.AllLeatherAnimals.Add(animal);
+                        AllLeatherAnimals.Add(animal);
                     }
                 }
             }
@@ -55,28 +56,47 @@ namespace MedievalOverhaul
             }
         }
 
-        private static ThingDef BasicHideDef()
+        private static ThingDef BasicHideDef(ThingDef raceDef)
         {
-            ThingDef def = new ThingDef
-            {
-                description = "DankPyon_Hide_Description".Translate(),
-                thingClass = typeof(ThingWithComps),
-                category = ThingCategory.Item,
-                drawerType = DrawerType.MapMeshOnly,
-                resourceReadoutPriority = ResourceCountPriority.Middle,
-                useHitPoints = true,
-                selectable = true,
-                stackLimit = 100,
-                alwaysHaulable = true,
-                drawGUIOverlay = true,
-                rotatable = false,
-                pathCost = 14,
-                allowedArchonexusCount = -1,
-                tickerType = TickerType.Rare,
-                healthAffectsPrice = false,
-                soundInteract = SoundDefOf.Standard_Drop,
-                statBases = new List<StatModifier>()
-            };
+            string defName = "DankPyon_" + raceDef.defName;
+            ThingDef def = (DefDatabase<ThingDef>.GetNamed(defName, false) ?? new ThingDef());
+            def.description = "DankPyon_Hide_Description".Translate();
+            def.thingClass = typeof(ThingWithComps);
+            def.category = ThingCategory.Item;
+            def.drawerType = DrawerType.MapMeshOnly;
+            def.resourceReadoutPriority = ResourceCountPriority.Middle;
+            def.useHitPoints = true;
+            def.selectable = true;
+            def.stackLimit = 100;
+            def.alwaysHaulable = true;
+            def.drawGUIOverlay = true;
+            def.rotatable = false;
+            def.pathCost = 14;
+            def.allowedArchonexusCount = -1;
+            def.tickerType = TickerType.Rare;
+            def.healthAffectsPrice = false;
+            def.soundInteract = SoundDefOf.Standard_Drop;
+            def.statBases = new List<StatModifier>();
+            //ThingDef def = new ThingDef
+            //{
+            //    description = "DankPyon_Hide_Description".Translate(),
+            //    thingClass = typeof(ThingWithComps),
+            //    category = ThingCategory.Item,
+            //    drawerType = DrawerType.MapMeshOnly,
+            //    resourceReadoutPriority = ResourceCountPriority.Middle,
+            //    useHitPoints = true,
+            //    selectable = true,
+            //    stackLimit = 100,
+            //    alwaysHaulable = true,
+            //    drawGUIOverlay = true,
+            //    rotatable = false,
+            //    pathCost = 14,
+            //    allowedArchonexusCount = -1,
+            //    tickerType = TickerType.Rare,
+            //    healthAffectsPrice = false,
+            //    soundInteract = SoundDefOf.Standard_Drop,
+            //    statBases = new List<StatModifier>()
+            //};
             def.SetStatBaseValue(StatDefOf.Beauty, -4f);
             def.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
             def.SetStatBaseValue(StatDefOf.Flammability, 1f);
@@ -110,7 +130,7 @@ namespace MedievalOverhaul
 
         public static ThingDef MakeHideFor(ThingDef leatherDef, ThingDef raceDef)
         {
-            ThingDef hideDef = BasicHideDef();
+            ThingDef hideDef = BasicHideDef(raceDef);
             SetNameAndDesc(leatherDef, hideDef, raceDef);
             //GraphicCheck(hideDef, raceDef);
             if (leatherDef.stuffProps != null)

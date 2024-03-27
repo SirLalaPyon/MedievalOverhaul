@@ -8,7 +8,6 @@
 	-->
 
 	<!-- ==================== Storage Base ==================== -->
-
 	<ThingDef Name="DankPyon_LumberStorageBase" ParentName="ShelfBase" Abstract="True">
 		<thingClass>Building_Storage</thingClass>
 		<researchPrerequisites Inherit="false">
@@ -48,18 +47,15 @@
 			<color>(137,132,0)</color>
 		</graphicData>
 		<size>(2,1)</size>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<costList Inherit="false">
 			<Hay>20</Hay>
 		</costList>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings Inherit="false">
@@ -95,7 +91,6 @@
 			<drawSize>(4,3)</drawSize>
 			<color>(229,186,90)</color>
 		</graphicData>
-
 		<costList Inherit="false">
 			<DankPyon_Straw>20</DankPyon_Straw>
 		</costList>
@@ -111,7 +106,6 @@
 			<drawSize>(4,3)</drawSize>
 			<color>(158,145,94)</color>
 		</graphicData>
-
 		<costList Inherit="false">
 			<DankPyon_RawFlax>20</DankPyon_RawFlax>
 		</costList>
@@ -128,14 +122,12 @@
 			<color>(137,132,0)</color>
 		</graphicData>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<costList Inherit="false">
 			<Hay>40</Hay>
 		</costList>
@@ -151,7 +143,6 @@
 			<drawSize>(4,4)</drawSize>
 			<color>(229,186,90)</color>
 		</graphicData>
-
 		<costList Inherit="false">
 			<DankPyon_Straw>40</DankPyon_Straw>
 		</costList>
@@ -166,7 +157,6 @@
 			<drawSize>(4,4)</drawSize>
 			<color>(158,145,94)</color>
 		</graphicData>
-
 		<costList Inherit="false">
 			<DankPyon_RawFlax>40</DankPyon_RawFlax>
 		</costList>
@@ -184,18 +174,15 @@
 			<color>(137,132,0)</color>
 		</graphicData>
 		<size>(2,1)</size>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<costList Inherit="false">
 			<Hay>20</Hay>
 		</costList>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings Inherit="false">
@@ -231,7 +218,6 @@
 			<drawSize>(4,3)</drawSize>
 			<color>(229,186,90)</color>
 		</graphicData>
-
 		<costList Inherit="false">
 			<DankPyon_Straw>20</DankPyon_Straw>
 		</costList>
@@ -247,7 +233,6 @@
 			<drawSize>(4,3)</drawSize>
 			<color>(158,145,94)</color>
 		</graphicData>
-
 		<costList Inherit="false">
 			<DankPyon_RawFlax>20</DankPyon_RawFlax>
 		</costList>
@@ -266,19 +251,16 @@
 		<uiIconPath>Storage/RawWood1x1_north</uiIconPath>
 		<uiIconScale>1</uiIconScale>
 		<size>(1,1)</size>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-	
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>10</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -297,7 +279,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
@@ -313,19 +294,16 @@
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
 		<size>(2,1)</size>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-	
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -359,19 +337,16 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconScale>0.75</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-	
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -390,7 +365,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-   
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
@@ -407,19 +381,16 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<size>(1,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-	
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>10</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -452,19 +423,16 @@
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
 		<size>(2,1)</size>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-	
 		<stuffCategories Inherit="false">
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -498,19 +466,16 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<size>(2,2)</size>
 		<uiIconScale>0.75</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-	
 		<stuffCategories Inherit="false">
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -544,19 +509,16 @@
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-	
 		<stuffCategories Inherit="false">
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>10</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -575,7 +537,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
- 
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
@@ -590,19 +551,16 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<size>(2,1)</size>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-	
 		<stuffCategories Inherit="false">
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -621,7 +579,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
@@ -638,19 +595,16 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconScale>0.75</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-	
 		<stuffCategories Inherit="false">
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -669,7 +623,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-	
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 	
@@ -685,19 +638,15 @@
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<DankPyon_IronIngot>10</DankPyon_IronIngot>
 		</costList>
-		
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -716,7 +665,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
- 
 		<researchPrerequisites Inherit="false"/>
 		<designatorDropdown>DankPyon_IngotStack1x1c</designatorDropdown>
 	</ThingDef>
@@ -731,14 +679,12 @@
 		</graphicData>
 		<size>(2,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<DankPyon_IronIngot>20</DankPyon_IronIngot>
 		</costList>
@@ -755,14 +701,12 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>800</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<costList>
 			<DankPyon_IronIngot>40</DankPyon_IronIngot>
 		</costList>
@@ -782,19 +726,15 @@
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Steel>10</Steel>
 		</costList>
-		
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -813,7 +753,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
- 
 		<researchPrerequisites Inherit="false"/>
 		<designatorDropdown>DankPyon_IngotStack1x1c</designatorDropdown>
 	</ThingDef>
@@ -829,14 +768,12 @@
 		</graphicData>
 		<size>(2,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Steel>20</Steel>
 		</costList>
@@ -854,14 +791,12 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>800</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Steel>40</Steel>
 		</costList>
@@ -880,18 +815,15 @@
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Silver>10</Silver>
 		</costList>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -910,7 +842,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
- 
 		<researchPrerequisites Inherit="false"/>
 		<designatorDropdown>DankPyon_IngotStack1x1c</designatorDropdown>
 	</ThingDef>
@@ -925,14 +856,12 @@
 		</graphicData>
 		<size>(2,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Silver>20</Silver>
 		</costList>
@@ -949,14 +878,12 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>800</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Silver>40</Silver>
 		</costList>
@@ -975,18 +902,15 @@
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Gold>10</Gold>
 		</costList>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings>
@@ -1005,7 +929,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
- 
 		<researchPrerequisites Inherit="false"/>
 		<designatorDropdown>DankPyon_IngotStack1x1c</designatorDropdown>
 	</ThingDef>
@@ -1020,14 +943,12 @@
 		</graphicData>
 		<size>(2,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Gold>20</Gold>
 		</costList>
@@ -1044,14 +965,12 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>800</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Gold>40</Gold>
 		</costList>
@@ -1071,14 +990,12 @@
 		<size>(3,1)</size>
 		<uiIconPath>Storage/CupboardEmpty_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>12</Mass>
 			<WorkToBuild>750</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">7.5</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -1098,19 +1015,16 @@
 		<size>(3,1)</size>
 		<uiIconPath>Storage/CupboardBread_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>12</Mass>
 			<WorkToBuild>750</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">7.5</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings Inherit="False">
@@ -1138,7 +1052,6 @@
 			<texPath>Storage/CupboardCheese</texPath>
 		</graphicData>
 		<uiIconPath>Storage/CupboardCheese_north</uiIconPath>
-
 		<building>
 			<fixedStorageSettings Inherit="False">
 				<filter>
@@ -1165,7 +1078,6 @@
 			<texPath>Storage/CupboardDrug</texPath>
 		</graphicData>
 		<uiIconPath>Storage/CupboardDrug_north</uiIconPath>
-
 		<building>
 			<fixedStorageSettings Inherit="False">
 				<filter>
@@ -1199,18 +1111,15 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconScale>0.75</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-		
 		<costList>
 			<Steel>5</Steel>
 		</costList>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -1230,18 +1139,15 @@
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconScale>0.75</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-		
 		<costList>
 			<Steel>5</Steel>
 		</costList>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -1260,18 +1166,15 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<size>(2,2)</size>
 		<uiIconScale>0.75</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-		
 		<costList>
 			<Steel>5</Steel>
 		</costList>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -1290,14 +1193,12 @@
 		<size>(3,1)</size>
 		<uiIconPath>Storage/BarrelStack_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>12</Mass>
 			<WorkToBuild>750</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">7.5</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -1318,14 +1219,12 @@
 		<uiIconScale>1.5</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
 		<size>(1,1)</size>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -1347,19 +1246,16 @@
 		<uiIconPath>Storage/BarrelWoodLog</uiIconPath>
 		<uiIconScale>1.5</uiIconScale>
 		<size>(1,1)</size>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>10</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings Inherit="false">
@@ -1393,7 +1289,6 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<uiIconPath>Storage/BarrelIronOre</uiIconPath>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -1426,7 +1321,6 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<uiIconPath>Storage/BarrelSilverOre</uiIconPath>
-		
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -1459,7 +1353,6 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<uiIconPath>Storage/BarrelGoldOre</uiIconPath>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -1492,7 +1385,6 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<uiIconPath>Storage/BarrelCoalOre</uiIconPath>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -1525,7 +1417,6 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<uiIconPath>Storage/BarrelTextiles</uiIconPath>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -1558,7 +1449,6 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<uiIconPath>Storage/BarrelLeather</uiIconPath>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -1592,7 +1482,6 @@
 		</graphicData>
 		<uiIconPath>Storage/BarrelComponentBasic</uiIconPath>
 		<uiIconScale>1.5</uiIconScale>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -1625,7 +1514,6 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<uiIconPath>Storage/BarrelGrape</uiIconPath>
-		
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -1656,14 +1544,12 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -1681,19 +1567,16 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>16</Mass>
 			<WorkToBuild>1000</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings Inherit="False">
@@ -1720,7 +1603,6 @@
 		<graphicData>
 			<texPath>Storage/StackFlour</texPath>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings>
 				<filter>
@@ -1747,7 +1629,6 @@
 		<graphicData>
 			<texPath>Storage/StackMeat</texPath>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="False">
 				<filter>
@@ -1772,7 +1653,6 @@
 		<graphicData>
 			<texPath>Storage/StackCheese</texPath>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="False">
 				<filter>
@@ -1798,7 +1678,6 @@
 		<graphicData>
 			<texPath>Storage/StackDrug</texPath>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="False">
 				<filter>
@@ -1824,7 +1703,6 @@
 		<graphicData>
 			<texPath>Storage/StackMead</texPath>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="False">
 				<filter>
@@ -1850,7 +1728,6 @@
 		<graphicData>
 			<texPath>Storage/StackVegetables</texPath>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="False">
 				<filter>
@@ -1882,18 +1759,15 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<size>(1,1)</size>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<DankPyon_Linen>10</DankPyon_Linen>
 		</costList>
-
 		<designatorDropdown>DankPyon_Sack</designatorDropdown>
 	</ThingDef>
 
@@ -1909,18 +1783,15 @@
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
 		<size>(1,1)</size>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<DankPyon_Linen>30</DankPyon_Linen>
 		</costList>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings Inherit="false">
@@ -1938,7 +1809,6 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
-
 		<designatorDropdown>DankPyon_Sack</designatorDropdown>
 	</ThingDef>
 
@@ -1952,7 +1822,6 @@
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -1981,7 +1850,6 @@
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -2010,7 +1878,6 @@
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -2041,14 +1908,12 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>4</Mass>
 			<WorkToBuild>250</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -2070,14 +1935,12 @@
 		</graphicData>
 		<size>(2,1)</size>
 		<defaultPlacingRot>North</defaultPlacingRot>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -2097,21 +1960,18 @@
 		</graphicData>
 		<size>(2,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
-
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<priority>Important</priority>
@@ -2146,21 +2006,18 @@
 		</graphicData>
 		<size>(2,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
-		
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings Inherit="false">
@@ -2224,19 +2081,16 @@
 		<uiIconScale>1.25</uiIconScale>
 		<size>(2,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<building>
 			<defaultStorageSettings>
 				<priority>Important</priority>
@@ -2394,7 +2248,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconPath>Storage/ShelfFilledWine_north</uiIconPath>
-
 		<building>
 			<fixedStorageSettings>
 				<priority>Important</priority>
@@ -2425,7 +2278,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconPath>Buildings/Ruin/ShelfRations_north</uiIconPath>
-
 		<building>
 			<maxItemsInCell>4</maxItemsInCell>
 			<fixedStorageSettings Inherit="false">
@@ -2457,7 +2309,6 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconPath>Buildings/Ruin/ShelfIngotIron_north</uiIconPath>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<priority>Important</priority>
@@ -2484,11 +2335,9 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconPath>Buildings/Ruin/ShelfBook_north</uiIconPath>
-		
 		<costList>
 			<DankPyon_Book>2</DankPyon_Book>
 		</costList>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<priority>Important</priority>
@@ -2498,7 +2347,7 @@
 						<li>DankPyon_Book_AncientCodex</li>
 						<li>DankPyon_Book_IntoTheRuins</li>
 						<li>DankPyon_Book_TheBeginning</li>
-
+						<!-- MO Schematics -->
 						<li>DankPyon_Book_MilitaryBlades</li>
 						<li>DankPyon_Book_NobleBlades</li>
 						<li>DankPyon_Book_MilitaryMaces</li>
@@ -2526,8 +2375,8 @@
 						<li>DankPyon_Book_AncientCodex</li>
 						<li>DankPyon_Book_IntoTheRuins</li>
 						<li>DankPyon_Book_TheBeginning</li>
-
 						<li>DankPyon_RusticBookshelf</li>
+						<!-- MO Schematics -->
 						<li>DankPyon_Book_MilitaryBlades</li>
 						<li>DankPyon_Book_NobleBlades</li>
 						<li>DankPyon_Book_MilitaryMaces</li>
@@ -2562,17 +2411,14 @@
 	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<uiIconPath>Storage/ShelfPlate_north</uiIconPath>
-
 	<altitudeLayer>Building</altitudeLayer>
 	<passability>PassThroughOnly</passability>
 	<fillPercent>0.4</fillPercent>
 	<castEdgeShadows>true</castEdgeShadows>
 	<pathCost>50</pathCost>
-	
 	<stuffCategories>
 	  <li>Woody</li>
 	</stuffCategories>
-
 	<costStuffCount>65</costStuffCount>
 	<statBases>
 	  <MaxHitPoints>100</MaxHitPoints>
@@ -2583,7 +2429,6 @@
 	</statBases>
 	<size>(2,1)</size>
 	<defaultPlacingRot>South</defaultPlacingRot>
-
 	<building>
 	  <fixedStorageSettings>
 		<filter>
@@ -2593,14 +2438,12 @@
 		</filter>
 	  </fixedStorageSettings>
 	</building>
-
 	<inspectorTabs>
 	  <li>ITab_Storage</li>
 	</inspectorTabs>
 	<designationHotKey>Misc12</designationHotKey>
 	<staticSunShadowHeight>0.5</staticSunShadowHeight>
 	<canOverlapZones>false</canOverlapZones>
-
 	<comps>
 	  <li Class="LWM.DeepStorage.Properties" >
 		<minNumberStacks>1</minNumberStacks>
@@ -2626,7 +2469,6 @@
 		</graphicData>
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<size>(2,2)</size>
-
 		<costStuffCount>120</costStuffCount>
 		<stuffCategories Inherit="false">
 			<li>Woody</li>
@@ -2634,7 +2476,6 @@
 		<costList>
 			<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
 		</costList>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>8</Mass>
@@ -2662,7 +2503,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -2690,7 +2530,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -2718,7 +2557,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -2747,7 +2585,6 @@
 			<texPath>Storage/Cart_WoodLog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<building>
 			<fixedStorageSettings Inherit="false">
 				<filter>
@@ -2766,4 +2603,5 @@
 			</defaultStorageSettings>
 		</building>
 	</ThingDef>
+
 </Defs>

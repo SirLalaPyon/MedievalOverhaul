@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<!-- Abstract -->
 	<ThingDef ParentName="BuildingBase" Name="DankPyon_SmallRuin" Abstract="True">
 		<size>(1,1)</size>
@@ -20,7 +21,6 @@
 			<deconstructible>false</deconstructible>
 		</building>
 	</ThingDef>
-
 
 	<ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
 		<defName>DankPyon_RuinedBatteringRam</defName>
@@ -104,6 +104,7 @@
 		<pathCost>50</pathCost>
 		<building>
 			<claimable>false</claimable>
+			<deconstructible>true</deconstructible>
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
 		<killedLeavings>

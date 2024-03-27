@@ -22,6 +22,7 @@ namespace MedievalOverhaul
         // Production Chains
         public bool leatherChain = true;
         public bool woodChain = true;
+        public bool clothChain = true;
 
         // Map Generation Stuff
         public bool industrialJunk = true;
@@ -31,16 +32,19 @@ namespace MedievalOverhaul
 
         // Misc
         public bool refuelableTorch = false;
+        public bool boomalopeTar = true;
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref leatherChain, "leatherChain", true);
             Scribe_Values.Look(ref woodChain, "woodChain", true);
+            Scribe_Values.Look(ref clothChain, "clothChain", true);
             Scribe_Values.Look(ref industrialJunk, "industrialJunk", true);
             Scribe_Values.Look(ref exostriderRemains, "exostriderRemains", true);
             Scribe_Values.Look(ref hornetNest, "hornetNest", false);
             Scribe_Values.Look(ref vanillaMine, "vanillaMine", false);
             Scribe_Values.Look(ref refuelableTorch, "refuelableTorch", false);
+            Scribe_Values.Look(ref boomalopeTar, "boomalopeTar", true);
             Scribe_Values.Look(ref debugMode, "debugMode", false);
             Scribe_Collections.Look(ref settingMode, "settingMode", LookMode.Value, LookMode.Value);
 
@@ -67,6 +71,7 @@ namespace MedievalOverhaul
             listingStandard.Label((string)"DankPyon_Settings_ProductionChain".Translate());
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_LeatherChain".Translate(), ref this.leatherChain);
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_WoodChain".Translate(), ref this.woodChain);
+            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_ClothChain".Translate(), ref this.clothChain);
             listingStandard.Gap();
             listingStandard.GapLine();
             listingStandard.Gap();
@@ -80,6 +85,7 @@ namespace MedievalOverhaul
             listingStandard.Gap();
             listingStandard.Label((string)"DankPyon_Settings_MiscOption".Translate());
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_RefuelableTorch".Translate(), ref this.refuelableTorch);
+            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_BoomalopeTar".Translate(), ref this.boomalopeTar);
             listingStandard.End();
         }
 

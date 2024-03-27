@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>clothChain</settings>
+		<inverse>true</inverse>
+		<operations>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/harvestedThingDef[.="DankPyon_RawCotton"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/harvestedThingDef[.="DankPyon_RawCotton"]</xpath>
+					<value>
+						<harvestedThingDef>Cloth</harvestedThingDef>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Medieval Overhaul: Arcane Archaeologists</li>
+				</mods>
+				<match Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name="Ogam_CapeBase"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[@Name="Ogam_CapeBase"]/costList</xpath>
+						<value>
+							<costList>
+								<Cloth>45</Cloth>
+							</costList>
+						</value>
+					</match>
+				</match>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>

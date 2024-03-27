@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>boomalopeTar</settings>
+		<operations>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Milkable"]/milkDef[.="Chemfuel"]</xpath>
+				<value>
+					<milkDef>DankPyon_Tar</milkDef>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>

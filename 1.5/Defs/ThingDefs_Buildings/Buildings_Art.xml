@@ -118,14 +118,12 @@
 		<uiIconScale>0.5</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
 		<rotatable>True</rotatable>
-
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
-
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>7</Mass>
@@ -158,14 +156,12 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<rotatable>True</rotatable>
 		<altitudeLayer>Pawn</altitudeLayer>
-
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
-
 		<statBases>
 			<MaxHitPoints>800</MaxHitPoints>
 			<Mass>7</Mass>
@@ -173,7 +169,6 @@
 			<WorkToMake>30000</WorkToMake>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
 		</statBases>
-    
 		<holdsRoof>true</holdsRoof>
 		<size>(1,1)</size>
 		<recipeMaker>
@@ -255,7 +250,6 @@
 		<costList>
 			<Gold>100</Gold>
 		</costList>
-
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<placeWorkers>
@@ -263,7 +257,6 @@
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-
 		<comps>
 			<li Class="CompProperties_Styleable"/>
 			<li Class="CompProperties_Glower">

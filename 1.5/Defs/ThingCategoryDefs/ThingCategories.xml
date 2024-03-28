@@ -158,5 +158,12 @@
 		<label>named weapons</label>
 		<parent>Weapons</parent>
 	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>DankPyon_GemStones</defName>
+		<label>gemstones</label>
+		<parent>ResourcesRaw</parent>
+		<iconPath>Resources/Ruby/Ruby_b</iconPath>
+	</ThingCategoryDef>
 
 </Defs>

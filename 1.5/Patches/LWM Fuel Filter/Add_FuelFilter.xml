@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
+		<value>
+			<li>DankPyon_Coal</li>
+			<li>DankPyon_Tar</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath>
+			<value>
+				<li>DankPyon_RawWood</li>
+				<li>DankPyon_Wood</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/..</xpath>
+			<value>
+				<categories>
+					<li>DankPyon_RawWood</li>
+					<li>DankPyon_Wood</li>
+				</categories>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>LWM's Fuel Filter</li>
@@ -7,38 +36,38 @@
 		<nomatch Class="PatchOperationSequence">
 			<operations>
 				<!-- Find all refuelable that has WoodLogs, replace with DankPyon_Coal-->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]/li</xpath>
-					<value>
-						<li>DankPyon_Coal</li>
-						<li>DankPyon_Tar</li>
-					</value>
-				</li>
+				<!-- <li Class="PatchOperationReplace"> -->
+				<!-- <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]/li</xpath> -->
+				<!-- <value> -->
+				<!-- <li>DankPyon_Coal</li> -->
+				<!-- <li>DankPyon_Tar</li> -->
+				<!-- </value> -->
+				<!-- </li> -->
 
 				<!-- add fuel filters to refuelable things that has coal. 
 
 				if they use coal, which was originally WoodLog, big chance that they do 
 				not use specific fuel such as torches, campfires as opposed to tanning racks 
 				or apiaries or chemfuel generators-->
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath>
-					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath>
-						<value>
-							<li>DankPyon_RawWood</li>
-							<li>DankPyon_Wood</li>
-						</value>
-					</match>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/..</xpath>
-						<value>
-							<categories>
-								<li>DankPyon_RawWood</li>
-								<li>DankPyon_Wood</li>
-							</categories>
-						</value>
-					</nomatch>
-				</li>
+				<!-- <li Class="PatchOperationConditional"> -->
+					<!-- <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath> -->
+					<!-- <match Class="PatchOperationAdd"> -->
+						<!-- <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath> -->
+						<!-- <value> -->
+							<!-- <li>DankPyon_RawWood</li> -->
+							<!-- <li>DankPyon_Wood</li> -->
+						<!-- </value> -->
+					<!-- </match> -->
+					<!-- <nomatch Class="PatchOperationAdd"> -->
+						<!-- <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/..</xpath> -->
+						<!-- <value> -->
+							<!-- <categories> -->
+								<!-- <li>DankPyon_RawWood</li> -->
+								<!-- <li>DankPyon_Wood</li> -->
+							<!-- </categories> -->
+						<!-- </value> -->
+					<!-- </nomatch> -->
+				<!-- </li> -->
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../..</xpath>
@@ -86,5 +115,4 @@
 		</nomatch>
 	</Operation>
 
-	
-</Patch>	
+</Patch>

@@ -103,7 +103,7 @@
 		<stuffProps>
 			<stuffAdjective>dark</stuffAdjective>
 			<categories>
-				<li>DankPyon_RawWood</li>
+				<li>Woody</li>
 			</categories>
 			<commonality>1.00</commonality>
 			<color>(112,91,76)</color>
@@ -121,7 +121,7 @@
 		</stuffProps>
 		<isTechHediff>true</isTechHediff>
 		<thingCategories>
-			<li>DankPyon_RawWood</li>
+			<li>ResourcesRaw</li>
 		</thingCategories>
 		<techHediffsTags>
 			<li>Poor</li>
@@ -361,11 +361,10 @@
 			</li>
 		</tools>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-
 		<comps>
-			<!--li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+			<li Class="ESCP_FuelExtension.CompProperties_FuelRate">
 				<rate>5</rate>
-			</li-->
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -469,6 +468,7 @@
 			</li>
 		</comps>
 	</ThingDef>
+
 	<!--============================== Ice ==============================-->
 	<ThingDef Name="IceResourceBase" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
@@ -1076,17 +1076,13 @@
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<soundInteract>ChunkRock_Drop</soundInteract>
 		<soundDrop>ChunkRock_Drop</soundDrop>
-
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>DankPyon_GemStones</li>
 		</thingCategories>
-
 		<burnableByRecipe>false</burnableByRecipe>
 		<smeltable>false</smeltable>
-
 		<deepCountPerPortion>8</deepCountPerPortion>
 		<deepLumpSizeRange>1~4</deepLumpSizeRange>
-
 		<stuffProps>
 			<categories>
 				<li>DankPyon_Gems</li>
@@ -1096,7 +1092,6 @@
 			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
 		</stuffProps>
-		
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
@@ -1110,7 +1105,6 @@
 			<texPath>Resources/Citrine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		
 		<statBases>
 			<MarketValue>3.95</MarketValue>
 			<Mass>0.4</Mass>
@@ -1121,13 +1115,10 @@
 			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
 			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 		</statBases>
-
 		<deepCommonality>0.5</deepCommonality>
-		
 		<stuffProps>
 			<color>(206,140,80)</color>
 			<commonality>0.05</commonality>
-
 			<statOffsets>
 				<Beauty>8</Beauty>
 			</statOffsets>
@@ -1150,7 +1141,6 @@
 			<texPath>Resources/Amber</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		
 		<statBases>
 			<MarketValue>6.25</MarketValue>
 			<Mass>0.2</Mass>
@@ -1161,13 +1151,10 @@
 			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
 			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 		</statBases>
-
 		<deepCommonality>0.4</deepCommonality>
-		
 		<stuffProps>
 			<color>(184,108,64)</color>
 			<commonality>0.05</commonality>
-
 			<statOffsets>
 				<Beauty>12</Beauty>
 			</statOffsets>
@@ -1190,7 +1177,6 @@
 			<texPath>Resources/Onyx</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		
 		<statBases>
 			<MarketValue>7.35</MarketValue>
 			<Mass>0.2</Mass>
@@ -1201,9 +1187,7 @@
 			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
 			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 		</statBases>
-
 		<deepCommonality>0.3</deepCommonality>
-		
 		<stuffProps>
 			<color>(43,43,43)</color>
 			<commonality>0.04</commonality>
@@ -1230,7 +1214,6 @@
 			<texPath>Resources/Emerald</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		
 		<statBases>
 			<MarketValue>10</MarketValue>
 			<Mass>0.4</Mass>
@@ -1241,13 +1224,10 @@
 			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
 			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 		</statBases>
-
 		<deepCommonality>0.2</deepCommonality>
-		
 		<stuffProps>
 			<color>(117,153,94)</color>
 			<commonality>0.02</commonality>
-
 			<statOffsets>
 				<Beauty>20</Beauty>
 			</statOffsets>
@@ -1270,7 +1250,6 @@
 			<texPath>Resources/Sapphire</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		
 		<statBases>
 			<MarketValue>13</MarketValue>
 			<Mass>0.6</Mass>
@@ -1281,13 +1260,10 @@
 			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
 			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 		</statBases>
-
 		<deepCommonality>0.1</deepCommonality>
-		
 		<stuffProps>
 			<color>(60,109,158)</color>
 			<commonality>0.02</commonality>
-
 			<statOffsets>
 				<Beauty>24</Beauty>
 			</statOffsets>
@@ -1310,7 +1286,6 @@
 			<texPath>Resources/Ruby</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		
 		<statBases>
 			<MarketValue>16.65</MarketValue>
 			<Mass>0.6</Mass>
@@ -1321,13 +1296,10 @@
 			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
 			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 		</statBases>
-
 		<deepCommonality>0.1</deepCommonality>
-		
 		<stuffProps>
 			<color>(170,49,49)</color>
 			<commonality>0.02</commonality>
-
 			<statOffsets>
 				<Beauty>28</Beauty>
 			</statOffsets>
@@ -1340,9 +1312,5 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-
-
-
-
 
 </Defs>

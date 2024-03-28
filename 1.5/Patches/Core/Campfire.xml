@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!-- Campfire -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Campfire"]</xpath>
 		<value>
@@ -24,4 +25,4 @@
 		<xpath>Defs/ThingDef[defName="Campfire"]/uiIconPath</xpath>
 	</Operation>
 
-</Patch>	
+</Patch>

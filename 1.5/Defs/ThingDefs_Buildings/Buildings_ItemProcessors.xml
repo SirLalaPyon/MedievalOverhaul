@@ -25,8 +25,9 @@
 		<description>A wooden rack to dry goods under the sun for preservation and long time use.</description>
 		<graphicData>
 			<texPath>Production/DryingRack2x2/DryingRack</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<rect>(0.05,0.1,0.9,0.9)</rect>
 			</damageData>
@@ -99,6 +100,7 @@
 		<graphicData>
 			<texPath>Production/DryingRack1x2/DryingRack1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.5,2.5)</drawSize>
 			<damageData>
 				<rect>(0.05,0.1,0.9,0.9)</rect>
@@ -170,6 +172,7 @@
 		<graphicData>
 			<texPath>Production/Smoker/Smoker</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -259,6 +262,7 @@
 			<drawSize>(4,3)</drawSize>
 			<texPath>Production/Presser/Presser</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
 				<volume>(0.75, 0.35, 0.33)</volume>
 			</shadowData>

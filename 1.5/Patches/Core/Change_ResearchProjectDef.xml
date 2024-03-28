@@ -49,23 +49,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ResearchProjectDef[defName="Smithing"]/label</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ResearchProjectDef[defName="Smithing"]/label</xpath>
-			<value>
-				<label>Basic metallurgy</label>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
-			<value>
-				<label>Basic metallurgy</label>
-			</value>
-		</nomatch>
-	</Operation>
-	
+		
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]/tab</xpath>
 		<match Class="PatchOperationReplace">

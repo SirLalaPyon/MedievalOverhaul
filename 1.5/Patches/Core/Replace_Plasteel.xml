@@ -15,4 +15,11 @@
 			</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "MineablePlasteel"]/building/mineableScatterCommonality</xpath>
+			<value>
+				<mineableScatterCommonality>0.05</mineableScatterCommonality>
+			</value>
+	</Operation>
+
 </Patch>	

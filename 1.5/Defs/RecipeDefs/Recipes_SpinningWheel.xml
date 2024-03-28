@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<RecipeDef Abstract="True" Name="DankPyon_MakeClothBase">
 		<jobString>Spinning cotton.</jobString>
 		<effectWorking>Cook</effectWorking>
@@ -10,7 +11,6 @@
 		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
 		<targetCountAdjustment>10</targetCountAdjustment>
-		
 		<recipeUsers>
 			<li>DankPyon_SpinningWheel</li>
 			<li>HandTailoringBench</li>
@@ -68,7 +68,7 @@
 			<Cloth>50</Cloth>
 		</products>
 	</RecipeDef>
-	
+
 	<RecipeDef ParentName="DankPyon_MakeClothBase">
 		<defName>DankPyon_MakeLinen</defName>
 		<jobString>Spinning flax.</jobString>

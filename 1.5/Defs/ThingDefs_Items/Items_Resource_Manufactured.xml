@@ -95,11 +95,10 @@
 			<Flammability>2</Flammability>
 			<MaxHitPoints>60</MaxHitPoints>
 		</statBases>
-
 		<comps>
-			<!--li Class="ESCP_FuelExtension.CompProperties_FuelRate">
-            <rate>8</rate>
-        </li-->
+			<li Class="ESCP_FuelExtension.CompProperties_FuelRate">
+				<rate>8</rate>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -124,7 +123,6 @@
 			<Flammability>2</Flammability>
 			<MaxHitPoints>60</MaxHitPoints>
 		</statBases>
-
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Explosive">
@@ -200,12 +198,10 @@
 		<defName>DankPyon_StoneBoulder</defName>
 		<label>stone boulder</label>
 		<description>A heavy chunk of rock, robust and round.</description>
-    
 		<graphicData>
 			<texPath>Resources/StoneBoulder</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<MarketValue>20</MarketValue>
@@ -214,13 +210,10 @@
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<stackLimit>10</stackLimit>
-
 		<thingCategories>
 			<li>DankPyon_TrebuchetAmmo</li>
 		</thingCategories>
-
 		<techLevel>Medieval</techLevel>
-
 		<projectileWhenLoaded>DankPyon_Artillery_Boulder</projectileWhenLoaded>
 	</ThingDef>
 
@@ -254,12 +247,10 @@
 		<defName>DankPyon_StoneBoulderTarred</defName>
 		<label>tarred stone boulder</label>
 		<description>A heavy chunk of rock, robust and round. \n\nCovered with tar, which can be lit once ready to be thrown.</description>
-    
 		<graphicData>
 			<texPath>Resources/STarredStoneBoulder</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<MarketValue>20</MarketValue>
@@ -268,13 +259,10 @@
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<stackLimit>10</stackLimit>
-
 		<thingCategories>
 			<li>DankPyon_TrebuchetAmmo</li>
 		</thingCategories>
-
 		<techLevel>Medieval</techLevel>
-
 		<projectileWhenLoaded>DankPyon_Artillery_BoulderTarred</projectileWhenLoaded>
 	</ThingDef>
 

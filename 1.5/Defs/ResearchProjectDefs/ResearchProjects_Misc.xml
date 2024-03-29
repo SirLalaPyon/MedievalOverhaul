@@ -29,6 +29,11 @@
 		</tags>
 		<researchViewX>2</researchViewX>
 		<researchViewY>4.2</researchViewY>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->wood working</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -46,6 +51,11 @@
 		<prerequisites>
 			<li>DankPyon_Lumber</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->rustic furniture</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -60,6 +70,11 @@
 		<prerequisites>
 			<li>ComplexFurniture</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->royal rustic furniture</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -74,6 +89,11 @@
 		<prerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->rustic storage</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -88,6 +108,11 @@
 		<prerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->food presser</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -102,6 +127,11 @@
 		<prerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->carrier birds</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -116,6 +146,11 @@
 		</tags>
 		<researchViewX>1</researchViewX>
 		<researchViewY>2.8</researchViewY>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->leather tanning</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -130,6 +165,11 @@
 		<prerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->textile spinning</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 
 	<!-- <ResearchProjectDef> -->
@@ -158,6 +198,11 @@
 		<prerequisites>
 			<li>DankPyon_TextileSpinning</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->silk manufacturing</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -172,6 +217,11 @@
 		</tags>
 		<researchViewX>1</researchViewX>
 		<researchViewY>2.1</researchViewY>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->candle making</li>
+		  </rulesStrings>
+		</generalRules>		
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -182,10 +232,15 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>9</researchViewX>
-		<researchViewY>5.4</researchViewY>
+		<researchViewY>5.4</researchViewY>	
 		<prerequisites>
 			<li>Smithing</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->jewelry crafting</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<!--=========================== Engineering ==============================-->
@@ -201,6 +256,11 @@
 		<prerequisites>
 			<li>Smithing</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->engineering</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -216,6 +276,11 @@
 			<li>DankPyon_Engineering</li>
 		</prerequisites>
 		<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->mining</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -231,6 +296,11 @@
 			<li>DankPyon_Engineering</li>
 		</prerequisites>
 		<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->windmill construction</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -248,6 +318,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_Crossbow</li>
 		</requiredResearchFacilities>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->crossbow crafting</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -265,6 +340,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_HeavyCrossbow</li>
 		</requiredResearchFacilities>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->arbalest crafting</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -281,6 +361,11 @@
 			<li>DankPyon_Engineering</li>
 		</prerequisites>
 		<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->ballista construction</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -296,6 +381,11 @@
 			<li>DankPyon_Engineering</li>
 		</prerequisites>
 		<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->trebuchet construction</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -314,6 +404,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_BallistaRepeater</li>
 		</requiredResearchFacilities>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->ballista repeater construction</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<!--=========================== Alchemy ==============================-->
@@ -329,6 +424,11 @@
 		<hiddenPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</hiddenPrerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->alchemy</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -347,6 +447,11 @@
 		<!--requiredResearchFacilities>
 			<li>DankPyon_Book_Steel</li>
 		</requiredResearchFacilities-->
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->steel production</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -366,6 +471,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_Steel</li>
 		</requiredResearchFacilities>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->plasteel production</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -383,6 +493,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_Tar</li>
 		</requiredResearchFacilities>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->tar production</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -400,6 +515,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_Gunpowder</li>
 		</requiredResearchFacilities>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->gunpowder</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<!--=========================== Alcoholics ==============================-->
@@ -427,6 +547,11 @@
 		<prerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->tailoring</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -441,6 +566,11 @@
 		<prerequisites>
 			<li>DankPyon_Tailoring</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->protective clothing</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -456,6 +586,11 @@
 			<li>DankPyon_ProtectiveClothing</li>
 			<li>Smithing</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->chain armor</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<!--=========================== Ranged Weapons ==============================-->
@@ -472,6 +607,11 @@
 		<prerequisites>
 			<li>RecurveBow</li>
 		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->hunting bows</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -489,6 +629,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_WarBow</li>
 		</requiredResearchFacilities>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->war bows</li>
+      </rulesStrings>
+    </generalRules>
 	</ResearchProjectDef>
 
 
@@ -505,6 +650,11 @@
 		<techLevel>Medieval</techLevel>
 		<researchViewX>8</researchViewX>
 		<researchViewY>2.4</researchViewY>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->basic polearms</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -522,6 +672,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_MilitaryPolearms</li>
 		</requiredResearchFacilities>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->military polearms</li>
+      </rulesStrings>
+    </generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -539,6 +694,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_NoblePolearms</li>
 		</requiredResearchFacilities>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->noble polearms</li>
+		  </rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -553,6 +713,11 @@
 		<techLevel>Medieval</techLevel>
 		<researchViewX>8</researchViewX>
 		<researchViewY>3</researchViewY>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->basic maces</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -570,6 +735,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_MilitaryMaces</li>
 		</requiredResearchFacilities>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->military maces</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -587,6 +757,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_NobleMaces</li>
 		</requiredResearchFacilities>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->noble maces</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -601,6 +776,11 @@
 		<techLevel>Medieval</techLevel>
 		<researchViewX>8</researchViewX>
 		<researchViewY>3.6</researchViewY>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->basic blades</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -618,6 +798,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_MilitaryBlades</li>
 		</requiredResearchFacilities>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->military blades</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 
 	<!-- <ResearchProjectDef>                                 -LongBlades researchproject def -->
@@ -644,6 +829,11 @@
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0.6</researchViewY>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->basic agriculture</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -658,6 +848,11 @@
 		</prerequisites>
 		<researchViewX>1</researchViewX>
 		<researchViewY>0.6</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->intermediate agriculture</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -672,6 +867,11 @@
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>0.6</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->advanced agriculture</li>
+			</rulesStrings>
+		</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -687,6 +887,11 @@
 		</prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>0.0</researchViewY>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->griffon berry tree cultivation</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<!--=========================== Cooking ==============================-->
@@ -702,6 +907,11 @@
 		</tags>
 		<researchViewX>0</researchViewX>
 		<researchViewY>6</researchViewY>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->basic cooking</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -719,6 +929,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_IntermediateCooking</li>
 		</requiredResearchFacilities>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->intermediate cooking</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -736,6 +951,11 @@
 		<requiredResearchFacilities>
 			<li>DankPyon_Book_AdvancedCooking</li>
 		</requiredResearchFacilities>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->advanced cooking</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<!--=========================== Food Preservation ==============================-->
@@ -777,6 +997,11 @@
 		<prerequisites>
 			<li>DankPyon_BasicCooking</li>
 		</prerequisites>
+		<generalRules>	
+		  <rulesStrings>
+			<li>subject->smoker construction</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<!--=========================== Food Production Tables ==============================-->
@@ -793,6 +1018,11 @@
 		<prerequisites>
 			<li>DankPyon_BasicCooking</li>
 		</prerequisites>
+		<generalRules>	
+		  <rulesStrings>
+			<li>subject->food grilling</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -807,6 +1037,11 @@
 		<prerequisites>
 			<li>DankPyon_BasicCooking</li>
 		</prerequisites>
+		<generalRules>	
+		  <rulesStrings>
+			<li>subject->stew production</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -821,6 +1056,11 @@
 		<prerequisites>
 			<li>DankPyon_BasicCooking</li>
 		</prerequisites>
+		<generalRules>	
+		  <rulesStrings>
+			<li>subject->baking</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 	
 	<!--=========================== 1.4 New Additions based off image ==============================-->
@@ -862,6 +1102,11 @@
 		<techLevel>Medieval</techLevel>
 		<researchViewX>9</researchViewX>
 		<researchViewY>1.2</researchViewY>
+		<generalRules>	
+		  <rulesStrings>
+			<li>subject->adorned armor</li>
+		  </rulesStrings>
+		</generalRules>	
 	</ResearchProjectDef>
 	
 </Defs>

@@ -28,7 +28,8 @@ namespace ESCP_FuelExtension
             {
                 ThingFilter filter = refuelable.TryGetComp<CompStoreFuelThing>().AllowedFuelFilter;
                 Predicate<Thing> validator = (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false) && filter.Allows(x);
-                __result = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForGroup(ThingRequestGroup.HaulableEver), PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false, false, false), 9999f, validator, null, 0, -1, false, RegionType.Set_Passable, false);
+                IEnumerable<Thing> searchSet = pawn.Map.listerThings.ThingsMatchingFilter(filter);
+                __result = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForGroup(ThingRequestGroup.HaulableEver), PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator, searchSet, 0, -1, false, RegionType.Set_Passable, false);
                 return false;
             }
             return true;

@@ -40,7 +40,7 @@
     <Compile Include="ESCP_FuelExtension\CompProperties_StoreFuelThing.cs" />
     <Compile Include="ESCP_FuelExtension\CompStoreFuelThing.cs" />
     <Compile Include="ESCP_FuelExtension\HarmonyPatches\CanRefuel.cs" />
-    <Compile Include="ESCP_FuelExtension\HarmonyPatches\FindBestFuel.cs" />
+    <Compile Include="ESCP_FuelExtension\HarmonyPatches\FindBestFuel_Prefix.cs" />
     <Compile Include="ESCP_FuelExtension\HarmonyPatches\FuelRate.cs" />
     <Compile Include="ESCP_FuelExtension\HarmonyPatches\InspectStringPatch.cs" />
     <Compile Include="ESCP_FuelExtension\HarmonyPatches\StoreFuel.cs" />

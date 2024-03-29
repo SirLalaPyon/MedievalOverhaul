@@ -118,14 +118,6 @@ namespace MedievalOverhaul.Wood
             {
                 wood.thingCategories.Add(MedievalOverhaulDefOf.DankPyon_Wood);
             }
-            //if (wood.stuffProps.categories.NullOrEmpty())
-            //{
-            //    List<StuffCategoryDef> stuffCategory = new List<StuffCategoryDef> { };
-            //}
-            //if (!wood.stuffProps.categories.Contains(StuffCategoryDefOf.Woody))
-            //{
-            //    wood.stuffProps.categories.Add(StuffCategoryDefOf.Woody);
-            //}
             return log;
         }
         private static ThingDef BasicHideDef(ThingDef wood)

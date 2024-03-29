@@ -124,8 +124,11 @@ namespace MedievalOverhaul
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            LootGeneration();
-            EnemyGeneration();
+            if (!contentsKnown && !respawningAfterLoad)
+            {
+                LootGeneration();
+                EnemyGeneration();
+            }
         }
 
         /// <summary>

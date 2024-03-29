@@ -362,15 +362,6 @@
 				<canWakeUpFogged>false</canWakeUpFogged>
 			</li>
 			<li Class="CompProperties_WakeUpDormant"/>
-			<li Class="CompProperties_SpawnerPawn">
-				<spawnablePawnKinds>
-					<li>DankPyon_Deathstinger</li>
-				</spawnablePawnKinds>
-				<lordJob>LordJob_DefendAndExpandHive</lordJob>
-				<spawnSound>Hive_Spawn</spawnSound>
-				<initialPawnsPoints>200</initialPawnsPoints>
-				<maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
-			</li>
 			<li Class="CompProperties_SelfhealHitpoints">
 				<ticksPerHeal>6000</ticksPerHeal><!-- 60k ticks = 1 day, 10 hp per day -->
 			</li>
@@ -382,6 +373,16 @@
 				<spawnMaxAdjacent>20</spawnMaxAdjacent>
 				<spawnForbidden>true</spawnForbidden>
 				<saveKeysPrefix>jelly</saveKeysPrefix>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_HornetNestSpawner">
+				<spawnablePawnKinds>
+					<li>DankPyon_Deathstinger</li>
+				</spawnablePawnKinds>
+				<spawnSound>Hive_Spawn</spawnSound>
+				<initialPawnCount>3</initialPawnCount>
+				<maxPawnCount>5</maxPawnCount>
+				<pawnSpawnIntervalDays>0.1~0.2</pawnSpawnIntervalDays>
+				<defendRadius>10</defendRadius>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>6</heatPerSecond>

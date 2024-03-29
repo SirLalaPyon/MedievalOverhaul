@@ -3,9 +3,13 @@
 
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
 		<settings>hornestNest</settings>
+		<inverse>true</inverse>
 		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="DankPyon_HornetNest"]</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
+				<value>
+					<li>DankPyon_HornetNest</li>
+				</value>
 			</li>
 		</operations>
 	</Operation>

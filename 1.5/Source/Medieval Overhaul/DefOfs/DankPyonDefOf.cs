@@ -31,6 +31,7 @@ namespace MedievalOverhaul
         public static PawnKindDef DankPyon_SchratDark_Sapling;
         public static PawnKindDef DankPyon_SchratPlain_Sapling;
         public static FactionDef DankPyon_Forest_Faction;
+        public static FactionDef DankPyon_Hornets;
 
     }
 

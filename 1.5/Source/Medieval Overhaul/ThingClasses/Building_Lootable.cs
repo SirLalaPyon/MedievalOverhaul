@@ -7,7 +7,7 @@ namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
     // Need the constructor for GraphicEmpty initialization on game load.
-    public class Building_Lootable : Building_Crate, IOpenable
+    public class Building_Lootable : Building_Casket, IThingHolder, IOpenable
     {
         private Graphic emptyColoredGraphic;
 
@@ -39,7 +39,13 @@ namespace MedievalOverhaul
         /// Can only be opened if the contents inside are not known.
         /// Contents not known by default.
         /// </summary>
-        public override bool CanOpen => !contentsKnown;
+        public override bool CanOpen
+        {
+            get
+            {
+                return this.HasAnyContents;
+            }
+        }
 
         /// <summary>
         /// Randomly generates and stores items for a player to find via looting, stored inside the innerContainer.
@@ -51,6 +57,7 @@ namespace MedievalOverhaul
 
             if (!contentsKnown)
             {
+                Log.Message("Loot Generation");
                 if (Rand.Chance(lootableExt.lootChance))
                 {
                     ThingDef lootableTD;
@@ -91,6 +98,7 @@ namespace MedievalOverhaul
 
             if (!contentsKnown)
             {
+                Log.Message("Enemy Generation");
                 //if (Rand.Chance(lootableExt.enemySpawnChance))
                 if (Rand.Chance(lootableExt.enemySpawnChance))
                 {
@@ -159,7 +167,7 @@ namespace MedievalOverhaul
                 .Cast<Pawn>()
                 .ToList();
 
-            innerContainer.TryDropAll(Position, Map, ThingPlaceMode.Near, nearPlaceValidator: c => c.GetEdifice(Map) == null);
+            innerContainer.TryDropAll(Position, Map, ThingPlaceMode.Near, null,null, true);
             foreach (Pawn pawn in pawns)
             {
                 if (pawn.RaceProps.Animal && lootableExt.hostileEnemy == true)

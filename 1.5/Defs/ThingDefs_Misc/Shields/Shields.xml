@@ -103,18 +103,19 @@
 				</offHandGraphicData>
 				<offHandHoldOffset>
 					<northDefault>
-						<offset>(0, 0, 0.2)</offset>
+						<offset>(-0.12, 0, 0.2)</offset>
 						<behind>true</behind>
 					</northDefault>
 					<east>
-						<offset>(-0.1, 0, 0.2)</offset>
-						<behind>true</behind>
+						<offset>(-0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</east>
 					<south>
-						<offset>(-0.1, -0.04, 0.2)</offset>
+						<offset>(0.12, -0.047, 0.25)</offset>
 					</south>
 					<west>
-						<offset>(0.1, 0, 0.2)</offset>
+						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
@@ -164,18 +165,19 @@
 				</offHandGraphicData>
 				<offHandHoldOffset>
 					<northDefault>
-						<offset>(0, 0, 0.2)</offset>
+						<offset>(-0.12, 0, 0.2)</offset>
 						<behind>true</behind>
 					</northDefault>
 					<east>
-						<offset>(-0.1, 0, 0.2)</offset>
-						<behind>true</behind>
+						<offset>(-0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</east>
 					<south>
-						<offset>(-0.1, -0.04, 0.2)</offset>
+						<offset>(0.12, -0.047, 0.25)</offset>
 					</south>
 					<west>
-						<offset>(0.1, 0, 0.2)</offset>
+						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
@@ -224,7 +226,7 @@
 				</offHandGraphicData>
 				<offHandHoldOffset>
 					<northDefault>
-						<offset>(0, 0, 0.2)</offset>
+						<offset>(-0.12, 0, 0.2)</offset>
 						<behind>true</behind>
 					</northDefault>
 					<east>
@@ -232,10 +234,11 @@
 						<behind>false</behind>
 					</east>
 					<south>
-						<offset>(0.1, 0.04, 0.25)</offset>
+						<offset>(0.12, -0.047, 0.25)</offset>
 					</south>
 					<west>
 						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
@@ -290,7 +293,7 @@
 				</coveredBodyPartGroups>
 				<offHandHoldOffset>
 					<northDefault>
-						<offset>(0, 0, 0.2)</offset>
+						<offset>(-0.12, 0, 0.2)</offset>
 						<behind>true</behind>
 					</northDefault>
 					<east>
@@ -298,10 +301,11 @@
 						<behind>false</behind>
 					</east>
 					<south>
-						<offset>(0.1, 0.04, 0.25)</offset>
+						<offset>(0.12, -0.047, 0.25)</offset>
 					</south>
 					<west>
 						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
@@ -340,7 +344,7 @@
 				</coveredBodyPartGroups>
 				<offHandHoldOffset>
 					<northDefault>
-						<offset>(0, 0, 0.2)</offset>
+						<offset>(-0.12, 0, 0.2)</offset>
 						<behind>true</behind>
 					</northDefault>
 					<east>
@@ -348,10 +352,11 @@
 						<behind>false</behind>
 					</east>
 					<south>
-						<offset>(0.1, 0.04, 0.25)</offset>
+						<offset>(0.12, -0.047, 0.25)</offset>
 					</south>
 					<west>
 						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
@@ -390,7 +395,7 @@
 				</coveredBodyPartGroups>
 				<offHandHoldOffset>
 					<northDefault>
-						<offset>(0, 0, 0.2)</offset>
+						<offset>(-0.12, 0, 0.2)</offset>
 						<behind>true</behind>
 					</northDefault>
 					<east>
@@ -398,10 +403,11 @@
 						<behind>false</behind>
 					</east>
 					<south>
-						<offset>(0.1, 0.04, 0.25)</offset>
+						<offset>(0.12, -0.047, 0.25)</offset>
 					</south>
 					<west>
 						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
@@ -440,7 +446,7 @@
 				</coveredBodyPartGroups>
 				<offHandHoldOffset>
 					<northDefault>
-						<offset>(0, 0, 0.2)</offset>
+						<offset>(-0.12, 0, 0.2)</offset>
 						<behind>true</behind>
 					</northDefault>
 					<east>
@@ -448,10 +454,11 @@
 						<behind>false</behind>
 					</east>
 					<south>
-						<offset>(0.1, 0.04, 0.25)</offset>
+						<offset>(0.12, -0.047, 0.25)</offset>
 					</south>
 					<west>
 						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
@@ -508,7 +515,7 @@
 				</offHandGraphicData>
 				<offHandHoldOffset>
 					<northDefault>
-						<offset>(0, 0, 0.2)</offset>
+						<offset>(-0.12, 0, 0.2)</offset>
 						<behind>true</behind>
 					</northDefault>
 					<east>
@@ -516,10 +523,11 @@
 						<behind>false</behind>
 					</east>
 					<south>
-						<offset>(0.1, 0.04, 0.25)</offset>
+						<offset>(0.12, -0.047, 0.25)</offset>
 					</south>
 					<west>
 						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>

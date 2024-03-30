@@ -71,10 +71,18 @@
 				<li>(0.0, 0, -0.08)</li>
 				<li>(-0.07, 0, -0.05)</li>
 			</headPosPerRotation>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<soundEating>Insectoid_Eat</soundEating>
 		</race>
 		<tradeTags>
 			<li>AnimalInsect</li>
 		</tradeTags>
+		<!--comps>
+			<li Class="AnimalBehaviours.CompProperties_AutoNutrition">
+				<tickInterval>2000</tickInterval>
+				<consumingFoodReportString>Eating hornet honey</consumingFoodReportString>		
+			</li>
+		</comps-->		
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">

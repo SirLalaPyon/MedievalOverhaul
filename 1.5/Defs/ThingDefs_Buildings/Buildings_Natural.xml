@@ -368,9 +368,17 @@
 			<li Class="CompProperties_SpawnerHives"/>
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>DankPyon_HornetHoney</thingToSpawn>
-				<spawnCount>5</spawnCount>
+				<spawnCount>2</spawnCount>
 				<spawnIntervalRange>26000~30000</spawnIntervalRange>
 				<spawnMaxAdjacent>20</spawnMaxAdjacent>
+				<spawnForbidden>true</spawnForbidden>
+				<saveKeysPrefix>jelly</saveKeysPrefix>
+			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>DankPyon_HornetJelly</thingToSpawn>
+				<spawnCount>10</spawnCount>
+				<spawnIntervalRange>26000~30000</spawnIntervalRange>
+				<spawnMaxAdjacent>13</spawnMaxAdjacent>
 				<spawnForbidden>true</spawnForbidden>
 				<saveKeysPrefix>jelly</saveKeysPrefix>
 			</li>
@@ -394,11 +402,11 @@
 				<spawnMtbHours>4</spawnMtbHours>
 				<spawnRadius>5</spawnRadius>
 			</li>
-			<li Class="CompProperties_Maintainable">
+			<!--li Class="CompProperties_Maintainable">
 				<ticksHealthy>60000</ticksHealthy>
 				<ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
 				<damagePerTickRare>10</damagePerTickRare>
-			</li>
+			</li-->
 		</comps>
 	</ThingDef>
 

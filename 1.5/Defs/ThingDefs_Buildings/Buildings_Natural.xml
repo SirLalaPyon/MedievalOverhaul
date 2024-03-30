@@ -354,7 +354,7 @@
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<killedLeavings>
-			<InsectJelly>30</InsectJelly>
+			<DankPyon_HornetHoney>30</DankPyon_HornetHoney>
 		</killedLeavings>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
@@ -387,10 +387,10 @@
 					<li>DankPyon_Deathstinger</li>
 				</spawnablePawnKinds>
 				<spawnSound>Hive_Spawn</spawnSound>
-				<initialPawnCount>3</initialPawnCount>
-				<maxPawnCount>5</maxPawnCount>
+				<initialPawnCount>2</initialPawnCount>
+				<maxPawnCount>4</maxPawnCount>
 				<pawnSpawnIntervalDays>0.1~0.2</pawnSpawnIntervalDays>
-				<defendRadius>10</defendRadius>
+				<defendRadius>8</defendRadius>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>6</heatPerSecond>

@@ -89,6 +89,62 @@
 		<costStuffCount>35</costStuffCount>
 		<designationHotKey>Misc1</designationHotKey>
 	</ThingDef>
+	
+	<ThingDef ParentName="DoorBase">
+		<defName>DankPyon_ReinfocedLogGate</defName>
+		<label>reinforced log gate</label>
+		<description>A reinforced gate that divides rooms. Simple gates must be manually opened, which slows people down. The amount of slowdown depends on what the gate is made of.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Beauty>30</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Buildings/ReinforcedLogGate/ReinforcedLogGate_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Buildings/ReinforcedLogGate/ReinforcedLogGate_south</uiIconPath>
+		<uiIconScale>1.35</uiIconScale>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(1,1)</size>
+		<rotatable>true</rotatable>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<stuffCategories Inherit="False">
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Buildings/ReinforcedLogGate/ReinforcedLogGate</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2,2)</drawSize>
+			</blueprintGraphicData>
+			<doorTopGraphic>
+				<texPath>Buildings/ReinforcedLogGate/ReinforcedLogGate_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(2,2)</drawSize>
+			</doorTopGraphic>
+			<!--doorSupportGraphic>
+				<texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Support</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(3.1, 2.3)</drawSize>
+			</doorSupportGraphic-->
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<designationHotKey>Misc3</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
 
 	<ThingDef ParentName="DoorBase">
 		<defName>DankPyon_SlabDoor</defName>
@@ -186,6 +242,9 @@
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<li>DankPyon_RusticDoor</li>
+			</relatedBuildCommands>
 		</building>
 		<designationHotKey Inherit="False"/>
 	</ThingDef>
@@ -259,6 +318,7 @@
 			<relatedBuildCommands>
 				<li>Door</li>
 				<li>Autodoor</li>
+				<li>DankPyon_RusticDoor</li>
 			</relatedBuildCommands>
 		</building>
 		<comps>
@@ -350,6 +410,7 @@
 			<relatedBuildCommands>
 				<li>Door</li>
 				<li>Autodoor</li>
+				<li>DankPyon_RusticDoor</li>
 			</relatedBuildCommands>
 		</building>
 		<comps>
@@ -425,9 +486,11 @@
 			<blueprintGraphicData>
 				<texPath>Buildings/Linked/Palisade_Blueprint</texPath>
 			</blueprintGraphicData>
-			<relatedBuildCommands>
-				<li>Door</li>
-				<li>Autodoor</li>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_ReinfocedLogGate</li>
+				<li>DankPyon_EmbPalisade</li>
+				<li>DankPyon_LogGate</li>
+				<li>DankPyon_Frame_Log</li>
 			</relatedBuildCommands>
 		</building>
 		<comps>
@@ -502,9 +565,11 @@
 			<blueprintGraphicData>
 				<texPath>Buildings/Linked/EmbPalisade_Blueprint</texPath>
 			</blueprintGraphicData>
-			<relatedBuildCommands>
-				<li>Door</li>
-				<li>Autodoor</li>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_ReinfocedLogGate</li>
+				<li>DankPyon_Palisade</li>
+				<li>DankPyon_LogGate</li>
+				<li>DankPyon_Frame_Log</li>
 			</relatedBuildCommands>
 		</building>
 		<comps>
@@ -655,6 +720,12 @@
 			<blueprintGraphicData>
 				<texPath>Buildings/Linked/CastleWall_blueprint</texPath>
 			</blueprintGraphicData>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_CastleWallEmbrasures</li>
+				<li>DankPyon_RusticDoor</li>
+				<li>DankPyon_SlabDoor</li>
+				<li>DankPyon_Gate</li>
+			</relatedBuildCommands>
 		</building>
 		<damageMultipliers>
 			<li>
@@ -686,6 +757,12 @@
 			<blueprintGraphicData>
 				<texPath>Buildings/Linked/CastleWallEmbrasures_blueprint</texPath>
 			</blueprintGraphicData>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_CastleWall</li>
+				<li>DankPyon_RusticDoor</li>
+				<li>DankPyon_SlabDoor</li>
+				<li>DankPyon_Gate</li>
+			</relatedBuildCommands>
 		</building>
 	</ThingDef>
 

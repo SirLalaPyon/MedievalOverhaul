@@ -2,7 +2,9 @@
 <Patch>
 
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>woodChain</settings>
+		<settings>
+			<li>woodChain</li>
+		</settings>
 		<operations>
 
 			<!-- Replace every WoodLog to be DankPyon_RawWood for every neolithic building-->

@@ -60,7 +60,7 @@ namespace MedievalOverhaul
                     {
                         Lord lord = (Lord)null;
                         if (this.parent.Map.mapPawns.SpawnedPawnsInFaction(Faction.OfInsects).Any<Pawn>((Predicate<Pawn>)(p => p != pawnToCreate)))
-                            lord = ((Pawn)GenClosest.ClosestThing_Global(this.parent.Position, (IEnumerable)this.parent.Map.mapPawns.SpawnedPawnsInFaction(Faction.DankPyon_Hornets), 30f, (Predicate<Thing>)(p => p != pawnToCreate && ((Pawn)p).GetLord() != null))).GetLord();
+                            lord = ((Pawn)GenClosest.ClosestThing_Global(this.parent.Position, (IEnumerable)this.parent.Map.mapPawns.SpawnedPawnsInFaction(Faction.OfInsects), 30f, (Predicate<Thing>)(p => p != pawnToCreate && ((Pawn)p).GetLord() != null))).GetLord();
                         if (lord == null)
                             lord = LordMaker.MakeNewLord(Faction.OfInsects, (LordJob)new LordJob_DefendPoint(this.parent.Position, new float?(10f)), this.parent.Map);
                         lord.AddPawn(pawnToCreate);

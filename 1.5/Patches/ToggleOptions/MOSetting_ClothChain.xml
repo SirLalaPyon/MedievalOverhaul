@@ -2,7 +2,9 @@
 <Patch>
 
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>clothChain</settings>
+		<settings>
+			<li>clothChain</li>
+		</settings>
 		<inverse>true</inverse>
 		<operations>
 
@@ -13,6 +15,45 @@
 					<value>
 						<harvestedThingDef>Cloth</harvestedThingDef>
 					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/RecipeDef[defName="DankPyon_MakeCloth"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeCloth"]</xpath>
+				</match>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]</xpath>
+				</match>
+			</li>
+
+			<!-- Flax and Linen -->
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
+					<value>
+						<harvestedThingDef>DankPyon_Linen</harvestedThingDef>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinen"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinen"]</xpath>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]</xpath>
 				</match>
 			</li>
 

@@ -50,19 +50,18 @@ namespace MedievalOverhaul
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                FieldInfo[] fields = GetType().GetFields();
                 settingMode ??= new Dictionary<string, bool>();
-                foreach (FieldInfo field in fields)
-                {
-                    if (field.FieldType == typeof(bool))
-                    {
-                        bool value = (bool)field.GetValue(this);
-                        settingMode.SetOrAdd(field.Name, value);
-                    }
-                }
             }
-            
+
         }
+        public IEnumerable<string> toggleSettings
+        {
+            get
+            {
+                return GetType().GetFields().Where(p => p.FieldType == typeof(bool) && (bool)p.GetValue(this)).Select(p => p.Name);
+            }
+        }
+
         public void DoSettingsWindowContents(Rect inRect)
         {
             Rect rect = new Rect(inRect.x, inRect.y, inRect.width, inRect.height);
@@ -88,9 +87,5 @@ namespace MedievalOverhaul
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_BoomalopeTar".Translate(), ref this.boomalopeTar);
             listingStandard.End();
         }
-
-        
-
-
     }
 }

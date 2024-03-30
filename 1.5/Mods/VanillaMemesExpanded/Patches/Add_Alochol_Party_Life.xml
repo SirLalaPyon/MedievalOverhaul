@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/VanillaMemesExpanded.SupportedDrinksForPreceptDefs[defName="VME_SupportedDrinksForPreceptDef"]/supportedDrinksForPrecept</xpath>
+		<value>
+			<li>DankPyon_Mead</li>
+			<li>DankPyon_Ale</li>
+			<li>DankPyon_Cider</li>
+			<li>DankPyon_Wine</li>
+			<li>DankPyon_Wine_Mulberry</li>
+		</value>
+	</Operation>
+
+</Patch>

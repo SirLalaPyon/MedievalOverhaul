@@ -2,7 +2,9 @@
 <Patch>
 
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>refuelableTorch</settings>
+		<settings>
+			<li>refuelableTorch</li>
+		</settings>
 		<operations>
 		
 		<li Class="PatchOperationConditional">

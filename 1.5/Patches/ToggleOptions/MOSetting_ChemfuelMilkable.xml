@@ -2,7 +2,9 @@
 <Patch>
 
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>boomalopeTar</settings>
+		<settings>
+			<li>boomalopeTar</li>
+		</settings>
 		<operations>
 		
 			<li Class="PatchOperationReplace">

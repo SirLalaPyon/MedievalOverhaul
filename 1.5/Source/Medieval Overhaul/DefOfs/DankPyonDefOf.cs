@@ -33,6 +33,12 @@ namespace MedievalOverhaul
         public static FactionDef DankPyon_Forest_Faction;
         public static FactionDef DankPyon_Hornets;
 
+        public static ThingSetMakerDef DankPyon_GolemMeteorite;
+
+        public static ThingDef DankPyon_IronOre;
+        public static ThingDef DankPyon_GoldOre;
+        public static ThingDef Steel;
+
     }
 
 }

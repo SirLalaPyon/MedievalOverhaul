@@ -28,7 +28,7 @@
 		<defName>DankPyon_LindwurmPasses</defName>
 		<label>rare lindwurms</label>
 		<letterLabel>{0} wanders in</letterLabel><!-- {0} corresponds to the pawn kind label -->
-		<letterText>Astride the winds of fate, a pack of {1} have ventured into the area, gracing our realm for but a fleeting moment. These majestic creatures, with scales aglow like molten embers and a presence that commands awe, weave their sinuous path through the land. Beware, for {1} are formidable adversaries, their fiery breath and powerful coils posing a perilous threat to all who dare cross their path. </letterText><!-- {0} is the number, {1} is the pawn kind label  -->
+		<letterText>Astride the winds of fate, a pack of {1} have ventured into the area, gracing our realm for but a fleeting moment. These majestic creatures, with scales aglow like molten embers and a presence that commands awe, weave their sinuous path through the land. Beware, for {1} are formidable adversaries, their fiery breath and powerful coils posing a perilous threat to all who dare cross their path.</letterText><!-- {0} is the number, {1} is the pawn kind label  -->
 		<letterDef>PositiveEvent</letterDef><!-- also ThreatSmall, ThreatBig, NeutralEvent, PositiveEvent -->
 		<category>Misc</category>
 		<targetTags>
@@ -44,6 +44,20 @@
 				<leaveMapAfterTime>true</leaveMapAfterTime>
 			</li>
 		</modExtensions>
+	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>DankPyon_GolemImpact</defName>
+		<label>meteorite impact</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MedievalOverhaul.IncidentWorker_GolemImpact</workerClass>
+		<baseChance>0.5</baseChance>
+		<letterLabel>Meteorite</letterLabel>
+		<letterText>A large meteorite has struck ground in the area. It has left behind a lump of {0}.</letterText>
+		<tale>MeteoriteImpact</tale>
 	</IncidentDef>
 
 </Defs>

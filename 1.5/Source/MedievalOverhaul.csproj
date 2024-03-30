@@ -57,6 +57,8 @@
     <Compile Include="Medieval Overhaul\Harmony\FindAmmoForTurret_Prefix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CanPlaceBlueprintOver_Postfix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CanBuildOnTerrain_Postfix.cs" />
+    <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GolemImpact.cs" />
+    <Compile Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\ThingSetMaker_GolemImpact.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaul_Settings.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaulMod.cs" />
     <Compile Include="Medieval Overhaul\Production Chains\Hide Generation\GeneratorUtility.cs" />
@@ -91,11 +93,9 @@
     <Compile Include="Medieval Overhaul\ThingComps\Comp_PawnSpawnerOnDestroy.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\BuildingLootableExtension.cs" />
     <Compile Include="Medieval Overhaul\DefOfs\DankPyonDefOf.cs" />
-    <Compile Include="Medieval Overhaul\Tools\Tool_Melee.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_FireOverlaySouth.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_FireOverlaySouth.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_WindMill.cs" />
-    <Compile Include="Medieval Overhaul\Core.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalProjectileProperties.cs" />
     <Compile Include="Medieval Overhaul\BiomeWorkers\BiomeWorker_AncientForest.cs" />
     <Compile Include="Medieval Overhaul\BiomeWorkers\BiomeWorker_DarkForest.cs" />

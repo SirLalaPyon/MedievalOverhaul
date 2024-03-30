@@ -2,7 +2,9 @@
 <Patch>
 
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>leatherChain</settings>
+		<settings>
+			<li>leatherChain</li>
+		</settings>
 		<inverse>true</inverse>
 		<operations>
 		

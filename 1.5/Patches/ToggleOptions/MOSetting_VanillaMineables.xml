@@ -2,7 +2,9 @@
 <Patch>
 
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>vanillaMine</settings>
+		<settings>
+			<li>vanillaMine</li>
+		</settings>
 		<operations>
 
 			<li Class="PatchOperationReplace">

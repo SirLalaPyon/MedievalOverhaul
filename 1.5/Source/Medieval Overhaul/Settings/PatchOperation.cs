@@ -10,24 +10,20 @@ namespace MedievalOverhaul
 {
     public class PatchOperation_ToggleSettings : PatchOperation
     {
-        public string settings;
+        public List<string> settings;
         public bool inverse = false;
         private readonly List<PatchOperation> operations = new List<PatchOperation>();
         private PatchOperation lastFailedOperation;
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (MedievalOverhaul_Settings.settingMode.ContainsKey(settings))
+            if (HasSetting() && !inverse)
             {
-                MedievalOverhaul_Settings.settingMode.TryGetValue(settings, out bool value);
-                if (value && !inverse)
-                {
-                    return ApplyPatches(xml);
-                }
-                if (!value && inverse)
-                {
-                    return ApplyPatches(xml);
-                }
+                return ApplyPatches(xml);
+            }
+            if (!HasSetting() && inverse)
+            {
+                return ApplyPatches(xml);
             }
             return true;
         }
@@ -42,6 +38,17 @@ namespace MedievalOverhaul
                 }
             }
             return true;
+        }
+        public bool HasSetting()
+        {
+            for (int i = 0; i < settings.Count(); i++)
+            {
+                if (MedievalOverhaulSettings.settings.toggleSettings.Contains(settings[i]))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
     }

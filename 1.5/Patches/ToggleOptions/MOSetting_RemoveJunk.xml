@@ -2,7 +2,9 @@
 <Patch>
 
 	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>industrialJunk</settings>
+		<settings>
+			<li>industrialJunk</li>
+		</settings>
 		<operations>
 
 			<li Class="PatchOperationConditional">
@@ -79,20 +81,6 @@
 				<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientPollutionJunk"]</xpath>
 				<match Class="PatchOperationRemove">
 					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientPollutionJunk"]</xpath>
-				</match>
-			</li>
-
-		</operations>
-	</Operation>
-
-	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>exostriderRemains</settings>
-		<operations>
-
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[defName="Base_Player"]/genSteps/li[text()="AncientExostriderRemains"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/MapGeneratorDef[defName="Base_Player"]/genSteps/li[text()="AncientExostriderRemains"]</xpath>
 				</match>
 			</li>
 

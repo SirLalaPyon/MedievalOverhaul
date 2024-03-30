@@ -600,7 +600,6 @@
 		<rotatable>false</rotatable>
 		<stackLimit>25</stackLimit>
 		<socialPropernessMatters>true</socialPropernessMatters>
-
 		<statBases>
 			<MarketValue>7.0</MarketValue>
 			<Mass>0.025</Mass>
@@ -608,7 +607,6 @@
 			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<allowedArchonexusCount>150</allowedArchonexusCount>
-
 		<ingestible>
 			<foodType>AnimalProduct</foodType>
 			<preferability>MealFine</preferability>
@@ -618,7 +616,6 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
-
 		<thingCategories>
 			<li>AnimalProductRaw</li>
 		</thingCategories>
@@ -636,7 +633,6 @@
 		<rotatable>false</rotatable>
 		<stackLimit>25</stackLimit>
 		<socialPropernessMatters>true</socialPropernessMatters>
-
 		<statBases>
 			<MarketValue>7.0</MarketValue>
 			<Mass>0.025</Mass>
@@ -644,7 +640,6 @@
 			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<allowedArchonexusCount>150</allowedArchonexusCount>
-
 		<ingestible>
 			<foodType>AnimalProduct</foodType>
 			<preferability>MealFine</preferability>
@@ -654,7 +649,6 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
-
 		<thingCategories>
 			<li>AnimalProductRaw</li>
 		</thingCategories>
@@ -666,7 +660,6 @@
   
 	<!--============================== Metals ==============================-->
 	<!--=============== Iron ====================-->
-  
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_IronOre</defName>
 		<label>iron ore</label>
@@ -693,7 +686,7 @@
 		<!--smeltable>true</smeltable-->
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	</ThingDef>
-  
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_IronIngot</defName>
 		<label>iron ingot</label>
@@ -745,7 +738,6 @@
 	</ThingDef>
 
 	<!--=============== Silver ====================-->
-  
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_SilverOre</defName>
 		<label>silver ore</label>
@@ -801,8 +793,6 @@
   </ThingDef-->
   
 	<!--=============== Gold Ore ====================-->
-  
-  
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_GoldOre</defName>
 		<label>gold ore</label>
@@ -835,7 +825,6 @@
 	</ThingDef>
 	
 	<!--=============== Plasteel ====================-->	
-  
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_PlasteelOre</defName>
 		<label>raw plasteel</label>
@@ -864,212 +853,6 @@
 	</ThingDef>
 
 	<!--============================== Misc ==============================-->
-	<!--=============== Bone ====================-->
-	<ThingDef ParentName="ResourceVerbBase">
-		<defName>DankPyon_Bone</defName>
-		<label>bone</label>
-		<description>Bone from animals, including humans, can be used as a general material. Bone weapons and armor offer poor durability but accessible protection. Buildings and art inlaid with bone provide decoration to otherwise poor or dull materials. Although easy to acquire, using bones as entire structures, such as a wall or door, should be cautioned. The best use of bone, whether for armor or art, should be to elevate other materials.</description>
-		<graphicData>
-			<texPath>Resources/Bone</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-
-		<equippedAngleOffset>-20</equippedAngleOffset>
-		<soundInteract>Wood_Drop</soundInteract>
-		<soundDrop>Wood_Drop</soundDrop>
-
-		<statBases>
-			<MarketValue>1.0</MarketValue>
-			<MaxHitPoints>120</MaxHitPoints>
-			<Mass>0.25</Mass>
-			<Flammability>0.0</Flammability>
-			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
-			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-			<MeleeWeapon_CooldownMultiplier>2.0</MeleeWeapon_CooldownMultiplier>
-			<SharpDamageMultiplier>0.8</SharpDamageMultiplier>
-			<BluntDamageMultiplier>0.3</BluntDamageMultiplier>
-		</statBases>
-
-		<stuffProps>
-			<stuffAdjective>bone</stuffAdjective>
-			<categories>
-				<li>Woody</li>
-			</categories>
-			<commonality>1.00</commonality>
-			<color>(199,181,129)</color>
-			<constructEffect>ConstructWood</constructEffect>
-			<appearance>Planks</appearance>
-			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-			<statFactors>
-				<MaxHitPoints>0.4</MaxHitPoints>
-				<Beauty>1</Beauty>
-				<Flammability>0</Flammability>
-				<WorkToMake>0.7</WorkToMake>
-				<WorkToBuild>0.7</WorkToBuild>
-				<DoorOpenSpeed>1.2</DoorOpenSpeed>
-				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
-			</statFactors>
-		</stuffProps>
-		<thingCategories>
-			<li>ResourcesRaw</li>
-		</thingCategories>
-		<techHediffsTags>
-			<li>Poor</li>
-		</techHediffsTags>
-		<tools>
-			<li>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>4</power>
-				<cooldownTime>2.2</cooldownTime>
-			</li>
-		</tools>
-	</ThingDef>
-
-	<!--============================== Fabric ==============================-->
-	<ThingDef ParentName="ResourceBase">
-		<defName>DankPyon_Linen</defName>
-		<label>linen</label>
-		<description>A resillient fabric made out of dried fibres of flax.</description>
-		<graphicData>
-			<texPath>Resources/Linen</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(202,195,170)</color>
-		</graphicData>
-
-		<statBases>
-			<StuffPower_Armor_Sharp>0.40</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
-			<StuffPower_Insulation_Cold>16</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
-			<MaxHitPoints>90</MaxHitPoints>
-			<MarketValue>1.6</MarketValue>
-			<Mass>0.026</Mass>
-			<Flammability>1.2</Flammability>
-			<DeteriorationRate>3.5</DeteriorationRate>
-		</statBases>
-
-		<burnableByRecipe>true</burnableByRecipe>
-		<healthAffectsPrice>false</healthAffectsPrice>
-		<minRewardCount>30</minRewardCount>
-
-		<stuffProps>
-			<statFactors>
-				<Flammability>1.2</Flammability>
-				<Beauty>1</Beauty>
-			</statFactors>
-			<categories>
-				<li>Fabric</li>
-			</categories>
-			<color>(162,157,152)</color>
-			<commonality>1.4</commonality>
-			<allowColorGenerators>true</allowColorGenerators>
-			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
-		</stuffProps>
-
-		<thingCategories>
-			<li>Textiles</li>
-		</thingCategories>
-		<comps>
-			<li>
-				<compClass>CompColorable</compClass>
-			</li>
-		</comps>
-		<colorGeneratorInTraderStock Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>5</weight>
-					<only>(0.33,0.33,0.33,1)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<min>(0.3,0.3,0.3,1)</min>
-					<max>(0.9,0.9,0.9,1)</max>
-				</li>
-				<li>
-					<weight>5</weight>
-					<only>(0.9,0.9,0.9,1)</only>
-				</li>
-			</options>
-		</colorGeneratorInTraderStock>
-		<allowedArchonexusCount>80</allowedArchonexusCount>
-	</ThingDef>
-
-	<ThingDef ParentName="ResourceBase">
-		<defName>DankPyon_Silk</defName>
-		<label>silk</label>
-		<description>A soft and luxurious fabric frequently tailored for noble apparel.</description>
-		<graphicData>
-			<texPath>Resources/SilkFabric</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-			<!--color>(202,195,170)</color-->
-		</graphicData>
-
-		<statBases>
-			<StuffPower_Armor_Sharp>0.20</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
-			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>11</StuffPower_Insulation_Heat>
-			<MaxHitPoints>60</MaxHitPoints>
-			<MarketValue>5</MarketValue>
-			<Mass>0.010</Mass>
-			<Flammability>2</Flammability>
-			<DeteriorationRate>2.5</DeteriorationRate>
-		</statBases>
-
-		<burnableByRecipe>true</burnableByRecipe>
-		<healthAffectsPrice>false</healthAffectsPrice>
-		<minRewardCount>30</minRewardCount>
-
-		<stuffProps>
-			<statFactors>
-				<Flammability>1.2</Flammability>
-				<Beauty>2</Beauty>
-			</statFactors>
-			<categories>
-				<li>Fabric</li>
-			</categories>
-			<color>(216,215,216)</color>
-			<commonality>1.4</commonality>
-			<allowColorGenerators>true</allowColorGenerators>
-			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
-		</stuffProps>
-
-		<thingCategories>
-			<li>Textiles</li>
-		</thingCategories>
-		<comps>
-			<li>
-				<compClass>CompColorable</compClass>
-			</li>
-		</comps>
-		<colorGeneratorInTraderStock Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>5</weight>
-					<only>(0.33,0.33,0.33,1)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<min>(0.3,0.3,0.3,1)</min>
-					<max>(0.9,0.9,0.9,1)</max>
-				</li>
-				<li>
-					<weight>5</weight>
-					<only>(0.9,0.9,0.9,1)</only>
-				</li>
-			</options>
-		</colorGeneratorInTraderStock>
-		<allowedArchonexusCount>80</allowedArchonexusCount>
-	</ThingDef>
-
 	<!--============================== Gemstones ==============================-->
 	<!--=============== Gems Base ====================-->
 	<ThingDef ParentName="ResourceBase" Name="DankPyon_GemBase" Abstract="True">

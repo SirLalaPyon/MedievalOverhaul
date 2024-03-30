@@ -13,10 +13,7 @@ namespace ESCP_FuelExtension
     public class InspecStringPatch
     {
         [HarmonyPrefix]
-        public static bool InspectString(
-          CompRefuelable __instance,
-          ref string __result,
-          ref float ___fuel)
+        public static bool InspectString(CompRefuelable __instance, ref string __result, ref float ___fuel)
         {
             if (Utility_OnStartup.LWMFuelFilterIsEnabled)
                 return true;

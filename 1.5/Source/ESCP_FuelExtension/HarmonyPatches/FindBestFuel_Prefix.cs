@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
 using Verse.Noise;
+using static Unity.Burst.Intrinsics.X86.Avx;
 
 namespace ESCP_FuelExtension
 {
@@ -28,7 +29,19 @@ namespace ESCP_FuelExtension
             if (compRefuelable != null && compStorage != null)
             {
                 ThingFilter filter = refuelable.TryGetComp<CompStoreFuelThing>().AllowedFuelFilter;
-                if (FilterItemExists(filter, pawn))
+                if (compRefuelable.HasFuel && compStorage.fuelUsed != null)
+                {
+                    ThingDef fuelUsed = compStorage.fuelUsed;
+                    if (pawn.Map.listerThings.AnyThingWithDef(fuelUsed))
+                    {
+                        Predicate<Thing> validator = (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false) && filter.Allows(x);
+                        __result = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(fuelUsed), PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator, null, 0, -1, false, RegionType.Set_Passable, false);
+                        return false;
+                    }
+                    __result = null;
+                    return false;
+                }
+                if (Utility.FilterItemExists(filter, pawn))
                 {
                     Predicate<Thing> validator = (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false) && filter.Allows(x);
                     IEnumerable<Thing> searchSet = pawn.Map.listerThings.ThingsMatchingFilter(filter);
@@ -37,18 +50,6 @@ namespace ESCP_FuelExtension
                 return false;
             }
             return true;
-        }
-        public static bool FilterItemExists(ThingFilter filter, Pawn pawn)
-        {
-            foreach (var def in filter.AllowedThingDefs)
-            {
-                List<Thing> thingsOfDef = pawn.Map.listerThings.ThingsOfDef(def);
-                if (thingsOfDef.Count > 0)
-                {
-                    return true;
-                }
-            }
-            return false;
         }
     }
 }

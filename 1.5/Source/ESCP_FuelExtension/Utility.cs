@@ -24,5 +24,17 @@ namespace ESCP_FuelExtension
 
             bool validator(Thing x) => !ForbidUtility.IsForbidden(x, pawn) && fuelDefList.Contains(x.def) && pawn.CanReserve((LocalTargetInfo)x);
         }
+        public static bool FilterItemExists(ThingFilter filter, Pawn pawn)
+        {
+            foreach (var def in filter.AllowedThingDefs)
+            {
+                List<Thing> thingsOfDef = pawn.Map.listerThings.ThingsOfDef(def);
+                if (thingsOfDef.Count > 0)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

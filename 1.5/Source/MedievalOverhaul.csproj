@@ -39,7 +39,6 @@
     <Compile Include="ESCP_FuelExtension\CompProperties_FuelRate.cs" />
     <Compile Include="ESCP_FuelExtension\CompProperties_StoreFuelThing.cs" />
     <Compile Include="ESCP_FuelExtension\CompStoreFuelThing.cs" />
-    <Compile Include="ESCP_FuelExtension\HarmonyPatches\CanRefuel.cs" />
     <Compile Include="ESCP_FuelExtension\HarmonyPatches\FindBestFuel_Prefix.cs" />
     <Compile Include="ESCP_FuelExtension\HarmonyPatches\FuelRate.cs" />
     <Compile Include="ESCP_FuelExtension\HarmonyPatches\InspectStringPatch.cs" />
@@ -126,7 +125,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FuelExtension\" />
     <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
     <Folder Include="Medieval Overhaul\MapComps\" />
   </ItemGroup>

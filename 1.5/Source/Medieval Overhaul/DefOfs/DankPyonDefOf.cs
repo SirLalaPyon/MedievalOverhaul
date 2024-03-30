@@ -39,6 +39,7 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_GoldOre;
         public static ThingDef Steel;
 
+        public static ThingDef DankPyon_Griffon;
     }
 
 }

@@ -335,7 +335,7 @@
 		<defName>DankPyon_HornetNest</defName>
 		<label>hornet nest</label>
 		<description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable hornet honey.</description>
-		<thingClass>Hive</thingClass>
+		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Natural/HornetNest</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -363,9 +363,8 @@
 			</li>
 			<li Class="CompProperties_WakeUpDormant"/>
 			<li Class="CompProperties_SelfhealHitpoints">
-				<ticksPerHeal>6000</ticksPerHeal><!-- 60k ticks = 1 day, 10 hp per day -->
+				<ticksPerHeal>6000</ticksPerHeal>
 			</li>
-			<li Class="CompProperties_SpawnerHives"/>
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>DankPyon_HornetHoney</thingToSpawn>
 				<spawnCount>2</spawnCount>

@@ -528,7 +528,6 @@
 			</linkFlags>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/EmbPalisade_MenuIcon</uiIconPath>
-   
 		<statBases>
 			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToBuild>355</WorkToBuild>
@@ -554,6 +553,7 @@
 		<staticSunShadowHeight>0.8</staticSunShadowHeight>
 		<blockLight>false</blockLight>
 		<canOverlapZones>false</canOverlapZones>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
 		<fertility>0</fertility>
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
@@ -753,6 +753,7 @@
 		</statBases>
 		<costStuffCount>10</costStuffCount>
 		<fillPercent>0.85</fillPercent>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
 		<building>
 			<blueprintGraphicData>
 				<texPath>Buildings/Linked/CastleWallEmbrasures_blueprint</texPath>

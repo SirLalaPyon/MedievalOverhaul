@@ -26,6 +26,32 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>DankPyon_Leather_Griffon</defName>
+		<label>Griffon Leather</label>
+		<description>The fabled leather of a griffon, made from skinning one of the mighty beasts. It boasts a unique blend of strength and suppleness, imbued with the creature's majestic aura.  With its intricate patterns and exceptional durability, griffon leather is prized among craftsmen for its ability to fashion garments and goods of unparalleled quality and prestige.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Leather</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(80,75,72)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>14.0</MarketValue>
+			<StuffPower_Armor_Sharp>2.20</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.40</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>34</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(80,75,72)</color>
+			<commonality>0.0025</commonality>
+			<statFactors>
+				<MaxHitPoints>2.0</MaxHitPoints>
+				<Beauty>6</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
 
 	<ThingDef ParentName="LeatherBase">
 		<defName>DankPyon_Leather_Direwolf</defName>

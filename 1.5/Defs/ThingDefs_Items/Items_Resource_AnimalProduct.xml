@@ -41,7 +41,6 @@
 	</ThingDef>
 
 	<!-- Giant Constrictor -->
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>DankPyon_EggConstrictorForestFertilized</defName>
 		<label>giant forest constrictor egg (fert.)</label>
@@ -118,6 +117,44 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_Webknecht_EggFertilized</defName>
+		<label>chicken egg (fert.)</label>
+		<description>A fertilized webknecht egg. If all goes well, it should hatch into a baby webknecht. It can be eaten raw, but it's much better cooked.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>45.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_Webknecht</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_Griffon_EggFertilized</defName>
+		<label>griffon egg (fert.)</label>
+		<description>A fertilized griffon egg. If all goes well, it should hatch into a baby griffon. It can be eaten raw, but it's much better cooked.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>500.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_Griffon</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>DankPyon_HornetJelly</defName>
@@ -147,7 +184,7 @@
 			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
 		<thingCategories>
-			<li>AnimalProductRaw</li>	
+			<li>AnimalProductRaw</li>
 		</thingCategories>
 		<allowedArchonexusCount>150</allowedArchonexusCount>
 	</ThingDef>

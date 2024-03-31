@@ -59,7 +59,10 @@
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
 			<foodType>None</foodType>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<lifeExpectancy>1</lifeExpectancy>
+			<hediffGiverSets Inherit="False">
+				<li>DankPyon_NoPainHediffGiver</li>
+			</hediffGiverSets>
 			<bloodDef>Filth_RubbleBuilding</bloodDef>
 			<intelligence>ToolUser</intelligence><!--Probably could use it for tree log weapons in the future -->
 			<thinkTreeMain>Animal</thinkTreeMain>

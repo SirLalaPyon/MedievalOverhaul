@@ -1,23 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <HediffGiverSetDef>
-    <defName>DankPyon_TrollHediffGiver</defName>
-    <hediffGivers>
+	<HediffGiverSetDef>
+		<defName>DankPyon_TrollHediffGiver</defName>
+		<hediffGivers>
 
-      <!-- Environmental -->
-      <li Class="HediffGiver_Bleeding">
-        <hediff>BloodLoss</hediff>
-      </li>
-      <li Class="HediffGiver_Hypothermia">
-        <hediff>Hypothermia</hediff>
-        <hediffInsectoid>HypothermicSlowdown</hediffInsectoid>
-      </li>
-      <li Class="HediffGiver_Heat">
-        <hediff>Heatstroke</hediff>
-      </li>
+			<!-- Environmental -->
+			<li Class="HediffGiver_Bleeding">
+				<hediff>BloodLoss</hediff>
+			</li>
+			<li Class="HediffGiver_Hypothermia">
+				<hediff>Hypothermia</hediff>
+				<hediffInsectoid>HypothermicSlowdown</hediffInsectoid>
+			</li>
+			<li Class="HediffGiver_Heat">
+				<hediff>Heatstroke</hediff>
+			</li>
 
-    </hediffGivers>
-  </HediffGiverSetDef>
+		</hediffGivers>
+	</HediffGiverSetDef>
+  
+	<HediffGiverSetDef>
+		<defName>DankPyon_NoPainHediffGiver</defName>
+		<hediffGivers>
+
+			<li Class="HediffGiver_Birthday">
+				<hediff>DankPyon_Painless</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+
+		</hediffGivers>
+	</HediffGiverSetDef>
 
 </Defs>

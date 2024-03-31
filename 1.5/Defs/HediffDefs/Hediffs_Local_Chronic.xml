@@ -92,5 +92,19 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef ParentName="DiseaseBase">
+		<defName>DankPyon_Painless</defName>
+		<label>painless</label>
+		<defaultLabelColor>(0, 0, 0)</defaultLabelColor>
+		<description>Painless.</description>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
 
 </Defs>

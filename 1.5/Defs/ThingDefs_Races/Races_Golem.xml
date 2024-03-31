@@ -19,6 +19,9 @@
 			<hasGenders>false</hasGenders>
 			<foodType>None</foodType>
 			<lifeExpectancy>2500</lifeExpectancy>
+			<hediffGiverSets Inherit="False">
+				<li>DankPyon_NoPainHediffGiver</li>
+			</hediffGiverSets>
 			<bloodDef>Filth_RubbleRock</bloodDef>
 		</race>
 		<comps>

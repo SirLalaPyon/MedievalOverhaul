@@ -43,6 +43,32 @@ namespace MedievalOverhaul
         public static PawnKindDef DankPyon_Golem_Iron;
         public static PawnKindDef DankPyon_Golem_Gold;
         public static PawnKindDef DankPyon_Golem_Steel;
+
+        public static ThingDef DankPyon_MineShaft;
+        public static ThingDef DankPyon_Citrine;
+        public static ThingDef DankPyon_Amber;
+        public static ThingDef DankPyon_Onyx;
+        public static ThingDef DankPyon_Emerald;
+        public static ThingDef DankPyon_Sapphire;
+        public static ThingDef DankPyon_Ruby;
+
+        public static RecipeDef DankPyon_MakeStoneChunks_Coal;
+        public static RecipeDef DankPyon_MakeStoneChunks_Sandstone;
+        public static RecipeDef DankPyon_MakeStoneChunks_Granite;
+        public static RecipeDef DankPyon_MakeStoneChunks_Limestone;
+        public static RecipeDef DankPyon_MakeStoneChunks_Slate;
+        public static RecipeDef DankPyon_MakeStoneChunks_Marble;
+        public static RecipeDef DankPyon_MakeSalt;
+        public static RecipeDef DankPyon_MakeSaltBulk;
+        public static RecipeDef DankPyon_MakeTar;
+        public static RecipeDef DankPyon_MakeTarBulk;
+        public static RecipeDef DankPyon_MakeGunpowder;
+        public static RecipeDef DankPyon_MakeGunpowderBulk;
+        public static RecipeDef DankPyon_MakeOre_IronOre;
+        public static RecipeDef DankPyon_MakeOre_IronOreBulk;
+        public static RecipeDef DankPyon_MakeOre_SilverOre;
+        public static RecipeDef DankPyon_MakeOre_SilverOreBulk;
+
     }
 
 }

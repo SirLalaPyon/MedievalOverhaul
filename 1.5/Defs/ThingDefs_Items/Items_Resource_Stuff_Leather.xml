@@ -121,6 +121,25 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>DankPyon_Leather_Troll</defName>
+		<label>troll leather</label>
+		<description>Tanned, dried, scraped troll skin.</description>
+		<graphicData>
+			<color>(98, 91, 76)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(98, 91, 76)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
 
 	<!--========== Super leathers ============-->
 	<ThingDef ParentName="LeatherBase">

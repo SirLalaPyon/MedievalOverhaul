@@ -120,11 +120,9 @@
 			<color>(114,92,83)</color>
 			<colorTwo>(206,140,80)</colorTwo>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>1500</MaxHitPoints>
 		</statBases>
-
 		<building>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>DankPyon_Citrine</mineableThing>
@@ -133,7 +131,6 @@
 			<mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
 		</building>
 	</ThingDef>
-
 
 	<ThingDef ParentName="RockBase">
 		<defName>DankPyon_MineableAmber</defName>
@@ -146,11 +143,9 @@
 			<color>(114,92,83)</color>
 			<colorTwo>(206,140,80)</colorTwo>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>1500</MaxHitPoints>
 		</statBases>
-
 		<building>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>DankPyon_Amber</mineableThing>
@@ -172,11 +167,9 @@
 			<color>(114,92,83)</color>
 			<colorTwo>(43,43,43)</colorTwo>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>1500</MaxHitPoints>
 		</statBases>
-
 		<building>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>DankPyon_Onyx</mineableThing>
@@ -198,11 +191,9 @@
 			<color>(114,92,83)</color>
 			<colorTwo>(117,153,94)</colorTwo>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>1500</MaxHitPoints>
 		</statBases>
-
 		<building>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>DankPyon_Emerald</mineableThing>
@@ -224,11 +215,9 @@
 			<color>(114,92,83)</color>
 			<colorTwo>(60,109,158)</colorTwo>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>1500</MaxHitPoints>
 		</statBases>
-
 		<building>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>DankPyon_Sapphire</mineableThing>
@@ -249,11 +238,9 @@
 			<color>(114,92,83)</color>
 			<colorTwo>(170,49,49)</colorTwo>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>1500</MaxHitPoints>
 		</statBases>
-
 		<building>
 			<isResourceRock>true</isResourceRock>
 			<mineableThing>DankPyon_Ruby</mineableThing>
@@ -275,7 +262,6 @@
 			<shaderType>Transparent</shaderType>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
-
 		<uiIconScale>0.5</uiIconScale>
 		<altitudeLayer>Floor</altitudeLayer>
 		<rotatable>false</rotatable>
@@ -291,11 +277,9 @@
 			<claimable>true</claimable>
 			<deconstructible>true</deconstructible>
 		</building>
-
 		<statBases>
 			<WorkToMake>30000</WorkToMake>
 		</statBases>
-
 		<costList>
 			<DankPyon_Tar>200</DankPyon_Tar>
 		</costList>
@@ -312,7 +296,6 @@
 			<drawSize>1.6</drawSize>
 		</graphicData>
 		<size>(1,1)</size>
-
 		<uiIconScale>0.65</uiIconScale>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
@@ -322,12 +305,10 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<pathCost>42</pathCost>
-
 		<killedLeavings>
 			<DankPyon_Honeycomb>20</DankPyon_Honeycomb>
 			<DankPyon_QueenBee>1</DankPyon_QueenBee>
 		</killedLeavings>
-    
 		<building>
 			<isEdifice>false</isEdifice>
 			<claimable>true</claimable>

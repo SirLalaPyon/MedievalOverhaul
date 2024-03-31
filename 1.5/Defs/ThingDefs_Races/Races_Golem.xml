@@ -50,7 +50,43 @@
 		</statBases>
 		<tools>
 			<li>
-				<label>DankPyon_GolemHead</label>
+				<label>left hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -68,7 +104,7 @@
 			<baseHealthScale>2.00</baseHealthScale>
 			<lifeStageAges>
 				<li>
-					<def>MechanoidFullyFormed</def>
+					<def>AnimalAdult</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
@@ -117,7 +153,43 @@
 		</statBases>
 		<tools>
 			<li>
-				<label>DankPyon_GolemHead</label>
+				<label>left hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -135,7 +207,7 @@
 			<baseHealthScale>2.00</baseHealthScale>
 			<lifeStageAges>
 				<li>
-					<def>MechanoidFullyFormed</def>
+					<def>AnimalAdult</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
@@ -184,11 +256,47 @@
 		</statBases>
 		<tools>
 			<li>
-				<label>DankPyon_GolemHead</label>
+				<label>left hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>17</power>
+				<power>21</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -202,7 +310,7 @@
 			<baseHealthScale>2.00</baseHealthScale>
 			<lifeStageAges>
 				<li>
-					<def>MechanoidFullyFormed</def>
+					<def>AnimalAdult</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
@@ -224,6 +332,108 @@
 		<label>Steel Golem</label>
 		<race>DankPyon_Golem_Steel</race>
 		<combatPower>450</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/GolemSteel</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="DankPyon_BaseGolem">
+		<defName>DankPyon_Golem_Silver</defName>
+		<label>Silver Golem</label>
+		<description>A golem made out of silver</description>
+		<statBases>
+			<MoveSpeed>3.9</MoveSpeed>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+		</statBases>
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<body>DankPyon_Golem</body>
+			<baseBodySize>2.5</baseBodySize>
+			<baseHealthScale>2.00</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<DankPyon_SilverOre>50</DankPyon_SilverOre>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="DankPyon_BaseGolemKind">
+		<defName>DankPyon_Golem_Silver</defName>
+		<label>Silver Golem</label>
+		<race>DankPyon_Golem_Silver</race>
+		<combatPower>400</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

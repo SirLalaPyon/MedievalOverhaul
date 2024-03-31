@@ -23,10 +23,10 @@ namespace MedievalOverhaul
                 for (int i = 0; i < range; i++)
 				{
                     IntVec3 intVec3 = CellFinder.RandomClosewalkCellNear(corpse.Position, corpse.Map, 3);
-                    Pawn pawn = PawnGenerator.GeneratePawn(MedievalOverhaulDefOf.DankPyon_SchratDark_Sapling, corpse.InnerPawn.Faction);
+                    Pawn pawn = PawnGenerator.GeneratePawn(MedievalOverhaulDefOf.DankPyon_SchratDark_Sapling, null);
                     pawn.ageTracker.AgeBiologicalTicks = 60;
                     GenSpawn.Spawn((Thing)pawn, intVec3, corpse.Map, Rot4.Random, WipeMode.Vanish, false);
-                   // pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, false, false, false, null, false, false, false);
+                    pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter, null, false, false, false, null, false, false, false);
                 }
             }
         }

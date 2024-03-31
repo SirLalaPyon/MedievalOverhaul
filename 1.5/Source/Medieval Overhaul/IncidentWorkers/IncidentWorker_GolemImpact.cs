@@ -14,7 +14,6 @@ namespace MedievalOverhaul
             IntVec3 intVec;
             return IncidentWorker_GolemImpact.TryFindCell(out intVec, map);
         }
-
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             List<Thing> contents;
@@ -52,14 +51,14 @@ namespace MedievalOverhaul
             {
                 return null;
             }
-            LetterDef def = thing.def.building.isResourceRock ? LetterDefOf.PositiveEvent : LetterDefOf.NeutralEvent;
+            LetterDef def = LetterDefOf.NeutralEvent;
             string str = this.def.letterText.Formatted(thing.def.label).CapitalizeFirst();
             return LetterMaker.MakeLetter(this.def.letterLabel + ": " + thing.def.LabelCap, str, def, new TargetInfo(meteorite.Position, meteorite.Map, false), null, null, null);
         }
 
         private static bool TryFindCell(out IntVec3 cell, Map map)
         {
-            int maxMineables = ThingSetMaker_Meteorite.MineablesCountRange.max;
+            int maxMineables = ThingSetMaker_GolemImpact.MineablesCountRange.max;
             return CellFinderLoose.TryFindSkyfallerCell(ThingDefOf.MeteoriteIncoming, map, out cell, 10, default(IntVec3), -1, true, false, false, false, true, true, delegate (IntVec3 x)
             {
                 int num = Mathf.CeilToInt(Mathf.Sqrt((float)maxMineables)) + 2;
@@ -70,17 +69,6 @@ namespace MedievalOverhaul
                     if (c.InBounds(map) && c.Standable(map))
                     {
                         num2++;
-                    }
-                }
-                if (ModsConfig.RoyaltyActive)
-                {
-                    foreach (Thing thing in map.listerThings.ThingsOfDef(ThingDefOf.MonumentMarker))
-                    {
-                        MonumentMarker monumentMarker = thing as MonumentMarker;
-                        if (monumentMarker.AllDone && monumentMarker.sketch.OccupiedRect.ExpandedBy(3).MovedBy(monumentMarker.Position).Overlaps(other))
-                        {
-                            return false;
-                        }
                     }
                 }
                 return num2 >= maxMineables;

@@ -48,6 +48,7 @@
     <Compile Include="ESCP_FuelExtension\Utility.cs" />
     <Compile Include="ESCP_FuelExtension\UtilityOnStartup.cs" />
     <Compile Include="Medieval Overhaul\DefOfs\StuffabilityDefOf.cs" />
+    <Compile Include="Medieval Overhaul\Extensions\GolemSpawn.cs" />
     <Compile Include="Medieval Overhaul\Harmony\GenerateImpliedDefs_PreResolve_Postfix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CalculableRecipe_Prefix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\TakeOutProduct_Prefix.cs" />

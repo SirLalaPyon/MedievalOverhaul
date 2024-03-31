@@ -35,11 +35,14 @@ namespace MedievalOverhaul
 
         public static ThingSetMakerDef DankPyon_GolemMeteorite;
 
-        public static ThingDef DankPyon_IronOre;
-        public static ThingDef DankPyon_GoldOre;
-        public static ThingDef Steel;
+        public static ThingDef DankPyon_MineableIron;
+        public static ThingDef DankPyon_MineableGold;
+        public static ThingDef MineableSilver;
+        public static ThingDef MineablePlasteel;
 
-        public static ThingDef DankPyon_Griffon;
+        public static PawnKindDef DankPyon_Golem_Iron;
+        public static PawnKindDef DankPyon_Golem_Gold;
+        public static PawnKindDef DankPyon_Golem_Steel;
     }
 
 }

@@ -398,6 +398,9 @@
 			<turretTopOffset>(0, -1)</turretTopOffset>
 			<buildingTags>
 				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>ArtilleryMedieval</li>
+				<li>ArtilleryMedieval_BaseDestroyer</li>
 			</buildingTags>
 		</building>
 		<placeWorkers>
@@ -444,6 +447,10 @@
 		</building>
 		<uiIconPath>Security/TurretTrebuchet/TurretTrebuchet_MenuIcon</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
+		<weaponTags>
+			<li>DankPyon_Trebuchet</li>
+				<li>ArtilleryMedieval_BaseDestroyer</li>
+		</weaponTags>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseArtilleryWeapon">
@@ -455,6 +462,7 @@
 		</graphicData>
 		<weaponTags>
 			<li>DankPyon_Trebuchet</li>
+				<li>ArtilleryMedieval_BaseDestroyer</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -494,6 +502,11 @@
 					</categories>
 				</filter>
 			</defaultStorageSettings>
+			<buildingTags>
+				<li>Artillery_BaseDestroyer</li>
+				<li>ArtilleryMedieval</li>
+				<li>ArtilleryMedieval_BaseDestroyer</li>
+			</buildingTags>
 		</building>
 	</ThingDef>
 

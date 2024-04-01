@@ -432,6 +432,14 @@
 		</stuffCategories>
 		<costStuffCount>28</costStuffCount>
 		<researchPrerequisites Inherit="false"/>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_LogChair</li>
+				<li>DankPyon_LogBench1x2c</li>
+				<li>DankPyon_LogBench1x3c</li>
+				<li>DankPyon_LogBench1x4c</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -492,6 +500,14 @@
 		</stuffCategories>
 		<costStuffCount>72</costStuffCount>
 		<researchPrerequisites Inherit="false"/>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_LogChair</li>
+				<li>DankPyon_LogBench1x2c</li>
+				<li>DankPyon_LogBench1x3c</li>
+				<li>DankPyon_LogBench1x4c</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -522,6 +538,14 @@
 		</stuffCategories>
 		<costStuffCount>144</costStuffCount>
 		<researchPrerequisites Inherit="false"/>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_LogChair</li>
+				<li>DankPyon_LogBench1x2c</li>
+				<li>DankPyon_LogBench1x3c</li>
+				<li>DankPyon_LogBench1x4c</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 
@@ -858,6 +882,13 @@
 		</statBases>
 		<size>(1,1)</size>
 		<costStuffCount>15</costStuffCount>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -887,6 +918,13 @@
 		<costList>
 			<DankPyon_IronIngot>5</DankPyon_IronIngot>
 		</costList>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -913,6 +951,13 @@
 		</statBases>
 		<size>(1,2)</size>
 		<costStuffCount>28</costStuffCount>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -942,6 +987,13 @@
 		<costList>
 			<DankPyon_IronIngot>10</DankPyon_IronIngot>
 		</costList>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -969,6 +1021,13 @@
 		</statBases>
 		<size>(2,2)</size>
 		<costStuffCount>50</costStuffCount>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -999,6 +1058,13 @@
 		<costList>
 			<DankPyon_IronIngot>15</DankPyon_IronIngot>
 		</costList>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -1026,6 +1092,13 @@
 		</statBases>
 		<size>(2,2)</size>
 		<costStuffCount>50</costStuffCount>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
@@ -1054,6 +1127,11 @@
 		<costStuffCount>95</costStuffCount>
 		<building>
 			<buildingSizeCategory>Medium</buildingSizeCategory>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
 		</building>
 	</ThingDef>
 
@@ -1081,12 +1159,17 @@
 		</statBases>
 		<size>(2,4)</size>
 		<costStuffCount>95</costStuffCount>
-		<building>
-			<buildingSizeCategory>Medium</buildingSizeCategory>
-		</building>
 		<costList>
 			<DankPyon_IronIngot>30</DankPyon_IronIngot>
 		</costList>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
+		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">

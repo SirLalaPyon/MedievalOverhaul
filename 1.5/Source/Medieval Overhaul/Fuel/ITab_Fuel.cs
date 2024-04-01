@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace ESCP_FuelExtension
+namespace MedievalOverhaul
 {
     public class ITab_Fuel : ITab
     {

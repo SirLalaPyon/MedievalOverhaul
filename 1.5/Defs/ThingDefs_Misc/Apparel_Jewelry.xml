@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<!--========== Jewelry Necklace Base ==========-->
 	<ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_NecklaceBase" Abstract="True">
 		<statBases>
@@ -9,7 +10,6 @@
 			<EquipDelay>0.5</EquipDelay>
 			<Flammability>0</Flammability>
 		</statBases>
-
 		<recipeMaker>
 			<recipeUsers Inherit="False">
 				<li>DankPyon_JewelryBench</li>
@@ -23,14 +23,12 @@
 				<li>DankPyon_Jewelry</li>
 			</researchPrerequisites>
 		</recipeMaker>
-
 		<thingCategories>
 			<li>DankPyon_ApparelJewelry</li>
 		</thingCategories>
 		<tradeTags>
 			<li>DankPyon_Necklaces</li>
 		</tradeTags>
-
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
@@ -46,7 +44,6 @@
 			</tags>
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
-
 		<equippedStatOffsets>
 			<PawnBeauty>+1</PawnBeauty>
 			<SocialImpact>0.1</SocialImpact>
@@ -64,7 +61,6 @@
 			<EquipDelay>0.5</EquipDelay>
 			<Flammability>0</Flammability>
 		</statBases>
-
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups Inherit="False">
@@ -80,13 +76,11 @@
 			</tags>
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
-
 		<tradeTags Inherit="False">
 			<li>DankPyon_Rings</li>
 		</tradeTags>
 	</ThingDef>
   
-
 	<!--========== Necklace ==========-->
 	<ThingDef ParentName="DankPyon_NecklaceBase">
 		<defName>DankPyon_Necklace_Citrine</defName>
@@ -97,12 +91,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>10500</WorkToMake>
 			<Beauty>8</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Citrine>25</DankPyon_Citrine>
 		</costList>
@@ -117,12 +109,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>9800</WorkToMake>
 			<Beauty>10</Beauty>
 		</statBases>
-
 		<costList>
 			<Jade>25</Jade>
 		</costList>
@@ -137,12 +127,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>6800</WorkToMake>
 			<Beauty>12</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Amber>25</DankPyon_Amber>
 		</costList>
@@ -157,12 +145,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>10500</WorkToMake>
 			<Beauty>14</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Onyx>25</DankPyon_Onyx>
 		</costList>
@@ -176,7 +162,6 @@
 				<Artistic>6</Artistic>
 			</skillRequirements>
 		</recipeMaker>
-
 		<equippedStatOffsets>
 			<PawnBeauty>+2</PawnBeauty>
 			<SocialImpact>0.2</SocialImpact>
@@ -193,13 +178,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<WorkToMake>11200</WorkToMake>
 			<Beauty>20</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Emerald>25</DankPyon_Emerald>
 			<Gold>2</Gold>
@@ -215,12 +198,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>13300</WorkToMake>
 			<Beauty>24</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Sapphire>25</DankPyon_Sapphire>
 			<Gold>2</Gold>
@@ -236,12 +217,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>13300</WorkToMake>
 			<Beauty>28</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Ruby>25</DankPyon_Ruby>
 			<Gold>2</Gold>
@@ -258,12 +237,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>10500</WorkToMake>
 			<Beauty>8</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Citrine>25</DankPyon_Citrine>
 		</costList>
@@ -278,12 +255,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>9800</WorkToMake>
 			<Beauty>10</Beauty>
 		</statBases>
-
 		<costList>
 			<Jade>25</Jade>
 		</costList>
@@ -298,12 +273,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>6800</WorkToMake>
 			<Beauty>12</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Amber>25</DankPyon_Amber>
 		</costList>
@@ -318,12 +291,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>10500</WorkToMake>
 			<Beauty>14</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Onyx>25</DankPyon_Onyx>
 		</costList>
@@ -337,7 +308,6 @@
 				<Artistic>6</Artistic>
 			</skillRequirements>
 		</recipeMaker>
-
 		<equippedStatOffsets>
 			<PawnBeauty>+2</PawnBeauty>
 			<SocialImpact>0.2</SocialImpact>
@@ -354,13 +324,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<WorkToMake>11200</WorkToMake>
 			<Beauty>20</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Emerald>25</DankPyon_Emerald>
 			<Gold>2</Gold>
@@ -376,12 +344,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>13300</WorkToMake>
 			<Beauty>24</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Sapphire>25</DankPyon_Sapphire>
 			<Gold>2</Gold>
@@ -397,12 +363,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<WorkToMake>13300</WorkToMake>
 			<Beauty>28</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Ruby>25</DankPyon_Ruby>
 			<Gold>2</Gold>

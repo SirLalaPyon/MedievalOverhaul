@@ -11,7 +11,7 @@ using Verse.AI;
 using Verse.Noise;
 using static Unity.Burst.Intrinsics.X86.Avx;
 
-namespace ESCP_FuelExtension
+namespace MedievalOverhaul
 {
     [HarmonyPatch(typeof(RefuelWorkGiverUtility))]
     [HarmonyPatch("FindBestFuel")]

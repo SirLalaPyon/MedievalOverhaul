@@ -1057,6 +1057,7 @@
 				<filter>
 					<categories>
 						<li>DankPyon_Cheese</li>
+						<li>DankPyon_Milk</li>
 					</categories>
 				</filter>
 			</fixedStorageSettings>
@@ -1065,6 +1066,7 @@
 				<filter>
 					<categories>
 						<li>DankPyon_Cheese</li>
+						<li>DankPyon_Milk</li>
 					</categories>
 				</filter>
 			</defaultStorageSettings>
@@ -1083,6 +1085,7 @@
 				<filter>
 					<thingDefs>
 						<li>DankPyon_Wine</li>
+						<li>DankPyon_Wine_Mulberry</li>
 					</thingDefs>
 				</filter>
 			</fixedStorageSettings>
@@ -1091,6 +1094,7 @@
 				<filter>
 					<thingDefs>
 						<li>DankPyon_Wine</li>
+						<li>DankPyon_Wine_Mulberry</li>
 					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
@@ -1708,6 +1712,7 @@
 				<filter>
 					<thingDefs>
 						<li>DankPyon_Mead</li>
+						<li>DankPyon_Honey</li>
 					</thingDefs>
 				</filter>
 			</fixedStorageSettings>
@@ -1716,6 +1721,7 @@
 				<filter>
 					<thingDefs>
 						<li>DankPyon_Mead</li>
+						<li>DankPyon_Honey</li>
 					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
@@ -2313,7 +2319,9 @@
 			<fixedStorageSettings Inherit="false">
 				<priority>Important</priority>
 				<filter>
-					<categories/><!-- Added through patch -->
+					<categories>
+						<li>DankPyon_Metallic</li>
+					</categories><!-- Added through patch -->
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings Inherit="false">
@@ -2375,7 +2383,6 @@
 						<li>DankPyon_Book_AncientCodex</li>
 						<li>DankPyon_Book_IntoTheRuins</li>
 						<li>DankPyon_Book_TheBeginning</li>
-						<li>DankPyon_RusticBookshelf</li>
 						<!-- MO Schematics -->
 						<li>DankPyon_Book_MilitaryBlades</li>
 						<li>DankPyon_Book_NobleBlades</li>

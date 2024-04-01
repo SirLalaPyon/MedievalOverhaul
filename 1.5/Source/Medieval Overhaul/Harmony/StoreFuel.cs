@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace ESCP_FuelExtension
+namespace MedievalOverhaul
 {
     [HarmonyPatch(typeof(CompRefuelable), "Refuel", new System.Type[] { typeof(List<Thing>) })]
     public class StoreFuel_Patch

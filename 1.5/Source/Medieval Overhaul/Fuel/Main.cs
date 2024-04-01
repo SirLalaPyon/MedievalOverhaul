@@ -9,9 +9,9 @@ using Verse;
 
 namespace ESCP_FuelExtension
 {
-    [StaticConstructorOnStartup]
-    public class Main
-    {
-        static Main() => new Harmony("com.ESCP_FuelExtension").PatchAll(Assembly.GetExecutingAssembly());
-    }
+    //[StaticConstructorOnStartup]
+    //public class Main
+    //{
+    //    static Main() => new Harmony("com.ESCP_FuelExtension").PatchAll(Assembly.GetExecutingAssembly());
+    //}
 }

@@ -2,6 +2,7 @@
 using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,8 +52,7 @@ namespace MedievalOverhaul
             {
                 double recipeWorkAmount = recipeDef.workAmount / 600f;
                 double roundedNumber = Math.Round(recipeWorkAmount) * 0.01;
-                //Due to being called three times. Need to device random chance number by 3. Though still chance for jackpot
-                float randChance = ((float)roundedNumber + 0.01f)/3; 
+                float randChance = ((float)roundedNumber + 0.01f);
                 if (Rand.Chance(randChance))
                 {
                     int randomInRange = Rand.RangeInclusive(0, bonusGems.Count - 1);
@@ -62,6 +62,7 @@ namespace MedievalOverhaul
                     yield return bonusGem;
                 }
             }
+            
         }
     }
 }

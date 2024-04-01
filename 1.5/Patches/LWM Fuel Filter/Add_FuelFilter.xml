@@ -72,40 +72,40 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../..</xpath>
 					<value>
-						<li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
+						<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 					</value>
 				</li>
 
 				<!-- Add CompProperties_StoreFuelThing to every thingdef that has a refuelable comp and coal in their fuel filter-->
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../li[@Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"]</xpath>
+					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../..</xpath>
 						<value>
-							<li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
+							<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 						</value>
 					</nomatch>
 				</li>
 
-				<!-- If there is no ESCP_FuelExtension.ITab_Fuel inside an existing inspectorTab, add ESCP_FuelExtension.ITab_Fuel inside that inspectorTab-->
+				<!-- If there is no MedievalOverhaul.ITab_Fuel inside an existing inspectorTab, add MedievalOverhaul.ITab_Fuel inside that inspectorTab-->
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]]/inspectorTabs</xpath>
 					<match Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]]/inspectorTabs</xpath>
 						<value>
-							<li>ESCP_FuelExtension.ITab_Fuel</li>
+							<li>MedievalOverhaul.ITab_Fuel</li>
 						</value>
 					</match>
 				</li>
 
-				<!-- If there is no inspector tab, add inspector tab AND ESCP_FuelExtension.ITab_Fuel-->
+				<!-- If there is no inspector tab, add inspector tab AND MedievalOverhaul.ITab_Fuel-->
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
 					<match Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
 						<value>
 							<inspectorTabs>
-								<li>ESCP_FuelExtension.ITab_Fuel</li>
+								<li>MedievalOverhaul.ITab_Fuel</li>
 							</inspectorTabs>
 						</value>
 					</match>

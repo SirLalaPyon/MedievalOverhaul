@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using StandaloneSettlementPreference;
 using System;
 using System.Collections.Generic;
 using System.Linq;

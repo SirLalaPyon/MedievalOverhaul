@@ -1845,7 +1845,7 @@
 					<ResearchSpeedFactor>0.05</ResearchSpeedFactor>
 				</statOffsets>
 				<maxDistance>5</maxDistance>
-				<maxSimultaneous>4</maxSimultaneous>
+				<maxSimultaneous>2</maxSimultaneous>
 			</li>
 		</comps>
 		<placeWorkers>
@@ -1853,7 +1853,6 @@
 		</placeWorkers>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
-
 		<building>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
@@ -2319,7 +2318,7 @@
 		<drawerType>RealtimeOnly</drawerType>
 		<surfaceType>Item</surfaceType>
 		<comps>
-			<li Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"/>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 			<li Class="MedievalOverhaul.CompProperties_FireOverlaySouth">
 				<fireSize>0.7</fireSize>
 				<offset>(0,0,-0.2)</offset>

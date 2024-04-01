@@ -7,7 +7,7 @@ using Verse.AI;
 using Verse;
 using RimWorld;
 
-namespace ESCP_FuelExtension
+namespace MedievalOverhaul
 {
     public static class Utility
     {

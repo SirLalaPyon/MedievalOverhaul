@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace ESCP_FuelExtension
+namespace MedievalOverhaul
 {
     [HarmonyPatch(typeof(CompRefuelable), "ConsumptionRatePerTick", MethodType.Getter)]
     public class FuelRate_Patch

@@ -71,7 +71,7 @@
 			defName="DankPyon_WallTorch" or
 			defName="DankPyon_WallLamp" or
 			defName="DankPyon_LampPost"
-			]/comps/li[@Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"]</xpath>
+			]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]</xpath>
 			<match Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[
 				defName="TorchLamp" or 
@@ -79,7 +79,7 @@
 				defName="DankPyon_WallTorch" or
 				defName="DankPyon_WallLamp" or
 				defName="DankPyon_LampPost"
-				]/comps/li[@Class="ESCP_FuelExtension.CompProperties_StoreFuelThing"]</xpath>
+				]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]</xpath>
 			</match>
 		</li>
 

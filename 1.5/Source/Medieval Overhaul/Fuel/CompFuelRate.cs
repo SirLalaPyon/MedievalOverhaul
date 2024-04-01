@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace ESCP_FuelExtension
+namespace MedievalOverhaul
 {
     public class CompFuelRate : ThingComp
     {

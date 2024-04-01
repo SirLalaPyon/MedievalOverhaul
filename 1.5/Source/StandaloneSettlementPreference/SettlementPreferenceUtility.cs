@@ -1,6 +1,5 @@
 ﻿using RimWorld.Planet;
 using RimWorld;
-using StandaloneSettlementPreference;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace MedievalOverhaul.StandaloneSettlementPreference
+namespace StandaloneSettlementPreference
 {
     internal class SettlementPreferenceUtility
     {

@@ -3,6 +3,46 @@
 
 	<!--========== FLOUR ==========-->
 	<RecipeDef>
+		<defName>DankPyon_CraftFlour_Manual</defName>
+		<label>grind wheat into flour</label>
+		<description>Grind wheat into flour.</description>
+		<jobString>Grinding wheat into flour.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>300</workAmount>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawWheat</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_RawWheat</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Flour>1</DankPyon_Flour>
+			<Hay>1</Hay>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
 		<defName>DankPyon_CraftFlour</defName>
 		<label>grind wheat into flour</label>
 		<description>Grind wheat into flour.</description>
@@ -81,6 +121,43 @@
 	</RecipeDef>
 
 	<!--========== SUGAR ==========-->
+	<RecipeDef>
+		<defName>DankPyon_CraftSugar_Manual</defName>
+		<label>grind sugarcane into sugar</label>
+		<description>Grind sguarcane into sugar.</description>
+		<jobString>Grinding sugarcane into sugar.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>300</workAmount>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Sugarcane</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Sugarcane</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Sugar>1</DankPyon_Sugar>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+
 	<RecipeDef>
 		<defName>DankPyon_CraftSugar</defName>
 		<label>grind sugarcane into sugar</label>

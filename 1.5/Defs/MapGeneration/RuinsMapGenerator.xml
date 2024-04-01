@@ -27,15 +27,15 @@
 		</genStep>
 	</GenStepDef>
 
-	<!--GenStepDef> DOESNT WORK UNGA BUNGA
-    <defName>DankPyon_Big_Ruin_Snake_Gen</defName>
-    <linkWithSite>DankPyon_Big_Snake_Ruin</linkWithSite>
-    <order>460</order>
-    <genStep Class="KCSG.GenStep_CustomStructureGen">
-    <structureLayoutDefs>
-        <li>DankPyon_Big_SnakeRuin</li>
-    </structureLayoutDefs>
-    </genStep>
-</GenStepDef-->
+	<GenStepDef>
+		<defName>DankPyon_Big_Snake_Ruin_Gen</defName>
+		<linkWithSite>DankPyon_Big_Snake_Ruin</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+		<structureLayoutDefs>
+			<li>DankPyon_Big_SnakeRuin</li>
+		</structureLayoutDefs>
+		</genStep>
+	</GenStepDef>
 
 </Defs>

@@ -477,21 +477,20 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.75</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MarketValue>400</MarketValue>
 			<MaxHitPoints>160</MaxHitPoints>
 			<Flammability>0.3</Flammability>
-			<StuffEffectMultiplierArmor>0.44</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.361</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.317</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.286</ArmorRating_Heat>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>4</Mass>
 		</statBases>
-
 		<costList>
 			<DankPyon_AncientWood>2</DankPyon_AncientWood>
 			<DankPyon_GlowingResin>1</DankPyon_GlowingResin>
 		</costList>
-
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_SelfhealHitpoints">

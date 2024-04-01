@@ -1609,17 +1609,21 @@
 		</graphicData>
 		<building>
 			<fixedStorageSettings>
-				<filter>
-					<thingDefs Inherit="False">
+				<filter Inherit="False">
+					<categories>
 						<li>DankPyon_Flour</li>
+					</categories>
+					<thingDefs>
 						<li>DankPyon_RawWheat</li>
 					</thingDefs>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
-				<filter>
-					<thingDefs Inherit="False">
+				<filter Inherit="False">
+					<categories>
 						<li>DankPyon_Flour</li>
+					</categories>
+					<thingDefs>
 						<li>DankPyon_RawWheat</li>
 					</thingDefs>
 				</filter>

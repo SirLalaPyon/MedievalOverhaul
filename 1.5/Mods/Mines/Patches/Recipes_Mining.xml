@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Excavate_Gold"]/products</xpath>
+		<value>
+			<products>
+				<DankPyon_GoldOre>10</DankPyon_GoldOre>
+			</products>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Excavate_Plasteel"]/products</xpath>
+		<value>
+			<products>
+				<DankPyon_PlasteelOre>10</DankPyon_PlasteelOre>
+			</products>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="Excavate_Steel"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[text()="Excavate_Steel"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[text()="Excavate_ComponentIndustrial"]</xpath>
+	</Operation>
+
+</Patch>

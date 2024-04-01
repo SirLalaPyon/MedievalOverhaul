@@ -51,6 +51,7 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_Emerald;
         public static ThingDef DankPyon_Sapphire;
         public static ThingDef DankPyon_Ruby;
+        public static ThingDef DankPyon_GoldOre;
 
         public static RecipeDef DankPyon_MakeStoneChunks_Coal;
         public static RecipeDef DankPyon_MakeStoneChunks_Sandstone;

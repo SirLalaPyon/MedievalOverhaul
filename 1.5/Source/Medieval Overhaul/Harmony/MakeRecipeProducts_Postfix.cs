@@ -21,6 +21,7 @@ namespace MedievalOverhaul
             MedievalOverhaulDefOf.DankPyon_Emerald,
             MedievalOverhaulDefOf.DankPyon_Sapphire,
             MedievalOverhaulDefOf.DankPyon_Ruby,
+            MedievalOverhaulDefOf.DankPyon_GoldOre,
         };
         static readonly List<RecipeDef> mineRecipe = new List<RecipeDef>()
         {
@@ -58,7 +59,7 @@ namespace MedievalOverhaul
                     int randomInRange = Rand.RangeInclusive(0, bonusGems.Count - 1);
                     ThingDef bonusGemDef = bonusGems[randomInRange];
                     Thing bonusGem = ThingMaker.MakeThing(bonusGemDef);
-                    bonusGem.stackCount = 10;
+                    bonusGem.stackCount = 1;
                     yield return bonusGem;
                 }
             }

@@ -262,9 +262,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.25</count>
 			</li>
@@ -273,9 +273,9 @@
 			<DankPyon_MealBread>2</DankPyon_MealBread>
 		</products>
 		<fixedIngredientFilter>
-			<thingDefs>
+			<categories>
 				<li>DankPyon_Flour</li>
-			</thingDefs>
+			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
@@ -305,9 +305,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>1.25</count>
 			</li>
@@ -316,9 +316,9 @@
 			<DankPyon_MealBread>10</DankPyon_MealBread>
 		</products>
 		<fixedIngredientFilter>
-			<thingDefs>
+			<categories>
 				<li>DankPyon_Flour</li>
-			</thingDefs>
+			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
@@ -348,9 +348,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>10.25</count>
 			</li>
@@ -359,9 +359,9 @@
 			<DankPyon_MealBread>100</DankPyon_MealBread>
 		</products>
 		<fixedIngredientFilter>
-			<thingDefs>
+			<categories>
 				<li>DankPyon_Flour</li>
-			</thingDefs>
+			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
@@ -1447,9 +1447,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.6</count>
 			</li>
@@ -1458,18 +1458,22 @@
 			<DankPyon_MealPumpkinFritters>3</DankPyon_MealPumpkinFritters>
 		</products>
 		<fixedIngredientFilter>
+			<categories>
+				<li>DankPyon_Flour</li>
+			</categories>
 			<thingDefs>
 				<li>DankPyon_RawPumpkins</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
+			<categories>
+				<li>DankPyon_Flour</li>
+			</categories>
 			<thingDefs>
 				<li>DankPyon_RawPumpkins</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
@@ -1504,9 +1508,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>1.2</count>
 			</li>
@@ -1515,18 +1519,22 @@
 			<DankPyon_MealPumpkinFritters>6</DankPyon_MealPumpkinFritters>
 		</products>
 		<fixedIngredientFilter>
+			<categories>
+				<li>DankPyon_Flour</li>
+			</categories>
 			<thingDefs>
 				<li>DankPyon_RawPumpkins</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
+			<categories>
+				<li>DankPyon_Flour</li>
+			</categories>
 			<thingDefs>
 				<li>DankPyon_RawPumpkins</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
@@ -2173,9 +2181,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.15</count>
 			</li>
@@ -2200,8 +2208,10 @@
 			<DankPyon_MealApplePie>1</DankPyon_MealApplePie>
 		</products>
 		<fixedIngredientFilter>
-			<thingDefs>
+			<categories>
 				<li>DankPyon_Flour</li>
+			</categories>
+			<thingDefs>
 				<li>DankPyon_Sugar</li>
 				<li>DankPyon_RawApples</li>
 			</thingDefs>
@@ -2210,8 +2220,10 @@
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<thingDefs>
+			<categories>
 				<li>DankPyon_Flour</li>
+			</categories>
+			<thingDefs>
 				<li>DankPyon_Sugar</li>
 				<li>DankPyon_RawApples</li>
 			</thingDefs>
@@ -2244,9 +2256,9 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.75</count>
 			</li>
@@ -2271,8 +2283,10 @@
 			<DankPyon_MealApplePie>5</DankPyon_MealApplePie>
 		</products>
 		<fixedIngredientFilter>
-			<thingDefs>
+			<categories>
 				<li>DankPyon_Flour</li>
+			</categories>
+			<thingDefs>
 				<li>DankPyon_Sugar</li>
 				<li>DankPyon_RawApples</li>
 			</thingDefs>
@@ -2281,8 +2295,10 @@
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<thingDefs>
+			<categories>
 				<li>DankPyon_Flour</li>
+			</categories>
+			<thingDefs>
 				<li>DankPyon_Sugar</li>
 				<li>DankPyon_RawApples</li>
 			</thingDefs>
@@ -2605,9 +2621,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.1</count>
 			</li>
@@ -2616,26 +2632,22 @@
 			<DankPyon_MealQuiche>1</DankPyon_MealQuiche>
 		</products>
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_Flour</li>
-			</thingDefs>
 			<categories>
 				<li>EggsUnfertilized</li>
 				<li>MeatRaw</li>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_Flour</li>
-			</thingDefs>
 			<categories>
 				<li>EggsUnfertilized</li>
 				<li>MeatRaw</li>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
@@ -2699,9 +2711,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.5</count>
 			</li>
@@ -2710,26 +2722,22 @@
 			<DankPyon_MealQuiche>5</DankPyon_MealQuiche>
 		</products>
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_Flour</li>
-			</thingDefs>
 			<categories>
 				<li>EggsUnfertilized</li>
 				<li>MeatRaw</li>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_Flour</li>
-			</thingDefs>
 			<categories>
 				<li>EggsUnfertilized</li>
 				<li>MeatRaw</li>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<disallowedCategories>
 				<li>EggsFertilized</li>
@@ -2795,9 +2803,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.15</count>
 			</li>
@@ -2809,10 +2817,10 @@
 			<categories>
 				<li>EggsUnfertilized</li>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_Sugar</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -2822,10 +2830,10 @@
 			<categories>
 				<li>EggsUnfertilized</li>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_Sugar</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
@@ -2879,9 +2887,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.75</count>
 			</li>
@@ -2893,10 +2901,10 @@
 			<categories>
 				<li>EggsUnfertilized</li>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_Sugar</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -2906,10 +2914,10 @@
 			<categories>
 				<li>EggsUnfertilized</li>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_Sugar</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
@@ -3217,9 +3225,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.3</count>
 			</li>
@@ -3238,10 +3246,10 @@
 		<fixedIngredientFilter>
 			<categories>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_RawPumpkins</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -3250,10 +3258,10 @@
 		<defaultIngredientFilter>
 			<categories>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_RawPumpkins</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
@@ -3289,9 +3297,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.6</count>
 			</li>
@@ -3310,10 +3318,10 @@
 		<fixedIngredientFilter>
 			<categories>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_RawPumpkins</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 			<specialFiltersToDisallow>
 				<li>AllowPlantFood</li>
@@ -3322,10 +3330,10 @@
 		<defaultIngredientFilter>
 			<categories>
 				<li>DankPyon_Milk</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_RawPumpkins</li>
-				<li>DankPyon_Flour</li>
 			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
@@ -3852,9 +3860,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.15</count>
 			</li>
@@ -3889,10 +3897,10 @@
 		<fixedIngredientFilter>
 			<categories>
 				<li>EggsUnfertilized</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_GriffonBerry</li>
-				<li>DankPyon_Flour</li>
 				<li>DankPyon_Sugar</li>
 				<li>DankPyon_RawLemons</li>
 			</thingDefs>
@@ -3903,10 +3911,10 @@
 		<defaultIngredientFilter>
 			<categories>
 				<li>EggsUnfertilized</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_GriffonBerry</li>
-				<li>DankPyon_Flour</li>
 				<li>DankPyon_Sugar</li>
 				<li>DankPyon_RawLemons</li>
 			</thingDefs>
@@ -3947,9 +3955,9 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
+					<categories>
 						<li>DankPyon_Flour</li>
-					</thingDefs>
+					</categories>
 				</filter>
 				<count>0.45</count>
 			</li>
@@ -3984,10 +3992,10 @@
 		<fixedIngredientFilter>
 			<categories>
 				<li>EggsUnfertilized</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_GriffonBerry</li>
-				<li>DankPyon_Flour</li>
 				<li>DankPyon_Sugar</li>
 				<li>DankPyon_RawLemons</li>
 			</thingDefs>
@@ -3998,10 +4006,10 @@
 		<defaultIngredientFilter>
 			<categories>
 				<li>EggsUnfertilized</li>
+				<li>DankPyon_Flour</li>
 			</categories>
 			<thingDefs>
 				<li>DankPyon_GriffonBerry</li>
-				<li>DankPyon_Flour</li>
 				<li>DankPyon_Sugar</li>
 				<li>DankPyon_RawLemons</li>
 			</thingDefs>

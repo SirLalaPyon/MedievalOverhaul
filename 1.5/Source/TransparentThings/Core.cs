@@ -26,11 +26,9 @@ namespace TransparentThings
 
         static Core()
         {
-            Core.hasTransparentTrees = DefDatabase<ThingDef>.AllDefs.Any<ThingDef>((Func<ThingDef, bool>)(x => x.plant != null && HasTransparencyExtension(x)));
-            Core.transparentRoofs = DefDatabase<ThingDef>.AllDefs.Where<ThingDef>((Func<ThingDef, bool>)(x => typeof(RoofSetter).IsAssignableFrom(x.thingClass) && HasTransparencyExtension(x))).ToList<ThingDef>();
-            Core.hasTransparentRoofs = Core.transparentRoofs.Any<ThingDef>();
-            new Harmony("TransparentThings.Mod").PatchAll();
-
+            hasTransparentTrees = DefDatabase<ThingDef>.AllDefs.All<ThingDef>((Func<ThingDef, bool>)(x => x.IsPlant && HasTransparencyExtension(x)));
+            transparentRoofs = DefDatabase<ThingDef>.AllDefs.Where<ThingDef>((Func<ThingDef, bool>)(x => typeof(RoofSetter).IsAssignableFrom(x.thingClass) && HasTransparencyExtension(x))).ToList<ThingDef>();
+            hasTransparentRoofs = transparentRoofs.Any<ThingDef>();
             static bool HasTransparencyExtension(ThingDef x)
             {
                 ThingExtension modExtension = x.GetModExtension<ThingExtension>();

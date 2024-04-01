@@ -10,15 +10,15 @@ namespace TransparentThings
 {
     public class TransparentThingsSettings : ModSettings
     {
-        public bool enableTreeTransparency = true;
-        public bool enableRoofTransparency = true;
+        public bool enableTreeTransparency = false;
+        public bool enableRoofTransparency = false;
         public bool makeRoofsSelectable = true;
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look<bool>(ref this.enableTreeTransparency, "enableTreeTransparency", true);
-            Scribe_Values.Look<bool>(ref this.enableRoofTransparency, "enableRoofTransparency", true);
+            Scribe_Values.Look<bool>(ref this.enableTreeTransparency, "enableTreeTransparency", false);
+            Scribe_Values.Look<bool>(ref this.enableRoofTransparency, "enableRoofTransparency", false);
             Scribe_Values.Look<bool>(ref this.makeRoofsSelectable, "makeRoofsSelectable", true);
         }
 

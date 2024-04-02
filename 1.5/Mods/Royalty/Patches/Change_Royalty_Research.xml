@@ -1,96 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
+	<!-- ===== Noble Apparel Patches ==== -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
+		<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/description</xpath>
 		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/description</xpath>
+			<value>
+				<description>Tailor noble-specific apparel like formal shirts and royal robes.</description>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/tab</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
 			<value>
-				<ResearchProjectDef>
-					<defName>NobleApparel</defName>
-					<label>noble apparel</label>
-					<description>Tailor noble-specific apparel like formal shirts and royal robes.</description>
-					<baseCost>400</baseCost>
-					<tab>DankPyon_MedievalResearchTab</tab>
-					<techLevel>Medieval</techLevel>
-					<prerequisites>
-						<li>DankPyon_Tailoring</li>
-					</prerequisites>
-					<researchViewX>6.00</researchViewX>
-					<researchViewY>3.60</researchViewY>
-				</ResearchProjectDef>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/researchViewX</xpath>
+			<value>
+				<researchViewX>6.0</researchViewX>
 			</value>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
+		<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/researchViewY</xpath>
 		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/researchViewY</xpath>
+			<value>
+				<researchViewY>3.6</researchViewY>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/prerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+						<li>DankPyon_Tailoring</li>
+				</prerequisites>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- ===== Royal Apparel Patches ==== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/tab</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
 			<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
 			<value>
-				<ResearchProjectDef>
-					<defName>RoyalApparel</defName>
-					<label>royal apparel</label>
-					<description>Tailor royal apparel of the highest tier, like royal robes and crowns.</description>
-					<baseCost>400</baseCost>
-					<techLevel>Medieval</techLevel>
-					<tab>DankPyon_MedievalResearchTab</tab>
-					<prerequisites>
-						<li>NobleApparel</li>
-					</prerequisites>
-					<hiddenPrerequisites>
-					</hiddenPrerequisites>
-					<researchViewX>7.00</researchViewX>
-					<researchViewY>3.6</researchViewY>
-				</ResearchProjectDef>
+				<tab>DankPyon_MedievalResearchTab</tab>
 			</value>
-		</match>
+		</nomatch>
 	</Operation>
-
+	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
+		<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/researchViewX</xpath>
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
+			<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/researchViewX</xpath>
 			<value>
-				<ResearchProjectDef>
-					<defName>Harpsichord</defName>
-					<label>harpsichord</label>
-					<description>Craft the harpsichord, a complex stationary musical instrument.</description>
-					<tab>DankPyon_MedievalResearchTab</tab>
-					<baseCost>500</baseCost>
-					<techLevel>Medieval</techLevel>
-					<researchViewX>5</researchViewX>
-					<researchViewY>2.4</researchViewY>
-					<prerequisites>
-						<li>ComplexFurniture</li>
-					</prerequisites>
-				</ResearchProjectDef>
+				<researchViewX>7.0</researchViewX>
 			</value>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ResearchProjectDef[defName="Piano"]</xpath>
+		<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/researchViewY</xpath>
 		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ResearchProjectDef[defName="Piano"]</xpath>
+			<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/researchViewY</xpath>
 			<value>
-				<ResearchProjectDef>
-					<defName>Piano</defName>
-					<label>piano</label>
-					<description>Craft the harpsichord, a complex stationary musical instrument.</description>
-					<baseCost>500</baseCost>
-					<tab>DankPyon_MedievalResearchTab</tab>
-					<techLevel>Medieval</techLevel>
-					<researchViewX>5</researchViewX>
-					<researchViewY>3</researchViewY>
-					<prerequisites>
-						<li>ComplexFurniture</li>
-					</prerequisites>
-				</ResearchProjectDef>
+				<researchViewY>3.6</researchViewY>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/prerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+						<li>NobleApparel</li>
+				</prerequisites>
 			</value>
 		</match>
 	</Operation>
 
+
+	<!-- ===== Harpsichordl Patches ==== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/description</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/description</xpath>
+			<value>
+				<description>Craft the harpsichord, a complex stationary musical instrument.</description>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/tab</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/researchViewX</xpath>
+			<value>
+				<researchViewX>5.0</researchViewX>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/researchViewY</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/researchViewY</xpath>
+			<value>
+				<researchViewY>2.4</researchViewY>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/prerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+						<li>ComplexFurniture</li>
+				</prerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- ===== Piano Patches ==== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Piano"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="Piano"]/tab</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="Piano"]</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Piano"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="Piano"]/researchViewX</xpath>
+			<value>
+				<researchViewX>5.0</researchViewX>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Piano"]/researchViewY</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="Piano"]/researchViewY</xpath>
+			<value>
+				<researchViewY>3.</researchViewY>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="Piano"]/prerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ResearchProjectDef[defName="Piano"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+						<li>ComplexFurniture</li>
+				</prerequisites>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Items -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="Apparel_Coronet"]/recipeMaker/researchPrerequisite</xpath>
 		<match Class="PatchOperationRemove">
@@ -135,7 +263,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewY</xpath>
 		<match Class="PatchOperationReplace">
@@ -146,38 +274,6 @@
 		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]/tab</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]/tab</xpath>
-			<value>
-				<tab>DankPyon_MedievalResearchTab</tab>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ResearchProjectDef[defName="RoyalApparel"]</xpath>
-			<value>
-				<tab>DankPyon_MedievalResearchTab</tab>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ResearchProjectDef[defName="NobleApparel"]/tab</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ResearchProjectDef[defName="NobleApparel"]/tab</xpath>
-			<value>
-				<tab>DankPyon_MedievalResearchTab</tab>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ResearchProjectDef[defName="NobleApparel"]</xpath>
-			<value>
-				<tab>DankPyon_MedievalResearchTab</tab>
-			</value>
-		</nomatch>
-	</Operation>
-	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ResearchProjectDef[defName="Harp"]/tab</xpath>
 		<match Class="PatchOperationReplace">
@@ -193,4 +289,5 @@
 			</value>
 		</nomatch>
 	</Operation>
+
 </Patch>

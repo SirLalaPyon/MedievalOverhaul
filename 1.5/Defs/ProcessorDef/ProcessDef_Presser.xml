@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Cheese -->
+	<ProcessorFramework.ProcessDef Name="DankPyon_CheesePressBase" Abstract="True">
+		<processDays>1</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>0.5</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>0.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>true</usesQuality>
+		<qualityDays>(1, 3, 8, 14, 20, 50, 120)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_CheesePressBase">
+		<defName>DankPyon_PressCheeseProcess</defName>
+		<thingDef>DankPyon_MealCheese</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>DankPyon_Milk</li>
+			</categories>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_CheesePressBase">
+		<defName>DankPyon_PressGoatCheeseProcess</defName>
+		<thingDef>DankPyon_MealGoatCheese</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_GoatMilk</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+	
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_CheesePressBase">
+		<defName>DankPyon_PressSheepCheeseProcess</defName>
+		<thingDef>DankPyon_MealSheepCheese</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_SheepMilk</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<!-- Apple Juice -->
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_PressAppleProcess</defName>
+		<thingDef>DankPyon_JuiceApple</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_MincedApple</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>1</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-99.0~99.0</temperatureSafe>
+		<temperatureIdeal>21.0~99.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>0.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+	</ProcessorFramework.ProcessDef>
+
+</Defs>

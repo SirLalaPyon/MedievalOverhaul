@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationSetName">
-		<xpath>Defs/ThingDef[defName="ChristmasTree" or 
-				defName="SacrificialFlag" or 
-				defName="IncenseShrine"]/costList/WoodLog		</xpath>
-		<name>DankPyon_RawWood</name>
-	</Operation>
+	<!-- <Operation Class="PatchOperationSetName"> -->
+		<!-- <xpath>Defs/ThingDef[defName="ChristmasTree" or  -->
+				<!-- defName="SacrificialFlag" or  -->
+				<!-- defName="IncenseShrine"]/costList/WoodLog		</xpath> -->
+		<!-- <name>WoodLog</name> -->
+	<!-- </Operation> -->
 
 </Patch>

@@ -280,6 +280,11 @@
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter Inherit="False">
+			<categories>
+				<li>DankPyon_Flour</li>
+			</categories>
+		</defaultIngredientFilter>
 		<workAmount>350</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
@@ -323,6 +328,11 @@
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter Inherit="False">
+			<categories>
+				<li>DankPyon_Flour</li>
+			</categories>
+		</defaultIngredientFilter>
 		<workAmount>1750</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
@@ -366,6 +376,11 @@
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter Inherit="False">
+			<categories>
+				<li>DankPyon_Flour</li>
+			</categories>
+		</defaultIngredientFilter>
 		<workAmount>10000</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>

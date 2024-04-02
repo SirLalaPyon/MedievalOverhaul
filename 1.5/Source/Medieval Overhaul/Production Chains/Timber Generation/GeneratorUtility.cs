@@ -74,7 +74,7 @@ namespace MedievalOverhaul.Wood
 
         public static ThingDef MakeHideFor(ThingDef wood, ThingDef tree)
         {
-            ThingDef log = BasicHideDef(wood);
+            ThingDef log = BasicLogDef(wood);
             SetNameAndDesc(wood, log, tree);
             //GraphicCheck(hideDef, raceDef);
             if (wood.stuffProps != null)
@@ -120,7 +120,7 @@ namespace MedievalOverhaul.Wood
             }
             return log;
         }
-        private static ThingDef BasicHideDef(ThingDef wood)
+        private static ThingDef BasicLogDef(ThingDef wood)
         {
             ThingDef log = new ThingDef
             {
@@ -166,7 +166,7 @@ namespace MedievalOverhaul.Wood
             log.thingCategories = new List<ThingCategoryDef>
             {
                 MedievalOverhaulDefOf.DankPyon_RawWood,
-                
+
             };
             log.stuffProps = new StuffProperties
             {
@@ -181,6 +181,11 @@ namespace MedievalOverhaul.Wood
                 color = wood.stuffProps.color,
                 statFactors = wood.stuffProps.statFactors,
             };
+            log.comps.Add(new CompProperties_FuelRate()
+            {
+                rate = 2f,
+            });
+
             return log;
         }
 

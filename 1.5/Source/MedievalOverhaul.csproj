@@ -39,6 +39,8 @@
     <Compile Include="Medieval Overhaul\Fuel\CompProperties_FuelRate.cs" />
     <Compile Include="Medieval Overhaul\Fuel\CompProperties_StoreFuelThing.cs" />
     <Compile Include="Medieval Overhaul\Fuel\CompStoreFuelThing.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\FixBrokenDownBuilding_JobOnThing_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\FixBrokenDownBuilding_HasJobOnThing_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony\FindBestFuel_Prefix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\FuelRate.cs" />
     <Compile Include="Medieval Overhaul\Harmony\InspectStringPatch.cs" />

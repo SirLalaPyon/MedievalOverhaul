@@ -693,7 +693,6 @@
 				<rectW>(1.25,0.2,3.5,4.7)</rectW>
 			</damageData>
 		</graphicData>
-
 		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<altitudeLayer>Building</altitudeLayer>
@@ -703,14 +702,12 @@
 		<fillPercent>1</fillPercent>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
-
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
 			<WorkToBuild>4000</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>-20</Beauty>
 		</statBases>
-
 		<tickerType>Normal</tickerType>
 		<size>(5,6)</size>
 		<costList>
@@ -718,7 +715,6 @@
 			<DankPyon_IronIngot>80</DankPyon_IronIngot>
 			<DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
 		</costList>
-
 		<comps>
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>200</capacity>
@@ -739,7 +735,6 @@
 				<compClass>MedievalOverhaul.Comp_WindMill</compClass>
 			</li>
 		</comps>
-
 		<rotatable>true</rotatable>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Production</designationCategory>
@@ -753,6 +748,7 @@
 		<constructEffect>ConstructWood</constructEffect>
 		<researchPrerequisites><li>DankPyon_Windmill</li></researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<techLevel>Medieval</techLevel>
 	</ThingDef>
 
 </Defs>

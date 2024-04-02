@@ -70,6 +70,9 @@ namespace MedievalOverhaul
         public static RecipeDef DankPyon_MakeOre_SilverOre;
         public static RecipeDef DankPyon_MakeOre_SilverOreBulk;
 
+        public static ThingDef DankPyon_Tree_GriffonBerry;
+        public static ThingDef DankPyon_ComponentBasic;
+
     }
 
 }

@@ -75,6 +75,18 @@ namespace MedievalOverhaul
         public HediffDef hediffDef;
     }
 
+    public class Breakdown
+    {
+        public Thing FindComponent(Pawn pawn, Thing thing)
+        {
+            if (thing.def.techLevel == TechLevel.Neolithic || thing.def.techLevel == TechLevel.Medieval)
+            {
+                return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(MedievalOverhaulDefOf.DankPyon_ComponentBasic), PathEndMode.InteractionCell, TraverseParms.For(pawn, pawn.NormalMaxDanger(), TraverseMode.ByPawn, false, false, false), 9999f, (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false), null, 0, -1, false, RegionType.Set_Passable, false);
+            }
+            return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(ThingDefOf.ComponentIndustrial), PathEndMode.InteractionCell, TraverseParms.For(pawn, pawn.NormalMaxDanger(), TraverseMode.ByPawn, false, false, false), 9999f, (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false), null, 0, -1, false, RegionType.Set_Passable, false);
+        }
+    }
+
     [HarmonyPatch(typeof(HediffComp_SeverityPerDay), "SeverityChangePerDay")]
     [HarmonyPatch(typeof(HediffComp_Immunizable), "SeverityChangePerDay")]
     public class HediffComp_Immunizable_Patch

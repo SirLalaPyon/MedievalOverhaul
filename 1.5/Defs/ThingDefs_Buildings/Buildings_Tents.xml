@@ -59,6 +59,11 @@
 					</categories>
 				</filter>
 			</defaultStorageSettings>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_MarketTent_1c</li>
+				<li>DankPyon_MarketTent_2c</li>
+				<li>DankPyon_MarketTent_3c</li>
+			</relatedBuildCommands>
 		</building>
 	</ThingDef>
 
@@ -160,6 +165,11 @@
 
 		<building>
 			<isEdifice>false</isEdifice>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_TableMarket_Meat</li>
+				<li>DankPyon_TableMarket_Dairy</li>
+				<li>DankPyon_TableMarket_Bread</li>
+			</relatedBuildCommands>
 		</building>
 		<clearBuildingArea>false</clearBuildingArea>
 		<minifiedDef>MinifiedThing</minifiedDef>

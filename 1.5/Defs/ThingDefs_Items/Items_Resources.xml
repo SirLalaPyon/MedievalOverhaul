@@ -298,7 +298,7 @@
 	<!-- </ThingDef> -->
 
 	<!-- Dryad Wood -->
-	<ThingDef ParentName="ResourceVerbBase">
+	<!--ThingDef ParentName="ResourceVerbBase">
 		<defName>DankPyon_DryadWoodLog</defName>
 		<label>dryad wood</label>
 		<description>Nimble but reslient, highly sought for its beauty and strength. Useful for building structures and weapons. It is a good fuel for campfires.</description>
@@ -333,7 +333,7 @@
 				<li>Woody</li>
 			</categories>
 			<commonality>0.50</commonality>
-			<color>(115,120,23)</color>
+			<color>(118, 120, 83)</color>
 			<constructEffect>ConstructWood</constructEffect>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
@@ -367,7 +367,7 @@
 				<rate>5</rate>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef-->
 
 	<!-- Ancient Wood -->
 	<!-- <ThingDef ParentName="ResourceVerbBase"> -->

@@ -977,6 +977,93 @@
 		<designatorDropdown>DankPyon_IngotStack2x2c</designatorDropdown>
 	</ThingDef>
 
+	<!--== Plasteel Ingots ==-->
+	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_PlasteelStackBase">
+		<defName>DankPyon_Plasteel1x1c</defName>
+		<label>plasteel stack(1x1)</label>
+		<description>Ingots that are stacked in an efficient manner to save more space.</description>
+		<graphicData>
+			<texPath>Storage/PlasteelStack1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+		<costList>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter Inherit="false">
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<researchPrerequisites Inherit="false"/>
+		<designatorDropdown>DankPyon_IngotStack1x1c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_PlasteelStackBase">
+		<defName>DankPyon_Plasteel1x2c</defName>
+		<label>plasteel stack(1x2)</label>
+		<graphicData>
+			<texPath>Storage/PlasteelStack1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<costList>
+			<Plasteel>20</Plasteel>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack1x2c</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_PlasteelStackBase">
+		<defName>DankPyon_Plasteel2x2c</defName>
+		<label>plasteel stack(2x2)</label>
+		<graphicData>
+			<texPath>Storage/PlasteelStack2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<costList>
+			<Plasteel>40</Plasteel>
+		</costList>
+		<designatorDropdown>DankPyon_IngotStack2x2c</designatorDropdown>
+	</ThingDef>
+	
 	<!--======================= Cupboard ==============================-->
 	<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_RusticCupboardEmpty</defName>
@@ -1370,6 +1457,38 @@
 				<filter>
 					<thingDefs>
 						<li>DankPyon_GoldOre</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<!--== Gold Ore Barrel ==-->
+	<ThingDef ParentName="DankPyon_BarrelBase">
+		<defName>DankPyon_BarrelRawPlasteel</defName>
+		<label>barrel of raw plasteel</label>
+		<description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 4 stacks of raw plasteel. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BarrelRawPlasteel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconPath>Storage/BarrelRawPlasteel</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_PlasteelOre</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_PlasteelOre</li>
 					</thingDefs>
 				</filter>
 			</defaultStorageSettings>

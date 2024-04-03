@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-	<!-- Replace mineableScatterCommonality of Steel, Component, and Steel  -->
+<!--
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -13,7 +12,6 @@
 		</operations>
 	</Operation>
 
-	<!-- Replace label Steel -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName = "Steel"]/label</xpath>
 		<value>
@@ -21,7 +19,6 @@
 		</value>
 	</Operation>
 
-	<!-- Replace stuffAdjective Steel -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName = "Steel"]/stuffProps</xpath>
 		<value>
@@ -29,7 +26,6 @@
 		</value>
 	</Operation>
 
-	<!-- Replace mineableThing Silver-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName = "MineableSilver"]/building/mineableThing</xpath>
 		<value>
@@ -37,7 +33,6 @@
 		</value>
 	</Operation>
 
-	<!-- Replace mineableThing Gold -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName = "MineableGold"]/building/mineableThing</xpath>
 		<value>
@@ -45,7 +40,6 @@
 		</value>
 	</Operation>
 	
-	<!-- Replace mineable Plasteel -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="MineablePlasteel"]/building/mineableThing</xpath>
 			<value>
@@ -67,7 +61,6 @@
 			</value>
 	</Operation>
 	
-	<!-- Add Golem for events -->
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/ThingDef[defName="MineableGold"]</xpath>
 		<value>
@@ -94,5 +87,5 @@
 			</li>
 		</value>
 	</Operation>
-	
+-->
 </Patch>

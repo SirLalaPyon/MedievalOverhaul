@@ -71,6 +71,9 @@
 		</statBases>
 		<ingestible>
 			<preferability>MealAwful</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>DankPyon_AteDriedMeat</tasteThought>
 			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
 		</ingestible>
@@ -82,6 +85,68 @@
 		</comps>
 		<rotatable>false</rotatable>
 		<tradeability>Buyable</tradeability>
+	</ThingDef>
+	
+	<!-- Dried Human Meats -->
+	<ThingDef ParentName="MealBase">
+		<defName>DankPyon_DriedMeat_Human</defName>
+		<label>Dried Human Meat</label>
+		<description>Dried human meat to preserve and prolong shelf life. Does not rehydrate very well and only true cannibals can stomach it.</description>
+		<graphicData>
+			<texPath>Meal/DriedMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>13</MarketValue>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealAwful</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>DankPyon_AteDriedMeat</tasteThought>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBase">
+		<defName>DankPyon_DriedMeat_Insect</defName>
+		<label>Dried Insect Meat</label>
+		<description>Dried insect meat to preserve and prolong shelf life.Does not rehydrate very well and not many can stomach it</description>
+		<graphicData>
+			<texPath>Meal/DriedMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>13</MarketValue>
+			<Nutrition>0.7</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealAwful</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>DankPyon_DriedMeat</tasteThought>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
 	</ThingDef>
 
 	<!-- Dried Meats -->
@@ -98,6 +163,69 @@
 			<Nutrition>0.85</Nutrition>
 		</statBases>
 		<ingestible>
+			<preferability>MealAwful</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>DankPyon_AteSmokedMeat</tasteThought>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<tradeability>Buyable</tradeability>
+	</ThingDef>
+	
+	<!-- Smoke Human Meat -->
+	<ThingDef ParentName="MealBase">
+		<defName>DankPyon_SmokedMeat_Human</defName>
+		<label>Smoked Human Meat</label>
+		<description>Smoked human meat to preserve and prolong shelf life.</description>
+		<graphicData>
+			<texPath>Meal/SmokedMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Nutrition>0.85</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealAwful</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>DankPyon_AteSmokedMeat</tasteThought>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<tradeability>Buyable</tradeability>
+	</ThingDef>
+	
+	<!-- Smoke Insect Meat -->
+	<ThingDef ParentName="MealBase">
+		<defName>DankPyon_SmokedMeat_Insect</defName>
+		<label>Smoked Insect Meat</label>
+		<description>Dried meat to preserve and prolong shelf life.</description>
+		<graphicData>
+			<texPath>Meal/SmokedMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Nutrition>0.85</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Meat</foodType>
 			<preferability>MealAwful</preferability>
 			<tasteThought>DankPyon_AteSmokedMeat</tasteThought>
 			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
@@ -152,9 +280,40 @@
 		<label>sheep milk</label>
 		<description>Milk from a sheep.</description>
 	</ThingDef>
-  
+
 	<!-- Cheese -->
-	<ThingDef ParentName="MealBase">
+	<ThingDef PareName="MealBase" Name="DankPyon_CheeseBase">
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Nutrition>0.85</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>45</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+				<ingestedThought>DankPyon_AteCheese</ingestedThought>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>DankPyon_Presser</li>
+		</researchPrerequisites>
+		<thingCategories>
+			<li>DankPyon_Cheese</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_CheeseBase">
 		<defName>DankPyon_MealCheese</defName>
 		<label>Cheese</label>
 		<description>A sharp-tasting wheel of cheese, created by a special process of pursposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
@@ -163,32 +322,9 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<statBases>
-			<MarketValue>10</MarketValue>
-			<Nutrition>0.85</Nutrition>
-		</statBases>
-		<ingestible>
-			<preferability>MealSimple</preferability>
-			<tasteThought>DankPyon_AteCheese</tasteThought>
-			<optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
-			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>45</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<rotatable>false</rotatable>
-		<researchPrerequisites>
-			<li>DankPyon_Presser</li>
-		</researchPrerequisites>
-		<thingCategories>
-			<li>DankPyon_Cheese</li>
-		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="DankPyon_CheeseBase">
 		<defName>DankPyon_MealGoatCheese</defName>
 		<label>goat cheese</label>
 		<description>A sharp-tasting wheel of cheese, created by a special process of pursposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
@@ -197,32 +333,9 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<statBases>
-			<MarketValue>10</MarketValue>
-			<Nutrition>0.85</Nutrition>
-		</statBases>
-		<ingestible>
-			<preferability>MealSimple</preferability>
-			<tasteThought>DankPyon_AteCheese</tasteThought>
-			<optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
-			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>45</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<rotatable>false</rotatable>
-		<researchPrerequisites>
-			<li>DankPyon_Presser</li>
-		</researchPrerequisites>
-		<thingCategories>
-			<li>DankPyon_Cheese</li>
-		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="DankPyon_CheeseBase">
 		<defName>DankPyon_MealSheepCheese</defName>
 		<label>sheep cheese</label>
 		<description>A sharp-tasting wheel of cheese, created by a special process of pursposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
@@ -231,29 +344,6 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<statBases>
-			<MarketValue>10</MarketValue>
-			<Nutrition>0.85</Nutrition>
-		</statBases>
-		<ingestible>
-			<preferability>MealSimple</preferability>
-			<tasteThought>DankPyon_AteCheese</tasteThought>
-			<optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
-			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>45</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<rotatable>false</rotatable>
-		<researchPrerequisites>
-			<li>DankPyon_Presser</li>
-		</researchPrerequisites>
-		<thingCategories>
-			<li>DankPyon_Cheese</li>
-		</thingCategories>
 	</ThingDef>
 
 	<!--============== Tier 4 Meals ===============-->

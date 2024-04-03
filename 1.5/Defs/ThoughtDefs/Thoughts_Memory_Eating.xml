@@ -48,20 +48,6 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	
-	<ThoughtDef>
-		<defName>DankPyon_DrankWine</defName>
-		<showBubble>true</showBubble>
-		<icon>Things/Mote/ThoughtSymbol/Food</icon>
-		<durationDays>0.4</durationDays>
-		<stages>
-			<li>
-				<label>classy wine</label>
-				<description>Makes me feel like a noble... and maybe think like one.</description>
-				<baseMoodEffect>8</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
 
 	<!-- ======= Food Quality Thoughts ========= -->
 	<!-- Hearty Stew -->
@@ -92,22 +78,6 @@
 				<label>ate Weak Stew</label>
 				<description>I ate a Weak Stew, a delightful meal that warms my body.</description>
 				<baseMoodEffect>3</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
-  
-	<!-- Cheese -->
-	<ThoughtDef>
-		<defName>DankPyon_AteCheese</defName>
-		<showBubble>true</showBubble>
-		<icon>Things/Mote/ThoughtSymbol/Food</icon>
-		<durationDays>0.5</durationDays>
-		<stackLimit>1</stackLimit>
-		<stages>
-			<li>
-				<label>ate cheese</label>
-				<description>Cheese! oh how I love cheese.</description>
-				<baseMoodEffect>6</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -159,6 +129,18 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	<ThoughtDef>
+    <defName>DankPyon_AteDriedMeat</defName>
+    <durationDays>0.5</durationDays>
+    <stages>
+      <li>
+        <label>ate dried meat</label>
+        <description>That meat was so dry, I am parched.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 	<!-- Bread Soup -->
 	<ThoughtDef>

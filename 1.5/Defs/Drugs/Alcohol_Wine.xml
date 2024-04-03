@@ -12,7 +12,6 @@
 		<equippedAngleOffset>-150</equippedAngleOffset>
 		<rotatable>false</rotatable>
 		<stackLimit>10</stackLimit>
-
 		<statBases>
 			<DeteriorationRate>0.5</DeteriorationRate>
 			<MarketValue>20</MarketValue>
@@ -20,7 +19,6 @@
 			<Flammability>0.5</Flammability>
 			<Nutrition>0.08</Nutrition>
 		</statBases>
-
 		<ingestible>
 			<foodType>Fluid, Processed, Liquor</foodType>
 			<joyKind>Chemical</joyKind>
@@ -36,7 +34,6 @@
 			<ingestCommandString>Drink {0}</ingestCommandString>
 			<ingestReportString>Drinking {0}.</ingestReportString>
 			<chairSearchRadius>25</chairSearchRadius>
-			<tasteThought>DankPyon_DrankWine</tasteThought>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
@@ -50,7 +47,6 @@
 				</li>
 			</outcomeDoers>
 		</ingestible>
-        
 		<equipmentType>Primary</equipmentType>
 		<techLevel>Medieval</techLevel>
 		<comps>
@@ -64,6 +60,12 @@
 			</li>
 			<li>
 				<compClass>CompEquippable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+				<ingestedThought>DankPyon_DrankWine</ingestedThought>
 			</li>
 		</comps>
 		<researchPrerequisites>

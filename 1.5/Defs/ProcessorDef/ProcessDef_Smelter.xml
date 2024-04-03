@@ -93,7 +93,7 @@
 		<processDays>0.02</processDays>
 	</ProcessorFramework.ProcessDef>
 
-	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+	<!--ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
 		<defName>DankPyon_SmeltingOre_Plasteel</defName>
 		<thingDef>Plasteel</thingDef>
 		<ingredientFilter>
@@ -102,6 +102,6 @@
 			</thingDefs>
 		</ingredientFilter>
 		<efficiency>0.25</efficiency>
-	</ProcessorFramework.ProcessDef>
+	</ProcessorFramework.ProcessDef-->
 
 </Defs>

@@ -136,7 +136,7 @@
 			<preferability>MealAwful</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
-			<tasteThought>DankPyon_DriedMeat</tasteThought>
+			<!-- <tasteThought>DankPyon_DriedMeat</tasteThought> -->
 			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
 		</ingestible>
@@ -282,12 +282,17 @@
 	</ThingDef>
 
 	<!-- Cheese -->
-	<ThingDef PareName="MealBase" Name="DankPyon_CheeseBase">
+	<ThingDef PareName="MealBase" Name="DankPyon_CheeseBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<tickerType>Rare</tickerType>
 		<statBases>
 			<MarketValue>10</MarketValue>
 			<Nutrition>0.85</Nutrition>
 		</statBases>
 		<ingestible>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<foodType>Processed</foodType>
 			<preferability>MealSimple</preferability>
 			<optimalityOffsetHumanlikes>15</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>

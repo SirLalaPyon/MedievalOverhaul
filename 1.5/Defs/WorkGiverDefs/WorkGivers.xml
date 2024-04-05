@@ -36,6 +36,20 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
+        <defName>DankPyon_DoBillStewDispenser</defName>
+        <label>slop pot</label>
+        <giverClass>MedievalOverhaul.WorkGiver_RefuelStat</giverClass>
+        <workType>Hauling</workType>
+        <verb>deliver</verb>
+        <gerund>delivering food</gerund>
+        <priorityInType>110</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+	<WorkGiverDef>
 		<defName>DankPyon_DoBillsStoneOven</defName>
 		<label>bake goods</label>
 		<giverClass>WorkGiver_DoBill</giverClass>

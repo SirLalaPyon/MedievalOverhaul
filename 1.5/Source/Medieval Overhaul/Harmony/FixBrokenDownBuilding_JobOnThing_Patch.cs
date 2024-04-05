@@ -16,27 +16,23 @@ namespace MedievalOverhaul
 
     public static class FixBrokenDownBuilding_JobOnThing_Patch
     {
-        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions,
-                                                       ILGenerator generator)
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
         {
             List<CodeInstruction> code = instructions.ToList();
             bool foundInjection = false;
             for (int i = 0; i < code.Count; i++)
             {
                 // Look for the old Method
-                if (code[i].opcode == OpCodes.Call &&
-                    (MethodInfo)code[i].operand == HarmonyLib.AccessTools
-                                 .Method(typeof(WorkGiver_FixBrokenDownBuilding), "FindClosestComponent"))
+                if (code[i].opcode == OpCodes.Call && 
+                    (MethodInfo)code[i].operand == AccessTools.Method(typeof(WorkGiver_FixBrokenDownBuilding), "FindClosestComponent"))
                 {
                     foundInjection = true;
-                    code.RemoveAt(i); // Removes old method
-                    code.Insert(i,
-                        new CodeInstruction(OpCodes.Ldarg_2)); // Inserts Thing into the method
-
-                    code.Insert(i + 1, // Inserts method
-                                new CodeInstruction(OpCodes.Call, AccessTools
-                                 .Method(typeof(Breakdown), "FindComponent",
-                                           null)));
+                    // Removes old method
+                    code.RemoveAt(i);
+                    // Passes Thing into the method
+                    code.Insert(i, new CodeInstruction(OpCodes.Ldarg_2)); 
+                    // Inserts new method
+                    code.Insert(i + 1, new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(Breakdown), "FindComponent", null))); 
                     break;
                 }
             }

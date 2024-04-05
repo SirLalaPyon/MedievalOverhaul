@@ -9,6 +9,13 @@
 			<categories>
 				<li>MeatRaw</li>
 			</categories>
+			<disallowedThingDefs>
+				<li>DankPyon_DriedMeat</li>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>DankPyon_DriedMeat_Human</li>
+				<li>DankPyon_DriedMeat_Insect</li>
+			</disallowedThingDefs>
 		</ingredientFilter>
 		<processDays>1</processDays><!-- in days, a day is 60,000 ticks -->
 		<capacityFactor>1.0</capacityFactor>

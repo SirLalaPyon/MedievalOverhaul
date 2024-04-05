@@ -5,122 +5,114 @@
 		<settings>
 			<li>vanillaMine</li>
 		</settings>
-		<operations>
-			<!-- This will happen, if that option has been checked -->
-		</operations>
-	</Operation>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "MineableComponentsIndustrial"  or defName = "MineableSteel"]/building/mineableScatterCommonality</xpath>
+					<value>
+						<mineableScatterCommonality>0</mineableScatterCommonality>
+					</value>
+				</li>
 
-	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
-		<settings>
-			<li>vanillaMine</li>
-		</settings>
-		<inverse>true</inverse>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "MineableComponentsIndustrial"  or defName = "MineableSteel"]/building/mineableScatterCommonality</xpath>
-				<value>
-					<mineableScatterCommonality>0</mineableScatterCommonality>
-				</value>
-			</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Steel"]/label</xpath>
+					<value>
+						<label>steel ingot</label>
+					</value>
+				</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "Steel"]/label</xpath>
-				<value>
-					<label>steel ingot</label>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "Steel"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Resources/Steel</texPath>
-				</value>
-			</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Steel"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Resources/Steel</texPath>
+					</value>
+				</li>
 			
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[defName="Steel"]/stuffProps/stuffAdjective</xpath>
-				<match Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="Steel"]/stuffProps/stuffAdjective</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Steel"]/stuffProps/stuffAdjective</xpath>
+						<value>
+							<stuffAdjective>steel</stuffAdjective>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Steel"]/stuffProps</xpath>
+						<value>
+							<stuffAdjective>steel</stuffAdjective>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Silver"]/graphicData/texPath</xpath>
 					<value>
-						<stuffAdjective>steel</stuffAdjective>
+						<texPath>Resources/Silver</texPath>
 					</value>
-				</match>
-				<nomatch Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Steel"]/stuffProps</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "MineableSilver"]/building/mineableThing</xpath>
 					<value>
-						<stuffAdjective>steel</stuffAdjective>
+						<mineableThing>DankPyon_SilverOre</mineableThing>
 					</value>
-				</nomatch>
-			</li>
+				</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "Silver"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Resources/Silver</texPath>
-				</value>
-			</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Gold"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Resources/Gold</texPath>
+					</value>
+				</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MineableSilver"]/building/mineableThing</xpath>
-				<value>
-					<mineableThing>DankPyon_SilverOre</mineableThing>
-				</value>
-			</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "MineableGold"]/building/mineableThing</xpath>
+					<value>
+						<mineableThing>DankPyon_GoldOre</mineableThing>
+					</value>
+				</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "Gold"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Resources/Gold</texPath>
-				</value>
-			</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MineablePlasteel"]/building/mineableThing</xpath>
+					<value>
+						<mineableThing>DankPyon_PlasteelOre</mineableThing>
+					</value>
+				</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "MineableGold"]/building/mineableThing</xpath>
-				<value>
-					<mineableThing>DankPyon_GoldOre</mineableThing>
-				</value>
-			</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Plasteel"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Resources/PlasteelIngot</texPath>
+					</value>
+				</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="MineablePlasteel"]/building/mineableThing</xpath>
-				<value>
-					<mineableThing>DankPyon_PlasteelOre</mineableThing>
-				</value>
-			</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="MineableGold"]</xpath>
+					<value>
+						<li Class="MedievalOverhaul.GolemSpawn">
+							<kindDef>DankPyon_Golem_Gold</kindDef>
+						</li>
+					</value>
+				</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Plasteel"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Resources/PlasteelIngot</texPath>
-				</value>
-			</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="MineableSilver"]</xpath>
+					<value>
+						<li Class="MedievalOverhaul.GolemSpawn">
+							<kindDef>DankPyon_Golem_Silver</kindDef>
+						</li>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="MineableGold"]</xpath>
-				<value>
-					<li Class="MedievalOverhaul.GolemSpawn">
-						<kindDef>DankPyon_Golem_Gold</kindDef>
-					</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="MineableSilver"]</xpath>
-				<value>
-					<li Class="MedievalOverhaul.GolemSpawn">
-						<kindDef>DankPyon_Golem_Silver</kindDef>
-					</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="MineableSteel"]</xpath>
-				<value>
-					<li Class="MedievalOverhaul.GolemSpawn">
-						<kindDef>DankPyon_Golem_Steel</kindDef>
-					</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>	
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="MineableSteel"]</xpath>
+					<value>
+						<li Class="MedievalOverhaul.GolemSpawn">
+							<kindDef>DankPyon_Golem_Steel</kindDef>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</inactive>
+	</Operation>
 </Patch>

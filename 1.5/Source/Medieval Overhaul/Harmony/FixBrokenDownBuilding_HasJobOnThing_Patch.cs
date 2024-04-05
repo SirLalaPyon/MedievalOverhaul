@@ -42,7 +42,7 @@ namespace MedievalOverhaul
             }
             if (!foundInjection)
             {
-                Log.Error("MO.WorkGiver_FixBrokenDownBuilding.JobOnThing: Could not find Harmony injection site");
+                Log.Error("MO.WorkGiver_FixBrokenDownBuilding.HasJobOnThing: Could not find Harmony injection site");
             }
             foreach (var c in code) yield return c;
         }

@@ -5,15 +5,17 @@
 		<settings>
 			<li>boomalopeTar</li>
 		</settings>
-		<operations>
+		<active Class="PatchOperationSequence">
+			<operations>
 		
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Milkable"]/milkDef[.="Chemfuel"]</xpath>
-				<value>
-					<milkDef>DankPyon_Tar</milkDef>
-				</value>
-			</li>
-
-		</operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Milkable"]/milkDef[.="Chemfuel"]</xpath>
+					<value>
+						<milkDef>DankPyon_Tar</milkDef>
+					</value>
+				</li>
+			
+			</operations>
+		</active>
 	</Operation>
 </Patch>

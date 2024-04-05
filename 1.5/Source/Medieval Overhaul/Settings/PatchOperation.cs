@@ -13,32 +13,45 @@ namespace MedievalOverhaul
         public List<string> settings;
         public bool inverse = false;
         private readonly List<PatchOperation> operations = new List<PatchOperation>();
-        private PatchOperation lastFailedOperation;
+        public PatchOperation active;
+
+        public PatchOperation inactive;
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (HasSetting() && !inverse)
+            if (HasSetting())
             {
-                return ApplyPatches(xml);
-            }
-            if (!HasSetting() && inverse)
-            {
-                return ApplyPatches(xml);
-            }
-            return true;
-        }
-        private bool ApplyPatches(XmlDocument xml)
-        {
-            foreach (PatchOperation operation in this.operations)
-            {
-                if (!operation.Apply(xml))
+                if (active != null)
                 {
-                    this.lastFailedOperation = operation;
-                    return false;
+                    return active.Apply(xml);
                 }
             }
+            else if (inactive != null)
+            {
+                return inactive.Apply(xml);
+            }
+            //if (HasSetting() && !inverse)
+            //{
+            //    return ApplyPatches(xml);
+            //}
+            //if (!HasSetting() && inverse)
+            //{
+            //    return ApplyPatches(xml);
+            //}
             return true;
         }
+        //private bool ApplyPatches(XmlDocument xml)
+        //{
+        //    foreach (PatchOperation operation in this.operations)
+        //    {
+        //        if (!operation.Apply(xml))
+        //        {
+        //            this.lastFailedOperation = operation;
+        //            return false;
+        //        }
+        //    }
+        //    return true;
+        //}
         public bool HasSetting()
         {
             for (int i = 0; i < settings.Count(); i++)

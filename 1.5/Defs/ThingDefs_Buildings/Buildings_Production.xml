@@ -1360,7 +1360,7 @@
 				<li>Production</li>
 			</buildingTags>
 		</building>
-	</ThingDef>	
+	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Apiary</defName>
@@ -1438,6 +1438,312 @@
 				<fuelGizmoLabel>Meat</fuelGizmoLabel>
 			</li>
 		</comps>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Production</designationCategory>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_SlopPot</defName>
+		<label>slop pot</label>
+		<description>A gruel pot blending flavors from generations past into a timeless culinary adventure.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<thingClass>MedievalOverhaul.Building_SlopPot</thingClass>
+		<graphicData>
+			<texPath>Production/Pot/SlopPot</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.9,2.9)</drawSize>
+			<damageData>
+				<rect>(0.02,0.25,2.96,2.85)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+			<shadowData>
+				<volume>(2.87,0.75,3.05)</volume>
+				<offset>(0,0,0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+		</costList>
+		<statBases>
+			<WorkToBuild>2200</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<building>
+			<isMealSource>true</isMealSource>
+			<nutritionCostPerDispense>0.30</nutritionCostPerDispense>
+			<soundDispense>DispensePaste</soundDispense>
+		</building>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_StewPot</li>
+		</inspectorTabs>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>MedievalOverhaul.CompUnpowered</compClass>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>4</heatPerSecond>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
+				<fuelCapacity>15.0</fuelCapacity>
+				<stat>Nutrition</stat>
+				<fuelFilter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>PlantFoodRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_Slop">
+				<mealDef>DankPyon_Slop</mealDef>
+			</li>
+		</comps>
+		<size>(2,2)</size>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<interactionCellOffset>(0,0,2	)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<uiOrder>2130</uiOrder>
+		<designationHotKey>Misc6</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Production</designationCategory>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_SlopPot_Stew</defName>
+		<label>stew pot</label>
+		<description>A stew pot blending flavors from generations past into a timeless culinary adventure.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<thingClass>MedievalOverhaul.Building_SlopPot</thingClass>
+		<graphicData>
+			<texPath>Production/Pot/StewPot</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.9,2.9)</drawSize>
+			<damageData>
+				<rect>(0.02,0.25,2.96,2.85)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+			<shadowData>
+				<volume>(2.87,0.75,3.05)</volume>
+				<offset>(0,0,0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+		</costList>
+		<statBases>
+			<WorkToBuild>2200</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<building>
+			<isMealSource>true</isMealSource>
+			<nutritionCostPerDispense>0.30</nutritionCostPerDispense>
+			<soundDispense>DispensePaste</soundDispense>
+		</building>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_StewPot</li>
+		</inspectorTabs>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>MedievalOverhaul.CompUnpowered</compClass>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>4</heatPerSecond>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
+				<fuelCapacity>15.0</fuelCapacity>
+				<stat>Nutrition</stat>
+				<fuelFilter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_Slop">
+				<mealDef>DankPyon_Slop_Simple</mealDef>
+			</li>
+		</comps>
+		<size>(2,2)</size>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<interactionCellOffset>(0,0,2	)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<uiOrder>2130</uiOrder>
+		<designationHotKey>Misc6</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Production</designationCategory>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_SlopPot_Fondue</defName>
+		<label>fondue pot</label>
+		<description>A fondue pot blending flavors from generations past into a timeless culinary adventure.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<thingClass>MedievalOverhaul.Building_SlopPot</thingClass>
+		<graphicData>
+			<texPath>Production/Pot/CheesePot</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.9,2.9)</drawSize>
+			<damageData>
+				<rect>(0.02,0.25,2.96,2.85)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+			<shadowData>
+				<volume>(2.87,0.75,3.05)</volume>
+				<offset>(0,0,0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+		</costList>
+		<statBases>
+			<WorkToBuild>2200</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<building>
+			<isMealSource>true</isMealSource>
+			<nutritionCostPerDispense>0.30</nutritionCostPerDispense>
+			<soundDispense>DispensePaste</soundDispense>
+		</building>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_StewPot</li>
+		</inspectorTabs>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>MedievalOverhaul.CompUnpowered</compClass>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>4</heatPerSecond>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
+				<fuelCapacity>15.0</fuelCapacity>
+				<stat>Nutrition</stat>
+				<fuelFilter>
+					<categories>
+						<li>DankPyon_Cheese</li>
+					</categories>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_Slop">
+				<mealDef>DankPyon_Slop_Fine</mealDef>
+				<fullTexture>Production/Pot/CheesePot</fullTexture>
+			</li>
+		</comps>
+		<size>(2,2)</size>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<interactionCellOffset>(0,0,2	)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<uiOrder>2130</uiOrder>
+		<designationHotKey>Misc6</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>

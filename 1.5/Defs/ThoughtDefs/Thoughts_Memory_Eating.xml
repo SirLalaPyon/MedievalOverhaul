@@ -131,16 +131,16 @@
 	</ThoughtDef>
 	
 	<ThoughtDef>
-    <defName>DankPyon_AteDriedMeat</defName>
-    <durationDays>0.5</durationDays>
-    <stages>
-      <li>
-        <label>ate dried meat</label>
-        <description>That meat was so dry, I am parched.</description>
-        <baseMoodEffect>-2</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+		<defName>DankPyon_AteDriedMeat</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate dried meat</label>
+				<description>That meat was so dry, I am parched.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 	<!-- Bread Soup -->
 	<ThoughtDef>
@@ -442,6 +442,34 @@
 				<label>ate cheese soup</label>
 				<description>The way the cheese melts in the spiced broth makes me want to dance! The only negative is that people are watching.</description>
 				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Slop Pots Thoughts -->
+	<ThoughtDef>
+		<defName>DankPyon_AteSlopMeal</defName>
+		<durationDays>1</durationDays>
+		<nullifyingTraits>
+			<li>Ascetic</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>ate a bowl of slop</label>
+				<description>I had to eat a disgusting, tasteless meal. I know it keeps you alive, but nobody wants to swallow that glop.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>DankPyon_AteFineSlopMeal</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate a bowl of fondue</label>
+				<description>I ate a delicious cheesey soup.</description>
+				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

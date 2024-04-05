@@ -95,6 +95,7 @@ namespace MedievalOverhaul.Wood
             };
             wood.graphicData.texPath = "Resources/WoodPlank";
             wood.graphicData.color = log.graphicData.color;
+            wood.stuffProps.stuffAdjective = wood.stuffProps.stuffAdjective.ToString() + " " + "DankPyon_Timber".Translate();
             if (wood.thingCategories.NullOrEmpty())
             {
                 wood.thingCategories = new List<ThingCategoryDef> { };
@@ -174,7 +175,7 @@ namespace MedievalOverhaul.Wood
                 {
                    StuffabilityDefOf.DankPyon_RawWood,
                 },
-                stuffAdjective = wood.stuffProps.stuffAdjective.ToString() + " " + "DankPyon_Log".Translate(),
+                stuffAdjective = wood.stuffProps.stuffAdjective.ToString(),
                 constructEffect = wood.stuffProps.constructEffect,
                 soundMeleeHitBlunt = wood.stuffProps.soundMeleeHitBlunt,
                 soundMeleeHitSharp = wood.stuffProps.soundMeleeHitSharp,

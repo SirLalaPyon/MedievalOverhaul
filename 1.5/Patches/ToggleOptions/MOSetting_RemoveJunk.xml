@@ -5,86 +5,87 @@
 		<settings>
 			<li>industrialJunk</li>
 		</settings>
-		<operations>
+		<active Class="PatchOperationSequence">
+			<operations>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="ScatterRoadDebris"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="ScatterRoadDebris"]</xpath>
-				</match>
-			</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="ScatterRoadDebris"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="ScatterRoadDebris"]</xpath>
+					</match>
+				</li>
 			
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="ScatterCaveDebris"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="ScatterCaveDebris"]</xpath>
-				</match>
-			</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="ScatterCaveDebris"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="ScatterCaveDebris"]</xpath>
+					</match>
+				</li>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="AncientUtilityBuilding"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientUtilityBuilding"]</xpath>
-				</match>
-			</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="AncientUtilityBuilding"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientUtilityBuilding"]</xpath>
+					</match>
+				</li>
 			
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="MechanoidRemains"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="MechanoidRemains"]</xpath>
-				</match>
-			</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="MechanoidRemains"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="MechanoidRemains"]</xpath>
+					</match>
+				</li>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="AncientTurret"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientTurret"]</xpath>
-				</match>
-			</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps/li[text()="AncientTurret"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientTurret"]</xpath>
+					</match>
+				</li>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientMechs"]</xpath>
-				<match Class="PatchOperationRemove">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientMechs"]</xpath>
-				</match>
-			</li>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientMechs"]</xpath>
+					</match>
+				</li>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientLandingPad"]</xpath>
-				<match Class="PatchOperationRemove">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientLandingPad"]</xpath>
-				</match>
-			</li>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientLandingPad"]</xpath>
+					</match>
+				</li>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientFences"]</xpath>
-				<match Class="PatchOperationRemove">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientFences"]</xpath>
-				</match>
-			</li>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientFences"]</xpath>
+					</match>
+				</li>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientPipelineSection"]</xpath>
-				<match Class="PatchOperationRemove">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientPipelineSection"]</xpath>
-				</match>
-			</li>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientPipelineSection"]</xpath>
+					</match>
+				</li>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientJunkClusters"]</xpath>
-				<match Class="PatchOperationRemove">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientJunkClusters"]</xpath>
-				</match>
-			</li>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientJunkClusters"]</xpath>
+					</match>
+				</li>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientPollutionJunk"]</xpath>
-				<match Class="PatchOperationRemove">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientPollutionJunk"]</xpath>
-				</match>
-			</li>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[@Name='MapCommonBase']/genSteps/li[text()="AncientPollutionJunk"]</xpath>
+					</match>
+				</li>
 
-		</operations>
+			</operations>
+		</active>
 	</Operation>
-
 </Patch>

@@ -9,6 +9,7 @@ using Verse.AI.Group;
 using Verse.Sound;
 using Verse;
 using UnityEngine;
+using static System.Collections.Specialized.BitVector32;
 
 namespace MedievalOverhaul
 {
@@ -54,15 +55,17 @@ namespace MedievalOverhaul
                 PawnKindDef named = DefDatabase<PawnKindDef>.GetNamed(this.Props.spawnablePawnKinds.RandomElement<string>(), false);
                 if (named != null)
                 {
-                    Pawn pawnToCreate = PawnGenerator.GeneratePawn(named, Faction.OfInsects);
+                    Faction faction = this.parent.Faction ?? null;
+                    PawnGenerationRequest pawnRequest = new PawnGenerationRequest(named, faction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, 1f, false, false, true, true, false, false);
+                    Pawn pawnToCreate = PawnGenerator.GeneratePawn(pawnRequest);
                     GenSpawn.Spawn((Thing)pawnToCreate, CellFinder.RandomClosewalkCellNear(this.parent.Position, this.parent.Map, this.Props.pawnSpawnRadius), this.parent.Map);
                     if (this.parent.Map != null)
                     {
                         Lord lord = (Lord)null;
-                        if (this.parent.Map.mapPawns.SpawnedPawnsInFaction(Faction.OfInsects).Any<Pawn>((Predicate<Pawn>)(p => p != pawnToCreate)))
+                        if (this.parent.Map.mapPawns.SpawnedPawnsInFaction(faction).Any<Pawn>((Predicate<Pawn>)(p => p != pawnToCreate)))
                             lord = ((Pawn)GenClosest.ClosestThing_Global(this.parent.Position, (IEnumerable)this.parent.Map.mapPawns.SpawnedPawnsInFaction(Faction.OfInsects), 30f, (Predicate<Thing>)(p => p != pawnToCreate && ((Pawn)p).GetLord() != null))).GetLord();
                         if (lord == null)
-                            lord = LordMaker.MakeNewLord(Faction.OfInsects, (LordJob)new LordJob_DefendPoint(this.parent.Position, new float?(10f)), this.parent.Map);
+                            lord = LordMaker.MakeNewLord(faction, (LordJob)new LordJob_DefendPoint(this.parent.Position, new float?(10f)), this.parent.Map);
                         lord.AddPawn(pawnToCreate);
                     }
                     pawn = pawnToCreate;

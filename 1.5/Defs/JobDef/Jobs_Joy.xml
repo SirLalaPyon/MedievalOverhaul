@@ -2,6 +2,20 @@
 <Defs>
 
 	<JobDef>
+        <defName>DankPyon_Slop_Refuel_StatAtomic</defName>
+        <driverClass>MedievalOverhaul.JobDriver_RefuelStatAtomic</driverClass>
+        <reportString>delivering TargetB to TargetA.</reportString>
+        <forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+    </JobDef>
+	
+	<JobDef>
+        <defName>DankPyon_Slop_Refuel_Stat</defName>
+        <driverClass>MedievalOverhaul.JobDriver_RefuelStat</driverClass>
+        <reportString>delivering TargetB to TargetA.</reportString>
+        <forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+    </JobDef>
+
+	<JobDef>
 		<defName>DankPyon_Play_CupAndDice</defName>
 		<driverClass>JobDriver_SitFacingBuilding</driverClass>
 		<reportString>playing cup and dice.</reportString>
@@ -29,7 +43,7 @@
 
 	<JobDef>
 		<defName>DankPyon_Play_RimWar</defName>
-		<driverClass>JobDriver_SitFacingBuilding</driverClass>
+		<driverClass>JobDriver_PlayBilliards</driverClass>
 		<reportString>playing rim of war.</reportString>
 		<joyDuration>4000</joyDuration>
 		<joyMaxParticipants>4</joyMaxParticipants>

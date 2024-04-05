@@ -1119,5 +1119,86 @@
 		</ingestible>
 		<rotatable>false</rotatable>
 	</ThingDef>
+	
+	<!-- Slop Pot Meals -->
+	<ThingDef ParentName="MealBase">
+		<defName>DankPyon_Slop</defName>
+		<label>slop</label>
+		<description>A bowl of slop, where every spoonful is an adventure in texture and taste!</description>
+		<graphicData>
+			<texPath>Meal/SlopPots/Slop</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealAwful</preferability>
+			<tasteThought>DankPyon_AteSlopMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>0.75</daysToRotStart><!-- short rot time, you want to make them as needed not store them -->
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="MealBase">
+		<defName>DankPyon_Slop_Simple</defName>
+		<label>stew</label>
+		<description>Venture into the murky depths of battle-tested stew, where the origins of its ingredients are as mysterious as the foes you face on the battlefield.</description>
+		<graphicData>
+			<texPath>Meal/SlopPots/Stew</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>0.75</daysToRotStart><!-- short rot time, you want to make them as needed not store them -->
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="MealBase">
+		<defName>DankPyon_Slop_Fine</defName>
+		<label>cheese fondue</label>
+		<description>Delve into the bubbling cauldron of fondue, where the melted cheese conceals the secrets of its savory companions, inviting you on a journey of culinary exploration</description>
+		<graphicData>
+			<texPath>Meal/SlopPots/Fondue</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<tasteThought>DankPyon_AteFineSlopMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>0.75</daysToRotStart><!-- short rot time, you want to make them as needed not store them -->
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
   
 </Defs>

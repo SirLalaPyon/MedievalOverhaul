@@ -5,29 +5,31 @@
 		<settings>
 			<li>woodChain</li>
 		</settings>
-		<operations>
+		<active Class="PatchOperationSequence">
+			<operations>
 
-			<!-- Replace every WoodLog to be DankPyon_RawWood for every neolithic building-->
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]</xpath>
-				<match Class="PatchOperationSetName">
-					<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]/costList/WoodLog</xpath>
-					<name>DankPyon_RawWood</name>
-				</match>
-			</li>
+				<!-- Replace every WoodLog to be DankPyon_RawWood for every neolithic building-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]</xpath>
+					<match Class="PatchOperationSetName">
+						<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]/costList/WoodLog</xpath>
+						<name>DankPyon_RawWood</name>
+					</match>
+				</li>
 
-			<!-- Add every WoodLog to have DankPyon_RawWood stuff category for every neolithic building that has woody stuff category-->
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]</xpath>
-				<match Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]/stuffCategories</xpath>
-					<value>
-						<li>DankPyon_RawWood</li>
-					</value>
-				</match>
-			</li>
+				<!-- Add every WoodLog to have DankPyon_RawWood stuff category for every neolithic building that has woody stuff category-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]/stuffCategories</xpath>
+						<value>
+							<li>DankPyon_RawWood</li>
+						</value>
+					</match>
+				</li>
 
-		</operations>
+			</operations>
+		</active>
 	</Operation>
 
 </Patch>

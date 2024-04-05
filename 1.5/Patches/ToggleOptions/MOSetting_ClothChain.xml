@@ -5,76 +5,77 @@
 		<settings>
 			<li>clothChain</li>
 		</settings>
-		<inverse>true</inverse>
-		<operations>
+		<inactive Class="PatchOperationSequence">
+			<operations>
 
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/harvestedThingDef[.="DankPyon_RawCotton"]</xpath>
-				<match Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/harvestedThingDef[.="DankPyon_RawCotton"]</xpath>
-					<value>
-						<harvestedThingDef>Cloth</harvestedThingDef>
-					</value>
-				</match>
-			</li>
-			
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/RecipeDef[defName="DankPyon_MakeCloth"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/RecipeDef[defName="DankPyon_MakeCloth"]</xpath>
-				</match>
-			</li>
-
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]</xpath>
-				</match>
-			</li>
-
-			<!-- Flax and Linen -->
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
-				<match Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
-					<value>
-						<harvestedThingDef>DankPyon_Linen</harvestedThingDef>
-					</value>
-				</match>
-			</li>
-
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinen"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinen"]</xpath>
-				</match>
-			</li>
-			
-			<li Class="PatchOperationConditional">
-				<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]</xpath>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]</xpath>
-				</match>
-			</li>
-
-			<li Class="PatchOperationFindMod">
-				<mods>
-					<li>Medieval Overhaul: Arcane Archaeologists</li>
-				</mods>
-				<match Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[@Name="Ogam_CapeBase"]/costList</xpath>
 					<match Class="PatchOperationReplace">
-						<xpath>Defs/ThingDef[@Name="Ogam_CapeBase"]/costList</xpath>
+						<xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/harvestedThingDef[.="DankPyon_RawCotton"]</xpath>
 						<value>
-							<costList>
-								<Cloth>45</Cloth>
-							</costList>
+							<harvestedThingDef>Cloth</harvestedThingDef>
 						</value>
 					</match>
-				</match>
-			</li>
+				</li>
+			
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeCloth"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="DankPyon_MakeCloth"]</xpath>
+					</match>
+				</li>
 
-		</operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]</xpath>
+					</match>
+				</li>
+
+				<!-- Flax and Linen -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
+						<value>
+							<harvestedThingDef>DankPyon_Linen</harvestedThingDef>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinen"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinen"]</xpath>
+					</match>
+				</li>
+			
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Medieval Overhaul: Arcane Archaeologists</li>
+					</mods>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[@Name="Ogam_CapeBase"]/costList</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[@Name="Ogam_CapeBase"]/costList</xpath>
+							<value>
+								<costList>
+									<Cloth>45</Cloth>
+								</costList>
+							</value>
+						</match>
+					</match>
+				</li>
+
+			</operations>
+		</inactive>
 	</Operation>
 
 </Patch>

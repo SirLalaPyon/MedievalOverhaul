@@ -61,6 +61,7 @@
     <Compile Include="Medieval Overhaul\Harmony\FindAmmoForTurret_Prefix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CanPlaceBlueprintOver_Postfix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CanBuildOnTerrain_Postfix.cs" />
+    <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GhoulPack.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GolemImpact.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\ThingSetMaker_GolemImpact.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaul_Settings.cs" />
@@ -72,7 +73,9 @@
     <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_PlainSchratSplit.cs" />
     <Compile Include="Medieval Overhaul\Production Chains\Timber Generation\GeneratorUtility.cs" />
     <Compile Include="Medieval Overhaul\Production Chains\Timber Generation\ThingDefGenerator_Timber.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Ghoul.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_HornetNestSpawner.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\Comp_Ghoul.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_HornetNestSpawner.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_ThingProducer.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_ThingProducer.cs" />
@@ -112,6 +115,22 @@
     <Compile Include="Medieval Overhaul\Utilities\Utilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Medieval Overhaul\Utilities\DebugTools.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Slop Pot\Building_SlopPot.cs" />
+    <Compile Include="Slop Pot\CompProperties_RefuelableStat.cs" />
+    <Compile Include="Slop Pot\CompProperties_Slop.cs" />
+    <Compile Include="Slop Pot\CompRefuelableStat.cs" />
+    <Compile Include="Slop Pot\CompSlop.cs" />
+    <Compile Include="Slop Pot\CompUnpowered.cs" />
+    <Compile Include="Slop Pot\ITab_StewPot.cs" />
+    <Compile Include="Slop Pot\JobDriver_RefuelStat.cs" />
+    <Compile Include="Slop Pot\JobDriver_RefuelStatAtomic.cs" />
+    <Compile Include="Slop Pot\NutrientPasteHarmonyPatch.cs" />
+    <Compile Include="Slop Pot\WorkGiver_RefuelStat.cs" />
     <Compile Include="StandaloneSettlementPreference\TooltipStringInit.cs" />
     <Compile Include="StandaloneSettlementPreference\SettlementPreference_ModSettings.cs" />
     <Compile Include="StandaloneSettlementPreference\SettlementPreference_Mod.cs" />
@@ -138,6 +157,7 @@
   <ItemGroup>
     <Folder Include="ESCP_FuelExtension\" />
     <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
+    <Folder Include="Medieval Overhaul\StewPot\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
@@ -148,6 +168,12 @@
     <PackageReference Include="Krafs.Rimworld.Ref">
       <Version>1.5.4045-beta</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

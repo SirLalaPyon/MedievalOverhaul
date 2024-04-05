@@ -5,17 +5,18 @@
 		<settings>
 			<li>hornetNest</li>
 		</settings>
-		<inverse>true</inverse>
-		<operations>
+		<inactive Class="PatchOperationSequence">
+			<operations>
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/MapGeneratorDef[@Name = "MapCommonBase"]/genSteps</xpath>
-				<value>
-					<li>DankPyon_HornetNest</li>
-				</value>
-			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MapGeneratorDef[@Name = "MapCommonBase"]/genSteps</xpath>
+					<value>
+						<li>DankPyon_HornetNest</li>
+					</value>
+				</li>
 
-		</operations>
+			</operations>
+		</inactive>
 	</Operation>
 
-</Patch>	
+</Patch>

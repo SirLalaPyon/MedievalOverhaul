@@ -184,4 +184,36 @@
 		</researchPrerequisites>
 	</RecipeDef>
 
+	<RecipeDef>
+		<defName>DankPyon_MakeMustGriffon</defName>
+		<label>make griffon berry must</label>
+		<description>Make griffon berry must by crushing griffon berries. Needs to undergo fermentation in order to become wine.</description>
+		<jobString>Making griffon berry must.</jobString>
+		<workAmount>1000</workAmount>
+		<recipeUsers>
+			<li>Brewery</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_GriffonBerry</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_GriffonBerry</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_MustWine_Griffon>5</DankPyon_MustWine_Griffon>
+		</products>
+		<researchPrerequisites>
+			<li>Brewing</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
 </Defs>

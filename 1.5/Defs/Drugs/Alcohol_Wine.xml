@@ -67,6 +67,7 @@
 			<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
 				<ingestedThought>DankPyon_DrankWine</ingestedThought>
 			</li>
+			<li MayRequire="vanillaexpanded.vcooke" Class="VanillaCookingExpanded.CompProperties_StackByQuality"/>
 		</comps>
 		<researchPrerequisites>
 			<li>Brewing</li>
@@ -119,6 +120,34 @@
 		<graphicData>
 			<texPath>Resources/MustWine</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	<!-- ================== Griffon Wine ================== -->
+	<ThingDef ParentName="DankPyon_WineBase">
+		<defName>DankPyon_Wine_Griffon</defName>
+		<label>griffon wine</label>
+		<graphicData>
+			<texPath>Drug/GriffonWine</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MustWineBase">
+		<defName>DankPyon_MustWine_Griffon</defName>
+		<label>mulberry must</label>
+		<graphicData>
+			<texPath>Resources/MustWine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	
+	<!--================== Ice Wine ==================-->
+	<ThingDef ParentName="DankPyon_WineBase">
+		<defName>DankPyon_Wine_Ice</defName>
+		<label>ice wine</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Drug/IceWine</texPath>
 		</graphicData>
 	</ThingDef>
 

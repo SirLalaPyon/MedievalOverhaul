@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>DankPyon_DriedFish</defName>
+		<label>dried fish</label>
+		<description>Smoked fish to preserve and prolong shelf life.</description>
+		<graphicData>
+			<texPath>Meal/DriedMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>VCEF_RawFishCategory</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.01</Mass>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Meat</foodType>
+			<preferability>DesperateOnly</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>60</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients"/>
+		</comps>
+	</ThingDef>
+
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_DriedFishProcess</defName>
+		<thingDef>DankPyon_DriedFish</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>VCEF_RawFishCategory</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>DankPyon_DriedFish</li>
+			</disallowedThingDefs>
+		</ingredientFilter>
+		<processDays>2.5</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-99.0~99.0</temperatureSafe>
+		<temperatureIdeal>21.0~99.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>0.5~1</sunFactor>
+		<rainFactor>1.0~0.0</rainFactor>
+		<snowFactor>1.0~0.0</snowFactor>
+		<windFactor>0.75~1.25</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>0.0</fuelUseFactor>
+		<filledGraphicSuffix>FilledMeat</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+	</ProcessorFramework.ProcessDef>
+	
+</Defs>

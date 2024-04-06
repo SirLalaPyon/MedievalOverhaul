@@ -1484,7 +1484,7 @@
 		</statBases>
 		<building>
 			<isMealSource>true</isMealSource>
-			<nutritionCostPerDispense>0.30</nutritionCostPerDispense>
+			<nutritionCostPerDispense>0.35</nutritionCostPerDispense>
 			<soundDispense>DispensePaste</soundDispense>
 		</building>
 		<inspectorTabs>
@@ -1512,7 +1512,7 @@
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
 				<fuelConsumptionRate>160.0</fuelConsumptionRate>
-				<fuelCapacity>15.0</fuelCapacity>
+				<fuelCapacity>8.75</fuelCapacity> <!-- Holds 25 meals at 0.35 nutrition cost -->
 				<stat>Nutrition</stat>
 				<fuelFilter>
 					<categories>
@@ -1520,9 +1520,11 @@
 						<li>PlantFoodRaw</li>
 						<li>AnimalProductRaw</li>
 					</categories>
+					<disallowInedibleByHuman>true</disallowInedibleByHuman>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<fuelIconPath>UI/EmptyMeat_Icon</fuelIconPath>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_Slop">
 				<mealDef>DankPyon_Slop</mealDef>
@@ -1587,7 +1589,7 @@
 		</statBases>
 		<building>
 			<isMealSource>true</isMealSource>
-			<nutritionCostPerDispense>0.30</nutritionCostPerDispense>
+			<nutritionCostPerDispense>0.45</nutritionCostPerDispense>
 			<soundDispense>DispensePaste</soundDispense>
 		</building>
 		<inspectorTabs>
@@ -1615,7 +1617,7 @@
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
 				<fuelConsumptionRate>160.0</fuelConsumptionRate>
-				<fuelCapacity>15.0</fuelCapacity>
+				<fuelCapacity>9</fuelCapacity> <!-- Holds 20 meals at 0.45 nutrition cost -->
 				<stat>Nutrition</stat>
 				<fuelFilter>
 					<categories>
@@ -1624,6 +1626,7 @@
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<fuelIconPath>UI/EmptyMeat_Icon</fuelIconPath>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_Slop">
 				<mealDef>DankPyon_Slop_Simple</mealDef>
@@ -1688,7 +1691,7 @@
 		</statBases>
 		<building>
 			<isMealSource>true</isMealSource>
-			<nutritionCostPerDispense>0.30</nutritionCostPerDispense>
+			<nutritionCostPerDispense>0.50</nutritionCostPerDispense>
 			<soundDispense>DispensePaste</soundDispense>
 		</building>
 		<inspectorTabs>
@@ -1716,7 +1719,7 @@
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
 				<fuelConsumptionRate>160.0</fuelConsumptionRate>
-				<fuelCapacity>15.0</fuelCapacity>
+				<fuelCapacity>10.0</fuelCapacity> <!-- Holds 20 meals at 0.50 nutrition cost -->
 				<stat>Nutrition</stat>
 				<fuelFilter>
 					<categories>
@@ -1725,6 +1728,7 @@
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<fuelIconPath>UI/EmptyMeat_Icon</fuelIconPath>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_Slop">
 				<mealDef>DankPyon_Slop_Fine</mealDef>

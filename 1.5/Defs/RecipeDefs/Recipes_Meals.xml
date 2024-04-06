@@ -2327,6 +2327,81 @@
 			<li>DankPyon_Oven</li>
 		</researchPrerequisites>
 	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>DankPyon_CookMealApplePieBulkier</defName>
+		<label>bake apple pie x15</label>
+		<description>Bake 15 fine apple pies.</description>
+		<jobString>Baking 15 apple pies.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>7725</workAmount>
+		<recipeUsers>
+			<li>DankPyon_StoneOvenLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>2.25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Sugar</li>
+					</thingDefs>
+				</filter>
+				<count>0.6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawApples</li>
+					</thingDefs>
+				</filter>
+				<count>4.8</count>
+			</li>
+		</ingredients>
+		<products>
+			<DankPyon_MealApplePie>15</DankPyon_MealApplePie>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisites>
+			<li>DankPyon_IntermediateCooking</li>
+			<li>DankPyon_Oven</li>
+		</researchPrerequisites>
+	</RecipeDef>
 
 	<!-- ======= Hunters Stew ====== -->
 	<!-- Hunters Stew -->
@@ -2766,6 +2841,89 @@
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>8</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisites>
+			<li>DankPyon_IntermediateCooking</li>
+			<li>DankPyon_Oven</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DankPyon_CookMealQuicheBulkier</defName>
+		<label>bake quiche x15</label>
+		<description>Bake 15 quiche.</description>
+		<jobString>Baking 15 quiche.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>6750</workAmount>
+		<recipeUsers>
+			<li>DankPyon_StoneOvenLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+					</categories>
+				</filter>
+				<count>3.75</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>1.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>7.5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>1.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<DankPyon_MealQuiche>15</DankPyon_MealQuiche>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<!--li>Milk</li-->
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>10</Cooking>
 		</skillRequirements>
 		<workSkill>Cooking</workSkill>
 		<researchPrerequisites>
@@ -3352,6 +3510,81 @@
 			</thingDefs>
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
+		<researchPrerequisites>
+			<li>DankPyon_IntermediateCooking</li>
+			<li>DankPyon_Oven</li>
+		</researchPrerequisites>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>DankPyon_CookMealPumpkinPieBulkier</defName>
+		<label>bake pumpkin pies x18</label>
+		<description>Bake 18 pumpkin pies.</description>
+		<jobString>Baking 18 pumpkin pies.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>7200</workAmount>
+		<recipeUsers>
+			<li>DankPyon_StoneOvenLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawPumpkins</li>
+					</thingDefs>
+				</filter>
+				<count>5.4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>1.8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>1.8</count>
+			</li>
+		</ingredients>
+		<products>
+			<DankPyon_MealPumpkinPie>18</DankPyon_MealPumpkinPie>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<!--li>Milk</li-->
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
 		<researchPrerequisites>
 			<li>DankPyon_IntermediateCooking</li>
 			<li>DankPyon_Oven</li>
@@ -4028,6 +4261,97 @@
 				<li>DankPyon_Sugar</li>
 				<li>DankPyon_RawLemons</li>
 			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>12</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisites>
+			<li>DankPyon_AdvancedCooking</li>
+			<li>DankPyon_Oven</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DankPyon_CookMealGriffonBerryPieBulkier</defName>
+		<label>bake griffon berry pie x9</label>
+		<description>Bake an extravagant pie from griffon berries.</description>
+		<jobString>Baking 9 griffon berry pie.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workAmount>8550</workAmount>
+		<recipeUsers>
+			<li>DankPyon_StoneOvenLarge</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_GriffonBerry</li>
+					</thingDefs>
+				</filter>
+				<count>3.15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>1.35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Sugar</li>
+					</thingDefs>
+				</filter>
+				<count>0.9</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+					</categories>
+				</filter>
+				<count>2.25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawLemons</li>
+					</thingDefs>
+				</filter>
+				<count>0.81</count>
+			</li>
+		</ingredients>
+		<products>
+			<DankPyon_MealGriffonBerryPie>9</DankPyon_MealGriffonBerryPie>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+				<li>Milk</li>
+			</disallowedThingDefs>
 		</defaultIngredientFilter>
 		<skillRequirements>
 			<Cooking>12</Cooking>

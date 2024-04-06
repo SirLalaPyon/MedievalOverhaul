@@ -2266,8 +2266,13 @@
 					<li>DankPyon_RusticCloset</li>
 				</linkableFacilities>
 			</li>
-			<li MayRequire="OskarPotocki.VFE.Vikings" Class="VFEV.CompProperties_CureHypothermia"/>
+			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
+				<cureHediff>Hypothermia</cureHediff>
+				<intervalTick>300</intervalTick>
+				<cureSeverity>0.02</cureSeverity>
+			</li>
 		</comps>
+		<tickerType>Normal</tickerType>
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -2323,8 +2328,13 @@
 					<li>DankPyon_RusticCloset</li>
 				</linkableFacilities>
 			</li>
-			<li MayRequire="OskarPotocki.VFE.Vikings" Class="VFEV.CompProperties_CureHypothermia"/>
+			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
+				<cureHediff>Hypothermia</cureHediff>
+				<intervalTick>300</intervalTick>
+				<cureSeverity>0.02</cureSeverity>
+			</li>
 		</comps>
+		<tickerType>Normal</tickerType>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>1.0</Flammability>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--======================= Royal Furniture ==============================-->
 
+	<!--======================= Royal Furniture ==============================-->
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
 		<defName>DankPyon_RoyalCloset</defName>
 		<label>royal closet</label>
@@ -12,7 +12,6 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>3</drawSize>
 		</graphicData>
-  
 		<thingClass>Building</thingClass>
 		<uiIconScale>0.65</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
@@ -27,7 +26,6 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-  
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
 			<WorkToBuild>14500</WorkToBuild>
@@ -36,7 +34,6 @@
 			<Beauty>30</Beauty>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-  
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -44,7 +41,6 @@
 		<costList>
 			<Gold>30</Gold>
 		</costList>
-    
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -54,7 +50,6 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
@@ -86,7 +81,6 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
 			<WorkToBuild>14500</WorkToBuild>
@@ -95,7 +89,6 @@
 			<Beauty>30</Beauty>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<costList>
 			<DankPyon_Silk>30</DankPyon_Silk>
 			<Gold>30</Gold>
@@ -125,7 +118,6 @@
 		<defName>DankPyon_RoyalArmchair</defName>
 		<label>royal armchair</label>
 		<description>A luxurious, large, soft, comfy seat. Great for relaxation. Can be used at tables, work stations, and elsewhere.</description>
-
 		<graphicData>
 			<texPath>Furniture/RoyalArmchair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -141,10 +133,8 @@
 				<volume>(0.3, 0.33, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-
 		<uiIconScale>0.9</uiIconScale>
 		<altitudeLayer>Building</altitudeLayer>
-
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToBuild>14000</WorkToBuild>
@@ -154,14 +144,12 @@
 			<Comfort>0.95</Comfort>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>110</costStuffCount>
-
 		<pathCost>30</pathCost>
 		<fillPercent>0.40</fillPercent>
 		<designationHotKey>Misc8</designationHotKey>
@@ -194,7 +182,6 @@
 		</graphicData>
 		<uiIconScale>0.8</uiIconScale>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToBuild>15000</WorkToBuild>
@@ -203,13 +190,11 @@
 			<Beauty>25</Beauty>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">15</StyleDominance>
 		</statBases>
-
 		<costList>
 			<Gold>50</Gold>
 			<DankPyon_Silk>50</DankPyon_Silk>
 		</costList>
 		<costStuffCount>50</costStuffCount>
-
 		<rotatable>false</rotatable>
 		<researchPrerequisites>
 			<li>DankPyon_RoyalRusticFurniture</li>
@@ -232,7 +217,6 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>30000</WorkToBuild>
@@ -241,14 +225,12 @@
 			<Beauty>2</Beauty>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">30</StyleDominance>
 		</statBases>
-
 		<size>(2,4)</size>
 		<costStuffCount>95</costStuffCount>
 		<costList>
 			<Gold>100</Gold>
 			<DankPyon_Silk>100</DankPyon_Silk>
 		</costList>
-
 		<building>
 			<buildingSizeCategory>Medium</buildingSizeCategory>
 		</building>
@@ -271,7 +253,6 @@
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToBuild>10000</WorkToBuild>
@@ -280,18 +261,15 @@
 			<Beauty>30</Beauty>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-
 		<pathCost>30</pathCost>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<costStuffCount>30</costStuffCount>
 		<costList>
 			<Gold>20</Gold>
 		</costList>
-
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -301,7 +279,6 @@
 				<mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
 			</li>
 		</comps>
-
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<castEdgeShadows>false</castEdgeShadows>
 		<researchPrerequisites>
@@ -331,7 +308,6 @@
 		<fillPercent>0.4</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<pathCost>42</pathCost>
-
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -342,8 +318,6 @@
 		<costList>
 			<Gold>40</Gold>
 		</costList>
-
-
 		<statBases>
 			<MaxHitPoints>130</MaxHitPoints>
 			<Mass>25</Mass>
@@ -352,7 +326,6 @@
 			<Beauty>5</Beauty>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-
 		<size>(2,1)</size>
 		<designationHotKey>Misc12</designationHotKey>
 		<staticSunShadowHeight>0.5</staticSunShadowHeight>
@@ -361,7 +334,6 @@
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
-
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -390,7 +362,6 @@
 				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
-
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -400,8 +371,13 @@
 					<li>DankPyon_RoyalChest</li>
 				</linkableFacilities>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
+				<cureHediff>Hypothermia</cureHediff>
+				<intervalTick>300</intervalTick>
+				<cureSeverity>0.02</cureSeverity>
+			</li>
 		</comps>
-
+		<tickerType>Normal</tickerType>
 		<statBases>
 			<MaxHitPoints>220</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -414,7 +390,6 @@
 			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">30</StyleDominance>
 		</statBases>
-
 		<size>(2,2)</size>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -426,12 +401,10 @@
 			<Gold>70</Gold>
 			<DankPyon_Silk>200</DankPyon_Silk>
 		</costList>
-
 		<building>
 			<bed_showSleeperBody>False</bed_showSleeperBody>
 			<bed_healPerDay/>
 		</building>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<fillPercent>0.5</fillPercent>
 		<pathCost>42</pathCost>
@@ -442,7 +415,6 @@
 		<techLevel>Medieval</techLevel>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 		<uiIconScale>0.75</uiIconScale>
-
 		<researchPrerequisites>
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>

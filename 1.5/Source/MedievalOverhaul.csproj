@@ -75,10 +75,12 @@
     <Compile Include="Medieval Overhaul\Production Chains\Timber Generation\ThingDefGenerator_Timber.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Ghoul.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_HornetNestSpawner.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_BedCureHediff.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_Ghoul.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_HornetNestSpawner.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_ThingProducer.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_ThingProducer.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\Comp_BedCureHediff.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Item.cs" />
     <Compile Include="ImprovedNeutrotrainer\CompPropertiesUseEffect_LearnSkillImproved.cs" />
     <Compile Include="ImprovedNeutrotrainer\CompUseEffect_LearnSkillImproved.cs" />

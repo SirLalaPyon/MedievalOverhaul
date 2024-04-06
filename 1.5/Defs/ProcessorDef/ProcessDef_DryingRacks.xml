@@ -12,6 +12,9 @@
 			<disallowedThingDefs>
 				<li>DankPyon_DriedMeat</li>
 			</disallowedThingDefs>
+			<disallowedCategories>
+				<li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+			</disallowedCategories>
 		</ingredientFilter>
 		<processDays>2.5</processDays><!-- in days, a day is 60,000 ticks -->
 		<capacityFactor>1.0</capacityFactor>

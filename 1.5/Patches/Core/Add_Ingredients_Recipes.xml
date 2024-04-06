@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Add Fueled Stove Recipes -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[not(contains(recipeUsers,'DankPyon_RusticCookingTable')) and (contains(recipeUsers,'FueledStove'))]/recipeUsers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[not(contains(recipeUsers,'DankPyon_RusticCookingTable')) and (contains(recipeUsers,'FueledStove'))]/recipeUsers</xpath>
+			<value>
+				<li>DankPyon_RusticCookingTable</li>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Corn -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[contains(.,'RawCorn')]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[contains(.,'RawCorn')]/ingredients/li[contains(.,'RawCorn')]/filter/thingDefs</xpath>
+			<value>
+				<li>DankPyon_RawMacci</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[contains(.,'RawCorn')]/fixedIngredientFilter/thingDefs/li[.="RawCorn"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[contains(.,'RawCorn')]/fixedIngredientFilter/thingDefs</xpath>
+			<value>
+				<li>DankPyon_RawMacci</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[contains(.,'RawCorn')]/defaultIngredientFilter/thingDefs/li[.="RawCorn"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[contains(.,'RawCorn')]/defaultIngredientFilter/thingDefs</xpath>
+			<value>
+				<li>DankPyon_RawMacci</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<!-- Milk -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[contains(.,'Milk')]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[contains(.,'Milk')]/ingredients/li[contains(.,'Milk')]/filter/thingDefs</xpath>
+			<value>
+				<li>DankPyon_GoatMilk</li>
+				<li>DankPyon_SheepMilk</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[contains(.,'Milk')]/fixedIngredientFilter/thingDefs/li[.="Milk"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[contains(.,'Milk')]/fixedIngredientFilter/thingDefs</xpath>
+			<value>
+				<li>DankPyon_GoatMilk</li>
+				<li>DankPyon_SheepMilk</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[contains(.,'Milk')]/defaultIngredientFilter/thingDefs/li[.="Milk"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[contains(.,'Milk')]/defaultIngredientFilter/thingDefs</xpath>
+			<value>
+				<li>DankPyon_GoatMilk</li>
+				<li>DankPyon_SheepMilk</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

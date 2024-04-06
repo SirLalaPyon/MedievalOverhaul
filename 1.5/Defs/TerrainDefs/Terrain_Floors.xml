@@ -5,7 +5,6 @@
 		<defName>DankPyon_PlowedSoil</defName>
 		<label>plowed soil</label>
 		<description>Plow the soil to increase its fertility.</description>
-
 		<texturePath>Terrain/PlowedSoil</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>350</renderPrecedence>
@@ -22,13 +21,11 @@
 			<WorkToBuild>500</WorkToBuild>
 		</statBases>
 		<scatterType>Rocky</scatterType>
-
 		<affordances>
 			<li>GrowSoil</li>
 			<li>Diggable</li>
 			<li>Light</li>
 		</affordances>
-
 		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>1.25</fertility>
 		<takeFootprints>True</takeFootprints>
@@ -46,6 +43,7 @@
 			<li>DankPyon_BasicAgriculture</li>
 		</researchPrerequisites>
 	</TerrainDef>
+
 	<!--==================== Ice ====================-->
 	<!--TerrainDef>
     <defName>DankPyon_TrenchTerrain</defName>

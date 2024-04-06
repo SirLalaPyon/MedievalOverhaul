@@ -50,6 +50,7 @@ namespace MedievalOverhaul
 			if (fuelComp.HasFuel) lastFueledTick = ticks;
 			if (lastFueledTick < 0 || ticks - lastFueledTick <= slopComp.Props.unfueledTicksToRot) return;
 			nutritionComp.ConsumeFuel(nutritionComp.Fuel);
+			slopComp.ingredients.Clear();
 			Messages.Message("DA_MealSlop_Spoiled".TranslateSimple().CapitalizeFirst(),
 				new TargetInfo(PositionHeld, MapHeld), MessageTypeDefOf.NegativeEvent);
 		}
@@ -70,7 +71,6 @@ namespace MedievalOverhaul
                 this.slopComp.ingredients.Clear();
             }
             def.building.soundDispense.PlayOneShot(new TargetInfo(Position, Map));
-			//return ThingMaker.MakeThing(slopComp.Props.mealDef);
 			return meal;
 		}
 
@@ -90,11 +90,9 @@ namespace MedievalOverhaul
                 stringBuilder.AppendLine("Ingredients".Translate() + ": ");
                 stringBuilder.Append(this.slopComp.GetIngredientsString(false, out var _));
             }
-            if (!this.IsSociallyProper(null, false))
-				stringBuilder.AppendLine("InPrisonCell".Translate());
 			if (!this.fuelComp.HasFuel && this.nutritionComp.HasFuel)
 			{
-				stringBuilder.AppendLine("DankPyon_SlopRotting");
+				stringBuilder.AppendLine("DankPyon_SlopRotting".Translate());
 			}
 			return stringBuilder.ToString().Trim();
 		}

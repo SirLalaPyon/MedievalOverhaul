@@ -21,7 +21,7 @@
 
 	<!-- ==================== Market Stall ==================== -->
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_TableMarket">
-		<defName>DankPyon_TableMarket_Meat</defName>
+		<defName>DankPyon_TableMarket_Meats</defName>
 		<label>meat stall</label>
 		<description>A table filled to display meat.</description>
 		<graphicData>
@@ -166,7 +166,7 @@
 		<building>
 			<isEdifice>false</isEdifice>
 			<relatedBuildCommands Inherit="False">
-				<li>DankPyon_TableMarket_Meat</li>
+				<li>DankPyon_TableMarket_Meats</li>
 				<li>DankPyon_TableMarket_Dairy</li>
 				<li>DankPyon_TableMarket_Bread</li>
 			</relatedBuildCommands>

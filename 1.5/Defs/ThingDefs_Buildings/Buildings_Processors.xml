@@ -614,23 +614,19 @@
 		</graphicData>
 		<fillPercent>0.45</fillPercent>
 		<pathCost>42</pathCost>
-
 		<statBases>
 			<WorkToBuild>600</WorkToBuild>
 			<Mass>10</Mass>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<costList>
 			<DankPyon_IronIngot>10</DankPyon_IronIngot>
 		</costList>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-
 		<comps>
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>25</capacity>
@@ -651,7 +647,6 @@
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
-
 		<tickerType>Rare</tickerType>
 		<!--constructEffect>ConstructWood</constructEffect-->
 		<building>
@@ -660,7 +655,6 @@
 			</buildingTags>
 			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
 		</building>
-
 		<researchPrerequisites>
 			<li>Brewing</li>
 		</researchPrerequisites>

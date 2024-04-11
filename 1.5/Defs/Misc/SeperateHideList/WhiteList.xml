@@ -23,5 +23,39 @@
 			<li>Leather_Chitin</li>
 		</blackListLeathers>
     </MedievalOverhaul.SeperateHideList>
+	
+	<MedievalOverhaul.HideGraphicList>
+		<defName>HideGraphicList</defName>
+		<label>Hide Graphic List</label>
+		<scaleHidesBodyDef>
+			<li>Bird</li>
+			<li>DankPyon_LindwurmBody</li>
+			<li>Snake</li>
+		</scaleHidesBodyDef>
+		<scaleHidesRaceDef>
+			<li>Rhinoceros</li>
+		</scaleHidesRaceDef>
+		<furHidesBodyDef>
+		</furHidesBodyDef>
+		<furHidesRaceDef>
+			<li>Cougar</li>
+			<li>Panther</li>
+			<li>Lynx</li>
+			<li>Bear_Grizzly</li>
+			<li>Bear_Polar</li>
+			<li>GuineaPig</li>
+			<li>Husky</li>
+			<li>Hare</li>
+			<li>Snowhare</li>
+			<li>Wolf_Timber</li>
+			<li>Wolf_Arctic</li>
+			<li>Fox_Fennec</li>
+			<li>Fox_Red</li>
+			<li>Fox_Arctic</li>
+			<li>Squirrel</li>
+			<li>Raccoon</li>
+			<li>Megasloth</li>
+		</furHidesRaceDef>
+	</MedievalOverhaul.HideGraphicList>
 
 </Defs>

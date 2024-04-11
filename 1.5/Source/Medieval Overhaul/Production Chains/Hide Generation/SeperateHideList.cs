@@ -14,4 +14,13 @@ namespace MedievalOverhaul
         public List<string> blackListRaces;
         public List<string> blackListLeathers;
     }
+    public class HideGraphicList : Def
+    {
+        public List<string> scaleHidesBodyDef;
+        public List<string> scaleHidesRaceDef;
+        public List<string> furHidesBodyDef;
+        public List<string> furHidesRaceDef;
+        public List<string> plainHidesBodyDef;
+        public List<string> plainHidesRaceDef;   
+    }
 }

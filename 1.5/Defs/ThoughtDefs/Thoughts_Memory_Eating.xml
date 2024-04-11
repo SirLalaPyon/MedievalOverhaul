@@ -473,5 +473,37 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	<!-- Carrot Cake -->
+	<ThoughtDef>
+		<defName>DankPyon_AteCarrotCake</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>ate carrot cake</label>
+				<description>Indulgent and warmly spiced. What a delightful slice of cake!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Lemon Cake -->
+	<ThoughtDef>
+		<defName>DankPyon_AteLemonCake</defName>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>ate lemon cake</label>
+				<description>Tangy and refreshing, with just the right amount of sweetness. What a delightful treat!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 </Defs>

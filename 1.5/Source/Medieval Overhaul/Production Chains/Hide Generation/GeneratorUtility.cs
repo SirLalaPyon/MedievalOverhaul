@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 namespace MedievalOverhaul
@@ -16,6 +17,7 @@ namespace MedievalOverhaul
         public static Dictionary<ThingDef, ThingDef> LeatherDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static Dictionary<ThingDef, ThingDef> AnimalDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static SeperateHideList WhiteList = DefDatabase<SeperateHideList>.GetNamed("WhiteList");
+        public static HideGraphicList HideGraphicList = DefDatabase<HideGraphicList>.GetNamed("HideGraphicList");
         private static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
 
         public static void MakeListOfAnimals()
@@ -77,37 +79,17 @@ namespace MedievalOverhaul
             def.healthAffectsPrice = false;
             def.soundInteract = SoundDefOf.Standard_Drop;
             def.statBases = new List<StatModifier>();
-            //ThingDef def = new ThingDef
-            //{
-            //    description = "DankPyon_Hide_Description".Translate(),
-            //    thingClass = typeof(ThingWithComps),
-            //    category = ThingCategory.Item,
-            //    drawerType = DrawerType.MapMeshOnly,
-            //    resourceReadoutPriority = ResourceCountPriority.Middle,
-            //    useHitPoints = true,
-            //    selectable = true,
-            //    stackLimit = 100,
-            //    alwaysHaulable = true,
-            //    drawGUIOverlay = true,
-            //    rotatable = false,
-            //    pathCost = 14,
-            //    allowedArchonexusCount = -1,
-            //    tickerType = TickerType.Rare,
-            //    healthAffectsPrice = false,
-            //    soundInteract = SoundDefOf.Standard_Drop,
-            //    statBases = new List<StatModifier>()
-            //};
             def.SetStatBaseValue(StatDefOf.Beauty, -4f);
             def.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
             def.SetStatBaseValue(StatDefOf.Flammability, 1f);
             def.SetStatBaseValue(StatDefOf.DeteriorationRate, 2f);
             def.SetStatBaseValue(StatDefOf.Mass, 0.03f);
             def.SetStatBaseValue(StatDefOf.MarketValue, 1f);
-
+            string texPathString = GetHideGraphic(raceDef);
             def.graphicData = new GraphicData
             {
                 graphicClass = typeof(Graphic_StackCount),
-                texPath = "Resources/HeavyFurMedium"
+                texPath = texPathString
             };
 
             def.comps.Add(new CompProperties_Forbiddable());
@@ -132,7 +114,6 @@ namespace MedievalOverhaul
         {
             ThingDef hideDef = BasicHideDef(raceDef);
             SetNameAndDesc(leatherDef, hideDef, raceDef);
-            //GraphicCheck(hideDef, raceDef);
             if (leatherDef.stuffProps != null)
             {
                 hideDef.graphicData.color = leatherDef.stuffProps.color;
@@ -160,15 +141,6 @@ namespace MedievalOverhaul
                 hideDef.defName = $"DankPyon_Hide_Plain".Replace(" ", "").Replace("-", "");
                 hideDef.label = $"Plain hide";
             }
-            //else if (leatherDef.defName == "Leather_Bird")
-            //{
-            //    hideDef.defName = $"DankPyon_Hide_BirdMedium".Replace(" ", "").Replace("-", "");
-            //    hideDef.label = $"Medium birdskin";
-            //}
-            //else if (leatherDef.defName == "Leather_Bear")
-            //{
-
-            //}
             else if (WhiteList.whiteListRaces.Contains(raceDef.defName) || WhiteList.whiteListLeathers.Contains(leatherDef.defName))
             {
                 hideDef.defName = $"DankPyon_Hide_{Utilities.RemoveSubstring(raceDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
@@ -181,14 +153,73 @@ namespace MedievalOverhaul
             }
         }
 
-        //private static void GraphicCheck (ThingDef hideDef, ThingDef raceDef)
-        //{
-        //    if (raceDef.race.body.defName == "Bird" && raceDef.race.baseBodySize >= 1)
-        //    {
-        //        hideDef.graphicData.texPath = "Resources/ScaleMedium";
-        //    }
-        //}
-        //internal static SeperateHideList WhiteList;
-
+        private static string GetHideGraphic(ThingDef raceDef)
+        {
+            string texPathString = "Resources/HeavyFurMedium";
+            float bodySize = raceDef.race.baseBodySize;
+            string bodyDef = raceDef.race.body.ToString();
+            string defName = raceDef.ToString();
+            if (HideGraphicList.scaleHidesBodyDef.Contains(bodyDef) || HideGraphicList.scaleHidesRaceDef.Contains(defName))
+            {
+                if (bodySize < 0.5)
+                {
+                    texPathString = "Resources/ScaleTiny";
+                    return texPathString;
+                }
+                if (bodySize < 1)
+                {
+                    texPathString = "Resources/ScaleSmall";
+                    return texPathString;
+                }
+                if (bodySize < 2)
+                {
+                    texPathString = "Resources/ScaleMedium";
+                    return texPathString;
+                }
+                //if (bodySize < 3)
+                //{
+                //    texPathString = "Resources/ScaleLarge";
+                //    return texPathString;
+                //}
+                //texPathString = "Resources/ScaleHuge";
+                //    return texPathString;
+            }
+            if (HideGraphicList.furHidesBodyDef.Contains(bodyDef) || HideGraphicList.scaleHidesRaceDef.Contains(defName))
+            {
+                if (bodySize < 0.5)
+                {
+                    texPathString = "Resources/HeavyFurTiny";
+                    return texPathString;
+                }
+                if (bodySize < 1)
+                {
+                    texPathString = "Resources/HeavyFurSmall";
+                    return texPathString;
+                }
+                if (bodySize < 2)
+                {
+                    texPathString = "Resources/HeavyFurMedium";
+                    return texPathString;
+                }
+                //if (bodySize < 3)
+                //{
+                //    texPathString = "Resources/HeavyFurHuge";
+                //    return texPathString;
+                //}
+                //    texPathString = "Resources/HeavyFurHuge";
+                //    return texPathString;
+            }
+            if (bodySize < 0.5)
+            {
+                texPathString = "Resources/HideTiny";
+                return texPathString;
+            }
+            if (bodySize < 1)
+            {
+                texPathString = "Resources/HideTiny";
+                return texPathString;
+            }
+            return texPathString;
+        }
     }
 }

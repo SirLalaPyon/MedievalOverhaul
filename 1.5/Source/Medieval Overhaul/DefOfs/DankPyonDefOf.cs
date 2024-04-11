@@ -75,6 +75,7 @@ namespace MedievalOverhaul
         public static JobDef DankPyon_Slop_Refuel_StatAtomic;
         public static JobDef DankPyon_Slop_Refuel_Stat;
 
+        public static BodyDef Bird;
     }
 
 }

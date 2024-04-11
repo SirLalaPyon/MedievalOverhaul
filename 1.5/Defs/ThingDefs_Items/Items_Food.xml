@@ -1201,5 +1201,63 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<!-- Carrot Cake -->
+	<ThingDef ParentName="MealCooked">
+		<defName>DankPyon_MealCarrotCake</defName>
+		<label>carrot cake</label>
+		<description>A moist and flavorful cake crafted from freshly grated carrots, infused with warm spices, and enveloped in a luscious cream cheese frosting. A classic indulgence perfect for any occasion.</description>
+		<graphicData>
+			<texPath>Meal/CarrotCake</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>21</MarketValue>
+			<Nutrition>0.9</Nutrition>
+			<WorkToMake>400</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<tasteThought>DankPyon_AteCarrotCake</tasteThought>
+			<optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DankPyon_AteBakeFine</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<rotatable>false</rotatable>
+	</ThingDef>
+	
+	<!-- Lemon Cake -->
+	<ThingDef ParentName="MealCooked">
+		<defName>DankPyon_MealLemonCake</defName>
+		<label>lemon cake</label>
+		<description>A zesty and moist cake infused with tangy lemon flavor, complemented by a light and fluffy texture. A refreshing dessert perfect for any occasion.</description>
+		<graphicData>
+			<texPath>Meal/LemonCake</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>21</MarketValue>
+			<Nutrition>0.9</Nutrition>
+			<WorkToMake>400</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<tasteThought>DankPyon_AteLemonCake</tasteThought>
+			<optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DankPyon_AteBakeFine</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<rotatable>false</rotatable>
+	</ThingDef>
   
 </Defs>

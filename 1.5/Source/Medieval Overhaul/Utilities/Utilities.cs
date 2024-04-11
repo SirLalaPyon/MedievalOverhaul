@@ -37,6 +37,5 @@ namespace MedievalOverhaul
         {
             return !string.IsNullOrEmpty(input);
         }
-
     }
 }

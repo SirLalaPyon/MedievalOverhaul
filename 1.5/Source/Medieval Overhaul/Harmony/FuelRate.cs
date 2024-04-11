@@ -18,12 +18,11 @@ namespace MedievalOverhaul
             if (Utility_OnStartup.LWMFuelFilterIsEnabled)
                 return;
             float num = 1f;
-            CompStoreFuelThing comp = __instance.parent.GetComp<CompStoreFuelThing>();
-            if (comp != null && __instance.HasFuel && comp.fuelUsed != null)
+            var thingDef = __instance.parent.GetComp<CompStoreFuelThing>()?.fuelUsed;
+            if (__instance.HasFuel && thingDef != null)
             {
-                ThingDef fuelUsed = __instance.parent.GetComp<CompStoreFuelThing>().fuelUsed;
-                if (fuelUsed.GetCompProperties<CompProperties_FuelRate>() != null)
-                    num = fuelUsed.GetCompProperties<CompProperties_FuelRate>().rate;
+                ThingDef thingFuel = thingDef;
+                num = thingFuel.GetCompProperties<CompProperties_FuelRate>()?.rate ?? num;
             }
             __result = __instance.Props.fuelConsumptionRate / (60000f * num);
         }

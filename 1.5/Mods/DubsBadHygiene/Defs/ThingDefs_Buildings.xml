@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BasedWaterTower" DBHLite="true">
+		<defName>EEG_WaterTowerS</defName>
+		<label>water barrel</label>
+		<graphicData>
+			<texPath>Storage/BarrelBigDown</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<rotatable>true</rotatable>						
+		<size>(2,2)</size>
+		<uiIconScale>0.75</uiIconScale>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<comps>
+			<li Class="DubsBadHygiene.CompProperties_WaterStorage">
+				<WaterStorageCap>1000</WaterStorageCap>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<researchPrerequisites>
+			<li MayRequire="dbhlitemode">Plumbing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BasedWaterWell" DBHLite="true">
+		<defName>EGG_AdvancedWell</defName>
+		<label>water well</label>
+		<description>Accesses ground water which can be pumped by water pumps. The presence of sewage or other pollution will reduce water quality and can cause contamination.</description>
+		<!--<specialDisplayRadius>7.9</specialDisplayRadius>-->
+		<researchPrerequisites>
+			<li MayRequire="dbhlitemode">Plumbing</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>DBH/Things/Building/Water/PrimitiveWell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<comps>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="DubsBadHygiene.CompProperties_WaterInlet">
+				<Radius>7.9</Radius>
+			</li>
+		</comps>
+
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList Inherit="False"/>
+		<placeWorkers>
+			<li>DubsBadHygiene.PlaceWorker_WaterGrid</li>
+			<li>DubsBadHygiene.PlaceWorker_SewageGrid</li>
+			<li>DubsBadHygiene.PlaceWorker_UserGrid</li>
+		</placeWorkers>
+	</ThingDef>	
+</Defs>

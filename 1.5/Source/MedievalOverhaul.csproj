@@ -35,8 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Medieval Overhaul\Fuel\CompFuelRate.cs" />
-    <Compile Include="Medieval Overhaul\Fuel\CompProperties_FuelRate.cs" />
     <Compile Include="Medieval Overhaul\Fuel\CompProperties_StoreFuelThing.cs" />
     <Compile Include="Medieval Overhaul\Fuel\CompStoreFuelThing.cs" />
     <Compile Include="Medieval Overhaul\Harmony\FixBrokenDownBuilding_JobOnThing_Patch.cs" />
@@ -46,7 +44,7 @@
     <Compile Include="Medieval Overhaul\Harmony\InspectStringPatch.cs" />
     <Compile Include="Medieval Overhaul\Harmony\StoreFuel.cs" />
     <Compile Include="Medieval Overhaul\Fuel\ITab_Fuel.cs" />
-    <Compile Include="Medieval Overhaul\Fuel\Utility.cs" />
+    <Compile Include="Medieval Overhaul\Utilities\Utility.cs" />
     <Compile Include="Medieval Overhaul\Fuel\UtilityOnStartup.cs" />
     <Compile Include="Medieval Overhaul\DefOfs\StuffabilityDefOf.cs" />
     <Compile Include="Medieval Overhaul\Extensions\GolemSpawn.cs" />
@@ -112,7 +110,6 @@
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_HealScars.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\PlantExtension.cs" />
     <Compile Include="Medieval Overhaul\Harmony\HarmonyInstance.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\Utilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Medieval Overhaul\Utilities\DebugTools.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

@@ -30,6 +30,48 @@
 
 			</operations>
 		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- <li Class="PatchOperationConditional"> -->
+					<!-- <xpath>/Defs/ThingDef[stuffCategories[li="DankPyon_RawWood"]][stuffCategories[not(Woody)]]</xpath> -->
+					<!-- <match Class="PatchOperationReplace"> -->
+						<!-- <xpath>/Defs/ThingDef[stuffCategories[li="DankPyon_RawWood"][stuffCategories[not(Woody)]]/stuffCategories/li[.="DankPyon_RawWood"]</xpath> -->
+						<!-- <value> -->
+							<!-- <li>Woody</li> -->
+						<!-- </value> -->
+					<!-- </match> -->
+				<!-- </li> -->
+				
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/RecipeDef[recipeUsers[li="DankPyon_Trestle"]]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>/Defs/RecipeDef[recipeUsers[li="DankPyon_Trestle"]]/recipeUsers/li[.="DankPyon_Trestle"]</xpath>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="DankPyon_Trestle"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="DankPyon_Trestle"]</xpath>
+						<value>
+							<designationCategory Inherit="False"/>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li/thingDef[.="DankPyon_RawWood"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li/thingDef[.="DankPyon_RawWood"]</xpath>
+						<value>
+							<thingDef>WoodLog</thingDef>
+						</value>
+					</match>
+				</li>
+
+			</operations>
+		</inactive>
 	</Operation>
 
 </Patch>

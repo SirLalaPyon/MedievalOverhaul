@@ -7,12 +7,18 @@ using Verse;
 
 namespace MedievalOverhaul
 {
-    internal class IncidentProperties : DefModExtension
+    public class IncidentProperties : DefModExtension
     {
         public PawnKindDef kindDef;
         public IntRange max = new IntRange(3, 5);
         public bool leaveMapAfterTime = true;
 
         public static IncidentProperties Get(Def def) => def.GetModExtension<IncidentProperties>();
+    }
+    public class FuelValueProperty : DefModExtension
+    {
+        public int fuelValue;
+
+        public static FuelValueProperty Get(Def def) => def.GetModExtension<FuelValueProperty>();
     }
 }

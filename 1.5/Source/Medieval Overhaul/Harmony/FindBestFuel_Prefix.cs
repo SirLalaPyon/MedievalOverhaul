@@ -24,12 +24,13 @@ namespace MedievalOverhaul
             {
                 return true;
             }
-            CompRefuelable compRefuelable = refuelable.TryGetComp<CompRefuelable>();
+            //CompRefuelable compRefuelable = refuelable.TryGetComp<CompRefuelable>();
+            var compRefuelable = refuelable.TryGetComp<CompRefuelable>()?.HasFuel;
             CompStoreFuelThing compStorage = refuelable.TryGetComp<CompStoreFuelThing>();
             if (compRefuelable != null && compStorage != null)
             {
-                ThingFilter filter = refuelable.TryGetComp<CompStoreFuelThing>().AllowedFuelFilter;
-                if (compRefuelable.HasFuel && compStorage.fuelUsed != null)
+                ThingFilter filter = compStorage.AllowedFuelFilter;
+                if (compRefuelable == true && compStorage.fuelUsed != null)
                 {
                     ThingDef fuelUsed = compStorage.fuelUsed;
                     if (pawn.Map.listerThings.AnyThingWithDef(fuelUsed))

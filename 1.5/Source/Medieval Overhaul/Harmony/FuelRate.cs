@@ -22,7 +22,7 @@ namespace MedievalOverhaul
             if (__instance.HasFuel && thingDef != null)
             {
                 ThingDef thingFuel = thingDef;
-                num = thingFuel.GetCompProperties<CompProperties_FuelRate>()?.rate ?? num;
+                num = thingFuel.GetModExtension<FuelValueProperty>()?.fuelValue ?? num;
             }
             __result = __instance.Props.fuelConsumptionRate / (60000f * num);
         }

@@ -143,12 +143,12 @@ namespace MedievalOverhaul
             }
             else if (WhiteList.whiteListRaces.Contains(raceDef.defName) || WhiteList.whiteListLeathers.Contains(leatherDef.defName))
             {
-                hideDef.defName = $"DankPyon_Hide_{Utilities.RemoveSubstring(raceDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
+                hideDef.defName = $"DankPyon_Hide_{Utility.RemoveSubstring(raceDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
                 hideDef.label = $"{raceDef.label}" + " " + "DankPyon_Hide".Translate();
             }
             else
             {
-                hideDef.defName = $"DankPyon_Hide_{Utilities.RemoveSubstring(leatherDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
+                hideDef.defName = $"DankPyon_Hide_{Utility.RemoveSubstring(leatherDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
                 hideDef.label = $"{leatherDef.label}" + " " + "DankPyon_Hide".Translate();
             }
         }

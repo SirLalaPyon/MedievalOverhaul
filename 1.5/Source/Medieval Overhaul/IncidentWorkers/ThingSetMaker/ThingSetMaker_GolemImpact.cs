@@ -67,7 +67,6 @@ namespace MedievalOverhaul
             System.Random random = new System.Random();
             int randomIndex = random.Next(0, mineAbles.Count);
             ThingDef thingDef = mineAbles[randomIndex];
-            Log.Message(mineAbles[randomIndex]);
             return thingDef;
         }
         protected override IEnumerable<ThingDef> AllGeneratableThingsDebugSub(ThingSetMakerParams parms)

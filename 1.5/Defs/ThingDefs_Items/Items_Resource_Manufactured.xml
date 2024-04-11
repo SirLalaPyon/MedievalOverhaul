@@ -95,11 +95,11 @@
 			<Flammability>2</Flammability>
 			<MaxHitPoints>60</MaxHitPoints>
 		</statBases>
-		<comps>
-			<li Class="MedievalOverhaul.CompProperties_FuelRate">
-				<rate>8</rate>
+		<modExtensions>
+			<li Class="MedievalOverhaul.FuelValueProperty">
+				<fuelValue>8</fuelValue>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 
 	<!--=============== Gunpowder ====================-->

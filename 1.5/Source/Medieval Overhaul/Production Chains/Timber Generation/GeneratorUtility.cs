@@ -182,17 +182,21 @@ namespace MedievalOverhaul.Wood
                 color = wood.stuffProps.color,
                 statFactors = wood.stuffProps.statFactors,
             };
-            log.comps.Add(new CompProperties_FuelRate()
+            log.modExtensions = new List<DefModExtension>
             {
-                rate = 2f,
-            });
+                new FuelValueProperty()
+                {
+                    fuelValue = 2,
+                },
+            };
+
 
             return log;
         }
 
         private static void SetNameAndDesc(ThingDef wood, ThingDef timber, ThingDef raceDef)
         {
-            timber.defName = $"DankPyon_Log_{Utilities.RemoveSubstring(wood, "DankPyon_")}".Replace(" ", "").Replace("-", "");
+            timber.defName = $"DankPyon_Log_{Utility.RemoveSubstring(wood, "DankPyon_")}".Replace(" ", "").Replace("-", "");
             timber.label = $"{wood.label}" + " " + "DankPyon_Log".Translate();
             wood.label = $"{wood.label}" + " " + "DankPyon_Timber".Translate();
         }

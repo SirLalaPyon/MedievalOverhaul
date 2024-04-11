@@ -64,11 +64,11 @@
 		<butcherProducts>
 			<WoodLog>2</WoodLog>
 		</butcherProducts>
-		<comps>
-			<li Class="MedievalOverhaul.CompProperties_FuelRate">
-				<rate>2</rate>
+		<modExtensions>
+			<li Class="MedievalOverhaul.FuelValueProperty">
+				<fuelValue>2</fuelValue>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceVerbBase">
@@ -138,11 +138,11 @@
 			</li>
 		</tools>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<comps>
-			<li Class="MedievalOverhaul.CompProperties_FuelRate">
-				<rate>2</rate>
+		<modExtensions>
+			<li Class="MedievalOverhaul.FuelValueProperty">
+				<fuelValue>2</fuelValue>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 
 	<!--============================== Processed Wood ==============================-->
@@ -215,11 +215,11 @@
 		<!-- </tools> -->
 		<!-- <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> -->
 
-		<!-- <comps> -->
-			<!-- <li Class="MedievalOverhaul.CompProperties_FuelRate"> -->
-				<!-- <rate>1</rate> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="MedievalOverhaul.FuelValueProperty"> -->
+				<!-- <fuelValue>1</fuelValue> -->
 			<!-- </li> -->
-		<!-- </comps> -->
+		<!-- </modExtensions> -->
 	<!-- </ThingDef> -->
 
 	<!-- Elven Wood -->
@@ -290,11 +290,11 @@
 			<!-- </li> -->
 		<!-- </tools> -->
 		<!-- <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> -->
-		<!-- <comps> -->
-			<!-- <li Class="MedievalOverhaul.CompProperties_FuelRate"> -->
-				<!-- <rate>5</rate> -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="MedievalOverhaul.FuelValueProperty"> -->
+				<!-- <fuelValue>5</fuelValue> -->
 			<!-- </li> -->
-		<!-- </comps> -->
+		<!-- </modExtensions> -->
 	<!-- </ThingDef> -->
 
 	<!-- Dryad Wood -->
@@ -362,11 +362,11 @@
 			</li>
 		</tools>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<comps>
-			<li Class="MedievalOverhaul.CompProperties_FuelRate">
-				<rate>5</rate>
+		<modExtensions>
+			<li Class="MedievalOverhaul.FuelValueProperty">
+				<fuelValue>5</fuelValue>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef-->
 
 	<!-- Ancient Wood -->
@@ -463,11 +463,11 @@
 		<burnableByRecipe>false</burnableByRecipe>
 		<smeltable>false</smeltable>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<comps>
-			<li Class="MedievalOverhaul.CompProperties_FuelRate">
-				<rate>4</rate>
+		<modExtensions>
+			<li Class="MedievalOverhaul.FuelValueProperty">
+				<fuelValue>4</fuelValue>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 
 	<!--============================== Ice ==============================-->

@@ -36,5 +36,31 @@ namespace MedievalOverhaul
             }
             return false;
         }
+        public static string RemoveSubstring(ThingDef thingDef, string partToRemove)
+        {
+            string stringDefName = thingDef.defName;
+            int index = stringDefName.IndexOf(partToRemove);
+            if (index == -1)
+            {
+                return stringDefName;
+            }
+            else
+            {
+                string modifiedString = stringDefName.Replace(partToRemove, "");
+
+                if (IsValidString(modifiedString))
+                {
+                    return modifiedString;
+                }
+                else
+                {
+                    return stringDefName;
+                }
+            }
+        }
+        static bool IsValidString(string input)
+        {
+            return !string.IsNullOrEmpty(input);
+        }
     }
 }

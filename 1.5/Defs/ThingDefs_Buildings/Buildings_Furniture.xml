@@ -124,7 +124,6 @@
 		<soundImpactDefault Inherit="false"/>
 	</ThingDef>
 
-
 	<ThingDef ParentName="BuildingBase" Name="DankPyon_WallTorchBase">
 		<defName>DankPyon_WallTorch</defName>
 		<label>wall torch</label>
@@ -171,19 +170,19 @@
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
-			<li>Placeworker_AttachedToWall</li>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Styleable" />
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
 				</fuelFilter>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -214,23 +213,23 @@
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes><li>Flame</li></focusTypes>
 				<offsets>
-					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefsLit">
-						<defs>
-							<li>Campfire</li>
-							<li>TorchLamp</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-						</defs>
-						<offsetPerBuilding>0.01</offsetPerBuilding>
-						<radius>9.9</radius>
-						<maxBuildings>8</maxBuildings>
-						<explanationKey>MeditationFocusPerFlame</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					</li>
+				<li Class="FocusStrengthOffset_Lit">
+					<offset>0.1</offset>
+				</li>
+				<li Class="FocusStrengthOffset_BuildingDefsLit">
+					<defs>
+					<li>Campfire</li>
+					<li>TorchLamp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+					</defs>
+					<offsetPerBuilding>0.01</offsetPerBuilding>
+					<radius>9.9</radius>
+					<maxBuildings>8</maxBuildings>
+					<explanationKey>MeditationFocusPerFlame</explanationKey>
+					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+				</li>
 				</offsets>
 			</li>
 		</comps>
@@ -267,6 +266,7 @@
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
 		<selectable>true</selectable>
+
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -281,21 +281,22 @@
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
-			<li>Placeworker_AttachedToWall</li>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Styleable" />
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.5</fuelConsumptionRate>
 				<fuelCapacity>40.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
+				<thingDefs>
+					<li>WoodLog</li>
+				</thingDefs>
 				</fuelFilter>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>

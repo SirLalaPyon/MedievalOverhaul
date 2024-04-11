@@ -16,9 +16,10 @@ namespace MedievalOverhaul
 
 		public override int CountProducts(Bill_Production bill)
 		{
-			int num = 0;
-			List<ThingDef> childThingDefs = MedievalOverhaulDefOf.DankPyon_RawWood.childThingDefs;
-			for (int i = 0; i < childThingDefs.Count; i++)
+            int num = 0;
+            List<ThingDef> childThingDefs = MedievalOverhaulDefOf.DankPyon_Wood.childThingDefs;
+			Log.Message(bill.billStack.Count);
+            for (int i = 0; i < bill.billStack.Count; i++)
 			{
                 num += bill.Map.resourceCounter.GetCount(childThingDefs[i]);
 			}

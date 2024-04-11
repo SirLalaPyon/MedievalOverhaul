@@ -40,6 +40,10 @@
 		<specialProducts>
 			<li>Butchery</li>
 		</specialProducts>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_Timber">
+			</li>
+		</modExtensions>
 	</RecipeDef>
 	
 	<RecipeDef ParentName="DankPyon_MakeTimberBase">
@@ -67,6 +71,9 @@
 		<specialProducts>
 			<li>Butchery</li>
 		</specialProducts>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_Timber"/>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef ParentName="DankPyon_MakeTimberBase">
@@ -94,6 +101,9 @@
 		<specialProducts>
 			<li>Butchery</li>
 		</specialProducts>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_Timber"/>
+		</modExtensions>
 	</RecipeDef>
 
 	<!-- Tribal versions -->
@@ -106,13 +116,13 @@
 		<workAmount Inherit="False">120</workAmount>
 		<ingredients>
 			<li>
-			<filter>
-				<categories>
-					<li>DankPyon_RawWood</li>
-				</categories>
-			</filter>
-			<count>1</count>
-			</li>                                              
+				<filter>
+					<categories>
+						<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
@@ -125,6 +135,9 @@
 		<recipeUsers Inherit="false">
 			<li>CraftingSpot</li>
 		</recipeUsers>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_Timber"/>
+		</modExtensions>
 	</RecipeDef>
 
 </Defs>

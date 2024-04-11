@@ -52,23 +52,6 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_Ruby;
         public static ThingDef DankPyon_GoldOre;
 
-        public static RecipeDef DankPyon_MakeStoneChunks_Coal;
-        public static RecipeDef DankPyon_MakeStoneChunks_Sandstone;
-        public static RecipeDef DankPyon_MakeStoneChunks_Granite;
-        public static RecipeDef DankPyon_MakeStoneChunks_Limestone;
-        public static RecipeDef DankPyon_MakeStoneChunks_Slate;
-        public static RecipeDef DankPyon_MakeStoneChunks_Marble;
-        public static RecipeDef DankPyon_MakeSalt;
-        public static RecipeDef DankPyon_MakeSaltBulk;
-        public static RecipeDef DankPyon_MakeTar;
-        public static RecipeDef DankPyon_MakeTarBulk;
-        public static RecipeDef DankPyon_MakeGunpowder;
-        public static RecipeDef DankPyon_MakeGunpowderBulk;
-        public static RecipeDef DankPyon_MakeOre_IronOre;
-        public static RecipeDef DankPyon_MakeOre_IronOreBulk;
-        public static RecipeDef DankPyon_MakeOre_SilverOre;
-        public static RecipeDef DankPyon_MakeOre_SilverOreBulk;
-
         public static ThingDef DankPyon_Tree_GriffonBerry;
         public static ThingDef DankPyon_ComponentBasic;
 

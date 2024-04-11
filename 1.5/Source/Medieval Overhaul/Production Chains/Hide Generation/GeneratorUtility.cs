@@ -17,6 +17,7 @@ namespace MedievalOverhaul
         public static Dictionary<ThingDef, ThingDef> LeatherDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static Dictionary<ThingDef, ThingDef> AnimalDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static SeperateHideList WhiteList = DefDatabase<SeperateHideList>.GetNamed("WhiteList");
+        public static SeperateWoodList LogList = DefDatabase<SeperateWoodList>.GetNamed("LogList");
         public static HideGraphicList HideGraphicList = DefDatabase<HideGraphicList>.GetNamed("HideGraphicList");
         private static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
 

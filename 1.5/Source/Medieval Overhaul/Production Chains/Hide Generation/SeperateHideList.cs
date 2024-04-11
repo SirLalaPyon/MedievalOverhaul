@@ -23,4 +23,9 @@ namespace MedievalOverhaul
         public List<string> plainHidesBodyDef;
         public List<string> plainHidesRaceDef;   
     }
+
+    public class SeperateWoodList : Def
+    {
+        public List<ThingDef> blackListWood;
+    }
 }

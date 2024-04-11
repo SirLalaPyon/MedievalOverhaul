@@ -15,10 +15,5 @@ namespace MedievalOverhaul
 
         public static IncidentProperties Get(Def def) => def.GetModExtension<IncidentProperties>();
     }
-    public class FuelValueProperty : DefModExtension
-    {
-        public int fuelValue;
-
-        public static FuelValueProperty Get(Def def) => def.GetModExtension<FuelValueProperty>();
-    }
+    
 }

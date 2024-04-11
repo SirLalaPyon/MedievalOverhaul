@@ -5,38 +5,43 @@
 		<settings>
 			<li>clothChain</li>
 		</settings>
-		<inactive Class="PatchOperationSequence">
+		<active Class="PatchOperationSequence">
 			<operations>
-
+			
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/harvestedThingDef[.="DankPyon_RawCotton"]</xpath>
+					<xpath>/Defs/ThingDef[defName="Plant_Cotton"]/plant/harvestedThingDef</xpath>
 					<match Class="PatchOperationReplace">
-						<xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/harvestedThingDef[.="DankPyon_RawCotton"]</xpath>
+						<xpath>/Defs/ThingDef[defName="Plant_Cotton"]/plant/harvestedThingDef</xpath>
 						<value>
-							<harvestedThingDef>Cloth</harvestedThingDef>
+							<harvestedThingDef>DankPyon_RawCotton</harvestedThingDef>
 						</value>
 					</match>
 				</li>
 			
+			</operations>
+		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/RecipeDef[defName="DankPyon_MakeCloth"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeCloth"]/recipeUsers</xpath>
 					<match Class="PatchOperationRemove">
-						<xpath>Defs/RecipeDef[defName="DankPyon_MakeCloth"]</xpath>
+						<xpath>/Defs/RecipeDef[defName="DankPyon_MakeCloth"]/recipeUsers</xpath>
 					</match>
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]/recipeUsers</xpath>
 					<match Class="PatchOperationRemove">
-						<xpath>Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]</xpath>
+						<xpath>/Defs/RecipeDef[defName="DankPyon_MakeClothBulk"]/recipeUsers</xpath>
 					</match>
 				</li>
 
 				<!-- Flax and Linen -->
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
+					<xpath>/Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
 					<match Class="PatchOperationReplace">
-						<xpath>Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
+						<xpath>/Defs/ThingDef[defName="DankPyon_Plant_Flax"]/plant/harvestedThingDef[.="DankPyon_RawFlax"]</xpath>
 						<value>
 							<harvestedThingDef>DankPyon_Linen</harvestedThingDef>
 						</value>
@@ -44,16 +49,16 @@
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinen"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeLinen"]/recipeUsers</xpath>
 					<match Class="PatchOperationRemove">
-						<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinen"]</xpath>
+						<xpath>/Defs/RecipeDef[defName="DankPyon_MakeLinen"]/recipeUsers</xpath>
 					</match>
 				</li>
 			
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]/recipeUsers</xpath>
 					<match Class="PatchOperationRemove">
-						<xpath>Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]</xpath>
+						<xpath>/Defs/RecipeDef[defName="DankPyon_MakeLinenBulk"]/recipeUsers</xpath>
 					</match>
 				</li>
 

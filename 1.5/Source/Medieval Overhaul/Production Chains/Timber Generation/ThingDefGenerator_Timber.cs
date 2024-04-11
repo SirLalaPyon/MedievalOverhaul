@@ -20,19 +20,21 @@ namespace MedievalOverhaul
             {
                 ThingDef woodDef = tree.plant.harvestedThingDef;
                 ThingDef timberDef = new ThingDef();
-
-                if (GeneratorUtilities.WoodDefsSeen.ContainsKey(woodDef))
+                if (!GeneratorUtility.LogList.blackListWood.Contains(woodDef))
                 {
-                    timberDef = GeneratorUtilities.WoodDefsSeen[woodDef];
-                    GeneratorUtility.DetermineButcherProducts(tree, woodDef, timberDef, 1);
+                    if (GeneratorUtilities.WoodDefsSeen.ContainsKey(woodDef))
+                    {
+                        timberDef = GeneratorUtilities.WoodDefsSeen[woodDef];
+                        GeneratorUtility.DetermineButcherProducts(tree, woodDef, timberDef, 1);
+                        tree.plant.harvestedThingDef = timberDef;
+                        continue;
+                    }
+                    timberDef = GeneratorUtilities.MakeHideFor(woodDef, tree);
+                    GeneratorUtilities.TryAddEntry(tree, woodDef, timberDef);
+                    GeneratorUtilities.DetermineButcherProducts(tree, woodDef, timberDef, 1);
                     tree.plant.harvestedThingDef = timberDef;
-                    continue;
+                    yield return timberDef;
                 }
-                timberDef = GeneratorUtilities.MakeHideFor(woodDef, tree);
-                GeneratorUtilities.TryAddEntry(tree, woodDef, timberDef);
-                GeneratorUtilities.DetermineButcherProducts(tree, woodDef, timberDef, 1);
-                tree.plant.harvestedThingDef = timberDef;
-                yield return timberDef;
             }
             foreach (ThingDef animal in GeneratorUtilities.AllAnimals)
             {

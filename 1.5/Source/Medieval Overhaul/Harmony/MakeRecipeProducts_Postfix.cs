@@ -23,47 +23,44 @@ namespace MedievalOverhaul
             MedievalOverhaulDefOf.DankPyon_Ruby,
             MedievalOverhaulDefOf.DankPyon_GoldOre,
         };
-        static readonly List<RecipeDef> mineRecipe = new List<RecipeDef>()
+        public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, RecipeDef recipeDef, List<Thing> ingredients)
         {
-            MedievalOverhaulDefOf.DankPyon_MakeStoneChunks_Coal,
-            MedievalOverhaulDefOf.DankPyon_MakeStoneChunks_Sandstone,
-            MedievalOverhaulDefOf.DankPyon_MakeStoneChunks_Granite,
-            MedievalOverhaulDefOf.DankPyon_MakeStoneChunks_Limestone,
-            MedievalOverhaulDefOf.DankPyon_MakeStoneChunks_Slate,
-            MedievalOverhaulDefOf.DankPyon_MakeStoneChunks_Marble,
-            MedievalOverhaulDefOf.DankPyon_MakeSalt,
-            MedievalOverhaulDefOf.DankPyon_MakeSaltBulk,
-            MedievalOverhaulDefOf.DankPyon_MakeTar,
-            MedievalOverhaulDefOf.DankPyon_MakeTarBulk,
-            MedievalOverhaulDefOf.DankPyon_MakeGunpowder,
-            MedievalOverhaulDefOf.DankPyon_MakeGunpowderBulk,
-            MedievalOverhaulDefOf.DankPyon_MakeOre_IronOre,
-            MedievalOverhaulDefOf.DankPyon_MakeOre_IronOreBulk,
-            MedievalOverhaulDefOf.DankPyon_MakeOre_SilverOre,
-            MedievalOverhaulDefOf.DankPyon_MakeOre_SilverOreBulk,
-        };
-
-        public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, RecipeDef recipeDef)
-        {
-            foreach (var thing in __result)
+            if (__result != null)
             {
-                yield return thing;
-            }
-            if (mineRecipe.Contains(recipeDef) && __result != null)
-            {
-                double recipeWorkAmount = recipeDef.workAmount / 600f;
-                double roundedNumber = Math.Round(recipeWorkAmount) * 0.01;
-                float randChance = ((float)roundedNumber + 0.01f);
-                if (Rand.Chance(randChance))
+                if (recipeDef.HasModExtension<RecipeExtension_Timber>())
                 {
-                    int randomInRange = Rand.RangeInclusive(0, bonusGems.Count - 1);
-                    ThingDef bonusGemDef = bonusGems[randomInRange];
-                    Thing bonusGem = ThingMaker.MakeThing(bonusGemDef);
-                    bonusGem.stackCount = 1;
-                    yield return bonusGem;
+                    int num = 0;
+                    Thing thing = null;
+                    thing = ingredients[0];
+                    for (int i = 0; i < ingredients.Count; i++)
+                    {
+                        num += thing.stackCount * 2;
+                    }
+                    ThingDefCountClass thingDefCountClass = thing.def.butcherProducts[0];
+                    ThingDef butcherDef = thingDefCountClass.thingDef;
+                    Thing butcherThing = ThingMaker.MakeThing(butcherDef, null);
+                    butcherThing.stackCount = num;
+                    yield return butcherThing;
+                }
+                else foreach (var thing in __result)
+                {
+                    yield return thing;
+                }
+                if (recipeDef.HasModExtension<RecipeExtension_Mine>())
+                {
+                    double recipeWorkAmount = recipeDef.workAmount / 600f;
+                    double roundedNumber = Math.Round(recipeWorkAmount) * 0.01;
+                    float randChance = ((float)roundedNumber + 0.01f);
+                    if (Rand.Chance(randChance))
+                    {
+                        int randomInRange = Rand.RangeInclusive(0, bonusGems.Count - 1);
+                        ThingDef bonusGemDef = bonusGems[randomInRange];
+                        Thing bonusGem = ThingMaker.MakeThing(bonusGemDef);
+                        bonusGem.stackCount = 1;
+                        yield return bonusGem;
+                    }
                 }
             }
-            
         }
     }
 }

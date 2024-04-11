@@ -61,9 +61,9 @@
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li/thingDef[.="DankPyon_RawWood"]</xpath>
+					<xpath>/Defs/ScenarioDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li/thingDef[.="DankPyon_RawWood"]</xpath>
 					<match Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li/thingDef[.="DankPyon_RawWood"]</xpath>
+						<xpath>/Defs/ScenarioDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li/thingDef[.="DankPyon_RawWood"]</xpath>
 						<value>
 							<thingDef>WoodLog</thingDef>
 						</value>

@@ -57,7 +57,6 @@ namespace MedievalOverhaul
 
             if (!contentsKnown)
             {
-                Log.Message("Loot Generation");
                 if (Rand.Chance(lootableExt.lootChance))
                 {
                     ThingDef lootableTD;
@@ -98,7 +97,6 @@ namespace MedievalOverhaul
 
             if (!contentsKnown)
             {
-                Log.Message("Enemy Generation");
                 //if (Rand.Chance(lootableExt.enemySpawnChance))
                 if (Rand.Chance(lootableExt.enemySpawnChance))
                 {
@@ -110,7 +108,6 @@ namespace MedievalOverhaul
                     if (pawn.kindDef.defName.Contains("Empire_"))
                     {
                         pawn.SetFaction(Faction.OfEmpire);
-                        Log.Message(pawn.Faction.ToString());
                     }
                 }
                 contentsKnown = false;

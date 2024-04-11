@@ -22,7 +22,6 @@
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconPath>Security/TurretScorpio/TurretScorpio_MenuIcon</uiIconPath>
-
 		<techLevel>Medieval</techLevel>
 		<uiIconScale>0.95</uiIconScale>
 		<altitudeLayer>Building</altitudeLayer>
@@ -33,7 +32,6 @@
 		<pathCost>50</pathCost>
 		<fillPercent>0.4</fillPercent>
 		<hasTooltip>true</hasTooltip>
-
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1</Flammability>
@@ -41,7 +39,6 @@
 			<Beauty>-20</Beauty>
 			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
 		</statBases>
-
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Mannable">
@@ -68,17 +65,17 @@
 				<initialFuelPercent>0</initialFuelPercent>
 			</li>
 		</comps>
-
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
-
 		<costList>
 			<WoodLog>100</WoodLog>
-			<DankPyon_RawWood>25</DankPyon_RawWood>
 			<DankPyon_IronIngot>30</DankPyon_IronIngot>
 			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
 		</costList>
-		
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<building>
@@ -242,11 +239,13 @@
 		<hasInteractionCell>true</hasInteractionCell>
 		<costList>
 			<WoodLog>200</WoodLog>
-			<DankPyon_RawWood>75</DankPyon_RawWood>
 			<DankPyon_IronIngot>60</DankPyon_IronIngot>
 			<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
 		</costList>
-		
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<building>
@@ -367,14 +366,15 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-
 		<costList>
 			<WoodLog>250</WoodLog>
-			<DankPyon_RawWood>75</DankPyon_RawWood>
 			<DankPyon_IronIngot>90</DankPyon_IronIngot>
 			<DankPyon_ComponentBasic>15</DankPyon_ComponentBasic>
 		</costList>
-
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
 		<inspectorTabs>
 			<li>ITab_Shells</li>
 		</inspectorTabs>
@@ -578,11 +578,13 @@
 		<hasInteractionCell>true</hasInteractionCell>
 		<costList>
 			<WoodLog>300</WoodLog>
-			<DankPyon_RawWood>125</DankPyon_RawWood>
 			<Steel>120</Steel>
 			<DankPyon_ComponentBasic>20</DankPyon_ComponentBasic>
 		</costList>
-		
+		<costStuffCount>125</costStuffCount>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
 		<building>

@@ -45,7 +45,7 @@
 	
 	<!-- Milk -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/RecipeDef[contains(.,'Milk')]</xpath>
+		<xpath>Defs/RecipeDef[contains(.,'Milk')]/ingredients/li[contains(.,'Milk')]/filter/thingDefs</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/RecipeDef[contains(.,'Milk')]/ingredients/li[contains(.,'Milk')]/filter/thingDefs</xpath>
 			<value>

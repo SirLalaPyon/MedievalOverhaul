@@ -11,6 +11,10 @@ namespace MedievalOverhaul
 {
     public static class Utility
     {
+        public static SeperateHideList WhiteList = DefDatabase<SeperateHideList>.GetNamed("WhiteList");
+        public static SeperateWoodList LogList = DefDatabase<SeperateWoodList>.GetNamed("LogList");
+        public static HideGraphicList HideGraphicList = DefDatabase<HideGraphicList>.GetNamed("HideGraphicList");
+        public static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
         public static Thing FindSpecificFuel(Pawn pawn, ThingDef fuel)
         {
             return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(fuel), PathEndMode.ClosestTouch, TraverseParms.For(pawn), validator: new Predicate<Thing>(validator));

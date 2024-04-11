@@ -65,12 +65,12 @@
     <Compile Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\ThingSetMaker_GolemImpact.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaul_Settings.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaulMod.cs" />
-    <Compile Include="Medieval Overhaul\Production Chains\Hide Generation\GeneratorUtility.cs" />
-    <Compile Include="Medieval Overhaul\Production Chains\Hide Generation\SeperateHideList.cs" />
+    <Compile Include="Medieval Overhaul\Production Chains\Hide Generation\HideUtility.cs" />
+    <Compile Include="Medieval Overhaul\Utilities\SeperateHideList.cs" />
     <Compile Include="Medieval Overhaul\Production Chains\Hide Generation\ThingDefGenerator_Hide.cs" />
     <Compile Include="Medieval Overhaul\Settings\PatchOperation.cs" />
     <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_PlainSchratSplit.cs" />
-    <Compile Include="Medieval Overhaul\Production Chains\Timber Generation\GeneratorUtility.cs" />
+    <Compile Include="Medieval Overhaul\Production Chains\Timber Generation\TimberUtility.cs" />
     <Compile Include="Medieval Overhaul\Production Chains\Timber Generation\ThingDefGenerator_Timber.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Ghoul.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_HornetNestSpawner.cs" />
@@ -100,7 +100,7 @@
     <Compile Include="Medieval Overhaul\ThingComps\Comp_RandomName.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_PawnSpawnerOnDestroy.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\BuildingLootableExtension.cs" />
-    <Compile Include="Medieval Overhaul\DefOfs\DankPyonDefOf.cs" />
+    <Compile Include="Medieval Overhaul\DefOfs\MedievalOverhaulDefOf.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_FireOverlaySouth.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_FireOverlaySouth.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_WindMill.cs" />

@@ -59,6 +59,8 @@ namespace MedievalOverhaul
         public static JobDef DankPyon_Slop_Refuel_Stat;
 
         public static BodyDef Bird;
+
+        static MedievalOverhaulDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MedievalOverhaulDefOf));
     }
 
 }

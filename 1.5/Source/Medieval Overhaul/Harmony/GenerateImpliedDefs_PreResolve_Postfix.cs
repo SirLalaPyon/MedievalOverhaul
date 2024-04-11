@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
-using MedievalOverhaul.Wood;
 
 namespace MedievalOverhaul
 {
@@ -17,9 +16,9 @@ namespace MedievalOverhaul
 
         public static void Postfix()
         {
-            
-            GeneratorUtility.MakeListOfAnimals();
-            GeneratorUtilities.MakeListOfTrees();
+
+            HideUtility.MakeListOfAnimals();
+            TimberUtility.MakeListOfTrees();
             foreach (ThingDef def in ThingDefGenerator_Hide.ImpliedHideDefs())
             {
                 DefGenerator.AddImpliedDef(def);

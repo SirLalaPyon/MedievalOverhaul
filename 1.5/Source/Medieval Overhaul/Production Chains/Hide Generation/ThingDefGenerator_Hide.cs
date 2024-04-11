@@ -13,28 +13,28 @@ namespace MedievalOverhaul
     {
         public static IEnumerable<ThingDef> ImpliedHideDefs()
         {
-                foreach (ThingDef animal in GeneratorUtility.AllLeatherAnimals)
+            foreach (ThingDef animal in HideUtility.AllLeatherAnimals)
+            {
+                var animalName = animal.defName;
+                ThingDef leatherDef = animal.race.leatherDef;
+                if (!Utility.WhiteList.blackListRaces.Contains(animalName) && !Utility.WhiteList.blackListLeathers.Contains(leatherDef.defName))
                 {
-                    var animalName = animal.defName;
-                    ThingDef leatherDef = animal.race.leatherDef;
-                    if (!GeneratorUtility.WhiteList.blackListRaces.Contains(animalName) && !GeneratorUtility.WhiteList.blackListLeathers.Contains(leatherDef.defName))
-                    {
-                        ThingDef hideDef = new ThingDef();
+                    ThingDef hideDef = new ThingDef();
 
-                        if (GeneratorUtility.LeatherDefsSeen.ContainsKey(leatherDef) && !GeneratorUtility.WhiteList.whiteListRaces.Contains(animalName))
-                        {
-                            hideDef = GeneratorUtility.LeatherDefsSeen[leatherDef];
-                            GeneratorUtility.DetermineButcherProducts(animal, leatherDef, hideDef, 1);
-                            animal.race.leatherDef = hideDef;
-                            continue;
-                        }
-                        hideDef = GeneratorUtility.MakeHideFor(leatherDef, animal);
-                        GeneratorUtility.TryAddEntry(animal, leatherDef, hideDef);
-                        GeneratorUtility.DetermineButcherProducts(animal, leatherDef, hideDef, 1);
+                    if (HideUtility.LeatherDefsSeen.ContainsKey(leatherDef) && !Utility.WhiteList.whiteListRaces.Contains(animalName))
+                    {
+                        hideDef = HideUtility.LeatherDefsSeen[leatherDef];
+                        HideUtility.DetermineButcherProducts(animal, leatherDef, hideDef);
                         animal.race.leatherDef = hideDef;
-                        yield return hideDef;
+                        continue;
                     }
+                    hideDef = HideUtility.MakeHideFor(leatherDef, animal);
+                    HideUtility.TryAddEntry(animal, leatherDef, hideDef);
+                    HideUtility.DetermineButcherProducts(animal, leatherDef, hideDef);
+                    animal.race.leatherDef = hideDef;
+                    yield return hideDef;
                 }
+            }
         }
     }
 }

@@ -11,15 +11,11 @@ using Verse;
 
 namespace MedievalOverhaul
 {
-    public static class GeneratorUtility
+    public static class HideUtility
     {
         public static List<ThingDef> AllLeatherAnimals = new List<ThingDef>();
         public static Dictionary<ThingDef, ThingDef> LeatherDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static Dictionary<ThingDef, ThingDef> AnimalDefsSeen = new Dictionary<ThingDef, ThingDef>();
-        public static SeperateHideList WhiteList = DefDatabase<SeperateHideList>.GetNamed("WhiteList");
-        public static SeperateWoodList LogList = DefDatabase<SeperateWoodList>.GetNamed("LogList");
-        public static HideGraphicList HideGraphicList = DefDatabase<HideGraphicList>.GetNamed("HideGraphicList");
-        private static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
 
         public static void MakeListOfAnimals()
         {
@@ -41,7 +37,7 @@ namespace MedievalOverhaul
             {
                 hide.descriptionHyperlinks = hide.descriptionHyperlinks ?? new List<DefHyperlink>();
                 hide.descriptionHyperlinks.Add(new DefHyperlink { def = leather });
-                hide.modContentPack = myContentPack;
+                hide.modContentPack = Utility.myContentPack;
                 ThingFilter filter = new ThingFilter();
                 List<ThingDef> list = new List<ThingDef>
                 {
@@ -102,12 +98,12 @@ namespace MedievalOverhaul
             return def;
         }
 
-        public static void DetermineButcherProducts(ThingDef animal, ThingDef leatherDef, ThingDef hideDef, int number)
+        public static void DetermineButcherProducts(ThingDef animal, ThingDef leatherDef, ThingDef hideDef)
         {
-            if (!GeneratorUtility.AnimalDefsSeen.ContainsKey(animal))
+            if (!HideUtility.AnimalDefsSeen.ContainsKey(animal))
             {
                 animal.butcherProducts = animal.butcherProducts ?? new List<ThingDefCountClass>();
-                animal.butcherProducts.Add(new ThingDefCountClass { thingDef = hideDef, count = number });
+                animal.butcherProducts.Add(new ThingDefCountClass { thingDef = hideDef, count = 1 });
             }
         }
 
@@ -142,7 +138,7 @@ namespace MedievalOverhaul
                 hideDef.defName = $"DankPyon_Hide_Plain".Replace(" ", "").Replace("-", "");
                 hideDef.label = $"Plain hide";
             }
-            else if (WhiteList.whiteListRaces.Contains(raceDef.defName) || WhiteList.whiteListLeathers.Contains(leatherDef.defName))
+            else if (Utility.WhiteList.whiteListRaces.Contains(raceDef.defName) || Utility.WhiteList.whiteListLeathers.Contains(leatherDef.defName))
             {
                 hideDef.defName = $"DankPyon_Hide_{Utility.RemoveSubstring(raceDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
                 hideDef.label = $"{raceDef.label}" + " " + "DankPyon_Hide".Translate();
@@ -160,7 +156,7 @@ namespace MedievalOverhaul
             float bodySize = raceDef.race.baseBodySize;
             string bodyDef = raceDef.race.body.ToString();
             string defName = raceDef.ToString();
-            if (HideGraphicList.scaleHidesBodyDef.Contains(bodyDef) || HideGraphicList.scaleHidesRaceDef.Contains(defName))
+            if (Utility.HideGraphicList.scaleHidesBodyDef.Contains(bodyDef) || Utility.HideGraphicList.scaleHidesRaceDef.Contains(defName))
             {
                 if (bodySize < 0.5)
                 {
@@ -185,7 +181,7 @@ namespace MedievalOverhaul
                 //texPathString = "Resources/ScaleHuge";
                 //    return texPathString;
             }
-            if (HideGraphicList.furHidesBodyDef.Contains(bodyDef) || HideGraphicList.scaleHidesRaceDef.Contains(defName))
+            if (Utility.HideGraphicList.furHidesBodyDef.Contains(bodyDef) || Utility.HideGraphicList.scaleHidesRaceDef.Contains(defName))
             {
                 if (bodySize < 0.5)
                 {

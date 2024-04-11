@@ -1,6 +1,4 @@
-﻿using MedievalOverhaul;
-using MedievalOverhaul.Wood;
-using RimWorld;
+﻿using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,27 +14,27 @@ namespace MedievalOverhaul
         public static IEnumerable<ThingDef> ImpliedTreeDefs()
         {
 
-            foreach (ThingDef tree in GeneratorUtilities.AllTrees)
+            foreach (ThingDef tree in TimberUtility.AllTrees)
             {
                 ThingDef woodDef = tree.plant.harvestedThingDef;
                 ThingDef timberDef = new ThingDef();
-                if (!GeneratorUtility.LogList.blackListWood.Contains(woodDef))
+                if (!Utility.LogList.blackListWood.Contains(woodDef))
                 {
-                    if (GeneratorUtilities.WoodDefsSeen.ContainsKey(woodDef))
+                    if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
                     {
-                        timberDef = GeneratorUtilities.WoodDefsSeen[woodDef];
-                        GeneratorUtility.DetermineButcherProducts(tree, woodDef, timberDef, 1);
+                        timberDef = TimberUtility.WoodDefsSeen[woodDef];
+                        HideUtility.DetermineButcherProducts(tree, woodDef, timberDef);
                         tree.plant.harvestedThingDef = timberDef;
                         continue;
                     }
-                    timberDef = GeneratorUtilities.MakeHideFor(woodDef, tree);
-                    GeneratorUtilities.TryAddEntry(tree, woodDef, timberDef);
-                    GeneratorUtilities.DetermineButcherProducts(tree, woodDef, timberDef, 1);
+                    timberDef = TimberUtility.MakeHideFor(woodDef, tree);
+                    TimberUtility.TryAddEntry(tree, woodDef, timberDef);
+                    TimberUtility.DetermineButcherProducts(tree, woodDef, timberDef);
                     tree.plant.harvestedThingDef = timberDef;
                     yield return timberDef;
                 }
             }
-            foreach (ThingDef animal in GeneratorUtilities.AllAnimals)
+            foreach (ThingDef animal in TimberUtility.AllAnimals)
             {
                 List<ThingDefCountClass> butcherProductList = animal.butcherProducts;
                 
@@ -44,7 +42,7 @@ namespace MedievalOverhaul
                 {
                     ThingDefCountClass butcherProduct = butcherProductList[i];
                     ThingDef product = butcherProduct.thingDef;
-                    if (GeneratorUtilities.WoodDefsSeen.ContainsKey(product))
+                    if (TimberUtility.WoodDefsSeen.ContainsKey(product))
                     {
                         double productCount = butcherProduct.count / 2;
                         int productNum = (int)Math.Round(productCount);
@@ -62,20 +60,20 @@ namespace MedievalOverhaul
                 if (animal.race.leatherDef != null)
                 {
                     ThingDef woodDef = animal.race.leatherDef;
-                    if (GeneratorUtilities.WoodDefsSeen.ContainsKey(woodDef))
+                    if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
                     {
-                        animal.race.leatherDef = GeneratorUtilities.WoodDefsSeen[woodDef];
+                        animal.race.leatherDef = TimberUtility.WoodDefsSeen[woodDef];
                     }
                 }
             }
-            foreach (ThingDef animal in GeneratorUtilities.AllProductSpawner)
+            foreach (ThingDef animal in TimberUtility.AllProductSpawner)
             {
                 CompProperties_Spawner comp = animal.GetCompProperties<CompProperties_Spawner>();
                 ThingDef woodDef = comp.thingToSpawn;
-                if (GeneratorUtilities.WoodDefsSeen.ContainsKey(woodDef))
+                if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
                 {
                     
-                    ThingDef timberDef = GeneratorUtilities.WoodDefsSeen[woodDef];
+                    ThingDef timberDef = TimberUtility.WoodDefsSeen[woodDef];
                     comp.thingToSpawn = timberDef;
                 }
             }

@@ -10,15 +10,14 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace MedievalOverhaul.Wood
+namespace MedievalOverhaul
 {
-    public static class GeneratorUtilities
+    public static class TimberUtility
     {
         public static List<ThingDef> AllTrees = new List<ThingDef>();
         public static List<ThingDef> AllAnimals = new List<ThingDef>();
         public static List<ThingDef> AllProductSpawner = new List<ThingDef>();
         public static Dictionary<ThingDef, ThingDef> WoodDefsSeen = new Dictionary<ThingDef, ThingDef>();
-        private static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
         public static void MakeListOfTrees()
         {
             if (MedievalOverhaulSettings.settings.woodChain)
@@ -49,7 +48,7 @@ namespace MedievalOverhaul.Wood
             {
                 log.descriptionHyperlinks = log.descriptionHyperlinks ?? new List<DefHyperlink>();
                 log.descriptionHyperlinks.Add(new DefHyperlink { def = wood });
-                log.modContentPack = myContentPack;
+                log.modContentPack = Utility.myContentPack;
                 ThingFilter filter = new ThingFilter();
                 List<ThingDef> list = new List<ThingDef>
                 {
@@ -63,12 +62,12 @@ namespace MedievalOverhaul.Wood
             }
         }
 
-        public static void DetermineButcherProducts(ThingDef tree, ThingDef wood, ThingDef log, int number)
+        public static void DetermineButcherProducts(ThingDef tree, ThingDef wood, ThingDef log)
         {
-            if (!GeneratorUtility.AnimalDefsSeen.ContainsKey(tree))
+            if (!HideUtility.AnimalDefsSeen.ContainsKey(tree))
             {
                 tree.butcherProducts = tree.butcherProducts ?? new List<ThingDefCountClass>();
-                tree.butcherProducts.Add(new ThingDefCountClass { thingDef = log, count = number });
+                tree.butcherProducts.Add(new ThingDefCountClass { thingDef = log, count = 1 });
             }
         }
 
@@ -76,7 +75,6 @@ namespace MedievalOverhaul.Wood
         {
             ThingDef log = BasicLogDef(wood);
             SetNameAndDesc(wood, log, tree);
-            //GraphicCheck(hideDef, raceDef);
             if (wood.stuffProps != null)
             {
                 log.graphicData.color = wood.stuffProps.color;

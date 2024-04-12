@@ -23,8 +23,8 @@ namespace MedievalOverhaul
 				IEnumerable <Thing> thing = bill.Map.listerThings.ThingsOfDef(TimberUtility.AllPlanks[i]);
 				foreach (var item in thing)
 				{
-					Thing things = item as Thing;
-					countProductNum += things?.stackCount ?? 0;
+					//Thing things = item as Thing;
+					countProductNum += item.stackCount;
 				}
 			}
 			return countProductNum;

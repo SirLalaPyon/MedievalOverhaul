@@ -69,6 +69,13 @@
 						</value>
 					</match>
 				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[killedLeavings/DankPyon_RawWood]/killedLeavings/DankPyon_RawWood</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>/Defs/ThingDef[killedLeavings/DankPyon_RawWood]/killedLeavings/DankPyon_RawWood</xpath>
+					</match>
+				</li>
 
 			</operations>
 		</inactive>

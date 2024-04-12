@@ -18,6 +18,7 @@ namespace MedievalOverhaul
         public static List<ThingDef> AllAnimals = new List<ThingDef>();
         public static List<ThingDef> AllProductSpawner = new List<ThingDef>();
         public static Dictionary<ThingDef, ThingDef> WoodDefsSeen = new Dictionary<ThingDef, ThingDef>();
+        public static List<ThingDef> AllPlanks = new List<ThingDef>();
         public static void MakeListOfTrees()
         {
             if (MedievalOverhaulSettings.settings.woodChain)

@@ -31,6 +31,7 @@ namespace MedievalOverhaul
                     TimberUtility.TryAddEntry(tree, woodDef, timberDef);
                     TimberUtility.DetermineButcherProducts(tree, woodDef, timberDef);
                     tree.plant.harvestedThingDef = timberDef;
+                    TimberUtility.AllPlanks.AddDistinct(woodDef);
                     yield return timberDef;
                 }
             }

@@ -4,6 +4,7 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Diagnostics;
+using System.Linq;
 
 namespace MedievalOverhaul
 {
@@ -16,14 +17,17 @@ namespace MedievalOverhaul
 
 		public override int CountProducts(Bill_Production bill)
 		{
-            int num = 0;
-            List<ThingDef> childThingDefs = MedievalOverhaulDefOf.DankPyon_Wood.childThingDefs;
-			Log.Message(bill.billStack.Count);
-            for (int i = 0; i < bill.billStack.Count; i++)
+			int countProductNum = 0;
+			for (int i = 0; i < TimberUtility.AllPlanks.Count; i++)
 			{
-                num += bill.Map.resourceCounter.GetCount(childThingDefs[i]);
+				IEnumerable <Thing> thing = bill.Map.listerThings.ThingsOfDef(TimberUtility.AllPlanks[i]);
+				foreach (var item in thing)
+				{
+					Thing things = item as Thing;
+					countProductNum += things?.stackCount ?? 0;
+				}
 			}
-			return num;
+			return countProductNum;
 		}
 
 		public override string ProductsDescription(Bill_Production bill)

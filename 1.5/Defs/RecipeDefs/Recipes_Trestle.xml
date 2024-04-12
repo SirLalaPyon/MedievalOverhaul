@@ -17,7 +17,7 @@
 
 	<RecipeDef ParentName="DankPyon_MakeTimberBase">
 		<defName>DankPyon_Make_TimberAny</defName>
-		<label>make timber</label>
+		<label>make timber x2</label>
 		<description>Cut raw wood into timber.</description>
 		<jobString>Cutting timber from raw wood.</jobString>
 		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
@@ -109,7 +109,7 @@
 	<!-- Tribal versions -->
 	<RecipeDef ParentName="DankPyon_MakeTimberBase">
 		<defName>DankPyon_Make_TimberAny_Tribal</defName>
-		<label>make any timber</label>
+		<label>make any timber x2</label>
 		<description>Cut raw wood into timber.</description>
 		<jobString>Cutting timber from raw wood.</jobString>
 		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>

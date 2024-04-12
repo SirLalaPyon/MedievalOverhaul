@@ -10,27 +10,6 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>ReGrowth: Core</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			 <xpath>/Defs/TerrainDef[
-			 defName="RG_AridSoil" or
-			 defName="RG_TundraSoil" or
-			 defName="RG_BorealSoil" or
-			 defName="RG_TemperateSoil" or
-			 defName="RG_TropicalSoil" or
-			 defName="RG_AspenSoil" or
-			 defName="RG_BoilingSoil" or
-			 defName="RG_AnimaSoil" or
-			 defName="RG_AnimaSoilEnchanted"]/affordances</xpath>
-			 <value>
-				<li>DankPyon_GrowSoilVine</li>
-			</value>
-		</match>
-	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
 			<li>Alpha Animals</li>
 		</mods>
 		<match Class="PatchOperationAdd">

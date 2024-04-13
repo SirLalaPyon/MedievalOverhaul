@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>DankPyon_Extract_Honey</defName>
+		<label>extract honey</label>
+		<description>Extract the sweet nectar from honeycombs. Honey can be used to make mead but is a nutritious and enjoyable meal by its own.</description>
+		<jobString>Extracting honey.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Honeycomb</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+
+		<recipeUsers>
+			<li>DankPyon_RusticCookingTable</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DankPyon_Extract_HoneyBulk</defName>
+		<label>extract honey x5</label>
+		<description>Extract the sweet nectar from honeycombs. Honey can be used to make mead but is a nutritious and enjoyable meal by its own.</description>
+		<jobString>Extracting honey.</jobString>
+		<workAmount>2250</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Honeycomb</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<products>
+			<DankPyon_Honey>15</DankPyon_Honey>
+			<DankPyon_Wax>25</DankPyon_Wax>
+		</products>
+
+		<recipeUsers>
+			<li>DankPyon_RusticCookingTable</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

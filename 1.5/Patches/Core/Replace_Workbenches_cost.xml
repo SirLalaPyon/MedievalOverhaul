@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "SimpleResearchBench"]/costList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "TableSculpting" or defName="TableStonecutter" or defName="Brewery"]/costList</xpath>
+		<value>
+			<costList>
+				<DankPyon_IronIngot>30</DankPyon_IronIngot>
+			</costList>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "DrugLab"]/costList</xpath>
+		<value>
+			<costList>
+				<DankPyon_IronIngot>75</DankPyon_IronIngot>
+                <DankPyon_ComponentBasic>6</DankPyon_ComponentBasic>
+			</costList>
+		</value>
+	</Operation>
+
+</Patch>

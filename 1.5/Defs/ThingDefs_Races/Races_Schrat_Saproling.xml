@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BasePawn">
+		<defName>DankPyon_Schrat_Sapling</defName>
+		<label>schrat sapling</label>
+		<description>A gnarled tangle of branches, roots and mud, roughly shaped after a human being.
+     Gifted with a twisted, sinister will, Schrats slowly shuffle through the undergrowth in search of the living.
+      It’s said that Waldschrats relish the blood of intrusive lumberjacks and overzealous hunters.</description>
+		<statBases>
+			<MoveSpeed>4.4</MoveSpeed>
+			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.11</ArmorRating_Sharp>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>1</Flammability>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>DankPyon_SchratBody</body>
+			<fleshType>DankPyon_Schrat</fleshType>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<foodType>None</foodType>
+			<lifeExpectancy>1</lifeExpectancy>
+			<hediffGiverSets Inherit="False">
+				<li>DankPyon_NoPainHediffGiver</li>
+			</hediffGiverSets>
+			<bloodDef>Filth_RubbleBuilding</bloodDef>
+			<intelligence>ToolUser</intelligence><!--Probably could use it for tree log weapons in the future -->
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<butcherProducts>
+			<DankPyon_RawDarkWood>20</DankPyon_RawDarkWood>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef>
+		<defName>DankPyon_SchratDark_Sapling</defName>
+		<label>schrat sapling</label>
+		<race>DankPyon_Schrat_Sapling</race>
+		<combatPower>30</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/SaplingDark</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<destroyGearOnDrop>true</destroyGearOnDrop>
+	</PawnKindDef>
+	
+	<!--==================== Schrat Plains ====================-->
+	<ThingDef ParentName="DankPyon_SchratBase">
+		<defName>DankPyon_SchratPlain_Sapling</defName>
+		<race>
+			<body>DankPyon_SchratBody</body>
+			<fleshType>DankPyon_Schrat</fleshType>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+		</race>
+		<butcherProducts Inherit="False">
+			<WoodLog>30</WoodLog>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef>
+		<defName>DankPyon_SchratPlain_Sapling</defName>
+		<label>schrat sapling</label>
+		<race>DankPyon_SchratPlain</race>
+		<combatPower>30</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/SaplingPlain</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<destroyGearOnDrop>true</destroyGearOnDrop>
+	</PawnKindDef>
+
+</Defs>

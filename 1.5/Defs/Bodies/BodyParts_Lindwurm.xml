@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>DankPyon_LindwurmNeck</defName>
+		<label>neck</label>
+		<hitPoints>40</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BreathingPathway</li>
+			<li>EatingPathway</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>DankPyon_LindwurmTail</defName>
+		<label>tail</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+  
+</Defs>

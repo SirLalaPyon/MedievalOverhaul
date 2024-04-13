@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- =========================The Big Bad============================= -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>DankPyon_DireBoar</defName>
+		<label>dire boar</label>
+		<description>A vicious omnivore equipped with a deadly pair tusks that can gore threats. Dire boars regularly travel in herds and are feared to be dangerous once encountered.\n\nA dire boar's caracass contains tusks that can be recovered by butchering.</description>
+		<statBases>
+			<MoveSpeed>5.1</MoveSpeed>
+			<MarketValue>650</MarketValue>
+			<ComfyTemperatureMin>-65</ComfyTemperatureMin>
+			<FilthRate>24</FilthRate>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.75</uiIconScale>
+		<tools>
+			<li>
+				<label>tusk</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>20.6</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+
+			<li>
+				<label>right hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>3</maxPreyBodySize>
+			<body>QuadrupedAnimalWithHoovesAndTusks</body>
+			<baseHungerRate>0.35</baseHungerRate>
+			<baseBodySize>2.0</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<leatherDef>DankPyon_Leather_DireBoar</leatherDef>
+			<wildness>0.80</wildness>
+			<trainability>Advanced</trainability>
+			<meatLabel>pork</meatLabel>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<lifeExpectancy>25</lifeExpectancy>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+			</willNeverEat>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Wildboar_Wounded</soundWounded>
+					<soundDeath>Pawn_Wildboar_Death</soundDeath>
+					<soundCall>Pawn_Wildboar_Call</soundCall>
+					<soundAngry>Pawn_Wildboar_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+		<butcherProducts>
+			<DankPyon_DireBoarTusk>2</DankPyon_DireBoarTusk>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DankPyon_DireBoar</defName>
+		<label>dire boar</label>
+		<race>DankPyon_DireBoar</race>
+		<combatPower>190</combatPower>
+		<ecoSystemWeight>0.4</ecoSystemWeight>
+		<wildGroupSize>1~5</wildGroupSize>
+		<canArriveManhunter>true</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/DireBoar</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Dessicated_DireBoar</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/DireBoar</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.6, 0.4)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Dessicated_DireBoar</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/DireBoar</texPath>
+					<drawSize>2.7</drawSize>
+					<shadowData>
+						<volume>(1, 0.8, 0.5)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Dessicated_DireBoar</texPath>
+					<drawSize>2.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+  
+</Defs>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase" Name="DankPyon_BrigandFactionBase" Abstract="True">
+		<pawnSingular>brigand</pawnSingular>
+		<pawnsPlural>brigands</pawnsPlural>
+		<!--categoryTag>Outlander</categoryTag-->
+		<listOrderPriority>31</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>brigand leader</leaderTitle>
+		<fixedLeaderKinds>
+			<li>DankPyon_BrigandLeader</li>
+		</fixedLeaderKinds>
+		<factionIconPath>WorldObjects/Castle</factionIconPath>
+		<techLevel>Medieval</techLevel>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures><li>DankPyon_OldWorlder</li></allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">BodyMod_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AgeReversal_Demanded</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">2</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">2</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<raidLootMaker>DankPyon_MedievalRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<DankPyon_BrigandThug>50</DankPyon_BrigandThug>
+					<DankPyon_BrigandRaider>50</DankPyon_BrigandRaider>
+					<DankPyon_BrigandMarksman>40</DankPyon_BrigandMarksman>
+					<DankPyon_BrigandLeader>10</DankPyon_BrigandLeader>
+				</options>
+			</li>
+			<!-- Normal fights, ranged only -->
+			<!--li>
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
+        </options>
+      </li-->
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<DankPyon_BrigandThug>15</DankPyon_BrigandThug>
+					<DankPyon_BrigandRaider>40</DankPyon_BrigandRaider>
+					<DankPyon_BrigandLeader>10</DankPyon_BrigandLeader>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<hidden>true</hidden>
+		<settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
+
+		<permanentEnemy>true</permanentEnemy>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+	</FactionDef>
+
+	<FactionDef ParentName="DankPyon_BrigandFactionBase">
+		<defName>DankPyon_BrigandFaction</defName>
+		<label>brigands</label>
+		<description>Looters and pillagers, the laws are nothing for them. Brigands are frequently encountered encroaching nearby settlement with ill intents.</description>
+		<colorSpectrum>
+			<li>(0.85, 0, 0)</li>
+			<li>(1, 0.1, 0.1)</li>
+		</colorSpectrum>
+		<factionIconPath>WorldObjects/Bandit</factionIconPath>
+    
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>60</configurationListOrderPriority>
+	</FactionDef>
+
+
+</Defs>

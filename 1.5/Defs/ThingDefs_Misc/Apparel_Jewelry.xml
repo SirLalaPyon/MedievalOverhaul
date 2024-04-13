@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--========== Jewelry Necklace Base ==========-->
+	<ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_NecklaceBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>0.5</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>DankPyon_JewelryBench</li>
+			</recipeUsers>
+			<researchPrerequisite>DankPyon_Jewelry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+				<Artistic>3</Artistic>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>DankPyon_Jewelry</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<thingCategories>
+			<li>DankPyon_ApparelJewelry</li>
+		</thingCategories>
+		<tradeTags>
+			<li>DankPyon_Necklaces</li>
+		</tradeTags>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>DankPyon_NecklaceLayer</li>
+			</layers>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<tags>
+				<li>Royal</li>
+				<li>DankPyon_Necklaces</li>
+			</tags>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		</apparel>
+		<equippedStatOffsets>
+			<PawnBeauty>+1</PawnBeauty>
+			<SocialImpact>0.1</SocialImpact>
+			<TradePriceImprovement>0.05</TradePriceImprovement>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<!--========== Jewelry Ring Base ==========-->
+	<ThingDef ParentName="DankPyon_NecklaceBase" Name="DankPyon_RingBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>0.25</Mass>
+			<EquipDelay>0.5</EquipDelay>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups Inherit="False">
+				<li>MiddleFingers</li>
+			</bodyPartGroups>
+			<layers Inherit="False">
+				<li>DankPyon_Ring1Layer</li>
+			</layers>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<tags>
+				<li>Royal</li>
+				<li>DankPyon_Rings</li>
+			</tags>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		</apparel>
+		<tradeTags Inherit="False">
+			<li>DankPyon_Rings</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<!--========== Necklace ==========-->
+	<ThingDef ParentName="DankPyon_NecklaceBase">
+		<defName>DankPyon_Necklace_Citrine</defName>
+		<label>citrine necklace</label>
+		<description>This citrine-embedded necklace slightly increases wealth for the men and women seeking to improve their social status.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/CitrineNecklace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>10500</WorkToMake>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Citrine>25</DankPyon_Citrine>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_NecklaceBase">
+		<defName>DankPyon_Necklace_Jade</defName>
+		<label>jade necklace</label>
+		<description>This necklace, crafted to be as hardy and beautiful as the jade gem, offers moderate wealth to those who can afford it.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/JadeNecklace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>9800</WorkToMake>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Jade>25</Jade>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_NecklaceBase">
+		<defName>DankPyon_Necklace_Amber</defName>
+		<label>amber necklace</label>
+		<description>This amber necklace, sharing the gem’s natural yellow-orange hue, is both familiar and valuable due to its natural beauty.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/AmberNecklace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>6800</WorkToMake>
+			<Beauty>12</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Amber>25</DankPyon_Amber>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_NecklaceBase">
+		<defName>DankPyon_Necklace_Onyx</defName>
+		<label>onyx necklace</label>
+		<description>This necklace, black as onyx itself, speaks of more incredible wealth than the average man or woman as the gem inside continues to glint despite its dark color.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/OnyxNecklace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>10500</WorkToMake>
+			<Beauty>14</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Onyx>25</DankPyon_Onyx>
+		</costList>
+	</ThingDef>
+
+	<!--Gold and Above tier-->
+	<ThingDef ParentName="DankPyon_NecklaceBase" Name="DankPayon_NecklaceBaseRoyal" Abstract="True">
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+				<Artistic>6</Artistic>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<PawnBeauty>+2</PawnBeauty>
+			<SocialImpact>0.2</SocialImpact>
+			<TradePriceImprovement>0.10</TradePriceImprovement>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPayon_NecklaceBaseRoyal">
+		<defName>DankPyon_Necklace_Emerald</defName>
+		<label>emerald necklace</label>
+		<description>This gold necklace, embedded with a pristine emerald, offers a significant increase of wealth to its wearer and is often seen on nobles and merchants.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/EmeraldNecklace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<WorkToMake>11200</WorkToMake>
+			<Beauty>20</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Emerald>25</DankPyon_Emerald>
+			<Gold>2</Gold>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPayon_NecklaceBaseRoyal">
+		<defName>DankPyon_Necklace_Sapphire</defName>
+		<label>sapphire necklace</label>
+		<description>This sapphire-embedded necklace shines its familiar blue gleam, ensuring those around the wearer take note of the wealthy man or woman who walks amongst them.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/SapphireNecklace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>13300</WorkToMake>
+			<Beauty>24</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Sapphire>25</DankPyon_Sapphire>
+			<Gold>2</Gold>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPayon_NecklaceBaseRoyal">
+		<defName>DankPyon_Necklace_Ruby</defName>
+		<label>ruby necklace</label>
+		<description>This gold necklace decorated with multiple tear-drop rubies offers great wealth and implies great power, as one who can afford or steal such a necklace is not one to be trifled with.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/RubyNecklace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>13300</WorkToMake>
+			<Beauty>28</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Ruby>25</DankPyon_Ruby>
+			<Gold>2</Gold>
+		</costList>
+	</ThingDef>
+
+	<!--========== Rings ==========-->
+	<ThingDef ParentName="DankPyon_RingBase">
+		<defName>DankPyon_Ring_Citrine</defName>
+		<label>citrine ring</label>
+		<description>This citrine-embedded ring slightly increases wealth for the men and women seeking to improve their social status.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/CitrineRing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>10500</WorkToMake>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Citrine>25</DankPyon_Citrine>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RingBase">
+		<defName>DankPyon_Ring_Jade</defName>
+		<label>jade ring</label>
+		<description>This ring, crafted to be as hardy and beautiful as the jade gem, offers moderate wealth to those who can afford it.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/JadeRing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>9800</WorkToMake>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Jade>25</Jade>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RingBase">
+		<defName>DankPyon_Ring_Amber</defName>
+		<label>amber ring</label>
+		<description>This amber ring, sharing the gem’s natural yellow-orange hue, is both familiar and valuable due to its natural beauty.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/AmberRing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>6800</WorkToMake>
+			<Beauty>12</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Amber>25</DankPyon_Amber>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RingBase">
+		<defName>DankPyon_Ring_Onyx</defName>
+		<label>onyx ring</label>
+		<description>This ring, black as onyx itself, speaks of more incredible wealth than the average man or woman as the gem inside continues to glint despite its dark color.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/OnyxRing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>10500</WorkToMake>
+			<Beauty>14</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Onyx>25</DankPyon_Onyx>
+		</costList>
+	</ThingDef>
+
+	<!--Gold and Above tier-->
+	<ThingDef ParentName="DankPyon_RingBase" Name="DankPyon_RingBaseRoyal" Abstract="True">
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+				<Artistic>6</Artistic>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<PawnBeauty>+2</PawnBeauty>
+			<SocialImpact>0.2</SocialImpact>
+			<TradePriceImprovement>0.10</TradePriceImprovement>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RingBaseRoyal">
+		<defName>DankPyon_Ring_Emerald</defName>
+		<label>emerald ring</label>
+		<description>This gold ring, embedded with a pristine emerald, offers a significant increase of wealth to its wearer and is often seen on nobles and merchants.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/EmeraldRing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<WorkToMake>11200</WorkToMake>
+			<Beauty>20</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Emerald>25</DankPyon_Emerald>
+			<Gold>2</Gold>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RingBaseRoyal">
+		<defName>DankPyon_Ring_Sapphire</defName>
+		<label>sapphire ring</label>
+		<description>This sapphire-embedded necklace shines its familiar blue gleam, ensuring those around the wearer take note of the wealthy man or woman who walks amongst them.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/SapphireRing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>13300</WorkToMake>
+			<Beauty>24</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Sapphire>25</DankPyon_Sapphire>
+			<Gold>2</Gold>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RingBaseRoyal">
+		<defName>DankPyon_Ring_Ruby</defName>
+		<label>ruby ring</label>
+		<description>This gold necklace decorated with multiple tear-drop rubies offers great wealth and implies great power, as one who can afford or steal such a necklace is not one to be trifled with.</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/RubyRing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>13300</WorkToMake>
+			<Beauty>28</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Ruby>25</DankPyon_Ruby>
+			<Gold>2</Gold>
+		</costList>
+	</ThingDef>
+  
+</Defs>

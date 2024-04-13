@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/MapGeneratorDef[@Name = "MapCommonBase"]/genSteps</xpath>
+		<value>
+			<li>DankPyon_TarPits</li>
+			<li>DankPyon_BeeHives</li>
+			<!--li>DankPyon_HornetNest</li-->
+			<li>DankPyon_BattlefieldRemains</li>
+		</value>
+	</Operation>
+
+</Patch>

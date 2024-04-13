@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
+		<defName>DankPyon_HatchedClutch</defName>
+		<label>large hatched clutch</label>
+		<description>A gigantic egg that has hatched, whatever was inside lies a massive beast.</description>
+		<graphicData>
+			<texPath>Buildings/SnakeLair/HatchedClutchLarge</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<rotatable>false</rotatable>
+
+		<fillPercent>0.2</fillPercent>
+		<pathCost>42</pathCost>
+        
+		<costList>
+			<DankPyon_Bone>40</DankPyon_Bone>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Mass>10</Mass>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>
+
+
+	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
+		<defName>DankPyon_HatchedClutchSmall</defName>
+		<label>hatched clutch</label>
+		<description>A group of snake eggs that has survived enough to hatch.</description>
+		<graphicData>
+			<texPath>Buildings/SnakeLair/HatchedClutchSmall</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<fillPercent>0.2</fillPercent>
+		<pathCost>42</pathCost>
+
+		<costList>
+			<DankPyon_Bone>40</DankPyon_Bone>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<Mass>10</Mass>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>
+
+  
+
+</Defs>

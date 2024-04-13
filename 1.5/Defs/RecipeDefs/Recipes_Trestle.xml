@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="DankPyon_MakeTimberBase" Abstract="True">
+		<jobString>Sawing timber from logs.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking><!--Replace with sawing wood sfx-->
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>DankPyon_Trestle</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MakeTimberBase">
+		<defName>DankPyon_Make_TimberAny</defName>
+		<label>make timber x2</label>
+		<description>Cut raw wood into timber.</description>
+		<jobString>Cutting timber from raw wood.</jobString>
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
+		<workAmount Inherit="False">30</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>DankPyon_RawWood</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_Timber">
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="DankPyon_MakeTimberBase">
+		<defName>DankPyon_Make_TimberAny_Bulk</defName>
+		<label>make timber x40</label>
+		<description>Cut raw wood into timber.</description>
+		<jobString>Cutting timber from raw wood.</jobString>
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
+		<workAmount Inherit="False">600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>DankPyon_RawWood</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_Timber"/>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_MakeTimberBase">
+		<defName>DankPyon_Make_TimberAny_Bulkier</defName>
+		<label>make timber x400</label>
+		<description>Cut raw wood into timber.</description>
+		<jobString>Cutting timber from raw wood.</jobString>
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
+		<workAmount Inherit="False">6000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+				<count>200</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>DankPyon_RawWood</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_Timber"/>
+		</modExtensions>
+	</RecipeDef>
+
+	<!-- Tribal versions -->
+	<RecipeDef ParentName="DankPyon_MakeTimberBase">
+		<defName>DankPyon_Make_TimberAny_Tribal</defName>
+		<label>make any timber x2</label>
+		<description>Cut raw wood into timber.</description>
+		<jobString>Cutting timber from raw wood.</jobString>
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_MakeWoodPlanks</workerCounterClass>
+		<workAmount Inherit="False">120</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>DankPyon_RawWood</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>DankPyon_RawWood</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<recipeUsers Inherit="false">
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_Timber"/>
+		</modExtensions>
+	</RecipeDef>
+
+</Defs>

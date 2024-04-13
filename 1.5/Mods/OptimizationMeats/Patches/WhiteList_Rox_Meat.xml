@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<!-- Excludes the races below from the meat optimization -->
+		<xpath>/Defs/AlienMeatTest.MeatListDef[defName="WhiteList"]/races</xpath>
+		<value>
+			<li>DankPyon_Rox</li>
+		</value>
+	</Operation>
+
+</Patch>

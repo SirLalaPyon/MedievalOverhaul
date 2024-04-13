@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Several neolith bits of furniture can be made of logs -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Fence" or 
+			defName="HorseshoesPin" or
+			defName="HoopstoneRing" or 
+			defName="GameOfUrBoard" or   
+			defName="PenMarker" or 
+			defName="MeleeWeapon_Club" or 
+			defName="MeleeWeapon_Spear" or 
+			defName="Apparel_WarMask" or @Name="NatureShrineBase"][stuffCategories]/stuffCategories</xpath>
+		<value>
+			<li>DankPyon_RawWood</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Architect</li>
+		</mods>
+		<match Class="PatchOperationSetName">
+			<xpath>Defs/ThingDef[defName="VFEArch_LogWall" or 
+				defName="VFEArch_LowFence" or 
+				defName="VFEArch_HedgeWall"]/costList/WoodLog</xpath>
+			<name>DankPyon_RawWood</name>
+		</match>
+	</Operation>
+
+	<!--Add raw wood to recipes-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Genetic Rim</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[defName="GR_PulpWoodExpensive" or defName="GR_PulpWoodBulk"]//thingDefs</xpath>
+			<value>
+				<li>DankPyon_RawWood</li>
+				<li>DankPyon_RawDarkWood</li>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- Make Wood Fired Generator use logs -->
+	<!--Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+			<li>DankPyon_RawWood</li>
+		</value>
+	</Operation-->
+
+	<!-- Make campfire use logs -->
+	<!--Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+			<li>DankPyon_RawWood</li>
+		</value>
+	</Operation-->
+
+	<!--Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Power</li>
+		</mods>
+		<match Class="PatchOperationSetName">
+			<xpath>Defs/ThingDef[defName="VFE_PortableWoodFiredGenerator" or 
+					defName="VFE_IndustrialWoodFiredGenerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<name>DankPyon_RawWood</name>
+		</match>
+	</Operation-->
+
+	<!-- Make Passive cooler use raw logs-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/costList</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
+		<value>
+			<stuffCategories>
+				<li>DankPyon_RawWood</li>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
+		<value>
+			<costStuffCount>100</costStuffCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
+	</Operation>
+
+	<!-- Torches -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@Name="TorchBase"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="TorchBase"]/costList</xpath>
+			<value>
+				<stuffCategories>
+					<li>DankPyon_RawWood</li>
+					<li>Woody</li>
+				</stuffCategories>
+				<costStuffCount>20</costStuffCount>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="TorchWallLamp"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="TorchWallLamp"]/costList</xpath>
+			<value>
+				<stuffCategories>
+					<li>DankPyon_RawWood</li>
+					<li>Woody</li>
+				</stuffCategories>
+				<costStuffCount>15</costStuffCount>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[@Name="TorchBase"]/constructEffect</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TorchLamp"]/uiIconPath</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="TorchLamp"]/uiIconScale</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="TorchLamp"]/graphicData</xpath>
+		<value>
+			<shaderType>CutoutComplex</shaderType>
+		</value>
+	</Operation>
+
+	<!-- Caravans sell logs -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods" or 
+				defName = "Caravan_Outlander_BulkGoods" or 
+				defName = "Visitor_Neolithic_Standard" or 
+				defName = "Visitor_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_RawWood</thingDef>
+				<countRange>250~400</countRange>
+			</li>
+		</value>
+	</Operation>
+</Patch>	

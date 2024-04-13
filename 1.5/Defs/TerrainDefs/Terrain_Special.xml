@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--TerrainDef Name="DankPyon_BridgeBase">
+    <defName>DankPyon_Bridge_BlocksSandstone</defName>
+    <label>sandstone brick bridge</label>
+    <description>A flat stone surface on supportive beams which can be built over water. You can build medium structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <color>(126,104,94)</color>
+    <texturePath>Terrain/Surfaces/TileStone</texturePath>
+    <uiIconPath>Terrain/BridgeBrick_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+        <li>Light</li>
+        <li>Medium</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+        <WorkToBuild>3000</WorkToBuild>
+        <Flammability>0</Flammability>
+    </statBases>
+
+    <costList>
+      <BlocksSandstone>12</BlocksSandstone>
+    </costList>
+
+    <tags>
+        <li>Floor</li>
+    </tags>
+    <destroyOnBombDamageThreshold>70</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+</TerrainDef>
+
+<TerrainDef ParentName="DankPyon_BridgeBase">
+    <defName>DankPyon_Bridge_BlocksGranite</defName>
+    <label>granite brick bridge</label>
+    <texturePath>Terrain/Surfaces/TileStone</texturePath>
+    <uiIconPath>Terrain/BridgeBrick_MenuIcon</uiIconPath>
+    <costList>
+      <BlocksGranite>12</BlocksGranite>
+    </costList>
+</TerrainDef-->
+
+</Defs>

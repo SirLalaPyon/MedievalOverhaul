@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>DankPyon_HornetHoney</defName>
+		<label>hornet honey</label>
+		<description>A deathly sweet liquid secreted by the black hornets. Consuming it leads to numbing the sensation of pain but sharpening one's reflexes, improving melee and shooting abilities.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DankPyon_HornetHoneyHigh</HediffDef>
+			<HediffDef>DankPyon_HornetHoneyAddiction</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Drug/HornetHoney</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>53</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.40</joy>
+			<drugCategory>Hard</drugCategory>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<baseIngestTicks>80</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Consume {0}</ingestCommandString>
+			<ingestReportString>Consuming {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DankPyon_HornetHoneyHigh</hediffDef>
+					<severity>0.5</severity>
+					<toleranceChemical>DankPyon_HornetHoney</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.4</offset>
+					<toleranceChemical>DankPyon_HornetHoney</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.15</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DankPyon_HornetHoney</chemical>
+				<addictiveness>0.026</addictiveness>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+				<listOrder>200</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+				<largeOverdoseChance>0.005</largeOverdoseChance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>DankPyon_HornetHoneyHigh</defName>
+		<hediffClass>MedievalOverhaul.Hediff_UnpleasantAftermathSet</hediffClass>
+		<label>high on hornet honey</label>
+		<labelNoun>a hornet honey high</labelNoun>
+		<description>Hornet honey in the bloodstream. It supercharges combat-related abilities, and instantly increases psyfocus when first consumed.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.1</painFactor>
+				<statOffsets>
+					<MeleeHitChance>0.15</MeleeHitChance>
+					<MeleeDodgeChance>0.15</MeleeDodgeChance>
+					<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.50</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>DankPyon_HornetHoneyHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DankPyon_HornetHoneyHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>high on hornet honey</label>
+				<description>I feel pumped but steady. I am the bullet in flight, ready to cut through you.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Hornet honey addiction -->
+	<ChemicalDef>
+		<defName>DankPyon_HornetHoney</defName>
+		<label>hornet honey</label>
+		<addictionHediff>DankPyon_HornetHoneyAddiction</addictionHediff>
+		<geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+		<geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>DankPyon_Chemical_HornetHoney</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>hornet honey</label>
+		<description>Because of a hornet honey addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		<fallPerDay>0.333</fallPerDay>
+		<listPriority>45</listPriority>
+	</NeedDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>DankPyon_HornetHoneyAddiction</defName>
+		<label>hornet honey addiction</label>
+		<description>A chemical addiction to hornet honey. Long-term presence of hornet honey has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+	\nWithout regular doses of hornet honey, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>DankPyon_Chemical_HornetHoney</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.045</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<painFactor>3</painFactor>
+				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<statOffsets>
+					<RestFallRateFactor>0.3</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.50</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_DrugExtreme</mentalState>
+						<mtbDays>40</mtbDays>
+					</li>
+					<li>
+						<mentalState>Wander_Psychotic</mentalState>
+						<mtbDays>10</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>DankPyon_HornetHoneyWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DankPyon_HornetHoneyAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>hornet honey withdrawal</label>
+				<description>I'm all fuzzy and can't think straight. My limbs feel heavy, I'm tired and hungry, everything hurts. And why won't my eyes focus properly?</description>
+				<baseMoodEffect>-22</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>DankPyon_HornetHoneyTolerance</defName>
+		<label>hornet honey tolerance</label>
+		<description>A built-up tolerance to hornet honey. The more severe this tolerance is, the more hornet honey it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.015</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>DankPyon_HornetHoney</chemical>
+			</li>
+		</comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>ChemicalDamageModerate</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.45, 99999)</li>
+						<li>(0.5, 120)</li>
+						<li>(1, 90)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Brain</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>DankPyon_UnpleasantAftermath</defName>
+		<label>unpleasant aftermath</label>
+		<labelNoun>an unpleasant aftermath</labelNoun>
+		<description>An unpleasant delayed after-effect of drug intoxication.</description>
+		<hediffClass>MedievalOverhaul.Hediff_UnpleasantAftermath</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>slight</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.03</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.15</minSeverity>
+				<label>strong</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.08</offset>
+					</li>
+				</capMods>
+			</li>
+			<!-- starts low because it isn't visible until alcohol hediff is gone-->
+			<li>
+				<minSeverity>0.40</minSeverity>
+				<label>pounding</label>
+				<vomitMtbDays>0.4</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.18</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Hangover -->
+	<ThoughtDef>
+		<defName>DankPyon_UnpleasantAftermathThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DankPyon_UnpleasantAftermath</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>mild unpleasant aftermath</label>
+				<description>The headache is almost gone.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>serious unpleasant aftermath</label>
+				<description>My head hurts from all that liquor.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>pounding unpleasant aftermath</label>
+				<description>It feels like a gaggle of geese are pecking at my skull.</description>
+				<baseMoodEffect>-12</baseMoodEffect>
+			</li>
+			<li>
+				<visible>false</visible>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

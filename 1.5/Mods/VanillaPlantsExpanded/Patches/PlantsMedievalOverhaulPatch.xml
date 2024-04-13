@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- VPE Beets to chioggia beets -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Beet"]/label</xpath>
+		<value>
+			<label>chioggia beet plant</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Beet"]/description</xpath>
+		<value>
+			<description>An herb-like vegetable widely cultivated for humans and livestock alike. Though these look like ordinary beets from the outside, on the inside they have distinct red-and-white-striped flesh. These are highest on the sweetness scale. While beets do require rich soil they are quite hearty, and will continue to grow very slowly through winter. They need to be planted during growing season, though.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawBeets"]/label</xpath>
+		<value>
+			<label>chioggia beets</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawBeets"]/description</xpath>
+		<value>
+			<description>An herb-like vegetable widely cultivated for humans and livestock alike. Though these look like ordinary beets from the outside, on the inside they have distinct red-and-white-striped flesh. These are highest on the sweetness scale.</description>
+		</value>
+	</Operation>
+
+<!-- VPE Cabbage to Cauliflower -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Cabbage"]/label</xpath>
+		<value>
+			<label>cauliflower plant</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Cabbage"]/description</xpath>
+		<value>
+			<description>A large round vegetable that has a hard white centre surrounded by green leaves, naturally high in fiber and B-vitamins. This particular strain seems highly resistant to airborne toxins and radiation.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Cabbage"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Patches/Plants/VCE_Cauliflower</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawCabbage"]/label</xpath>
+		<value>
+			<label>cauliflowers</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawCabbage"]/description</xpath>
+		<value>
+			<description>A large round vegetable that has a hard white centre surrounded by green leaves, naturally high in fiber and B-vitamins.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawCabbage"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Patches/Raw/VCE_Cauliflowers</texPath>
+		</value>
+	</Operation>
+
+	<!-- VPE Onions to White Onions -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Onion"]/label</xpath>
+		<value>
+			<label>white onion plant</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Onion"]/description</xpath>
+		<value>
+			<description>A strong and pungent variety of onions, perfect for flavourful salads or for general cooking applications when strong flavours are desired. Cannot suffer the effects of blight.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawOnion"]/label</xpath>
+		<value>
+			<label>white onions</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawOnion"]/description</xpath>
+		<value>
+			<description>A strong and pungent variety of onions, perfect for flavourful salads or for general cooking applications when strong flavours are desired.</description>
+		</value>
+	</Operation>
+
+	<!-- VPE Pumpkins to Mammoth Gold Pumpkins -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Pumpkin"]/label</xpath>
+		<value>
+			<label>mammoth gold pumpkin plant</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Pumpkin"]/description</xpath>
+		<value>
+			<description>One of the biggest varieties of pumpkin, the mammoth gold can grow to between 25 and 50 Kg of weight. Technically a giant berry, pumpkins are renowned for being trivial to both sow and harvest. However, their durability means added weight and mass - Too cumbersome for hydroponics basins.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawPumpkin"]/label</xpath>
+		<value>
+			<label>mammoth gold pumpkins</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawPumpkin"]/description</xpath>
+		<value>
+			<description>One of the biggest varieties of pumpkin, the mammoth gold can grow to between 25 and 50 Kg of weight. Technically a giant berry, pumpkins are renowned for being trivial to both sow and harvest.</description>
+		</value>
+	</Operation>
+	
+	<!-- VPE Tomatoes to Red Beefsteak Tomatoes -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Tomato"]/label</xpath>
+		<value>
+			<label>red beefsteak tomato plant</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Tomato"]/description</xpath>
+		<value>
+			<description>A variety of tomatoes with a firm, meaty, rich, vibrant red colour. Its flavour is mild, juicy and balanced compared to other varieties. Tomatoes are easily removed from the vine without having to uproot the plant.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawTomatoes"]/label</xpath>
+		<value>
+			<label>red beefsteak tomatoes</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawTomatoes"]/description</xpath>
+		<value>
+			<description>A variety of tomatoes with a firm, meaty, rich, vibrant red colour. Its flavour is mild, juicy and balanced compared to other varieties.</description>
+		</value>
+	</Operation>
+	
+	<!-- VPE Apples to Granny Smith Apples -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_AppleTree"]/label</xpath>
+		<value>
+			<label>granny smith apple tree</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_AppleTree"]/description</xpath>
+		<value>
+			<description>A tree bearing hard apples, with a light green skin and crisp, juicy flesh. The flavour is tart and acidic. It remains firm when baked, making it a very popular cooking apple used in pies, where it can be sweetened.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_AppleTree"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Patches/Plants/VCE_GrannySmithAppleTree</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawApple"]/label</xpath>
+		<value>
+			<label>granny smith apples</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawApple"]/description</xpath>
+		<value>
+			<description>Hard apples, with a light green skin and crisp, juicy flesh. The flavour is tart and acidic. It remains firm when baked, making it a very popular cooking apple used in pies, where it can be sweetened.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawApple"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Patches/Raw/VCE_GrannySmithApples</texPath>
+		</value>
+	</Operation>
+
+	<!-- VPE Fruit Category name change -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="VCE_Fruit"]/label</xpath>
+		<value>
+			<label>raw biome fruits</label>
+		</value>
+	</Operation>
+
+</Patch>

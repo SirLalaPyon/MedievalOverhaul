@@ -46,13 +46,11 @@
 	<DankPyon_SmokedMeatFinished>Smoked meats have finished cooking in the smoker</DankPyon_SmokedMeatFinished>
 	<DankPyon_SmokedMeatInProgress>A {0} is being smoked. It will be ready in {1}</DankPyon_SmokedMeatInProgress>
 	<DankPyon_SmokedMeatReady>meats have finished smoking and is waiting for pickup</DankPyon_SmokedMeatReady>
-	<DankPyon_MeatImproperlyDefined>This meat has been improperly defined to work with the smoker, contact the meat mod's author</DankPyon_MeatImproperlyDefined>
 	<DankPyon_RemoveSmokedMeat>Remove Smoked Meat ({0})</DankPyon_RemoveSmokedMeat>
 	
 	<DankPyon_SmokerEmpty>Smoker is empty right now</DankPyon_SmokerEmpty>
 	<DankPyon_SmokerFilled>Smoker filled with {0}</DankPyon_SmokerFilled>
 	<DankPyon_SmokerWorking>Smoker is working:</DankPyon_SmokerWorking>
-	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
 
 	<!-- Drying Rack Meat -->
 	<DankPyon_InsertMeatRackDesc>Insert meat to dry.</DankPyon_InsertMeatRackDesc>
@@ -67,13 +65,10 @@
 	<DankPyon_DriedMeatFinished>Dried meats have finished drying in the drying rack</DankPyon_DriedMeatFinished>
 	<DankPyon_DriedMeatInProgress>A {0} is being dried. It will be ready in {1}</DankPyon_DriedMeatInProgress>
 	<DankPyon_DriedMeatRackReady>meats have finished drying and is waiting for pickup</DankPyon_DriedMeatRackReady>
-	<DankPyon_MeatRackImproperlyDefined>This meat has been improperly defined to work with the drying rack, contact the meat mod's author</DankPyon_MeatRackImproperlyDefined>
 	<DankPyon_RemoveDriedMeat>Remove Dried Meat ({0})</DankPyon_RemoveDriedMeat>
-	
 	<DankPyon_DryingRackEmpty>Drying rack is empty right now</DankPyon_DryingRackEmpty>
 	<DankPyon_DryingRackFilled>Drying rack filled with {0}</DankPyon_DryingRackFilled>
 	<DankPyon_DryingRackWorking>Drying rack is working:</DankPyon_DryingRackWorking>
-	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
 
 	<!-- Hay Rack Meat -->
 	<DankPyon_InsertHayDesc>Insert hay to dry.</DankPyon_InsertHayDesc>
@@ -93,13 +88,8 @@
 	<DankPyon_StrawFinished>Straw have finished drying in the drying rack</DankPyon_StrawFinished>
 	<DankPyon_StrawInProgress>A {0} is being dried. It will be ready in {1}</DankPyon_StrawInProgress>
 	<DankPyon_StrawReady>hay have finished drying and is waiting for pickup</DankPyon_StrawReady>
-	<DankPyon_MeatImproperlyDefined>This hay has been improperly defined to work with the drying rack, contact the hay mod's author</DankPyon_MeatImproperlyDefined>
 	<DankPyon_RemoveStraw>Remove Straw ({0})</DankPyon_RemoveStraw>
-	
-	<DankPyon_DryingRackEmpty>Drying rack is empty right now</DankPyon_DryingRackEmpty>
-	<DankPyon_DryingRackFilled>Drying rack filled with {0}</DankPyon_DryingRackFilled>
-	<DankPyon_DryingRackWorking>Drying rack is working:</DankPyon_DryingRackWorking>
-	<DankPyon_ResourcePercentage> (filled at {0} of {1})</DankPyon_ResourcePercentage>
+
 
 	<!-- Ale -->
 	<DankPyon_InsertAleOrMustDesc>Wort or Must to Insert</DankPyon_InsertAleOrMustDesc>
@@ -117,4 +107,29 @@
 
 	<!-- UI -->
 	<DankPyon_GizmoSearch>Search for loot</DankPyon_GizmoSearch>
+
+	<!-- Production Chains -->
+	<DankPyon_Hide_Description>These raw hides and pelts were removed from a creature, and with the right skills and tools, could be processed into tanned leather.</DankPyon_Hide_Description>
+	<DankPyon_Hide>hide</DankPyon_Hide>
+	<DankPyon_Plank_Description>Useful for building structures and weapons. It is a good fuel for campfires.</DankPyon_Plank_Description>
+	<DankPyon_Log>log</DankPyon_Log>
+	<DankPyon_Timber>plank</DankPyon_Timber>
+
+	<!-- Misc -->
+	<DankPyon_SpiderSilk_Desc>Webknecht silk production:</DankPyon_SpiderSilk_Desc>
+	<DankPyon_TrollSwallowDesc>The ancient troll swallowed one of your pawns! Make sure to kill it in time, to retrieve the pawn alive.</DankPyon_TrollSwallowDesc>
+	<DankPyon_TrollSwallLabel>Yum!</DankPyon_TrollSwallLabel>
+	<DankPyon_StewMealAmount>Meals Available</DankPyon_StewMealAmount>
+
+	<!-- Medieval Nutrient Pots -->
+	<DankPyon_MealSlop_RefueledWithStat>Fueled with Nutrition</DankPyon_MealSlop_RefueledWithStat>
+	<DankPyon_MealSlop_CommandSetTargetFuelLevel>Set target food amount</DankPyon_MealSlop_CommandSetTargetFuelLevel>
+  	<DankPyon_CommandSetTargetFuelLevelDesc>Set the target food amount. Colonists will attempt to fill this up to the target food amount.</DankPyon_CommandSetTargetFuelLevelDesc>
+	<DankPyon_MealSlop_CommandToggleAllowAutoRefuel>Toggle nutrition refueling</DankPyon_MealSlop_CommandToggleAllowAutoRefuel>
+	<DankPyon_MealSlop_CommandToggleAllowAutoRefuelDesc>Sets whether or not automatic refueling is allowed.</DankPyon_MealSlop_CommandToggleAllowAutoRefuelDesc>
+	<DankPyon_StewPot_Itab>Nutrition</DankPyon_StewPot_Itab>
+	<DankPyon_MealSlop_Spoiled>A stew pot has spoiled.</DankPyon_MealSlop_Spoiled>
+	<DankPyon_StewPot_NutritionStored>Nutrition Stored</DankPyon_StewPot_NutritionStored>
+	<DankPyon_SlopRotting>Starting to go bad due to lack of fuel.</DankPyon_SlopRotting>
+
 </LanguageData>

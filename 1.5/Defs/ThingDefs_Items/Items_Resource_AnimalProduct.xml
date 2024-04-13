@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Large Cobra -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_EggLargeForestCobraFertilized</defName>
+		<label>large forest cobra egg (fert.)</label>
+		<description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>AnimalProductRaw/LargeCobraEgg</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>30.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.5</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_LargeCobraForest</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_EggLargeCobraCaveFertilized</defName>
+		<label>large cave cobra egg (fert.)</label>
+		<description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>AnimalProductRaw/LargeCaveCobraEgg</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>30.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.5</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_LargeCobraCave</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Giant Constrictor -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_EggConstrictorForestFertilized</defName>
+		<label>giant forest constrictor egg (fert.)</label>
+		<description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>AnimalProductRaw/GiantEgg</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20.5</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_GiantConstrictorForest</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_EggConstrictorCaveFertilized</defName>
+		<label>giant cave constrictor egg (fert.)</label>
+		<description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>AnimalProductRaw/GiantCaveEgg</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20.5</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_GiantConstrictorCave</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Lindwurm -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_EggLindwurmForestFertilized</defName>
+		<label>giant forest lindwurm egg (fert.)</label>
+		<description>A large fertilized forest lindwurm egg. If all goes well, it should hatch into a baby lindwurm. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>AnimalProductRaw/GiantEgg</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40.5</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_LindwurmForest</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_EggLindwurmCaveFertilized</defName>
+		<label>giant cave lindwurm egg (fert.)</label>
+		<description>A large fertilized forest lindwurm egg. If all goes well, it should hatch into a baby lindwurm. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>AnimalProductRaw/GiantCaveEgg</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>40.5</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_LindwurmCave</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_Webknecht_EggFertilized</defName>
+		<label>chicken egg (fert.)</label>
+		<description>A fertilized webknecht egg. If all goes well, it should hatch into a baby webknecht. It can be eaten raw, but it's much better cooked.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>45.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_Webknecht</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>DankPyon_Griffon_EggFertilized</defName>
+		<label>griffon egg (fert.)</label>
+		<description>A fertilized griffon egg. If all goes well, it should hatch into a baby griffon. It can be eaten raw, but it's much better cooked.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>500.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherPawn>DankPyon_Griffon</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>DankPyon_HornetJelly</defName>
+		<label>hornet jelly</label>
+		<description>Jelly stored and used as food by oversized insects. It is smooth, rich, and fulfills the recreation need of those who consume it. Because of its unique biological properties, it can nourish almost any creature and never rots.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Resources/Fat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(188, 139, 64)</color>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>8.0</MarketValue>
+			<Mass>0.025</Mass>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+			<preferability>MealFine</preferability>
+			<joy>0.08</joy>
+			<joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<babiesCanIngest>true</babiesCanIngest>
+		</ingestible>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<allowedArchonexusCount>150</allowedArchonexusCount>
+	</ThingDef>
+
+</Defs>

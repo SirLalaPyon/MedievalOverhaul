@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ======= wine quality based thoughts ========= -->
+	<ThoughtDef>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/ThoughtSymbol/Food</icon>
+		<defName>DankPyon_DrankWine</defName>
+		<durationDays>1</durationDays>
+		<stages>
+		
+			<!-- Awful wine -->
+			<li>
+				<label>drank awful wine</label>
+				<description>I had the unfortunate experience of drinking awful-quality wine. The taste still lingers, haunting my thoughts.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+
+			<!-- Poor wine -->
+			<li>
+				<label>drank poor wine</label>
+				<description>I drank some poor-quality wine. The taste was less than satisfying</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+
+			<!-- Normal wine -->
+			<li>
+				<label>drank normal wine</label>
+				<description>I drank some average wine.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+
+			<!-- Good wine -->
+			<li>
+				<label>drank good wine</label>
+				<description>The taste of the good-quality wine you just drank lingers on your paldrank, bringing a smile to your face.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+
+			<!-- Excellent wine -->
+			<li>
+				<label>drank excellent wine</label>
+				<description>The incredible taste of the excellent-quality wine you just indulged in has left you in a stdrank of pure culinary delight</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+
+			<!-- Masterwork wine -->
+			<li>
+				<label>drank masterwork wine</label>
+				<description>The unparalleled taste of the masterwork-quality wine you just savored has transported you to a realm of gustatory ecstasy.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+
+			<!-- Legendary wine -->
+			<li>
+				<label>drank legendary wine</label>
+				<description>The divine taste of the legendary-quality wine you just experienced has forever altered your perception of culinary perfection.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

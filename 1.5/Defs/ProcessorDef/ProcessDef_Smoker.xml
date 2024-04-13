@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Smoked Meat-->
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_SmokedMeatProcess</defName>
+		<thingDef>DankPyon_SmokedMeat</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>DankPyon_DriedMeat</li>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>DankPyon_DriedMeat_Human</li>
+				<li>DankPyon_DriedMeat_Insect</li>
+			</disallowedThingDefs>
+			<disallowedCategories>
+				<li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
+			</disallowedCategories>
+		</ingredientFilter>
+		<processDays>1</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>0.10</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-99.0~99.0</temperatureSafe>
+		<temperatureIdeal>21.0~99.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~0.5</rainFactor>
+		<snowFactor>1.0~0.5</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+	</ProcessorFramework.ProcessDef>
+	
+	<!-- Smoked Meat -->
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_SmokedMeatHumanProcess</defName>
+		<thingDef>DankPyon_SmokedMeat_Human</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Meat_Human</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>1</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>0.10</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-99.0~99.0</temperatureSafe>
+		<temperatureIdeal>21.0~99.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~0.5</rainFactor>
+		<snowFactor>1.0~0.5</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+	</ProcessorFramework.ProcessDef>
+
+	<!-- Smoked Insect Meat -->
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_SmokedMeatInsectProcess</defName>
+		<thingDef>DankPyon_SmokedMeat_Insect</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>Meat_Megaspider</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>1</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>0.10</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-99.0~99.0</temperatureSafe>
+		<temperatureIdeal>21.0~99.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~0.5</rainFactor>
+		<snowFactor>1.0~0.5</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+	</ProcessorFramework.ProcessDef>
+
+</Defs>

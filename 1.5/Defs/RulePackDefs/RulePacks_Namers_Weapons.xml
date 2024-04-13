@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>DankPyon_Namer_WeaponsBlunt</defName>
+		<include>
+			<li>DankPyon_NameHumanUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[ImperialNameFirstMale]'s [BluntName]</li>
+				<li>r_name(p=2)->[BluntName]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>BluntName->Names/Blunt</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DankPyon_Namer_WeaponsSlash</defName>
+		<include>
+			<li>DankPyon_NameHumanUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=3)->[ImperialNameFirstMale]'s [SlashName]</li>
+				<li>r_name(p=2)->[SlashName]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>SlashName->Names/Slash</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DankPyon_NameHumanUtility</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>ImperialNameFirstMale->Names/Imperial_First_Male</li>
+				<li>ImperialNameLast->Names/Imperial_Last</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

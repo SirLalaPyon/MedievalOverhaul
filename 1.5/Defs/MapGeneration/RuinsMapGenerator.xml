@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GenStepDef>
+		<defName>DankPyon_Small_Ruin_Gen</defName>
+		<linkWithSite>DankPyon_Small_Ruin</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+			<structureLayoutDefs>
+				<li>DankPyon_SmallHideout1c</li>
+				<li>DankPyon_SmallHideout2c</li>
+			</structureLayoutDefs>
+			<preventBridgeable>false</preventBridgeable>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>DankPyon_Medium_Ruin_Gen</defName>
+		<linkWithSite>DankPyon_Medium_Ruin</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+			<structureLayoutDefs>
+				<li>DankPyon_Medium_Ruin_Brigand1c</li>
+				<li>DankPyon_Medium_Ruin_Brigand2c</li>
+			</structureLayoutDefs>
+			<preventBridgeable>false</preventBridgeable>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>DankPyon_Big_Snake_Ruin_Gen</defName>
+		<linkWithSite>DankPyon_Big_Snake_Ruin</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+		<structureLayoutDefs>
+			<li>DankPyon_Big_SnakeRuin</li>
+		</structureLayoutDefs>
+		</genStep>
+	</GenStepDef>
+
+</Defs>

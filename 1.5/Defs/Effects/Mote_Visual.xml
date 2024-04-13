@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<EffecterDef>
+		<defName>MO_ConstructWood</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+				<soundDef>Interact_ConstructWood</soundDef>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>DustPuff</fleckDef>
+				<chancePerTick>0.035</chancePerTick>
+				<scale>0.9~1.2</scale>
+				<rotationRate>-60~60</rotationRate>
+				<speed>0.6~1.8</speed>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+				<fleckDef>WoodBit</fleckDef>
+				<spawnLocType>BetweenPositions</spawnLocType>
+				<chancePerTick>0.05</chancePerTick>
+				<scale>0.5~0.6</scale>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+				<angle>0~360</angle>
+				<speed>5</speed>
+			</li>
+		</children>
+	</EffecterDef>
+</Defs>

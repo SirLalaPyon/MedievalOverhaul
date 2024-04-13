@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseInsect">
+		<defName>DankPyon_Deathstinger</defName>
+		<label>deathstinger</label>
+		<description>An usually large and vicious wasp, hunting prey in a collective swarm. Its thick shell and deadly stinger makes them dangerous when fighting. A eusocial creature, it cannot reproduce individually.</description>
+		<statBases>
+			<MoveSpeed>4.75</MoveSpeed>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<MarketValue>150</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<uiIconScale>2</uiIconScale>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>BeetleLike</body>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHungerRate>0.10</baseHungerRate>
+			<baseHealthScale>0.6</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeExpectancy>10</lifeExpectancy>
+			<wildness>0.2</wildness>
+			<trainability>Intermediate</trainability>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.12)</li>
+				<li>(0.07, 0, -0.05)</li>
+				<li>(0.0, 0, -0.08)</li>
+				<li>(-0.07, 0, -0.05)</li>
+			</headPosPerRotation>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<soundEating>Insectoid_Eat</soundEating>
+		</race>
+		<tradeTags>
+			<li>AnimalInsect</li>
+		</tradeTags>
+		<!--comps>
+			<li Class="AnimalBehaviours.CompProperties_AutoNutrition">
+				<tickInterval>2000</tickInterval>
+				<consumingFoodReportString>Eating hornet honey</consumingFoodReportString>		
+			</li>
+		</comps-->		
+	</ThingDef>
+  
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DankPyon_Deathstinger</defName>
+		<label>deathstinger</label>
+		<race>DankPyon_Deathstinger</race>
+		<defaultFactionType>DankPyon_Hornets</defaultFactionType>
+		<combatPower>60</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Deathstinger</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Dessicated_Deathstinger</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Deathstinger</texPath>
+					<drawSize>1.25</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Dessicated_Deathstinger</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Deathstinger</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Dessicated_Deathstinger</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

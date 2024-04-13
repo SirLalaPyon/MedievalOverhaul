@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef Name="DankPyon_MedievalPawnKindBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<maxGenerationAge>70</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>DankPyon_MealBread</invFoodDef>
+	</PawnKindDef>
+
+	<PawnKindDef Name="DankPyon_BrigandPawnKindBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>DankPyon_BrigandFaction</defaultFactionType>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<maxGenerationAge>70</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>DankPyon_MealBread</invFoodDef>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+		<defName>DankPyon_Medieval_Peasant</defName>
+		<label>peasant</label>
+		<combatPower>35</combatPower>
+		<chemicalAddictionChance>0.10</chemicalAddictionChance>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>1.1</max>
+		</gearHealthRange>
+		<apparelMoney>200~400</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Peasant</li>
+			<li>DankPyon_PeasantHelmet</li>
+		</apparelTags>
+		<weaponMoney>100~250</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_Bludgeon</li>
+			<li>DankPyon_Pitchfork</li>
+			<li>DankPyon_HookedBlade</li>
+			<li>DankPyon_Pickaxe</li>
+			<li>DankPyon_Hatchet</li>
+			<li>DankPyon_WoodcuttersAxe</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>50</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>3~8</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- Low-tier - merchant, squire -->
+	<PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+		<defName>DankPyon_Medieval_Merchant</defName>
+		<label>merchant</label>
+		<combatPower>40</combatPower>
+		<trader>true</trader>
+		<isFighter>false</isFighter>
+		<gearHealthRange>
+			<min>1</min>
+			<max>1</max>
+		</gearHealthRange>
+		<apparelMoney>400~600</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Peasant</li>
+			<li>DankPyon_PeasantHelmet</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>DankPyon_Footwear_BootsLeather</li>
+		</apparelRequired>
+		<weaponMoney>250~400</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_Bludgeon</li>
+			<li>DankPyon_Hatchet</li>
+			<li>DankPyon_Falchion</li>
+		</weaponTags>
+		<modExtensions Inherit="False"/>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>5~9</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ===== Mercenary ===== -->
+	<PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+		<defName>DankPyon_Medieval_Mercenary</defName>
+		<label>mercenary</label>
+		<combatPower>60</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelMoney>700~1000</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Mercenary</li>
+			<li>DankPyon_MercenaryHelmet</li>
+		</apparelTags>
+		<weaponMoney>250~400</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_ArmingSword</li>
+			<li>DankPyon_MorningStar</li>
+			<li>DankPyon_MilitaryPick</li>
+			<li>DankPyon_Handaxe</li>
+			<li>DankPyon_Falchion</li>
+			<li>DankPyon_BoarSpear</li>
+			<li>DankPyon_Billhook</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>6~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+		<defName>DankPyon_Medieval_MercenaryHeavy</defName>
+		<label>mercenary</label>
+		<combatPower>60</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelMoney>700~1200</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_MercenaryHeavy</li>
+			<li>DankPyon_MercenaryHeavyHelmet</li>
+		</apparelTags>
+		<weaponMoney>300~450</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_ArmingSword</li>
+			<li>DankPyon_MorningStar</li>
+			<li>DankPyon_MilitaryPick</li>
+			<li>DankPyon_Handaxe</li>
+			<li>DankPyon_Falchion</li>
+			<li>DankPyon_BoarSpear</li>
+			<li>DankPyon_Billhook</li>
+			<li>DankPyon_Longsword</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~16</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<!-- ===== Soldiers ===== -->
+	<PawnKindDef ParentName="DankPyon_MedievalPawnKindBase" Name="DankPyon_FootmanBase" Abstract="True">
+		<defName>DankPyon_Medieval_Footman</defName>
+		<label>footman</label>
+		<combatPower>60</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelMoney>700~1000</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Footman</li>
+			<li>DankPyon_FootmanHelmet</li>
+		</apparelTags>
+		<weaponMoney>250~400</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_ArmingSword</li>
+			<li>DankPyon_MorningStar</li>
+			<li>DankPyon_MilitaryPick</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>6~9</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_FootmanBase">
+		<defName>DankPyon_FootmanAmboise</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk1c</li>
+			<li>DankPyon_ShieldHeater_Amboise</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_FootmanBase">
+		<defName>DankPyon_FootmanSoren</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk2c</li>
+			<li>DankPyon_ShieldHeater_Soren</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_FootmanBase">
+		<defName>DankPyon_FootmanOswin</defName>
+		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk3c</li>
+			<li>DankPyon_ShieldHeater_Oswin</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_FootmanBase">
+		<defName>DankPyon_FootmanHesse</defName>
+		<defaultFactionType>DankPyon_NobleHouseSavage</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk4c</li>
+			<li>DankPyon_ShieldHeater_Hesse</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+		<defName>DankPyon_Medieval_Billman</defName>
+		<label>billman</label>
+		<combatPower>60</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>1000</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Footman</li>
+			<li>DankPyon_BillmanHelmet</li>
+		</apparelTags>
+		<weaponMoney>250~400</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_Billhook</li>
+			<li>DankPyon_Polehammer</li>
+			<li>DankPyon_Pike</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>6~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_MedievalPawnKindBase" Name="DankPyon_StandardBase">
+		<defName>DankPyon_StandardAmboise</defName>
+		<label>standard bearer</label>
+		<combatPower>60</combatPower>
+		<canBeSapper>false</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>1000</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Footman</li>
+			<li>DankPyon_BillmanHelmet</li>
+		</apparelTags>
+		<weaponMoney>250~400</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>DankPyon_PikeAmboise</li>
+		</weaponTags>
+		<apparelRequired Inherit="False">
+			<li>DankPyon_Apparel_Heraldic_Hauberk1c</li>
+		</apparelRequired>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>6~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_StandardBase">
+		<defName>DankPyon_StandardSoren</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+		<weaponTags Inherit="False">
+			<li>DankPyon_PikeSoren</li>
+		</weaponTags>
+		<apparelRequired Inherit="False">
+			<li>DankPyon_Apparel_Heraldic_Hauberk2c</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_StandardBase">
+		<defName>DankPyon_StandardOswin</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+		<weaponTags Inherit="False">
+			<li>DankPyon_PikeOswin</li>
+		</weaponTags>
+		<apparelRequired Inherit="False">
+			<li>DankPyon_Apparel_Heraldic_Hauberk3c</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_StandardBase">
+		<defName>DankPyon_StandardHesse</defName>
+		<defaultFactionType>DankPyon_NobleHouseSavage</defaultFactionType>
+		<weaponTags Inherit="False">
+			<li>DankPyon_PikeHesse</li>
+		</weaponTags>
+		<apparelRequired Inherit="False">
+			<li>DankPyon_Apparel_Heraldic_Hauberk4c</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+		<defName>DankPyon_Medieval_Bowman</defName>
+		<label>bowman</label>
+		<combatPower>90</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>
+			<min>0.8</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>1000</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_ArbalesterHelmet</li>
+			<li>DankPyon_Archer</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>200</min>
+			<max>400</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_HuntingBow</li>
+			<li>DankPyon_GreatBow</li>
+			<li>DankPyon_Warbow</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~14</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+		<defName>DankPyon_Medieval_Arbalester</defName>
+		<label>arbalester</label>
+		<combatPower>90</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>
+			<min>0.8</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>700</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_ArbalesterHelmet</li>
+			<li>DankPyon_Archer</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>200</min>
+			<max>400</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_Crossbow</li>
+			<li>DankPyon_Arbalest</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~15</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef Name="DankPyon_Zweihander" ParentName="DankPyon_MedievalPawnKindBase" Abstract="True">
+		<label>zweihander</label>
+		<combatPower>100</combatPower>
+		<isFighter>true</isFighter>
+		<apparelMoney>1000~1600</apparelMoney>
+		<weaponMoney>400~700</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_Greatsword</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>DankPyon_Apparel_FullPlate</li>
+			<li>DankPyon_Footwear_BootsPlate</li>
+			<li>DankPyon_Handwear_GlovesPlate</li>
+		</apparelRequired>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>17~25</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>12~18</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_Zweihander">
+		<defName>DankPyon_ZweihanderAmboise</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Headgear_ZweihanderHelmAmboise</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_Zweihander">
+		<defName>DankPyon_ZweihanderSoren</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Headgear_ZweihanderHelmSoren</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_Zweihander">
+		<defName>DankPyon_ZweihanderOswin</defName>
+		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Headgear_ZweihanderHelmOswin</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_Zweihander">
+		<defName>DankPyon_ZweihanderHesse</defName>
+		<defaultFactionType>DankPyon_NobleHouseSavage</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Headgear_ZweihanderHelmHesse</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef Name="DankPyon_Medieval_Knight" ParentName="DankPyon_MedievalPawnKindBase" Abstract="True">
+		<label>knight</label>
+		<combatPower>110</combatPower>
+		<isFighter>true</isFighter>
+		<apparelMoney>1000~1600</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Knight</li>
+			<li>DankPyon_KnightHelmet</li>
+		</apparelTags>
+		<weaponMoney>300~500</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_Greatsword</li>
+			<li>DankPyon_TwoHandedHammer</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>DankPyon_Apparel_FullPlate</li>
+			<li>DankPyon_Footwear_BootsPlate</li>
+			<li>DankPyon_Handwear_GlovesPlate</li>
+		</apparelRequired>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>17~25</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>12~18</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_Medieval_Knight">
+		<defName>DankPyon_KnightAmboise</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Headgear_HeraldicGreatHelm1c</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_Medieval_Knight">
+		<defName>DankPyon_KnightSoren</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Headgear_HeraldicGreatHelm2c</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_Medieval_Knight">
+		<defName>DankPyon_KnightOswin</defName>
+		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Headgear_HeraldicGreatHelm3c</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_Medieval_Knight">
+		<defName>DankPyon_KnightHesse</defName>
+		<defaultFactionType>DankPyon_NobleHouseSavage</defaultFactionType>
+		<apparelRequired>
+			<li>DankPyon_Headgear_HeraldicGreatHelm4c</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_Medieval_Knight">
+		<defName>DankPyon_Medieval_Lord</defName>
+		<label>lord</label>
+		<combatPower>140</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>999</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+		<factionLeader>true</factionLeader>
+		<apparelMoney>1600~2400</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Knight</li>
+			<li>DankPyon_LordHelmet</li>
+		</apparelTags>
+		<weaponMoney>500~700</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<apparelRequired Inherit="False">
+			<li>DankPyon_Headgear_ArmetGilded</li>
+			<li>DankPyon_Apparel_FullPlateGilded</li>
+			<li>DankPyon_Footwear_BootsPlate</li>
+			<li>DankPyon_Handwear_GlovesPlate</li>
+		</apparelRequired>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>16~18</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<!-- ========== Bandits ========== -->
+	<PawnKindDef ParentName="DankPyon_BrigandPawnKindBase">
+		<defName>DankPyon_BrigandThug</defName>
+		<label>brigand thug</label>
+		<combatPower>35</combatPower>
+		<chemicalAddictionChance>0.10</chemicalAddictionChance>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>1.1</max>
+		</gearHealthRange>
+		<apparelMoney>200~400</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_BrigandThug</li>
+			<li>DankPyon_PeasantHelmet</li>
+		</apparelTags>
+		<weaponMoney>100~250</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_Bludgeon</li>
+			<li>DankPyon_Pitchfork</li>
+			<li>DankPyon_HookedBlade</li>
+			<li>DankPyon_Pickaxe</li>
+			<li>DankPyon_Hatchet</li>
+			<li>DankPyon_WoodcuttersAxe</li>
+			<li>DankPyon_Goedendag</li>
+			<li>DankPyon_MilitiaSpear</li>
+			<li>DankPyon_Pickaxe</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>50</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>3~8</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_BrigandPawnKindBase">
+		<defName>DankPyon_BrigandRaider</defName>
+		<label>brigand raider</label>
+		<combatPower>60</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.6~2</gearHealthRange>
+		<apparelMoney>700~1000</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_BrigandRaider</li>
+		</apparelTags>
+		<weaponMoney>250~400</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_ArmingSword</li>
+			<li>DankPyon_MorningStar</li>
+			<li>DankPyon_MilitaryPick</li>
+			<li>DankPyon_Handaxe</li>
+			<li>DankPyon_Falchion</li>
+			<li>DankPyon_BoarSpear</li>
+			<li>DankPyon_Billhook</li>
+			<li>DankPyon_TwoHandedMallet</li>
+			<li>DankPyon_TwoHandedMace</li>
+			<li>DankPyon_Longsword</li>
+			<li>DankPyon_MorningStar</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>6~8</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_BrigandPawnKindBase">
+		<defName>DankPyon_BrigandLeader</defName>
+		<label>brigand leader</label>
+		<combatPower>110</combatPower>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>
+		<apparelMoney>700~1600</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_BrigandLeader</li>
+		</apparelTags>
+		<weaponMoney>300~500</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_NobleSword</li>
+			<li>DankPyon_Warhammer</li>
+			<li>DankPyon_ArmingSword</li>
+			<li>DankPyon_TwoHandedHammer</li>
+			<li>DankPyon_Greatsword</li>
+			<li>DankPyon_NamedGreataxe</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>DankPyon_Footwear_BootsSplinted</li>
+			<li>DankPyon_Handwear_GlovesSplinted</li>
+		</apparelRequired>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>17~25</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>12~18</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_BrigandPawnKindBase">
+		<defName>DankPyon_BrigandMarksman</defName>
+		<label>bowman</label>
+		<combatPower>90</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>
+			<min>0.8</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>700</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_BrigandThug</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>200</min>
+			<max>400</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_HuntingBow</li>
+			<li>DankPyon_GreatBow</li>
+			<li>DankPyon_Crossbow</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+</Defs>

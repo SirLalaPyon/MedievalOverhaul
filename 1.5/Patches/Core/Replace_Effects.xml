@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef/constructEffect[text() = "ConstructMetal"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/constructEffect[text() = "ConstructMetal"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/stuffProps/constructEffect[text() = "ConstructMetal"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/repairEffect[text() = "ConstructMetal"]</xpath>
+		<value>
+			<repairEffect>MO_ConstructWood</repairEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef/constructEffect[text() = "ConstructWood"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/constructEffect[text() = "ConstructWood"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/stuffProps/constructEffect[text() = "ConstructWood"]</xpath>
+		<value>
+			<constructEffect>MO_ConstructWood</constructEffect>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef/repairEffect[text() = "ConstructWood"]</xpath>
+		<value>
+			<repairEffect>MO_ConstructWood</repairEffect>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/EffecterDef[defName="Mine"]/children/li/fleckDef[text() = "SparkFlash"]</xpath>
+		<value>
+			<moteDef>Mote_StoneBit</moteDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/EffecterDef[defName="Mine"]/children/li/scale</xpath>
+		<value>
+			<scale>1~2</scale>
+		</value>
+	</Operation>
+</Patch>

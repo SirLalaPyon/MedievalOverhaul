@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyDef>
+		<defName>DankPyon_SchratBody</defName>
+		<label>schrat</label>
+		<corePart>
+			<def>MechanicalThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>left eye</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>right eye</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left branch arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>left branch hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left twig</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left middle twig</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left index twig</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left twig</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>right shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right branch arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>right branch hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right twig</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right middle twig</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index twig</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right twig</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>left branch leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>left branch foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>right branch leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>right branch foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>DankPyon_Schrat_Core</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<customLabel>magical vines</customLabel>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<customLabel>magical vines</customLabel>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

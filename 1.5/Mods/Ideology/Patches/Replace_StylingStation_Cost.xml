@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "StylingStation"]/costList</xpath>
+		<value>
+			<costList>
+				<DankPyon_IronIngot>30</DankPyon_IronIngot>
+			</costList>
+		</value>
+	</Operation>
+
+</Patch>

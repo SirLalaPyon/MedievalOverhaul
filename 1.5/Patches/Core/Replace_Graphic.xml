@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Change Milk to MO Graphic -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Milk"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Item/Resource/Milk</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Milk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>DankPyon_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	
+	<!-- Changed Beer to Unused Graphic -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Beer"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Drug/DarkAle</texPath>
+		</value>
+	</Operation>
+
+</Patch>	

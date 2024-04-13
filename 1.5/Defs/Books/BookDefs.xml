@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BookBase">
+		<defName>DankPyon_Schematic</defName>
+		<label>ancient schematic</label>
+		<description>A book which describes technology and methods for using it. Reading schematics can help unlock new technologies.</description>
+		<graphicData>
+			<texPath>Special/AncientCodex</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Special/AncientCodex</uiIconPath>
+		<statBases>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="BookOutcomeProperties_GainResearch">
+						<tabs>
+							<DankPyon_MedievalResearchTab/>
+						</tabs>
+						<exclude/>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+  
+</Defs>

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase" Name="DankPyon_UlrikFactionBase" Abstract="True">
+		<pawnSingular>knight of ulrik</pawnSingular>
+		<pawnsPlural>knights of ulrik</pawnsPlural>
+		<!--categoryTag>Outlander</categoryTag-->
+		<listOrderPriority>31</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>grandmaster</leaderTitle>
+		<fixedLeaderKinds>
+			<li>DankPyon_Ulrik_Lord</li>
+		</fixedLeaderKinds>
+		<factionIconPath>WorldObjects/Castle</factionIconPath>
+		<techLevel>Medieval</techLevel>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures><li>DankPyon_OldWorlder</li></allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">BodyMod_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AgeReversal_Demanded</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<!-- Apparel -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			<!-- Nudity -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">2</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<raidLootMaker>DankPyon_MedievalRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+
+		<pawnGroupMakers>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Miner>1</Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Hunter>1</Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Logger>1</Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Farmer>1</Farmer>
+				</options>
+			</li>
+
+			<li>
+				<!-- Normal fights -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<DankPyon_Ulrik_Initiate>50</DankPyon_Ulrik_Initiate>
+					<DankPyon_Ulrik_Warrior>20</DankPyon_Ulrik_Warrior>
+					<DankPyon_Ulrik_Oathbound>10</DankPyon_Ulrik_Oathbound>
+				</options>
+			</li>
+
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<DankPyon_Ulrik_Initiate>50</DankPyon_Ulrik_Initiate>
+					<DankPyon_Ulrik_Warrior>20</DankPyon_Ulrik_Warrior>
+					<DankPyon_Ulrik_Oathbound>10</DankPyon_Ulrik_Oathbound>
+				</options>
+			</li>
+
+			<li>
+				<!-- Trader -->
+				<kindDef>Trader</kindDef>
+
+				<traders>
+					<DankPyon_Medieval_Merchant>1</DankPyon_Medieval_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Donkey>2</Donkey>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<DankPyon_Ulrik_Initiate>50</DankPyon_Ulrik_Initiate>
+					<DankPyon_Ulrik_Warrior>20</DankPyon_Ulrik_Warrior>
+					<DankPyon_Ulrik_Oathbound>10</DankPyon_Ulrik_Oathbound>
+				</guards>
+			</li>
+		</pawnGroupMakers>
+
+		<hidden>true</hidden>
+		<settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
+
+		<permanentEnemy>false</permanentEnemy>
+		<hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
+	</FactionDef>
+
+	<FactionDef ParentName="DankPyon_UlrikFactionBase">
+		<defName>DankPyon_UlrikFaction</defName>
+		<label>knights of ulrik</label>
+		<description>Looters and pillagers, the laws are nothing for them. Brigands are frequently encountered encroaching nearby settlement with ill intents.</description>
+		
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>60</configurationListOrderPriority>
+	</FactionDef>
+
+
+</Defs>

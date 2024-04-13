@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="BarrelProcessor"]/comps/li[1]/processes</xpath>
+		<value>
+			<li>DankPyon_WortIntoAle</li>
+			<li>DankPyon_MustIntoWine</li>
+			<li>DankPyon_HoneyIntoMead</li>
+			<li>DankPyon_MustIntoMulberryWine</li>
+			<li>DankPyon_MustIntoGriffonBerry</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BarrelProcessor"]/costList</xpath>
+		<value>
+			<costList>
+				<DankPyon_IronIngot>10</DankPyon_IronIngot>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BarrelProcessor"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Production/RusticFermentingBarrel</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2,2</drawSize>
+				<damageData>
+					<rect>(0.05,0.1,0.9,0.9)</rect>
+				</damageData>
+				<shadowData>
+					<volume>(0.75, 0.35, 0.33)</volume>
+				</shadowData>
+			</graphicData>
+		</value>
+	</Operation>
+
+</Patch>

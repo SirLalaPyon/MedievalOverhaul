@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+
+		<defName>DankPyon_AncientLore_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+			
+			<li>subject->[subject_primary]</li> 
+            <!-- Root: Description -->
+            <li>desc->[writingQualityAdjective] [bookType] [exploresAncientTechOn] [subject_primary]. [writingQualitySentence]. [maybe_date]</li>
+
+            <!-- Root: Ancient technology exploration variant -->
+            <li>exploresAncientTechOn->Explores ancient technologies related to</li>
+            <li>exploresAncientTechOn->Uncovers the secrets of ancient technologies for</li>
+            <li>exploresAncientTechOn->Delves into the mysteries of ancient technology surrounding</li>
+            <li>exploresAncientTechOn->Reveals the advancements of ancient technologies in relation to</li>
+            <li>exploresAncientTechOn->Sheds light on the use of ancient technologies for</li>
+            <li>exploresAncientTechOn->Provides insights into ancient technologies used for</li>
+
+            <!-- Writing quality -->
+            <li>writingQualityAdjective(quality==6)->Remarkably well-researched</li>
+            <li>writingQualityAdjective(quality==5)->Insightful and comprehensive</li>
+            <li>writingQualityAdjective(quality==4)->Thought-provoking and articulate</li>
+            <li>writingQualityAdjective(quality==3)->Well-crafted</li>
+            <li>writingQualityAdjective(quality==2)->Average</li>
+            <li>writingQualityAdjective(quality==1)->Poorly-structured</li>
+            <li>writingQualityAdjective(quality==0)->Lacking coherence</li>
+
+            <li>writingQualitySentence(quality[greater_than]4)->is [excellentDesc] [excellentExtra]</li>
+            <li>writingQualitySentence(quality[less_than]5,quality[greater_than]1)->is [decentDesc] [decentExtra]</li>
+            <li>writingQualitySentence(quality[less_than]2)->is [awfulDesc] [awfulExtra]</li>
+
+            <!-- Excellent writing description -->
+            <li>excellentDesc->a profound exploration of ancient technologies</li>
+            <li>excellentDesc->a captivating journey through ancient knowledge</li>
+            <li>excellentDesc->deeply insightful about the mysteries of ancient inventions</li>
+            <li>excellentDesc->rich with the lore of ancient civilizations' technological advancements</li>
+            <li>excellentDesc->intriguing and enigmatic, offering new perspectives on ancient machinery</li>
+            <li>excellentDesc->a mesmerizing glimpse into the technological advancements of the past</li>
+            <li>excellentDesc->filled with ancient secrets waiting to be uncovered, revealing forgotten technological marvels</li>
+            <li>excellentExtra->, with each passage resonating with timeless knowledge</li>
+            <li>excellentExtra->, enthralling readers with its depth and complexity of technological insights</li>
+            <li>excellentExtra->, offering insights that challenge conventional understanding of ancient technologies</li>
+            <li>excellentExtra->, transporting readers to ancient times with vivid descriptions of technological wonders</li>
+
+            <!-- Decent writing description -->
+            <li>decentDesc->a decent collection of ancient texts on technology</li>
+            <li>decentDesc->interesting and informative about ancient engineering</li>
+            <li>decentDesc->focused on a particular aspect of ancient technological innovation</li>
+            <li>decentDesc->offers intriguing perspectives on ancient technological advancements</li>
+            <li>decentDesc->provides a glimpse into the beliefs of ancient peoples regarding technology</li>
+            <li>decentDesc->a valuable resource for understanding ancient technological traditions</li>
+            <li>decentExtra->, though it lacks coherence in its presentation</li>
+            <li>decentExtra->, hindered by its fragmented structure</li>
+            <li>decentExtra->, although it could benefit from more detailed analysis of ancient technologies</li>
+            <li>decentExtra->, with a somewhat dry writing style, yet the information presented is still valuable</li>
+
+            <!-- Awful writing description -->
+            <li>awfulDesc->very poorly written, as it fails to do justice to ancient technological subjects</li>
+            <li>awfulDesc->lacking in depth and clarity, making it hard to decipher ancient technological concepts</li>
+            <li>awfulDesc->hard to follow, as it's filled with inaccuracies and conjecture about ancient technologies</li>
+            <li>awfulDesc->fails to assemble a coherent narrative, bogged down by irrelevant details about ancient machinery</li>
+            <li>awfulDesc->dominated by speculation rather than facts, and every chapter is dry and boring</li>
+            <li>awfulDesc->bizarre yet unoriginal, with no identifiable theme or meaning related to ancient technologies</li>
+            <li>awfulExtra->, and the writing is borderline incoherent</li>
+            <li>awfulExtra->, and is extremely hard to follow, especially regarding ancient technological topics</li>
+            <li>awfulExtra->, and lacks any sense of theme or meaning in the context of ancient technologies</li>
+            <li>awfulExtra->, and doesn't present any interesting ideas at all about ancient technologies</li>
+            <li>awfulExtra->, and every chapter is dry and boring</li>
+            <li>awfulExtra->, and there is no identifiable theme or meaning related to ancient technologies</li>
+       
+
+            <!-- Date -->
+            <li>maybe_date->The ancient tome dates back to [date_form]</li>
+			
+            <li>date_form->a forgotten age.</li>
+
+            <!-- Misc rules -->
+            <li>bookType->ancient text</li>
+            <li>bookType->manuscript</li>
+            <li>bookType->inscription</li>
+            <li>bookType->codex</li>
+
+        </rulesStrings>
+    </rulePack>
+</RulePackDef>
+
+</Defs>

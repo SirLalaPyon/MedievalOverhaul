@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>DankPyon_Hornets</defName>
+		<label>hornets</label>
+		<description>These giant insect-like creatures live underground and burrow up to attack when attracted by noise or pheromone signals.</description>
+		<pawnSingular>insect</pawnSingular>
+		<pawnsPlural>insects</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Hornets</fixedName>
+		<factionIconPath>World/WorldObjects/Expanding/Insects</factionIconPath>
+		<colorSpectrum>
+			<li>(0.44, 0.41, 0.32)</li>
+			<li>(0.61, 0.58, 0.49)</li>
+			<li>(0.60, 0.49, 0.36)</li>
+		</colorSpectrum>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Animal</techLevel>
+		<permanentEnemy>true</permanentEnemy>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>1000</configurationListOrderPriority>
+	</FactionDef>
+
+
+</Defs>

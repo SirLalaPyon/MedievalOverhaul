@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GenStepDef>
+		<defName>DankPyon_TarPits</defName>
+		<order>500</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>DankPyon_TarPit</thingDef>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>25</minSpacing>
+			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>0.7~1</countPer10kCellsRange>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>4</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>4</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>4</radius>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>DankPyon_BeeHives</defName>
+		<order>500</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>DankPyon_BeeHive</thingDef>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>200</minSpacing>
+			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>0.7~1</countPer10kCellsRange>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>4</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>6</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>4</radius>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>DankPyon_HornetNest</defName>
+		<order>500</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>DankPyon_HornetNest</thingDef>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>200</minSpacing>
+			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>0.7~1</countPer10kCellsRange>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>4</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>6</radius>
+					<affordance>Heavy</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>4</radius>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<order>319</order>
+		<defName>DankPyon_BattlefieldRemains</defName>
+		<genStep Class="GenStep_ScatterGroup">
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>85</minSpacing>
+			<countPer10kCellsRange>0.2~0.5</countPer10kCellsRange>
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>false</allowRoofed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>5</radius>
+					<affordance>Heavy</affordance>
+				</li>
+			</validators>
+			<groups>
+				<li>
+					<things>
+						<DankPyon_AncientRuinedCart>0.15</DankPyon_AncientRuinedCart>
+						<DankPyon_AncientRuinedBanner>0.1</DankPyon_AncientRuinedBanner>
+						<DankPyon_AncientFootman>0.3</DankPyon_AncientFootman>
+						<DankPyon_AncientRuinedBarrel>0.2</DankPyon_AncientRuinedBarrel>
+						<DankPyon_AncientRuinedCrate>0.2</DankPyon_AncientRuinedCrate>
+						<DankPyon_RustedHauberk>0.1</DankPyon_RustedHauberk>
+						<DankPyon_RustedHelmet>0.2</DankPyon_RustedHelmet>
+						<DankPyon_RustedHelmet>0.2</DankPyon_RustedHelmet>
+						<DankPyon_RustedSwords>0.2</DankPyon_RustedSwords>
+					</things>
+					<indoorRuin>false</indoorRuin>
+					<coveredCellsPer10Cells>0.5~1</coveredCellsPer10Cells>
+					<filthDef>Filth_RubbleBuilding</filthDef>
+					<filthExpandBy>1</filthExpandBy>
+					<filthChance>0.05</filthChance>
+					<clusterRectRadius>12~16</clusterRectRadius>
+				</li>
+				<li>
+					<things>
+						<DankPyon_AncientRuinedCart>0.15</DankPyon_AncientRuinedCart>
+						<DankPyon_RuinedBatteringRam>0.15</DankPyon_RuinedBatteringRam>
+						<DankPyon_RuinedSiegeTower>0.15</DankPyon_RuinedSiegeTower>
+						<DankPyon_AncientFootman>0.2</DankPyon_AncientFootman>
+						<DankPyon_RustedHauberk>0.1</DankPyon_RustedHauberk>
+						<DankPyon_RustedHelmet>0.2</DankPyon_RustedHelmet>
+						<DankPyon_RustedHelmet>0.2</DankPyon_RustedHelmet>
+						<DankPyon_RustedSwords>0.2</DankPyon_RustedSwords>
+						<DankPyon_AncientRuinedBanner>0.1</DankPyon_AncientRuinedBanner>
+					</things>
+					<indoorRuin>false</indoorRuin>
+					<coveredCellsPer10Cells>1.25~2</coveredCellsPer10Cells>
+					<filthDef>Filth_RubbleBuilding</filthDef>
+					<filthExpandBy>1</filthExpandBy>
+					<filthChance>0.05</filthChance>
+					<clusterRectRadius>12~16</clusterRectRadius>
+				</li>
+			</groups>
+		</genStep>
+	</GenStepDef>
+
+</Defs>

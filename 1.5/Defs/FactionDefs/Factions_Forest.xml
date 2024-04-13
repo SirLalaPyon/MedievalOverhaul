@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>DankPyon_Forest_Faction</defName>
+		<label>the forest</label>
+		<description>Monsters and unhumanely creatures that inhabit the deeps of the forest. Known to indiscriminately hunt men yet peacefully harbor animals of nature.</description>
+		<pawnSingular>tree</pawnSingular>
+		<pawnsPlural>trees</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Creatures of the Forest</fixedName>
+		<factionIconPath>WorldObjects/Forest</factionIconPath>
+		<colorSpectrum>
+			<li>(0.78, 0.79, 0.71)</li>
+		</colorSpectrum>
+    
+		<displayInFactionSelection>false</displayInFactionSelection>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Animal</techLevel>
+		<permanentEnemy>true</permanentEnemy>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(400,200)</li>
+				<li>(900,300)</li>
+				<li>(100000,10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+    
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>80</configurationListOrderPriority>
+	</FactionDef>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>DankPyon_Witch_Faction</defName>
+		<label>witch's charmed</label>
+		<description>Monsters and unhumanely creatures that inhabit the deeps of the forest. Known to indiscriminately hunt men yet peacefully harbor animals of nature.</description>
+		<pawnSingular>tree</pawnSingular>
+		<pawnsPlural>trees</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>Witch's Charmed</fixedName>
+		<factionIconPath>WorldObjects/Forest</factionIconPath>
+		<colorSpectrum>
+			<li>(0.78, 0.79, 0.71)</li>
+		</colorSpectrum>
+    
+		<displayInFactionSelection>false</displayInFactionSelection>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Animal</techLevel>
+		<permanentEnemy>true</permanentEnemy>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(400,200)</li>
+				<li>(900,300)</li>
+				<li>(100000,10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+    
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>80</configurationListOrderPriority>
+	</FactionDef>
+
+</Defs>

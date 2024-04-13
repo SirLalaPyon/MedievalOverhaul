@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <StyleCategoryDef>
+    <defName>DankPyon_OldWorld</defName>
+    <label>old world</label>
+    <iconPath>WorldObjects/Castle</iconPath>
+    <soundOngoingRitual>RitualSustainer_Rustic</soundOngoingRitual>
+    <ritualVisualEffectDef>Rustic</ritualVisualEffectDef>
+    <thingDefStyles>
+      <li>
+        <thingDef>Altar_Grand</thingDef>
+        <styleDef>DankPyon_AltarGrand</styleDef>
+      </li>
+     </thingDefStyles>
+  </StyleCategoryDef>
+
+</Defs>

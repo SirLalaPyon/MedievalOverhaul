@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ProcessorFramework.ProcessDef Name="DankPyon_SmeltingOre_Base" Abstract="True">
+		<processDays>0.06</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>false</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<!--bonusOutputs>   ADD ASH AS BYPRODUCT TO USE FOR CURING MEAT
+        <Rat>(1.0, 1)</Rat>
+    </bonusOutputs-->
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+		<defName>DankPyon_SmeltingOre_Iron</defName>
+		<thingDef>DankPyon_IronIngot</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_IronOre</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+		<defName>DankPyon_SmeltingOre_Steel</defName>
+		<thingDef>Steel</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_IronIngot</li>
+			</thingDefs>
+		</ingredientFilter>
+		<efficiency>0.5</efficiency>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+		<defName>DankPyon_SmeltingOre_Silver</defName>
+		<thingDef>Silver</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_SilverOre</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+		<defName>DankPyon_SmeltingOre_Gold</defName>
+		<thingDef>Gold</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_GoldOre</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+		<defName>DankPyon_SmeltingOre_Coal</defName>
+		<thingDef>DankPyon_Coal</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</ingredientFilter>
+		<efficiency>2.0</efficiency>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+		<defName>DankPyon_SmeltingOre_Tar</defName>
+		<thingDef>DankPyon_Tar</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</ingredientFilter>
+		<efficiency>0.5</efficiency>
+		<processDays>0.02</processDays>
+	</ProcessorFramework.ProcessDef>
+
+	<!--ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+		<defName>DankPyon_SmeltingOre_Plasteel</defName>
+		<thingDef>Plasteel</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_PlasteelOre</li>
+			</thingDefs>
+		</ingredientFilter>
+		<efficiency>0.25</efficiency>
+	</ProcessorFramework.ProcessDef-->
+
+</Defs>

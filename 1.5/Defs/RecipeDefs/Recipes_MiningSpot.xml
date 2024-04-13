@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Stone Chunks Base Class -->
+	<RecipeDef Name="DankPyon_MiningSpotBase" Abstract="True">
+		<description>Mine to obtain rock chunks.</description>
+		<workSpeedStat>MiningSpeed</workSpeedStat>
+		<workSkill>Mining</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<recipeUsers>
+			<li>DankPyon_MiningSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- Coal Chunks -->
+	<RecipeDef ParentName="DankPyon_MiningSpotBase">
+		<defName>DankPyon_Gather_Coal</defName>
+		<workAmount>600</workAmount>
+		<label>Mine coal chunks x5</label>
+		<jobString>Mining 5 coal chunks.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<products>
+			<DankPyon_Coal>5</DankPyon_Coal>
+		</products>
+	</RecipeDef>
+
+	<!-- Salt Chunks -->
+	<RecipeDef ParentName="DankPyon_MiningSpotBase">
+		<defName>DankPyon_Gather_Salt</defName>
+		<description>Mine deep down underground to obtain salt</description>
+		<workAmount>600</workAmount>
+		<label>gather salt x5</label>
+		<jobString>Mining 5 salt</jobString>
+		<products>
+			<DankPyon_Salt>5</DankPyon_Salt>
+		</products>
+	</RecipeDef>
+
+</Defs>

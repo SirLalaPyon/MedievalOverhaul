@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase" Name="DankPyon_AncientReliquaryBase">
+		<defName>DankPyon_AncientReliquaryEmpty</defName>
+		<label>ancient reliquary</label>
+		<description>A ceremonial building that protects and displays a relic.</description>
+		<graphicData>
+			<drawSize>(5,4)</drawSize>
+			<texPath>Art/AncientReliquaryEmpty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(2.9,0.6,1.9)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.1,0.1,2.8,1.8)</rect>
+			</damageData>
+		</graphicData>
+
+		<statBases>
+			<Beauty>400</Beauty>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>40000</WorkToBuild>
+			<Mass>100</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<category>Building</category>
+		<size>(3,2)</size>
+		<pathCost>30</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<uiIconOffset>(0, -0.02)</uiIconOffset>
+		<uiIconScale>1.2</uiIconScale>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>300</costStuffCount>
+
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsArt</li>
+		</thingCategories>
+
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+
+		<!--designationCategory>DankPyon_RuinFurniture</designationCategory-->
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AncientReliquaryBase">
+		<defName>DankPyon_AncientReliquary</defName>
+		<label>ancient reliquary</label>
+		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		<tickerType>Normal</tickerType>
+		<drawerType>MapMeshAndRealTime</drawerType>
+
+		<graphicData>
+			<drawSize>(5,4)</drawSize>
+			<texPath>Art/AncientReliquary</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(2.9,0.6,1.9)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.1,0.1,2.8,1.8)</rect>
+			</damageData>
+		</graphicData>
+
+		<statBases>
+			<Beauty>500</Beauty>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>40000</WorkToBuild>
+			<Mass>100</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<costList>
+			<Gold>75</Gold>
+		</costList>
+
+		<minifiedDef Inherit="False"/>
+		<thingCategories Inherit="False"/>
+
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/AncientReliquaryRuined</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(5,4)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~1</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_MeleeWeapon_NamedGreatsword</li>
+					<li>DankPyon_MeleeWeapon_NamedTwoHandedFlangedMace</li>
+					<li>DankPyon_MeleeWeapon_NamedGreataxe</li>
+					<li>DankPyon_MeleeWeapon_NamedTwoHandedHammer</li>
+					<li>DankPyon_MeleeWeapon_NamedTwoHandedHammer1c</li>
+					<li>DankPyon_MeleeWeapon_NamedHalberd</li>
+					<li>DankPyon_MeleeWeapon_NamedHalberd1c</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+    
+	</ThingDef>
+  
+  
+  
+</Defs>

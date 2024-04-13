@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>hornetNest</li>
+		</settings>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MapGeneratorDef[@Name = "MapCommonBase"]/genSteps</xpath>
+					<value>
+						<li>DankPyon_HornetNest</li>
+					</value>
+				</li>
+
+			</operations>
+		</inactive>
+	</Operation>
+
+</Patch>

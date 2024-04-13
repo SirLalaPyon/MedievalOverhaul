@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef Name="DankPyon_UlrikPawnKindBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>DankPyon_UlrikFaction</defaultFactionType>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>60</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>DankPyon_MealRations</invFoodDef>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_UlrikPawnKindBase">
+		<defName>DankPyon_Ulrik_Initiate</defName>
+		<label>initiate</label>
+		<combatPower>60</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.8~2</gearHealthRange>
+
+		<apparelMoney>700~1200</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Knight</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>DankPyon_Apparel_AdornedMailShirt</li>
+			<li>DankPyon_Footwear_BootsSplinted</li>
+			<li>DankPyon_Handwear_GlovesSplinted</li>
+		</apparelRequired>
+		
+		<weaponMoney>300~450</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_ArmingSword</li>
+			<li>DankPyon_MorningStar</li>
+			<li>DankPyon_Longsword</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~14</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_UlrikPawnKindBase">
+		<defName>DankPyon_Ulrik_Warrior</defName>
+		<label>warrior</label>
+		<combatPower>80</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>1~2</gearHealthRange>
+
+		<apparelMoney>700~1200</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Knight</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>DankPyon_Apparel_AdornedWarriorArmor</li>
+			<li>DankPyon_Footwear_BootsSplinted</li>
+			<li>DankPyon_Handwear_GlovesSplinted</li>
+			<li>DankPyon_Adorned_FlatTop</li>
+		</apparelRequired>
+		
+		<weaponMoney>300~450</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_NobleSword</li>
+			<li>DankPyon_WingedMace</li>
+			<li>DankPyon_Longsword</li>
+			<li>DankPyon_Greatsword</li>
+			<li>DankPyon_NamedTwoHandedFlangedMace</li>
+			<li>DankPyon_NamedTwoHandedHammer</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>12~14</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_UlrikPawnKindBase">
+		<defName>DankPyon_Ulrik_Oathbound</defName>
+		<label>oathbound</label>
+		<combatPower>110</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>1.5~2</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+
+		<apparelMoney>1000~1600</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Knight</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>DankPyon_Apparel_AdornedHeavyPlate</li>
+			<li>DankPyon_Footwear_BootsPlate</li>
+			<li>DankPyon_Handwear_GlovesPlate</li>
+			<li>DankPyon_Adorned_GreatHelm</li>
+		</apparelRequired>
+		
+		<weaponMoney>600~800</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_Greatsword</li>
+		</weaponTags>
+		<initialWillRange>4~4</initialWillRange>
+		<initialResistanceRange>22~24</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>14~18</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_UlrikPawnKindBase">
+		<defName>DankPyon_Ulrik_Lord</defName>
+		<label>high lord</label>
+		<combatPower>160</combatPower>
+		<isFighter>true</isFighter>
+		<gearHealthRange>1.5~2</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<factionLeader>true</factionLeader>
+
+		<apparelMoney>1600~2400</apparelMoney>
+		<apparelTags>
+			<li>DankPyon_Knight</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>DankPyon_Apparel_AdornedHeavyPlate</li>
+			<li>DankPyon_Footwear_BootsPlate</li>
+			<li>DankPyon_Handwear_GlovesPlate</li>
+			<li>DankPyon_Adorned_GreatHelm</li>
+		</apparelRequired>
+		
+		<weaponMoney>600~800</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_Greatsword</li>
+		</weaponTags>
+		<initialWillRange>4~5</initialWillRange>
+		<initialResistanceRange>30~30</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>18~20</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+</Defs>

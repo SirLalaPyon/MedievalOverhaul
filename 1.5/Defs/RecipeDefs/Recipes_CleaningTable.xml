@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Clean clean clean base -->
+	<RecipeDef Name="DankPyon_CleaningBase" Abstract="True">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0</workSkillLearnFactor>
+		<effectWorking>Smith</effectWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<recipeUsers>
+			<li>DankPyon_CleaningBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- even cleaner recipes -->
+	<!-- Chalice -->
+	<RecipeDef ParentName="DankPyon_CleaningBase">
+		<defName>DankPyon_CleanLoot_ChaliceSilver</defName>
+		<workAmount>200</workAmount>
+		<label>clean silver chalice</label>
+		<jobString>Cleaning silver chalice.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_ChaliceSilver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_ChaliceSilver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Building_ChaliceSilver>1</DankPyon_Building_ChaliceSilver>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_CleaningBase">
+		<defName>DankPyon_CleanLoot_ChaliceGold</defName>
+		<workAmount>200</workAmount>
+		<label>clean golden chalice</label>
+		<jobString>Cleaning golden chalice.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_ChaliceGold</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_ChaliceGold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Building_ChaliceGold>1</DankPyon_Building_ChaliceGold>
+		</products>
+	</RecipeDef>
+
+	<!-- Bowl -->
+	<RecipeDef ParentName="DankPyon_CleaningBase">
+		<defName>DankPyon_CleanLoot_BowlSilver</defName>
+		<workAmount>200</workAmount>
+		<label>clean silver bowl</label>
+		<jobString>Cleaning silver bowl.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_BowlSilver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_BowlSilver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Building_BowlSilver>1</DankPyon_Building_BowlSilver>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_CleaningBase">
+		<defName>DankPyon_CleanLoot_BowlGold</defName>
+		<workAmount>200</workAmount>
+		<label>clean gold bowl</label>
+		<jobString>Cleaning gold bowl.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_BowlGold</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_BowlGold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Building_BowlGold>1</DankPyon_Building_BowlGold>
+		</products>
+	</RecipeDef>
+
+	<!-- Skull -->
+	<!--RecipeDef ParentName="DankPyon_CleaningBase">
+	<defName>DankPyon_CleanLoot_SkullSilver</defName>
+	<workAmount>200</workAmount>		
+	<label>clean silver skull</label>
+	<jobString>Cleaning silver skull.</jobString>
+	<targetCountAdjustment>5</targetCountAdjustment>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_SkullSilver</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>DankPyon_SkullSilver</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<DankPyon_Building_SkullSilver>1</DankPyon_Building_SkullSilver>
+	</products>		
+</RecipeDef-->
+
+	<RecipeDef ParentName="DankPyon_CleaningBase">
+		<defName>DankPyon_CleanLoot_SkullGold</defName>
+		<workAmount>200</workAmount>
+		<label>clean gold skull</label>
+		<jobString>Cleaning gold skull.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_SkullGold</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_SkullGold</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Building_SkullGold>1</DankPyon_Building_SkullGold>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_CleaningBase">
+		<defName>DankPyon_CleanLoot_SkullEmerald</defName>
+		<workAmount>200</workAmount>
+		<label>clean emerald skull</label>
+		<jobString>Cleaning emerald skull.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_SkullEmerald</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_SkullEmerald</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Building_SkullEmerald>1</DankPyon_Building_SkullEmerald>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_CleaningBase">
+		<defName>DankPyon_CleanLoot_SkullSapphire</defName>
+		<workAmount>200</workAmount>
+		<label>clean sapphire skull</label>
+		<jobString>Cleaning sapphire skull.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_SkullSapphire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_SkullSapphire</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Building_SkullSapphire>1</DankPyon_Building_SkullSapphire>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_CleaningBase">
+		<defName>DankPyon_CleanLoot_SkullRuby</defName>
+		<workAmount>200</workAmount>
+		<label>clean ruby skull</label>
+		<jobString>Cleaning ruby skull.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_SkullRuby</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_SkullRuby</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Building_SkullRuby>1</DankPyon_Building_SkullRuby>
+		</products>
+	</RecipeDef>
+
+
+
+
+</Defs>

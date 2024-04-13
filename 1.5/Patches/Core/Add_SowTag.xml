@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="Soil" or defName="SoilRich" or defName="MarshyTerrain" or defName="MossyTerrain" or defName="Gravel"]/affordances</xpath>
+        <value>
+            <li>DankPyon_GrowSoilVine</li>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			 <xpath>/Defs/TerrainDef[
+			 defName="AA_FertilizedSand" or
+			 defName="AA_SuperiorFertilizedSand" or
+			 defName="AA_PollenSoil"]/affordances</xpath>
+			 <value>
+				<li>DankPyon_GrowSoilVine</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			 <xpath>/Defs/TerrainDef[
+			 defName="AB_WebbedMarshyTerrain" or
+			 defName="AB_DenseGrass" or
+			 defName="AB_MycoticSoil" or
+			 defName="AB_MycoticSoilRich" or
+			 defName="GU_AlienSand" or
+			 defName="GU_RichAlienSand"]/affordances</xpath>
+			 <value>
+				<li>DankPyon_GrowSoilVine</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Core</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			 <xpath>/Defs/TerrainDef[@Name="BiomesCore_FloatingGarden"]/affordances</xpath>
+			 <value>
+				<li>DankPyon_GrowSoilVine</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Fertile Fields [1.1]</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			 <xpath>/Defs/TerrainDef[
+			 defName="Topsoil" or
+			 defName="DirtFert" or
+			 defName="SoilTilled" or
+			 defName="SoilWorn"]/affordances</xpath>
+			 <value>
+				<li>DankPyon_GrowSoilVine</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

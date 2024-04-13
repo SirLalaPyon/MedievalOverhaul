@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
+		<defName>DankPyon_LargeClutch</defName>
+		<label>large clutch</label>
+		<description>A gigantic group of eggs that has not yet hatched. Widely sought for and can sell for a huge sum.</description>
+		<graphicData>
+			<texPath>Buildings/SnakeLair/ClutchLarge</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<rotatable>false</rotatable>
+
+		<killedLeavings>
+			<DankPyon_EggConstrictorCaveFertilized>4</DankPyon_EggConstrictorCaveFertilized>
+		</killedLeavings>
+
+		<fillPercent>0.2</fillPercent>
+		<pathCost>42</pathCost>
+
+		<costList>
+			<DankPyon_Bone>40</DankPyon_Bone>
+			<DankPyon_EggConstrictorCaveFertilized>8</DankPyon_EggConstrictorCaveFertilized>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Mass>10</Mass>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<surfaceType>Item</surfaceType>
+	</ThingDef>
+
+	<building>
+		<alwaysDeconstructible>true</alwaysDeconstructible>
+	</building>
+
+  
+
+</Defs>

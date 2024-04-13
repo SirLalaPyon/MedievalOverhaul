@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_SilkwormIntoSilk</defName>
+		<thingDef>DankPyon_Silk</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_Silkworm</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>6</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor><!-- do not use too many decimals e.g 0.333 is fine for 1/3 -->
+		<efficiency>5</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+		<bonusOutputs><!-- 
+    <thingDef>(1.0, 1.0)</thingDef> -->
+		</bonusOutputs>
+	</ProcessorFramework.ProcessDef>
+
+</Defs>

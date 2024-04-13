@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--PawnKindDef Name="DankPyon_SnakeCaveBase" Abstract="True">
+    <defaultFactionType>DankPyon_SnakeCave_Faction</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <weaponMoney>0~0</weaponMoney>
+    <defendPointRadius>0</defendPointRadius>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DankPyon_SnakeCaveBase">
+    <label>giant cave constrictor</label>
+    <race>DankPyon_GiantConstrictorCave</race>
+    <combatPower>450</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/CaveGiantConstrictor</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.55</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/Dessicated_GiantConstrictor</texPath>
+          <drawSize>4.55</drawSize>
+        </dessicatedBodyGraphicData>
+        <butcherBodyPart>
+          <bodyPartGroup>HornAttackTool</bodyPartGroup>
+          <thing>DankPyon_Hide_GiantConstrictor</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+  </PawnKindDef-->
+
+
+</Defs>

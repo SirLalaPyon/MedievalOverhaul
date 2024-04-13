@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyPartDef>
+		<defName>DankPyon_Schrat_Core</defName>
+		<label>heart of the forest</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>BloodPumpingSource</li>
+			<li>HearingSource</li>
+		</tags>
+	</BodyPartDef>
+  
+</Defs>

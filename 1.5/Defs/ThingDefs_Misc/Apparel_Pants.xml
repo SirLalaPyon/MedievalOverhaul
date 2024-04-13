@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ApparelMakeableBase" Name="DankPyon_Base_Pants">
+		<defName>DankPyon_Apparel_Hose</defName>
+		<label>hose</label>
+		<description>A standard pair of clothing for burghers and nobility alike.</description>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Apparel/Legwear/Hose</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<thingCategories>
+			<li>DankPyon_Legwear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.31</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_BrigandThug</li>
+				<li>DankPyon_BrigandRaider</li>
+				<li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Archer</li>
+				<li>DankPyon_Footman</li>
+				<li>DankPyon_Billman</li>
+				<li>DankPyon_Knight</li>
+				<li>DankPyon_HedgeKnight</li>
+				<li>DankPyon_Lord</li>
+
+				<li>MedievalMilitaryBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_Pants">
+		<defName>DankPyon_Apparel_Trousers</defName>
+		<label>trousers</label>
+		<description>A standard pair of clothing for burghers and nobility alike.</description>
+		<graphicData>
+			<texPath>Apparel/Legwear/Trousers</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_Pants">
+		<defName>DankPyon_Apparel_Braies</defName>
+		<label>braies</label>
+		<description>Braies are underhose, usually of linen, although in some cultures they serve also as an outer garment.</description>
+		<graphicData>
+			<texPath>Apparel/Legwear/Braies</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<!--====================Leg Outer====================-->
+	<!--==========Protective Leg Base==========-->
+	<ThingDef ParentName="ApparelMakeableBase" Name="DankPyon_Base_ArmoredPants" Abstract="True">
+		<thingCategories>
+			<li>DankPyon_Legwear</li>
+		</thingCategories>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>DankPyon_LegShell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_ArmoredPants">
+		<defName>DankPyon_Apparel_ChaussesPadded</defName>
+		<label>padded chausses</label>
+		<description>A quilted legwear that provides protection with padded fabric.</description>
+		<graphicData>
+			<texPath>Apparel/Legwear/ChaussesPadded</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.24</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>DankPyon_TailorsBench</li>
+			</recipeUsers>
+		</recipeMaker>
+
+		<apparel>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_BrigandThug</li>
+				<li>DankPyon_BrigandRaider</li>
+				<li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Archer</li>
+				<li>DankPyon_Footman</li>
+				<li>DankPyon_Billman</li>
+
+				<li>MedievalMilitaryBasic</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_ArmoredPants">
+		<defName>DankPyon_Apparel_ChaussesSplinted</defName>
+		<label>splinted chausses</label>
+		<description>A pair of splinted chausses to protect the leg with riveted metal plates. Cunningly crafted to allow the wearer almost complete freedom of mobility.</description>
+		<graphicData>
+			<texPath>Apparel/Legwear/ChaussesSplinted</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+        
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>19000</WorkToMake>
+			<Mass>9</Mass>
+			<StuffEffectMultiplierArmor>0.378</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+		</recipeMaker>
+
+		<apparel>
+			<tags>
+				<li>DankPyon_BrigandRaider</li>
+				<li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Footman</li>
+				<li>DankPyon_Billman</li>
+
+				<li>MedievalMilitaryBasic</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_ArmoredPants">
+		<defName>DankPyon_Apparel_ChaussesPlate</defName>
+		<label>plate chausses</label>
+		<description>A pair of plate chausses to protect the leg with exceptionally crafted plates fitted to the wearer. It's strong riveted plate and finely articulated structure provides almost complete mobility.</description>
+		<graphicData>
+			<texPath>Apparel/Legwear/ChaussesPlate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+        
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>6</Mass>
+			<StuffEffectMultiplierArmor>0.458</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+		</recipeMaker>
+
+		<apparel>
+			<tags>
+				<li>DankPyon_Knight</li>
+				<li>DankPyon_HedgeKnight</li>
+
+				<li>MedievalMilitaryAdvanced</li>
+				<li>MedievalPrestigeCombatGear</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

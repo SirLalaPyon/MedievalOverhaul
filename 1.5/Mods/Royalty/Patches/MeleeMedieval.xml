@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Axe"]/recipeMaker</xpath>
+		<value>
+			<recipeMaker>
+				<researchPrerequisite>DankPyon_BasicBlades</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>5</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Warhammer"]/recipeMaker</xpath>
+		<value>
+			<recipeMaker>
+				<researchPrerequisite>DankPyon_MilitaryMaces</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>5</Crafting>
+				</skillRequirements>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+</Patch>

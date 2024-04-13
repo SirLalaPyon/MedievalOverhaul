@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>DankPyon_Apparel_Sackcloth</defName>
+		<label>Sackcloth</label>
+		<description>A quickly made ragged piece of clothing, sewn from bits and pieces of various leathers.</description>
+		<graphicData>
+			<texPath>Apparel/LightArmor/Sackcloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_LeatherTanning</researchPrerequisite>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1600</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LightArmor/Sackcloth</wornGraphicPath>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_BrigandThug</li>
+
+				<li>MedievalBasic</li>
+			</tags>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>DankPyon_Apparel_Leather_Tunic</defName>
+		<label>vest</label>
+		<description>A simple vest stitched from treated and tanned leathers, both comfortable and pragmatic. The thick leather is a decent balance between protection and encumbrance.</description>
+		<graphicData>
+			<texPath>Apparel/LightArmor/Leather_Tunic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</recipeMaker>
+		
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.11</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LightArmor/Leather_Tunic</wornGraphicPath>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_BrigandThug</li>
+				<li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Archer</li>
+				<li>DankPyon_Footman</li>
+				<li>DankPyon_Billman</li>
+				<li>DankPyon_Knight</li>
+				<li>DankPyon_HedgeKnight</li>
+
+				<li>MedievalBasic</li>
+			</tags>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>DankPyon_Apparel_Padded_Surcoat</defName>
+		<label>padded surcoat</label>
+		<description>A cloth mantle vest, sewn similarly to a gambeson, with a thick wool filling. Provides additional padding when worn but fails to deflect spear thrusts that come under shields.</description>
+		<graphicData>
+			<texPath>Apparel/LightArmor/Padded_Coat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</recipeMaker>
+
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LightArmor/Padded_Coat</wornGraphicPath>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_BrigandThug</li>
+				<li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Archer</li>
+				<li>DankPyon_Footman</li>
+				<li>DankPyon_Billman</li>
+				<li>DankPyon_Knight</li>
+				<li>DankPyon_HedgeKnight</li>
+
+				<li>MedievalMilitaryBasic</li>
+			</tags>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Dankpyon_Apparel_Gambeson</defName>
+		<label>gambeson</label>
+		<description>A lightweight protective garment layered with tautly stitched linens, between which a dense stuffing of oakum or wool sits. Quite insulating and provides decent protection against cuts and blows.</description>
+		<graphicData>
+			<texPath>Apparel/LightArmor/Gambeson</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+		</recipeMaker>
+
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LightArmor/Gambeson</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_BrigandThug</li>
+				<li>DankPyon_Mercenary</li>
+				<li>DankPyon_MercenaryHeavy</li>
+				<li>DankPyon_Archer</li>
+				<li>DankPyon_Footman</li>
+				<li>DankPyon_Billman</li>
+				<li>DankPyon_Knight</li>
+				<li>DankPyon_HedgeKnight</li>
+
+				<li>MedievalMilitaryBasic</li>
+			</tags>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>DankPyon_Apparel_Padded_Leather</defName>
+		<label>padded armor</label>
+		<description>A padded linen tunic reinforced with mail plates and overlapping tanned leather, providing lightweight bodily protection at a low cost. A variation of the leather vest, the padded leather covers more of the body and is therefore more protective, but is more cumbersome as well.</description>
+		<graphicData>
+			<texPath>Apparel/LightArmor/Padded_Leather</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+		</recipeMaker>
+
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.52</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LightArmor/Padded_Leather</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_BrigandRaider</li>
+				<li>DankPyon_Mercenary</li>
+				<li>DankPyon_Archer</li>
+
+				<li>MedievalMilitaryBasic</li>
+			</tags>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>DankPyon_Apparel_Light_Lamellar</defName>
+		<label>light lamellar</label>
+		<description>A leather lamellar built up of overlapping leather plates that can provide a substantial amount of protection.</description>
+		<graphicData>
+			<texPath>Apparel/LightArmor/Lamellar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+		</recipeMaker>
+
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.52</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/LightArmor/Lamellar</wornGraphicPath>
+			<tags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_BrigandRaider</li>
+				<li>DankPyon_Mercenary</li>
+				<li>DankPyon_Archer</li>
+
+				<li>MedievalMilitaryBasic</li>
+			</tags>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

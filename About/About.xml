@@ -3,9 +3,9 @@
 	<name>Medieval Overhaul</name>
 	<author>SirLalaPyon</author>
 	<supportedVersions>
-        <!--li>1.2</li-->
 		<li>1.3</li>
 		<li>1.4</li>
+		<li>1.5</li>
     </supportedVersions>
 	<packageId>DankPyon.Medieval.Overhaul</packageId>
 	<loadAfter>
@@ -13,7 +13,10 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>LWM.DeepStorage</li>
 		<li>syrchalis.processor.framework</li>
+		<li>vr.processor.framework</li>
 		<li>OskarPotocki.VanillaExpanded.RoyaltyPatches</li>
+		<li>vanillaexpanded.vtexe</li>
+		<li>oskarpotocki.vfe.tribals</li>
 	</loadAfter>
 	<forceLoadAfter>
 		<li>OskarPotocki.VanillaExpanded.RoyaltyPatches</li>
@@ -30,16 +33,12 @@
 		<displayName>Vanilla Expanded Framework</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
 	  </li>
-	  <!--li>     NEEDED FOR 1.3
-		<packageId>LWM.DeepStorage</packageId>
-		<displayName>LWM's Deep Storage</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1617282896</steamWorkshopUrl>
-	  </li-->
 	  <li>
 		<packageId>syrchalis.processor.framework</packageId>
 		<displayName>[SYR] Processor Framework</displayName>
-		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2633514537</steamWorkshopUrl>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3210544395</steamWorkshopUrl>
 	  </li>
 	</modDependencies>
 	<description>Pretty dank mod</description>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/PrettiestBarrel</modIconPath>
 </ModMetaData>

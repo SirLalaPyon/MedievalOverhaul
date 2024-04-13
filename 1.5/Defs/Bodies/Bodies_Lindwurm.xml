@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyDef>
+		<defName>DankPyon_LindwurmBody</defName>
+		<label>lindwurm</label>
+		<corePart>
+			<def>SnakeBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>DankPyon_LindwurmTail</def>
+					<coverage>0.24</coverage>
+					<groups>
+						<li>DankPyon_TailAttackTool</li>
+					</groups>
+				</li>
+				<li>
+					<def>Spine</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>left kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>right kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>DankPyon_LindwurmNeck</def>
+					<coverage>0.24</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>SnakeHead</def>
+							<coverage>0.75</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Skull</def>
+									<coverage>0.30</coverage>
+									<depth>Inside</depth>
+									<parts>
+										<li>
+											<def>Brain</def>
+											<coverage>0.50</coverage>
+											<depth>Inside</depth>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>left eye</customLabel>
+									<coverage>0.09</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>right eye</customLabel>
+									<coverage>0.09</coverage>
+								</li>
+                                
+								<li>
+									<def>Nose</def>
+									<coverage>0.15</coverage>
+								</li>
+								<li>
+									<def>SnakeMouth</def>
+									<coverage>0.15</coverage>
+									<groups>
+										<li>Mouth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Shoulder</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.1</coverage>
+					<parts>
+						<li>
+							<def>Arm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>Humerus</def>
+									<customLabel>left humerus</customLabel>
+									<coverage>0.1</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>Radius</def>
+									<customLabel>left radius</customLabel>
+									<coverage>0.1</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>Hand</def>
+									<customLabel>left hand</customLabel>
+									<coverage>0.25</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right first claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontLeftClaws</li>
+											</groups>
+										</li>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right second claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontLeftClaws</li>
+											</groups>
+										</li>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right third claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontLeftClaws</li>
+											</groups>
+										</li>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right fourth claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontLeftClaws</li>
+											</groups>
+										</li>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right fifth claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontLeftClaws</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Shoulder</def>
+					<customLabel>right shoulder</customLabel>
+					<coverage>0.1</coverage>
+					<parts>
+						<li>
+							<def>Arm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>Humerus</def>
+									<customLabel>right humerus</customLabel>
+									<coverage>0.1</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>Radius</def>
+									<customLabel>right radius</customLabel>
+									<coverage>0.1</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>Hand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.25</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right first claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontRightClaws</li>
+											</groups>
+										</li>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right second claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontRightClaws</li>
+											</groups>
+										</li>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right third claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontRightClaws</li>
+											</groups>
+										</li>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right fourth claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontRightClaws</li>
+											</groups>
+										</li>
+										<li>
+											<def>FrontClaw</def>
+											<customLabel>right fifth claw</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>FrontRightClaws</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+			<li>DankPyon_AncientForest</li>			
+		</value>
+	</Operation>
+
+</Patch>

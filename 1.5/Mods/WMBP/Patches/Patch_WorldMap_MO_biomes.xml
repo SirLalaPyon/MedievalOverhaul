@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/BiomeDef[defName = "DankPyon_DarkForest"]</xpath>
+		<value>
+			<li Class="BiomesKit.BiomesKitControls">
+				<forested>true</forested>
+				<uniqueHills>true</uniqueHills>
+				<forestSnowyBelow>1</forestSnowyBelow>
+				<forestSparseBelow>1100</forestSparseBelow>
+				<forestDenseAbove>1500</forestDenseAbove>
+				<snowpilesBelow>-15</snowpilesBelow>
+				<mountainsSemiSnowyBelow>10</mountainsSemiSnowyBelow>
+				<impassableSemiSnowyBelow>25</impassableSemiSnowyBelow>
+				<mountainsSnowyBelow>-5</mountainsSnowyBelow>
+				<impassableSnowyBelow>0</impassableSnowyBelow>
+				<mountainsVerySnowyBelow>-12</mountainsVerySnowyBelow>
+				<impassableVerySnowyBelow>-5</impassableVerySnowyBelow>
+				<mountainsFullySnowyBelow>-21</mountainsFullySnowyBelow>
+				<impassableFullySnowyBelow>-21</impassableFullySnowyBelow>
+				<materialRandomRotation>false</materialRandomRotation>
+				<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+			</li>
+		</value>
+	</Operation>
+				 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>/Defs/BiomeDef[defName = "DankPyon_AncientForest"]</xpath>
+		<value>
+			<li Class="BiomesKit.BiomesKitControls">
+				<forested>true</forested>
+				<uniqueHills>true</uniqueHills>
+				<forestDenseAbove>1100</forestDenseAbove>
+				<mountainsSemiSnowyBelow>10</mountainsSemiSnowyBelow>
+				<impassableSemiSnowyBelow>25</impassableSemiSnowyBelow>
+				<materialRandomRotation>false</materialRandomRotation>
+				<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+				<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+				<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+				<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+			</li>
+		</value>
+	</Operation>
+				 
+	<Operation Class="PatchOperationReplace" MayRequire="DerekBickley.LegacyTerrainOverhaulFinal">
+		<xpath>/Defs/BiomeDef[defName = "DankPyon_DarkForest"]/texture</xpath>
+		<value>
+			<texture>Biomes/World/DarkForest</texture>
+		</value>
+	</Operation>
+
+</Patch>

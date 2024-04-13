@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PreceptDef[defName="IdeoBuilding"]/buildingRoomRequirements/li[contains(., 'Column')]</xpath>
+		<value>
+			<li Class="RoomRequirement_ThingAnyOfCount">
+				<things>
+					<li>Column</li>
+					<li>DankPyon_RoyalColumn</li>
+				</things>
+				<count>4</count>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

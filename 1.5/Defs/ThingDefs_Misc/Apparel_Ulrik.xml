@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_AdornedArmorBase" Abstract="True">
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+	<!--==================== Body Armor ====================-->
+	<ThingDef ParentName="DankPyon_AdornedArmorBase">
+		<defName>DankPyon_Apparel_AdornedMailShirt</defName>
+		<label>heavy hauberk (Adorned)</label>
+		<description>A thick and robust hauberk, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
+		<graphicData>
+			<texPath>Apparel/Adorned/Adorned_MailShirt/Adorned_MailShirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<DankPyon_Linen>70</DankPyon_Linen>
+		</costList>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<MaxHitPoints>270</MaxHitPoints>
+			<Mass>12</Mass>
+			<StuffEffectMultiplierArmor>0.64</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<Insulation_Cold>15</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>DankPyon_AdornedArmor</li>
+				<li>DankPyon_ChainArmor</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Adorned/Adorned_MailShirt/Adorned_MailShirt</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_Initiate</li>
+			</tags>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AdornedArmorBase">
+		<defName>DankPyon_Apparel_AdornedWarriorArmor</defName>
+		<label>warrior's armor (Adorned)</label>
+		<description>A robust mail shirt, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
+		<graphicData>
+			<texPath>Apparel/Adorned/Adorned_Warrior/Adorned_Warrior</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>170</costStuffCount>
+		<costList>
+			<DankPyon_Linen>70</DankPyon_Linen>
+		</costList>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>290</MaxHitPoints>
+			<Mass>15</Mass>
+			<StuffEffectMultiplierArmor>0.76</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<Insulation_Cold>15</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.8</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>DankPyon_AdornedArmor</li>
+				<li>DankPyon_ChainArmor</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Adorned/Adorned_Warrior/Adorned_Warrior</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_Oathtaker</li>
+			</tags>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AdornedArmorBase">
+		<defName>DankPyon_Apparel_AdornedHeavyPlate</defName>
+		<label>full plate(Adorned)</label>
+		<description>A heavy plate coverd by a thick riveted jacket and reinforced vambraces. The layered structure provides an ample amount of warmth. Typically worn by the oathbound, the best of the oathtakers, finely decorated with trophies and religious symbols.</description>
+		<graphicData>
+			<texPath>Apparel/Adorned/Adorned_FullPlate/Adorned_FullPlate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+       
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<costList>
+			<Gold>5</Gold>
+			<DankPyon_Linen>70</DankPyon_Linen>
+		</costList>
+        
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<MaxHitPoints>310</MaxHitPoints>
+			<Mass>17</Mass>
+			<StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<Insulation_Cold>15</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>20</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.2</MoveSpeed>
+			<SocialImpact>0.30</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>DankPyon_AdornedArmor</li>
+				<li>PlateArmor</li>
+			</researchPrerequisites>
+		</recipeMaker>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Adorned/Adorned_FullPlate/Adorned_FullPlate</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_Oathbound</li>
+			</tags>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<!--==================== Headgear ====================-->
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>DankPyon_Adorned_HeavyMailCoif</defName>
+		<label>heavy chain coif(adorned)</label>
+		<description>A thick hood forged from chains of metal with an added plate-metal noseguard to almost entirely protect the face. Makes it a bit difficult to see, but otherwise offers excellent protection against cuts.</description>
+		<graphicData>
+			<texPath>Headgear/Adorned_HeavyMailCoif/Adorned_HeavyMailCoif</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>DankPyon_AdornedArmor</li>
+				<li>DankPyon_ChainArmor</li>
+			</researchPrerequisites>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>145</MaxHitPoints>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>65</costStuffCount>
+		<costList>
+			<DankPyon_Linen>20</DankPyon_Linen>
+		</costList>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/Adorned_HeavyMailCoif/Adorned_HeavyMailCoif</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_InitiateHelmet</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>DankPyon_Adorned_FlatTop</defName>
+		<label>closed flat-top(adorned)</label>
+		<description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head, but hinders eyesight and breathing.</description>
+		<graphicData>
+			<texPath>Headgear/Adorned_ClosedFlatTop/Adorned_ClosedFlatTop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>DankPyon_AdornedArmor</li>
+				<li>DankPyon_ChainArmor</li>
+			</researchPrerequisites>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>21000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<DankPyon_Linen>30</DankPyon_Linen>
+		</costList>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/Adorned_ClosedFlatTop/Adorned_ClosedFlatTop</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_Ulrik_Warrior</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>DankPyon_Adorned_GreatHelm</defName>
+		<label>great helm (adorned)</label>
+		<description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of the Ulrik order.</description>
+		<graphicData>
+			<texPath>Headgear/Adorned_GreatHelm/Adorned_GreatHelm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>DankPyon_AdornedArmor</li>
+				<li>PlateArmor</li>
+			</researchPrerequisites>
+		</recipeMaker>
+
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<MaxHitPoints>290</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.3</SocialImpact>
+		</equippedStatOffsets>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+		<costList>
+			<DankPyon_Linen>30</DankPyon_Linen>
+		</costList>
+
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+
+			<wornGraphicPath>Headgear/Adorned_GreatHelm/Adorned_GreatHelm</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>DankPyon_Ulrik_Oathbound</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+</Defs>

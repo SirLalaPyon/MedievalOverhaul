@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedHide</defName>
+		<label>unfinished hide</label>
+		<description>An unfinished piece of an hide.</description>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedHide</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>DankPyon_Hide</li>
+		</stuffCategories>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedHideArmor</defName>
+		<label>unfinished hide armor</label>
+		<description>An unfinished piece of hide armor.</description>
+		<statBases>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedHide</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedLivingShield</defName>
+		<label>unfinished shield</label>
+		<description>An unfinished shield.</description>
+		<statBases>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedLivingShield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
+</Defs>

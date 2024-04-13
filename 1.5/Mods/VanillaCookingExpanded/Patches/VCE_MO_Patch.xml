@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- VCE Wheat to spelt -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Wheat"]/label</xpath>
+		<value>
+			<label>spelt plant</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Wheat"]/description</xpath>
+		<value>
+			<description>Spelt is a species of wheat that has been cultivated since approximately 5000 BC. A good source of dietary fiber, protein (which it contains more of than common wheat), and vitamins and minerals. Spelt takes almost an entire growing season to come to fruition. While fragile and time-consuming, this cereal has been genetically engineered to gently break into flour with a mere touch.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Flour"]/label</xpath>
+		<value>
+			<label>spelt flour</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Flour"]/description</xpath>
+		<value>
+			<description>Spelt flour, ideal for use in baking. Spelt flour takes a very long time to go bad, if stored in a dry environment. It was produced by spelt that has been genetically engineered to gently break into flour with a mere touch.</description>
+		</value>
+	</Operation>
+	
+	<!-- VCE Cheese to Cow Cheese -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Cheese"]/label</xpath>
+		<value>
+			<label>cow cheese</label>
+		</value>
+	</Operation>
+
+	<!-- VCE Cheese Category to Aged Cheese -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="VCE_Cheese"]/label</xpath>
+		<value>
+			<label>aged cheese</label>
+		</value>
+	</Operation>
+	
+	<!-- VCE Sugarcane to Uba sugarcane -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Sugarcane"]/label</xpath>
+		<value>
+			<label>uba sugarcane plant</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_Sugarcane"]/description</xpath>
+		<value>
+			<description>A thick, tall, tropical grass with jointed stems. The Uba variety is much hardier but less productive than common sugarcane. While not exactly the most nutritious thing to eat on its own, this genetically modified sugarcane is easily milled into brown sugar and then used for a variety of culinary creations - Particularly desserts.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawSugar"]/label</xpath>
+		<value>
+			<label>brown sugar</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawSugar"]/description</xpath>
+		<value>
+			<description>Brown sugar is a sucrose sugar product with a distinctive brown color due to the presence of sugarcane molasses, and it adds a much desired sweetness. While sugar is good on the tongue, it is not so good on the kidneys and can quickly cause diabetes when eaten in mass. Sugar is easily converted into energy by the body, which may result in a nice burst of energy.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VCE_RawSugar"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Patches/Raw/VCE_BrownSugar</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="VCE_SugarRush"]/label</xpath>
+		<value>
+			<label>consumed brown sugar (from meal)</label>
+		</value>
+	</Operation>
+
+</Patch>

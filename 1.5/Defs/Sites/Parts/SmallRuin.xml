@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SitePartDef>
+		<defName>DankPyon_Small_Ruin</defName>
+		<label>small ruin</label>
+		<description>A small ruin.</description>
+		<siteTexture>WorldObjects/Ruins</siteTexture>
+		<expandingIconTexture>WorldObjects/Ruins</expandingIconTexture>
+		<handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+		<tags>
+			<li>DankPyon_Small_Ruin</li>
+		</tags>
+	</SitePartDef>
+
+	<SitePartDef>
+		<defName>DankPyon_Medium_Ruin</defName>
+		<label>large ruin</label>
+		<description>A large ruin.</description>
+		<siteTexture>WorldObjects/Ruins</siteTexture>
+		<expandingIconTexture>WorldObjects/Ruins</expandingIconTexture>
+		<handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+		<tags>
+			<li>DankPyon_Medium_Ruin</li>
+		</tags>
+	</SitePartDef>
+
+	<!-- Big Ruin -->
+	<SitePartDef>
+		<defName>DankPyon_Big_Snake_Ruin</defName>
+		<label>snake infested ruin</label>
+		<description>A large snake infested ruin.</description>
+		<siteTexture>WorldObjects/Ruins</siteTexture>
+		<expandingIconTexture>WorldObjects/Ruins</expandingIconTexture>
+		<handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+		<tags>
+			<li>DankPyon_Big_Snake_Ruin</li>
+		</tags>
+	</SitePartDef>
+</Defs>

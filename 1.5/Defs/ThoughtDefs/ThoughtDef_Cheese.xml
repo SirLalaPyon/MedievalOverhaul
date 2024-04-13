@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ======= Cheese quality based thoughts ========= -->
+	<ThoughtDef>
+		<defName>DankPyon_AteCheese</defName>
+		<durationDays>1</durationDays>
+		<stages>
+		
+			<!-- Awful cheese -->
+			<li>
+				<label>ate awful cheese</label>
+				<description>I had the unfortunate experience of eating awful-quality cheese. The taste still lingers, haunting my thoughts.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
+			</li>
+
+
+			<!-- Poor cheese -->
+			<li>
+				<label>ate poor cheese</label>
+				<description>I ate some poor-quality cheese. The taste was less than satisfying</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+
+			<!-- Normal cheese -->
+			<li>
+				<label>ate normal cheese</label>
+				<description>I ate some average cheese.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<!-- Good cheese -->
+			<li>
+				<label>ate good cheese</label>
+				<description>The taste of the good-quality cheese you just ate lingers on your palate, bringing a smile to your face.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<!-- Excellent cheese -->
+			<li>
+				<label>ate excellent cheese</label>
+				<description>The incredible taste of the excellent-quality cheese you just indulged in has left you in a state of pure culinary delight</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<!-- Masterwork cheese -->
+			<li>
+				<label>ate masterwork cheese</label>
+				<description>The unparalleled taste of the masterwork-quality cheese you just savored has transported you to a realm of gustatory ecstasy.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<!-- Legendary cheese -->
+			<li>
+				<label>ate legendary cheese</label>
+				<description>The divine taste of the legendary-quality cheese you just experienced has forever altered your perception of culinary perfection.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

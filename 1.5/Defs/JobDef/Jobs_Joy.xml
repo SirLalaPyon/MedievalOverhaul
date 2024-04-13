@@ -2,18 +2,18 @@
 <Defs>
 
 	<JobDef>
-        <defName>DankPyon_Slop_Refuel_StatAtomic</defName>
-        <driverClass>MedievalOverhaul.JobDriver_RefuelStatAtomic</driverClass>
-        <reportString>delivering TargetB to TargetA.</reportString>
-        <forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
-    </JobDef>
+		<defName>DankPyon_Slop_Refuel_StatAtomic</defName>
+		<driverClass>MedievalOverhaul.JobDriver_RefuelStatAtomic</driverClass>
+		<reportString>delivering TargetB to TargetA.</reportString>
+		<forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+	</JobDef>
 	
 	<JobDef>
-        <defName>DankPyon_Slop_Refuel_Stat</defName>
-        <driverClass>MedievalOverhaul.JobDriver_RefuelStat</driverClass>
-        <reportString>delivering TargetB to TargetA.</reportString>
-        <forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
-    </JobDef>
+		<defName>DankPyon_Slop_Refuel_Stat</defName>
+		<driverClass>MedievalOverhaul.JobDriver_RefuelStat</driverClass>
+		<reportString>delivering TargetB to TargetA.</reportString>
+		<forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+	</JobDef>
 
 	<JobDef>
 		<defName>DankPyon_Play_CupAndDice</defName>
@@ -51,6 +51,14 @@
 		<joyXpPerTick>0.008</joyXpPerTick>
 		<joyKind>Gaming_Cerebral</joyKind>
 		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>DankPyon_DoBillMending</defName>
+		<driverClass>MedievalOverhaul.JobDriver_DoMending</driverClass>
+		<reportString>doing mending at TargetA.</reportString>
+		<suspendable>false</suspendable>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 

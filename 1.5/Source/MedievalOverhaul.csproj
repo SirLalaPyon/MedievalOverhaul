@@ -44,6 +44,10 @@
     <Compile Include="Medieval Overhaul\Harmony\InspectStringPatch.cs" />
     <Compile Include="Medieval Overhaul\Harmony\StoreFuel.cs" />
     <Compile Include="Medieval Overhaul\Fuel\ITab_Fuel.cs" />
+    <Compile Include="Medieval Overhaul\Mending\JobDriver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\Mending\RecipeWorker_Mending.cs" />
+    <Compile Include="Medieval Overhaul\Mending\WorkGiver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mending.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Timber.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Utility.cs" />

@@ -499,7 +499,7 @@
 	</ThingDef>
 
 	<!-- Hearty Stew -->
-	<ThingDef ParentName="MealCooked">
+	<!--ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealHeartyStew</defName>
 		<label>Hearty Stew</label>
 		<description>A Hearty Stew, containing various ingredients, and cooked in a reasonable amount of time.</description>
@@ -525,7 +525,7 @@
 			</outcomeDoers>
 		</ingestible>
 		<rotatable>false</rotatable>
-	</ThingDef>
+	</ThingDef-->
 
 	<!-- Apple Pie -->
 	<ThingDef ParentName="MealCooked">
@@ -853,7 +853,7 @@
 	</ThingDef>
 
 	<!-- Weak Stew -->
-	<ThingDef ParentName="MealCooked">
+	<!--ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealWeakStew</defName>
 		<label>weak stew</label>
 		<description>A light stew, consisting primarily of bone broth with a few morsels of meat floating within. Not quite saturating, but a filling meal nonetheless.</description>
@@ -880,7 +880,7 @@
 			</outcomeDoers>
 		</ingestible>
 		<rotatable>false</rotatable>
-	</ThingDef>
+	</ThingDef-->
 
 	<!-- Fried Eggs -->
 	<ThingDef ParentName="MealCooked">

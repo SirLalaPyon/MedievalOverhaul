@@ -11,6 +11,7 @@
 		<graphicData>
 			<texPath>Security/TurretScorpio/TurretScorpio_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.5,1.5)</drawSize>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
@@ -181,6 +182,7 @@
 		<graphicData>
 			<texPath>Security/TurretBallista/TurretBallista_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4.3, 4.3)</drawSize>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
@@ -348,6 +350,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Security/TurretTrebuchet/TurretTrebuchet_Base</texPath>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -520,6 +523,7 @@
 		<graphicData>
 			<texPath>Security/TurretRepeaterBallista/TurretRepeaterBallista_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4.3, 4.3)</drawSize>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>

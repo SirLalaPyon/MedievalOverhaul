@@ -2621,6 +2621,7 @@
 		<graphicData>
 			<texPath>Storage/Cart_Assorted</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
+			<drawRotated>false</drawRotated>
 		</graphicData>
 	</ThingDef>
 
@@ -2631,6 +2632,7 @@
 			<texPath>Storage/Cart_Ore</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
 		</graphicData>
 		<building>
 			<fixedStorageSettings Inherit="false">
@@ -2658,6 +2660,7 @@
 			<texPath>Storage/Cart_PlantRaw</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
 		</graphicData>
 		<building>
 			<fixedStorageSettings Inherit="false">
@@ -2685,6 +2688,7 @@
 			<texPath>Storage/Cart_Textiles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
 		</graphicData>
 		<building>
 			<fixedStorageSettings Inherit="false">
@@ -2713,6 +2717,7 @@
 		<graphicData>
 			<texPath>Storage/Cart_WoodLog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
 		</graphicData>
 		<building>
 			<fixedStorageSettings Inherit="false">

@@ -1,24 +1,21 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
-using static Unity.Burst.Intrinsics.X86.Avx;
 
 namespace MedievalOverhaul
 {
     public static class ThingDefGenerator_Timber
     {
-        public static IEnumerable<ThingDef> ImpliedTreeDefs()
+        public static IEnumerable<ThingDef> ImpliedTreeDefs(bool hotReload = false)
         {
 
-            foreach (ThingDef tree in TimberUtility.AllTrees)
+            foreach (ThingDef tree in TimberUtility.AllTreesForGenerator)
             {
                 ThingDef woodDef = tree.plant.harvestedThingDef;
-                ThingDef timberDef = new ThingDef();
-                if (!Utility.LogList.blackListWood.Contains(woodDef))
+                string defName = TimberUtility.GetNameString(woodDef);
+                ThingDef timberDef = hotReload ? DefDatabase<ThingDef>.GetNamed(defName, false) ?? new ThingDef() : new ThingDef();
+                if (!Utility.LogList.blackListWood.Contains(woodDef) && woodDef != null)
                 {
                     if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
                     {

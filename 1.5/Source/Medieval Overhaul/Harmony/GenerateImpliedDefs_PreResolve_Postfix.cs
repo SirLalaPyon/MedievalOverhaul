@@ -14,20 +14,20 @@ namespace MedievalOverhaul
     public static class GenerateImpliedDefs_PreResolve_Postfix
     {
 
-        public static void Postfix()
+        public static bool Prefix(bool hotReload)
         {
 
             HideUtility.MakeListOfAnimals();
             TimberUtility.MakeListOfTrees();
-            foreach (ThingDef def in ThingDefGenerator_Hide.ImpliedHideDefs())
+            foreach (ThingDef def in ThingDefGenerator_Hide.ImpliedHideDefs(hotReload))
             {
-                DefGenerator.AddImpliedDef(def);
+                DefGenerator.AddImpliedDef<ThingDef>(def, hotReload);
             }
             foreach (ThingDef def in ThingDefGenerator_Timber.ImpliedTreeDefs())
             {
-                DefGenerator.AddImpliedDef(def);
+                DefGenerator.AddImpliedDef<ThingDef>(def, hotReload);
             }
-            DirectXmlCrossRefLoader.ResolveAllWantedCrossReferences(FailMode.LogErrors);
+            return true;
         }
     }
 }

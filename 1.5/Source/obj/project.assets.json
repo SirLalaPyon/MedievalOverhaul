@@ -16,7 +16,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4045-beta": {
+      "Krafs.Rimworld.Ref/1.5.4063": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -122,7 +122,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4045-beta": {
+      "Krafs.Rimworld.Ref/1.5.4063": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -228,7 +228,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4045-beta": {
+      "Krafs.Rimworld.Ref/1.5.4063": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -334,7 +334,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4045-beta": {
+      "Krafs.Rimworld.Ref/1.5.4063": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -440,7 +440,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4045-beta": {
+      "Krafs.Rimworld.Ref/1.5.4063": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -551,17 +551,17 @@
         "krafs.publicizer.nuspec"
       ]
     },
-    "Krafs.Rimworld.Ref/1.5.4045-beta": {
-      "sha512": "zw+wHLNhcFsn/P44F6GvUSqIbeePC8mPlJqPbdjkH9yQr3UfTRHccb+SuR3woBkzVhZKOg3lQo8Ruk0iQr4neA==",
+    "Krafs.Rimworld.Ref/1.5.4063": {
+      "sha512": "jxuQqqPiiW32XYEh4rQRyK/C7pZOFmkE0fSJGd1Y8mq72DYwp945WcbmAKsgFcnCN4GjvNHhFYsTmjOYk+/hDA==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.5.4045-beta",
+      "path": "krafs.rimworld.ref/1.5.4063",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.5.4045-beta.nupkg.sha512",
+        "krafs.rimworld.ref.1.5.4063.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -654,33 +654,38 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
       "Krafs.Publicizer >= 2.2.1",
-      "Krafs.Rimworld.Ref >= 1.5.4045-beta"
+      "Krafs.Rimworld.Ref >= 1.5.4063"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Enurta\\.nuget\\packages\\": {}
+    "C:\\Users\\fake1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\1.5\\Source\\MedievalOverhaul.csproj",
       "projectName": "MedievalOverhaul",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul.csproj",
-      "packagesPath": "C:\\Users\\Enurta\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\obj\\",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\1.5\\Source\\MedievalOverhaul.csproj",
+      "packagesPath": "C:\\Users\\fake1\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\1.5\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Enurta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fake1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net48"
       ],
       "sources": {
-        "C:\\Games\\Rimworld C# Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://nuget.info/packages/Krafs.Rimworld.Ref/1.5.4045-beta": {}
+        "C:\\Users\\fake1\\OneDrive\\Documents": {},
+        "https://www.nuget.org/packages/Krafs.Rimworld.Ref": {}
       },
       "frameworks": {
         "net48": {
@@ -699,7 +704,7 @@
           },
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.5.4045-beta, )"
+            "version": "[1.5.4063, )"
           }
         }
       }

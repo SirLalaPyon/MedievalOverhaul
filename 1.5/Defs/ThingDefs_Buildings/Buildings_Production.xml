@@ -1761,10 +1761,14 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<description>A cooking table with a stone oven designed for baking meals.</description>
 		<graphicData>
-			<texPath>Production/Oven</texPath>
+			<texPath>Production/MendingWorkbench/MendingWorkbench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(3.5,1.5)</drawSize>
+			<drawSize>(4,3)</drawSize>
+			<shadowData>
+				<volume>(2.8, 0.35, 0.59)</volume>
+				<offset>(0, 0, 0.08)</offset>
+			</shadowData>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -1772,30 +1776,34 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<staticSunShadowHeight>0.3</staticSunShadowHeight>
 		<stuffCategories>
-			<li>Stony</li>
+			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
-		<costList>
-			<WoodLog>20</WoodLog>
-		</costList>
-		<comps>
-			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>10</fuelConsumptionRate>
-				<fuelCapacity>10.0</fuelCapacity>
-				<fuelFilter>
-					<thingDefs>
-						<li>DankPyon_RepairTools</li>
-					</thingDefs>
-				</fuelFilter>
-				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-			</li>
-		</comps>
+		<costStuffCount>20</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(1,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>

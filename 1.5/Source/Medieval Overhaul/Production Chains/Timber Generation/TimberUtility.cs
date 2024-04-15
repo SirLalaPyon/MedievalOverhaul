@@ -177,7 +177,11 @@ namespace MedievalOverhaul
                 healthAffectsPrice = false,
                 soundInteract = SoundDefOf.Standard_Drop,
                 statBases = new List<StatModifier>(),
-            };
+                terrainAffordanceNeeded = TerrainAffordanceDefOf.Light,
+                isTechHediff = true,
+                burnableByRecipe = true,
+                minRewardCount = 10,
+        };
             log.SetStatBaseValue(StatDefOf.Beauty, -4f);
             log.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
             log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
@@ -191,7 +195,21 @@ namespace MedievalOverhaul
             log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Heat));
             log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier));
             log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier));
-
+            if (wood.tools != null)
+            {
+                log.tools = wood.tools;
+            }
+            if (wood.comps != null) { log.comps = wood.comps; }
+            if (wood.techLevel != null) { log.techLevel = wood.techLevel; } 
+            if (wood.equipmentType != null) { log.equipmentType = wood.equipmentType; } 
+            if (wood.weaponClasses != null)
+            { 
+                log.weaponClasses = wood.weaponClasses;
+            }
+            if (wood.techHediffsTags != null)
+            {
+                log.techHediffsTags = wood.techHediffsTags;
+            }
             log.graphicData = new GraphicData
             {
                 graphicClass = typeof(Graphic_StackCount),
@@ -204,6 +222,8 @@ namespace MedievalOverhaul
                 MedievalOverhaulDefOf.DankPyon_RawWood,
 
             };
+
+           
             log.stuffProps = new StuffProperties
             {
                 categories = new List<StuffCategoryDef>

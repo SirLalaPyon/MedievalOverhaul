@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>dubwise.dubsbadhygiene.lite</li>
-        </mods>
-		
-		<match Class="PatchOperationSequence">
-			<operations>
-			
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="PitLatrine" or defName="WashBucket"]/graphicData</xpath>
-					<value>
-						<drawSize>(2,2)</drawSize>
-					</value>
-				</li>
-			</operations>
-		</match>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PitLatrine" or defName="WashBucket"]/graphicData</xpath>
+		<value>
+			<drawSize>(2,2)</drawSize>
+		</value>
 	</Operation>
+
 </Patch>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ThingDef ParentName="BasedWaterTower" DBHLite="true">
 		<defName>EEG_WaterTowerS</defName>
 		<label>water barrel</label>
@@ -15,7 +16,6 @@
 		<costList>
 			<Steel>5</Steel>
 		</costList>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -57,7 +57,6 @@
 				<Radius>7.9</Radius>
 			</li>
 		</comps>
-
 		<stuffCategories>
 			<li>Woody</li>
 			<li>Stony</li>
@@ -70,4 +69,5 @@
 			<li>DubsBadHygiene.PlaceWorker_UserGrid</li>
 		</placeWorkers>
 	</ThingDef>	
+
 </Defs>

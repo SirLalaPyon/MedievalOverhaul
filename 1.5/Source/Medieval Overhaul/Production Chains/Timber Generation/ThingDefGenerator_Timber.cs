@@ -40,11 +40,13 @@ namespace MedievalOverhaul
                 {
                     ThingDefCountClass butcherProduct = butcherProductList[i];
                     ThingDef product = butcherProduct.thingDef;
-                    if (TimberUtility.WoodDefsSeen.ContainsKey(product))
+                    if (product != null)
                     {
-                        double productCount = butcherProduct.count / 2;
-                        int productNum = (int)Math.Round(productCount);
-                        animal.butcherProducts = new List<ThingDefCountClass>
+                        if (TimberUtility.WoodDefsSeen.ContainsKey(product))
+                        {
+                            double productCount = butcherProduct.count / 2;
+                            int productNum = (int)Math.Round(productCount);
+                            animal.butcherProducts = new List<ThingDefCountClass>
                         {
                             new ThingDefCountClass
                             {
@@ -53,6 +55,7 @@ namespace MedievalOverhaul
                             }
                         };
 
+                        }
                     }
                 }
                 if (animal.race.leatherDef != null)
@@ -68,11 +71,14 @@ namespace MedievalOverhaul
             {
                 CompProperties_Spawner comp = animal.GetCompProperties<CompProperties_Spawner>();
                 ThingDef woodDef = comp.thingToSpawn;
-                if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
+                if (woodDef != null)
                 {
-                    
-                    ThingDef timberDef = TimberUtility.WoodDefsSeen[woodDef];
-                    comp.thingToSpawn = timberDef;
+                    if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
+                    {
+
+                        ThingDef timberDef = TimberUtility.WoodDefsSeen[woodDef];
+                        comp.thingToSpawn = timberDef;
+                    }
                 }
             }
         }

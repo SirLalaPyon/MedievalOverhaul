@@ -16,6 +16,7 @@ namespace MedievalOverhaul
     {
         public static List<ThingDef> AllTreesForGenerator = new List<ThingDef>();
         public static List<ThingDef> AllAnimals = new List<ThingDef>();
+        public static List<ThingDef> AllButchered = new List<ThingDef>();
         public static List<ThingDef> AllProductSpawner = new List<ThingDef>();
         public static Dictionary<ThingDef, ThingDef> WoodDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static List<ThingDef> AllPlanks = new List<ThingDef>();
@@ -25,17 +26,20 @@ namespace MedievalOverhaul
             {
                 foreach (ThingDef tree in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Plant).ToList())
                 {
-                    if (tree.plant.harvestTag == "Wood" && tree.plant.harvestedThingDef != null && tree.plant.harvestedThingDef.stuffProps != null)
+                    if (tree.plant.harvestTag == "Wood" && tree.plant.harvestedThingDef != null && tree.plant.harvestedThingDef.stuffProps.categories.Contains(StuffCategoryDefOf.Woody))
                     {
                         AllTreesForGenerator.Add(tree);
                     }
                 }
+
+
                 foreach (ThingDef animal in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Pawn).ToList())
                 {
                     if (animal.butcherProducts != null)
                     {
-                        AllAnimals.Add(animal);
+                        AllButchered.Add(animal);
                     }
+
                     if (animal.comps.Any(x => x.compClass == typeof(CompSpawner)))
                     {
                         AllProductSpawner.Add(animal);

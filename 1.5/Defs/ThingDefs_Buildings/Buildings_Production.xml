@@ -1552,8 +1552,8 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_SlopPot_Stew</defName>
-		<label>stew pot</label>
-		<description>A stew pot blending flavors from generations past into a timeless culinary adventure.</description>
+		<label>ragout pot</label>
+		<description>A ragout pot blending flavors from generations past into a timeless culinary adventure.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<thingClass>MedievalOverhaul.Building_SlopPot</thingClass>
 		<graphicData>
@@ -1753,6 +1753,52 @@
 		</researchPrerequisites>
 		<designationCategory>Production</designationCategory>
 		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+		<defName>DankPyon_MendingBench</defName>
+		<label>mending bench</label>
+		<thingClass>Building_WorkTable</thingClass>
+		<description>A cooking table with a stone oven designed for baking meals.</description>
+		<graphicData>
+			<texPath>Production/Oven</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<staticSunShadowHeight>0.3</staticSunShadowHeight>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>10</fuelConsumptionRate>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_RepairTools</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 </Defs>

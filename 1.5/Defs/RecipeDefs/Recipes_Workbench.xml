@@ -387,6 +387,88 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
+	
+	<!-- Make Repair Tools  -->
+	<RecipeDef>
+		<defName>DankPyon_Make_RepairTools</defName>
+		<label>make repair tools</label>
+		<description>Make repair tools.</description>
+		<jobString>Making repair tools.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>2500</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<recipeUsers>
+			<li>DankPyon_Workbench</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_Engineering</li>
+		</researchPrerequisites>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_IronIngot</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_IronIngot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_RepairTools>1</DankPyon_RepairTools>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<!-- Make Component Basic Bulk -->
+	<RecipeDef>
+		<defName>DankPyon_Make_RepairToolsBulk</defName>
+		<label>make repair tools x5</label>
+		<description>Make 5 repair tools.</description>
+		<jobString>Making 5 repair tools.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>7500</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<recipeUsers>
+			<li>DankPyon_Workbench</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_Engineering</li>
+		</researchPrerequisites>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_IronIngot</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_IronIngot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_RepairTools>5</DankPyon_RepairTools>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
 
 	<!--RecipeDef>
   <defName>DankPyon_Make_Plate</defName>

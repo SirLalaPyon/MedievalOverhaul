@@ -26,6 +26,32 @@
 			<li>Manufactured</li>
 		</thingCategories>
 	</ThingDef>
+	
+	<!--=============== Repair Tools ====================-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_RepairTools</defName>
+		<label>repair tools</label>
+		<description>Miscellaneous bits and bobs to repair equipment</description>
+		<graphicData>
+			<texPath>Resources/Tools</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>70</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+			<Mass>0.6</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
 
 	<!--=============== Papers please ====================-->
 	<ThingDef ParentName="ResourceBase">

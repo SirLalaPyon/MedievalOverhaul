@@ -11,7 +11,7 @@ namespace MedievalOverhaul
 {
     public static class ThingDefGenerator_Hide
     {
-        public static IEnumerable<ThingDef> ImpliedHideDefs()
+        public static IEnumerable<ThingDef> ImpliedHideDefs(bool hotReload = false)
         {
             foreach (ThingDef animal in HideUtility.AllLeatherAnimals)
             {
@@ -19,7 +19,8 @@ namespace MedievalOverhaul
                 ThingDef leatherDef = animal.race.leatherDef;
                 if (!Utility.WhiteList.blackListRaces.Contains(animalName) && !Utility.WhiteList.blackListLeathers.Contains(leatherDef.defName))
                 {
-                    ThingDef hideDef = new ThingDef();
+                    string defName = HideUtility.GetNameString(leatherDef, animal);
+                    ThingDef hideDef = hotReload ? DefDatabase<ThingDef>.GetNamed(defName, false) ?? new ThingDef() : new ThingDef();
 
                     if (HideUtility.LeatherDefsSeen.ContainsKey(leatherDef) && !Utility.WhiteList.whiteListRaces.Contains(animalName))
                     {

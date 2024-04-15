@@ -150,6 +150,24 @@ namespace MedievalOverhaul
             }
         }
 
+        public static string GetNameString(ThingDef leatherDef, ThingDef raceDef)
+        {
+            string defNameString;
+            if (leatherDef.defName == "Leather_Plain")
+            {
+                defNameString = $"DankPyon_Hide_Plain".Replace(" ", "").Replace("-", "");
+            }
+            else if (Utility.WhiteList.whiteListRaces.Contains(raceDef.defName) || Utility.WhiteList.whiteListLeathers.Contains(leatherDef.defName))
+            {
+                defNameString = $"DankPyon_Hide_{Utility.RemoveSubstring(raceDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
+            }
+            else
+            {
+                defNameString = $"DankPyon_Hide_{Utility.RemoveSubstring(leatherDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
+            }
+            return defNameString;
+        }
+
         private static string GetHideGraphic(ThingDef raceDef)
         {
             string texPathString = "Resources/HeavyFurMedium";

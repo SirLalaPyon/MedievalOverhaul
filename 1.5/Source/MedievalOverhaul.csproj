@@ -44,6 +44,10 @@
     <Compile Include="Medieval Overhaul\Harmony\InspectStringPatch.cs" />
     <Compile Include="Medieval Overhaul\Harmony\StoreFuel.cs" />
     <Compile Include="Medieval Overhaul\Fuel\ITab_Fuel.cs" />
+    <Compile Include="Medieval Overhaul\Mending\JobDriver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\Mending\RecipeWorker_Mending.cs" />
+    <Compile Include="Medieval Overhaul\Mending\WorkGiver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mending.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Timber.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Utility.cs" />
@@ -52,7 +56,7 @@
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\GolemSpawn.cs" />
     <Compile Include="Medieval Overhaul\Harmony\ResearchProjectDef_CanBeResearchedAt_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony\MakeRecipeProducts_Postfix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\GenerateImpliedDefs_PreResolve_Postfix.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\GenerateImpliedDefs_PreResolve_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CalculableRecipe_Prefix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\TakeOutProduct_Prefix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CanBeResearchedAt_Postfix.cs" />
@@ -150,7 +154,7 @@
       <HintPath>..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="ProcessorFramework">
-      <HintPath>..\..\..\ProcessorFramework\1.5\Assemblies\ProcessorFramework.dll</HintPath>
+      <HintPath>..\..\..\3210544395\1.5\Assemblies\ProcessorFramework.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -165,7 +169,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.5.4045-beta</Version>
+      <Version>1.5.4063</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

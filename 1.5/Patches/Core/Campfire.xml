@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- Campfire -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Campfire"]</xpath>
-		<value>
-			<stuffCategories>
-				<li>DankPyon_RawWood</li>
-				<li>Woody</li>
-			</stuffCategories>
-			<costStuffCount>20</costStuffCount>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="Campfire"]/costList</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="Campfire"]/uiIconPath</xpath>
-	</Operation>
+	
+	
 
 </Patch>

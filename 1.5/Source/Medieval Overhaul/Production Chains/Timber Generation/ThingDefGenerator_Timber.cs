@@ -1,24 +1,21 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
-using static Unity.Burst.Intrinsics.X86.Avx;
 
 namespace MedievalOverhaul
 {
     public static class ThingDefGenerator_Timber
     {
-        public static IEnumerable<ThingDef> ImpliedTreeDefs()
+        public static IEnumerable<ThingDef> ImpliedTreeDefs(bool hotReload = false)
         {
 
-            foreach (ThingDef tree in TimberUtility.AllTrees)
+            foreach (ThingDef tree in TimberUtility.AllTreesForGenerator)
             {
                 ThingDef woodDef = tree.plant.harvestedThingDef;
-                ThingDef timberDef = new ThingDef();
-                if (!Utility.LogList.blackListWood.Contains(woodDef))
+                string defName = TimberUtility.GetNameString(woodDef);
+                ThingDef timberDef = hotReload ? DefDatabase<ThingDef>.GetNamed(defName, false) ?? new ThingDef() : new ThingDef();
+                if (!Utility.LogList.blackListWood.Contains(woodDef) && woodDef != null)
                 {
                     if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
                     {
@@ -35,19 +32,21 @@ namespace MedievalOverhaul
                     yield return timberDef;
                 }
             }
-            foreach (ThingDef animal in TimberUtility.AllAnimals)
+            foreach (ThingDef animal in TimberUtility.AllButchered)
             {
                 List<ThingDefCountClass> butcherProductList = animal.butcherProducts;
-                
+
                 for (int i = 0; i < butcherProductList.Count; i++)
                 {
                     ThingDefCountClass butcherProduct = butcherProductList[i];
                     ThingDef product = butcherProduct.thingDef;
-                    if (TimberUtility.WoodDefsSeen.ContainsKey(product))
+                    if (product != null)
                     {
-                        double productCount = butcherProduct.count / 2;
-                        int productNum = (int)Math.Round(productCount);
-                        animal.butcherProducts = new List<ThingDefCountClass>
+                        if (TimberUtility.WoodDefsSeen.ContainsKey(product))
+                        {
+                            double productCount = butcherProduct.count / 2;
+                            int productNum = (int)Math.Round(productCount);
+                            animal.butcherProducts = new List<ThingDefCountClass>
                         {
                             new ThingDefCountClass
                             {
@@ -56,14 +55,18 @@ namespace MedievalOverhaul
                             }
                         };
 
+                        }
                     }
                 }
-                if (animal.race.leatherDef != null)
+            }
+            foreach (ThingDef leathered in TimberUtility.AllLeatheredAnimals)
+            {
+                if (leathered.race.leatherDef != null)
                 {
-                    ThingDef woodDef = animal.race.leatherDef;
+                    ThingDef woodDef = leathered.race.leatherDef;
                     if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
                     {
-                        animal.race.leatherDef = TimberUtility.WoodDefsSeen[woodDef];
+                        leathered.race.leatherDef = TimberUtility.WoodDefsSeen[woodDef];
                     }
                 }
             }
@@ -71,11 +74,14 @@ namespace MedievalOverhaul
             {
                 CompProperties_Spawner comp = animal.GetCompProperties<CompProperties_Spawner>();
                 ThingDef woodDef = comp.thingToSpawn;
-                if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
+                if (woodDef != null)
                 {
-                    
-                    ThingDef timberDef = TimberUtility.WoodDefsSeen[woodDef];
-                    comp.thingToSpawn = timberDef;
+                    if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
+                    {
+
+                        ThingDef timberDef = TimberUtility.WoodDefsSeen[woodDef];
+                        comp.thingToSpawn = timberDef;
+                    }
                 }
             }
         }

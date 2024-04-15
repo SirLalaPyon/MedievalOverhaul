@@ -14,8 +14,9 @@ namespace MedievalOverhaul
 {
     public static class TimberUtility
     {
-        public static List<ThingDef> AllTrees = new List<ThingDef>();
-        public static List<ThingDef> AllAnimals = new List<ThingDef>();
+        public static List<ThingDef> AllTreesForGenerator = new List<ThingDef>();
+        public static List<ThingDef> AllLeatheredAnimals = new List<ThingDef>();
+        public static List<ThingDef> AllButchered = new List<ThingDef>();
         public static List<ThingDef> AllProductSpawner = new List<ThingDef>();
         public static Dictionary<ThingDef, ThingDef> WoodDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static List<ThingDef> AllPlanks = new List<ThingDef>();
@@ -25,17 +26,24 @@ namespace MedievalOverhaul
             {
                 foreach (ThingDef tree in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Plant).ToList())
                 {
-                    if (tree.plant.harvestTag == "Wood")
+                    if (tree.plant.harvestTag == "Wood" && tree.plant.harvestedThingDef != null && tree.plant.harvestedThingDef.stuffProps.categories.Contains(StuffCategoryDefOf.Woody))
                     {
-                        AllTrees.Add(tree);
+                        AllTreesForGenerator.Add(tree);
                     }
                 }
+
+
                 foreach (ThingDef animal in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Pawn).ToList())
                 {
                     if (animal.butcherProducts != null)
                     {
-                        AllAnimals.Add(animal);
+                        AllButchered.Add(animal);
                     }
+                    if (animal.race.leatherDef != null) 
+                    {
+                        AllLeatheredAnimals.Add(animal);
+                    }
+
                     if (animal.comps.Any(x => x.compClass == typeof(CompSpawner)))
                     {
                         AllProductSpawner.Add(animal);
@@ -68,23 +76,32 @@ namespace MedievalOverhaul
             if (!HideUtility.AnimalDefsSeen.ContainsKey(tree))
             {
                 tree.butcherProducts = tree.butcherProducts ?? new List<ThingDefCountClass>();
-                tree.butcherProducts.Add(new ThingDefCountClass { thingDef = log, count = 1 });
+                tree.butcherProducts.Add(new ThingDefCountClass { thingDef = log, count = 2 });
             }
         }
 
         public static ThingDef MakeHideFor(ThingDef wood, ThingDef tree)
         {
             ThingDef log = BasicLogDef(wood);
-            SetNameAndDesc(wood, log, tree);
-            if (wood.stuffProps != null)
+            SetNameAndDesc(wood, log);
+            try
             {
-                log.graphicData.color = wood.stuffProps.color;
+                if (wood.stuffProps != null)
+                {
+                    log.graphicData.color = wood.stuffProps.color;
+                }
+                else
+                {
+                    log.graphicData.color = wood.graphicData.color;
+                }
             }
-            else
+            catch
             {
-                log.graphicData.color = wood.graphicData.color;
+                Log.Message("Error with generating graphicData for: " + log + "with base thingDef of " + wood);
             }
-            log.butcherProducts = new List<ThingDefCountClass>
+            try
+            {
+                log.butcherProducts = new List<ThingDefCountClass>
             {
                 new ThingDefCountClass
                 {
@@ -92,31 +109,50 @@ namespace MedievalOverhaul
                     count = 2
                 }
             };
-            wood.graphicData.texPath = "Resources/WoodPlank";
-            wood.graphicData.color = log.graphicData.color;
-            wood.stuffProps.stuffAdjective = wood.stuffProps.stuffAdjective.ToString() + " " + "DankPyon_Timber".Translate();
-            if (wood.thingCategories.NullOrEmpty())
-            {
-                wood.thingCategories = new List<ThingCategoryDef> { };
             }
-            if (wood.thingCategories.Contains(ThingCategoryDefOf.ResourcesRaw))
+            catch
             {
-                List<ThingCategoryDef> thingCategory = wood.thingCategories;
-                List<ThingCategoryDef> newThingCategory = new List<ThingCategoryDef> { };
-                for (int i = 0; i < thingCategory.Count; i++)
+                Log.Message("Error generating butcher products for: " + log + "with base thingDef of " + wood);
+            }
+            try
+            {
+                wood.graphicData.texPath = "Resources/WoodPlank";
+                wood.graphicData.color = log.graphicData.color;
+                wood.stuffProps.stuffAdjective = wood.stuffProps.stuffAdjective.ToString() + " " + "DankPyon_Timber".Translate();
+            }
+            catch
+            {
+                Log.Message("Error generating more graphicData for: " + log + "with base thingDef of " + wood);
+            }
+            try
+            {
+                if (wood.thingCategories.NullOrEmpty())
                 {
-                    ThingCategoryDef thing = thingCategory[i];
-                    
-                    if (thing != ThingCategoryDefOf.ResourcesRaw)
-                    {
-                        newThingCategory.Add(thing);
-                    }
+                    wood.thingCategories = new List<ThingCategoryDef> { };
                 }
-                wood.thingCategories = newThingCategory;
+                if (wood.thingCategories.Contains(ThingCategoryDefOf.ResourcesRaw))
+                {
+                    List<ThingCategoryDef> thingCategory = wood.thingCategories;
+                    List<ThingCategoryDef> newThingCategory = new List<ThingCategoryDef> { };
+                    for (int i = 0; i < thingCategory.Count; i++)
+                    {
+                        ThingCategoryDef thing = thingCategory[i];
+
+                        if (thing != ThingCategoryDefOf.ResourcesRaw)
+                        {
+                            newThingCategory.Add(thing);
+                        }
+                    }
+                    wood.thingCategories = newThingCategory;
+                }
+                if (!wood.thingCategories.Contains(MedievalOverhaulDefOf.DankPyon_Wood))
+                {
+                    wood.thingCategories.Add(MedievalOverhaulDefOf.DankPyon_Wood);
+                }
             }
-            if (!wood.thingCategories.Contains(MedievalOverhaulDefOf.DankPyon_Wood))
+            catch
             {
-                wood.thingCategories.Add(MedievalOverhaulDefOf.DankPyon_Wood);
+                Log.Message("Error generating thingCategories for: " + log + "with base thingDef of " + wood);
             }
             return log;
         }
@@ -141,7 +177,11 @@ namespace MedievalOverhaul
                 healthAffectsPrice = false,
                 soundInteract = SoundDefOf.Standard_Drop,
                 statBases = new List<StatModifier>(),
-            };
+                terrainAffordanceNeeded = TerrainAffordanceDefOf.Light,
+                isTechHediff = true,
+                burnableByRecipe = true,
+                minRewardCount = 10,
+        };
             log.SetStatBaseValue(StatDefOf.Beauty, -4f);
             log.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
             log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
@@ -155,7 +195,21 @@ namespace MedievalOverhaul
             log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Heat));
             log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier));
             log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier));
-
+            if (wood.tools != null)
+            {
+                log.tools = wood.tools;
+            }
+            if (wood.comps != null) { log.comps = wood.comps; }
+            if (wood.techLevel != null) { log.techLevel = wood.techLevel; } 
+            if (wood.equipmentType != null) { log.equipmentType = wood.equipmentType; } 
+            if (wood.weaponClasses != null)
+            { 
+                log.weaponClasses = wood.weaponClasses;
+            }
+            if (wood.techHediffsTags != null)
+            {
+                log.techHediffsTags = wood.techHediffsTags;
+            }
             log.graphicData = new GraphicData
             {
                 graphicClass = typeof(Graphic_StackCount),
@@ -168,6 +222,8 @@ namespace MedievalOverhaul
                 MedievalOverhaulDefOf.DankPyon_RawWood,
 
             };
+
+           
             log.stuffProps = new StuffProperties
             {
                 categories = new List<StuffCategoryDef>
@@ -193,11 +249,18 @@ namespace MedievalOverhaul
             return log;
         }
 
-        private static void SetNameAndDesc(ThingDef wood, ThingDef timber, ThingDef raceDef)
+        private static void SetNameAndDesc(ThingDef wood, ThingDef timber)
         {
             timber.defName = $"DankPyon_Log_{Utility.RemoveSubstring(wood, "DankPyon_")}".Replace(" ", "").Replace("-", "");
             timber.label = $"{wood.label}" + " " + "DankPyon_Log".Translate();
             wood.label = $"{wood.label}" + " " + "DankPyon_Timber".Translate();
+
+        }
+
+        public static string GetNameString(ThingDef wood)
+        {
+            string stringDefName = $"DankPyon_Log_{Utility.RemoveSubstring(wood, "DankPyon_")}".Replace(" ", "").Replace("-", "");
+            return stringDefName;
         }
 
     }

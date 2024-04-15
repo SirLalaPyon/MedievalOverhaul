@@ -15,7 +15,7 @@ namespace MedievalOverhaul
     public static class TimberUtility
     {
         public static List<ThingDef> AllTreesForGenerator = new List<ThingDef>();
-        public static List<ThingDef> AllAnimals = new List<ThingDef>();
+        public static List<ThingDef> AllLeatheredAnimals = new List<ThingDef>();
         public static List<ThingDef> AllButchered = new List<ThingDef>();
         public static List<ThingDef> AllProductSpawner = new List<ThingDef>();
         public static Dictionary<ThingDef, ThingDef> WoodDefsSeen = new Dictionary<ThingDef, ThingDef>();
@@ -38,6 +38,10 @@ namespace MedievalOverhaul
                     if (animal.butcherProducts != null)
                     {
                         AllButchered.Add(animal);
+                    }
+                    if (animal.race.leatherDef != null) 
+                    {
+                        AllLeatheredAnimals.Add(animal);
                     }
 
                     if (animal.comps.Any(x => x.compClass == typeof(CompSpawner)))

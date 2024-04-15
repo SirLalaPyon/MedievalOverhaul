@@ -32,10 +32,10 @@ namespace MedievalOverhaul
                     yield return timberDef;
                 }
             }
-            foreach (ThingDef animal in TimberUtility.AllAnimals)
+            foreach (ThingDef animal in TimberUtility.AllButchered)
             {
                 List<ThingDefCountClass> butcherProductList = animal.butcherProducts;
-                
+
                 for (int i = 0; i < butcherProductList.Count; i++)
                 {
                     ThingDefCountClass butcherProduct = butcherProductList[i];
@@ -58,12 +58,15 @@ namespace MedievalOverhaul
                         }
                     }
                 }
-                if (animal.race.leatherDef != null)
+            }
+            foreach (ThingDef leathered in TimberUtility.AllLeatheredAnimals)
+            {
+                if (leathered.race.leatherDef != null)
                 {
-                    ThingDef woodDef = animal.race.leatherDef;
+                    ThingDef woodDef = leathered.race.leatherDef;
                     if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
                     {
-                        animal.race.leatherDef = TimberUtility.WoodDefsSeen[woodDef];
+                        leathered.race.leatherDef = TimberUtility.WoodDefsSeen[woodDef];
                     }
                 }
             }

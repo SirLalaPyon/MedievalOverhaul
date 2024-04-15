@@ -52,7 +52,7 @@
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\GolemSpawn.cs" />
     <Compile Include="Medieval Overhaul\Harmony\ResearchProjectDef_CanBeResearchedAt_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony\MakeRecipeProducts_Postfix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\GenerateImpliedDefs_PreResolve_Postfix.cs" />
+    <Compile Include="Medieval Overhaul\Harmony\GenerateImpliedDefs_PreResolve_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CalculableRecipe_Prefix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\TakeOutProduct_Prefix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CanBeResearchedAt_Postfix.cs" />

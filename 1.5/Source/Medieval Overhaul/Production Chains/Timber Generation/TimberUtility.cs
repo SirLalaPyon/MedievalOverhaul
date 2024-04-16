@@ -31,10 +31,6 @@ namespace MedievalOverhaul
                         AllTreesForGenerator.Add(tree);
                     }
                 }
-                foreach (ThingDef plank in Utility.LogList.plankDict.Keys) 
-                {
-                    AllPlanks.AddDistinct(plank);
-                }
                 foreach (ThingDef animal in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Pawn).ToList())
                 {
                     if (animal.butcherProducts != null)

@@ -26,7 +26,7 @@ namespace MedievalOverhaul
             {
                 foreach (ThingDef tree in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Plant).ToList())
                 {
-                    if (tree.plant.harvestTag == "Wood" && tree.plant.harvestedThingDef != null && tree.plant.harvestedThingDef.stuffProps.categories.Contains(StuffCategoryDefOf.Woody))
+                    if (tree.plant?.harvestTag == "Wood" && (tree.plant?.harvestedThingDef?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Woody) ?? false))
                     {
                         AllTreesForGenerator.Add(tree);
                     }
@@ -39,12 +39,12 @@ namespace MedievalOverhaul
                     {
                         AllButchered.Add(animal);
                     }
-                    if (animal.race.leatherDef != null) 
+                    if (animal.race?.leatherDef != null) 
                     {
                         AllLeatheredAnimals.Add(animal);
                     }
 
-                    if (animal.comps.Any(x => x.compClass == typeof(CompSpawner)))
+                    if (animal.comps?.Any(x => x.compClass == typeof(CompSpawner)) ?? false)
                     {
                         AllProductSpawner.Add(animal);
                     }

@@ -5,6 +5,7 @@ using Verse;
 using UnityEngine;
 using System.Diagnostics;
 using System.Linq;
+using System;
 
 namespace MedievalOverhaul
 {
@@ -21,13 +22,15 @@ namespace MedievalOverhaul
 			for (int i = 0; i < TimberUtility.AllPlanks.Count; i++)
 			{
 				IEnumerable <Thing> thing = bill.Map.listerThings.ThingsOfDef(TimberUtility.AllPlanks[i]);
-				foreach (var item in thing)
+                foreach (var item in thing)
 				{
-					//Thing things = item as Thing;
 					countProductNum += item.stackCount;
 				}
-			}
-			return countProductNum;
+            }
+            List<ThingDef> childThingDefs = MedievalOverhaulDefOf.DankPyon_Wood.childThingDefs;
+            for (int index = 0; index < childThingDefs.Count; ++index)
+                countProductNum += bill.Map.resourceCounter.GetCount(childThingDefs[index]);
+            return countProductNum;
 		}
 
 		public override string ProductsDescription(Bill_Production bill)

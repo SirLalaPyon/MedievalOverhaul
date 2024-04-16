@@ -150,80 +150,80 @@
 
 	<!--============================== Processed Wood ==============================-->
 	<!-- Dark Wood -->
-	<ThingDef ParentName="ResourceVerbBase" Name="DankPyon_DarkWoodLog">
-		<defName>DankPyon_DarkWoodLog</defName>
-		<label>dark timber</label>
-		<description>A darkish hard and old type of wood that has withstand the test of time. Useful for building structures and weapons. It is a good fuel for campfires.</description>
-		<graphicData>
-			<texPath>Resources/WoodPlank</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(112,91,76)</color>
-		</graphicData>
-		<equippedAngleOffset>-20</equippedAngleOffset>
-		<soundInteract>Wood_Drop</soundInteract>
-		<soundDrop>Wood_Drop</soundDrop>
-		<statBases>
-			<MarketValue>1.6</MarketValue>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Mass>0.6</Mass>
-			<Flammability>0.95</Flammability>
-			<DeteriorationRate>0.4</DeteriorationRate>
-			<StuffPower_Armor_Sharp>0.58</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.58</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
-			<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
-			<SharpDamageMultiplier>0.45</SharpDamageMultiplier>
-			<BluntDamageMultiplier>1.05</BluntDamageMultiplier>
-		</statBases>
-		<burnableByRecipe>true</burnableByRecipe>
-		<healthAffectsPrice>false</healthAffectsPrice>
-		<minRewardCount>10</minRewardCount>
-		<stuffProps>
-			<stuffAdjective>dark</stuffAdjective>
-			<categories>
-				<li>Woody</li>
-			</categories>
-			<commonality>1.00</commonality>
-			<color>(112,91,76)</color>
-			<constructEffect>ConstructWood</constructEffect>
-			<appearance>Planks</appearance>
-			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-			<statFactors>
-				<MaxHitPoints>0.75</MaxHitPoints>
-				<Beauty>2</Beauty>
-				<Flammability>0.95</Flammability>
-				<WorkToMake>0.85</WorkToMake>
-				<WorkToBuild>0.85</WorkToBuild>
-				<DoorOpenSpeed>1.25</DoorOpenSpeed>
-			</statFactors>
-		</stuffProps>
-		<isTechHediff>true</isTechHediff>
-		<thingCategories>
-			<li>DankPyon_Wood</li>
-		</thingCategories>
-		<techHediffsTags>
-			<li>Poor</li>
-		</techHediffsTags>
-		<tools>
-			<li>
-				<label>plank</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>12</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<!-- <ThingDef ParentName="ResourceVerbBase" Name="DankPyon_DarkWoodLog"> -->
+		<!-- <defName>DankPyon_DarkWoodLog</defName> -->
+		<!-- <label>dark timber</label> -->
+		<!-- <description>A darkish hard and old type of wood that has withstand the test of time. Useful for building structures and weapons. It is a good fuel for campfires.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Resources/WoodPlank</texPath> -->
+			<!-- <graphicClass>Graphic_StackCount</graphicClass> -->
+			<!-- <color>(112,91,76)</color> -->
+		<!-- </graphicData> -->
+		<!-- <equippedAngleOffset>-20</equippedAngleOffset> -->
+		<!-- <soundInteract>Wood_Drop</soundInteract> -->
+		<!-- <soundDrop>Wood_Drop</soundDrop> -->
+		<!-- <statBases> -->
+			<!-- <MarketValue>1.6</MarketValue> -->
+			<!-- <MaxHitPoints>200</MaxHitPoints> -->
+			<!-- <Mass>0.6</Mass> -->
+			<!-- <Flammability>0.95</Flammability> -->
+			<!-- <DeteriorationRate>0.4</DeteriorationRate> -->
+			<!-- <StuffPower_Armor_Sharp>0.58</StuffPower_Armor_Sharp> -->
+			<!-- <StuffPower_Armor_Blunt>0.58</StuffPower_Armor_Blunt> -->
+			<!-- <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat> -->
+			<!-- <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold> -->
+			<!-- <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat> -->
+			<!-- <SharpDamageMultiplier>0.45</SharpDamageMultiplier> -->
+			<!-- <BluntDamageMultiplier>1.05</BluntDamageMultiplier> -->
+		<!-- </statBases> -->
+		<!-- <burnableByRecipe>true</burnableByRecipe> -->
+		<!-- <healthAffectsPrice>false</healthAffectsPrice> -->
+		<!-- <minRewardCount>10</minRewardCount> -->
+		<!-- <stuffProps> -->
+			<!-- <stuffAdjective>dark</stuffAdjective> -->
+			<!-- <categories> -->
+				<!-- <li>Woody</li> -->
+			<!-- </categories> -->
+			<!-- <commonality>1.00</commonality> -->
+			<!-- <color>(112,91,76)</color> -->
+			<!-- <constructEffect>ConstructWood</constructEffect> -->
+			<!-- <appearance>Planks</appearance> -->
+			<!-- <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp> -->
+			<!-- <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt> -->
+			<!-- <statFactors> -->
+				<!-- <MaxHitPoints>0.75</MaxHitPoints> -->
+				<!-- <Beauty>2</Beauty> -->
+				<!-- <Flammability>0.95</Flammability> -->
+				<!-- <WorkToMake>0.85</WorkToMake> -->
+				<!-- <WorkToBuild>0.85</WorkToBuild> -->
+				<!-- <DoorOpenSpeed>1.25</DoorOpenSpeed> -->
+			<!-- </statFactors> -->
+		<!-- </stuffProps> -->
+		<!-- <isTechHediff>true</isTechHediff> -->
+		<!-- <thingCategories> -->
+			<!-- <li>DankPyon_Wood</li> -->
+		<!-- </thingCategories> -->
+		<!-- <techHediffsTags> -->
+			<!-- <li>Poor</li> -->
+		<!-- </techHediffsTags> -->
+		<!-- <tools> -->
+			<!-- <li> -->
+				<!-- <label>plank</label> -->
+				<!-- <capacities> -->
+					<!-- <li>Blunt</li> -->
+				<!-- </capacities> -->
+				<!-- <power>12</power> -->
+				<!-- <cooldownTime>2</cooldownTime> -->
+			<!-- </li> -->
+		<!-- </tools> -->
+		<!-- <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> -->
 
-		<modExtensions>
-			<li Class="MedievalOverhaul.FuelValueProperty">
-				<fuelValue>1</fuelValue>
-			</li>
-		</modExtensions>
-	</ThingDef>
+		<!-- <modExtensions> -->
+			<!-- <li Class="MedievalOverhaul.FuelValueProperty"> -->
+				<!-- <fuelValue>1</fuelValue> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	<!-- </ThingDef> -->
 
 	<!-- Elven Wood -->
 	<!-- <ThingDef ParentName="ResourceVerbBase" Name="DankPyon_ElvenWoodLog"> -->

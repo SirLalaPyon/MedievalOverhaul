@@ -26,11 +26,17 @@
 	
 	<MedievalOverhaul.SeperateWoodList>
 		<defName>LogList</defName>
-		<label>Log White List</label>
-		<blackListWood>
-			<li>WoodLog</li>
-			<li>DankPyon_RawWood</li>
+		<label>Log Plank List</label>
+		<blackListWood> <!-- This is for if you just want to blackList something so it doesn't get processed ever -->
 		</blackListWood>
+		<!-- This is for when you want to manually patch a log for the original wood -->
+		<!-- Needed so that the planks are properly counted -->
+		<plankDict> 
+			<li>
+				<key>WoodLog</key> <!-- Original Wood turned into plank-->
+				<value>DankPyon_RawWood</value> <!-- New XML log -->
+			</li>
+		</plankDict>
 	</MedievalOverhaul.SeperateWoodList>
 	
 	<MedievalOverhaul.HideGraphicList>

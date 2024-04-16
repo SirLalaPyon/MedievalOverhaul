@@ -55,27 +55,49 @@
 						</value>
 					</match>
 				</li>
-				
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="WoodLog"]/*[name()="label" or name()="description" or name()="graphicData" or name()="thingCategories"]</xpath>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="WoodLog"]/label</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="WoodLog"]/label</xpath>
+						<value>
+							<label>wood planks</label>
+						</value>
+					</match>
 				</li>
-			
-				<!--Replace every vanilla woodlog to drop Medieval Overhaul raw wood-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="WoodLog"]</xpath>
-					<value>
-						<label>timber</label>
-						<description>Timber is processed wood. It has been cut into more manageable sizes making it more manageable to build with.</description>
-						<graphicData>
-							<texPath>Resources/WoodPlank</texPath>
-							<graphicClass>Graphic_StackCount</graphicClass>
-							<color>(133,97,67)</color>
-						</graphicData>
-						<uiIconPath>UI/IconWood</uiIconPath>
-						<thingCategories>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="WoodLog"]/description</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="WoodLog"]/description</xpath>
+						<value>
+							<description>Planks are processed wood. It has been cut into more manageable sizes making it more manageable to build with.</description>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="WoodLog"]/graphicData</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="WoodLog"]/graphicData</xpath>
+						<value>
+							<graphicData>
+								<texPath>Resources/WoodPlank</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+								<color>(133,97,67)</color>
+							</graphicData>							
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
+						<value>
 							<li>DankPyon_Wood</li>
-						</thingCategories>
-					</value>
+						</value>
+					</match>
 				</li>
 
 				<!-- Several neolith bits of furniture can be made of logs -->

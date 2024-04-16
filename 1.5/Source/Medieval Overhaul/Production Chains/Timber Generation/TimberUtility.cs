@@ -26,25 +26,27 @@ namespace MedievalOverhaul
             {
                 foreach (ThingDef tree in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Plant).ToList())
                 {
-                    if (tree.plant.harvestTag == "Wood" && tree.plant.harvestedThingDef != null && tree.plant.harvestedThingDef.stuffProps.categories.Contains(StuffCategoryDefOf.Woody))
+                    if (tree.plant?.harvestTag == "Wood" && (tree.plant?.harvestedThingDef?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Woody) ?? false))
                     {
                         AllTreesForGenerator.Add(tree);
                     }
                 }
-
-
+                foreach (ThingDef plank in Utility.LogList.plankDict.Keys) 
+                {
+                    AllPlanks.AddDistinct(plank);
+                }
                 foreach (ThingDef animal in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Pawn).ToList())
                 {
                     if (animal.butcherProducts != null)
                     {
                         AllButchered.Add(animal);
                     }
-                    if (animal.race.leatherDef != null) 
+                    if (animal.race?.leatherDef != null)
                     {
                         AllLeatheredAnimals.Add(animal);
                     }
 
-                    if (animal.comps.Any(x => x.compClass == typeof(CompSpawner)))
+                    if (animal.comps?.Any(x => x.compClass == typeof(CompSpawner)) ?? false)
                     {
                         AllProductSpawner.Add(animal);
                     }

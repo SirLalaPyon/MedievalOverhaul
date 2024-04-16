@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,5 +28,6 @@ namespace MedievalOverhaul
     public class SeperateWoodList : Def
     {
         public List<ThingDef> blackListWood;
+        public Dictionary<ThingDef, ThingDef> plankDict;
     }
 }

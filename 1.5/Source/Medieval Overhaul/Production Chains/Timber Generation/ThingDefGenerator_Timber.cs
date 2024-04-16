@@ -15,21 +15,24 @@ namespace MedievalOverhaul
                 ThingDef woodDef = tree.plant.harvestedThingDef;
                 string defName = TimberUtility.GetNameString(woodDef);
                 ThingDef timberDef = hotReload ? DefDatabase<ThingDef>.GetNamed(defName, false) ?? new ThingDef() : new ThingDef();
-                if (!Utility.LogList.blackListWood.Contains(woodDef) && woodDef != null)
+                if (woodDef != null && !Utility.LogList.blackListWood.Contains(woodDef))
                 {
-                    if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
+                    if (!Utility.LogList.plankDict.ContainsValue(woodDef))
                     {
-                        timberDef = TimberUtility.WoodDefsSeen[woodDef];
-                        HideUtility.DetermineButcherProducts(tree, woodDef, timberDef);
+                        if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
+                        {
+                            timberDef = TimberUtility.WoodDefsSeen[woodDef];
+                            HideUtility.DetermineButcherProducts(tree, woodDef, timberDef);
+                            tree.plant.harvestedThingDef = timberDef;
+                            continue;
+                        }
+                        timberDef = TimberUtility.MakeHideFor(woodDef, tree);
+                        TimberUtility.TryAddEntry(tree, woodDef, timberDef);
+                        TimberUtility.DetermineButcherProducts(tree, woodDef, timberDef);
                         tree.plant.harvestedThingDef = timberDef;
-                        continue;
+                        TimberUtility.AllPlanks.AddDistinct(woodDef);
+                        yield return timberDef;
                     }
-                    timberDef = TimberUtility.MakeHideFor(woodDef, tree);
-                    TimberUtility.TryAddEntry(tree, woodDef, timberDef);
-                    TimberUtility.DetermineButcherProducts(tree, woodDef, timberDef);
-                    tree.plant.harvestedThingDef = timberDef;
-                    TimberUtility.AllPlanks.AddDistinct(woodDef);
-                    yield return timberDef;
                 }
             }
             foreach (ThingDef animal in TimberUtility.AllButchered)

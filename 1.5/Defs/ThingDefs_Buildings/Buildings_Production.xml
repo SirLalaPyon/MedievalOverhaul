@@ -1759,7 +1759,7 @@
 		<defName>DankPyon_MendingBench</defName>
 		<label>mending bench</label>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>A cooking table with a stone oven designed for baking meals.</description>
+		<description>A workbench for repairing clothes, armor, and weapons.</description>
 		<graphicData>
 			<texPath>Production/MendingWorkbench/MendingWorkbench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -1776,10 +1776,13 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
+		<costList>
+			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+		</costList>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>60</costStuffCount>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -1807,6 +1810,19 @@
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0.0003</fuelConsumptionRate>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_RepairTools</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+		</comps>
 	</ThingDef>
 
 </Defs>

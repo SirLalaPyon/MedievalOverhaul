@@ -78,6 +78,58 @@
 			</validators>
 		</genStep>
 	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>DankPyon_GolemRock_Iron</defName>
+		<order>500</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>DankPyon_GolemRock_Iron_MapGen</thingDef>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>200</minSpacing>
+			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>3.5~5</countPer10kCellsRange>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>4</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>5</radius>
+					<affordance>Medium</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>4</radius>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
+	
+	<GenStepDef>
+		<defName>DankPyon_GolemRock_Silver</defName>
+		<order>500</order>
+		<genStep Class="GenStep_ScatterThings">
+			<thingDef>DankPyon_GolemRock_Silver_MapGen</thingDef>
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>200</minSpacing>
+			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
+			<countPer10kCellsRange>2~3</countPer10kCellsRange>
+			<clearSpaceSize>30</clearSpaceSize>
+			<terrainValidationRadius>4</terrainValidationRadius>
+			<terrainValidationDisallowed>
+				<li>Road</li>
+			</terrainValidationDisallowed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>5</radius>
+					<affordance>Medium</affordance>
+				</li>
+				<li Class="ScattererValidator_NoNonNaturalEdifices">
+					<radius>4</radius>
+				</li>
+			</validators>
+		</genStep>
+	</GenStepDef>
 
 	<GenStepDef>
 		<order>319</order>

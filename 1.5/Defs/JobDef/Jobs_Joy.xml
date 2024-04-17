@@ -2,6 +2,13 @@
 <Defs>
 
 	<JobDef>
+		<defName>DankPyon_Mine_Golem</defName>
+		<driverClass>MedievalOverhaul.JobDriver_Mine_Golem</driverClass>
+		<reportString>digging at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
 		<defName>DankPyon_Slop_Refuel_StatAtomic</defName>
 		<driverClass>MedievalOverhaul.JobDriver_RefuelStatAtomic</driverClass>
 		<reportString>delivering TargetB to TargetA.</reportString>

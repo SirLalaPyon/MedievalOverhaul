@@ -2,6 +2,20 @@
 <Defs>
 
 	<WorkGiverDef>
+		<defName>DankPyon_DoMine_Golem</defName>
+		<label>mine</label>
+		<giverClass>MedievalOverhaul.WorkGiver_Miner_Golem</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>100</priorityInType>
+		<verb>mine</verb>
+		<gerund>mining</gerund>
+		<tagToGive>Fieldwork</tagToGive>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
 		<defName>DankPyon_DoBillsRusticCookingTable</defName>
 		<label>cook meals</label>
 		<giverClass>WorkGiver_DoBill</giverClass>

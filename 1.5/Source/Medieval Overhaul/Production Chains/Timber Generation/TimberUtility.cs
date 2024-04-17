@@ -182,7 +182,10 @@ namespace MedievalOverhaul
         };
             log.SetStatBaseValue(StatDefOf.Beauty, -4f);
             log.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
+            if (wood.GetStatValueAbstract(StatDefOf.Flammability) != null)    
             log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
+            else
+                log.SetStatBaseValue(StatDefOf.Flammability, 1f);
             log.SetStatBaseValue(StatDefOf.DeteriorationRate, 2f);
             log.SetStatBaseValue(StatDefOf.Mass, (wood.GetStatValueAbstract(StatDefOf.Mass) * 3));
             log.SetStatBaseValue(StatDefOf.MarketValue, (wood.GetStatValueAbstract(StatDefOf.MarketValue) * 2));

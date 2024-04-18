@@ -22,6 +22,7 @@
 			<mineableYield>40</mineableYield>
 			<mineableScatterCommonality>1</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>30~40</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 
@@ -45,6 +46,7 @@
 			<mineableYield>40</mineableYield>
 			<mineableScatterCommonality>0.75</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>15~20</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 
@@ -69,9 +71,10 @@
 			<mineableYield>40</mineableYield>
 			<mineableScatterCommonality>0.07</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>
-       				<min>2</min>
-        			<max>8</max>
-      			</mineableScatterLumpSizeRange>
+				<min>2</min>
+				<max>8</max>
+			</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 		<modExtensions>
 			<li Class="MedievalOverhaul.GolemSpawn">
@@ -100,6 +103,7 @@
 			<mineableYield>40</mineableYield>
 			<mineableScatterCommonality>1</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>30~40</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 		<modExtensions>
 			<li Class="MedievalOverhaul.GolemSpawn">
@@ -129,6 +133,7 @@
 			<mineableYield>10</mineableYield>
 			<mineableScatterCommonality>0.2</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 
@@ -152,6 +157,7 @@
 			<mineableYield>10</mineableYield>
 			<mineableScatterCommonality>0.15</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>2~6</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 
@@ -176,6 +182,7 @@
 			<mineableYield>10</mineableYield>
 			<mineableScatterCommonality>0.9</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 
@@ -200,6 +207,7 @@
 			<mineableYield>10</mineableYield>
 			<mineableScatterCommonality>0.7</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 
@@ -224,6 +232,7 @@
 			<mineableYield>10</mineableYield>
 			<mineableScatterCommonality>0.5</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 
@@ -247,6 +256,7 @@
 			<mineableYield>10</mineableYield>
 			<mineableScatterCommonality>0.4</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 
@@ -393,5 +403,393 @@
 			</li-->
 		</comps>
 	</ThingDef>
+	
+	<!-- Golem Rock Generator -->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>DankPyon_GolemRock_Iron_MapGen</defName>
+		<thingClass>MedievalOverhaul.Mineable_CompSpawnerDestroy</thingClass>
+		<label>unusual iron formation</label>
+		<description>An unusual iron formation, you hear something moving within.</description>
+		<graphicData>
+			<texPath>Natural/GolemRock</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<color>(110, 108, 106)</color>
+			<drawSize>4,4</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<neverMultiSelect>true</neverMultiSelect>
+		<saveCompressible>true</saveCompressible>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<fertility>0</fertility>
+		<mineable>true</mineable>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_IronOre</mineableThing>
+			<mineableYield>450</mineableYield>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
+			<veinMineable>false</veinMineable>
+			<isInert>true</isInert>
+			<isNaturalRock>true</isNaturalRock>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<supportsWallAttachments>false</supportsWallAttachments>
+		</building>
+		<damageMultipliers>
+		  <li>
+			<damageDef>Thump</damageDef>
+			<multiplier>4</multiplier>
+		  </li>
+		</damageMultipliers>
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
+				<kindToSpawn>DankPyon_Golem_Iron</kindToSpawn>
+				<chance>1</chance>
+				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
+				<faction>DankPyon_Forest_Faction</faction>
+				<mentalStateDef>BerserkMechanoid</mentalStateDef>
+				<numberToSpawn>1~1</numberToSpawn>
+				<letterLabel>Golem Emerges</letterLabel>
+				<letterDescription>A massive iron golem has eruprted from the ground. Make sure to take cover!</letterDescription>
+				<letterDef>ThreatBig</letterDef>
+				<disableCompDestroy>true</disableCompDestroy>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Golem Rock Generator -->
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>DankPyon_GolemRock_Silver_MapGen</defName>
+		<thingClass>MedievalOverhaul.Mineable_CompSpawnerDestroy</thingClass>
+		<label>unusual silver formation</label>
+		<description>An unusual silcwe formation, you hear something moving within.</description>
+		<graphicData>
+			<texPath>Natural/GolemRock</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<color>(207, 207, 207)</color>
+			<drawSize>4,4</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<neverMultiSelect>true</neverMultiSelect>
+		<saveCompressible>true</saveCompressible>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<fertility>0</fertility>
+		<mineable>true</mineable>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_SilverOre</mineableThing>
+			<mineableYield>600</mineableYield>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
+			<veinMineable>false</veinMineable>
+			<isInert>true</isInert>
+			<isNaturalRock>true</isNaturalRock>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<supportsWallAttachments>false</supportsWallAttachments>
+		</building>
+		<damageMultipliers>
+		  <li>
+			<damageDef>Thump</damageDef>
+			<multiplier>4</multiplier>
+		  </li>
+		</damageMultipliers>
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
+				<kindToSpawn>DankPyon_Golem_Silver</kindToSpawn>
+				<chance>1</chance>
+				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
+				<faction>DankPyon_Forest_Faction</faction>
+				<mentalStateDef>BerserkMechanoid</mentalStateDef>
+				<numberToSpawn>1~1</numberToSpawn>
+				<letterLabel>Golem Emerges</letterLabel>
+				<letterDescription>A massive silver golem has eruprted from the ground. Make sure to take cover!</letterDescription>
+				<letterDef>ThreatBig</letterDef>
+				<disableCompDestroy>true</disableCompDestroy>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>DankPyon_GolemRock_Iron_Incident</defName>
+		<thingClass>Mineable</thingClass>
+		<label>unusual iron formation</label>
+		<description>An unusual iron formation, it is quiet within.</description>
+		<graphicData>
+			<texPath>Natural/GolemRock</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<color>(110, 108, 106)</color>
+			<drawSize>4,4</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>15000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<neverMultiSelect>true</neverMultiSelect>
+		<saveCompressible>true</saveCompressible>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<fertility>0</fertility>
+		<mineable>true</mineable>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_IronOre</mineableThing>
+			<mineableYield>1000</mineableYield>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
+			<veinMineable>false</veinMineable>
+			<isInert>true</isInert>
+			<isNaturalRock>true</isNaturalRock>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<supportsWallAttachments>false</supportsWallAttachments>
+		</building>
+		<damageMultipliers>
+		  <li>
+			<damageDef>Thump</damageDef>
+			<multiplier>4</multiplier>
+		  </li>
+		</damageMultipliers>
+		<comps>
+			<li Class="CompProperties_CanBeDormant">
+				<startsDormant>true</startsDormant>
+				<canWakeUpFogged>false</canWakeUpFogged>
+			</li>
+			<li Class="CompProperties_WakeUpDormant"/>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>DankPyon_GolemRock_Silver_Incident</defName>
+		<thingClass>Mineable</thingClass>
+		<label>unusual silver formation</label>
+		<description>An unusual silver formation, it is quiet within.</description>
+		<graphicData>
+			<texPath>Natural/GolemRock</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<color>(207, 207, 207)</color>
+			<drawSize>4,4</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<neverMultiSelect>true</neverMultiSelect>
+		<saveCompressible>true</saveCompressible>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<fertility>0</fertility>
+		<mineable>true</mineable>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_SilverOre</mineableThing>
+			<mineableYield>2000</mineableYield>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
+			<veinMineable>false</veinMineable>
+			<isInert>true</isInert>
+			<isNaturalRock>true</isNaturalRock>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<supportsWallAttachments>false</supportsWallAttachments>
+		</building>
+		<damageMultipliers>
+		  <li>
+			<damageDef>Thump</damageDef>
+			<multiplier>4</multiplier>
+		  </li>
+		</damageMultipliers>
+		<comps>
+			<li Class="CompProperties_CanBeDormant">
+				<startsDormant>true</startsDormant>
+				<canWakeUpFogged>false</canWakeUpFogged>
+			</li>
+			<li Class="CompProperties_WakeUpDormant"/>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>DankPyon_GolemRock_Gold_Incident</defName>
+		<thingClass>Mineable</thingClass>
+		<label>unusual gold formation</label>
+		<description>An unusual gold formation, it is quiet within.</description>
+		<graphicData>
+			<texPath>Natural/GolemRock</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<color>(187,173,25)</color>
+			<drawSize>4,4</drawSize>
+		</graphicData>
+		<size>(3,3)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<neverMultiSelect>true</neverMultiSelect>
+		<saveCompressible>true</saveCompressible>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<fertility>0</fertility>
+		<mineable>true</mineable>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>DankPyon_GoldOre</mineableThing>
+			<mineableYield>300</mineableYield>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange>
+			<veinMineable>false</veinMineable>
+			<isInert>true</isInert>
+			<isNaturalRock>true</isNaturalRock>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<supportsWallAttachments>false</supportsWallAttachments>
+		</building>
+		<damageMultipliers>
+		  <li>
+			<damageDef>Thump</damageDef>
+			<multiplier>4</multiplier>
+		  </li>
+		</damageMultipliers>
+		<comps>
+			<li Class="CompProperties_CanBeDormant">
+				<startsDormant>true</startsDormant>
+				<canWakeUpFogged>false</canWakeUpFogged>
+			</li>
+			<li Class="CompProperties_WakeUpDormant"/>
+		</comps>
+	</ThingDef>
+	
+	<!-- <ThingDef ParentName="BuildingNaturalBase"> -->
+		<!-- <defName>DankPyon_GolemRock_Steel_Incident</defName> -->
+		<!-- <thingClass>MedievalOverhaul.Mineable_CompSpawnerDestroy</thingClass> -->
+		<!-- <label>unusual steel formation</label> -->
+		<!-- <description>An unusual steel formation.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Natural/GolemRock</texPath> -->
+			<!-- <graphicClass>Graphic_Random</graphicClass> -->
+			<!-- <color>(207, 207, 207)</color> -->
+			<!-- <drawSize>6,6</drawSize> -->
+		<!-- </graphicData> -->
+		<!-- <size>(3,3)</size> -->
+		<!-- <altitudeLayer>Building</altitudeLayer> -->
+		<!-- <rotatable>false</rotatable> -->
+		<!-- <statBases> -->
+			<!-- <MaxHitPoints>10000</MaxHitPoints> -->
+			<!-- <Flammability>0</Flammability> -->
+		<!-- </statBases> -->
+		<!-- <pathCost>42</pathCost> -->
+		<!-- <receivesSignals>true</receivesSignals> -->
+		<!-- <blockWind>true</blockWind> -->
+		<!-- <tickerType>Normal</tickerType> -->
+		<!-- <passability>Impassable</passability> -->
+		<!-- <castEdgeShadows>true</castEdgeShadows> -->
+		<!-- <fillPercent>1</fillPercent> -->
+		<!-- <coversFloor>true</coversFloor> -->
+		<!-- <neverMultiSelect>true</neverMultiSelect> -->
+		<!-- <saveCompressible>true</saveCompressible> -->
+		<!-- <holdsRoof>true</holdsRoof> -->
+		<!-- <staticSunShadowHeight>1.0</staticSunShadowHeight> -->
+		<!-- <blockLight>true</blockLight> -->
+		<!-- <fertility>0</fertility> -->
+		<!-- <mineable>true</mineable> -->
+		<!-- <building> -->
+			<!-- <isResourceRock>true</isResourceRock> -->
+			<!-- <mineableThing>DankPyon_SilverOre</mineableThing> -->
+			<!-- <mineableYield>200</mineableYield> -->
+			<!-- <mineableScatterCommonality>0</mineableScatterCommonality> -->
+			<!-- <mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange> -->
+			<!-- <veinMineable>false</veinMineable> -->
+			<!-- <isInert>true</isInert> -->
+			<!-- <isNaturalRock>true</isNaturalRock> -->
+			<!-- <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder> -->
+			<!-- <deconstructible>false</deconstructible> -->
+			<!-- <destroyShakeAmount>0</destroyShakeAmount> -->
+			<!-- <supportsWallAttachments>false</supportsWallAttachments> -->
+		<!-- </building> -->
+		<!-- <damageMultipliers> -->
+		  <!-- <li> -->
+			<!-- <damageDef>Thump</damageDef> -->
+			<!-- <multiplier>4</multiplier> -->
+		  <!-- </li> -->
+		<!-- </damageMultipliers> -->
+		<!-- <comps> -->
+			<!-- <li Class="CompProperties_CanBeDormant"> -->
+				<!-- <startsDormant>true</startsDormant> -->
+				<!-- <canWakeUpFogged>false</canWakeUpFogged> -->
+			<!-- </li> -->
+			<!-- <li Class="CompProperties_WakeUpDormant"/> -->
+		<!-- </comps> -->
+	<!-- </ThingDef> -->
 
 </Defs>

@@ -26,25 +26,23 @@ namespace MedievalOverhaul
             {
                 foreach (ThingDef tree in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Plant).ToList())
                 {
-                    if (tree.plant.harvestTag == "Wood" && tree.plant.harvestedThingDef != null && tree.plant.harvestedThingDef.stuffProps.categories.Contains(StuffCategoryDefOf.Woody))
+                    if (tree.plant?.harvestTag == "Wood" && (tree.plant?.harvestedThingDef?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Woody) ?? false))
                     {
                         AllTreesForGenerator.Add(tree);
                     }
                 }
-
-
                 foreach (ThingDef animal in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Pawn).ToList())
                 {
                     if (animal.butcherProducts != null)
                     {
                         AllButchered.Add(animal);
                     }
-                    if (animal.race.leatherDef != null) 
+                    if (animal.race?.leatherDef != null)
                     {
                         AllLeatheredAnimals.Add(animal);
                     }
 
-                    if (animal.comps.Any(x => x.compClass == typeof(CompSpawner)))
+                    if (animal.comps?.Any(x => x.compClass == typeof(CompSpawner)) ?? false)
                     {
                         AllProductSpawner.Add(animal);
                     }
@@ -184,7 +182,10 @@ namespace MedievalOverhaul
         };
             log.SetStatBaseValue(StatDefOf.Beauty, -4f);
             log.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
+            if (wood.GetStatValueAbstract(StatDefOf.Flammability) != null)    
             log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
+            else
+                log.SetStatBaseValue(StatDefOf.Flammability, 1f);
             log.SetStatBaseValue(StatDefOf.DeteriorationRate, 2f);
             log.SetStatBaseValue(StatDefOf.Mass, (wood.GetStatValueAbstract(StatDefOf.Mass) * 3));
             log.SetStatBaseValue(StatDefOf.MarketValue, (wood.GetStatValueAbstract(StatDefOf.MarketValue) * 2));

@@ -397,7 +397,7 @@
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>2500</workAmount>
+		<workAmount>500</workAmount>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
 			<li>DankPyon_Workbench</li>
@@ -408,16 +408,38 @@
 		<ingredients>
 			<li>
 				<filter>
+					<categories>
+						<li>Leathers</li>
+						<li>Textiles</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>DankPyon_Wood</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
 					<thingDefs>
-						<li>DankPyon_IronIngot</li>
+						<li>DankPyon_ComponentBasic</li>
 					</thingDefs>
 				</filter>
-				<count>4</count>
+				<count>2</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+				<li>Textiles</li>
+				<li>DankPyon_Wood</li>
+			</categories>
 			<thingDefs>
-				<li>DankPyon_IronIngot</li>
+				<li>DankPyon_ComponentBasic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -438,7 +460,7 @@
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>7500</workAmount>
+		<workAmount>2500</workAmount>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
 			<li>DankPyon_Workbench</li>
@@ -449,16 +471,38 @@
 		<ingredients>
 			<li>
 				<filter>
+					<categories>
+						<li>Leathers</li>
+						<li>Textiles</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>DankPyon_Wood</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
 					<thingDefs>
-						<li>DankPyon_IronIngot</li>
+						<li>DankPyon_ComponentBasic</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+				<li>Textiles</li>
+				<li>DankPyon_Wood</li>
+			</categories>
 			<thingDefs>
-				<li>DankPyon_IronIngot</li>
+				<li>DankPyon_ComponentBasic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

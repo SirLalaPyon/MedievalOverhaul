@@ -32,16 +32,17 @@ namespace MedievalOverhaul
         public static FactionDef DankPyon_Forest_Faction;
         public static FactionDef DankPyon_Hornets;
 
-        public static ThingSetMakerDef DankPyon_GolemMeteorite;
-
         public static ThingDef DankPyon_MineableIron;
         public static ThingDef DankPyon_MineableGold;
         public static ThingDef MineableSilver;
         public static ThingDef MineablePlasteel;
 
         public static PawnKindDef DankPyon_Golem_Iron;
+        public static PawnKindDef DankPyon_Golem_Silver;
         public static PawnKindDef DankPyon_Golem_Gold;
         public static PawnKindDef DankPyon_Golem_Steel;
+
+        public static ThingDef DankPyon_GolemRock_Iron_Incident;
 
         public static ThingDef DankPyon_MineShaft;
         public static ThingDef DankPyon_Citrine;
@@ -58,6 +59,7 @@ namespace MedievalOverhaul
         public static JobDef DankPyon_Slop_Refuel_StatAtomic;
         public static JobDef DankPyon_Slop_Refuel_Stat;
         public static JobDef DankPyon_DoBillMending;
+        public static JobDef DankPyon_Mine_Golem;
 
         public static BodyDef Bird;
 

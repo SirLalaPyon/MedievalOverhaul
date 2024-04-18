@@ -66,5 +66,19 @@ namespace MedievalOverhaul
         {
             return !string.IsNullOrEmpty(input);
         }
+
+        public static Mineable_CompSpawnerDestroy GetFirstMineable(this IntVec3 c, Map map)
+        {
+            List<Thing> thingList = c.GetThingList(map);
+            for (int i = 0; i < thingList.Count; i++)
+            {
+                Mineable_CompSpawnerDestroy mineable = thingList[i] as Mineable_CompSpawnerDestroy;
+                if (mineable != null)
+                {
+                    return mineable;
+                }
+            }
+            return null;
+        }
     }
 }

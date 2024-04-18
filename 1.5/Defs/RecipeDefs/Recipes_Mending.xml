@@ -2,7 +2,7 @@
 <Defs>
 
 	<RecipeDef>
-		<defName>DankPyon_Mend</defName>
+		<defName>DankPyon_MendApparel</defName>
 		<label>mend apparel</label>
 		<description>Mend damaged apparel.</description>
 		<jobString>Mending damaged apparel.</jobString>
@@ -16,6 +16,9 @@
 					<categories>
 						<li>Apparel</li>
 					</categories>
+					<disallowedCategories>
+						<li>ApparelArmor</li>
+					</disallowedCategories>
 				</filter>
 				<count>1</count>
 			</li>
@@ -24,15 +27,98 @@
 			<categories>
 				<li>Apparel</li>
 			</categories>
+			<disallowedCategories>
+				<li>ApparelArmor</li>
+			</disallowedCategories>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
 				<li>Apparel</li>
 			</categories>
+			<disallowedCategories>
+				<li>ApparelArmor</li>
+			</disallowedCategories>
 		</defaultIngredientFilter>
 		<recipeUsers>
 			<li>DankPyon_MendingBench</li>
 		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_Tailoring</li>
+		</researchPrerequisites>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>DankPyon_MendWeapon</defName>
+		<label>mend weapon</label>
+		<description>Mend damaged weapon.</description>
+		<jobString>Mending damaged weapon.</jobString>
+		<workSkill>Crafting</workSkill>
+		 <effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<workAmount>30</workAmount><!-- Amount of ticks per hp repaired -->
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Weapons</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>Weapons</li>
+			</categories>
+		</defaultIngredientFilter>
+		<recipeUsers>
+			<li>DankPyon_MendingBench</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>DankPyon_MendArmor</defName>
+		<label>mend armor</label>
+		<description>Mend damaged armor.</description>
+		<jobString>Mending damaged armor.</jobString>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<workAmount>30</workAmount><!-- Amount of ticks per hp repaired -->
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>ApparelArmor</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>ApparelArmor</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>ApparelArmor</li>
+			</categories>
+		</defaultIngredientFilter>
+		<recipeUsers>
+			<li>DankPyon_MendingBench</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
 	</RecipeDef>
 
 </Defs>

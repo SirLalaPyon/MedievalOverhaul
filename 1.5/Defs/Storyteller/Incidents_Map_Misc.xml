@@ -92,17 +92,39 @@
 	</IncidentDef>
 
 	<IncidentDef>
-		<defName>DankPyon_GolemImpact</defName>
-		<label>meteorite impact</label>
-		<category>Misc</category>
+		<defName>DankPyon_GolemImpactor</defName>
+		<label>strange meteorite impact</label>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
-		<workerClass>MedievalOverhaul.IncidentWorker_GolemImpact</workerClass>
+		<workerClass>MedievalOverhaul.IncidentWorker_GolemImpactor</workerClass>
+		<letterLabel>Strange meteor impact</letterLabel>
+		<letterText>A strange meteor has impacted in the area. It looks like those massive creatures are dormant from the impact.</letterText>
+		<letterDef>ThreatBig</letterDef>
 		<baseChance>0.5</baseChance>
-		<letterLabel>Meteorite</letterLabel>
-		<letterText>A large meteorite has struck ground in the area. It has left behind a lump of {0}.</letterText>
-		<tale>MeteoriteImpact</tale>
+		<minThreatPoints>400</minThreatPoints>
+		<pointsScaleable>true</pointsScaleable>
+		<category>ThreatBig</category>
+		<modExtensions>
+			<li Class="MedievalOverhaul.MeteorProperties">
+				<factionDef>DankPyon_Forest_Faction</factionDef>
+				<spawnAsPlayerFaction>false</spawnAsPlayerFaction>
+				<golemDict>
+					<li>
+						<key>DankPyon_GolemRock_Iron_Incident</key>
+						<value>DankPyon_Golem_Iron</value>
+					</li>
+					<li>
+						<key>DankPyon_GolemRock_Silver_Incident</key>
+						<value>DankPyon_Golem_Silver</value>
+					</li>
+					<li>
+						<key>DankPyon_GolemRock_Gold_Incident</key>
+						<value>DankPyon_Golem_Gold</value>
+					</li>
+				</golemDict>
+			</li>
+		</modExtensions>
 	</IncidentDef>
 
 </Defs>

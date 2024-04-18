@@ -44,12 +44,14 @@
     <Compile Include="Medieval Overhaul\Harmony\InspectStringPatch.cs" />
     <Compile Include="Medieval Overhaul\Harmony\StoreFuel.cs" />
     <Compile Include="Medieval Overhaul\Fuel\ITab_Fuel.cs" />
+    <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GolemImpactor.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
     <Compile Include="Medieval Overhaul\Mending\JobDriver_DoMending.cs" />
-    <Compile Include="Medieval Overhaul\Mending\RecipeWorker_Mending.cs" />
     <Compile Include="Medieval Overhaul\Mending\WorkGiver_DoMending.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mending.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\FileName.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Timber.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\Mineable_CompSpawnerDestroy.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Utility.cs" />
     <Compile Include="Medieval Overhaul\Fuel\UtilityOnStartup.cs" />
     <Compile Include="Medieval Overhaul\DefOfs\StuffabilityDefOf.cs" />
@@ -65,8 +67,6 @@
     <Compile Include="Medieval Overhaul\Harmony\CanPlaceBlueprintOver_Postfix.cs" />
     <Compile Include="Medieval Overhaul\Harmony\CanBuildOnTerrain_Postfix.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GhoulPack.cs" />
-    <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GolemImpact.cs" />
-    <Compile Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\ThingSetMaker_GolemImpact.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaul_Settings.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaulMod.cs" />
     <Compile Include="Medieval Overhaul\Production Chains\Hide Generation\HideUtility.cs" />
@@ -116,6 +116,7 @@
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_HealScars.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\FuelValueProperty.cs" />
     <Compile Include="Medieval Overhaul\Harmony\HarmonyInstance.cs" />
+    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_Miner_Golem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Medieval Overhaul\Utilities\DebugTools.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -160,6 +161,7 @@
   <ItemGroup>
     <Folder Include="ESCP_FuelExtension\" />
     <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
+    <Folder Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\" />
     <Folder Include="Medieval Overhaul\StewPot\" />
   </ItemGroup>
   <ItemGroup>

@@ -18,13 +18,14 @@
 			</products>
 		</value>
 	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/RecipeDef[defName="Excavate_Steel"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="Mine"]/recipes/li[text()="Excavate_Steel"]</xpath>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Excavate_Steel"]/products</xpath>
+		<value>
+			<products>
+				<DankPyon_IronOre>10</DankPyon_IronOre>
+			</products>
+		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationRemove">

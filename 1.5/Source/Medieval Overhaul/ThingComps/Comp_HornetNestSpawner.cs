@@ -55,7 +55,7 @@ namespace MedievalOverhaul
                 PawnKindDef named = DefDatabase<PawnKindDef>.GetNamed(this.Props.spawnablePawnKinds.RandomElement<string>(), false);
                 if (named != null)
                 {
-                    Faction faction = Props.spawnAsPlayerFaction ? Faction.OfPlayer : Props.faction != null && FactionUtility.DefaultFactionFrom(Props.faction) != null ? FactionUtility.DefaultFactionFrom(Props.faction) : null;
+                    Faction faction = Props.faction != null && FactionUtility.DefaultFactionFrom(Props.faction) != null ? FactionUtility.DefaultFactionFrom(Props.faction) : null;
                     PawnGenerationRequest pawnRequest = new PawnGenerationRequest(named, faction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, 1f, false, false, true, true, false, false);
                     Pawn pawnToCreate = PawnGenerator.GeneratePawn(pawnRequest);
                     GenSpawn.Spawn((Thing)pawnToCreate, CellFinder.RandomClosewalkCellNear(this.parent.Position, this.parent.Map, this.Props.pawnSpawnRadius), this.parent.Map);

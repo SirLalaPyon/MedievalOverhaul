@@ -2,6 +2,20 @@
 <Defs>
 
 	<WorkGiverDef>
+		<defName>DankPyon_OperateQuest</defName>
+		<label>operate quest finder</label>
+		<giverClass>MedievalOverhaul.WorkGiver_OperateQuest</giverClass>
+		<workType>Research</workType>
+		<priorityInType>80</priorityInType>
+		<verb>scan</verb>
+		<gerund>scanning at</gerund>
+		<scannerDef>EEG_QuestFinder</scannerDef>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
 		<defName>DankPyon_DoMine_Golem</defName>
 		<label>mine</label>
 		<giverClass>MedievalOverhaul.WorkGiver_Miner_Golem</giverClass>

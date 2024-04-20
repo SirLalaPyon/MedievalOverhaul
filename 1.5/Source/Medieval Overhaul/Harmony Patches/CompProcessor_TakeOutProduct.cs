@@ -8,14 +8,10 @@ using HarmonyLib;
 using ProcessorFramework;
 using RimWorld;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
-    public class ProcessorExtension : DefModExtension
-    {
-        public bool outputOnlyButcherProduct;
-    }
     [HarmonyPatch(typeof(CompProcessor), "TakeOutProduct")]
-    public static class TakeOutProduct_Prefix
+    public static class CompProcessor_TakeOutProduct
     {
         public static bool Prefix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
         {

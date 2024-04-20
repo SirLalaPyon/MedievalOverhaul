@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.ButcherProducts))]
-    public static class Patch_ButcherProducts_Postfix
+    public static class Pawn_ButcherProducts
     {
         private static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, Pawn __instance, Pawn butcher, float efficiency)
         {

@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace MedievalOverhaul.Medieval_Overhaul.Harmony
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(ResearchProjectDef), "CanBeResearchedAt")]
-    public static class CanBeResearchedAt_Postfix
+    public static class ResearchProjectDef_CanBeResearchedAt
     {
         public static void Postfix(Building_ResearchBench bench, bool ignoreResearchBenchPowerStatus, ResearchProjectDef __instance, ref bool __result)
         {

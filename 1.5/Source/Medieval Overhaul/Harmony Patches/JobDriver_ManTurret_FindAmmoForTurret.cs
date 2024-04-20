@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(JobDriver_ManTurret), nameof(JobDriver_ManTurret.FindAmmoForTurret))]
-    public static class FindAmmoForTurret_Prefix
+    public static class JobDriver_ManTurret_FindAmmoForTurret
     {
         private static bool Prefix(Pawn pawn, Building_TurretGun gun, ref Thing __result)
         {

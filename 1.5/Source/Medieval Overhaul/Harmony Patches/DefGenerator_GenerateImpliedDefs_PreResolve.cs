@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(DefGenerator), nameof(DefGenerator.GenerateImpliedDefs_PreResolve))]
-    public static class GenerateImpliedDefs_PreResolve_Patch
+    public static class DefGenerator_GenerateImpliedDefs_PreResolve
     {
 
         public static bool Prefix(bool hotReload)

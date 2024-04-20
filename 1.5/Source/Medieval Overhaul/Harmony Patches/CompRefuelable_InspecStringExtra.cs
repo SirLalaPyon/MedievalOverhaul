@@ -7,15 +7,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(CompRefuelable), "CompInspectStringExtra")]
-    public class InspecStringPatch
+    public class CompRefuelable_InspecStringExtra
     {
         [HarmonyPrefix]
-        public static bool InspectString(CompRefuelable __instance, ref string __result, ref float ___fuel)
+        public static bool Prefix(CompRefuelable __instance, ref string __result, ref float ___fuel)
         {
-            if (Utility_OnStartup.LWMFuelFilterIsEnabled)
+            if (Utility.LWMFuelFilterIsEnabled)
                 return true;
             var fuelVarUsed = __instance.parent.GetComp<CompStoreFuelThing>()?.fuelUsed;
             if (fuelVarUsed != null && __instance.HasFuel && !__instance.Props.consumeFuelOnlyWhenUsed)

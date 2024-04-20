@@ -7,15 +7,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(CompRefuelable), "ConsumptionRatePerTick", MethodType.Getter)]
-    public class FuelRate_Patch
+    public class CompRefuelable_ConsumptionRatePerTick
     {
         [HarmonyPostfix]
-        public static void FuelRate(CompRefuelable __instance, ref float __result)
+        public static void Postfix(CompRefuelable __instance, ref float __result)
         {
-            if (Utility_OnStartup.LWMFuelFilterIsEnabled)
+            if (Utility.LWMFuelFilterIsEnabled)
                 return;
             float num = 1f;
             var thingDef = __instance.parent.GetComp<CompStoreFuelThing>()?.fuelUsed;

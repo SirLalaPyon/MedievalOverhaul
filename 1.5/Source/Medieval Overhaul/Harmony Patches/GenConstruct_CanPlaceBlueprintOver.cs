@@ -3,11 +3,11 @@ using MedievalOverhaul;
 using RimWorld;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
 
     [HarmonyPatch(typeof(GenConstruct), "CanPlaceBlueprintAt")]
-    public static class CanPlaceBlueprintOver_Postfix
+    public static class GenConstruct_CanPlaceBlueprintOver
     {
         public static void Postfix(ref AcceptanceReport __result, BuildableDef entDef, IntVec3 center, Rot4 rot, Map map, bool godMode = false, Thing thingToIgnore = null, Thing thing = null, ThingDef stuffDef = null)
         {

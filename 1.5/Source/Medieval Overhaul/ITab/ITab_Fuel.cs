@@ -26,7 +26,7 @@ namespace MedievalOverhaul
 
         public override bool Hidden => this.IsDisabled();
 
-        public bool IsDisabled() => Utility_OnStartup.LWMFuelFilterIsEnabled;
+        public bool IsDisabled() => Utility.LWMFuelFilterIsEnabled;
 
         public override void OnOpen()
         {

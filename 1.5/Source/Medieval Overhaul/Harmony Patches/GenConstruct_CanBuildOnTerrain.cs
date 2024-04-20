@@ -3,10 +3,10 @@ using MedievalOverhaul;
 using RimWorld;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(GenConstruct), "CanBuildOnTerrain")]
-    public static class CanBuildOnTerrain_Postfix
+    public static class GenConstruct_CanBuildOnTerrain
     {
         public static void Postfix(ref bool __result, BuildableDef entDef, IntVec3 c, Map map, Rot4 rot, Thing thingToIgnore = null, ThingDef stuffDef = null)
         {

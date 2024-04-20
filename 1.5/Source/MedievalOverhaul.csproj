@@ -35,37 +35,43 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Medieval Overhaul\Fuel\CompProperties_StoreFuelThing.cs" />
-    <Compile Include="Medieval Overhaul\Fuel\CompStoreFuelThing.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FixBrokenDownBuilding_JobOnThing_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FixBrokenDownBuilding_HasJobOnThing_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FindBestFuel_Prefix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FuelRate.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\InspectStringPatch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\StoreFuel.cs" />
-    <Compile Include="Medieval Overhaul\Fuel\ITab_Fuel.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerTrader_PowerOn.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Ingest_GetReport.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ThingListGroupHelper_Includes.cs" />
+    <Compile Include="Medieval Overhaul\Utilities\Breakdown.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\CannotBePlacedTogetherWithThisModExtension.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalButcherProducts.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_StoreFuelThing.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompStoreFuelThing.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\FixBrokenDownBuilding_JobOnThing.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\FixBrokenDownBuilding_HasJobOnThing.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\RefuelWorkGiverUtility_FindBestFuel.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_ConsumptionRatePerTick.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_InspecStringExtra.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_StoreFuel_Patch.cs" />
+    <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GolemImpactor.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
     <Compile Include="Medieval Overhaul\Mending\JobDriver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\Mending\WorkGiver_DoMending.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\FileName.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\HediffFallRateMultiplier.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\MeteorProperties.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ProcessorExtension.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Timber.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\Mineable_CompSpawnerDestroy.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Utility.cs" />
-    <Compile Include="Medieval Overhaul\Fuel\UtilityOnStartup.cs" />
     <Compile Include="Medieval Overhaul\DefOfs\StuffabilityDefOf.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\GolemSpawn.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\ResearchProjectDef_CanBeResearchedAt_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\MakeRecipeProducts_Postfix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\GenerateImpliedDefs_PreResolve_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\CalculableRecipe_Prefix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\TakeOutProduct_Prefix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\CanBeResearchedAt_Postfix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\Patch_ButcherProducts_Postfix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FindAmmoForTurret_Prefix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\CanPlaceBlueprintOver_Postfix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\CanBuildOnTerrain_Postfix.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\GenRecipe_MakeRecipeProducts.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\DefGenerator_GenerateImpliedDefs_PreResolve.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\StatWorker_MarketValue_CalculableRecipe.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\CompProcessor_TakeOutProduct.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanBeResearchedAt.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_ButcherProducts.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ManTurret_FindAmmoForTurret.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\GenConstruct_CanPlaceBlueprintOver.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\GenConstruct_CanBuildOnTerrain.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GhoulPack.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaul_Settings.cs" />
     <Compile Include="Medieval Overhaul\Settings\MedievalOverhaulMod.cs" />
@@ -96,7 +102,6 @@
     <Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermathSet.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermath.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\Plant_SpawnerOnDestroy.cs" />
-    <Compile Include="Medieval Overhaul\ModExtensions.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ButcherProperties.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\Building_Lootable.cs" />
     <Compile Include="Medieval Overhaul\RecipeCounter\RecipeWorkerCounter_MakeWoodPlanks.cs" />
@@ -115,7 +120,7 @@
     <Compile Include="Medieval Overhaul\DamageWorkers\DamagerWorker_ExplosionNoFlash.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_HealScars.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\FuelValueProperty.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\HarmonyInstance.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\HarmonyInstance.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_Miner_Golem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Medieval Overhaul\Utilities\DebugTools.cs" />
@@ -124,17 +129,17 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Slop Pot\Building_SlopPot.cs" />
-    <Compile Include="Slop Pot\CompProperties_RefuelableStat.cs" />
-    <Compile Include="Slop Pot\CompProperties_Slop.cs" />
-    <Compile Include="Slop Pot\CompRefuelableStat.cs" />
-    <Compile Include="Slop Pot\CompSlop.cs" />
-    <Compile Include="Slop Pot\CompUnpowered.cs" />
-    <Compile Include="Slop Pot\ITab_StewPot.cs" />
-    <Compile Include="Slop Pot\JobDriver_RefuelStat.cs" />
-    <Compile Include="Slop Pot\JobDriver_RefuelStatAtomic.cs" />
-    <Compile Include="Slop Pot\NutrientPasteHarmonyPatch.cs" />
-    <Compile Include="Slop Pot\WorkGiver_RefuelStat.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\Building_SlopPot.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableStat.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Slop.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableStat.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompSlop.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompUnpowered.cs" />
+    <Compile Include="Medieval Overhaul\ITab\ITab_StewPot.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelStat.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelStatAtomic.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Building_NutrientPasteDispenser_CanDispenseNow.cs" />
+    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_RefuelStat.cs" />
     <Compile Include="StandaloneSettlementPreference\TooltipStringInit.cs" />
     <Compile Include="StandaloneSettlementPreference\SettlementPreference_ModSettings.cs" />
     <Compile Include="StandaloneSettlementPreference\SettlementPreference_Mod.cs" />
@@ -162,7 +167,6 @@
     <Folder Include="ESCP_FuelExtension\" />
     <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
     <Folder Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\" />
-    <Folder Include="Medieval Overhaul\StewPot\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">

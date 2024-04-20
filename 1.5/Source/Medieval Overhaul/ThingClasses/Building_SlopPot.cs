@@ -85,15 +85,16 @@ namespace MedievalOverhaul
             stringBuilder.AppendLine(" | " +
 				"DankPyon_StewPot_NutritionStored".Translate() + ": " +
                 (int)Math.Round(nutritionComp.Fuel));
-            if (this.slopComp.ingredients.Count > 0)
+            if (!this.fuelComp.HasFuel && this.nutritionComp.HasFuel)
+            {
+                stringBuilder.AppendLine("DankPyon_SlopRotting".Translate());
+            }
+            else if(this.slopComp.ingredients.Count > 0)
             {
                 stringBuilder.AppendLine("Ingredients".Translate() + ": ");
                 stringBuilder.Append(this.slopComp.GetIngredientsString(false, out var _));
             }
-			if (!this.fuelComp.HasFuel && this.nutritionComp.HasFuel)
-			{
-				stringBuilder.AppendLine("DankPyon_SlopRotting".Translate());
-			}
+			
 			return stringBuilder.ToString().Trim();
 		}
 

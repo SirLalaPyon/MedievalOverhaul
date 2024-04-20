@@ -12,7 +12,19 @@
 			<li>DankPyon_MineShaft</li>
 		</recipeUsers>
 		<modExtensions>
-			<li Class="MedievalOverhaul.RecipeExtension_Mine"/>
+			<li Class="MedievalOverhaul.RecipeExtension_Mine">
+				<bonusGems>
+					<li>DankPyon_Citrine</li>
+					<li>DankPyon_Amber</li>
+					<li>DankPyon_Onyx</li>
+					<li>DankPyon_Emerald</li>
+					<li>DankPyon_Sapphire</li>
+					<li>DankPyon_Ruby</li>
+					<li>DankPyon_GoldOre</li>
+				</bonusGems>
+				<randomChance>0.01</randomChance><!-- Percent chance per workAmountPerChance -->
+				<workAmountPerChance>600</workAmountPerChance><!-- Number of ticks of work -->
+			</li>
 		</modExtensions>
 	</RecipeDef>
 

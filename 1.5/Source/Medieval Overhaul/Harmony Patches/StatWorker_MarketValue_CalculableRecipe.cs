@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 { 
     [HarmonyPatch(typeof(StatWorker_MarketValue), "CalculableRecipe")]
-    public static class CalculableRecipe_Prefix
+    public static class StatWorker_MarketValue_CalculableRecipe
     {
         private static bool Prefix(BuildableDef def)
         {

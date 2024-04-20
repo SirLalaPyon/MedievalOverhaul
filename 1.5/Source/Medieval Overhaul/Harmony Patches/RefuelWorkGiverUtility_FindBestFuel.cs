@@ -11,16 +11,16 @@ using Verse.AI;
 using Verse.Noise;
 using static Unity.Burst.Intrinsics.X86.Avx;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(RefuelWorkGiverUtility))]
     [HarmonyPatch("FindBestFuel")]
-    public class FindBestFuelPatch
+    public class RefuelWorkGiverUtility_FindBestFuel
     {
         [HarmonyPrefix]
-        public static bool FindBestFuel_Prefix(Pawn pawn, Thing refuelable, ref Thing __result)
+        public static bool Prefix(Pawn pawn, Thing refuelable, ref Thing __result)
         {
-            if (Utility_OnStartup.LWMFuelFilterIsEnabled || !(refuelable is Building))
+            if (Utility.LWMFuelFilterIsEnabled || !(refuelable is Building))
             {
                 return true;
             }

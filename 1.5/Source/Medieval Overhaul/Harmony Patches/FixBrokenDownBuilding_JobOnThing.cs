@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(WorkGiver_FixBrokenDownBuilding), nameof(WorkGiver_FixBrokenDownBuilding.JobOnThing))]
 
-    public static class FixBrokenDownBuilding_JobOnThing_Patch
+    public static class FixBrokenDownBuilding_JobOnThing
     {
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
         {

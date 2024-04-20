@@ -2029,8 +2029,8 @@
 	
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase" Name="DankPyon_RusticBookshelf">
 		<defName>DankPyon_RusticBookshelf</defName>
-		<label>bookshelf</label>
-		<description>Increases research speed when placed near research table. Each research bench can  use two bookshelf.</description>
+		<label>small bookshelf</label>
+		<description>Increases research speed when placed near research table. Each research bench can  use two small bookshelf.</description>
 		<graphicData>
 			<texPath>Furniture/RusticBookshelf1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -2108,8 +2108,8 @@
 
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
 		<defName>DankPyon_RusticBookshelf1x2c</defName>
-		<label>bookshelf (1x2)</label>
-		<description>Increases research speed when placed near research table. Each research bench can one large bookshelf.</description>
+		<label>large bookshelf</label>
+		<description>Increases research speed when placed near research table. Each research bench can use one large bookshelf.</description>
 		<graphicData>
 			<texPath>Furniture/RusticBookshelf1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -2252,7 +2252,7 @@
 
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
 		<defName>DankPyon_RusticEmptyShelf1x2c</defName>
-		<label>empty shelf (1x2)</label>
+		<label>empty large shelf</label>
 		<description>An empty bookshelf.</description>
 		<graphicData>
 			<texPath>Furniture/RusticEmptyShelf1x2</texPath>
@@ -2333,6 +2333,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticTallEndTable</li>
 					<li>DankPyon_RusticDresser</li>
 					<li>DankPyon_RusticChest</li>
 					<li>DankPyon_MetalStrongbox</li>
@@ -2387,6 +2388,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticTallEndTable</li>
 					<li>DankPyon_RusticDresser</li>
 					<li>DankPyon_RusticChest</li>
 					<li>DankPyon_MetalStrongbox</li>
@@ -2442,6 +2444,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticTallEndTable</li>
 					<li>DankPyon_RusticDresser</li>
 					<li>DankPyon_RusticChest</li>
 					<li>DankPyon_MetalStrongbox</li>
@@ -2498,6 +2501,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticTallEndTable</li>
 					<li>DankPyon_RusticDresser</li>
 					<li>DankPyon_RusticChest</li>
 					<li>DankPyon_MetalStrongbox</li>
@@ -2555,6 +2559,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticTallEndTable</li>
 					<li>DankPyon_RusticDresser</li>
 					<li>DankPyon_RusticChest</li>
 					<li>DankPyon_MetalStrongbox</li>
@@ -2613,6 +2618,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticTallEndTable</li>
 					<li>DankPyon_RusticDresser</li>
 					<li>DankPyon_RusticChest</li>
 					<li>DankPyon_MetalStrongbox</li>
@@ -2675,6 +2681,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticTallEndTable</li>
 					<li>DankPyon_RusticDresser</li>
 					<li>DankPyon_RusticChest</li>
 					<li>DankPyon_MetalStrongbox</li>

@@ -55,7 +55,7 @@ namespace MedievalOverhaul
                 PawnKindDef named = DefDatabase<PawnKindDef>.GetNamed(this.Props.spawnablePawnKinds.RandomElement<string>(), false);
                 if (named != null)
                 {
-                    Faction faction = this.parent.Faction ?? null;
+                    Faction faction = Props.spawnAsPlayerFaction ? Faction.OfPlayer : Props.faction != null && FactionUtility.DefaultFactionFrom(Props.faction) != null ? FactionUtility.DefaultFactionFrom(Props.faction) : null;
                     PawnGenerationRequest pawnRequest = new PawnGenerationRequest(named, faction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, 1f, false, false, true, true, false, false);
                     Pawn pawnToCreate = PawnGenerator.GeneratePawn(pawnRequest);
                     GenSpawn.Spawn((Thing)pawnToCreate, CellFinder.RandomClosewalkCellNear(this.parent.Position, this.parent.Map, this.Props.pawnSpawnRadius), this.parent.Map);
@@ -63,7 +63,7 @@ namespace MedievalOverhaul
                     {
                         Lord lord = (Lord)null;
                         if (this.parent.Map.mapPawns.SpawnedPawnsInFaction(faction).Any<Pawn>((Predicate<Pawn>)(p => p != pawnToCreate)))
-                            lord = ((Pawn)GenClosest.ClosestThing_Global(this.parent.Position, (IEnumerable)this.parent.Map.mapPawns.SpawnedPawnsInFaction(Faction.OfInsects), 30f, (Predicate<Thing>)(p => p != pawnToCreate && ((Pawn)p).GetLord() != null))).GetLord();
+                            lord = ((Pawn)GenClosest.ClosestThing_Global(this.parent.Position, (IEnumerable)this.parent.Map.mapPawns.SpawnedPawnsInFaction(faction), 30f, (Predicate<Thing>)(p => p != pawnToCreate && ((Pawn)p).GetLord() != null))).GetLord();
                         if (lord == null)
                             lord = LordMaker.MakeNewLord(faction, (LordJob)new LordJob_DefendPoint(this.parent.Position, new float?(10f)), this.parent.Map);
                         lord.AddPawn(pawnToCreate);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,8 @@ namespace MedievalOverhaul
         public FloatRange pawnSpawnIntervalDays = new FloatRange(0.5f, 2f);
         public int pawnSpawnRadius = 2;
         public string nextSpawnInspectStringKey;
+        public bool spawnAsPlayerFaction = false;
+        public FactionDef faction;
 
         public CompProperties_HornetNestSpawner() => this.compClass = typeof(Comp_HornetNestSpawner);
 

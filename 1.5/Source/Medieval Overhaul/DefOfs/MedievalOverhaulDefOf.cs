@@ -63,6 +63,10 @@ namespace MedievalOverhaul
 
         public static BodyDef Bird;
 
+        public static SoundDef MeleeHit_Wood;
+        public static SoundDef BulletImpact_Wood;
+        public static SoundDef Pawn_Melee_Punch_HitBuilding_Wood;
+
         static MedievalOverhaulDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MedievalOverhaulDefOf));
     }
 

@@ -44,8 +44,10 @@
 			<color>(133,97,67)</color>
 			<constructEffect>ConstructWood</constructEffect>
 			<appearance>Planks</appearance>
+			<soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
 			<statFactors>
 				<MaxHitPoints>0.65</MaxHitPoints>
 				<Beauty>1</Beauty>
@@ -109,8 +111,10 @@
 			<commonality>1.00</commonality>
 			<color>(112,91,76)</color>
 			<constructEffect>ConstructWood</constructEffect>
+			<soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
 			<statFactors>
 				<MaxHitPoints>0.75</MaxHitPoints>
 				<Beauty>2</Beauty>
@@ -729,8 +733,10 @@
 			<commonality>1.00</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
 			<color>(112, 108, 101)</color>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
 			<statFactors>
 				<MaxHitPoints>0.9</MaxHitPoints>
 				<Beauty>1</Beauty>

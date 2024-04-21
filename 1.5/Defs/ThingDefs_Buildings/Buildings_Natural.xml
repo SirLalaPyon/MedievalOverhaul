@@ -353,7 +353,7 @@
 		</killedLeavings>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
-				<startsDormant>true</startsDormant>
+				<startsDormant>false</startsDormant>
 				<canWakeUpFogged>false</canWakeUpFogged>
 			</li>
 			<li Class="CompProperties_WakeUpDormant"/>
@@ -385,6 +385,7 @@
 				<maxPawnCount>4</maxPawnCount>
 				<pawnSpawnIntervalDays>0.5~1</pawnSpawnIntervalDays>
 				<defendRadius>5</defendRadius>
+				<faction>DankPyon_Hornets</faction>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>6</heatPerSecond>

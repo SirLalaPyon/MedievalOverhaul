@@ -52,8 +52,8 @@
     <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GolemImpactor.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
-    <Compile Include="Medieval Overhaul\Mending\JobDriver_DoMending.cs" />
-    <Compile Include="Medieval Overhaul\Mending\WorkGiver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\HediffFallRateMultiplier.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\MeteorProperties.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ProcessorExtension.cs" />
@@ -160,7 +160,7 @@
       <HintPath>..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="ProcessorFramework">
-      <HintPath>..\..\..\3210544395\1.5\Assemblies\ProcessorFramework.dll</HintPath>
+      <HintPath>..\..\..\ProcessorFramework\1.5\Assemblies\ProcessorFramework.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -97,6 +97,15 @@
 		<butcherProducts>
 			<DankPyon_IronOre>110</DankPyon_IronOre>
 		</butcherProducts>
+		<receivesSignals>true</receivesSignals>
+		<comps>
+			<li Class="CompProperties_CanBeDormant" />
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
+				<wakeUpCheckRadius>30</wakeUpCheckRadius>
+				<wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<PawnKindDef>

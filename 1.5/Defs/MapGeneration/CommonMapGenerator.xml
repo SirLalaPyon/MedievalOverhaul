@@ -61,7 +61,7 @@
 			<allowInWaterBiome>false</allowInWaterBiome>
 			<minSpacing>200</minSpacing>
 			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
-			<countPer10kCellsRange>0.7~1</countPer10kCellsRange>
+			<countPer10kCellsRange>1~2</countPer10kCellsRange>
 			<clearSpaceSize>30</clearSpaceSize>
 			<terrainValidationRadius>4</terrainValidationRadius>
 			<terrainValidationDisallowed>
@@ -69,7 +69,7 @@
 			</terrainValidationDisallowed>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
-					<radius>6</radius>
+					<radius>3</radius>
 					<affordance>Heavy</affordance>
 				</li>
 				<li Class="ScattererValidator_NoNonNaturalEdifices">

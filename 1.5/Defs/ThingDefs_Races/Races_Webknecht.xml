@@ -81,7 +81,7 @@
 			<predator>true</predator>
 			<body>DankPyon_WebknechtBody</body>
 			<herdAnimal>true</herdAnimal>
-			<baseBodySize>1.50</baseBodySize>
+			<baseBodySize>1</baseBodySize>
 			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>1.2</baseHealthScale>
 			<leatherDef MayRequire="sarg.alphaanimals">Leather_Chitin</leatherDef>
@@ -100,7 +100,7 @@
 					<li>(3, 0.7)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>80</lifeExpectancy>
+			<lifeExpectancy>10</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -123,9 +123,22 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<!--butcherProducts>
-			  <DankPyon_Web>1</DankPyon_Web>
-		</butcherProducts-->
+		<modExtensions>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+				<butcherOptions>
+					<li>
+						<thingDef>DankPyon_PoisonGland</thingDef>
+						<amount>1</amount>
+						<chance>0.5</chance>
+					</li>
+					<li>
+						<thingDef>DankPyon_Gossamer</thingDef>
+						<amount>2</amount>
+						<chance>0.5</chance>
+					</li>
+				</butcherOptions>
+			</li>
+		</modExtensions>
 		<tradeTags>
 			<li>ExoticAnimal</li>
 		</tradeTags>
@@ -155,21 +168,21 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/Webknecht</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Dessicated_Webknecht</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/Webknecht</texPath>
-					<drawSize>3.3</drawSize>
+					<drawSize>1.75</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Dessicated_Webknecht</texPath>
-					<drawSize>3.3</drawSize>
+					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

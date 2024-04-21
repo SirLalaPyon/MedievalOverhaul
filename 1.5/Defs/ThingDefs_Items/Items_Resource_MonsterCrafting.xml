@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--============================== Alchemy Ingredients ===================================-->
+	<ThingDef ParentName="ResourceBase" Name="DankPyon_AlchemyIngredientsBase" Abstract="True">
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>10</stackLimit>
+
+		<thingCategories>
+			<li>DankPyon_AlchemyIngredients</li>
+		</thingCategories>
+		<tradeTags>
+			<li>DankPyon_AlchemyIngredients</li>
+		</tradeTags>
+	</ThingDef>
+	<!--=============== Schrat Drops ====================-->
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_SchratHeart</defName>
+		<label>heart of the forest</label>
+		<description>A sphere of life energy, still feeding few writhing vines. Its pulsing rate increases when held in hand, greedily drawing heat from the limb. An important ingredient in numerous occult rituals, certainly a valuable possession.</description>
+		<graphicData>
+			<texPath>Special/SchratHeart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>3250</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_AncientWood</defName>
+		<label>ancient wood</label>
+		<description>A dark oaken wood as ancient as time. The wood is renowned for its strength and durability to withstand physica blows. A perfect material to use for a shield.</description>
+		<graphicData>
+			<texPath>Special/AncientWood</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>2900</MarketValue>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0.3</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_GlowingResin</defName>
+		<label>glowing resin</label>
+		<description>Bright in its wake yet rich in hue. A glamorous gem that radiates the deep colours of the forest. It serves as an ingredient for potions and other formulaic procedures.</description>
+		<graphicData>
+			<texPath>Special/GlowingResin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Unhold Drops ====================-->
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_UnholdBones</defName>
+		<label>heart of the forest</label>
+		<description>A sphere of life energy, still feeding few writhing vines. Its pulsing rate increases when held in hand, greedily drawing heat from the limb. An important ingredient in numerous occult rituals, certainly a valuable possession.</description>
+		<graphicData>
+			<texPath>Special/SchratHeart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_ThickUnholdFur</defName>
+		<label>thick unhold fur</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/ThickUnholdFur</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>15</Mass>
+			<Flammability>0.8</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_UnholdHide</defName>
+		<label>unhold hide</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/UnholdHide</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0.4</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_UnholdHeart</defName>
+		<label>unhold heart</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/UnholdHeart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1125</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0.3</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Webknecht ====================-->
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_Gossamer</defName>
+		<label>gossamer</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/Gossamer</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>350</MarketValue>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0.3</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_PoisonGland</defName>
+		<label>poison gland</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/PoisonGland</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_RedbackPoisonGland</defName>
+		<label>redback poison gland</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/RedbackPoisonGland</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>1550</MarketValue>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Webknecht ====================-->
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_LindwurmBlood</defName>
+		<label>lindwurm blood</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/LindwurmBlood</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>3</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_LindwurmBones</defName>
+		<label>lindwurm bones</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/LindwurmBones</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>2200</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>15</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_LindwurmScales</defName>
+		<label>lindwurm scales</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/LindwurmScales</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Mass>15</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+</Defs>

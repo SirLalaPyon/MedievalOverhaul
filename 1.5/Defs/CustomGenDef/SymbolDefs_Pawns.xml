@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Pawns -->
+
+<KCSG.SymbolDef>
+  <defName>Lootable_Book</defName>
+  <thing>Lootable_Book</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Cultist_Novice</defName>
+  <pawnKindDef>DankPyon_Cultist_Novice</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_ShadowSect</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef> 
+
+<KCSG.SymbolDef>
+  <defName>DanyPyon_Cultist_Acolyte_Ranged</defName>
+  <pawnKindDef>DanyPyon_Cultist_Acolyte_Ranged</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_ShadowSect</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DanyPyon_Cultist_Acolyte_Melee</defName>
+  <pawnKindDef>DanyPyon_Cultist_Acolyte_Melee</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_ShadowSect</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+</Defs>

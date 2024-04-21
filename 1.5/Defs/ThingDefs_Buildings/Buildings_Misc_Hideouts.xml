@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>DankPyon_QuestFinder</defName>
+        <label>explorer's workbench</label>
+		<thingClass>MedievalOverhaul.Building_QuestScanner</thingClass>
+        <description>The explorer's workbench is a weathered and worn parchment, intricately detailed with ancient symbols and markings. It is said to hold the secrets of untold riches and forgotten quests, hidden deep within the realm. With this map in hand, and a keen sense of adventure, one may uncover the lost treasures of ages past and solve the mysteries of the land. Use with caution, for many have sought these riches before, and not all have returned.\n\nNote that there is a tier system in place.\nIn order to unlock higher tiered hideouts, you must obtain certain dungeon loot.\n\nThe requirements for each hideout are as follows:\n\nSmall Hideouts\nRequires: 0 linkables\nNote: Each Small Hideout contains a large bookshelf and an ancient pedestal.\n\nMedium Hideouts\nRequires: 4 linkables, including 1 ancient pedestal\nNote: Each medium hideout contains one large bookshelf and one ancient orb.\n\nLarge hideout\nRequires: 7 Linkables, 1 of which is the ancient orb\n\nDepending on the tier, the schematics you can find will vary.\nEach hideout has a guaranteed schematic. So be sure to check every corner, every cave and maybe even every cavity.</description>
+        <size>(3,3)</size>
+        <graphicData>
+            <texPath>Furniture/TressureHuntersWorkbench/TressureHuntersWorkbench</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
+            <drawSize>(5,5)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
+        <costList>
+            <Steel>50</Steel>
+            <ComponentIndustrial>25</ComponentIndustrial>
+        </costList>
+
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>2800</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <ResearchSpeedFactor>1</ResearchSpeedFactor>
+        </statBases>
+
+        <fillPercent>0.5</fillPercent>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <surfaceType>Item</surfaceType>
+        <techLevel>Medieval</techLevel>
+
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>160.0</fuelConsumptionRate>
+                <fuelCapacity>50.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="MedievalOverhaul.CompProperties_QuestFinder">
+                <scanSpeedStat>ResearchSpeed</scanSpeedStat>
+                <soundWorking>ScannerLongRangeMineral_Ambience</soundWorking>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+					<li>DankPyon_CultShelf</li>
+					<li>DankPyon_CultBook</li>
+					<li>DankPyon_CultPedestal</li>
+					<li>DankPyon_CultOrb</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+
+        <researchPrerequisites>
+            <!-- idk yet -->
+        </researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+    </ThingDef>
+
+    <!-- ========== Linkables ========== -->
+	
+	<!-- BookBase -->
+
+	<ThingDef ParentName="BuildingBase" Name="DankPyon_ThingBaseMinifyable" Abstract="True">
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Impassable</passability>
+		<pathCost>30</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>true</rotatable>
+		<clearBuildingArea>false</clearBuildingArea>
+		<size>(1,1)</size>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<building>
+			<isEdifice>false</isEdifice>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+        <thingCategories>
+            <li>DankPyon_QuestStuff</li>
+			<li>BuildingsFurniture</li>
+        </thingCategories>
+		<statBases>
+			<Flammability>0</Flammability>
+			<SellPriceFactor>1.30</SellPriceFactor>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+		<designationCategory>DankPyon_RuinFurniture</designationCategory>
+	</ThingDef>
+		
+	<ThingDef ParentName="DankPyon_ThingBaseMinifyable">
+		<defName>DankPyon_CultBook</defName>
+		<label>tome of knowledge</label>
+		<description>This ancient book is bound in brown and green leather, with an image of a skull emblazoned on its cover. The eye sockets of the skull seem to glow with an eerie green light. The book appears to be very old and has likely been in the possession of the Cult for a long time. It is filled with important information and secrets about other locations associated with the cult. The pages are filled with complex diagrams, maps, and mysterious symbols that are difficult to understand. Though the book is heavy, it can be moved and brought back to your base for further study. It is best to be handled with care, as the knowledge it holds is precious, and the cult members might not be too happy about it being taken.</description>
+		<graphicData>
+		<texPath>Furniture/CultistsBook/CultistsBook</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<Mass>1</Mass>
+			<Flammability>1</Flammability>
+		</statBases>
+	</ThingDef>
+		
+	<ThingDef ParentName="DankPyon_ThingBaseMinifyable">
+		<defName>DankPyon_CultPedestal</defName>
+		<label>ancient pedestal</label>
+		<description>This ancient pedestal is made of rough-hewn granite blocks and is adorned with mysterious markings and symbols. It appears to be very old and has likely been used by the Shadow Cult for centuries. The pedestal seems to have been placed in strategic locations throughout the ruins, possibly as a marker or guide for members of the cult. It is possible that by studying these pedestals, one might be able to uncover the locations of larger, more important cult sites. The pedestal is heavy, and it is not possible to move it.</description>
+		<graphicData>
+			<texPath>Furniture/AncientLecturn/AncientLecturn</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Comfort>0.5</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		
+		<fillPercent>0.20</fillPercent>
+		<building>
+			<paintable>false</paintable>
+		</building>
+	</ThingDef>
+		
+	<ThingDef ParentName="DankPyon_ThingBaseMinifyable">
+		<defName>DankPyon_CultOrb</defName>
+		<label>ancient orb</label>
+		<description>This ancient artifact is a glowing green sphere, encased in a four-legged granite pedestal. The sphere's surface is smooth and reflective, and seems to pulse with an otherworldly energy. The pedestal is adorned with symbols and engravings that are associated with the Shadow Cult, and appears to have been crafted with great care and skill. The purpose and power of this mysterious artifact is not known, but it is clear that it holds great importance to the cult. Those who possess this artifact must be prepared to face the wrath of the Shadow Cult, who will stop at nothing to protect it.</description>
+		<graphicData>
+			<texPath>Furniture/AncientOrb/OrbB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Comfort>0.5</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		
+		<fillPercent>0.20</fillPercent>
+		<building>
+			<paintable>false</paintable>
+		</building>
+		
+		<comps>
+			<li Class="CompProperties_Glower">
+			<glowRadius>3</glowRadius>
+			<glowColor>(195,200,9,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ThingBaseMinifyable">
+		<defName>DankPyon_CultShelf</defName>
+		<label>large bookshelf</label>
+		<description>The Shadow Cult's banner is a symbol of fear and power. The background is a deep and ominous shade of red, representing the cult's brutal rituals and the blood spilled in their name. The symbol of the star with 12 rays and the central eye is emblazoned in dark red, standing out in stark contrast against the background. The star's shape is clear and detailed, representing the all-seeing gaze of the cult's deity. The rays of the star are slightly darker, giving off an aura of mystery and secrecy, fitting for the cult's elusive nature. The banner is a rallying point for the cult's followers, inspiring devotion and striking fear in the hearts of those who dare to oppose the Shadow Cult.</description>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<altitudeLayer>PawnUnused</altitudeLayer>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<pathCost>10</pathCost>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>20</Beauty>
+		</statBases>
+		<holdsRoof>false</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<rotatable>true</rotatable>
+		<fertility>0</fertility>
+		<graphicData>
+			<texPath>Furniture/LibraryShelf/LibraryShelf</texPath>
+			<drawSize>(6.5,6.5)</drawSize>
+			<drawOffset>(0,0,0.95)</drawOffset>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconScale>1</uiIconScale>
+		<size>(3,1)</size>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<building Inherit="False">
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+		<comps Inherit="False">
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>6</maxSimultaneous>
+			</li>
+		</comps>
+	</ThingDef>  
+</Defs>

@@ -7,11 +7,12 @@
 		<giverClass>MedievalOverhaul.WorkGiver_OperateQuest</giverClass>
 		<workType>Research</workType>
 		<priorityInType>80</priorityInType>
-		<verb>scan</verb>
-		<gerund>scanning at</gerund>
-		<scannerDef>EEG_QuestFinder</scannerDef>
+		<verb>searching</verb>
+		<gerund>searching </gerund>
+		<scannerDef>DankPyon_QuestFinder</scannerDef>
 		<requiredCapacities>
 			<li>Manipulation</li>
+			<li>Sight</li>
 		</requiredCapacities>
 	</WorkGiverDef>
 

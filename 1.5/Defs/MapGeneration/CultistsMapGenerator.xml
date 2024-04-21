@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GenStepDef>
+		<defName>Cultist_1Tier_Generation</defName>
+		<linkWithSite>Cultists_1Tier</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+		<structureLayoutDefs>
+			<li>TH_Tier1_Hideout1_North</li>
+			<!--li>TH_Tier1_Hideout1_South</li>
+			
+			<li>TH_Tier1_Hideout2_East</li>
+			<li>TH_Tier1_Hideout2_West</li>
+
+			<li>TH_Tier1_Hideout3_South</li>
+			<li>TH_Tier1_Hideout3_North</li-->
+		</structureLayoutDefs>
+		<preventBridgeable>true</preventBridgeable>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>ShadowSect_2Tier_Generation</defName>
+		<linkWithSite>Cultists_2Tier</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+		<structureLayoutDefs>
+			<li>TH_Tier2_Hideout1_North</li>
+			<li>TH_Tier2_Hideout1_South</li>
+			
+			<li>TH_Tier2_Hideout2_East</li>
+			<li>TH_Tier2_Hideout2_West</li>
+			
+			<li>TH_Tier2_Hideout3_South</li>
+		</structureLayoutDefs>
+		<preventBridgeable>true</preventBridgeable>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>ShadowSect_3Tier_Generation</defName>
+		<linkWithSite>Cultists_3Tier</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+		<structureLayoutDefs>
+			<li>EEG_Sect_Tier3_1Location_South</li>
+		</structureLayoutDefs>
+		<preventBridgeable>true</preventBridgeable>
+		</genStep>
+	</GenStepDef>
+</Defs>

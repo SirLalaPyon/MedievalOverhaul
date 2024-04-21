@@ -227,6 +227,39 @@ X
 		</apparel>
 	</ThingDef>
 
+	
+	<ThingDef ParentName="DankPyon_HatMakeableBase">
+		<defName>DankPyon_Headgear_CultistHood</defName>
+		<label>Cultist Hood</label>
+		<description>A thickly padded cap most often worn beneath heavier helmets for an additional layer of protection. Quite insulating and offers a bit of blunt protection on its own.</description>
+		<graphicData>
+			<texPath>Headgear/CultistHood/CultistHood</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<generateCommonality>0.50</generateCommonality>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Headgear/CultistHood/CultistHood</wornGraphicPath>
+			<tags>
+				<li>DankPyon_Cultist</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_HatMakeableBase">
 		<defName>DankPyon_Headgear_ZweihandersHat</defName>

@@ -406,7 +406,7 @@
 		<description>An enormous reptile, halfway between serpents and dragons. One of the few creatures truly incapable of feeling fear. Any daredevil who manages to get past the mighty yet nimble tail and pierce a hardy scale will be splashed with corrosive blood. Lindwurm blood is the most powerful acid known yet — dissolving even the thickest steel, eating through the flesh in seconds.</description>
 		<statBases>
 			<MoveSpeed>5.8</MoveSpeed>
-			<MarketValue>5000</MarketValue>
+			<MarketValue>7000</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>100</ComfyTemperatureMax>
 			<FilthRate>8</FilthRate>
@@ -503,7 +503,7 @@
 			<maxPreyBodySize>4</maxPreyBodySize>
 			<baseBodySize>4</baseBodySize>
 			<baseHungerRate>1.05</baseHungerRate>
-			<baseHealthScale>9.0</baseHealthScale>
+			<baseHealthScale>12.0</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>DankPyon_Leather_Lindwurm</leatherDef>
 			<meatLabel>lindwurm meat</meatLabel>
@@ -512,7 +512,7 @@
 			<manhunterOnTameFailChance>0.80</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
 			<nameOnTameChance>1</nameOnTameChance>
-			<lifeExpectancy>400</lifeExpectancy>
+			<lifeExpectancy>2400</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -612,7 +612,7 @@
 			</li>
 		</comps>
 		<race>
-			<baseHealthScale>9.1</baseHealthScale>
+			<baseHealthScale>12.5</baseHealthScale>
 		</race>
 	</ThingDef>
 

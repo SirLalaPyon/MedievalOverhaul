@@ -8,7 +8,7 @@
 		<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
-			<MarketValue>450</MarketValue>
+			<MarketValue>6450</MarketValue>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<FilthRate>2</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
@@ -28,7 +28,7 @@
 			<maxPreyBodySize>3.5</maxPreyBodySize>
 			<foodType>CarnivoreAnimalStrict, Corpse</foodType>
 			<leatherDef>DankPyon_Leather_Troll</leatherDef>
-			<lifeExpectancy>400</lifeExpectancy>
+			<lifeExpectancy>700</lifeExpectancy>
 			<hediffGiverSets Inherit="False">
 				<li>DankPyon_TrollHediffGiver</li>
 			</hediffGiverSets>
@@ -234,7 +234,7 @@
 		<defName>DankPyon_AncientTroll</defName>
 		<label>ancient troll</label>
 		<race>DankPyon_AncientTroll</race>
-		<combatPower>200</combatPower>
+		<combatPower>700</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
 		<lifeStages>

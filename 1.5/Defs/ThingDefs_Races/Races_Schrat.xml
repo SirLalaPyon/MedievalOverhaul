@@ -78,24 +78,24 @@
 		</butcherProducts>
 		<modExtensions>
 			<li Class="MedievalOverhaul.AdditionalButcherProducts">
-				<butcherOptions>
-					<li>
-						<thingDef>DankPyon_SchratHeart</thingDef>
-						<amount>1</amount>
-						<chance>0.25</chance>
-					</li>
-					<li>
-						<thingDef>DankPyon_AncientWood</thingDef>
-						<amount>1</amount>
-						<chance>0.25</chance>
-					</li>
-					<li>
-						<thingDef>DankPyon_GlowingResin</thingDef>
-						<amount>1</amount>
-						<chance>0.25</chance>
-					</li>
-				</butcherOptions>
-			</li>
+                <butcherOptions>
+                    <li>
+                        <thingDef>DankPyon_SchratHeart</thingDef>
+                        <amount>1</amount>
+                        <chance>0.5</chance>
+                    </li>
+                    <li>
+                        <thingDef>DankPyon_AncientWood</thingDef>
+                        <amount>1~2</amount>
+                        <chance>1</chance>
+                    </li>
+                    <li>
+                        <thingDef>DankPyon_GlowingResin</thingDef>
+                        <amount>1~2</amount>
+                        <chance>1</chance>
+                    </li>
+                </butcherOptions>
+            </li>
 		</modExtensions>
 	</ThingDef>
 

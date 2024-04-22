@@ -711,5 +711,24 @@
         </comps>
     </ThingDef>
 
+    <!--==================== Tornnote ====================-->
+    <ThingDef ParentName="DankPyon_LootBase">
+        <defName>DankPyon_TornNote_Hideout</defName>
+        <label>torn note</label>
+        <stackLimit>3</stackLimit>
+        <description>Metal weapon scraps thare are broken and unusable. Can be smelted to recover resources.</description>
+        <graphicData>
+            <texPath>Special/TornNote</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+         <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+    </ThingDef>
 
 </Defs>

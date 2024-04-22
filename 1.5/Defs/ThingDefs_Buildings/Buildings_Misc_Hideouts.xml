@@ -53,11 +53,11 @@
 
         <comps>
             <li Class="CompProperties_Refuelable">
-                <fuelConsumptionRate>160.0</fuelConsumptionRate>
-                <fuelCapacity>50.0</fuelCapacity>
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>5</fuelCapacity>
                 <fuelFilter>
                     <thingDefs>
-                        <li>WoodLog</li>
+                        <li>DankPyon_TornNote_Hideout</li>
                     </thingDefs>
                 </fuelFilter>
                 <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -130,7 +130,7 @@
 		<designationCategory>DankPyon_RuinFurniture</designationCategory>
 	</ThingDef>
 		
-	<ThingDef ParentName="DankPyon_ThingBaseMinifyable">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>DankPyon_CultBook</defName>
 		<label>tome of knowledge</label>
 		<description>This ancient book is bound in brown and green leather, with an image of a skull emblazoned on its cover. The eye sockets of the skull seem to glow with an eerie green light. The book appears to be very old and has likely been in the possession of the Cult for a long time. It is filled with important information and secrets about other locations associated with the cult. The pages are filled with complex diagrams, maps, and mysterious symbols that are difficult to understand. Though the book is heavy, it can be moved and brought back to your base for further study. It is best to be handled with care, as the knowledge it holds is precious, and the cult members might not be too happy about it being taken.</description>
@@ -148,7 +148,7 @@
 		</statBases>
 	</ThingDef>
 		
-	<ThingDef ParentName="DankPyon_ThingBaseMinifyable">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>DankPyon_CultPedestal</defName>
 		<label>ancient pedestal</label>
 		<description>This ancient pedestal is made of rough-hewn granite blocks and is adorned with mysterious markings and symbols. It appears to be very old and has likely been used by the Shadow Cult for centuries. The pedestal seems to have been placed in strategic locations throughout the ruins, possibly as a marker or guide for members of the cult. It is possible that by studying these pedestals, one might be able to uncover the locations of larger, more important cult sites. The pedestal is heavy, and it is not possible to move it.</description>
@@ -184,7 +184,7 @@
 		</building>
 	</ThingDef>
 		
-	<ThingDef ParentName="DankPyon_ThingBaseMinifyable">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>DankPyon_CultOrb</defName>
 		<label>ancient orb</label>
 		<description>This ancient artifact is a glowing green sphere, encased in a four-legged granite pedestal. The sphere's surface is smooth and reflective, and seems to pulse with an otherworldly energy. The pedestal is adorned with symbols and engravings that are associated with the Shadow Cult, and appears to have been crafted with great care and skill. The purpose and power of this mysterious artifact is not known, but it is clear that it holds great importance to the cult. Those who possess this artifact must be prepared to face the wrath of the Shadow Cult, who will stop at nothing to protect it.</description>
@@ -227,7 +227,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_ThingBaseMinifyable">
+	<ThingDef ParentName="FurnitureBase">
 		<defName>DankPyon_CultShelf</defName>
 		<label>large bookshelf</label>
 		<description>The Shadow Cult's banner is a symbol of fear and power. The background is a deep and ominous shade of red, representing the cult's brutal rituals and the blood spilled in their name. The symbol of the star with 12 rays and the central eye is emblazoned in dark red, standing out in stark contrast against the background. The star's shape is clear and detailed, representing the all-seeing gaze of the cult's deity. The rays of the star are slightly darker, giving off an aura of mystery and secrecy, fitting for the cult's elusive nature. The banner is a rallying point for the cult's followers, inspiring devotion and striking fear in the hearts of those who dare to oppose the Shadow Cult.</description>
@@ -237,6 +237,8 @@
 		<fillPercent>1</fillPercent>
 		<pathCost>10</pathCost>
 		<minifiedDef>MinifiedThing</minifiedDef>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconPath>Furniture/LibraryShelf/LibraryShelf_south</uiIconPath>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>750</WorkToBuild>

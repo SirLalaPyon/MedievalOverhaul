@@ -2,6 +2,13 @@
 <Defs>
 
 	<JobDef>
+		<defName>DankPyon_JobDigIce</defName>
+		<driverClass>MedievalOverhaul.JobDriver_DigIce</driverClass>
+		<reportString>digging at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
 		<defName>DankPyon_Mine_Golem</defName>
 		<driverClass>MedievalOverhaul.JobDriver_Mine_Golem</driverClass>
 		<reportString>digging at TargetA.</reportString>

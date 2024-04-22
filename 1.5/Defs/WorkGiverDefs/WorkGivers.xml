@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	
+	<WorkGiverDef>
+		<defName>DankPyon_WorkDigIce</defName>
+		<label>Dig ice blocks</label>
+		<giverClass>MedievalOverhaul.WorkGiver_DigIce</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>6</priorityInType>
+		<verb>dig ice</verb>
+		<gerund>digging</gerund>
+		<scanThings>false</scanThings>
+		<scanCells>true</scanCells>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
 
 	<WorkGiverDef>
 		<defName>DankPyon_DoMine_Golem</defName>

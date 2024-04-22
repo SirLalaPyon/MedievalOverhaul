@@ -2738,4 +2738,54 @@
 		</building>
 	</ThingDef>
 
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_IceCellar</defName>
+		<label>ice сellar</label>
+		<description>The сellar is designed to properly store ice blocks, preventing them from melting.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Production/IceCellar/IceCellar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<uiIconPath>Production/IceCellar/IceCellar_MenuIcon</uiIconPath>
+		<size>(4,4)</size>
+		<minifiedDef />
+		<thingCategories Inherit="False" />
+		<passability>Standable</passability>
+		<fillPercent>0.1</fillPercent>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter Inherit="false">
+					<thingDefs>
+						<li>DankPyon_IceBlock</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_IceBlock</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<researchPrerequisites Inherit="False">
+			<li>Stonecutting</li>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 </Defs>

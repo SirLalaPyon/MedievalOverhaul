@@ -67,6 +67,11 @@ namespace MedievalOverhaul
         public static SoundDef BulletImpact_Wood;
         public static SoundDef Pawn_Melee_Punch_HitBuilding_Wood;
 
+        public static DesignationDef DankPyon_DigIce;
+        public static TerrainDef Ice;
+        public static ThingDef DankPyon_IceCellar;
+        public static ThingDef DankPyon_IceBlock;
+        public static JobDef DankPyon_JobDigIce;
         static MedievalOverhaulDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MedievalOverhaulDefOf));
     }
 

@@ -41,7 +41,7 @@ namespace MedievalOverhaul
             List<Pawn> list = new List<Pawn>();
             for (int i = 0; i < num2; i++)
             {
-                Pawn pawn = PawnGenerator.GeneratePawn(golemKindDef, meteorProperties.spawnAsPlayerFaction ? Faction.OfPlayer : meteorProperties.factionDef != null && FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) != null ? FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) : null);
+                Pawn pawn = PawnGenerator.GeneratePawn(golemKindDef, meteorProperties.factionDef != null && FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) != null ? FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) : null);
                 list.Add(pawn);
             }
             Thing innerThing = ThingMaker.MakeThing(golemImpactDef);

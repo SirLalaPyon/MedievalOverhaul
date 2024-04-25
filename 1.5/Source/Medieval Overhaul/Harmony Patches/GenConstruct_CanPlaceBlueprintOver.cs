@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using MedievalOverhaul;
 using RimWorld;
 using Verse;
 

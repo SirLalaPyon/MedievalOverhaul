@@ -36,8 +36,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerTrader_PowerOn.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_Meteorite_Reset.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Ingest_GetReport.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingListGroupHelper_Includes.cs" />
+    <Compile Include="Medieval Overhaul\HediffComps\CompProperties\HediffCompProperties_LindwurmAcid.cs" />
+    <Compile Include="Medieval Overhaul\HediffComps\HediffComp_LindwurmAcid.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Breakdown.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\CannotBePlacedTogetherWithThisModExtension.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalButcherProducts.cs" />

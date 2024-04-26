@@ -2,9 +2,8 @@
 <Defs>
 
 	<HediffGiverSetDef>
-		<defName>DankPyon_TrollHediffGiver</defName>
+		<defName>DankPyon_MonsterHediffGiver</defName>
 		<hediffGivers>
-
 			<!-- Environmental -->
 			<li Class="HediffGiver_Bleeding">
 				<hediff>BloodLoss</hediff>
@@ -16,7 +15,6 @@
 			<li Class="HediffGiver_Heat">
 				<hediff>Heatstroke</hediff>
 			</li>
-
 		</hediffGivers>
 	</HediffGiverSetDef>
   

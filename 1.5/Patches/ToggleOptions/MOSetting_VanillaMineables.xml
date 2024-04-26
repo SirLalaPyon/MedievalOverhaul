@@ -85,33 +85,6 @@
 						<texPath>Resources/PlasteelIngot</texPath>
 					</value>
 				</li>
-
-				<li Class="PatchOperationAddModExtension">
-					<xpath>Defs/ThingDef[defName="MineableGold"]</xpath>
-					<value>
-						<li Class="MedievalOverhaul.GolemSpawn">
-							<kindDef>DankPyon_Golem_Gold</kindDef>
-						</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAddModExtension">
-					<xpath>Defs/ThingDef[defName="MineableSilver"]</xpath>
-					<value>
-						<li Class="MedievalOverhaul.GolemSpawn">
-							<kindDef>DankPyon_Golem_Silver</kindDef>
-						</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAddModExtension">
-					<xpath>Defs/ThingDef[defName="MineableSteel"]</xpath>
-					<value>
-						<li Class="MedievalOverhaul.GolemSpawn">
-							<kindDef>DankPyon_Golem_Steel</kindDef>
-						</li>
-					</value>
-				</li>
 			</operations>
 		</inactive>
 	</Operation>

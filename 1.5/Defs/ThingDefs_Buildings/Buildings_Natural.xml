@@ -547,7 +547,7 @@
 
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>DankPyon_GolemRock_Iron_Incident</defName>
-		<thingClass>Mineable</thingClass>
+		<thingClass>MedievalOverhaul.Mineable_CompSpawnerDestroy</thingClass>
 		<label>unusual iron formation</label>
 		<description>An unusual iron formation, it is quiet within.</description>
 		<graphicData>
@@ -609,7 +609,7 @@
 	
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>DankPyon_GolemRock_Silver_Incident</defName>
-		<thingClass>Mineable</thingClass>
+		<thingClass>MedievalOverhaul.Mineable_CompSpawnerDestroy</thingClass>
 		<label>unusual silver formation</label>
 		<description>An unusual silver formation, it is quiet within.</description>
 		<graphicData>
@@ -671,7 +671,7 @@
 	
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>DankPyon_GolemRock_Gold_Incident</defName>
-		<thingClass>Mineable</thingClass>
+		<thingClass>MedievalOverhaul.Mineable_CompSpawnerDestroy</thingClass>
 		<label>unusual gold formation</label>
 		<description>An unusual gold formation, it is quiet within.</description>
 		<graphicData>

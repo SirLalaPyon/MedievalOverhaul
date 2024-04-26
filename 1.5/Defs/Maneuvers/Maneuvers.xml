@@ -13,4 +13,19 @@
 		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
 		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>DankPyon_LindwurmAcid</defName>
+		<requiredCapacity>DankPyon_LindwurmAcid</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>DankPyon_LindwurmAcid</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
 </Defs>

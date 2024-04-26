@@ -2,9 +2,6 @@
 using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace MedievalOverhaul.Patches
@@ -24,8 +21,10 @@ namespace MedievalOverhaul.Patches
             var additionalButcherOptions = __instance.def.GetModExtension<AdditionalButcherProducts>();
             if (additionalButcherOptions != null)
             {
-                foreach (var option in additionalButcherOptions.butcherOptions)
+                List<ButcherOption> butcherList = additionalButcherOptions.butcherOptions;
+                for (int i = 0; i < butcherList.Count; i++)
                 {
+                    var option = butcherList[i];
                     if (Rand.Chance(option.chance))
                     {
                         Thing product = ThingMaker.MakeThing(option.thingDef, null);
@@ -35,15 +34,25 @@ namespace MedievalOverhaul.Patches
                 }
             }
             // Checking to add Bone and Fat and adding to list
-            if (__instance.RaceProps.IsFlesh && __instance.RaceProps.meatDef != null && !__instance.RaceProps.Insect)
+            if (__instance.RaceProps.IsFlesh && __instance.RaceProps.meatDef != null)
             {
-                bool boneFlag = true;
-                bool fatFlag = true;
+                bool boneFlag;
+                bool fatFlag;
                 var butcherProperties = ButcherProperties.Get(__instance.def);
                 if (butcherProperties != null)
                 {
                     boneFlag = butcherProperties.hasBone;
                     fatFlag = butcherProperties.hasFat;
+                }
+                else if (__instance.RaceProps.Insect)
+                {
+                    boneFlag = false;
+                    fatFlag = false;
+                }
+                else
+                {
+                    boneFlag = true;
+                    fatFlag = true;
                 }
                 if (boneFlag || fatFlag)
                 {

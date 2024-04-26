@@ -418,12 +418,21 @@
 		<uiIconScale>1.6</uiIconScale>
 		<tools>
 			<li>
+				<label>venom-fangs</label>
 				<capacities>
-					<li>Bite</li>
+					<li>DankPyon_LindwurmAcid</li>
 				</capacities>
 				<power>32</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>14</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
 			</li>
 			<li>
 				<label>head</label>
@@ -513,6 +522,9 @@
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
 			<nameOnTameChance>1</nameOnTameChance>
 			<lifeExpectancy>2400</lifeExpectancy>
+			<hediffGiverSets Inherit="False">
+				<li>DankPyon_MonsterHediffGiver</li>
+			</hediffGiverSets>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

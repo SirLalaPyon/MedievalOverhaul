@@ -107,6 +107,19 @@
 		<combatLogRules>Damage_Bomb</combatLogRules>
 	</DamageDef>
 
+	<DamageDef ParentName="Bite">
+		<defName>DankPyon_LindwurmAcid</defName>
+		<label>lindwurm bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>DankPyon_LindwurmAcid</hediff>
+			</li>
+		</additionalHediffs>
+		<applyAdditionalHediffsIfHuntingForFood>true</applyAdditionalHediffsIfHuntingForFood>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
+
 	<!--DamageDef>
     <defName>DankPyon_Damage_Flash</defName>
     <label>flash pot</label>

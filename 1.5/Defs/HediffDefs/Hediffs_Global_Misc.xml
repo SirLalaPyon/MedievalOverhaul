@@ -708,4 +708,24 @@
 		</stages>
 	</HediffDef>
 
+	<HediffDef>
+		<defName>DankPyon_LindwurmAcid</defName>
+		<label>lindwurm acid</label>
+		<description>Placeholder</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<makesSickThought>true</makesSickThought>
+		<taleOnVisible>ToxicityRevealed</taleOnVisible>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>900</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="MedievalOverhaul.HediffCompProperties_LindwurmAcid">
+				<tickInterval>180</tickInterval>
+				<apparelDamagePerInterval>10</apparelDamagePerInterval>
+			</li>
+		</comps>
+	</HediffDef>
+
 </Defs>

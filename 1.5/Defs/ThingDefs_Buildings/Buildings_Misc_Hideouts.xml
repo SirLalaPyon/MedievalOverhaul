@@ -6,7 +6,10 @@
         <label>explorer's workbench</label>
 		<thingClass>MedievalOverhaul.Building_QuestScanner</thingClass>
         <description>The explorer's workbench is a weathered and worn parchment, intricately detailed with ancient symbols and markings. It is said to hold the secrets of untold riches and forgotten quests, hidden deep within the realm. With this map in hand, and a keen sense of adventure, one may uncover the lost treasures of ages past and solve the mysteries of the land. Use with caution, for many have sought these riches before, and not all have returned.\n\nNote that there is a tier system in place.\nIn order to unlock higher tiered hideouts, you must obtain certain dungeon loot.\n\nThe requirements for each hideout are as follows:\n\nSmall Hideouts\nRequires: 0 linkables\nNote: Each Small Hideout contains a large bookshelf and an ancient pedestal.\n\nMedium Hideouts\nRequires: 4 linkables, including 1 ancient pedestal\nNote: Each medium hideout contains one large bookshelf and one ancient orb.\n\nLarge hideout\nRequires: 7 Linkables, 1 of which is the ancient orb\n\nDepending on the tier, the schematics you can find will vary.\nEach hideout has a guaranteed schematic. So be sure to check every corner, every cave and maybe even every cavity.</description>
-        <size>(3,3)</size>
+        <descriptionHyperlinks>
+			<ThingDef>DankPyon_CultShelf</ThingDef>
+		</descriptionHyperlinks>
+		<size>(3,3)</size>
         <graphicData>
             <texPath>Furniture/TressureHuntersWorkbench/TressureHuntersWorkbench</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -22,14 +25,11 @@
         </graphicData>
 
         <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
             <li>Stony</li>
         </stuffCategories>
         <costStuffCount>150</costStuffCount>
         <costList>
-            <Steel>50</Steel>
-            <ComponentIndustrial>25</ComponentIndustrial>
+            <DankPyon_TornNote_Hideout>3</DankPyon_TornNote_Hideout>
         </costList>
 
         <castEdgeShadows>true</castEdgeShadows>
@@ -69,6 +69,7 @@
             </li>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
+					<li>DankPyon_BirdPost</li>
 					<li>DankPyon_CultShelf</li>
 					<li>DankPyon_CultBook</li>
 					<li>DankPyon_CultPedestal</li>
@@ -84,7 +85,7 @@
         </placeWorkers>
 
         <researchPrerequisites>
-            <!-- idk yet -->
+            <li>DankPyon_Explorer</li>
         </researchPrerequisites>
 		<designationCategory>Misc</designationCategory>
     </ThingDef>
@@ -146,6 +147,12 @@
 			<Mass>1</Mass>
 			<Flammability>1</Flammability>
 		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(195,200,9,0)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
 		
 	<ThingDef ParentName="FurnitureBase">
@@ -182,6 +189,11 @@
 		<building>
 			<paintable>false</paintable>
 		</building>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
 	</ThingDef>
 		
 	<ThingDef ParentName="FurnitureBase">
@@ -224,13 +236,23 @@
 			<glowRadius>3</glowRadius>
 			<glowColor>(195,200,9,0)</glowColor>
 			</li>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="FurnitureBase">
 		<defName>DankPyon_CultShelf</defName>
-		<label>large bookshelf</label>
-		<description>The Shadow Cult's banner is a symbol of fear and power. The background is a deep and ominous shade of red, representing the cult's brutal rituals and the blood spilled in their name. The symbol of the star with 12 rays and the central eye is emblazoned in dark red, standing out in stark contrast against the background. The star's shape is clear and detailed, representing the all-seeing gaze of the cult's deity. The rays of the star are slightly darker, giving off an aura of mystery and secrecy, fitting for the cult's elusive nature. The banner is a rallying point for the cult's followers, inspiring devotion and striking fear in the hearts of those who dare to oppose the Shadow Cult.</description>
+		<label>explorer's archive</label>
+		<description>The Explorer's Archive can be linked to the Explorer's Workbench.
+Depending on the level of Hideouts you want to locate, up to 8 may need to be linked to the Workbench.
+
+It can also be used to store up to 12 torn notes.</description>
+        <descriptionHyperlinks>
+			<ThingDef>DankPyon_TornNote_Hideout</ThingDef>
+			<ThingDef>DankPyon_QuestFinder</ThingDef>
+		</descriptionHyperlinks>		
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<altitudeLayer>PawnUnused</altitudeLayer>
 		<passability>Impassable</passability>
@@ -278,7 +300,7 @@
 		<comps Inherit="False">
 			<li Class="CompProperties_Styleable"/>
 			<li Class="CompProperties_Facility">
-				<maxSimultaneous>6</maxSimultaneous>
+				<maxSimultaneous>8</maxSimultaneous>
 			</li>
 		</comps>
 	</ThingDef>  

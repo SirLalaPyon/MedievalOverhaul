@@ -615,9 +615,6 @@
 
 		<modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
-				<enemysToSpawn>
-					<li>DankPyon_Mimic_Vanilla</li>
-				</enemysToSpawn>
 				<enemySpawnChance>1</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>

@@ -110,12 +110,18 @@
             </nodes>
           </node>
         </li>
+        <li Class="QuestNode_End">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <outcome>Success</outcome>
+        </li>
       </nodes>
     </root>
 	<modExtensions>
 		<li Class="MedievalOverhaul.QuestInformation">
 			<label>Small cultist hideout</label>
 			<WorkTillTrigger>270000</WorkTillTrigger>
+            <requiredLinkable>DankPyon_BirdPost</requiredLinkable>
+            <LinkablesNeeded>1</LinkablesNeeded>
 		</li>
 	</modExtensions>
   </QuestScriptDef>
@@ -235,9 +241,9 @@
 	<modExtensions>
 		<li Class="MedievalOverhaul.QuestInformation">
 			<label>Medium cultist hideout</label>
-			<WorkTillTrigger>360000</WorkTillTrigger>
+			<WorkTillTrigger>405000</WorkTillTrigger>
             <requiredLinkable>DankPyon_CultPedestal</requiredLinkable>
-            <LinkablesNeeded>4</LinkablesNeeded>
+            <LinkablesNeeded>5</LinkablesNeeded>
 		</li>
 	</modExtensions>
   </QuestScriptDef>
@@ -357,9 +363,9 @@
 	<modExtensions>
 		<li Class="MedievalOverhaul.QuestInformation">
 			<label>large cultists hideout</label>
-			<WorkTillTrigger>450000</WorkTillTrigger>
+			<WorkTillTrigger>540000</WorkTillTrigger>
             <requiredLinkable>DankPyon_CultOrb</requiredLinkable>
-            <LinkablesNeeded>7</LinkablesNeeded>
+            <LinkablesNeeded>9</LinkablesNeeded>
 		</li>
 	</modExtensions>
   </QuestScriptDef>

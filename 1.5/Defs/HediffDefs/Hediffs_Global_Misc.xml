@@ -728,4 +728,18 @@
 		</comps>
 	</HediffDef>
 
+	<HediffDef>
+		<defName>DankPyon_LindwurmAcidImmune</defName>
+		<label>lindwurm acid immunity</label>
+		<description>Placeholder</description>
+		<hediffClass>Hediff</hediffClass>
+		<makesSickThought>false</makesSickThought>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
 </Defs>

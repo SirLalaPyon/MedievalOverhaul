@@ -67,6 +67,8 @@ namespace MedievalOverhaul
         public static SoundDef BulletImpact_Wood;
         public static SoundDef Pawn_Melee_Punch_HitBuilding_Wood;
 
+        public static HediffDef DankPyon_LindwurmAcidImmune;
+
         static MedievalOverhaulDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MedievalOverhaulDefOf));
     }
 

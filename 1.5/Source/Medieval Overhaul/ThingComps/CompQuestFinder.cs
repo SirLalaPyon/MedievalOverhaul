@@ -16,14 +16,33 @@ namespace MedievalOverhaul
         private CompRefuelable compRefuelable;
         private QuestScriptDef currentQuest;
         private CompAffectedByFacilities facilities;
-        private ThingDef targetMineable;        
+        private ThingDef targetMineable;
+        private bool requiredBuilding = false;
 
         protected IEnumerable<QuestScriptDef> AvailableForFind => QuestFinderUtility.PossibleQuests.Where<QuestScriptDef>(new Func<QuestScriptDef, bool>(this.CanFind));
 
         protected virtual bool CanFind(QuestScriptDef quest)
         {
             QuestInformation ext = quest.FinderInfo();
-            return ext.LinkablesNeeded <= this.facilities.LinkedFacilitiesListForReading.Count && (ext.requiredLinkable == null || this.facilities.LinkedFacilitiesListForReading.Any<Thing>((Predicate<Thing>)(f => f.def == ext.requiredLinkable))) && (!ext.onlyOnce || !GameComponent_QuestFinder.Instance.Completed(quest));
+            if (ext.requiredLinkable != null)
+            {
+                requiredBuilding = false;
+                for (int i = 0; i < this.facilities.LinkedFacilitiesListForReading.Count; i++)
+                {
+                    Building building = this.facilities.LinkedFacilitiesListForReading[i] as Building;
+                    if (building != null && building.def == ext.requiredLinkable)
+                    {
+                        bool refuelComp = building.HasComp<CompRefuelable>();
+                        if (!refuelComp || (refuelComp && building.GetComp<CompRefuelable>().HasFuel))
+                        requiredBuilding = true;
+                        break;
+                    }
+                }
+            }
+            else
+                requiredBuilding = true;
+            
+            return ext.LinkablesNeeded <= this.facilities.LinkedFacilitiesListForReading.Count && requiredBuilding && (!ext.onlyOnce || !GameComponent_QuestFinder.Instance.Completed(quest));
         }
 
         public override void PostSpawnSetup(bool respawningAfterLoad)

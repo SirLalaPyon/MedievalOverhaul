@@ -52,11 +52,13 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
     <Compile Include="Medieval Overhaul\Mending\JobDriver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\Mending\WorkGiver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RequireLinkables.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\QuestInformation.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\MeteorProperties.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Timber.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\Building_QuestScanner.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\Building_ScribeTable.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\Mineable_CompSpawnerDestroy.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_QuestFinder.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompQuestFinder.cs" />

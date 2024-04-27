@@ -16,10 +16,11 @@ namespace MedievalOverhaul
 
         public override void CompPostTick(ref float severityAdjustment)
         {
-            Pawn pawn = this.Pawn;
+           
 
             if (this.Pawn.IsHashIntervalTick(Props.tickInterval))
             {
+                Pawn pawn = this.Pawn;
                 if (!pawn.health.hediffSet.HasHediff(MedievalOverhaulDefOf.DankPyon_LindwurmAcidImmune))
                 {
                     List<Apparel> apparelList = pawn.apparel.WornApparel;

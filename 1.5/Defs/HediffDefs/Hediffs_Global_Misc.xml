@@ -737,7 +737,21 @@
 		<isBad>false</isBad>
 		<stages>
 			<li>
-				<becomeVisible>true</becomeVisible>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>DankPyon_StunImmune</defName>
+		<label>stun immunity</label>
+		<description>Placeholder</description>
+		<hediffClass>Hediff</hediffClass>
+		<makesSickThought>false</makesSickThought>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
 			</li>
 		</stages>
 	</HediffDef>

@@ -118,7 +118,7 @@ namespace MedievalOverhaul
 
             if (!contentsKnown)
             {
-                if (Rand.Chance(lootableExt.lootChance))
+                if (Rand.Chance(lootableExt.lootChance) && enemySpawned == true && lootableExt.hostileEnemy == true)
                 {
                     ThingDef lootableTD;
                     // Random search results.
@@ -161,7 +161,8 @@ namespace MedievalOverhaul
                 //if (Rand.Chance(lootableExt.enemySpawnChance))
                 if (Rand.Chance(lootableExt.enemySpawnChance))
                 {
-                   Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()), lootableExt.spawnAsPlayerFaction ? Faction.OfPlayer : lootableExt.faction != null && FactionUtility.DefaultFactionFrom(lootableExt.faction) != null ? FactionUtility.DefaultFactionFrom(lootableExt.faction) : null, PawnGenerationContext.NonPlayer, -1, false, false, false, true, false, 1f, false, true, false, true, true, false, true, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f, DevelopmentalStage.Adult, null, null, null, true, false, false, -1, 0, false));
+                    enemySpawned = true;
+                    Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()), lootableExt.spawnAsPlayerFaction ? Faction.OfPlayer : lootableExt.faction != null && FactionUtility.DefaultFactionFrom(lootableExt.faction) != null ? FactionUtility.DefaultFactionFrom(lootableExt.faction) : null, PawnGenerationContext.NonPlayer, -1, false, false, false, true, false, 1f, false, true, false, true, true, false, true, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f, DevelopmentalStage.Adult, null, null, null, true, false, false, -1, 0, false));
                     innerContainer.TryAdd(pawn, lootableExt.enemySpawnCount);
 
                     if (pawn.kindDef.defName.Contains("Empire_"))
@@ -182,8 +183,8 @@ namespace MedievalOverhaul
             base.SpawnSetup(map, respawningAfterLoad);
             if (!contentsKnown && !respawningAfterLoad)
             {
-                LootGeneration();
                 EnemyGeneration();
+                LootGeneration();
             }
         }
 
@@ -267,6 +268,7 @@ namespace MedievalOverhaul
             base.ExposeData();
         }
 
+        private bool enemySpawned;
         private static List<Pawn> tmpCanReach = new List<Pawn>();
         private static List<Pawn> tmpCanOpen = new List<Pawn>();
         private static List<Pawn> tmpAllowedPawns = new List<Pawn>();

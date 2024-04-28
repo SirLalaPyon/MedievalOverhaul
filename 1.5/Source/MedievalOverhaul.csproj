@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DropItems.cs" />
     <Compile Include="Medieval Overhaul\Harmony\Quest_End_Patch.cs" />
     <Compile Include="Medieval Overhaul\QuestFinderUtility.cs" />
     <Compile Include="Medieval Overhaul\GameComponent_QuestFinder.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
     <Compile Include="Medieval Overhaul\Mending\JobDriver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\Mending\WorkGiver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\DeathDropOptions.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RequireLinkables.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\QuestInformation.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\MeteorProperties.cs" />

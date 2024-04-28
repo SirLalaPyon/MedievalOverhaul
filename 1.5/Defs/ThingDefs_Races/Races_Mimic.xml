@@ -69,7 +69,7 @@
 		</tools>
 		<race>
 			<deathAction>
-				<workerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</workerClass>
+				<workerClass>MedievalOverhaul.DeathActionWorker_DropItems</workerClass>
 			</deathAction>
 			<body>QuadrupedAnimalWithPaws</body>
 			<baseBodySize>1</baseBodySize>
@@ -99,16 +99,8 @@
 			<lifeExpectancy>800</lifeExpectancy>
 			<lifeStageAges>
 				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.1</minAge>
-				</li>
-				<li>
 					<def>AnimalAdult</def>
-					<minAge>0.2222</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
 					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
@@ -137,11 +129,6 @@
 				<createFilthWhenKilled>true</createFilthWhenKilled>
 				<filthToMake>Filth_Blood</filthToMake>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_DropOnDeath">
-				<resourceDef>DankPyon_TornNote_Hideout</resourceDef>
-				<resourceAmount>2</resourceAmount>
-				<dropChance>1</dropChance>			
-			</li>
 			<li Class="AnimalBehaviours.CompProperties_Untameable">
 				<factionToReturnTo>DankPyon_ShadowSect</factionToReturnTo>			
 			</li>
@@ -150,6 +137,39 @@
 				<consumingFoodReportString>waiting</consumingFoodReportString>		
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="MedievalOverhaul.DeathDrop_Extension">
+				<deathDropOptions>
+					<li>
+						<thingDefs>
+							<li>DankPyon_TornNote_Hideout</li>
+						</thingDefs>
+						<amount>2</amount>
+						<chance>1</chance>
+					</li>
+					<li>
+						<thingDefs>
+							<li>DankPyon_Necklace_Citrine</li>
+							<li>DankPyon_Necklace_Jade</li>
+							<li>DankPyon_Necklace_Amber</li>
+							<li>DankPyon_Necklace_Onyx</li>
+							<li>DankPyon_Necklace_Emerald</li>
+							<li>DankPyon_Necklace_Sapphire</li>
+							<li>DankPyon_Necklace_Ruby</li>
+							<li>DankPyon_Ring_Citrine</li>
+							<li>DankPyon_Ring_Jade</li>
+							<li>DankPyon_Ring_Amber</li>
+							<li>DankPyon_Ring_Onyx</li>
+							<li>DankPyon_Ring_Emerald</li>
+							<li>DankPyon_Ring_Sapphire</li>
+							<li>DankPyon_Ring_Ruby</li>
+						</thingDefs>
+						<amount>1</amount>
+						<chance>0.15</chance>
+					</li>
+				</deathDropOptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -159,32 +179,6 @@
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<shaderType>CutoutComplex</shaderType>
-					<color>(133,97,67)</color>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
-					<drawSize>1.0</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<shaderType>CutoutComplex</shaderType>
-					<color>(133,97,67)</color>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
-					<drawSize>1.1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/Mimic</texPath>
@@ -208,32 +202,6 @@
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<shaderType>CutoutComplex</shaderType>
-					<color>(112,91,76)</color>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
-					<drawSize>1.0</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<shaderType>CutoutComplex</shaderType>
-					<color>(112,91,76)</color>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
-					<drawSize>1.1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/Mimic</texPath>
@@ -319,7 +287,7 @@
 		</tools>
 		<race>
 			<deathAction>
-				<workerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</workerClass>
+				<workerClass>MedievalOverhaul.DeathActionWorker_DropItems</workerClass>
 			</deathAction>
 			<body>QuadrupedAnimalWithPaws</body>
 			<baseBodySize>1</baseBodySize>
@@ -349,16 +317,8 @@
 			<lifeExpectancy>800</lifeExpectancy>
 			<lifeStageAges>
 				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.1</minAge>
-				</li>
-				<li>
 					<def>AnimalAdult</def>
-					<minAge>0.2222</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
 					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
@@ -387,11 +347,6 @@
 				<createFilthWhenKilled>true</createFilthWhenKilled>
 				<filthToMake>Filth_Blood</filthToMake>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_DropOnDeath">
-				<resourceDef>DankPyon_TornNote_Hideout</resourceDef>
-				<resourceAmount>3</resourceAmount>
-				<dropChance>1</dropChance>			
-			</li>
 			<li Class="AnimalBehaviours.CompProperties_Untameable">
 				<factionToReturnTo>DankPyon_ShadowSect</factionToReturnTo>			
 			</li>
@@ -400,6 +355,39 @@
 				<consumingFoodReportString>waiting</consumingFoodReportString>		
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="MedievalOverhaul.DeathDrop_Extension">
+				<deathDropOptions>
+					<li>
+						<thingDefs>
+							<li>DankPyon_TornNote_Hideout</li>
+						</thingDefs>
+						<amount>3</amount>
+						<chance>1</chance>
+					</li>
+					<li>
+						<thingDefs>
+							<li>DankPyon_Necklace_Citrine</li>
+							<li>DankPyon_Necklace_Jade</li>
+							<li>DankPyon_Necklace_Amber</li>
+							<li>DankPyon_Necklace_Onyx</li>
+							<li>DankPyon_Necklace_Emerald</li>
+							<li>DankPyon_Necklace_Sapphire</li>
+							<li>DankPyon_Necklace_Ruby</li>
+							<li>DankPyon_Ring_Citrine</li>
+							<li>DankPyon_Ring_Jade</li>
+							<li>DankPyon_Ring_Amber</li>
+							<li>DankPyon_Ring_Onyx</li>
+							<li>DankPyon_Ring_Emerald</li>
+							<li>DankPyon_Ring_Sapphire</li>
+							<li>DankPyon_Ring_Ruby</li>
+						</thingDefs>
+						<amount>1</amount>
+						<chance>0.25</chance>
+					</li>
+				</deathDropOptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -409,28 +397,6 @@
 		<combatPower>30</combatPower>
 		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Animal/RoyalMimic</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Animal/RoyalMimic</texPath>
-					<drawSize>1.0</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Animal/RoyalMimic</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Animal/RoyalMimic</texPath>
-					<drawSize>1.1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/RoyalMimic</texPath>

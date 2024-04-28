@@ -429,6 +429,7 @@
 		<label>bird post</label>
 		<description>Some birds, when taught by expert trainers, are capable of flying to a designated location before returning to their home roost. This allows for communication with neighboring factions, assuming one can afford the costly requirements of obtaining and training the bird, as well as feeding the animals with meat. Requires the scribe table for correspondence.</description>
 		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Misc/BirdPost</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

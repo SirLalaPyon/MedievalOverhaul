@@ -4,6 +4,7 @@ using System.Text;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 using Verse.Sound;
 
 namespace MedievalOverhaul
@@ -45,7 +46,8 @@ namespace MedievalOverhaul
 		public override void Tick()
 		{
 			base.Tick();
-			var ticks = Find.TickManager.TicksGame;
+            this.fuelComp.Notify_UsedThisTick();
+            var ticks = Find.TickManager.TicksGame;
 			if (ticks % slopComp.Props.fuelCheckTicks != 0) return;
 			if (fuelComp.HasFuel) lastFueledTick = ticks;
 			if (lastFueledTick < 0 || ticks - lastFueledTick <= slopComp.Props.unfueledTicksToRot) return;

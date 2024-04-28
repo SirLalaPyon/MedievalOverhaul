@@ -1,111 +1,163 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BasePawn">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_RusticMimic</defName>
-		<label>Rustic Mimic</label>
-		<description>mimic</description>
+		<label>mimic</label>
+		<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
+		<description>Mimic</description>
 		<statBases>
-			<MoveSpeed>4.4</MoveSpeed>
 			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.11</ArmorRating_Sharp>
 			<PsychicSensitivity>0.5</PsychicSensitivity>
-			<ToxicResistance>1</ToxicResistance>
-			<Flammability>1</Flammability>
-			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
-			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<MoveSpeed>4.0</MoveSpeed>
+			<MarketValue>35</MarketValue>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 			<MeatAmount>0</MeatAmount>
 		</statBases>
 		<tools>
 			<li>
 				<label>left side</label>
+				<labelNoLocation>claw</labelNoLocation>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
 				<power>12</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
 			<li>
 				<label>right side</label>
+				<labelNoLocation>claw</labelNoLocation>
 				<capacities>
-					<li>Blunt</li>
+					<li>Scratch</li>
 				</capacities>
 				<power>12</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
 			</li>
 			<li>
 				<label>lid</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>9</power>
+				<power>12.8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 			<li>
+				<label>mouth</label>
 				<capacities>
-					<li>Bite</li>
+					<li>DankPyon_Swallow</li>
 				</capacities>
-				<power>12.8</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>10</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.9</chanceFactor>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>5</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
 			</li>
 		</tools>
 		<race>
-			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<!-- <fleshType>DankPyon_Schrat</fleshType> -->
-			<baseBodySize>2</baseBodySize>
-			<baseHealthScale>2</baseHealthScale>
+			<deathAction>
+				<workerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</workerClass>
+			</deathAction>
+			<body>QuadrupedAnimalWithPaws</body>
+			<baseBodySize>1</baseBodySize>
+			<baseHungerRate>0.1</baseHungerRate>
+			<baseHealthScale>3</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<wildness>1</wildness>
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
-			<foodType>None</foodType>
-			<lifeExpectancy>1</lifeExpectancy>
+			<trainability>None</trainability>
+			<petness>0</petness>
+			<mateMtbHours>8</mateMtbHours>
+			<gestationPeriodDays>5.661</gestationPeriodDays>
+			<soundEating>Rodent_Eat</soundEating>
+			<bloodDef>Filth_RubbleBuilding</bloodDef>
 			<hediffGiverSets Inherit="False">
 				<li>DankPyon_NoPainHediffGiver</li>
 			</hediffGiverSets>
-			<bloodDef>Filth_RubbleBuilding</bloodDef>
-			<intelligence>ToolUser</intelligence><!--Probably could use it for tree log weapons in the future -->
-			<thinkTreeMain>Animal</thinkTreeMain>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2.2, 1)</li>
+					<li>(2.8, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>800</lifeExpectancy>
 			<lifeStageAges>
 				<li>
-					<def>AnimalAdult</def>
+					<def>AnimalBaby</def>
 					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2222</minAge>
 					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
 					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
 				</li>
 			</lifeStageAges>
-			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
-			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.2)</li>
+				<li>(0.33, 0, 0.03)</li>
+				<li>(0.0, 0, -0.28)</li>
+				<li>(-0.33, 0, 0.03)</li>
+			</headPosPerRotation>
 		</race>
-		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
-		<!--butcherProducts>
-			<DankPyon_RawDarkWood>20</DankPyon_RawDarkWood>
-		</butcherProducts-->
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee"/>
+			<li Class="AnimalBehaviours.CompProperties_SwallowWhole">
+				<stomachCapacity>1</stomachCapacity>
+				<maximumBodysize>1.4</maximumBodysize>
+				<digestionPeriod>240</digestionPeriod>
+				<sendLetterWhenEating>true</sendLetterWhenEating>
+				<letterLabel>DankPyon_TrollSwallLabel</letterLabel>
+				<letterText>DankPyon_TrollSwallowDesc</letterText>
+				<nutritionGained>5</nutritionGained>
+				<createFilthWhenKilled>true</createFilthWhenKilled>
+				<filthToMake>Filth_Blood</filthToMake>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+				<resourceDef>DankPyon_TornNote_Hideout</resourceDef>
+				<resourceAmount>2</resourceAmount>
+				<dropChance>1</dropChance>			
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>DankPyon_ShadowSect</factionToReturnTo>			
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_AutoNutrition">
+				<tickInterval>2000</tickInterval>
+				<consumingFoodReportString>waiting</consumingFoodReportString>		
+			</li>
+		</comps>
 	</ThingDef>
 
-	<PawnKindDef>
-		<defName>DankPyon_RusticMimic_Vanilla</defName>
-		<label>rustic mimic</label>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DankPyon_RusticMimic_WoodLog</defName>
+		<label>wooden rustic mimic</label>
 		<race>DankPyon_RusticMimic</race>
 		<combatPower>30</combatPower>
+		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -115,18 +167,46 @@
 					<color>(133,97,67)</color>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(133,97,67)</color>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(133,97,67)</color>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
-		<aiAvoidCover>true</aiAvoidCover>
-		<destroyGearOnDrop>true</destroyGearOnDrop>
 	</PawnKindDef>
 
-	<PawnKindDef>
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>DankPyon_RusticMimic_DarkWood</defName>
-		<label>rustic mimic</label>
+		<label>dark rustic mimic</label>
 		<race>DankPyon_RusticMimic</race>
 		<combatPower>30</combatPower>
+		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -136,118 +216,198 @@
 					<color>(112,91,76)</color>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(112,91,76)</color>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(112,91,76)</color>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/Mimic</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
-		<aiAvoidCover>true</aiAvoidCover>
-		<destroyGearOnDrop>true</destroyGearOnDrop>
 	</PawnKindDef>
 
-	<ThingDef ParentName="BasePawn">
+
+
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_RoyalMimic</defName>
-		<label>Rustic Mimic</label>
-		<description>mimic</description>
+		<label>royal mimic</label>
+		<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
+		<description>Mimic</description>
 		<statBases>
-			<MoveSpeed>4.4</MoveSpeed>
-			<ArmorRating_Blunt>0.34</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.21</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.44</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.31</ArmorRating_Sharp>
 			<PsychicSensitivity>0.5</PsychicSensitivity>
-			<ToxicResistance>1</ToxicResistance>
-			<Flammability>1</Flammability>
-			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
-			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 			<MeatAmount>0</MeatAmount>
 		</statBases>
 		<tools>
 			<li>
 				<label>left side</label>
+				<labelNoLocation>claw</labelNoLocation>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
 				<power>15</power>
-				<cooldownTime>2</cooldownTime>
+				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			</li>
 			<li>
 				<label>right side</label>
+				<labelNoLocation>claw</labelNoLocation>
 				<capacities>
-					<li>Blunt</li>
+					<li>Scratch</li>
 				</capacities>
-				<power>15</power>
-				<cooldownTime>2</cooldownTime>
+				<power>13</power>
+				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
 			</li>
 			<li>
 				<label>lid</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>12</power>
+				<power>12.8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 			<li>
+				<label>mouth</label>
 				<capacities>
-					<li>Bite</li>
+					<li>DankPyon_Swallow</li>
 				</capacities>
-				<power>15.8</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.9</chanceFactor>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>5</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
 			</li>
 		</tools>
 		<race>
-			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<!-- <fleshType>DankPyon_Schrat</fleshType> -->
-			<baseBodySize>2</baseBodySize>
-			<baseHealthScale>3</baseHealthScale>
+			<deathAction>
+				<workerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</workerClass>
+			</deathAction>
+			<body>QuadrupedAnimalWithPaws</body>
+			<baseBodySize>1</baseBodySize>
+			<baseHungerRate>0.1</baseHungerRate>
+			<baseHealthScale>4</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<wildness>1</wildness>
 			<needsRest>false</needsRest>
 			<hasGenders>false</hasGenders>
-			<foodType>None</foodType>
-			<lifeExpectancy>1</lifeExpectancy>
+			<trainability>None</trainability>
+			<petness>0</petness>
+			<mateMtbHours>8</mateMtbHours>
+			<gestationPeriodDays>5.661</gestationPeriodDays>
+			<soundEating>Rodent_Eat</soundEating>
+			<bloodDef>Filth_RubbleBuilding</bloodDef>
 			<hediffGiverSets Inherit="False">
 				<li>DankPyon_NoPainHediffGiver</li>
 			</hediffGiverSets>
-			<bloodDef>Filth_RubbleBuilding</bloodDef>
-			<intelligence>ToolUser</intelligence><!--Probably could use it for tree log weapons in the future -->
-			<thinkTreeMain>Animal</thinkTreeMain>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2.2, 1)</li>
+					<li>(2.8, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>800</lifeExpectancy>
 			<lifeStageAges>
 				<li>
-					<def>AnimalAdult</def>
+					<def>AnimalBaby</def>
 					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2222</minAge>
 					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
 					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
 				</li>
 			</lifeStageAges>
-			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
-			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<headPosPerRotation>
+				<li>(0.0, 0, 0.2)</li>
+				<li>(0.33, 0, 0.03)</li>
+				<li>(0.0, 0, -0.28)</li>
+				<li>(-0.33, 0, 0.03)</li>
+			</headPosPerRotation>
 		</race>
-		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
-		<!--butcherProducts>
-			<DankPyon_RawDarkWood>20</DankPyon_RawDarkWood>
-		</butcherProducts-->
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_DoesntFlee"/>
+			<li Class="AnimalBehaviours.CompProperties_SwallowWhole">
+				<stomachCapacity>1</stomachCapacity>
+				<maximumBodysize>1.4</maximumBodysize>
+				<digestionPeriod>240</digestionPeriod>
+				<sendLetterWhenEating>true</sendLetterWhenEating>
+				<letterLabel>DankPyon_TrollSwallLabel</letterLabel>
+				<letterText>DankPyon_TrollSwallowDesc</letterText>
+				<nutritionGained>5</nutritionGained>
+				<createFilthWhenKilled>true</createFilthWhenKilled>
+				<filthToMake>Filth_Blood</filthToMake>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+				<resourceDef>DankPyon_TornNote_Hideout</resourceDef>
+				<resourceAmount>3</resourceAmount>
+				<dropChance>1</dropChance>			
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>DankPyon_ShadowSect</factionToReturnTo>			
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_AutoNutrition">
+				<tickInterval>2000</tickInterval>
+				<consumingFoodReportString>waiting</consumingFoodReportString>		
+			</li>
+		</comps>
 	</ThingDef>
 
-	<PawnKindDef>
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>DankPyon_RoyalMimic</defName>
 		<label>royal mimic</label>
 		<race>DankPyon_RoyalMimic</race>
 		<combatPower>30</combatPower>
+		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -255,11 +415,34 @@
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/RoyalMimic</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/RoyalMimic</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/RoyalMimic</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/RoyalMimic</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/RoyalMimic</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
-		<aiAvoidCover>true</aiAvoidCover>
-		<destroyGearOnDrop>true</destroyGearOnDrop>
 	</PawnKindDef>
 
 </Defs>

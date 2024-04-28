@@ -424,12 +424,12 @@
 	</ThingDef>
 
 	<!--============== Medieval Comms ===============-->
-
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_BirdPost</defName>
 		<label>bird post</label>
 		<description>Some birds, when taught by expert trainers, are capable of flying to a designated location before returning to their home roost. This allows for communication with neighboring factions, assuming one can afford the costly requirements of obtaining and training the bird, as well as feeding the animals with meat. Requires the scribe table for correspondence.</description>
 		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Misc/BirdPost</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -441,7 +441,6 @@
 		<pathCost>30</pathCost>
 		<fillPercent>0.15</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
-
 		<statBases>
 			<MaxHitPoints>30</MaxHitPoints>
 			<WorkToBuild>750</WorkToBuild>
@@ -449,13 +448,11 @@
 			<Flammability>1.0</Flammability>
 			<Cleanliness>-5</Cleanliness>
 		</statBases>
-
 		<tickerType>Normal</tickerType>
 		<size>(1,1)</size>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 		</building>
-	
 		<costList>
 			<DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
 		</costList>
@@ -465,13 +462,7 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerPlant</compClass>
-				<basePowerConsumption>-1</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
-			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>2.2</fuelConsumptionRate>
 				<fuelCapacity>10.0</fuelCapacity>
@@ -486,8 +477,10 @@
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
 		</comps>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Misc</designationCategory>
 		<researchPrerequisites>
@@ -503,7 +496,7 @@
 		<defName>DankPyon_ScribeTable</defName>
 		<label>scribe table</label>
 		<description>A table housing wax tablets, which contain records and receipts. Alongside the tablets lay parchments, a seal, quills, and ink to allow for correspondence. When used alongside the bird post, the written letters can reach far lands quicker than a messenger. One can invite allies for feasts, rivals for a challenge, or neutral factions for trade.</description>
-		<thingClass>Building_CommsConsole</thingClass>
+		<thingClass>MedievalOverhaul.Building_ScribeTable</thingClass>
 		<graphicData>
 			<texPath>Misc/TableScribe</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -517,7 +510,6 @@
 			</damageData>
 		</graphicData>
 		<size>(3,2)</size>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -532,7 +524,6 @@
 			<Flammability>0.6</Flammability>
 			<Mass>15</Mass>
 		</statBases>
-
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -543,20 +534,23 @@
 			<DankPyon_IronIngot>20</DankPyon_IronIngot>
 			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
 		</costList>
-
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>Misc</designationCategory>
-
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<basePowerConsumption>1</basePowerConsumption>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+				  <li>DankPyon_BirdPost</li>
+				</linkableFacilities>
 			</li>
 		</comps>
-
+		<modExtensions>
+			<li Class="MedievalOverhaul.RequireLinkables">
+				<linkablesNeeded>1</linkablesNeeded>
+				<requiredLinkable>DankPyon_BirdPost</requiredLinkable>
+			</li>
+		</modExtensions>
 		<designationHotKey>Misc3</designationHotKey>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>

@@ -9,4 +9,34 @@
 		<defName>DankPyon_DropDownSilkRug4x4c</defName>
 	</DesignatorDropdownGroupDef>
 
+	<DesignationCategoryDef>
+		<defName>DankPyon_RusticFurniture</defName>
+		<label>Rustic Furn.</label>
+		<order>500</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>DankPyon_RusticStorage</defName>
+		<label>Rustic Storage</label>
+		<order>504</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>DankPyon_RuinFurniture</defName>
+		<label>Ruin Furn.</label>
+		<order>501</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
 </Defs>

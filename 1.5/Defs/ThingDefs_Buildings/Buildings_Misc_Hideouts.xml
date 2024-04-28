@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>DankPyon_QuestFinder</defName>
+        <label>explorer's workbench</label>
+		<thingClass>MedievalOverhaul.Building_QuestScanner</thingClass>
+        <description>With the help of the Explorer's Workbench, a scientist can search for hidden locations and minable lumbs, but he needs torn notes to do so.
+		
+Depending on what is tied to the Explorer's Workbench, different locations can be unlocked.
+
+To find out more, view the tome of knowledge</description>
+        <descriptionHyperlinks>
+			<ThingDef>DankPyon_CultBook</ThingDef>
+			<ThingDef>DankPyon_BirdPost</ThingDef>
+			<ThingDef>DankPyon_CultShelf</ThingDef>
+			<ThingDef>DankPyon_CultPedestal</ThingDef>
+			<ThingDef>DankPyon_CultOrb</ThingDef>
+		</descriptionHyperlinks>
+		<size>(3,3)</size>
+        <graphicData>
+            <texPath>Furniture/TressureHuntersWorkbench/TressureHuntersWorkbench</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
+            <drawSize>(5,5)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
+        <costList>
+            <DankPyon_TornNote_Hideout>1</DankPyon_TornNote_Hideout>
+        </costList>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>2800</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <ResearchSpeedFactor>1</ResearchSpeedFactor>
+        </statBases>
+        <fillPercent>0.5</fillPercent>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <surfaceType>Item</surfaceType>
+        <techLevel>Medieval</techLevel>
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>5</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>DankPyon_TornNote_Hideout</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="MedievalOverhaul.CompProperties_QuestFinder">
+                <scanSpeedStat>ResearchSpeed</scanSpeedStat>
+                <soundWorking>ScannerLongRangeMineral_Ambience</soundWorking>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+					<li>DankPyon_CultBook</li>
+					<li>DankPyon_BirdPost</li>
+					<li>DankPyon_CultShelf</li>
+					<li>DankPyon_CultPedestal</li>
+					<li>DankPyon_CultOrb</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>DankPyon_Exploration</li>
+        </researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+    </ThingDef>
+
+    <!-- ========== Linkables ========== -->
+	
+	<!-- BookBase -->
+	<ThingDef ParentName="BuildingBase" Name="DankPyon_QuestLinkables" Abstract="True">
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Impassable</passability>
+		<pathCost>30</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>true</rotatable>
+		<clearBuildingArea>false</clearBuildingArea>
+		<size>(1,1)</size>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<building>
+			<isEdifice>false</isEdifice>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+        <thingCategories>
+            <li>DankPyon_QuestStuff</li>
+			<li>BuildingsFurniture</li>
+        </thingCategories>
+		<statBases>
+			<Flammability>0</Flammability>
+			<SellPriceFactor>1.30</SellPriceFactor>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+		<!-- <designationCategory>DankPyon_RuinFurniture</designationCategory> -->
+	</ThingDef>
+		
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_CultBook</defName>
+		<label>tome of knowledge</label>
+		<description>This book contains valuable information about the requirements for hidden locations and their content.
+		
+Tier 0: Mineable Lumbs
+Features:
+*) Mineral Lumbs appear on the map
+
+Requirements:
+*) None
+--------------------------------------
+Note: Each hideout contains 1 explorer archive.
+--------------------------------------
+Tier 1: Small Hideout
+Features:
+*) 1 Ancient Lecturn
+*) 3 Torn notes
+*) 2 Rustic chests
+-) 60% chance to drop additional torn notes
+*) A strange book containing a guaranteed research schematic:
+-) Crossbow
+-) Greatbow
+-) Intermediate cooking
+-) Military Blades
+-) Military Maces
+-) Military Polearms
+
+Requirements:
+*) 1 total linkable:
+-) This linkable must be a fueled carrier bird
+--------------------------------------
+Tier 2: Medium Hideout
+Features:
+*) 1 Ancient Orb
+*) 2 Torn Notes
+*) 2 Rustic chests
+-) 60% to drop additional torn notes
+*) 1 Royal Chest
+-) 65% to drop additional torn notes
+*) A strange book containing a guaranteed research blueprint:
+-) Gunpowder
+-) Metallurgy
+-) Tar
+
+Requirements:
+*) 5 linkable in total:
+-) 1 must be the old lectern
+-) The rest can be one of the following:
+--) 3 explorer archives and 1 carrier bird
+--) 4 explorer archives
+--------------------------------------
+Tier 3: Large Hideout
+Features:
+*) 2 Torn notes*) 2 rustic chests
+-) 60% chance to drop additional torn notes
+*) 2 Royal Chests
+-) 65% chance to drop additional torn notes
+*) A strange book containing a guaranteed research schematic:
+-) Advanced cooking
+-) Ballista Repeater
+-) Heavy crossbow
+-) Noble Blades
+-) Noble maces
+-) Noble Polearms
+-) Warbow
+
+Requirements:
+*) 9 linkable in total:
+-) 1 must be the ancient orb
+-) The rest can be one of the following:
+--) 6 Exlorer's Archives AND 1 Carrier Bird AND 1 Ancient Lectern
+--) 7 Exlorer's Archives AND 1 Carrier Bird OR 1 Ancient Lectern
+--) 8 Exlorer's Archives</description>
+		<graphicData>
+			<texPath>Furniture/CultistsBook/CultistsBook</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>20</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<fillPercent>0.35</fillPercent>
+		<clearBuildingArea>false</clearBuildingArea>
+		<size>(1,1)</size>
+		<building>
+			<isEdifice>false</isEdifice>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+
+		<thingCategories>
+			<li>DankPyon_BuildingsBook</li>
+		</thingCategories>
+
+		<statBases>
+			<Flammability>0</Flammability>
+			<SellPriceFactor>1.30</SellPriceFactor>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+			<Mass>3</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(195,200,9,0)</glowColor>
+			</li>
+		</comps>
+        <researchPrerequisites>
+            <li>DankPyon_Exploration</li>
+        </researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<modExtensions>
+			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
+		</modExtensions>
+	</ThingDef>
+		
+	<ThingDef ParentName="DankPyon_QuestLinkables">
+		<defName>DankPyon_CultPedestal</defName>
+		<label>ancient pedestal</label>
+		<description>This ancient pedestal is made of rough-hewn granite blocks and is adorned with mysterious markings and symbols. It appears to be very old and has likely been used by the Shadow Cult for centuries. The pedestal seems to have been placed in strategic locations throughout the ruins, possibly as a marker or guide for members of the cult. It is possible that by studying these pedestals, one might be able to uncover the locations of larger, more important cult sites. The pedestal is heavy, and it is not possible to move it.</description>
+		<graphicData>
+			<texPath>Furniture/AncientLecturn/AncientLecturn</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Comfort>0.5</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<fillPercent>0.20</fillPercent>
+		<building>
+			<paintable>false</paintable>
+		</building>
+	</ThingDef>
+		
+	<ThingDef ParentName="DankPyon_QuestLinkables">
+		<defName>DankPyon_CultOrb</defName>
+		<label>ancient orb</label>
+		<description>This ancient artifact is a glowing green sphere, encased in a four-legged granite pedestal. The sphere's surface is smooth and reflective, and seems to pulse with an otherworldly energy. The pedestal is adorned with symbols and engravings that are associated with the Shadow Cult, and appears to have been crafted with great care and skill. The purpose and power of this mysterious artifact is not known, but it is clear that it holds great importance to the cult. Those who possess this artifact must be prepared to face the wrath of the Shadow Cult, who will stop at nothing to protect it.</description>
+		<graphicData>
+			<texPath>Furniture/AncientOrb/OrbB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Comfort>0.5</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<fillPercent>0.20</fillPercent>
+		<building>
+			<paintable>false</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Glower">
+			<glowRadius>3</glowRadius>
+			<glowColor>(195,200,9,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_CultShelf</defName>
+		<label>explorer's archive</label>
+		<description>The Explorer's Archive can be linked to the Explorer's Workbench./nDepending on the level of Hideouts you want to locate, up to 8 may need to be linked to the Workbench./nIt can also be used to store up to 9 torn notes.</description>
+        <descriptionHyperlinks>
+			<ThingDef>DankPyon_TornNote_Hideout</ThingDef>
+			<ThingDef>DankPyon_QuestFinder</ThingDef>
+		</descriptionHyperlinks>
+		<altitudeLayer>PawnUnused</altitudeLayer>
+		<graphicData>
+			<texPath>Furniture/LibraryShelf/LibraryShelf</texPath>
+			<drawSize>(6.5,6.5)</drawSize>
+			<drawOffset>(0,0,0.95)</drawOffset>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
+			<!--shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData-->
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<size>(3,1)</size>
+		<uiIconPath>Furniture/LibraryShelf/LibraryShelf_south</uiIconPath>
+		<stuffCategories Inherit="False">
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>16</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<designationCategory Inherit="False"/>
+		<costStuffCount>200</costStuffCount>
+		<building>
+			<maxItemsInCell>1</maxItemsInCell>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_TornNote_Hideout</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_TornNote_Hideout</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<comps Inherit="False">
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>8</maxSimultaneous>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -7,6 +7,10 @@
 		<commonality>3</commonality>
 		<stockGenerators>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_TornNote_Hideout</thingDef>
+				<countRange>3~4</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
 				<countRange>750~1200</countRange>
 			</li>
@@ -199,6 +203,10 @@
 		<commonality>1</commonality>
 		<stockGenerators>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_TornNote_Hideout</thingDef>
+				<countRange>3~4</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
 				<countRange>750~1200</countRange>
 			</li>
@@ -254,6 +262,10 @@
 		<defName>DankPyon_Caravan_Medieval_Scholar</defName>
 		<label>scholar</label>
 		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_TornNote_Hideout</thingDef>
+				<countRange>6~8</countRange>
+			</li>
 
 			<!-- Resources -->
 			<li Class="StockGenerator_SingleDef">

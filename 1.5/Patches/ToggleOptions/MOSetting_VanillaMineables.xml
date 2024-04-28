@@ -85,7 +85,76 @@
 						<texPath>Resources/PlasteelIngot</texPath>
 					</value>
 				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/QuestScriptDef[defName="LongRangeMineralScannerLump"]</xpath>
+					<value>
+						<li Class="MedievalOverhaul.QuestInformation">
+							<label>Minerals</label>
+							<WorkTillTrigger>380000</WorkTillTrigger>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[text()="MineableSteel"]</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[text()="MineableUranium"]</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[text()="MineableComponentsIndustrial"]</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
+					<value>
+						<li>DankPyon_MineableCoal</li>
+						<li>DankPyon_MineableSalt</li>
+						<li>DankPyon_MineableGold</li>
+						<li>DankPyon_MineableIron</li>
+						<li>DankPyon_MineableCitrine</li>
+						<li>DankPyon_MineableAmber</li>
+						<li>DankPyon_MineableOnyx</li>
+						<li>DankPyon_MineableEmerald</li>
+						<li>DankPyon_MineableSapphire</li>
+						<li>DankPyon_MineableRuby</li>
+					</value>
+				</li>
+
 			</operations>
 		</inactive>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/QuestScriptDef[defName="LongRangeMineralScannerLump"]</xpath>
+					<value>
+						<li Class="MedievalOverhaul.QuestInformation">
+							<label>Minerals</label>
+							<WorkTillTrigger>380000</WorkTillTrigger>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
+					<value>
+						<li>DankPyon_MineableCoal</li>
+						<li>DankPyon_MineableSalt</li>
+						<li>DankPyon_MineableGold</li>
+						<li>DankPyon_MineableIron</li>
+						<li>DankPyon_MineableCitrine</li>
+						<li>DankPyon_MineableAmber</li>
+						<li>DankPyon_MineableOnyx</li>
+						<li>DankPyon_MineableEmerald</li>
+						<li>DankPyon_MineableSapphire</li>
+						<li>DankPyon_MineableRuby</li>
+					</value>
+				</li>
+			</operations>
+		</active>
 	</Operation>
 </Patch>

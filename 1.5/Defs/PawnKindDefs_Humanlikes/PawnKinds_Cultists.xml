@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef Name="DankPyon_CultistPawnBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>DankPyon_ShadowSect</defaultFactionType>
+		<backstoryCategories>
+			<li>Pirate</li>
+		</backstoryCategories>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<chemicalAddictionChance>0.03</chemicalAddictionChance>
+		<invNutrition>10</invNutrition>
+		<invFoodDef>DankPyon_MealBread</invFoodDef>
+		<isFighter>true</isFighter>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<initialWillRange>10</initialWillRange>
+		<initialResistanceRange>10</initialResistanceRange>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Pyromaniac</li>
+			<li>Nudist</li>
+		</disallowedTraits>   
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<weaponMoney>500</weaponMoney>
+		<itemQuality>Normal</itemQuality>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>1.1</max>
+		</gearHealthRange>
+
+		<apparelRequired>
+			<li>DankPyon_Headgear_CultistHood</li>	
+			<li>Dankpyon_Apparel_Gambeson</li>
+			<li>DankPyon_Apparel_Leather_Tunic</li>	
+			<li>DankPyon_Apparel_Trousers</li>
+			<li>DankPyon_Footwear_BootsLeather</li>
+			<li>DankPyon_Handwear_GlovesLeather</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>DankPyon_Headgear_CultistHood</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>Dankpyon_Apparel_Gambeson</requiredTag>
+				<stuff>WoolMegasloth</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Middle</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Feet</bodyPartGroup>
+				<apparelLayer>Middle</apparelLayer>
+				<requiredTag>DankPyon_Footwear_BootsLeather</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Hands</bodyPartGroup>
+				<apparelLayer>Middle</apparelLayer>
+				<requiredTag>DankPyon_Handwear_GlovesLeather</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+		</specificApparelRequirements>		
+	</PawnKindDef>
+
+	<!-- ========== Cultists ========== -->
+	<PawnKindDef ParentName="DankPyon_CultistPawnBase">
+		<defName>DankPyon_Cultist_Novice</defName>
+		<label>initiate</label>
+		<combatPower>35</combatPower>
+
+		<weaponTags>
+			<li>DankPyon_WoodcuttersAxe</li>
+			<li>DankPyon_Warfork</li>
+			<li>DankPyon_Pitchfork</li>
+			<li>DankPyon_Pickaxe</li>
+			<li>DankPyon_Hatchet</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>3~5</range>
+			</li>	  
+		</skills>
+	</PawnKindDef>
+  
+	<!-- Tier 2 -->
+
+	<PawnKindDef ParentName="DankPyon_CultistPawnBase" Name="DankPyon_CultistAcolyteBase" Abstract="True">
+		<label>acolyte</label>
+		<combatPower>50</combatPower>
+		<apparelRequired>
+			<li>DankPyon_Apparel_Light_Lamellar</li>
+			<li>DankPyon_Apparel_ChaussesPadded</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Light_Lamellar</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>DankPyon_LegShell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_ChaussesPadded</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+		</specificApparelRequirements>			
+		<weaponTags Inherit="False">
+			<li>DankPyon_HuntingBow</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>11~15</range>
+			</li>	
+			<li>
+				<skill>Melee</skill>
+				<range>6~10</range>
+			</li>	   
+		</skills>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>   
+	</PawnKindDef>  
+
+	<PawnKindDef ParentName="DankPyon_CultistAcolyteBase">
+		<defName>DanyPyon_Cultist_Acolyte_Melee</defName>		
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>  
+
+	<PawnKindDef ParentName="DankPyon_CultistAcolyteBase">
+		<defName>DanyPyon_Cultist_Acolyte_Ranged</defName>	
+		<weaponTags Inherit="False">
+			<li>DankPyon_HuntingBow</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>   
+	</PawnKindDef>  
+  
+	<!-- Tier 3 -->
+
+	<PawnKindDef ParentName="DankPyon_CultistPawnBase" Name="DankPyon_CultistAdeptBase" Abstract="True">
+		<label>adept</label>
+		<combatPower>70</combatPower>
+		<apparelRequired>
+			<li>DankPyon_Apparel_Padded_Leather</li>
+			<li>DankPyon_Apparel_ChaussesPadded</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Padded_Leather</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>DankPyon_LegShell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_ChaussesPadded</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+		</specificApparelRequirements>	
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>11~15</range>
+			</li>	
+			<li>
+				<skill>Melee</skill>
+				<range>11~15</range>
+			</li>	   
+		</skills>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_CultistAdeptBase">
+		<defName>DanyPyon_Cultist_Adept_Melee</defName>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>    
+
+	<PawnKindDef ParentName="DankPyon_CultistAdeptBase">
+		<defName>DanyPyon_Cultist_Adept_Ranged</defName>
+		<weaponTags>
+			<li>DankPyon_Crossbow</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>   
+	</PawnKindDef>      
+  
+  <!-- Tier 4 -->
+
+	<PawnKindDef ParentName="DankPyon_CultistPawnBase" Name="DankPyon_Cultist_HighPristBase" Abstract="True">
+		<label>shadow sect hight priest</label>
+		<combatPower>80</combatPower>
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heavy_Hauberk</li>
+			<li>DankPyon_Apparel_ChaussesPadded</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Heavy_Hauberk</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>DankPyon_LegShell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_ChaussesPadded</requiredTag>
+				<stuff>Leather_Bear</stuff>
+				<color>(108, 78, 55)</color>
+			</li>
+		</specificApparelRequirements>	
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>16~20</range>
+			</li>	
+			<li>
+				<skill>Melee</skill>
+				<range>16~20</range>
+			</li>	   
+		</skills>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_Cultist_HighPristBase">
+		<defName>DanyPyon_Cultist_HighPriest_Melee</defName>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+	</PawnKindDef>    
+	
+	<PawnKindDef ParentName="DankPyon_Cultist_HighPristBase">
+		<defName>DanyPyon_Cultist_HighPriest_Ranged</defName>
+		<weaponTags>
+			<li>DankPyon_Arbelest</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>   
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<QuestScriptDef>
+    <defName>DankPyon_Cultist_1Tier</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinProgressScore>0</rootMinProgressScore>
+    <rootMinPoints>0</rootMinPoints>
+    <autoAccept>true</autoAccept>
+    <questNameRules>
+      <rulesStrings>
+		<li>questName(siteFaction==DankPyon_ShadowSect)->small cultist hideout discovered!</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings><!--li>questDescription(siteFaction==DankPyon_ShadowSect)->DankPyon_ShadowSect has set up an outpost near [map_definite] to harass you. [allSitePartsDescriptions]\n\nThe outpost will remain until you send a team there to attack and destroy it.</li-->
+	  <li>questDescription(siteFaction==DankPyon_ShadowSect)->At first glance, this compound appears to be a small, unremarkable collection of buildings. There are a few ramshackle structures that seem to be used for living and storage, and a larger, more well-constructed building that could be a workshop or meeting place. However, upon closer inspection, you notice a few strange details that raise your suspicions. The windows of the buildings are covered with heavy curtains, and there are few signs of activity. It is possible that this compound is being used as a cover for the Shadow Sect's operations, and that there may be a hidden entrance to their actual hideout somewhere within. It will be up to you to investigate further and determine the truth.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <questAvailableLetterDef>NewQuest</questAvailableLetterDef>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_Set">
+          <name>siteDistRange</name>
+          <value>1~10</value>
+        </li>
+
+        <li Class="QuestNode_FactionExists">
+          <faction>DankPyon_ShadowSect</faction>
+          <node Class="QuestNode_Set">
+            <name>selectionWeightDankPyon_ShadowSect</name>
+            <value>1</value>
+          </node>
+          <elseNode Class="QuestNode_Set">
+            <name>selectionWeightDankPyon_ShadowSect</name>
+            <value>0</value>
+          </elseNode>
+        </li>
+
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_RandomNode">
+          <nodes>
+            <li Class="QuestNode_Sequence">
+              <nodes>
+                <li Class="QuestNode_Set">
+                  <name>siteFaction</name>
+                  <value>DankPyon_ShadowSect</value>
+                </li>
+                <li Class="QuestNode_Set">
+                  <name>sitePartsTags</name>
+                  <value>
+                    <li>
+                      <tag>Cultists_1Tier</tag>
+                    </li>
+                  </value>
+                </li>
+              </nodes>
+              <selectionWeight>$selectionWeightDankPyon_ShadowSect</selectionWeight>
+            </li>
+          </nodes>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+
+        <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+          <storeAs>sitePartDefs</storeAs>
+          <sitePartsTags>$sitePartsTags</sitePartsTags>
+        </li>
+        
+        <li Class="QuestNode_GetSiteTile">
+          <storeAs>siteTile</storeAs>
+          <clampRangeBySiteParts>true</clampRangeBySiteParts>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+        </li>
+
+        <li Class="QuestNode_GetDefaultSitePartsParams">
+          <tile>$siteTile</tile>
+          <faction>$siteFaction</faction>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+          <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_GenerateSite</def>
+          <parms>
+            <hiddenSitePartsPossible>false</hiddenSitePartsPossible>
+          </parms>
+        </li>
+
+        <li Class="QuestNode_SpawnWorldObjects">
+          <worldObjects>$site</worldObjects>
+        </li>
+        
+        <li Class="QuestNode_Signal">
+          <inSignal>conditionCauser.Destroyed</inSignal>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelSuccess">Success!</label>
+                <letterDef>PositiveEvent</letterDef>
+                <text TKey="LetterTextSuccess">You entered the compound and managed to take out all of the cultists, purging the location of their presence. You were able to gather a wealth of intel, including information that could lead you to the larger location of their temple. You have disrupted the cultists activities and dealt a blow to their operations. Good work!</text>
+              </li>
+              <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+        <li Class="QuestNode_End">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <outcome>Success</outcome>
+        </li>
+      </nodes>
+    </root>
+	<modExtensions>
+		<li Class="MedievalOverhaul.QuestInformation">
+			<label>Small cultist hideout</label>
+			<WorkTillTrigger>270000</WorkTillTrigger>
+            <requiredLinkable>DankPyon_BirdPost</requiredLinkable>
+            <LinkablesNeeded>1</LinkablesNeeded>
+		</li>
+	</modExtensions>
+  </QuestScriptDef>
+  
+<QuestScriptDef>
+    <defName>DankPyon_Cultists_2Tier</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinProgressScore>0</rootMinProgressScore>
+    <rootMinPoints>0</rootMinPoints>
+    <autoAccept>true</autoAccept>
+    <questNameRules>
+      <rulesStrings>
+		<li>questName(siteFaction==DankPyon_ShadowSect)->medium cultist hideout discovered!</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings><!--li>questDescription(siteFaction==DankPyon_ShadowSect)->DankPyon_ShadowSect has set up an outpost near [map_definite] to harass you. [allSitePartsDescriptions]\n\nThe outpost will remain until you send a team there to attack and destroy it.</li-->
+	  <li>questDescription(siteFaction==DankPyon_ShadowSect)->At first glance, this monastery appears to be a peaceful, secluded place of worship. It is surrounded by lush gardens and is situated on a hill overlooking the surrounding countryside. The main building is a large, impressive structure with tall, arched windows and a grand entrance. However, upon closer inspection, you notice a few strange details that raise your suspicions. The windows are covered with heavy curtains, and there are few signs of activity within. It is possible that this monastery is being used as a cover for the Shadow Sect's operations, and that there may be hidden rooms or areas within that are being used for their secretive activities. It will be up to you to investigate further and determine the truth.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <questAvailableLetterDef>NewQuest</questAvailableLetterDef>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_Set">
+          <name>siteDistRange</name>
+          <value>4~10</value>
+        </li>
+
+        <li Class="QuestNode_FactionExists">
+          <faction>DankPyon_ShadowSect</faction>
+          <node Class="QuestNode_Set">
+            <name>selectionWeightDankPyon_ShadowSect</name>
+            <value>1</value>
+          </node>
+          <elseNode Class="QuestNode_Set">
+            <name>selectionWeightDankPyon_ShadowSect</name>
+            <value>0</value>
+          </elseNode>
+        </li>
+
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_RandomNode">
+          <nodes>
+            <li Class="QuestNode_Sequence">
+              <nodes>
+                <li Class="QuestNode_Set">
+                  <name>siteFaction</name>
+                  <value>DankPyon_ShadowSect</value>
+                </li>
+                <li Class="QuestNode_Set">
+                  <name>sitePartsTags</name>
+                  <value>
+                    <li>
+                      <tag>Cultists_2Tier</tag>
+                    </li>
+                  </value>
+                </li>
+              </nodes>
+              <selectionWeight>$selectionWeightDankPyon_ShadowSect</selectionWeight>
+            </li>
+          </nodes>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+
+        <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+          <storeAs>sitePartDefs</storeAs>
+          <sitePartsTags>$sitePartsTags</sitePartsTags>
+        </li>
+        
+        <li Class="QuestNode_GetSiteTile">
+          <storeAs>siteTile</storeAs>
+          <clampRangeBySiteParts>true</clampRangeBySiteParts>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+        </li>
+
+        <li Class="QuestNode_GetDefaultSitePartsParams">
+          <tile>$siteTile</tile>
+          <faction>$siteFaction</faction>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+          <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_GenerateSite</def>
+          <parms>
+            <hiddenSitePartsPossible>false</hiddenSitePartsPossible>
+          </parms>
+        </li>
+
+        <li Class="QuestNode_SpawnWorldObjects">
+          <worldObjects>$site</worldObjects>
+        </li>
+        
+        <li Class="QuestNode_Signal">
+          <inSignal>conditionCauser.Destroyed</inSignal>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelSuccess">Success!</label>
+                <letterDef>PositiveEvent</letterDef>
+                <text TKey="LetterTextSuccess">You entered the monastery and managed to take out all of the cultists, purging the location of their presence. You were able to gather a wealth of intel, including information that could lead you to the larger location of their temple. You have disrupted the cultists activities and dealt a blow to their operations. Good work!</text>
+              </li>
+              <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+      </nodes>
+    </root>
+	<modExtensions>
+		<li Class="MedievalOverhaul.QuestInformation">
+			<label>Medium cultist hideout</label>
+			<WorkTillTrigger>405000</WorkTillTrigger>
+            <requiredLinkable>DankPyon_CultPedestal</requiredLinkable>
+            <LinkablesNeeded>5</LinkablesNeeded>
+		</li>
+	</modExtensions>
+  </QuestScriptDef>
+  
+<QuestScriptDef>
+    <defName>DankPyon_Cultist_3Tier</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinProgressScore>0</rootMinProgressScore>
+    <rootMinPoints>0</rootMinPoints>
+    <autoAccept>true</autoAccept>
+    <questNameRules>
+      <rulesStrings>
+		<li>questName(siteFaction==DankPyon_ShadowSect)->large cultist hideout discovered!</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings><!--li>questDescription(siteFaction==DankPyon_ShadowSect)->DankPyon_ShadowSect has set up an outpost near [map_definite] to harass you. [allSitePartsDescriptions]\n\nThe outpost will remain until you send a team there to attack and destroy it.</li-->
+	  <li>questDescription(siteFaction==DankPyon_ShadowSect)->At first glance, this monastery appears to be a peaceful, secluded place of worship. It is surrounded by lush gardens and is situated on a hill overlooking the surrounding countryside. The main building is a large, impressive structure with tall, arched windows and a grand entrance. However, upon closer inspection, you notice a few strange details that raise your suspicions. The windows are covered with heavy curtains, and there are few signs of activity within. It is possible that this monastery is being used as a cover for the Shadow Sect's operations, and that there may be hidden rooms or areas within that are being used for their secretive activities. It will be up to you to investigate further and determine the truth.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <questAvailableLetterDef>NewQuest</questAvailableLetterDef>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_Set">
+          <name>siteDistRange</name>
+          <value>4~10</value>
+        </li>
+
+        <li Class="QuestNode_FactionExists">
+          <faction>DankPyon_ShadowSect</faction>
+          <node Class="QuestNode_Set">
+            <name>selectionWeightDankPyon_ShadowSect</name>
+            <value>1</value>
+          </node>
+          <elseNode Class="QuestNode_Set">
+            <name>selectionWeightDankPyon_ShadowSect</name>
+            <value>0</value>
+          </elseNode>
+        </li>
+
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_RandomNode">
+          <nodes>
+            <li Class="QuestNode_Sequence">
+              <nodes>
+                <li Class="QuestNode_Set">
+                  <name>siteFaction</name>
+                  <value>DankPyon_ShadowSect</value>
+                </li>
+                <li Class="QuestNode_Set">
+                  <name>sitePartsTags</name>
+                  <value>
+                    <li>
+                      <tag>Cultists_3Tier</tag>
+                    </li>
+                  </value>
+                </li>
+              </nodes>
+              <selectionWeight>$selectionWeightDankPyon_ShadowSect</selectionWeight>
+            </li>
+          </nodes>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+
+        <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+          <storeAs>sitePartDefs</storeAs>
+          <sitePartsTags>$sitePartsTags</sitePartsTags>
+        </li>
+        
+        <li Class="QuestNode_GetSiteTile">
+          <storeAs>siteTile</storeAs>
+          <clampRangeBySiteParts>true</clampRangeBySiteParts>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+        </li>
+
+        <li Class="QuestNode_GetDefaultSitePartsParams">
+          <tile>$siteTile</tile>
+          <faction>$siteFaction</faction>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+          <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_GenerateSite</def>
+          <parms>
+            <hiddenSitePartsPossible>false</hiddenSitePartsPossible>
+          </parms>
+        </li>
+
+        <li Class="QuestNode_SpawnWorldObjects">
+          <worldObjects>$site</worldObjects>
+        </li>
+        
+        <li Class="QuestNode_Signal">
+          <inSignal>conditionCauser.Destroyed</inSignal>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelSuccess">Success!</label>
+                <letterDef>PositiveEvent</letterDef>
+                <text TKey="LetterTextSuccess">You entered the monastery and managed to take out all of the cultists, purging the location of their presence. You were able to gather a wealth of intel, including information that could lead you to the larger location of their temple. You have disrupted the cultists activities and dealt a blow to their operations. Good work!</text>
+              </li>
+              <li Class="QuestNode_Notify_PlayerRaidedSomeone">
+                <getRaidersFromMapParent>$site</getRaidersFromMapParent>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+      </nodes>
+    </root>
+	<modExtensions>
+		<li Class="MedievalOverhaul.QuestInformation">
+			<label>large cultists hideout</label>
+			<WorkTillTrigger>540000</WorkTillTrigger>
+            <requiredLinkable>DankPyon_CultOrb</requiredLinkable>
+            <LinkablesNeeded>9</LinkablesNeeded>
+		</li>
+	</modExtensions>
+  </QuestScriptDef>
+</Defs>

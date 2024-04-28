@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>Cultists_1Tier</defName>
+    <label>small cultists hideout</label>
+    <description>At first glance, this compound appears to be a small, unremarkable collection of buildings. There are a few ramshackle structures that seem to be used for living and storage, and a larger, more well-constructed building that could be a workshop or meeting place. The compound is surrounded by a low fence, and there is a gate that appears to be the main entrance. However, upon closer inspection, you notice a few strange details that raise your suspicions. The windows of the buildings are covered with heavy curtains, and there are few signs of activity. It is possible that this compound is being used as a cover for the Shadow Sect's operations, and that there may be a hidden entrance to their actual hideout somewhere within. It will be up to you to investigate further and determine the truth.</description>
+    <siteTexture>WorldObjects/Location_1T</siteTexture>
+    <expandingIconTexture>WorldObjects/Location_1T</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>Cultists_1Tier</li>
+    </tags>
+  </SitePartDef>
+  
+  <SitePartDef>
+    <defName>Cultists_2Tier</defName>
+    <label>medium cultist hideout</label>
+    <description>At first glance, this monastery appears to be a peaceful, secluded place of worship. It is surrounded by lush gardens and is situated on a hill overlooking the surrounding countryside. The main building is a large, impressive structure with tall, arched windows and a grand entrance. However, upon closer inspection, you notice a few strange details that raise your suspicions. The windows are covered with heavy curtains, and there are few signs of activity within. It is possible that this monastery is being used as a cover for the Shadow Sect's operations, and that there may be hidden rooms or areas within that are being used for their secretive activities. It will be up to you to investigate further and determine the truth.</description>
+    <siteTexture>WorldObjects/Location_2T</siteTexture>
+    <expandingIconTexture>WorldObjects/Location_2T</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>Cultists_2Tier</li>
+    </tags>
+  </SitePartDef>
+  
+  <SitePartDef>
+    <defName>Cultists_3Tier</defName>
+    <label>large cultists hideout</label>
+    <description>At first glance, this monastery appears to be a peaceful, secluded place of worship. It is surrounded by lush gardens and is situated on a hill overlooking the surrounding countryside. The main building is a large, impressive structure with tall, arched windows and a grand entrance. However, upon closer inspection, you notice a few strange details that raise your suspicions. The windows are covered with heavy curtains, and there are few signs of activity within. It is possible that this monastery is being used as a cover for the Shadow Sect's operations, and that there may be hidden rooms or areas within that are being used for their secretive activities. It will be up to you to investigate further and determine the truth.</description>
+    <siteTexture>WorldObjects/Location_3T</siteTexture>
+	<!-- <minMapSize>(200,200,200)</minMapSize> -->
+    <expandingIconTexture>WorldObjects/Location_3T</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>Cultists_3Tier</li>
+    </tags>
+  </SitePartDef>
+</Defs>

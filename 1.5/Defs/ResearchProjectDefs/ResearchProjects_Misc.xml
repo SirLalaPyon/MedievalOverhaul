@@ -65,8 +65,8 @@
 		<baseCost>900</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>5</researchViewX>
-		<researchViewY>1.2</researchViewY>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1.8</researchViewY>
 		<prerequisites>
 			<li>ComplexFurniture</li>
 		</prerequisites>
@@ -104,7 +104,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>4</researchViewX>
-		<researchViewY>3.0</researchViewY>
+		<researchViewY>1.8</researchViewY>
 		<prerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</prerequisites>
@@ -122,14 +122,34 @@
 		<baseCost>600</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>4</researchViewX>
-		<researchViewY>1.8</researchViewY>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2.4</researchViewY>
 		<prerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</prerequisites>
 		<generalRules>
 		  <rulesStrings>
 			<li>subject->carrier birds</li>
+		  </rulesStrings>
+		</generalRules>		
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>DankPyon_Exploration</defName>
+		<label>exploration</label>
+		<description>Explore the word and find precious minerals or hidden locations.</description>
+		<baseCost>1800</baseCost>
+		<tab>DankPyon_MedievalResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6</researchViewX>
+		<researchViewY>2.4</researchViewY>
+		<prerequisites>
+			<li>DankPyon_CarrierBirds</li>
+			<li>Stonecutting</li>
+		</prerequisites>
+		<generalRules>
+		  <rulesStrings>
+			<li>subject->exploring</li>
 		  </rulesStrings>
 		</generalRules>		
 	</ResearchProjectDef>
@@ -433,7 +453,7 @@
 
 	<ResearchProjectDef>
 		<defName>DankPyon_Steel</defName>
-		<label>Intermediate metallurgy</label>
+		<label>Steel</label>
 		<description>Discover new techniqures of metallurgy and steel manufacturing.</description>
 		<baseCost>2000</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
@@ -456,7 +476,7 @@
 
 	<ResearchProjectDef>
 		<defName>DankPyon_Plasteel</defName>
-		<label>Advanced metallurgy</label>
+		<label>Plasteel</label>
 		<description>Discover advanced techniques of metallurgy and Plasteel manufacturing.</description>
 		<baseCost>4000</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>

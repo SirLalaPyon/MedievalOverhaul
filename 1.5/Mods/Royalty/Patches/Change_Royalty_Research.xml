@@ -142,7 +142,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/researchViewX</xpath>
 			<value>
-				<researchViewX>5.0</researchViewX>
+				<researchViewX>6</researchViewX>
 			</value>
 		</match>
 	</Operation>
@@ -152,7 +152,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="Harpsichord"]/researchViewY</xpath>
 			<value>
-				<researchViewY>2.4</researchViewY>
+				<researchViewY>0</researchViewY>
 			</value>
 		</match>
 	</Operation>
@@ -191,7 +191,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="Piano"]/researchViewX</xpath>
 			<value>
-				<researchViewX>5.0</researchViewX>
+				<researchViewX>6</researchViewX>
 			</value>
 		</match>
 	</Operation>
@@ -201,7 +201,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="Piano"]/researchViewY</xpath>
 			<value>
-				<researchViewY>3.</researchViewY>
+				<researchViewY>0.6</researchViewY>
 			</value>
 		</match>
 	</Operation>
@@ -259,7 +259,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewX</xpath>
 			<value>
-				<researchViewX>5.00</researchViewX>
+				<researchViewX>6</researchViewX>
 			</value>
 		</match>
 	</Operation>
@@ -269,7 +269,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="Harp"]/researchViewY</xpath>
 			<value>
-				<researchViewY>1.8</researchViewY>
+				<researchViewY>1.2</researchViewY>
 			</value>
 		</match>
 	</Operation>

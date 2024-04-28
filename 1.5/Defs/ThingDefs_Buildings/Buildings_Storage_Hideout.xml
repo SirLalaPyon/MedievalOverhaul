@@ -56,8 +56,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>10~40</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawWood</li>
@@ -106,8 +106,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawWood</li>
@@ -156,8 +156,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>4~16</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~160</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawWood</li>
@@ -207,8 +207,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>10~40</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Wood</li>
@@ -257,8 +257,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Wood</li>
@@ -308,8 +308,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>4~16</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~160</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Wood</li>
@@ -359,8 +359,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>10~40</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>BlocksLimestone</li>
@@ -412,8 +412,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>BlocksLimestone</li>
@@ -467,8 +467,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>4~16</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~160</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>BlocksLimestone</li>
@@ -549,8 +549,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>3~12</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>30~120</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_MealBread</li>
@@ -600,11 +600,13 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>3~12</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>30~120</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
-                    <li>DankPyon_Cheese</li>
+                    <li>DankPyon_MealCheese</li>
+                    <li>DankPyon_MealGoatCheese</li>
+                    <li>DankPyon_MealSheepCheese</li>
 				</randomItems>
 			</li>
 		</modExtensions>	
@@ -651,11 +653,20 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>3~12</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>30~120</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine_Griffon</li>
+					<li>DankPyon_Wine_Mulberry</li>
 				</randomItems>
 			</li>
 		</modExtensions>	
@@ -707,8 +718,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>4~16</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~160</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Bone</li>
@@ -762,11 +773,20 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>4~16</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~160</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+					<li>DankPyon_GriffonBerry</li>
+					<li>DankPyon_RawMulberry</li>
 				</randomItems>
 			</li>
 		</modExtensions>	
@@ -816,11 +836,20 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>4~16</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~160</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_MustWine</li>
+                    <li>DankPyon_MustWine</li>
+                    <li>DankPyon_MustWine</li>
+                    <li>DankPyon_MustWine</li>
+                    <li>DankPyon_MustWine</li>
+                    <li>DankPyon_MustWine</li>
+                    <li>DankPyon_MustWine</li>
+                    <li>DankPyon_MustWine</li>
+					<li>DankPyon_MustWine_Griffon</li>
+					<li>DankPyon_MustWine_Mulberry</li>
 				</randomItems>
 			</li>
 		</modExtensions>	
@@ -974,8 +1003,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>10~40</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawWood</li>
@@ -1012,8 +1041,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_IronOre</li>
@@ -1050,8 +1079,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_SilverOre</li>
@@ -1088,8 +1117,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_GoldOre</li>
@@ -1126,8 +1155,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Coal</li>
@@ -1164,10 +1193,17 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
+                    <li>Cloth</li>
+                    <li>Cloth</li>
+                    <li>Cloth</li>
+                    <li>Cloth</li>
+                    <li>Cloth</li>
+                    <li>Cloth</li>
+                    <li>Cloth</li>
                     <li>Cloth</li>
                     <li>DankPyon_Linen</li>
                     <li>DankPyon_Silk</li>
@@ -1205,8 +1241,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>Leather_Plain</li>
@@ -1252,8 +1288,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>10~40</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_ComponentBasic</li>
@@ -1290,13 +1326,20 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>10~40</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawGrapes</li>
                     <li>DankPyon_RawGrapes</li>
                     <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+                    <li>DankPyon_RawGrapes</li>
+					<li>DankPyon_GriffonBerry</li>
+					<li>DankPyon_RawMulberry</li>
 				</randomItems>
 			</li>
 		</modExtensions>
@@ -1355,8 +1398,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_MealBread</li>
@@ -1390,8 +1433,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Flour</li>
@@ -1426,8 +1469,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_DriedMeat</li>
@@ -1462,11 +1505,13 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
-                    <li>DankPyon_Cheese</li>
+                    <li>DankPyon_MealCheese</li>
+                    <li>DankPyon_MealGoatCheese</li>
+                    <li>DankPyon_MealSheepCheese</li>
 				</randomItems>
 			</li>
 		</modExtensions>	
@@ -1497,8 +1542,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Wine</li>
@@ -1532,11 +1577,12 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Ale</li>
+					<li>DankPyon_Cider</li>
 				</randomItems>
 			</li>
 		</modExtensions>
@@ -1567,8 +1613,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>40~80</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>40~160</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawPumpkins</li>
@@ -1630,7 +1676,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>1~4</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Bone</li>
@@ -1663,7 +1709,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>30~40</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Flour</li>
@@ -1696,7 +1742,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>30~40</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawWheat</li>
@@ -1729,7 +1775,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>30~40</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>RawPotatoes</li>
@@ -1762,7 +1808,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>30~40</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawApples</li>
@@ -1957,7 +2003,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_MeleeWeapon_Falchion</li>
@@ -1994,7 +2040,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_MeleeWeapon_MilitiaSpear</li>
@@ -2036,7 +2082,7 @@
 			<searchEffect>DustPuff</searchEffect>
 			<effectSize>2.5</effectSize>
 			<lootCount>2~8</lootCount>
-			<lootChance>0.90</lootChance>
+			<lootChance>1</lootChance>
 			<isRandom>true</isRandom>
 			<randomItems>
 				<li>DankPyon_MeleeWeapon_Falchion</li>
@@ -2176,7 +2222,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>1~5</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Emerald</li>
@@ -2222,7 +2268,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>1~5</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Sapphire</li>
@@ -2268,7 +2314,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>1~5</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Ruby</li>
@@ -2314,7 +2360,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>1~3</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_ChaliceSilver</li>
@@ -2359,7 +2405,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>1~3</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_ChaliceSilver</li>
@@ -2404,7 +2450,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>1~3</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_ChaliceSilver</li>
@@ -2463,11 +2509,20 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>20~80</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+                    <li>DankPyon_Wine</li>
+					<li>DankPyon_Wine_Griffon</li>
+					<li>DankPyon_Wine_Mulberry</li>
 				</randomItems>
 			</li>
 		</modExtensions>	
@@ -2499,8 +2554,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~10</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>10~40</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_MealRations</li>
@@ -2544,7 +2599,7 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>40~100</lootCount>
+				<lootCount>40~120</lootCount>
 				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
@@ -2588,7 +2643,7 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>1~4</lootCount>
+				<lootCount>1~2</lootCount>
 				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems><!--17 non-treatise : 12 treatise -->
@@ -2643,58 +2698,6 @@
 		</modExtensions>
 	</ThingDef>
 
-  <!--ThingDef ParentName="DankPyon_HideOutBuildingBase">
-	<defName>DankPyon_HideoutShelfPlates</defName>
-	<label>shelf of plates</label>
-	<description>A shelf for reserved for clean plates. Items stored in this will not affect room beauty.</description>
-	<thingClass>Building_Storage</thingClass>
-	<graphicData>
-	  <texPath>Storage/ShelfPlate</texPath>
-	  <graphicClass>Graphic_Multi</graphicClass>
-	  <drawSize>(2.70,2.70)</drawSize>
-	  <shaderType>CutoutComplex</shaderType>
-	</graphicData>
-	<uiIconPath>Storage/ShelfPlate_north</uiIconPath>
-
-	<altitudeLayer>Building</altitudeLayer>
-	<passability>PassThroughOnly</passability>
-	<fillPercent>0.4</fillPercent>
-	<castEdgeShadows>true</castEdgeShadows>
-	<pathCost>50</pathCost>
-	
-	<stuffCategories>
-	  <li>Woody</li>
-	</stuffCategories>
-
-	<costStuffCount>65</costStuffCount>
-	<statBases>
-	  <MaxHitPoints>100</MaxHitPoints>
-	  <Mass>12</Mass>
-	  <WorkToBuild>900</WorkToBuild>
-	  <Flammability>1.0</Flammability>
-	  <Beauty>0.5</Beauty>
-	</statBases>
-	<size>(2,1)</size>
-	<defaultPlacingRot>South</defaultPlacingRot>
-
-	<building>
-	  <fixedStorageSettings>
-		<filter>
-		<thingDefs>
-		  <li>DankPyon_HideoutPlateClean</li>
-		</thingDefs>
-		</filter>
-	  </fixedStorageSettings>
-	</building>
-
-	<inspectorTabs>
-	  <li>ITab_Storage</li>
-	</inspectorTabs>
-	<designationHotKey>Misc12</designationHotKey>
-	<staticSunShadowHeight>0.5</staticSunShadowHeight>
-	<canOverlapZones>false</canOverlapZones>
-  </ThingDef-->
-
 	<ThingDef ParentName="DankPyon_HideOutBuildingBase">
 		<defName>DankPyon_HideoutStrawPile</defName>
 		<label>straw pile</label>
@@ -2738,7 +2741,7 @@
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
 				<lootCount>20~80</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<isDestroyed>true</isDestroyed>
 				<randomItems>
@@ -2846,8 +2849,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>60~120</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_IronOre</li>
@@ -2904,8 +2907,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>60~120</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawPumpkins</li>
@@ -2943,8 +2946,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>60~120</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>Leather_Plain</li>
@@ -2985,8 +2988,8 @@
 				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
 				<searchEffect>DustPuff</searchEffect>
 				<effectSize>2.5</effectSize>
-				<lootCount>2~8</lootCount>
-				<lootChance>0.90</lootChance>
+				<lootCount>60~120</lootCount>
+				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
                     <li>DankPyon_RawWood</li>
@@ -2997,7 +3000,7 @@
 
 	<ThingDef ParentName="DankPyon_HideOutBuildingBase">
 		<defName>DankPyon_Hideout_RusticChest</defName>
-		<label>rustic chest (cultist)</label>
+		<label>rustic chest</label>
 		<description>A chest to store treasures and junk.</description>
 		<graphicData>
 			<texPath>Furniture/RusticChest</texPath>
@@ -3054,7 +3057,7 @@
 
 	<ThingDef ParentName="DankPyon_HideOutBuildingBase">
 		<defName>DankPyon_Hideout_RoyalChest</defName>
-		<label>royal chest (cultist)</label>
+		<label>royal chest</label>
 		<description>A chest to store treasures and junk.</description>
 		<graphicData>
 			<texPath>Furniture/RoyalChest</texPath>
@@ -3243,22 +3246,9 @@
 				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
-                    <!--li>DankPyon_Book_MilitaryBlades</li-->
-					<!-- <li>DankPyon_Book_NobleBlades</li> -->
-					<!-- <li>DankPyon_Book_MilitaryMaces</li> -->
-					<!-- <li>DankPyon_Book_NobleMaces</li> -->
-					<!-- <li>DankPyon_Book_MilitaryPolearms</li> -->
-					<!-- <li>DankPyon_Book_NoblePolearms</li> -->
-					<!-- <li>DankPyon_Book_Crossbow</li> -->
-					<!-- <li>DankPyon_Book_HeavyCrossbow</li> -->
 					<li>DankPyon_Book_Steel</li>
 					<li>DankPyon_Book_Gunpowder</li>
 					<li>DankPyon_Book_Tar</li>
-					<!-- <li>DankPyon_Book_GreatBow</li> -->
-					<!-- <li>DankPyon_Book_WarBow</li> -->
-                    <!-- <li>DankPyon_Book_IntermediateCooking</li> -->
-                    <!-- <li>DankPyon_Book_AdvancedCooking</li> -->
-                    <!-- <li>DankPyon_Book_BallistaRepeater</li> -->
 				</randomItems>
 			</li>
 		</modExtensions>
@@ -3297,20 +3287,11 @@
 				<lootChance>1</lootChance>
 				<isRandom>true</isRandom>
 				<randomItems>
-                    <!--li>DankPyon_Book_MilitaryBlades</li-->
 					<li>DankPyon_Book_NobleBlades</li>
-					<!-- <li>DankPyon_Book_MilitaryMaces</li> -->
 					<li>DankPyon_Book_NobleMaces</li>
-					<!-- <li>DankPyon_Book_MilitaryPolearms</li> -->
 					<li>DankPyon_Book_NoblePolearms</li>
-					<!-- <li>DankPyon_Book_Crossbow</li> -->
 					<li>DankPyon_Book_HeavyCrossbow</li>
-					<!-- <li>DankPyon_Book_Steel</li> -->
-					<!-- <li>DankPyon_Book_Gunpowder</li> -->
-					<!-- <li>DankPyon_Book_Tar</li> -->
-					<!-- <li>DankPyon_Book_GreatBow</li> -->
 					<li>DankPyon_Book_WarBow</li>
-                    <!-- <li>DankPyon_Book_IntermediateCooking</li> -->
                     <li>DankPyon_Book_AdvancedCooking</li>
                     <li>DankPyon_Book_BallistaRepeater</li>
 				</randomItems>

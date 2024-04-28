@@ -5,9 +5,17 @@
         <defName>DankPyon_QuestFinder</defName>
         <label>explorer's workbench</label>
 		<thingClass>MedievalOverhaul.Building_QuestScanner</thingClass>
-        <description>The explorer's workbench is a weathered and worn parchment, intricately detailed with ancient symbols and markings. It is said to hold the secrets of untold riches and forgotten quests, hidden deep within the realm. With this map in hand, and a keen sense of adventure, one may uncover the lost treasures of ages past and solve the mysteries of the land. Use with caution, for many have sought these riches before, and not all have returned.\n\nNote that there is a tier system in place.\nIn order to unlock higher tiered hideouts, you must obtain certain dungeon loot.\n\nThe requirements for each hideout are as follows:\n\nSmall Hideouts\nRequires: 0 linkables\nNote: Each Small Hideout contains a large bookshelf and an ancient pedestal.\n\nMedium Hideouts\nRequires: 4 linkables, including 1 ancient pedestal\nNote: Each medium hideout contains one large bookshelf and one ancient orb.\n\nLarge hideout\nRequires: 7 Linkables, 1 of which is the ancient orb\n\nDepending on the tier, the schematics you can find will vary.\nEach hideout has a guaranteed schematic. So be sure to check every corner, every cave and maybe even every cavity.</description>
+        <description>With the help of the Explorer's Workbench, a scientist can search for hidden locations and minable lumbs, but he needs torn notes to do so.
+		
+Depending on what is tied to the Explorer's Workbench, different locations can be unlocked.
+
+To find out more, view the tome of knowledge</description>
         <descriptionHyperlinks>
+			<ThingDef>DankPyon_CultBook</ThingDef>
+			<ThingDef>DankPyon_BirdPost</ThingDef>
 			<ThingDef>DankPyon_CultShelf</ThingDef>
+			<ThingDef>DankPyon_CultPedestal</ThingDef>
+			<ThingDef>DankPyon_CultOrb</ThingDef>
 		</descriptionHyperlinks>
 		<size>(3,3)</size>
         <graphicData>
@@ -28,7 +36,7 @@
         </stuffCategories>
         <costStuffCount>150</costStuffCount>
         <costList>
-            <DankPyon_TornNote_Hideout>3</DankPyon_TornNote_Hideout>
+            <DankPyon_TornNote_Hideout>1</DankPyon_TornNote_Hideout>
         </costList>
         <castEdgeShadows>true</castEdgeShadows>
         <staticSunShadowHeight>0.20</staticSunShadowHeight>
@@ -65,9 +73,9 @@
             </li>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
+					<li>DankPyon_CultBook</li>
 					<li>DankPyon_BirdPost</li>
 					<li>DankPyon_CultShelf</li>
-					<li>DankPyon_CultBook</li>
 					<li>DankPyon_CultPedestal</li>
 					<li>DankPyon_CultOrb</li>
                 </linkableFacilities>
@@ -124,21 +132,109 @@
 		<!-- <designationCategory>DankPyon_RuinFurniture</designationCategory> -->
 	</ThingDef>
 		
-	<ThingDef ParentName="DankPyon_QuestLinkables">
+	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_CultBook</defName>
 		<label>tome of knowledge</label>
-		<description>This ancient book is bound in brown and green leather, with an image of a skull emblazoned on its cover. The eye sockets of the skull seem to glow with an eerie green light. The book appears to be very old and has likely been in the possession of the Cult for a long time. It is filled with important information and secrets about other locations associated with the cult. The pages are filled with complex diagrams, maps, and mysterious symbols that are difficult to understand. Though the book is heavy, it can be moved and brought back to your base for further study. It is best to be handled with care, as the knowledge it holds is precious, and the cult members might not be too happy about it being taken.</description>
+		<description>This book contains valuable information about the requirements for hidden locations and their content.
+		
+Tier 0: Mineable Lumbs
+Features:
+*) Mineral Lumbs appear on the map
+
+Requirements:
+*) None
+--------------------------------------
+Note: Each hideout contains 1 explorer archive.
+--------------------------------------
+Tier 1: Small Hideout
+Features:
+*) 1 Ancient Lecturn
+*) 3 Torn notes
+*) 2 Rustic chests
+-) 60% chance to drop additional torn notes
+*) A strange book containing a guaranteed research schematic:
+-) Crossbow
+-) Greatbow
+-) Intermediate cooking
+-) Military Blades
+-) Military Maces
+-) Military Polearms
+
+Requirements:
+*) 1 total linkable:
+-) This linkable must be a fueled carrier bird
+--------------------------------------
+Tier 2: Medium Hideout
+Features:
+*) 1 Ancient Orb
+*) 2 Torn Notes
+*) 2 Rustic chests
+-) 60% to drop additional torn notes
+*) 1 Royal Chest
+-) 65% to drop additional torn notes
+*) A strange book containing a guaranteed research blueprint:
+-) Gunpowder
+-) Metallurgy
+-) Tar
+
+Requirements:
+*) 5 linkable in total:
+-) 1 must be the old lectern
+-) The rest can be one of the following:
+--) 3 explorer archives and 1 carrier bird
+--) 4 explorer archives
+--------------------------------------
+Tier 3: Large Hideout
+Features:
+*) 2 Torn notes*) 2 rustic chests
+-) 60% chance to drop additional torn notes
+*) 2 Royal Chests
+-) 65% chance to drop additional torn notes
+*) A strange book containing a guaranteed research schematic:
+-) Advanced cooking
+-) Ballista Repeater
+-) Heavy crossbow
+-) Noble Blades
+-) Noble maces
+-) Noble Polearms
+-) Warbow
+
+Requirements:
+*) 9 linkable in total:
+-) 1 must be the ancient orb
+-) The rest can be one of the following:
+--) 6 Exlorer's Archives AND 1 Carrier Bird AND 1 Ancient Lectern
+--) 7 Exlorer's Archives AND 1 Carrier Bird OR 1 Ancient Lectern
+--) 8 Exlorer's Archives</description>
 		<graphicData>
-		<texPath>Furniture/CultistsBook/CultistsBook</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<drawSize>(2,2)</drawSize>
+			<texPath>Furniture/CultistsBook/CultistsBook</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
 		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>20</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<fillPercent>0.35</fillPercent>
+		<clearBuildingArea>false</clearBuildingArea>
+		<size>(1,1)</size>
+		<building>
+			<isEdifice>false</isEdifice>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+
+		<thingCategories>
+			<li>DankPyon_BuildingsBook</li>
+		</thingCategories>
+
 		<statBases>
-			<MarketValue>500</MarketValue>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Beauty>20</Beauty>
-			<Mass>1</Mass>
-			<Flammability>1</Flammability>
+			<Flammability>0</Flammability>
+			<SellPriceFactor>1.30</SellPriceFactor>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+			<Mass>3</Mass>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Glower">
@@ -146,6 +242,13 @@
 				<glowColor>(195,200,9,0)</glowColor>
 			</li>
 		</comps>
+        <researchPrerequisites>
+            <li>DankPyon_Exploration</li>
+        </researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<modExtensions>
+			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
+		</modExtensions>
 	</ThingDef>
 		
 	<ThingDef ParentName="DankPyon_QuestLinkables">
@@ -223,7 +326,7 @@
 	<ThingDef ParentName="DankPyon_ShelfBase">
 		<defName>DankPyon_CultShelf</defName>
 		<label>explorer's archive</label>
-		<description>The Explorer's Archive can be linked to the Explorer's Workbench./nDepending on the level of Hideouts you want to locate, up to 8 may need to be linked to the Workbench./nIt can also be used to store up to 6 torn notes.</description>
+		<description>The Explorer's Archive can be linked to the Explorer's Workbench./nDepending on the level of Hideouts you want to locate, up to 8 may need to be linked to the Workbench./nIt can also be used to store up to 9 torn notes.</description>
         <descriptionHyperlinks>
 			<ThingDef>DankPyon_TornNote_Hideout</ThingDef>
 			<ThingDef>DankPyon_QuestFinder</ThingDef>
@@ -259,7 +362,7 @@
 		<designationCategory Inherit="False"/>
 		<costStuffCount>200</costStuffCount>
 		<building>
-			<maxItemsInCell>2</maxItemsInCell>
+			<maxItemsInCell>1</maxItemsInCell>
 			<fixedStorageSettings Inherit="false">
 				<priority>Important</priority>
 				<filter>

@@ -615,7 +615,10 @@
 
 		<modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
-				<enemySpawnChance>1</enemySpawnChance>
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.1</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
 					<texPath>Buildings/Ruin/RusticChestOpened</texPath>

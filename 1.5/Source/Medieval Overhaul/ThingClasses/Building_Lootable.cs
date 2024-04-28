@@ -118,32 +118,32 @@ namespace MedievalOverhaul
 
             if (!contentsKnown)
             {
-                if (Rand.Chance(lootableExt.lootChance) && enemySpawned == true && lootableExt.hostileEnemy == true)
-                {
-                    ThingDef lootableTD;
-                    // Random search results.
-                    if (lootableExt.isRandom == true)
+                    if (Rand.Chance(lootableExt.lootChance))
                     {
-                        lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
-                        if (lootableTD != null)
+                        ThingDef lootableTD;
+                        // Random search results.
+                        if (lootableExt.isRandom == true)
                         {
-                            Thing t1 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
-                            t1.stackCount = lootableExt.lootCount.RandomInRange;
-                            innerContainer.TryAdd(t1, lootableExt.lootCount.RandomInRange);
+                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
+                            if (lootableTD != null)
+                            {
+                                Thing t1 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
+                                t1.stackCount = lootableExt.lootCount.RandomInRange;
+                                innerContainer.TryAdd(t1, lootableExt.lootCount.RandomInRange);
+                            }
+                        }
+                        // Non-random search results.
+                        else
+                        {
+                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
+                            if (lootableTD != null)
+                            {
+                                Thing t2 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
+                                t2.stackCount = lootableExt.lootCount.RandomInRange;
+                                innerContainer.TryAdd(t2, lootableExt.lootCount.RandomInRange);
+                            }
                         }
                     }
-                    // Non-random search results.
-                    else
-                    {
-                        lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
-                        if (lootableTD != null)
-                        {
-                            Thing t2 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
-                            t2.stackCount = lootableExt.lootCount.RandomInRange;
-                            innerContainer.TryAdd(t2, lootableExt.lootCount.RandomInRange);
-                        }
-                    }
-                }
                 contentsKnown = false;
             }
         }
@@ -161,7 +161,6 @@ namespace MedievalOverhaul
                 //if (Rand.Chance(lootableExt.enemySpawnChance))
                 if (Rand.Chance(lootableExt.enemySpawnChance))
                 {
-                    enemySpawned = true;
                     Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()), lootableExt.spawnAsPlayerFaction ? Faction.OfPlayer : lootableExt.faction != null && FactionUtility.DefaultFactionFrom(lootableExt.faction) != null ? FactionUtility.DefaultFactionFrom(lootableExt.faction) : null, PawnGenerationContext.NonPlayer, -1, false, false, false, true, false, 1f, false, true, false, true, true, false, true, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f, DevelopmentalStage.Adult, null, null, null, true, false, false, -1, 0, false));
                     innerContainer.TryAdd(pawn, lootableExt.enemySpawnCount);
 
@@ -183,8 +182,9 @@ namespace MedievalOverhaul
             base.SpawnSetup(map, respawningAfterLoad);
             if (!contentsKnown && !respawningAfterLoad)
             {
-                EnemyGeneration();
+                
                 LootGeneration();
+                EnemyGeneration();
             }
         }
 
@@ -268,7 +268,6 @@ namespace MedievalOverhaul
             base.ExposeData();
         }
 
-        private bool enemySpawned;
         private static List<Pawn> tmpCanReach = new List<Pawn>();
         private static List<Pawn> tmpCanOpen = new List<Pawn>();
         private static List<Pawn> tmpAllowedPawns = new List<Pawn>();

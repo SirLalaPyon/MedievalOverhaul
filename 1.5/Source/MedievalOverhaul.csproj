@@ -38,6 +38,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerTrader_PowerOn.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\DamageWorker_Stun_Result.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Alert_PasteDispenserNeedsHopper.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Quest_End_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StaggerHandler_StaggerFor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_Meteorite_Reset.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Ingest_GetReport.cs" />
@@ -60,18 +61,8 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_StoreFuel_Patch.cs" />
     <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
     <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DropItems.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\Quest_End_Patch.cs" />
     <Compile Include="Medieval Overhaul\QuestFinderUtility.cs" />
     <Compile Include="Medieval Overhaul\GameComponent_QuestFinder.cs" />
-    <Compile Include="Medieval Overhaul\Fuel\CompProperties_StoreFuelThing.cs" />
-    <Compile Include="Medieval Overhaul\Fuel\CompStoreFuelThing.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FixBrokenDownBuilding_JobOnThing_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FixBrokenDownBuilding_HasJobOnThing_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FindBestFuel_Prefix.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\FuelRate.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\InspectStringPatch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\StoreFuel.cs" />
-    <Compile Include="Medieval Overhaul\Fuel\ITab_Fuel.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GolemImpactor.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_OperateQuest.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
@@ -80,8 +71,6 @@
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\HediffFallRateMultiplier.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\MeteorProperties.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ProcessorExtension.cs" />
-    <Compile Include="Medieval Overhaul\Mending\JobDriver_DoMending.cs" />
-    <Compile Include="Medieval Overhaul\Mending\WorkGiver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\DeathDropOptions.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RequireLinkables.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\QuestInformation.cs" />
@@ -153,7 +142,6 @@
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_HealScars.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\FuelValueProperty.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\HarmonyInstance.cs" />
-    <Compile Include="Medieval Overhaul\Harmony\HarmonyInstance.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_OperateQuest.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_Miner_Golem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

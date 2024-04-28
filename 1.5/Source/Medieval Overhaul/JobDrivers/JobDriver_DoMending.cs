@@ -528,15 +528,6 @@ namespace MedievalOverhaul
             job.placedThings = null;
             return list;
         }
-        private static Thing ConsumeIngredients(List<Thing> ingredients, RecipeDef recipe, Map map)
-        {
-            for (int i = 0; i < ingredients.Count; i++)
-            {
-                recipe.Worker.ConsumeIngredient(ingredients[i], recipe, map);
-                return ingredients[i];
-            }
-            return null;
-        }
         private static Thing CalculateDominantIngredient(Job job, List<Thing> ingredients)
         {
             UnfinishedThing uft = job.GetTarget(TargetIndex.B).Thing as UnfinishedThing;

@@ -7,11 +7,9 @@ using Verse;
 
 namespace MedievalOverhaul
 {
-    internal class GolemSpawn : DefModExtension
+    public class RequireLinkables : DefModExtension
     {
-        public PawnKindDef kindDef;
-
-        public static GolemSpawn Get(Def def) => def.GetModExtension<GolemSpawn>();
+        public int linkablesNeeded;
+        public ThingDef requiredLinkable;
     }
-
 }

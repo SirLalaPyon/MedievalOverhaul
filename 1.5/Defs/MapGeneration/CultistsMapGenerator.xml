@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GenStepDef>
+		<defName>Cultist_1Tier_Generation</defName>
+		<linkWithSite>Cultists_1Tier</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+		<structureLayoutDefs>
+			<li>DankPyon_1T_Hideout1_South</li>
+			<li>DankPyon_1T_Hideout2_South</li>
+			<li>DankPyon_1T_Hideout3_South</li>
+			<li>DankPyon_1T_Hideout1_North</li>
+			<li>DankPyon_1T_Hideout2_North</li>
+			<li>DankPyon_1T_Hideout3_North</li>
+		</structureLayoutDefs>
+		<preventBridgeable>true</preventBridgeable>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>ShadowSect_2Tier_Generation</defName>
+		<linkWithSite>Cultists_2Tier</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+		<structureLayoutDefs>
+			<li>DankPyon_2T_Hideout1_South</li>
+			<li>DankPyon_2T_Hideout1_North</li>
+			<li>DankPyon_2T_Hideout2_East</li>
+			<li>DankPyon_2T_Hideout2_West</li>
+			<li>DankPyon_2T_Hideout3_South</li>
+		</structureLayoutDefs>
+		<preventBridgeable>true</preventBridgeable>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>ShadowSect_3Tier_Generation</defName>
+		<linkWithSite>Cultists_3Tier</linkWithSite>
+		<order>460</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+		<structureLayoutDefs>
+			<li>DankPyon_3T_Hideout1_South</li>
+		</structureLayoutDefs>
+		<preventBridgeable>true</preventBridgeable>
+		</genStep>
+	</GenStepDef>
+</Defs>

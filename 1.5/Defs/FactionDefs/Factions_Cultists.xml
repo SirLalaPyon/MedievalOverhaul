@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase" Name="DankPyon_ShadowSectBase" Abstract="True">
+    <pawnSingular>cutist</pawnSingular>
+    <pawnsPlural>cutists</pawnsPlural>
+    <!--categoryTag>Outlander</categoryTag-->
+    <listOrderPriority>99</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>false</canMakeRandomly>
+    <canStageAttacks>false</canStageAttacks>
+    <leaderTitle>cultist leader</leaderTitle>
+    <!--fixedLeaderKinds>
+      <li>DankPyon_BrigandLeader</li>
+    </fixedLeaderKinds-->
+    <factionIconPath>WorldObjects/SC_Icon</factionIconPath>
+    <techLevel>Medieval</techLevel>
+    <factionNameMaker>DankPyon_SC_NamemakerFaction</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <allowedCultures><li>Kriminul</li></allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">BodyMod_Approved</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator_Preferred</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge_Preferred</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">AgeReversal_Demanded</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">2</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">2</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+
+	<hidden>true</hidden>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+
+    <permanentEnemy>true</permanentEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+  </FactionDef>
+
+<FactionDef ParentName="DankPyon_ShadowSectBase">
+    <defName>DankPyon_ShadowSect</defName>
+    <label>Cultists</label>
+    <description>DO NOT DEACTIVATE, IF YOU WANT TO RAID MEDIEVAL OVERHAUL HIDEOUTS.
+	
+	
+Deep within the shadows of the world, whispers persist of a malevolent force known only as the Cultists. Long thought extinguished from memory, they linger like a haunting specter, devoted to the worship of false deities and ensnared in the practice of grotesque sacrifices. Their clandestine rituals, cloaked in secrecy, echo with the screams of the damned and the scent of blood. Masters of disguise and manipulation, they weave a web of deception that veils their existence from the eyes of the world.
+
+Rumors abound of their insidious infiltration into every stratum of society, their tendrils coiling around the unsuspecting like serpents awaiting the moment to strike. Feeding on the flesh of the fallen, they are cannibals driven by primal hunger and twisted devotion. Yet amidst the horror, legends speak of hidden sanctuaries strewn with ancient relics and cursed treasures, concealed within their unholy enclaves.
+
+Beware the shadows, for within them lies the domain of the Cultists, a realm where darkness reigns eternal and the boundaries between nightmare and reality blur into oblivion.</description>
+    <colorSpectrum>
+        <li>(1, 1, 1)</li>
+        <li>(0.32, 0.3, 0.3)</li>
+    </colorSpectrum>
+    <factionIconPath>WorldObjects/SC_Icon</factionIconPath>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>60</configurationListOrderPriority>
+</FactionDef>
+
+
+</Defs>

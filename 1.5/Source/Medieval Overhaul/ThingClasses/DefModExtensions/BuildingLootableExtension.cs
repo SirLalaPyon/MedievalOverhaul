@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace MedievalOverhaul
@@ -21,6 +22,8 @@ namespace MedievalOverhaul
         public bool hostileEnemy = false;
         public int enemySpawnCount = 1;
         public float enemySpawnChance = 0.01f;
+        public FactionDef faction;
+        public bool spawnAsPlayerFaction;
 
         // Empty graphic stuff.
         public GraphicData emptyGraphicData;

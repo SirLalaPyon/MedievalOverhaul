@@ -16,28 +16,32 @@ namespace MedievalOverhaul
 
         public override void CompPostTick(ref float severityAdjustment)
         {
-            Pawn pawn = this.Pawn;
+           
+
             if (this.Pawn.IsHashIntervalTick(Props.tickInterval))
             {
-                List<Apparel> apparelList = pawn.apparel.WornApparel;
-                for (int i = 0; i < apparelList.Count; i++)
+                Pawn pawn = this.Pawn;
+                if (!pawn.health.hediffSet.HasHediff(MedievalOverhaulDefOf.DankPyon_LindwurmAcidImmune))
                 {
-                    Thing apparel = apparelList[i];
-                    if (apparel != null && apparel.def.GetModExtension<ApparelExtension_ImmuneLindwurmAcid>() == null)
+                    List<Apparel> apparelList = pawn.apparel.WornApparel;
+                    for (int i = 0; i < apparelList.Count; i++)
                     {
-                        if (apparel.HitPoints <= Props.apparelDamagePerInterval)
+                        Thing apparel = apparelList[i];
+                        if (apparel != null)
                         {
-                            apparel.HitPoints = 0;
-                            apparel.Destroy(DestroyMode.Vanish);
-                           // Find.LetterStack.ReceiveLetter(this.Props.letterLabelOnDisappear.Formatted(base.Pawn.Named("PAWN")), this.Props.letterTextOnDisappear.Formatted(base.Pawn.Named("PAWN")), LetterDefOf.PositiveEvent, base.Pawn, null, null, null, null, 0, true);
+                            if (apparel.HitPoints <= Props.apparelDamagePerInterval)
+                            {
+                                apparel.HitPoints = 0;
+                                apparel.Destroy(DestroyMode.Vanish);
+                            }
+                            else
+                                apparel.HitPoints -= Props.apparelDamagePerInterval;
                         }
-                        else
-                            apparel.HitPoints -= Props.apparelDamagePerInterval;
-                    }
 
+                    }
                 }
             }
-            
+
         }
     }
 }

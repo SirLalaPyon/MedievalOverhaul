@@ -189,15 +189,6 @@
 				</surpriseAttack>
 			</li>
 			<li>
-				<label>mouth</label>
-				<capacities>
-					<li>DankPyon_Swallow</li>
-				</capacities>
-				<power>23</power>
-				<cooldownTime>3</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
-			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
@@ -210,22 +201,13 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_Regeneration">
-				<rateInTicks>60</rateInTicks>
-			</li>
-			<li Class="AnimalBehaviours.CompProperties_SwallowWhole">
-				<stomachCapacity>1</stomachCapacity>
-				<maximumBodysize>1.2</maximumBodysize>
-				<digestionPeriod>240</digestionPeriod>
-				<sendLetterWhenEating>true</sendLetterWhenEating>
-				<letterLabel>DankPyon_TrollSwallLabel</letterLabel>
-				<letterText>DankPyon_TrollSwallowDesc</letterText>
-				<nutritionGained>5</nutritionGained>
-				<createFilthWhenKilled>true</createFilthWhenKilled>
-				<filthToMake>Filth_Blood</filthToMake>
-			</li>
 			<li Class="AnimalBehaviours.CompProperties_LastStand">
 				<finalCoolDownMultiplier>3</finalCoolDownMultiplier>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_TrollRegen">
+				<tickInterval>60</tickInterval>
+				<healAmount>30</healAmount>
+				<tickRegenBurn>1000</tickRegenBurn>
 			</li>
 		</comps>
 	</ThingDef>

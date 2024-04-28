@@ -1,24 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Webknecht -->
-	<ThingDef ParentName="EggFertBase">
-		<defName>DankPyon_EggWebknechtFertilized</defName>
-		<label>webknecht egg (fert.)</label>
-		<description>A fertilized webknecht egg. If all goes well, it should hatch into a baby webknecht. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
-			<color>(168,178,123)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>20.0</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>7.5</hatcherDaystoHatch>
-				<hatcherPawn>DankPyon_Webknecht</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
 
 	<!-- Large Cobra -->
 	<ThingDef ParentName="EggFertBase">
@@ -137,11 +118,11 @@
 		</comps>
 	</ThingDef>
 	
+	<!-- Webknecht -->
 	<ThingDef ParentName="EggFertBase">
 		<defName>DankPyon_Webknecht_EggFertilized</defName>
 		<label>webknecht egg (fert.)</label>
 		<description>A fertilized webknecht egg. If all goes well, it should hatch into a baby webknecht. It can be eaten raw, but it's much better cooked.</description>
-		<possessionCount>1</possessionCount>
 		<graphicData>
 			<color>(245,245,245)</color>
 		</graphicData>
@@ -156,11 +137,11 @@
 		</comps>
 	</ThingDef>
 	
+	<!-- Griffon -->
 	<ThingDef ParentName="EggFertBase">
 		<defName>DankPyon_Griffon_EggFertilized</defName>
 		<label>griffon egg (fert.)</label>
 		<description>A fertilized griffon egg. If all goes well, it should hatch into a baby griffon. It can be eaten raw, but it's much better cooked.</description>
-		<possessionCount>1</possessionCount>
 		<graphicData>
 			<color>(245,245,245)</color>
 		</graphicData>

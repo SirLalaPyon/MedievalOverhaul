@@ -60,12 +60,16 @@ namespace MedievalOverhaul
         public static JobDef DankPyon_Slop_Refuel_Stat;
         public static JobDef DankPyon_DoBillMending;
         public static JobDef DankPyon_Mine_Golem;
+        public static JobDef DankPyon_OperateQuest;
 
         public static BodyDef Bird;
 
         public static SoundDef MeleeHit_Wood;
         public static SoundDef BulletImpact_Wood;
         public static SoundDef Pawn_Melee_Punch_HitBuilding_Wood;
+
+        public static HediffDef DankPyon_LindwurmAcidImmune;
+        public static HediffDef DankPyon_StunImmune;
 
         static MedievalOverhaulDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MedievalOverhaulDefOf));
     }

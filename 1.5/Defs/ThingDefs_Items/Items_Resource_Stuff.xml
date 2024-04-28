@@ -199,45 +199,4 @@
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 	</ThingDef>
 
-	<ThingDef ParentName="ResourceBase">
-		<defName>DankPyon_Spider_Silk</defName>
-		<label>webknecht silk</label>
-		<description>A cloth crafted from Webknecht webs boasts exceptional durability and flexibility, providing its wearer with both resilience and freedom of movement in the perilous world of mercenaries and mercenaries.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/Synthread</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<MarketValue>4</MarketValue>
-			<Mass>0.025</Mass>
-			<Flammability>2</Flammability>
-			<DeteriorationRate>3</DeteriorationRate>
-			<StuffPower_Armor_Sharp>0.94</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.0</StuffPower_Armor_Blunt>
-			<StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
-			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
-		</statBases>
-		<burnableByRecipe>true</burnableByRecipe>
-		<healthAffectsPrice>false</healthAffectsPrice>
-		<minRewardCount>30</minRewardCount>
-		<stuffProps>
-			<categories>
-				<li>Fabric</li>
-			</categories>
-			<commonality>0.15</commonality>
-			<color>(174,219,228)</color>
-			<statFactors>
-				<Flammability>2</Flammability>
-				<MaxHitPoints>1.3</MaxHitPoints>
-				<Beauty>2.3</Beauty>
-			</statFactors>
-		</stuffProps>
-		<thingCategories>
-			<li>Textiles</li>
-		</thingCategories>
-		<allowedArchonexusCount>80</allowedArchonexusCount>
-	</ThingDef>
-
 </Defs>

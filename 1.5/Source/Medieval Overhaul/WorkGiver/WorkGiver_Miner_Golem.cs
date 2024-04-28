@@ -58,7 +58,6 @@ namespace MedievalOverhaul
             }
             List<Designation>.Enumerator enumerator = default(List<Designation>.Enumerator);
             yield break;
-            yield break;
         }
 
         public override bool ShouldSkip(Pawn pawn, bool forced = false)

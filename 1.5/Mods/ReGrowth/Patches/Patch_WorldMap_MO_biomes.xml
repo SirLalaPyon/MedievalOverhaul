@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/BiomeDef[defName = "DankPyon_DarkForest"]</xpath>
 		<value>
-			<li Class="BiomesKit.BiomesKitControls">
+			<li Class="ReGrowthCore.BiomesKitControl">
 				<forested>true</forested>
 				<uniqueHills>true</uniqueHills>
 				<forestSnowyBelow>1</forestSnowyBelow>
@@ -31,7 +31,7 @@
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>/Defs/BiomeDef[defName = "DankPyon_AncientForest"]</xpath>
 		<value>
-			<li Class="BiomesKit.BiomesKitControls">
+			<li Class="ReGrowthCore.BiomesKitControl">
 				<forested>true</forested>
 				<uniqueHills>true</uniqueHills>
 				<forestDenseAbove>1100</forestDenseAbove>

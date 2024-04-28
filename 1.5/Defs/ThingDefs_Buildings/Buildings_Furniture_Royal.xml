@@ -34,6 +34,7 @@
 			<Beauty>30</Beauty>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
+		<pathCost>50</pathCost>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -89,6 +90,7 @@
 			<Beauty>30</Beauty>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
+		<pathCost>50</pathCost>
 		<costList>
 			<DankPyon_Silk>30</DankPyon_Silk>
 			<Gold>30</Gold>
@@ -419,6 +421,5 @@
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>
 	</ThingDef>
-  
-  
+
 </Defs>

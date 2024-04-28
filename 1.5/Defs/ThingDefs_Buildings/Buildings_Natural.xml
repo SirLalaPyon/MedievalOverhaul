@@ -76,11 +76,6 @@
 			</mineableScatterLumpSizeRange>
 			<veinMineable>true</veinMineable>
 		</building>
-		<modExtensions>
-			<li Class="MedievalOverhaul.GolemSpawn">
-				<kindDef>DankPyon_Golem_Gold</kindDef>
-			</li>
-		</modExtensions>
 	</ThingDef>
     
 	<ThingDef ParentName="RockBase">
@@ -105,11 +100,6 @@
 			<mineableScatterLumpSizeRange>30~40</mineableScatterLumpSizeRange>
 			<veinMineable>true</veinMineable>
 		</building>
-		<modExtensions>
-			<li Class="MedievalOverhaul.GolemSpawn">
-				<kindDef>DankPyon_Golem_Iron</kindDef>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<!--============================ Gemstone ===============================-->

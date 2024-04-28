@@ -2,6 +2,8 @@
 using System.Linq;
 using RimWorld;
 using Verse;
+using Verse.AI;
+using static HarmonyLib.Code;
 
 namespace MedievalOverhaul
 {
@@ -47,6 +49,65 @@ namespace MedievalOverhaul
             }
         }
 
+        public override IEnumerable<FloatMenuOption> GetMultiSelectFloatMenuOptions(List<Pawn> selPawns)
+        {
+            foreach (FloatMenuOption floatMenuOption in base.GetMultiSelectFloatMenuOptions(selPawns))
+            {
+                yield return floatMenuOption;
+            }
+            IEnumerator<FloatMenuOption> enumerator = null;
+            if (!this.CanOpen)
+            {
+                yield break;
+            }
+            Building_Lootable.tmpCanReach.Clear();
+            Building_Lootable.tmpCanOpen.Clear();
+            for (int i = 0; i < selPawns.Count; i++)
+            {
+                if (selPawns[i].RaceProps.Humanlike)
+                {
+                    if (selPawns[i].CanReach(this, PathEndMode.InteractionCell, Danger.Deadly, false, false, TraverseMode.ByPawn))
+                    {
+                        Building_Lootable.tmpCanReach.Add(selPawns[i]);
+                    }
+                    if (this.IsCapableOfOpening(selPawns[i]))
+                    {
+                        Building_Lootable.tmpCanOpen.Add(selPawns[i]);
+                    }
+                }
+            }
+            if (Building_Lootable.tmpCanReach.Count == 0)
+            {
+                yield return new FloatMenuOption("CannotOpen".Translate(this) + ": " + "NoPath".Translate().CapitalizeFirst(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                yield break;
+            }
+            if (Building_Lootable.tmpCanOpen.Count == 0)
+            {
+                yield return new FloatMenuOption("CannotOpen".Translate(this.Label) + ": " + "Incapable".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                yield break;
+            }
+            Building_Lootable.tmpAllowedPawns.Clear();
+            for (int i = 0; i < tmpCanReach.Count; i++)
+            {
+                if (tmpCanOpen.Contains(tmpCanReach[i]))
+                {
+                    tmpAllowedPawns.Add(tmpCanReach[i]);
+                }
+            }
+            if (tmpAllowedPawns.Count > 0)
+            {
+                yield return new FloatMenuOption("Open".Translate(this), delegate ()
+                {
+                    Building_Lootable.tmpAllowedPawns[0].jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Open, this), new JobTag?(JobTag.Misc), false);
+                    for (int i = 1; i < Building_Lootable.tmpAllowedPawns.Count; i++)
+                    {
+                        FloatMenuMakerMap.PawnGotoAction(base.Position, Building_Lootable.tmpAllowedPawns[i], RCellFinder.BestOrderedGotoDestNear(base.Position, Building_Lootable.tmpAllowedPawns[i], null));
+                    }
+                }, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+            }
+            yield break;
+        }
+
         /// <summary>
         /// Randomly generates and stores items for a player to find via looting, stored inside the innerContainer.
         /// Contents of the ThingOwner are unknown until the building is searched.
@@ -57,32 +118,32 @@ namespace MedievalOverhaul
 
             if (!contentsKnown)
             {
-                if (Rand.Chance(lootableExt.lootChance))
-                {
-                    ThingDef lootableTD;
-                    // Random search results.
-                    if (lootableExt.isRandom == true)
+                    if (Rand.Chance(lootableExt.lootChance))
                     {
-                        lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
-                        if (lootableTD != null)
+                        ThingDef lootableTD;
+                        // Random search results.
+                        if (lootableExt.isRandom == true)
                         {
-                            Thing t1 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
-                            t1.stackCount = lootableExt.lootCount.RandomInRange;
-                            innerContainer.TryAdd(t1, lootableExt.lootCount.RandomInRange);
+                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
+                            if (lootableTD != null)
+                            {
+                                Thing t1 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
+                                t1.stackCount = lootableExt.lootCount.RandomInRange;
+                                innerContainer.TryAdd(t1, lootableExt.lootCount.RandomInRange);
+                            }
+                        }
+                        // Non-random search results.
+                        else
+                        {
+                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
+                            if (lootableTD != null)
+                            {
+                                Thing t2 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
+                                t2.stackCount = lootableExt.lootCount.RandomInRange;
+                                innerContainer.TryAdd(t2, lootableExt.lootCount.RandomInRange);
+                            }
                         }
                     }
-                    // Non-random search results.
-                    else
-                    {
-                        lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
-                        if (lootableTD != null)
-                        {
-                            Thing t2 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
-                            t2.stackCount = lootableExt.lootCount.RandomInRange;
-                            innerContainer.TryAdd(t2, lootableExt.lootCount.RandomInRange);
-                        }
-                    }
-                }
                 contentsKnown = false;
             }
         }
@@ -100,9 +161,7 @@ namespace MedievalOverhaul
                 //if (Rand.Chance(lootableExt.enemySpawnChance))
                 if (Rand.Chance(lootableExt.enemySpawnChance))
                 {
-                    PawnGenerationRequest request = new(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()),
-                        null, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, 0f, false, false, true, true, false, false);
-                    Pawn pawn = PawnGenerator.GeneratePawn(request);
+                    Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named(lootableExt.enemysToSpawn.RandomElement()), lootableExt.spawnAsPlayerFaction ? Faction.OfPlayer : lootableExt.faction != null && FactionUtility.DefaultFactionFrom(lootableExt.faction) != null ? FactionUtility.DefaultFactionFrom(lootableExt.faction) : null, PawnGenerationContext.NonPlayer, -1, false, false, false, true, false, 1f, false, true, false, true, true, false, true, false, false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, null, false, false, false, false, null, null, null, null, null, 0f, DevelopmentalStage.Adult, null, null, null, true, false, false, -1, 0, false));
                     innerContainer.TryAdd(pawn, lootableExt.enemySpawnCount);
 
                     if (pawn.kindDef.defName.Contains("Empire_"))
@@ -123,6 +182,7 @@ namespace MedievalOverhaul
             base.SpawnSetup(map, respawningAfterLoad);
             if (!contentsKnown && !respawningAfterLoad)
             {
+                
                 LootGeneration();
                 EnemyGeneration();
             }
@@ -154,6 +214,7 @@ namespace MedievalOverhaul
                 base.Destroy();
             }
         }
+
 
         /// <summary>
         /// Once innerContainer is opened, contents thrown out to valid cell.
@@ -198,10 +259,17 @@ namespace MedievalOverhaul
                 return DefaultGraphic;
             }
         }
-
+        private bool IsCapableOfOpening(Pawn pawn)
+        {
+            return !pawn.IsMutant && pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation);
+        }
         public override void ExposeData()
         {
             base.ExposeData();
         }
+
+        private static List<Pawn> tmpCanReach = new List<Pawn>();
+        private static List<Pawn> tmpCanOpen = new List<Pawn>();
+        private static List<Pawn> tmpAllowedPawns = new List<Pawn>();
     }
 }

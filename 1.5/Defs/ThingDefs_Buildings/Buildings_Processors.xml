@@ -457,16 +457,13 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<costList>
 			<DankPyon_IronIngot>10</DankPyon_IronIngot>
 		</costList>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
-
 		<comps>
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>25</capacity>
@@ -492,7 +489,6 @@
 			</buildingTags>
 			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
 		</building>
-
 		<designationCategory>Production</designationCategory>
 		<researchPrerequisites>
 			<li>DankPyon_Silk</li>
@@ -518,12 +514,10 @@
 			</damageData>
 		</graphicData>
 		<uiIconScale>0.85</uiIconScale>
-    
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -540,7 +534,6 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>200</capacity>
@@ -562,7 +555,6 @@
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
-
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
 				<fuelCapacity>100.0</fuelCapacity>
@@ -584,9 +576,7 @@
 				<heatPushMaxTemperature>18</heatPushMaxTemperature>
 			</li>
 		</comps>
-    
 		<tickerType>Rare</tickerType>
-
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>

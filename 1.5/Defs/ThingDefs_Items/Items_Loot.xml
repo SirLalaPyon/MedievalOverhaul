@@ -716,7 +716,13 @@
         <defName>DankPyon_TornNote_Hideout</defName>
         <label>torn note</label>
         <stackLimit>3</stackLimit>
-        <description>Metal weapon scraps thare are broken and unusable. Can be smelted to recover resources.</description>
+        <description>Torn Notes can be used at the explorer's table (as fuel). They contain information about hideouts and other locations, such as mineable lumbs. 
+		
+		Furthermore, they can be stored in the explorer's archive, which is a shelf found in hideouts. So make sure to take them with you!</description>
+        <descriptionHyperlinks>
+			<ThingDef>DankPyon_QuestFinder</ThingDef>
+			<ThingDef>DankPyon_CultShelf</ThingDef>
+		</descriptionHyperlinks>		
         <graphicData>
             <texPath>Special/TornNote</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>

@@ -7,8 +7,8 @@
 		<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
 		<description>Mimic</description>
 		<statBases>
-			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.11</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
 			<PsychicSensitivity>0.5</PsychicSensitivity>
 			<MoveSpeed>4.0</MoveSpeed>
 			<MarketValue>35</MarketValue>
@@ -144,7 +144,7 @@
 						<thingDefs>
 							<li>DankPyon_TornNote_Hideout</li>
 						</thingDefs>
-						<amount>2</amount>
+						<amount>1</amount>
 						<chance>1</chance>
 					</li>
 					<li>
@@ -165,7 +165,7 @@
 							<li>DankPyon_Ring_Ruby</li>
 						</thingDefs>
 						<amount>1</amount>
-						<chance>0.15</chance>
+						<chance>0.33</chance>
 					</li>
 				</deathDropOptions>
 			</li>
@@ -226,8 +226,8 @@
 		<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
 		<description>Mimic</description>
 		<statBases>
-			<ArmorRating_Blunt>0.44</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.31</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<PsychicSensitivity>0.5</PsychicSensitivity>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -362,7 +362,7 @@
 						<thingDefs>
 							<li>DankPyon_TornNote_Hideout</li>
 						</thingDefs>
-						<amount>3</amount>
+						<amount>2</amount>
 						<chance>1</chance>
 					</li>
 					<li>
@@ -383,7 +383,7 @@
 							<li>DankPyon_Ring_Ruby</li>
 						</thingDefs>
 						<amount>1</amount>
-						<chance>0.25</chance>
+						<chance>0.33</chance>
 					</li>
 				</deathDropOptions>
 			</li>

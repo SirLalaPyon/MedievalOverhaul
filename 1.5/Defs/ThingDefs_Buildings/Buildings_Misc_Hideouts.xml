@@ -79,7 +79,7 @@
             <li>PlaceWorker_ShowFacilitiesConnections</li>
         </placeWorkers>
         <researchPrerequisites>
-            <li>DankPyon_Explorer</li>
+            <li>DankPyon_Exploration</li>
         </researchPrerequisites>
 		<designationCategory>Misc</designationCategory>
     </ThingDef>
@@ -121,7 +121,7 @@
         <placeWorkers>
             <li>PlaceWorker_ShowFacilitiesConnections</li>
         </placeWorkers>
-		<designationCategory>DankPyon_RuinFurniture</designationCategory>
+		<!-- <designationCategory>DankPyon_RuinFurniture</designationCategory> -->
 	</ThingDef>
 		
 	<ThingDef ParentName="DankPyon_QuestLinkables">
@@ -220,36 +220,15 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_QuestLinkables">
+	<ThingDef ParentName="DankPyon_ShelfBase">
 		<defName>DankPyon_CultShelf</defName>
 		<label>explorer's archive</label>
-		<description>The Explorer's Archive can be linked to the Explorer's Workbench.
-Depending on the level of Hideouts you want to locate, up to 8 may need to be linked to the Workbench.
-
-It can also be used to store up to 12 torn notes.</description>
+		<description>The Explorer's Archive can be linked to the Explorer's Workbench./nDepending on the level of Hideouts you want to locate, up to 8 may need to be linked to the Workbench./nIt can also be used to store up to 6 torn notes.</description>
         <descriptionHyperlinks>
 			<ThingDef>DankPyon_TornNote_Hideout</ThingDef>
 			<ThingDef>DankPyon_QuestFinder</ThingDef>
-		</descriptionHyperlinks>		
-		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		</descriptionHyperlinks>
 		<altitudeLayer>PawnUnused</altitudeLayer>
-		<passability>Impassable</passability>
-		<fillPercent>1</fillPercent>
-		<pathCost>10</pathCost>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<defaultPlacingRot>South</defaultPlacingRot>
-		<uiIconPath>Furniture/LibraryShelf/LibraryShelf_south</uiIconPath>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>750</WorkToBuild>
-			<Mass>10</Mass>
-			<Flammability>1.0</Flammability>
-			<Beauty>20</Beauty>
-		</statBases>
-		<holdsRoof>false</holdsRoof>
-		<canOverlapZones>false</canOverlapZones>
-		<rotatable>true</rotatable>
-		<fertility>0</fertility>
 		<graphicData>
 			<texPath>Furniture/LibraryShelf/LibraryShelf</texPath>
 			<drawSize>(6.5,6.5)</drawSize>
@@ -257,23 +236,46 @@ It can also be used to store up to 12 torn notes.</description>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawRotated>false</drawRotated>
-			<shadowData>
+			<!--shadowData>
 				<volume>(0.3, 0.5, 0.3)</volume>
 				<offset>(0,0,-0.23)</offset>
-			</shadowData>
+			</shadowData-->
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
 		</graphicData>
-		<uiIconScale>1</uiIconScale>
 		<size>(3,1)</size>
-		<stuffCategories>
+		<uiIconPath>Furniture/LibraryShelf/LibraryShelf_south</uiIconPath>
+		<stuffCategories Inherit="False">
 			<li>Stony</li>
 			<li>Metallic</li>
 		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>16</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<designationCategory Inherit="False"/>
 		<costStuffCount>200</costStuffCount>
-		<building Inherit="False">
-			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		<building>
+			<maxItemsInCell>2</maxItemsInCell>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_TornNote_Hideout</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_TornNote_Hideout</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
 		</building>
 		<comps Inherit="False">
 			<li Class="CompProperties_Styleable"/>
@@ -281,6 +283,5 @@ It can also be used to store up to 12 torn notes.</description>
 				<maxSimultaneous>8</maxSimultaneous>
 			</li>
 		</comps>
-	</ThingDef>  
-
+	</ThingDef>
 </Defs>

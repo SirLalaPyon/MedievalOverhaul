@@ -230,18 +230,14 @@ namespace MedievalOverhaul
                 log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier) );
             else
                 log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, 0.40f);
-
             if (wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier) != null)
                 log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier));
             else
                 log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, 0.9f);
-            if (wood.tools != null)
-            {
-                log.tools = wood.tools;
-            }
-            if (wood.comps != null) { log.comps = wood.comps; }
-            if (wood.techLevel != null) { log.techLevel = wood.techLevel; } 
-            if (wood.equipmentType != null) { log.equipmentType = wood.equipmentType; } 
+            log.tools = wood.tools;
+            log.comps = wood.comps;
+            log.techLevel = wood.techLevel; 
+            log.equipmentType = wood.equipmentType; 
             if (wood.weaponClasses != null)
             { 
                 log.weaponClasses = wood.weaponClasses;

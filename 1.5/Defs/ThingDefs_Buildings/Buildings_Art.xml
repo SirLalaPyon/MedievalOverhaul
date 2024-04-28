@@ -304,14 +304,12 @@
 		<defName>DankPyon_Brazier1x1c</defName>
 		<label>ancient brazier</label>
 		<description>An ancient brazier, burning ever so brightly.</description>
-    
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Art/AncientBrazier1x1</texPath>
 			<drawSize>(2,2)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-    
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Mass>3</Mass>
@@ -319,7 +317,6 @@
 			<WorkToMake>18000</WorkToMake>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-  
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -329,7 +326,6 @@
 		<costList>
 			<Gold>25</Gold>
 		</costList>
-
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<placeWorkers>
@@ -337,7 +333,6 @@
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-
 		<comps Inherit="False">
 			<li>
 				<compClass>CompQuality</compClass>
@@ -388,13 +383,12 @@
 			</li>
 		</comps>
 	</ThingDef>
-  
+
 	<!--  =========== Ice Base Classes ============ -->
 	<!-- Artwork Base Class -->
 	<ThingDef Name="IceArtworkBase" Abstract="True">
 		<category>Building</category>
 		<thingClass>Building_Art</thingClass>
-
 		<graphicData>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -410,7 +404,6 @@
 		<thingCategories>
 			<li>BuildingsArt</li>
 		</thingCategories>
-		
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<repairEffect>Repair</repairEffect>
@@ -427,7 +420,6 @@
 		<building>
 			<repairable>false</repairable>
 		</building>
-  
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_HeatPusher">
@@ -437,7 +429,6 @@
 			</li>
 			<li><compClass>CompQuality</compClass></li>
 		</comps>
-
 		<inspectorTabs><li>ITab_Art</li></inspectorTabs>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -451,7 +442,7 @@
 		</recipeMaker>
 		<tradeTags><li>Exotic</li></tradeTags>
 	</ThingDef>
-  
+
 	<!-- Artwork Sculpture Class -->
 	<ThingDef Name="IceArtworkSculpture" ParentName="IceArtworkBase" Abstract="True">
 		<comps>
@@ -463,7 +454,6 @@
 		</comps>
 	</ThingDef>
 
-  
 	<!--  =========== Actual Artwork Buildings ============ -->
 	<!-- ========= Sculptures ========= -->
 	<!-- Small Ice Sculpture -->
@@ -570,4 +560,5 @@
       </li>	
     </comps>
   </ThingDef-->
+
 </Defs>

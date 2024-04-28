@@ -17,4 +17,3 @@ namespace MedievalOverhaul
             return def.GetModExtension<RecipeExtension_Mine>();
         }
     }
-}

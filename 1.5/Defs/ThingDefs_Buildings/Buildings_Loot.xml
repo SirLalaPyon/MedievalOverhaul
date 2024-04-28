@@ -11,7 +11,6 @@
 		<fillPercent>0.35</fillPercent>
 		<rotatable>false</rotatable>
 		<clearBuildingArea>false</clearBuildingArea>
-
 		<thingCategories>
 			<li>DankPyon_BuildingsLoot</li>
 		</thingCategories>
@@ -19,18 +18,15 @@
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
-
 		<statBases>
 			<Flammability>0</Flammability>
 			<SellPriceFactor>1.10</SellPriceFactor>
 			<MeditationFocusStrength>0.0</MeditationFocusStrength>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-   
 		<tradeTags>
 			<li>DankPyon_Loot</li>
 		</tradeTags>
-
 		<comps>
 			<li Class="CompProperties_Styleable"/>
 		</comps>
@@ -49,14 +45,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-    
 		<statBases>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Beauty>26</Beauty>
 			<Mass>1</Mass>
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
-
 		<costList>
 			<Silver>30</Silver>
 		</costList>
@@ -70,14 +64,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Beauty>100</Beauty>
 			<Mass>1</Mass>
 			<WorkToMake>9000</WorkToMake>
 		</statBases>
-
 		<costList>
 			<Gold>3</Gold>
 			<DankPyon_Ruby>10</DankPyon_Ruby>
@@ -93,14 +85,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>26</Beauty>
 			<Mass>2</Mass>
 			<WorkToMake>4000</WorkToMake>
 		</statBases>
-
 		<costList>
 			<Silver>30</Silver>
 		</costList>
@@ -114,14 +104,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>60</Beauty>
 			<Mass>2</Mass>
 			<WorkToMake>9000</WorkToMake>
 		</statBases>
-
 		<costList>
 			<Gold>30</Gold>
 		</costList>
@@ -136,7 +124,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Beauty>220</Beauty>
@@ -144,7 +131,6 @@
 			<WorkToMake>15000</WorkToMake>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
-
 		<costList>
 			<Gold>50</Gold>
 		</costList>
@@ -158,7 +144,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Beauty>220</Beauty>
@@ -166,7 +151,6 @@
 			<WorkToMake>15000</WorkToMake>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
-
 		<costList>
 			<DankPyon_Emerald>50</DankPyon_Emerald>
 		</costList>
@@ -180,7 +164,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Beauty>249</Beauty>
@@ -188,7 +171,6 @@
 			<WorkToMake>15000</WorkToMake>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
-
 		<costList>
 			<DankPyon_Sapphire>50</DankPyon_Sapphire>
 		</costList>
@@ -202,7 +184,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Beauty>288</Beauty>
@@ -210,7 +191,6 @@
 			<WorkToMake>15000</WorkToMake>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
-
 		<costList>
 			<DankPyon_Ruby>50</DankPyon_Ruby>
 		</costList>
@@ -225,7 +205,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Beauty>60</Beauty>
@@ -233,7 +212,6 @@
 			<Flammability>0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
-
 		<costList>
 			<Gold>50</Gold>
 		</costList>

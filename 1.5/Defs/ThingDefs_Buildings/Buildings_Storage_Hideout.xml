@@ -12,7 +12,7 @@
 	<ThingDef Name="DankPyon_HideOutBuildingBase" ParentName="DankPyon_LootBuilding" Abstract="True">
         <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
         <tickerType>Normal</tickerType>
-		<designationCategory>DankPyon_RuinFurniture</designationCategory>
+		<!-- <designationCategory>DankPyon_RuinFurniture</designationCategory> -->
 	</ThingDef>
 
   	<!-- ==================== Wood Logs ==================== -->

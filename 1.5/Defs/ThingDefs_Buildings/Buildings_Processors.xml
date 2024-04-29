@@ -135,7 +135,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_RawhideRack</defName>
 		<label>rawhide rack</label>
-		<description>A standing rack for treating raw hides to become useful leathers.</description>
+		<description>A standing rack for drying raw hides into stiff and untanned leathers.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -197,7 +197,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_TanningRack</defName>
 		<label>tanning rack</label>
-		<description>A standing rack for treating raw hides to become useful leathers.</description>
+		<description>A standing rack for treating raw hides to become soft and beautfil leathers.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>

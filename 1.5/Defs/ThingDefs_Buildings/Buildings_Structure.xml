@@ -171,6 +171,168 @@
 		<designationHotKey>Misc1</designationHotKey>
 	</ThingDef>
 
+	<ThingDef ParentName="DoorBase">
+		<defName>DankPyon_RusticDoor1x2c</defName>
+		<label>rustic door (1x2)</label>
+		<description>Divides rooms. This large, heavy door requires adjacent walls to function.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>3600</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<graphicData>
+		<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Mover</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<!--shaderType>CutoutComplex</shaderType-->
+		<damageData>
+			<enabled>false</enabled>
+		</damageData>
+		</graphicData>
+		<uiIconPath>Buildings/RusticDoor1x2/RusticDoor1x2_MenuIcon_south</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(2, 1)</size>
+		<rotatable>true</rotatable>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<costStuffCount>75</costStuffCount>
+		<building>
+		<blueprintClass>Blueprint_Build</blueprintClass>
+		<blueprintGraphicData>
+			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_MenuIcon</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>EdgeDetect</shaderType>
+			<drawSize>(3,2)</drawSize>
+		</blueprintGraphicData>
+		<doorTopGraphic>
+			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Top</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 2)</drawSize>
+		</doorTopGraphic>
+		<doorSupportGraphic>
+			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Support</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 2)</drawSize>
+		</doorSupportGraphic>
+		</building>
+		<researchPrerequisites>
+		<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<placeWorkers>
+		<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="DoorBase">
+		<defName>DankPyon_Gate1x2c</defName>
+		<label>gate (1x2)</label>
+		<description>Divides rooms. This large, heavy door requires adjacent walls to function.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>3600</WorkToBuild>
+			<MaxHitPoints>290</MaxHitPoints>
+		</statBases>
+		<graphicData>
+		<texPath>Buildings/Gate1x2/Gate1x2_Mover</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<!--shaderType>CutoutComplex</shaderType-->
+		<damageData>
+			<enabled>false</enabled>
+		</damageData>
+		</graphicData>
+		<uiIconPath>Buildings/Gate1x2/Gate1x2_MenuIcon_south</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(2, 1)</size>
+		<rotatable>true</rotatable>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories Inherit="False">
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+
+		<building>
+		<blueprintClass>Blueprint_Build</blueprintClass>
+		<blueprintGraphicData>
+			<texPath>Buildings/Gate1x2/Gate1x2_MenuIcon</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>EdgeDetect</shaderType>
+			<drawSize>(3,2)</drawSize>
+		</blueprintGraphicData>
+		<doorTopGraphic>
+			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Top</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 2)</drawSize>
+		</doorTopGraphic>
+		<doorSupportGraphic>
+			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Support</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 2)</drawSize>
+		</doorSupportGraphic>
+		</building>
+		<researchPrerequisites>
+		<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<placeWorkers>
+		<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="DoorBase">
+		<defName>DankPyon_SlabDoor1x2c</defName>
+		<label>slab door (1x2)</label>
+		<description>Divides rooms. This large, heavy door requires adjacent walls to function.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<MaxHitPoints>340</MaxHitPoints>
+			<DoorOpenSpeed>0.4</DoorOpenSpeed>
+		</statBases>
+		<graphicData>
+		<texPath>Buildings/SlabDoor1x2/SlabDoor1x2_Mover</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<!--shaderType>CutoutComplex</shaderType-->
+		<damageData>
+			<enabled>false</enabled>
+		</damageData>
+		</graphicData>
+		<uiIconPath>Buildings/SlabDoor1x2/SlabDoor1x2_MenuIcon_south</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(2, 1)</size>
+		<rotatable>true</rotatable>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories Inherit="False">
+			<li>Stony</li>
+		</stuffCategories>
+
+		<building>
+		<blueprintClass>Blueprint_Build</blueprintClass>
+		<blueprintGraphicData>
+			<texPath>Buildings/SlabDoor1x2/SlabDoor1x2_MenuIcon</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>EdgeDetect</shaderType>
+			<drawSize>(3,2)</drawSize>
+		</blueprintGraphicData>
+		<doorTopGraphic>
+			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Top</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 2)</drawSize>
+		</doorTopGraphic>
+		<doorSupportGraphic>
+			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Support</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 2)</drawSize>
+		</doorSupportGraphic>
+		</building>
+		<researchPrerequisites>
+		<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<placeWorkers>
+		<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+	</ThingDef>
+
 	<!--========================= Frames =============================-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Frame_Log</defName>

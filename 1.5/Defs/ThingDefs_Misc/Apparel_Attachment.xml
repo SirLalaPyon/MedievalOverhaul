@@ -233,5 +233,55 @@
 			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_LindwurmCloak</defName>
+		<label>lindwurm scale cloak</label>
+		<description>A scaly robust cloak sewn from a lindwurm's scales. Wearing the cloak displays owner's strength, as it is proof that they have slain a dangerous lindwurm to don the trophy. While intimidating the fearful, the pelt also grants protection from lindwurm acid.</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/LindwurmScaleCloak</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_LindwurmScales>2</DankPyon_LindwurmScales>
+			<DankPyon_UnholdHide>1</DankPyon_UnholdHide>
+		</costList>
+		<statBases>
+			<MarketValue>450</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<Insulation_Cold>2</Insulation_Cold>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Attachments/LindwurmScaleCloak</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<layers>
+				<li>DankPyon_ShellAttachment</li>
+			</layers>
+			<tags>
+				<li>DankPyon_Attachment</li>
+			</tags>
+		</apparel>
+		<comps>
+		  <li Class="CompProperties_CauseHediff_Apparel">
+			<hediff>DankPyon_LindwurmAcidImmune</hediff>
+			<part>Body</part>
+		  </li>
+		</comps>
+	</ThingDef>
 
 </Defs>

@@ -480,7 +480,11 @@
 			<li Class="CompProperties_Facility">
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Misc</designationCategory>
 		<researchPrerequisites>

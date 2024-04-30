@@ -18,18 +18,16 @@
 			<EquipDelay>1</EquipDelay>
 			<VEF_RangedCooldownFactor>0.25</VEF_RangedCooldownFactor>
 		</statBases>
-
-		<costList>
-			<Leather_Plain>50</Leather_Plain>
-		</costList>
-
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+		  <li>Leathery</li>
+		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 			<recipeUsers>
 				<li>DankPyon_TailorsBench</li>
 			</recipeUsers>
 		</recipeMaker>
-
 		<thingCategories>
 			<li>ApparelUtility</li>
 		</thingCategories>
@@ -87,7 +85,6 @@
 				<fat><scale>(0.75,0.75)</scale></fat>
 			</wornGraphicData>
 		</apparel>
-	
 		<modExtensions>
 			<li Class="VFECore.Misc.EquipmentOffsetConditions">
 				<techLevels>

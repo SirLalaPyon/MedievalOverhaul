@@ -7,10 +7,8 @@
 		<description>The Webknecht is a large arachnid that lives in sizable colonies in the dark areas of forests throughout the world of Battle Brothers. It’s there that they spin their webs between trees to trap anything from bird to deer and between.</description>
 		<statBases>
 			<MoveSpeed>5.2</MoveSpeed>
-			<ComfyTemperatureMin>15</ComfyTemperatureMin>
+			<ComfyTemperatureMin>10</ComfyTemperatureMin>
 			<MarketValue>475</MarketValue>
-			<ArmorRating_Blunt>1.50</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>
@@ -59,6 +57,27 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DankPyon_WebknechtWeb</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>2</burstShotCount>
+				<minRange>1</minRange>
+				<range>4</range>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>web</label>
+				<commonality>.2</commonality>
+			</li>
+		</verbs>
+
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_Webknecht_EggFertilized</eggFertilizedDef>
@@ -71,7 +90,7 @@
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>DankPyon_Gossamer</resourceDef>
-				<gatheringIntervalDays>7</gatheringIntervalDays>
+				<gatheringIntervalDays>14</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>DankPyon_Gossamer_Desc</customResourceString>
 			</li>
@@ -149,7 +168,7 @@
 		<race>DankPyon_Webknecht</race>
 		<label>Webknecht</label>
 		<combatPower>180</combatPower>
-		<ecoSystemWeight>0.6</ecoSystemWeight>
+		<ecoSystemWeight>0.2</ecoSystemWeight>
 		<wildGroupSize>
 			<min>3</min>
 			<max>6</max>

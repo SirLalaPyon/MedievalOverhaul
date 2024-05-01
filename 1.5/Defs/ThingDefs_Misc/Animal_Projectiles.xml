@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BaseBullet">
+		<defName>DankPyon_WebknechtWeb</defName>
+		<label>web</label>
+		<graphicData>
+			<texPath>Projectile/Web</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<speed>15</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

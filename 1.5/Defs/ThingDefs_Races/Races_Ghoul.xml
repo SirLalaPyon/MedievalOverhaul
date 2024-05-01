@@ -51,7 +51,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>17.8</power>
+				<power>14.8</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.9</chanceFactor>
@@ -59,7 +59,7 @@
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>6</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -116,6 +116,17 @@
 			<needsRest>false</needsRest>
 			<alwaysViolent>true</alwaysViolent>
 		</race>
+		<modExtensions>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+                <butcherOptions>
+                    <li>
+                        <thingDef>DankPyon_NachHorns</thingDef>
+                        <amount>1</amount>
+                        <chance>0.5</chance>
+                    </li>
+                </butcherOptions>
+            </li>
+		</modExtensions>
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -123,7 +134,7 @@
 		<label>Ghoul</label>
 		<labelPlural>Ghouls</labelPlural>
 		<race>DankPyon_Ghoul_Stage_One</race>
-		<combatPower>140</combatPower>
+		<combatPower>60</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>5~8</wildGroupSize>
 		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
@@ -152,7 +163,7 @@
 		<description>A cunning predator, possessing features of felines and canids alike. An easily underestimated creature by those taking their peculiar chuckling gurgles as a playful sign of harmlessness. While a pack of hyenas might hesitate to attack a group of man in the open, they will show no mercy to a lonesome vagabond. Being eaten alive to the accompaniment of satisfied giggles must be a terrible end.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
-			<MarketValue>360</MarketValue>
+			<MarketValue>600</MarketValue>
 			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MeatAmount>0</MeatAmount>
@@ -163,7 +174,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>10.9</power>
+				<power>14.9</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -180,7 +191,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>10.9</power>
+				<power>14.9</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -196,7 +207,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>17.8</power>
+				<power>19.8</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.9</chanceFactor>
@@ -214,7 +225,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>6</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -261,6 +272,17 @@
 			<needsRest>false</needsRest>
 			<alwaysViolent>true</alwaysViolent>
 		</race>
+		<modExtensions>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+				<butcherOptions>
+                    <li>
+                        <thingDef>DankPyon_NachHorns</thingDef>
+                        <amount>1</amount>
+                        <chance>0.5</chance>
+                    </li>
+                </butcherOptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -276,15 +298,15 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/Ghoul2</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male_east</texPath>
-					<drawSize>1.95</drawSize>
+					<texPath>Animal/Dessicated_Ghoul2_east</texPath>
+					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -297,7 +319,7 @@
 		<description>A cunning predator, possessing features of felines and canids alike. An easily underestimated creature by those taking their peculiar chuckling gurgles as a playful sign of harmlessness. While a pack of hyenas might hesitate to attack a group of man in the open, they will show no mercy to a lonesome vagabond. Being eaten alive to the accompaniment of satisfied giggles must be a terrible end.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
-			<MarketValue>360</MarketValue>
+			<MarketValue>950</MarketValue>
 			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MeatAmount>0</MeatAmount>
@@ -308,7 +330,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>10.9</power>
+				<power>17.9</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -325,7 +347,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>10.9</power>
+				<power>17.9</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -341,7 +363,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>17.8</power>
+				<power>24.8</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.9</chanceFactor>
@@ -368,7 +390,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>6</power>
+				<power>11</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -419,6 +441,18 @@
 			<needsRest>false</needsRest>
 			<alwaysViolent>true</alwaysViolent>
 		</race>
+		<modExtensions>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+				<butcherOptions>
+                    <li>
+                        <thingDef>DankPyon_NachHorns</thingDef>
+                        <amount>1~2</amount>
+                        <chance>1</chance>
+                    </li>
+                </butcherOptions>
+			</li>
+		</modExtensions>
+		
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -426,7 +460,7 @@
 		<label>Ghoul</label>
 		<labelPlural>Ghouls</labelPlural>
 		<race>DankPyon_Ghoul_Stage_Three</race>
-		<combatPower>140</combatPower>
+		<combatPower>240</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>1~4</wildGroupSize>
 		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
@@ -434,15 +468,15 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/Ghoul3</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male_east</texPath>
-					<drawSize>1.95</drawSize>
+					<texPath>Animal/Dessicated_Ghoul3_east</texPath>
+					<drawSize>3.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

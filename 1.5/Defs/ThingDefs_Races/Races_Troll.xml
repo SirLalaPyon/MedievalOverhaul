@@ -5,7 +5,6 @@
 		<defName>DankPyon_AncientTroll</defName>
 		<label>ancient troll</label>
 		<description>Lumbering giant, easily the size of three men, and dwarfing even the tallest. It eats whole sheep for a snack and empties a pond to wash it down</description>
-		<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<MarketValue>6450</MarketValue>
@@ -225,25 +224,11 @@
 				<labelPlural>troll puppies</labelPlural>
 				<bodyGraphicData>
 					<texPath>Animal/AncientTroll</texPath>
-					<drawSize>1.05</drawSize>
+					<drawSize>2.05</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/AncientTroll_dessicated</texPath>
-					<drawSize>1.05</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Animal/AncientTroll</texPath>
-					<drawSize>2</drawSize>
-					<shadowData>
-						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Animal/AncientTroll_dessicated</texPath>
-					<drawSize>1.7</drawSize>
+					<drawSize>2.05</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
@@ -251,13 +236,25 @@
 					<texPath>Animal/AncientTroll</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
-						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.15)</offset>
+						<volume>(0.25, 0.3, 0.25)</volume>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/AncientTroll_dessicated</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>3.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/AncientTroll</texPath>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Animal/AncientTroll_dessicated</texPath>
+					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

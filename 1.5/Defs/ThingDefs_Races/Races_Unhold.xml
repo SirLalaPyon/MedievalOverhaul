@@ -8,12 +8,14 @@
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<MarketValue>2500</MarketValue>
-			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-65</ComfyTemperatureMin>
+      		<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
 		</statBases>
+		<uiIconScale>1.75</uiIconScale>
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<body>Human</body>
@@ -22,12 +24,12 @@
 			<petness>0.0</petness>
 			<makesFootprints>true</makesFootprints>
 			<baseBodySize>3.5</baseBodySize>
-			<baseHungerRate>1</baseHungerRate>
+			<baseHungerRate>1.75</baseHungerRate>
 			<baseHealthScale>7</baseHealthScale>
 			<maxPreyBodySize>3.5</maxPreyBodySize>
 			<foodType>CarnivoreAnimalStrict, Corpse</foodType>
 			<leatherDef>DankPyon_Leather_Troll</leatherDef>
-			<lifeExpectancy>400</lifeExpectancy>
+			<lifeExpectancy>200</lifeExpectancy>
 			<hediffGiverSets Inherit="False">
 				<li>DankPyon_MonsterHediffGiver</li>
 			</hediffGiverSets>
@@ -222,8 +224,8 @@
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
 			<FilthRate>2</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-			<ArmorRating_Blunt>0.68</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.62</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.32</ArmorRating_Sharp>
 		</statBases>
 
 		<modExtensions Inherit="false">
@@ -262,39 +264,37 @@
 				<labelPlural>unhold babies</labelPlural>
 				<bodyGraphicData>
 					<texPath>Animal/UnholdPlain</texPath>
-					<drawSize>1.05</drawSize>
+					<drawSize>2.05</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Unhold_dessicated</texPath>
-					<drawSize>1.05</drawSize>
+					<drawSize>2.05</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/UnholdPlain</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>2.8</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Unhold_dessicated</texPath>
-					<drawSize>1.7</drawSize>
+					<drawSize>2.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/UnholdPlain</texPath>
-					<drawSize>3.3</drawSize>
+					<drawSize>3.8</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Unhold_dessicated</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>3.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -313,39 +313,37 @@
 				<labelPlural>unhold babies</labelPlural>
 				<bodyGraphicData>
 					<texPath>Animal/UnholdSwamp</texPath>
-					<drawSize>1.05</drawSize>
+					<drawSize>2.05</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Unhold_dessicated</texPath>
-					<drawSize>1.05</drawSize>
+					<drawSize>2.05</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/UnholdSwamp</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>2.8</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Unhold_dessicated</texPath>
-					<drawSize>1.7</drawSize>
+					<drawSize>2.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/UnholdSwamp</texPath>
-					<drawSize>3.3</drawSize>
+					<drawSize>3.8</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Unhold_dessicated</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>3.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -355,7 +353,7 @@
 		<defName>DankPyon_UnholdSnow</defName>
 		<label>unhold</label>
 		<race>DankPyon_UnholdSnow</race>
-		<combatPower>300</combatPower>
+		<combatPower>350</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
 		<lifeStages>
@@ -364,39 +362,37 @@
 				<labelPlural>unhold babies</labelPlural>
 				<bodyGraphicData>
 					<texPath>Animal/UnholdSnow</texPath>
-					<drawSize>1.05</drawSize>
+					<drawSize>2.05</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Unhold_dessicated</texPath>
-					<drawSize>1.05</drawSize>
+					<drawSize>2.05</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/UnholdSnow</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>2.8</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Unhold_dessicated</texPath>
-					<drawSize>1.7</drawSize>
+					<drawSize>2.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/UnholdSnow</texPath>
-					<drawSize>3.3</drawSize>
+					<drawSize>3.8</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Animal/Unhold_dessicated</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>3.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

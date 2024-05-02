@@ -120,6 +120,25 @@
 		<damageEffecter>Impact_Toxic</damageEffecter>
 	</DamageDef>
 
+	<DamageDef ParentName="Flame">
+		<defName>DankPyon_LindwurmAcidBurn</defName>
+		<label>lindwurm acid burn</label>
+		<workerClass>MedievalOverhaul.DamagerWorker_ExplosionNoFlash</workerClass>
+		<armorCategory>Sharp</armorCategory>
+		<impactSoundType>Toxic</impactSoundType>
+		<explosionCellFleck>Fleck_ToxGasSmall</explosionCellFleck>
+		<explosionColorCenter>(195, 212, 56)</explosionColorCenter>
+		<explosionColorEdge>(108, 174, 36)</explosionColorEdge>
+		<soundExplosion>DankPyon_FlaskBreak</soundExplosion> <!-- Not working for some reason -->
+		<damageEffecter>Impact_Toxic</damageEffecter>
+		<additionalHediffs>
+			<li>
+				<hediff>DankPyon_LindwurmAcid</hediff>
+			</li>
+		</additionalHediffs>
+		<scaleDamageToBuildingsBasedOnFlammability>false</scaleDamageToBuildingsBasedOnFlammability>
+	</DamageDef>
+
 	<!--DamageDef>
     <defName>DankPyon_Damage_Flash</defName>
     <label>flash pot</label>

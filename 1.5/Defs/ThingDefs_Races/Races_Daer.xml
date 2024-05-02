@@ -139,7 +139,7 @@
 		<defName>DankPyon_Daer</defName>
 		<label>Daer</label>
 		<race>DankPyon_Daer</race>
-		<combatPower>700</combatPower>
+		<combatPower>600</combatPower>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
@@ -160,7 +160,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/Daer</texPath>
-					<drawSize>4.0</drawSize>
+					<drawSize>3.2</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -168,13 +168,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>4.0</drawSize>
+					<drawSize>3.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Animal/Daer</texPath>
-					<drawSize>4.8</drawSize>
+					<drawSize>4.3</drawSize>
 					<shadowData>
 						<volume>(1, 0.8, 0.5)</volume>
 						<offset>(0,0,-0.5)</offset>
@@ -182,7 +182,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>4.8</drawSize>
+					<drawSize>4.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

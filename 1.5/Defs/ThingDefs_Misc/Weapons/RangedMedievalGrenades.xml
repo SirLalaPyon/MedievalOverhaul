@@ -3,6 +3,10 @@
 
 	<ThingDef ParentName="BaseMakeableGrenade" Name="DankPyon_Medieval_MakeableGrenade" Abstract="True">
 		<recipeMaker Inherit="false">
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
 			<researchPrerequisite>DankPyon_Gunpowder</researchPrerequisite>
 			<recipeUsers Inherit="False">
 				<li>DankPyon_Workbench</li>
@@ -15,7 +19,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<!-- ============================== Crossbows ========================== -->
+	<!-- ============================== Grenades ========================== -->
 	<ThingDef ParentName="DankPyon_Medieval_MakeableGrenade">
 		<defName>DankPyon_Weapon_PotFire</defName>
 		<label>fire pots</label>
@@ -220,4 +224,74 @@
 		</projectile>
 	</ThingDef>
 	
+	
+	<!-- ============================== Taxidermy ========================== -->
+	<!-- Acid Flask -->
+
+	<ThingDef ParentName="DankPyon_Medieval_MakeableGrenade">
+		<defName>DankPyon_Weapon_AcidFlask</defName>
+		<label>acid flask</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/AcidFlask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
+		<soundInteract>Interact_MolotovCocktail</soundInteract>
+		<statBases>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+			<WorkToMake>11000</WorkToMake>
+		</statBases>
+		<costList>
+			<DankPyon_LindwurmBlood>2</DankPyon_LindwurmBlood>
+		</costList>
+		<weaponTags>
+			<li>DankPyon_Grenade_AcidFlask</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<label>throw acid flask</label>
+				<verbClass>Verb_ShootOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>DankPyon_Proj_AcidFlask</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.66</explosiveRadius>
+				<explosiveDamageType>DankPyon_LindwurmAcidBurn</explosiveDamageType>
+				<!--requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode-->
+				<preExplosionSpawnThingDef>DankPyon_Filth_AcidBlood</preExplosionSpawnThingDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseIncendiaryProjectile">
+		<defName>DankPyon_Proj_AcidFlask</defName>
+		<label>acid flask</label>
+		<graphicData>
+			<texPath>Projectile/AcidFlask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.5</explosionRadius>
+			<damageDef>DankPyon_LindwurmAcidBurn</damageDef>
+			<!-- Use default damage from explosion def -->
+			<preExplosionSpawnThingDef>DankPyon_Filth_AcidBlood</preExplosionSpawnThingDef>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<shadowSize>0.6</shadowSize>
+			<screenShakeFactor>0.1</screenShakeFactor>
+		</projectile>
+	</ThingDef>
+
 </Defs>

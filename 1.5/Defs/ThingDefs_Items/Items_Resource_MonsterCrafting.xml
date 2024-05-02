@@ -25,7 +25,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>3250</MarketValue>
+			<MarketValue>1625</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>5</Mass>
 			<Flammability>0.4</Flammability>
@@ -36,14 +36,14 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_AncientWood</defName>
 		<label>ancient wood</label>
-		<description>A dark oaken wood as ancient as time. The wood is renowned for its strength and durability to withstand physica blows. A perfect material to use for a shield.</description>
+		<description>A dark oaken wood as ancient as time. The wood is renowned for its strength and durability to withstand physical blows. A perfect material to use for a shield.</description>
 		<graphicData>
 			<texPath>Special/AncientWood</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
 		<statBases>
-			<MarketValue>2900</MarketValue>
+			<MarketValue>1450</MarketValue>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>0.3</Flammability>
@@ -61,7 +61,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>2500</MarketValue>
+			<MarketValue>1250</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>1</Flammability>
@@ -73,14 +73,14 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_UnholdBones</defName>
 		<label>giant bones</label>
-		<description>PLACEHOLDER</description>
+		<description>Enormous remnants of unsavory unholds, exuding an aura of primal power and intrigue, sought after for their immense size and physical resiliance.</description>
 		<graphicData>
 			<texPath>Special/UnholdBones</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1125</MarketValue>
+			<MarketValue>565</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>5</Mass>
 			<Flammability>0.4</Flammability>
@@ -91,14 +91,14 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_ThickUnholdFur</defName>
 		<label>thick unhold fur</label>
-		<description>PLACEHOLDER</description>
+		<description>Robust hides of the formidable unhold, renowned for their thickness and weatherproof nature, sought after for crafting resilient garments and protective gear.</description>
 		<graphicData>
 			<texPath>Special/ThickUnholdFur</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1500</MarketValue>
+			<MarketValue>750</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>15</Mass>
 			<Flammability>0.8</Flammability>
@@ -116,7 +116,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1000</MarketValue>
+			<MarketValue>500</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>10</Mass>
 			<Flammability>0.4</Flammability>
@@ -127,14 +127,14 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_UnholdHeart</defName>
 		<label>unhold heart</label>
-		<description>PLACEHOLDER</description>
+		<description>The beating heart of the fearsome unhold, pulsing with primal power and ancient vitality, considered to be a key ingredient for creating elixirs of endurance.</description>
 		<graphicData>
 			<texPath>Special/UnholdHeart</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1125</MarketValue>
+			<MarketValue>565</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>0.3</Flammability>
@@ -153,7 +153,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>350</MarketValue>
+			<MarketValue>175</MarketValue>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>0.3</Flammability>
@@ -171,7 +171,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>250</MarketValue>
+			<MarketValue>125</MarketValue>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.6</Flammability>
@@ -189,7 +189,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1550</MarketValue>
+			<MarketValue>725</MarketValue>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.6</Flammability>
@@ -208,7 +208,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0</Flammability>
@@ -226,7 +226,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>2200</MarketValue>
+			<MarketValue>1100</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>15</Mass>
 			<Flammability>0</Flammability>
@@ -244,7 +244,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>3000</MarketValue>
+			<MarketValue>1500</MarketValue>
 			<MaxHitPoints>220</MaxHitPoints>
 			<Mass>15</Mass>
 			<Flammability>0</Flammability>
@@ -252,10 +252,10 @@
 		</statBases>
 	</ThingDef>
 
-	<!--=============== Webknecht ====================-->
+	<!--=============== Ghoul ====================-->
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_NachHorns</defName>
-		<label>Ghoul Horns</label>
+		<label>ghoul horn</label>
 		<description>PLACEHOLDER</description>
 		<graphicData>
 			<texPath>Special/NachHorns</texPath>
@@ -263,8 +263,27 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>375</MarketValue>
+			<MarketValue>190</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Alp ====================-->
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_ParchedSkin</defName>
+		<label>parched skin</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/ParchedSkin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>315</MarketValue>
+			<MaxHitPoints>40</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>

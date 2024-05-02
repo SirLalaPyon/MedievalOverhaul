@@ -7,7 +7,9 @@
 			<recipeUsers Inherit="False"/>
 			<unfinishedThingDef>DankPyon_UnfinishedHideArmor</unfinishedThingDef>
 		</recipeMaker>
-		<tradeability>None</tradeability>
+		<tradeTags Inherit="false">
+			<li>Taxidermy</li>
+		</tradeTags>
 		<techLevel>Medieval</techLevel>
 	</ThingDef>
 
@@ -125,6 +127,21 @@
 					<layer>70</layer>
 				</dataWest>
 			</drawData>
+
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>DankPyon_ShellAttachment</li>
+			</layers>
+			<tags>
+				<li>DankPyon_Attachment</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
@@ -132,8 +149,10 @@
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
-		<tradeability>None</tradeability>
 		<techLevel>Medieval</techLevel>
+		<tradeTags Inherit="false">
+			<li>DankPyon_Taxidermy</li>
+		</tradeTags>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
@@ -151,7 +170,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<DankPyon_Leather_Direwolf>65</DankPyon_Leather_Direwolf>
+			<DankPyon_Hide_Leather_Direwolf>2</DankPyon_Hide_Leather_Direwolf>
 		</costList>
 		<statBases>
 			<MarketValue>450</MarketValue>
@@ -167,22 +186,8 @@
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
-				<li>Neck</li>
-				<li>Torso</li>
-				<li>Shoulders</li>
-			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Attachments/DirewolfPelt</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
-			<layers>
-				<li>DankPyon_ShellAttachment</li>
-			</layers>
-			<tags>
-				<li>DankPyon_Attachment</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 
@@ -215,22 +220,8 @@
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
-				<li>Neck</li>
-				<li>Torso</li>
-				<li>Shoulders</li>
-			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Attachments/HyenaPelt</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
-			<layers>
-				<li>DankPyon_ShellAttachment</li>
-			</layers>
-			<tags>
-				<li>DankPyon_Attachment</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
 	
@@ -244,7 +235,7 @@
 		</graphicData>
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>8</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
@@ -252,29 +243,22 @@
 			<DankPyon_UnholdHide>1</DankPyon_UnholdHide>
 		</costList>
 		<statBases>
-			<MarketValue>450</MarketValue>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>160</MaxHitPoints>
 			<Mass>4</Mass>
 			<EquipDelay>2</EquipDelay>
+			<WorkToMake>24000</WorkToMake>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.37</ArmorRating_Heat>
 			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.10</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<bodyPartGroups>
-				<li>Neck</li>
-				<li>Torso</li>
-				<li>Shoulders</li>
-			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Attachments/LindwurmScaleCloak</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
-			<layers>
-				<li>DankPyon_ShellAttachment</li>
-			</layers>
-			<tags>
-				<li>DankPyon_Attachment</li>
-			</tags>
 		</apparel>
 		<comps>
 		  <li Class="CompProperties_CauseHediff_Apparel">
@@ -282,6 +266,137 @@
 			<part>Body</part>
 		  </li>
 		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_FurCloak</defName>
+		<label>fur cloak</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/FurCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_ThickUnholdFur>2</DankPyon_ThickUnholdFur>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>19000</WorkToMake>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<Insulation_Cold>22</Insulation_Cold>
+			<Insulation_Heat>-4</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.20</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/FurCoat</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_BonePlating</defName>
+		<label>bone plating</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/BonePlate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_UnholdBones>3</DankPyon_UnholdBones>
+		</costList>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<WorkToMake>19000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/BonePlate</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_AdditionalFurPadding</defName>
+		<label>additional fur padding</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/FurPadding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_ThickUnholdFur>1</DankPyon_ThickUnholdFur>
+			<DankPyon_Hide_Leather_Direwolf>1</DankPyon_Hide_Leather_Direwolf>
+		</costList>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<WorkToMake>19000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/FurPadding</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_RunesAndSigils</defName>
+		<label>runes and sigils</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/RunesAndSigils</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_ParchedSkin>2</DankPyon_ParchedSkin>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>2</Mass>
+			<EquipDelay>1</EquipDelay>
+			<WorkToMake>16000</WorkToMake>
+		</statBases>
+
+		<equippedStatOffsets>
+			<PainShockThreshold>0.20</PainShockThreshold>
+			<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+		</equippedStatOffsets>
+
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/RunesAndSigils</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
 	</ThingDef>
 
 </Defs>

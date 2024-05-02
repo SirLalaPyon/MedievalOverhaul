@@ -227,7 +227,9 @@
 			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.32</ArmorRating_Sharp>
 		</statBases>
-
+		<race>
+			<useMeatFrom>DankPyon_Unhold</useMeatFrom>
+		</race>
 		<modExtensions Inherit="false">
 			<li Class="MedievalOverhaul.AdditionalButcherProducts">
                 <butcherOptions>

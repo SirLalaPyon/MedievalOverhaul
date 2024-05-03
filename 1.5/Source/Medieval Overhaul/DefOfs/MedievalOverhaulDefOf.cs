@@ -77,6 +77,9 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_IceBlock;
         public static JobDef DankPyon_JobDigIce;
 
+        [MayRequireCE]
+        public static StatDef Bulk;
+
         static MedievalOverhaulDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MedievalOverhaulDefOf));
     }
 

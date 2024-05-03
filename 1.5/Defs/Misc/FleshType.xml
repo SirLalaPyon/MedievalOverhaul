@@ -7,6 +7,7 @@
 		<defName>DankPyon_FleshTypeGolem</defName>
 		<corpseCategory>CorpsesMechanoid</corpseCategory>
 		<damageEffecter>Damage_HitMechanoid</damageEffecter>
+		<isOrganic>false</isOrganic>
 		<genericWounds>
 			<li>
 				<texture>Things/Pawn/Wounds/WoundMechA</texture>
@@ -24,6 +25,25 @@
 		<defName>DankPyon_Schrat</defName>
 		<corpseCategory>DankPyon_CorpsesMonsters</corpseCategory>
 		<damageEffecter>Damage_HitMechanoid</damageEffecter>
+		<isOrganic>false</isOrganic>
+		<genericWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundMechA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundMechB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundMechC</texture>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+
+	<FleshTypeDef>
+		<defName>DankPyon_Monster</defName>
+		<corpseCategory>DankPyon_CorpsesMonsters</corpseCategory>
+		<damageEffecter>Damage_HitMechanoid</damageEffecter>
+		<isOrganic>false</isOrganic>
 		<genericWounds>
 			<li>
 				<texture>Things/Pawn/Wounds/WoundMechA</texture>

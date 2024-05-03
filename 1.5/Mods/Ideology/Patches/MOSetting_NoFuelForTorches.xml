@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>refuelableTorch</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+		
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[
+			defName="Darktorch"
+			]/comps/li[@Class="CompProperties_HeatPusher"]
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[
+				defName="Darktorch"
+				]/comps/li[@Class="CompProperties_HeatPusher"]
+						</xpath>
+					</match>
+				</li>
+		
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[
+			defName="Darktorch"
+			]/comps/li[@Class="CompProperties_Refuelable"]
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[
+				defName="Darktorch"
+				]/comps/li[@Class="CompProperties_Refuelable"]
+						</xpath>
+					</match>
+				</li>
+		
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[
+			defName="Darktorch"
+			]/inspectorTabs
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[
+				defName="Darktorch"
+				]/inspectorTabs
+						</xpath>
+					</match>
+				</li>
+		
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[
+			defName="Darktorch"
+			]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[
+				defName="Darktorch"
+				]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]
+						</xpath>
+					</match>
+				</li>
+
+			</operations>
+		</active>
+	</Operation>
+</Patch>

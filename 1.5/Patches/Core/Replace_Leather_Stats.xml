@@ -58,9 +58,16 @@
 	</Operation>
 	
 	<!-- The next two operations blow away the statBases and rebuild it so we don't have to run so many messy conditional checks -->
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[
 			defName="Leather_Plain" or 
 			defName="Leather_Bear" or 
 			defName="Leather_Light" or 
@@ -69,12 +76,12 @@
 			defName="Leather_Rhinoceros" or 
 			defName="Leather_Bird" or 
 			defName="Leather_Human" or 
-			defName="Leather_Patch"]/statBases		</xpath>
-	</Operation>
+			defName="Leather_Patch"]/statBases					</xpath>
+				</li>
 	
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[
 			defName="Leather_Plain" or 
 			defName="Leather_Bear" or 
 			defName="Leather_Light" or 
@@ -83,128 +90,132 @@
 			defName="Leather_Rhinoceros" or 
 			defName="Leather_Bird" or 
 			defName="Leather_Human" or 
-			defName="Leather_Patch"]		</xpath>
-		<value>
-			<statBases/>
-		</value>
-	</Operation>
+			defName="Leather_Patch"]					</xpath>
+					<value>
+						<statBases/>
+					</value>
+				</li>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Leather_Plain"]/statBases</xpath>
-		<value>
-			<statBases>
-				<MarketValue>2</MarketValue>
-				<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
-				<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
-				<BedRestEffectiveness>0.9</BedRestEffectiveness>
-			</statBases>
-		</value>
-	</Operation>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Leather_Plain"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>2</MarketValue>
+							<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+							<BedRestEffectiveness>0.9</BedRestEffectiveness>
+						</statBases>
+					</value>
+				</li>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Leather_Bear"]/statBases</xpath>
-		<value>
-			<statBases>
-				<MarketValue>3</MarketValue>
-				<StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
-				<StuffPower_Armor_Blunt>0.28</StuffPower_Armor_Blunt>
-				<StuffPower_Insulation_Cold>17</StuffPower_Insulation_Cold>
-				<StuffPower_Insulation_Heat>17</StuffPower_Insulation_Heat>
-			</statBases>
-		</value>
-	</Operation>
+	
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Leather_Bear"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>3</MarketValue>
+							<StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>0.28</StuffPower_Armor_Blunt>
+							<StuffPower_Insulation_Cold>17</StuffPower_Insulation_Cold>
+							<StuffPower_Insulation_Heat>17</StuffPower_Insulation_Heat>
+						</statBases>
+					</value>
+				</li>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Leather_Light"]/statBases</xpath>
-		<value>
-			<statBases>
-				<MarketValue>2.75</MarketValue>
-				<StuffPower_Armor_Sharp>0.55</StuffPower_Armor_Sharp>
-				<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
-				<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
-			</statBases>
-		</value>
-	</Operation>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Leather_Light"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>2.75</MarketValue>
+							<StuffPower_Armor_Sharp>0.55</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+							<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+						</statBases>
+					</value>
+				</li>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Leather_Bluefur"]/statBases</xpath>
-		<value>
-			<statBases>
-				<MarketValue>2.3</MarketValue>
-				<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
-				<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
-				<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
-				<StuffPower_Insulation_Heat>17</StuffPower_Insulation_Heat>
-			</statBases>
-		</value>
-	</Operation>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Leather_Bluefur"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>2.3</MarketValue>
+							<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt>
+							<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+							<StuffPower_Insulation_Heat>17</StuffPower_Insulation_Heat>
+						</statBases>
+					</value>
+				</li>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Leather_Lizard"]/statBases</xpath>
-		<value>
-			<statBases>
-				<MarketValue>2.5</MarketValue>
-				<StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
-				<StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt>
-				<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
-				<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
-			</statBases>
-		</value>
-	</Operation>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Leather_Lizard"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>2.5</MarketValue>
+							<StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt>
+							<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+							<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+						</statBases>
+					</value>
+				</li>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Leather_Rhinoceros"]/statBases</xpath>
-		<value>
-			<statBases>
-				<MarketValue>3</MarketValue>
-				<StuffPower_Armor_Sharp>1.29</StuffPower_Armor_Sharp>
-				<StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt>
-				<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
-				<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
-			</statBases>
-		</value>
-	</Operation>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Leather_Rhinoceros"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>3</MarketValue>
+							<StuffPower_Armor_Sharp>1.29</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt>
+							<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+							<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+						</statBases>
+					</value>
+				</li>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Leather_Bird"]/statBases</xpath>
-		<value>
-			<statBases>
-				<MarketValue>2</MarketValue>
-				<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
-				<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
-				<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
-				<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
-			</statBases>
-		</value>
-	</Operation>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Leather_Bird"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>2</MarketValue>
+							<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+							<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+							<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+						</statBases>
+					</value>
+				</li>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Leather_Human"]/statBases</xpath>
-		<value>
-			<statBases>
-				<MarketValue>4.2</MarketValue>
-				<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
-				<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
-				<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
-				<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
-			</statBases>
-		</value>
-	</Operation>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Leather_Human"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>4.2</MarketValue>
+							<StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>0.2</StuffPower_Armor_Blunt>
+							<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+							<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+						</statBases>
+					</value>
+				</li>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Leather_Patch"]/statBases</xpath>
-		<value>
-			<statBases>
-				<MarketValue>1.5</MarketValue>
-				<StuffPower_Armor_Sharp>0.55</StuffPower_Armor_Sharp>
-				<StuffPower_Armor_Blunt>0.19</StuffPower_Armor_Blunt>
-				<StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
-				<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
-				<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
-			</statBases>
-		</value>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Leather_Patch"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>1.5</MarketValue>
+							<StuffPower_Armor_Sharp>0.55</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>0.19</StuffPower_Armor_Blunt>
+							<StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+							<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+							<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+						</statBases>
+					</value>
+				</li>
+			
+			</operations>
+		</nomatch>
 	</Operation>
-	<!-- No change to thrumbofur or human leather -->
 
 	<!-- Blow away the stuff statFactors so we can rebuild them -->
 	<Operation Class="PatchOperationRemove">

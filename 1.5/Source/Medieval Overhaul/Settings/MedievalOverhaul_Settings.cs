@@ -33,6 +33,7 @@ namespace MedievalOverhaul
         // Misc
         public bool refuelableTorch = false;
         public bool boomalopeTar = true;
+        public bool mealRetexture = true;
         public override void ExposeData()
         {
             base.ExposeData();
@@ -45,6 +46,7 @@ namespace MedievalOverhaul
             Scribe_Values.Look(ref vanillaMine, "vanillaMine", false);
             Scribe_Values.Look(ref refuelableTorch, "refuelableTorch", false);
             Scribe_Values.Look(ref boomalopeTar, "boomalopeTar", true);
+            Scribe_Values.Look(ref mealRetexture, "mealRetexture", true);
             Scribe_Values.Look(ref debugMode, "debugMode", false);
             Scribe_Collections.Look(ref settingMode, "settingMode", LookMode.Value, LookMode.Value);
 
@@ -85,6 +87,7 @@ namespace MedievalOverhaul
             listingStandard.Label((string)"DankPyon_Settings_MiscOption".Translate());
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_RefuelableTorch".Translate(), ref this.refuelableTorch);
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_BoomalopeTar".Translate(), ref this.boomalopeTar);
+            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_MealRetexture".Translate(), ref this.mealRetexture);
             listingStandard.End();
         }
     }

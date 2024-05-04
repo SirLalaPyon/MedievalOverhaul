@@ -51,9 +51,11 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DigIce.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompMeltable.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_GenericHide.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Melt.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_TrollRegen.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_TrollRegen.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompGenericHide.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Breakdown.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\CannotBePlacedTogetherWithThisModExtension.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalButcherProducts.cs" />

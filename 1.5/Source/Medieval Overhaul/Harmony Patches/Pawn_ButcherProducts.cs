@@ -9,12 +9,28 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.ButcherProducts))]
     public static class Pawn_ButcherProducts
     {
+        
         private static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, Pawn __instance, Pawn butcher, float efficiency)
         {
             List<Thing> productList = new List<Thing>();
             // Adding normal butcher output to the list
             foreach (Thing product in __result)
             {
+                
+                if (HideUtility.IsHide(product.def))
+                { 
+                    var comp = product.TryGetComp<CompGenericHide>();
+                    if (comp != null)
+                    {
+                        comp.leatherAmount = product.stackCount;
+                        var leatherCost = comp.Props.leatherType.GetStatValueAbstract(StatDefOf.MarketValue);
+                        comp.marketValue = (int)((int)(comp.leatherAmount * leatherCost) * 0.8f);
+                        product.stackCount = 1;
+                        Log.Message(comp.leatherAmount + " " + comp.Props.leatherType);
+                    }
+                    productList.Add(product);
+                }
+                else
                 productList.Add(product);
             }
             // Checking for additional butcher products and adding to list

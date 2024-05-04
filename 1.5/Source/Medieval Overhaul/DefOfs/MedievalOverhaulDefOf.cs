@@ -70,6 +70,7 @@ namespace MedievalOverhaul
 
         public static HediffDef DankPyon_LindwurmAcidImmune;
         public static HediffDef DankPyon_StunImmune;
+        public static HediffDef DankPyon_DazeImmune;
 
         public static DesignationDef DankPyon_DigIce;
         public static TerrainDef Ice;

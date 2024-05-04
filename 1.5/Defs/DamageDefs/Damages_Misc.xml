@@ -181,5 +181,20 @@
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
+	
+	<DamageDef>
+		<defName>DankPyon_Daze</defName>
+		<label>daze</label>
+		<workerClass>MedievalOverhaul.DamageWorker_Daze</workerClass>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>999999</defaultDamage>
+		<hediff>DankPyon_Daze</hediff>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<soundExplosion>Explosion_Stun</soundExplosion>
+		<harmsHealth>false</harmsHealth>
+		<combatLogRules>Damage_Stun</combatLogRules>
+		<consideredHelpful>false</consideredHelpful>
+	  </DamageDef>
 
 </Defs>

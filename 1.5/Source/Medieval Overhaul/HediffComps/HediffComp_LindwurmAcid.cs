@@ -13,7 +13,18 @@ namespace MedievalOverhaul
                 return (HediffCompProperties_LindwurmAcid)this.props;
             }
         }
-
+        public override bool CompShouldRemove
+        {
+            get
+            {
+                Pawn pawn = this.Pawn;
+                if (pawn.health.hediffSet.HasHediff(MedievalOverhaulDefOf.DankPyon_LindwurmAcidImmune))
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
         public override void CompPostTick(ref float severityAdjustment)
         {
            

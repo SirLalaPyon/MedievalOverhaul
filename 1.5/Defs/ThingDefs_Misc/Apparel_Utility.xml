@@ -16,11 +16,11 @@
 			<WorkToMake>4500</WorkToMake>
 			<Flammability>0.4</Flammability>
 			<EquipDelay>1</EquipDelay>
-			<VEF_RangedCooldownFactor>0.25</VEF_RangedCooldownFactor>
+			<RangedCooldownFactor>0.25</RangedCooldownFactor>
 		</statBases>
 		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
-		  <li>Leathery</li>
+			<li>Leathery</li>
 		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
@@ -84,6 +84,534 @@
 				<hulk><scale>(0.75,0.75)</scale></hulk>
 				<fat><scale>(0.75,0.75)</scale></fat>
 			</wornGraphicData>
+		</apparel>
+		<modExtensions>
+			<li Class="VFECore.Misc.EquipmentOffsetConditions">
+				<techLevels>
+					<li>Neolithic</li>
+					<li>Medieval</li>
+				</techLevels>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>DankPyon_Apparel_FlashPotBelt</defName>
+		<label>flash pot belt</label>
+		<description>PLACEHOLDER</description>
+		<techLevel>Medieval</techLevel>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>3</maxCharges>
+				<ammoDef>DankPyon_Weapon_PotFlash</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>flash</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw flash pot</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>DankPyon_Proj_PotFlash</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+			<recipeUsers>
+				<li>DankPyon_AlchemyBench</li>
+			</recipeUsers>
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_Weapon_PotFlash>1</DankPyon_Weapon_PotFlash>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/Utility/FlashPots</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<generateAllowChance>0.15</generateAllowChance>
+		<apparel>
+			<wornGraphicPath>Apparel/Utility/FlashPotBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<offset>(-0.10,-0.25)</offset>
+					<hulk><offset>(-0.1,-0.15)</offset></hulk>
+					<fat><offset>(-0.22,-0.0)</offset></fat>
+					<thin><offset>(0.0,-0.0)</offset></thin>
+				</north>
+				<south>
+					<offset>(0.15,-0.30)</offset>
+					<hulk><offset>(-0.0,-0.10)</offset></hulk>
+					<fat><offset>(0.1,-0.05)</offset></fat>
+					<thin><offset>(-0.10,-0.0)</offset></thin>
+				</south>
+				<east>
+					<offset>(-0.15,-0.25)</offset>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(-0.2,-0.10)</offset></fat>
+				</east>
+				<west>
+				  <offset>(0.15,-0.25)</offset>
+				  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+				  <fat><offset>(0.05,-0.10)</offset></fat>
+				</west>
+				<male>  <scale>(0.6,0.6)</scale></male>
+				<female><scale>(0.6,0.6)</scale></female>
+				<thin>  <scale>(0.6,0.6)</scale></thin>
+				<hulk>  <scale>(0.7,0.7)</scale></hulk>
+				<fat>   <scale>(0.7,0.7)</scale></fat>
+			</wornGraphicData>
+			<drawData>
+				<dataNorth>
+					<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+					<layer>40</layer>
+				</dataSouth>
+			</drawData>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>DankPyon_FlashPotBelt</li>
+			</tags>
+		</apparel>
+		<modExtensions>
+			<li Class="VFECore.Misc.EquipmentOffsetConditions">
+				<techLevels>
+					<li>Neolithic</li>
+					<li>Medieval</li>
+				</techLevels>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>DankPyon_Apparel_FirePotBelt</defName>
+		<label>fire pot belt</label>
+		<description>PLACEHOLDER</description>
+		<techLevel>Medieval</techLevel>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>3</maxCharges>
+				<ammoDef>DankPyon_Weapon_PotFire</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>fire</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw fire pot</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>DankPyon_Proj_PotFire</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+			<recipeUsers>
+				<li>DankPyon_AlchemyBench</li>
+			</recipeUsers>
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_Weapon_PotFire>1</DankPyon_Weapon_PotFire>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/Utility/FirePots</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<generateAllowChance>0.15</generateAllowChance>
+		<apparel>
+			<wornGraphicPath>Apparel/Utility/FirePotBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<offset>(-0.10,-0.25)</offset>
+					<hulk><offset>(-0.1,-0.15)</offset></hulk>
+					<fat><offset>(-0.22,-0.0)</offset></fat>
+					<thin><offset>(0.0,-0.0)</offset></thin>
+				</north>
+				<south>
+					<offset>(0.15,-0.30)</offset>
+					<hulk><offset>(-0.0,-0.10)</offset></hulk>
+					<fat><offset>(0.1,-0.05)</offset></fat>
+					<thin><offset>(-0.10,-0.0)</offset></thin>
+				</south>
+				<east>
+					<offset>(-0.15,-0.25)</offset>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(-0.2,-0.10)</offset></fat>
+				</east>
+				<west>
+				  <offset>(0.15,-0.25)</offset>
+				  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+				  <fat><offset>(0.05,-0.10)</offset></fat>
+				</west>
+				<male>  <scale>(0.6,0.6)</scale></male>
+				<female><scale>(0.6,0.6)</scale></female>
+				<thin>  <scale>(0.6,0.6)</scale></thin>
+				<hulk>  <scale>(0.7,0.7)</scale></hulk>
+				<fat>   <scale>(0.7,0.7)</scale></fat>
+			</wornGraphicData>
+			<drawData>
+				<dataNorth>
+					<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+					<layer>40</layer>
+				</dataSouth>
+			</drawData>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>DankPyon_FirePotBelt</li>
+			</tags>
+		</apparel>
+		<modExtensions>
+			<li Class="VFECore.Misc.EquipmentOffsetConditions">
+				<techLevels>
+					<li>Neolithic</li>
+					<li>Medieval</li>
+				</techLevels>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>DankPyon_Apparel_SmokePotBelt</defName>
+		<label>smoke pot belt</label>
+		<description>PLACEHOLDER</description>
+		<techLevel>Medieval</techLevel>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>3</maxCharges>
+				<ammoDef>DankPyon_Weapon_PotFlashSmoke</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>smoke</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw smoke pot</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>DankPyon_Proj_PotSmoke</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+			<recipeUsers>
+				<li>DankPyon_AlchemyBench</li>
+			</recipeUsers>
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_Weapon_PotFlashSmoke>1</DankPyon_Weapon_PotFlashSmoke>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/Utility/SmokePots</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<generateAllowChance>0.15</generateAllowChance>
+		<apparel>
+			<wornGraphicPath>Apparel/Utility/SmokePotBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<offset>(-0.10,-0.25)</offset>
+					<hulk><offset>(-0.1,-0.15)</offset></hulk>
+					<fat><offset>(-0.22,-0.0)</offset></fat>
+					<thin><offset>(0.0,-0.0)</offset></thin>
+				</north>
+				<south>
+					<offset>(0.15,-0.30)</offset>
+					<hulk><offset>(-0.0,-0.10)</offset></hulk>
+					<fat><offset>(0.1,-0.05)</offset></fat>
+					<thin><offset>(-0.10,-0.0)</offset></thin>
+				</south>
+				<east>
+					<offset>(-0.15,-0.25)</offset>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(-0.2,-0.10)</offset></fat>
+				</east>
+				<west>
+				  <offset>(0.15,-0.25)</offset>
+				  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+				  <fat><offset>(0.05,-0.10)</offset></fat>
+				</west>
+				<male>  <scale>(0.6,0.6)</scale></male>
+				<female><scale>(0.6,0.6)</scale></female>
+				<thin>  <scale>(0.6,0.6)</scale></thin>
+				<hulk>  <scale>(0.7,0.7)</scale></hulk>
+				<fat>   <scale>(0.7,0.7)</scale></fat>
+			</wornGraphicData>
+			<drawData>
+				<dataNorth>
+					<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+					<layer>40</layer>
+				</dataSouth>
+			</drawData>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>DankPyon_SmokePotBelt</li>
+			</tags>
+		</apparel>
+		<modExtensions>
+			<li Class="VFECore.Misc.EquipmentOffsetConditions">
+				<techLevels>
+					<li>Neolithic</li>
+					<li>Medieval</li>
+				</techLevels>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="ApparelNoQualityBase">
+		<defName>DankPyon_Apparel_AcidFlaskBelt</defName>
+		<label>acid flask belt</label>
+		<description>PLACEHOLDER</description>
+		<techLevel>Medieval</techLevel>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>3</maxCharges>
+				<ammoDef>DankPyon_Weapon_AcidFlask</ammoDef>
+				<ammoCountToRefill>1</ammoCountToRefill>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>frag</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw acid flask</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<onlyManualCast>True</onlyManualCast>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>DankPyon_Proj_AcidFlask</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+			<recipeUsers>
+				<li>DankPyon_AlchemyBench</li>
+			</recipeUsers>
+			<useIngredientsForColor>false</useIngredientsForColor>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_Proj_AcidFlask>1</DankPyon_Proj_AcidFlask>
+		</costList>
+		<graphicData>
+			<texPath>Apparel/Utility/AcidFlaskBelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>3</Mass>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<generateAllowChance>0.15</generateAllowChance>
+		<apparel>
+			<wornGraphicPath>Apparel/Utility/AcidFlaskBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<offset>(-0.10,-0.25)</offset>
+					<hulk><offset>(-0.1,-0.15)</offset></hulk>
+					<fat><offset>(-0.22,-0.0)</offset></fat>
+					<thin><offset>(0.0,-0.0)</offset></thin>
+				</north>
+				<south>
+					<offset>(0.15,-0.30)</offset>
+					<hulk><offset>(-0.0,-0.10)</offset></hulk>
+					<fat><offset>(0.1,-0.05)</offset></fat>
+					<thin><offset>(-0.10,-0.0)</offset></thin>
+				</south>
+				<east>
+					<offset>(-0.15,-0.25)</offset>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(-0.2,-0.10)</offset></fat>
+				</east>
+				<west>
+				  <offset>(0.15,-0.25)</offset>
+				  <hulk><offset>(-0.0,-0.15)</offset></hulk>
+				  <fat><offset>(0.05,-0.10)</offset></fat>
+				</west>
+				<male>  <scale>(0.6,0.6)</scale></male>
+				<female><scale>(0.6,0.6)</scale></female>
+				<thin>  <scale>(0.6,0.6)</scale></thin>
+				<hulk>  <scale>(0.7,0.7)</scale></hulk>
+				<fat>   <scale>(0.7,0.7)</scale></fat>
+			</wornGraphicData>
+			<drawData>
+				<dataNorth>
+					<layer>90</layer>
+				</dataNorth>
+				<dataSouth>
+					<layer>40</layer>
+				</dataSouth>
+			</drawData>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>DankPyon_AcidFlaskBelt</li>
+			</tags>
 		</apparel>
 		<modExtensions>
 			<li Class="VFECore.Misc.EquipmentOffsetConditions">

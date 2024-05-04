@@ -2,7 +2,7 @@
 <Defs>
 
 	<RecipeDef Abstract="True" Name="DankPyon_HoodBase">
-		<description>Craft a fur rug from a pelt of an animal.</description>
+		<description>Craft a fur hood from a pelt of an animal.</description>
 		<jobString>Crafting a fur hood.</jobString>
 		<workAmount>14000</workAmount>
 		<targetCountAdjustment>1</targetCountAdjustment>
@@ -153,6 +153,8 @@
 
 	<RecipeDef ParentName="DankPyon_HoodBase">
 		<defName>DankPyon_MakeHeadgear_Direwolf</defName>
+		<description>Craft a direwolf pelt.</description>
+		<jobString>Crafting a direwolf pelt.</jobString>
 		<label>craft direwolf pelt</label>
 		<workAmount>19000</workAmount>
 		<ingredients>
@@ -186,6 +188,8 @@
 	
 	<RecipeDef ParentName="DankPyon_HoodBase">
 		<defName>DankPyon_MakeHeadgear_HyenaPelt</defName>
+		<description>Craft a hyena pelt.</description>
+		<jobString>Crafting a hyena pelt.</jobString>
 		<label>craft hyena pelt</label>
 		<workAmount>19000</workAmount>
 		<ingredients>
@@ -214,6 +218,163 @@
 		</fixedIngredientFilter>
 		<products>
 			<DankPyon_Apparel_HyenaPelt>1</DankPyon_Apparel_HyenaPelt>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_HoodBase">
+		<defName>DankPyon_Apparel_LindwurmCloak</defName>
+		<description>Craft a lindwurm cloak.</description>
+		<jobString>Crafting a lindwurm cloak.</jobString>
+		<label>craft lindwurm cloak</label>
+		<workAmount>24000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_LindwurmScales</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_UnholdHide</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_LindwurmScales</li>
+				<li>DankPyon_UnholdHide</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Apparel_LindwurmCloak>1</DankPyon_Apparel_LindwurmCloak>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="DankPyon_HoodBase">
+		<defName>DankPyon_Apparel_FurCloak</defName>
+		<description>Craft a fur cloak.</description>
+		<jobString>Crafting a fur cloak.</jobString>
+		<label>craft fur cloak</label>
+		<workAmount>19000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_ThickUnholdFur</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_ThickUnholdFur</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Apparel_FurCloak>1</DankPyon_Apparel_FurCloak>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_HoodBase">
+		<defName>DankPyon_Apparel_BonePlating</defName>
+		<description>Craft bone plating.</description>
+		<jobString>Crafting bone plating.</jobString>
+		<label>craft bone plating</label>
+		<workAmount>24000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_UnholdBones</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_UnholdBones</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Apparel_BonePlating>1</DankPyon_Apparel_BonePlating>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_HoodBase">
+		<defName>DankPyon_Apparel_AdditionalFurPadding</defName>
+		<description>Craft additional fur padding.</description>
+		<jobString>Crafting additional fur padding.</jobString>
+		<label>craft additional fur padding</label>
+		<workAmount>24000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_ThickUnholdFur</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Hide_Leather_Direwolf</li>
+					</thingDefs>
+				</filter>
+				<count>65</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_TanningLiquor</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_ThickUnholdFur</li>
+				<li>DankPyon_Hide_Leather_Direwolf</li>
+				<li>DankPyon_TanningLiquor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Apparel_AdditionalFurPadding>1</DankPyon_Apparel_AdditionalFurPadding>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_HoodBase">
+		<defName>DankPyon_Apparel_RunesAndSigils</defName>
+		<description>Craft runes and sigils.</description>
+		<jobString>Crafting runes and sigils.</jobString>
+		<label>craft runes and sigils</label>
+		<workAmount>16000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_ParchedSkin</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_ParchedSkin</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Apparel_RunesAndSigils>1</DankPyon_Apparel_RunesAndSigils>
 		</products>
 	</RecipeDef>
 

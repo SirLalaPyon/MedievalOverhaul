@@ -71,7 +71,7 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_OperateQuest.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\FileName.cs" />
+    <Compile Include="Medieval Overhaul\Utilities\MayRequireCEAttribute.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DigIce.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\HediffFallRateMultiplier.cs" />

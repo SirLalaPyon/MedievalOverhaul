@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>mealRetexture</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Survival Meal -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealSurvivalPack"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Meal/SurvivalPack</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealSurvivalPack"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</value>
+				</li>
+
+				<!-- Nutrient Paste -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealNutrientPaste"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Meal/NutrientPaste</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealNutrientPaste"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</value>
+				</li>
+
+				<!-- Simple Meal -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealSimple"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Meal/Simple</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealSimple"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</value>
+				</li>
+
+				<!-- Fine Meal -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealFine"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Meal/Fine</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealFine"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</value>
+				</li>
+
+				<!-- Fine Veg Meal -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealFine_Veg"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Meal/FineVeg</texPath>
+					</value>
+				</li>
+
+				<!-- Fine Meat Meal -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealFine_Meat"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Meal/FineMeat</texPath>
+					</value>
+				</li>
+
+				<!-- Lavish Meal -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealLavish"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Meal/Lavish</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealLavish"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</value>
+				</li>
+				
+				<!-- Lavish Veg Meal -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealLavish_Veg"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Meal/LavishVeg</texPath>
+					</value>
+				</li>
+
+				<!-- Lavish Meat Meal -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MealLavish_Meat"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Meal/LavishMeat</texPath>
+					</value>
+				</li>
+
+			</operations>
+		</active>
+	</Operation>
+</Patch>

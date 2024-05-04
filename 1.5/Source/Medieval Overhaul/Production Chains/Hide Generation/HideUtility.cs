@@ -82,6 +82,17 @@ namespace MedievalOverhaul
             def.SetStatBaseValue(StatDefOf.DeteriorationRate, 2f);
             def.SetStatBaseValue(StatDefOf.Mass, 0.03f);
             def.SetStatBaseValue(StatDefOf.MarketValue, 1f);
+            def.comps.Add(new CompProperties_Forbiddable());
+            def.comps.Add(new CompProperties_GenericHide()
+            {
+                pawnSource = raceDef,
+                leatherType = leatherDef
+            }) ;
+            def.comps.Add(new CompProperties_Rottable()
+            {
+                daysToRotStart = 5,
+                rotDestroys = true
+            });
             if (Utility.CEIsEnabled)
             {
                 def.SetStatBaseValue(MedievalOverhaulDefOf.Bulk, leatherDef.GetStatValueAbstract(MedievalOverhaulDefOf.Bulk));
@@ -92,8 +103,6 @@ namespace MedievalOverhaul
                 graphicClass = typeof(Graphic_StackCount),
                 texPath = texPathString
             };
-
-            def.comps.Add(new CompProperties_Forbiddable());
             def.thingCategories = new List<ThingCategoryDef>
             {
                 MedievalOverhaulDefOf.DankPyon_Hides,
@@ -239,6 +248,10 @@ namespace MedievalOverhaul
                 return texPathString;
             }
             return texPathString;
+        }
+        public static bool IsHide(ThingDef thing)
+        {
+                return thing.category == ThingCategory.Item && thing.thingCategories != null && thing.thingCategories.Contains(MedievalOverhaulDefOf.DankPyon_Hides);
         }
     }
 }

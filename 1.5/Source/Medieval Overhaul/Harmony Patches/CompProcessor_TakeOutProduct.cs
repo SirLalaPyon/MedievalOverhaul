@@ -26,7 +26,18 @@ namespace MedievalOverhaul.Patches
                         {
                             if (thing != null)
                             {
-                                if (thing.def.butcherProducts?.Any() ?? false)
+                                var comp = thing.TryGetComp<CompGenericHide>();
+                                if (comp?.pawnSource?.race != null)
+                                {
+                                    var thingDefCount = new ThingDefCountClass
+                                    {
+                                        count = comp.leatherAmount,
+                                        thingDef = comp.Props.leatherType
+                                    };
+                                    __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
+                                    return false;
+                                }
+                                else if (thing.def.butcherProducts?.Any() ?? false)
                                 {
                                     var thingDefCount = thing.def.butcherProducts.FirstOrDefault();
                                     __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
@@ -39,6 +50,20 @@ namespace MedievalOverhaul.Patches
             }
             return true;
         }
+        public static void Postfix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
+        {
+            if (activeProcess.processDef == MedievalOverhaulDefOf.DankPyon_RawHidesProcess)
+            {
+                foreach (var thing in activeProcess.ingredientThings)
+                {
+                    var comp = thing.TryGetComp<CompGenericHide>();
+                    if (comp != null)
+                    {
+                        __result.stackCount = comp.leatherAmount;
+                    }
+                }
+            }
+        }
 
         public static Thing TakeOutButcherProduct(CompProcessor __instance, ThingDefCountClass thingDefCount, ActiveProcess activeProcess)
         {
@@ -46,7 +71,7 @@ namespace MedievalOverhaul.Patches
             if (!activeProcess.Ruined)
             {
                 thing = ThingMaker.MakeThing(thingDefCount.thingDef);
-                thing.stackCount = GenMath.RoundRandom(activeProcess.ingredientCount * activeProcess.processDef.efficiency);
+                thing.stackCount = thingDefCount.count;
                 Log.Message(thing.stackCount);
             }
             foreach (Thing ingredientThing2 in activeProcess.ingredientThings)

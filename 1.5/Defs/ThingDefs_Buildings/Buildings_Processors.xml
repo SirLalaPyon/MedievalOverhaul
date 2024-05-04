@@ -172,9 +172,9 @@
 		<surfaceType>Item</surfaceType>
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
-				<capacity>60</capacity>
+				<capacity>1</capacity>
 				<independentProcesses>false</independentProcesses>
-				<parallelProcesses>true</parallelProcesses>
+				<parallelProcesses>false</parallelProcesses>
 				<dropIngredients>true</dropIngredients>
 				<showProductIcon>true</showProductIcon>
 				<barOffset>(0.0, 0.25)</barOffset>
@@ -234,9 +234,9 @@
 		<surfaceType>Item</surfaceType>
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
-				<capacity>100</capacity>
-				<independentProcesses>true</independentProcesses>
-				<parallelProcesses>true</parallelProcesses>
+				<capacity>1</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
 				<dropIngredients>true</dropIngredients>
 				<showProductIcon>true</showProductIcon>
 				<barOffset>(0.0, 0.25)</barOffset>

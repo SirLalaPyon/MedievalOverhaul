@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ThingDef ParentName="DankPyon_RingBase" Name="DankPyon_Ruin_Ring" Abstract="True">
 		<tradeTags Inherit="False">
 			<li>DankPyon_Ruin_Rings</li>
 		</tradeTags>
-
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
 		</recipeMaker>
@@ -19,19 +19,16 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<MarketValue>550</MarketValue>
 			<WorkToMake>10500</WorkToMake>
 			<Beauty>8</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Citrine>25</DankPyon_Citrine>
 			<Gold>2</Gold>
 		</costList>
-
 		<equippedStatOffsets>
 			<CarryingCapacity>50</CarryingCapacity>
 		</equippedStatOffsets>
@@ -46,19 +43,16 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<MarketValue>550</MarketValue>
 			<WorkToMake>11200</WorkToMake>
 			<Beauty>25</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Emerald>25</DankPyon_Emerald>
 			<Gold>2</Gold>
 		</costList>
-
 		<equippedStatOffsets>
 			<MoveSpeed>0.6</MoveSpeed>
 		</equippedStatOffsets>
@@ -73,19 +67,16 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<MarketValue>750</MarketValue>
 			<WorkToMake>11200</WorkToMake>
 			<Beauty>25</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Ruby>25</DankPyon_Ruby>
 			<Steel>20</Steel>
 		</costList>
-
 		<equippedStatOffsets>
 			<InjuryHealingFactor>0.1</InjuryHealingFactor>
 			<MedicalTendQuality>0.2</MedicalTendQuality>
@@ -101,19 +92,16 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
 			<MarketValue>1120</MarketValue>
 			<WorkToMake>11200</WorkToMake>
 			<Beauty>25</Beauty>
 		</statBases>
-
 		<costList>
 			<DankPyon_Sapphire>25</DankPyon_Sapphire>
 			<Gold>2</Gold>
 		</costList>
-
 		<equippedStatOffsets>
 			<PainShockThreshold>-0.3</PainShockThreshold>
 			<GlobalLearningFactor>0.2</GlobalLearningFactor>
@@ -121,5 +109,32 @@
 			<MentalBreakThreshold>-0.2</MentalBreakThreshold>
 		</equippedStatOffsets>
 	</ThingDef>
-  
+	
+	<ThingDef ParentName="DankPyon_Ruin_Ring">
+		<defName>DankPyon_Ring_StunImmunity</defName>
+		<label>ring of stun immunity</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Apparel/Jewelry/RingResearch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<MarketValue>1120</MarketValue>
+			<WorkToMake>11200</WorkToMake>
+			<Beauty>25</Beauty>
+		</statBases>
+		<costList>
+			<DankPyon_Sapphire>25</DankPyon_Sapphire>
+			<Gold>2</Gold>
+		</costList>
+		<comps>
+		  <li Class="CompProperties_CauseHediff_Apparel">
+			<hediff>DankPyon_StunImmune</hediff>
+			<part>Body</part>
+		  </li>
+		</comps>
+	</ThingDef>
+
 </Defs>

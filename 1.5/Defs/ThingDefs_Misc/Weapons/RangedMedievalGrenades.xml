@@ -92,7 +92,7 @@
 		<label>flash pot</label>
 		<description>An explosive clay pot designed to disorient victims with a bright flash and loude sharp noise.</description>
 		<graphicData>
-			<texPath>WeaponRanged/FlashPots</texPath>
+			<texPath>Projectile/FlashPot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.3</uiIconScale>
@@ -104,8 +104,8 @@
 		</statBases>
 		<costList>
 			<Steel>20</Steel>
-			<DankPyon_ComponentBasic>6</DankPyon_ComponentBasic>
-			<DankPyon_Gunpowder>80</DankPyon_Gunpowder>
+			<DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+			<DankPyon_Gunpowder>10</DankPyon_Gunpowder>
 		</costList>
 		<weaponTags>
 			<li>DankPyon_Grenade_PotFlash</li>
@@ -148,7 +148,7 @@
 		</graphicData>
 		<projectile>
 			<explosionRadius>2.5</explosionRadius>
-			<damageDef>Stun</damageDef>
+			<damageDef>DankPyon_Daze</damageDef>
 			<!-- Use default damage from explosion def -->
 			<explosionDelay>100</explosionDelay>
 		</projectile>
@@ -160,7 +160,7 @@
 		<label>smoke pot</label>
 		<description>An explosive clay pot designed to create a screen of smoke to provide visionary cover.</description>
 		<graphicData>
-			<texPath>WeaponRanged/FlashPots</texPath>
+			<texPath>Projectile/SmokePot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.3</uiIconScale>
@@ -172,7 +172,7 @@
 		</statBases>
 		<costList>
 			<Steel>20</Steel>
-			<DankPyon_ComponentBasic>6</DankPyon_ComponentBasic>
+			<DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
 			<DankPyon_Gunpowder>10</DankPyon_Gunpowder>
 		</costList>
 		<weaponTags>

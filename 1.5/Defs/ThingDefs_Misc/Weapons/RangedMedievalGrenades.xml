@@ -243,6 +243,7 @@
 			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
 			<WorkToMake>11000</WorkToMake>
 		</statBases>
+		<stackLimit>25</stackLimit>
 		<costList>
 			<DankPyon_LindwurmBlood>2</DankPyon_LindwurmBlood>
 		</costList>
@@ -270,7 +271,7 @@
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>1.66</explosiveRadius>
 				<explosiveDamageType>DankPyon_LindwurmAcidBurn</explosiveDamageType>
-				<!--requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode-->
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
 				<preExplosionSpawnThingDef>DankPyon_Filth_AcidBlood</preExplosionSpawnThingDef>
 			</li>
 		</comps>
@@ -286,7 +287,6 @@
 		<projectile>
 			<explosionRadius>1.5</explosionRadius>
 			<damageDef>DankPyon_LindwurmAcidBurn</damageDef>
-			<!-- Use default damage from explosion def -->
 			<preExplosionSpawnThingDef>DankPyon_Filth_AcidBlood</preExplosionSpawnThingDef>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<shadowSize>0.6</shadowSize>

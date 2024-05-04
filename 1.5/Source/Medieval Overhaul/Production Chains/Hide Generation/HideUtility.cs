@@ -55,7 +55,7 @@ namespace MedievalOverhaul
             }
         }
 
-        private static ThingDef BasicHideDef(ThingDef raceDef)
+        private static ThingDef BasicHideDef(ThingDef raceDef, ThingDef leatherDef)
         {
             string defName = "DankPyon_" + raceDef.defName;
             ThingDef def = (DefDatabase<ThingDef>.GetNamed(defName, false) ?? new ThingDef());
@@ -82,6 +82,10 @@ namespace MedievalOverhaul
             def.SetStatBaseValue(StatDefOf.DeteriorationRate, 2f);
             def.SetStatBaseValue(StatDefOf.Mass, 0.03f);
             def.SetStatBaseValue(StatDefOf.MarketValue, 1f);
+            if (Utility.CEIsEnabled)
+            {
+                def.SetStatBaseValue(MedievalOverhaulDefOf.Bulk, leatherDef.GetStatValueAbstract(MedievalOverhaulDefOf.Bulk));
+            }
             string texPathString = GetHideGraphic(raceDef);
             def.graphicData = new GraphicData
             {
@@ -109,7 +113,7 @@ namespace MedievalOverhaul
 
         public static ThingDef MakeHideFor(ThingDef leatherDef, ThingDef raceDef)
         {
-            ThingDef hideDef = BasicHideDef(raceDef);
+            ThingDef hideDef = BasicHideDef(raceDef, leatherDef);
             SetNameAndDesc(leatherDef, hideDef, raceDef);
             if (leatherDef.stuffProps != null)
             {

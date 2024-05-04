@@ -180,12 +180,12 @@ namespace MedievalOverhaul
                 isTechHediff = true,
                 burnableByRecipe = true,
                 minRewardCount = 10,
-        };
+            };
             log.SetStatBaseValue(StatDefOf.Beauty, -4f);
             log.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
 
-            if (wood.GetStatValueAbstract(StatDefOf.Flammability) != null)    
-            log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
+            if (wood.GetStatValueAbstract(StatDefOf.Flammability) != null)
+                log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
             else
                 log.SetStatBaseValue(StatDefOf.Flammability, 1f);
 
@@ -210,6 +210,10 @@ namespace MedievalOverhaul
                 log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Blunt, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Blunt));
             else
                 log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Blunt, 0.54f);
+            if (Utility.CEIsEnabled)
+            {
+                log.SetStatBaseValue(MedievalOverhaulDefOf.Bulk, wood.GetStatValueAbstract(MedievalOverhaulDefOf.Bulk)*2);
+            }
 
             if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Heat) != null)
                 log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Heat));
@@ -227,7 +231,7 @@ namespace MedievalOverhaul
                 log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Heat, 4f);
 
             if (wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier) != null)
-                log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier) );
+                log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier));
             else
                 log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, 0.40f);
             if (wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier) != null)
@@ -236,10 +240,10 @@ namespace MedievalOverhaul
                 log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, 0.9f);
             log.tools = wood.tools;
             log.comps = wood.comps;
-            log.techLevel = wood.techLevel; 
-            log.equipmentType = wood.equipmentType; 
+            log.techLevel = wood.techLevel;
+            log.equipmentType = wood.equipmentType;
             if (wood.weaponClasses != null)
-            { 
+            {
                 log.weaponClasses = wood.weaponClasses;
             }
             if (wood.techHediffsTags != null)
@@ -259,7 +263,7 @@ namespace MedievalOverhaul
 
             };
 
-           
+
             log.stuffProps = new StuffProperties
             {
                 categories = new List<StuffCategoryDef>

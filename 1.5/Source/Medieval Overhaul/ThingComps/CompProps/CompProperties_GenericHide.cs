@@ -9,8 +9,8 @@ namespace MedievalOverhaul
 {
     public class CompProperties_GenericHide : CompProperties
     {
-        public ThingDef pawnSource;
         public ThingDef leatherType;
+        public int leatherAmount;
         public CompProperties_GenericHide() => this.compClass = typeof(CompGenericHide);
     }
 }

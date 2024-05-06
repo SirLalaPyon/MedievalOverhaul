@@ -27,11 +27,16 @@ namespace MedievalOverhaul.Patches
                             if (thing != null)
                             {
                                 var comp = thing.TryGetComp<CompGenericHide>();
-                                if (comp?.pawnSource?.race != null)
+                                if (comp != null)
                                 {
+                                    int amountLeather = comp.Props.leatherAmount;
+                                    if (comp.leatherAmount > comp.Props.leatherAmount)
+                                    {
+                                        amountLeather = comp.leatherAmount;
+                                    }
                                     var thingDefCount = new ThingDefCountClass
                                     {
-                                        count = comp.leatherAmount,
+                                        count = amountLeather,
                                         thingDef = comp.Props.leatherType
                                     };
                                     __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);

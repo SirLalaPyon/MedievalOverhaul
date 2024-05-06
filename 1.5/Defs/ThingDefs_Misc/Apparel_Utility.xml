@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  
+
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>DankPyon_Apparel_Quiver</defName>
 		<label>quiver</label>
@@ -51,38 +51,82 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(0.0,-0.1)</offset>
-					<hulk><offset>(-0.0,-0.1)</offset></hulk>
-					<fat><offset>(-0.0,-0.0)</offset></fat>
-					<thin><offset>(0.0,-0.0)</offset></thin>
+					<hulk>
+						<offset>(-0.0,-0.1)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.0,-0.0)</offset>
+					</fat>
+					<thin>
+						<offset>(0.0,-0.0)</offset>
+					</thin>
 				</north>
 				<south>
 					<offset>(0.0,0.20)</offset>
-					<female><offset>(0.0,-0.2)</offset></female>
-					<hulk><offset>(-0.0,-0.0)</offset></hulk>
-					<fat><offset>(-0.0,-0.0)</offset></fat>
-					<thin><offset>(-0.0,-0.25)</offset></thin>
+					<female>
+						<offset>(0.0,-0.2)</offset>
+					</female>
+					<hulk>
+						<offset>(-0.0,-0.0)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.0,-0.0)</offset>
+					</fat>
+					<thin>
+						<offset>(-0.0,-0.25)</offset>
+					</thin>
 				</south>
 				<east>
 					<offset>(-0.3,-0.15)</offset>
-					<male><offset>(0.0,0.15)</offset></male>
-					<female><offset>(0.1,0.15)</offset></female>
-					<hulk><offset>(-0.12,-0.0)</offset></hulk>
-					<fat><offset>(-0.10,-0.0)</offset></fat>
-					<thin><offset>(0.05,-0.0)</offset></thin>
+					<male>
+						<offset>(0.0,0.15)</offset>
+					</male>
+					<female>
+						<offset>(0.1,0.15)</offset>
+					</female>
+					<hulk>
+						<offset>(-0.12,-0.0)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.10,-0.0)</offset>
+					</fat>
+					<thin>
+						<offset>(0.05,-0.0)</offset>
+					</thin>
 				</east>
 				<west>
 					<offset>(0.3,-0.15)</offset>
-					<male><offset>(0.0,0.15)</offset></male>
-					<female><offset>(-0.1,0.15)</offset></female>
-					<hulk><offset>(0.12,-0.0)</offset></hulk>
-					<fat><offset>(0.10,-0.0)</offset></fat>
-					<thin><offset>(-0.05,-0.0)</offset></thin>
+					<male>
+						<offset>(0.0,0.15)</offset>
+					</male>
+					<female>
+						<offset>(-0.1,0.15)</offset>
+					</female>
+					<hulk>
+						<offset>(0.12,-0.0)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.10,-0.0)</offset>
+					</fat>
+					<thin>
+						<offset>(-0.05,-0.0)</offset>
+					</thin>
 				</west>
-				<male><scale>(0.6,0.6)</scale></male>
-				<female><scale>(0.6,0.6)</scale></female>
-				<thin><scale>(0.7,0.7)</scale></thin>
-				<hulk><scale>(0.75,0.75)</scale></hulk>
-				<fat><scale>(0.75,0.75)</scale></fat>
+				<male>
+					<scale>(0.6,0.6)</scale>
+				</male>
+				<female>
+					<scale>(0.6,0.6)</scale>
+				</female>
+				<thin>
+					<scale>(0.7,0.7)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.75,0.75)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.75,0.75)</scale>
+				</fat>
 			</wornGraphicData>
 		</apparel>
 		<modExtensions>
@@ -94,7 +138,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ApparelNoQualityBase">
 		<defName>DankPyon_Apparel_FlashPotBelt</defName>
 		<label>flash pot belt</label>
@@ -170,31 +214,61 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(-0.10,-0.25)</offset>
-					<hulk><offset>(-0.1,-0.15)</offset></hulk>
-					<fat><offset>(-0.22,-0.0)</offset></fat>
-					<thin><offset>(0.0,-0.0)</offset></thin>
+					<hulk>
+						<offset>(-0.1,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.22,-0.0)</offset>
+					</fat>
+					<thin>
+						<offset>(0.0,-0.0)</offset>
+					</thin>
 				</north>
 				<south>
 					<offset>(0.15,-0.30)</offset>
-					<hulk><offset>(-0.0,-0.10)</offset></hulk>
-					<fat><offset>(0.1,-0.05)</offset></fat>
-					<thin><offset>(-0.10,-0.0)</offset></thin>
+					<hulk>
+						<offset>(-0.0,-0.10)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.1,-0.05)</offset>
+					</fat>
+					<thin>
+						<offset>(-0.10,-0.0)</offset>
+					</thin>
 				</south>
 				<east>
 					<offset>(-0.15,-0.25)</offset>
-					<hulk><offset>(-0.0,-0.15)</offset></hulk>
-					<fat><offset>(-0.2,-0.10)</offset></fat>
+					<hulk>
+						<offset>(-0.0,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.2,-0.10)</offset>
+					</fat>
 				</east>
 				<west>
-				  <offset>(0.15,-0.25)</offset>
-				  <hulk><offset>(-0.0,-0.15)</offset></hulk>
-				  <fat><offset>(0.05,-0.10)</offset></fat>
+					<offset>(0.15,-0.25)</offset>
+					<hulk>
+						<offset>(-0.0,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.05,-0.10)</offset>
+					</fat>
 				</west>
-				<male>  <scale>(0.6,0.6)</scale></male>
-				<female><scale>(0.6,0.6)</scale></female>
-				<thin>  <scale>(0.6,0.6)</scale></thin>
-				<hulk>  <scale>(0.7,0.7)</scale></hulk>
-				<fat>   <scale>(0.7,0.7)</scale></fat>
+				<male>
+					<scale>(0.6,0.6)</scale>
+				</male>
+				<female>
+					<scale>(0.6,0.6)</scale>
+				</female>
+				<thin>
+					<scale>(0.6,0.6)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.7,0.7)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.7,0.7)</scale>
+				</fat>
 			</wornGraphicData>
 			<drawData>
 				<dataNorth>
@@ -226,7 +300,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ApparelNoQualityBase">
 		<defName>DankPyon_Apparel_FirePotBelt</defName>
 		<label>fire pot belt</label>
@@ -302,31 +376,61 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(-0.10,-0.25)</offset>
-					<hulk><offset>(-0.1,-0.15)</offset></hulk>
-					<fat><offset>(-0.22,-0.0)</offset></fat>
-					<thin><offset>(0.0,-0.0)</offset></thin>
+					<hulk>
+						<offset>(-0.1,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.22,-0.0)</offset>
+					</fat>
+					<thin>
+						<offset>(0.0,-0.0)</offset>
+					</thin>
 				</north>
 				<south>
 					<offset>(0.15,-0.30)</offset>
-					<hulk><offset>(-0.0,-0.10)</offset></hulk>
-					<fat><offset>(0.1,-0.05)</offset></fat>
-					<thin><offset>(-0.10,-0.0)</offset></thin>
+					<hulk>
+						<offset>(-0.0,-0.10)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.1,-0.05)</offset>
+					</fat>
+					<thin>
+						<offset>(-0.10,-0.0)</offset>
+					</thin>
 				</south>
 				<east>
 					<offset>(-0.15,-0.25)</offset>
-					<hulk><offset>(-0.0,-0.15)</offset></hulk>
-					<fat><offset>(-0.2,-0.10)</offset></fat>
+					<hulk>
+						<offset>(-0.0,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.2,-0.10)</offset>
+					</fat>
 				</east>
 				<west>
-				  <offset>(0.15,-0.25)</offset>
-				  <hulk><offset>(-0.0,-0.15)</offset></hulk>
-				  <fat><offset>(0.05,-0.10)</offset></fat>
+					<offset>(0.15,-0.25)</offset>
+					<hulk>
+						<offset>(-0.0,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.05,-0.10)</offset>
+					</fat>
 				</west>
-				<male>  <scale>(0.6,0.6)</scale></male>
-				<female><scale>(0.6,0.6)</scale></female>
-				<thin>  <scale>(0.6,0.6)</scale></thin>
-				<hulk>  <scale>(0.7,0.7)</scale></hulk>
-				<fat>   <scale>(0.7,0.7)</scale></fat>
+				<male>
+					<scale>(0.6,0.6)</scale>
+				</male>
+				<female>
+					<scale>(0.6,0.6)</scale>
+				</female>
+				<thin>
+					<scale>(0.6,0.6)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.7,0.7)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.7,0.7)</scale>
+				</fat>
 			</wornGraphicData>
 			<drawData>
 				<dataNorth>
@@ -358,7 +462,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ApparelNoQualityBase">
 		<defName>DankPyon_Apparel_SmokePotBelt</defName>
 		<label>smoke pot belt</label>
@@ -434,31 +538,61 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(-0.10,-0.25)</offset>
-					<hulk><offset>(-0.1,-0.15)</offset></hulk>
-					<fat><offset>(-0.22,-0.0)</offset></fat>
-					<thin><offset>(0.0,-0.0)</offset></thin>
+					<hulk>
+						<offset>(-0.1,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.22,-0.0)</offset>
+					</fat>
+					<thin>
+						<offset>(0.0,-0.0)</offset>
+					</thin>
 				</north>
 				<south>
 					<offset>(0.15,-0.30)</offset>
-					<hulk><offset>(-0.0,-0.10)</offset></hulk>
-					<fat><offset>(0.1,-0.05)</offset></fat>
-					<thin><offset>(-0.10,-0.0)</offset></thin>
+					<hulk>
+						<offset>(-0.0,-0.10)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.1,-0.05)</offset>
+					</fat>
+					<thin>
+						<offset>(-0.10,-0.0)</offset>
+					</thin>
 				</south>
 				<east>
 					<offset>(-0.15,-0.25)</offset>
-					<hulk><offset>(-0.0,-0.15)</offset></hulk>
-					<fat><offset>(-0.2,-0.10)</offset></fat>
+					<hulk>
+						<offset>(-0.0,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.2,-0.10)</offset>
+					</fat>
 				</east>
 				<west>
-				  <offset>(0.15,-0.25)</offset>
-				  <hulk><offset>(-0.0,-0.15)</offset></hulk>
-				  <fat><offset>(0.05,-0.10)</offset></fat>
+					<offset>(0.15,-0.25)</offset>
+					<hulk>
+						<offset>(-0.0,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.05,-0.10)</offset>
+					</fat>
 				</west>
-				<male>  <scale>(0.6,0.6)</scale></male>
-				<female><scale>(0.6,0.6)</scale></female>
-				<thin>  <scale>(0.6,0.6)</scale></thin>
-				<hulk>  <scale>(0.7,0.7)</scale></hulk>
-				<fat>   <scale>(0.7,0.7)</scale></fat>
+				<male>
+					<scale>(0.6,0.6)</scale>
+				</male>
+				<female>
+					<scale>(0.6,0.6)</scale>
+				</female>
+				<thin>
+					<scale>(0.6,0.6)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.7,0.7)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.7,0.7)</scale>
+				</fat>
 			</wornGraphicData>
 			<drawData>
 				<dataNorth>
@@ -490,7 +624,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ApparelNoQualityBase">
 		<defName>DankPyon_Apparel_AcidFlaskBelt</defName>
 		<label>acid flask belt</label>
@@ -543,7 +677,7 @@
 			</skillRequirements>
 		</recipeMaker>
 		<costList>
-			<DankPyon_Proj_AcidFlask>1</DankPyon_Proj_AcidFlask>
+			<DankPyon_Weapon_AcidFlask>1</DankPyon_Weapon_AcidFlask>
 		</costList>
 		<graphicData>
 			<texPath>Apparel/Utility/AcidFlaskBelt</texPath>
@@ -566,31 +700,61 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(-0.10,-0.25)</offset>
-					<hulk><offset>(-0.1,-0.15)</offset></hulk>
-					<fat><offset>(-0.22,-0.0)</offset></fat>
-					<thin><offset>(0.0,-0.0)</offset></thin>
+					<hulk>
+						<offset>(-0.1,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.22,-0.0)</offset>
+					</fat>
+					<thin>
+						<offset>(0.0,-0.0)</offset>
+					</thin>
 				</north>
 				<south>
 					<offset>(0.15,-0.30)</offset>
-					<hulk><offset>(-0.0,-0.10)</offset></hulk>
-					<fat><offset>(0.1,-0.05)</offset></fat>
-					<thin><offset>(-0.10,-0.0)</offset></thin>
+					<hulk>
+						<offset>(-0.0,-0.10)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.1,-0.05)</offset>
+					</fat>
+					<thin>
+						<offset>(-0.10,-0.0)</offset>
+					</thin>
 				</south>
 				<east>
 					<offset>(-0.15,-0.25)</offset>
-					<hulk><offset>(-0.0,-0.15)</offset></hulk>
-					<fat><offset>(-0.2,-0.10)</offset></fat>
+					<hulk>
+						<offset>(-0.0,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.2,-0.10)</offset>
+					</fat>
 				</east>
 				<west>
-				  <offset>(0.15,-0.25)</offset>
-				  <hulk><offset>(-0.0,-0.15)</offset></hulk>
-				  <fat><offset>(0.05,-0.10)</offset></fat>
+					<offset>(0.15,-0.25)</offset>
+					<hulk>
+						<offset>(-0.0,-0.15)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.05,-0.10)</offset>
+					</fat>
 				</west>
-				<male>  <scale>(0.6,0.6)</scale></male>
-				<female><scale>(0.6,0.6)</scale></female>
-				<thin>  <scale>(0.6,0.6)</scale></thin>
-				<hulk>  <scale>(0.7,0.7)</scale></hulk>
-				<fat>   <scale>(0.7,0.7)</scale></fat>
+				<male>
+					<scale>(0.6,0.6)</scale>
+				</male>
+				<female>
+					<scale>(0.6,0.6)</scale>
+				</female>
+				<thin>
+					<scale>(0.6,0.6)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.7,0.7)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.7,0.7)</scale>
+				</fat>
 			</wornGraphicData>
 			<drawData>
 				<dataNorth>
@@ -622,6 +786,6 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-  
-  
+
+
 </Defs>

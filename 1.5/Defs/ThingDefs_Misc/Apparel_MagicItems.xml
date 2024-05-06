@@ -109,13 +109,13 @@
 			<MentalBreakThreshold>-0.2</MentalBreakThreshold>
 		</equippedStatOffsets>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="DankPyon_Ruin_Ring">
 		<defName>DankPyon_Ring_StunImmunity</defName>
 		<label>ring of stun immunity</label>
 		<description>PLACEHOLDER</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/RingResearch</texPath>
+			<texPath>Apparel/Jewelry/RingStunImmune</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -127,13 +127,14 @@
 		</statBases>
 		<costList>
 			<DankPyon_Sapphire>25</DankPyon_Sapphire>
+			<DankPyon_UnholdHeart>1</DankPyon_UnholdHeart>
 			<Gold>2</Gold>
 		</costList>
 		<comps>
-		  <li Class="CompProperties_CauseHediff_Apparel">
-			<hediff>DankPyon_StunImmune</hediff>
-			<part>Body</part>
-		  </li>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>DankPyon_StunImmune</hediff>
+				<part>Body</part>
+			</li>
 		</comps>
 	</ThingDef>
 

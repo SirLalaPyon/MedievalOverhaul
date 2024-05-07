@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>exostriderRemains</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/MapGeneratorDef[defName="Base_Player"]/genSteps/li[text()="AncientExostriderRemains"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/MapGeneratorDef[defName="Base_Player"]/genSteps/li[text()="AncientExostriderRemains"]</xpath>
+					</match>
+				</li>
+
+			</operations>
+		</active>
+	</Operation>
+
+</Patch>

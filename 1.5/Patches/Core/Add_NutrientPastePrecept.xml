@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName="NutrientPasteEating_Disgusting"]/comps</xpath>
+		<value>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>DankPyon_AteSlop</eventDef>
+				<thought>DankPyon_AteSlopMeal</thought>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

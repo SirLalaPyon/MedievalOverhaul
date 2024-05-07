@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using MedievalOverhaul;
+using MedievalOverhaul.Patches;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -66,7 +67,7 @@ namespace MedievalOverhaul
             def.resourceReadoutPriority = ResourceCountPriority.Middle;
             def.useHitPoints = true;
             def.selectable = true;
-            def.stackLimit = 100;
+            def.stackLimit = 75;
             def.alwaysHaulable = true;
             def.drawGUIOverlay = true;
             def.rotatable = false;
@@ -81,12 +82,13 @@ namespace MedievalOverhaul
             def.SetStatBaseValue(StatDefOf.Flammability, 1f);
             def.SetStatBaseValue(StatDefOf.DeteriorationRate, 2f);
             def.SetStatBaseValue(StatDefOf.Mass, 0.03f);
-            def.SetStatBaseValue(StatDefOf.MarketValue, 1f);
+            def.SetStatBaseValue(StatDefOf.MarketValue, (leatherDef.GetStatValueAbstract(StatDefOf.MarketValue)*.8f));
             def.comps.Add(new CompProperties_Forbiddable());
             def.comps.Add(new CompProperties_GenericHide()
             {
-                pawnSource = raceDef,
-                leatherType = leatherDef
+                leatherType = leatherDef,
+                leatherAmount = 1
+
             }) ;
             def.comps.Add(new CompProperties_Rottable()
             {
@@ -95,7 +97,7 @@ namespace MedievalOverhaul
             });
             if (Utility.CEIsEnabled)
             {
-                def.SetStatBaseValue(MedievalOverhaulDefOf.Bulk, leatherDef.GetStatValueAbstract(MedievalOverhaulDefOf.Bulk));
+                def.SetStatBaseValue(MedievalOverhaulDefOf.Bulk, 6);
             }
             string texPathString = GetHideGraphic(raceDef);
             def.graphicData = new GraphicData

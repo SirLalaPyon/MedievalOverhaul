@@ -7,9 +7,9 @@ using System.Security.Cryptography;
 
 namespace MedievalOverhaul
 {
-    public class CompMeltable : ThingComp
+    public class CompMeltable : CompRottable
     {
-        public CompProperties_Meltable PropsRot
+        public new CompProperties_Meltable PropsRot
         {
             get
             {
@@ -38,7 +38,7 @@ namespace MedievalOverhaul
             }
         }
 
-        public RotStage Stage
+        public new RotStage Stage
         {
             get
             {
@@ -50,11 +50,15 @@ namespace MedievalOverhaul
             }
         }
 
-        public bool Active
+        public new bool Active
         {
             get
             {
-                return !parent.Position.GetThingList(parent.Map).Any((Thing x) => x.def == MedievalOverhaulDefOf.DankPyon_IceCellar);
+                if (parent.Map != null)
+                {
+                    return !parent.Position.GetThingList(parent.Map).Any((Thing x) => x.def == MedievalOverhaulDefOf.DankPyon_IceCellar);
+                }
+                return !this.disabled;
             }
         }
 
@@ -179,6 +183,6 @@ namespace MedievalOverhaul
 
         private float meltProgressInt;
 
-        public bool disabled;
+        public new bool disabled;
     }
 }

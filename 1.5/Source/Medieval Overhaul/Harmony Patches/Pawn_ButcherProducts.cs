@@ -25,6 +25,7 @@ namespace MedievalOverhaul.Patches
                         comp.leatherAmount = product.stackCount;
                         var leatherCost = comp.Props.leatherType.GetStatValueAbstract(StatDefOf.MarketValue);
                         comp.marketValue = (int)((int)(comp.leatherAmount * leatherCost) * 0.8f);
+                        comp.massValue = (comp.leatherAmount * comp.Props.leatherType.GetStatValueAbstract(StatDefOf.Mass));
                         product.stackCount = 1;
                         Log.Message(comp.leatherAmount + " " + comp.Props.leatherType);
                     }

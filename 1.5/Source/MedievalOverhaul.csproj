@@ -37,9 +37,11 @@
   <ItemGroup>
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Designator_DigIce.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\StockGenerator_Category_GenerateThings.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerTrader_PowerOn.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\DamageWorker_Stun_Result.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Alert_PasteDispenserNeedsHopper.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\StatExtension_GetStatValue.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Quest_End_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StaggerHandler_StaggerFor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_Meteorite_Reset.cs" />

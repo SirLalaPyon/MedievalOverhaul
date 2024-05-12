@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
   <Excluded>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\.git</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\1.5\Source</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\1.4\Source</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\About\Preview01.png</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\About\Preview02.png</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\About\Preview03.png</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\About\Preview04.png</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\About\Preview01_shrunk.png</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\About\Preview02_shrunk.png</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\About\Preview03_shrunk.png</exclude>
-	<exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MedievalOverhaul\About\Preview04_shrunk.png</exclude>
+    <exclude>.git</exclude>
+    <exclude>.vs</exclude>
+    <exclude>1.4\Source</exclude>
+    <exclude>1.5\Source</exclude>
+    <exclude>About\Preview01.png</exclude>
+    <exclude>About\Preview01_shrunk.png</exclude>
+    <exclude>About\Preview02.png</exclude>
+    <exclude>About\Preview02_shrunk.png</exclude>
+    <exclude>About\Preview03.png</exclude>
+    <exclude>About\Preview03_shrunk.png</exclude>
+    <exclude>About\Preview04.png</exclude>
+    <exclude>About\Preview04_shrunk.png</exclude>
   </Excluded>
 </Configuration>

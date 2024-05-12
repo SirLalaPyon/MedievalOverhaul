@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 
 namespace MedievalOverhaul
 {
-    public class CompMeltable : CompRottable
+    public class CompMeltable : ThingComp
     {
         public new CompProperties_Meltable PropsRot
         {
@@ -58,7 +58,7 @@ namespace MedievalOverhaul
                 {
                     return !parent.Position.GetThingList(parent.Map).Any((Thing x) => x.def == MedievalOverhaulDefOf.DankPyon_IceCellar);
                 }
-                return !this.disabled;
+                return false;
             }
         }
 

@@ -9,7 +9,7 @@ namespace MedievalOverhaul
 {
     public class CompMeltable : ThingComp
     {
-        public new CompProperties_Meltable PropsRot
+        public CompProperties_Meltable PropsRot
         {
             get
             {
@@ -50,7 +50,7 @@ namespace MedievalOverhaul
             }
         }
 
-        public new bool Active
+        public bool Active
         {
             get
             {
@@ -183,6 +183,6 @@ namespace MedievalOverhaul
 
         private float meltProgressInt;
 
-        public new bool disabled;
+        public bool disabled;
     }
 }

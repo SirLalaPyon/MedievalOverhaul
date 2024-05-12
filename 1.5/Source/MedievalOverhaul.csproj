@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
-    <Compile Include="Medieval Overhaul\Designator_DigIce.cs" />
+    <Compile Include="Medieval Overhaul\Designator_GatherIce.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StockGenerator_Category_GenerateThings.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerTrader_PowerOn.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\DamageWorker_Stun_Result.cs" />
@@ -50,7 +50,7 @@
     <Compile Include="Medieval Overhaul\HediffComps\CompProperties\HediffCompProperties_LindwurmAcid.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Daze.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_LindwurmAcid.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DigIce.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_GatherIce.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompMeltable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_GenericHide.cs" />
@@ -78,7 +78,7 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\Utilities\MayRequireCEAttribute.cs" />
-    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DigIce.cs" />
+    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_GatherIce.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\HediffFallRateMultiplier.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\MeteorProperties.cs" />

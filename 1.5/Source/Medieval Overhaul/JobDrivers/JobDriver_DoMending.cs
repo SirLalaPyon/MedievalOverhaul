@@ -189,7 +189,6 @@ namespace MedievalOverhaul
             return toil;
         }
 
-        // Token: 0x060037BD RID: 14269 RVA: 0x00155924 File Offset: 0x00153B24
         public static Toil JumpToCollectNextIntoHandsForBill(Toil gotoGetTargetToil, TargetIndex ind)
         {
             Toil toil = ToilMaker.MakeToil("JumpToCollectNextIntoHandsForBill");

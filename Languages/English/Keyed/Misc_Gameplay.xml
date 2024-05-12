@@ -110,10 +110,12 @@
 
 	<!-- Production Chains -->
 	<DankPyon_Hide_Description>These raw hides and pelts were removed from a creature, and with the right skills and tools, could be processed into tanned leather.</DankPyon_Hide_Description>
-	<DankPyon_Hide>hide</DankPyon_Hide>
+	<DankPyon_Hide>{0} hide</DankPyon_Hide>
+	<DankPyon_PlainHide>Plain hide</DankPyon_PlainHide>
 	<DankPyon_Plank_Description>Useful for building structures and weapons. It is a good fuel for campfires.</DankPyon_Plank_Description>
-	<DankPyon_Log>log</DankPyon_Log>
-	<DankPyon_Timber>plank</DankPyon_Timber>
+	<DankPyon_Log>{0} log</DankPyon_Log>
+	<DankPyon_Timber>{0} plank</DankPyon_Timber>
+	<DankPyon_Plank>plank</DankPyon_Plank>
 
 	<!-- Misc -->
 	<DankPyon_Gossamer_Desc>Webknecht gossamer production:</DankPyon_Gossamer_Desc>
@@ -134,9 +136,9 @@
 	
 	<!-- Ice Stuff -->
 	<DankPyon_Melted>Fully melted in</DankPyon_Melted>
-	<DankPyon_Dig>Dig Ice</DankPyon_Dig>
-	<DankPyon_DigDesc>Dig holes to make ice blocks</DankPyon_DigDesc>
-	<DankPyon_MustBeIce>Terrain must be ice</DankPyon_MustBeIce>
+	<DankPyon_GatherIce>Gather Ice/Water</DankPyon_GatherIce>
+	<DankPyon_GatherIceDesc>Collect ice or water from approriate terrain.</DankPyon_GatherIceDesc>
+	<DankPyon_MustBeIce>Terrain must be ice or water</DankPyon_MustBeIce>
 	<DankPyon_MustBeOnSoil>Terrain must be soil</DankPyon_MustBeOnSoil>
 	<DankPyon_MeltedAwayInStorage>{1_label} has melted away in storage.</DankPyon_MeltedAwayInStorage>
 

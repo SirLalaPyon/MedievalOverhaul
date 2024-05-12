@@ -300,24 +300,35 @@
 		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]/requiredResearchFacilities</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]/requiredResearchFacilities</xpath>
-			<value>
-				<requiredResearchFacilities>
-					<li>DankPyon_Book_NobleBlades</li>
-				</requiredResearchFacilities>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
-			<value>
-				<requiredResearchFacilities>
-					<li>DankPyon_Book_NobleBlades</li>
-				</requiredResearchFacilities>
-			</value>
-		</nomatch>
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>biotechSchematic</li>
+		</settings>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+		
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]/requiredResearchFacilities</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]/requiredResearchFacilities</xpath>
+						<value>
+							<requiredResearchFacilities>
+								<li>DankPyon_Book_NobleBlades</li>
+							</requiredResearchFacilities>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+						<value>
+							<requiredResearchFacilities>
+								<li>DankPyon_Book_NobleBlades</li>
+							</requiredResearchFacilities>
+						</value>
+					</nomatch>
+				</li>
+
+			</operations>
+		</inactive>
 	</Operation>
 
 	<!-- ===== Plate Armor Patches ==== -->
@@ -648,25 +659,36 @@
 			</value>
 		</match>
 	</Operation>
+	
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>biotechSchematic</li>
+		</settings>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+		
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]/requiredResearchFacilities</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]/requiredResearchFacilities</xpath>
+						<value>
+							<requiredResearchFacilities>
+								<li>DankPyon_Book_GreatBow</li>
+							</requiredResearchFacilities>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
+						<value>
+							<requiredResearchFacilities>
+								<li>DankPyon_Book_GreatBow</li>
+							</requiredResearchFacilities>
+						</value>
+					</nomatch>
+				</li>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]/requiredResearchFacilities</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]/requiredResearchFacilities</xpath>
-			<value>
-				<requiredResearchFacilities>
-					<li>DankPyon_Book_NobleBlades</li>
-				</requiredResearchFacilities>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
-			<value>
-				<requiredResearchFacilities>
-					<li>DankPyon_Book_GreatBow</li>
-				</requiredResearchFacilities>
-			</value>
-		</nomatch>
+			</operations>
+		</inactive>
 	</Operation>
 
 	<!-- ============================ Core ThingDef Research Prerequisite Replace ========================== -->

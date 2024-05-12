@@ -117,7 +117,7 @@ namespace MedievalOverhaul
             {
                 wood.graphicData.texPath = "Resources/WoodPlank";
                 wood.graphicData.color = log.graphicData.color;
-                wood.stuffProps.stuffAdjective = wood.stuffProps.stuffAdjective.ToString() + " " + "DankPyon_Timber".Translate();
+                wood.stuffProps.stuffAdjective = wood.stuffProps.stuffAdjective.ToString() + " " + "DankPyon_Plank".Translate();
             }
             catch
             {
@@ -294,8 +294,10 @@ namespace MedievalOverhaul
         private static void SetNameAndDesc(ThingDef wood, ThingDef timber)
         {
             timber.defName = $"DankPyon_Log_{Utility.RemoveSubstring(wood, "DankPyon_")}".Replace(" ", "").Replace("-", "");
-            timber.label = $"{wood.label}" + " " + "DankPyon_Log".Translate();
-            wood.label = $"{wood.label}" + " " + "DankPyon_Timber".Translate();
+            //timber.label = $"{wood.label}" + " " + "DankPyon_Log".Translate();
+            //wood.label = $"{wood.label}" + " " + "DankPyon_Timber".Translate();
+            timber.label = "DankPyon_Log".Translate(wood.label);
+            wood.label = "DankPyon_Timber".Translate(wood.label);
 
         }
 

@@ -10,12 +10,12 @@ using System.Security.Cryptography;
 
 namespace MedievalOverhaul
 {
-    public class JobDriver_DigIce : JobDriver_AffectFloor
+    public class JobDriver_GatherIce : JobDriver_AffectFloor
     {
 
         protected override int BaseWorkAmount => 600;
 
-        protected override DesignationDef DesDef => MedievalOverhaulDefOf.DankPyon_DigIce;
+        protected override DesignationDef DesDef => MedievalOverhaulDefOf.DankPyon_GatherIce;
 
         protected override StatDef SpeedStat => StatDefOf.MiningSpeed;
 
@@ -58,9 +58,19 @@ namespace MedievalOverhaul
 
         protected override void DoEffect(IntVec3 c)
         {
-            Thing thing = ThingMaker.MakeThing(MedievalOverhaulDefOf.DankPyon_IceBlock);
-            thing.stackCount = 5;
-            GenPlace.TryPlaceThing(thing, base.TargetLocA, base.Map, ThingPlaceMode.Near);
+            TerrainDef terrain = base.Map.terrainGrid.TerrainAt(c);
+            if (terrain == TerrainDefOf.Ice)
+            {
+                Thing thing = ThingMaker.MakeThing(MedievalOverhaulDefOf.DankPyon_IceBlock);
+                thing.stackCount = 5;
+                GenPlace.TryPlaceThing(thing, base.TargetLocA, base.Map, ThingPlaceMode.Near);
+            }
+            if (terrain.IsWater)
+            {
+                Thing thing = ThingMaker.MakeThing(MedievalOverhaulDefOf.DankPyon_Waterskin);
+                thing.stackCount = 1;
+                GenPlace.TryPlaceThing(thing, base.TargetLocA, base.Map, ThingPlaceMode.Near);
+            }
         }
 
         public override void ExposeData()
@@ -71,6 +81,6 @@ namespace MedievalOverhaul
 
         private float workLeft = -1000f;
 
-        protected bool clearSnow;
+        protected new bool clearSnow;
     }
 }

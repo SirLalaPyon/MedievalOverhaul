@@ -48,6 +48,7 @@ namespace MedievalOverhaul
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
+            if (AvailableForFind.Count() == 0)
             this.compRefuelable = this.parent.TryGetComp<CompRefuelable>();
             this.facilities = this.parent.TryGetComp<CompAffectedByFacilities>();
             if (this.currentQuest == null)
@@ -173,7 +174,7 @@ namespace MedievalOverhaul
             this.currentQuest = this.AvailableForFind.RandomElement<QuestScriptDef>();
         }
 
-        public bool CanUseNow
+        public new bool CanUseNow
         {
             get
             {

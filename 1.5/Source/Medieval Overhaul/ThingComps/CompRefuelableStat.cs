@@ -42,7 +42,7 @@ namespace MedievalOverhaul
 		{
 			return Mathf.CeilToInt(GetFuelCountToFullyRefuel() / Props.stat.Worker.GetValue(thing, false));
 		}
-        public void Refuel(List<Thing> fuelThings)
+        public new void Refuel(List<Thing> fuelThings)
         {
             if (this.Props.atomicFueling)
             {

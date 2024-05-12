@@ -9,8 +9,8 @@
 	</JobDef>
 
 	<JobDef>
-		<defName>DankPyon_JobDigIce</defName>
-		<driverClass>MedievalOverhaul.JobDriver_DigIce</driverClass>
+		<defName>DankPyon_JobGatherIce</defName>
+		<driverClass>MedievalOverhaul.JobDriver_GatherIce</driverClass>
 		<reportString>digging at TargetA.</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>

@@ -2,13 +2,13 @@
 <Defs>
 	
 	<WorkGiverDef>
-		<defName>DankPyon_WorkDigIce</defName>
-		<label>Dig ice blocks</label>
-		<giverClass>MedievalOverhaul.WorkGiver_DigIce</giverClass>
+		<defName>DankPyon_WorkGatherIce</defName>
+		<label>Gather ice or water</label>
+		<giverClass>MedievalOverhaul.WorkGiver_GatherIce</giverClass>
 		<workType>Mining</workType>
 		<priorityInType>6</priorityInType>
-		<verb>dig ice</verb>
-		<gerund>digging</gerund>
+		<verb>gather ice</verb>
+		<gerund>gathering</gerund>
 		<scanThings>false</scanThings>
 		<scanCells>true</scanCells>
 		<requiredCapacities>
@@ -414,21 +414,6 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
-
-	<!--WorkGiverDef>
-		<defName>Ice_DigIce</defName>
-		<label>Dig ice blocks</label>
-		<giverClass>Ice.WorkGiver_ConstructDigIce</giverClass>
-		<workType>Mining</workType>
-		<priorityInType>6</priorityInType>
-		<verb>dig ice</verb>
-		<gerund>digging </gerund>
-		<scanThings>false</scanThings>
-		<scanCells>true</scanCells>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-	</WorkGiverDef-->
 	
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsCookHearth</defName>

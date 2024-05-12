@@ -23,6 +23,11 @@ namespace MedievalOverhaul
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
+            if (QuestScriptDefOf.LongRangeMineralScannerLump == null)
+            {
+                this.Destroy(DestroyMode.Refund);
+                Log.Error("Long Range Mineral Lump Quest has been removed. Destroying and refunding building. ");
+            }
             this.refuelableComp = base.GetComp<CompRefuelable>();
         }
 

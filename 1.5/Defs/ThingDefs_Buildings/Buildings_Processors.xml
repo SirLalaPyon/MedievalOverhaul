@@ -732,4 +732,58 @@
 		<techLevel>Medieval</techLevel>
 	</ThingDef>
 
+	<!-- Ice Block Maker -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_IceBlock_Maker</defName>
+		<label>ice block mold</label>
+		<description>A wooden mold for freezing water into ice during times of cold.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/IceBlockMold/IceBlockMold</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<altitudeLayer>Building</altitudeLayer>
+		<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>70</pathCost>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>25</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>false</dropIngredients>
+				<showProductIcon>false</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_IceBlockProcess</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 </Defs>

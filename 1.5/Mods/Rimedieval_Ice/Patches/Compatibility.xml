@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="DankPyon_IceBlock"]</xpath>
+		<value>
+			<stuffProps>
+			  <stuffAdjective>Ice</stuffAdjective>
+			  <appearance>Bricks</appearance>
+			  <categories>
+				<li>Ice_Ice</li>
+			  </categories>
+			  <color>(180,210,230)</color>
+			  <commonality>0.01</commonality>
+			  <constructEffect>ConstructMetal</constructEffect>
+			  <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			  <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			  <statOffsets>
+				<Beauty>3</Beauty>
+			  </statOffsets>
+			  <statFactors>
+				<MaxHitPoints>2</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<Beauty>1.5</Beauty>
+				<WorkToMake>1.2</WorkToMake>
+			  </statFactors>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Ice_MedievalFridge"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+			<li>DankPyon_IceBlock</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Ice_Cellar"]/building/defaultStorageSettings/filter/thingDefs</xpath>
+		<value>
+			<li>DankPyon_IceBlock</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Ice_Cellar"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+		<value>
+			<li>DankPyon_IceBlock</li>
+		</value>
+	</Operation>
+
+</Patch>

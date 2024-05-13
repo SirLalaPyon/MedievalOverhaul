@@ -85,17 +85,7 @@
 								<texPath>Resources/WoodPlank</texPath>
 								<graphicClass>Graphic_StackCount</graphicClass>
 								<color>(133,97,67)</color>
-							</graphicData>							
-						</value>
-					</match>
-				</li>
-
-				<li Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
-						<value>
-							<li>DankPyon_Wood</li>
+							</graphicData>
 						</value>
 					</match>
 				</li>
@@ -302,9 +292,47 @@
 						<xpath>/Defs/ThingDef[killedLeavings/DankPyon_RawWood]/killedLeavings/DankPyon_RawWood</xpath>
 					</match>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef/building/fixedStorageSettings/filter/categories/li[.="DankPyon_RawWood"]</xpath>
+					<value>
+						<li>DankPyon_Wood</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef/building/defaultStorageSettings/filter/categories/li[.="DankPyon_RawWood"]</xpath>
+					<value>
+						<li>DankPyon_Wood</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef/building/fixedStorageSettings/filter/thingDefs/li[.="DankPyon_RawWood"]</xpath>
+					<value>
+						<li>WoodLog</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef/building/defaultStorageSettings/filter/thingDefs/li[.="DankPyon_RawWood"]</xpath>
+					<value>
+						<li>WoodLog</li>
+					</value>
+				</li>
 
 			</operations>
 		</inactive>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
+			<value>
+				<li>DankPyon_Wood</li>
+			</value>
+		</match>
 	</Operation>
 
 </Patch>

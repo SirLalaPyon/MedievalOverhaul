@@ -27,7 +27,7 @@
 						<texPath>Resources/Steel</texPath>
 					</value>
 				</li>
-			
+
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="Steel"]/stuffProps/stuffAdjective</xpath>
 					<match Class="PatchOperationReplace">

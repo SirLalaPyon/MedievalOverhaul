@@ -40,6 +40,9 @@
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3210544395</steamWorkshopUrl>
 	  </li>
 	</modDependencies>
+	<incompatibleWith>
+		<li>ogam.rimedieval</li>
+	</incompatibleWith>
 	<description>Pretty dank mod</description>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/PrettiestBarrel</modIconPath>
 </ModMetaData>

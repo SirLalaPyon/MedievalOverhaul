@@ -246,6 +246,44 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef>
+		<defName>DankPyon_Waterskin</defName>
+		<label>Waterskin</label>
+		<description>Water that has been gathered up and placed inside a pouch.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Resources/Waterskin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<soundInteract>Stone_Drop</soundInteract>
+		<soundDrop>Stone_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<MarketValue>3.5</MarketValue>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Mass>1</Mass>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>15</stackLimit>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+		<tradeTags><li>ResourcesRaw</li></tradeTags>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
 	<!--============================== Beekeeping ==============================-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_Wax</defName>

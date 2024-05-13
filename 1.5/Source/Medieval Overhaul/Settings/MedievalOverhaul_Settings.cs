@@ -34,6 +34,7 @@ namespace MedievalOverhaul
         public bool refuelableTorch = false;
         public bool boomalopeTar = true;
         public bool mealRetexture = true;
+        public bool biotechSchematic = false;
         public override void ExposeData()
         {
             base.ExposeData();
@@ -47,6 +48,7 @@ namespace MedievalOverhaul
             Scribe_Values.Look(ref refuelableTorch, "refuelableTorch", false);
             Scribe_Values.Look(ref boomalopeTar, "boomalopeTar", true);
             Scribe_Values.Look(ref mealRetexture, "mealRetexture", true);
+            Scribe_Values.Look(ref biotechSchematic, "biotechSchematic", false);
             Scribe_Values.Look(ref debugMode, "debugMode", false);
             Scribe_Collections.Look(ref settingMode, "settingMode", LookMode.Value, LookMode.Value);
 
@@ -88,6 +90,10 @@ namespace MedievalOverhaul
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_RefuelableTorch".Translate(), ref this.refuelableTorch);
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_BoomalopeTar".Translate(), ref this.boomalopeTar);
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_MealRetexture".Translate(), ref this.mealRetexture);
+            if (ModsConfig.BiotechActive)
+            {
+                listingStandard.CheckboxLabeled((string)"DankPyon_Settings_SchematicRework".Translate(), ref this.biotechSchematic);
+            }
             listingStandard.End();
         }
     }

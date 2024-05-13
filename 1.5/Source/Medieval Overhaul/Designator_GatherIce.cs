@@ -5,7 +5,7 @@ using Verse;
 
 namespace MedievalOverhaul
 {
-    public class Designator_DigIce : Designator
+    public class Designator_GatherIce : Designator
     {
         public override int DraggableDimensions => 2;
 
@@ -15,15 +15,15 @@ namespace MedievalOverhaul
         {
             get
             {
-                return MedievalOverhaulDefOf.DankPyon_DigIce;
+                return MedievalOverhaulDefOf.DankPyon_GatherIce;
             }
         }
 
-        public Designator_DigIce()
+        public Designator_GatherIce()
         {
-            defaultLabel = "DankPyon_Dig".Translate();
-            defaultDesc = "DankPyon_DigDesc".Translate();
-            icon = ContentFinder<Texture2D>.Get("UI/icesaw");
+            defaultLabel = "DankPyon_GatherIce".Translate();
+            defaultDesc = "DankPyon_GatherIceDesc".Translate();
+            icon = ContentFinder<Texture2D>.Get("UI/GatherWater");
             useMouseIcon = true;
             soundDragSustain = SoundDefOf.Designate_DragStandard;
             soundDragChanged = SoundDefOf.Designate_DragStandard_Changed;
@@ -47,16 +47,17 @@ namespace MedievalOverhaul
                 return false;
             }
             TerrainDef terrain = base.Map.terrainGrid.TerrainAt(c);
-            if (terrain != MedievalOverhaulDefOf.Ice)
+            if (terrain == TerrainDefOf.Ice || terrain.IsWater)
             {
-                return "DankPyon_MustBeIce".Translate();
+                return AcceptanceReport.WasAccepted;
+
             }
-            return AcceptanceReport.WasAccepted;
+            return "DankPyon_MustBeIce".Translate();
         }
 
         public override void DesignateSingleCell(IntVec3 c)
         {
-            base.Map.designationManager.AddDesignation(new Designation(c, MedievalOverhaulDefOf.DankPyon_DigIce));
+            base.Map.designationManager.AddDesignation(new Designation(c, MedievalOverhaulDefOf.DankPyon_GatherIce));
         }
 
         public override void SelectedUpdate()

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Ice Blocks-->
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_IceBlockProcess</defName>
+		<thingDef>DankPyon_IceBlock</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_Waterskin</li>
+			</thingDefs>
+		</ingredientFilter>
+		<processDays>2.0</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>0.2</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-20~-1</temperatureSafe>
+		<temperatureIdeal>-99.0~-1</temperatureIdeal>
+		<ruinedPerDegreePerHour>0</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>2.0</speedBelowSafe>
+		<speedAboveSafe>-1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~0.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>0.0</fuelUseFactor>
+		<filledGraphicSuffix>_Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+	</ProcessorFramework.ProcessDef>
+
+</Defs>

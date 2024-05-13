@@ -151,17 +151,20 @@ namespace MedievalOverhaul
             if (leatherDef.defName == "Leather_Plain")
             {
                 hideDef.defName = $"DankPyon_Hide_Plain".Replace(" ", "").Replace("-", "");
-                hideDef.label = $"Plain hide";
+                //hideDef.label = $"Plain hide";
+                hideDef.label = "DankPyon_PlainHide".Translate();
             }
             else if (Utility.WhiteList.whiteListRaces.Contains(raceDef.defName) || Utility.WhiteList.whiteListLeathers.Contains(leatherDef.defName))
             {
                 hideDef.defName = $"DankPyon_Hide_{Utility.RemoveSubstring(raceDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
-                hideDef.label = $"{raceDef.label}" + " " + "DankPyon_Hide".Translate();
+                //hideDef.label = $"{raceDef.label}" + " " + "DankPyon_Hide".Translate();
+                hideDef.label = "DankPyon_Hide".Translate(raceDef.label);
             }
             else
             {
                 hideDef.defName = $"DankPyon_Hide_{Utility.RemoveSubstring(leatherDef, "DankPyon_")}".Replace(" ", "").Replace("-", "");
-                hideDef.label = $"{leatherDef.label}" + " " + "DankPyon_Hide".Translate();
+                //hideDef.label = $"{leatherDef.label}" + " " + "DankPyon_Hide".Translate();
+                hideDef.label = "DankPyon_Hide".Translate(leatherDef.label);
             }
         }
 

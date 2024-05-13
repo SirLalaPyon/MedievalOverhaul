@@ -285,6 +285,42 @@
 			<MarketValue>315</MarketValue>
 			<MaxHitPoints>40</MaxHitPoints>
 			<Mass>1</Mass>
+			<Flammability>2</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_PetrifiedScream</defName>
+		<label>petrified scream</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/PetrifiedScream</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>375</MarketValue>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>2</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_ThirdEye</defName>
+		<label>third eye</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/ThirdEye</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>375</MarketValue>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Mass>1</Mass>
 			<Flammability>0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>

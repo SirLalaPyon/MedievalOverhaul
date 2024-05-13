@@ -9,7 +9,7 @@
 			<soundWorking>Recipe_Smith</soundWorking>
 			<researchPrerequisite>DankPyon_Gunpowder</researchPrerequisite>
 			<recipeUsers Inherit="False">
-				<li>DankPyon_Workbench</li>
+				<li>DankPyon_AlchemyBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<tickerType>Normal</tickerType>
@@ -36,8 +36,9 @@
 			<WorkToMake>6000</WorkToMake>
 		</statBases>
 		<costList>
-			<Cloth>25</Cloth>
-			<DankPyon_Tar>80</DankPyon_Tar>
+			<Cloth>5</Cloth>
+			<DankPyon_Tar>20</DankPyon_Tar>
+			<DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
 		</costList>
 		<weaponTags>
 			<li>DankPyon_Grenade_PotFire</li>

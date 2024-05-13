@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Abstract -->
+	<RecipeDef Name="DankPyon_Make_DrugAlchemy" Abstract="True">
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>DankPyon_AlchemyBench</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_Make_DrugAlchemy">
+		<defName>DankPyon_Make_HerbalExtract</defName>
+		<label>make herbal extract</label>
+		<description>Make herbal extract.</description>
+		<jobString>Making herbal extract.</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_FlyAgaric</li>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_Fleawort</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineHerbal</li>
+				<li>DankPyon_Mindwort</li>
+				<li>DankPyon_FlyAgaric</li>
+				<li>DankPyon_Poppy</li>
+				<li>DankPyon_Fleawort</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>MedicineHerbal</li>
+				<li>DankPyon_Mindwort</li>
+				<li>DankPyon_FlyAgaric</li>
+				<li>DankPyon_Poppy</li>
+				<li>DankPyon_Fleawort</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<recipeUsers>
+			<li>DankPyon_HerbTable</li>
+		</recipeUsers>
+		<products>
+			<DankPyon_HerbalExtract>1</DankPyon_HerbalExtract>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_Make_DrugAlchemy">
+		<defName>DankPyon_Make_HerbalExtractBulk</defName>
+		<label>make herbal extract x5</label>
+		<description>Make herbal extract x5.</description>
+		<jobString>Making herbal extract x5.</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_FlyAgaric</li>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_Fleawort</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineHerbal</li>
+				<li>DankPyon_Mindwort</li>
+				<li>DankPyon_FlyAgaric</li>
+				<li>DankPyon_Poppy</li>
+				<li>DankPyon_Fleawort</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>MedicineHerbal</li>
+				<li>DankPyon_Mindwort</li>
+				<li>DankPyon_FlyAgaric</li>
+				<li>DankPyon_Poppy</li>
+				<li>DankPyon_Fleawort</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<recipeUsers>
+			<li>DankPyon_HerbTable</li>
+		</recipeUsers>
+		<products>
+			<DankPyon_HerbalExtract>5</DankPyon_HerbalExtract>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_Make_DrugAlchemy">
+		<defName>DankPyon_Make_HerbalExtractBulkExtra</defName>
+		<label>make herbal extract x10</label>
+		<description>Make herbal extract x10.</description>
+		<jobString>Making herbal extract x10.</jobString>
+		<workAmount>6000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_FlyAgaric</li>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_Fleawort</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineHerbal</li>
+				<li>DankPyon_Mindwort</li>
+				<li>DankPyon_FlyAgaric</li>
+				<li>DankPyon_Poppy</li>
+				<li>DankPyon_Fleawort</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>MedicineHerbal</li>
+				<li>DankPyon_Mindwort</li>
+				<li>DankPyon_FlyAgaric</li>
+				<li>DankPyon_Poppy</li>
+				<li>DankPyon_Fleawort</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<recipeUsers>
+			<li>DankPyon_HerbTable</li>
+		</recipeUsers>
+		<products>
+			<DankPyon_HerbalExtract>10</DankPyon_HerbalExtract>
+		</products>
+	</RecipeDef>
+</Defs>

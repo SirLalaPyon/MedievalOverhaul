@@ -321,66 +321,49 @@
 
 
 
-	<!--=============== Plates Clean ====================-->
-	<!--
-  <ThingDef ParentName="ResourceBase">
-    <defName>DankPyon_PlateClean</defName>
-    <label>Clean Plate</label>
-    <description>A clean plate, ready to be used by dishes.</description>
-    <graphicData>
-      <texPath>Resources/PlateClean</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <costList>
-      <WoodLog>5</WoodLog>
-    </costList>
-  </ThingDef> -->
+	<!--=============== Alchemy ====================-->
+	<ThingDef ParentName="MedicineBase">
+		<defName>DankPyon_HerbalExtract</defName>
+		<label>herbal extract</label>
+		<description>A concentrated mixture of herbal essence extracted by grinding multiple raw herbs. It is less potent than industrial pharmaceuticals, but much better than nothing.</description>
+		<possessionCount>3</possessionCount>
+		<graphicData>
+			<texPath>Resources/HerbalExtract</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+			<Mass>0.35</Mass>
+			<Flammability>1.3</Flammability>
+			<MedicalPotency>0.85</MedicalPotency>
+			<MedicalQualityMax>0.85</MedicalQualityMax>
+			<DeteriorationRate>6</DeteriorationRate>
+			<WorkToMake>400</WorkToMake>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>150</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
 
-	<!--=============== Plates Dirty ====================-->
-	<!--
+		<costList>
+			<MedicineHerbal>3</MedicineHerbal>
+		</costList>
 
-  <ThingDef ParentName="ResourceBase">
-    <defName>DankPyon_PlateDirty</defName>
-    <label>Dirty Plate</label>
-    <description>A dirty plate, needs to be washed first to be usable.</description>
-    <graphicData>
-      <texPath>Resources/PlateDirty</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <costList>
-      <WoodLog>5</WoodLog>
-    </costList>
-  </ThingDef> -->
-
-	<!--=============== Bowls Clean ====================-->
-	<!--
-
-  <ThingDef ParentName="ResourceBase">
-    <defName>DankPyon_BowlClean</defName>
-    <label>Clean Bowl</label>
-    <description>A clean bowl, ready to be used in meals.</description>
-    <graphicData>
-      <texPath>Resources/BowlClean</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <costList>
-      <WoodLog>5</WoodLog>
-    </costList>
-  </ThingDef> -->
-
-	<!--=============== Bowls Dirty ====================-->
-	<!--
-  <ThingDef ParentName="ResourceBase">
-    <defName>DankPyon_BowlDirty</defName>
-    <label>Dirty Bowl</label>
-    <description>A dirty bowl, needs to be washed first to be usable.</description>
-    <graphicData>
-      <texPath>Resources/BowlDirty</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <costList>
-      <WoodLog>5</WoodLog>
-    </costList>
-  </ThingDef> -->
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>DankPyon_AlchemyBench</li>
+			</recipeUsers>
+			<researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<displayPriority>2000</displayPriority>
+		</recipeMaker>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
 
 </Defs>

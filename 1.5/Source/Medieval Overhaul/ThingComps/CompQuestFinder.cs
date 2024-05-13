@@ -66,6 +66,26 @@ namespace MedievalOverhaul
             GameComponent_QuestFinder.Instance.DeregisterFinder(this);
         }
 
+        public new void Used(Pawn worker)
+		{
+			if (!this.CanUseNow)
+			{
+				Log.Error("Used while CanUseNow is false.");
+			}
+			this.lastScanTick = (float)Find.TickManager.TicksGame;
+			this.lastUserSpeed = 1f;
+			if (this.Props.scanSpeedStat != null)
+			{
+				this.lastUserSpeed = worker.GetStatValue(this.Props.scanSpeedStat, true, -1);
+			}
+			this.daysWorkingSinceLastFinding += this.lastUserSpeed / 60000f;
+			if (this.TickDoesFind(this.lastUserSpeed))
+			{
+				this.DoFind(worker);
+				this.daysWorkingSinceLastFinding = 0f;
+			}
+		}
+
         protected override void DoFind(Pawn worker)
         {
             if (this.currentQuest == QuestScriptDefOf.LongRangeMineralScannerLump)
@@ -173,7 +193,7 @@ namespace MedievalOverhaul
             this.currentQuest = this.AvailableForFind.RandomElement<QuestScriptDef>();
         }
 
-        public bool CanUseNow
+        public new bool CanUseNow
         {
             get
             {

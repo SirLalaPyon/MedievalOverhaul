@@ -18,8 +18,9 @@ namespace MedievalOverhaul
 
 		public CompRefuelableStat nutritionComp;
 		public CompSlop slopComp;
+		public float nutritionAmount;
 
-		public override ThingDef DispensableDef => slopComp.Props.mealDef;
+        public override ThingDef DispensableDef => slopComp.Props.mealDef;
 
 		public override Color DrawColor =>
 			!this.IsSociallyProper(null, false) ? Building_Bed.SheetColorForPrisoner : base.DrawColor;
@@ -35,7 +36,6 @@ namespace MedievalOverhaul
 			base.SpawnSetup(map, respawningAfterLoad);
 			fuelComp = GetComp<CompRefuelable>();
 			nutritionComp = GetComp<CompRefuelableStat>();
-
 			slopComp = GetComp<CompSlop>();
 			if (slopComp == null) throw new Exception($"{def.defName} does not have CompProperties_Slop");
 			if (nutritionComp == null)
@@ -53,7 +53,7 @@ namespace MedievalOverhaul
 			if (lastFueledTick < 0 || ticks - lastFueledTick <= slopComp.Props.unfueledTicksToRot) return;
 			nutritionComp.ConsumeFuel(nutritionComp.Fuel);
 			slopComp.ingredients.Clear();
-			Messages.Message("DA_MealSlop_Spoiled".TranslateSimple().CapitalizeFirst(),
+			Messages.Message("DankPyon_MealSlop_Spoiled".TranslateSimple().CapitalizeFirst(),
 				new TargetInfo(PositionHeld, MapHeld), MessageTypeDefOf.NegativeEvent);
 		}
 
@@ -109,7 +109,8 @@ namespace MedievalOverhaul
 		{
 			base.ExposeData();
 			Scribe_Values.Look(ref lastFueledTick, "lastFueledTick", -999);
-		}
+
+        }
 
 		public bool Accepts(Thing t)
 		{

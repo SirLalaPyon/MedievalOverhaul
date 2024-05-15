@@ -266,6 +266,19 @@
 
 			</operations>
 		</inactive>
+		<active Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/SitePartDef/workerClass[.="SitePartWorker_WorkSite_Hunting"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/SitePartDef/workerClass[.="SitePartWorker_WorkSite_Hunting"]</xpath>
+					<value>
+						<workerClass>MedievalOverhaul.SitePartWorker_WorkSite_Hunting</workerClass>
+					</value>
+				</match>
+			</li>
+			</operations>
+		</active>
 	</Operation>
 
 </Patch>

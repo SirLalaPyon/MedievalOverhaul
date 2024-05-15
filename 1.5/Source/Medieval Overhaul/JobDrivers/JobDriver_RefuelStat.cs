@@ -31,7 +31,7 @@ namespace MedievalOverhaul
 			AddEndCondition(() => !RefuelableComp.IsFull ? JobCondition.Ongoing : JobCondition.Succeeded);
 			AddFailCondition(() => !job.playerForced && !RefuelableComp.ShouldAutoRefuelNowIgnoringFuelPct);
 			AddFailCondition(() => !RefuelableComp.allowAutoRefuel && !job.playerForced);
-			yield return Toils_General.DoAtomic(delegate { job.count = RefuelableComp.GetFuelCountToFullyRefuel(); });
+			yield return Toils_General.DoAtomic(delegate { job.count = RefuelableComp.GetFuelCountToFullyRefuel(Fuel); });
 			Toil reserveFuel = Toils_Reserve.Reserve(TargetIndex.B);
 			yield return reserveFuel;
 			yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.ClosestTouch)

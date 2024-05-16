@@ -75,7 +75,6 @@ To find out more, view the tome of knowledge</description>
             </li>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
-					<li>DankPyon_CultBook</li>
 					<li>DankPyon_BirdPost</li>
 					<li>DankPyon_CultShelf</li>
 					<li>DankPyon_CultPedestal</li>
@@ -226,11 +225,9 @@ Requirements:
 			<isEdifice>false</isEdifice>
 			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
 		</building>
-
 		<thingCategories>
 			<li>DankPyon_BuildingsBook</li>
 		</thingCategories>
-
 		<statBases>
 			<Flammability>0</Flammability>
 			<SellPriceFactor>1.30</SellPriceFactor>

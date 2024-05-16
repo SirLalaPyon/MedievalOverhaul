@@ -32,12 +32,37 @@ namespace MedievalOverhaul
 
 		public static bool CanRefuel(Pawn pawn, Thing t, bool forced = false)
 		{
-			CompRefuelable comp1 = t.TryGetComp<CompRefuelableStat>();
-			if (comp1 == null || comp1.IsFull || (!forced && !comp1.allowAutoRefuel) ||
-				(comp1.FuelPercentOfMax > 0.0 && !comp1.Props.allowRefuelIfNotEmpty) ||
-				(!forced && !comp1.ShouldAutoRefuelNow) || t.IsForbidden(pawn) ||
-				!pawn.CanReserve((LocalTargetInfo)t, ignoreOtherReservations: forced) || t.Faction != pawn.Faction)
-				return false;
+			CompRefuelableStat comp1 = t.TryGetComp<CompRefuelableStat>();
+			CompRefuelable comp2 = t.TryGetComp<CompRefuelable>();
+            if (comp1 == null || comp1.IsFull || (!forced && !comp1.allowAutoRefuel))
+            {
+                return false;
+            }
+            if (comp1.FuelPercentOfMax > 0f && !comp1.Props.allowRefuelIfNotEmpty)
+            {
+                return false;
+            }
+            if (!forced && !comp1.ShouldAutoRefuelNow)
+            {
+                return false;
+            }
+            if (t.IsForbidden(pawn) || !pawn.CanReserve(t, 1, -1, null, forced))
+            {
+                return false;
+            }
+            if (t.Faction != pawn.Faction)
+            {
+                return false;
+            }
+			if (comp2 != null)
+			{
+				if (!comp2.HasFuel)
+				{
+                    JobFailReason.Is(
+                    "DankPyon_SlopFuel".Translate());
+                    return false;
+                }
+			}
 			//CompActivable comp2 = t.TryGetComp<CompActivable>();
 			//if (comp2 != null && comp2.Props.cooldownPreventsRefuel && comp2.OnCooldown)
 			//{

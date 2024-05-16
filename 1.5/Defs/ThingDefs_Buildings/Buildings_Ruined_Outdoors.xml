@@ -19,6 +19,7 @@
 		<building>
 			<claimable>false</claimable>
 			<deconstructible>true</deconstructible>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
 	</ThingDef>
 
@@ -356,6 +357,7 @@
 		</costList>
 		<building>
 			<deconstructible>false</deconstructible>
+			<alwaysDeconstructible>false</alwaysDeconstructible>
 		</building>
 		<!--modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">

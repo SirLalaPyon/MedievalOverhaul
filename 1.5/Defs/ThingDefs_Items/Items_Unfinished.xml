@@ -35,13 +35,27 @@
 
 	<ThingDef ParentName="UnfinishedBase">
 		<defName>DankPyon_UnfinishedLivingShield</defName>
-		<label>unfinished shield</label>
-		<description>An unfinished shield.</description>
+		<label>unfinished living shield</label>
+		<description>An unfinished living shield.</description>
 		<statBases>
 			<Flammability>1</Flammability>
 		</statBases>
 		<graphicData>
 			<texPath>Unfinished/UnfinishedLivingShield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedLinduwrmShield</defName>
+		<label>unfinished lindwurm shield</label>
+		<description>An unfinished lindwurm shield.</description>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedLindwurmShield</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories Inherit="false"/>

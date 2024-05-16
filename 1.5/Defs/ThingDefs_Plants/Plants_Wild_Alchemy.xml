@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========== Flowers ==========-->
+	<ThingDef ParentName="DankPyon_MindwortBase">
+		<defName>DankPyon_Plant_MindwortWild</defName>
+		<label>wild mindwort</label>
+		<description>PLACEHOLDER</description>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>80</wildClusterWeight>
+			<growDays>10</growDays>
+
+			<sowWork Inherit="False"/>
+			<sowMinSkill Inherit="False"/>
+			<sowTags Inherit="False"/>
+			<purpose Inherit="False"/>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_PoppyBase">
+		<defName>DankPyon_Plant_PoppyWild</defName>
+		<label>wild poppy</label>
+		<description>PLACEHOLDER</description>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>80</wildClusterWeight>
+			<growDays>10</growDays>
+
+			<sowWork Inherit="False"/>
+			<sowMinSkill Inherit="False"/>
+			<sowTags Inherit="False"/>
+			<purpose Inherit="False"/>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_FleawortBase">
+		<defName>DankPyon_Plant_FleawortWild</defName>
+		<label>wild fleawort</label>
+		<description>PLACEHOLDER</description>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>80</wildClusterWeight>
+			<growDays>10</growDays>
+
+			<sowWork Inherit="False"/>
+			<sowMinSkill Inherit="False"/>
+			<sowTags Inherit="False"/>
+			<purpose Inherit="False"/>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_FlyAgaricBase">
+		<defName>DankPyon_Plant_FlyAgaricWild</defName>
+		<label>wild fly agaric</label>
+		<description>PLACEHOLDER</description>
+		<neverMultiSelect>false</neverMultiSelect>
+		<plant>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>80</wildClusterWeight>
+			<growDays>10</growDays>
+
+			<sowWork Inherit="False"/>
+			<sowMinSkill Inherit="False"/>
+			<sowTags Inherit="False"/>
+			<purpose Inherit="False"/>
+		</plant>
+	</ThingDef>
+</Defs>

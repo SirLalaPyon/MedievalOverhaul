@@ -51,82 +51,38 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(0.0,-0.1)</offset>
-					<hulk>
-						<offset>(-0.0,-0.1)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.0,-0.0)</offset>
-					</fat>
-					<thin>
-						<offset>(0.0,-0.0)</offset>
-					</thin>
+					<hulk><offset>(-0.0,-0.1)</offset></hulk>
+					<fat><offset>(-0.0,-0.0)</offset></fat>
+					<thin><offset>(0.0,-0.0)</offset></thin>
 				</north>
 				<south>
 					<offset>(0.0,0.20)</offset>
-					<female>
-						<offset>(0.0,-0.2)</offset>
-					</female>
-					<hulk>
-						<offset>(-0.0,-0.0)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.0,-0.0)</offset>
-					</fat>
-					<thin>
-						<offset>(-0.0,-0.25)</offset>
-					</thin>
+					<female><offset>(0.0,-0.2)</offset></female>
+					<hulk><offset>(-0.0,-0.0)</offset></hulk>
+					<fat><offset>(-0.0,-0.0)</offset></fat>
+					<thin><offset>(-0.0,-0.25)</offset></thin>
 				</south>
 				<east>
 					<offset>(-0.3,-0.15)</offset>
-					<male>
-						<offset>(0.0,0.15)</offset>
-					</male>
-					<female>
-						<offset>(0.1,0.15)</offset>
-					</female>
-					<hulk>
-						<offset>(-0.12,-0.0)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.10,-0.0)</offset>
-					</fat>
-					<thin>
-						<offset>(0.05,-0.0)</offset>
-					</thin>
+					<male><offset>(0.0,0.15)</offset></male>
+					<female><offset>(0.1,0.15)</offset></female>
+					<hulk><offset>(-0.12,-0.0)</offset></hulk>
+					<fat><offset>(-0.10,-0.0)</offset></fat>
+					<thin><offset>(0.05,-0.0)</offset></thin>
 				</east>
 				<west>
 					<offset>(0.3,-0.15)</offset>
-					<male>
-						<offset>(0.0,0.15)</offset>
-					</male>
-					<female>
-						<offset>(-0.1,0.15)</offset>
-					</female>
-					<hulk>
-						<offset>(0.12,-0.0)</offset>
-					</hulk>
-					<fat>
-						<offset>(0.10,-0.0)</offset>
-					</fat>
-					<thin>
-						<offset>(-0.05,-0.0)</offset>
-					</thin>
+					<male><offset>(0.0,0.15)</offset></male>
+					<female><offset>(-0.1,0.15)</offset></female>
+					<hulk><offset>(0.12,-0.0)</offset></hulk>
+					<fat><offset>(0.10,-0.0)</offset></fat>
+					<thin><offset>(-0.05,-0.0)</offset></thin>
 				</west>
-				<male>
-					<scale>(0.6,0.6)</scale>
-				</male>
-				<female>
-					<scale>(0.6,0.6)</scale>
-				</female>
-				<thin>
-					<scale>(0.7,0.7)</scale>
-				</thin>
-				<hulk>
-					<scale>(0.75,0.75)</scale>
-				</hulk>
-				<fat>
-					<scale>(0.75,0.75)</scale>
-				</fat>
+				<male><scale>(0.6,0.6)</scale></male>
+				<female><scale>(0.6,0.6)</scale></female>
+				<thin><scale>(0.7,0.7)</scale></thin>
+				<hulk><scale>(0.75,0.75)</scale></hulk>
+				<fat><scale>(0.75,0.75)</scale></fat>
 			</wornGraphicData>
 		</apparel>
 		<modExtensions>
@@ -214,69 +170,35 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(-0.10,-0.25)</offset>
-					<hulk>
-						<offset>(-0.1,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.22,-0.0)</offset>
-					</fat>
-					<thin>
-						<offset>(0.0,-0.0)</offset>
-					</thin>
+					<hulk><offset>(-0.1,-0.15)</offset></hulk>
+					<fat><offset>(-0.22,-0.0)</offset></fat>
+					<thin><offset>(0.0,-0.0)</offset></thin>
 				</north>
 				<south>
 					<offset>(0.15,-0.30)</offset>
-					<hulk>
-						<offset>(-0.0,-0.10)</offset>
-					</hulk>
-					<fat>
-						<offset>(0.1,-0.05)</offset>
-					</fat>
-					<thin>
-						<offset>(-0.10,-0.0)</offset>
-					</thin>
+					<hulk><offset>(-0.0,-0.10)</offset></hulk>
+					<fat><offset>(0.1,-0.05)</offset></fat>
+					<thin><offset>(-0.10,-0.0)</offset></thin>
 				</south>
 				<east>
 					<offset>(-0.15,-0.25)</offset>
-					<hulk>
-						<offset>(-0.0,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.2,-0.10)</offset>
-					</fat>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(-0.2,-0.10)</offset></fat>
 				</east>
 				<west>
 					<offset>(0.15,-0.25)</offset>
-					<hulk>
-						<offset>(-0.0,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(0.05,-0.10)</offset>
-					</fat>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(0.05,-0.10)</offset></fat>
 				</west>
-				<male>
-					<scale>(0.6,0.6)</scale>
-				</male>
-				<female>
-					<scale>(0.6,0.6)</scale>
-				</female>
-				<thin>
-					<scale>(0.6,0.6)</scale>
-				</thin>
-				<hulk>
-					<scale>(0.7,0.7)</scale>
-				</hulk>
-				<fat>
-					<scale>(0.7,0.7)</scale>
-				</fat>
+				<male><scale>(0.6,0.6)</scale></male>
+				<female><scale>(0.6,0.6)</scale></female>
+				<thin><scale>(0.6,0.6)</scale></thin>
+				<hulk><scale>(0.7,0.7)</scale></hulk>
+				<fat><scale>(0.7,0.7)</scale></fat>
 			</wornGraphicData>
 			<drawData>
-				<dataNorth>
-					<layer>90</layer>
-				</dataNorth>
-				<dataSouth>
-					<layer>40</layer>
-				</dataSouth>
+				<dataNorth><layer>90</layer></dataNorth>
+				<dataSouth><layer>40</layer></dataSouth>
 			</drawData>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<careIfDamaged>false</careIfDamaged>
@@ -376,69 +298,35 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(-0.10,-0.25)</offset>
-					<hulk>
-						<offset>(-0.1,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.22,-0.0)</offset>
-					</fat>
-					<thin>
-						<offset>(0.0,-0.0)</offset>
-					</thin>
+					<hulk><offset>(-0.1,-0.15)</offset></hulk>
+					<fat><offset>(-0.22,-0.0)</offset></fat>
+					<thin><offset>(0.0,-0.0)</offset></thin>
 				</north>
 				<south>
 					<offset>(0.15,-0.30)</offset>
-					<hulk>
-						<offset>(-0.0,-0.10)</offset>
-					</hulk>
-					<fat>
-						<offset>(0.1,-0.05)</offset>
-					</fat>
-					<thin>
-						<offset>(-0.10,-0.0)</offset>
-					</thin>
+					<hulk><offset>(-0.0,-0.10)</offset></hulk>
+					<fat><offset>(0.1,-0.05)</offset></fat>
+					<thin><offset>(-0.10,-0.0)</offset></thin>
 				</south>
 				<east>
 					<offset>(-0.15,-0.25)</offset>
-					<hulk>
-						<offset>(-0.0,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.2,-0.10)</offset>
-					</fat>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(-0.2,-0.10)</offset></fat>
 				</east>
 				<west>
 					<offset>(0.15,-0.25)</offset>
-					<hulk>
-						<offset>(-0.0,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(0.05,-0.10)</offset>
-					</fat>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(0.05,-0.10)</offset></fat>
 				</west>
-				<male>
-					<scale>(0.6,0.6)</scale>
-				</male>
-				<female>
-					<scale>(0.6,0.6)</scale>
-				</female>
-				<thin>
-					<scale>(0.6,0.6)</scale>
-				</thin>
-				<hulk>
-					<scale>(0.7,0.7)</scale>
-				</hulk>
-				<fat>
-					<scale>(0.7,0.7)</scale>
-				</fat>
+				<male><scale>(0.6,0.6)</scale></male>
+				<female><scale>(0.6,0.6)</scale></female>
+				<thin><scale>(0.6,0.6)</scale></thin>
+				<hulk><scale>(0.7,0.7)</scale></hulk>
+				<fat><scale>(0.7,0.7)</scale></fat>
 			</wornGraphicData>
 			<drawData>
-				<dataNorth>
-					<layer>90</layer>
-				</dataNorth>
-				<dataSouth>
-					<layer>40</layer>
-				</dataSouth>
+				<dataNorth><layer>90</layer></dataNorth>
+				<dataSouth><layer>40</layer></dataSouth>
 			</drawData>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<careIfDamaged>false</careIfDamaged>
@@ -538,69 +426,35 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(-0.10,-0.25)</offset>
-					<hulk>
-						<offset>(-0.1,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.22,-0.0)</offset>
-					</fat>
-					<thin>
-						<offset>(0.0,-0.0)</offset>
-					</thin>
+					<hulk><offset>(-0.1,-0.15)</offset></hulk>
+					<fat><offset>(-0.22,-0.0)</offset></fat>
+					<thin><offset>(0.0,-0.0)</offset></thin>
 				</north>
 				<south>
 					<offset>(0.15,-0.30)</offset>
-					<hulk>
-						<offset>(-0.0,-0.10)</offset>
-					</hulk>
-					<fat>
-						<offset>(0.1,-0.05)</offset>
-					</fat>
-					<thin>
-						<offset>(-0.10,-0.0)</offset>
-					</thin>
+					<hulk><offset>(-0.0,-0.10)</offset></hulk>
+					<fat><offset>(0.1,-0.05)</offset></fat>
+					<thin><offset>(-0.10,-0.0)</offset></thin>
 				</south>
 				<east>
 					<offset>(-0.15,-0.25)</offset>
-					<hulk>
-						<offset>(-0.0,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.2,-0.10)</offset>
-					</fat>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(-0.2,-0.10)</offset></fat>
 				</east>
 				<west>
 					<offset>(0.15,-0.25)</offset>
-					<hulk>
-						<offset>(-0.0,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(0.05,-0.10)</offset>
-					</fat>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(0.05,-0.10)</offset></fat>
 				</west>
-				<male>
-					<scale>(0.6,0.6)</scale>
-				</male>
-				<female>
-					<scale>(0.6,0.6)</scale>
-				</female>
-				<thin>
-					<scale>(0.6,0.6)</scale>
-				</thin>
-				<hulk>
-					<scale>(0.7,0.7)</scale>
-				</hulk>
-				<fat>
-					<scale>(0.7,0.7)</scale>
-				</fat>
+				<male><scale>(0.6,0.6)</scale></male>
+				<female><scale>(0.6,0.6)</scale></female>
+				<thin><scale>(0.6,0.6)</scale></thin>
+				<hulk><scale>(0.7,0.7)</scale></hulk>
+				<fat><scale>(0.7,0.7)</scale></fat>
 			</wornGraphicData>
 			<drawData>
-				<dataNorth>
-					<layer>90</layer>
-				</dataNorth>
-				<dataSouth>
-					<layer>40</layer>
-				</dataSouth>
+				<dataNorth><layer>90</layer></dataNorth>
+				<dataSouth><layer>40</layer></dataSouth>
 			</drawData>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<careIfDamaged>false</careIfDamaged>
@@ -700,61 +554,31 @@
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
 					<offset>(-0.10,-0.25)</offset>
-					<hulk>
-						<offset>(-0.1,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.22,-0.0)</offset>
-					</fat>
-					<thin>
-						<offset>(0.0,-0.0)</offset>
-					</thin>
+					<hulk><offset>(-0.1,-0.15)</offset></hulk>
+					<fat><offset>(-0.22,-0.0)</offset></fat>
+					<thin><offset>(0.0,-0.0)</offset></thin>
 				</north>
 				<south>
 					<offset>(0.15,-0.30)</offset>
-					<hulk>
-						<offset>(-0.0,-0.10)</offset>
-					</hulk>
-					<fat>
-						<offset>(0.1,-0.05)</offset>
-					</fat>
-					<thin>
-						<offset>(-0.10,-0.0)</offset>
-					</thin>
+					<hulk><offset>(-0.0,-0.10)</offset></hulk>
+					<fat><offset>(0.1,-0.05)</offset></fat>
+					<thin><offset>(-0.10,-0.0)</offset></thin>
 				</south>
 				<east>
 					<offset>(-0.15,-0.25)</offset>
-					<hulk>
-						<offset>(-0.0,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(-0.2,-0.10)</offset>
-					</fat>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(-0.2,-0.10)</offset></fat>
 				</east>
 				<west>
 					<offset>(0.15,-0.25)</offset>
-					<hulk>
-						<offset>(-0.0,-0.15)</offset>
-					</hulk>
-					<fat>
-						<offset>(0.05,-0.10)</offset>
-					</fat>
+					<hulk><offset>(-0.0,-0.15)</offset></hulk>
+					<fat><offset>(0.05,-0.10)</offset></fat>
 				</west>
-				<male>
-					<scale>(0.6,0.6)</scale>
-				</male>
-				<female>
-					<scale>(0.6,0.6)</scale>
-				</female>
-				<thin>
-					<scale>(0.6,0.6)</scale>
-				</thin>
-				<hulk>
-					<scale>(0.7,0.7)</scale>
-				</hulk>
-				<fat>
-					<scale>(0.7,0.7)</scale>
-				</fat>
+				<male><scale>(0.6,0.6)</scale></male>
+				<female><scale>(0.6,0.6)</scale></female>
+				<thin><scale>(0.6,0.6)</scale></thin>
+				<hulk><scale>(0.7,0.7)</scale></hulk>
+				<fat><scale>(0.7,0.7)</scale></fat>
 			</wornGraphicData>
 			<drawData>
 				<dataNorth>

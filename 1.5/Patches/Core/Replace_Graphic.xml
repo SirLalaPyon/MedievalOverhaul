@@ -18,6 +18,21 @@
 			</thingCategories>
 		</value>
 	</Operation>
+
+	<!-- Herbal Medicine -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MedicineHerbal"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Resources/Healroot</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MedicineHerbal"]/label</xpath>
+		<value>
+			<label>healroot</label>
+		</value>
+	</Operation>
 	
 	<!-- Changed Beer to Unused Graphic -->
 	<Operation Class="PatchOperationReplace">

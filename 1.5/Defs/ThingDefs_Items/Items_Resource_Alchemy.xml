@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!-- ==================== Raw Plants Resource ======================= -->
+	<ThingDef ParentName="MedicineBase">
+		<defName>DankPyon_Mindwort</defName>
+		<label>mindwort</label>
+		<description>PLACEHOLDER.</description>
+		<possessionCount>4</possessionCount>
+		<graphicData>
+		<texPath>Resources/Mindwort</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+		<MarketValue>10</MarketValue>
+		<Mass>0.35</Mass>
+		<Flammability>1.3</Flammability>
+		<MedicalPotency>0.60</MedicalPotency>
+		<MedicalQualityMax>0.70</MedicalQualityMax>
+		<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>150</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="MedicineBase">
+		<defName>DankPyon_Poppy</defName>
+		<label>poppy</label>
+		<description>PLACEHOLDER.</description>
+		<possessionCount>4</possessionCount>
+		<graphicData>
+		<texPath>Resources/Poppy</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+		<MarketValue>10</MarketValue>
+		<Mass>0.35</Mass>
+		<Flammability>1.3</Flammability>
+		<MedicalPotency>0.60</MedicalPotency>
+		<MedicalQualityMax>0.70</MedicalQualityMax>
+		<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>150</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="MedicineBase">
+		<defName>DankPyon_Fleawort</defName>
+		<label>fleawort</label>
+		<description>PLACEHOLDER.</description>
+		<possessionCount>4</possessionCount>
+		<graphicData>
+		<texPath>Resources/Fleawort</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+		<MarketValue>10</MarketValue>
+		<Mass>0.35</Mass>
+		<Flammability>1.3</Flammability>
+		<MedicalPotency>0.60</MedicalPotency>
+		<MedicalQualityMax>0.70</MedicalQualityMax>
+		<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>150</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+	</ThingDef>
+
+	<ThingDef ParentName="MedicineBase">
+		<defName>DankPyon_FlyAgaric</defName>
+		<label>fly agaric</label>
+		<description>PLACEHOLDER.</description>
+		<possessionCount>4</possessionCount>
+		<graphicData>
+		<texPath>Resources/FlyAgaric</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<statBases>
+		<MarketValue>10</MarketValue>
+		<Mass>0.35</Mass>
+		<Flammability>1.3</Flammability>
+		<MedicalPotency>0.60</MedicalPotency>
+		<MedicalQualityMax>0.70</MedicalQualityMax>
+		<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>150</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<allowedArchonexusCount>20</allowedArchonexusCount>
+	</ThingDef>
+
+</Defs>

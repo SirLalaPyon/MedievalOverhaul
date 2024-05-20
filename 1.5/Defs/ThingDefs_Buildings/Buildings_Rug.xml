@@ -47,6 +47,15 @@
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<size>(1,1)</size>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>DankPyon_TanningRack</li>
+			</recipeUsers>
+			<researchPrerequisite>DankPyon_LeatherTanning</researchPrerequisite>
+			<displayPriority>2000</displayPriority>
+		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">

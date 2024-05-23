@@ -281,11 +281,21 @@
 						</value>
 					</match>
 				</li>
-
+				
 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_HidesProcess"]</xpath>
 					<match Class="PatchOperationRemove">
 						<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_HidesProcess"]</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="DankPyon_TanningRack"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/capacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="DankPyon_TanningRack"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/capacity</xpath>
+						<value>
+							<capacity>125</capacity>
+						</value>
 					</match>
 				</li>
 

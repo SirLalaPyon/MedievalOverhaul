@@ -37,6 +37,7 @@
 
 	<ThingDef ParentName="BasedWaterWell" DBHLite="true">
 		<defName>EGG_AdvancedWell</defName>
+		<thingClass>Building_WorkTable</thingClass>
 		<label>water well</label>
 		<description>Accesses ground water which can be pumped by water pumps. The presence of sewage or other pollution will reduce water quality and can cause contamination.</description>
 		<!--<specialDisplayRadius>7.9</specialDisplayRadius>-->
@@ -44,11 +45,12 @@
 			<li MayRequire="dbhlitemode">Plumbing</li>
 		</researchPrerequisites>
 		<graphicData>
-			<texPath>DBH/Things/Building/Water/PrimitiveWell</texPath>
+			<texPath>Production/Well</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
 		<comps>
 			<li Class="DubsBadHygiene.CompProperties_Pipe">
 				<mode>Sewage</mode>
@@ -58,16 +60,271 @@
 			</li>
 		</comps>
 		<stuffCategories>
-			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
-		<costList Inherit="False"/>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 		<placeWorkers>
 			<li>DubsBadHygiene.PlaceWorker_WaterGrid</li>
 			<li>DubsBadHygiene.PlaceWorker_SewageGrid</li>
 			<li>DubsBadHygiene.PlaceWorker_UserGrid</li>
 		</placeWorkers>
 	</ThingDef>	
+
+	<ThingDef ParentName="BasedHeating" DBHLite="true">
+		<defName>DankPyon_LogBoiler</defName>
+		<label>log boiler</label>
+		<description>Produces 2000 heating units for piped radiators and hot water tanks. Heats the room and adjacent baths. Requires wood logs for fuel.</description>
+		<graphicData>
+			<texPath>DBH/Things/Building/Heating/MedStove</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+			<drawRotated>false</drawRotated>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<pathCost>150</pathCost>
+		<size>(1,1)</size>
+        <stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<Steel>150</Steel>
+		</costList>
+		<costStuffCount>60</costStuffCount>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>50</Mass>
+		</statBases>
+		<comps>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="DubsBadHygiene.CompProperties_CompBoiler">
+				<BaseCapacity>2000</BaseCapacity>
+				<ThermostatControl>false</ThermostatControl>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelConsumptionRate>10.0</fuelConsumptionRate>
+				<fuelCapacity>75.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>21</heatPerSecond>
+				<heatPushMaxTemperature>28</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li MayRequire="dbhlitemode">LogBoilers</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BasedHeating" DBHLite="true">
+		<designationCategory>Hygiene</designationCategory>
+		<defName>DankPyon_HotWaterTank</defName>
+		<label>hot water tank</label>
+		<description>Stores hot running water for showers and baths. Connect to any boiler to heat.</description>
+		<graphicData>
+			<texPath>DBH/Things/Building/Heating/MedBoiler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>			
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>150</pathCost>
+		<size>(1,1)</size>
+        <stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<costStuffCount>60</costStuffCount>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<comps>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>DBH/Things/Building/Valve</commandTexture>
+				<commandLabelKey>CommandDesignateOpenCloseValveLabel</commandLabelKey>
+				<commandDescKey>CommandDesignateOpenCloseValveDesc</commandDescKey>
+			</li>
+			<li Class="DubCore.CompProperties_HeatStore">
+				<compClass>DubsBadHygiene.CompHeatStore</compClass>
+				<StoreCapacity>100</StoreCapacity>
+				<RiseRate>0.0024</RiseRate>
+				<FallRate>0.00001</FallRate>
+				<ForRunningWater>true</ForRunningWater>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li MayRequire="dbhlitemode">LogBoilers</li>
+			<li MayRequire="dbhlitemode">Plumbing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BasedHygieneMom" DBHLite="true">
+		<defName>DankPyon_BurnPit</defName>
+		<label>burn pit</label>
+		<description>Eliminates fecal sludge by burning it as fuel. Can also be used for disposing of corpses or other detritus. Colonists may become sick if they spend too long near burning waste.</description>
+		<thingClass>DubsBadHygiene.Building_BurnPit</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>DBH/Things/Building/Sewage/GGBurnPit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
+			<damageData>
+				<rect>(0.2,0,0.6,0.1)</rect>
+			</damageData>
+		</graphicData>
+		<size>(2,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<constructEffect>ConstructDirt</constructEffect>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>100.0</fuelConsumptionRate>
+				<fuelCapacity>250.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>FecalSludge</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>21</heatPerSecond>
+				<heatPushMaxTemperature>28</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+		<designationHotKey>Misc1</designationHotKey>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<recipes>
+			<li>CremateCorpse</li>
+			<li>BurnApparel</li>
+			<li>BurnDrugs</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<heatPerTickWhileWorking>0.40</heatPerTickWhileWorking>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<isInert>true</isInert>
+		</building>
+		<specialDisplayRadius>13.9</specialDisplayRadius>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="BasedHygieneMom" DBHLite="true">
+		<defName>DankPyon_SewageSepticTank</defName>
+		<label>septic tank</label>
+		<description>Slowly cleans sewage over time. Sewage is directed to septic tanks first. If it reaches full capacity, excess sewage is sent to sewage outlets.</description>
+		<graphicData>
+			<texPath>DBH/Things/Building/Sewage/Cesspit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Standable</passability>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<pathCost>0</pathCost>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-12</Beauty>
+			<Cleanliness>-100</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="DubsBadHygiene.CompProperties_SepticTank">
+				<TreatedPerDay>50</TreatedPerDay>
+				<capacity>500</capacity>
+				<priority>1</priority>
+			</li>
+		</comps>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<researchPrerequisites>
+			<li MayRequire="dbhlitemode">Plumbing</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 </Defs>

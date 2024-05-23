@@ -2,6 +2,25 @@
 <Defs>
 	
 	<WorkGiverDef>
+		<defName>DankPyon_DoBillsWell</defName>
+		<label>gather water</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>110</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_Well</li>
+			<li MayRequire="dubwise.dubsbadhygiene,dubwise.dubsbadhygiene.lite">EGG_AdvancedWell</li>
+			<li MayRequire="dubwise.dubsbadhygiene,dubwise.dubsbadhygiene.lite">WaterWellInlet</li>
+		</fixedBillGiverDefs>
+		<verb>gather</verb>
+		<gerund>gathering at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
 		<defName>DankPyon_WorkGatherIce</defName>
 		<label>Gather ice or water</label>
 		<giverClass>MedievalOverhaul.WorkGiver_GatherIce</giverClass>

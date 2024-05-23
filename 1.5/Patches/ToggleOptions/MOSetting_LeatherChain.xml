@@ -10,14 +10,21 @@
 		
 				<!-- Timber Wolf Hood -->
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_WolfTimber" or defName="DankPyon_MakeWolfTimberRug"]/ingredients/li[contains(.,'DankPyon_Hide_Wolf_Timber')]/filter/thingDefs/li[.="DankPyon_Hide_Wolf_Timber"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_WolfTimber"]/ingredients/li[contains(.,'DankPyon_Hide_Wolf_Timber')]</xpath>
 					<value>
-						<li>Leather_Wolf</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Leather_Wolf</li>
+								</thingDefs>
+							</filter>
+							<count>65</count>
+						</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_WolfTimber" or defName="DankPyon_MakeWolfTimberRug"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Wolf_Timber"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_WolfTimber"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Wolf_Timber"]</xpath>
 					<value>
 						<li>Leather_Wolf</li>
 					</value>
@@ -25,14 +32,21 @@
 			
 				<!-- Arctic Wolf Hood -->
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_WolfArctic" or defName="DankPyon_MakeWolfArcticRug"]/ingredients/li[contains(.,'DankPyon_Hide_Wolf_Arctic')]/filter/thingDefs/li[.="DankPyon_Hide_Wolf_Arctic"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_WolfArctic"]/ingredients/li[contains(.,'DankPyon_Hide_Wolf_Arctic')]</xpath>
 					<value>
-						<li>Leather_Wolf</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Leather_Wolf</li>
+								</thingDefs>
+							</filter>
+							<count>65</count>
+						</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_WolfArctic" or defName="DankPyon_MakeWolfArcticRug"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Wolf_Arctic"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_WolfArctic"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Wolf_Arctic"]</xpath>
 					<value>
 						<li>Leather_Wolf</li>
 					</value>
@@ -40,14 +54,21 @@
 			
 				<!-- Grizzly Hood -->
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_BearGrizzly" or defName="DankPyon_MakeBearGrizzlyRug"]/ingredients/li[contains(.,'DankPyon_Hide_Bear_Grizzly')]/filter/thingDefs/li[.="DankPyon_Hide_Bear_Grizzly"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_BearGrizzly"]/ingredients/li[contains(.,'DankPyon_Hide_Bear_Grizzly')]</xpath>
 					<value>
-						<li>Leather_Bear</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Leather_Bear</li>
+								</thingDefs>
+							</filter>
+							<count>80</count>
+						</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_BearGrizzly" or defName="DankPyon_MakeBearGrizzlyRug"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Bear_Grizzly"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_BearGrizzly"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Bear_Grizzly"]</xpath>
 					<value>
 						<li>Leather_Bear</li>
 					</value>
@@ -55,14 +76,21 @@
 			
 				<!-- Polar Hood -->
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_BearPolar" or defName="DankPyon_MakeBearPolarRug"]/ingredients/li[contains(.,'DankPyon_Hide_Bear_Polar')]/filter/thingDefs/li[.="DankPyon_Hide_Bear_Polar"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_BearPolar"]/ingredients/li[contains(.,'DankPyon_Hide_Bear_Polar')]</xpath>
 					<value>
-						<li>Leather_Bear</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Leather_Bear</li>
+								</thingDefs>
+							</filter>
+							<count>80</count>
+						</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_BearPolar" or defName="DankPyon_MakeBearPolarRug"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Bear_Polar"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_BearPolar"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Bear_Polar"]</xpath>
 					<value>
 						<li>Leather_Bear</li>
 					</value>
@@ -70,14 +98,21 @@
 			
 				<!-- Direwolf Hood -->
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_Direwolf"]/ingredients/li[contains(.,'DankPyon_Hide_Leather_Direwolf')]/filter/thingDefs/li[.="DankPyon_Hide_Leather_Direwolf"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_Direwolf" or defName="DankPyon_Apparel_AdditionalFurPadding"]/ingredients/li[contains(.,'DankPyon_Hide_Leather_Direwolf')]</xpath>
 					<value>
-						<li>DankPyon_Leather_Direwolf</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>DankPyon_Leather_Direwolf</li>
+								</thingDefs>
+							</filter>
+							<count>65</count>
+						</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_Direwolf"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Leather_Direwolf"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_Direwolf" or defName="DankPyon_Apparel_AdditionalFurPadding"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Leather_Direwolf"]</xpath>
 					<value>
 						<li>DankPyon_Leather_Direwolf</li>
 					</value>
@@ -85,76 +120,23 @@
 			
 				<!-- Hyena Hide -->
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_HyenaPelt" or defName="DankPyon_MakeHyenaRug"]/ingredients/li[contains(.,'DankPyon_Hide_Leather_Hyena')]/filter/thingDefs/li[.="DankPyon_Hide_Leather_Hyena"]</xpath>
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_HyenaPelt"]/ingredients/li[contains(.,'DankPyon_Hide_Leather_Hyena')]</xpath>
+					<value>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>DankPyon_Leather_Hyena</li>
+								</thingDefs>
+							</filter>
+							<count>65</count>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_HyenaPelt"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Leather_Hyena"]</xpath>
 					<value>
 						<li>DankPyon_Leather_Hyena</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeHeadgear_HyenaPelt" or defName="DankPyon_MakeHyenaRug"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Leather_Hyena"]</xpath>
-					<value>
-						<li>DankPyon_Leather_Hyena</li>
-					</value>
-				</li>
-			
-				<!-- Cougar Hide -->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeCougarRug"]/ingredients/li[contains(.,'DankPyon_Hide_Cougar')]/filter/thingDefs/li[.="DankPyon_Hide_Cougar"]</xpath>
-					<value>
-						<li>Leather_Panthera</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeCougarRug"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Cougar"]</xpath>
-					<value>
-						<li>Leather_Panthera</li>
-					</value>
-				</li>
-
-				<!-- Panther Hide -->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakePantherRug"]/ingredients/li[contains(.,'DankPyon_Hide_Panther')]/filter/thingDefs/li[.="DankPyon_Hide_Panther"]</xpath>
-					<value>
-						<li>Leather_Panthera</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakePantherRug"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Panther"]</xpath>
-					<value>
-						<li>Leather_Panthera</li>
-					</value>
-				</li>
-			
-				<!-- Thrumbo Hide -->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeThrumboRug"]/ingredients/li[contains(.,'DankPyon_Hide_Thrumbo')]/filter/thingDefs/li[.="DankPyon_Hide_Thrumbo"]</xpath>
-					<value>
-						<li>Leather_Thrumbo</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeThrumboRug"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Thrumbo"]</xpath>
-					<value>
-						<li>Leather_Thrumbo</li>
-					</value>
-				</li>
-
-				<!-- Daer Hide -->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeDaerRug"]/ingredients/li[contains(.,'DankPyon_Hide_Leather_Daer')]/filter/thingDefs/li[.="DankPyon_Hide_Leather_Daer"]</xpath>
-					<value>
-						<li>DankPyon_Leather_Daer</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/RecipeDef[defName="DankPyon_MakeDaerRug"]/fixedIngredientFilter/thingDefs/li[.="DankPyon_Hide_Leather_Daer"]</xpath>
-					<value>
-						<li>DankPyon_Leather_Daer</li>
 					</value>
 				</li>
 
@@ -167,6 +149,13 @@
 						</thingDefs>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_WolfTimberRugProcess" or defName="DankPyon_WolfArcticRugProcess"]/efficiency</xpath>
+					<value>
+						<efficiency>0.02</efficiency>
+					</value>
+				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_HyenaRugProcess"]/ingredientFilter/thingDefs</xpath>
@@ -174,6 +163,13 @@
 						<thingDefs>
 							<li>DankPyon_Leather_Hyena</li>
 						</thingDefs>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_HyenaRugProcess"]/efficiency</xpath>
+					<value>
+						<efficiency>0.02</efficiency>
 					</value>
 				</li>
 
@@ -185,6 +181,13 @@
 						</thingDefs>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_CougarRugProcess" or defName="DankPyon_PantherRugProcess"]/efficiency</xpath>
+					<value>
+						<efficiency>0.02</efficiency>
+					</value>
+				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_BearGrizzlyRugProcess" or defName="DankPyon_BearPolarRugProcess"]/ingredientFilter/thingDefs</xpath>
@@ -192,6 +195,13 @@
 						<thingDefs>
 							<li>Leather_Bear</li>
 						</thingDefs>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_BearGrizzlyRugProcess" or defName="DankPyon_BearPolarRugProcess"]/efficiency</xpath>
+					<value>
+						<efficiency>0.0125</efficiency>
 					</value>
 				</li>
 
@@ -203,6 +213,13 @@
 						</thingDefs>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_RoxRugProcess"]/efficiency</xpath>
+					<value>
+						<efficiency>0.008</efficiency>
+					</value>
+				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_ThrumboRugProcess"]/ingredientFilter/thingDefs</xpath>
@@ -212,6 +229,14 @@
 						</thingDefs>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_ThrumboRugProcess"]/efficiency</xpath>
+					<value>
+						<efficiency>0.008</efficiency>
+					</value>
+				</li>
+
 
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_DaerRugProcess"]/ingredientFilter/thingDefs</xpath>
@@ -221,6 +246,13 @@
 						</thingDefs>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_DaerRugProcess"]/efficiency</xpath>
+					<value>
+						<efficiency>0.008</efficiency>
+					</value>
+				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_HumanRugProcess"]/ingredientFilter/thingDefs</xpath>
@@ -228,6 +260,13 @@
 						<thingDefs>
 							<li>Leather_Human</li>
 						</thingDefs>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_HumanRugProcess"]/efficiency</xpath>
+					<value>
+						<efficiency>0.025</efficiency>
 					</value>
 				</li>
 
@@ -242,11 +281,21 @@
 						</value>
 					</match>
 				</li>
-
+				
 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_HidesProcess"]</xpath>
 					<match Class="PatchOperationRemove">
 						<xpath>/Defs/ProcessorFramework.ProcessDef[defName="DankPyon_HidesProcess"]</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="DankPyon_TanningRack"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/capacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="DankPyon_TanningRack"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/capacity</xpath>
+						<value>
+							<capacity>125</capacity>
+						</value>
 					</match>
 				</li>
 

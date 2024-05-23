@@ -30,28 +30,9 @@ namespace MedievalOverhaul
             {
                 return inactive.Apply(xml);
             }
-            //if (HasSetting() && !inverse)
-            //{
-            //    return ApplyPatches(xml);
-            //}
-            //if (!HasSetting() && inverse)
-            //{
-            //    return ApplyPatches(xml);
-            //}
             return true;
         }
-        //private bool ApplyPatches(XmlDocument xml)
-        //{
-        //    foreach (PatchOperation operation in this.operations)
-        //    {
-        //        if (!operation.Apply(xml))
-        //        {
-        //            this.lastFailedOperation = operation;
-        //            return false;
-        //        }
-        //    }
-        //    return true;
-        //}
+
         public bool HasSetting()
         {
             for (int i = 0; i < settings.Count(); i++)

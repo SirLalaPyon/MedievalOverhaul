@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>DankPyon_Make_Water</defName>
+		<label>gather water</label>
+		<description>Gather water.</description>
+		<jobString>Gathering 1 waterskin.</jobString>
+		<workSkill>Crafting</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>600</workAmount>
+		<recipeUsers>
+			<li>DankPyon_Well</li>
+			<li MayRequire="dubwise.dubsbadhygiene">EGG_AdvancedWell</li>
+		</recipeUsers>
+		<products>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DankPyon_Make_WaterBulk</defName>
+		<label>gather water x5</label>
+		<description>Gather water x5.</description>
+		<jobString>Gathering 5 waterskins.</jobString>
+		<workSkill>Crafting</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>3000</workAmount>
+		<recipeUsers>
+			<li>DankPyon_Well</li>
+			<li MayRequire="dubwise.dubsbadhygiene">EGG_AdvancedWell</li>
+		</recipeUsers>
+		<products>
+			<DankPyon_Waterskin>5</DankPyon_Waterskin>
+		</products>
+	</RecipeDef>
+
+</Defs>

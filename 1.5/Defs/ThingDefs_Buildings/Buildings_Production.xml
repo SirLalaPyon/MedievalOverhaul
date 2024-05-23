@@ -234,6 +234,7 @@
 			<drawSize>(3,3)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
@@ -261,7 +262,7 @@
 		<designationCategory>Production</designationCategory>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<isMealSource>true</isMealSource>
+			<isMealSource>false</isMealSource>
 		</building>
 		<researchPrerequisites>
 			<li>DankPyon_Engineering</li>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="DankPyon_DrugBase" ParentName="DrugBase" Abstract="True">
+		<tools>
+			<li>
+				<label>bottle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>neck</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- ==================== Alchemy ==================== -->
+	<!-- Mixtures base for drugs -->
+	<ThingDef ParentName="ResourceBase" Name="DankPyon_MixtureBase" Abstract="True">
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Drug/Mixture</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<bulkRecipeCount>3</bulkRecipeCount>
+			<researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
+			<recipeUsers>
+				<li>DankPyon_AlchemyBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
+		<defName>DankPyon_Mixture_Miracle</defName>
+		<label>apothecary's miracle mixture</label>
+		<description>A mixture of apothecary's miracle. Needs further brewing in order to be used.</description>
+		<graphicData>
+			<color>(181, 198, 139)</color>
+		</graphicData>
+		<costList>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+			<DankPyon_UnholdHeart>1</DankPyon_UnholdHeart>
+			<DankPyon_HerbalExtract>3</DankPyon_HerbalExtract>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
+		<defName>DankPyon_Mixture_HappyPowder</defName>
+		<label>happy powder mixture</label>
+		<description>A mixture of happy powder. Needs further brewing in order to be used.</description>
+		<graphicData>
+			<color>(193, 198, 196)</color>
+		</graphicData>
+		<costList>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+			<DankPyon_ParchedSkin>2</DankPyon_ParchedSkin>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
+		<defName>DankPyon_Mixture_BattleElixir</defName>
+		<label>battle elixir mixture</label>
+		<description>A mixture of battle elixir. Needs further brewing in order to be used.</description>
+		<graphicData>
+			<color>(99, 150, 107)</color>
+		</graphicData>
+		<costList>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+			<DankPyon_FlyAgaric>2</DankPyon_FlyAgaric>
+			<DankPyon_HappyPowder>1</DankPyon_HappyPowder>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
+		<defName>DankPyon_Mixture_Paregoric</defName>
+		<label>paregoric mixture</label>
+		<description>A mixture of paregoric. Needs further brewing in order to be used.</description>
+		<graphicData>
+			<color>(196, 162, 101)</color>
+		</graphicData>
+		<costList>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+			<DankPyon_Poppy>2</DankPyon_Poppy>
+			<DankPyon_GlowingResin>1</DankPyon_GlowingResin>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
+		<defName>DankPyon_Mixture_VigorPill</defName>
+		<label>vigor pill mixture</label>
+		<description>A mixture of vigor pill. Needs further brewing in order to be used.</description>
+		<graphicData>
+			<color>(189, 121, 66)</color>
+		</graphicData>
+		<costList>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+			<DankPyon_Mindwort>2</DankPyon_Mindwort>
+			<DankPyon_AdrenalineGland>1</DankPyon_AdrenalineGland>
+		</costList>
+	</ThingDef>
+
+	<!-- Buy only -->
+	<!--ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
+		<defName>DankPyon_Mixture_Knowledge</defName>
+		<label>potion of knowledge mixture</label>
+		<description>A mixture of knowledge. Needs further brewing in order to be used.</description>
+		<graphicData>
+			<color>(203, 155, 0)</color>
+		</graphicData>
+		<costList>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+			<DankPyon_ThirdEye>1</DankPyon_ThirdEye>
+			<DankPyon_SchratHeart>1</DankPyon_SchratHeart>
+		</costList>
+	</ThingDef-->
+
+	<ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
+		<defName>DankPyon_Mixture_Luhix</defName>
+		<label>luhix mixture</label>
+		<description>A mixture of luhix. Needs further brewing in order to be used.</description>
+		<graphicData>
+			<color>(49, 120, 163)</color>
+		</graphicData>
+		<costList>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+			<DankPyon_ThirdEye>1</DankPyon_ThirdEye>
+			<DankPyon_PetrifiedScream>1</DankPyon_PetrifiedScream>
+		</costList>
+	</ThingDef>
+  
+	<ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
+		<defName>DankPyon_Mixture_Stardust</defName>
+		<label>stardust</label>
+		<description>A mixture of stardust. Needs further brewing in order to be used.</description>
+		<graphicData>
+			<color>(49, 120, 163)</color>
+		</graphicData>
+		<costList>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+			<DankPyon_ThirdEye>1</DankPyon_ThirdEye>
+			<DankPyon_AdrenalineGland>1</DankPyon_AdrenalineGland>
+			<DankPyon_Mindwort>3</DankPyon_Mindwort>
+		</costList>
+	</ThingDef>
+
+</Defs>

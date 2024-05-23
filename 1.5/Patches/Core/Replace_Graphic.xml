@@ -28,9 +28,25 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MedicineHerbal"]/graphicData/drawSize</xpath>
+		<value>
+			<drawSize>1</drawSize>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="MedicineHerbal"]/label</xpath>
 		<value>
 			<label>healroot</label>
+		</value>
+	</Operation>
+
+	<!-- Luciferium -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Luciferium"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Drug/Luciferium</texPath>
 		</value>
 	</Operation>
 	

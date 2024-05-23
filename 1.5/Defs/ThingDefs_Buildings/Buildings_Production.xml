@@ -222,6 +222,53 @@
 		<techLevel>Medieval</techLevel>
 	</ThingDef>
 
+	<ThingDef ParentName="BenchBase">
+		<defName>DankPyon_Well</defName>
+		<label>well</label>
+		<thingClass>Building_WorkTable</thingClass>
+		<description>A small fortified hole dug through the ground to gain access to water.</description>
+		<graphicData>
+			<texPath>Production/Well</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<designationCategory>Production</designationCategory>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<isMealSource>true</isMealSource>
+		</building>
+		<researchPrerequisites>
+			<li>DankPyon_Engineering</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	</ThingDef>
+
 	<!--1x3 Bench Base-->
 	<ThingDef ParentName="BenchBase" Name="DankPyon_1X3WorkbenchBase" Abstract="True">
 		<altitudeLayer>Building</altitudeLayer>
@@ -737,6 +784,14 @@
 		<researchPrerequisites>
 			<li>DankPyon_Lumber</li>
 		</researchPrerequisites>
+		
+		<modExtensions>
+			<li Class="RecipeInheritance.ThingDefExtension">
+				<inheritRecipesFrom>
+					<li>CraftingSpot</li>
+				</inheritRecipesFrom>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
@@ -881,75 +936,6 @@
 				</linkableFacilities>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
-		</comps>
-
-		<placeWorkers>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
-		<researchPrerequisites>
-			<li>DankPyon_Alchemy</li>
-		</researchPrerequisites>
-	</ThingDef>
-
-	<ThingDef ParentName="BenchBase">
-		<defName>DankPyon_Cauldron</defName>
-		<label>cauldron</label>
-		<description>PLACEHOLDER.</description>
-		<thingClass>Building_WorkTable</thingClass>
-		<graphicData>
-			<texPath>Production/Cauldron</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(2,2)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-		</graphicData>
-		<size>(1,1)</size>
-
-		<techLevel>Medieval</techLevel>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>50</pathCost>
-		<castEdgeShadows>true</castEdgeShadows>
-		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<hasInteractionCell>true</hasInteractionCell>
-		<designationCategory>Production</designationCategory>
-
-		<costStuffCount>25</costStuffCount>
-		<stuffCategories>
-			<li>Woody</li>
-			<li>Stony</li>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costList>
-			<DankPyon_IronIngot>75</DankPyon_IronIngot>
-		</costList>
-
-		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToBuild>2500</WorkToBuild>
-			<Flammability>0</Flammability>
-		</statBases>
-
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<paintable>true</paintable>
-		</building>
-
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_HerbTable</li>
-					<li>DankPyon_VialsTable</li>
-					<li>DankPyon_Alembic</li>
-				</linkableFacilities>
-			</li>
 		</comps>
 
 		<placeWorkers>

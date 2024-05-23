@@ -2,8 +2,8 @@
 <Defs>
 	<!-- Abstract -->
 	<RecipeDef Name="DankPyon_Make_DrugAlchemy" Abstract="True">
-		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
-		<workSkill>Cooking</workSkill>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>

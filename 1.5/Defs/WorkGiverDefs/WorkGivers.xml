@@ -214,6 +214,23 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
+		<defName>DankPyon_DoBillsWell</defName>
+		<label>gather water</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>110</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_Well</li>
+		</fixedBillGiverDefs>
+		<verb>gather</verb>
+		<gerund>gathering at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
 		<defName>DankPyon_DoBillsWorkbench</defName>
 		<label>craft items</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
@@ -493,6 +510,7 @@
 		<priorityInType>40</priorityInType>
 		<fixedBillGiverDefs>
 			<li>DankPyon_Pyre</li>
+			<li>DankPyon_PyreRound</li>
 		</fixedBillGiverDefs>
 		<verb>cremate</verb>
 		<gerund>cremating at</gerund>

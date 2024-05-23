@@ -32,9 +32,9 @@
 		<snowFactor>1.0~0.0</snowFactor>
 		<windFactor>0.75~1.25</windFactor>
 		<unpoweredFactor>0.0</unpoweredFactor>
-		<unfueledFactor>0.0</unfueledFactor>
+		<unfueledFactor>1.0</unfueledFactor>
 		<powerUseFactor>1.0</powerUseFactor>
-		<fuelUseFactor>0.0</fuelUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
 		<filledGraphicSuffix>FilledMeat</filledGraphicSuffix>
 		<usesQuality>false</usesQuality>
 		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
@@ -147,5 +147,8 @@
 		<customLabel/>
 		<destroyChance>0.0</destroyChance>
 	</ProcessorFramework.ProcessDef>
+
+	<!-- ========== Alchemy ========== -->
+	<!-- Alchemy -->
 
 </Defs>

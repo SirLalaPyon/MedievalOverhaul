@@ -5,7 +5,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_Direwolf</defName>
 		<label>Direwolf</label>
-		<description>A subspecies of the great wolf, hardened by the relentless frosts of the north. Aggressive and resolute, they hunt in well-coordinated packs. In the olden days direwolves prefered domains of cold. Lack of prey during extremely hostile winters forced them to migrate to warmer regions, where they descend upon caravans and small settlements.</description>
+		<description>A subspecies of the great wolf, hardened by the relentless frosts of the north. Aggressive and resolute, they hunt in well-coordinated packs. In the olden days direwolves preferred domains of cold. Lack of prey during extremely hostile winters forced them to migrate to warmer regions, where they descend upon caravans and small settlements.</description>
 		<statBases>
 			<MoveSpeed>5.2</MoveSpeed>
 			<MarketValue>450</MarketValue>
@@ -125,6 +125,17 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+		<modExtensions>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+                <butcherOptions>
+                    <li>
+                        <thingDef>DankPyon_AdrenalineGland</thingDef>
+                        <amount>1</amount>
+                        <chance>0.5</chance>
+                    </li>
+                </butcherOptions>
+            </li>
+		</modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalFighter</li>

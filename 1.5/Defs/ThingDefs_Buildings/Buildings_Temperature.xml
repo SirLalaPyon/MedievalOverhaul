@@ -69,19 +69,19 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase" Name="DankPyon_PyreBase">
 		<defName>DankPyon_Pyre</defName>
-		<label>bonfire</label>
+		<label>large square pyre</label>
 		<description>A large bonfire capable of producing a great amount of heat and light. Suitable for burning waste and corpses, not advised to be placed indoors.</description>
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/LargePyre</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Temperature/LargePyre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawRotated>false</drawRotated>
 			<allowFlip>false</allowFlip>
-			<drawSize>(3.2, 3.2)</drawSize>
+			<drawSize>(4,4)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -176,6 +176,28 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_PyreBase">
+		<defName>DankPyon_PyreRound</defName>
+		<label>large round pyre</label>
+		<description>A large bonfire capable of producing a great amount of heat and light. Suitable for burning waste and corpses, not advised to be placed indoors.</description>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Temperature/LargeRoundPyre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
 	</ThingDef>
 
 </Defs>

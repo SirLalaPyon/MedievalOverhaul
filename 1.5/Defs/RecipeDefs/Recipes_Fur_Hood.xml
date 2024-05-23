@@ -244,11 +244,20 @@
 				</filter>
 				<count>1</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_TanningLiquor</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_LindwurmScales</li>
 				<li>DankPyon_UnholdHide</li>
+				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -271,10 +280,19 @@
 				</filter>
 				<count>2</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_TanningLiquor</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_ThickUnholdFur</li>
+				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -367,10 +385,19 @@
 				</filter>
 				<count>2</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_TanningLiquor</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_ParchedSkin</li>
+				<li>DankPyon_TanningLiquor</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

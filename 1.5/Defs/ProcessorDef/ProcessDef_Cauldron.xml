@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!--Dont use abstracts or parents, filled graphic doesnt work for somereason-->
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_Process_HappyPowder</defName>
+		<thingDef>DankPyon_HappyPowder</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+			<li>DankPyon_Mixture_HappyPowder</li>
+			</thingDefs>
+		</ingredientFilter>
+		<color>(193, 198, 196)</color> <!-- 0-255 or 0.0-1.0 -->
+		
+		<processDays>3</processDays> <!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<customLabel></customLabel>
+		<destroyChance>0.0</destroyChance>
+		<bonusOutputs>
+			<Rat>(1.0, 1)</Rat>
+		</bonusOutputs>
+		
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_Process_BattleElixir</defName>
+		<thingDef>DankPyon_BattleElixir</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+			<li>DankPyon_Mixture_BattleElixir</li>
+			</thingDefs>
+		</ingredientFilter>
+		<color>(99, 150, 107)</color> <!-- 0-255 or 0.0-1.0 -->
+
+		<processDays>3</processDays> <!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<customLabel></customLabel>
+		<destroyChance>0.0</destroyChance>
+		<bonusOutputs>
+			<Rat>(1.0, 1)</Rat>
+		</bonusOutputs>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_Process_VigorPill</defName>
+		<thingDef>DankPyon_VigorPill</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+			<li>DankPyon_Mixture_VigorPill</li>
+			</thingDefs>
+		</ingredientFilter>
+		<color>(189, 121, 66)</color> <!-- 0-255 or 0.0-1.0 -->
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_Process_Miracle</defName>
+		<thingDef>DankPyon_Miracle</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+			<li>DankPyon_Mixture_Miracle</li>
+			</thingDefs>
+		</ingredientFilter>
+		<color>(193, 198, 196)</color> <!-- 0-255 or 0.0-1.0 -->
+
+		<processDays>3</processDays> <!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<customLabel></customLabel>
+		<destroyChance>0.0</destroyChance>
+		<bonusOutputs>
+			<Rat>(1.0, 1)</Rat>
+		</bonusOutputs>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_Process_Paregoric</defName>
+		<thingDef>DankPyon_Paregoric</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+			<li>DankPyon_Mixture_Paregoric</li>
+			</thingDefs>
+		</ingredientFilter>
+		<color>(196, 162, 101)</color> <!-- 0-255 or 0.0-1.0 -->
+
+		<processDays>3</processDays> <!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<customLabel></customLabel>
+		<destroyChance>0.0</destroyChance>
+		<bonusOutputs>
+			<Rat>(1.0, 1)</Rat>
+		</bonusOutputs>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_Process_Luhix</defName>
+		<thingDef>DankPyon_VigorPill</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_Mixture_Luhix</li>
+			</thingDefs>
+		</ingredientFilter>
+		<color>(203, 155, 0)</color> <!-- 0-255 or 0.0-1.0 -->
+
+		<processDays>3</processDays> <!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>1.0</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~1.0</rainFactor>
+		<snowFactor>1.0~1.0</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<customLabel></customLabel>
+		<destroyChance>0.0</destroyChance>
+		<bonusOutputs>
+			<Rat>(1.0, 1)</Rat>
+		</bonusOutputs>
+	</ProcessorFramework.ProcessDef>
+</Defs>

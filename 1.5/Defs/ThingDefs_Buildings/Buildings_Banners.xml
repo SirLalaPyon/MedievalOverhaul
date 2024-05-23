@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Banner Base -->
+	<ThingDef ParentName="FurnitureWithQualityBase" Name="DankPyon_BannerBase" Abstract="True">
+		<description>A decorated linen banner to display the colony's colors.</description>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
+
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.25</fillPercent>
+		<pathCost>0</pathCost>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>750</WorkToBuild>
+            <Mass>10</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>20</Beauty>
+		</statBases>
+
+		<stuffCategories>
+		<li>Metallic</li>
+		<li>Woody</li>
+		<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+		    <DankPyon_Linen>40</DankPyon_Linen>
+		</costList>
+
+		<holdsRoof>false</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+
+		<graphicData>
+            <drawSize>(3,3)</drawSize>
+            <drawOffset>(0,0,0.4)</drawOffset>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(0.3, 0.5, 0.3)</volume>
+                <offset>(0,0,-0.23)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+        <rotatable>true</rotatable>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+		
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BannerBase" Name="DankPyon_NonBuildableBanners" Abstract="True">
+		<description>A decorated linen banner to display the colony's colors.</description>
+		<designationCategory Inherit="false"/>
+	</ThingDef>
+
+	<!--Non buildable banners-->
+	<ThingDef ParentName="DankPyon_NonBuildableBanners">
+		<defName>DankPyon_BannerMoonCult</defName>
+		<label>banner (moon cult)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerMoonCult</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_NonBuildableBanners">
+		<defName>DankPyon_BannerSoren</defName>
+		<label>banner (soren)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerSoren</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_NonBuildableBanners">
+		<defName>DankPyon_BannerAmboise</defName>
+		<label>banner (amboise)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerAmboise</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_NonBuildableBanners">
+		<defName>DankPyon_BannerHesse</defName>
+		<label>banner (hesse)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerHesse</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_NonBuildableBanners">
+		<defName>DankPyon_BannerOswin</defName>
+		<label>banner (oswin)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerOswin</texPath>
+		</graphicData>
+	</ThingDef>
+
+
+	<!-- Buildable Banners -->
+	<ThingDef ParentName="DankPyon_BannerBase">
+		<defName>DankPyon_BannerPlain</defName>
+		<label>banner (plain)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerPlain</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BannerBase">
+		<defName>DankPyon_BannerCrow</defName>
+		<label>banner (crow)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerCrow</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BannerBase">
+		<defName>DankPyon_BannerArrow</defName>
+		<label>banner (arrow)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerArrow</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BannerBase">
+		<defName>DankPyon_BannerHand</defName>
+		<label>banner (hand)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerHand</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BannerBase">
+		<defName>DankPyon_BannerAxe</defName>
+		<label>banner (axe)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerAxe</texPath>
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="DankPyon_BannerBase">
+		<defName>DankPyon_BannerSun</defName>
+		<label>banner (sun)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerSun</texPath>
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="DankPyon_BannerBase">
+		<defName>DankPyon_BannerLindwurm</defName>
+		<label>banner (lindwurm)</label>
+		<graphicData>
+		<texPath>Decoration/Banners/BannerLindwurm</texPath>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>

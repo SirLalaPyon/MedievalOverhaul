@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Fountain -->
+	<ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+		<defName>DankPyon_Fountain1x1c</defName>
+		<label>small fountain</label>
+		<graphicData>
+			<texPath>Decoration/Fountain1x1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>60</Beauty>
+			<WorkToMake>20000</WorkToMake>
+			<SellPriceFactor>1.10</SellPriceFactor>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+		</statBases>
+		<pathCost>42</pathCost>
+		<stuffCategories Inherit="False">
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+		
+	<ThingDef ParentName="DankPyon_ArtableFurnitureBase">
+		<defName>DankPyon_Fountain2x2c</defName>
+		<label>large fountain</label>
+		<graphicData>
+			<texPath>Decoration/Fountain2x2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>250</Beauty>
+			<Mass>28</Mass>
+			<WorkToMake>50000</WorkToMake>
+			<SellPriceFactor>1.10</SellPriceFactor>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+		</statBases>
+		<pathCost>42</pathCost>
+		<stuffCategories Inherit="False">
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>400</costStuffCount>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_BarrelWater</defName>
+		<label>water filled barrel</label>
+		<description>A barrel filled with water to clean oneself or the surroundings</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Decoration/BarrelWater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.75</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.3</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>30</pathCost>
+		<costList>
+			<DankPyon_IronIngot>5</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>0.5</Beauty>
+			<Cleanliness>5</Cleanliness>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<comps>
+			<!--li Class="CompProperties_Facility">
+					<statOffsets>
+					<Comfort>0.05</Comfort>
+					</statOffsets>
+					<maxSimultaneous>1</maxSimultaneous>
+					<maxDistance>6</maxDistance>
+			</li-->
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--======================================== Divider ========================================-->
+	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+		<defName>DankPyon_RusticRoomDivider1x2c</defName>
+		<label>room divider (1x2)</label>
+		<description>A basic room divider that keeps the privacy of your pawns.</description>
+		<graphicData>
+			<texPath>Decoration/RoomDivider1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,2)</drawSize>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<size>(2,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.6</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">8</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
+	</ThingDef>
+
+	<!--======================================== Signs ========================================-->
+	<ThingDef ParentName="BuildingBase" Name="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Tavern</defName>
+		<label>tavern sign</label>
+		<description>A wooden hanging sign use to symbolize the purpose of a room.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Decoration/Signs/SignTavern</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<uiIconOffset>(0, 0.25)</uiIconOffset>
+		<size>(1,1)</size>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.3</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>0</pathCost>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>2</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Bread</defName>
+		<label>bakery sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignBakery</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Butcher</defName>
+		<label>butcher sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignButcher</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Smith</defName>
+		<label>smith sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignSmith</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Apothecary</defName>
+		<label>apothecary sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignHerbalist</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Jewelry</defName>
+		<label>jewelry sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignJewelry</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Library</defName>
+		<label>library sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignBook</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Tailor</defName>
+		<label>tailor sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignTailor</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Woodworking</defName>
+		<label>woodworking sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignWoodworking</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Barn</defName>
+		<label>barn sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignBarn</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Winery</defName>
+		<label>winery sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignWinery</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SignBase">
+		<defName>DankPyon_Sign_Scribe</defName>
+		<label>scribe sign</label>
+		<graphicData>
+			<texPath>Decoration/Signs/SignScribe</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

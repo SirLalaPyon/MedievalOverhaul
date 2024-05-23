@@ -29,6 +29,16 @@
 		</specialDesignatorClasses>
 	</DesignationCategoryDef>
 
+	<DesignationCategoryDef>
+		<defName>DankPyon_RusticDecoration</defName>
+		<label>Rustic Deco.</label>
+		<order>505</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
 	<!-- <DesignationCategoryDef> -->
 		<!-- <defName>DankPyon_RuinFurniture</defName> -->
 		<!-- <label>Ruin Furn.</label> -->

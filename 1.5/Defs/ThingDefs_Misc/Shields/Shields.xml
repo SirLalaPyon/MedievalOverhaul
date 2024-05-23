@@ -471,7 +471,7 @@
 	<ThingDef ParentName="DankPyon_BaseShield">
 		<defName>DankPyon_ShieldLiving</defName>
 		<label>living tree shield</label>
-		<description>A shield carved out of the remains of a living tree, slowly regrows any sustained damage.</description>
+		<description>A shield carved out of the remains of a living tree, slowly regrows any sustained damage. \n\Regenerates durability over a period of time</description>
 		<graphicData>
 			<texPath>Apparel/Utility/HeaterSchrat/HeaterSchrat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -543,7 +543,7 @@
 	<ThingDef ParentName="DankPyon_BaseShield">
 		<defName>DankPyon_ShieldLindwurm</defName>
 		<label>lindwurm shield</label>
-		<description>This sturdy shield fashioned from the shimmering scales of a Lindwurm makes for protection nigh indestructible.</description>
+		<description>This sturdy shield fashioned from the shimmering scales of a Lindwurm makes for protection nigh indestructible. \n\nGrants immunity to lindwurm acid</description>
 		<graphicData>
 			<texPath>Apparel/Utility/HeaterLindwurm/HeaterLindwurm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

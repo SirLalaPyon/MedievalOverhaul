@@ -3,31 +3,32 @@
 
 	<!--============================== Base ==============================-->
 	<ThingDef Name="DankPyon_FurnitureBaseRug" ParentName="BuildingBase" Abstract="True">
+		<altitudeLayer>FloorCoverings</altitudeLayer>
+		<wipesPlants>true</wipesPlants>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
+
+		<selectable>true</selectable>
+		<useHitPoints>true</useHitPoints>
+    	<defaultPlacingRot>North</defaultPlacingRot>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<blocksAltitudes>
+			<li>FloorCoverings</li>
+		</blocksAltitudes>
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
 		<rotatable>true</rotatable>
-		<altitudeLayer>FloorCoverings</altitudeLayer>
-		<useHitPoints>False</useHitPoints>
+	
 		<researchPrerequisites>
 			<li>DankPyon_LeatherTanning</li>
 		</researchPrerequisites>
 	</ThingDef>
-  
-	<ThingDef Name="DankPyon_FurnitureWithQualityBaseRug" ParentName="DankPyon_FurnitureBaseRug" Abstract="True">
-		<comps>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-		</comps>
-	</ThingDef>
 
 	<!--============================== Rugs ==============================-->
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugPatched1x1c</defName>
 		<label>patched rug (1x1)</label>
 		<description>A roughly stiched rug made up of seperate leathers.</description>
@@ -58,7 +59,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugPatched2x2c</defName>
 		<label>patched rug (2x2)</label>
 		<description>A roughly stiched rug made up of seperate leathers.</description>
@@ -82,7 +83,7 @@
 		<size>(2,2)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugPatched3x3c</defName>
 		<label>patched rug (3x3)</label>
 		<description>A roughly stiched rug made up of seperate leathers.</description>
@@ -105,7 +106,7 @@
 		<size>(3,3)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugHyena2x2c</defName>
 		<label>hyena rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Hyena rugs are small but the lavish patterns, from stripes to dots, make the piece a beautiful addition to decor.</description>
@@ -126,7 +127,7 @@
 		<size>(2,2)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugWolfTimber2x2c</defName>
 		<label>timber wolf rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The grizzled grayish-brown fur of the timber wolf may make for a valuable rug but comes with a high cost as the hunter will likely face the beast in a pack.</description>
@@ -147,7 +148,7 @@
 		<size>(2,2)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugWolfArctic2x2c</defName>
 		<label>arctic wolf rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. A variant of the wolf, arctic wolf rugs tell the story of a hunter who braved dangerous temperatures and conquered starving predators biologically designed for survival.</description>
@@ -168,7 +169,7 @@
 		<size>(2,2)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugCougar2x2c</defName>
 		<label>cougar rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Cougars are prized for their luxurious pelts, which in turn makes for a valuable alternative to basic rugs.</description>
@@ -189,7 +190,7 @@
 		<size>(2,2)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugPanther2x2c</defName>
 		<label>panther rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Panther rugs, much like the animals themselves, fall into shadows during the night but marbled eyes illuminate in the darkness.</description>
@@ -210,7 +211,7 @@
 		<size>(2,2)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugGrizzlyBear3x3c</defName>
 		<label>grizzly bear rug (3x3)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The bear’s great coat is one of the most sought-after materials for animal-skinned rugs, making the grizzly bear rug a worthy choice for the daring colonist brave enough to face the hunt.</description>
@@ -231,7 +232,7 @@
 		<size>(3,3)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugPolarBear3x3c</defName>
 		<label>polar bear rug (3x3)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The polar bears found in frozen climates host great white fur that makes for cold-resistant rugs. Especially valuable to homesteads found in cold temperatures.</description>
@@ -252,7 +253,7 @@
 		<size>(3,3)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugRox3x3c</defName>
 		<label>rox rug (3x3)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The polar bears found in frozen climates host great white fur that makes for cold-resistant rugs. Especially valuable to homesteads found in cold temperatures.</description>
@@ -274,7 +275,7 @@
 		<size>(3,3)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugThrumbo3x3c</defName>
 		<label>thrumbo rug (3x3)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Few hunters can craft a trophy with a more refined and resistant coat than that of the thrumbo rug. Its long fur can catch the eye of any colonist, but the strong hide requires much work to tailor. Beware the horn while walking.</description>
@@ -295,7 +296,7 @@
 		<size>(3,3)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugDaer4x4c</defName>
 		<label>daer rug (4x4)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Few hunters can craft a trophy with a more refined and resistant coat than that of the thrumbo rug. Its long fur can catch the eye of any colonist, but the strong hide requires much work to tailor. Beware the horn while walking.</description>
@@ -316,7 +317,7 @@
 		<size>(4,4)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBaseRug">
+	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugHuman1x2c</defName>
 		<label>human rug (1x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Human rugs are prized trophies admired by some and loathed by others, but like-minded cannibals will find comfort in its decor.</description>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>DankPyon_Stardust</defName>
+		<label>stardust</label>
+		<description>PLACEHOLDER</description>
+		<possessionCount>10</possessionCount>
+		<descriptionHyperlinks><HediffDef>DankPyon_High_Stardust</HediffDef></descriptionHyperlinks>
+		<graphicData>
+			<texPath>Drug/Stardust</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<Mass>0.5</Mass>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<ingestible>
+			<foodType>Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.80</joy>
+			<drugCategory>Hard</drugCategory>
+			<baseIngestTicks>150</baseIngestTicks>
+			<ingestSound>Ingest_Snort</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+				<offset>(0.21,0,0.05)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Snort {0}</ingestCommandString>
+			<ingestReportString>Snorting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DankPyon_High_Stardust</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>DankPyon_Chemical_Stardust</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.5</offset>
+					<toleranceChemical>DankPyon_Chemical_Stardust</toleranceChemical>
+				</li>
+					<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.45</offset>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>DankPyon_Chemical_Stardust</chemical>
+				<addictiveness>0.01</addictiveness>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+				<listOrder>200</listOrder>
+				<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+				<largeOverdoseChance>0.01</largeOverdoseChance>
+			</li>
+		</comps>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
+			<recipeUsers>
+				<li>DankPyon_Cauldron</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+			<displayPriority>1500</displayPriority>
+		</recipeMaker>
+		<costList>
+			<DankPyon_Mixture_Stardust>1</DankPyon_Mixture_Stardust>
+		</costList>
+	</ThingDef>
+  
+  	<HediffDef>
+		<defName>DankPyon_High_Stardust</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<label>high on stardust</label>
+		<labelNoun>a stardust high</labelNoun>
+		<description>Stardust in the bloodstream. It greatly enhances memory, learning capacity, and slightly increases psyfocus when first drank.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-1</severityPerDay>
+			<showHoursToRecover>true</showHoursToRecover>
+		</li>
+		</comps>
+		<stages>
+			<li>
+				<hungerRateFactorOffset>-0.25</hungerRateFactorOffset>
+				<painFactor>1.2</painFactor>
+				<statFactors>
+					<RestFallRateFactor>0.95</RestFallRateFactor>
+				</statFactors>
+				<statOffsets>
+					<MentalBreakThreshold>0.2</MentalBreakThreshold>
+					<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.6</MeditationFocusGain>
+				</statOffsets>
+
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.30</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>DankPyon_Thought_Stardust</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DankPyon_High_Stardust</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+		<li>
+			<label>high on stardust</label>
+			<description>My mind is clear, with each second, telling me to seek knowledge.</description>
+			<baseMoodEffect>3</baseMoodEffect>
+		</li>
+		</stages>
+	</ThoughtDef>
+
+	<ChemicalDef>
+		<defName>DankPyon_Chemical_Stardust</defName>
+		<label>stardust</label>
+		<addictionHediff>DankPyon_Addiction_Stardust</addictionHediff>
+		<geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+		<geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>DankPyon_Need_Stardust</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>stardust</label>
+		<description>Because of a stardust addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		<fallPerDay>0.333</fallPerDay>
+		<listPriority>45</listPriority>
+	</NeedDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>DankPyon_Addiction_Stardust</defName>
+		<label>stardust addiction</label>
+		<description>A chemical addiction to stardust. Long-term presence of stardust has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+	\nWithout regular doses of stardust, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>DankPyon_Need_Stardust</causesNeed>
+		<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-0.045</severityPerDay>
+			<showDaysToRecover>true</showDaysToRecover>
+		</li>
+		</comps>
+		<stages>
+		<li>
+		</li>
+		<li>
+			<label>withdrawal</label>
+			<painFactor>2</painFactor>
+			<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+			<statOffsets>
+				<RestFallRateFactor>0.3</RestFallRateFactor>
+			</statOffsets>
+			<capMods>
+			<li>
+				<capacity>Consciousness</capacity>
+				<offset>-0.20</offset>
+			</li>
+			<li>
+				<capacity>Moving</capacity>
+				<offset>-0.30</offset>
+			</li>
+			<li>
+				<capacity>Sight</capacity>
+				<offset>-0.20</offset>
+			</li>
+			<li>
+				<capacity>BloodPumping</capacity>
+				<offset>-0.10</offset>
+			</li>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>-0.10</offset>
+			</li>
+			</capMods>
+			<mentalStateGivers>
+			<li>
+				<mentalState>Binging_DrugExtreme</mentalState>
+				<mtbDays>40</mtbDays>
+			</li>
+			<li>
+				<mentalState>Wander_Psychotic</mentalState>
+				<mtbDays>10</mtbDays>
+			</li>
+			</mentalStateGivers>
+		</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>DankPyon_Withdrawal_Stardust</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DankPyon_Addiction_Stardust</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+		<li>
+			<visible>false</visible>
+		</li>
+		<li>
+			<label>Stardust withdrawal</label>
+			<description>I'm all fuzzy and can't think straight. My limbs feel heavy, I'm tired and hungry, everything hurts. And why won't my eyes focus properly?</description>
+			<baseMoodEffect>-22</baseMoodEffect>
+		</li>
+		</stages>
+	</ThoughtDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>DankPyon_Tolerance_Stardust</defName>
+		<label>stardust tolerance</label>
+		<description>A built-up tolerance to stardust. The more severe this tolerance is, the more stardust it takes to get the same effect.</description>
+		<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-0.015</severityPerDay>
+		</li>
+		<li Class="HediffCompProperties_DrugEffectFactor">
+			<chemical>DankPyon_Chemical_Stardust</chemical>
+		</li>
+		</comps>
+		<hediffGivers>
+		<li Class="HediffGiver_RandomDrugEffect">
+			<hediff>ChemicalDamageModerate</hediff>
+			<severityToMtbDaysCurve>
+			<points>
+				<li>(0.45, 99999)</li>
+				<li>(0.5, 120)</li>
+				<li>(1, 90)</li>
+			</points>
+			</severityToMtbDaysCurve>
+			<partsToAffect>
+			<li>Brain</li>
+			</partsToAffect>
+		</li>
+		</hediffGivers>
+	</HediffDef>
+
+</Defs>

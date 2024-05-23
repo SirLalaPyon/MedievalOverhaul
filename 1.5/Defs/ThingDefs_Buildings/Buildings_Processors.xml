@@ -1,10 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<!-- Cauldron -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Cauldron</defName>
+		<label>cauldron</label>
+		<description>PLACEHOLDER.</description>
+		<thingClass>ProcessorFramework.Building_ColorCoded</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/Cauldron/Cauldron</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
 
+		<techLevel>Medieval</techLevel>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<designationCategory>Production</designationCategory>
+
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<DankPyon_IronIngot>75</DankPyon_IronIngot>
+		</costList>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<paintable>true</paintable>
+		</building>
+
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>DankPyon_HerbTable</li>
+					<li>DankPyon_VialsTable</li>
+					<li>DankPyon_Alembic</li>
+				</linkableFacilities>
+			</li>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>5</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>false</showProductIcon>
+				<barOffset>(0.0, -0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>true</colorCoded>
+				<processes>
+					<li>DankPyon_Process_HappyPowder</li>
+					<li>DankPyon_Process_BattleElixir</li>
+					<li>DankPyon_Process_VigorPill</li>
+					<li>DankPyon_Process_Miracle</li>
+					<li>DankPyon_Process_Paregoric</li>
+					<li>DankPyon_Process_Luhix</li>
+				</processes>
+			</li>
+
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>10</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<categories>
+						<li>DankPyon_Wood</li>
+						<li>DankPyon_RawWood</li>
+					</categories>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+		<tickerType>Rare</tickerType>
+	</ThingDef>
+
+	<!--Drying rack-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_DryingRack_Small</defName>
 		<label>drying rack(1x2)</label>
-		<description>A wooden rack to dry goods under the sun for preservation and long time use.</description>
+		<description>A wooden rack to dry goods under the sun to dehydrate and preserve them for a longer shelf life.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Production/DryingRack1x2/DryingRack1x2</texPath>
@@ -590,7 +692,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_RusticFermentingBarrel</defName>
 		<label>rustic fermenting barrel</label>
-		<description>A barrel for fermenting raw wort into ale. An alcoholic with a fruity, bitter, and rich taste.</description>
+		<description>A barrel for fermenting all sorts of fresh mixtures into various alcoholics. Its wooden properties help with producing rustic elements to the taste.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>

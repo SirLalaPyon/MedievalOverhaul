@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DankPyon_VigorPill</defName>
+		<label>vigor pill</label>
+		<description>Vigor pill fills the user's need for rest, allowing them to work for extended periods without getting tired. However, taking vigor pills runs the risk of developing an addiction.\n\nIn the most competitive universities and communities of many kingdoms, high-achievers are sometimes called 'vigor-men' because of the association with this drug.</description>
+		<descriptionHyperlinks>
+			<HediffDef>DankPyon_High_VigorPill</HediffDef>
+			<HediffDef>DankPyon_Addiction_VigorPill</HediffDef>
+			<HediffDef>HeartAttack</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Drug/VigorPill</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+            <MarketValue>60</MarketValue> <!-- (Mixture Market value / cauldron drop ammount) + 20-->
+			<Mass>0.01</Mass>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<ingestible>
+			<joyKind>Chemical</joyKind>
+			<joy>0.40</joy>
+			<drugCategory>Hard</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>DankPyon_High_VigorPill</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>DankPyon_Chemical_VigorPill</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>1.0</offset>
+					<toleranceChemical>DankPyon_Chemical_VigorPill</toleranceChemical>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		
+		<comps>
+		<li Class="CompProperties_Drug">
+			<chemical>DankPyon_Chemical_VigorPill</chemical>
+			<addictiveness>0.02</addictiveness>
+			<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+			<needLevelOffset>0.9</needLevelOffset>
+			<listOrder>210</listOrder>
+			<overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+			<largeOverdoseChance>0.005</largeOverdoseChance>
+		</li>
+		</comps>
+
+        <recipeMaker>
+			<researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
+			<recipeUsers>
+				<li>DankPyon_Cauldron</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+			<displayPriority>1500</displayPriority>
+		</recipeMaker>
+        <costList>
+			<DankPyon_Mixture_VigorPill>1</DankPyon_Mixture_VigorPill>
+		</costList>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>DankPyon_High_VigorPill</defName>
+		<label>high on vigor pill</label>
+		<labelNoun>a vigor pill high</labelNoun>
+		<description>Vigor pill in the bloodstream. It fills the need for rest by stimulating the brain, and increases focus, allowing faster work. It also increases the psyfocus gains from meditation.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-1.5</severityPerDay>
+			<showHoursToRecover>true</showHoursToRecover>
+		</li>
+		</comps>
+		<stages>
+			<li>
+			<capMods>
+				<li>
+				<capacity>Consciousness</capacity>
+				<offset>0.1</offset>
+				</li>
+				<li>
+				<capacity>Moving</capacity>
+				<offset>0.1</offset>
+				</li>
+			</capMods>
+			<statOffsets>
+				<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+				<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.2</MeditationFocusGain>
+			</statOffsets>
+			<statFactors>
+				<RestFallRateFactor>0.8</RestFallRateFactor>
+			</statFactors>
+			<hediffGivers>
+				<li Class="HediffGiver_Random">
+				<hediff>HeartAttack</hediff>
+				<mtbDays>120</mtbDays>
+				<partsToAffect>
+					<li>Heart</li>
+				</partsToAffect>
+				</li>
+			</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Vigor pill addiction -->
+  
+  <ChemicalDef>
+    <defName>DankPyon_Chemical_VigorPill</defName>
+    <label>vigor pill</label>
+    <addictionHediff>DankPyon_Addiction_VigorPill</addictionHediff>
+    <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+    <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
+  </ChemicalDef>
+  
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>DankPyon_Need_VigorPill</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>vigor pill</label>
+    <description>Because of a vigor pill addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>40</listPriority>
+  </NeedDef>
+  
+  <HediffDef ParentName="AddictionBase">
+    <defName>DankPyon_Addiction_VigorPill</defName>
+    <label>vigor pill addiction</label>
+    <description>A chemical addiction to vigor pills. Long-term presence of vigor pill has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of vigor pills, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>DankPyon_Need_VigorPill</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.045</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <socialFightChanceFactor>2.0</socialFightChanceFactor>
+        <statOffsets>
+          <RestFallRateFactor>0.3</RestFallRateFactor>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.30</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>10</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>DankPyon_Withdrawal_VigorPill</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>DankPyon_Addiction_VigorPill</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>vigor pill withdrawal</label>
+        <description>I feel all fuzzy and unfocused. And I'm so tired.</description>
+        <baseMoodEffect>-22</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>DankPyon_Tolerance_VigorPill</defName>
+    <label>vigor pill tolerance</label>
+    <description>A built-up tolerance to vigor pill. The more severe this tolerance is, the more wake-up it takes to get the same effect.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>DankPyon_Chemical_VigorPill</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>ChemicalDamageSevere</hediff>
+        <severityToMtbDaysCurve>
+          <points>
+            <li>(0.45, 99999)</li>
+            <li>(0.5, 180)</li>
+            <li>(1, 135)</li>
+          </points>
+        </severityToMtbDaysCurve>
+        <partsToAffect>
+          <li>Kidney</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+  </HediffDef>
+
+</Defs>

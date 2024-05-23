@@ -230,6 +230,64 @@
 			</options>
 		</colorGenerator>
 	</ThingDef>
+
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>DankPyon_Apparel_zweihanders_cuirass</defName>
+		<label>zweihander's cuirass</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Apparel/HeavyArmor/ZweihanderCuirass</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<statBases>
+			<WorkToMake>39000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>8</Mass>
+			<StuffEffectMultiplierArmor>0.90</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/HeavyArmor/ZweihanderCuirass</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>DankPyon_Knight</li>
+
+				<li>MedievalMilitary</li>
+				<li>MedievalMilitaryAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 	
 	
 	<ThingDef ParentName="ArmorSmithableBase">

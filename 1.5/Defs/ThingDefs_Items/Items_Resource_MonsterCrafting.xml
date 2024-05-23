@@ -25,7 +25,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1625</MarketValue>
+			<MarketValue>810</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>5</Mass>
 			<Flammability>0.4</Flammability>
@@ -43,7 +43,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1450</MarketValue>
+			<MarketValue>725</MarketValue>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>0.3</Flammability>
@@ -61,7 +61,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1250</MarketValue>
+			<MarketValue>625</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>2</Mass>
 			<Flammability>1</Flammability>
@@ -80,7 +80,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>565</MarketValue>
+			<MarketValue>280</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>5</Mass>
 			<Flammability>0.4</Flammability>
@@ -98,7 +98,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>750</MarketValue>
+			<MarketValue>375</MarketValue>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>15</Mass>
 			<Flammability>0.8</Flammability>
@@ -116,7 +116,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>500</MarketValue>
+			<MarketValue>250</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>10</Mass>
 			<Flammability>0.4</Flammability>
@@ -134,10 +134,29 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>565</MarketValue>
+			<MarketValue>280</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>0.3</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<!--=============== Ancient Troll Drops ====================-->
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_TrollHeart</defName>
+		<label>blue heart</label>
+		<description>PLACEHOLDER.</description>
+		<graphicData>
+			<texPath>Special/UnholdBones</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>280</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+			<Flammability>0.4</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 	</ThingDef>
@@ -153,7 +172,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>175</MarketValue>
+			<MarketValue>90</MarketValue>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>0.3</Flammability>
@@ -171,7 +190,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>125</MarketValue>
+			<MarketValue>65</MarketValue>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.6</Flammability>
@@ -189,7 +208,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>725</MarketValue>
+			<MarketValue>350</MarketValue>
 			<MaxHitPoints>70</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.6</Flammability>
@@ -201,14 +220,14 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_LindwurmBlood</defName>
 		<label>lindwurm blood</label>
-		<description>PLACEHOLDER</description>
+		<description>The acidic blood of a Lindwurm, carefully preserved in glass. Highly corrosive in nature, it can melt through plate armor in a matter of seconds. Due to it’s offensive capabilities, it is highly sought for by alchemists and hunters.</description>
 		<graphicData>
 			<texPath>Special/LindwurmBlood</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1000</MarketValue>
+			<MarketValue>500</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0</Flammability>
@@ -226,9 +245,9 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1100</MarketValue>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Mass>15</Mass>
+			<MarketValue>550</MarketValue>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Mass>10</Mass>
 			<Flammability>0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
@@ -244,8 +263,8 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>1500</MarketValue>
-			<MaxHitPoints>220</MaxHitPoints>
+			<MarketValue>750</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>15</Mass>
 			<Flammability>0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
@@ -263,8 +282,8 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>190</MarketValue>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>95</MarketValue>
+			<MaxHitPoints>75</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
@@ -282,7 +301,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>315</MarketValue>
+			<MarketValue>150</MarketValue>
 			<MaxHitPoints>40</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>2</Flammability>
@@ -300,7 +319,7 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>375</MarketValue>
+			<MarketValue>185</MarketValue>
 			<MaxHitPoints>60</MaxHitPoints>
 			<Mass>1</Mass>
 			<Flammability>2</Flammability>
@@ -318,11 +337,30 @@
 		</graphicData>
 
 		<statBases>
-			<MarketValue>375</MarketValue>
+			<MarketValue>185</MarketValue>
 			<MaxHitPoints>40</MaxHitPoints>
 			<Mass>1</Mass>
-			<Flammability>0</Flammability>
+			<Flammability>0.5</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+	<!-- Dire Wolf -->
+	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
+		<defName>DankPyon_AdrenalineGland</defName>
+		<label>adrenaline gland</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Special/AdrenalineGland</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
 		</statBases>
 	</ThingDef>
 </Defs>

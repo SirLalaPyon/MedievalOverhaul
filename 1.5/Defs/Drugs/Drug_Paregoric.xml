@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>DankPyon_Paregoric</defName>
+		<label>paregoric</label>
+		<description>PLACEHOLDER</description>
+		<possessionCount>10</possessionCount>
+		<descriptionHyperlinks><HediffDef>DankPyon_High_Paregoric</HediffDef></descriptionHyperlinks>
+		<graphicData>
+			<texPath>Drug/Paregoric</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>235</MarketValue> <!-- (Mixture Market value / cauldron drop ammount) + 20-->
+			<Mass>0.5</Mass>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<ingestible>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>DankPyon_High_Paregoric</hediffDef>
+				<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		
+		<comps>
+		<li Class="CompProperties_Drug">
+			<listOrder>1000</listOrder>
+			<overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+		</li>
+		</comps>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
+			<recipeUsers>
+				<li>DankPyon_Cauldron</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+			<displayPriority>1500</displayPriority>
+		</recipeMaker>
+		<costList>
+			<DankPyon_Mixture_Paregoric>1</DankPyon_Mixture_Paregoric>
+		</costList>
+	</ThingDef>
+  
+  <HediffDef>
+    <defName>DankPyon_High_Paregoric</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>paregoric</label>
+    <description>PLACEHOLDER.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+			<painFactor>0.75</painFactor>
+			<statOffsets>
+				<InjuryHealingFactor>0.25</InjuryHealingFactor>
+				<ImmunityGainSpeed>0.15</ImmunityGainSpeed>
+			</statOffsets>
+        </li>
+		
+      </stages>
+  </HediffDef>
+
+	<ThoughtDef>
+		<defName>DankPyon_Thought_Paregoric</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>DankPyon_High_Paregoric</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+		<li>
+			<label>drank paregoric</label>
+			<description>Drinking this medicine ensures me of my health.</description>
+			<baseMoodEffect>2</baseMoodEffect>
+		</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

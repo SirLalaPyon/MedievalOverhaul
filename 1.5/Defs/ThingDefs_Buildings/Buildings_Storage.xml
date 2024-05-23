@@ -2025,11 +2025,57 @@
 		</building>
 	</ThingDef>
 
+	<!--======================= Bundled Sack ==============================-->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_BundledSack1x1c</defName>
+		<label>bundled sack</label>
+		<description>A robust fabric bag designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BundledSack1x1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+		<costList>
+			<DankPyon_Linen>10</DankPyon_Linen>
+		</costList>
+	</ThingDef>
+
+	<!-- Crate 2x2 -->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_BundledSack2x2c</defName>
+		<label>bundled sack (2x2)</label>
+		<description>A robust fabric bag designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BundledSack2x2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<costList>
+			<DankPyon_Linen>40</DankPyon_Linen>
+		</costList>
+	</ThingDef>
+
 	<!--======================= Crate ==============================-->
 	<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_Crate1x1c</defName>
 		<label>crate</label>
-		<description>A wooden box made up of planks desinged to store resources. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/Crate1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -2052,8 +2098,8 @@
 	<!-- Crate 1x2 -->
 	<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_Crate1x2c</defName>
-		<label>crate</label>
-		<description>A wooden box made up of planks desinged to store resources. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<label>crate (1x2)</label>
+		<description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/Crate1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -2074,6 +2120,30 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
+	</ThingDef>
+
+	<!-- Crate 2x2 -->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Crate2x2c</defName>
+		<label>crate (2x2)</label>
+		<description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/Crate2x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
 	</ThingDef>
 
 	<!--======================= Weapon Rack ==============================-->

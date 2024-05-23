@@ -1,11 +1,71 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/ThingDef[defName="WashBucket"]/graphicData</xpath> -->
+		<!-- <value> -->
+			<!-- <drawSize>(2,2)</drawSize> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="PitLatrine" or defName="WashBucket"]/graphicData</xpath>
+	<xpath>Defs/ThingDef[defName="PitLatrine"]/graphicData</xpath>
 		<value>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(2.3,2.3)</drawSize>
 		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="DankPyon_Well"]/designationCategory</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="WaterWellInlet"]</xpath>
+		<value>
+			<thingClass>Building_WorkTable</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="WaterTowerS"]/graphicData/drawSize</xpath>
+		<value>
+			<drawSize>(3,3)</drawSize>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="BathtubStuff"]/stuffCategories/li[text()="Stony"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="BathtubStuff"]/stuffCategories/li[text()="Metallic"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="WaterButt"]/stuffCategories/li[text()="Stony"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="WaterButt"]/stuffCategories/li[text()="Metallic"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="PrimitiveWell"]/graphicData/drawSize</xpath>
+		<value>
+			<drawSize>(3,3)</drawSize>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="PrimitiveWell"]</xpath>
+		<value>
+			<uiIconScale>0.5</uiIconScale>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="PrimitiveWell"]/graphicData</xpath>
+		<value><shaderType>CutoutComplex</shaderType></value>
 	</Operation>
 
 </Patch>

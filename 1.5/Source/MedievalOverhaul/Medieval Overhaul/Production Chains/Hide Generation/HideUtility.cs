@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using VanillaGenesExpanded;
 
 namespace MedievalOverhaul
 {
@@ -17,6 +18,8 @@ namespace MedievalOverhaul
         public static List<ThingDef> AllLeatherAnimals = new List<ThingDef>();
         public static Dictionary<ThingDef, ThingDef> LeatherDefsSeen = new Dictionary<ThingDef, ThingDef>();
         public static Dictionary<ThingDef, ThingDef> AnimalDefsSeen = new Dictionary<ThingDef, ThingDef>();
+        public static List<GeneDef> AllGeneDefs = new List<GeneDef>();
+        public static Dictionary<GeneDef, ThingDef> geneLeather = new Dictionary<GeneDef, ThingDef>();
 
         public static void MakeListOfAnimals()
         {
@@ -27,6 +30,17 @@ namespace MedievalOverhaul
                     if (animal.race.leatherDef != null && animal.race.IsFlesh && !animal.race.Insect)
                     {
                         AllLeatherAnimals.Add(animal);
+                    }
+                }
+                if (ModLister.CheckBiotech("MechLink"))
+                {
+                    foreach (GeneDef gene in DefDatabase<GeneDef>.AllDefs.ToList())
+                    {
+                        var geneMod = gene.GetModExtension<GeneExtension>();
+                        if (geneMod != null && geneMod.customLeatherThingDef != null)
+                        {
+                            AllGeneDefs.Add(gene);
+                        }
                     }
                 }
             }

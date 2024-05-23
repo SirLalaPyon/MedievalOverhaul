@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using VanillaGenesExpanded;
 
 namespace MedievalOverhaul
 {
@@ -34,6 +35,17 @@ namespace MedievalOverhaul
                     HideUtility.DetermineButcherProducts(animal, leatherDef, hideDef);
                     animal.race.leatherDef = hideDef;
                     yield return hideDef;
+                }
+            }
+            if (MedievalOverhaulSettings.settings.leatherChain)
+            {
+                foreach (GeneDef gene in HideUtility.AllGeneDefs)
+                {
+                    ThingDef geneLeather = gene.GetModExtension<GeneExtension>().customLeatherThingDef;
+                    if (HideUtility.LeatherDefsSeen.ContainsKey(geneLeather))
+                    {
+                        gene.GetModExtension<GeneExtension>().customLeatherThingDef = HideUtility.LeatherDefsSeen[geneLeather];
+                    }
                 }
             }
         }

@@ -7,5 +7,16 @@
 			<drawSize>(2,2)</drawSize>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="DankPyon_Well"]/designationCategory</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="WaterWellInlet"]</xpath>
+		<value>
+			<thingClass>Building_WorkTable</thingClass>
+		</value>
+	</Operation>
 
 </Patch>

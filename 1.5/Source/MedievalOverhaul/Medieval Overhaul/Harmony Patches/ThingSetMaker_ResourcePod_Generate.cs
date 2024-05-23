@@ -25,7 +25,7 @@ namespace MedievalOverhaul.Patches
         protected static void Postfix(ref List<Thing> __result)
         {
 
-            if (__result != null)
+            if (__result != null && MedievalOverhaulSettings.settings.leatherChain)
             {
                 for (int i = 0; i < __result.Count; i++)
                 {

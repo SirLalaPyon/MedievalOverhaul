@@ -220,6 +220,9 @@
     <Reference Include="ProcessorFramework">
       <HintPath>..\..\..\..\ProcessorFramework\1.5\Assemblies\ProcessorFramework.dll</HintPath>
     </Reference>
+    <Reference Include="VFECore">
+      <HintPath>..\..\..\..\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -231,8 +231,8 @@
 		</colorGenerator>
 	</ThingDef>
 
-	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>DankPyon_Apparel_zweihanders_cuirass</defName>
+	<ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_ZweihanderCuirassBase">
+		<defName>DankPyon_Apparel_Zweihanders_Cuirass</defName>
 		<label>zweihander's cuirass</label>
 		<description>PLACEHOLDER</description>
 		<graphicData>
@@ -240,6 +240,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 			<skillRequirements>
@@ -251,6 +252,10 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>150</costStuffCount>
+		<costList>
+			<DankPyon_Linen>30</DankPyon_Linen>
+		</costList>
+
 		<statBases>
 			<WorkToMake>39000</WorkToMake>
 			<MaxHitPoints>300</MaxHitPoints>
@@ -288,7 +293,17 @@
 			</defaultOutfitTags>
 		</apparel>
 	</ThingDef>
-	
+
+	<!-- Floofy Version -->
+	<ThingDef ParentName="DankPyon_ZweihanderCuirassBase">
+		<defName>DankPyon_Apparel_Zweihanders_CuirassFloof</defName>
+		<graphicData>
+			<texPath>Apparel/HeavyArmor/ZweihanderCuirassFloof</texPath>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Apparel/HeavyArmor/ZweihanderCuirassFloof</wornGraphicPath>
+		</apparel>
+	</ThingDef>
 	
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>DankPyon_Apparel_FullPlate</defName>

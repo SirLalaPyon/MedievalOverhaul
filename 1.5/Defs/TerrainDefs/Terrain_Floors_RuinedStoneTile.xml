@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="DankPyon_Floor_RuinedStoneTile">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Ruined stone tiles. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/RuinedStoneTile</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>1</Beauty>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<designatorDropdown>DankPyon_Floor_RuinedStoneTile</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<uiOrder>2060</uiOrder>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DankPyon_Floor_RuinedStoneTile">
+		<defName>DankPyon_Floor_RuinedStoneTile_Sandstone</defName>
+		<label>ruined sandstone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_RuinedStoneTile">
+		<defName>DankPyon_Floor_RuinedStoneTile_Granite</defName>
+		<label>ruined granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_RuinedStoneTile">
+		<defName>DankPyon_Floor_RuinedStoneTile_Limestone</defName>
+		<label>ruined limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_RuinedStoneTile">
+		<defName>DankPyon_Floor_RuinedStoneTile_Slate</defName>
+		<label>ruined slate tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+	</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_RuinedStoneTile">
+		<defName>DankPyon_Floor_RuinedStoneTile_Marble</defName>
+		<label>ruined marble tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+</Defs>

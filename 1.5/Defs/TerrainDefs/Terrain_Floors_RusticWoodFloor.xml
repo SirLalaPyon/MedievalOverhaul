@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="DankPyon_Floor_RusticWoodFloorBase">
+		<renderPrecedence>250</renderPrecedence>
+		<description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<texturePath>Terrain/RusticWoodFloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>85</WorkToBuild>
+			<Flammability>0.22</Flammability>
+		</statBases>
+		<constructEffect>ConstructWood</constructEffect>
+		<designatorDropdown>DankPyon_Floor_RusticWoodFloor</designatorDropdown>
+		<uiOrder>2001</uiOrder>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DankPyon_Floor_RusticWoodFloorBase">
+		<defName>DankPyon_Floor_RusticWoodFloor_Wood</defName>
+		<label>rustic wood floor</label>
+		<color>(108,78,55)</color>
+		<costList>
+			<WoodLog>3</WoodLog>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_RusticWoodFloorBase">
+		<defName>DankPyon_Floor_RusticWoodFloor_DarkWood</defName>
+		<label>rustic dark wood floor</label>
+		<color>(112,91,76)</color>
+		<costList>
+			<DankPyon_RawDarkWood>3</DankPyon_RawDarkWood>
+		</costList>
+	</TerrainDef>
+</Defs>

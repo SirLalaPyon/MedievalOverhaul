@@ -73,7 +73,7 @@
 	<ThingDef ParentName="RoughPlantBase">
 		<defName>DankPyon_RawWheat</defName>
 		<label>wheat</label>
-		<description>Wheat is a grain that can be milled into flour.</description>
+		<description>Wheat is a vital crop for the peasantry, its golden stalks ripening under the sun, ready to be harvested for sustenance and trade. Cultivated in vast fields, it ensures villages thrive and the people remain well-fed, securing the livelihood of the hard working peasants.</description>
 		<graphicData>
 			<texPath>Plants/RawWheat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -87,7 +87,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
+				<daysToRotStart>120</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>

@@ -59,7 +59,7 @@
 	<!-- Dried Meats -->
 	<ThingDef ParentName="MealBase">
 		<defName>DankPyon_DriedMeat</defName>
-		<label>Dried Meat</label>
+		<label>dried Meat</label>
 		<description>Dried meat to preserve and prolong shelf life.</description>
 		<graphicData>
 			<texPath>Meal/DriedMeat</texPath>
@@ -90,7 +90,7 @@
 	<!-- Dried Human Meats -->
 	<ThingDef ParentName="MealBase">
 		<defName>DankPyon_DriedMeat_Human</defName>
-		<label>Dried Human Meat</label>
+		<label>dried Human Meat</label>
 		<description>Dried human meat to preserve and prolong shelf life. Does not rehydrate very well and only true cannibals can stomach it.</description>
 		<graphicData>
 			<texPath>Meal/DriedHumanMeat</texPath>
@@ -122,7 +122,7 @@
 
 	<ThingDef ParentName="MealBase">
 		<defName>DankPyon_DriedMeat_Insect</defName>
-		<label>Dried Insect Meat</label>
+		<label>dried Insect Meat</label>
 		<description>Dried insect meat to preserve and prolong shelf life.Does not rehydrate very well and not many can stomach it</description>
 		<graphicData>
 			<texPath>Meal/DriedInsectMeat</texPath>
@@ -152,7 +152,7 @@
 	<!-- Dried Meats -->
 	<ThingDef ParentName="MealBase">
 		<defName>DankPyon_SmokedMeat</defName>
-		<label>Smoked Meat</label>
+		<label>smoked meat</label>
 		<description>Dried meat to preserve and prolong shelf life.</description>
 		<graphicData>
 			<texPath>Meal/SmokedMeat</texPath>
@@ -183,7 +183,7 @@
 	<!-- Smoke Human Meat -->
 	<ThingDef ParentName="MealBase">
 		<defName>DankPyon_SmokedMeat_Human</defName>
-		<label>Smoked Human Meat</label>
+		<label>smoked human meat</label>
 		<description>Smoked human meat to preserve and prolong shelf life.</description>
 		<graphicData>
 			<texPath>Meal/SmokedHumanMeat</texPath>
@@ -214,7 +214,7 @@
 	<!-- Smoke Insect Meat -->
 	<ThingDef ParentName="MealBase">
 		<defName>DankPyon_SmokedMeat_Insect</defName>
-		<label>Smoked Insect Meat</label>
+		<label>smoked insect meat</label>
 		<description>Dried meat to preserve and prolong shelf life.</description>
 		<graphicData>
 			<texPath>Meal/SmokedInsectMeat</texPath>
@@ -321,8 +321,8 @@
 
 	<ThingDef ParentName="DankPyon_CheeseBase">
 		<defName>DankPyon_MealCheese</defName>
-		<label>Cheese</label>
-		<description>A sharp-tasting wheel of cheese, created by a special process of pursposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
+		<label>cheese</label>
+		<description>A sharp-tasting wheel of cheese, created by a special process of purposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
 		<graphicData>
 			<texPath>Meal/Cheese</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -333,7 +333,7 @@
 	<ThingDef ParentName="DankPyon_CheeseBase">
 		<defName>DankPyon_MealGoatCheese</defName>
 		<label>goat cheese</label>
-		<description>A sharp-tasting wheel of cheese, created by a special process of pursposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
+		<description>A sharp-tasting wheel of cheese, created by a special process of purposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
 		<graphicData>
 			<texPath>Meal/GoatCheese</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -344,7 +344,7 @@
 	<ThingDef ParentName="DankPyon_CheeseBase">
 		<defName>DankPyon_MealSheepCheese</defName>
 		<label>sheep cheese</label>
-		<description>A sharp-tasting wheel of cheese, created by a special process of pursposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
+		<description>A sharp-tasting wheel of cheese, created by a special process of purposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
 		<graphicData>
 			<texPath>Meal/SheepCheese</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -415,7 +415,7 @@
 	<!-- Steak with Wine -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealSteakWithWine</defName>
-		<label>Steak with wine</label>
+		<label>steak with wine</label>
 		<description>A rich meal consisting of spiced steak with chopped onion, sauteed in a light wine broth. A delightfully rich and bold-tasting meal.</description>
 		<graphicData>
 			<texPath>Meal/SteakWithWine</texPath>
@@ -444,7 +444,7 @@
 	<!-- Cheese Soup -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealCheeseSoup</defName>
-		<label>Cheese soup</label>
+		<label>cheese soup</label>
 		<description>A delightfully gooey soup consisting of cuts of melted cheese curd housed in a rich broth of garlic-spiced ale. A hearty dish best served warm, soothing for both the body and soul.</description>
 		<graphicData>
 			<texPath>Meal/SoupCheese</texPath>
@@ -530,7 +530,7 @@
 	<!-- Apple Pie -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealApplePie</defName>
-		<label>Apple pie</label>
+		<label>apple pie</label>
 		<description>A pie that uses sliced apples for its principal filling ingredient, mixed together with profound spices. Typically covered with a lattice patterned crust then sprinkled with sugar for its finish.</description>
 		<graphicData>
 			<texPath>Meal/ApplePie</texPath>
@@ -559,7 +559,7 @@
 	<!-- Hunters Stew -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealHuntersStew</defName>
-		<label>Hunter's stew</label>
+		<label>hunter's stew</label>
 		<description>A hearty stew consisting of boiled sausage sauteed in a vegetable broth with minced cabbage.</description>
 		<graphicData>
 			<texPath>Meal/HuntersStew</texPath>
@@ -588,7 +588,7 @@
 	<!-- Grilled Cheese -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealGrilledCheese</defName>
-		<label>Grilled cheese</label>
+		<label>grilled cheese</label>
 		<description>A simple dish consisting of a rich cut of cheese grilled with smoky fire.</description>
 		<graphicData>
 			<texPath>Meal/GrilledCheese</texPath>
@@ -617,7 +617,7 @@
 	<!-- Grilled Sausages -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealGrilledSausages</defName>
-		<label>Grilled Sausages</label>
+		<label>grilled Sausages</label>
 		<description>Seasoned meat with spices encased in a cylindrical manner. Grilled in an open flame to bring out smoky flavors.</description>
 		<graphicData>
 			<texPath>Meal/GrilledSausages</texPath>
@@ -885,7 +885,7 @@
 	<!-- Fried Eggs -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealFriedEggs</defName>
-		<label>Fried Eggs</label>
+		<label>fried Eggs</label>
 		<description>A simple meal, consisting of eggs quickly prepared and optionally served with a light sprinkling of salt and or pepper.</description>
 		<graphicData>
 			<texPath>Meal/FriedEggs</texPath>
@@ -914,7 +914,7 @@
 	<!-- Mashed Potatoes -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealMashedPotatoes</defName>
-		<label>Mashed potatoes</label>
+		<label>mashed potatoes</label>
 		<description>A simple dish made with boiled potatos then mashed into a soft mixture while supplmented with milk for a creamy base.</description>
 		<graphicData>
 			<texPath>Meal/MashedPotatoes</texPath>
@@ -944,7 +944,7 @@
 	<!-- Mushroom Soup -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealMushroomSoup</defName>
-		<label>Mushroom soup</label>
+		<label>mushroom soup</label>
 		<description>A fragrant soup consisting of minced sauteed mushrooms in a rich milky broth, making for a bold-tasting, somewhat hearty meal.</description>
 		<graphicData>
 			<texPath>Meal/MushroomSoup</texPath>
@@ -974,7 +974,7 @@
 	<!-- Vegetable Pot -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealVegetablePot</defName>
-		<label>Vegetable pot</label>
+		<label>vegetable pot</label>
 		<description>A rich stew of chopped vegetables, sauteed and boiled in a lightly seasoned broth. A hearty, yet healthy meal.</description>
 		<graphicData>
 			<texPath>Meal/VegetablePot</texPath>
@@ -1004,7 +1004,7 @@
 	<!-- Pumpkin Fritters -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealPumpkinFritters</defName>
-		<label>Pumpkin fritters</label>
+		<label>pumpkin fritters</label>
 		<description>A sweet, dense biscuit of pumpkin and flour with a caramelized confectionery glaze.</description>
 		<graphicData>
 			<texPath>Meal/PumpkinFritters</texPath>
@@ -1034,7 +1034,7 @@
 	<!-- Grilled Skewers -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealGrilledSkewers</defName>
-		<label>Grilled skewers</label>
+		<label>grilled skewers</label>
 		<description>Thick-cut chunks of seared meat arranged on a wooden stake, making for an easily-eaten, tasty meal.</description>
 		<graphicData>
 			<texPath>Meal/GrilledSkewers</texPath>
@@ -1064,7 +1064,7 @@
 	<!-- Boiled Bean and Onion -->
 	<ThingDef ParentName="MealCooked">
 		<defName>DankPyon_MealBoiledBeansAndOnion</defName>
-		<label>Boiled beans and onion</label>
+		<label>boiled beans and onion</label>
 		<description>A simple, yet hearty meal consisting of beans and chopped onion boiled in a light lentil broth.</description>
 		<graphicData>
 			<texPath>Meal/BoiledBeansAndOnion</texPath>

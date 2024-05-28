@@ -151,7 +151,7 @@
 		<label>slab door</label>
 		<description>A block of stone repurposed as a slow and heavy door. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the gate is made of.</description>
 		<statBases>
-			<MaxHitPoints>320</MaxHitPoints>
+			<MaxHitPoints>680</MaxHitPoints>
 			<WorkToBuild>3000</WorkToBuild>
 			<DoorOpenSpeed>0.4</DoorOpenSpeed>
 		</statBases>
@@ -178,7 +178,7 @@
 		<thingClass>Building_MultiTileDoor</thingClass>
 		<statBases>
 			<WorkToBuild>3600</WorkToBuild>
-			<MaxHitPoints>200</MaxHitPoints>
+			<MaxHitPoints>320</MaxHitPoints>
 		</statBases>
 		<graphicData>
 		<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Mover</texPath>
@@ -228,7 +228,7 @@
 		<thingClass>Building_MultiTileDoor</thingClass>
 		<statBases>
 			<WorkToBuild>3600</WorkToBuild>
-			<MaxHitPoints>290</MaxHitPoints>
+			<MaxHitPoints>500</MaxHitPoints>
 		</statBases>
 		<graphicData>
 		<texPath>Buildings/Gate1x2/Gate1x2_Mover</texPath>

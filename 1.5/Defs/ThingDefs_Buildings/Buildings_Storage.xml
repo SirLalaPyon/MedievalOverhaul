@@ -2048,7 +2048,7 @@
 		</costList>
 	</ThingDef>
 
-	<!-- Crate 2x2 -->
+	<!-- Sack 2x2 -->
 	<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_BundledSack2x2c</defName>
 		<label>bundled sack (2x2)</label>
@@ -2130,6 +2130,81 @@
 		<graphicData>
 			<texPath>Storage/Crate2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+	</ThingDef>
+
+	<!-- Crate 2x2 -->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Crate2x2_Bones</defName>
+		<label>large crate (bones)</label>
+		<description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Crate2x2_Bones</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+	</ThingDef>
+
+	<!-- Crate 2x2 -->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Crate2x2_Unhold</defName>
+		<label>large crate (unhold)</label>
+		<description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Crate2x2_Unhold</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+	</ThingDef>
+
+	<!-- Crate 2x2 -->
+	<ThingDef ParentName="DankPyon_StorageBase">
+		<defName>DankPyon_Crate2x2_Lindwurm</defName>
+		<label>large crate (lindwurm)</label>
+		<description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Crate2x2_Lindwurm</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<size>(2,2)</size>
@@ -2598,63 +2673,364 @@
 		</building>
 	</ThingDef>
 
-	<!--ThingDef ParentName="DankPyon_StorageBase">
-	<defName>DankPyon_ShelfPlates</defName>
-	<label>shelf of plates</label>
-	<description>A shelf for reserved for clean plates. Items stored in this will not affect room beauty.</description>
-	<thingClass>Building_Storage</thingClass>
-	<graphicData>
-	  <texPath>Storage/ShelfPlate</texPath>
-	  <graphicClass>Graphic_Multi</graphicClass>
-	  <drawSize>(2.70,2.70)</drawSize>
-	  <shaderType>CutoutComplex</shaderType>
-	</graphicData>
-	<uiIconPath>Storage/ShelfPlate_north</uiIconPath>
-	<altitudeLayer>Building</altitudeLayer>
-	<passability>PassThroughOnly</passability>
-	<fillPercent>0.4</fillPercent>
-	<castEdgeShadows>true</castEdgeShadows>
-	<pathCost>50</pathCost>
-	<stuffCategories>
-	  <li>Woody</li>
-	</stuffCategories>
-	<costStuffCount>65</costStuffCount>
-	<statBases>
-	  <MaxHitPoints>100</MaxHitPoints>
-	  <Mass>12</Mass>
-	  <WorkToBuild>900</WorkToBuild>
-	  <Flammability>1.0</Flammability>
-	  <Beauty>0.5</Beauty>
-	</statBases>
-	<size>(2,1)</size>
-	<defaultPlacingRot>South</defaultPlacingRot>
-	<building>
-	  <fixedStorageSettings>
-		<filter>
-		<thingDefs>
-		  <li>DankPyon_PlateClean</li>
-		</thingDefs>
-		</filter>
-	  </fixedStorageSettings>
-	</building>
-	<inspectorTabs>
-	  <li>ITab_Storage</li>
-	</inspectorTabs>
-	<designationHotKey>Misc12</designationHotKey>
-	<staticSunShadowHeight>0.5</staticSunShadowHeight>
-	<canOverlapZones>false</canOverlapZones>
-	<comps>
-	  <li Class="LWM.DeepStorage.Properties" >
-		<minNumberStacks>1</minNumberStacks>
-		<maxNumberStacks>10</maxNumberStacks>
-		<timeStoringTakes>120</timeStoringTakes>
-		<showContents>false</showContents>
-		<overlayType>None</overlayType>
-	  </li>
-	</comps>
-  </ThingDef-->
-
+	<!-- ===== Alchemy Shelfs ===== -->
+	<!-- Shelf Herbs -->
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_AssortedHerbs</defName>
+		<label>shelf (assorted herbs)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_AssortedHerbs</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_AssortedHerbs_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_Fleawort</li>
+						<li>DankPyon_FlyAgaric</li>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_HerbalExtract</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_Fleawort</li>
+						<li>DankPyon_FlyAgaric</li>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_HerbalExtract</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
 	
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_GreenHerbs</defName>
+		<label>shelf (green herbs)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_GreenHerbs</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_GreenHerbs_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_Fleawort</li>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_HerbalExtract</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_Fleawort</li>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_HerbalExtract</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_RedHerbs</defName>
+		<label>shelf (red herbs)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_RedHerbs</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_RedHerbs_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_FlyAgaric</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_FlyAgaric</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+	
+	<!-- Drugs -->
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_BattleElixir</defName>
+		<label>shelf (battle elixir)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_BattleElixir</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_BattleElixir_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_BattleElixir</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_BattleElixir</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_HappyPowder</defName>
+		<label>shelf (happy powder)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_HappyPowder</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_HappyPowder_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_HappyPowder</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_HappyPowder</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_VigorPill</defName>
+		<label>shelf (vigor pill)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_VigorPill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_VigorPill_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_VigorPill</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_VigorPill</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_AssortedDrugsA</defName>
+		<label>shelf (assorted drugs a)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_AssortedDrugsA</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_AssortedDrugsA_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_BattleElixir</li>
+						<li>DankPyon_HappyPowder</li>
+						<li>DankPyon_VigorPill</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_BattleElixir</li>
+						<li>DankPyon_HappyPowder</li>
+						<li>DankPyon_VigorPill</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_Stardust</defName>
+		<label>shelf (stardust)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_Stardust</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_Stardust_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Stardust</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Stardust</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_Luhix</defName>
+		<label>shelf (luhix)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_Luhix</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_Luhix_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Luhix</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Luhix</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_Paregoric</defName>
+		<label>shelf (paregoric)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_Paregoric</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_Paregoric_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Paregoric</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Paregoric</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ShelfBase">
+		<defName>DankPyon_Shelf_AssortedDrugsB</defName>
+		<label>shelf (assorted drugs b)</label>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_AssortedDrugsB</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>Storage/Alchemy/Shelf_AssortedDrugsB_north</uiIconPath>
+		<building>
+			<fixedStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Stardust</li>
+						<li>DankPyon_Luhix</li>
+						<li>DankPyon_Paregoric</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="false">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Stardust</li>
+						<li>DankPyon_Luhix</li>
+						<li>DankPyon_Paregoric</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
 
 	<!-- Carts -->
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_CartBase">

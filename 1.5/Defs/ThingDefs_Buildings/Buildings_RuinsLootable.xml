@@ -1231,4 +1231,126 @@
 		</modExtensions>
 	</ThingDef>
 
+	<!-- Crates -->
+	<ThingDef ParentName="DankPyon_LootBuilding" Name="DankPyon_LootableCrate_Base">
+		<defName>DankPyon_LootableCrate_Bones</defName>
+		<label>large crate</label>
+		<description>A large crate filled with items.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Crate2x2_Bones</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<size>(2,2)</size>
+
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>16</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+
+		<modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Storage/Alchemy/Crate2x2_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(4,4)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~3</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_UnholdBones</li>
+					<li>DankPyon_GlowingResin</li>
+					<li>DankPyon_NachHorns</li>
+					<li>DankPyon_LindwurmBones</li>
+					<li>DankPyon_RoxHorn</li>
+					<li>DankPyon_AncientWood</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableCrate_Base">
+		<defName>DankPyon_LootableCrate_Unhold</defName>
+		<graphicData>
+			<texPath>Storage/Alchemy/Crate2x2_Unhold</texPath>
+		</graphicData>
+
+		<modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Storage/Alchemy/Crate2x2_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(4,4)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~3</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_UnholdBones</li>
+					<li>DankPyon_UnholdHide</li>
+					<li>DankPyon_UnholdHeart</li>
+					<li>DankPyon_ThickUnholdFur</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableCrate_Base">
+		<defName>DankPyon_LootableCrate_Lindwurm</defName>
+		<graphicData>
+			<texPath>Storage/Alchemy/Crate2x2_Lindwurm</texPath>
+		</graphicData>
+
+		<modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Storage/Alchemy/Crate2x2_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(4,4)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~3</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_LindwurmBlood</li>
+					<li>DankPyon_LindwurmBones</li>
+					<li>DankPyon_LindwurmScales</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 </Defs>

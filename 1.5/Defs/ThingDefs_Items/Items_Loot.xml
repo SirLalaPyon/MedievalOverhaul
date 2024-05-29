@@ -716,10 +716,7 @@
         <defName>DankPyon_TornNote_Hideout</defName>
         <label>torn note</label>
         <stackLimit>3</stackLimit>
-        <description>Torn Notes can be used at the explorer's table (as fuel). They contain information about hideouts and other locations, such as mineable lumbs. 
-You can find them in hideouts or buy them from bulkgood traders or scholar caravans, but only if the caravan belongs to one of MO's noble houses.
-		
-Furthermore, they can be stored in the explorer's archive, which is a shelf found in hideouts. So make sure to take them with you!</description>
+        <description>Tattered scraps of parchment, often found scattered in ancient ruins or dropped by fleeing bandits. Each fragment holds a piece of a larger puzzle, scribbled with cryptic hints, crude maps, and faded symbols. When pieced together, these notes reveal the locations of hidden hideouts, forgotten treasures, and other intriguing points of interest. The pursuit of these fragmented clues leads adventurers on a journey of discovery, testing their wits and perseverance.</description>
         <descriptionHyperlinks>
 			<ThingDef>DankPyon_QuestFinder</ThingDef>
 			<ThingDef>DankPyon_CultShelf</ThingDef>
@@ -731,10 +728,10 @@ Furthermore, they can be stored in the explorer's archive, which is a shelf foun
 
          <statBases>
 			<MarketValue>150</MarketValue>
-            <MaxHitPoints>100</MaxHitPoints>
+            <MaxHitPoints>50</MaxHitPoints>
             <Beauty>0</Beauty>
-            <Mass>1</Mass>
-            <Flammability>0</Flammability>
+            <Mass>0.1</Mass>
+            <Flammability>1</Flammability>
             <DeteriorationRate>1.0</DeteriorationRate>
         </statBases>
     </ThingDef>

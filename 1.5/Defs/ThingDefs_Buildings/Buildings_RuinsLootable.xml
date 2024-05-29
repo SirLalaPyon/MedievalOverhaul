@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--======================= Shelf ==============================-->
+	<!-- Non lootable, placed here just to be closer to other shelfs at architect menu-->
+	<!--======================= Empty Shelf ==============================-->
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
 		<defName>DankPyon_RuinedShelfEmpty</defName>
 		<label>ruined shelf</label>
@@ -15,7 +16,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<pathCost>50</pathCost>
 		<fillPercent>0.4</fillPercent>
-        
+		
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -35,8 +36,454 @@
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase" Name="DankPyon_LootBuilding" Abstract="True">
 		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<tickerType>Normal</tickerType>
+		<designationCategory>DankPyon_RuinLootable</designationCategory>
 	</ThingDef>
+	
+	<!-- Shelf Base-->
+	<ThingDef ParentName="DankPyon_LootBuilding" Name="DankPyon_LootableShelf_Base" Abstract="true">
+		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+		</building>
+
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>65</costStuffCount>
+
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Mass>12</Mass>
+			<WorkToBuild>900</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+	</ThingDef>
+
 	<!--======================= Lootable Shelf ==============================-->
+	<!-- Alchemy Shelf -->
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_AssortedHerbs</defName>
+		<label>filled shelf (herbs)</label>
+		<description>A shelf filled with herbs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_AssortedHerbs</texPath>
+		</graphicData>
+
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_Mindwort</li>
+					<li>DankPyon_Poppy</li>
+					<li>DankPyon_Fleawort</li>
+					<li>DankPyon_FlyAgaric</li>
+					<li>MedicineHerbal</li>
+					<li>DankPyon_HerbalExtract</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_GreenHerbs</defName>
+		<label>filled shelf (herbs)</label>
+		<description>A shelf filled with herbs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_GreenHerbs</texPath>
+		</graphicData>
+
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_Mindwort</li>
+					<li>DankPyon_Fleawort</li>
+					<li>MedicineHerbal</li>
+					<li>DankPyon_HerbalExtract</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_RedHerbs</defName>
+		<label>filled shelf (herbs)</label>
+		<description>A shelf filled with herbs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_RedHerbs</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.75,2.75)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_Poppy</li>
+					<li>DankPyon_FlyAgaric</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- Drugs Shelf -->
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_BattleElixir</defName>
+		<label>filled shelf (drugs)</label>
+		<description>A shelf filled with drugs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_BattleElixir</texPath>
+		</graphicData>
+
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+		</building>
+
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_BattleElixir</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_HappyPowder</defName>
+		<label>filled shelf (drugs)</label>
+		<description>A shelf filled with drugs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_HappyPowder</texPath>
+		</graphicData>
+
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+		</building>
+		
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_HappyPowder</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_VigorPill</defName>
+		<label>filled shelf (drugs)</label>
+		<description>A shelf filled with drugs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_VigorPill</texPath>
+		</graphicData>
+
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+		</building>
+		
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_VigorPill</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_AssortedDrugsA</defName>
+		<label>filled shelf (drugs)</label>
+		<description>A shelf filled with drugs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_AssortedDrugsA</texPath>
+		</graphicData>
+
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+		</building>
+		
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_BattleElixir</li>
+					<li>DankPyon_HappyPowder</li>
+					<li>DankPyon_VigorPill</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_Stardust</defName>
+		<label>filled shelf (drugs)</label>
+		<description>A shelf filled with drugs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_Stardust</texPath>
+		</graphicData>
+
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+		</building>
+		
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_Stardust</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_Luhix</defName>
+		<label>filled shelf (drugs)</label>
+		<description>A shelf filled with drugs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_Luhix</texPath>
+		</graphicData>
+
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+		</building>
+		
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_Luhix</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_Paregoric</defName>
+		<label>filled shelf (drugs)</label>
+		<description>A shelf filled with drugs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_Paregoric</texPath>
+		</graphicData>
+
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+		</building>
+		
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_Paregoric</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_LootableShelf_Base">
+		<defName>DankPyon_LootableShelf_AssortedDrugsB</defName>
+		<label>filled shelf (drugs)</label>
+		<description>A shelf filled with drugs.</description>
+		<graphicData>
+			<texPath>Storage/Alchemy/Shelf_AssortedDrugsB</texPath>
+		</graphicData>
+
+		<building>
+			<destroySound>BuildingDestroyed_Wood_Medium</destroySound>
+		</building>
+		
+		<modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+				<hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.75,2.75)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>0~10</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_AssortedDrugsB</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- Jewelry Shelf -->
 	<ThingDef ParentName="DankPyon_LootBuilding" Name="DankPyon_LootShelfBase">
 		<defName>DankPyon_LootableShelf_ChaliceSilver</defName>
 		<label>filled shelf</label>

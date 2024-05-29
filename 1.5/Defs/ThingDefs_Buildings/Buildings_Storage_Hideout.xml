@@ -2763,8 +2763,11 @@
 	<!-- Carts -->
 	<ThingDef ParentName="DankPyon_HideOutBuildingBase" Name="DankPyon_HideoutCartBase" Abstract="True">
 		<description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. Can be used to store items.</description>
+		<graphicData>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
 		<defaultPlacingRot>North</defaultPlacingRot>
-		<size>(2,2)</size>
+		<uiIconScale>0.5</uiIconScale>
 
 		<costStuffCount>120</costStuffCount>
 		<stuffCategories Inherit="false">
@@ -2788,7 +2791,6 @@
 		<graphicData>
 			<texPath>Storage/Cart_Empty</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		
         <modExtensions>
@@ -2823,18 +2825,8 @@
 			<texPath>Storage/Cart_Assorted</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_HideoutCartBase">
-		<defName>DankPyon_HideOutBuildingBase_Cart_Ore</defName>
-		<label>ore cart</label>
-		<graphicData>
-			<texPath>Storage/Cart_Ore</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		
-        <modExtensions>
+		<modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
 				<enemysToSpawn>
 				    <li>Rat</li>
@@ -2878,6 +2870,57 @@
                     <li>DankPyon_CoalOre</li>
                     <li>DankPyon_CoalOre</li>
                     <li>DankPyon_CoalOre</li>
+				</randomItems>
+			</li>
+		</modExtensions>	
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutCartBase">
+		<defName>DankPyon_HideOutBuildingBase_Cart_Ore</defName>
+		<label>ore cart</label>
+		<graphicData>
+			<texPath>Storage/Cart_Ore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Storage/Cart_Empty</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(4,4)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>60~120</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_IronOre</li>
+                    <li>DankPyon_GoldOre</li>
+                    <li>DankPyon_CoalOre</li>
+
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+                    <li>Leather_Plain</li>
+					<li>DankPyon_Leather_Daer</li>
+
+					<li>DankPyon_RawPumpkins</li>
+					<li>DankPyon_RawOnions</li>
+					<li>DankPyon_RawLentils</li>
+					<li>DankPyon_RawGarlic</li>
+					<li>DankPyon_RawCarrots</li>
+					<li>DankPyon_RawCabbages</li>
 				</randomItems>
 			</li>
 		</modExtensions>	

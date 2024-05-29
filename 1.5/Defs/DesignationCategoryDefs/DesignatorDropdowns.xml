@@ -49,4 +49,14 @@
 		<!-- </specialDesignatorClasses> -->
 	<!-- </DesignationCategoryDef> -->
 
+	<DesignationCategoryDef>
+		<defName>DankPyon_RuinLootable</defName>
+		<label>Ruin Loot</label>
+		<order>502</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
 </Defs>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="DankPyon_Floor_Hideout">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Rough cobblestone placed in fitted patterns. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Surfaces/Soil</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<isPaintable>false</isPaintable>
+		<edgeType>FadeRough</edgeType>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Bridgeable</li>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<designatorDropdown>DankPyon_Floor_Cobblestone</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<uiOrder>2060</uiOrder>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>dirt</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DankPyon_Floor_Hideout">
+		<defName>DankPyon_Floor_Soil</defName>
+		<label>soil</label>
+		<costList>
+			<BlocksSandstone>1</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+</Defs>

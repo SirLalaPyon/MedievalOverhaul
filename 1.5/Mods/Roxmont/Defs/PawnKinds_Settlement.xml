@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!-- Roxmont --> 
+
+	<PawnKindDef ParentName="DankPyon_SettlementPeasant">
+		<defName>EEG_Roxmont_Peasant</defName>
+		<defaultFactionType>DankPyon_NobleHouseRoxmont</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_SettlementArcher">
+		<defName>DankPyon_Roxmont_Archer</defName>
+		<defaultFactionType>DankPyon_NobleHouseRoxmont</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk_Roxmont</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Heraldic_Hauberk_Roxmont</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementFootman">
+		<defName>DankPyon_Roxmont_Footman</defName>
+		<defaultFactionType>DankPyon_NobleHouseRoxmont</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk_Roxmont</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Heraldic_Hauberk_Roxmont</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementKnight">
+		<defName>DankPyon_Roxmont_Knight</defName>
+		<defaultFactionType>DankPyon_NobleHouseRoxmont</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Headgear_HeraldicGreatHelmRoxmont</li>
+		</apparelRequired>
+		
+		<weaponTags Inherit="False">
+			<li>DankPyon_MeleeWeapon_RoxWaraxe</li>
+		</weaponTags>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>DankPyon_Headgear_HeraldicGreatHelmRoxmont</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementLord">
+		<defName>DankPyon_Roxmont_LocalLord</defName>
+		<defaultFactionType>DankPyon_NobleHouseRoxmont</defaultFactionType>
+		<weaponTags Inherit="False">
+			<li>DankPyon_NamedGreataxe</li>
+		</weaponTags>
+	</PawnKindDef>
+
+</Defs>

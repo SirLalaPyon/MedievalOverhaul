@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ===== Presser ===== -->
+	<ThingDef ParentName="DankPyon_HideOutBuildingBase">
+		<defName>DankPyon_PresserRox</defName>
+		<label>Presser</label>
+		<description>A wooden contraption to press selected items. Either to bring the juice out or whey from curds.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<drawSize>(4,3)</drawSize>
+			<texPath>Production/Presser/Presser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+		</graphicData>
+		<neverMultiSelect>true</neverMultiSelect>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<size>(2,1)</size>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.0</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+					<drawSize>(4,3)</drawSize>
+					<texPath>Production/Presser/Presser</texPath>
+					<shaderType>CutoutComplex</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>30~120</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_RoxMilk</li>
+					<li>DankPyon_MealRoxwoodCheese</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideOutBuildingBase">
+		<defName>DankPyon_HideoutRusticBarrelStackRox</defName>
+		<label>barrel</label>
+		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>HouseRoxmont/Drug/RoxberryStout/RoxberryStout_c</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.25,1.25)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconPath>HouseRoxmont/Drug/RoxberryStout/RoxberryStout_c</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints> 
+			<Mass>12</Mass>
+			<WorkToBuild>750</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">7.5</StyleDominance>
+		</statBases>
+
+		<costList>
+			<WoodLog>10</WoodLog>
+		</costList>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>false</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>HouseRoxmont/Drug/RoxberryStout/RoxberryStout_c</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(1.25,1.25)</drawSize>
+				</emptyGraphicData>	
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>30~90</lootCount>
+				<lootChance>1</lootChance>
+				<isDestroyed>true</isDestroyed>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_RoxberryStout</li>
+				</randomItems>
+			</li>
+		</modExtensions>	
+	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutTableMarket_MeatsRox</defName>
+		<label>(R) meat stall</label>
+		<graphicData>
+			<texPath>Tents/MarketMeat</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/MarketEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>30~120</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>					
+                    <li>Meat_DankPyon_Rox</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutTableMarket_DairyRox</defName>
+		<label>(R) dairy stall</label>
+		<description>A table filled to display dairy goods.</description>
+		<graphicData>
+			<texPath>Tents/MarketDairy</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/MarketEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>30~120</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_RoxMilk</li>
+					<li>DankPyon_MealRoxwoodCheese</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- Drying Rack -->
+	
+	<ThingDef ParentName="DankPyon_HideoutDryingRack">
+		<defName>DankPyon_HideoutDryingRack_BigRox</defName>
+		<label>(R)</label>
+		<graphicData>
+			<texPath>Production/DryingRack2x2/DryingRackFilledMeat</texPath>
+		</graphicData>
+
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Production/DryingRack2x2/DryingRack</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(2.5,2.5)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>40~160</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_DriedMeat</li>				
+                    <li>Meat_DankPyon_Rox</li>
+				</randomItems>
+			</li>
+		</modExtensions>		
+	</ThingDef>
+
+
+	<!-- Tanning Rack -->
+	
+	<ThingDef ParentName="DankPyon_HideoutTanningRack">
+		<defName>DankPyon_HideoutTanningRackRox</defName>
+		<label>(R)</label>
+		<graphicData>
+			<texPath>Production/TanningRack/TanningRackFilled</texPath>
+		</graphicData>
+
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Production/TanningRack/TanningRack</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(4,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>DankPyon_RugRox3x3c</li>
+				</randomItems>
+			</li>
+		</modExtensions>	
+	</ThingDef>	
+	
+	<!-- Misc -->
+	<ThingDef ParentName="DankPyon_HideOutBuildingBase">
+		<defName>DankPyon_BundledSack1x1cRox</defName>
+		<label>bundled sack</label>
+		<description>A robust fabric bag designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
+		<graphicData>
+			<texPath>Storage/BundledSack1x1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+		<costList>
+			<DankPyon_Linen>10</DankPyon_Linen>
+		</costList>
+
+		<modExtensions Inherit="False">
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+					<li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0</enemySpawnChance>
+				<hostileEnemy>true</hostileEnemy>
+				<emptyGraphicData>
+					<texPath>Storage/BundledSack1x1</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2,2)</drawSize>
+				</emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>2~4</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<isDestroyed>true</isDestroyed>
+				<randomItems>
+					<li>DankPyon_RoxHorn</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>		
+</Defs>

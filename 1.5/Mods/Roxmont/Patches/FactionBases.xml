@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/FactionDef[defName="DankPyon_NobleHouseRoxmont"]</xpath>
+		<value>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<tryFindFreeArea>true</tryFindFreeArea>
+				<fullClear>true</fullClear>
+				<chooseFromlayouts>
+					<li>DankPyon_Settlement3_Roxmont</li>
+				</chooseFromlayouts>
+			</li>
+		</value>
+	</Operation>
+</Patch>

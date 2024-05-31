@@ -181,6 +181,7 @@
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Security/TurretBallista/TurretBallista_Base</texPath>
+			<drawRotated>false</drawRotated>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4.3, 4.3)</drawSize>
@@ -523,6 +524,7 @@
 		<graphicData>
 			<texPath>Security/TurretRepeaterBallista/TurretRepeaterBallista_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4.3, 4.3)</drawSize>
 			<damageData>

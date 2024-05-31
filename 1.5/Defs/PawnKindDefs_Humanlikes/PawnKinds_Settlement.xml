@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<!-- Base -->
+
+	<PawnKindDef Name="DankPyon_SettlemenPawnBase" Abstract="True">
+		<race>Human</race>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>ImperialCommon</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<!--baseRecruitDifficulty>0.99</baseRecruitDifficulty-->
+		<invNutrition>10</invNutrition>
+		<invFoodDef>DankPyon_MealBread</invFoodDef>
+		<itemQuality>Good</itemQuality>
+		<backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+		<maxGenerationAge>53</maxGenerationAge>
+		<minGenerationAge>20</minGenerationAge>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<specificApparelRequirements>
+			<li>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<only>(0.7, 0.7, 0.7)</only>
+						</li>
+						<li>
+							<only>(0.5, 0.5, 0.5)</only>
+						</li>
+						<li>
+							<only>(0.6, 0.6, 0.6)</only>
+						</li>
+						<li>
+							<only>(104, 120, 119)</only> <!-- drab dark blue -->
+						</li>
+						<li>
+							<only>(119, 145, 121)</only> <!-- drab light green -->
+						</li>
+						<li>
+							<only>(106, 120, 104)</only> <!-- drab dark green -->
+						</li>
+						<li>
+							<only>(140, 140, 119)</only> <!-- tan -->
+						</li>
+						<li>
+							<only>(99, 87, 67)</only> <!-- muted brown -->
+						</li>
+						<li>
+							<only>(128, 116, 84)</only> <!-- light brown -->
+						</li>
+						<li>
+							<only>(107, 94, 64)</only> <!-- mid brown -->
+						</li>
+						<li>
+							<only>(77, 66, 45)</only> <!-- dark brown -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+		</specificApparelRequirements>
+		<inventoryOptions>
+		 <skipChance>0.70</skipChance>
+		 <subOptionsTakeAll>
+		   <li>
+			 <thingDef>Silver</thingDef>
+			 <countRange>30~100</countRange>
+		   </li>
+		 </subOptionsTakeAll>
+		</inventoryOptions>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		  <li>Wimp</li>
+		  <li>Pyromaniac</li>
+		  <li>Nudist</li>
+		</disallowedTraits>    
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>16~25</initialResistanceRange>
+		<!--techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired-->
+	</PawnKindDef>
+
+	<!-- Tier 0 -->
+
+	<PawnKindDef ParentName="DankPyon_SettlemenPawnBase" Name="DankPyon_SettlementPeasant" Abstract="True">
+		<label>Peasant</label>
+		<combatPower>35</combatPower>
+		<canBeSapper>false</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>0.8~2</gearHealthRange>
+		<apparelMoney>0</apparelMoney>
+		<apparelRequired>
+			<li>DankPyon_Apparel_Padded_Surcoat</li>
+			<li>DankPyon_Footwear_BootsLeather</li>
+			<li>DankPyon_Handwear_GlovesLeather</li>
+			<li>Apparel_Pants</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+				<stuff>WoolMegasloth</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Hands</bodyPartGroup>
+				<stuff>Leather_Plain</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Feet</bodyPartGroup>
+				<stuff>Leather_Plain</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<requiredTag>Apparel_Pants</requiredTag>
+				<stuff>WoolMegasloth</stuff>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>400</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_WoodcuttersAxe</li>
+			<li>DankPyon_Warfork</li>
+			<li>DankPyon_Pitchfork</li>
+			<li>DankPyon_Pickaxe</li>
+			<li>DankPyon_Hatchet</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>3~8</range>
+			</li>	  
+		</skills>
+	</PawnKindDef> 
+
+	<PawnKindDef ParentName="DankPyon_SettlementPeasant">
+		<defName>EEG_Amboisse_Peasant</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_SettlementPeasant">
+		<defName>EEG_Soren_Peasant</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_SettlementPeasant">
+		<defName>EEG_Oswin_Peasant</defName>
+		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_SettlemenPawnBase" Name="DankPyon_SettlementGuard" Abstract="True">
+		<combatPower>60</combatPower>
+		<canBeSapper>false</canBeSapper>
+		<isFighter>true</isFighter>
+		<gearHealthRange>2</gearHealthRange>
+		<apparelMoney>0</apparelMoney>
+		<!-- <weaponMoney>300~450</weaponMoney> -->
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<apparelRequired Inherit="False">
+			<li>DankPyon_Apparel_Padded_Surcoat</li>
+			<li>DankPyon_Apparel_Leather_Tunic</li>
+			<li>DankPyon_Apparel_Trousers</li>
+			<li>DankPyon_Apparel_ChaussesPadded</li>
+			<li>DankPyon_Handwear_GlovesLeather</li>
+			<li>DankPyon_Footwear_BootsLeather</li>
+		</apparelRequired>
+
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Padded_Surcoat</requiredTag>
+				<stuff>WoolMegasloth</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Middle</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Leather_Tunic</requiredTag>
+				<stuff>DankPyon_Leather_Troll</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Trousers</requiredTag>
+				<stuff>WoolMegasloth</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Hands</bodyPartGroup>
+				<apparelLayer>Middle</apparelLayer>
+				<requiredTag>DankPyon_Handwear_GlovesLeather</requiredTag>
+				<stuff>DankPyon_Leather_Troll</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Feet</bodyPartGroup>
+				<apparelLayer>Middle</apparelLayer>
+				<requiredTag>DankPyon_Footwear_BootsLeather</requiredTag>
+				<stuff>DankPyon_Leather_Troll</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<!-- Tier 1 -->
+	
+	<PawnKindDef ParentName="DankPyon_SettlementGuard" Name="DankPyon_SettlementArcher" Abstract="True">
+		<label>archer</label>
+		<weaponTags>
+			<li>DankPyon_Crossbow</li>
+		</weaponTags>
+
+		<apparelRequired>
+			<li>DankPyon_Apparel_Quiver</li>
+			<li>DankPyon_Headgear_ChainKettleHelmet</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>DankPyon_Headgear_ChainKettleHelmet</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>11~15</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementGuard" Name="DankPyon_SettlementFootman" Abstract="True">
+		<label>footman</label>
+		<weaponTags>
+			<li>DankPyon_Billhook</li>
+			<li>DankPyon_Polehammer</li>
+			<li>DankPyon_Pike</li>
+		</weaponTags>
+		
+		<apparelRequired>
+			<li>DankPyon_Headgear_ClosedChain_FlatTopHelmet</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>DankPyon_Headgear_ClosedChain_FlatTopHelmet</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>11~15</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_SettlementGuard" Name="DankPyon_SettlementKnight" Abstract="True">
+		<label>knight</label>
+		<weaponTags>
+			<li>DankPyon_MorningStar</li>
+			<li>DankPyon_ArmingSword</li>
+		</weaponTags>
+		
+		<apparelRequired>
+			<li>DankPyon_Apparel_FullPlate</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_FullPlate</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>15~20</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="DankPyon_SettlementGuard" Name="DankPyon_SettlementLord" Abstract="True">
+		<label>local lord</label>
+		<weaponMoney>10000</weaponMoney>
+		<weaponTags>
+			<li>DankPyon_NamedGreatsword</li>
+			<li>DankPyon_NamedTwoHandedFlangedMace</li>
+			<li>DankPyon_NamedGreataxe</li>
+			<li>DankPyon_NamedTwoHandedHammer</li>
+		</weaponTags>
+		
+		<apparelRequired>
+			<li>DankPyon_Headgear_ZweihanderHelm</li>
+			<li>DankPyon_Apparel_Zweihanders_CuirassFloof</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>DankPyon_Headgear_ZweihanderHelm</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Zweihanders_CuirassFloof</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>19~20</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<!-- Amboisse --> 
+	
+	<PawnKindDef ParentName="DankPyon_SettlementArcher">
+		<defName>DankPyon_Amboisse_Archer</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk1c</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Heraldic_Hauberk1c</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementFootman">
+		<defName>DankPyon_Amboisse_Footman</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk1c</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Heraldic_Hauberk1c</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementKnight">
+		<defName>DankPyon_Amboisse_Knight</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Headgear_HeraldicGreatHelm1c</li>
+			<li>DankPyon_ShieldHeater_Amboise</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>DankPyon_Headgear_HeraldicGreatHelm1c</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<requiredTag>DankPyon_ShieldHeater_Amboisse</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementLord">
+		<defName>DankPyon_Amboise_LocalLord</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
+	</PawnKindDef>
+
+	<!-- Soren --> 
+	
+	<PawnKindDef ParentName="DankPyon_SettlementArcher">
+		<defName>DankPyon_Soren_Archer</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk2c</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Heraldic_Hauberk2c</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementFootman">
+		<defName>DankPyon_Soren_Footman</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk2c</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Heraldic_Hauberk2c</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementKnight">
+		<defName>DankPyon_Soren_Knight</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Headgear_HeraldicGreatHelm2c</li>
+			<li>DankPyon_ShieldHeater_Soren</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>DankPyon_Headgear_HeraldicGreatHelm2c</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<requiredTag>DankPyon_ShieldHeater_Soren</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementLord">
+		<defName>DankPyon_Soren_LocalLord</defName>
+		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
+	</PawnKindDef>
+
+	<!-- Oswin --> 
+	
+	<PawnKindDef ParentName="DankPyon_SettlementArcher">
+		<defName>DankPyon_Oswin_Archer</defName>
+		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk3c</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Heraldic_Hauberk3c</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementFootman">
+		<defName>DankPyon_Oswin_Footman</defName>
+		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Apparel_Heraldic_Hauberk3c</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>DankPyon_Apparel_Heraldic_Hauberk3c</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementKnight">
+		<defName>DankPyon_Oswin_Knight</defName>
+		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+
+		<apparelRequired>
+			<li>DankPyon_Headgear_HeraldicGreatHelm3c</li>
+			<li>DankPyon_ShieldHeater_Oswin</li>
+		</apparelRequired>
+
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>FullHead</bodyPartGroup>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>DankPyon_Headgear_HeraldicGreatHelm3c</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<requiredTag>DankPyon_ShieldHeater_Oswin</requiredTag>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementLord">
+		<defName>DankPyon_Oswin_LocalLord</defName>
+		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+	</PawnKindDef>
+
+</Defs>

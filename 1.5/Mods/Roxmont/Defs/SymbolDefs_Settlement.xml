@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutDryingRack_BigRox_DankPyon_RawWood_North</defName>
+  <thing>DankPyon_HideoutDryingRack_BigRox</thing>
+  <stuff>DankPyon_RawWood</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_PresserRox_WoodLog_North</defName>
+  <thing>DankPyon_PresserRox</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTanningRackRox_DankPyon_RawWood_North</defName>
+  <thing>DankPyon_HideoutTanningRackRox</thing>
+  <stuff>DankPyon_RawWood</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BundledSack1x1cRox_North</defName>
+  <thing>DankPyon_BundledSack1x1cRox</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_DairyRox_WoodLog_East</defName>
+  <thing>DankPyon_HideoutTableMarket_DairyRox</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_MeatsRox_WoodLog_East</defName>
+  <thing>DankPyon_HideoutTableMarket_MeatsRox</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutRusticBarrelStackRox_North</defName>
+  <thing>DankPyon_HideoutRusticBarrelStackRox</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Grill_Steel_North</defName>
+  <thing>DankPyon_Grill</thing>
+  <stuff>Steel</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_StrawPile1x2c_South</defName>
+  <thing>DankPyon_StrawPile1x2c</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Rox</defName>
+  <pawnKindDef>DankPyon_Rox</pawnKindDef>
+  <faction>DankPyon_NobleHouseRoxmont</faction>
+  <spawnFilthAround>true</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+</KCSG.SymbolDef>
+
+<!-- Roxmont -->
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Roxmont_Archer</defName>
+  <pawnKindDef>DankPyon_Roxmont_Archer</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_NobleHouseRoxmont</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Roxmont_Footman</defName>
+  <pawnKindDef>DankPyon_Roxmont_Footman</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_NobleHouseRoxmont</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Roxmont_Knight</defName>
+  <pawnKindDef>DankPyon_Roxmont_Knight</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_NobleHouseRoxmont</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Roxmont_LocalLord</defName>
+  <pawnKindDef>DankPyon_Roxmont_LocalLord</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_NobleHouseRoxmont</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>EEG_Roxmont_Peasant</defName>
+  <pawnKindDef>DankPyon_Roxmont_Peasant</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+</Defs>

@@ -11,6 +11,7 @@
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
+		<!-- <designationCategory>DankPyon_RuinFurniture</designationCategory> -->
 	</ThingDef>
 
 	<!--==================== Doors and Structures ====================-->
@@ -910,5 +911,37 @@
 		<passability>Impassable</passability>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RuinedBuildingBase">
+		<defName>DankPyon_Cellar</defName>
+		<label>сellar</label>
+		<description>serves no function at the moment, just acts as a placeholder</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Production/IceCellar/IceCellar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<minifiedDef />
+		<thingCategories Inherit="False" />
+		<passability>Standable</passability>
+		<fillPercent>0.1</fillPercent>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<!-- <selectable>false</selectable> -->
+
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+    	<castEdgeShadows>False</castEdgeShadows>
+
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>	
 
 </Defs>

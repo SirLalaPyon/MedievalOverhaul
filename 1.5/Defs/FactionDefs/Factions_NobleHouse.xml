@@ -263,6 +263,17 @@
 				</options>
 			</li>
 		</pawnGroupMakers>
+		
+        <!--modExtensions>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<tryFindFreeArea>true</tryFindFreeArea>
+				<fullClear>true</fullClear>
+				<chooseFromlayouts>
+					<li>DankPyon_Settlement3_Amboise</li>
+				</chooseFromlayouts>
+			</li>
+        </modExtensions-->			
 	</FactionDef>
 
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">
@@ -370,6 +381,17 @@
 				</options>
 			</li>
 		</pawnGroupMakers>
+		
+        <!--modExtensions>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<tryFindFreeArea>true</tryFindFreeArea>
+				<fullClear>true</fullClear>
+				<chooseFromlayouts>
+					<li>DankPyon_Settlement3_Soren</li>
+				</chooseFromlayouts>
+			</li>
+        </modExtensions-->	
 	</FactionDef>
 
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">
@@ -477,6 +499,17 @@
 				</options>
 			</li>
 		</pawnGroupMakers>
+		
+        <!--modExtensions>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<tryFindFreeArea>true</tryFindFreeArea>
+				<fullClear>true</fullClear>
+				<chooseFromlayouts>
+					<li>DankPyon_Settlement3_Oswin</li>
+				</chooseFromlayouts>
+			</li>
+        </modExtensions-->	
 	</FactionDef>
 
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">

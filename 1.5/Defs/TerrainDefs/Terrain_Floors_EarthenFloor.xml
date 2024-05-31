@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef  ParentName="FloorBase">
+    <defName>DankPyon_EarthenFloor</defName>
+    <label>earthen floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>The earthen floor, crafted from clay and straw. Smoothed by hand, it offers a rustic charm, providing a reliable footing for daily life in homes and castles alike.</description>
+    <texturePath>Terrain/EarthenFloor</texturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0</Flammability>
+	  <Beauty>1</Beauty>
+    </statBases>
+    <costList>
+      <DankPyon_Clay>2</DankPyon_Clay>
+	  <DankPyon_Straw>1</DankPyon_Straw>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>1999</uiOrder>
+  </TerrainDef>
+</Defs>

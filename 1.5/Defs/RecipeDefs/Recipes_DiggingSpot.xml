@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Stone Chunks Base Class -->
+	<RecipeDef Name="DankPyon_DiggingSpotBase" Abstract="True">
+		<description>Dig to obtain clay.</description>
+		<workSpeedStat>MiningSpeed</workSpeedStat>
+		<workSkill>Mining</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<recipeUsers>
+			<li>DankPyon_DiggingSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- Clay -->
+	<RecipeDef ParentName="DankPyon_DiggingSpotBase">
+		<defName>DankPyon_Gather_Clay</defName>
+		<workAmount>600</workAmount>
+		<label>dig clay</label>
+		<jobString>Digging 5 clay.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<products>
+			<DankPyon_Clay>5</DankPyon_Clay>
+		</products>
+	</RecipeDef>
+
+</Defs>

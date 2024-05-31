@@ -22,7 +22,7 @@
 	<!-- ==================== Market Stall ==================== -->
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_TableMarket">
 		<defName>DankPyon_TableMarket_Meats</defName>
-		<label>meat stall</label>
+		<label>table (meat)</label>
 		<description>A table filled to display meat.</description>
 		<graphicData>
 			<texPath>Tents/MarketMeat</texPath>
@@ -53,6 +53,7 @@
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
 				<filter>
 					<categories>
 						<li>MeatRaw</li>
@@ -63,13 +64,16 @@
 				<li>DankPyon_MarketTent_1c</li>
 				<li>DankPyon_MarketTent_2c</li>
 				<li>DankPyon_MarketTent_3c</li>
+				<li>DankPyon_MarketTent_4c</li>
+				<li>DankPyon_MarketTent_5c</li>
+				<li>DankPyon_MarketTent_6c</li>
 			</relatedBuildCommands>
 		</building>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_TableMarket">
 		<defName>DankPyon_TableMarket_Dairy</defName>
-		<label>dairy stall</label>
+		<label>table (dairy)</label>
 		<description>A table filled to display dairy goods.</description>
 		<graphicData>
 			<texPath>Tents/MarketDairy</texPath>
@@ -98,7 +102,7 @@
 
 	<ThingDef ParentName="DankPyon_TableMarket">
 		<defName>DankPyon_TableMarket_Bread</defName>
-		<label>bread stall</label>
+		<label>table (bread)</label>
 		<description>A table filled to display bread goods.</description>
 		<graphicData>
 			<texPath>Tents/MarketBread</texPath>
@@ -123,15 +127,326 @@
 		</building>
 	</ThingDef>
 
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_TableMarket_Herb</defName>
+		<label>table (herb)</label>
+		<description>A table filled to display herb goods.</description>
+		<graphicData>
+			<texPath>Tents/MarketHerb</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_Fleawort</li>
+						<li>DankPyon_FlyAgaric</li>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_HerbalExtract</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_Fleawort</li>
+						<li>DankPyon_FlyAgaric</li>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_HerbalExtract</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_TableMarket_MeleeWeapons</defName>
+		<label>table (weapons)</label>
+		<description>A table filled to display melee weapons.</description>
+		<graphicData>
+			<texPath>Tents/MarketMeleeWeapons</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_TableMarket_Bow</defName>
+		<label>table (bow)</label>
+		<description>A table filled to display bows.</description>
+		<graphicData>
+			<texPath>Tents/MarketBow</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<!-- ==================== Stalls ==================== -->
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_Stall_Empty</defName>
+		<label>empty market stall</label>
+		<description>An empty table used to diplay goods.</description>
+		<graphicData>
+			<texPath>Tents/StallEmpty</texPath>
+			<shaderType Inherit="false"/>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>Root</li>
+					</categories>
+					<disallowedCategories>
+						<li>Chunks</li>
+						<li>Plants</li>
+						<li>Buildings</li>
+					</disallowedCategories>
+					<disallowedThingDefs MayRequire="Ludeon.RimWorld.Biotech">
+						<li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>
+					</disallowedThingDefs>
+					<specialFiltersToDisallow>
+						<li>AllowLargeCorpses</li>
+					</specialFiltersToDisallow>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>Foods</li>
+						<li>Manufactured</li>
+						<li>ResourcesRaw</li>
+						<li>Items</li>
+						<li>Weapons</li>
+						<li>Apparel</li>
+						<li>BodyParts</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_Stall_Meat</defName>
+		<label>market stall (meat)</label>
+		<description>A table filled to display meat goods.</description>
+		<graphicData>
+			<texPath>Tents/StallMeat</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_Stall_Dairy</defName>
+		<label>market stall (dairy)</label>
+		<description>A table filled to display dairy goods.</description>
+		<graphicData>
+			<texPath>Tents/StallCheese</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>DankPyon_Cheese</li>
+						<li>DankPyon_Milk</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>DankPyon_Cheese</li>
+						<li>DankPyon_Milk</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_Stall_Bread</defName>
+		<label>market stall (bread)</label>
+		<description>A table filled to display bread goods.</description>
+		<graphicData>
+			<texPath>Tents/StallBread</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_MealBread</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_MealBread</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_Stall_Herb</defName>
+		<label>market stall (herb)</label>
+		<description>A table filled to display herb goods.</description>
+		<graphicData>
+			<texPath>Tents/StallHerb</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_Fleawort</li>
+						<li>DankPyon_FlyAgaric</li>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_HerbalExtract</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Mindwort</li>
+						<li>DankPyon_Poppy</li>
+						<li>DankPyon_Fleawort</li>
+						<li>DankPyon_FlyAgaric</li>
+						<li>MedicineHerbal</li>
+						<li>DankPyon_HerbalExtract</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_Stall_MeleeWeapons</defName>
+		<label>market stall (weapons)</label>
+		<description>A table filled to display weapons.</description>
+		<graphicData>
+			<texPath>Tents/StallMeleeWeapons</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableMarket">
+		<defName>DankPyon_Stall_Bow</defName>
+		<label>market stall (bow)</label>
+		<description>A table filled to display bows.</description>
+		<graphicData>
+			<texPath>Tents/StallBow</texPath>
+		</graphicData>
+
+		<building>
+			<fixedStorageSettings Inherit="False">
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings Inherit="False">
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
 
 	<!-- ==================== Market Tent ==================== -->
 	<ThingDef ParentName="BuildingBase" Name="DankPyon_MarketTent_Base">
 		<defName>DankPyon_MarketTent_1c</defName>
-		<label>tent stall</label>
+		<label>tent stall (red)</label>
 		<description>A tent to cover your goods from the sunlight</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Tents/Tent1</texPath>
+			<texPath>Tents/TentRed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(5,4)</drawSize>
@@ -160,15 +475,18 @@
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">7.5</StyleDominance>
 		</statBases>
         
-		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
 		<canOverlapZones>false</canOverlapZones>
 
 		<building>
 			<isEdifice>false</isEdifice>
 			<relatedBuildCommands Inherit="False">
-				<li>DankPyon_TableMarket_Meats</li>
-				<li>DankPyon_TableMarket_Dairy</li>
-				<li>DankPyon_TableMarket_Bread</li>
+				<li>DankPyon_Stall_Meat</li>
+				<li>DankPyon_Stall_Dairy</li>
+				<li>DankPyon_Stall_Bread</li>
+				<li>DankPyon_Stall_Herb</li>
+				<li>DankPyon_Stall_MeleeWeapons</li>
+				<li>DankPyon_Stall_Bow</li>
 			</relatedBuildCommands>
 		</building>
 		<clearBuildingArea>false</clearBuildingArea>
@@ -186,7 +504,7 @@
 		<defName>DankPyon_MarketTent_2c</defName>
 		<label>tent stall (blue)</label>
 		<graphicData>
-			<texPath>Tents/Tent2</texPath>
+			<texPath>Tents/TentBlue</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -194,7 +512,31 @@
 		<defName>DankPyon_MarketTent_3c</defName>
 		<label>tent stall (lime)</label>
 		<graphicData>
-			<texPath>Tents/Tent3</texPath>
+			<texPath>Tents/TentLime</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MarketTent_Base">
+		<defName>DankPyon_MarketTent_4c</defName>
+		<label>tent stall (black)</label>
+		<graphicData>
+			<texPath>Tents/TentLime</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MarketTent_Base">
+		<defName>DankPyon_MarketTent_5c</defName>
+		<label>tent stall (beige)</label>
+		<graphicData>
+			<texPath>Tents/TentBeige</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MarketTent_Base">
+		<defName>DankPyon_MarketTent_6c</defName>
+		<label>tent stall (plain)</label>
+		<graphicData>
+			<texPath>Tents/TentPlain</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

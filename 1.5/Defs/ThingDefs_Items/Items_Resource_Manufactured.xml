@@ -81,10 +81,10 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_TanningLiquor</defName>
 		<label>tanning liquor</label>
-		<description>Tannins leeched from various natural sources have been concentrated into this liquor. It can be used to process raw hides into tanned leathers.</description>
+		<description>Tannins leeched from various natural sources have been concentrated into this liquor. It can be used to treat raw hides into tanned leathers.</description>
 		<graphicData>
 			<texPath>Resources/Tannin</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<stackLimit>25</stackLimit>

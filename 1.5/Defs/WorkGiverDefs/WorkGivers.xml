@@ -316,6 +316,23 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
+		<defName>DankPyon_DoBillsDigging</defName>
+		<label>dig earth</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>90</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_DiggingSpot</li>
+		</fixedBillGiverDefs>
+		<verb>dig</verb>
+		<gerund>digging at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
 		<defName>DankPyon_DoBillsStonecut</defName>
 		<label>make stone blocks</label>
 		<giverClass>WorkGiver_DoBill</giverClass>

@@ -46,6 +46,8 @@
 		<label>pile (1x2)</label>
 	</DesignatorDropdownGroupDef>
 
+
+	<!-- Floors -->
 	<DesignatorDropdownGroupDef>
 		<defName>DankPyon_Floor_RusticWoodFloor</defName>
 		<label>rustic wood floor</label>
@@ -59,5 +61,26 @@
 	<DesignatorDropdownGroupDef>
 		<defName>DankPyon_Floor_RuinedStoneTile</defName>
 		<label>ruined stone tile</label>
+	</DesignatorDropdownGroupDef>
+
+	<!-- Ceramic Floors -->
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_Lys</defName>
+		<label>lys tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_DiamondLys</defName>
+		<label>diamond lys tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_CircleLys</defName>
+		<label>circle lys tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_CheckeredLysStar</defName>
+		<label>checkered lys-star tiles</label>
 	</DesignatorDropdownGroupDef>
 </Defs>

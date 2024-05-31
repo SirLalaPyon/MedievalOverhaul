@@ -12,7 +12,7 @@
 	<ThingDef Name="DankPyon_HideOutBuildingBase" ParentName="DankPyon_LootBuilding" Abstract="True">
         <thingClass>MedievalOverhaul.Building_Lootable</thingClass>
         <tickerType>Normal</tickerType>
-		<designationCategory>DankPyon_Hideoutfurniture</designationCategory>
+		<!-- <designationCategory>DankPyon_Hideoutfurniture</designationCategory> -->
 	</ThingDef>
 
 	<!-- Crates -->
@@ -180,7 +180,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>true</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Tents/MarketEmpty</texPath>
+                    <texPath>Furniture/RusticTable1x3</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
                 </emptyGraphicData>
@@ -236,7 +236,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>true</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Tents/MarketEmpty</texPath>
+                    <texPath>Tents/Furniture/RusticTable1x3</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
                 </emptyGraphicData>
@@ -274,7 +274,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>true</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Tents/MarketEmpty</texPath>
+                    <texPath>Tents/Furniture/RusticTable1x3</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
                 </emptyGraphicData>

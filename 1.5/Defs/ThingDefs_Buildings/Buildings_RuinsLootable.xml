@@ -36,7 +36,7 @@
 	<ThingDef ParentName="DankPyon_RuinedBuildingBase" Name="DankPyon_LootBuilding" Abstract="True">
 		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<tickerType>Normal</tickerType>
-		<designationCategory>DankPyon_RuinLootable</designationCategory>
+		<!-- <designationCategory>DankPyon_RuinLootable</designationCategory> -->
 	</ThingDef>
 	
 	<!-- Shelf Base-->

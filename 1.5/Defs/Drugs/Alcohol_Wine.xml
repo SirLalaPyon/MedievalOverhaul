@@ -77,10 +77,10 @@
 	<ThingDef ParentName="ResourceBase" Name="DankPyon_MustWineBase">
 		<defName>DankPyon_MustWine</defName>
 		<label>grape must</label>
-		<description>Crushed grapes. Needs to undergo fermentation in order to become wine.</description>
+		<description>Crushed grapes. Needs to undergo fermentation in a rustic fermenting barrel in order to become wine.</description>
 		<graphicData>
 			<texPath>Resources/MustWine</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<stackLimit>25</stackLimit>
@@ -108,7 +108,7 @@
 	<ThingDef ParentName="DankPyon_WineBase">
 		<defName>DankPyon_Wine_Mulberry</defName>
 		<label>mulberry wine</label>
-		<description>Crafted from the luscious bounty of mulberry orchards, this enchanting elixir embodies the essence of versatility. Aged vintages whisper tales of sophistication, beckoning connoisseurs with their intricate flavors, a staple of esteemed gatherings and royal banquets.</description>
+		<description>Produced from the luscious bounty of mulberry orchards, often associated with the mulberry tree's role in nurturing silk worms. Aged vintages whisper tales of sophistication, beckoning connoisseurs with their intricate flavors, a staple of esteemed gatherings and royal banquets.</description>
 		<graphicData>
 			<texPath>Drug/MulberryWine</texPath>
 		</graphicData>
@@ -116,10 +116,10 @@
 
 	<ThingDef ParentName="DankPyon_MustWineBase">
 		<defName>DankPyon_MustWine_Mulberry</defName>
-		<label>mulberry must</label>
+		<label>mulberry wine must</label>
+		<description>Crushed mulberries. Needs to undergo fermentation in a rustic fermenting barrel in order to become wine.</description>
 		<graphicData>
-			<texPath>Resources/MustWine</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Resources/MustMulberryWine</texPath>
 		</graphicData>
 	</ThingDef>
 	
@@ -127,6 +127,7 @@
 	<ThingDef ParentName="DankPyon_WineBase">
 		<defName>DankPyon_Wine_Griffon</defName>
 		<label>griffon wine</label>
+		<description>Produced from the luscious bounty of mulberry orchards, often associated with the mulberry tree's role in nurturing silk worms. Aged vintages whisper tales of sophistication, beckoning connoisseurs with their intricate flavors, a staple of esteemed gatherings and royal banquets.</description>
 		<graphicData>
 			<texPath>Drug/GriffonWine</texPath>
 		</graphicData>
@@ -134,10 +135,10 @@
 
 	<ThingDef ParentName="DankPyon_MustWineBase">
 		<defName>DankPyon_MustWine_Griffon</defName>
-		<label>mulberry must</label>
+		<label>griffon berry must</label>
+		<description>Crushed griffon berries. Needs to undergo fermentation in a rustic fermenting barrel in order to become wine.</description>
 		<graphicData>
-			<texPath>Resources/MustWine</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Resources/MustGriffonWine</texPath>
 		</graphicData>
 	</ThingDef>
 	
@@ -145,9 +146,18 @@
 	<ThingDef ParentName="DankPyon_WineBase">
 		<defName>DankPyon_Wine_Ice</defName>
 		<label>ice wine</label>
-		<description>PLACEHOLDER</description>
+		<description>Crafted from the rare frostberries, is a sought-after elixir known for its enchanting qualities. The frostberries, harvested during the first winter's frost, yield a wine with a crisp, sweet flavor and a hint of winter's chill. Ice Wine imparts a subtle frost resistance to those who drink it, fortifying them against the harshest cold. This magical beverage is a favorite among adventurers and travelers braving icy terrains, offering both warmth and protection in a single, refreshing sip.</description>
 		<graphicData>
 			<texPath>Drug/IceWine</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MustWineBase">
+		<defName>DankPyon_MustWine_Ice</defName>
+		<label>ice wine must</label>
+		<description>Crushed frostberries. Needs to undergo fermentation in a rustic fermenting barrel in order to become wine.</description>
+		<graphicData>
+			<texPath>Resources/MustIceWine</texPath>
 		</graphicData>
 	</ThingDef>
 

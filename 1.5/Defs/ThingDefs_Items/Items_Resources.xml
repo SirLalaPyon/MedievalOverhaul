@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+	<!-- Clay -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_Clay</defName>
+		<label>clay</label>
+		<description>A versatile and abundant material found in riverbeds, hillsides, and quarries alike. Soft and yielding, yet robust and enduring, it has long been the foundation of craftsmanship in our realm. From the humble hearth pot to the towering fortress walls, clay bears witness to the labor and artistry of our forebears, shaping our villages and fortifications with its humble yet noble presence.</description>
+		<graphicData>
+			<texPath>Resources/Clay</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.4</Mass>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>1</deepCommonality>
+		<deepCountPerPortion>45</deepCountPerPortion>
+		<deepLumpSizeRange>8~12</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+	</ThingDef>
+
 	<!--============================== Raw Wood ==============================-->
 	<!-- Raw wood will have the same stats as their processed counterpart except for the following
 		Mass is x3

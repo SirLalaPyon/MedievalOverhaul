@@ -918,7 +918,7 @@
 			<WorkToBuild>500</WorkToBuild>
 			<Mass>2.5</Mass>
 			<Flammability>1.0</Flammability>
-			<Beauty>0.5</Beauty>
+			<Beauty>1</Beauty>
 		</statBases>
 		<size>(1,1)</size>
 		<costStuffCount>15</costStuffCount>
@@ -987,9 +987,42 @@
 			<WorkToBuild>750</WorkToBuild>
 			<Mass>5</Mass>
 			<Flammability>1.0</Flammability>
-			<Beauty>0.5</Beauty>
+			<Beauty>1</Beauty>
 		</statBases>
 		<size>(1,2)</size>
+		<costStuffCount>28</costStuffCount>
+		<building>
+			<relatedBuildCommands Inherit="False">
+				<li>DankPyon_RusticStool</li>
+				<li>DankPyon_RusticChair</li>
+				<li>DankPyon_RusticNobleChair</li>
+			</relatedBuildCommands>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
+		<defName>DankPyon_RusticTable1x3c</defName>
+		<label>rustic table (1x3)</label>
+		<graphicData>
+			<texPath>Furniture/RusticTable1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>112</MaxHitPoints>
+			<WorkToBuild>1125</WorkToBuild>
+			<Mass>7.5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<size>(1,3)</size>
 		<costStuffCount>28</costStuffCount>
 		<building>
 			<relatedBuildCommands Inherit="False">

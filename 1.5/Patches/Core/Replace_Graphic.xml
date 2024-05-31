@@ -58,4 +58,30 @@
 		</value>
 	</Operation>
 
+	<!-- Wool -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="WoolBase"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/Resource/Wool</texPath>
+				<graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+		</value>
+	</Operation>
+
+	<!-- Brewery Table -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Brewery"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/Production/TableBreweryStuffed</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Brewery"]/graphicData</xpath>
+		<value>
+			<shaderType>CutoutComplex</shaderType>
+		</value>
+	</Operation>
+
 </Patch>	

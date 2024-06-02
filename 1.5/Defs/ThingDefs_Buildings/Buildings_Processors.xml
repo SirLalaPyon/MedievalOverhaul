@@ -384,7 +384,7 @@
 	<!-- ===== Presser ===== -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Presser</defName>
-		<label>Presser</label>
+		<label>cheese press</label>
 		<description>A wooden contraption to press selected items. Either to bring the juice out or whey from curds.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -439,6 +439,72 @@
 					<li>DankPyon_PressGoatCheeseProcess</li>
 					<li>DankPyon_PressSheepCheeseProcess</li>
 					<li>DankPyon_PressAppleProcess</li>
+				</processes>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Presser</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ===== Paper Press ===== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Press_Paper</defName>
+		<label>paper press</label>
+		<description>A sturdy wooden device used to remove liquid and flatten sheets of paper. It uses a heavy screw mechanism to ensure each sheet is smooth and ready for writing or drawing. This essential tool helps turn pulp into usable parchment.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<drawSize>(4,4)</drawSize>
+			<texPath>Production/PaperPress/PaperPress</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		
+		<neverMultiSelect>true</neverMultiSelect>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>20</Mass>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<size>(2,2)</size>
+		<thingClass>Building_WorkTable</thingClass>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>25</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_Press_PaperProcess</li>
 				</processes>
 			</li>
 		</comps>

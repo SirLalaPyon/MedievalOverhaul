@@ -646,72 +646,41 @@
   <workSkill>Crafting</workSkill>
 </RecipeDef-->
 
-	<!-- Make Paper  -->
-	<!--RecipeDef>
-  <defName>DankPyon_Make_Paper</defName>
-  <label>(20x) Make paper</label>
-  <description>Make 10 paper.</description>
-  <jobString>Making 10 paper.</jobString>
-  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-  <effectWorking>Cook</effectWorking>
-  <soundWorking>Recipe_Sculpt</soundWorking>
-  <workAmount>500</workAmount>
-<recipeUsers>
-  <li>DankPyon_Workbench</li>
-</recipeUsers>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>WoodLog</li>
-        </thingDefs>
-      </filter>
-      <count>5</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>WoodLog</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <products>
-    <DankPyon_Paper>20</DankPyon_Paper>
-  </products>
-  <workSkill>Crafting</workSkill>
-</RecipeDef-->
-
-	<!-- Make Paper  -->
-	<!--RecipeDef>
-  <defName>DankPyon_Make_PaperBulk</defName>
-  <label>(100x) Make paper</label>
-  <description>Make 100 paper.</description>
-  <jobString>Making 100 paper.</jobString>
-  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-  <effectWorking>Cook</effectWorking>
-  <soundWorking>Recipe_Sculpt</soundWorking>
-  <workAmount>1000</workAmount>
-<recipeUsers>
-  <li>DankPyon_Workbench</li>
-</recipeUsers>
-  <ingredients>
-    <li>
-      <filter>
-        <thingDefs>
-          <li>WoodLog</li>
-        </thingDefs>
-      </filter>
-      <count>25</count>
-    </li>
-  </ingredients>
-  <fixedIngredientFilter>
-    <thingDefs>
-      <li>WoodLog</li>
-    </thingDefs>
-  </fixedIngredientFilter>
-  <products>
-    <DankPyon_Paper>100</DankPyon_Paper>
-  </products>
-  <workSkill>Crafting</workSkill>
-</RecipeDef-->
+<!-- Make Paper  -->
+<RecipeDef>
+    <defName>DankPyon_Make_PaperMixture</defName>
+    <label>make paper mixture</label>
+    <description>Make paper mixture from wood.</description>
+    <jobString>Making paper mixture.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+	<recipeUsers>
+		<li>DankPyon_Workbench</li>
+	</recipeUsers>
+    <ingredients>
+		<li>
+			<filter>
+				<categories>
+					<li>DankPyon_RawWood</li>
+					<li>DankPyon_Wood</li>
+				</categories>
+			</filter>
+			<count>25</count>
+		</li>
+    </ingredients>
+    <fixedIngredientFilter>
+		<categories>
+			<li>DankPyon_RawWood</li>
+			<li>DankPyon_Wood</li>
+		</categories>
+    </fixedIngredientFilter>
+    <products>
+      	<DankPyon_Mixture_Paper>5</DankPyon_Mixture_Paper>
+    </products>
+  </RecipeDef>
 
 </Defs>

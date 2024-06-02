@@ -61,4 +61,18 @@
 		<stuffCategories Inherit="false"/>
 	</ThingDef>
 
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedBook</defName>
+		<label>unfinished book</label>
+		<description>An unfinished book.</description>
+		<statBases>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedBook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
 </Defs>

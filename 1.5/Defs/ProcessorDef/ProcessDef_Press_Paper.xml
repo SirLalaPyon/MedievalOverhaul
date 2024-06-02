@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Cheese -->
+	<ProcessorFramework.ProcessDef Name="DankPyon_Press_PaperBase" Abstract="True">
+		<processDays>1</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>5</efficiency>
+		<usesTemperature>false</usesTemperature>
+		<temperatureSafe>-1.0~32.0</temperatureSafe>
+		<temperatureIdeal>7.0~32.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~0.0</rainFactor>
+		<snowFactor>1.0~0.5</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>0.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 3, 8, 14, 20, 50, 120)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+	</ProcessorFramework.ProcessDef>
+
+	<ProcessorFramework.ProcessDef ParentName="DankPyon_Press_PaperBase">
+		<defName>DankPyon_Press_PaperProcess</defName>
+		<thingDef>DankPyon_Paper</thingDef>
+		<ingredientFilter>
+			<thingDefs>
+				<li>DankPyon_Mixture_Paper</li>
+			</thingDefs>
+		</ingredientFilter>
+	</ProcessorFramework.ProcessDef>
+
+</Defs>

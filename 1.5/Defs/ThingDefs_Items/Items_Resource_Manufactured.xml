@@ -100,6 +100,29 @@
 		</statBases>
 	</ThingDef>
 
+	<!--=============== Tannin Liquor ====================-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_Mixture_Paper</defName>
+		<label>paper mixture</label>
+		<description>A thick, fibrous pulp created from finely ground fibrous materials, soaked and blended into a smooth consistency. This mixture is the essential raw material for crafting paper, ready to be spread, pressed, and dried into sturdy sheets for writing and drawing.</description>
+		<graphicData>
+			<texPath>Resources/PaperMixture</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0.05</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
 	<!--=============== Tar ====================-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_Tar</defName>

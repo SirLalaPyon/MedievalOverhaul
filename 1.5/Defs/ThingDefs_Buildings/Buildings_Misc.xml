@@ -207,7 +207,7 @@
 		</thingCategories>
 
 		<statBases>
-			<MaxHitPoints>80</MaxHitPoints>
+			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToBuild>1800</WorkToBuild>
 			<Mass>10</Mass>
 			<Flammability>1.0</Flammability>
@@ -268,9 +268,9 @@
 		</thingCategories>
 
 		<statBases>
-			<MaxHitPoints>80</MaxHitPoints>
+			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToBuild>1500</WorkToBuild>
-			<Mass>15</Mass>
+			<Mass>5</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 
@@ -333,7 +333,7 @@
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>1500</WorkToBuild>
-			<Mass>15</Mass>
+			<Mass>5</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 
@@ -400,7 +400,7 @@
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<WorkToBuild>1500</WorkToBuild>
-			<Mass>15</Mass>
+			<Mass>5</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 
@@ -413,6 +413,259 @@
 		<costList>
 			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
 		</costList>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ==================== Scribe Table ==================== -->
+	<!-- ==================== Quill and Inkwell ==================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_PaperHangingRack</defName>
+		<label>paper hanging rack</label>
+		<description>A handing rack for drying freshly written manuscripts. Increases workspeed when placed near a book scribe table.</description>
+		<graphicData>
+			<texPath>Misc/HangingPaperRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>true</rotatable>
+
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<clearBuildingArea>false</clearBuildingArea>
+
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<costList>
+			<DankPyon_Paper>25</DankPyon_Paper>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_QuillAndInkwell</defName>
+		<label>quill and inkwell table</label>
+		<description>Supply of quills and ink. Increases workspeed when placed near a book scribe table.</description>
+		<graphicData>
+			<texPath>Misc/QuillAndInkwell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Stack_Books</defName>
+		<label>stack of books</label>
+		<description>Stack of easily accessible books for reference. Increases workspeed when placed near a book scribe table.</description>
+		<graphicData>
+			<texPath>Misc/BookStack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>true</rotatable>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<costList>
+			<DankPyon_Paper>50</DankPyon_Paper>
+		</costList>
+
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Stack_Paper</defName>
+		<label>stack of papers</label>
+		<description>Stack of easily accessible papers for writing. Increases workspeed when placed near a book scribe table.</description>
+		<graphicData>
+			<texPath>Misc/PaperStack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>true</rotatable>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<costList>
+			<DankPyon_Paper>50</DankPyon_Paper>
+		</costList>
+
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
 
 		<comps>
 			<li Class="CompProperties_Facility">

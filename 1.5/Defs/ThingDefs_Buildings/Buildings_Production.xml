@@ -1007,7 +1007,11 @@
 			<texPath>Production/ScribeTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(5,3)</drawSize>
+			<drawSize>(4,2)</drawSize>
+			<shadowData>
+				<volume>(2.8, 0.35, 0.59)</volume>
+				<offset>(0, 0, 0.08)</offset>
+			</shadowData>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -1016,8 +1020,8 @@
 			</damageData>
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
-		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-		<costStuffCount>75</costStuffCount>
+
+		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>

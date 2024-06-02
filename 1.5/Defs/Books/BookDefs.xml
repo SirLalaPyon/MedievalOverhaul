@@ -82,14 +82,14 @@
 
 	<ThingDef ParentName="BookBase">
 		<defName>DankPyon_Treatise</defName>
-		<label>tale</label>
+		<label>treatise</label>
 		<description>Carefully bound volumes filled with detailed knowledge and techniques on various subjects. Each book offers in-depth explanations and practical advice, helping readers master new skills. Written by experts and often accompanied by detailed diagrams, these books are valuable resources for learning and improvement.</description>
 		<graphicData>
-		<texPath>Special/Book/Tale</texPath>
+		<texPath>Special/Book/Treatise</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>0.8</drawSize>
 		</graphicData>
-		<uiIconPath>Special/Book/Tale</uiIconPath>
+		<uiIconPath>Special/Book/Treatise</uiIconPath>
 		<statBases>
 		<MarketValue>160</MarketValue>
 		</statBases>
@@ -99,12 +99,12 @@
 			<descriptionMaker>Description_Novel</descriptionMaker>
 			<ageYearsRange>100~200</ageYearsRange>
 			<openGraphic>
-				<texPath>Special/Book/Tale_Open</texPath>
+				<texPath>Special/Book/Treatise_Open</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>0.7</drawSize>
 			</openGraphic>
 			<verticalGraphic>
-				<texPath>Special/Book/Tale_Vertical</texPath>
+				<texPath>Special/Book/Treatise_Vertical</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<addTopAltitudeBias>true</addTopAltitudeBias>
 			</verticalGraphic>

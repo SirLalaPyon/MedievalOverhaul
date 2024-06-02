@@ -317,7 +317,7 @@
 
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsDigging</defName>
-		<label>dig earth</label>
+		<label>dig earth at digging spot</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Mining</workType>
 		<priorityInType>90</priorityInType>
@@ -333,8 +333,8 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
-		<defName>DankPyon_DoBillsStonecut</defName>
-		<label>make stone blocks</label>
+		<defName>DankPyon_DoBillsMining</defName>
+		<label>mine at mining spot</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Mining</workType>
 		<priorityInType>90</priorityInType>
@@ -350,8 +350,8 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
-		<defName>DankPyon_DoBillsMining</defName>
-		<label>mine</label>
+		<defName>DankPyon_DoBillsStonecut</defName>
+		<label>make stone blocks</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>90</priorityInType>

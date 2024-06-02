@@ -12,16 +12,17 @@
 				<li>subject->[subject_primary]</li> 
 				
 				<!-- General -->
-				<li>title->The Chronicles of [subject_primary]</li>
 				<li>title->Secrets of [subject_primary]</li>
 				<li>title->A Treatise on [subject_primary]</li>
-				<li>title->The Legacy of [subject_primary]</li>
+				<li>title->The Compendium of [subject_primary]</li>
 				<li>title->Ancient Insights into [subject_primary]</li>
 				<li>title->Exploring [subject_primary]</li>
 				<li>title->Wisdom of the Ancients: [subject_primary]</li>
 				<li>title->[subject_primary] and the Art of [randAdjective]</li>
 				<li>title->[subject_primary] Unveiled</li>
 				<li>title->[subject_primary] Explored</li>
+				<li>title->Understanding [subject_primary]</li>
+        		<li>title->Principles of [subject_primary]</li>
 				<li>title->[subject_primary] and Its Applications</li>
 				<li>title->[subject_primary] Chronicles, Vol. [volNumeral]</li>
 				<li>title->[randAdjective] Insights on [subject_primary]</li>
@@ -35,11 +36,10 @@
 				<li>volNumeral->V</li>
 
 				<!-- Authored Books -->
-				<li>maybe_authored_title->[author_gen]'s Codex</li>
+				<li>maybe_authored_title->[author_gen]'s Script</li>
 				<li>maybe_authored_title->[author_gen]'s Manuscript</li>
 
 				<li>author_gen->[ANYPAWN_nameIndef]'s Treatise</li>
-				<li>author_gen->[ANYPAWN_nameIndef]'s Chronicle</li>
 				<li>author_gen->[ANYPAWN_nameIndef]'s Annals</li>
 
 				<!-- Titles -->

@@ -24,9 +24,6 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-		<recipes>
-			<li>SmashCorpseMechanoid</li>
-		</recipes>
 		<terrainAffordanceNeeded>SmoothableStone</terrainAffordanceNeeded>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
@@ -46,9 +43,6 @@
 				<linkableFacilities>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
-			</li>
-			<li>
-				<compClass>CompReportWorkSpeed</compClass>
 			</li>
 			<li Class="CompProperties_ReportWorkSpeed">
 				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
@@ -85,9 +79,6 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-		<recipes>
-			<li>SmashCorpseMechanoid</li>
-		</recipes>
 		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
@@ -97,6 +88,7 @@
 			<sowTag>SupportPlantsOnly</sowTag>
 			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
 			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 			<buildingTags>
 				<li>Production</li>
@@ -107,9 +99,6 @@
 				<linkableFacilities>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
-			</li>
-			<li>
-				<compClass>CompReportWorkSpeed</compClass>
 			</li>
 			<li Class="CompProperties_ReportWorkSpeed">
 				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
@@ -1007,6 +996,42 @@
 		<researchPrerequisites>
 			<li>DankPyon_Alchemy</li>
 		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+		<defName>DankPyon_Book_ScribeTable</defName>
+		<label>book scribe table</label>
+		<description>A wooden table equipped with inkwells, quills, and parchment, designed for writing manuscripts and scrolls.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Production/ScribeTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+
+		<comps>
+		</comps>
+		
+		<recipes>
+		</recipes>
+
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>DankPyon_ReadInLibrary</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li IsNull="True" />
+			<!-- awful -->
+			<li IsNull="True" />
+			<!-- dull -->
+			<li IsNull="True" />
+			<!-- mediocre -->
+			<li>
+				<label>decent library</label>
+				<description>I enjoyed reading in a decent library.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>slightly impressive library</label>
+				<description>I enjoyed reading in a nice library.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>somewhat impressive library</label>
+				<description>I had a great time reading in an impressive library.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>very impressive library</label>
+				<description>I had a great time reading in a very impressive library.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>extremely impressive library</label>
+				<description>I had a great time reading in an extremely impressive library. I could stay there forever.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>unbelievably impressive library</label>
+				<description>I had a great time reading in an unbelievably impressive library. I could stay there forever.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>wondrously impressive library</label>
+				<description>I had a great time reading in a wonderful library. I could stay there forever.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+  </ThoughtDef>
+
+</Defs>

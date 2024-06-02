@@ -453,7 +453,7 @@
 		</graphicData>
 		<size>(3,2)</size>
 
-		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>Standable</passability>
 		<fillPercent>0.3</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -518,7 +518,7 @@
 
 	<ThingDef ParentName="DankPyon_MarketTent_Base">
 		<defName>DankPyon_MarketTent_4c</defName>
-		<label>tent stall (black)</label>
+		<label>tent stall (black white)</label>
 		<graphicData>
 			<texPath>Tents/TentLime</texPath>
 		</graphicData>
@@ -526,14 +526,22 @@
 
 	<ThingDef ParentName="DankPyon_MarketTent_Base">
 		<defName>DankPyon_MarketTent_5c</defName>
-		<label>tent stall (beige)</label>
+		<label>tent stall (black yellow)</label>
 		<graphicData>
-			<texPath>Tents/TentBeige</texPath>
+			<texPath>Tents/TentBlackYellow</texPath>
 		</graphicData>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_MarketTent_Base">
 		<defName>DankPyon_MarketTent_6c</defName>
+		<label>tent stall (white)</label>
+		<graphicData>
+			<texPath>Tents/TentWhite</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_MarketTent_Base">
+		<defName>DankPyon_MarketTent_7c</defName>
 		<label>tent stall (plain)</label>
 		<graphicData>
 			<texPath>Tents/TentPlain</texPath>

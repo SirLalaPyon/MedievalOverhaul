@@ -8,4 +8,35 @@
 		</value>
 	</Operation>
 
+	<!-- <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps</xpath>
+		<value>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>160.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_Paper</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+		</value>
+	</Operation> -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SimpleResearchBench"]</xpath>
+		<value>
+			<interactionCellIcon>DankPyon_RusticStool</interactionCellIcon>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/description</xpath>
+		<value>
+			<description>A simple bench with writing implements and simple measurement devices. This bench is essential in any study or library, scholars write here to pursue knowledge and discovery.</description>
+		</value>
+	</Operation>
+
 </Patch>	

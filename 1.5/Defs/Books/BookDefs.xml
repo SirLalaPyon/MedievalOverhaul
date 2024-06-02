@@ -4,13 +4,13 @@
 	<ThingDef ParentName="BookBase">
 		<defName>DankPyon_Schematic</defName>
 		<label>ancient schematic</label>
-		<description>A book which describes technology and methods for using it. Reading schematics can help unlock new technologies.</description>
+		<description>A scroll detailing various technologies and the methods of their use. Perusing these schematic scrolls may unveil new advancements and hidden knowledge.</description>
 		<graphicData>
-			<texPath>Special/AncientCodex</texPath>
+			<texPath>Special/Book/SchematicScroll</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-		<uiIconPath>Special/AncientCodex</uiIconPath>
+		<uiIconPath>Special/Book/SchematicScroll</uiIconPath>
 		<statBases>
 			<MarketValue>150</MarketValue>
 		</statBases>
@@ -24,12 +24,12 @@
 				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
 				<ageYearsRange>100~200</ageYearsRange>
 				<openGraphic>
-					<texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>0.7</drawSize>
 				</openGraphic>
 				<verticalGraphic>
-					<texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
@@ -42,6 +42,76 @@
 					</li>
 				</doers>
 			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BookBase">
+		<defName>DankPyon_Tale</defName>
+		<label>tale</label>
+		<description>Tale books are beautifully bound with stories of adventure and myth. Each book takes readers to distant lands and past times. Handwritten by scribes and decorated with illustrations, these books are loved for their rich stories and craftsmanship. They are enjoyed for both entertainment and preserving history.</description>
+		<graphicData>
+		<texPath>Special/Book/Tale</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Special/Book/Tale</uiIconPath>
+		<statBases>
+		<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+		<li Class="CompProperties_Book">
+			<nameMaker>Namer_Novel</nameMaker>
+			<descriptionMaker>Description_Novel</descriptionMaker>
+			<ageYearsRange>100~200</ageYearsRange>
+			<openGraphic>
+				<texPath>Special/Book/Tale_Open</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>0.7</drawSize>
+			</openGraphic>
+			<verticalGraphic>
+				<texPath>Special/Book/Tale_Vertical</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<addTopAltitudeBias>true</addTopAltitudeBias>
+			</verticalGraphic>
+			<doers>
+			<li Class="BookOutcomeProperties_JoyFactorModifier" />
+			</doers>
+		</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BookBase">
+		<defName>DankPyon_Treatise</defName>
+		<label>tale</label>
+		<description>Carefully bound volumes filled with detailed knowledge and techniques on various subjects. Each book offers in-depth explanations and practical advice, helping readers master new skills. Written by experts and often accompanied by detailed diagrams, these books are valuable resources for learning and improvement.</description>
+		<graphicData>
+		<texPath>Special/Book/Tale</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Special/Book/Tale</uiIconPath>
+		<statBases>
+		<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+		<li Class="CompProperties_Book">
+			<nameMaker>Namer_Novel</nameMaker>
+			<descriptionMaker>Description_Novel</descriptionMaker>
+			<ageYearsRange>100~200</ageYearsRange>
+			<openGraphic>
+				<texPath>Special/Book/Tale_Open</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>0.7</drawSize>
+			</openGraphic>
+			<verticalGraphic>
+				<texPath>Special/Book/Tale_Vertical</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<addTopAltitudeBias>true</addTopAltitudeBias>
+			</verticalGraphic>
+			<doers>
+			<li Class="BookOutcomeProperties_JoyFactorModifier" />
+			</doers>
+		</li>
 		</comps>
 	</ThingDef>
   

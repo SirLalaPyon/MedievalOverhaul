@@ -16,7 +16,7 @@
 	</ThingDef>
 
 	<!-- Crates -->
-	<ThingDef ParentName="DankPyon_LootBuilding" Name="DankPyon_LootableCrate_Base" Abstract="True">
+	<ThingDef ParentName="DankPyon_HideOutBuildingBase" Name="DankPyon_LootableCrate_Base" Abstract="True">
 		<label>large crate</label>
 		<description>A large crate filled with items.</description>
 		<graphicData>
@@ -142,9 +142,9 @@
 		</modExtensions>
 	</ThingDef>
 
-	<!-- ==================== Stalls ==================== -->
+	<!-- ==================== Tables ==================== -->
 	<ThingDef ParentName="DankPyon_HideOutBuildingBase" Name="DankPyon_HideoutTableMarket" Abstract="True">
-		<label>meat stall</label>
+		<label>stall</label>
 		<description>A table filled to display goods.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -163,11 +163,13 @@
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
 	</ThingDef>
 	
 	<ThingDef ParentName="DankPyon_HideoutTableMarket">
 		<defName>DankPyon_HideoutTableMarket_Meats</defName>
 		<label>meat stall</label>
+		<description>A table filled to display meat.</description>
 		<graphicData>
 			<texPath>Tents/MarketMeat</texPath>
 		</graphicData>
@@ -180,7 +182,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>true</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Furniture/RusticTable1x3</texPath>
+                    <texPath>Tents/MarketEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
                 </emptyGraphicData>
@@ -215,6 +217,10 @@
                     <li>Meat_DankPyon_Daer</li>
                     <li>Meat_DankPyon_DireBoar</li>
                     <li>Meat_DankPyon_Direwolf</li>
+                    <li>Meat_DankPyon_LargeCobraCave</li>
+                    <li>Meat_DankPyon_LargeCobraForest</li>
+                    <li>Meat_DankPyon_LindwurmCave</li>
+                    <li>Meat_DankPyon_LindwurmForest</li>
 				</randomItems>
 			</li>
 		</modExtensions>
@@ -236,7 +242,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>true</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Tents/Furniture/RusticTable1x3</texPath>
+                    <texPath>Tents/MarketEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
                 </emptyGraphicData>
@@ -261,7 +267,7 @@
 	<ThingDef ParentName="DankPyon_HideoutTableMarket">
 		<defName>DankPyon_HideoutTableMarket_Bread</defName>
 		<label>bread stall</label>
-		<description>A table filled to display bread goods.</description>
+		<description>A table filled to display bread.</description>
 		<graphicData>
 			<texPath>Tents/MarketBread</texPath>
 		</graphicData>
@@ -274,7 +280,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>true</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Tents/Furniture/RusticTable1x3</texPath>
+                    <texPath>Tents/MarketEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
                 </emptyGraphicData>
@@ -286,6 +292,379 @@
 				<isRandom>true</isRandom>
 				<randomItems>
 					<li>DankPyon_MealBread</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutTableMarket_Herb</defName>
+		<label>herb stall</label>
+		<description>A table filled to display herbs.</description>
+		<graphicData>
+			<texPath>Tents/MarketHerb</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/MarketEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>3~12</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>MedicineHerbal</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutTableMarket_Bow</defName>
+		<label>bow stall</label>
+		<description>A table covered with bows.</description>
+		<graphicData>
+			<texPath>Tents/MarketBow</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.0</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/MarketEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~2</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>Bow_Recurve</li>
+					<li>Bow_Recurve</li>
+					<li>Bow_Recurve</li>
+					<li>Bow_Recurve</li>
+					<li>Bow_Recurve</li>
+					
+					<li>DankPyon_Bow_Hunting</li>
+					<li>DankPyon_Bow_Hunting</li>
+					<li>DankPyon_Bow_Hunting</li>
+					<li>DankPyon_Bow_Hunting</li>
+					
+					<li>Bow_Great</li>
+					<li>Bow_Great</li>
+					<li>Bow_Great</li>
+					
+					<li>Bow_War</li>
+					<li>Bow_War</li>
+					
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutTableMarket_Melee</defName>
+		<label>melee weapon stall</label>
+		<description>A table covered with melee weapons.</description>
+		<graphicData>
+			<texPath>Tents/MarketMeleeWeapons</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.0</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/MarketEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~2</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_ArmingSword</li>
+					<li>DankPyon_HookedBlade</li>
+					<li>DankPyon_Pickaxe</li>
+					<li>DankPyon_Hatchet</li>
+					<li>DankPyon_WoodcuttersAxe</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<!-- Stalls -->
+	
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutStallMarket_Meats</defName>
+		<label>meat stall</label>
+		<description>A table filled to display meat.</description>
+		<graphicData>
+			<texPath>Tents/StallMeat</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/StallEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>30~120</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+                    <li>Meat_DankPyon_Angus</li>
+                    <li>Meat_DankPyon_Angus</li>
+                    <li>Meat_DankPyon_Angus</li>
+                    <li>Meat_DankPyon_Angus</li>
+                    <li>Meat_DankPyon_Angus</li>
+                    <li>Meat_DankPyon_Angus</li>
+					
+                    <li>Meat_DankPyon_Ravelder</li>
+                    <li>Meat_DankPyon_Ravelder</li>
+                    <li>Meat_DankPyon_Ravelder</li>
+                    <li>Meat_DankPyon_Ravelder</li>
+                    <li>Meat_DankPyon_Ravelder</li>
+                    <li>Meat_DankPyon_Ravelder</li>
+					
+                    <li>Meat_DankPyon_Rox</li>
+                    <li>Meat_DankPyon_Rox</li>
+                    <li>Meat_DankPyon_Rox</li>
+                    <li>Meat_DankPyon_Rox</li>
+                    <li>Meat_DankPyon_Rox</li>
+                    <li>Meat_DankPyon_Rox</li>
+					
+                    <li>Meat_DankPyon_Daer</li>
+                    <li>Meat_DankPyon_DireBoar</li>
+                    <li>Meat_DankPyon_Direwolf</li>
+                    <li>Meat_DankPyon_LargeCobraCave</li>
+                    <li>Meat_DankPyon_LargeCobraForest</li>
+                    <li>Meat_DankPyon_LindwurmCave</li>
+                    <li>Meat_DankPyon_LindwurmForest</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutStallMarket_Dairy</defName>
+		<label>dairy stall</label>
+		<description>A table filled to display dairy goods.</description>
+		<graphicData>
+			<texPath>Tents/StallCheese</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/StallEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>30~120</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>Milk</li>
+					<li>DankPyon_GoatMilk</li>
+					<li>DankPyon_SheepMilk</li>
+                    <li>DankPyon_MealCheese</li>
+                    <li>DankPyon_MealGoatCheese</li>
+                    <li>DankPyon_MealSheepCheese</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutStallMarket_Bread</defName>
+		<label>bread stall</label>
+		<description>A table filled to display bread.</description>
+		<graphicData>
+			<texPath>Tents/StallBread</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/StallEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>30~120</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_MealBread</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutStallMarket_Herb</defName>
+		<label>herb stall</label>
+		<description>A table filled to display herbs.</description>
+		<graphicData>
+			<texPath>Tents/StallHerb</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.10</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/StallEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>3~12</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>MedicineHerbal</li>
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutStallMarket_Bow</defName>
+		<label>bow stall</label>
+		<description>A table covered with bows.</description>
+		<graphicData>
+			<texPath>Tents/StallBow</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.0</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/StallEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~2</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>Bow_Recurve</li>
+					<li>Bow_Recurve</li>
+					<li>Bow_Recurve</li>
+					<li>Bow_Recurve</li>
+					<li>Bow_Recurve</li>
+					
+					<li>DankPyon_Bow_Hunting</li>
+					<li>DankPyon_Bow_Hunting</li>
+					<li>DankPyon_Bow_Hunting</li>
+					<li>DankPyon_Bow_Hunting</li>
+					
+					<li>Bow_Great</li>
+					<li>Bow_Great</li>
+					<li>Bow_Great</li>
+					
+					<li>Bow_War</li>
+					<li>Bow_War</li>
+					
+				</randomItems>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_HideoutTableMarket">
+		<defName>DankPyon_HideoutStallMarket_Melee</defName>
+		<label>melee stall</label>
+		<description>A table covered with melee weapons.</description>
+		<graphicData>
+			<texPath>Tents/StallMeleeWeapons</texPath>
+		</graphicData>
+		
+        <modExtensions>
+			<li Class="MedievalOverhaul.BuildingLootableExtension">
+				<enemysToSpawn>
+				    <li>Rat</li>
+				</enemysToSpawn>
+				<enemySpawnChance>0.0</enemySpawnChance>
+                <hostileEnemy>true</hostileEnemy>
+                <emptyGraphicData>
+                    <texPath>Tents/StallEmpty</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(5,3)</drawSize>
+                </emptyGraphicData>
+				<searchSound>BuildingDestroyed_Wood_Medium</searchSound>
+				<searchEffect>DustPuff</searchEffect>
+				<effectSize>2.5</effectSize>
+				<lootCount>1~2</lootCount>
+				<lootChance>1</lootChance>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>DankPyon_ArmingSword</li>
+					<li>DankPyon_HookedBlade</li>
+					<li>DankPyon_Pickaxe</li>
+					<li>DankPyon_Hatchet</li>
+					<li>DankPyon_WoodcuttersAxe</li>
 				</randomItems>
 			</li>
 		</modExtensions>

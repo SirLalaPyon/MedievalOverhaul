@@ -699,7 +699,7 @@
 			<texPath>Production/Millstone</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,1)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<stuffCategories>
@@ -717,7 +717,7 @@
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-		<size>(2,2)</size>
+		<size>(1,1)</size>
 		<passability>PassThroughOnly</passability>
 		<pathCost>60</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>

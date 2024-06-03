@@ -1,5 +1,613 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<KCSG.SymbolDef>
+  <defName>DankPyon_BannerHesse_WoodLog_East</defName>
+  <thing>DankPyon_BannerHesse</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Dairy_WoodLog_East</defName>
+  <thing>DankPyon_HideoutTableMarket_Dairy</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Corpse_DankPyon_UnholdSnow</defName>
+  <pawnKindDef>DankPyon_UnholdSnow</pawnKindDef>
+  <spawnDead>true</spawnDead>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ButchersBlock_WoodLog_East</defName>
+  <thing>DankPyon_ButchersBlock</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BannerSoren_WoodLog_East</defName>
+  <thing>DankPyon_BannerSoren</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RackEmpty_WoodLog_West</defName>
+  <thing>DankPyon_RackEmpty</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideOutBuildingBase_Cart_PlantRaw_WoodLog_North</defName>
+  <thing>DankPyon_HideOutBuildingBase_Cart_PlantRaw</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Bow_WoodLog_West</defName>
+  <thing>DankPyon_HideoutTableMarket_Bow</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_6c_WoodLog_North</defName>
+  <thing>DankPyon_MarketTent_6c</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Millstone_BlocksGranite_East</defName>
+  <thing>DankPyon_Millstone</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Bread_WoodLog_East</defName>
+  <thing>DankPyon_HideoutTableMarket_Bread</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_StoneOven_BlocksGranite_East</defName>
+  <thing>DankPyon_StoneOven</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RackSpear_WoodLog_South</defName>
+  <thing>DankPyon_RackSpear</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RackMixed_WoodLog_South</defName>
+  <thing>DankPyon_RackMixed</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RackSword_WoodLog_East</defName>
+  <thing>DankPyon_RackSword</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RackSpear_WoodLog_East</defName>
+  <thing>DankPyon_RackSpear</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_AdvancedResearchBench_WoodLog_West</defName>
+  <thing>DankPyon_AdvancedResearchBench</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BannerAmboise_WoodLog_East</defName>
+  <thing>DankPyon_BannerAmboise</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BannerAmboise_WoodLog_South</defName>
+  <thing>DankPyon_BannerAmboise</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>Corpse_DankPyon_AncientTroll</defName>
+  <pawnKindDef>DankPyon_AncientTroll</pawnKindDef>
+  <spawnDead>true</spawnDead>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LootableCrate_Bones_WoodLog_North</defName>
+  <thing>DankPyon_LootableCrate_Bones</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_FilledB_Soren_WoodLog_South</defName>
+  <thing>DankPyon_HideoutLargeShelf_FilledB_Soren</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_FilledA_Soren_WoodLog_South</defName>
+  <thing>DankPyon_HideoutLargeShelf_FilledA_Soren</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Dairy_WoodLog_South</defName>
+  <thing>DankPyon_HideoutStallMarket_Dairy</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutWoodLogs1x2c_DankPyon_RawWood_West</defName>
+  <thing>DankPyon_HideoutWoodLogs1x2c</thing>
+  <stuff>DankPyon_RawWood</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RackEmpty_WoodLog_East</defName>
+  <thing>DankPyon_RackEmpty</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutBricks1x2c_BlocksGranite_West</defName>
+  <thing>DankPyon_HideoutBricks1x2c</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_FilledA_Amboise_WoodLog_South</defName>
+  <thing>DankPyon_HideoutLargeShelf_FilledA_Amboise</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_StrawBedDouble_WoodLog_South</defName>
+  <thing>DankPyon_StrawBedDouble</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_SpinningWheel_East</defName>
+  <thing>DankPyon_SpinningWheel</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LootableShelf_GreenHerbs_WoodLog_South</defName>
+  <thing>DankPyon_LootableShelf_GreenHerbs</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Sign_Tailor_WoodLog_West</defName>
+  <thing>DankPyon_Sign_Tailor</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Sign_Butcher_WoodLog_West</defName>
+  <thing>DankPyon_Sign_Butcher</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TailorsBench_WoodLog_North</defName>
+  <thing>DankPyon_TailorsBench</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutCrate1x2c_WoodLog_West</defName>
+  <thing>DankPyon_HideoutCrate1x2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Melee_WoodLog_West</defName>
+  <thing>DankPyon_HideoutStallMarket_Melee</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_7c_WoodLog_North</defName>
+  <thing>DankPyon_MarketTent_7c</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutRackSword_WoodLog_East</defName>
+  <thing>DankPyon_HideoutRackSword</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Dairy_WoodLog_East</defName>
+  <thing>DankPyon_HideoutStallMarket_Dairy</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Bow_WoodLog_North</defName>
+  <thing>DankPyon_HideoutTableMarket_Bow</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RoyalDresser_WoodLog_East</defName>
+  <thing>DankPyon_RoyalDresser</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticNobleChair_WoodLog_West</defName>
+  <thing>DankPyon_RusticNobleChair</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_5c_WoodLog_East</defName>
+  <thing>DankPyon_MarketTent_5c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Lootable_ArmorStatueNamed_East</defName>
+  <thing>DankPyon_Lootable_ArmorStatueNamed</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_5c_WoodLog_North</defName>
+  <thing>DankPyon_MarketTent_5c</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutRackMixed_WoodLog_East</defName>
+  <thing>DankPyon_HideoutRackMixed</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Trestle_WoodLog_East</defName>
+  <thing>DankPyon_Trestle</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TableBaking_WoodLog_East</defName>
+  <thing>DankPyon_TableBaking</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutRackMixed_WoodLog_West</defName>
+  <thing>DankPyon_HideoutRackMixed</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticBarrelBigClosedDown_WoodLog_East</defName>
+  <thing>DankPyon_RusticBarrelBigClosedDown</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_ToolRack_WoodLog_West</defName>
+  <thing>DankPyon_ToolRack</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Grinder_BlocksGranite_West</defName>
+  <thing>DankPyon_Grinder</thing>
+  <stuff>BlocksGranite</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutRackSpear_WoodLog_East</defName>
+  <thing>DankPyon_HideoutRackSpear</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Meats_WoodLog_North</defName>
+  <thing>DankPyon_HideoutTableMarket_Meats</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Meats_WoodLog_East</defName>
+  <thing>DankPyon_HideoutStallMarket_Meats</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Bread_WoodLog_West</defName>
+  <thing>DankPyon_HideoutStallMarket_Bread</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Bread_WoodLog_West</defName>
+  <thing>DankPyon_HideoutTableMarket_Bread</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_Cheese_WoodLog_South</defName>
+  <thing>DankPyon_HideoutLargeShelf_Cheese</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_3c_WoodLog_West</defName>
+  <thing>DankPyon_MarketTent_3c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Dairy_WoodLog_North</defName>
+  <thing>DankPyon_HideoutStallMarket_Dairy</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_FilledB_Soren_WoodLog_East</defName>
+  <thing>DankPyon_HideoutLargeShelf_FilledB_Soren</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_FilledA_Soren_WoodLog_East</defName>
+  <thing>DankPyon_HideoutLargeShelf_FilledA_Soren</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BannerHesse_WoodLog_North</defName>
+  <thing>DankPyon_BannerHesse</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LootableCrate_Lindwurm_WoodLog_North</defName>
+  <thing>DankPyon_LootableCrate_Lindwurm</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Meats_WoodLog_West</defName>
+  <thing>DankPyon_HideoutTableMarket_Meats</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideOutBuildingBase_Cart_Empty_WoodLog_North</defName>
+  <thing>DankPyon_HideOutBuildingBase_Cart_Empty</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_BannerHesse_WoodLog_West</defName>
+  <thing>DankPyon_BannerHesse</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Herb_WoodLog_North</defName>
+  <thing>DankPyon_HideoutTableMarket_Herb</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_RusticTable1x3c_WoodLog_West</defName>
+  <thing>DankPyon_RusticTable1x3c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_4c_WoodLog_West</defName>
+  <thing>DankPyon_MarketTent_4c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Herb_WoodLog_East</defName>
+  <thing>DankPyon_HideoutStallMarket_Herb</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_2c_WoodLog_East</defName>
+  <thing>DankPyon_MarketTent_2c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_FilledA_Hesse_WoodLog_East</defName>
+  <thing>DankPyon_HideoutLargeShelf_FilledA_Hesse</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_Vegetables_WoodLog_South</defName>
+  <thing>DankPyon_HideoutLargeShelf_Vegetables</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_1c_WoodLog_East</defName>
+  <thing>DankPyon_MarketTent_1c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_IngotStack1x1_Gold_North</defName>
+  <thing>DankPyon_IngotStack1x1_Gold</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Amboisse_Knight</defName>
+  <pawnKindDef>DankPyon_Amboisse_Knight</pawnKindDef>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_FilledB_Hesse_WoodLog_West</defName>
+  <thing>DankPyon_HideoutLargeShelf_FilledB_Hesse</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_LootableCrate_Unhold_WoodLog_North</defName>
+  <thing>DankPyon_LootableCrate_Unhold</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Meats_WoodLog_North</defName>
+  <thing>DankPyon_HideoutStallMarket_Meats</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_1c_WoodLog_North</defName>
+  <thing>DankPyon_MarketTent_1c</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Dairy_WoodLog_North</defName>
+  <thing>DankPyon_HideoutTableMarket_Dairy</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_5c_WoodLog_West</defName>
+  <thing>DankPyon_MarketTent_5c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Bow_WoodLog_East</defName>
+  <thing>DankPyon_HideoutStallMarket_Bow</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_4c_WoodLog_East</defName>
+  <thing>DankPyon_MarketTent_4c</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutStallMarket_Dairy_WoodLog_West</defName>
+  <thing>DankPyon_HideoutStallMarket_Dairy</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_TableMarket_Bread_WoodLog_West</defName>
+  <thing>DankPyon_TableMarket_Bread</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Well_BlocksGranite_North</defName>
+  <thing>DankPyon_Well</thing>
+  <stuff>BlocksGranite</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutTableMarket_Melee_WoodLog_North</defName>
+  <thing>DankPyon_HideoutTableMarket_Melee</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_HideoutLargeShelf_FilledB_Amboise_WoodLog_East</defName>
+  <thing>DankPyon_HideoutLargeShelf_FilledB_Amboise</thing>
+  <stuff>WoodLog</stuff>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_MarketTent_2c_WoodLog_North</defName>
+  <thing>DankPyon_MarketTent_2c</thing>
+  <stuff>WoodLog</stuff>
+</KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>DankPyon_BannerAmboise_WoodLog_North</defName>
@@ -421,6 +1029,12 @@
   <rotation>East</rotation>
 </KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>Corpse_DankPyon_LindwurmCave</defName>
+  <pawnKindDef>DankPyon_LindwurmCave</pawnKindDef>
+  <spawnDead>true</spawnDead>
+</KCSG.SymbolDef>
+
 <!-- Amboise -->
 
 <KCSG.SymbolDef>
@@ -552,8 +1166,6 @@
   <defendSpawnPoint>true</defendSpawnPoint>
 </KCSG.SymbolDef>
 
-
-
 <!-- Oswin -->
 
 <KCSG.SymbolDef>
@@ -611,6 +1223,71 @@
 <KCSG.SymbolDef>
   <defName>EEG_Oswin_Peasant</defName>
   <pawnKindDef>DankPyon_Oswin_Peasant</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<!-- Hesse -->
+
+<KCSG.SymbolDef>
+  <defName>EEG_Hesse_Peasant</defName>
+  <pawnKindDef>EEG_Hesse_Peasant</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Hesse_Archer</defName>
+  <pawnKindDef>DankPyon_Amboisse_Archer</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_NobleHouseCivil</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Hesse_Footman</defName>
+  <pawnKindDef>DankPyon_Amboisse_Footman</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_NobleHouseCivil</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Hesse_Knight</defName>
+  <pawnKindDef>DankPyon_Hesse_Knight</pawnKindDef>
+  <isSlave>false</isSlave>
+  <spawnPartOfFaction>true</spawnPartOfFaction>
+  <faction>DankPyon_NobleHouseCivil</faction>
+  <numberToSpawn>1</numberToSpawn>
+  <spawnDead>false</spawnDead>
+  <spawnRotten>false</spawnRotten>
+  <spawnFilthAround>false</spawnFilthAround>
+  <defendSpawnPoint>true</defendSpawnPoint>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>DankPyon_Hesse_LocalLord</defName>
+  <pawnKindDef>DankPyon_Hesse_LocalLord</pawnKindDef>
   <isSlave>false</isSlave>
   <spawnPartOfFaction>true</spawnPartOfFaction>
   <numberToSpawn>1</numberToSpawn>

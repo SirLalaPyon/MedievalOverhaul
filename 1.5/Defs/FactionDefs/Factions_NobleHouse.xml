@@ -264,16 +264,18 @@
 			</li>
 		</pawnGroupMakers>
 		
-        <!--modExtensions>
+        <modExtensions>
 			<li Class="KCSG.CustomGenOption">
 				<preventBridgeable>true</preventBridgeable>
 				<tryFindFreeArea>true</tryFindFreeArea>
 				<fullClear>true</fullClear>
 				<chooseFromlayouts>
 					<li>DankPyon_Settlement3_Amboise</li>
+					<li>DankPyon_Settlement2_Amboise</li>
+					<li>DankPyon_Settlement1_Amboise</li>
 				</chooseFromlayouts>
 			</li>
-        </modExtensions-->			
+        </modExtensions>			
 	</FactionDef>
 
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">
@@ -382,16 +384,18 @@
 			</li>
 		</pawnGroupMakers>
 		
-        <!--modExtensions>
+        <modExtensions>
 			<li Class="KCSG.CustomGenOption">
 				<preventBridgeable>true</preventBridgeable>
 				<tryFindFreeArea>true</tryFindFreeArea>
 				<fullClear>true</fullClear>
 				<chooseFromlayouts>
 					<li>DankPyon_Settlement3_Soren</li>
+					<li>DankPyon_Settlement2_Soren</li>
+					<li>DankPyon_Settlement1_Soren</li>
 				</chooseFromlayouts>
 			</li>
-        </modExtensions-->	
+        </modExtensions>	
 	</FactionDef>
 
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">
@@ -500,16 +504,18 @@
 			</li>
 		</pawnGroupMakers>
 		
-        <!--modExtensions>
+        <modExtensions>
 			<li Class="KCSG.CustomGenOption">
 				<preventBridgeable>true</preventBridgeable>
 				<tryFindFreeArea>true</tryFindFreeArea>
 				<fullClear>true</fullClear>
 				<chooseFromlayouts>
 					<li>DankPyon_Settlement3_Oswin</li>
+					<li>DankPyon_Settlement2_Oswin</li>
+					<li>DankPyon_Settlement1_Oswin</li>
 				</chooseFromlayouts>
 			</li>
-        </modExtensions-->	
+        </modExtensions>	
 	</FactionDef>
 
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">
@@ -619,6 +625,19 @@
 				</options>
 			</li>
 		</pawnGroupMakers>
+		
+        <modExtensions>
+			<li Class="KCSG.CustomGenOption">
+				<preventBridgeable>true</preventBridgeable>
+				<tryFindFreeArea>true</tryFindFreeArea>
+				<fullClear>true</fullClear>
+				<chooseFromlayouts>
+					<li>DankPyon_Settlement3_Hesse</li>
+					<li>DankPyon_Settlement2_Hesse</li>
+					<li>DankPyon_Settlement1_Hesse</li>
+				</chooseFromlayouts>
+			</li>
+        </modExtensions>	
 	</FactionDef>
 
 

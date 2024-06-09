@@ -23,11 +23,8 @@
 			<li>GrowSoil</li>
 			<li>Diggable</li>
 		</affordances>
-		<designatorDropdown>DankPyon_Floor_Cobblestone</designatorDropdown>
-		<researchPrerequisites>
-			<li>Stonecutting</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<designatorDropdown Inherit="False"/>
+		<designationCategory Inherit="False"/>
 		<uiOrder>2060</uiOrder>
 		<takeFootprints>True</takeFootprints>
 		<tools>
@@ -45,8 +42,5 @@
 	<TerrainDef ParentName="DankPyon_Floor_Hideout">
 		<defName>DankPyon_Floor_Soil</defName>
 		<label>soil</label>
-		<costList>
-			<BlocksSandstone>1</BlocksSandstone>
-		</costList>
 	</TerrainDef>
 </Defs>

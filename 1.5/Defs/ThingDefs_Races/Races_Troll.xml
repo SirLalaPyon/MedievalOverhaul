@@ -16,6 +16,7 @@
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<body>Human</body>
 			<predator>true</predator>
 			<hasGenders>false</hasGenders>
@@ -207,6 +208,9 @@
 				<tickInterval>60</tickInterval>
 				<healAmount>30</healAmount>
 				<tickRegenBurn>1000</tickRegenBurn>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>DankPyon_Forest_Faction</factionToReturnTo>			
 			</li>
 		</comps>
 	</ThingDef>

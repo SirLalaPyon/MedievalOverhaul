@@ -211,6 +211,9 @@
 			<li Class="AnimalBehaviours.CompProperties_LastStand">
 				<finalCoolDownMultiplier>3</finalCoolDownMultiplier>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				<factionToReturnTo>DankPyon_Forest_Faction</factionToReturnTo>			
+			</li>
 		</comps>
 	</ThingDef>
 

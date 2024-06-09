@@ -12,10 +12,11 @@
 		</graphicData>
 		<uiIconPath>Special/Book/SchematicScroll</uiIconPath>
 		<statBases>
-			<MarketValue>150</MarketValue>
+			<MarketValue>500</MarketValue>
 		</statBases>
+
 		<tradeTags>
-			<li>DankPyon_Book</li>
+			<li>DankPyon_Schematic</li>
 		</tradeTags>
 
 		<comps>
@@ -50,14 +51,19 @@
 		<label>tale</label>
 		<description>Tale books are beautifully bound with stories of adventure and myth. Each book takes readers to distant lands and past times. Handwritten by scribes and decorated with illustrations, these books are loved for their rich stories and craftsmanship. They are enjoyed for both entertainment and preserving history.</description>
 		<graphicData>
-		<texPath>Special/Book/Tale</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>0.8</drawSize>
+			<texPath>Special/Book/Tale</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<uiIconPath>Special/Book/Tale</uiIconPath>
 		<statBases>
-		<MarketValue>160</MarketValue>
+			<MarketValue>160</MarketValue>
 		</statBases>
+
+		<tradeTags>
+			<li>DankPyon_Tale</li>
+		</tradeTags>
+
 		<comps>
 		<li Class="CompProperties_Book">
 			<nameMaker>Namer_Novel</nameMaker>
@@ -85,14 +91,19 @@
 		<label>treatise</label>
 		<description>Carefully bound volumes filled with detailed knowledge and techniques on various subjects. Each book offers in-depth explanations and practical advice, helping readers master new skills. Written by experts and often accompanied by detailed diagrams, these books are valuable resources for learning and improvement.</description>
 		<graphicData>
-		<texPath>Special/Book/Treatise</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>0.8</drawSize>
+			<texPath>Special/Book/Treatise</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<uiIconPath>Special/Book/Treatise</uiIconPath>
 		<statBases>
-		<MarketValue>160</MarketValue>
+			<MarketValue>160</MarketValue>
 		</statBases>
+
+		<tradeTags>
+			<li>DankPyon_Treatise</li>
+		</tradeTags>
+
 		<comps>
 		<li Class="CompProperties_Book">
 			<nameMaker>Namer_Novel</nameMaker>

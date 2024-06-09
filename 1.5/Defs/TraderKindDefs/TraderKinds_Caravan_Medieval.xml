@@ -278,13 +278,37 @@
 				<countRange>750~1200</countRange>
 			</li>
 
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Paper</thingDef>
+				<countRange>50~250</countRange>
+			</li>
+
 			<!-- Building -->
 			<li Class="StockGenerator_MarketValue">
 				<tradeTag>DankPyon_Book</tradeTag>
 				<countRange>1~3</countRange>
 			</li>
 
+			<!-- Books -->
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>DankPyon_Schematic</tradeTag>
+				<countRange>1~5</countRange>
+			</li>
+
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>DankPyon_Treatise</tradeTag>
+				<countRange>2~5</countRange>
+			</li>
+
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>DankPyon_Tale</tradeTag>
+				<countRange>3~5</countRange>
+			</li>
+
 			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Book</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Schematic</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Treatise</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Tale</tag></li>
 		
 		</stockGenerators>
 	</TraderKindDef>

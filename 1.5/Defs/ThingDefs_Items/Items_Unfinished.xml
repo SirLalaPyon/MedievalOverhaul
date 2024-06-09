@@ -20,6 +20,25 @@
 	</ThingDef>
 
 	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedRug</defName>
+		<label>unfinished hide</label>
+		<description>An unfinished rug.</description>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
 		<defName>DankPyon_UnfinishedHideArmor</defName>
 		<label>unfinished hide armor</label>
 		<description>An unfinished piece of hide armor.</description>

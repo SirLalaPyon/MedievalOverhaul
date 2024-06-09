@@ -13,7 +13,6 @@
 		<selectable>true</selectable>
 		<useHitPoints>true</useHitPoints>
     	<defaultPlacingRot>North</defaultPlacingRot>
-		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
 		<blocksAltitudes>
 			<li>FloorCoverings</li>
 		</blocksAltitudes>
@@ -23,94 +22,473 @@
 		<rotatable>true</rotatable>
 	
 		<researchPrerequisites>
-			<li>DankPyon_LeatherTanning</li>
+			<li>DankPyon_Tailoring</li>
 		</researchPrerequisites>
+
+		<!--For Testing-->
+		<!--designationCategory>DankPyon_RusticDecoration</designationCategory-->
 	</ThingDef>
 
-	<!--============================== Rugs ==============================-->
-	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
-		<defName>DankPyon_RugPatched1x1c</defName>
-		<label>patched rug (1x1)</label>
+	<!-- Patched Rug Base -->
+	<ThingDef Name="DankPyon_PatchedRugBase" ParentName="DankPyon_FurnitureBaseRug" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<unfinishedThingDef>DankPyon_UnfinishedRug</unfinishedThingDef>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li>DankPyon_TailorsBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--============================== Craftable Rugs ==============================-->
+	<!-- Patched Leather Rugs -->
+	<!-- Base -->
+	<ThingDef Name="DankPyon_RugPatched_LeatherBase" ParentName="DankPyon_PatchedRugBase" Abstract="True">
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugPatched_LeatherBase">
+		<defName>DankPyon_RugPatched_Leather1x1c</defName>
+		<label>patched leather rug (1x1)</label>
 		<description>A roughly stiched rug made up of seperate leathers.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugPatched1x1</texPath>
+			<texPath>Furniture/RugsCraftable/RugPatched_Leather_1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
+			<WorkToMake>1500</WorkToMake>
 			<Beauty>3</Beauty>
-			<Mass>9</Mass>
+			<Mass>1.5</Mass>
 		</statBases>
-		<stuffCategories>
-			<li>Leathery</li>
-		</stuffCategories>
+		
 		<costStuffCount>25</costStuffCount>
 		<size>(1,1)</size>
-		<recipeMaker>
-			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<recipeUsers>
-				<li>DankPyon_TanningRack</li>
-			</recipeUsers>
-			<researchPrerequisite>DankPyon_LeatherTanning</researchPrerequisite>
-			<displayPriority>2000</displayPriority>
-		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
-		<defName>DankPyon_RugPatched2x2c</defName>
-		<label>patched rug (2x2)</label>
+	<ThingDef ParentName="DankPyon_RugPatched_LeatherBase">
+		<defName>DankPyon_RugPatched_Leather1x2c</defName>
+		<label>patched leather rug (1x2)</label>
 		<description>A roughly stiched rug made up of seperate leathers.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugPatched2x2</texPath>
+			<texPath>Furniture/RugsCraftable/RugPatched_Leather_1x2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Beauty>6</Beauty>
+			<Mass>3</Mass>
+		</statBases>
+    
+		<costStuffCount>50</costStuffCount>
+		<size>(2,1)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugPatched_LeatherBase">
+		<defName>DankPyon_RugPatched_Leather2x2c</defName>
+		<label>patched leather rug (2x2)</label>
+		<description>A roughly stiched rug made up of seperate leathers.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugPatched_Leather_2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
     
 		<statBases>
-			<WorkToMake>5000</WorkToMake>
-			<Beauty>4</Beauty>
-			<Mass>9</Mass>
+			<WorkToMake>6000</WorkToMake>
+			<Beauty>12</Beauty>
+			<Mass>6</Mass>
 		</statBases>
     
-		<stuffCategories>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<size>(2,2)</size>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
-		<defName>DankPyon_RugPatched3x3c</defName>
-		<label>patched rug (3x3)</label>
+	<ThingDef ParentName="DankPyon_RugPatched_LeatherBase">
+		<defName>DankPyon_RugPatched_Leather2x4c</defName>
+		<label>patched leather rug (2x4)</label>
 		<description>A roughly stiched rug made up of seperate leathers.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugPatched3x3</texPath>
+			<texPath>Furniture/RugsCraftable/RugPatched_Leather_2x4</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Beauty>24</Beauty>
+			<Mass>12</Mass>
+		</statBases>
+	
+		<costStuffCount>200</costStuffCount>
+		<size>(2,4)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugPatched_LeatherBase">
+		<defName>DankPyon_RugPatched_Leather3x3c</defName>
+		<label>patched leather rug (3x3)</label>
+		<description>A roughly stiched rug made up of seperate leathers.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugPatched_Leather_3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
     
 		<statBases>
-			<WorkToMake>7000</WorkToMake>
-			<Beauty>5</Beauty>
-			<Mass>12</Mass>
+			<WorkToMake>13500</WorkToMake>
+			<Beauty>27</Beauty>
+			<Mass>13.5</Mass>
 		</statBases>
-		<stuffCategories>
-			<li>Leathery</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+
+		<costStuffCount>225</costStuffCount>
 		<size>(3,3)</size>
 	</ThingDef>
 
+	<!-- Patched Cloth Rugs -->
+	<!-- Base -->
+	<ThingDef Name="DankPyon_RugPatched_ClothBase" ParentName="DankPyon_PatchedRugBase" Abstract="True">
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugPatched_ClothBase">
+		<defName>DankPyon_RugPatched_Cloth1x1c</defName>
+		<label>patched cloth rug (1x1)</label>
+		<description>A roughly stiched rug made up of seperate cloth.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugPatched_Cloth_1x1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Beauty>3</Beauty>
+			<Mass>1.5</Mass>
+		</statBases>
+
+		<costStuffCount>25</costStuffCount>
+		<size>(1,1)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugPatched_ClothBase">
+		<defName>DankPyon_RugPatched_Cloth1x2c</defName>
+		<label>patched cloth rug (1x2)</label>
+		<description>A roughly stiched rug made up of seperate cloth.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugPatched_Cloth_1x2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Beauty>6</Beauty>
+			<Mass>3</Mass>
+		</statBases>
+    
+		<costStuffCount>50</costStuffCount>
+		<size>(2,1)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugPatched_ClothBase">
+		<defName>DankPyon_RugPatched_Cloth2x2c</defName>
+		<label>patched cloth rug (2x2)</label>
+		<description>A roughly stiched rug made up of seperate cloth.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugPatched_Cloth_2x2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Beauty>12</Beauty>
+			<Mass>6</Mass>
+		</statBases>
+    
+		<costStuffCount>100</costStuffCount>
+		<size>(2,2)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugPatched_ClothBase">
+		<defName>DankPyon_RugPatched_Cloth2x4c</defName>
+		<label>patched cloth rug (2x4)</label>
+		<description>A roughly stiched rug made up of seperate cloth.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugPatched_Cloth_2x4</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Beauty>24</Beauty>
+			<Mass>12</Mass>
+		</statBases>
+
+		<costStuffCount>200</costStuffCount>
+		<size>(2,4)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugPatched_ClothBase">
+		<defName>DankPyon_RugPatched_Cloth3x3c</defName>
+		<label>patched cloth rug (3x3)</label>
+		<description>A roughly stiched rug made up of seperate cloth.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugPatched_Cloth_3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Beauty>27</Beauty>
+			<Mass>13.5</Mass>
+		</statBases>
+
+		<costStuffCount>225</costStuffCount>
+		<size>(3,3)</size>
+	</ThingDef>
+
+	<!-- Royal Rugs -->
+	<!-- Base -->
+	<ThingDef Name="DankPyon_RugRoyalBase" ParentName="DankPyon_PatchedRugBase" Abstract="True">
+		<researchPrerequisites>
+			<li>DankPyon_RoyalRusticFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugRoyalBase">
+		<defName>DankPyon_RugRoyal_Lys2x3c</defName>
+		<label>royal lys rug (2x3)</label>
+		<description>A fancy intricate silk rug tailored for nobility.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugRoyal_Lys2x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,3)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Beauty>36</Beauty>
+			<Mass>9</Mass>
+		</statBases>
+
+		<costList>
+			<DankPyon_Silk>150</DankPyon_Silk>
+			<Gold>18</Gold>
+		</costList>
+
+		<size>(2,3)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugRoyalBase">
+		<defName>DankPyon_RugRoyal_LongLys2x4c</defName>
+		<label>long royal lys rug (2x4)</label>
+		<description>A fancy intricate silk rug tailored for nobility.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugRoyal_LongLys2x4</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Beauty>48</Beauty>
+			<Mass>12</Mass>
+		</statBases>
+
+		<costList>
+			<DankPyon_Silk>200</DankPyon_Silk>
+			<Gold>24</Gold>
+		</costList>
+
+		<size>(2,4)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugRoyalBase">
+		<defName>DankPyon_RugRoyal_LongLys3x3c</defName>
+		<label>royal cross rug (3x3)</label>
+		<description>A fancy intricate silk rug tailored for nobility.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugRoyal_Cross3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>27000</WorkToMake>
+			<Beauty>54</Beauty>
+			<Mass>13.5</Mass>
+		</statBases>
+
+		<costList>
+			<DankPyon_Silk>225</DankPyon_Silk>
+			<Gold>27</Gold>
+		</costList>
+
+		<size>(3,3)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugRoyalBase">
+		<defName>DankPyon_RugRoyal_GrandCross3x3c</defName>
+		<label>grand royal cross rug (4x6)</label>
+		<description>A fancy intricate silk rug tailored for nobility.</description>
+		<graphicData>
+			<texPath>Furniture/RugsCraftable/RugRoyal_Cross3x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,6)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>72000</WorkToMake>
+			<Beauty>144</Beauty>
+			<Mass>36</Mass>
+		</statBases>
+
+		<costList>
+			<DankPyon_Silk>600</DankPyon_Silk>
+			<Gold>36</Gold>
+		</costList>
+
+		<size>(4,6)</size>
+	</ThingDef>
+
+	<!--============================== Non Craftable Rugs ==============================-->
+	<!-- Base -->
+	<ThingDef Name="DankPyon_Rug_LootOnlyBase" ParentName="DankPyon_PatchedRugBase" Abstract="True">
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Rug_LootOnlyBase" Name="DankPyon_RugLoot_LysBase">
+		<defName>DankPyon_RugLoot_Lys_DeepGreen2x3c</defName>
+		<label>deep green lys rug (2x3)</label>
+		<description>A fancy intricate silk rug tailored for nobility.</description>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugLys_DeepGreen2x3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,3)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Beauty>18</Beauty>
+			<Mass>9</Mass>
+		</statBases>
+
+		<costList>
+			<DankPyon_Silk>150</DankPyon_Silk>
+		</costList>
+
+		<size>(2,3)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugLoot_LysBase">
+		<defName>DankPyon_RugLoot_Lys_Lime2x3c</defName>
+		<label>lime lys rug (2x3)</label>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugLys_Lime2x3</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugLoot_LysBase">
+		<defName>DankPyon_RugLoot_Lys_Blue2x3c</defName>
+		<label>blue lys rug (2x3)</label>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugLys_Blue2x3</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugLoot_LysBase">
+		<defName>DankPyon_RugLoot_Lys_Red2x3c</defName>
+		<label>red lys rug (2x3)</label>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugLys_Red2x3</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Rug_LootOnlyBase" Name="DankPyon_RugLoot_DiamondBase">
+		<defName>DankPyon_RugLoot_Diamond_DeepGreen2x4c</defName>
+		<label>deep green diamond rug (2x4)</label>
+		<description>A fancy intricate silk rug tailored for nobility.</description>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugDiamond_DeepGreen2x4</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Beauty>24</Beauty>
+			<Mass>12</Mass>
+		</statBases>
+
+		<costList>
+			<DankPyon_Silk>200</DankPyon_Silk>
+		</costList>
+		<size>(2,4)</size>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugLoot_DiamondBase">
+		<defName>DankPyon_RugLoot_Diamond_RedYellow2x4c</defName>
+		<label>red-yellow diamond rug (2x4)</label>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugDiamond_RedYellow2x4</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugLoot_DiamondBase">
+		<defName>DankPyon_RugLoot_Diamond_LimeRed2x4c</defName>
+		<label>lime-red diamond rug (2x4)</label>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugDiamond_LimeRed</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugLoot_DiamondBase">
+		<defName>DankPyon_RugLoot_Diamond_RGB2x4c</defName>
+		<label>checkered diamond rug (2x4)</label>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugDiamond_RGB2x4</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugLoot_DiamondBase">
+		<defName>DankPyon_RugLoot_Striped_RGB2x4c</defName>
+		<label>deep green striped rug (2x4)</label>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugStripe_BeigeDeepGreen2x4</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RugLoot_DiamondBase">
+		<defName>DankPyon_RugLoot_Striped_BlueLime2x4c</defName>
+		<label>blue-lime striped rug (2x4)</label>
+		<graphicData>
+			<texPath>Furniture/RugsNonCraftable/RugStripe_BlueLime2x4</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<!--============================== Animal Rugs ==============================-->
+	<!-- ========== Animal Rugs ==========-->
 	<ThingDef ParentName="DankPyon_FurnitureBaseRug">
 		<defName>DankPyon_RugHyena2x2c</defName>
 		<label>hyena rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Hyena rugs are small but the lavish patterns, from stripes to dots, make the piece a beautiful addition to decor.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugHyena2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -131,7 +509,6 @@
 		<defName>DankPyon_RugWolfTimber2x2c</defName>
 		<label>timber wolf rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The grizzled grayish-brown fur of the timber wolf may make for a valuable rug but comes with a high cost as the hunter will likely face the beast in a pack.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugWolfTimber2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -152,7 +529,6 @@
 		<defName>DankPyon_RugWolfArctic2x2c</defName>
 		<label>arctic wolf rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. A variant of the wolf, arctic wolf rugs tell the story of a hunter who braved dangerous temperatures and conquered starving predators biologically designed for survival.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugWolfArctic2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -173,7 +549,6 @@
 		<defName>DankPyon_RugCougar2x2c</defName>
 		<label>cougar rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Cougars are prized for their luxurious pelts, which in turn makes for a valuable alternative to basic rugs.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugCougar2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -194,7 +569,6 @@
 		<defName>DankPyon_RugPanther2x2c</defName>
 		<label>panther rug (2x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Panther rugs, much like the animals themselves, fall into shadows during the night but marbled eyes illuminate in the darkness.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugPanther2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -215,7 +589,6 @@
 		<defName>DankPyon_RugGrizzlyBear3x3c</defName>
 		<label>grizzly bear rug (3x3)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The bear’s great coat is one of the most sought-after materials for animal-skinned rugs, making the grizzly bear rug a worthy choice for the daring colonist brave enough to face the hunt.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugBearGrizzly3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -236,7 +609,6 @@
 		<defName>DankPyon_RugPolarBear3x3c</defName>
 		<label>polar bear rug (3x3)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The polar bears found in frozen climates host great white fur that makes for cold-resistant rugs. Especially valuable to homesteads found in cold temperatures.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugBearPolar3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -257,7 +629,6 @@
 		<defName>DankPyon_RugRox3x3c</defName>
 		<label>rox rug (3x3)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The polar bears found in frozen climates host great white fur that makes for cold-resistant rugs. Especially valuable to homesteads found in cold temperatures.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugRox3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -279,7 +650,6 @@
 		<defName>DankPyon_RugThrumbo3x3c</defName>
 		<label>thrumbo rug (3x3)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Few hunters can craft a trophy with a more refined and resistant coat than that of the thrumbo rug. Its long fur can catch the eye of any colonist, but the strong hide requires much work to tailor. Beware the horn while walking.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugThrumbo3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -300,7 +670,6 @@
 		<defName>DankPyon_RugDaer4x4c</defName>
 		<label>daer rug (4x4)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Few hunters can craft a trophy with a more refined and resistant coat than that of the thrumbo rug. Its long fur can catch the eye of any colonist, but the strong hide requires much work to tailor. Beware the horn while walking.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugDaer4x4</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -321,7 +690,6 @@
 		<defName>DankPyon_RugHuman1x2c</defName>
 		<label>human rug (1x2)</label>
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Human rugs are prized trophies admired by some and loathed by others, but like-minded cannibals will find comfort in its decor.</description>
-		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Furniture/RugHuman1x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

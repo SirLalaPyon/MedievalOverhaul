@@ -166,6 +166,63 @@
 		</researchPrerequisites>
 	</ThingDef>
 
+	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+		<defName>DankPyon_RoyalThrone</defName>
+		<label>royal throne</label>
+		<description>A grand, ornate chair made for a king or queen, symbolizing their authority and power. It is often decorated with rich fabrics, carvings, and precious metals.</description>
+		<graphicData>
+			<texPath>Furniture/SimpleThrone</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.5,2.5)</drawSize>
+			<shadowData>
+				<volume>(0.5,0.35,0.4)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0,2, 0.6, 0.6)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>22000</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>45</Beauty>
+			<Comfort>0.95</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>125</costStuffCount>
+
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+
+		<building>
+			<isSittable>true</isSittable>
+			<paintable>true</paintable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+		<socialPropernessMatters>true</socialPropernessMatters>
+
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		
+		<researchPrerequisites>
+			<li>DankPyon_RoyalRusticFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 	<!-- Royal Tables -->
 	<ThingDef ParentName="DankPyon_TableGatherSpotBase">
 		<defName>DankPyon_RoyalTable2x2c</defName>

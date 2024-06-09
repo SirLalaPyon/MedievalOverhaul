@@ -1,12 +1,344 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- Placeable Furniture on Top of Tables Base-->
+	<ThingDef ParentName="FurnitureBase" Name="DankPyon_PlaceableFurnitureOnTopOfTables" Abstract="true">
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<fillPercent>0.1</fillPercent>
+		<pathCost>0</pathCost>
+
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<uiIconOffset>(0, 0.25)</uiIconOffset>
+
+		<building>
+			<paintable>false</paintable>
+			<isEdifice>false</isEdifice>
+		</building>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>1</Mass>
+			<WorkToBuild>0</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Styleable" Inherit="False"/>
+		</comps>
+
+		<size>(1,1)</size>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
+	</ThingDef>
+
+	<!-- Table Cloth Has goofy ah rendering issue when placed together with other placeables, needs its own altitude layer -->
+	<!-- <ThingDef ParentName="DankPyon_PlaceableFurnitureOnTopOfTables">
+		<defName>DankPyon_OnTop_TableCloth_1x2c</defName>
+		<label>table cover</label>
+		<description>A table cover. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/TableCloth_1x2</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		
+
+		<costList>
+			<Milk>1</Milk>
+		</costList>
+	</ThingDef> -->
+
+	<!-- Beverages -->
+	<ThingDef ParentName="DankPyon_PlaceableFurnitureOnTopOfTables" Name="DankPyon_BeveragesGroup" Abstract="true">
+		<designatorDropdown>DankPyon_Beverages</designatorDropdown>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BeveragesGroup">
+		<defName>DankPyon_OnTop_Bottle_Milk</defName>
+		<label>empty milk jar</label>
+		<description>An empty milk jar. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Bottle_Milk</texPath>
+		</graphicData>
+
+		<costList>
+			<Milk>1</Milk>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BeveragesGroup">
+		<defName>DankPyon_OnTop_Bottle_Ale</defName>
+		<label>empty ale mug</label>
+		<description>An empty ale mug. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Bottle_Ale</texPath>
+		</graphicData>
+
+		<costList Inherit="false">
+			<DankPyon_Ale>1</DankPyon_Ale>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BeveragesGroup">
+		<defName>DankPyon_OnTop_Bottle_Mead</defName>
+		<label>empty mead bottle</label>
+		<description>An empty mead bottle. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Bottle_Mead</texPath>
+		</graphicData>
+
+		<costList Inherit="false">
+			<DankPyon_Mead>1</DankPyon_Mead>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BeveragesGroup">
+		<defName>DankPyon_OnTop_Bottle_Wine</defName>
+		<label>empty wine bottle</label>
+		<description>An empty wine bottle. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Bottle_Wine</texPath>
+		</graphicData>
+		
+		<statBases>
+			<Beauty>5</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<costList Inherit="false">
+			<DankPyon_Wine>1</DankPyon_Wine>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BeveragesGroup">
+		<defName>DankPyon_OnTop_Bottle_MulberryWine</defName>
+		<label>empty mulberry wine bottle</label>
+		<description>An empty mulberry wine bottle. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Bottle_MulberryWine</texPath>
+		</graphicData>
+		
+		<statBases>
+			<Beauty>5</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<costList Inherit="false">
+			<DankPyon_Wine_Mulberry>1</DankPyon_Wine_Mulberry>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BeveragesGroup">
+		<defName>DankPyon_OnTop_Bottle_IceWine</defName>
+		<label>empty ice wine bottle</label>
+		<description>An empty mulberry wine bottle. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Bottle_IceWine</texPath>
+		</graphicData>
+		
+		<statBases>
+			<Beauty>10</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<costList Inherit="false">
+			<DankPyon_Wine_Ice>1</DankPyon_Wine_Ice>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BeveragesGroup">
+		<defName>DankPyon_OnTop_Bottle_GriffonWine</defName>
+		<label>empty griffon wine bottle</label>
+		<description>An empty griffon wine bottle. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Bottle_GriffonWine</texPath>
+		</graphicData>
+		
+		<statBases>
+			<Beauty>10</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<costList Inherit="false">
+			<DankPyon_Wine_Griffon>1</DankPyon_Wine_Griffon>
+		</costList>
+	</ThingDef>
+
+	<!-- Scribe Tools -->
+	<ThingDef ParentName="DankPyon_PlaceableFurnitureOnTopOfTables" Name="DankPyon_ScribeToolsGroup" Abstract="true">
+		<designatorDropdown>DankPyon_ScribeTools</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ScribeToolsGroup">
+		<defName>DankPyon_OnTop_Scribe_StackPaper</defName>
+		<label>ruined paper</label>
+		<description>Ruined stack of paper, wet, torn, and disheveled. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/StackPaper</texPath>
+		</graphicData>
+
+		<costList>
+			<DankPyon_Paper>25</DankPyon_Paper>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ScribeToolsGroup">
+		<defName>DankPyon_OnTop_Scribe_ScrollAndInkwell</defName>
+		<label>ruined scroll and quill</label>
+		<description>Ruined torn scroll and dull-tipped quill. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/ScrollAndQuill</texPath>
+		</graphicData>
+
+		<costList>
+			<DankPyon_Paper>25</DankPyon_Paper>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ScribeToolsGroup">
+		<defName>DankPyon_OnTop_Scribe_Book</defName>
+		<label>ruined book</label>
+		<description>Ruined book, wet, torn, and disheveled. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Book</texPath>
+		</graphicData>
+
+		<costList>
+			<DankPyon_Paper>50</DankPyon_Paper>
+		</costList>
+	</ThingDef>
+
+	<!-- Kitchen Tools -->
+	<ThingDef ParentName="DankPyon_PlaceableFurnitureOnTopOfTables" Name="DankPyon_KitchenGroup_Base" Abstract="true">
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_KitchenGroup_Base">
+		<defName>DankPyon_OnTop_Kitchen_Bowl</defName>
+		<label>empty bowl</label>
+		<description>An empty bowl. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Bowl</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_KitchenGroup_Base">
+		<defName>DankPyon_OnTop_Kitchen_Plate</defName>
+		<label>empty plate</label>
+		<description>An empty plate. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Plate</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_KitchenGroup_Base">
+		<defName>DankPyon_OnTop_Kitchen_CookingPot</defName>
+		<label>empty cooking pot</label>
+		<description>An empty cooking pot. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/CookingPot</texPath>
+		</graphicData>
+		<costStuffCount>20</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_KitchenGroup_Base">
+		<defName>DankPyon_OnTop_Kitchen_Cup</defName>
+		<label>empty cup</label>
+		<description>An empty cup. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Cup</texPath>
+		</graphicData>
+		<costStuffCount>10</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_KitchenGroup_Base">
+		<defName>DankPyon_OnTop_Kitchen_EmbeddedCleaver</defName>
+		<label>embedded cleaver</label>
+		<description>A cleaver stuck to a surface. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/EmbeddedCleaver</texPath>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- Research and Alchemy Tools -->
+	<ThingDef ParentName="DankPyon_PlaceableFurnitureOnTopOfTables" Name="DankPyon_ResearchToolsGroup" Abstract="true">
+		<designatorDropdown>DankPyon_ResearchTools</designatorDropdown>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ResearchToolsGroup">
+		<defName>DankPyon_OnTop_Research_Flasks</defName>
+		<label>inert flasks</label>
+		<description>Chemically inactive flasks. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/ResearchFlask</texPath>
+		</graphicData>
+
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ResearchToolsGroup">
+		<defName>DankPyon_OnTop_Research_Vials</defName>
+		<label>inert vials</label>
+		<description>Chemically inactive vials. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/Vials</texPath>
+		</graphicData>
+
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ResearchToolsGroup">
+		<defName>DankPyon_OnTop_Alchemy_MortarAndPestle</defName>
+		<label>ruined mortar and pestle</label>
+		<description>A mortar and pestle in poor condition. Can be placed on top of tables for decoration.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/Props/MortarAndPestle</texPath>
+		</graphicData>
+
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+	</ThingDef>
 
 	<!-- Fountain -->
 	<ThingDef ParentName="DankPyon_ArtableFurnitureBase">
 		<defName>DankPyon_Fountain1x1c</defName>
 		<label>small fountain</label>
 		<graphicData>
-			<texPath>Decoration/Fountain1x1</texPath>
+			<texPath>Furniture/Decoration/Fountain1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -40,7 +372,7 @@
 		<defName>DankPyon_Fountain2x2c</defName>
 		<label>large fountain</label>
 		<graphicData>
-			<texPath>Decoration/Fountain2x2</texPath>
+			<texPath>Furniture/Decoration/Fountain2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -76,7 +408,7 @@
 		<description>A barrel filled with water to clean oneself or the surroundings</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Decoration/BarrelWater</texPath>
+			<texPath>Furniture/Decoration/BarrelWater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -123,19 +455,73 @@
 		</researchPrerequisites>
 	</ThingDef>
 
+	<!--Wall Banner-->
+	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+		<defName>DankPyon_WallBanner1x2c</defName>
+		<label>wall banner (1x2)</label>
+		<description>A decorative wall banner. Can be mounted on walls.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/BannerFlag</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,2)</drawSize>
+			<drawOffsetNorth>(0,0,0.25)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.2)</drawOffsetSouth>
+			<drawOffsetWest>(-0.27,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.27,0,0)</drawOffsetEast>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<size>(2,1)</size>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded IsNull="True" />
+		<pathCost>0</pathCost>
+
+		<building>
+			<isEdifice>false</isEdifice>
+			<isAttachment>true</isAttachment>
+		</building>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<placeWorkers>
+			<li>Placeworker_AttachedToWall</li>
+		</placeWorkers>
+
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">8</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
+	</ThingDef>
+
 	<!--======================================== Divider ========================================-->
+	<!-- Thin Divider -->
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
 		<defName>DankPyon_RusticRoomDivider1x2c</defName>
 		<label>room divider (1x2)</label>
 		<description>A basic room divider that keeps the privacy of your pawns.</description>
 		<graphicData>
-			<texPath>Decoration/RoomDivider1x2</texPath>
+			<texPath>Furniture/Decoration/RoomDivider1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,2)</drawSize>
 		</graphicData>
-		<thingClass>Building</thingClass>
-		<uiIconScale>0.65</uiIconScale>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -158,8 +544,140 @@
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>45</costStuffCount>
-		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<costStuffCount>50</costStuffCount>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
+	</ThingDef>
+
+	<!-- Struct Divider -->
+	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+		<defName>DankPyon_RusticThickRoomDivider_Open1x2c</defName>
+		<label>thick open room divider (1x2)</label>
+		<description>A basic room divider that keeps the privacy of your pawns. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/ThickDividerWindow</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<!--uiIconScale>0.65</uiIconScale-->
+		<!--uiIconOffset>(0, 0.15)</uiIconOffset-->
+		<size>(2,1)</size>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.6</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>5</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">8</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
+	</ThingDef>
+
+	<!-- Struct Divider -->
+	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+		<defName>DankPyon_RusticThickRoomDivider_Closed1x2c</defName>
+		<label>thick covered room divider (1x2)</label>
+		<description>A basic room divider that keeps the privacy of your pawns. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/ThickDividerCovered</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<!--uiIconScale>0.65</uiIconScale-->
+		<!--uiIconOffset>(0, 0.15)</uiIconOffset-->
+		<size>(2,1)</size>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.6</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>5</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">8</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticDecoration</designationCategory>
+	</ThingDef>
+
+	<!-- Struct Column -->
+	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+		<defName>DankPyon_DividerColumn</defName>
+		<label>tall divider column (1x2)</label>
+		<description>A column capable of holding a roof. Does not block sight or movement and looks quite nice.</description>
+		<graphicData>
+			<texPath>Furniture/Decoration/TallColumn</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.55</uiIconScale>
+		<!--uiIconOffset>(0, 0.15)</uiIconOffset-->
+		<size>(1,1)</size>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.25</fillPercent>
+		<pathCost>0</pathCost>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+    	<specialDisplayRadius>6.9</specialDisplayRadius>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1</Flammability>
+			<Beauty>5</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 		<designationCategory>DankPyon_RusticDecoration</designationCategory>
 	</ThingDef>
 
@@ -170,7 +688,7 @@
 		<description>A wooden hanging sign use to symbolize the purpose of a room.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Decoration/Signs/SignTavern</texPath>
+			<texPath>Furniture/Decoration/Signs/SignTavern</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -209,7 +727,7 @@
 		<defName>DankPyon_Sign_Bread</defName>
 		<label>bakery sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignBakery</texPath>
+			<texPath>Furniture/Decoration/Signs/SignBakery</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -217,7 +735,7 @@
 		<defName>DankPyon_Sign_Butcher</defName>
 		<label>butcher sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignButcher</texPath>
+			<texPath>Furniture/Decoration/Signs/SignButcher</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -225,7 +743,7 @@
 		<defName>DankPyon_Sign_Smith</defName>
 		<label>smith sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignSmith</texPath>
+			<texPath>Furniture/Decoration/Signs/SignSmith</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -233,7 +751,7 @@
 		<defName>DankPyon_Sign_Apothecary</defName>
 		<label>apothecary sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignHerbalist</texPath>
+			<texPath>Furniture/Decoration/Signs/SignHerbalist</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -241,7 +759,7 @@
 		<defName>DankPyon_Sign_Jewelry</defName>
 		<label>jewelry sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignJewelry</texPath>
+			<texPath>Furniture/Decoration/Signs/SignJewelry</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -249,7 +767,7 @@
 		<defName>DankPyon_Sign_Library</defName>
 		<label>library sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignBook</texPath>
+			<texPath>Furniture/Decoration/Signs/SignBook</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -257,7 +775,7 @@
 		<defName>DankPyon_Sign_Tailor</defName>
 		<label>tailor sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignTailor</texPath>
+			<texPath>Furniture/Decoration/Signs/SignTailor</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -265,7 +783,7 @@
 		<defName>DankPyon_Sign_Woodworking</defName>
 		<label>woodworking sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignWoodworking</texPath>
+			<texPath>Furniture/Decoration/Signs/SignWoodworking</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -273,7 +791,7 @@
 		<defName>DankPyon_Sign_Barn</defName>
 		<label>barn sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignBarn</texPath>
+			<texPath>Furniture/Decoration/Signs/SignBarn</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -281,7 +799,7 @@
 		<defName>DankPyon_Sign_Winery</defName>
 		<label>winery sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignWinery</texPath>
+			<texPath>Furniture/Decoration/Signs/SignWinery</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -289,7 +807,7 @@
 		<defName>DankPyon_Sign_Scribe</defName>
 		<label>scribe sign</label>
 		<graphicData>
-			<texPath>Decoration/Signs/SignScribe</texPath>
+			<texPath>Furniture/Decoration/Signs/SignScribe</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

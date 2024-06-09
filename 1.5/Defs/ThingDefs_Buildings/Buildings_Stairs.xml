@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--============================== Base ==============================-->
+	<ThingDef Name="DankPyon_Stairs_Base" ParentName="BuildingBase" Abstract="True">
+		<altitudeLayer>FloorCoverings</altitudeLayer>
+		<wipesPlants>true</wipesPlants>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+
+		<selectable>true</selectable>
+		<useHitPoints>true</useHitPoints>
+    	<defaultPlacingRot>North</defaultPlacingRot>
+		<!--canGenerateDefaultDesignator>false</canGenerateDefaultDesignator-->
+		<blocksAltitudes>
+			<li>FloorCoverings</li>
+		</blocksAltitudes>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<rotatable>false</rotatable>
+	
+		<researchPrerequisites>
+			<li>DankPyon_Tailoring</li>
+		</researchPrerequisites>
+
+		<!--For Testing-->
+		<!--designationCategory>DankPyon_RusticDecoration</designationCategory-->
+	</ThingDef>
+
+	<!--============================== Stairs ==============================-->
+	<!-- <ThingDef ParentName="DankPyon_Stairs_Base">
+		<defName>DankPyon_Stair_Down_Spiral_Stone_2x2c</defName>
+		<label>ancient entrance</label>
+		<description>An aged and curmbling passage below. Enter to explore the hidden depths of the dungeon.</description>
+		<graphicData>
+			<texPath>Stairs/Stair_Down_Spiral_Stone_2x2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+    
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Beauty>12</Beauty>
+			<Mass>6</Mass>
+		</statBases>
+
+		<comps>
+            <li Class="KCSG.UndergroundRoom.CompProperties_UndergroundPassage">
+                <mapLayouts>
+                    <li>DankPyon_SmallHideoutGroup1_1stFloor</li>
+                </mapLayouts>
+            </li>
+        </comps>
+
+
+    	<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<size>(2,2)</size>
+	</ThingDef> -->
+
+</Defs>

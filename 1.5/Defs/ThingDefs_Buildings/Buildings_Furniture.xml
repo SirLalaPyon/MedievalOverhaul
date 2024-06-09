@@ -96,22 +96,48 @@
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
 	</ThingDef>
+
+	<!-- New Bed Base-->
+	<ThingDef Abstract="True" ParentName="SansComfortBedBase" Name="DankPyon_BasicBedBase">
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+
+		<statBases>
+			<Comfort>0.75</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticDresser</li>
+					<li>DankPyon_RusticCloset</li>
+					<li>DankPyon_RusticCloset1x2c</li>
+					<li>DankPyon_RusticChest</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+	</ThingDef>
+
 	<!--======================= ======================== ==============================-->
 	<!--=========================== Actual Furniture  =================================-->
 	<ThingDef ParentName="TorchLamp">
 		<defName>DankPyon_RusticTorchLamp</defName>
-		<label>rustic torch lamp</label>
-		<description>A rustic wooden torch for lighting an area. People need light to move and work at full speed. Can be automatically refueled with wood. Produces a small amount of heat.</description>
-		<category>Building</category>
+		<label>rustic torch</label>
+		<description>A wooden torch for lighting an area. People need light to move and work at full speed. Can be automatically refueled with wood. Produces a small amount of heat.</description>
 		<graphicData>
 			<texPath>Furniture/RusticTorch</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawRotated>false</drawRotated>
 			<damageData>
 				<rect>(0.35,0.35,0.3,0.3)</rect>
 			</damageData>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
+		<rotatable>true</rotatable>
 		<uiIconPath>Furniture/RusticTorch_MenuIcon</uiIconPath>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<pathCost>14</pathCost>
@@ -125,53 +151,63 @@
 		<soundImpactDefault Inherit="false"/>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase" Name="DankPyon_WallTorchBase">
+	<ThingDef ParentName="DankPyon_BuildingBase">
 		<defName>DankPyon_WallTorch</defName>
-		<label>wall torch</label>
-		<description>A wall torch for lighting an area. People need light to move and work at full speed. Can be automatically refueled with wood. Produces a small amount of heat.</description>
+		<label>rustic wall torch</label>
+		<description>A wall-mounted wooden torch for lighting an area. It is slightly less brighter than a regular torch lamp, but it can be mounted on walls. Produces a small amount of heat.</description>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Furniture/WallTorch</texPath>
+			<texPath>Furniture/RusticWallTorch</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawOffsetNorth>(0,0,1)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-1)</drawOffsetSouth>
+			<drawOffsetWest>(-1,0,0)</drawOffsetWest>
+			<drawOffsetEast>(1,0,0)</drawOffsetEast>
 			<damageData>
-				<rect>(0.35,0.35,0.3,0.3)</rect>
+				<enabled>false</enabled>
 			</damageData>
-			<drawSize>(1.5,1.5)</drawSize>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Furniture/WallTorch_MenuIcon</uiIconPath>
+		<uiIconPath>Furniture/RusticWallTorch_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
+
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>14</pathCost>
+		<passability>Standable</passability>
+		<terrainAffordanceNeeded IsNull="True" />
+		<pathCost>0</pathCost>
+		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<fillPercent>0.15</fillPercent>
+
 		<statBases>
-			<MaxHitPoints>75</MaxHitPoints>
+			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
 			<Flammability>0</Flammability>
 			<MeditationFocusStrength>0.0</MeditationFocusStrength>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		<selectable>true</selectable>
+		
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
-		<defaultPlacingRot>South</defaultPlacingRot>
+		<costStuffCount>15</costStuffCount>
+		
 		<building>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-			<isInert>true</isInert>
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
+      		<isAttachment>true</isAttachment>
 		</building>
+
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
-			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+			<li>Placeworker_AttachedToWall</li>
+			<li>PlaceWorker_GlowRadius</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
@@ -192,7 +228,7 @@
 				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
 				<colorOptions>
 					<li>
-						<glowRadius>10</glowRadius>
+						<glowRadius>9</glowRadius>
 						<glowColor>(252,187,113,0)</glowColor>
 					</li>
 				</colorOptions>
@@ -202,13 +238,12 @@
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
-			<li Class="VanillaFurnitureExpanded.CompProperties_FireOverlayRotatable">
-				<fireSize>0.5</fireSize>
-				<northOffset>(0.01, 0, 0.70)</northOffset>
-				<southOffset>(0.01, 0, -0.10)</southOffset>
-				<eastOffset>(-0.38, 0, 0.54)</eastOffset>
-				<westOffset>(0.38, 0, 0.54)</westOffset>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.45</fireSize>
+				<offsetNorth>(0,0,-0.175)</offsetNorth>
+				<offsetSouth>(0,0,0.675)</offsetSouth>
+				<offsetWest>(0.475,0,0.20)</offsetWest>
+				<offsetEast>(-0.475,0,0.20)</offsetEast>
 			</li>
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
@@ -230,81 +265,91 @@
 					<maxBuildings>8</maxBuildings>
 					<explanationKey>MeditationFocusPerFlame</explanationKey>
 					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					<drawRingRadius>false</drawRingRadius>
 				</li>
 				</offsets>
 			</li>
 		</comps>
-		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="DankPyon_BuildingBase">
 		<defName>DankPyon_WallLamp</defName>
-		<label>wall lamp</label>
-		<description>A metal wall lamp for lighting an area. People need light to move and work at full speed. Can be automatically refueled with wood. Produces a small amount of heat.</description>
+		<label>wall oil lamp</label>
+		<description>A wall-mounted metallic oil lamp that shines bright as a regular torch and lasts longer. Can be refueled with tar. Fuel consumption rate is not affected by rain.</description>
 		<category>Building</category>
 		<graphicData>
 			<texPath>Furniture/WallLamp</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawOffsetNorth>(0,0,1)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-1)</drawOffsetSouth>
+			<drawOffsetWest>(-1,0,0)</drawOffsetWest>
+			<drawOffsetEast>(1,0,0)</drawOffsetEast>
 			<damageData>
-				<rect>(0.35,0.35,0.3,0.3)</rect>
+				<enabled>false</enabled>
 			</damageData>
-			<drawSize>(1.5,1.5)</drawSize>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<uiIconPath>Furniture/WallLamp_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
+
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>14</pathCost>
+		<passability>Standable</passability>
+		<terrainAffordanceNeeded IsNull="True" />
+		<pathCost>0</pathCost>
+		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<fillPercent>0.15</fillPercent>
+
 		<statBases>
-			<MaxHitPoints>75</MaxHitPoints>
-			<WorkToBuild>150</WorkToBuild>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
 			<Flammability>0</Flammability>
 			<MeditationFocusStrength>0.0</MeditationFocusStrength>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		<selectable>true</selectable>
+		
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>20</costStuffCount>
-		<defaultPlacingRot>South</defaultPlacingRot>
+		<costStuffCount>15</costStuffCount>
+		
 		<building>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-			<isInert>true</isInert>
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
+      		<isAttachment>true</isAttachment>
 		</building>
-		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
-			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+			<li>Placeworker_AttachedToWall</li>
+			<li>PlaceWorker_GlowRadius</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
 			<li Class="CompProperties_Styleable" />
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>1.5</fuelConsumptionRate>
-				<fuelCapacity>40.0</fuelCapacity>
-				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelCapacity>20.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 				<thingDefs>
-					<li>WoodLog</li>
+					<li>DankPyon_Tar</li>
 				</thingDefs>
 				</fuelFilter>
-				<initialFuelPercent>1</initialFuelPercent>
+				<initialFuelPercent>0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
 				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
 				<colorOptions>
 					<li>
-						<glowRadius>10</glowRadius>
+						<glowRadius>9</glowRadius>
 						<glowColor>(252,187,113,0)</glowColor>
 					</li>
 				</colorOptions>
@@ -314,15 +359,38 @@
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes><li>Flame</li></focusTypes>
+				<offsets>
+				<li Class="FocusStrengthOffset_Lit">
+					<offset>0.1</offset>
+				</li>
+				<li Class="FocusStrengthOffset_BuildingDefsLit">
+					<defs>
+					<li>Campfire</li>
+					<li>TorchLamp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+					</defs>
+					<offsetPerBuilding>0.01</offsetPerBuilding>
+					<radius>9.9</radius>
+					<maxBuildings>8</maxBuildings>
+					<explanationKey>MeditationFocusPerFlame</explanationKey>
+					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					<drawRingRadius>false</drawRingRadius>
+				</li>
+				</offsets>
+			</li>
 		</comps>
-		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+
 		<researchPrerequisites>
-			<li>DankPyon_RusticFurniture</li>
+			<li>Smithing</li>
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="DankPyon_BuildingBase">
 		<defName>DankPyon_LampPost</defName>
 		<label>lamp post</label>
 		<description>A lamp post for lighting an area. People need light to move and work at full speed. Can be automatically refueled with wood. Produces a small amount of heat.</description>
@@ -744,7 +812,7 @@
 		<graphicData>
 			<texPath>Furniture/RusticChair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
 				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
@@ -786,7 +854,7 @@
 		<graphicData>
 			<texPath>Furniture/RusticNobleChair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,3)</drawSize>
+			<drawSize>(2.5,2.5)</drawSize>
 			<damageData>
 				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
 				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
@@ -1273,45 +1341,50 @@
 	</ThingDef>
 
 	<!-- ======================== Lighting ======================= -->
-	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleBase">
-		<defName>DankPyon_Candles</defName>
-		<label>candles</label>
-		<description>A candle to prevent darkness seeping in your room. Can be refueled with animal tallow.</description>
+	<!--Candles-->
+	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_SingleCandleBase">
+		<defName>DankPyon_Candle</defName>
+		<label>candle (tallow)</label>
+		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow.</description>
 		<graphicData>
-			<texPath>Furniture/Candles</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawRotated>false</drawRotated>
+			<texPath>Furniture/RusticCandle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<rect>(0.35,0.35,0.3,0.3)</rect>
 			</damageData>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		<uiIconPath>Furniture/Candles_MenuIcon</uiIconPath>
-		<category>Building</category>
-		<rotatable>false</rotatable>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<pathCost>4</pathCost>
+		<pathCost>14</pathCost>
 		<constructEffect>ConstructWood</constructEffect>
-		<tickerType>Normal</tickerType>
-		<drawerType>RealtimeOnly</drawerType>
 		<fillPercent>0.15</fillPercent>
+
+		<uiIconPath>Furniture/RusticCandle_MenuIcon</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+
 		<statBases>
-			<Beauty>5</Beauty>
-			<MaxHitPoints>20</MaxHitPoints>
+			<Beauty>3</Beauty>
+			<MaxHitPoints>60</MaxHitPoints>
 			<WorkToBuild>250</WorkToBuild>
 			<Flammability>0</Flammability>
-			<Mass>0.2</Mass>
+			<Mass>0.5</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		<selectable>true</selectable>
+
 		<costList>
-			<DankPyon_Tallow>5</DankPyon_Tallow>
+			<DankPyon_Tallow>10</DankPyon_Tallow>
 		</costList>
+
+		<selectable>true</selectable>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>			
+		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel graphic overlay-->
+
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
-		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<clearBuildingArea>false</clearBuildingArea>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -1320,73 +1393,80 @@
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+			<li>PlaceWorker_Heater</li>
+      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		
 		<comps>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
-				<fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
 						<li>DankPyon_Tallow</li>
 					</thingDefs>
 				</fuelFilter>
-				<destroyOnNoFuel>false</destroyOnNoFuel>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>3.5</heatPerSecond>
-				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+				<heatPerSecond>1</heatPerSecond>
+				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>5</glowRadius>
-				<glowColor>(252,187,113,0)</glowColor>
-			</li>
-			<li Class="CompProperties_FireOverlay">
-				<fireSize>0.5</fireSize>
-				<offset>(0,0,0.75)</offset>
+				<glowRadius>4</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
 			</li>
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes><li>Flame</li></focusTypes>
+				<focusTypes>
+				<li>Flame</li>
+				</focusTypes>
 				<offsets>
-					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefsLit">
-						<defs>
-							<li>Campfire</li>
-							<li>TorchLamp</li>
-							<li>DankPyon_Candles</li>
-							<li>DankPyon_CandleStand</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-						</defs>
-						<offsetPerBuilding>0.01</offsetPerBuilding>
-						<radius>9.9</radius>
-						<maxBuildings>8</maxBuildings>
-						<explanationKey>MeditationFocusPerFlame</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					</li>
+				<li Class="FocusStrengthOffset_Lit">
+					<offset>0.1</offset>
+				</li>
+				<li Class="FocusStrengthOffset_BuildingDefsLit">
+					<defs>
+					<li>Campfire</li>
+					<li>TorchLamp</li>
+					<li>TorchWallLamp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+					</defs>
+					<offsetPerBuilding>0.01</offsetPerBuilding>
+					<radius>9.9</radius>
+					<maxBuildings>8</maxBuildings>
+					<explanationKey>MeditationFocusPerFlame</explanationKey>
+					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					<drawRingRadius>false</drawRingRadius>
+				</li>
 				</offsets>
 			</li>
 		</comps>
 		<researchPrerequisites>
 			<li>DankPyon_CandleMaking</li>
 		</researchPrerequisites>
-		<designatorDropdown>DankPyon_Candles</designatorDropdown>
+		<designatorDropdown>DankPyon_Candle</designatorDropdown>
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_CandleBase">
-		<defName>DankPyon_Candles_Beeswax</defName>
-		<label>candles</label>
+	<ThingDef ParentName="DankPyon_SingleCandleBase">
+		<defName>DankPyon_Candle_Beeswax</defName>
+		<label>candle (wax)</label>
+		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with bee wax.</description>
 		<costList Inherit="False">
-			<DankPyon_Wax>5</DankPyon_Wax>
+			<DankPyon_Wax>10</DankPyon_Wax>
 		</costList>
 		<comps Inherit="false">
 			<li Class="CompProperties_Styleable"/>
@@ -1394,7 +1474,7 @@
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
-				<fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
 						<li>DankPyon_Wax</li>
@@ -1405,88 +1485,397 @@
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>3.5</heatPerSecond>
-				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+				<heatPerSecond>1</heatPerSecond>
+				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>5</glowRadius>
-				<glowColor>(252,187,113,0)</glowColor>
-			</li>
-			<li Class="CompProperties_FireOverlay">
-				<fireSize>0.5</fireSize>
-				<offset>(0,0,0.75)</offset>
+				<glowRadius>6</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
 			</li>
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes><li>Flame</li></focusTypes>
+				<focusTypes>
+				<li>Flame</li>
+				</focusTypes>
 				<offsets>
-					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefsLit">
-						<defs>
-							<li>Campfire</li>
-							<li>TorchLamp</li>
-							<li>DankPyon_Candles</li>
-							<li>DankPyon_CandleStand</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-						</defs>
-						<offsetPerBuilding>0.01</offsetPerBuilding>
-						<radius>9.9</radius>
-						<maxBuildings>8</maxBuildings>
-						<explanationKey>MeditationFocusPerFlame</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					</li>
+				<li Class="FocusStrengthOffset_Lit">
+					<offset>0.1</offset>
+				</li>
+				<li Class="FocusStrengthOffset_BuildingDefsLit">
+					<defs>
+					<li>Campfire</li>
+					<li>TorchLamp</li>
+					<li>TorchWallLamp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+					</defs>
+					<offsetPerBuilding>0.01</offsetPerBuilding>
+					<radius>9.9</radius>
+					<maxBuildings>8</maxBuildings>
+					<explanationKey>MeditationFocusPerFlame</explanationKey>
+					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					<drawRingRadius>false</drawRingRadius>
+				</li>
 				</offsets>
 			</li>
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleStandBase">
-		<defName>DankPyon_CandleStand</defName>
-		<label>candle stand (tallow)</label>
-		<description>A candle stand to prevent darkness seeping in your room. Can be refueled with tallow.</description>
+	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleBase">
+		<defName>DankPyon_Candles</defName>
+		<label>candles (tallow)</label>
+		<description>Candles to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow.</description>
 		<graphicData>
-			<texPath>Furniture/CandleStand</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawRotated>false</drawRotated>
+			<texPath>Furniture/RusticCandles</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<rect>(0.35,0.35,0.3,0.3)</rect>
 			</damageData>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		<uiIconScale>0.5</uiIconScale>
-		<category>Building</category>
-		<rotatable>false</rotatable>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		<pathCost>4</pathCost>
-		<tickerType>Normal</tickerType>
-		<drawerType>RealtimeOnly</drawerType>
+		<pathCost>14</pathCost>
+		<constructEffect>ConstructWood</constructEffect>
 		<fillPercent>0.15</fillPercent>
+
+		<uiIconPath>Furniture/RusticCandles_MenuIcon</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+
 		<statBases>
-			<Beauty>10</Beauty>
+			<Beauty>3</Beauty>
 			<MaxHitPoints>60</MaxHitPoints>
-			<WorkToBuild>600</WorkToBuild>
-			<Mass>0.2</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>0.5</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		<selectable>true</selectable>
+
 		<costList>
-			<DankPyon_Tallow>5</DankPyon_Tallow>
+			<DankPyon_Tallow>15</DankPyon_Tallow>
 		</costList>
+
+		<selectable>true</selectable>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>			
+		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel graphic overlay-->
+
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<clearBuildingArea>false</clearBuildingArea>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+			<li>PlaceWorker_Heater</li>
+      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelCapacity>20</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_Tallow</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>1</heatPerSecond>
+				<heatPushMaxTemperature>16</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+				<li>Flame</li>
+				</focusTypes>
+				<offsets>
+				<li Class="FocusStrengthOffset_Lit">
+					<offset>0.1</offset>
+				</li>
+				<li Class="FocusStrengthOffset_BuildingDefsLit">
+					<defs>
+					<li>Campfire</li>
+					<li>TorchLamp</li>
+					<li>TorchWallLamp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+					</defs>
+					<offsetPerBuilding>0.01</offsetPerBuilding>
+					<radius>9.9</radius>
+					<maxBuildings>8</maxBuildings>
+					<explanationKey>MeditationFocusPerFlame</explanationKey>
+					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					<drawRingRadius>false</drawRingRadius>
+				</li>
+				</offsets>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>DankPyon_CandleMaking</li>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designatorDropdown>DankPyon_Candles</designatorDropdown>
+		<modExtensions>
+			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_CandleBase">
+		<defName>DankPyon_Candles_Beeswax</defName>
+		<label>candles (wax)</label>
+		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with bee wax.</description>
+		<costList Inherit="False">
+			<DankPyon_Wax>15</DankPyon_Wax>
+		</costList>
+		<comps Inherit="false">
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelCapacity>20</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_Wax</li>
+					</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>1</heatPerSecond>
+				<heatPushMaxTemperature>16</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+				<li>Flame</li>
+				</focusTypes>
+				<offsets>
+				<li Class="FocusStrengthOffset_Lit">
+					<offset>0.1</offset>
+				</li>
+				<li Class="FocusStrengthOffset_BuildingDefsLit">
+					<defs>
+					<li>Campfire</li>
+					<li>TorchLamp</li>
+					<li>TorchWallLamp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+					</defs>
+					<offsetPerBuilding>0.01</offsetPerBuilding>
+					<radius>9.9</radius>
+					<maxBuildings>8</maxBuildings>
+					<explanationKey>MeditationFocusPerFlame</explanationKey>
+					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					<drawRingRadius>false</drawRingRadius>
+				</li>
+				</offsets>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BuildingBase">
+		<defName>DankPyon_Candelabra</defName>
+		<label>candlebra</label>
+		<description>A Candelabra to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow or beeswax.</description>
+		<graphicData>
+			<texPath>Furniture/Candelabra</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>14</pathCost>
+		<fillPercent>0.15</fillPercent>
+
+		<uiIconPath>Furniture/Candelabra_MenuIcon</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+
+		<statBases>
+			<Beauty>5</Beauty>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>2</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
 		<stuffCategories>
 			<li>Woody</li>
 			<li>Metallic</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
-		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+
+		<selectable>true</selectable>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>			
+		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel graphic overlay-->
+
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<clearBuildingArea>false</clearBuildingArea>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
+
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+			<li>PlaceWorker_Heater</li>
+      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>1.0</fuelConsumptionRate>
+				<fuelCapacity>20</fuelCapacity>
+				<initialFuelPercent>0</initialFuelPercent>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_Tallow</li>
+						<li>DankPyon_Wax</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>1</heatPerSecond>
+				<heatPushMaxTemperature>16</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+				<li>Flame</li>
+				</focusTypes>
+				<offsets>
+				<li Class="FocusStrengthOffset_Lit">
+					<offset>0.1</offset>
+				</li>
+				<li Class="FocusStrengthOffset_BuildingDefsLit">
+					<defs>
+					<li>Campfire</li>
+					<li>TorchLamp</li>
+					<li>TorchWallLamp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+					</defs>
+					<offsetPerBuilding>0.01</offsetPerBuilding>
+					<radius>9.9</radius>
+					<maxBuildings>8</maxBuildings>
+					<explanationKey>MeditationFocusPerFlame</explanationKey>
+					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					<drawRingRadius>false</drawRingRadius>
+				</li>
+				</offsets>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>DankPyon_CandleMaking</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BuildingBase">
+		<defName>DankPyon_CandleStand</defName>
+		<label>candle stand</label>
+		<description>A candle stand to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with tallow or beeswax.</description>
+		<graphicData>
+			<texPath>Furniture/CandleStand</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.5)</uiIconOffset>
+		
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>14</pathCost>
+		<fillPercent>0.15</fillPercent>
+
+		<statBases>
+			<Beauty>5</Beauty>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>5</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		
+		<costList>
+			<DankPyon_Tallow>15</DankPyon_Tallow>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		
+		<selectable>true</selectable>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel graphic overlay-->
+
 		<clearBuildingArea>false</clearBuildingArea>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -1495,15 +1884,29 @@
 		<building>
 			<isEdifice>true</isEdifice>
 		</building>
+
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+			<li>PlaceWorker_Heater</li>
+      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
+
 		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
-				<initialFuelPercent>1</initialFuelPercent>
-				<fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
+				<initialFuelPercent>0</initialFuelPercent>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
-						<li>DankPyon_Tallow</li>
+						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
 				<destroyOnNoFuel>false</destroyOnNoFuel>
@@ -1511,40 +1914,39 @@
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>3.5</heatPerSecond>
-				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+				<heatPerSecond>1</heatPerSecond>
+				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>5</glowRadius>
-				<glowColor>(252,187,113,0)</glowColor>
-			</li>
-			<li Class="CompProperties_FireOverlay">
-				<fireSize>0.5</fireSize>
-				<offset>(0,0,0.95)</offset>
+				<glowRadius>6</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
 			</li>
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes><li>Flame</li></focusTypes>
+				<focusTypes>
+				<li>Flame</li>
+				</focusTypes>
 				<offsets>
-					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefsLit">
-						<defs>
-							<li>Campfire</li>
-							<li>TorchLamp</li>
-							<li>DankPyon_Candles</li>
-							<li>DankPyon_CandleStand</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-						</defs>
-						<offsetPerBuilding>0.01</offsetPerBuilding>
-						<radius>9.9</radius>
-						<maxBuildings>8</maxBuildings>
-						<explanationKey>MeditationFocusPerFlame</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					</li>
+				<li Class="FocusStrengthOffset_Lit">
+					<offset>0.1</offset>
+				</li>
+				<li Class="FocusStrengthOffset_BuildingDefsLit">
+					<defs>
+					<li>Campfire</li>
+					<li>TorchLamp</li>
+					<li>TorchWallLamp</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+					</defs>
+					<offsetPerBuilding>0.01</offsetPerBuilding>
+					<radius>9.9</radius>
+					<maxBuildings>8</maxBuildings>
+					<explanationKey>MeditationFocusPerFlame</explanationKey>
+					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+					<drawRingRadius>false</drawRingRadius>
+				</li>
 				</offsets>
 			</li>
 		</comps>
@@ -1558,23 +1960,83 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_CandleStandBase">
-		<defName>DankPyon_CandleStand_Beeswax</defName>
-		<label>candle stand (beeswax)</label>
+	<ThingDef ParentName="DankPyon_BuildingBase">
+		<defName>DankPyon_RusticLamp</defName>
+		<label>oil lamp</label>
+		<description>A metallic oil lamp that shines bright as a regular torch and lasts longer. Can be refueled with tar. Fuel consumption rate is not affected by rain.</description>
+		<graphicData>
+			<texPath>Furniture/RusticLamp</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
 
-		<costList Inherit="False">
-			<DankPyon_Wax>5</DankPyon_Wax>
+		<uiIconPath>Furniture/RusticLamp_MenuIcon</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>14</pathCost>
+		<fillPercent>0.15</fillPercent>
+
+		<statBases>
+			<Beauty>5</Beauty>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>2</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		
+		<costList>
+			<DankPyon_Tar>15</DankPyon_Tar>
 		</costList>
-		<comps Inherit="false">
-			<li Class="CompProperties_Styleable"/>
+
+		<selectable>true</selectable>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel overlay-->
+
+		<clearBuildingArea>false</clearBuildingArea>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<building>
+			<isEdifice>false</isEdifice>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_GlowRadius</li>
+			<li>PlaceWorker_Heater</li>
+      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
+
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
-				<initialFuelPercent>1</initialFuelPercent>
-				<fuelConsumptionPerTickInRain>0.05</fuelConsumptionPerTickInRain>
+				<initialFuelPercent>0</initialFuelPercent>
+				<fuelConsumptionPerTickInRain>0.0000</fuelConsumptionPerTickInRain> <!--Set to 0 so it ownt get affected by rain-->
 				<fuelFilter>
 					<thingDefs>
-						<li>DankPyon_Wax</li>
+						<li>DankPyon_Tar</li>
 					</thingDefs>
 				</fuelFilter>
 				<destroyOnNoFuel>false</destroyOnNoFuel>
@@ -1586,12 +2048,8 @@
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_Glower">
-				<glowRadius>5</glowRadius>
-				<glowColor>(252,187,113,0)</glowColor>
-			</li>
-			<li Class="CompProperties_FireOverlay">
-				<fireSize>0.5</fireSize>
-				<offset>(0,0,0.95)</offset>
+				<glowRadius>10</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
 			</li>
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
@@ -1602,11 +2060,17 @@
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsLit">
 						<defs>
+							<!-- MO buildings-->
+							<li>DankPyon_RusticLamp</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_Candles_Beeswax</li>
+							<li>DankPyon_CandleStand</li>
+
 							<li>Campfire</li>
 							<li>TorchLamp</li>
-							<li>DankPyon_Candles</li>
-							<li>DankPyon_CandleStand</li>
+							<li>TorchWallLamp</li>
 							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
 							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
 							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
 						</defs>
@@ -1615,61 +2079,17 @@
 						<maxBuildings>8</maxBuildings>
 						<explanationKey>MeditationFocusPerFlame</explanationKey>
 						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
 					</li>
 				</offsets>
 			</li>
 		</comps>
-	</ThingDef>
-	
-	<ThingDef ParentName="DankPyon_BuildingBase">
-		<defName>DankPyon_RusticLamp</defName>
-		<label>lamp</label>
-		<thingClass>Building</thingClass>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<clearBuildingArea>false</clearBuildingArea>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
-		<description>A candle to prevent darkness seeping in your room.</description>
-		<graphicData>
-			<texPath>Furniture/RusticLamp</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2,2)</drawSize>
-		</graphicData>
-		<uiIconPath>Furniture/RusticLamp_MenuIcon</uiIconPath>
-		<costList>
-			<DankPyon_IronIngot>15</DankPyon_IronIngot>
-		</costList>
-		<rotatable>false</rotatable>
-		<building>
-			<isEdifice>false</isEdifice>
-			<canPlaceOverWall>true</canPlaceOverWall>
-		</building>
-		<passability>Standable</passability>
-		<pathCost>8</pathCost>
-		<fillPercent>0.15</fillPercent>
-		<statBases>
-			<MaxHitPoints>5</MaxHitPoints>
-			<WorkToBuild>75</WorkToBuild>
-			<Flammability>0</Flammability>
-			<Beauty>0</Beauty>
-			<Mass>0.2</Mass>
-		</statBases>
-		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
-		<comps>
-			<li Class="CompProperties_Glower">
-				<glowRadius>3</glowRadius>
-				<glowColor>(252,187,113,0)</glowColor>
-			</li>
-			<li Class="CompProperties_HeatPusher">
-				<heatPerSecond>0.5</heatPerSecond>
-				<heatPushMaxTemperature>5</heatPushMaxTemperature>
-			</li>
-		</comps>
-		<placeWorkers>
-			<li>PlaceWorker_Heater</li>
-		</placeWorkers>
+		
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+			<li>Smithing</li>
+		</researchPrerequisites>
+
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
@@ -1849,7 +2269,7 @@
 			<drawSize>3</drawSize>
 		</graphicData>
 		<thingClass>Building</thingClass>
-		<uiIconScale>0.65</uiIconScale>
+		<uiIconScale>0.5</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(1,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
@@ -1913,7 +2333,6 @@
 			<drawSize>(3.5,3)</drawSize>
 		</graphicData>
 		<thingClass>Building</thingClass>
-		<uiIconScale>0.65</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
@@ -1980,7 +2399,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<thingClass>Building</thingClass>
-		<uiIconScale>0.65</uiIconScale>
+		<uiIconScale>0.5</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(1,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
@@ -2059,8 +2478,6 @@
 			<drawSize>(3.5,3)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<thingClass>Building</thingClass>
-		<uiIconScale>0.65</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
@@ -2139,7 +2556,7 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<thingClass>Building</thingClass>
-		<uiIconScale>0.65</uiIconScale>
+		<uiIconScale>0.5</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(1,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
@@ -2205,7 +2622,7 @@
 			<drawSize>(3.5,3)</drawSize>
 		</graphicData>
 		<thingClass>Building</thingClass>
-		<uiIconScale>0.65</uiIconScale>
+		
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
@@ -2262,10 +2679,16 @@
 	</ThingDef>
 		
 	<!--============================== Beds ==============================-->
-	<ThingDef ParentName="DankPyon_BedWithQualityBase">
+	<!-- Tier List (Top to Bottom)
+		Tudor Bed	 - Vanilla Royal bed
+		Rustic Bed 	 - 
+		Fur Bed		 - Vanilla Bed
+		Straw Bed	 -
+		Wicker Bed	 - -->
+	<ThingDef ParentName="DankPyon_BasicBedBase">
 		<defName>DankPyon_BedLog</defName>
-		<label>log slab bed</label>
-		<description>A simple and quick to make log bed.</description>
+		<label>log bed</label>
+		<description>A simple and quick to make log bed. Better than sleeping on bare ground.</description>
 		<graphicData>
 			<texPath>Furniture/LogSlabBed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -2275,49 +2698,65 @@
 				<rect>(0,0.05,1,1.95)</rect>
 			</damageData>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticEndTable</li>
-					<li>DankPyon_RusticTallEndTable</li>
-					<li>DankPyon_RusticDresser</li>
-					<li>DankPyon_RusticChest</li>
-					<li>DankPyon_MetalStrongbox</li>
-					<li>DankPyon_RusticCloset</li>
-				</linkableFacilities>
-			</li>
-		</comps>
+		<size>(1,2)</size>
+
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-			<Flammability>1.0</Flammability>
 			<Beauty>1</Beauty>
 			<WorkToBuild>500</WorkToBuild>
 			<Mass>30</Mass>
 			<BedRestEffectiveness>0.90</BedRestEffectiveness>
-			<Comfort>0.50</Comfort>
-			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+			<Comfort>0.55</Comfort>
 		</statBases>
-		<size>(1,2)</size>
-		<stuffCategories>
+		
+		<stuffCategories Inherit="false">
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
+
+		<uiOrder>2010</uiOrder>
 		<building>
-			<bed_showSleeperBody>True</bed_showSleeperBody>
-			<bed_healPerDay>4</bed_healPerDay>
+			<paintable>true</paintable>
 		</building>
-		<fillPercent>0.4</fillPercent>
-		<pathCost>42</pathCost>
-		<staticSunShadowHeight>0.17</staticSunShadowHeight>
-		<castEdgeShadows>True</castEdgeShadows>
-		<designationHotKey>Misc2</designationHotKey>
-		<techLevel>Medieval</techLevel>
-		<uiIconScale>0.90</uiIconScale>
-		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_BedWithQualityBase">
+	<ThingDef ParentName="DankPyon_BasicBedBase">
+		<defName>DankPyon_BedLogDouble</defName>
+		<label>double log bed</label>
+		<description>A simple and quick to make log bed that fits two people. Better than sleeping on bare ground.</description>
+		<graphicData>
+			<texPath>Furniture/DoubleLogSlabBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<size>(2,2)</size>
+
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>1350</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>1</Beauty>
+			<BedRestEffectiveness>0.90</BedRestEffectiveness>
+			<Comfort>0.55</Comfort>
+		</statBases>
+		
+		<stuffCategories Inherit="false">
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>85</costStuffCount>
+
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<building>
+			<paintable>true</paintable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BasicBedBase">
 		<defName>DankPyon_BedWicker</defName>
 		<label>wicker bed</label>
 		<description>A simple and quick to make wicker bed.</description>
@@ -2330,112 +2769,69 @@
 				<rect>(0,0.05,1,1.95)</rect>
 			</damageData>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticEndTable</li>
-					<li>DankPyon_RusticTallEndTable</li>
-					<li>DankPyon_RusticDresser</li>
-					<li>DankPyon_RusticChest</li>
-					<li>DankPyon_MetalStrongbox</li>
-					<li>DankPyon_RusticCloset</li>
-				</linkableFacilities>
-			</li>
-		</comps>
+		<size>(1,2)</size>
+
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-			<Flammability>1.0</Flammability>
 			<Beauty>1</Beauty>
-			<WorkToBuild>550</WorkToBuild>
-			<Mass>20</Mass>
+			<WorkToBuild>650</WorkToBuild>
+			<Mass>30</Mass>
 			<BedRestEffectiveness>0.95</BedRestEffectiveness>
-			<Comfort>0.70</Comfort>
-			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+			<Comfort>0.65</Comfort>
 		</statBases>
-		<size>(1,2)</size>
+		
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
+
+		<uiOrder>2010</uiOrder>
 		<building>
-			<bed_showSleeperBody>True</bed_showSleeperBody>
-			<bed_healPerDay>4</bed_healPerDay>
+			<paintable>true</paintable>
 		</building>
-		<fillPercent>0.4</fillPercent>
-		<pathCost>42</pathCost>
-		<staticSunShadowHeight>0.17</staticSunShadowHeight>
-		<castEdgeShadows>True</castEdgeShadows>
-		<designationHotKey>Misc2</designationHotKey>
-		<techLevel>Medieval</techLevel>
-		<uiIconScale>0.90</uiIconScale>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_BedWithQualityBase">
+	<ThingDef ParentName="DankPyon_BasicBedBase">
 		<defName>DankPyon_BedWickerDouble</defName>
 		<label>double wicker bed</label>
-		<description>A simple and quick to make wicker bed.</description>
+		<description>A simple and quick to make wicker bed that fits two people.</description>
 		<graphicData>
 			<texPath>Furniture/BedWickerDouble</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.05,2.05)</drawSize>
 			<damageData>
-				<rect>(0,0.05,1,1.95)</rect>
+				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticEndTable</li>
-					<li>DankPyon_RusticTallEndTable</li>
-					<li>DankPyon_RusticDresser</li>
-					<li>DankPyon_RusticChest</li>
-					<li>DankPyon_MetalStrongbox</li>
-					<li>DankPyon_RusticCloset</li>
-				</linkableFacilities>
-			</li>
-		</comps>
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<Beauty>2</Beauty>
-			<WorkToBuild>1000</WorkToBuild>
-			<Mass>40</Mass>
-			<BedRestEffectiveness>0.95</BedRestEffectiveness>
-			<Comfort>0.70</Comfort>
-			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
-		</statBases>
 		<size>(2,2)</size>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
-		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>1350</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>1</Beauty>
+			<BedRestEffectiveness>0.95</BedRestEffectiveness>
+			<Comfort>0.65</Comfort>
+		</statBases>
+		
 		<costStuffCount>85</costStuffCount>
+
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
-			<bed_showSleeperBody>True</bed_showSleeperBody>
-			<bed_healPerDay>4</bed_healPerDay>
+			<paintable>true</paintable>
 		</building>
-		<fillPercent>0.4</fillPercent>
-		<pathCost>42</pathCost>
-		<staticSunShadowHeight>0.17</staticSunShadowHeight>
-		<castEdgeShadows>True</castEdgeShadows>
-		<designationHotKey>Misc2</designationHotKey>
-		<techLevel>Medieval</techLevel>
-		<uiIconScale>0.90</uiIconScale>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_BedWithQualityBase">
+	<ThingDef ParentName="DankPyon_BasicBedBase">
 		<defName>DankPyon_StrawBed</defName>
-		<label>Straw bed</label>
+		<label>straw bed</label>
 		<description>A simple and quick to make wicker bed, padded with straw for added comfort.</description>
 		<graphicData>
-			<texPath>Furniture/StrawBed</texPath>
+			<texPath>Furniture/BedStraw</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -2443,30 +2839,17 @@
 				<rect>(0,0.05,1,1.95)</rect>
 			</damageData>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticEndTable</li>
-					<li>DankPyon_RusticTallEndTable</li>
-					<li>DankPyon_RusticDresser</li>
-					<li>DankPyon_RusticChest</li>
-					<li>DankPyon_MetalStrongbox</li>
-					<li>DankPyon_RusticCloset</li>
-				</linkableFacilities>
-			</li>
-		</comps>
+		<size>(1,2)</size>
+
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-			<Flammability>1.0</Flammability>
 			<Beauty>1</Beauty>
 			<WorkToBuild>650</WorkToBuild>
-			<Mass>25</Mass>
-			<BedRestEffectiveness>0.98</BedRestEffectiveness>
-			<Comfort>0.72</Comfort>
-			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+			<Mass>30</Mass>
+			<BedRestEffectiveness>0.95</BedRestEffectiveness>
+			<Comfort>0.7</Comfort>
 		</statBases>
-		<size>(1,2)</size>
+		
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -2476,78 +2859,50 @@
 		<costList>
 			<DankPyon_Straw>15</DankPyon_Straw>
 		</costList>
+
+		<uiOrder>2010</uiOrder>
 		<building>
-			<bed_showSleeperBody>True</bed_showSleeperBody>
-			<bed_healPerDay>4</bed_healPerDay>
+			<paintable>true</paintable>
 		</building>
-		<fillPercent>0.4</fillPercent>
-		<pathCost>42</pathCost>
-		<staticSunShadowHeight>0.17</staticSunShadowHeight>
-		<castEdgeShadows>True</castEdgeShadows>
-		<designationHotKey>Misc2</designationHotKey>
-		<uiIconScale>0.90</uiIconScale>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_BedWithQualityBase">
+	<ThingDef ParentName="DankPyon_BasicBedBase">
 		<defName>DankPyon_StrawBedDouble</defName>
 		<label>double straw bed</label>
-		<description>A simple and quick to make wicker bed, padded with straw for added comfort.</description>
+		<description>A simple and quick to make wicker bed, padded with straw for added comfort that fits two people.</description>
 		<graphicData>
 			<texPath>Furniture/BedStrawDouble</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.05,2.05)</drawSize>
 			<damageData>
-				<rect>(0,0.05,1,1.95)</rect>
+				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticEndTable</li>
-					<li>DankPyon_RusticTallEndTable</li>
-					<li>DankPyon_RusticDresser</li>
-					<li>DankPyon_RusticChest</li>
-					<li>DankPyon_MetalStrongbox</li>
-					<li>DankPyon_RusticCloset</li>
-				</linkableFacilities>
-			</li>
-		</comps>
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<Beauty>1</Beauty>
-			<WorkToBuild>1200</WorkToBuild>
-			<Mass>45</Mass>
-			<BedRestEffectiveness>0.98</BedRestEffectiveness>
-			<Comfort>0.72</Comfort>
-			<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
-		</statBases>
 		<size>(2,2)</size>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
-		</stuffCategories>
+
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>1350</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>1</Beauty>
+			<BedRestEffectiveness>0.95</BedRestEffectiveness>
+			<Comfort>0.7</Comfort>
+		</statBases>
+		
 		<costStuffCount>85</costStuffCount>
 		<costList>
 			<DankPyon_Straw>30</DankPyon_Straw>
 		</costList>
-		<building>
-			<bed_showSleeperBody>True</bed_showSleeperBody>
-			<bed_healPerDay>4</bed_healPerDay>
-		</building>
-		<fillPercent>0.4</fillPercent>
-		<pathCost>42</pathCost>
-		<staticSunShadowHeight>0.17</staticSunShadowHeight>
-		<castEdgeShadows>True</castEdgeShadows>
-		<designationHotKey>Misc2</designationHotKey>
-		<uiIconScale>0.90</uiIconScale>
-	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_BedWithQualityBase">
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<building>
+			<paintable>true</paintable>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_BasicBedBase">
 		<defName>DankPyon_BedFur</defName>
 		<label>fur bed</label>
 		<description>A cozy bed made from pieces of soft and comfy fur.</description>
@@ -2560,60 +2915,36 @@
 				<rect>(0,0.05,1,1.95)</rect>
 			</damageData>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticEndTable</li>
-					<li>DankPyon_RusticTallEndTable</li>
-					<li>DankPyon_RusticDresser</li>
-					<li>DankPyon_RusticChest</li>
-					<li>DankPyon_MetalStrongbox</li>
-					<li>DankPyon_RusticCloset</li>
-				</linkableFacilities>
-			</li>
-			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
-				<cureHediff>Hypothermia</cureHediff>
-				<intervalTick>300</intervalTick>
-				<cureSeverity>0.02</cureSeverity>
-			</li>
-		</comps>
-		<tickerType>Normal</tickerType>
+		<size>(1,2)</size>
+
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
-			<Flammability>1.0</Flammability>
 			<Beauty>1</Beauty>
 			<WorkToBuild>800</WorkToBuild>
 			<Mass>30</Mass>
-			<BedRestEffectiveness>1.01</BedRestEffectiveness>
-			<Comfort>0.80</Comfort>
-			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
 		</statBases>
-		<size>(1,2)</size>
+		
 		<stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
+
 		<costList>
 			<WoodLog>45</WoodLog>
 		</costList>
+
+		<uiOrder>2010</uiOrder>
 		<building>
-			<bed_showSleeperBody>False</bed_showSleeperBody>
-			<bed_healPerDay>4</bed_healPerDay>
+			<paintable>true</paintable>
 		</building>
-		<fillPercent>0.4</fillPercent>
-		<pathCost>42</pathCost>
-		<staticSunShadowHeight>0.17</staticSunShadowHeight>
-		<castEdgeShadows>True</castEdgeShadows>
-		<designationHotKey>Misc2</designationHotKey>
-		<uiIconScale>0.90</uiIconScale>
 	</ThingDef>
-	
-	<ThingDef ParentName="DankPyon_ArtableBedBase">
+
+	<ThingDef ParentName="DankPyon_BasicBedBase">
 		<defName>DankPyon_BedFurDouble</defName>
 		<label>double fur bed</label>
-		<description>A cozy double-wide bed that fits two people.</description>
+		<description>A cozy double-wide bed made from pieces of soft and comfy fur that fits two people.</description>
 		<graphicData>
 			<texPath>Furniture/BedFurDouble</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -2623,59 +2954,141 @@
 				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
 		</graphicData>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticEndTable</li>
-					<li>DankPyon_RusticTallEndTable</li>
-					<li>DankPyon_RusticDresser</li>
-					<li>DankPyon_RusticChest</li>
-					<li>DankPyon_MetalStrongbox</li>
-					<li>DankPyon_RusticCloset</li>
-				</linkableFacilities>
-			</li>
-			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
-				<cureHediff>Hypothermia</cureHediff>
-				<intervalTick>300</intervalTick>
-				<cureSeverity>0.02</cureSeverity>
-			</li>
-		</comps>
-		<tickerType>Normal</tickerType>
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<WorkToBuild>1500</WorkToBuild>
-			<Mass>50</Mass>
-			<Comfort>0.85</Comfort>
-			<Beauty>4</Beauty>
-			<BedRestEffectiveness>1</BedRestEffectiveness>
-			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
-		</statBases>
 		<size>(2,2)</size>
+
 		<stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>2</Beauty>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+		</statBases>
+		
 		<costList>
 			<WoodLog>85</WoodLog>
 		</costList>
-		<building>
-			<bed_showSleeperBody>False</bed_showSleeperBody>
-			<bed_healPerDay>4</bed_healPerDay>
-		</building>
+
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<fillPercent>0.4</fillPercent>
-		<pathCost>42</pathCost>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
-		<staticSunShadowHeight>0.17</staticSunShadowHeight>
-		<castEdgeShadows>True</castEdgeShadows>
-		<designationHotKey>Misc3</designationHotKey>
-		<uiIconScale>0.90</uiIconScale>
+		<building>
+		<paintable>true</paintable>
+		</building>
 	</ThingDef>
 
+	<ThingDef ParentName="DankPyon_BasicBedBase" Name="DankPyon_RusticBedBase">
+		<defName>DankPyon_Bed_Rustic_Red</defName>
+		<label>rustic bed (red)</label>
+		<description>A rustic comfy bed made up of silk embroidered covers and soft pillows.</description>
+		<graphicData>
+			<texPath>Furniture/RusticBed1x2_Red</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<size>(1,2)</size>
+
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Beauty>35</Beauty>
+			<WorkToBuild>6250</WorkToBuild>
+			<Mass>30</Mass>
+			<BedRestEffectiveness>1.05</BedRestEffectiveness>
+			<Comfort>0.85</Comfort>
+		</statBases>
+		
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<DankPyon_Silk>25</DankPyon_Silk>
+			<DankPyon_Linen>10</DankPyon_Linen>
+		</costList>
+
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<uiOrder>2010</uiOrder>
+		<building>
+			<paintable>true</paintable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RusticBedBase">
+		<defName>DankPyon_Bed_Rustic_Green</defName>
+		<label>rustic bed (green)</label>
+		<graphicData>
+			<texPath>Furniture/RusticBed1x2_Green</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RusticBedBase">
+		<defName>DankPyon_Bed_Rustic_Blue</defName>
+		<label>rustic bed (blue)</label>
+		<graphicData>
+			<texPath>Furniture/RusticBed1x2_Blue</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BasicBedBase" Name="DankPyon_RusticDoubleBed_Base">
+		<defName>DankPyon_Bed_RusticDouble_Red</defName>
+		<label>rustic double bed (red)</label>
+		<description>A rustic comfy bed made up of silk embroidered covers and soft pillows. Double-wide bed that fits two people.</description>
+		<graphicData>
+		<texPath>Furniture/RusticBed2x2_Red</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(4.1,4.1)</drawSize>
+		<damageData>
+			<rect>(0,0.05,2,1.95)</rect>
+		</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>12500</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>35</Beauty>
+			<BedRestEffectiveness>1.05</BedRestEffectiveness>
+		</statBases>
+		<size>(2,2)</size>
+
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<DankPyon_Silk>50</DankPyon_Silk>
+			<DankPyon_Linen>20</DankPyon_Linen>
+		</costList>
+
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<building>
+		<paintable>true</paintable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RusticDoubleBed_Base">
+		<defName>DankPyon_Bed_RusticDouble_Green</defName>
+		<label>rustic double bed (green)</label>
+		<graphicData>
+			<texPath>Furniture/RusticBed2x2_Green</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_RusticDoubleBed_Base">
+		<defName>DankPyon_Bed_RusticDouble_Blue</defName>
+		<label>rustic double bed (blue)</label>
+		<graphicData>
+			<texPath>Furniture/RusticBed2x2_Blue</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<!-- Other stuff-->
 	<ThingDef ParentName="DankPyon_BuildingBase">
 		<defName>DankPyon_WoodBurningStove</defName>
 		<label>wood burning stove</label>

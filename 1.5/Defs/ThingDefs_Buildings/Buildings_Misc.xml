@@ -252,8 +252,9 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<thingClass>Building</thingClass>
 		<size>(1,1)</size>
+		<uiIconScale>0.75</uiIconScale>
+
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -316,6 +317,7 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<thingClass>Building_WorkTable</thingClass>
+		<uiIconScale>0.75</uiIconScale>
 		<size>(1,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -382,7 +384,7 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<thingClass>Building</thingClass>
+		<uiIconScale>0.75</uiIconScale>
 		<size>(1,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -436,7 +438,7 @@
 	</ThingDef>
 
 	<!-- ==================== Scribe Table ==================== -->
-	<!-- ==================== Quill and Inkwell ==================== -->
+	<!-- Paper Hanging Rack-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_PaperHangingRack</defName>
 		<label>paper hanging rack</label>
@@ -456,7 +458,7 @@
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<rotatable>true</rotatable>
-
+		
 		<defaultPlacingRot>North</defaultPlacingRot>
 
 		<building>
@@ -508,6 +510,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 
+	<!--  Quill and Inkwell  -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_QuillAndInkwell</defName>
 		<label>quill and inkwell table</label>
@@ -527,7 +530,7 @@
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<rotatable>false</rotatable>
-
+		<uiIconScale>0.75</uiIconScale>
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
@@ -578,6 +581,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
 		<size>(1,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>

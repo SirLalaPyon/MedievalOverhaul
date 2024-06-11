@@ -146,6 +146,33 @@
 		</recipeUsers>
 	</RecipeDef>
 
+	<!-- Smelt any ore -->
+	<RecipeDef ParentName="DankPyon_SmelterBase">
+		<defName>DankPyon_MakeIngots_Any</defName>
+		<workAmount>1200</workAmount>
+		<label>Smelt any ore into ingots</label>
+		<jobString>Smelting an ore into 1 ingot.</jobString>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>DankPyon_RawOres</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>DankPyon_RawOres</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+	</RecipeDef>
+
 	<!-- Iron Ingots -->
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Iron</defName>

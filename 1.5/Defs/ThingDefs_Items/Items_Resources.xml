@@ -456,6 +456,9 @@
 		<burnableByRecipe>false</burnableByRecipe>
 		<!--smeltable>true</smeltable-->
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<butcherProducts>
+			<DankPyon_IronIngot>1</DankPyon_IronIngot>
+		</butcherProducts>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
@@ -536,6 +539,9 @@
 		<burnableByRecipe>false</burnableByRecipe>
 		<!--smeltable>true</smeltable-->
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<butcherProducts>
+			<Silver>1</Silver>
+		</butcherProducts>
 	</ThingDef>
 
 	<!--ThingDef ParentName="ResourceBase">
@@ -595,6 +601,9 @@
 		<deepLumpSizeRange>1~4</deepLumpSizeRange>
 		<burnableByRecipe>false</burnableByRecipe>
 		<!--smeltable>true</smeltable-->
+		<butcherProducts>
+			<Gold>1</Gold>
+		</butcherProducts>
 	</ThingDef>
 	
 	<!--=============== Plasteel ====================-->
@@ -623,6 +632,9 @@
 		<burnableByRecipe>false</burnableByRecipe>
 		<!--smeltable>true</smeltable-->
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<butcherProducts>
+			<Plasteel>1</Plasteel>
+		</butcherProducts>
 	</ThingDef>
 
 	<!--============================== Misc ==============================-->

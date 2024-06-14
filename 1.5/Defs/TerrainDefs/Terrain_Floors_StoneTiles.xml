@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="DankPyon_Floor_TileStoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>1</Beauty>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<uiOrder>2060</uiOrder>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="DankPyon_Floor_TileStoneBase" Name="DankPyon_Floor_HerringboneBase">
+		<description>Carefully-cut and fit stone tiles in a herringbone pattern for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/HerringboneTile</texturePath>
+		<designatorDropdown>DankPyon_Floor_HerringboneTile</designatorDropdown>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DankPyon_Floor_HerringboneBase">
+		<defName>DankPyon_Floor_Herringbone_Sandstone</defName>
+		<label>sandstone herringbone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_HerringboneBase">
+		<defName>DankPyon_Floor_Herringbone_Granite</defName>
+		<label>granite herringbone tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_HerringboneBase">
+		<defName>DankPyon_Floor_Herringbone_Limestone</defName>
+		<label>limestone herringbone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_HerringboneBase">
+		<defName>DankPyon_Floor_Herringbone_Slate</defName>
+		<label>slate herringbone tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+	</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_HerringboneBase">
+		<defName>DankPyon_Floor_Herringbone_Marble</defName>
+		<label>marble herringbone tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="DankPyon_Floor_TileStoneBase" Name="DankPyon_Floor_WindmillBase">
+		<description>Carefully-cut and fit stone tiles in a windmill pattern for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/WindmillTile</texturePath>
+		<designatorDropdown>DankPyon_Floor_WindmillTile</designatorDropdown>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DankPyon_Floor_WindmillBase">
+		<defName>DankPyon_Floor_Windmill_Sandstone</defName>
+		<label>sandstone windmill tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_WindmillBase">
+		<defName>DankPyon_Floor_Windmill_Granite</defName>
+		<label>granite windmill tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_WindmillBase">
+		<defName>DankPyon_Floor_Windmill_Limestone</defName>
+		<label>limestone windmill tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_WindmillBase">
+		<defName>DankPyon_Floor_Windmill_Slate</defName>
+		<label>slate windmill tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+	</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_WindmillBase">
+		<defName>DankPyon_Floor_Windmill_Marble</defName>
+		<label>marble windmill tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="DankPyon_Floor_TileStoneBase" Name="DankPyon_Floor_TileCobblestone">
+		<description>Rough cobblestone placed in fitted horizontal patterns for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/CobblestoneTile</texturePath>
+		<designatorDropdown>DankPyon_Floor_CobblestoneTile</designatorDropdown>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DankPyon_Floor_TileCobblestone">
+		<defName>DankPyon_Floor_CobbleStone_Sandstone</defName>
+		<label>sandstone cobblestone tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_TileCobblestone">
+		<defName>DankPyon_Floor_CobbleStone_Granite</defName>
+		<label>granite cobblestone tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_TileCobblestone">
+		<defName>DankPyon_Floor_CobbleStone_Limestone</defName>
+		<label>limestone cobblestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_TileCobblestone">
+		<defName>DankPyon_Floor_CobbleStone_Slate</defName>
+		<label>slate cobblestone tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+	</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_TileCobblestone">
+		<defName>DankPyon_Floor_CobbleStone_Marble</defName>
+		<label>marble cobblestone tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="DankPyon_Floor_TileStoneBase" Name="DankPyon_Floor_TileVersailles">
+		<description>Carefully-cut and fit stone tiles in a versailles pattern for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/VersaillesTile</texturePath>
+		<designatorDropdown>DankPyon_Floor_VersaillesTile</designatorDropdown>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DankPyon_Floor_TileVersailles">
+		<defName>DankPyon_Floor_Versailles_Sandstone</defName>
+		<label>sandstone versailles tile</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_TileVersailles">
+		<defName>DankPyon_Floor_Versailles_Granite</defName>
+		<label>granite versailles tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_TileVersailles">
+		<defName>DankPyon_Floor_Versailles_Limestone</defName>
+		<label>limestone versailles tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_TileVersailles">
+		<defName>DankPyon_Floor_Versailles_Slate</defName>
+		<label>slate versailles tile</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+	</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_TileVersailles">
+		<defName>DankPyon_Floor_Versailles_Marble</defName>
+		<label>marble versailles tile</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+</Defs>
+

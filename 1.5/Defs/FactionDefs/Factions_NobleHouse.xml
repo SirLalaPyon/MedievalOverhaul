@@ -151,18 +151,19 @@
 				<filter>
 					<thingDefs>
 						<li>Silver</li>
-						<li>Jade</li>
 						<li>MedicineHerbal</li>
 						<li>DankPyon_MealBread</li>
+						<li>DankPyon_MealRations</li>
 					</thingDefs>
 				</filter>
 			</fixedParams>
 		</root>
 	</ThingSetMakerDef>
 
+	<!-- House Amboise -->
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">
-		<defName>DankPyon_NobleHouseCivil</defName>
-		<label>civil noble house</label>
+		<defName>DankPyon_NobleHouseFierce</defName>
+		<label>fierce noble house</label>
 		<description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
 		<colorSpectrum>
 			<li>(99, 99, 99)</li>
@@ -193,14 +194,6 @@
 					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
 				</options>
 			</li>
-			<!-- Normal fights, ranged only -->
-			<!--li>
-          <kindDef>Combat</kindDef>
-          <commonality>30</commonality>
-          <options>
-            <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
-          </options>
-        </li-->
 			<li>
 				<!-- Normal fights, melee only -->
 				<kindDef>Combat</kindDef>
@@ -278,10 +271,11 @@
         </modExtensions>			
 	</FactionDef>
 
+	<!-- House Soren -->
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">
 		<defName>DankPyon_NobleHouseCivil2</defName>
 		<label>civil noble house</label>
-		<description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+		<description>War is a profitable endeavor, much so, that trading and haggling is relentlessly ferocious as winning a battle. House Soren is notoriously recognized to be the masters of the trade, cunningly closing each profitable bargain. Many of their acquisitions are gained by honest trading but also through deceit, bribery, and extortion. Their towns are filled with riches as the house resides in their decadent castles, whilst pot-bellied peasants litter the streets.</description>
 		<colorSpectrum>
 			<li>(83, 124, 80)</li>
 		</colorSpectrum>
@@ -398,10 +392,11 @@
         </modExtensions>	
 	</FactionDef>
 
+	<!-- House Oswin -->
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">
-		<defName>DankPyon_NobleHouseFierce</defName>
-		<label>fierce noble house</label>
-		<description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
+		<defName>DankPyon_NobleHouseCivil</defName>
+		<label>civil noble house</label>
+		<description>From the earth they came and so they shall claim, house Oswin declares their presence to have long existed when the first emperor dominated these lands. Now, one of the many noble houses, however, their ambitions to etch their name in history have yet to run dry. In an attempt to recover the treasure of the old under-empires, their expeditions uncover the earth in search of the depths of the ruins.</description>
 		<colorSpectrum>
 			<li>(64, 103, 137)</li>
 		</colorSpectrum>
@@ -412,7 +407,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
-		<naturalEnemy>true</naturalEnemy>
+
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>50</configurationListOrderPriority>
 
@@ -432,14 +427,7 @@
 					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
 				</options>
 			</li>
-			<!-- Normal fights, ranged only -->
-			<!--li>
-          <kindDef>Combat</kindDef>
-          <commonality>30</commonality>
-          <options>
-            <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
-          </options>
-        </li-->
+			
 			<li>
 				<!-- Normal fights, melee only -->
 				<kindDef>Combat</kindDef>
@@ -518,16 +506,17 @@
         </modExtensions>	
 	</FactionDef>
 
+	<!-- House Hesse -->
 	<FactionDef ParentName="DankPyon_NobleHouseFactionBase">
 		<defName>DankPyon_NobleHouseSavage</defName>
-		<label>savage noble house</label>
-		<description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe is driven by a blood-and-honor culture; you will not be able to ally with them!</description>
+		<label>cruel noble house</label>
+		<description>Caring not for their reputation, house Hesse is renowned for their brutish conduct, ravaging settlements, raiding trade caravans, and slaughtering peasants amongst the forsaken roads. It is, however, popular to many mercenaries looking for a quick coin or a quick end. They prefer not to meddle in social affairs, leaving them isolated from the other noble families.</description>
 		<colorSpectrum>
 			<li>(215, 215, 215)</li>
 		</colorSpectrum>
 		<fixedName>House Hesse</fixedName>
+		<naturalEnemy>true</naturalEnemy>
 		<factionIconPath>WorldObjects/CastleSavage</factionIconPath>
-		<permanentEnemy>true</permanentEnemy>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		</requiredMemes>
@@ -554,14 +543,6 @@
 					<DankPyon_Medieval_Lord>10</DankPyon_Medieval_Lord>
 				</options>
 			</li>
-			<!-- Normal fights, ranged only -->
-			<!--li>
-          <kindDef>Combat</kindDef>
-          <commonality>30</commonality>
-          <options>
-            <DankPyon_Medieval_Arbalester>100</DankPyon_Medieval_Arbalester>
-          </options>
-        </li-->
 			<li>
 				<!-- Normal fights, melee only -->
 				<kindDef>Combat</kindDef>

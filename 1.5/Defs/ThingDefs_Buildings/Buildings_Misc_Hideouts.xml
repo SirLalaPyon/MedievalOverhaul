@@ -5,7 +5,7 @@
         <defName>DankPyon_QuestFinder</defName>
         <label>explorer's workbench</label>
 		<thingClass>MedievalOverhaul.Building_QuestScanner</thingClass>
-        <description>The Explorer's Workbench is a sturdy, timeworn table covered in an array of tools, maps, and magnifying glasses. This indispensable station is where adventurers bring their Torn Notes, meticulously piecing together the fragmented clues. By examining and arranging the tattered scraps of parchment, the workbench reveals hidden locations, secret hideouts, and points of interest. \n\nTo uncover more advanced hideouts, the workbench must be linked to specialized buildings such as the Explorer’s Archive, Ancient Lectern, and the Ancient Orb, enhancing its capabilities and enabling the discovery of deeper secrets. Here, the path to grand adventures begins, where mysteries are unraveled and new quests are set in motion.</description>
+        <description>The Explorer's Workbench is a sturdy, timeworn table covered in an array of tools, maps, and magnifying glasses. This station is where adventurers bring their Torn Notes, piecing together the fragmented clues. By examining and arranging the tattered scraps of parchment, the workbench reveals hidden locations, secret hideouts, and points of interest. \n\nTo uncover more advanced hideouts, the workbench must be linked to specialized buildings such as the Explorer’s Archive, Ancient Lectern, and the Ancient Orb, enhancing its capabilities and enabling the discovery of deeper secrets. Here, the path to grand adventures begins, where mysteries are unraveled and new quests are set in motion.</description>
         <descriptionHyperlinks>
 			<ThingDef>DankPyon_CultBook</ThingDef>
 			<ThingDef>DankPyon_BirdPost</ThingDef>
@@ -249,7 +249,7 @@ Requirements:
 	<ThingDef ParentName="DankPyon_QuestLinkables">
 		<defName>DankPyon_CultPedestal</defName>
 		<label>ancient pedestal</label>
-		<description>This ancient pedestal is made of rough-hewn granite blocks and is adorned with mysterious markings and symbols. It appears to be very old and has likely been used by the Moon Cult for centuries. The pedestal seems to have been placed in strategic locations throughout the ruins, possibly as a marker or guide for members of the cult. It is possible that by studying these pedestals, one might be able to uncover the locations of larger, more important cult sites. The pedestal is heavy, and it is not possible to move it.</description>
+		<description>This ancient pedestal is made of rough-hewn granite blocks and is adorned with mysterious markings and symbols. It appears to be very old and has likely been used by the Moon Cult for centuries. The pedestal seems to have been placed in strategic locations throughout the ruins, possibly as a marker or guide for members of the cult. It is possible that by studying these pedestals, one might be able to uncover the locations of larger, more important cult sites.</description>
 		<graphicData>
 			<texPath>Furniture/AncientLecturn/AncientLecturn</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

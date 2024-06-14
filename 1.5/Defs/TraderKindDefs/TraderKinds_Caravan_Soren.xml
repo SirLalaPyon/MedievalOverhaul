@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TraderKindDef>
+		<defName>DankPyon_Caravan_Medieval_BulkGoodsMerchant_Soren</defName>
+		<label>bulk goods merchant</label>
+		<commonality>3</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_TornNote_Hideout</thingDef>
+				<countRange>3~4</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>1500~2500</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Straw</thingDef>
+				<countRange>450~1000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Kibble</thingDef>
+				<countRange>350~550</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>WoodLog</thingDef>
+				<countRange>300~550</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Cloth</thingDef>
+				<countRange>300~600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_IronOre</thingDef>
+				<countRange>200~350</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Linen</thingDef>
+				<countRange>300~600</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>10~24</countRange>
+			</li>
+			<li Class="StockGenerator_Animals">
+				<maxWildness>0.70</maxWildness>
+				<tradeTagsSell>
+					<li>AnimalFarm</li>
+				</tradeTagsSell>
+				<tradeTagsBuy>
+					<li>AnimalExotic</li>
+				</tradeTagsBuy>
+				<kindCountRange>2~6</kindCountRange>
+				<countRange>6~12</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Textiles</categoryDef>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_IceBlock</thingDef>
+				<countRange>
+					<min>60</min>
+					<max>90</max>
+				</countRange>
+			</li>
+
+			<!-- Buy -->
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_RawOres</tag></li>
+			<li Class="StockGenerator_BuySingleDef"><thingDef>DankPyon_Coal</thingDef></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Loot</tag></li>
+		</stockGenerators>
+	</TraderKindDef>
+
+</Defs>

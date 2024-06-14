@@ -609,8 +609,8 @@
 	<!--=============== Plasteel ====================-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_PlasteelOre</defName>
-		<label>raw plasteel</label>
-		<description>Raw plasteel, needs to be processed into ingots at a smelter to be usable.</description>
+		<label>raw mithril</label>
+		<description>Raw mithril, needs to be processed into ingots at a smelter to be usable.</description>
 		<graphicData>
 			<texPath>Resources/PlasteelOre</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>

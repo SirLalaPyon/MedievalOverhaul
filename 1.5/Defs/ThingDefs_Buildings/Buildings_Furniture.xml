@@ -197,7 +197,6 @@
 		<building>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 			<isEdifice>false</isEdifice>
-			<canPlaceOverWall>true</canPlaceOverWall>
       		<isAttachment>true</isAttachment>
 		</building>
 
@@ -224,14 +223,9 @@
 				<initialFuelPercent>1</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>9</glowRadius>
-						<glowColor>(252,187,113,0)</glowColor>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -345,14 +339,9 @@
 				<initialFuelPercent>0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>9</glowRadius>
-						<glowColor>(252,187,113,0)</glowColor>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -450,14 +439,9 @@
 				<initialFuelPercent>1</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>10</glowRadius>
-						<glowColor>(252,187,113,0)</glowColor>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -2941,6 +2925,14 @@
 		<building>
 			<paintable>true</paintable>
 		</building>
+
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
+				<cureHediff>Hypothermia</cureHediff>
+				<intervalTick>300</intervalTick>
+				<cureSeverity>0.02</cureSeverity>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -2980,6 +2972,14 @@
 		<building>
 		<paintable>true</paintable>
 		</building>
+
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
+				<cureHediff>Hypothermia</cureHediff>
+				<intervalTick>300</intervalTick>
+				<cureSeverity>0.02</cureSeverity>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase" Name="DankPyon_RusticBedBase">
@@ -3021,6 +3021,14 @@
 		<building>
 			<paintable>true</paintable>
 		</building>
+
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
+				<cureHediff>Hypothermia</cureHediff>
+				<intervalTick>300</intervalTick>
+				<cureSeverity>0.02</cureSeverity>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RusticBedBase">
@@ -3072,6 +3080,14 @@
 		<building>
 		<paintable>true</paintable>
 		</building>
+		
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
+				<cureHediff>Hypothermia</cureHediff>
+				<intervalTick>300</intervalTick>
+				<cureSeverity>0.02</cureSeverity>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RusticDoubleBed_Base">

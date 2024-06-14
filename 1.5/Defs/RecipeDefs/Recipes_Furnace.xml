@@ -529,8 +529,8 @@
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Plasteel</defName>
 		<workAmount>400</workAmount>
-		<label>refine raw plasteel into an ingot</label>
-		<jobString>Refining raw plasteel into 1 plasteel ingot.</jobString>
+		<label>refine raw mithril into an ingot</label>
+		<jobString>Refining raw mithril into 1 mithril ingot.</jobString>
 		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -549,11 +549,20 @@
 				</filter>
 				<count>1</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_PlasteelOre</li>
 				<li>DankPyon_IronIngot</li>
+				<li>DankPyon_Coal</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -570,8 +579,8 @@
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_PlasteelBulk</defName>
 		<workAmount>1600</workAmount>
-		<label>refine raw plasteel into 30 ingots</label>
-		<jobString>Refining raw plasteel into 30 plasteel ingot.</jobString>
+		<label>refine raw mithril into 30 ingots</label>
+		<jobString>Refining raw mithril into 30 mithril ingots.</jobString>
 		<targetCountAdjustment>30</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -590,11 +599,20 @@
 				</filter>
 				<count>30</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_PlasteelOre</li>
 				<li>DankPyon_IronIngot</li>
+				<li>DankPyon_Coal</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -611,8 +629,8 @@
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_PlasteelExtraBulk</defName>
 		<workAmount>2800</workAmount>
-		<label>refine raw plasteel into 60 ingots</label>
-		<jobString>Refining raw plasteel into 60 plasteel ingot.</jobString>
+		<label>refine raw mithril into 60 ingots</label>
+		<jobString>Refining raw mithril into 60 mithril ingots.</jobString>
 		<targetCountAdjustment>60</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -631,11 +649,20 @@
 				</filter>
 				<count>60</count>
 			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>DankPyon_PlasteelOre</li>
 				<li>DankPyon_IronIngot</li>
+				<li>DankPyon_Coal</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

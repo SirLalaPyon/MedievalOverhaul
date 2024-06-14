@@ -11,6 +11,8 @@
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<invNutrition>2.55</invNutrition>
 		<invFoodDef>DankPyon_MealBread</invFoodDef>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution>true</apparelIgnorePollution>
 	</PawnKindDef>
 
 	<PawnKindDef Name="DankPyon_BrigandPawnKindBase" Abstract="True">

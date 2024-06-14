@@ -476,8 +476,8 @@
 
 	<ResearchProjectDef>
 		<defName>DankPyon_Plasteel</defName>
-		<label>Plasteel</label>
-		<description>Discover advanced techniques of metallurgy and Plasteel manufacturing.</description>
+		<label>Mithril</label>
+		<description>Discover advanced techniques of metallurgy and mithril forging.</description>
 		<baseCost>4000</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
@@ -493,7 +493,7 @@
 		</requiredResearchFacilities>
 		<generalRules>
 		  <rulesStrings>
-			<li>subject->plasteel production</li>
+			<li>subject->mithril production</li>
 		  </rulesStrings>
 		</generalRules>	
 	</ResearchProjectDef>

@@ -67,7 +67,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>13</MarketValue>
-			<Nutrition>0.7</Nutrition>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
 			<preferability>MealAwful</preferability>
@@ -77,6 +77,9 @@
 			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>60</daysToRotStart>

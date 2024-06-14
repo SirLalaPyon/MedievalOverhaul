@@ -105,7 +105,7 @@
 	<!--Drying rack-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_DryingRack_Small</defName>
-		<label>drying rack(1x2)</label>
+		<label>drying rack (1x2)</label>
 		<description>A wooden rack to dry goods under the sun to dehydrate and preserve them for a longer shelf life.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -602,7 +602,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>2,2</drawSize>
-			<drawRotated>false</drawRotated>
 			<damageData>
 				<rect>(0.05,0.1,0.9,0.9)</rect>
 			</damageData>
@@ -612,6 +611,7 @@
 		</graphicData>
 		<fillPercent>0.45</fillPercent>
 		<pathCost>42</pathCost>
+		<rotatable>false</rotatable>
 
 		<statBases>
 			<WorkToBuild>600</WorkToBuild>
@@ -743,9 +743,6 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<techLevel>Medieval</techLevel>
-		<researchPrerequisites>
-			<li>DankPyon_Plasteel</li>
-		</researchPrerequisites>
 	</ThingDef>
 
   

@@ -38,6 +38,13 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MealNutrientPaste"]/graphicData</xpath>
+					<value>
+						<drawRotated>false</drawRotated>
+					</value>
+				</li>
+
 				<!-- Simple Meal -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealSimple"]/graphicData/texPath</xpath>
@@ -50,6 +57,13 @@
 					<xpath>Defs/ThingDef[defName="MealSimple"]/graphicData/graphicClass</xpath>
 					<value>
 						<graphicClass>Graphic_StackCount</graphicClass>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MealSimple"]/graphicData</xpath>
+					<value>
+						<drawRotated>false</drawRotated>
 					</value>
 				</li>
 
@@ -68,6 +82,13 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MealFine"]/graphicData</xpath>
+					<value>
+						<drawRotated>false</drawRotated>
+					</value>
+				</li>
+
 				<!-- Fine Veg Meal -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealFine_Veg"]/graphicData/texPath</xpath>
@@ -76,11 +97,25 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MealFine_Veg"]/graphicData</xpath>
+					<value>
+						<drawRotated>false</drawRotated>
+					</value>
+				</li>
+
 				<!-- Fine Meat Meal -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealFine_Meat"]/graphicData/texPath</xpath>
 					<value>
 						<texPath>Meal/FineMeat</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MealFine_Meat"]/graphicData</xpath>
+					<value>
+						<drawRotated>false</drawRotated>
 					</value>
 				</li>
 
@@ -98,6 +133,13 @@
 						<graphicClass>Graphic_StackCount</graphicClass>
 					</value>
 				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MealLavish"]/graphicData</xpath>
+					<value>
+						<drawRotated>false</drawRotated>
+					</value>
+				</li>
 				
 				<!-- Lavish Veg Meal -->
 				<li Class="PatchOperationReplace">
@@ -107,11 +149,25 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MealLavish_Veg"]/graphicData</xpath>
+					<value>
+						<drawRotated>false</drawRotated>
+					</value>
+				</li>
+
 				<!-- Lavish Meat Meal -->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealLavish_Meat"]/graphicData/texPath</xpath>
 					<value>
 						<texPath>Meal/LavishMeat</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MealLavish_Meat"]/graphicData</xpath>
+					<value>
+						<drawRotated>false</drawRotated>
 					</value>
 				</li>
 

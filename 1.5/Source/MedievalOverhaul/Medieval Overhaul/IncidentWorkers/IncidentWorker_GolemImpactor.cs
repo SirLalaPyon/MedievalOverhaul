@@ -16,7 +16,7 @@ namespace MedievalOverhaul
     public class IncidentWorker_GolemImpactor : IncidentWorker
     {
         private const float DefendRadius = 28f;
-        protected override bool CanFireNowSub(IncidentParms parms)
+        public override bool CanFireNowSub(IncidentParms parms)
         {
             if (!base.CanFireNowSub(parms))
             {
@@ -24,7 +24,7 @@ namespace MedievalOverhaul
             }
             return true;
         }
-        protected override bool TryExecuteWorker(IncidentParms parms)
+        public override bool TryExecuteWorker(IncidentParms parms)
         {
             MeteorProperties meteorProperties = MeteorProperties.Get((Def)this.def);
             Map map = (Map)parms.target;

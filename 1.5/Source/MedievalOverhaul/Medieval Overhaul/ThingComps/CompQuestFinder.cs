@@ -86,7 +86,7 @@ namespace MedievalOverhaul
 			}
 		}
 
-        protected override void DoFind(Pawn worker)
+        public override void DoFind(Pawn worker)
         {
             if (this.currentQuest == QuestScriptDefOf.LongRangeMineralScannerLump)
             {
@@ -110,7 +110,7 @@ namespace MedievalOverhaul
             }
         }
 
-        protected override bool TickDoesFind(float scanSpeed) => (double)this.daysWorkingSinceLastFinding >= (double)this.currentQuest.FinderInfo().WorkTillTrigger.TicksToDays();
+        public override bool TickDoesFind(float scanSpeed) => (double)this.daysWorkingSinceLastFinding >= (double)this.currentQuest.FinderInfo().WorkTillTrigger.TicksToDays();
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {

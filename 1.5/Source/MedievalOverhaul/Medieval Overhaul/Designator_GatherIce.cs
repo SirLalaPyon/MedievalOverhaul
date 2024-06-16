@@ -11,7 +11,7 @@ namespace MedievalOverhaul
 
         public override bool DragDrawMeasurements => true;
 
-        protected override DesignationDef Designation
+        public override DesignationDef Designation
         {
             get
             {

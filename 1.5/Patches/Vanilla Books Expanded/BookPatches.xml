@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Huge thanks for owl for permission-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Books Expanded</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<RoomRoleDef>
+							<defName>DankPyon_Library</defName>
+							<label>library room</label>
+							<workerClass>MedievalOverhaul.RoomRoleWorker_Library</workerClass>
+							<relatedStats>
+							<li>Beauty</li>
+							<li>Cleanliness</li>
+							<li>Wealth</li>
+							<li>Space</li>
+							<li>Impressiveness</li>
+							<li>ReadingBonus</li>
+							</relatedStats>
+						</RoomRoleDef>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+</Patch>

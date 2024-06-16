@@ -34,7 +34,7 @@ namespace MedievalOverhaul
             this.fuelFilterState.quickSearch.Reset();
         }
 
-        protected override void FillTab()
+        public override void FillTab()
         {
             CompStoreFuelThing comp1 = this.SelBuilding.GetComp<CompStoreFuelThing>();
             CompRefuelable comp2 = this.SelBuilding.GetComp<CompRefuelable>();

@@ -3,10 +3,6 @@ using Verse;
 
 namespace MedievalOverhaul
 {
-    public class TreatiseSkill : DefModExtension
-    {
-        public SkillDef skillDef;
-    }
     public class RecipeWorker_MakeSkillBook : RecipeWorkerCounter
     {
         public override bool CanCountProducts(Bill_Production bill)
@@ -23,7 +19,7 @@ namespace MedievalOverhaul
             {
                 var compBook = book.TryGetComp<CompBook>();
                 var doer = compBook.GetDoer<BookOutcomeDoerGainSkillExp>();
-                if (doer != null && doer.Values.ContainsKey(extension.skillDef))
+                if (doer != null && doer.Values.ContainsKey(extension.skill))
                 {
                     num++;
                 }

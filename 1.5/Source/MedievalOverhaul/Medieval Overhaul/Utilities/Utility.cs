@@ -9,6 +9,7 @@ using RimWorld;
 
 namespace MedievalOverhaul
 {
+    [StaticConstructorOnStartup]
     public static class Utility
     {
         public static SeperateHideList WhiteList = DefDatabase<SeperateHideList>.GetNamed("WhiteList");
@@ -17,6 +18,17 @@ namespace MedievalOverhaul
         public static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
         public static bool LWMFuelFilterIsEnabled = LoadedModManager.RunningModsListForReading.Any<ModContentPack>((Predicate<ModContentPack>)(x => x.Name == "LWM's Fuel Filter" || x.PackageId == "LWM.FuelFilter"));
         public static bool CEIsEnabled = LoadedModManager.RunningModsListForReading.Any<ModContentPack>((Predicate<ModContentPack>)(x => x.PackageId == "ceteam.combatextended"));
+        public static bool VBEIsEnabled = ModsConfig.IsActive("VanillaExpanded.VBooksE");
+        public static RoomRoleDef DankPyon_Library;
+        public static ThoughtDef DankPyon_ReadInLibrary;
+        static Utility()
+        {
+            if (VBEIsEnabled is false)
+            {
+                DankPyon_Library = DefDatabase<RoomRoleDef>.GetNamed("DankPyon_Library");
+                DankPyon_ReadInLibrary = DefDatabase<ThoughtDef>.GetNamed("DankPyon_ReadInLibrary");
+            }
+        }
 
         public static Thing FindSpecificFuel(Pawn pawn, ThingDef fuel)
         {

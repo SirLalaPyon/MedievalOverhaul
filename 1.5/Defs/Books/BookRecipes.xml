@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<RecipeDef Name="DankPyon_TreatiseBase" Abstract="True">
+	<RecipeDef Name="DankPyon_RecipeTreatiseBase" Abstract="True">
 		<effectWorking>Sculpt</effectWorking>
 		<workerCounterClass>MedievalOverhaul.RecipeWorker_MakeSkillBook</workerCounterClass>
 		<recipeUsers>
@@ -30,7 +30,7 @@
 		<unfinishedThingDef>DankPyon_UnfinishedBook</unfinishedThingDef>
 	</RecipeDef>
 	
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseShooting</defName>
 		<label>write shooting treatise</label>
 		<description>Write shooting treatise.</description>
@@ -42,7 +42,7 @@
 		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseMelee</defName>
 		<label>write melee treatise</label>
 		<description>Write melee treatise.</description>
@@ -54,7 +54,7 @@
 		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseConstruction</defName>
 		<label>write construction treatise</label>
 		<description>Write construction treatise.</description>
@@ -66,7 +66,7 @@
 		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseMining</defName>
 		<label>write mining treatise</label>
 		<description>Write mining treatise.</description>
@@ -78,7 +78,7 @@
 		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseCooking</defName>
 		<label>write cooking treatise</label>
 		<description>Write cooking treatise.</description>
@@ -90,7 +90,7 @@
 		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseGrowing</defName>
 		<label>write growing treatise</label>
 		<description>Write growing treatise.</description>
@@ -102,7 +102,7 @@
 		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseAnimals</defName>
 		<label>write animals treatise</label>
 		<description>Write animals treatise.</description>
@@ -114,7 +114,7 @@
 		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseCrafting</defName>
 		<label>write crafting treatise</label>
 		<description>Write crafting treatise.</description>
@@ -126,7 +126,7 @@
 		</modExtensions>
 	</RecipeDef>
 	
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseArt</defName>
 		<label>write art treatise</label>
 		<description>Write art treatise.</description>
@@ -138,7 +138,7 @@
 		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseMedical</defName>
 		<label>write medical treatise</label>
 		<description>Write medical treatise.</description>
@@ -151,7 +151,7 @@
 	</RecipeDef>
 
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseSocial</defName>
 		<label>write social treatise</label>
 		<description>Write social treatise.</description>
@@ -163,7 +163,7 @@
 		</modExtensions>
 	</RecipeDef>
 
-	<RecipeDef ParentName="DankPyon_TreatiseBase">
+	<RecipeDef ParentName="DankPyon_RecipeTreatiseBase">
 		<defName>DankPyon_TreatiseIntellectual</defName>
 		<label>write intellectual treatise</label>
 		<description>Write intellectual treatise.</description>

@@ -9,6 +9,7 @@ using VFECore;
 
 namespace MedievalOverhaul.Patches
 {
+
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.ButcherProducts))]
     public static class Pawn_ButcherProducts
     {

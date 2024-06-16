@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef Name="DankPyon_TreatiseBase" Abstract="True">
+		<effectWorking>Sculpt</effectWorking>
+		<workerCounterClass>MedievalOverhaul.RecipeWorker_MakeSkillBook</workerCounterClass>
+		<recipeUsers>
+			<li>DankPyon_Book_ScribeTable</li>
+		</recipeUsers>
+		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Paper</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_Paper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_Treatise>1</DankPyon_Treatise>
+		</products>
+		<unfinishedThingDef>DankPyon_UnfinishedBook</unfinishedThingDef>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseShooting</defName>
+		<label>write shooting treatise</label>
+		<description>Write shooting treatise.</description>
+		<jobString>writing shooting treatise.</jobString>
+		<modExtensions>
+			<li Class="MedievalOverhaul.TreatiseSkill">
+				<skill>Shooting</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseMelee</defName>
+		<label>write melee treatise</label>
+		<description>Write melee treatise.</description>
+		<jobString>writing melee treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Melee</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseConstruction</defName>
+		<label>write construction treatise</label>
+		<description>Write construction treatise.</description>
+		<jobString>writing construction treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Construction</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseMining</defName>
+		<label>write mining treatise</label>
+		<description>Write mining treatise.</description>
+		<jobString>writing mining treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Mining</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseCooking</defName>
+		<label>write cooking treatise</label>
+		<description>Write cooking treatise.</description>
+		<jobString>writing cooking treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Cooking</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseGrowing</defName>
+		<label>write growing treatise</label>
+		<description>Write growing treatise.</description>
+		<jobString>writing growing treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Plants</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseAnimals</defName>
+		<label>write animals treatise</label>
+		<description>Write animals treatise.</description>
+		<jobString>writing animals treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Animals</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseCrafting</defName>
+		<label>write crafting treatise</label>
+		<description>Write crafting treatise.</description>
+		<jobString>writing crafting treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Crafting</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseArt</defName>
+		<label>write art treatise</label>
+		<description>Write art treatise.</description>
+		<jobString>writing art treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Artistic</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseMedical</defName>
+		<label>write medical treatise</label>
+		<description>Write medical treatise.</description>
+		<jobString>writing medical treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Medicine</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseSocial</defName>
+		<label>write social treatise</label>
+		<description>Write social treatise.</description>
+		<jobString>writing social treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Social</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_TreatiseBase">
+		<defName>DankPyon_TreatiseIntellectual</defName>
+		<label>write intellectual treatise</label>
+		<description>Write intellectual treatise.</description>
+		<jobString>writing intellectual treatise.</jobString>
+		<modExtensions>
+			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+				<skill>Intellectual</skill>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+</Defs>

@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<WorkGiverDef>
+		<defName>DankPyon_DoBillsScribeTable</defName>
+		<label>write manuscript</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Research</workType>
+		<priorityInType>110</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_Book_ScribeTable</li>
+		</fixedBillGiverDefs>
+		<verb>write</verb>
+		<gerund>writing at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
 	
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsWell</defName>

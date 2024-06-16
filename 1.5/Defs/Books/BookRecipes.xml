@@ -48,7 +48,7 @@
 		<description>Write melee treatise.</description>
 		<jobString>writing melee treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Melee</skill>
 			</li>
 		</modExtensions>
@@ -60,12 +60,11 @@
 		<description>Write construction treatise.</description>
 		<jobString>writing construction treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Construction</skill>
 			</li>
 		</modExtensions>
 	</RecipeDef>
-
 
 	<RecipeDef ParentName="DankPyon_TreatiseBase">
 		<defName>DankPyon_TreatiseMining</defName>
@@ -73,7 +72,7 @@
 		<description>Write mining treatise.</description>
 		<jobString>writing mining treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Mining</skill>
 			</li>
 		</modExtensions>
@@ -85,7 +84,7 @@
 		<description>Write cooking treatise.</description>
 		<jobString>writing cooking treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Cooking</skill>
 			</li>
 		</modExtensions>
@@ -97,7 +96,7 @@
 		<description>Write growing treatise.</description>
 		<jobString>writing growing treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Plants</skill>
 			</li>
 		</modExtensions>
@@ -109,7 +108,7 @@
 		<description>Write animals treatise.</description>
 		<jobString>writing animals treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Animals</skill>
 			</li>
 		</modExtensions>
@@ -121,7 +120,7 @@
 		<description>Write crafting treatise.</description>
 		<jobString>writing crafting treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Crafting</skill>
 			</li>
 		</modExtensions>
@@ -133,7 +132,7 @@
 		<description>Write art treatise.</description>
 		<jobString>writing art treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Artistic</skill>
 			</li>
 		</modExtensions>
@@ -145,7 +144,7 @@
 		<description>Write medical treatise.</description>
 		<jobString>writing medical treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Medicine</skill>
 			</li>
 		</modExtensions>
@@ -158,7 +157,7 @@
 		<description>Write social treatise.</description>
 		<jobString>writing social treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Social</skill>
 			</li>
 		</modExtensions>
@@ -170,7 +169,7 @@
 		<description>Write intellectual treatise.</description>
 		<jobString>writing intellectual treatise.</jobString>
 		<modExtensions>
-			<li Class="VanillaBooksExpanded.RecipeSkillBook">
+			<li Class="MedievalOverhaul.TreatiseSkill">
 				<skill>Intellectual</skill>
 			</li>
 		</modExtensions>

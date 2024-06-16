@@ -13,9 +13,10 @@
 		<equippedAngleOffset>-20</equippedAngleOffset>
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
+		<tickerType>Rare</tickerType>
 		<statBases>
 			<MarketValue>1.0</MarketValue>
-			<MaxHitPoints>120</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
 			<Mass>0.25</Mass>
 			<Flammability>0.0</Flammability>
 			<StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
@@ -26,6 +27,7 @@
 			<MeleeWeapon_CooldownMultiplier>2.0</MeleeWeapon_CooldownMultiplier>
 			<SharpDamageMultiplier>0.8</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.3</BluntDamageMultiplier>
+			<DeteriorationRate>1</DeteriorationRate>
 		</statBases>
 		<stuffProps>
 			<stuffAdjective>bone</stuffAdjective>

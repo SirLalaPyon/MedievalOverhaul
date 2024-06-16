@@ -2,11 +2,6 @@
 <Defs>
 	<!-- Placeable Furniture on Top of Tables Base-->
 	<ThingDef ParentName="FurnitureBase" Name="DankPyon_PlaceableFurnitureOnTopOfTables" Abstract="true">
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<passability>Standable</passability>
-		<fillPercent>0.1</fillPercent>
-		<pathCost>0</pathCost>
-
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
@@ -22,6 +17,15 @@
 			<isEdifice>false</isEdifice>
 		</building>
 
+		<size>(1,1)</size>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<wipesPlants>true</wipesPlants>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<clearBuildingArea>false</clearBuildingArea>
+
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Mass>1</Mass>
@@ -35,9 +39,6 @@
 			<li Class="CompProperties_Styleable" Inherit="False"/>
 		</comps>
 
-		<size>(1,1)</size>
-		<surfaceType>Item</surfaceType>
-		<canOverlapZones>false</canOverlapZones>
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>

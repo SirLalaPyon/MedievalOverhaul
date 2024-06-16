@@ -3,6 +3,68 @@
 
 
 	<!--============================== Linkables ==============================-->
+	<!-- Mining Tools -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_MiningTools</defName>
+		<label>mining tools</label>
+		<description>A set of tools designed for mining resources deep in the earth. Increases mining speed when placed near mining spots.</description>
+		<graphicData>
+			<texPath>Misc/MiningTools</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.25</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_ToolRack</defName>
 		<label>Tool Rack</label>

@@ -69,6 +69,14 @@
 		</value>
 	</Operation>
 
+	<!-- Skull -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Skull"]/graphicData/drawSize</xpath>
+		<value>
+			<drawSize>(0.9,0.9)</drawSize>
+		</value>
+	</Operation>
+
 	<!-- Brewery Table -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Brewery"]/graphicData/texPath</xpath>

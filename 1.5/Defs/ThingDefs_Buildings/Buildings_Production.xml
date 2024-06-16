@@ -41,7 +41,7 @@
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
-					<li>ToolCabinet</li>
+					<li>DankPyon_MiningTools</li>
 				</linkableFacilities>
 			</li>
 			<li Class="CompProperties_ReportWorkSpeed">
@@ -97,7 +97,7 @@
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
-					<li>ToolCabinet</li>
+					<li>DankPyon_MiningTools</li>
 				</linkableFacilities>
 			</li>
 			<li Class="CompProperties_ReportWorkSpeed">
@@ -152,7 +152,7 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_StonecuttingSpot</defName>
-		<label>Stonecutting Spot</label>
+		<label>stonecutter's spot</label>
 		<description>A place for bashing stones to each other. Production here is slow because of the lack of tools.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>

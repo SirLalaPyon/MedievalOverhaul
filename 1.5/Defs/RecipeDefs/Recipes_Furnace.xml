@@ -94,7 +94,7 @@
 	</RecipeDef>
 
 	<!-- Coal -->
-	<RecipeDef>
+	<!-- <RecipeDef>
 		<defName>DankPyon_MakeChunk_Coal</defName>
 		<label>make charcoal from wood</label>
 		<description>Make a batch of coal by burning wood.</description>
@@ -129,7 +129,7 @@
 		<products>
 			<DankPyon_Coal>15</DankPyon_Coal>
 		</products>
-	</RecipeDef>
+	</RecipeDef> -->
 
 	<!-- Ingots: Base Class -->
 	<RecipeDef Name="DankPyon_SmelterBase" Abstract="True">

@@ -70,7 +70,7 @@
 		</ingredientFilter>
 	</ProcessorFramework.ProcessDef>
 
-	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
+	<!-- <ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
 		<defName>DankPyon_SmeltingOre_Coal</defName>
 		<thingDef>DankPyon_Coal</thingDef>
 		<ingredientFilter>
@@ -79,7 +79,7 @@
 			</thingDefs>
 		</ingredientFilter>
 		<efficiency>2.0</efficiency>
-	</ProcessorFramework.ProcessDef>
+	</ProcessorFramework.ProcessDef> -->
 
 	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
 		<defName>DankPyon_SmeltingOre_Tar</defName>

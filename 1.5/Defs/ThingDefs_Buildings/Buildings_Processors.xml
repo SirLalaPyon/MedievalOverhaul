@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	<!-- Charcoal Pile -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_CharcoalPile</defName>
+		<label>charcoal pile</label>
+		<description>A mound of wood covered with soil and left to smolder slowly, producing charcoal for fuel and metalworking.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/CharcoalPile/CharcoalPile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+		</graphicData>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<altitudeLayer>Building</altitudeLayer>
+		<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.7</fillPercent>
+		<pathCost>70</pathCost>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>40</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>300</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_WoodIntoCoal</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<!-- <li>DankPyon_Charcoal</li> -->
+		</researchPrerequisites>
+	</ThingDef>
+
 	<!-- Cauldron -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Cauldron</defName>
@@ -169,7 +227,6 @@
 		<defName>DankPyon_DryingRack_Big</defName>
 		<label>drying rack (2x2)</label>
 		<description>A wooden rack to dry goods under the sun for preservation and long time use.</description>
-		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<texPath>Production/DryingRack2x2/DryingRack</texPath>
@@ -711,7 +768,7 @@
 					<!--li>DankPyon_SmeltingOre_Steel</li-->
 					<li>DankPyon_SmeltingOre_Silver</li>
 					<li>DankPyon_SmeltingOre_Gold</li>
-					<li>DankPyon_SmeltingOre_Coal</li>
+					<!-- <li>DankPyon_SmeltingOre_Coal</li> -->
 					<!--li>DankPyon_SmeltingOre_Tar</li-->
 					<!-- <li>DankPyon_SmeltingOre_Plasteel</li> -->
 				</processes>

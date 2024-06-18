@@ -137,7 +137,7 @@
 	</ThingDef>
 
 
-	<!-- Unique Books -->
+	<!-- ========== Unique Books ========== -->
 	<ThingDef ParentName="BookBase">
 		<defName>DankPyon_BookUnique_OnEnglish</defName>
 		<label>On English</label>
@@ -159,20 +159,35 @@ Lo, what should a man in these days write: egges or eyren? Certainly it is hard 
 		</tradeTags>
 
 		<comps>
-		<li Class="CompProperties_Book">
+		<li Class="MedievalOverhaul.CompProperties_DefinableBook">
+			<qualityRange>4~6</qualityRange>
+			<nameMaker>DankPyon_Title_OnEnglish</nameMaker>
+			<descriptionMaker>DankPyon_Description_OnEnglish</descriptionMaker>
 			<ageYearsRange>100~200</ageYearsRange>
 			<openGraphic>
-				<texPath>Special/Book/OnEnglish/OnEnglish_Open</texPath>
+				<texPath>Special/Book/OnEnglish/Book_OnEnglish_Open</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>0.7</drawSize>
 			</openGraphic>
 			<verticalGraphic>
-				<texPath>Special/Book/OnEnglish/OnEnglish_Vertical</texPath>
+				<texPath>Special/Book/OnEnglish/Book_OnEnglish_Vertical</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<addTopAltitudeBias>true</addTopAltitudeBias>
 			</verticalGraphic>
 			<doers>
-				<li Class="BookOutcomeProperties_GainSkillExp" />
+			<li Class="MedievalOverhaul.BookOutcomeProperties_GainSkillExpDefinable">
+				<maxSkillLevel>16</maxSkillLevel>
+				<skillGains>
+					<li>
+						<skillDef>Intellectual</skillDef>
+						<gainMultiplier>0.25</gainMultiplier>
+					</li>
+					<li>
+						<skillDef>Artistic</skillDef>
+						<gainMultiplier>0.1</gainMultiplier>
+					</li>
+				</skillGains>
+			</li>
 			</doers>
 		</li>
 		</comps>

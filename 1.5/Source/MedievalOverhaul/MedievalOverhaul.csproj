@@ -40,9 +40,12 @@
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableNutritionStatus.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeDoerGainSkillExp_OnBookGenerated_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeProperties_GainSkillExp_OnReadingTick_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Book_GenerateBook_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\GenRecipe_MakeRecipeProducts_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Reading_ReadBook_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\RoomRoleWorker_Workshop_GetScore_Patch.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_MakeSkillBook.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_ResourcePod_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StockGenerator_Category_GenerateThings.cs" />
@@ -61,6 +64,7 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_GatherIce.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RoomRoleWorker_Library.cs" />
     <Compile Include="Medieval Overhaul\Recipes\TreatiseSkill.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\BookWithAuthor.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompMeltable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_GenericHide.cs" />

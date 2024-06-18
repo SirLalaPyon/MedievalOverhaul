@@ -108,7 +108,6 @@
 		<comps>
 		<li Class="MedievalOverhaul.CompProperties_DefinableBook">
 			<qualityRange>0~2</qualityRange>
-			<maxSkillLevel>20</maxSkillLevel>
 			<nameMaker>Namer_Novel</nameMaker>
 			<descriptionMaker>Description_Novel</descriptionMaker>
 			<ageYearsRange>100~200</ageYearsRange>
@@ -123,7 +122,15 @@
 				<addTopAltitudeBias>true</addTopAltitudeBias>
 			</verticalGraphic>
 			<doers>
-			<li Class="BookOutcomeProperties_GainSkillExp" />
+			<li Class="MedievalOverhaul.BookOutcomeProperties_GainSkillExpDefinable">
+				<maxSkillLevel>20</maxSkillLevel>
+				<skillGains>
+					<li>
+						<skillDef>Shooting</skillDef>
+						<gainMultiplier>0.5</gainMultiplier>
+					</li>
+				</skillGains>
+			</li>
 			</doers>
 		</li>
 		</comps>

@@ -13,19 +13,11 @@ namespace MedievalOverhaul
         {
             float num = BookUtility.GetSkillExpForQuality(__instance.Quality);
             var overrides = new Dictionary<SkillDef, float>();
-            if (__instance.Book.BookComp.Props is CompProperties_DefinableBook definableBook)
+            if (__instance is BookOutcomeProperties_GainSkillExpDefinable compProps)
             {
-                if (definableBook.trainableSkills != null)
+                if (compProps.skillGains != null)
                 {
-                    foreach (var skill in definableBook.trainableSkills)
-                    {
-                        overrides[skill] = num;
-                    }
-                }
-
-                if (definableBook.skillGainMultipliers != null)
-                {
-                    foreach (var skill in definableBook.skillGainMultipliers)
+                    foreach (var skill in compProps.skillGains)
                     {
                         overrides[skill.skillDef] = num * skill.gainMultiplier;
                     }

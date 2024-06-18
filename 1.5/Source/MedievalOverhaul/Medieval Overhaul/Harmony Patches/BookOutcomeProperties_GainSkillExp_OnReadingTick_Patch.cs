@@ -54,10 +54,10 @@ namespace MedievalOverhaul.Patches
     public static class BookOutcomeDoerGainSkillExp_GetMaxSkillLevel_Patch
     {
         public static BookOutcomeDoerGainSkillExp curDoer;
-        public static void Postfix(ref int __result)
+        public static void Postfix(BookOutcomeDoerGainSkillExp __instance, ref int __result)
         {
-            if (curDoer is not null && curDoer.Book.BookComp.Props is CompProperties_DefinableBook compProps 
-                && compProps.maxSkillLevel.HasValue)
+            if (curDoer is not null && __instance is BookOutcomeProperties_GainSkillExpDefinable compProps &&
+                compProps.maxSkillLevel.HasValue)
             {
                 __result = compProps.maxSkillLevel.Value;
             }

@@ -90,6 +90,7 @@
 		<defName>DankPyon_Treatise</defName>
 		<label>treatise</label>
 		<description>Carefully bound volumes filled with detailed knowledge and techniques on various subjects. Each book offers in-depth explanations and practical advice, helping readers master new skills. Written by experts and often accompanied by detailed diagrams, these books are valuable resources for learning and improvement.</description>
+		<thingClass>MedievalOverhaul.BookWithAuthor</thingClass>
 		<graphicData>
 			<texPath>Special/Book/Treatise</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -105,7 +106,9 @@
 		</tradeTags>
 
 		<comps>
-		<li Class="CompProperties_Book">
+		<li Class="MedievalOverhaul.CompProperties_DefinableBook">
+			<qualityRange>0~2</qualityRange>
+			<maxSkillLevel>20</maxSkillLevel>
 			<nameMaker>Namer_Novel</nameMaker>
 			<descriptionMaker>Description_Novel</descriptionMaker>
 			<ageYearsRange>100~200</ageYearsRange>

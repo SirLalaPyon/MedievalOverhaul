@@ -12,7 +12,19 @@ namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(GenRecipe), "MakeRecipeProducts")]
     public static class GenRecipe_MakeRecipeProducts
-    { 
+    {
+        public static Pawn curWorker;
+        public static RecipeDef curRecipe;
+        [HarmonyPriority(int.MaxValue)]
+        public static void Prefix(RecipeDef recipeDef, Pawn worker)
+        {
+            if (recipeDef.HasModExtension<TreatiseSkill>())
+            {
+                curWorker = worker;
+                curRecipe = recipeDef;
+            }
+        }
+        [HarmonyPriority(int.MinValue)]
         public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, RecipeDef recipeDef, List<Thing> ingredients)
         {
             if (__result != null)
@@ -67,6 +79,9 @@ namespace MedievalOverhaul.Patches
                     
                 }
             }
+
+            curWorker = null;
+            curRecipe = null;
         }
     }
 }

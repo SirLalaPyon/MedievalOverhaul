@@ -70,6 +70,15 @@
 		</costList>
 	</TerrainDef>
 
+	<TerrainDef ParentName="DankPyon_Floor_HerringboneBase">
+		<defName>DankPyon_Floor_Herringbone_Clay</defName>
+		<label>clay herringbone tile</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>4</DankPyon_BlocksClay>
+		</costList>
+	</TerrainDef>
+
 	<TerrainDef Abstract="True" ParentName="DankPyon_Floor_TileStoneBase" Name="DankPyon_Floor_WindmillBase">
 		<description>Carefully-cut and fit stone tiles in a windmill pattern for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
 		<texturePath>Terrain/WindmillTile</texturePath>
@@ -118,6 +127,15 @@
 		<color>(132,135,132)</color>
 		<costList>
 			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_WindmillBase">
+		<defName>DankPyon_Floor_Windmill_Clay</defName>
+		<label>clay windmill tile</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>4</DankPyon_BlocksClay>
 		</costList>
 	</TerrainDef>
 
@@ -172,6 +190,15 @@
 		</costList>
 	</TerrainDef>
 
+	<TerrainDef ParentName="DankPyon_Floor_TileCobblestone">
+		<defName>DankPyon_Floor_CobbleStone_Clay</defName>
+		<label>clay cobblestone tile</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>4</DankPyon_BlocksClay>
+		</costList>
+	</TerrainDef>
+
 	<TerrainDef Abstract="True" ParentName="DankPyon_Floor_TileStoneBase" Name="DankPyon_Floor_TileVersailles">
 		<description>Carefully-cut and fit stone tiles in a versailles pattern for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
 		<texturePath>Terrain/VersaillesTile</texturePath>
@@ -220,6 +247,15 @@
 		<color>(132,135,132)</color>
 		<costList>
 			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_TileVersailles">
+		<defName>DankPyon_Floor_Versailles_Clay</defName>
+		<label>clay versailles tile</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>4</DankPyon_BlocksClay>
 		</costList>
 	</TerrainDef>
 </Defs>

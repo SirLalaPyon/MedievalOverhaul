@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!-- Clay -->
+	<ThingDef ParentName="UglyRockBase" Name="DankPyon_ClayBase">
+		<defName>DankPyon_NaturalWall_Clay</defName>
+		<label>clay</label>
+		<description>A sedimentary rock composed of clay particles compressed together.</description>
+		<graphicData>
+			<color>(132, 99, 81)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+		</statBases>
+		<building>
+			<mineableThing>DankPyon_ChunkClay</mineableThing>
+			<mineableDropChance>0.55</mineableDropChance>
+			<smoothedThing>DankPyon_SmoothedClay</smoothedThing>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ClayBase">
+		<defName>DankPyon_SmoothedClay</defName>
+		<label>smoothed clay</label>
+		<description>A sedimentary rock composed of clay particles compressed together. The clay layers have been polished to a flat, smooth surface.</description>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<MarketValue>7</MarketValue>
+		</statBases>
+		<building>
+			<isNaturalRock>false</isNaturalRock>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<paintable>true</paintable>
+			<smoothedThing />
+		</building>
+		<saveCompressible>false</saveCompressible>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+  
+	<ThingDef ParentName="ChunkRockBase">
+		<defName>DankPyon_ChunkClay</defName>
+		<label>clay chunk</label>
+		<graphicData>
+			<color>(132, 99, 81)</color>
+		</graphicData>
+		<statBases>
+			<Mass>20</Mass>
+		</statBases>
+		<soundDrop>ChunkRock_Drop</soundDrop>
+		<butcherProducts>
+			<DankPyon_BlocksClay>20</DankPyon_BlocksClay>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="StoneBlocksBase">
+		<defName>DankPyon_BlocksClay</defName>
+		<label>clay blocks</label>
+		<description>Blocks of solid clay. Clay is a relatively soft rock and chips easily.</description>
+		<graphicData>
+			<color>(132, 99, 81)</color>
+		</graphicData>
+		<statBases>
+			<Mass>1</Mass>
+			<SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<color>(132, 99, 81)</color>
+			<soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+			<stuffAdjective>clay</stuffAdjective>
+			<statFactors>
+				<Beauty>1.1</Beauty>  
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<WorkToBuild>3.0</WorkToBuild>
+				<WorkToMake>1.1</WorkToMake>
+			</statFactors>
+			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+		</stuffProps>
+	</ThingDef>
+
+</Defs>

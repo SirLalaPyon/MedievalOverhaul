@@ -66,4 +66,13 @@
 			<BlocksMarble>4</BlocksMarble>
 		</costList>
 	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_CobblestoneBase">
+		<defName>DankPyon_Floor_Cobblestone_Clay</defName>
+		<label>clay cobblestone</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>4</DankPyon_BlocksClay>
+		</costList>
+	</TerrainDef>
 </Defs>

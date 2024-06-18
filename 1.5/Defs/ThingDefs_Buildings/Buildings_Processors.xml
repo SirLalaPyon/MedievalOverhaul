@@ -31,7 +31,7 @@
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>15</costStuffCount>
 		<comps>
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>300</capacity>
@@ -522,7 +522,7 @@
 		<fillPercent>0.5</fillPercent>
 		<pathCost>60</pathCost>
 		<statBases>
-			<WorkToBuild>1000</WorkToBuild>
+			<WorkToBuild>2500</WorkToBuild>
 			<Mass>20</Mass>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1.0</Flammability>
@@ -666,6 +666,7 @@
 				<volume>(0.75, 0.35, 0.33)</volume>
 			</shadowData>
 		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
 		<fillPercent>0.45</fillPercent>
 		<pathCost>42</pathCost>
 		<rotatable>false</rotatable>
@@ -717,7 +718,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Smelter</defName>
 		<label>smelter</label>
-		<description>A stone smelter used to refine scrap and raw resources.</description>
+		<description>A stone smelter used to refine scrap and raw resources. Generates strong heat.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -733,10 +734,103 @@
 			</damageData>
 		</graphicData>
 		<uiIconScale>0.85</uiIconScale>
+
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
-		<costStuffCount>200</costStuffCount>
+		<costStuffCount>120</costStuffCount>
+
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Cleanliness>-30</Cleanliness>
+		</statBases>
+		<size>(2,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps Inherit="false">
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>200</capacity>
+				<independentProcesses>true</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_SmeltingOre_Iron</li>
+					<li>DankPyon_SmeltingOre_Steel</li>
+					<li>DankPyon_SmeltingOre_Silver</li>
+					<li>DankPyon_SmeltingOre_Gold</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>80.0</fuelConsumptionRate>
+				<fuelCapacity>80.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>9</heatPerSecond>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<techLevel>Medieval</techLevel>
+		<researchPrerequisites>
+			<li>DankPyon_Steel</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Kiln</defName>
+		<label>kiln</label>
+		<description>A stone kiln used to cook raw clay into bricks.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/Kiln/Kiln</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -764,22 +858,17 @@
 				<barScale>(1.0, 1.0)</barScale>
 				<colorCoded>false</colorCoded>
 				<processes>
-					<li>DankPyon_SmeltingOre_Iron</li>
-					<!--li>DankPyon_SmeltingOre_Steel</li-->
-					<li>DankPyon_SmeltingOre_Silver</li>
-					<li>DankPyon_SmeltingOre_Gold</li>
-					<!-- <li>DankPyon_SmeltingOre_Coal</li> -->
-					<!--li>DankPyon_SmeltingOre_Tar</li-->
-					<!-- <li>DankPyon_SmeltingOre_Plasteel</li> -->
+					<li>DankPyon_ClayIntoBrick</li>
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>10.0</fuelConsumptionRate>
-				<fuelCapacity>100.0</fuelCapacity>
+				<fuelConsumptionRate>50.0</fuelConsumptionRate>
+				<fuelCapacity>80.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
 					</thingDefs>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -800,6 +889,9 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<techLevel>Medieval</techLevel>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
 	</ThingDef>
 
   
@@ -961,6 +1053,7 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
 		<rotatable>false</rotatable>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<altitudeLayer>Building</altitudeLayer>

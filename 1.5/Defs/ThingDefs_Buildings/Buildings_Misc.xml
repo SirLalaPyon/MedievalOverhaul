@@ -298,7 +298,7 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<designationCategory>Misc</designationCategory>
 		<researchPrerequisites>
-			<li>DankPyon_Steel</li>
+			<li>Smithing</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -1084,7 +1084,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Cart</defName>
-		<label>cart</label>
+		<label>loading cart</label>
 		<description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. \n\nRequired for long distance trading, you can only sell goods to other factions if they're near a cart.</description>
 		<thingClass>Building_OrbitalTradeBeacon</thingClass>
 		<graphicData>

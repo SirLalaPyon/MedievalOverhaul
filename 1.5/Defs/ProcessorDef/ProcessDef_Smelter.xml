@@ -2,7 +2,7 @@
 <Defs>
 
 	<ProcessorFramework.ProcessDef Name="DankPyon_SmeltingOre_Base" Abstract="True">
-		<processDays>0.06</processDays><!-- in days, a day is 60,000 ticks -->
+		<processDays>0.24</processDays><!-- in days, a day is 60,000 ticks -->
 		<capacityFactor>1.0</capacityFactor>
 		<efficiency>1.0</efficiency>
 		<usesTemperature>false</usesTemperature>

@@ -4,8 +4,8 @@
 	<RecipeDef>
 		<defName>DankPyon_ExtractMetalFromScrap</defName>
 		<label>smelt metal from scrap</label>
-		<description>Use heat and strong electromagnets to extract useful metal from scrap.</description>
-		<jobString>Smelting metal from slag.</jobString>
+		<description>Use intense heat to extract useful metal from scrap.</description>
+		<jobString>Smelting metal from broken weapons.</jobString>
 		<workAmount>400</workAmount>
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
@@ -103,7 +103,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.25</workSkillLearnFactor>
-		<workAmount>3600</workAmount>
+		<workAmount>4800</workAmount>
 		<targetCountAdjustment>50</targetCountAdjustment>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<allowMixingIngredients>false</allowMixingIngredients>
@@ -149,7 +149,7 @@
 	<!-- Smelt any ore -->
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Any</defName>
-		<workAmount>1200</workAmount>
+		<workAmount>2400</workAmount>
 		<label>Smelt any ore into ingots</label>
 		<jobString>Smelting an ore into 1 ingot.</jobString>
 		<targetCountAdjustment>1</targetCountAdjustment>
@@ -176,7 +176,7 @@
 	<!-- Iron Ingots -->
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Iron</defName>
-		<workAmount>1200</workAmount>
+		<workAmount>2400</workAmount>
 		<label>Smelt an iron ore into an ingot</label>
 		<jobString>Smelting an iron ore into 1 ingot.</jobString>
 		<targetCountAdjustment>1</targetCountAdjustment>
@@ -202,7 +202,7 @@
 
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_IronBulk</defName>
-		<workAmount>1800</workAmount>
+		<workAmount>3600</workAmount>
 		<label>smelt iron ore into ingots x30</label>
 		<jobString>Smelting iron ores into 30 ingots</jobString>
 		<targetCountAdjustment>30</targetCountAdjustment>
@@ -228,7 +228,7 @@
   
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_IronExtraBulk</defName>
-		<workAmount>3600</workAmount>
+		<workAmount>4800</workAmount>
 		<label>smelt iron ore into ingots x60</label>
 		<jobString>Smelting iron ores into 60 ingots.</jobString>
 		<targetCountAdjustment>60</targetCountAdjustment>
@@ -255,8 +255,8 @@
 	<!-- Silver Ingots -->
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Silver</defName>
-		<workAmount>1200</workAmount>
-		<label>Smelt a silver ore into a coin</label>
+		<workAmount>2400</workAmount>
+		<label>Smelt a silver ore into an ingot</label>
 		<jobString>Smelting silver ore into 1 coin.</jobString>
 		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
@@ -280,10 +280,10 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="DankPyon_SmelterBase">
-		<defName>DankPyon_MakeCoins_SilverBulk</defName>
-		<workAmount>600</workAmount>
+		<defName>DankPyon_MakeIngots_SilverBulk</defName>
+		<workAmount>3600</workAmount>
 		<label>smelt silver ore into ingots x30</label>
-		<jobString>Smelting silver ores into 30 coins.</jobString>
+		<jobString>Smelting silver ores into 30 ingots.</jobString>
 		<targetCountAdjustment>30</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -306,10 +306,10 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="DankPyon_SmelterBase">
-		<defName>DankPyon_MakeCoin_SilverExtraBulk</defName>
-		<workAmount>1800</workAmount>
-		<label>smelt silver ore into coins x60</label>
-		<jobString>Smelting silver ores into 60 coins.</jobString>
+		<defName>DankPyon_MakeIngots_SilverExtraBulk</defName>
+		<workAmount>4800</workAmount>
+		<label>smelt silver ore into ingots x60</label>
+		<jobString>Smelting silver ores into 60 ingots.</jobString>
 		<targetCountAdjustment>60</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -334,7 +334,7 @@
 	<!-- Gold Ingots -->
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Gold</defName>
-		<workAmount>1200</workAmount>
+		<workAmount>2400</workAmount>
 		<label>smelt a gold ore into an ingot</label>
 		<jobString>Smelting gold ore into 1 ingot.</jobString>
 		<targetCountAdjustment>1</targetCountAdjustment>
@@ -360,7 +360,7 @@
   
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_GoldBulk</defName>
-		<workAmount>600</workAmount>
+		<workAmount>3600</workAmount>
 		<label>smelt gold ore into ingots x30</label>
 		<jobString>Smelting gold ores into 30 ingots.</jobString>
 		<targetCountAdjustment>30</targetCountAdjustment>
@@ -387,7 +387,7 @@
 
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_GoldExtraBulk</defName>
-		<workAmount>1800</workAmount>
+		<workAmount>4800</workAmount>
 		<label>smelt gold ore into ingots x60</label>
 		<jobString>Smelting gold ore into 60 ingots.</jobString>
 		<targetCountAdjustment>60</targetCountAdjustment>
@@ -415,7 +415,7 @@
 	<!-- Steel Ingots -->
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Steel</defName>
-		<workAmount>200</workAmount>
+		<workAmount>2400</workAmount>
 		<label>refine an iron ingot into a steel ingot</label>
 		<jobString>Refining iron ingots into 1 steel ingot.</jobString>
 		<targetCountAdjustment>1</targetCountAdjustment>
@@ -452,7 +452,7 @@
   
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_SteelBulk</defName>
-		<workAmount>800</workAmount>
+		<workAmount>3600</workAmount>
 		<label>refine iron ingots into steel ingots x30</label>
 		<jobString>Refining iron ingots into 30 steel ingots.</jobString>
 		<targetCountAdjustment>30</targetCountAdjustment>
@@ -489,7 +489,7 @@
 
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_SteelExtraBulk</defName>
-		<workAmount>1400</workAmount>
+		<workAmount>4800</workAmount>
 		<label>refine iron ingots into steel ingots x60</label>
 		<jobString>Refining iron ingots into 60 steel ingots.</jobString>
 		<targetCountAdjustment>60</targetCountAdjustment>
@@ -528,7 +528,7 @@
 	<!-- Plasteel Ingots -->
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_Plasteel</defName>
-		<workAmount>400</workAmount>
+		<workAmount>2400</workAmount>
 		<label>refine raw mithril into an ingot</label>
 		<jobString>Refining raw mithril into 1 mithril ingot.</jobString>
 		<targetCountAdjustment>1</targetCountAdjustment>
@@ -578,7 +578,7 @@
   
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_PlasteelBulk</defName>
-		<workAmount>1600</workAmount>
+		<workAmount>3600</workAmount>
 		<label>refine raw mithril into 30 ingots</label>
 		<jobString>Refining raw mithril into 30 mithril ingots.</jobString>
 		<targetCountAdjustment>30</targetCountAdjustment>
@@ -628,7 +628,7 @@
 
 	<RecipeDef ParentName="DankPyon_SmelterBase">
 		<defName>DankPyon_MakeIngots_PlasteelExtraBulk</defName>
-		<workAmount>2800</workAmount>
+		<workAmount>4800</workAmount>
 		<label>refine raw mithril into 60 ingots</label>
 		<jobString>Refining raw mithril into 60 mithril ingots.</jobString>
 		<targetCountAdjustment>60</targetCountAdjustment>

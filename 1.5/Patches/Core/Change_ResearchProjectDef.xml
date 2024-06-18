@@ -115,6 +115,22 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/baseCost</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/baseCost</xpath>
+			<value>
+				<baseCost>400</baseCost>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+			<value>
+				<baseCost>400</baseCost>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ResearchProjectDef[defName="Cocoa"]/tab</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/ResearchProjectDef[defName="Cocoa"]/tab</xpath>
@@ -206,6 +222,13 @@
 			<label>Fruit tree sowing</label>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ResearchProjectDef[defName="Cocoa"]/baseCost</xpath>
+		<value>
+			<baseCost>600</baseCost>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="Pemmican"]/label</xpath>
 		<value>
@@ -589,6 +612,14 @@
 				</prerequisites>
 			</value>
 		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+			<value>
+				<prerequisites>
+					<li>DankPyon_Lumber</li>
+				</prerequisites>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<!-- ==== Greatbow ==== -->

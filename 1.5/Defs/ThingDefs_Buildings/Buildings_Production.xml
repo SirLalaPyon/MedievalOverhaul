@@ -501,10 +501,11 @@
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
 		<statBases>
-			<WorkToBuild>4000</WorkToBuild>
+			<WorkToBuild>3000</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
+		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel graphic overlay-->
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -513,12 +514,12 @@
 				</linkableFacilities>
 			</li>
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>100.0</fuelConsumptionRate>
-				<fuelCapacity>200.0</fuelCapacity>
+				<fuelConsumptionRate>80.0</fuelConsumptionRate>
+				<fuelCapacity>80.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
-						<li>WoodLog</li>
 						<li>DankPyon_Coal</li>
+						<li>WoodLog</li>
 					</thingDefs>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -764,7 +765,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<costStuffCount>100</costStuffCount>
+		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 			<li>Woody</li>
@@ -1299,18 +1300,21 @@
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-		<costStuffCount>120</costStuffCount>
+
+		<costStuffCount>200</costStuffCount>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
-		<altitudeLayer>Building</altitudeLayer>
+
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
+
 		<statBases>
 			<WorkToBuild>3000</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
+
 		<size>(3,2)</size>
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
@@ -1331,21 +1335,29 @@
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
-			<li Class="CompProperties_Glower">
-				<glowRadius>10</glowRadius>
-				<glowColor>(252,187,113,0)</glowColor>
-			</li>
+			<!-- <li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
+			</li> -->
 
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>80</fuelConsumptionRate>
-				<fuelCapacity>50.0</fuelCapacity>
+				<fuelCapacity>80.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
-						<li>WoodLog</li>
+						<li>DankPyon_Coal</li>
 					</thingDefs>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.20</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 
 			<li Class="CompProperties_HeatPusher">
@@ -1369,7 +1381,7 @@
 		<building>
 			<isMealSource>true</isMealSource>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
+			<heatPerTickWhileWorking>0.32</heatPerTickWhileWorking>
 		</building>
 		<researchPrerequisites>
 			<li>Smithing</li>
@@ -1427,6 +1439,7 @@
 					<li>DankPyon_Bellows</li>
 					<li>DankPyon_QuenchingBucket</li>
 					<li>DankPyon_ToolRack</li>
+					<li>DankPyon_Furnace</li>
 				</linkableFacilities>
 			</li>
 		</comps>

@@ -1436,7 +1436,7 @@
 				</offsets>
 			</li>
 		</comps>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>DankPyon_CandleMaking</li>
 		</researchPrerequisites>
 		<designatorDropdown>DankPyon_Candle</designatorDropdown>
@@ -1617,9 +1617,8 @@
 				</offsets>
 			</li>
 		</comps>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="false">
 			<li>DankPyon_CandleMaking</li>
-			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designatorDropdown>DankPyon_Candles</designatorDropdown>
 		<modExtensions>
@@ -1936,7 +1935,6 @@
 		</comps>
 		<researchPrerequisites>
 			<li>DankPyon_CandleMaking</li>
-			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<modExtensions>

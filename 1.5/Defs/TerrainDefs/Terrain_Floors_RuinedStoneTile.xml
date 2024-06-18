@@ -66,4 +66,13 @@
 			<BlocksMarble>4</BlocksMarble>
 		</costList>
 	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_RuinedStoneTile">
+		<defName>DankPyon_Floor_RuinedStoneTile_Clay</defName>
+		<label>ruined clay tile</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>4</DankPyon_BlocksClay>
+		</costList>
+	</TerrainDef>
 </Defs>

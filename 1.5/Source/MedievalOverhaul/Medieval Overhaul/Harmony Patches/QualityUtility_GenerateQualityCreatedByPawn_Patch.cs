@@ -31,11 +31,12 @@ namespace MedievalOverhaul.Patches
         {
             if (pawn.CurJob?.RecipeDef.WorkerCounter is RecipeWorker_MakeSkillBook)
             {
-                var intellectual = pawn.skills.GetSkill(SkillDefOf.Intellectual);
+                var extension = pawn.CurJob?.RecipeDef.GetModExtension<TreatiseSkill>();
+                var skill = pawn.skills.GetSkill(extension.skill);
                 var minQuality = QualityCategory.Awful;
                 foreach (var min in minQualities)
                 {
-                    if (intellectual.Level >= min.Item1)
+                    if (skill.Level >= min.Item1)
                     {
                         minQuality = min.Item2;
                     }

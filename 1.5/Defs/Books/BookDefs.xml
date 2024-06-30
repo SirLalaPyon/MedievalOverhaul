@@ -35,11 +35,13 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					<li Class="BookOutcomeProperties_GainResearch">
-						<tabs>
-							<DankPyon_MedievalResearchTab/>
-						</tabs>
-						<exclude/>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject></researchProject>
+								<gainMultiplier></gainMultiplier>
+							</li>
+						</researchProjects>
 					</li>
 				</doers>
 			</li>

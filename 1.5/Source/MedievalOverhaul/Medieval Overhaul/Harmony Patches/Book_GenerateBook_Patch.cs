@@ -4,6 +4,7 @@ using Verse;
 
 namespace MedievalOverhaul
 {
+
     [HarmonyPatch(typeof(Book), "GenerateBook")]
     public static class Book_GenerateBook_Patch
     {

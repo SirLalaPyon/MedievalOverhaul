@@ -39,6 +39,9 @@
     <Compile Include="Medieval Overhaul\Designator_GatherIce.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableNutritionStatus.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_DoTicks_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_JobTracker_EndCurrentJob_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Bill_Notify_PawnDidWork_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeDoerGainSkillExp_OnBookGenerated_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeProperties_GainSkillExp_OnReadingTick_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Book_GenerateBook_Patch.cs" />
@@ -67,6 +70,7 @@
     <Compile Include="Medieval Overhaul\Recipes\TreatiseSkill.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\BookWithAuthor.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompGlowerOnlyWhenUsed.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompMeltable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainResearchDefinable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainSkillExpDefinable.cs" />

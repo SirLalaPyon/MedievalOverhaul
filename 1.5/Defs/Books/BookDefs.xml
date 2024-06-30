@@ -122,15 +122,15 @@
 				<addTopAltitudeBias>true</addTopAltitudeBias>
 			</verticalGraphic>
 			<doers>
-			<li Class="MedievalOverhaul.BookOutcomeProperties_GainSkillExpDefinable">
-				<maxSkillLevel>20</maxSkillLevel>
-				<skillGains>
-					<li>
-						<skillDef>Shooting</skillDef>
-						<gainMultiplier>0.5</gainMultiplier>
-					</li>
-				</skillGains>
-			</li>
+				<li Class="MedievalOverhaul.BookOutcomeProperties_GainSkillExpDefinable">
+					<maxSkillLevel>20</maxSkillLevel>
+					<skillGains>
+						<li>
+							<skillDef>Shooting</skillDef>
+							<gainMultiplier>0.5</gainMultiplier>
+						</li>
+					</skillGains>
+				</li>
 			</doers>
 		</li>
 		</comps>

@@ -16,26 +16,18 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 		<value>
-			<li>DankPyon_RusticBookshelf</li>
-			<li>DankPyon_RusticBookshelf1x2c</li>
-			<li>DankPyon_RoyalBookshelf</li>
-			<li>DankPyon_Book_MilitaryBlades</li>
-			<li>DankPyon_Book_NobleBlades</li>
-			<li>DankPyon_Book_MilitaryMaces</li>
-			<li>DankPyon_Book_NobleMaces</li>
-			<li>DankPyon_Book_MilitaryPolearms</li>
-			<li>DankPyon_Book_NoblePolearms</li>
-			<li>DankPyon_Book_Crossbow</li>
-			<li>DankPyon_Book_HeavyCrossbow</li>
-			<li>DankPyon_Book_Steel</li>
-			<li>DankPyon_Book_Gunpowder</li>
-			<li>DankPyon_Book_Tar</li>
-			<li>DankPyon_Book_GreatBow</li>
-			<li>DankPyon_Book_WarBow</li>
-			<li>DankPyon_Book_IntermediateCooking</li>
-			<li>DankPyon_Book_AdvancedCooking</li>
-			<li>DankPyon_Book_BallistaRepeater</li>
+			<li>Bookcase</li>
 		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@Name="BookcaseBase"]/comps/li[@Class="CompProperties_Facility"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="SimpleResearchBench"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Facility"></li>
+			</value>
+		</nomatch>
 	</Operation>
 
 </Patch>

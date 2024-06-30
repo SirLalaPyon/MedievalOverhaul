@@ -13,7 +13,7 @@ namespace MedievalOverhaul
         {
             float num = BookUtility.GetSkillExpForQuality(__instance.Quality);
             var overrides = new Dictionary<SkillDef, float>();
-            if (__instance is BookOutcomeProperties_GainSkillExpDefinable compProps)
+            if (__instance.Props is BookOutcomeProperties_GainSkillExpDefinable compProps)
             {
                 if (compProps.skillGains != null)
                 {

@@ -67,6 +67,7 @@
     <Compile Include="Medieval Overhaul\ThingClasses\BookWithAuthor.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompMeltable.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainResearchDefinable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainSkillExpDefinable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_DefinableBook.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_GenericHide.cs" />

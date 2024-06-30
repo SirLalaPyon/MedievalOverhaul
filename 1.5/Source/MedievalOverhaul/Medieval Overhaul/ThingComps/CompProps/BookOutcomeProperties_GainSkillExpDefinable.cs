@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 
 namespace MedievalOverhaul
@@ -9,9 +10,14 @@ namespace MedievalOverhaul
         public float gainMultiplier;
     }
 
-    public class BookOutcomeProperties_GainSkillExpDefinable : BookOutcomeDoerGainSkillExp
+    public class BookOutcomeProperties_GainSkillExpDefinable : BookOutcomeProperties_GainSkillExp
     {
         public List<GainMultiplier> skillGains;
         public int? maxSkillLevel;
+    }
+
+    public class BookOutcomeDoerGainSkillExpDefinable : BookOutcomeDoerGainSkillExp
+    {
+
     }
 }

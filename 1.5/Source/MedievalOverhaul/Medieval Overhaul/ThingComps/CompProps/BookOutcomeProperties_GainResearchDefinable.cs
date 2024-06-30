@@ -5,6 +5,11 @@ using Verse;
 
 namespace MedievalOverhaul
 {
+    public class RequiredSchematic : DefModExtension
+    {
+        public ThingDef schematicDef;
+    }
+
     public class ResearchGainMultiplier
     {
         public ResearchProjectDef researchProject;

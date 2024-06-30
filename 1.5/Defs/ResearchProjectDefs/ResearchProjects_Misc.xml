@@ -675,6 +675,11 @@
 			<li>subject->basic polearms</li>
 		  </rulesStrings>
 		</generalRules>	
+		<modExtensions>
+			<li Class="MedievalOverhaul.RequiredSchematic">
+				<schematicDef>DankPyon_Schematic_BasicPolearms</schematicDef>
+			</li>
+		</modExtensions>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>

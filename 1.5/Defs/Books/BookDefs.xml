@@ -35,14 +35,11 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
-						<researchProjects>
-							<li>
-								<researchProject></researchProject>
-								<gainMultiplier></gainMultiplier>
-							</li>
-						</researchProjects>
-					</li>
+				<li Class="BookOutcomeProperties_GainResearch">
+					<tabs>
+					<DankPyon_MedievalResearchTab />
+					</tabs>
+				</li>
 				</doers>
 			</li>
 		</comps>
@@ -124,15 +121,7 @@
 				<addTopAltitudeBias>true</addTopAltitudeBias>
 			</verticalGraphic>
 			<doers>
-				<li Class="MedievalOverhaul.BookOutcomeProperties_GainSkillExpDefinable">
-					<maxSkillLevel>20</maxSkillLevel>
-					<skillGains>
-						<li>
-							<skillDef>Shooting</skillDef>
-							<gainMultiplier>0.5</gainMultiplier>
-						</li>
-					</skillGains>
-				</li>
+				<li Class="BookOutcomeProperties_GainSkillExp" />
 			</doers>
 		</li>
 		</comps>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BookBase">
+		<defName>DankPyon_Schematic_BasicPolearms</defName>
+		<label>ancient basic polearm schematic</label>
+		<description>A scroll detailing various technologies and the methods of their use. Perusing these schematic scrolls may unveil new advancements and hidden knowledge.</description>
+		<graphicData>
+			<texPath>Special/Book/SchematicScroll</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Special/Book/SchematicScroll</uiIconPath>
+		<statBases>
+			<MarketValue>500</MarketValue>
+		</statBases>
+
+		<tradeTags>
+			<li>DankPyon_Schematic</li>
+		</tradeTags>
+
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_BasicPolearms</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

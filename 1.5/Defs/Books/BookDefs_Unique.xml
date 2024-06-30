@@ -85,6 +85,21 @@ Lo, what should a man in these days write: egges or eyren? Certainly it is hard 
 				<graphicClass>Graphic_Multi</graphicClass>
 				<addTopAltitudeBias>true</addTopAltitudeBias>
 			</verticalGraphic>
+			<doers>
+			<li Class="MedievalOverhaul.BookOutcomeProperties_GainSkillExpDefinable">
+				<maxSkillLevel>20</maxSkillLevel>
+				<skillGains>
+					<li>
+						<skillDef>Shooting</skillDef>
+						<gainMultiplier>0.5</gainMultiplier>
+					</li>
+					<li>
+						<skillDef>Intellectual</skillDef>
+						<gainMultiplier>0.5</gainMultiplier>
+					</li>
+				</skillGains>
+			</li>
+			</doers>
 		</li>
 		</comps>
 	</ThingDef>

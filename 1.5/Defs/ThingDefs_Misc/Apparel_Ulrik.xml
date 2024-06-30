@@ -21,7 +21,7 @@
 	<!--==================== Body Armor ====================-->
 	<ThingDef ParentName="DankPyon_AdornedArmorBase">
 		<defName>DankPyon_Apparel_AdornedMailShirt</defName>
-		<label>heavy hauberk (Adorned)</label>
+		<label>heavy hauberk (adorned)</label>
 		<description>A thick and robust hauberk, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
 		<graphicData>
 			<texPath>Apparel/Adorned/Adorned_MailShirt/Adorned_MailShirt</texPath>
@@ -77,7 +77,7 @@
 
 	<ThingDef ParentName="DankPyon_AdornedArmorBase">
 		<defName>DankPyon_Apparel_AdornedWarriorArmor</defName>
-		<label>warrior's armor (Adorned)</label>
+		<label>warrior's armor (adorned)</label>
 		<description>A robust mail shirt, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
 		<graphicData>
 			<texPath>Apparel/Adorned/Adorned_Warrior/Adorned_Warrior</texPath>
@@ -134,7 +134,7 @@
 
 	<ThingDef ParentName="DankPyon_AdornedArmorBase">
 		<defName>DankPyon_Apparel_AdornedHeavyPlate</defName>
-		<label>full plate(Adorned)</label>
+		<label>full plate (adorned)</label>
 		<description>A heavy plate coverd by a thick riveted jacket and reinforced vambraces. The layered structure provides an ample amount of warmth. Typically worn by the oathbound, the best of the oathtakers, finely decorated with trophies and religious symbols.</description>
 		<graphicData>
 			<texPath>Apparel/Adorned/Adorned_FullPlate/Adorned_FullPlate</texPath>
@@ -202,7 +202,7 @@
 	<!--==================== Headgear ====================-->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>DankPyon_Adorned_HeavyMailCoif</defName>
-		<label>heavy chain coif(adorned)</label>
+		<label>heavy chain coif (adorned)</label>
 		<description>A thick hood forged from chains of metal with an added plate-metal noseguard to almost entirely protect the face. Makes it a bit difficult to see, but otherwise offers excellent protection against cuts.</description>
 		<graphicData>
 			<texPath>Headgear/Adorned_HeavyMailCoif/Adorned_HeavyMailCoif</texPath>
@@ -263,7 +263,7 @@
 
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>DankPyon_Adorned_FlatTop</defName>
-		<label>closed flat-top(adorned)</label>
+		<label>closed flat-top (adorned)</label>
 		<description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head, but hinders eyesight and breathing.</description>
 		<graphicData>
 			<texPath>Headgear/Adorned_ClosedFlatTop/Adorned_ClosedFlatTop</texPath>

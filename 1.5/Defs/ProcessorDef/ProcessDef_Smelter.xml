@@ -82,15 +82,14 @@
 	</ProcessorFramework.ProcessDef> -->
 
 	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">
-		<defName>DankPyon_SmeltingOre_Tar</defName>
-		<thingDef>DankPyon_Tar</thingDef>
+		<defName>DankPyon_SmeltingOre_Scrap</defName>
+		<thingDef>Steel</thingDef>
 		<ingredientFilter>
 			<thingDefs>
-				<li>WoodLog</li>
+				<li>DankPyon_BrokenWeapons</li>
 			</thingDefs>
 		</ingredientFilter>
-		<efficiency>0.5</efficiency>
-		<processDays>0.02</processDays>
+		<efficiency>5</efficiency>
 	</ProcessorFramework.ProcessDef>
 
 	<!--ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">

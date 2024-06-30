@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- Unique Books -->
 	<RulePackDef>
 		<defName>DankPyon_Title_OnEnglish</defName>
 		<rulePack>
@@ -20,6 +21,323 @@
 
 Lo, what should a man in these days write: egges or eyren? Certainly it is hard to please every man because of diversity and change of language."</li>
 
+		</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+    <defName>DankPyon_Namer_OrnateTome</defName>
+    <include>
+      <li>DankPyon_medievalTopics</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <!-- General -->
+        <li>title->[titleBasic]</li>
+
+        <!-- Basic -->
+        <li>titleBasic->[goldAdjective] lessons in [medievalTopic]</li>
+        <li>titleBasic->A [goldAdjective] [textbook] to [medievalTopic]</li>
+        <li>titleBasic->[goldAdjective] [textbook] to [medievalTopic]</li>
+        <li>titleBasic->A [goldAdjective] [textbook] on [medievalTopic]</li>
+        <li>titleBasic->[goldAdjective] Essentials of [medievalTopic]</li>
+        <li>titleBasic->[goldAdjective] [textbook] of Mastery in [medievalTopic]</li>
+        <li>titleBasic->The [goldAdjective] [textbook] Fundamentals of [medievalTopic]</li>
+        <li>titleBasic->Key Concepts in [medievalTopic]</li>
+        <li>titleBasic->The [goldAdjective] Art of [medievalTopic]</li>
+
+		<li>goldAdjective->Gilded</li>
+		<li>goldAdjective->Ornate</li>
+		<li>goldAdjective->Golden</li>
+
+		<li>textbook->Tome</li>
+		<li>textbook->Codex</li>
+		<li>textbook->Account</li>
+		<li>textbook->Compendium</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+	<!-- Ornate Tome -->
+    <RulePackDef>
+		<defName>Description_OrnateTome</defName>
+		<include>
+			<li>DankPyon_MedievalNames</li>
+			<li>DankPyon_medievalTopics</li>
+		</include>
+		<rulePack>
+		<rulesStrings>
+			
+			<!-- General, root symbol is 'desc' -->
+			<li>desc->[discussion].\n\n[anecdote]. [production].\n\n[quality_statement].</li>
+			
+			<!-- discussion of the topic -->
+			<li>discussion->This ornate [textbook] provides [useful_information] about [medievalTopic][detail]</li>
+			<li>discussion->This gilded [textbook] establishes the [authorType]'s [authorType]ity on the topic of [medievalTopic][detail]</li>
+			<li>discussion->Those seeking [understanding_synonym] [medievalTopic] head to this [notable_adjective] [textbook][detail]</li>
+			<li>discussion->An ancient [textbook] on [medievalTopic][detail]</li>
+			<li>discussion->A long forgotten scripture of the [authorType]'s [textbook] on [medievalTopic][detail]</li>
+
+			<li>detail->. The [precis_synonym] focuses on the more skilled aspects of the topic</li>
+			<li>detail->. It is a succinct [precis_synonym] of a complex topic</li>
+			<li>detail->. The [precis_synonym] says that, when [medievalname] wrote this, it was the cutting edge in the field</li>
+			<li>detail->. A quote on the [note_location] says, 'True [students] of [medievalTopic] cannot ignore [medievalname]'s book'</li>
+			<li>students->students</li>
+			<li>students->scholars</li>
+			<li>students->historians</li>
+			<li>detail->. It takes you through the topic step-by-step</li>
+			<li>detail(quality[less_than]4)->, even though the [authorType] rushes through the topic</li>
+			<li>detail(quality[greater_than]3)->. It is a comprehensive treatment of the topic</li>
+			<li>detail->. The [authorType] claims in [ANYPAWN_possessive] [precis_synonym] that fraudulent copies of this book exist but that this is not one</li>
+			<li>detail(quality[less_than]4)->, though perhaps the attempt to communicate its ideas through an imagined dialogue was a mistake</li>
+			<li>detail->. The [authorType]'s rhetoric in the [precis_synonym] does not distract from the core concepts</li>
+
+			<li>detail->. The [authorType]'s rhetoric in the [precis_synonym] does not distract from the core concepts</li>
+
+			<!-- type of authorType -->
+			<li>authorType->scribe</li>
+			<li>authorType->chronicler</li>
+			<li>authorType->historian</li>
+			<li>authorType->wordsmith</li>
+			<li>authorType->timekeeper</li>
+
+			<li>production->The [precis_synonym] says that this was transcribed by the [ancientempire]</li>
+			<li>production->The [precis_synonym] says that the [authorType]s of the [ancientempire] made this a set text</li>
+			<li>production->The [precis_synonym] says that, though these notes were made for [medievalname]'s personal use, they have been widely shared</li>
+			<li>production->The useful parts of this [textbook] are hidden among the biographical details</li>
+			<li>production->A handwritten [note] on the [note_location] says that the [medievalregion] print-house shut down after the [ancientempire] riots, so these later editions are rare</li>
+			<li>production->An inscribed [note] says that most manuscripts of this [textbook] were lost during the [medievalregion] incident</li>
+			<li>production->The [precis_synonym] makes clear that readers with knowledge of ancient information dissemination techniques tend to avoid this [textbook] series - but not why</li>
+			<li>production->From the [note_location], it is clear that the [medievalTopic] proselytes of the [ancientempire] spent a fortune transcribing copies of this book, and then having it widely traded</li>
+			<li>production->The [note_location] explains that the early manuscripts of this book were handwritten by [medievalname] [ANYPAWN_objective]self</li>
+			<li>production->The Duchess of the [ancientempire] sponsored this [textbook], with the condition that it be freely available</li>
+			<li>production->The [authorType]s perhaps could have been more forthright in their editorial duties, given the sloppy grammar</li>
+
+			<li>quality_statement->[exterior_quality] [page_quality]</li>
+			<!-- <li>quality_statement->[writing_quality]</li> -->
+
+			<li>anecdote->Given the large gap between [ANYPAWN_nameFull]'s birth year and the publication date of this book, it is unlikely that [ANYPAWN_pronoun] lived to see this published</li>
+			<li>anecdote->On the [note_location], someone has pasted an excoriating review of the book</li>
+			<li>anecdote->The [precis_synonym] indicates that this book passed through the great libraries of [medievalregion]</li>
+			<li>anecdote->According to the [note_location], [ANYPAWN_nameFull] was known for being a master of many topics</li>
+			<li>anecdote->According to the [note_location], the people of [medievalregion] still talk of [ANYPAWN_nameFull] and reminisce about [ANYPAWN_possessive] love of [medievalTopic]</li>
+			<li>anecdote->According to the [note_location], a freak entanglement accident killed the [authorType], [ANYPAWN_nameFull], shortly after publication</li>
+			<li>anecdote->According to the [precis_synonym], [ANYPAWN_nameFull] spent [ANYPAWN_possessive] days teaching in the academy on [medievalregion]. This book is taken from [ANYPAWN_possessive] lectures</li>
+			<li>anecdote->According to the [note_location], [ANYPAWN_nameFull] was impoverished and sold the rights to this series for very little</li>
+			<li>anecdote->According to the [note_location], [ANYPAWN_nameFull] was blind from birth, so never saw [ANYPAWN_possessive] book</li>
+			<li>anecdote->According to the [note_location], [ANYPAWN_nameFull]'s first draft of the textbook infamously featured fifty pages of digression. It was cut for the second edition</li>
+			<li>anecdote->According to the [note_location], [ANYPAWN_nameFull]'s reputation was so terrible that [ANYPAWN_pronoun] published this book under a pseudonym</li>
+			<li>anecdote->According to the [note_location], as a child, [ANYPAWN_nameFull] was so idle that [ANYPAWN_possessive] parents despaired. This textbook is a vindication of [ANYPAWN_possessive] skill</li>
+
+			<!-- pools -->
+			<li>textbook->ornate tome</li>
+			<li>textbook->gilded tome</li>
+			<li>textbook->ancient tome</li>
+			<li>textbook->historical account</li>
+			<li>textbook(p=6)->book</li>
+			<li>textbook->ornate compendium</li>
+
+			<li>precis_synonym->précis</li>
+			<li>precis_synonym->frontispiece</li>
+			<li>precis_synonym->abstract</li>
+			<li>precis_synonym->synopsis</li>
+			<li>precis_synonym->outline</li>
+
+			<li>note_location->front cover</li>
+			<li>note_location->back cover</li>
+			<li>note_location->front flap</li>
+			<li>note_location->back flap</li>
+			<li>note_location->first page</li>
+			<li>note_location->last page</li>
+			<li>note_location->margins</li>
+			<li>note_location->title page</li>
+			<li>note_location->footnote</li>
+			<li>note_location->endnote</li>
+			<li>note_location->[authorType]'s biography</li>
+
+			<li>note->note</li>
+			<li>note->addendum</li>
+			<li>note->postscript</li>
+			<li>note->afterword</li>
+			<li>note->appendix</li>
+			<li>note->coda</li>
+			<li>note->footnote</li>
+			<li>note->endnote</li>
+
+			<li>useful_information->useful tidbits of information</li>
+			<li>useful_information->useful information</li>
+			<li>useful_information->interesting facts</li>
+			<li>useful_information->valuable insights</li>
+			<li>useful_information->practical insights</li>
+			<li>useful_information->helpful tips</li>
+			<li>useful_information->informative details</li>
+
+			<!-- General Textbook themes -->
+
+			<li>understanding_synonym->knowledge of</li>
+			<li>understanding_synonym->self-improvement in</li>
+			<li>understanding_synonym->an understanding of</li>
+			<li>understanding_synonym->scholarship in</li>
+			<li>understanding_synonym->erudition in</li>
+			<li>understanding_synonym->expertise in</li>
+			<li>understanding_synonym->a philosophy of</li>
+			<li>understanding_synonym->the ethics of</li>
+
+			<li>notable_adjective->famous</li>
+			<li>notable_adjective->obscure</li>
+			<li>notable_adjective->iconic</li>
+			<li>notable_adjective->classic</li>
+			<li>notable_adjective->common</li>
+			<li>notable_adjective->familiar</li>
+			<li>notable_adjective->timeless</li>
+			<li>notable_adjective->lopsided</li>
+			<li>notable_adjective->harmonious</li>
+			<li>notable_adjective->elegant</li>
+			<li>notable_adjective->simple</li>
+			<li>notable_adjective->functional</li>
+			<li>notable_adjective->urbworld</li>
+			<li>notable_adjective->primitive</li>
+			<li>notable_adjective->decorative</li>
+
+			<!-- Quality -->
+			<li>exterior_quality(quality[greater_than]4)->The exterior of this book is finely gilded and</li>
+			<li>exterior_quality(quality[greater_than]4)->A masterpiece of the printer's art, this book shines and</li>
+			<li>exterior_quality(quality[greater_than]4)->Its ornate cover is rough yet</li>
+			<li>exterior_quality(quality[greater_than]4)->Though the cover is aged,</li>
+			<li>exterior_quality(quality[less_than]5,quality[greater_than]1)->This tome has seen better days, but</li>
+			<li>exterior_quality(quality[less_than]5,quality[greater_than]1)->This tome has had many owners, but</li>
+			<li>exterior_quality(quality[less_than]2)->The front of this tome seems attractive but</li>
+			<li>exterior_quality(quality[less_than]2)->Someone has torn away the first third of the book and</li>
+			<li>exterior_quality(quality[less_than]2)->The ornate cover is soaked in a strong-smelling liquid and</li>
+			<li>exterior_quality(quality[less_than]2)->At first sight nothing is wrong with the book, but</li>
+				
+			<li>page_quality->the pages [page_condition]</li>
+		
+			<li>page_condition(quality[greater_than]4)->[page_excellent]</li>
+			<li>page_condition(quality[less_than]5,quality[greater_than]1)->[page_decent]</li>
+			<li>page_condition(quality[less_than]2)->[page_awful]</li>
+		
+			<li>page_excellent->are in amazing condition, as if never touched</li>
+			<li>page_excellent->are in great condition</li>
+			<li>page_excellent->are pristine</li>
+			<li>page_excellent->are bright and clean</li>
+			<li>page_excellent->are uniquely well-preserved</li>
+		
+			<li>page_decent->are in a decent condition</li>
+			<li>page_decent->are legible, if crumpled</li>
+			<li>page_decent->are perfectly readable</li>
+			<li>page_decent->are decent, if slightly scored</li>
+		
+			<li>page_awful->appear to be written on crumbling parchment</li>
+			<li>page_awful->are badly damaged</li>
+			<li>page_awful->are stained with a dark substance</li>
+			<li>page_awful->are illegible</li>
+			<li>page_awful->have been annotated in an unreadable hand</li>        
+
+			<!-- Medieval region names -->     
+			<li>medievalregion->Eldara</li>
+			<li>medievalregion->Brinhold</li>
+			<li>medievalregion->Sornhelm</li>
+			<li>medievalregion->Ravenmoor</li>
+			<li>medievalregion->Fenwick</li>
+			<li>medievalregion->Harlech</li>
+			<li>medievalregion->Thornfield</li>
+			<li>medievalregion->Wolfsbane</li>
+			<li>medievalregion->Drakenfjord</li>
+			<li>medievalregion->Caerleon</li>
+			<li>medievalregion->Morningside</li>
+			<li>medievalregion->Blackwater</li>
+			<li>medievalregion->Ironwood</li>
+			<li>medievalregion->Stag's Hollow</li>
+			<li>medievalregion->Kingsbridge</li>
+			<li>medievalregion->Rook's Nest</li>
+			<li>medievalregion->Grimstone</li>
+			<li>medievalregion->Silverglade</li>
+			<li>medievalregion->Stormwatch</li>
+			<li>medievalregion->Evershade</li>
+
+			<!-- MO Faction names -->     
+			<li>medievalfaction->Amboise</li>
+			<li>medievalfaction->Hesse</li>
+			<li>medievalfaction->Soren</li>
+			<li>medievalfaction->Oswin</li>
+
+			<!-- Ancient empire names --> 
+			<li>ancientempire->ancient empire</li>
+			<li>ancientempire->forgotten empire</li>
+			<li>ancientempire->under-empire</li>
+		
+		</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- ========== Medieval Names ========== -->
+	<RulePackDef>
+		<defName>DankPyon_MedievalNames</defName>
+		<rulePack>
+		<rulesStrings>
+			<!-- Roots -->
+			<li>medievalname->Alaric</li>
+			<li>medievalname->Beatrice</li>
+			<li>medievalname->Conrad</li>
+			<li>medievalname->Elinor</li>
+			<li>medievalname->Godfrey</li>
+			<li>medievalname->Isolde</li>
+			<li>medievalname->Lancelot</li>
+			<li>medievalname->Matilda</li>
+			<li>medievalname->Percival</li>
+			<li>medievalname->Rosamund</li>
+			<li>medievalname->Sigurd</li>
+			<li>medievalname->Thaddeus</li>
+			<li>medievalname->Ulric</li>
+			<li>medievalname->Winifred</li>
+			<li>medievalname->Baldwin</li>
+			<li>medievalname->Cecilia</li>
+			<li>medievalname->Dorian</li>
+			<li>medievalname->Ethelred</li>
+			<li>medievalname->Heloise</li>
+			<li>medievalname->Roderick</li>
+			<li>medievalname->Agnes</li>
+			<li>medievalname->Bertram</li>
+			<li>medievalname->Cuthbert</li>
+			<li>medievalname->Edwina</li>
+			<li>medievalname->Fulk</li>
+			<li>medievalname->Gwendolyn</li>
+			<li>medievalname->Hubert</li>
+			<li>medievalname->Ida</li>
+			<li>medievalname->Jocelyn</li>
+			<li>medievalname->Kenelm</li>
+		</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<!-- ========== Medieval Topics ========== -->
+	<RulePackDef>
+		<defName>DankPyon_medievalTopics</defName>
+		<rulePack>
+		<rulesStrings>
+			<!-- Roots -->
+			<li>medievalTopic->Feudalism</li>
+			<li>medievalTopic->Chivalry</li>
+			<li>medievalTopic->Crusades</li>
+			<li>medievalTopic->Guilds</li>
+			<li>medievalTopic->Black Death</li>
+			<li>medievalTopic->Monasticism</li>
+			<li>medievalTopic->Heraldry</li>
+			<li>medievalTopic->Inquisition</li>
+			<li>medievalTopic->Knighthood</li>
+			<li>medievalTopic->Medieval Warfare</li>
+			<li>medievalTopic->Manorialism</li>
+			<li>medievalTopic->Pilgrimages</li>
+			<li>medievalTopic->Courtly Love</li>
+			<li>medievalTopic->Viking Age</li>
+			<li>medievalTopic->Hundred Years' War</li>
+			<li>medievalTopic->Battle of the Hill</li>
+			<li>medievalTopic->Battle of the North</li>
+			<li>medievalTopic->Magna Carta</li>
+			<li>medievalTopic->Medieval Universities</li>
+			<li>medievalTopic->Scholasticism</li>
+			<li>medievalTopic->Reconquista</li>
 		</rulesStrings>
 		</rulePack>
 	</RulePackDef>

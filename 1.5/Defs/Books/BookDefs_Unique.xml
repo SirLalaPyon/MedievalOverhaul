@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Base -->
+	<ThingDef ParentName="BookBase" Name="DankPyon_TradableBook" Abstract="True">
+		<tradeTags>
+			<li>DankPyon_RuinLoot</li>
+			<li>DankPyon_Book</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- Label and description are defined on the comp namemaker and descriptionmaker-->
+	<!-- ========== Loot Books ========== -->
+	<ThingDef ParentName="DankPyon_TradableBook">
+		<defName>DankPyon_BookUnique_OrnateTome</defName>
+		<label>ornate tome</label>
+		<description>An ancient tome intricately made with a golden finish. Contains scriptures detailing the historical accounts of the under empires. /n/nCan be sold for a pretty penny for interested collectors and the like.</description>
+		<graphicData>
+			<texPath>Special/Book/OrnateTome/Book_OrnateTome</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Special/Book/OrnateTome/Book_OrnateTome</uiIconPath>
+
+		<statBases>
+			<MarketValue>350</MarketValue>
+		</statBases>
+
+		<comps>
+		<li Class="MedievalOverhaul.CompProperties_DefinableBook">
+			<qualityRange>3~6</qualityRange>
+			<nameMaker>DankPyon_Namer_OrnateTome</nameMaker>
+			<descriptionMaker>Description_OrnateTome</descriptionMaker>
+			<ageYearsRange>1000~2000</ageYearsRange>
+			<openGraphic>
+				<texPath>Special/Book/OrnateTome/Book_OrnateTome_Open</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>0.7</drawSize>
+			</openGraphic>
+			<verticalGraphic>
+				<texPath>Special/Book/OrnateTome/Book_OrnateTome_Vertical</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<addTopAltitudeBias>true</addTopAltitudeBias>
+			</verticalGraphic>
+			<doers>
+			<li Class="BookOutcomeProperties_JoyFactorModifier" />
+			</doers>
+		</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ========== Unique Books ========== -->
+	<ThingDef ParentName="DankPyon_TradableBook">
+		<defName>DankPyon_BookUnique_OnEnglish</defName>
+		<label>On English</label>
+		<description>“A mercer called Sheffield was from the north of England. He went into a house and asked the "good wyf" if he could buy some "egges". She replied that she could not speak French, which annoyed him, as he could also not speak French. A bystander suggested that Sheffield was asking for "eyren", which the woman said she understood
+
+Lo, what should a man in these days write: egges or eyren? Certainly it is hard to please every man because of diversity and change of language."</description>
+		<graphicData>
+			<texPath>Special/Book/OnEnglish/Book_OnEnglish</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Special/Book/OnEnglish/Book_OnEnglish</uiIconPath>
+		<statBases>
+			<MarketValue>250</MarketValue>
+		</statBases>
+
+		<tradeTags>
+			<li>DankPyon_Treatise</li>
+		</tradeTags>
+
+		<comps>
+		<li Class="MedievalOverhaul.CompProperties_DefinableBook">
+			<qualityRange>4~6</qualityRange>
+			<nameMaker>DankPyon_Title_OnEnglish</nameMaker>
+			<descriptionMaker>DankPyon_Description_OnEnglish</descriptionMaker>
+			<ageYearsRange>100~200</ageYearsRange>
+			<openGraphic>
+				<texPath>Special/Book/OnEnglish/Book_OnEnglish_Open</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>0.7</drawSize>
+			</openGraphic>
+			<verticalGraphic>
+				<texPath>Special/Book/OnEnglish/Book_OnEnglish_Vertical</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<addTopAltitudeBias>true</addTopAltitudeBias>
+			</verticalGraphic>
+		</li>
+		</comps>
+	</ThingDef>
+  
+</Defs>

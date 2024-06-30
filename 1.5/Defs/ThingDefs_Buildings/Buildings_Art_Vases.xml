@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="DankPyon_SculptureBase">
+		<defName>DankPyon_Vase</defName>
+		<label>clay vase</label>
+		<description>Simple, hand-formed containers crafted from natural clay. They are beautiful to look at.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Art/Vase</texPath>
+			<drawSize>(2,2)</drawSize>
+			<color>(132, 99, 81)</color>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Mass>5</Mass>
+			<Beauty>25</Beauty>
+			<WorkToMake>6000</WorkToMake>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+  
+		<costList>
+			<DankPyon_Clay>50</DankPyon_Clay>
+		</costList>
+
+		<recipeMaker>
+			<defaultIngredientFilter Inherit="False"/>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

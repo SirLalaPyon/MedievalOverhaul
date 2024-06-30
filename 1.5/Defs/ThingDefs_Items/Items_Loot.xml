@@ -12,7 +12,12 @@
         <tradeTags>
             <li>DankPyon_Loot</li>
         </tradeTags>
-  </ThingDef>
+    </ThingDef>
+
+    <ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_CleanableBase" Abstract="True">
+        
+    </ThingDef>
+  
 
     <!--==================== Scrap ====================-->
     <ThingDef ParentName="DankPyon_LootBase">
@@ -44,7 +49,7 @@
     <!--==================== Books ====================-->
     <ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_Book</defName>
-        <label>book</label>
+        <label>ruined book</label>
         <description>A book filled with information about a particular subject. Can be sold to interested traders.</description>
         <graphicData>
             <texPath>Special/Book</texPath>
@@ -65,7 +70,7 @@
         </costList>
     </ThingDef>
 
-    <ThingDef ParentName="DankPyon_LootBase">
+    <!-- <ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_Book_TheBeginning</defName>
         <label>the beginning</label>
         <description>1.Hides and Leather
@@ -99,10 +104,10 @@
         <costList>
             <DankPyon_Paper>50</DankPyon_Paper>
         </costList>
-    </ThingDef>
+    </ThingDef> -->
 
 
-    <ThingDef ParentName="DankPyon_LootBase">
+    <!-- <ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_Book_IntoTheRuins</defName>
         <label>into the ruins</label>
         <description>Into the ruins.
@@ -131,10 +136,10 @@
         <costList>
             <DankPyon_Paper>50</DankPyon_Paper>
         </costList>
-    </ThingDef>
+    </ThingDef> -->
 
 
-    <ThingDef ParentName="DankPyon_LootBase">
+    <!-- <ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_Book_AncientCodex</defName>
         <label>ancient codex</label>
         <description>An ancient tome intricately made with a golden finish. Contains scriptures detailing the historical accounts of the under empires. /n/nCan be sold for a pretty penny for interested collectors and the like.</description>
@@ -158,7 +163,7 @@
         </costList>
 
         <healthAffectsPrice>false</healthAffectsPrice>
-    </ThingDef>
+    </ThingDef> -->
 
     <!--==================== Notes ====================-->
     <ThingDef ParentName="DankPyon_LootBase">
@@ -217,7 +222,7 @@
     <!--==================== Chalice ====================-->
 	<ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_ChaliceSilver</defName>
-        <label>dirt covered silver chalice</label>
+        <label>dirty silver chalice</label>
         <description>A chalice most often used for drinking wine; this footed cup is made from silver, providing for an affordable way to improve the aesthetic of a hall. 
 		
 		Be sure to clean it with the cleaning table before placing it on your table!</description>
@@ -244,7 +249,7 @@
 
     <ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_ChaliceGold</defName>
-        <label>dirt covered golden chalice</label>
+        <label>dirty golden chalice</label>
         <description>A chalice most often used for drinking wine; this footed cup is made from gold, more greatly increasing the aesthetic of a hall to flaunt its wealth. 
 		
 		Be sure to clean it with the cleaning table before placing it on your table!</description>
@@ -272,7 +277,7 @@
     <!--==================== Bowls ====================-->
 	<ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_BowlSilver</defName>
-        <label>dirt covered silver bowl</label>
+        <label>dirty silver bowl</label>
         <description>An elaborate silver bowl covered in dirt. 
 		
 		Be sure to clean it with the cleaning table before placing it on your table!</description>
@@ -299,7 +304,7 @@
 
     <ThingDef ParentName="DankPyon_LootBase">
         <defName>DankPyon_BowlGold</defName>
-        <label>dirt covered golden bowl</label>
+        <label>dirty golden bowl</label>
         <description>An elaborate gold bowl covered in dirt. 
 		
 		Be sure to clean it with the cleaning table before placing it on your table!</description>
@@ -326,7 +331,7 @@
 	<!--==================== Skulls ====================-->
 	<ThingDef ParentName="DankPyon_LootBase" Name="DankPyon_SkullBase">
         <defName>DankPyon_SkullGold</defName>
-        <label>dirt covered gold skull</label>
+        <label>dirty gold skull</label>
         <description>Found within the depths of ruins, the gold skull speaks of an ornate treasure held by those who walk as undead. 
 		
 		Be sure to clean it with the cleaning table before placing it on your table!</description>
@@ -352,7 +357,7 @@
 
     <ThingDef ParentName="DankPyon_SkullBase">
         <defName>DankPyon_SkullEmerald</defName>
-        <label>dirt covered emerald skull</label>
+        <label>dirty emerald skull</label>
         <description>A skull formed from the materials of a rare and prestigious gemstone. Although valuable, ruin delvers should tread carefully, for such a rich treasure would not go unprotected.
 		
 		Be sure to clean it with the cleaning table before placing it on your table!</description>
@@ -372,7 +377,7 @@
 
     <ThingDef ParentName="DankPyon_SkullBase">
         <defName>DankPyon_SkullSapphire</defName>
-        <label>dirt covered sapphire skull</label>
+        <label>dirty sapphire skull</label>
         <description>Glistening a blue hue, the skull of sapphire radiates with every curvature of its head. A treasure like this would surely fetch much wealth or would do well to be displayed in a great hall.
 		
 		Be sure to clean it with the cleaning table before placing it on your table!</description>
@@ -392,7 +397,7 @@
 
     <ThingDef ParentName="DankPyon_SkullBase">
         <defName>DankPyon_SkullRuby</defName>
-        <label>dirt covered ruby skull</label>
+        <label>dirty ruby skull</label>
         <description>A grand prize of valuable gemstones, the ruby skull draws the attention of every lord, warrior, explorer, and merchant alike. A collector's prized possession.
 		
 		Be sure to clean it with the cleaning table before placing it on your table!</description>

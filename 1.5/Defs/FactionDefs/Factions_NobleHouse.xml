@@ -16,6 +16,14 @@
 		</fixedLeaderKinds>
 		<factionIconPath>WorldObjects/Castle</factionIconPath>
 		<techLevel>Medieval</techLevel>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>DankPyon_IronIngot</li>
+				<li>Steel</li>
+				<li>DankPyon_Linen</li>
+				<li>Leather_Plain</li>
+			</thingDefs>
+		</apparelStuffFilter>
 		<factionNameMaker>NamerFactionTribal</factionNameMaker>
 		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
 		<allowedCultures><li>DankPyon_OldWorlder</li></allowedCultures>

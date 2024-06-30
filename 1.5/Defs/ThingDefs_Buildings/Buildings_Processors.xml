@@ -464,8 +464,8 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>False</hasInteractionCell>
+		<!-- <interactionCellOffset>(0,0,-1)</interactionCellOffset> -->
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<buildingTags>
@@ -718,7 +718,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Smelter</defName>
 		<label>smelter</label>
-		<description>A stone smelter used to refine scrap and raw resources. Generates strong heat.</description>
+		<description>A large steel smelter used to refine scrap and raw resources. Generates strong heat.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -763,7 +763,7 @@
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>200</capacity>
-				<independentProcesses>true</independentProcesses>
+				<independentProcesses>false</independentProcesses>
 				<parallelProcesses>false</parallelProcesses>
 				<dropIngredients>true</dropIngredients>
 				<showProductIcon>true</showProductIcon>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef/stuffProps[categories[li = "Fabric"]]</xpath>
+        <value>
+            <appearance>Textile</appearance>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name = "LeatherBase"]/stuffProps</xpath>
+        <value>
+            <appearance>Hide</appearance>
+        </value>
+    </Operation>
+	
+</Patch>

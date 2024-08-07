@@ -9,21 +9,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name = "ArmorSmithableBase"]/recipeMaker/recipeUsers</xpath>
-		<value>
-			<li>DankPyon_Anvil</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName = "Apparel_SimpleHelmet" or @Name = "BaseWeaponNeolithic"]/recipeMaker/recipeUsers</xpath>
-		<value>
-			<li>DankPyon_Anvil</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name = "BaseMeleeWeapon"]/recipeMaker/recipeUsers</xpath>
+		<xpath>Defs/ThingDef[@Name = "ArmorSmithableBase" or @Name = "BaseWeaponNeolithic" or @Name = "BaseMeleeWeapon" or defName = "Apparel_SimpleHelmet"]/recipeMaker/recipeUsers</xpath>
 		<value>
 			<li>DankPyon_Anvil</li>
 		</value>

@@ -29,7 +29,7 @@ namespace MedievalOverhaul.Patches
 
         private static void Postfix(ref QualityCategory __result, Pawn pawn)
         {
-            if (pawn.CurJob?.RecipeDef.WorkerCounter is RecipeWorker_MakeSkillBook)
+            if (pawn?.CurJob?.RecipeDef?.WorkerCounter is RecipeWorker_MakeSkillBook)
             {
                 var extension = pawn.CurJob?.RecipeDef.GetModExtension<TreatiseSkill>();
                 var skill = pawn.skills.GetSkill(extension.skill);

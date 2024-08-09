@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BasePawn">
+	<ThingDef ParentName="BasePawn" Name="DankPyon_SchratSaplingBase">
 		<defName>DankPyon_Schrat_Sapling</defName>
 		<label>schrat sapling</label>
 		<description>A gnarled tangle of branches, roots and mud, roughly shaped after a human being.
@@ -106,7 +106,7 @@
 	</PawnKindDef>
 	
 	<!--==================== Schrat Plains ====================-->
-	<ThingDef ParentName="DankPyon_SchratBase">
+	<ThingDef ParentName="DankPyon_SchratSaplingBase">
 		<defName>DankPyon_SchratPlain_Sapling</defName>
 		<race>
 			<body>DankPyon_SchratBody</body>

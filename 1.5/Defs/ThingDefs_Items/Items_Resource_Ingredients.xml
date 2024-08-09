@@ -197,7 +197,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="MealFineBase">
 		<defName>DankPyon_Sausages</defName>
 		<label>Raw sausage</label>
 		<description>Minced meat mixed with herbs and spices.</description>
@@ -220,6 +220,11 @@
 			<preferability>NeverForNutrition</preferability>
 			<optimalityOffsetFeedingAnimals>6</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
 	</ThingDef>
 
 </Defs>

@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_Ghoul_Stage_One</defName>
-		<label>Ghoul</label>
+		<label>Nachzehrer</label>
 		<description>A ghoul is often described as a reanimated corpse with an insatiable appetite for human flesh. Legends depict it is particularly drawn to burial sites and desolate locales.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
@@ -131,7 +131,7 @@
   
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>DankPyon_Ghoul_Stage_One</defName>
-		<label>Ghoul</label>
+		<label>Nachzehrer</label>
 		<labelPlural>Ghouls</labelPlural>
 		<race>DankPyon_Ghoul_Stage_One</race>
 		<combatPower>60</combatPower>
@@ -315,7 +315,7 @@
 	<!-- =========== Ghoul Stage Two =========== -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_Ghoul_Stage_Three</defName>
-		<label>Ghoul</label>
+		<label>Nachzehrer</label>
 		<description>A cunning predator, possessing features of felines and canids alike. An easily underestimated creature by those taking their peculiar chuckling gurgles as a playful sign of harmlessness. While a pack of hyenas might hesitate to attack a group of man in the open, they will show no mercy to a lonesome vagabond. Being eaten alive to the accompaniment of satisfied giggles must be a terrible end.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>

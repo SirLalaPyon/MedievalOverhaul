@@ -98,7 +98,7 @@
 	<ThingDef ParentName="ApparelNoQualityBase">
 		<defName>DankPyon_Apparel_FlashPotBelt</defName>
 		<label>flash pot belt</label>
-		<description>PLACEHOLDER</description>
+		<description>A utility belt designed to carry throwable flash pots, which can be tossed to disorient and blind enemies.</description>
 		<techLevel>Medieval</techLevel>
 		<comps>
 			<li Class="CompProperties_ApparelReloadable">
@@ -226,7 +226,7 @@
 	<ThingDef ParentName="ApparelNoQualityBase">
 		<defName>DankPyon_Apparel_FirePotBelt</defName>
 		<label>fire pot belt</label>
-		<description>PLACEHOLDER</description>
+		<description>A utility belt designed to carry throwable fire pots, allowing the wearer to ignite areas or enemies from a distance</description>
 		<techLevel>Medieval</techLevel>
 		<comps>
 			<li Class="CompProperties_ApparelReloadable">
@@ -354,7 +354,7 @@
 	<ThingDef ParentName="ApparelNoQualityBase">
 		<defName>DankPyon_Apparel_SmokePotBelt</defName>
 		<label>smoke pot belt</label>
-		<description>PLACEHOLDER</description>
+		<description>A utility belt designed to carry throwable smoke pots, which can be tossed to disorient and blind enemies.</description>
 		<techLevel>Medieval</techLevel>
 		<comps>
 			<li Class="CompProperties_ApparelReloadable">
@@ -482,7 +482,7 @@
 	<ThingDef ParentName="ApparelNoQualityBase">
 		<defName>DankPyon_Apparel_AcidFlaskBelt</defName>
 		<label>acid flask belt</label>
-		<description>PLACEHOLDER</description>
+		<description>A utility belt designed to carry throwable acid flasks, which can be tossed to unleash powerful acid attacks that can melt through armor and damage enemies over time..</description>
 		<techLevel>Medieval</techLevel>
 		<comps>
 			<li Class="CompProperties_ApparelReloadable">
@@ -610,6 +610,5 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-
 
 </Defs>

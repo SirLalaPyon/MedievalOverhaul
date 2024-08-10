@@ -139,17 +139,22 @@
 	</PawnKindDef> 
 
 	<PawnKindDef ParentName="DankPyon_SettlementPeasant">
-		<defName>EEG_Amboisse_Peasant</defName>
+		<defName>DankPyon_Amboisse_Peasant</defName>
 		<defaultFactionType>DankPyon_NobleHouseCivil</defaultFactionType>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="DankPyon_SettlementPeasant">
-		<defName>EEG_Soren_Peasant</defName>
+		<defName>DankPyon_Soren_Peasant</defName>
 		<defaultFactionType>DankPyon_NobleHouseCivil2</defaultFactionType>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="DankPyon_SettlementPeasant">
-		<defName>EEG_Oswin_Peasant</defName>
+		<defName>DankPyon_Oswin_Peasant</defName>
+		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="DankPyon_SettlementPeasant">
+		<defName>DankPyon_Hesse_Peasant</defName>
 		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
 	</PawnKindDef>
 
@@ -532,7 +537,7 @@
 	
 	<PawnKindDef ParentName="DankPyon_SettlementArcher">
 		<defName>DankPyon_Hesse_Archer</defName>
-		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+		<defaultFactionType>DankPyon_NobleHouseSavage</defaultFactionType>
 
 		<apparelRequired>
 			<li>DankPyon_Apparel_Heraldic_Hauberk4c</li>
@@ -550,7 +555,7 @@
 	
 	<PawnKindDef ParentName="DankPyon_SettlementFootman">
 		<defName>DankPyon_Hesse_Footman</defName>
-		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+		<defaultFactionType>DankPyon_NobleHouseSavage</defaultFactionType>
 
 		<apparelRequired>
 			<li>DankPyon_Apparel_Heraldic_Hauberk4c</li>
@@ -568,7 +573,7 @@
 	
 	<PawnKindDef ParentName="DankPyon_SettlementKnight">
 		<defName>DankPyon_Hesse_Knight</defName>
-		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+		<defaultFactionType>DankPyon_NobleHouseSavage</defaultFactionType>
 
 		<apparelRequired>
 			<li>DankPyon_Headgear_HeraldicGreatHelm4c</li>
@@ -591,6 +596,6 @@
 	
 	<PawnKindDef ParentName="DankPyon_SettlementLord">
 		<defName>DankPyon_Hesse_LocalLord</defName>
-		<defaultFactionType>DankPyon_NobleHouseFierce</defaultFactionType>
+		<defaultFactionType>DankPyon_NobleHouseSavage</defaultFactionType>
 	</PawnKindDef>
 </Defs>

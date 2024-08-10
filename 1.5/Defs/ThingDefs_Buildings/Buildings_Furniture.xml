@@ -149,6 +149,64 @@
 		<costStuffCount>20</costStuffCount>
 		<constructEffect Inherit="false"/>
 		<soundImpactDefault Inherit="false"/>
+		<comps Inherit="False">
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(184,136,83,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>20.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Flame</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
+				</offsets>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.4</fireSize>
+				<offsetNorth>(0,0,1)</offsetNorth>
+				<offsetSouth>(0,0,0.2)</offsetSouth>
+				<offsetWest>(-.25,0,0.6)</offsetWest>
+				<offsetEast>(0.25,0,.6)</offsetEast>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -174,7 +232,7 @@
 
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>Standable</passability>
-		<terrainAffordanceNeeded IsNull="True" />
+		<terrainAffordanceNeeded IsNull="True"/>
 		<pathCost>0</pathCost>
 		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
@@ -197,7 +255,7 @@
 		<building>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 			<isEdifice>false</isEdifice>
-      		<isAttachment>true</isAttachment>
+			<isAttachment>true</isAttachment>
 		</building>
 
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -210,15 +268,15 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Styleable"/>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
-				<thingDefs>
-					<li>WoodLog</li>
-				</thingDefs>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
 				</fuelFilter>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -243,24 +301,24 @@
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes><li>Flame</li></focusTypes>
 				<offsets>
-				<li Class="FocusStrengthOffset_Lit">
-					<offset>0.1</offset>
-				</li>
-				<li Class="FocusStrengthOffset_BuildingDefsLit">
-					<defs>
-					<li>Campfire</li>
-					<li>TorchLamp</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-					</defs>
-					<offsetPerBuilding>0.01</offsetPerBuilding>
-					<radius>9.9</radius>
-					<maxBuildings>8</maxBuildings>
-					<explanationKey>MeditationFocusPerFlame</explanationKey>
-					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					<drawRingRadius>false</drawRingRadius>
-				</li>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
 				</offsets>
 			</li>
 		</comps>
@@ -289,7 +347,7 @@
 
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>Standable</passability>
-		<terrainAffordanceNeeded IsNull="True" />
+		<terrainAffordanceNeeded IsNull="True"/>
 		<pathCost>0</pathCost>
 		<selectable>true</selectable>
 		<tickerType>Normal</tickerType>
@@ -313,7 +371,7 @@
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
-      		<isAttachment>true</isAttachment>
+			<isAttachment>true</isAttachment>
 		</building>
 
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -326,15 +384,15 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_Styleable"/>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
 				<fuelFilter>
-				<thingDefs>
-					<li>DankPyon_Tar</li>
-				</thingDefs>
+					<thingDefs>
+						<li>DankPyon_Tar</li>
+					</thingDefs>
 				</fuelFilter>
 				<initialFuelPercent>0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -352,24 +410,24 @@
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes><li>Flame</li></focusTypes>
 				<offsets>
-				<li Class="FocusStrengthOffset_Lit">
-					<offset>0.1</offset>
-				</li>
-				<li Class="FocusStrengthOffset_BuildingDefsLit">
-					<defs>
-					<li>Campfire</li>
-					<li>TorchLamp</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-					</defs>
-					<offsetPerBuilding>0.01</offsetPerBuilding>
-					<radius>9.9</radius>
-					<maxBuildings>8</maxBuildings>
-					<explanationKey>MeditationFocusPerFlame</explanationKey>
-					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					<drawRingRadius>false</drawRingRadius>
-				</li>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
 				</offsets>
 			</li>
 		</comps>
@@ -1363,8 +1421,8 @@
 
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
-		<tickerType>Normal</tickerType>			
-		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel graphic overlay-->
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel graphic overlay-->
 
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -1381,7 +1439,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
-      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		
@@ -1410,29 +1468,29 @@
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
-				<li>Flame</li>
+					<li>Flame</li>
 				</focusTypes>
 				<offsets>
-				<li Class="FocusStrengthOffset_Lit">
-					<offset>0.1</offset>
-				</li>
-				<li Class="FocusStrengthOffset_BuildingDefsLit">
-					<defs>
-					<li>Campfire</li>
-					<li>TorchLamp</li>
-					<li>TorchWallLamp</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-					</defs>
-					<offsetPerBuilding>0.01</offsetPerBuilding>
-					<radius>9.9</radius>
-					<maxBuildings>8</maxBuildings>
-					<explanationKey>MeditationFocusPerFlame</explanationKey>
-					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					<drawRingRadius>false</drawRingRadius>
-				</li>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
 				</offsets>
 			</li>
 		</comps>
@@ -1479,29 +1537,29 @@
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
-				<li>Flame</li>
+					<li>Flame</li>
 				</focusTypes>
 				<offsets>
-				<li Class="FocusStrengthOffset_Lit">
-					<offset>0.1</offset>
-				</li>
-				<li Class="FocusStrengthOffset_BuildingDefsLit">
-					<defs>
-					<li>Campfire</li>
-					<li>TorchLamp</li>
-					<li>TorchWallLamp</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-					</defs>
-					<offsetPerBuilding>0.01</offsetPerBuilding>
-					<radius>9.9</radius>
-					<maxBuildings>8</maxBuildings>
-					<explanationKey>MeditationFocusPerFlame</explanationKey>
-					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					<drawRingRadius>false</drawRingRadius>
-				</li>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
 				</offsets>
 			</li>
 		</comps>
@@ -1544,8 +1602,8 @@
 
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
-		<tickerType>Normal</tickerType>			
-		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel graphic overlay-->
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel graphic overlay-->
 
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -1562,7 +1620,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
-      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		
@@ -1591,29 +1649,29 @@
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
-				<li>Flame</li>
+					<li>Flame</li>
 				</focusTypes>
 				<offsets>
-				<li Class="FocusStrengthOffset_Lit">
-					<offset>0.1</offset>
-				</li>
-				<li Class="FocusStrengthOffset_BuildingDefsLit">
-					<defs>
-					<li>Campfire</li>
-					<li>TorchLamp</li>
-					<li>TorchWallLamp</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-					</defs>
-					<offsetPerBuilding>0.01</offsetPerBuilding>
-					<radius>9.9</radius>
-					<maxBuildings>8</maxBuildings>
-					<explanationKey>MeditationFocusPerFlame</explanationKey>
-					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					<drawRingRadius>false</drawRingRadius>
-				</li>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
 				</offsets>
 			</li>
 		</comps>
@@ -1660,29 +1718,29 @@
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
-				<li>Flame</li>
+					<li>Flame</li>
 				</focusTypes>
 				<offsets>
-				<li Class="FocusStrengthOffset_Lit">
-					<offset>0.1</offset>
-				</li>
-				<li Class="FocusStrengthOffset_BuildingDefsLit">
-					<defs>
-					<li>Campfire</li>
-					<li>TorchLamp</li>
-					<li>TorchWallLamp</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-					</defs>
-					<offsetPerBuilding>0.01</offsetPerBuilding>
-					<radius>9.9</radius>
-					<maxBuildings>8</maxBuildings>
-					<explanationKey>MeditationFocusPerFlame</explanationKey>
-					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					<drawRingRadius>false</drawRingRadius>
-				</li>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
 				</offsets>
 			</li>
 		</comps>
@@ -1728,8 +1786,8 @@
 
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
-		<tickerType>Normal</tickerType>			
-		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel graphic overlay-->
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel graphic overlay-->
 
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
@@ -1749,7 +1807,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
-      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		
@@ -1780,29 +1838,29 @@
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
-				<li>Flame</li>
+					<li>Flame</li>
 				</focusTypes>
 				<offsets>
-				<li Class="FocusStrengthOffset_Lit">
-					<offset>0.1</offset>
-				</li>
-				<li Class="FocusStrengthOffset_BuildingDefsLit">
-					<defs>
-					<li>Campfire</li>
-					<li>TorchLamp</li>
-					<li>TorchWallLamp</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-					</defs>
-					<offsetPerBuilding>0.01</offsetPerBuilding>
-					<radius>9.9</radius>
-					<maxBuildings>8</maxBuildings>
-					<explanationKey>MeditationFocusPerFlame</explanationKey>
-					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					<drawRingRadius>false</drawRingRadius>
-				</li>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
 				</offsets>
 			</li>
 		</comps>
@@ -1857,7 +1915,7 @@
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
 		<tickerType>Normal</tickerType>
-		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel graphic overlay-->
+		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel graphic overlay-->
 
 		<clearBuildingArea>false</clearBuildingArea>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -1872,7 +1930,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
-      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 
 		<inspectorTabs>
@@ -1907,29 +1965,29 @@
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
-				<li>Flame</li>
+					<li>Flame</li>
 				</focusTypes>
 				<offsets>
-				<li Class="FocusStrengthOffset_Lit">
-					<offset>0.1</offset>
-				</li>
-				<li Class="FocusStrengthOffset_BuildingDefsLit">
-					<defs>
-					<li>Campfire</li>
-					<li>TorchLamp</li>
-					<li>TorchWallLamp</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-					</defs>
-					<offsetPerBuilding>0.01</offsetPerBuilding>
-					<radius>9.9</radius>
-					<maxBuildings>8</maxBuildings>
-					<explanationKey>MeditationFocusPerFlame</explanationKey>
-					<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					<drawRingRadius>false</drawRingRadius>
-				</li>
+					<li Class="FocusStrengthOffset_Lit">
+						<offset>0.1</offset>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsLit">
+						<defs>
+							<li>Campfire</li>
+							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+						</defs>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<explanationKey>MeditationFocusPerFlame</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+						<drawRingRadius>false</drawRingRadius>
+					</li>
 				</offsets>
 			</li>
 		</comps>
@@ -1986,7 +2044,7 @@
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
 		<tickerType>Normal</tickerType>
-		<drawerType>RealtimeOnly</drawerType> <!-- Keep for no fuel overlay-->
+		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel overlay-->
 
 		<clearBuildingArea>false</clearBuildingArea>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -2002,7 +2060,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
-      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 
 		<inspectorTabs>
@@ -2015,7 +2073,7 @@
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>0</initialFuelPercent>
-				<fuelConsumptionPerTickInRain>0.0000</fuelConsumptionPerTickInRain> <!--Set to 0 so it ownt get affected by rain-->
+				<fuelConsumptionPerTickInRain>0.0000</fuelConsumptionPerTickInRain><!--Set to 0 so it ownt get affected by rain-->
 				<fuelFilter>
 					<thingDefs>
 						<li>DankPyon_Tar</li>
@@ -2968,7 +3026,7 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
-		<paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 
 		<comps>
@@ -3050,13 +3108,13 @@
 		<label>rustic double bed (red)</label>
 		<description>A rustic comfy bed made up of silk embroidered covers and soft pillows. Double-wide bed that fits two people.</description>
 		<graphicData>
-		<texPath>Furniture/RusticBed2x2_Red</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(4.1,4.1)</drawSize>
-		<damageData>
-			<rect>(0,0.05,2,1.95)</rect>
-		</damageData>
+			<texPath>Furniture/RusticBed2x2_Red</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4.1,4.1)</drawSize>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
@@ -3076,7 +3134,7 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
-		<paintable>true</paintable>
+			<paintable>true</paintable>
 		</building>
 		
 		<comps>

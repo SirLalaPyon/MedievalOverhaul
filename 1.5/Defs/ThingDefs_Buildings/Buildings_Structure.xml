@@ -249,7 +249,6 @@
 			<li>Metallic</li>
 			<li>Woody</li>
 		</stuffCategories>
-
 		<building>
 		<blueprintClass>Blueprint_Build</blueprintClass>
 		<blueprintGraphicData>
@@ -305,7 +304,6 @@
 		<stuffCategories Inherit="False">
 			<li>Stony</li>
 		</stuffCategories>
-
 		<building>
 		<blueprintClass>Blueprint_Build</blueprintClass>
 		<blueprintGraphicData>
@@ -346,18 +344,15 @@
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconScale>0.5</uiIconScale>
-
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.3</fillPercent>
 		<castEdgeShadows>false</castEdgeShadows>
 		<pathCost>0</pathCost>
-
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
-
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>1200</WorkToBuild>
@@ -365,11 +360,9 @@
 			<Flammability>1</Flammability>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
 		</statBases>
-
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
-    
 		<surfaceType>Item</surfaceType>
 		<designationCategory>Structure</designationCategory>
 	</ThingDef>
@@ -394,12 +387,10 @@
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-
 		<stuffCategories Inherit="False">
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>5</costStuffCount>
-
 		<building>
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
@@ -443,13 +434,10 @@
 			<Flammability>2.0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>5</costStuffCount>
-
-		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>

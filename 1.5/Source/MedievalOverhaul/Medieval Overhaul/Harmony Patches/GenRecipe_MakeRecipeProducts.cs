@@ -30,9 +30,9 @@ namespace MedievalOverhaul.Patches
             if (__result != null)
             {
                 foreach (var thing in __result)
-                    {
-                        yield return thing;
-                    }
+                {
+                    yield return thing;
+                }
                 if (recipeDef.HasModExtension<RecipeExtension_Timber>())
                 {
                     Thing thing = null;
@@ -48,6 +48,10 @@ namespace MedievalOverhaul.Patches
                         {
                             ThingDefCountClass thingDefCountClass = thing.def.butcherProducts[j];
                             int num = thing.stackCount * thingDefCountClass.count;
+                            if (num > 2)
+                            {
+                                num = num - 2;
+                            }
                             ThingDef butcherDef = thingDefCountClass.thingDef;
                             Thing butcherThing = ThingMaker.MakeThing(butcherDef, null);
                             butcherThing.stackCount = num;

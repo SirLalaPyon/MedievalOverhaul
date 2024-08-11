@@ -199,15 +199,19 @@
     <weaponClasses>
         <li>ShortShots</li>
     </weaponClasses>
-    <recipeMaker>
-        <recipeUsers Inherit="False">
+    <recipeMaker Inherit="False">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
             <li>DankPyon_Workbench</li>
         </recipeUsers>
 		<researchPrerequisites>
 			<li>DankPyon_Gunpowder</li>
 			<li>Smithing</li>
 		</researchPrerequisites>
-        <!-- <researchPrerequisite>DankPyon_Gunpowder</researchPrerequisite> -->
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
         <skillRequirements>
             <Crafting>6</Crafting>
         </skillRequirements>

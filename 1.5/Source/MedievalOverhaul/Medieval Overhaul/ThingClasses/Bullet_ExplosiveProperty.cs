@@ -9,7 +9,7 @@ namespace MedievalOverhaul
 
         private ProjectileProperties AdditionalProjProps => (def.GetModExtension<AdditionalProjectileProperties>() ?? AdditionalProjectileProperties.defaultValues).projectile2;
 
-        public override void Impact(Thing hitThing, bool blockedByShield = false)
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             var usedTargetInfo = hitThing ?? new TargetInfo(usedTarget.Cell, Map);
             DoExplosion(usedTargetInfo);

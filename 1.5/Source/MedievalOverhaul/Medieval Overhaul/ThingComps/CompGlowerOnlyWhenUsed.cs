@@ -51,7 +51,7 @@ namespace MedievalOverhaul
 			}
         }
 
-        public override bool ShouldBeLitNow
+        protected override bool ShouldBeLitNow
 		{
 			get
 			{

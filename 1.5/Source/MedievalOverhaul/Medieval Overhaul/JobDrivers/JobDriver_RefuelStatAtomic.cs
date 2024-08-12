@@ -12,7 +12,7 @@ namespace MedievalOverhaul
 			return pawn.Reserve(Refuelable, job, 1, -1, null, errorOnFailed);
 		}
 
-        public override IEnumerable<Toil> MakeNewToils()
+        protected override IEnumerable<Toil> MakeNewToils()
 		{
 			this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
 			AddEndCondition(() => !RefuelableComp.IsFull ? JobCondition.Ongoing : JobCondition.Succeeded);

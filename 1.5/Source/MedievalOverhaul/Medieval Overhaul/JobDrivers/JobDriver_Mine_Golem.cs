@@ -21,7 +21,7 @@ namespace MedievalOverhaul
             return this.pawn.Reserve(this.MineTarget, this.job, 1, -1, null, errorOnFailed, false);
         }
 
-        public override IEnumerable<Toil> MakeNewToils()
+        protected override IEnumerable<Toil> MakeNewToils()
         {
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
             this.FailOn(() => this.pawn.IsPlayerControlled && !this.job.ignoreDesignations && this.pawn.Map.designationManager.DesignationAt(this.TargetA.Cell, DesignationDefOf.Mine) == null && this.pawn.Map.designationManager.DesignationAt(this.TargetA.Cell, DesignationDefOf.MineVein) == null);

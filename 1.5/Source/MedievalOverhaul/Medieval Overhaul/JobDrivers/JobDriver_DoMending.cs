@@ -75,7 +75,7 @@ namespace MedievalOverhaul
             return true;
         }
 
-        public override IEnumerable<Toil> MakeNewToils()
+        protected override IEnumerable<Toil> MakeNewToils()
         {
             base.AddEndCondition(delegate
             {

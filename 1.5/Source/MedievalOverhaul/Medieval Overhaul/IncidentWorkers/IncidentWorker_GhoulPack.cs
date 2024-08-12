@@ -14,7 +14,7 @@ namespace MedievalOverhaul
 
         private const int AnimalsStayDurationMax = 120000;
 
-        public override bool CanFireNowSub(IncidentParms parms)
+        protected override bool CanFireNowSub(IncidentParms parms)
         {
             if (!base.CanFireNowSub(parms))
             {
@@ -25,7 +25,7 @@ namespace MedievalOverhaul
             return RCellFinder.TryFindRandomPawnEntryCell(out result, map, CellFinder.EdgeRoadChance_Animal);
         }
 
-        public override bool TryExecuteWorker(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
             PawnKindDef animalKind = parms.pawnKind;

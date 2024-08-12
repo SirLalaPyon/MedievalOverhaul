@@ -8,7 +8,7 @@ EndProject
 Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "RimWorldWin64", "..\..\..\..\..\RimWorldWin64.exe", "{294DF22B-750F-4C38-84EA-145469B3E2C3}"
 	ProjectSection(DebuggerProjectSystem) = preProject
 		PortSupplier = 00000000-0000-0000-0000-000000000000
-		Executable = RimWorldWin64.exe
+		Executable = C:\Program Files (x86)\Games\Steam\steamapps\common\RimWorld\RimWorldWin64.exe
 		RemoteMachine = $(computername)
 		StartingDirectory = C:\Program Files (x86)\Games\Steam\steamapps\common\RimWorld
 		Arguments = --doorstop-enabled true

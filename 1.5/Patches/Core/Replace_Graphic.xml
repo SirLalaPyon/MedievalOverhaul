@@ -59,11 +59,14 @@
 	</Operation>
 
 	<!-- Wool -->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@ParentName="WoolBase" and graphicData/texPath]/graphicData[not(graphicClass)]</xpath>
-		<value>
-			<graphicClass>Graphic_Single</graphicClass>
-		</value>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@ParentName="WoolBase" and graphicData/texPath]/graphicData[not(graphicClass)]</xpath>
+			<value>
+				<graphicClass>Graphic_Single</graphicClass>
+			</value>
+		</match>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">

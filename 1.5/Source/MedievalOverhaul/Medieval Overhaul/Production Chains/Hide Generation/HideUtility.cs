@@ -32,7 +32,7 @@ namespace MedievalOverhaul
                         AllLeatherAnimals.Add(animal);
                     }
                 }
-                if (ModLister.CheckBiotech("MechLink"))
+                if (ModLister.BiotechInstalled && ModLister.CheckBiotech("MechLink"))
                 {
                     foreach (GeneDef gene in DefDatabase<GeneDef>.AllDefs.ToList())
                     {

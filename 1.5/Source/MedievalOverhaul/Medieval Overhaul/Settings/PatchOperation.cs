@@ -17,7 +17,7 @@ namespace MedievalOverhaul
 
         public PatchOperation inactive;
 
-        public override bool ApplyWorker(XmlDocument xml)
+        protected override bool ApplyWorker(XmlDocument xml)
         {
             if (HasSetting())
             {

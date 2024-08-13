@@ -16,7 +16,7 @@ namespace MedievalOverhaul
             return this.pawn.Reserve(this.job.targetA, this.job, 1, -1, null, errorOnFailed, false);
         }
 
-        public override IEnumerable<Toil> MakeNewToils()
+        protected override IEnumerable<Toil> MakeNewToils()
         {
             CompQuestFinder scannerComp = this.job.targetA.Thing.TryGetComp<CompQuestFinder>();
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);

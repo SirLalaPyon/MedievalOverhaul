@@ -5,16 +5,41 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedievalOverhaul", "MedievalOverhaul.csproj", "{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}"
 EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "RimWorldWin64", "..\..\..\..\..\RimWorldWin64.exe", "{294DF22B-750F-4C38-84EA-145469B3E2C3}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Program Files (x86)\Games\Steam\steamapps\common\RimWorld\RimWorldWin64.exe
+		RemoteMachine = $(computername)
+		StartingDirectory = C:\Program Files (x86)\Games\Steam\steamapps\common\RimWorld
+		Arguments = --doorstop-enabled true
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}.Debug|x64.Build.0 = Debug|Any CPU
 		{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}.Release|x64.ActiveCfg = Release|Any CPU
+		{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}.Release|x64.Build.0 = Release|Any CPU
+		{294DF22B-750F-4C38-84EA-145469B3E2C3}.Debug|Any CPU.ActiveCfg = Release|x64
+		{294DF22B-750F-4C38-84EA-145469B3E2C3}.Debug|x64.ActiveCfg = Release|x64
+		{294DF22B-750F-4C38-84EA-145469B3E2C3}.Release|Any CPU.ActiveCfg = Release|x64
+		{294DF22B-750F-4C38-84EA-145469B3E2C3}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

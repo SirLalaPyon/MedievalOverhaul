@@ -11,7 +11,7 @@ namespace MedievalOverhaul
 {
     internal class IncidentWorker_GenericWandersIn : IncidentWorker
     {
-        public override bool CanFireNowSub(IncidentParms parms)
+        protected override bool CanFireNowSub(IncidentParms parms)
         {
             IncidentProperties incidentProperties = IncidentProperties.Get((Def)this.def);
             if (!base.CanFireNowSub(parms) && incidentProperties != null && incidentProperties.kindDef != null)
@@ -20,7 +20,7 @@ namespace MedievalOverhaul
             return !target.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout) && target.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(incidentProperties.kindDef.race) && this.TryFindEntryCell(target, out IntVec3 _);
         }
 
-        public override bool TryExecuteWorker(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             IncidentProperties incidentProperties = IncidentProperties.Get((Def)this.def);
             Map target = (Map)parms.target;

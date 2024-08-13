@@ -13,18 +13,18 @@ namespace MedievalOverhaul
     public class JobDriver_GatherIce : JobDriver_AffectFloor
     {
 
-        public override int BaseWorkAmount => 600;
+        protected override int BaseWorkAmount => 600;
 
-        public override DesignationDef DesDef => MedievalOverhaulDefOf.DankPyon_GatherIce;
+        protected override DesignationDef DesDef => MedievalOverhaulDefOf.DankPyon_GatherIce;
 
-        public override StatDef SpeedStat => StatDefOf.MiningSpeed;
+        protected override StatDef SpeedStat => StatDefOf.MiningSpeed;
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
             return this.pawn.Reserve(this.job.targetA, this.job, 1, -1, ReservationLayerDefOf.Floor, errorOnFailed, false);
         }
 
-        public override IEnumerable<Toil> MakeNewToils()
+        protected override IEnumerable<Toil> MakeNewToils()
         {
             this.FailOn(() => (!job.ignoreDesignations && base.Map.designationManager.DesignationAt(base.TargetLocA, DesDef) == null) ? true : false);
             yield return Toils_Goto.GotoCell(TargetIndex.A, PathEndMode.Touch);
@@ -56,7 +56,7 @@ namespace MedievalOverhaul
             yield return doWork;
         }
 
-        public override void DoEffect(IntVec3 c)
+        protected override void DoEffect(IntVec3 c)
         {
             TerrainDef terrain = base.Map.terrainGrid.TerrainAt(c);
             if (terrain == TerrainDefOf.Ice)

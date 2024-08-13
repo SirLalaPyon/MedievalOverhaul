@@ -18,8 +18,8 @@
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>..\..\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -27,14 +27,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Medieval Overhaul\BackCompatibilityConverter_TentWalls.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Designator_GatherIce.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\RoomRoleWorker_Workshop_GetScore_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\BackCompatibileCurentVersion.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_MakeSkillBook.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_ResourcePod_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StockGenerator_Category_GenerateThings.cs" />
@@ -224,11 +226,15 @@
     </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
       <Version>1.5.4104</Version>
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.3.3</Version>
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
-    <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Settings.settings">

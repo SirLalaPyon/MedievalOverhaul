@@ -34,7 +34,7 @@ namespace MedievalOverhaul
             }
             if (overrides.Count > 0)
             {
-                __instance.values = overrides;
+                AccessTools.Field(__instance.GetType(), "values").SetValue(__instance, overrides);
                 return false;
             }
             return true;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="NCS_TentWall"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Buildings/Linked/Tent</texPath>
+				<graphicClass>Graphic_Appearances</graphicClass>
+				<linkType>CornerFiller</linkType>
+				<linkFlags Inherit="False">
+					<li>Custom1</li>
+				</linkFlags>
+			</graphicData>
+		</value>
+	</Operation>
+</Patch>

@@ -733,7 +733,7 @@
 		<defName>DankPyon_Daze</defName>
 		<label>dazed</label>
 		<makesSickThought>true</makesSickThought>
-		<description>PLACEHOLDER</description>
+		<description>A temporary state of mind that hinders combat effectiveness.</description>
 		<tendable>false</tendable>
 		<isBad>true</isBad>
 		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
@@ -764,7 +764,7 @@
 	<HediffDef>
 		<defName>DankPyon_LindwurmAcidImmune</defName>
 		<label>lindwurm acid immunity</label>
-		<description>Placeholder</description>
+		<description>Immune to lindwurm acid</description>
 		<hediffClass>Hediff</hediffClass>
 		<makesSickThought>false</makesSickThought>
 		<isBad>false</isBad>
@@ -778,7 +778,7 @@
 	<HediffDef>
 		<defName>DankPyon_StunImmune</defName>
 		<label>stun immunity</label>
-		<description>Placeholder</description>
+		<description>Immune to being stunned</description>
 		<hediffClass>Hediff</hediffClass>
 		<makesSickThought>false</makesSickThought>
 		<isBad>false</isBad>
@@ -792,7 +792,7 @@
 	<HediffDef>
 		<defName>DankPyon_DazeImmune</defName>
 		<label>daze immunity</label>
-		<description>Placeholder</description>
+		<description>Immune to being dazed</description>
 		<hediffClass>Hediff</hediffClass>
 		<makesSickThought>false</makesSickThought>
 		<isBad>false</isBad>
@@ -806,7 +806,7 @@
 	<HediffDef>
 		<defName>DankPyon_SigilMood</defName>
 		<label>rune sigil</label>
-		<description>Placeholder</description>
+		<description>Increased mood from sigil</description>
 		<hediffClass>Hediff</hediffClass>
 		<makesSickThought>false</makesSickThought>
 		<isBad>false</isBad>

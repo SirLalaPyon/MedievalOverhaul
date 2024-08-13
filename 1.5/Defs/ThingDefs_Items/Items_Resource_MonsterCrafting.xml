@@ -91,7 +91,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_ThickUnholdFur</defName>
 		<label>thick unhold fur</label>
-		<description>Robust hides of the formidable unhold, renowned for their thickness and weatherproof nature, sought after for crafting resilient garments and protective gear.</description>
+		<description>Warm furs of the formidable unhold, renowned for their thickness and weatherproof nature, sought after for crafting resilient garments and protective gear.</description>
 		<graphicData>
 			<texPath>Special/ThickUnholdFur</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -109,7 +109,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_UnholdHide</defName>
 		<label>unhold hide</label>
-		<description>PLACEHOLDER</description>
+		<description>Robust hides of the formidable unhold, renowned for their thickness and weatherproof nature, sought after for crafting resilient garments and protective gear.</description>
 		<graphicData>
 			<texPath>Special/UnholdHide</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -146,9 +146,9 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_TrollHeart</defName>
 		<label>blue heart</label>
-		<description>PLACEHOLDER.</description>
+		<description>The heart of an Ancient Troll, prized for its alchemical properties.</description>
 		<graphicData>
-			<texPath>Special/UnholdBones</texPath>
+			<texPath>Special/UnholdHeart</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 
@@ -165,7 +165,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_Gossamer</defName>
 		<label>gossamer</label>
-		<description>PLACEHOLDER</description>
+		<description>The strong strands of a Webknecht, lighter and stronger than steel.</description>
 		<graphicData>
 			<texPath>Special/Gossamer</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -183,7 +183,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_PoisonGland</defName>
 		<label>poison gland</label>
-		<description>PLACEHOLDER</description>
+		<description>Webknect poison is known world wide for the ability to drop a Rox.</description>
 		<graphicData>
 			<texPath>Special/PoisonGland</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -201,7 +201,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_RedbackPoisonGland</defName>
 		<label>redback poison gland</label>
-		<description>PLACEHOLDER</description>
+		<description>Redback poison is known world wide for the ability drop a Daer.</description>
 		<graphicData>
 			<texPath>Special/RedbackPoisonGland</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -238,7 +238,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_LindwurmBones</defName>
 		<label>lindwurm bones</label>
-		<description>PLACEHOLDER</description>
+		<description>Strong and lightweight bones from a Lindwurm, valued for their durability and often used in crafting sturdy weapons and specialized tools.</description>
 		<graphicData>
 			<texPath>Special/LindwurmBones</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -256,7 +256,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_LindwurmScales</defName>
 		<label>lindwurm scales</label>
-		<description>PLACEHOLDER</description>
+		<description>Tough, durable scales shed from a Lindwurm, prized for their exceptional strength and resilience. Ideal for crafting high-quality armor and protective gear.</description>
 		<graphicData>
 			<texPath>Special/LindwurmScales</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -274,8 +274,8 @@
 	<!--=============== Ghoul ====================-->
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_NachHorns</defName>
-		<label>ghoul horn</label>
-		<description>PLACEHOLDER</description>
+		<label>nachzehrer horn</label>
+		<description>Sharp, twisted horns from a Nachzehrer, known for their hardness and used in crafting powerful weapons or ritualistic items.</description>
 		<graphicData>
 			<texPath>Special/NachHorns</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -294,7 +294,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_ParchedSkin</defName>
 		<label>parched skin</label>
-		<description>PLACEHOLDER</description>
+		<description>Soft yet durable hide from an Alp, often used to craft lightweight armor or clothing with subtle protective qualities.</description>
 		<graphicData>
 			<texPath>Special/ParchedSkin</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -312,7 +312,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_PetrifiedScream</defName>
 		<label>petrified scream</label>
-		<description>PLACEHOLDER</description>
+		<description>A unique part of Alp biology, this solidified manifestation of the creature's final cry is a rare and eerie material used in crafting or dark rituals.</description>
 		<graphicData>
 			<texPath>Special/PetrifiedScream</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -330,7 +330,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_ThirdEye</defName>
 		<label>third eye</label>
-		<description>PLACEHOLDER</description>
+		<description>A mystical organ from an Alp, known for its ability to perceive beyond the physical realm. Often sought after for use in powerful rituals or crafting items with enhanced perception or psychic abilities.</description>
 		<graphicData>
 			<texPath>Special/ThirdEye</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -349,7 +349,7 @@
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_AdrenalineGland</defName>
 		<label>adrenaline gland</label>
-		<description>PLACEHOLDER</description>
+		<description>This organ significantly enhances the body's fight-or-flight response, increasing strength, speed, and reaction time when activated. Often used in crafting potent combat stimulants.</description>
 		<graphicData>
 			<texPath>Special/AdrenalineGland</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

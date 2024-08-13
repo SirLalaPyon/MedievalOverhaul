@@ -3,7 +3,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DankPyon_Paregoric</defName>
 		<label>paregoric</label>
-		<description>PLACEHOLDER</description>
+		<description>A potent tincture for pain relief and increased healing, but carries a risk of addiction with prolonged use.</description>
 		<possessionCount>10</possessionCount>
 		<descriptionHyperlinks><HediffDef>DankPyon_High_Paregoric</HediffDef></descriptionHyperlinks>
 		<graphicData>
@@ -52,7 +52,7 @@
     <defName>DankPyon_High_Paregoric</defName>
     <hediffClass>Hediff_High</hediffClass>
     <label>paregoric</label>
-    <description>PLACEHOLDER.</description>
+    <description>A temporary state of pain relief and increased healing.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>

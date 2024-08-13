@@ -618,7 +618,7 @@
 	</ThingDef>
 
 	<!-- Grilled Sausages -->
-	<ThingDef ParentName="MealCooked">
+	<ThingDef ParentName="MealFineBase">
 		<defName>DankPyon_MealGrilledSausages</defName>
 		<label>grilled Sausages</label>
 		<description>Seasoned meat with spices encased in a cylindrical manner. Grilled in an open flame to bring out smoky flavors.</description>
@@ -644,6 +644,11 @@
 				</li>
 			</outcomeDoers>
 		</ingestible>
+		<comps>
+			<li Class="CompProperties_Ingredients" Inherit="false">
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
 		<rotatable>false</rotatable>
 	</ThingDef>
 

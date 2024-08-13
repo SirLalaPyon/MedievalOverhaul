@@ -3,7 +3,7 @@
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>DankPyon_Miracle</defName>
 		<label>apothecary's miracle</label>
-		<description>PLACEHOLDER</description>
+		<description>A legendary elixir renowned for its extraordinary healing abilities, rapidly accelerating recovery from injuries and significantly enhancing the body’s ability to develop immunity. Upon consumption, it grants full immunity to a range of common and deadly diseases, making it an invaluable remedy in dire situations.</description>
 		<possessionCount>10</possessionCount>
 		<descriptionHyperlinks><HediffDef>DankPyon_High_Miracle</HediffDef></descriptionHyperlinks>
 		<graphicData>
@@ -52,7 +52,7 @@
     <defName>DankPyon_High_Miracle</defName>
     <hediffClass>Hediff_High</hediffClass>
     <label>apothecary's miracle</label>
-    <description>PLACEHOLDER.</description>
+    <description>Rapidly accelerates healing and immunity while providing full protection against several major diseases..</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>

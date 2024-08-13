@@ -37,10 +37,9 @@ namespace MedievalOverhaul
         protected override void FillTab()
         {
             CompRefuelableStat comp1 = this.SelBuilding.GetComp<CompRefuelableStat>();
-            //CompRefuelableStat comp2 = this.SelBuilding.GetComp<CompRefuelableStat>();
-            Rect bottom;
-            new Rect(0.0f, 0.0f, ITab_StewPot.WinSize.x, ITab_StewPot.WinSize.y).ContractedBy(10f).SplitHorizontally(18f, out Rect _, out bottom);
-            ThingFilterUI.DoThingFilterConfigWindow(bottom, this.fuelFilterState, comp1.AllowedFuelFilter, comp1.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
+			//CompRefuelableStat comp2 = this.SelBuilding.GetComp<CompRefuelableStat>();
+			new Rect(0.0f, 0.0f, ITab_StewPot.WinSize.x, ITab_StewPot.WinSize.y).ContractedBy(10f).SplitHorizontally(18f, out Rect _, out Rect bottom);
+			ThingFilterUI.DoThingFilterConfigWindow(bottom, this.fuelFilterState, comp1.AllowedFuelFilter, comp1.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
         }
     }
 }

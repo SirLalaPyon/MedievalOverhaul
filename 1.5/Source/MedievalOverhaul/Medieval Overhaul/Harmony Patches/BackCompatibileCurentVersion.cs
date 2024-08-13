@@ -22,7 +22,7 @@ namespace MedievalOverhaul
 		/// </remarks>
 		public static void Postfix(Type defType, string defName, bool forDefInjections, XmlNode node, ref string __result)
 		{
-			if (Scribe.mode == LoadSaveMode.Inactive && VersionControl.CurrentBuild == ScribeMetaHeaderUtility.loadedGameVersionBuild || GenDefDatabase.GetDefSilentFail(defType, defName, false) != null)
+			if (Scribe.mode != LoadSaveMode.Inactive && VersionControl.CurrentBuild == ScribeMetaHeaderUtility.loadedGameVersionBuild || GenDefDatabase.GetDefSilentFail(defType, defName, false) != null)
 			{
 				if (converter.AppliesToLoadedGameVersion())
 				{

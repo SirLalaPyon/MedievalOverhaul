@@ -29,14 +29,9 @@ namespace MedievalOverhaul
         {
             get
             {
-                IBillGiver billGiver = mendingBench as IBillGiver;
-                if (billGiver == null)
-                {
-                    throw new InvalidOperationException("DoBill on non-Billgiver.");
-                }
-                return billGiver;
-            }
-        }
+				return mendingBench is not IBillGiver billGiver ? throw new InvalidOperationException("DoBill on non-Billgiver.") : billGiver;
+			}
+		}
         protected Thing mendingBench
         {
             get

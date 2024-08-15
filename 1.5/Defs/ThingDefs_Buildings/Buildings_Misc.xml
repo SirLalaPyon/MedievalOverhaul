@@ -520,24 +520,19 @@
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<rotatable>true</rotatable>
-		
 		<defaultPlacingRot>North</defaultPlacingRot>
-
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
-
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-
 		<statBases>
 			<MaxHitPoints>45</MaxHitPoints>
 			<WorkToBuild>500</WorkToBuild>
 			<Mass>5</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<costList>
 			<DankPyon_Paper>25</DankPyon_Paper>
 		</costList>
@@ -546,11 +541,6 @@
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
-
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -560,7 +550,6 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
@@ -596,23 +585,16 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
 			<WorkToBuild>1500</WorkToBuild>
 			<Mass>5</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
-
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -622,7 +604,6 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
@@ -653,26 +634,18 @@
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<rotatable>true</rotatable>
-
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-
 		<statBases>
 			<MaxHitPoints>45</MaxHitPoints>
 			<WorkToBuild>500</WorkToBuild>
 			<Mass>5</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<costList>
 			<DankPyon_Paper>50</DankPyon_Paper>
 		</costList>
-
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -682,7 +655,6 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
@@ -712,11 +684,9 @@
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<rotatable>true</rotatable>
-
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-
 		<statBases>
 			<MaxHitPoints>45</MaxHitPoints>
 			<WorkToBuild>500</WorkToBuild>
@@ -727,11 +697,6 @@
 		<costList>
 			<DankPyon_Paper>50</DankPyon_Paper>
 		</costList>
-
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -741,7 +706,6 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>

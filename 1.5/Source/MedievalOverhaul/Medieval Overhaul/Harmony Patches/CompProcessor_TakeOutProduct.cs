@@ -77,7 +77,6 @@ namespace MedievalOverhaul.Patches
             {
                 thing = ThingMaker.MakeThing(thingDefCount.thingDef);
                 thing.stackCount = thingDefCount.count;
-                Log.Message(thing.stackCount);
             }
             foreach (Thing ingredientThing2 in activeProcess.ingredientThings)
             {

@@ -42,7 +42,6 @@ namespace MedievalOverhaul
         public void DestroyMined(Pawn pawn)
         {
             Map map = this.Map;
-            Log.Message("Is this firing?");
             base.Destroy(DestroyMode.KillFinalize);
             this.TrySpawnYield(map, true, pawn);
             if (pawn == null)

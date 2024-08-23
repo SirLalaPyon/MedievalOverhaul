@@ -32,7 +32,6 @@ namespace MedievalOverhaul
                         Hediff_Injury injury = injuryCheck[i] as Hediff_Injury;
                         if (injury != null)
                         {
-                            Log.Message(injury);
                             injuryList.Add(injury);
                         }
                     }

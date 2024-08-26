@@ -12,8 +12,8 @@
 		<workAmount>300</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_GrindWheat</workerCounterClass>
 		<ingredients>
-
 			<li>
 				<filter>
 					<thingDefs>
@@ -22,7 +22,6 @@
 				</filter>
 				<count>1</count>
 			</li>
-
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -52,8 +51,8 @@
 		<workAmount>100</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_GrindWheat</workerCounterClass>
 		<ingredients>
-
 			<li>
 				<filter>
 					<thingDefs>
@@ -62,7 +61,6 @@
 				</filter>
 				<count>1</count>
 			</li>
-
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -92,6 +90,7 @@
 		<workAmount>800</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_GrindWheat</workerCounterClass>
 		<ingredients>
 			<li>
 				<filter>
@@ -231,4 +230,5 @@
 			<li>DankPyon_Millstone</li>
 		</recipeUsers>
 	</RecipeDef>
+
 </Defs>

@@ -7,65 +7,121 @@
 			<!-- <drawSize>(2,2)</drawSize> -->
 		<!-- </value> -->
 	<!-- </Operation> -->
-	
-	<Operation Class="PatchOperationAdd">
-	<xpath>Defs/ThingDef[defName="PitLatrine"]/graphicData</xpath>
-		<value>
-			<drawSize>(2.3,2.3)</drawSize>
-		</value>
-	</Operation>
 
-	<Operation Class="PatchOperationRemove">
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="PitLatrine"]/graphicData/drawSize</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PitLatrine"]/graphicData/drawSize</xpath>
+			<value>
+				<drawSize>(2.3,2.3)</drawSize>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="PitLatrine"]/graphicData</xpath>
+			<value>
+				<drawSize>(2.3,2.3)</drawSize>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="DankPyon_Well"]/designationCategory</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName="DankPyon_Well"]/designationCategory</xpath>
+		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="WaterWellInlet"]</xpath>
-		<value>
-			<thingClass>Building_WorkTable</thingClass>
-		</value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="WaterWellInlet"]/thingClass</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="WaterWellInlet"]/thingClass</xpath>
+			<value>
+				<thingClass>Building_WorkTable</thingClass>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="WaterWellInlet"]</xpath>
+			<value>
+				<thingClass>Building_WorkTable</thingClass>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="WaterTowerS"]/graphicData/drawSize</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="WaterTowerS"]/graphicData/drawSize</xpath>
+			<value>
+				<drawSize>(3,3)</drawSize>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BathtubStuff"]/stuffCategories/li[text()="Stony"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName="BathtubStuff"]/stuffCategories/li[text()="Stony"]</xpath>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BathtubStuff"]/stuffCategories/li[text()="Metallic"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName="BathtubStuff"]/stuffCategories/li[text()="Metallic"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="WaterButt"]/stuffCategories/li[text()="Stony"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName="WaterButt"]/stuffCategories/li[text()="Stony"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="WaterButt"]/stuffCategories/li[text()="Metallic"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName="WaterButt"]/stuffCategories/li[text()="Metallic"]</xpath>
+		</match>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="WaterTowerS"]/graphicData/drawSize</xpath>
+		<xpath>Defs/ThingDef[defName="PrimitiveWell"]/graphicData/drawSize</xpath>
 		<value>
 			<drawSize>(3,3)</drawSize>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName="BathtubStuff"]/stuffCategories/li[text()="Stony"]</xpath>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="PrimitiveWell"]/uiIconScale</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PrimitiveWell"]/uiIconScale</xpath>
+			<value>
+				<uiIconScale>0.5</uiIconScale>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="PrimitiveWell"]</xpath>
+			<value>
+				<uiIconScale>0.5</uiIconScale>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName="BathtubStuff"]/stuffCategories/li[text()="Metallic"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName="WaterButt"]/stuffCategories/li[text()="Stony"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName="WaterButt"]/stuffCategories/li[text()="Metallic"]</xpath>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="PrimitiveWell"]/graphicData/drawSize</xpath>
-		<value>
-			<drawSize>(3,3)</drawSize>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="PrimitiveWell"]</xpath>
-		<value>
-			<uiIconScale>0.5</uiIconScale>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="PrimitiveWell"]/graphicData</xpath>
-		<value><shaderType>CutoutComplex</shaderType></value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="PrimitiveWell"]/graphicData/shaderType</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PrimitiveWell"]/graphicData/shaderType</xpath>
+			<value>
+				<shaderType>CutoutComplex</shaderType>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="PrimitiveWell"]/graphicData</xpath>
+			<value>
+				<shaderType>CutoutComplex</shaderType>
+			</value>
+		</nomatch>
 	</Operation>
 
 </Patch>

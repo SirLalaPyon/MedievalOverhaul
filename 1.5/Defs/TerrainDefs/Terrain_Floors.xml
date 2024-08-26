@@ -111,5 +111,28 @@
       <DankPyon_IronIngot>7</DankPyon_IronIngot>
     </costList>
   </TerrainDef>
+  
+  <TerrainDef  ParentName="FloorBase">
+    <defName>DankPyon_DarkWoodPlankFloor</defName>
+    <label>dark wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Dark wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+	<color>(112,91,76)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <costList>
+      <DankPyon_RawDarkWood>3</DankPyon_RawDarkWood>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+  </TerrainDef>
 
 </Defs>

@@ -79,6 +79,7 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_Waterskin;
         public static JobDef DankPyon_JobGatherIce;
         public static ThingDef DankPyon_Book_ScribeTable;
+        public static ThingDef DankPyon_Flour;
 
         [MayRequireCE]
         public static StatDef Bulk;

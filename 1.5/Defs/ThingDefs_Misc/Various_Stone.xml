@@ -87,4 +87,27 @@
 		</stuffProps>
 	</ThingDef>
 
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+    		<defName>DankPyon_Make_StoneBlocksClay</defName>
+		<label>make clay blocks</label>
+		<description>Cuts clay chunks into usable blocks.</description>
+		<ingredients>
+			<li>
+		        	<filter>
+		          		<thingDefs>
+		            			<li>DankPyon_ChunkClay</li>
+		          		</thingDefs>
+		        	</filter>
+		        	<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DankPyon_ChunkClay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_BlocksClay>20</DankPyon_BlocksClay>
+		</products>
+	</RecipeDef>
 </Defs>

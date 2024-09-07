@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Clay Version of the Mosaic Tile from DBH -->
+  <TerrainDef ParentName="DBHMosaicBase">
+	  <defName>DankPyon_DBHMosaicClay</defName>
+	  <label>clay mosaic tile</label>
+	  <color>(132,99,81)</color>
+	  <costList>
+		  <DankPyon_BlocksClay>4</DankPyon_BlocksClay>
+	  </costList>
+  </TerrainDef>
+</Defs>

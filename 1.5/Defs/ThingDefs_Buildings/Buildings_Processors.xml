@@ -844,8 +844,9 @@
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">

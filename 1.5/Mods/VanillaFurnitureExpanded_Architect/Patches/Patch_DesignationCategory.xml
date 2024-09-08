@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+        <xpath>Defs/TerrainDef[defName="DankPyon_DarkWoodPlankFloor"]</xpath>
         <value>
             <designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
 		</value>

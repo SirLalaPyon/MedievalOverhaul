@@ -50,6 +50,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\RoomRoleWorker_Workshop_GetScore_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_GrindWheat.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_MakeSkillBook.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_ResourcePod_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StockGenerator_Category_GenerateThings.cs" />
@@ -238,11 +239,11 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ProcessorFramework">
-      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\3210544395\1.5\Assemblies\ProcessorFramework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Games\Rimworld C# Packages\ProcessorFramework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VFECore">
-      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Games\Rimworld C# Packages\VFECore.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

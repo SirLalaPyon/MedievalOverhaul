@@ -15,11 +15,11 @@ namespace MedievalOverhaul
 {
     public static class HideUtility
     {
-        public static List<ThingDef> AllLeatherAnimals = new List<ThingDef>();
-        public static Dictionary<ThingDef, ThingDef> LeatherDefsSeen = new Dictionary<ThingDef, ThingDef>();
-        public static Dictionary<ThingDef, ThingDef> AnimalDefsSeen = new Dictionary<ThingDef, ThingDef>();
-        public static List<GeneDef> AllGeneDefs = new List<GeneDef>();
-        public static Dictionary<GeneDef, ThingDef> geneLeather = new Dictionary<GeneDef, ThingDef>();
+        public static List<ThingDef> AllLeatherAnimals = new ();
+        public static Dictionary<ThingDef, ThingDef> LeatherDefsSeen = [];
+        public static Dictionary<ThingDef, ThingDef> AnimalDefsSeen = [];
+        public static List<GeneDef> AllGeneDefs = new ();
+        public static Dictionary<GeneDef, ThingDef> geneLeather = [];
 
         public static void MakeListOfAnimals()
         {
@@ -50,10 +50,10 @@ namespace MedievalOverhaul
         {
             if (!AnimalDefsSeen.ContainsKey(animal))
             {
-                hide.descriptionHyperlinks = hide.descriptionHyperlinks ?? new List<DefHyperlink>();
+                hide.descriptionHyperlinks = hide.descriptionHyperlinks ?? new ();
                 hide.descriptionHyperlinks.Add(new DefHyperlink { def = leather });
                 hide.modContentPack = Utility.myContentPack;
-                ThingFilter filter = new ThingFilter();
+                ThingFilter filter = new ();
                 List<ThingDef> list = new List<ThingDef>
                 {
                     { hide }
@@ -270,7 +270,11 @@ namespace MedievalOverhaul
         }
         public static bool IsHide(ThingDef thing)
         {
+            if (thing is not null)
+            {
                 return thing.category == ThingCategory.Item && thing.thingCategories != null && thing.thingCategories.Contains(MedievalOverhaulDefOf.DankPyon_Hides);
+            }
+            return false;
         }
     }
 }

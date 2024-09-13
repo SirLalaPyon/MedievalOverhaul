@@ -36,30 +36,44 @@ namespace MedievalOverhaul
         public override IEnumerable<SitePartWorker_WorkSite.CampLootThingStruct> LootThings(int tile)
         {
             IEnumerable<ThingDef> enumerable = from a in Find.WorldGrid[tile].biome.AllWildAnimals
+                                               where a?.RaceProps?.leatherDef is not null
                                                select a.RaceProps.leatherDef;
             float leatherWeight = 1f / (float)enumerable.Count<ThingDef>();
             foreach (ThingDef thing in enumerable)
             {
-                if (HideUtility.IsHide(thing))
+                if (thing is not null)
                 {
-                    ThingDefCountClass thingDefCountClass = thing.butcherProducts[0];
-                    ThingDef butcherDef = thingDefCountClass.thingDef;
-                    yield return new SitePartWorker_WorkSite.CampLootThingStruct
+                    if (HideUtility.IsHide(thing))
                     {
-                        thing = butcherDef,
-                        thing2 = ThingDefOf.Pemmican,
-                        weight = leatherWeight
-                    };
+                        ThingDefCountClass thingDefCountClass = thing.butcherProducts[0];
+                        ThingDef butcherDef = thingDefCountClass.thingDef;
+                        yield return new SitePartWorker_WorkSite.CampLootThingStruct
+                        {
+                            thing = butcherDef,
+                            thing2 = ThingDefOf.Pemmican,
+                            weight = leatherWeight
+                        };
+                    }
+                    else
+                    {
+                        yield return new SitePartWorker_WorkSite.CampLootThingStruct
+                        {
+                            thing = thing,
+                            thing2 = ThingDefOf.Pemmican,
+                            weight = leatherWeight
+                        };
+                    }
                 }
                 else
                 {
                     yield return new SitePartWorker_WorkSite.CampLootThingStruct
                     {
-                        thing = thing,
-                        thing2 = ThingDefOf.Pemmican,
+                        thing = ThingDefOf.Pemmican,
                         weight = leatherWeight
                     };
                 }
+
+                
             }
             IEnumerator<ThingDef> enumerator = null;
             yield break;

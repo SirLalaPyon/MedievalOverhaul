@@ -5,7 +5,7 @@ namespace MedievalOverhaul
 {
     public class FuelValueProperty : DefModExtension
     {
-        public int fuelValue;
+        public float fuelValue;
 
         public static FuelValueProperty Get(Def def) => def.GetModExtension<FuelValueProperty>();
     }

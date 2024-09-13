@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <LangVersion>9.0</LangVersion>
+    <LangVersion>latest</LangVersion>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -29,7 +29,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -50,6 +50,9 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\RoomRoleWorker_Workshop_GetScore_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomGeneralGoods_Generate.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomOption_Generate.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_MarketValue_Generate.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_GrindWheat.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_MakeSkillBook.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_ResourcePod_Generate.cs" />
@@ -219,15 +222,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
-      <Version>2.2.1</Version>
+      <Version>2.*</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.5.4104</Version>
+      <Version>1.*-*</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
-      <Version>2.3.3</Version>
+		<ExcludeAssets>runtime</ExcludeAssets>
+      <Version>2.*</Version>
     </PackageReference>
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>

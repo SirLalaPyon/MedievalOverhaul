@@ -44,15 +44,16 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.1, )"
+              "version": "[2.*, )"
             },
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[1.5.4104, )"
+              "version": "[1.*-*, )"
             },
             "Lib.Harmony": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[2.3.3, )"
+              "version": "[2.*, )"
             }
           }
         }

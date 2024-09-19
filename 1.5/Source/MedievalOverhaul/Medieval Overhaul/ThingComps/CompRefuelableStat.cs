@@ -95,7 +95,28 @@ namespace MedievalOverhaul
             if (this.allowedFuelFilter != null)
                 return;
             this.allowedFuelFilter = new ThingFilter();
+            var parentComp = this.parent.GetComp<CompRefuelableCustom>().Props;
             this.allowedFuelFilter.CopyAllowancesFrom(this.parent.GetComp<CompRefuelableStat>().Props.fuelFilter);
+            var disallowedDefault = parentComp?.defaultIngredientFilter?.disallowedThingDefs;
+            if (disallowedDefault != null && disallowedDefault.Count > 0)
+            {
+                for (int i = 0; i < disallowedDefault.Count; i++)
+                {
+                    this.allowedFuelFilter.allowedDefs.Remove(disallowedDefault[i]);
+                }
+            }
+            var disallowedCategoryList = parentComp?.defaultIngredientFilter?.disallowedCategories;
+            if (disallowedCategoryList != null && disallowedCategoryList.Count > 0)
+            {
+                for (int i = 0; i < disallowedCategoryList.Count; i++)
+                {
+                    ThingCategoryDef disallowedCategory = DefDatabase<ThingCategoryDef>.GetNamed(disallowedCategoryList[i], true);
+                    if (disallowedCategory != null)
+                    {
+                        this.allowedFuelFilter.SetAllow(disallowedCategory, false, null, null);
+                    }
+                }
+            }
         }
         public override void PostExposeData()
         {

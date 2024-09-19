@@ -1,30 +1,22 @@
-using RimWorld;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
 namespace MedievalOverhaul
 {
-	public class CompProperties_RefuelableStat : CompProperties
+    public class CompProperties_RefuelableCustom : CompProperties
     {
-		public StatDef stat;
-		public string fuelLevelIconPath;
+        public CompProperties_RefuelableCustom()
+        {
+            this.compClass = typeof(CompRefuelableCustom);
+        }
+        private ThingFilter allowedFuelFilter;
 
-        private Texture2D fuelLevelIcon;
-
-        public Texture2D FuelLevelIcon
-		{
-			get
-			{
-				if (fuelLevelIcon == null)
-					fuelLevelIcon = ContentFinder<Texture2D>.Get(fuelLevelIconPath.NullOrEmpty() ? "UI/Commands/SetTargetFuelLevel" : fuelLevelIconPath);
-				return fuelLevelIcon;
-			}
-		}
-        public CompProperties_RefuelableStat()
-		{
-			compClass = typeof(CompRefuelableStat);
-		}
         public string FuelLabel
         {
             get
@@ -36,6 +28,7 @@ namespace MedievalOverhaul
                 return this.fuelLabel;
             }
         }
+
         public string FuelGizmoLabel
         {
             get
@@ -47,6 +40,7 @@ namespace MedievalOverhaul
                 return this.fuelGizmoLabel;
             }
         }
+
         public Texture2D FuelIcon
         {
             get
@@ -74,6 +68,7 @@ namespace MedievalOverhaul
                 return this.fuelIcon;
             }
         }
+
         public float FuelMultiplierCurrentDifficulty
         {
             get
@@ -89,11 +84,13 @@ namespace MedievalOverhaul
                 return this.fuelMultiplier;
             }
         }
+
         public override void ResolveReferences(ThingDef parentDef)
         {
             base.ResolveReferences(parentDef);
             this.fuelFilter.ResolveReferences();
         }
+
         public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
         {
             foreach (string text in base.ConfigErrors(parentDef))
@@ -111,6 +108,7 @@ namespace MedievalOverhaul
             }
             yield break;
         }
+
         public override IEnumerable<StatDrawEntry> SpecialDisplayStats(StatRequest req)
         {
             foreach (StatDrawEntry statDrawEntry in base.SpecialDisplayStats(req))
@@ -161,9 +159,13 @@ namespace MedievalOverhaul
         public bool drawOutOfFuelOverlay = true;
 
         public float minimumFueledThreshold;
+
         public bool drawFuelGaugeInMap;
+
         public bool atomicFueling;
+
         private float fuelMultiplier = 1f;
+
         public bool factorByDifficulty;
 
         [MustTranslate]
@@ -174,8 +176,11 @@ namespace MedievalOverhaul
 
         [MustTranslate]
         public string outOfFuelMessage;
+
         public string fuelIconPath;
+
         public bool externalTicking;
+
         private Texture2D fuelIcon;
     }
 }

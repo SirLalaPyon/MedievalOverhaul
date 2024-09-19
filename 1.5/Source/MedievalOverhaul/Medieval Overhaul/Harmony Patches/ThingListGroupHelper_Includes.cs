@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,9 @@ namespace MedievalOverhaul.Patches
                     __result = true;
                     return false;
                 case ThingRequestGroup.FoodSourceNotPlantOrTree when def.IsFoodDispenser:
+                    __result = true;
+                    return false;
+                case ThingRequestGroup.Refuelable when def.HasComp(typeof(CompRefuelableCustom)):
                     __result = true;
                     return false;
                 default:

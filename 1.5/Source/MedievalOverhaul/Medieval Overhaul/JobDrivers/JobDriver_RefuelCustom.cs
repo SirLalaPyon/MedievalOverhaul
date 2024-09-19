@@ -1,12 +1,11 @@
 using System.Collections.Generic;
-using System.Collections.Generic;
 using System.Linq;
 using Verse;
 using Verse.AI;
 
 namespace MedievalOverhaul
 {
-	public class JobDriver_RefuelStat : JobDriver
+	public class JobDriver_RefuelCustom : JobDriver
 	{
 		private const TargetIndex RefuelableInd = TargetIndex.A;
 
@@ -16,7 +15,7 @@ namespace MedievalOverhaul
 
 		protected Thing Refuelable => job.GetTarget(TargetIndex.A).Thing;
 
-		protected CompRefuelableStat RefuelableComp => Refuelable.TryGetComp<CompRefuelableStat>();
+		protected CompRefuelableCustom RefuelableComp => Refuelable.TryGetComp<CompRefuelableCustom>();
 
 		protected Thing Fuel => job.GetTarget(TargetIndex.B).Thing;
 
@@ -58,12 +57,12 @@ namespace MedievalOverhaul
 				Job curJob = toil.actor.CurJob;
 				Thing thing = curJob.GetTarget(refuelableInd).Thing;
 				if (toil.actor.CurJob.placedThings.NullOrEmpty())
-					thing.TryGetComp<CompRefuelableStat>().Refuel(new List<Thing>
+					thing.TryGetComp<CompRefuelableCustom>().Refuel(new List<Thing>
 					{
 					curJob.GetTarget(fuelInd).Thing
 					});
 				else
-					thing.TryGetComp<CompRefuelableStat>().Refuel(toil.actor.CurJob.placedThings
+					thing.TryGetComp<CompRefuelableCustom>().Refuel(toil.actor.CurJob.placedThings
 						.Select(p => p.thing).ToList());
 			};
 			toil.defaultCompleteMode = ToilCompleteMode.Instant;

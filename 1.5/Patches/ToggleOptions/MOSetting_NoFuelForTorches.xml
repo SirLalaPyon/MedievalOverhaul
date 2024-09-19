@@ -57,6 +57,31 @@
 						</xpath>
 					</match>
 				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[
+			@Name="TorchBase" or
+			defName="TorchLamp" or 
+			defName="TorchWallLamp" or
+			defName="DankPyon_RusticTorchLamp" or
+			defName="DankPyon_WallTorch" or
+			defName="DankPyon_WallLamp" or
+			defName="DankPyon_LampPost"
+			]/comps/li[@Class="CompProperties_Refuelable"]
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[
+				@Name="TorchBase" or
+				defName="TorchLamp" or 
+				defName="TorchWallLamp" or
+				defName="DankPyon_RusticTorchLamp" or
+				defName="DankPyon_WallTorch" or
+				defName="DankPyon_WallLamp" or
+				defName="DankPyon_LampPost"
+				]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]
+						</xpath>
+					</match>
+				</li>
 		
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[

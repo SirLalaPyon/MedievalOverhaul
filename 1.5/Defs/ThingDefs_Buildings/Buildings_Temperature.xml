@@ -49,7 +49,7 @@
 				<heatPerSecond>-11</heatPerSecond>
 				<heatPushMinTemperature>-10</heatPushMinTemperature>
 			</li>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.5</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
@@ -116,17 +116,21 @@
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<!-- <inspectorTabs> -->
+			<!-- <li>MedievalOverhaul.ITab_FuelCustom</li> -->
+		<!-- </inspectorTabs> -->
 		<comps>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>150.0</fuelConsumptionRate>
 				<fuelCapacity>80.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
 				</fuelFilter>
-				<initialFuelPercent>1</initialFuelPercent>
+				<initialFuelPercent>0</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_Glower">
@@ -171,6 +175,7 @@
 		</recipes>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
 		</inspectorTabs>
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>

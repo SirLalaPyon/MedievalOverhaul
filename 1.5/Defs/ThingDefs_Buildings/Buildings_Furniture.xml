@@ -154,14 +154,19 @@
 				<glowRadius>10</glowRadius>
 				<glowColor>(184,136,83,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
-						<li>WoodLog</li>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
 					</thingDefs>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
 				</fuelFilter>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -207,6 +212,9 @@
 				<offsetEast>(0.25,0,.6)</offsetEast>
 			</li>
 		</comps>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -269,14 +277,19 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
 			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
-						<li>WoodLog</li>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
 					</thingDefs>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
 				</fuelFilter>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -322,6 +335,9 @@
 				</offsets>
 			</li>
 		</comps>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -385,7 +401,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
 			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
@@ -435,6 +451,9 @@
 		<researchPrerequisites>
 			<li>Smithing</li>
 		</researchPrerequisites>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -485,14 +504,19 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
 			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.5</fuelConsumptionRate>
 				<fuelCapacity>40.0</fuelCapacity>
 				<!--fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain-->
 				<fuelFilter>
 					<thingDefs>
-						<li>WoodLog</li>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
 					</thingDefs>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
 				</fuelFilter>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -511,6 +535,9 @@
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<!--======================= Tribal Furniture ==============================-->
@@ -1444,7 +1471,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		
 		<comps>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
@@ -1501,6 +1528,9 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SingleCandleBase">
@@ -1512,7 +1542,7 @@
 		</costList>
 		<comps Inherit="false">
 			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
@@ -1563,6 +1593,9 @@
 				</offsets>
 			</li>
 		</comps>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleBase">
@@ -1582,10 +1615,8 @@
 		<pathCost>14</pathCost>
 		<constructEffect>ConstructWood</constructEffect>
 		<fillPercent>0.15</fillPercent>
-
 		<uiIconPath>Furniture/RusticCandles_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
-
 		<statBases>
 			<Beauty>3</Beauty>
 			<MaxHitPoints>60</MaxHitPoints>
@@ -1595,16 +1626,13 @@
 			<MeditationFocusStrength>0.0</MeditationFocusStrength>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<DankPyon_Tallow>15</DankPyon_Tallow>
 		</costList>
-
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel graphic overlay-->
-
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
@@ -1616,16 +1644,14 @@
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
-
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		
 		<comps>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
@@ -1682,6 +1708,9 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_CandleBase">
@@ -1693,7 +1722,7 @@
 		</costList>
 		<comps Inherit="false">
 			<li Class="CompProperties_Styleable"/>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
@@ -1744,6 +1773,9 @@
 				</offsets>
 			</li>
 		</comps>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -1763,10 +1795,8 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>14</pathCost>
 		<fillPercent>0.15</fillPercent>
-
 		<uiIconPath>Furniture/Candelabra_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
-
 		<statBases>
 			<Beauty>5</Beauty>
 			<MaxHitPoints>75</MaxHitPoints>
@@ -1776,19 +1806,16 @@
 			<MeditationFocusStrength>0.0</MeditationFocusStrength>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 			<li>Metallic</li>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
-
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel graphic overlay-->
-
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<clearBuildingArea>false</clearBuildingArea>
@@ -1799,21 +1826,17 @@
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
-
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
 		</inspectorTabs>
-
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>0</initialFuelPercent>
@@ -1887,12 +1910,10 @@
 		</graphicData>
 		<uiIconScale>0.65</uiIconScale>
 		<uiIconOffset>(0, 0.5)</uiIconOffset>
-		
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>14</pathCost>
 		<fillPercent>0.15</fillPercent>
-
 		<statBases>
 			<Beauty>5</Beauty>
 			<MaxHitPoints>75</MaxHitPoints>
@@ -1901,7 +1922,6 @@
 			<MeditationFocusStrength>0.0</MeditationFocusStrength>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		
 		<costList>
 			<DankPyon_Tallow>15</DankPyon_Tallow>
 		</costList>
@@ -1911,12 +1931,10 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
-		
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel graphic overlay-->
-
 		<clearBuildingArea>false</clearBuildingArea>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -1925,22 +1943,18 @@
 		<building>
 			<isEdifice>true</isEdifice>
 		</building>
-
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
-
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
 		</inspectorTabs>
-
 		<comps>
 			<li Class="CompProperties_Styleable"/>
-			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>0</initialFuelPercent>
@@ -2013,15 +2027,12 @@
 			</damageData>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-
 		<uiIconPath>Furniture/RusticLamp_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
-
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>14</pathCost>
 		<fillPercent>0.15</fillPercent>
-
 		<statBases>
 			<Beauty>5</Beauty>
 			<MaxHitPoints>75</MaxHitPoints>
@@ -2031,21 +2042,17 @@
 			<MeditationFocusStrength>0.0</MeditationFocusStrength>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
-		
 		<costList>
 			<DankPyon_Tar>15</DankPyon_Tar>
 		</costList>
-
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel overlay-->
-
 		<clearBuildingArea>false</clearBuildingArea>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -2055,21 +2062,17 @@
 			<isEdifice>false</isEdifice>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
-
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
-
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
 		</inspectorTabs>
-
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>0</initialFuelPercent>
@@ -2105,7 +2108,6 @@
 							<li>DankPyon_Candles</li>
 							<li>DankPyon_Candles_Beeswax</li>
 							<li>DankPyon_CandleStand</li>
-
 							<li>Campfire</li>
 							<li>TorchLamp</li>
 							<li>TorchWallLamp</li>
@@ -2124,12 +2126,10 @@
 				</offsets>
 			</li>
 		</comps>
-		
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 			<li>Smithing</li>
 		</researchPrerequisites>
-
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
@@ -3204,7 +3204,6 @@
 		<drawerType>RealtimeOnly</drawerType>
 		<surfaceType>Item</surfaceType>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 			<li Class="MedievalOverhaul.CompProperties_FireOverlaySouth">
 				<fireSize>0.7</fireSize>
 				<offset>(0,0,-0.2)</offset>
@@ -3214,14 +3213,18 @@
 				<glowRadius>5</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
-				
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>6</fuelConsumptionRate>
 				<fuelCapacity>30.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
-						<li>WoodLog</li>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
 					</thingDefs>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
@@ -3252,6 +3255,9 @@
 				</offsets>
 			</li>
 		</comps>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
@@ -3307,6 +3313,7 @@
 		</recipes>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
 		</inspectorTabs>
 		<comps>
 			<li>
@@ -3316,14 +3323,18 @@
 				<glowRadius>10</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
-				
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
-						<li>WoodLog</li>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
 					</thingDefs>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>

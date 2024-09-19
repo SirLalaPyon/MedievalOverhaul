@@ -10,7 +10,7 @@ namespace MedievalOverhaul
     [StaticConstructorOnStartup]
     public class CompRefuelableStat : ThingComp, IThingGlower
     {
-        public new CompProperties_RefuelableStat Props => props as CompProperties_RefuelableStat;
+        public CompProperties_RefuelableStat Props => props as CompProperties_RefuelableStat;
         public CompSlop stewComp;
         private ThingFilter allowedFuelFilter;
         public float TargetFuelLevel

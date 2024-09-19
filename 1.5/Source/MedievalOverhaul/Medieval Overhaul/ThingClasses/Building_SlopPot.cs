@@ -46,6 +46,7 @@ namespace MedievalOverhaul
 		public override void Tick()
 		{
 			base.Tick();
+
             this.fuelComp.Notify_UsedThisTick();
             var ticks = Find.TickManager.TicksGame;
 			if (ticks % slopComp.Props.fuelCheckTicks != 0) return;

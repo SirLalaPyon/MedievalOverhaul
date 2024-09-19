@@ -95,7 +95,7 @@ namespace MedievalOverhaul
             if (this.allowedFuelFilter != null)
                 return;
             this.allowedFuelFilter = new ThingFilter();
-            var parentComp = this.parent.GetComp<CompRefuelableCustom>().Props;
+            var parentComp = this.parent.GetComp<CompRefuelableStat>().Props;
             this.allowedFuelFilter.CopyAllowancesFrom(this.parent.GetComp<CompRefuelableStat>().Props.fuelFilter);
             var disallowedDefault = parentComp?.defaultIngredientFilter?.disallowedThingDefs;
             if (disallowedDefault != null && disallowedDefault.Count > 0)

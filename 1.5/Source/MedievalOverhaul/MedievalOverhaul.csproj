@@ -43,6 +43,7 @@
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableNutritionStatus.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_DoTicks_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\Harmony_BetterPyro.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_JobTracker_EndCurrentJob_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Bill_Notify_PawnDidWork_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeDoerGainSkillExp_OnBookGenerated_Patch.cs" />

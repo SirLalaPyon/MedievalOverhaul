@@ -289,7 +289,7 @@ namespace MedievalOverhaul
             while (fullFuelCount > 0 && fuelThings.Count > 0)
             {
                 Thing thing = fuelThings.Pop<Thing>();
-                float fuelValue = thing.def?.GetModExtension<FuelValueProperty>().fuelValue ?? 1;
+                float fuelValue = thing.def?.GetModExtension<FuelValueProperty>()?.fuelValue ?? 1f;
                 int maxFuelNeededFromStack = Mathf.CeilToInt(fullFuelCount / fuelValue);
                 int amountToFuel = Mathf.Min(maxFuelNeededFromStack, thing.stackCount);
                 this.Refuel((float)amountToFuel * fuelValue);
@@ -297,6 +297,7 @@ namespace MedievalOverhaul
                 fullFuelCount -= (int)(amountToFuel * fuelValue);
             }
         }
+
         public void Refuel(float amount)
         {
             this.fuel += amount * this.Props.FuelMultiplierCurrentDifficulty;

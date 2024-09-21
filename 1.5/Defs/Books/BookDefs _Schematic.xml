@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BookBase">
-		<defName>DankPyon_Schematic_BasicPolearms</defName>
-		<label>ancient basic polearm schematic</label>
+	<ThingDef ParentName="BookBase" Name="DankPyon_SchematicBase" Abstract="True">
 		<description>A scroll detailing various technologies and the methods of their use. Perusing these schematic scrolls may unveil new advancements and hidden knowledge.</description>
 		<graphicData>
 			<texPath>Special/Book/SchematicScroll</texPath>
@@ -14,11 +12,14 @@
 		<statBases>
 			<MarketValue>500</MarketValue>
 		</statBases>
-
 		<tradeTags>
 			<li>DankPyon_Schematic</li>
 		</tradeTags>
+	</ThingDef>
 
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_MilitaryBlades</defName>
+		<label>ancient military blades schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
 				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
@@ -38,7 +39,7 @@
 					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
 						<researchProjects>
 							<li>
-								<researchProject>DankPyon_BasicPolearms</researchProject>
+								<researchProject>DankPyon_MilitaryBlades</researchProject>
 								<gainMultiplier>1</gainMultiplier>
 							</li>
 						</researchProjects>
@@ -47,4 +48,485 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_NobleBlades</defName>
+		<label>ancient noble blades schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>LongBlades</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_MilitaryMaces</defName>
+		<label>ancient military maces schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_MilitaryMaces</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_NobleMaces</defName>
+		<label>ancient noble maces schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_NobleMaces</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_MilitaryPolearms</defName>
+		<label>ancient miltary polearm schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_MilitaryPolearms</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_NoblePolearms</defName>
+		<label>ancient miltary polearm schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_NoblePolearms</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_Crossbow</defName>
+		<label>ancient crossbow schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_Crossbow</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_HeavyCrossbow</defName>
+		<label>ancient crossbow schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_HeavyCrossbow</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_Steel</defName>
+		<label>ancient metallurgy schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_Plasteel</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_Gunpowder</defName>
+		<label>ancient gunpowder schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_Gunpowder</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_Tar</defName>
+		<label>ancient tar schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_Tar</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_GreatBow</defName>
+		<label>ancient greatbow schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>Greatbow</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_WarBow</defName>
+		<label>ancient warbow schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_WarBow</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_IntermediateCooking</defName>
+		<label>intermediate cooking recipes</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_IntermediateCooking</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_AdvancedCooking</defName>
+		<label>advanced cooking recipes</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_AdvancedCooking</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Book_BallistaRepeater</defName>
+		<label>ancient ballista repeater schematics</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_RepeaterBallista</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
 </Defs>

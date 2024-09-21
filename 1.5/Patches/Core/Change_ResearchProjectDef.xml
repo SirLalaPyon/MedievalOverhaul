@@ -329,25 +329,14 @@
 		</settings>
 		<inactive Class="PatchOperationSequence">
 			<operations>
-		
-				<li Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]/requiredResearchFacilities</xpath>
-					<match Class="PatchOperationReplace">
-						<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]/requiredResearchFacilities</xpath>
-						<value>
-							<requiredResearchFacilities>
-								<li>DankPyon_Book_NobleBlades</li>
-							</requiredResearchFacilities>
-						</value>
-					</match>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
-						<value>
-							<requiredResearchFacilities>
-								<li>DankPyon_Book_NobleBlades</li>
-							</requiredResearchFacilities>
-						</value>
-					</nomatch>
+			
+				<li Class="PatchOperationAddModExtension">
+				  <xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+				  <value>
+					<li Class="MedievalOverhaul.RequiredSchematic">
+						<schematicDef>DankPyon_Book_NobleBlades</schematicDef>
+					</li>
+				  </value>
 				</li>
 
 			</operations>
@@ -698,24 +687,13 @@
 		<inactive Class="PatchOperationSequence">
 			<operations>
 		
-				<li Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]/requiredResearchFacilities</xpath>
-					<match Class="PatchOperationReplace">
-						<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]/requiredResearchFacilities</xpath>
-						<value>
-							<requiredResearchFacilities>
-								<li>DankPyon_Book_GreatBow</li>
-							</requiredResearchFacilities>
-						</value>
-					</match>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
-						<value>
-							<requiredResearchFacilities>
-								<li>DankPyon_Book_GreatBow</li>
-							</requiredResearchFacilities>
-						</value>
-					</nomatch>
+				<li Class="PatchOperationAddModExtension">
+				  <xpath>Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
+				  <value>
+					<li Class="MedievalOverhaul.RequiredSchematic">
+						<schematicDef>DankPyon_Book_GreatBow</schematicDef>
+					</li>
+				  </value>
 				</li>
 
 			</operations>

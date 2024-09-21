@@ -12,7 +12,7 @@ namespace MedievalOverhaul
 		public override void Tick()
 		{
 			base.Tick();
-			if (pawn.IsHashIntervalTick(300) && HangoverSusceptible(pawn))
+			if (pawn.IsHashIntervalTick(HangoverCheckInterval) && HangoverSusceptible(pawn))
 			{
 				Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(MedievalOverhaulDefOf.DankPyon_UnpleasantAftermath);
 				if (firstHediffOfDef != null)

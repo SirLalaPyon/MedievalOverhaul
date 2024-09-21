@@ -11,8 +11,8 @@ namespace MedievalOverhaul
 {
     public class ITab_FuelCustom : ITab
     {
-        private static readonly Vector2 WinSize = new Vector2(300f, 480f);
-        private ThingFilterUI.UIState fuelFilterState = new ThingFilterUI.UIState();
+        private static readonly Vector2 WinSize = new (300f, 480f);
+        private ThingFilterUI.UIState fuelFilterState = new ();
 
         protected Building SelBuilding => (Building)this.SelThing;
 
@@ -36,10 +36,8 @@ namespace MedievalOverhaul
 
         public override void FillTab()
         {
-            // CompStoreFuelThing comp1 = this.SelBuilding.GetComp<CompStoreFuelThing>();
             CompRefuelableCustom comp = this.SelBuilding.GetComp<CompRefuelableCustom>();
-            Rect bottom;
-            new Rect(0.0f, 0.0f, ITab_FuelCustom.WinSize.x, ITab_FuelCustom.WinSize.y).ContractedBy(10f).SplitHorizontally(18f, out Rect _, out bottom);
+            new Rect(0.0f, 0.0f, ITab_FuelCustom.WinSize.x, ITab_FuelCustom.WinSize.y).ContractedBy(10f).SplitHorizontally(18f, out Rect _, out Rect bottom);
             ThingFilterUI.DoThingFilterConfigWindow(bottom, this.fuelFilterState, comp.AllowedFuelFilter, comp.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
         }
     }

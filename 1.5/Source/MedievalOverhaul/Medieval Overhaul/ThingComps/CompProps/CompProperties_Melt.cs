@@ -36,7 +36,6 @@ namespace MedievalOverhaul
             {
                 yield return text;
             }
-            IEnumerator<string> enumerator = null;
             if (parentDef.tickerType != TickerType.Normal && parentDef.tickerType != TickerType.Rare)
             {
                 yield return string.Concat(new object[]

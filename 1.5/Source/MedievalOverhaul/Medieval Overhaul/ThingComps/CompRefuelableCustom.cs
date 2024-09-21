@@ -10,7 +10,7 @@ namespace MedievalOverhaul
     public class CompRefuelableCustom : ThingComp, IThingGlower
     {
         public static int hashInterval = 250;
-        private float ticksPerDay = 60000f / hashInterval;
+        private readonly static float ticksPerDay = 60000f / hashInterval;
         public CompProperties_RefuelableCustom Props
         {
             get
@@ -162,7 +162,7 @@ namespace MedievalOverhaul
             }
             if (this.Props.drawFuelGaugeInMap)
             {
-                GenDraw.FillableBarRequest r = default(GenDraw.FillableBarRequest);
+                GenDraw.FillableBarRequest r = default;
                 r.center = this.parent.DrawPos + Vector3.up * 0.1f;
                 r.size = CompRefuelableCustom.FuelBarSize;
                 r.fillPercent = this.FuelPercentOfMax;
@@ -191,7 +191,7 @@ namespace MedievalOverhaul
                     Thing thing = ThingMaker.MakeThing(thingDef, null);
                     thing.stackCount = Mathf.Min(i, thingDef.stackLimit);
                     i -= thing.stackCount;
-                    GenPlace.TryPlaceThing(thing, this.parent.Position, previousMap, ThingPlaceMode.Near, null, null, default(Rot4));
+                    GenPlace.TryPlaceThing(thing, this.parent.Position, previousMap, ThingPlaceMode.Near, null, null, default);
                 }
             }
         }
@@ -201,14 +201,14 @@ namespace MedievalOverhaul
             {
                 return string.Empty;
             }
-            string text = string.Concat(new string[]
-            {
+            string text = string.Concat(
+            [
                 this.Props.FuelLabel,
                 ": ",
                 this.fuel.ToStringDecimalIfSmall(),
                 " / ",
                 this.Props.fuelCapacity.ToStringDecimalIfSmall()
-            });
+            ]);
             if (!this.Props.consumeFuelOnlyWhenUsed && this.HasFuel)
             {
                 int numTicks = (int)(this.fuel / this.Props.fuelConsumptionRate * 60000f);
@@ -419,7 +419,7 @@ namespace MedievalOverhaul
 
         private static readonly Texture2D SetTargetFuelLevelCommand = ContentFinder<Texture2D>.Get("UI/Commands/SetTargetFuelLevel", true);
 
-        private static readonly Vector2 FuelBarSize = new Vector2(1f, 0.2f);
+        private static readonly Vector2 FuelBarSize = new (1f, 0.2f);
 
         private static readonly Material FuelBarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.6f, 0.56f, 0.13f), false);
 

@@ -28,7 +28,7 @@ namespace MedievalOverhaul
         {
             MeteorProperties meteorProperties = MeteorProperties.Get((Def)this.def);
             Map map = (Map)parms.target;
-            List<TargetInfo> targetInfoList = new List<TargetInfo>();
+            List<TargetInfo> targetInfoList = [];
             ThingDef golemImpactDef = FindRandomImpact(meteorProperties.golemDict);
             IntVec3 dropPodLocation = IncidentWorker_GolemImpactor.FindDropPodLocation(map, (Predicate<IntVec3>)(spot => CanPlaceAt(spot)));
             if (dropPodLocation == IntVec3.Invalid)
@@ -38,7 +38,7 @@ namespace MedievalOverhaul
             PawnKindDef golemKindDef = meteorProperties.golemDict.TryGetValue(golemImpactDef);
             int num2 = GenMath.RoundRandom(storytellerPoints / golemKindDef.combatPower);
             num2 = Mathf.Clamp(num2, 1, 20);
-            List<Pawn> list = new List<Pawn>();
+            List<Pawn> list = [];
             for (int i = 0; i < num2; i++)
             {
                 Pawn pawn = PawnGenerator.GeneratePawn(golemKindDef, meteorProperties.factionDef != null && FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) != null ? FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) : null);
@@ -46,10 +46,10 @@ namespace MedievalOverhaul
             }
             Thing innerThing = ThingMaker.MakeThing(golemImpactDef);
             innerThing.SetFaction(list[0].Faction);
-            LordMaker.MakeNewLord(list[0].Faction, (LordJob)new LordJob_SleepThenMechanoidsDefend(new List<Thing>()
-      {
+            LordMaker.MakeNewLord(list[0].Faction, (LordJob)new LordJob_SleepThenMechanoidsDefend(
+      [
         innerThing
-      }, list[0].Faction, DefendRadius, dropPodLocation, false, false), map, (IEnumerable<Pawn>)list);
+      ], list[0].Faction, DefendRadius, dropPodLocation, false, false), map, (IEnumerable<Pawn>)list);
             DropPodUtility.DropThingsNear(dropPodLocation, map, list.Cast<Thing>());
             foreach (Thing thing in list)
                 thing.TryGetComp<CompCanBeDormant>()?.ToSleep();

@@ -11,23 +11,23 @@ namespace StandaloneSettlementPreference
     internal class SettlementPreference : DefModExtension
     {
         public float chance = 1f;
-        public List<string> biomeKeyWords;
+        public List<string> biomeKeyWords = null;
         public bool useTemperatureRange = false;
-        public float temperatureRangeMin;
-        public float temperatureRangeMax;
+        public float temperatureRangeMin = 0f;
+        public float temperatureRangeMax = 0f;
         public bool useElevationRange = false;
-        public float elevationRangeMin;
-        public float elevationRangeMax;
+        public float elevationRangeMin = 0f;
+        public float elevationRangeMax = 0f;
         public bool useSwampinessRange = false;
-        public float swampinessRangeMin;
-        public float swampinessRangeMax;
+        public float swampinessRangeMin = 0f;
+        public float swampinessRangeMax = 0f;
         public bool useRainfallRange = false;
-        public float rainfallRangeMin;
-        public float rainfallRangeMax;
-        public List<string> likedBiomeList;
-        public List<string> dislikedBiomeList;
-        public List<Hilliness> requiredHillLevels;
-        public List<Hilliness> disallowedHillLevels;
+        public float rainfallRangeMin = 0f;
+        public float rainfallRangeMax = 0f;
+        public List<string> likedBiomeList = null;
+        public List<string> dislikedBiomeList = null;
+        public List<Hilliness> requiredHillLevels = null;
+        public List<Hilliness> disallowedHillLevels = null;
         public bool requiresWater = false;
         public bool onlyCoastal = false;
         public bool onlyLakeside = false;

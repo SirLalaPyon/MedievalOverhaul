@@ -9,15 +9,11 @@ namespace MedievalOverhaul.Patches
         [HarmonyPostfix]
         public static void Postfix(ref DamageWorker.DamageResult __result, Thing victim)
         {
-            if (__result != null)
+            if (__result != null && victim is Pawn pawn)
             {
-                Pawn pawn = victim as Pawn;
-                if (pawn != null)
+                if (pawn.health.hediffSet.HasHediff(MedievalOverhaulDefOf.DankPyon_StunImmune))
                 {
-                    if (pawn.health.hediffSet.HasHediff(MedievalOverhaulDefOf.DankPyon_StunImmune))
-                    {
-                        __result.stunned = false;
-                    }
+                    __result.stunned = false;
                 }
             }
         }

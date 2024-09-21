@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Verse;
 using HarmonyLib;
 using ProcessorFramework;
-using RimWorld;
 
 namespace MedievalOverhaul.Patches
 {
@@ -55,7 +50,7 @@ namespace MedievalOverhaul.Patches
             }
             return true;
         }
-        public static void Postfix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
+        public static void Postfix(ref Thing __result, ActiveProcess activeProcess)
         {
             if (activeProcess.processDef == MedievalOverhaulDefOf.DankPyon_RawHidesProcess)
             {

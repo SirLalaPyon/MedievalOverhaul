@@ -20,7 +20,7 @@ namespace MedievalOverhaul.Patches
             if (extension != null)
             {
                 Widgets.LabelCacheHeight(ref rect, "DankPyon_RequiredSchematic".Translate() + ":");
-                Rect rect2 = new Rect(rect.x, rect.yMin + 24, rect.width, 24f);
+                Rect rect2 = new (rect.x, rect.yMin + 24, rect.width, 24f);
                 var item2 = extension.schematicDef;
                 if (visibleRect.Overlaps(rect2))
                 {
@@ -38,7 +38,7 @@ namespace MedievalOverhaul.Patches
                     }
                     rect.x += 6f;
                     rect.yMin += rect2.height;
-                    Dialog_InfoCard.Hyperlink hyperlink = new Dialog_InfoCard.Hyperlink(item2);
+                    Dialog_InfoCard.Hyperlink hyperlink = new (item2);
                     Widgets.HyperlinkWithIcon(rect2, hyperlink, null, 2f, 6f, color, truncateLabel: false, __instance.LabelSuffixForUnlocked(item2));
                 }
                 rect.x -= 6f;

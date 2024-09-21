@@ -1,10 +1,5 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace MedievalOverhaul.Patches
@@ -12,7 +7,7 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(StatExtension), nameof(StatExtension.GetStatValue))]
     public static class StatExtension_GetStatValue
     {
-        private static void Postfix(Thing thing, StatDef stat, bool applyPostProcess, ref float __result)
+        private static void Postfix(Thing thing, StatDef stat, ref float __result)
         {
 
             if (HideUtility.IsHide(thing.def))

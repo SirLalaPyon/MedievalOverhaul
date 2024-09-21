@@ -101,7 +101,7 @@ namespace MedievalOverhaul
             IEnumerable<Thing> searchSet = refuelable.Map.listerThings.ThingsMatchingFilter(filter);
             Predicate<Thing> validator = x =>
 				!x.IsForbidden(pawn) && pawn.CanReserve((LocalTargetInfo)x) && filter.Allows(x);
-			return GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, searchSet, PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator);
+			return GenClosest.ClosestThing_Global_Reachable_NewTemp(pawn.Position, pawn.Map, searchSet, PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator);
         }
 
 		private static List<Thing> FindAllFuel(Pawn pawn, Thing refuelable)

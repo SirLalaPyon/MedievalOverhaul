@@ -17,10 +17,7 @@ namespace MedievalOverhaul
             if (__state != null)
             {
                 var comp = __state.TryGetComp<CompGlowerOnlyWhenUsed>();
-                if (comp != null)
-                {
-                    comp.UpdateLit(__state.Map);
-                }
+                comp?.UpdateLit(__state.Map);
             }
         }
     }

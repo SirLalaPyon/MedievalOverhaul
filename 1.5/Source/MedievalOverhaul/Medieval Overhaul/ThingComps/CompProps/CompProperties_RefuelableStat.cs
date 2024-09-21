@@ -81,7 +81,7 @@ namespace MedievalOverhaul
                 if (this.factorByDifficulty)
                 {
                     Storyteller storyteller = Find.Storyteller;
-                    if (((storyteller != null) ? storyteller.difficulty : null) != null)
+                    if (storyteller?.difficulty != null)
                     {
                         return this.fuelMultiplier / Find.Storyteller.difficulty.maintenanceCostFactor;
                     }
@@ -100,7 +100,6 @@ namespace MedievalOverhaul
             {
                 yield return text;
             }
-            IEnumerator<string> enumerator = null;
             if (this.destroyOnNoFuel && this.initialFuelPercent <= 0f)
             {
                 yield return "Refuelable component has destroyOnNoFuel, but initialFuelPercent <= 0";
@@ -117,7 +116,6 @@ namespace MedievalOverhaul
             {
                 yield return statDrawEntry;
             }
-            IEnumerator<StatDrawEntry> enumerator = null;
             if (((ThingDef)req.Def).building.IsTurret)
             {
                 yield return new StatDrawEntry(StatCategoryDefOf.Building, "ShotsBeforeRearm".Translate(), ((int)this.fuelCapacity).ToString(), "ShotsBeforeRearmExplanation".Translate(), 3171, null, null, false, false);
@@ -163,7 +161,7 @@ namespace MedievalOverhaul
         public float minimumFueledThreshold;
         public bool drawFuelGaugeInMap;
         public bool atomicFueling;
-        private float fuelMultiplier = 1f;
+        private readonly float fuelMultiplier = 1f;
         public bool factorByDifficulty;
 
         [MustTranslate]

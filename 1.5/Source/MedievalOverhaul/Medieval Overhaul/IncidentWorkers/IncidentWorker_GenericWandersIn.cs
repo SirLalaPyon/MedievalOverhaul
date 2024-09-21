@@ -24,8 +24,7 @@ namespace MedievalOverhaul
         {
             IncidentProperties incidentProperties = IncidentProperties.Get((Def)this.def);
             Map target = (Map)parms.target;
-            IntVec3 cell;
-            if (!this.TryFindEntryCell(target, out cell))
+            if (!this.TryFindEntryCell(target, out IntVec3 cell))
                 return false;
             int num1 = Mathf.Clamp(GenMath.RoundRandom(StorytellerUtility.DefaultThreatPointsNow((IIncidentTarget)target) / incidentProperties.kindDef.combatPower), 1, incidentProperties.max.RandomInRange);
             int num2 = Rand.RangeInclusive(90000, 150000);

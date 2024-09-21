@@ -9,7 +9,7 @@ namespace MedievalOverhaul
 {
     class RecipeExtension_Mine : DefModExtension
     {
-        public List<ThingDef> bonusGems;
+        public List<ThingDef> bonusGems = null;
         public float randomChance = 0.01f;
         public float workAmountPerChance = 600f;
         public static RecipeExtension_Mine Get(Def def)

@@ -29,13 +29,11 @@ namespace MedievalOverhaul
             {
                 return AccessTools.Method("BetterPyromania.JobDriver_WatchFlame:WatchTickAction");
             }
-            static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+            public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
             {
-                var code = new List<CodeInstruction>(instructions);
-                //var targetMethod = AccessTools.Method(typeof(ThingCompUtility),"TryGetComp",new[] { typeof(Thing) } ).MakeGenericMethod(typeof(CompRefuelable));
-                var customMethod = AccessTools.Method(typeof(ThingCompUtility),"TryGetComp",new[] { typeof(Thing) } ).MakeGenericMethod(typeof(CompRefuelableCustom));
-                var jobMethod = AccessTools.Method(typeof(JobDriver), "EndJobWith", new[] { typeof(JobCondition) });
-               // var hasFuelMethod = AccessTools.PropertyGetter(typeof(CompRefuelable), "HasFuel");
+                List<CodeInstruction> code = new (instructions);
+                var customMethod = AccessTools.Method(typeof(ThingCompUtility), "TryGetComp", [typeof(Thing)] ).MakeGenericMethod(typeof(CompRefuelableCustom));
+                var jobMethod = AccessTools.Method(typeof(JobDriver), "EndJobWith", [typeof(JobCondition)]);
                 var hasFuelCustomMethod = AccessTools.PropertyGetter(typeof(CompRefuelableCustom), "HasFuel");
                 Label endLabel = generator.DefineLabel();
                 Label skipLabel = generator.DefineLabel();
@@ -60,8 +58,8 @@ namespace MedievalOverhaul
                     if (code[i].opcode == OpCodes.Ret && code[i + 1].opcode == OpCodes.Ldarg_0)
                     {
                         foundInjection = true;
-                        code.InsertRange(i + 1, new[]
-                        {
+                        code.InsertRange(i + 1,
+                        [
                              new CodeInstruction(OpCodes.Ldloc_0).WithLabels(skipLabel),
                              new CodeInstruction(OpCodes.Call, customMethod),
                              new CodeInstruction(OpCodes.Brfalse_S, endLabel),
@@ -73,7 +71,7 @@ namespace MedievalOverhaul
                              new CodeInstruction(OpCodes.Ldc_I4_4),
                              new CodeInstruction(OpCodes.Call, jobMethod),
                              new CodeInstruction(OpCodes.Ret)
-                        });
+                        ]);
                         break;
                     }
                 }

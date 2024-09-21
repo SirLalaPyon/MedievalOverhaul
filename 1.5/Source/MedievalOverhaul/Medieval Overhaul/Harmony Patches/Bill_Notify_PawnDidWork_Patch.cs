@@ -13,14 +13,10 @@ namespace MedievalOverhaul
 
         public static void TryRefreshLit(this Bill __instance)
         {
-            var thing = __instance.billStack.billGiver as Building_WorkTable;
-            if (thing != null)
+            if (__instance.billStack.billGiver is Building_WorkTable thing)
             {
                 var comp = thing.GetComp<CompGlowerOnlyWhenUsed>();
-                if (comp != null)
-                {
-                    comp.UpdateLit(thing.Map);
-                }
+                comp?.UpdateLit(thing.Map);
             }
         }
     }

@@ -287,7 +287,6 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Styleable"/>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
@@ -418,7 +417,6 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Styleable"/>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20.0</fuelCapacity>
@@ -496,7 +494,6 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="CompProperties_Styleable"/>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.5</fuelConsumptionRate>
 				<fuelCapacity>40.0</fuelCapacity>
@@ -1538,7 +1535,6 @@
 			<DankPyon_Wax>10</DankPyon_Wax>
 		</costList>
 		<comps Inherit="false">
-			<li Class="CompProperties_Styleable"/>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
@@ -1729,7 +1725,6 @@
 			<DankPyon_Wax>15</DankPyon_Wax>
 		</costList>
 		<comps Inherit="false">
-			<li Class="CompProperties_Styleable"/>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
@@ -1972,7 +1967,6 @@
 			<li>MedievalOverhaul.ITab_FuelCustom</li>
 		</inspectorTabs>
 		<comps>
-			<li Class="CompProperties_Styleable"/>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>

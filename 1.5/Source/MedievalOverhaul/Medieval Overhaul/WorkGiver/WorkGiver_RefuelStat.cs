@@ -77,7 +77,6 @@ namespace MedievalOverhaul
 				"NoFuelToRefuel".Translate((NamedArgument)t.TryGetComp<CompRefuelableStat>().Props.fuelFilter.Summary));
 			return false;
 		}
-
 		public static Job RefuelJob(
 			Pawn pawn,
 			Thing t,
@@ -98,22 +97,5 @@ namespace MedievalOverhaul
 				.ToList();
 			return job;
 		}
-
-		//private static Thing FindBestFuel(Pawn pawn, Thing refuelable)
-		//{
-		//	ThingFilter filter = refuelable.TryGetComp<CompRefuelableStat>().AllowedFuelFilter;
-  //          IEnumerable<Thing> searchSet = refuelable.Map.listerThings.ThingsMatchingFilter(filter);
-  //          Predicate<Thing> validator = x =>
-		//		!x.IsForbidden(pawn) && pawn.CanReserve((LocalTargetInfo)x) && filter.Allows(x);
-		//	return GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, searchSet, PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator);
-  //      }
-
-		//private static List<Thing> FindAllFuel(Pawn pawn, Thing refuelable)
-		//{
-		//	var countToFullyRefuel = refuelable.TryGetComp<CompRefuelableStat>().GetFuelCountToFullyRefuel();
-		//	ThingFilter filter = refuelable.TryGetComp<CompRefuelableStat>().AllowedFuelFilter;
-		//	return RefuelWorkGiverUtility.FindEnoughReservableThings(pawn, refuelable.Position,
-		//		new IntRange(countToFullyRefuel, countToFullyRefuel), t => filter.Allows(t));
-		//}
 	}
 }

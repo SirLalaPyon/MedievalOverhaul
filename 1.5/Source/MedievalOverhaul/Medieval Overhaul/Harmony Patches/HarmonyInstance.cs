@@ -78,37 +78,5 @@ namespace MedievalOverhaul.Patches
         }
     }
 
-    [HarmonyPatch(typeof(ResearchProjectDef), "CanBeResearchedAt")]
-    public static class ResearchProjectDef_CanBeResearchedAt_Patch
-    {
-        public static void Postfix(Building_ResearchBench bench, ResearchProjectDef __instance, ref bool __result)
-        {
-            if (__result)
-            {
-                //var fuelComp = bench.GetComp<CompRefuelable>();
-                //if (fuelComp != null && !fuelComp.HasFuel)
-                //{
-                //    __result = false;
-                //}
-                var extension = __instance.GetModExtension<RequiredSchematic>();
-                if (extension != null && HasBook(bench, extension) is false)
-                {
-                    __result = false;
-                }
-            }
-        }
-
-        private static bool HasBook(Building_ResearchBench bench, RequiredSchematic extension)
-        {
-            var comp = bench.GetComp<CompAffectedByFacilities>();
-            foreach (var facility in comp.LinkedFacilitiesListForReading)
-            {
-                if (facility is Building_Bookcase bookCase && bookCase.HeldBooks.Any(x => x.def == extension.schematicDef))
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-    }
+    
 }

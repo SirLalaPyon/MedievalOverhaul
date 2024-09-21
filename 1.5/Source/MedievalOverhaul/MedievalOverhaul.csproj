@@ -52,6 +52,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Reading_ReadBook_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanBeResearchedAt.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\RoomRoleWorker_Workshop_GetScore_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomGeneralGoods_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomOption_Generate.cs" />
@@ -130,7 +131,6 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\DefGenerator_GenerateImpliedDefs_PreResolve.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StatWorker_MarketValue_CalculableRecipe.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompProcessor_TakeOutProduct.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanBeResearchedAt.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_ButcherProducts.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ManTurret_FindAmmoForTurret.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\GenConstruct_CanPlaceBlueprintOver.cs" />

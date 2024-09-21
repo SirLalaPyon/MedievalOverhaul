@@ -127,6 +127,21 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DankPyon_RefuelCustom</defName>
+		<label>refuel fuelable buildings</label>
+		<giverClass>MedievalOverhaul.WorkGiver_RefuelCustom</giverClass>
+		<workType>Hauling</workType>
+		<verb>refuel</verb>
+		<gerund>refueling</gerund>
+		<priorityInType>140</priorityInType>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+		<canBeDoneByMutants>false</canBeDoneByMutants>
+	  </WorkGiverDef>
 
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsStoneOven</defName>

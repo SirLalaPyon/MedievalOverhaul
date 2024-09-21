@@ -1,11 +1,6 @@
 ﻿using HarmonyLib;
-using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace MedievalOverhaul.Patches
@@ -50,7 +45,7 @@ namespace MedievalOverhaul.Patches
                             int num = thing.stackCount * thingDefCountClass.count;
                             if (num > 2)
                             {
-                                num = num - 2;
+                                num -= 2;
                             }
                             ThingDef butcherDef = thingDefCountClass.thingDef;
                             Thing butcherThing = ThingMaker.MakeThing(butcherDef, null);

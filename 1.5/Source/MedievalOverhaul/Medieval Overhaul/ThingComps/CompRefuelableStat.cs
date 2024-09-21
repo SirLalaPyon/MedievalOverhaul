@@ -10,11 +10,11 @@ namespace MedievalOverhaul
     [StaticConstructorOnStartup]
     public class CompRefuelableStat : ThingComp, IThingGlower
     {
-        public new CompProperties_RefuelableStat Props => props as CompProperties_RefuelableStat;
+        public CompProperties_RefuelableStat Props => props as CompProperties_RefuelableStat;
         public CompSlop stewComp;
         private ThingFilter allowedFuelFilter;
         public float TargetFuelLevel
-        {
+        {   
             get
             {
                 if (this.configuredTargetNutritionLevel >= 0f)
@@ -95,7 +95,35 @@ namespace MedievalOverhaul
             if (this.allowedFuelFilter != null)
                 return;
             this.allowedFuelFilter = new ThingFilter();
+            var parentComp = this.parent.GetComp<CompRefuelableStat>().Props;
             this.allowedFuelFilter.CopyAllowancesFrom(this.parent.GetComp<CompRefuelableStat>().Props.fuelFilter);
+            var disallowedDefault = parentComp?.defaultIngredientFilter?.disallowedThingDefs;
+            if (disallowedDefault != null && disallowedDefault.Count > 0)
+            {
+                for (int i = 0; i < disallowedDefault.Count; i++)
+                {
+                    this.allowedFuelFilter.allowedDefs.Remove(disallowedDefault[i]);
+                }
+            }
+            var disallowedCategoryList = parentComp?.defaultIngredientFilter?.disallowedCategories;
+            if (disallowedCategoryList != null && disallowedCategoryList.Count > 0)
+            {
+                for (int i = 0; i < disallowedCategoryList.Count; i++)
+                {
+                    ThingCategoryDef disallowedCategory = DefDatabase<ThingCategoryDef>.GetNamed(disallowedCategoryList[i], true);
+                    if (disallowedCategory != null)
+                    {
+                        this.allowedFuelFilter.SetAllow(disallowedCategory, false, null, null);
+                    }
+                }
+            }
+        }
+        public override void Initialize(CompProperties props)
+        {
+            base.Initialize(props);
+            this.allowAutoRefuel = this.Props.initialAllowAutoRefuel;
+            this.fuel = this.Props.fuelCapacity * this.Props.initialFuelPercent;
+            this.flickComp = this.parent.GetComp<CompFlickable>();
         }
         public override void PostExposeData()
         {

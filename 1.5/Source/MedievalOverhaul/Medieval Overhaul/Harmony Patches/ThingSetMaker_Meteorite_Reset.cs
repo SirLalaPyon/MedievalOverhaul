@@ -10,7 +10,7 @@ namespace MedievalOverhaul.Patches
     {
         public static void Postfix()
         {
-            List<ThingDef> thingDefs = new List<ThingDef>();
+            List<ThingDef> thingDefs = [];
             for (int i = 0; i < ThingSetMaker_Meteorite.nonSmoothedMineables.Count; i++)
             {
                 ThingDef thing = ThingSetMaker_Meteorite.nonSmoothedMineables[i];

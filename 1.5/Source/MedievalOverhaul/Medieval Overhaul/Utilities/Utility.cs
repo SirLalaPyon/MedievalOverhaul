@@ -87,8 +87,7 @@ namespace MedievalOverhaul
             List<Thing> thingList = c.GetThingList(map);
             for (int i = 0; i < thingList.Count; i++)
             {
-                Mineable_CompSpawnerDestroy mineable = thingList[i] as Mineable_CompSpawnerDestroy;
-                if (mineable != null)
+                if (thingList[i] is Mineable_CompSpawnerDestroy mineable)
                 {
                     return mineable;
                 }

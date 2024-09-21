@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+	<xpath>Defs/JoyGiverDef[defName="Pyromaniac_WatchFlame"]/thingDefs</xpath>
+	<value>
+		<li>DankPyon_Pyre</li>
+		<li>DankPyon_PyreRound</li>
+		<li>DankPyon_RusticTorchLamp</li>
+		<li>DankPyon_WallTorch</li>
+		<li>DankPyon_WallLamp</li>
+		<li>DankPyon_RusticHearth</li>
+	</value>
+  </Operation>
+
+</Patch>

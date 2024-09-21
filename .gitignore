@@ -3,6 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+1.5/Source/MedievalOverhaul/obj/Debug/MedievalOverhaul.dll
+.vs/*
+*/obj/*
+*/bin/*
+*.cache
+
 # User-specific files
 *.rsuser
 *.suo
@@ -396,4 +402,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-1.5/Source/MedievalOverhaul/obj/Debug/MedievalOverhaul.dll

@@ -56,7 +56,6 @@ namespace MedievalOverhaul
                     }
                 }
             }
-            List<Designation>.Enumerator enumerator = default(List<Designation>.Enumerator);
             yield break;
         }
 

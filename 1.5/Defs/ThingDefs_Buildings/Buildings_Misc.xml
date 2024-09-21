@@ -940,7 +940,7 @@
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
 		<comps>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>2.2</fuelConsumptionRate>
 				<fuelCapacity>10.0</fuelCapacity>
 				<fuelFilter>
@@ -952,15 +952,29 @@
 						<li>Kibble</li>
 					</thingDefs>
 				</fuelFilter>
+				<defaultIngredientFilter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+						<li>Kibble</li>
+					</thingDefs>
+					<disallowedCategories>
+						<li>EggsFertilized</li>
+					</disallowedCategories>
+					<disallowedThingDefs>
+						<li>InsectJelly</li>
+					</disallowedThingDefs>
+				</defaultIngredientFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_Facility">
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
 		</inspectorTabs>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Misc</designationCategory>
@@ -1062,7 +1076,6 @@
 				<volume>(1.39,0.5,1.25)</volume>
 			</shadowData>
 		</graphicData>
-
 		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>42</pathCost>
@@ -1070,13 +1083,11 @@
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.50</fillPercent>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<WorkToBuild>2000</WorkToBuild>
 		</statBases>
-
 		<costList>
 			<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
 		</costList>
@@ -1084,7 +1095,6 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowTradeBeaconRadius</li>
 		</placeWorkers>
@@ -1092,7 +1102,6 @@
 			<li>DankPyon_CarrierBirds</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-
 		<building>
 			<claimable>false</claimable>
 			<alwaysDeconstructible>true</alwaysDeconstructible>

@@ -55,7 +55,6 @@ namespace MedievalOverhaul
             {
                 yield return floatMenuOption;
             }
-            IEnumerator<FloatMenuOption> enumerator = null;
             if (!this.CanOpen)
             {
                 yield break;

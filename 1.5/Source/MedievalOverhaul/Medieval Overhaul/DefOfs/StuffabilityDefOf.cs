@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MedievalOverhaul
 {
     [DefOf]
-    internal class StuffabilityDefOf
+    public class StuffabilityDefOf
     {
         public static StuffCategoryDef DankPyon_RawWood;
 

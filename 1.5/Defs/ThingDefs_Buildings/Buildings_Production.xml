@@ -412,7 +412,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -604,12 +604,12 @@
 					<li>DankPyon_RusticCookingTools</li>
 				</linkableFacilities>
 			</li>
-			<li Class="CompProperties_FireOverlay">
+			<li Class="MedievalOverhaul.CompProperties_FireOverlayCustom">
 				<fireSize>0.4</fireSize>
 				<offset>(0,0,0.2)</offset>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPushMaxTemperature>36</heatPushMaxTemperature>
 				<heatPerSecond>6</heatPerSecond>
 			</li>
@@ -1381,7 +1381,7 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>9</heatPerSecond>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -1656,10 +1656,12 @@
 					<categories>
 						<li>MeatRaw</li>
 					</categories>
+				</fuelFilter>
+				<defaultIngredientFilter>
 					<disallowedCategories>
 						<li>EggsFertilized</li>
 					</disallowedCategories>
-				</fuelFilter>
+				</defaultIngredientFilter>
 				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
 				<destroyOnNoFuel>false</destroyOnNoFuel>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -1747,7 +1749,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
@@ -1886,7 +1888,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
@@ -2011,7 +2013,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">

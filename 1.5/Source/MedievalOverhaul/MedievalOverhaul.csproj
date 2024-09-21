@@ -91,9 +91,12 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Melt.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_TrollRegen.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_FireOverlayCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\Comp_FireOverlayCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_TrollRegen.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompGenericHide.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompHeatPusherPoweredCustom.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Breakdown.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\CannotBePlacedTogetherWithThisModExtension.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalButcherProducts.cs" />

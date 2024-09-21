@@ -172,7 +172,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -187,6 +187,17 @@
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsLit">
 						<defs>
+							<!-- MO buildings-->
+							<li>DankPyon_Pyre</li>
+							<li>DankPyon_PyreRound</li>
+							<li>DankPyon_Candle</li>
+							<li>DankPyon_Candle_Beeswax</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_Candles_Beeswax</li>
+							<li>DankPyon_CandleStand</li>
+							<li>DankPyon_Candelabra</li>
+							<li>DankPyon_WallTorch</li>
+							<li>DankPyon_RusticTorchLamp</li>
 							<li>Campfire</li>
 							<li>TorchLamp</li>
 							<li>TorchWallLamp</li>
@@ -204,7 +215,7 @@
 					</li>
 				</offsets>
 			</li>
-			<li Class="CompProperties_FireOverlay">
+			<li Class="MedievalOverhaul.CompProperties_FireOverlayCustom">
 				<fireSize>0.4</fireSize>
 				<offsetNorth>(0,0,1)</offsetNorth>
 				<offsetSouth>(0,0,0.2)</offsetSouth>
@@ -299,11 +310,11 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
-			<li Class="CompProperties_FireOverlay">
+			<li Class="MedievalOverhaul.CompProperties_FireOverlayCustom">
 				<fireSize>0.45</fireSize>
 				<offsetNorth>(0,0,-0.175)</offsetNorth>
 				<offsetSouth>(0,0,0.675)</offsetSouth>
@@ -319,8 +330,20 @@
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsLit">
 						<defs>
+							<!-- MO buildings-->
+							<li>DankPyon_Pyre</li>
+							<li>DankPyon_PyreRound</li>
+							<li>DankPyon_Candle</li>
+							<li>DankPyon_Candle_Beeswax</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_Candles_Beeswax</li>
+							<li>DankPyon_CandleStand</li>
+							<li>DankPyon_Candelabra</li>
+							<li>DankPyon_WallTorch</li>
+							<li>DankPyon_RusticTorchLamp</li>
 							<li>Campfire</li>
 							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
 							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
 							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
 							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
@@ -360,7 +383,6 @@
 		</graphicData>
 		<uiIconPath>Furniture/WallLamp_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
-
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>Standable</passability>
 		<terrainAffordanceNeeded IsNull="True"/>
@@ -369,7 +391,6 @@
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
 		<fillPercent>0.15</fillPercent>
-
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
@@ -377,19 +398,16 @@
 			<MeditationFocusStrength>0.0</MeditationFocusStrength>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
-		
 		<building>
 			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 			<isEdifice>false</isEdifice>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<isAttachment>true</isAttachment>
 		</building>
-
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<placeWorkers>
@@ -418,36 +436,11 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes><li>Flame</li></focusTypes>
-				<offsets>
-					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefsLit">
-						<defs>
-							<li>Campfire</li>
-							<li>TorchLamp</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-						</defs>
-						<offsetPerBuilding>0.01</offsetPerBuilding>
-						<radius>9.9</radius>
-						<maxBuildings>8</maxBuildings>
-						<explanationKey>MeditationFocusPerFlame</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-						<drawRingRadius>false</drawRingRadius>
-					</li>
-				</offsets>
-			</li>
 		</comps>
-
 		<researchPrerequisites>
 			<li>Smithing</li>
 		</researchPrerequisites>
@@ -526,7 +519,7 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -1428,10 +1421,8 @@
 		<pathCost>14</pathCost>
 		<constructEffect>ConstructWood</constructEffect>
 		<fillPercent>0.15</fillPercent>
-
 		<uiIconPath>Furniture/RusticCandle_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
-
 		<statBases>
 			<Beauty>3</Beauty>
 			<MaxHitPoints>60</MaxHitPoints>
@@ -1441,16 +1432,13 @@
 			<MeditationFocusStrength>0.0</MeditationFocusStrength>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-
 		<costList>
 			<DankPyon_Tallow>10</DankPyon_Tallow>
 		</costList>
-
 		<selectable>true</selectable>
 		<rotatable>true</rotatable>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType><!-- Keep for no fuel graphic overlay-->
-
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
@@ -1462,14 +1450,12 @@
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
-
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-		
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
@@ -1484,7 +1470,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
@@ -1499,10 +1485,21 @@
 				</focusTypes>
 				<offsets>
 					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
+						<offset>0.02</offset>
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsLit">
 						<defs>
+							<!-- MO buildings-->
+							<li>DankPyon_Pyre</li>
+							<li>DankPyon_PyreRound</li>
+							<li>DankPyon_Candle</li>
+							<li>DankPyon_Candle_Beeswax</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_Candles_Beeswax</li>
+							<li>DankPyon_CandleStand</li>
+							<li>DankPyon_Candelabra</li>
+							<li>DankPyon_WallTorch</li>
+							<li>DankPyon_RusticTorchLamp</li>
 							<li>Campfire</li>
 							<li>TorchLamp</li>
 							<li>TorchWallLamp</li>
@@ -1556,7 +1553,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
@@ -1571,7 +1568,7 @@
 				</focusTypes>
 				<offsets>
 					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
+						<offset>0.02</offset>
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsLit">
 						<defs>
@@ -1664,7 +1661,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1679,10 +1676,21 @@
 				</focusTypes>
 				<offsets>
 					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
+						<offset>0.04</offset>
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsLit">
 						<defs>
+							<!-- MO buildings-->
+							<li>DankPyon_Pyre</li>
+							<li>DankPyon_PyreRound</li>
+							<li>DankPyon_Candle</li>
+							<li>DankPyon_Candle_Beeswax</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_Candles_Beeswax</li>
+							<li>DankPyon_CandleStand</li>
+							<li>DankPyon_Candelabra</li>
+							<li>DankPyon_WallTorch</li>
+							<li>DankPyon_RusticTorchLamp</li>
 							<li>Campfire</li>
 							<li>TorchLamp</li>
 							<li>TorchWallLamp</li>
@@ -1736,7 +1744,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1850,7 +1858,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1865,10 +1873,21 @@
 				</focusTypes>
 				<offsets>
 					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
+						<offset>0.04</offset>
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsLit">
 						<defs>
+							<!-- MO buildings-->
+							<li>DankPyon_Pyre</li>
+							<li>DankPyon_PyreRound</li>
+							<li>DankPyon_Candle</li>
+							<li>DankPyon_Candle_Beeswax</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_Candles_Beeswax</li>
+							<li>DankPyon_CandleStand</li>
+							<li>DankPyon_Candelabra</li>
+							<li>DankPyon_WallTorch</li>
+							<li>DankPyon_RusticTorchLamp</li>
 							<li>Campfire</li>
 							<li>TorchLamp</li>
 							<li>TorchWallLamp</li>
@@ -1968,7 +1987,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1983,10 +2002,21 @@
 				</focusTypes>
 				<offsets>
 					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
+						<offset>0.04</offset>
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsLit">
 						<defs>
+							<!-- MO buildings-->
+							<li>DankPyon_Pyre</li>
+							<li>DankPyon_PyreRound</li>
+							<li>DankPyon_Candle</li>
+							<li>DankPyon_Candle_Beeswax</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_Candles_Beeswax</li>
+							<li>DankPyon_CandleStand</li>
+							<li>DankPyon_Candelabra</li>
+							<li>DankPyon_WallTorch</li>
+							<li>DankPyon_RusticTorchLamp</li>
 							<li>Campfire</li>
 							<li>TorchLamp</li>
 							<li>TorchWallLamp</li>
@@ -2086,44 +2116,13 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>10</glowRadius>
 				<glowColor>(247,172,65,0)</glowColor>
-			</li>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes><li>Flame</li></focusTypes>
-				<offsets>
-					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.1</offset>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefsLit">
-						<defs>
-							<!-- MO buildings-->
-							<li>DankPyon_RusticLamp</li>
-							<li>DankPyon_Candles</li>
-							<li>DankPyon_Candles_Beeswax</li>
-							<li>DankPyon_CandleStand</li>
-							<li>Campfire</li>
-							<li>TorchLamp</li>
-							<li>TorchWallLamp</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
-							<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
-						</defs>
-						<offsetPerBuilding>0.01</offsetPerBuilding>
-						<radius>9.9</radius>
-						<maxBuildings>8</maxBuildings>
-						<explanationKey>MeditationFocusPerFlame</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-						<drawRingRadius>false</drawRingRadius>
-					</li>
-				</offsets>
 			</li>
 		</comps>
 		<researchPrerequisites>
@@ -3208,7 +3207,6 @@
 				<fireSize>0.7</fireSize>
 				<offset>(0,0,-0.2)</offset>
 			</li>
-
 			<li Class="CompProperties_Glower">
 				<glowRadius>5</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
@@ -3229,30 +3227,9 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>11</heatPerSecond>
 				<heatPushMaxTemperature>24</heatPushMaxTemperature>
-			</li>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes><li>Flame</li></focusTypes>
-				<offsets>
-					<li Class="FocusStrengthOffset_Lit">
-						<offset>0.12</offset>
-					</li>
-					<li Class="FocusStrengthOffset_BuildingDefsLit">
-						<defs>
-							<li>Campfire</li>
-							<li>TorchLamp</li>
-							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
-						</defs>
-						<offsetPerBuilding>0.02</offsetPerBuilding>
-						<radius>9.9</radius>
-						<maxBuildings>8</maxBuildings>
-						<explanationKey>MeditationFocusPerFlame</explanationKey>
-						<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
-					</li>
-				</offsets>
 			</li>
 		</comps>
 		<inspectorTabs>
@@ -3339,7 +3316,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
+				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>32</heatPerSecond>
 				<heatPushMaxTemperature>21</heatPushMaxTemperature>
 			</li>
@@ -3352,8 +3329,20 @@
 					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsLit">
 						<defs>
+							<!-- MO buildings-->
+							<li>DankPyon_Pyre</li>
+							<li>DankPyon_PyreRound</li>
+							<li>DankPyon_Candle</li>
+							<li>DankPyon_Candle_Beeswax</li>
+							<li>DankPyon_Candles</li>
+							<li>DankPyon_Candles_Beeswax</li>
+							<li>DankPyon_CandleStand</li>
+							<li>DankPyon_Candelabra</li>
+							<li>DankPyon_WallTorch</li>
+							<li>DankPyon_RusticTorchLamp</li>
 							<li>Campfire</li>
 							<li>TorchLamp</li>
+							<li>TorchWallLamp</li>
 							<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
 						</defs>
 						<offsetPerBuilding>0.02</offsetPerBuilding>
@@ -3374,7 +3363,6 @@
 		</researchPrerequisites>
 		<dominantStyleCategory MayRequire="Ludeon.RimWorld.Ideology">DankPyon_OldWorld</dominantStyleCategory>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
-
 		<building>
 			<isMealSource>true</isMealSource>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>

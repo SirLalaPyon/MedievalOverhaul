@@ -30,7 +30,7 @@ namespace MedievalOverhaul.Patches
                 }
                 if (recipeDef.HasModExtension<RecipeExtension_Timber>())
                 {
-                    Thing thing = null;
+                    Thing thing;
                     for (int i = 0; i < ingredients.Count; i++)
                     {
                         thing = ingredients[i];

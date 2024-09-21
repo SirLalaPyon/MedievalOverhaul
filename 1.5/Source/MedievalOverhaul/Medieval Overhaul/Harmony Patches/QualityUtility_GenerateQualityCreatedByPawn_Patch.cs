@@ -8,15 +8,7 @@ namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(QualityUtility))]
     [HarmonyPatch("GenerateQualityCreatedByPawn")]
-    [HarmonyPatch(new Type[]
-    {
-            typeof(Pawn),
-            typeof(SkillDef)
-    }, new ArgumentType[]
-    {
-            0,
-            0
-    })]
+    [HarmonyPatch([typeof(Pawn), typeof(SkillDef)], [0,0])]
     public static class QualityUtility_GenerateQualityCreatedByPawn_Patch
     {
         public static List<(int, QualityCategory)> minQualities =

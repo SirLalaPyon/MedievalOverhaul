@@ -25,7 +25,7 @@ namespace MedievalOverhaul.Patches
                 {
                     if (HideUtility.IsHide(product.def))
                     {
-                        Thing productThing = new ();
+                        Thing productThing;
                         if (StaticCollectionsClass.leather_gene_pawns.ContainsKey(pawn))
                         {
                             productThing = ThingMaker.MakeThing(StaticCollectionsClass.leather_gene_pawns[pawn]);

@@ -31,7 +31,7 @@ namespace MedievalOverhaul
             {
                 Pawn actor = mine.actor;
                 Thing mineTarget = this.MineTarget;
-                if (this.ticksToPickHit < -100)
+                if (this.ticksToPickHit < -BaseTicksBetweenPickHits)
                 {
                     this.ResetTicksToPickHit();
                 }
@@ -43,16 +43,12 @@ namespace MedievalOverhaul
                 if (this.ticksToPickHit <= 0)
                 {
                     IntVec3 position = mineTarget.Position;
-                    if (this.effecter == null)
-                    {
-                        this.effecter = EffecterDefOf.Mine.Spawn();
-                    }
+                    this.effecter ??= EffecterDefOf.Mine.Spawn();
                     this.effecter.Trigger(actor, mineTarget, -1);
-                    int num = mineTarget.def.building.isNaturalRock ? 80 : 40;
-                    Mineable_CompSpawnerDestroy mineable = mineTarget as Mineable_CompSpawnerDestroy;
-                    if (mineable == null || mineTarget.HitPoints > num)
+                    int num = mineTarget.def.building.isNaturalRock ? BaseDamagePerPickHit_NaturalRock : BaseDamagePerPickHit_NotNaturalRock;
+                    if (mineTarget is not Mineable_CompSpawnerDestroy mineable || mineTarget.HitPoints > num)
                     {
-                        DamageInfo dinfo = new DamageInfo(DamageDefOf.Mining, (float)num, 0f, -1f, mine.actor, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true, QualityCategory.Normal, true);
+                        DamageInfo dinfo = new (DamageDefOf.Mining, (float)num, 0f, -1f, mine.actor, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true, QualityCategory.Normal, true);
                         mineTarget.TakeDamage(dinfo);
                     }
                     else
@@ -83,19 +79,19 @@ namespace MedievalOverhaul
                         }
                         if (this.pawn.Faction == Faction.OfPlayer && MineStrikeManager.MineableIsVeryValuable(mineTarget.def))
                         {
-                            TaleRecorder.RecordTale(TaleDefOf.MinedValuable, new object[]
-                            {
+                            TaleRecorder.RecordTale(TaleDefOf.MinedValuable,
+                            [
                                 this.pawn,
                                 mineTarget.def.building.mineableThing
-                            });
+                            ]);
                         }
                         if (this.pawn.Faction == Faction.OfPlayer && MineStrikeManager.MineableIsValuable(mineTarget.def) && !this.pawn.Map.IsPlayerHome)
                         {
-                            TaleRecorder.RecordTale(TaleDefOf.CaravanRemoteMining, new object[]
-                            {
+                            TaleRecorder.RecordTale(TaleDefOf.CaravanRemoteMining,
+                            [
                                 this.pawn,
                                 mineTarget.def.building.mineableThing
-                            });
+                            ]);
                         }
                         this.ReadyForNextToil();
                         return;
@@ -114,9 +110,9 @@ namespace MedievalOverhaul
         private void ResetTicksToPickHit()
         {
             float num = this.pawn.GetStatValue(StatDefOf.MiningSpeed, true, -1);
-            if (num < 0.6f && this.pawn.Faction != Faction.OfPlayer)
+            if (num < MinMiningSpeedFactorForNPCs && this.pawn.Faction != Faction.OfPlayer)
             {
-                num = 0.6f;
+                num = MinMiningSpeedFactorForNPCs;
             }
             this.ticksToPickHit = (int)Math.Round((double)(100f / num));
         }

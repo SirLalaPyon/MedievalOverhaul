@@ -411,11 +411,11 @@ namespace MedievalOverhaul
                
                 if (curJob.bill.recipe.WorkAmountTotal(thingMend) >= 10000f && ingredients.Count > 0)
                 {
-                    TaleRecorder.RecordTale(TaleDefOf.CompletedLongCraftingProject, new object[]
-                    {
+                    TaleRecorder.RecordTale(TaleDefOf.CompletedLongCraftingProject,
+                    [
                         actor,
                         ingredients[0].GetInnerIfMinified().def
-                    });
+                    ]);
                 }
                 IntVec3 invalid = IntVec3.Invalid;
                 if (curJob.bill.GetStoreMode() == BillStoreModeDefOf.BestStockpile)

@@ -12,7 +12,7 @@ namespace MedievalOverhaul
     public class ITab_FuelCustom : ITab
     {
         private static readonly Vector2 WinSize = new (300f, 480f);
-        private ThingFilterUI.UIState fuelFilterState = new ();
+        private readonly ThingFilterUI.UIState fuelFilterState = new ();
 
         protected Building SelBuilding => (Building)this.SelThing;
 
@@ -21,12 +21,6 @@ namespace MedievalOverhaul
             this.size = ITab_FuelCustom.WinSize;
             this.labelKey = "ESCP_Tools_FuelExtension_TabFuel";
         }
-
-        public override bool IsVisible => !this.Hidden;
-
-        public override bool Hidden => this.IsDisabled();
-
-        public bool IsDisabled() => Utility.LWMFuelFilterIsEnabled;
 
         public override void OnOpen()
         {

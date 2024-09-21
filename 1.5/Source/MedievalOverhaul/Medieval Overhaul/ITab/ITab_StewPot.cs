@@ -12,7 +12,7 @@ namespace MedievalOverhaul
     public class ITab_StewPot : ITab
     {
         private static readonly Vector2 WinSize = new (300f, 480f);
-        private ThingFilterUI.UIState fuelFilterState = new ();
+        private readonly ThingFilterUI.UIState fuelFilterState = new ();
 
         protected Building SelBuilding => (Building)this.SelThing;
 

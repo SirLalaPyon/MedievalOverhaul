@@ -18,7 +18,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_MilitaryBlades</defName>
+		<defName>DankPyon_Schematic_MilitaryBlades</defName>
 		<label>ancient military blades schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -50,7 +50,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_NobleBlades</defName>
+		<defName>DankPyon_Schematic_NobleBlades</defName>
 		<label>ancient noble blades schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -82,7 +82,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_MilitaryMaces</defName>
+		<defName>DankPyon_Schematic_MilitaryMaces</defName>
 		<label>ancient military maces schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -114,7 +114,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_NobleMaces</defName>
+		<defName>DankPyon_Schematic_NobleMaces</defName>
 		<label>ancient noble maces schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -146,7 +146,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_MilitaryPolearms</defName>
+		<defName>DankPyon_Schematic_MilitaryPolearms</defName>
 		<label>ancient miltary polearm schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -178,7 +178,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_NoblePolearms</defName>
+		<defName>DankPyon_Schematic_NoblePolearms</defName>
 		<label>ancient miltary polearm schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -210,7 +210,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_Crossbow</defName>
+		<defName>DankPyon_Schematic_Crossbow</defName>
 		<label>ancient crossbow schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -242,7 +242,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_HeavyCrossbow</defName>
+		<defName>DankPyon_Schematic_HeavyCrossbow</defName>
 		<label>ancient crossbow schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -274,7 +274,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_Steel</defName>
+		<defName>DankPyon_Schematic_Steel</defName>
 		<label>ancient metallurgy schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -306,7 +306,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_Gunpowder</defName>
+		<defName>DankPyon_Schematic_Gunpowder</defName>
 		<label>ancient gunpowder schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -338,7 +338,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_Tar</defName>
+		<defName>DankPyon_Schematic_Tar</defName>
 		<label>ancient tar schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -370,7 +370,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_GreatBow</defName>
+		<defName>DankPyon_Schematic_GreatBow</defName>
 		<label>ancient greatbow schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -402,7 +402,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_WarBow</defName>
+		<defName>DankPyon_Schematic_WarBow</defName>
 		<label>ancient warbow schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -434,7 +434,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_IntermediateCooking</defName>
+		<defName>DankPyon_Schematic_IntermediateCooking</defName>
 		<label>intermediate cooking recipes</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -466,7 +466,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_AdvancedCooking</defName>
+		<defName>DankPyon_Schematic_AdvancedCooking</defName>
 		<label>advanced cooking recipes</label>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -498,7 +498,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
-		<defName>DankPyon_Book_BallistaRepeater</defName>
+		<defName>DankPyon_Schematic_BallistaRepeater</defName>
 		<label>ancient ballista repeater schematics</label>
 		<comps>
 			<li Class="CompProperties_Book">

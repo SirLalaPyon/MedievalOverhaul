@@ -52,7 +52,6 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Reading_ReadBook_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\RefuelWorkGiverUtility_FindBestFuel.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\RoomRoleWorker_Workshop_GetScore_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomGeneralGoods_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomOption_Generate.cs" />
@@ -99,14 +98,8 @@
     <Compile Include="Medieval Overhaul\Utilities\Breakdown.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\CannotBePlacedTogetherWithThisModExtension.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalButcherProducts.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_StoreFuelThing.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompStoreFuelThing.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\FixBrokenDownBuilding_JobOnThing.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\FixBrokenDownBuilding_HasJobOnThing.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_ConsumptionRatePerTick.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_InspecStringExtra.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_StoreFuel_Patch.cs" />
-    <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
     <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DropItems.cs" />
     <Compile Include="Medieval Overhaul\QuestFinderUtility.cs" />
     <Compile Include="Medieval Overhaul\GameComponent_QuestFinder.cs" />

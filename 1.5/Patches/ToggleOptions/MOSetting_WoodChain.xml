@@ -400,13 +400,19 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
+		<xpath>Defs/ThingDef[defName="WoodLog"]/thingCategories/li[.="ResourcesRaw"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="WoodLog"]/thingCategories/li[.="ResourcesRaw"]</xpath>
 			<value>
 				<li>DankPyon_Wood</li>
 			</value>
 		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
+			<value>
+				<li>DankPyon_Wood</li>
+			</value>
+		</nomatch>
 	</Operation>
 
 </Patch>

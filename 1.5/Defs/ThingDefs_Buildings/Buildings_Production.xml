@@ -1754,15 +1754,6 @@
 						<li>AnimalProductRaw</li>
 					</categories>
 					<disallowInedibleByHuman>true</disallowInedibleByHuman>
-					<disallowedCategories>
-						<li>EggsFertilized</li>
-					</disallowedCategories>
-					<disallowedThingDefs>
-						<li>Meat_Human</li>
-						<li>Meat_Megaspider</li>
-						<li>InsectJelly</li>
-						<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
-					</disallowedThingDefs>
 				</fuelFilter>
 				<defaultIngredientFilter>
 					<categories>

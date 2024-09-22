@@ -25,47 +25,47 @@ namespace MedievalOverhaul
                 DankPyon_ReadInLibrary = DefDatabase<ThoughtDef>.GetNamed("DankPyon_ReadInLibrary");
             }
         }
-        public static Thing FindBestFuel(Pawn pawn, Thing refuelable)
+        //public static Thing FindBestFuel(Pawn pawn, Thing refuelable)
+        //{
+        //    ThingFilter filter = refuelable.TryGetComp<CompRefuelableStat>().AllowedFuelFilter;
+        //    IEnumerable<Thing> searchSet = refuelable.Map.listerThings.ThingsMatchingFilter(filter);
+        //    Predicate<Thing> validator = (Thing x) =>
+        //        !x.IsForbidden(pawn) && pawn.CanReserve((LocalTargetInfo)x) && filter.Allows(x);
+        //    return GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, searchSet, PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator);
+        //}
+
+        //public static List<Thing> FindAllFuel(Pawn pawn, Thing refuelable)
+        //{
+        //    var countToFullyRefuel = refuelable.TryGetComp<CompRefuelableStat>().GetFuelCountToFullyRefuel();
+        //    ThingFilter filter = refuelable.TryGetComp<CompRefuelableStat>().AllowedFuelFilter;
+        //    return RefuelWorkGiverUtility.FindEnoughReservableThings(pawn, refuelable.Position,
+        //        new IntRange(countToFullyRefuel, countToFullyRefuel), t => filter.Allows(t));
+        //}
+        public static Thing FindSpecificFuel(Pawn pawn, ThingDef fuel)
         {
-            ThingFilter filter = refuelable.TryGetComp<CompRefuelableStat>().AllowedFuelFilter;
-            IEnumerable<Thing> searchSet = refuelable.Map.listerThings.ThingsMatchingFilter(filter);
-            bool validator(Thing x) =>
-                !x.IsForbidden(pawn) && pawn.CanReserve((LocalTargetInfo)x) && filter.Allows(x);
-            return GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, searchSet, PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator);
+            return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(fuel), PathEndMode.ClosestTouch, TraverseParms.For(pawn), validator: new Predicate<Thing>(validator));
+
+            bool validator(Thing x) => !ForbidUtility.IsForbidden(x, pawn) && pawn.CanReserve((LocalTargetInfo)x);
         }
 
-        public static List<Thing> FindAllFuel(Pawn pawn, Thing refuelable)
+        public static Thing FindSpecificClosestFuel(Pawn pawn, List<ThingDef> fuelDefList)
         {
-            var countToFullyRefuel = refuelable.TryGetComp<CompRefuelableStat>().GetFuelCountToFullyRefuel();
-            ThingFilter filter = refuelable.TryGetComp<CompRefuelableStat>().AllowedFuelFilter;
-            return RefuelWorkGiverUtility.FindEnoughReservableThings(pawn, refuelable.Position,
-                new IntRange(countToFullyRefuel, countToFullyRefuel), t => filter.Allows(t));
+            return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForGroup(ThingRequestGroup.HaulableEver), PathEndMode.ClosestTouch, TraverseParms.For(pawn), validator: new Predicate<Thing>(validator));
+
+            bool validator(Thing x) => !ForbidUtility.IsForbidden(x, pawn) && fuelDefList.Contains(x.def) && pawn.CanReserve((LocalTargetInfo)x);
         }
-        //public static Thing FindSpecificFuel(Pawn pawn, ThingDef fuel)
-        //{
-        //    return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(fuel), PathEndMode.ClosestTouch, TraverseParms.For(pawn), validator: new Predicate<Thing>(validator));
-
-        //    bool validator(Thing x) => !ForbidUtility.IsForbidden(x, pawn) && pawn.CanReserve((LocalTargetInfo)x);
-        //}
-
-        //public static Thing FindSpecificClosestFuel(Pawn pawn, List<ThingDef> fuelDefList)
-        //{
-        //    return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForGroup(ThingRequestGroup.HaulableEver), PathEndMode.ClosestTouch, TraverseParms.For(pawn), validator: new Predicate<Thing>(validator));
-
-        //    bool validator(Thing x) => !ForbidUtility.IsForbidden(x, pawn) && fuelDefList.Contains(x.def) && pawn.CanReserve((LocalTargetInfo)x);
-        //}
-        //public static bool FilterItemExists(ThingFilter filter, Pawn pawn)
-        //{
-        //    foreach (var def in filter.AllowedThingDefs)
-        //    {
-        //        List<Thing> thingsOfDef = pawn.Map.listerThings.ThingsOfDef(def);
-        //        if (thingsOfDef.Count > 0)
-        //        {
-        //            return true;
-        //        }
-        //    }
-        //    return false;
-        //}
+        public static bool FilterItemExists(ThingFilter filter, Pawn pawn)
+        {
+            foreach (var def in filter.AllowedThingDefs)
+            {
+                List<Thing> thingsOfDef = pawn.Map.listerThings.ThingsOfDef(def);
+                if (thingsOfDef.Count > 0)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         public static string RemoveSubstring(ThingDef thingDef, string partToRemove)
         {
             string stringDefName = thingDef.defName;

@@ -42,15 +42,15 @@
 		</match>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs</xpath>
-			<value>
-				<li>MedievalOverhaul.ITab_FuelCustom</li>
-			</value>
-		</match>
-	</Operation>
+	<!-- <Operation Class="PatchOperationConditional"> -->
+		<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs</xpath> -->
+		<!-- <match Class="PatchOperationAdd"> -->
+			<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs</xpath> -->
+			<!-- <value> -->
+				<!-- <li>MedievalOverhaul.ITab_FuelCustom</li> -->
+			<!-- </value> -->
+		<!-- </match> -->
+	<!-- </Operation> -->
 
 	<Operation Class="PatchOperationAttributeSet">
 		<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"] and not(comps/li[@Class="CompProperties_Power"]) and not(defName[.="PassiveCooler"])]/comps/li[@Class="CompProperties_Refuelable"]</xpath>

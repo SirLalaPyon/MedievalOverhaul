@@ -89,6 +89,24 @@
 					</xpath>
 					</match>
 				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[
+					defName="DankPyon_MilitaryBlades" or
+					defName="DankPyon_MilitaryMaces" or 
+					defName="DankPyon_NobleMaces" or
+					defName="DankPyon_MilitaryPolearms" or
+					defname="DankPyon_NoblePolearms" or 
+					defName="DankPyon_Crossbow" or
+					defName="DankPyon_HeavyCrossbow" or
+					defName="DankPyon_RepeaterBallista" or
+					defName="DankPyon_Plasteel" or
+					defName="DankPyon_Tar" or
+					defName="DankPyon_Gunpowder" or
+					defName="DankPyon_WarBow"
+					]/modExtensions
+					</xpath>
+				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_MilitaryBlades"]</xpath>

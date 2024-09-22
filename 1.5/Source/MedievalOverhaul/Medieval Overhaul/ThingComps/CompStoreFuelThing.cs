@@ -17,8 +17,8 @@ namespace MedievalOverhaul
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            //if (Utility.LWMFuelFilterIsEnabled)
-            //    return;
+            if (Utility.LWMFuelFilterIsEnabled)
+                return;
             base.PostSpawnSetup(respawningAfterLoad);
             if (this.allowedFuelFilter != null)
                 return;

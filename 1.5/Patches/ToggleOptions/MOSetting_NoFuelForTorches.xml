@@ -67,7 +67,7 @@
 			defName="DankPyon_WallTorch" or
 			defName="DankPyon_WallLamp" or
 			defName="DankPyon_LampPost"
-			]/comps/li[@Class="CompProperties_Refuelable"]
+			]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]
 					</xpath>
 					<match Class="PatchOperationRemove">
 						<xpath>Defs/ThingDef[

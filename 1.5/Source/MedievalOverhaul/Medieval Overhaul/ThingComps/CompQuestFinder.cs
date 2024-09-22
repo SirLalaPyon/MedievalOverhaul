@@ -88,7 +88,7 @@ namespace MedievalOverhaul
         {
             if (this.currentQuest == QuestScriptDefOf.LongRangeMineralScannerLump)
             {
-                Slate slate = new ();
+                Slate slate = new Slate();
                 slate.Set<Map>("map", this.parent.Map, false);
                 slate.Set<ThingDef>("targetMineable", this.targetMineable, false);
                 slate.Set<ThingDef>("targetMineableThing", this.targetMineable.building.mineableThing, false);
@@ -119,13 +119,11 @@ namespace MedievalOverhaul
             IEnumerable<Gizmo> gizmosExtra = base.CompGetGizmosExtra();
             if (this.parent.Faction == Faction.OfPlayer)
             {
-                Command_Action element = new()
-                {
-                    defaultLabel = this.currentQuest.LabelCap(),
-                    defaultDesc = (string)"EEG.SelectQuest".Translate((NamedArgument)this.currentQuest.LabelCap()),
-                    icon = (Texture)TexButton.Search,
-                    action = (Action)(() => Find.WindowStack.Add((Window)new FloatMenu(this.AvailableForFind.Select<QuestScriptDef, FloatMenuOption>((Func<QuestScriptDef, FloatMenuOption>)(quest => new FloatMenuOption(quest.LabelCap(), (Action)(() => this.currentQuest = quest)))).ToList<FloatMenuOption>())))
-                };
+                Command_Action element = new Command_Action();
+                element.defaultLabel = this.currentQuest.LabelCap();
+                element.defaultDesc = (string)"EEG.SelectQuest".Translate((NamedArgument)this.currentQuest.LabelCap());
+                element.icon = (Texture)TexButton.Search;
+                element.action = (Action)(() => Find.WindowStack.Add((Window)new FloatMenu(this.AvailableForFind.Select<QuestScriptDef, FloatMenuOption>((Func<QuestScriptDef, FloatMenuOption>)(quest => new FloatMenuOption(quest.LabelCap(), (Action)(() => this.currentQuest = quest)))).ToList<FloatMenuOption>())));
                
                 yield return element;
             }
@@ -133,16 +131,14 @@ namespace MedievalOverhaul
             if (this.parent.Faction == Faction.OfPlayer && this.currentQuest == QuestScriptDefOf.LongRangeMineralScannerLump)
             {
                 ThingDef mineableThing = this.targetMineable.building.mineableThing;
-                Command_Action command_Action = new()
-                {
-                    defaultLabel = "CommandSelectMineralToScanFor".Translate() + ": " + mineableThing.LabelCap,
-                    defaultDesc = "CommandSelectMineralToScanForDesc".Translate(),
-                    icon = mineableThing.uiIcon,
-                    iconAngle = mineableThing.uiIconAngle,
-                    iconOffset = mineableThing.uiIconOffset,
-                    action = delegate () { }
-                };
-                
+                Command_Action command_Action = new Command_Action();
+                command_Action.defaultLabel = "CommandSelectMineralToScanFor".Translate() + ": " + mineableThing.LabelCap;
+                command_Action.defaultDesc = "CommandSelectMineralToScanForDesc".Translate();
+                command_Action.icon = mineableThing.uiIcon;
+                command_Action.iconAngle = mineableThing.uiIconAngle;
+                command_Action.iconOffset = mineableThing.uiIconOffset;
+                command_Action.action = delegate ()
+
                 {
                     List<ThingDef> mineables = ((GenStep_PreciousLump)GenStepDefOf.PreciousLump.genStep).mineables;
                     List<FloatMenuOption> list = [];

@@ -606,14 +606,10 @@
 		<costStuffCount>60</costStuffCount>
 		<thingClass>Building_WorkTable</thingClass>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
-					<thingDefs>
-						<li>DankPyon_Coal</li>
-						<li>DankPyon_Tar</li>
-					</thingDefs>
 					<categories>
 						<li>DankPyon_RawWood</li>
 						<li>DankPyon_Wood</li>
@@ -621,6 +617,7 @@
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 	 		<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>

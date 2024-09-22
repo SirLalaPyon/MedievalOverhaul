@@ -58,7 +58,7 @@ namespace MedievalOverhaul
                         }
                         else
                         {
-                            thingDef = ThingDefOf.Chemfuel;
+                            thingDef = ThingDefOf.WoodLog;
                         }
                         this.fuelIcon = thingDef.uiIcon;
                     }

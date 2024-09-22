@@ -83,7 +83,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsRusticCookingTable</defName>
 		<label>cook meals</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
+		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
@@ -100,7 +100,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsStewPot</defName>
 		<label>cook soup</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
+		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
@@ -146,7 +146,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsStoneOven</defName>
 		<label>bake goods</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
+		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
@@ -200,7 +200,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsGrill</defName>
 		<label>grill</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
+		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
@@ -281,7 +281,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsFurnace</defName>
 		<label>smelt items</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
+		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>80</priorityInType>
 		<fixedBillGiverDefs>
@@ -485,7 +485,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsCookHearth</defName>
 		<label>cook meals at hearth</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
+		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>97</priorityInType>
 		<fixedBillGiverDefs>
@@ -502,7 +502,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsHaulHearth</defName>
 		<label>do bills at hearth</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
+		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
 		<workType>Hauling</workType>
 		<priorityInType>30</priorityInType>
 		<fixedBillGiverDefs>
@@ -536,7 +536,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsCremate</defName>
 		<label>do cremation bills</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
+		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
 		<workType>Hauling</workType>
 		<priorityInType>40</priorityInType>
 		<fixedBillGiverDefs>

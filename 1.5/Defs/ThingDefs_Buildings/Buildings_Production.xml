@@ -351,7 +351,7 @@
 		<defName>DankPyon_RusticCookingTable</defName>
 		<label>rustic cooking table</label>
 		<description>A wood-fueled oven with an attached countertop for preparing meals.</description>
-		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
 		<graphicData>
 			<texPath>Production/RusticCookingTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -435,7 +435,7 @@
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_StoneOven</defName>
 		<label>rustic oven</label>
-		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
 		<description>A cooking table with a stone oven designed for baking meals.</description>
 		<graphicData>
 			<texPath>Production/Oven</texPath>
@@ -494,7 +494,7 @@
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_StoneOvenLarge</defName>
 		<label>large oven</label>
-		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
 		<description>A cooking table with a stone oven designed for baking meals.</description>
 		<graphicData>
 			<texPath>Production/LargeStoneOven</texPath>
@@ -559,7 +559,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_Grill</defName>
 		<label>grill</label>
-		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
 		<description>A wood fueled grill used for cooking meals with an open fire.</description>
 		<graphicData>
 			<texPath>Production/Grill</texPath>
@@ -643,7 +643,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_StewPot</defName>
 		<label>soup pot</label>
-		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
 		<description>A large metal cauldron that can cook delicious soups.</description>
 		<graphicData>
 			<texPath>Production/StewPot</texPath>
@@ -1297,7 +1297,7 @@
 		<defName>DankPyon_Furnace</defName>
 		<label>Furnace</label>
 		<description>A large stone furnace used to smelt raw ores and refine resources.</description>
-		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
 		<graphicData>
 			<texPath>Production/Furnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

@@ -73,7 +73,7 @@
 		<defName>DankPyon_Pyre</defName>
 		<label>large square pyre</label>
 		<description>A large bonfire capable of producing a great amount of heat and light. Suitable for burning waste and corpses, not advised to be placed indoors.</description>
-		<thingClass>Building_WorkTable</thingClass>
+		<thingClass>MedievalOverhaul.Building_WorkTableCustom</thingClass>
 		<category>Building</category>
 		<graphicData>
 			<texPath>Temperature/LargePyre</texPath>
@@ -214,7 +214,7 @@
 		<defName>DankPyon_PyreRound</defName>
 		<label>large round pyre</label>
 		<description>A large bonfire capable of producing a great amount of heat and light. Suitable for burning waste and corpses, not advised to be placed indoors.</description>
-		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<thingClass>MedievalOverhaul.Building_WorkTableCustom</thingClass>
 		<category>Building</category>
 		<graphicData>
 			<texPath>Temperature/LargeRoundPyre</texPath>

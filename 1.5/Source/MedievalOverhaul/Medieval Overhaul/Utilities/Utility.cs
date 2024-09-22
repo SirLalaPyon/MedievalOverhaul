@@ -15,6 +15,7 @@ namespace MedievalOverhaul
         public static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
         public static bool CEIsEnabled = LoadedModManager.RunningModsListForReading.Any<ModContentPack>((Predicate<ModContentPack>)(x => x.PackageId == "ceteam.combatextended"));
         public static bool VBEIsEnabled = ModsConfig.IsActive("VanillaExpanded.VBooksE");
+        public static bool LWMFuelFilterIsEnabled = ModsConfig.IsActive("lwm.fuelfilter");
         public static RoomRoleDef DankPyon_Library;
         public static ThoughtDef DankPyon_ReadInLibrary;
         static Utility()
@@ -25,22 +26,7 @@ namespace MedievalOverhaul
                 DankPyon_ReadInLibrary = DefDatabase<ThoughtDef>.GetNamed("DankPyon_ReadInLibrary");
             }
         }
-        //public static Thing FindBestFuel(Pawn pawn, Thing refuelable)
-        //{
-        //    ThingFilter filter = refuelable.TryGetComp<CompRefuelableStat>().AllowedFuelFilter;
-        //    IEnumerable<Thing> searchSet = refuelable.Map.listerThings.ThingsMatchingFilter(filter);
-        //    Predicate<Thing> validator = (Thing x) =>
-        //        !x.IsForbidden(pawn) && pawn.CanReserve((LocalTargetInfo)x) && filter.Allows(x);
-        //    return GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, searchSet, PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator);
-        //}
-
-        //public static List<Thing> FindAllFuel(Pawn pawn, Thing refuelable)
-        //{
-        //    var countToFullyRefuel = refuelable.TryGetComp<CompRefuelableStat>().GetFuelCountToFullyRefuel();
-        //    ThingFilter filter = refuelable.TryGetComp<CompRefuelableStat>().AllowedFuelFilter;
-        //    return RefuelWorkGiverUtility.FindEnoughReservableThings(pawn, refuelable.Position,
-        //        new IntRange(countToFullyRefuel, countToFullyRefuel), t => filter.Allows(t));
-        //}
+        
         public static Thing FindSpecificFuel(Pawn pawn, ThingDef fuel)
         {
             return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(fuel), PathEndMode.ClosestTouch, TraverseParms.For(pawn), validator: new Predicate<Thing>(validator));

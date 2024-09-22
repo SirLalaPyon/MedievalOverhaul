@@ -3231,7 +3231,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_RusticHearth</defName>
 		<label>hearth</label>
-		<thingClass>Building_WorkTable</thingClass>
+		<thingClass>MedievalOverhaul.Building_WorkTableCustom</thingClass>
 		<description>A stone hearth for warmth and a homey atmosphere.</description>
 		<graphicData>
 			<texPath>Furniture/RusticHearth</texPath>

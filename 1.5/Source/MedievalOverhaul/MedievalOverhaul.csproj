@@ -42,7 +42,9 @@
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableNutritionStatus.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_DoTicks_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\BackCompatibileCurentVersion.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\Harmony_BetterPyro.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_Refuel.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_JobTracker_EndCurrentJob_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Bill_Notify_PawnDidWork_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeDoerGainSkillExp_OnBookGenerated_Patch.cs" />
@@ -52,11 +54,13 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Reading_ReadBook_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\RefuelWorkGiverUtility_FindBestFuel.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanBeResearchedAt.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\RoomRoleWorker_Workshop_GetScore_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomGeneralGoods_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomOption_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_MarketValue_Generate.cs" />
+    <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
     <Compile Include="Medieval Overhaul\ITab\ITab_FuelCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
@@ -80,7 +84,9 @@
     <Compile Include="Medieval Overhaul\Recipes\RoomRoleWorker_Library.cs" />
     <Compile Include="Medieval Overhaul\Recipes\TreatiseSkill.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\BookWithAuthor.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\Building_WorkTableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\Building_WorkTable_HeatPushCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompGlowerOnlyWhenUsed.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompMeltable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainResearchDefinable.cs" />
@@ -88,10 +94,12 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_DefinableBook.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_GenericHide.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Melt.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_StoreFuelThing.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_TrollRegen.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_FireOverlayCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompStoreFuelThing.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_FireOverlayCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_TrollRegen.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompGenericHide.cs" />

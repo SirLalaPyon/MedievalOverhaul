@@ -144,5 +144,17 @@
 		<attribute>Class</attribute>
 		<value>MedievalOverhaul.CompProperties_FireOverlayCustom</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsCookCampfire"]/fixedBillGiverDefs/li[.="Campfire"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs/li[.="FueledStove"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs/li[.="FueledSmithy"]</xpath>
+	</Operation>
 
 </Patch>

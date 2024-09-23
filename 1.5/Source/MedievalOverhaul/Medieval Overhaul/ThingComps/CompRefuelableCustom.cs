@@ -240,7 +240,6 @@ namespace MedievalOverhaul
             }
             yield break;
         }
-
         public override void CompTick()
         {
             if (this.parent.IsHashIntervalTick(HashInterval))
@@ -274,7 +273,6 @@ namespace MedievalOverhaul
                 this.parent.BroadcastCompSignal("RanOutOfFuel");
             }
         }
-
         public void Refuel(List<Thing> fuelThings)
         {
             if (this.Props.atomicFueling)

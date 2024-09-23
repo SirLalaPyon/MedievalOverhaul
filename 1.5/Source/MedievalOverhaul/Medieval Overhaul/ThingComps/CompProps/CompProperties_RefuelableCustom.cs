@@ -163,7 +163,6 @@ namespace MedievalOverhaul
         private readonly float fuelMultiplier = 1f;
 
         public bool factorByDifficulty;
-        public bool isTickerRare = false;
 
         [MustTranslate]
         public string fuelLabel;

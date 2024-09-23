@@ -410,7 +410,6 @@
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
-			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 			<li>Placeworker_AttachedToWall</li>
 			<li>PlaceWorker_GlowRadius</li>
 		</placeWorkers>
@@ -491,6 +490,7 @@
 		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
 		<placeWorkers>
 			<li>PlaceWorker_Heater</li>
+			<li>PlaceWorker_GlowRadius</li>
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
@@ -2097,7 +2097,6 @@
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
-			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<inspectorTabs>
 			<li>MedievalOverhaul.ITab_FuelCustom</li>

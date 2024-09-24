@@ -147,8 +147,8 @@ namespace MedievalOverhaul
                         this.allowedFuelFilter.SetAllow(disallowedCategory, false, null, null);
                     }
                 }
-
             }
+            
         }
         public override void PostDraw()
         {
@@ -287,7 +287,7 @@ namespace MedievalOverhaul
             while (fullFuelCount > 0 && fuelThings.Count > 0)
             {
                 Thing thing = fuelThings.Pop<Thing>();
-                float fuelValue = thing.def?.GetModExtension<FuelValueProperty>()?.fuelValue ?? 1f;
+                float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(thing.def, 1f);
                 int maxFuelNeededFromStack = Mathf.CeilToInt(fullFuelCount / fuelValue);
                 int amountToFuel = Mathf.Min(maxFuelNeededFromStack, thing.stackCount);
                 this.Refuel((float)amountToFuel * fuelValue);

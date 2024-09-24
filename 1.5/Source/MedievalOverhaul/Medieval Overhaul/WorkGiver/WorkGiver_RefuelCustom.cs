@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ProcessorFramework;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -8,13 +9,30 @@ using Verse.AI;
 namespace MedievalOverhaul
 {
 
-	public class WorkGiver_RefuelCustom : WorkGiver_Refuel
+	public class WorkGiver_RefuelCustom : WorkGiver_Scanner
     {
-		public override JobDef JobStandard => MedievalOverhaulDefOf.DankPyon_RefuelCustom;
+		public virtual JobDef JobStandard => MedievalOverhaulDefOf.DankPyon_RefuelCustom;
 
-		public override JobDef JobAtomic => MedievalOverhaulDefOf.DankPyon_RefuelAtomicCustom;
+		public virtual JobDef JobAtomic => MedievalOverhaulDefOf.DankPyon_RefuelAtomicCustom;
+        public override ThingRequest PotentialWorkThingRequest
+        {
+            get
+            {
+                return ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial);
+            }
+        }
 
-        public override bool CanRefuelThing(Thing t)
+        public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
+        {
+            return pawn.Map.GetComponent<RefuelableMapComponent>().refuelableCustomThing;
+        }
+
+        public override bool ShouldSkip(Pawn pawn, bool forced = false)
+        {
+            RefuelableMapComponent mapComp = pawn.Map.GetComponent<RefuelableMapComponent>();
+            return !mapComp.refuelableCustomThing.Any();
+        }
+        public bool CanRefuelThing(Thing t)
 		{
 			return t.TryGetComp<CompRefuelableCustom>() != null;
         }
@@ -28,7 +46,6 @@ namespace MedievalOverhaul
 		{
 			return RefuelJob(pawn, t, forced, JobStandard, JobAtomic);
 		}
-
 
 		public static bool CanRefuel(Pawn pawn, Thing t, bool forced = false)
 		{
@@ -84,11 +101,11 @@ namespace MedievalOverhaul
 			if (!t.TryGetComp<CompRefuelableCustom>().Props.atomicFueling)
 			{
 				Thing bestFuel = FindBestFuel(pawn, t);
-				return JobMaker.MakeJob(customRefuelJob ?? JobDefOf.Refuel, (LocalTargetInfo)t, (LocalTargetInfo)bestFuel);
+				return JobMaker.MakeJob(customRefuelJob, (LocalTargetInfo)t, (LocalTargetInfo)bestFuel);
 			}
 
 			var allFuel = FindAllFuel(pawn, t);
-			Job job = JobMaker.MakeJob(customAtomicRefuelJob ?? JobDefOf.RefuelAtomic, (LocalTargetInfo)t);
+			Job job = JobMaker.MakeJob(customAtomicRefuelJob, (LocalTargetInfo)t);
 			job.targetQueueB = allFuel
 				.Select(f => new LocalTargetInfo(f))
 				.ToList();

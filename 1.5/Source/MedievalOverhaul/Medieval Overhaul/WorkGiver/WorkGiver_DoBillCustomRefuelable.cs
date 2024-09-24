@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse.AI;
 using Verse;
@@ -138,7 +136,17 @@ namespace MedievalOverhaul
             }
             return true;
         }
-
+        public override bool HasJobOnThing(Pawn pawn, Thing thing, bool forced = false)
+        {
+            CompRefuelableCustom compRefuelable = thing.TryGetComp<CompRefuelableCustom>();
+            if (compRefuelable != null && !compRefuelable.HasFuel)
+            {
+                ThingFilter fuelFilter = compRefuelable.Props.fuelFilter;
+                JobFailReason.Is("NoFuelToRefuel".Translate(fuelFilter.Summary), null);
+                return false;
+            }
+            return this.JobOnThing(pawn, thing, forced) != null;
+        }
         public override Job JobOnThing(Pawn pawn, Thing thing, bool forced = false)
         {
             if (!(thing is IBillGiver billGiver) || !ThingIsUsableBillGiver(thing) || !billGiver.BillStack.AnyShouldDoNow || !billGiver.UsableForBillsAfterFueling() || !pawn.CanReserve(thing, 1, -1, null, forced) || thing.IsBurning() || thing.IsForbidden(pawn))

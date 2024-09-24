@@ -8,13 +8,31 @@ using Verse.AI;
 namespace MedievalOverhaul
 {
 
-	public class WorkGiver_RefuelStat : WorkGiver_Refuel
+	public class WorkGiver_RefuelStat : WorkGiver_Scanner
 	{
-		public override JobDef JobStandard => MedievalOverhaulDefOf.DankPyon_Slop_Refuel_Stat;
+		public virtual JobDef JobStandard => MedievalOverhaulDefOf.DankPyon_Slop_Refuel_Stat;
 
-		public override JobDef JobAtomic => MedievalOverhaulDefOf.DankPyon_Slop_Refuel_StatAtomic;
+		public virtual JobDef JobAtomic => MedievalOverhaulDefOf.DankPyon_Slop_Refuel_StatAtomic;
 
-		public override bool CanRefuelThing(Thing t)
+        public override ThingRequest PotentialWorkThingRequest
+        {
+            get
+            {
+                return ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial);
+            }
+        }
+
+        public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
+        {
+            return pawn.Map.GetComponent<RefuelableMapComponent>().refuelableCustomThing;
+        }
+
+        public override bool ShouldSkip(Pawn pawn, bool forced = false)
+        {
+            RefuelableMapComponent mapComp = pawn.Map.GetComponent<RefuelableMapComponent>();
+            return !mapComp.refuelableCustomThing.Any();
+        }
+        public bool CanRefuelThing(Thing t)
 		{
 			return t is Building_SlopPot || t.TryGetComp<CompRefuelableStat>() != null;
 		}
@@ -33,7 +51,7 @@ namespace MedievalOverhaul
 		public static bool CanRefuel(Pawn pawn, Thing t, bool forced = false)
 		{
 			CompRefuelableStat comp1 = t.TryGetComp<CompRefuelableStat>();
-			CompRefuelable comp2 = t.TryGetComp<CompRefuelable>();
+            CompRefuelableCustom comp2 = t.TryGetComp<CompRefuelableCustom>();
             if (comp1 == null || comp1.IsFull || (!forced && !comp1.allowAutoRefuel))
             {
                 return false;

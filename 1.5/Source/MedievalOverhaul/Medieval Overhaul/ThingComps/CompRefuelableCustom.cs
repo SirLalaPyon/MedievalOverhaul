@@ -148,7 +148,15 @@ namespace MedievalOverhaul
                     }
                 }
             }
+            RefuelableMapComponent mapComp = this.parent.Map.GetComponent<RefuelableMapComponent>();
+				mapComp.Register(parent);
             
+        }
+        public override void PostDeSpawn(Map map)
+        {
+            base.PostDeSpawn(map);
+            RefuelableMapComponent mapComp = map.GetComponent<RefuelableMapComponent>();
+            mapComp.Deregister(parent);
         }
         public override void PostDraw()
         {

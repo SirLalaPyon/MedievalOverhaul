@@ -118,6 +118,7 @@ namespace MedievalOverhaul
                 }
             }
         }
+
         public override void Initialize(CompProperties props)
         {
             base.Initialize(props);

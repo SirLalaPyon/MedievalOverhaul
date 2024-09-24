@@ -78,6 +78,7 @@
 		<label>Fuel Patch Blacklist</label>
 		<blackListRefuelable>
 			<li>PassiveCooler</li>
+			<li MayRequire="ludeon.rimworld.biotech">SanguphageMeetingTorch</li>
 		</blackListRefuelable>
 	</MedievalOverhaul.FuelPatchList>
 

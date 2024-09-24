@@ -330,7 +330,7 @@ namespace MedievalOverhaul
         }
         public int GetFuelCountToFullyRefuel(Thing thing)
         {
-            float fuelValue = thing.def?.GetModExtension<FuelValueProperty>()?.fuelValue ?? 1f;
+            float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(thing.def, 1f);
             return Mathf.CeilToInt(GetFuelCountToFullyRefuel() / fuelValue);
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()

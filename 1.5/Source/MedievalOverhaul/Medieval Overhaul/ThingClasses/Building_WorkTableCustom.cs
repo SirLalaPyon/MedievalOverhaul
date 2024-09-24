@@ -42,7 +42,6 @@ namespace MedievalOverhaul
 
         public new bool CurrentlyUsableForBills()
         {
-            Log.Message("Are we proccing");
             return this.UsableForBillsAfterFueling() && (this.CanWorkWithoutPower || (this.powerComp != null && this.powerComp.PowerOn)) && (this.CanWorkWithoutFuel || (this.fuelComp != null && this.fuelComp.HasFuel));
         }
         public new bool UsableForBillsAfterFueling()

@@ -135,6 +135,23 @@
 
 			</operations>
 		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- <li Class="PatchOperationConditional"> -->
+					<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]]/inspectorTabs</xpath> -->
+					<!-- <match Class="PatchOperationAdd"> -->
+						<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]]</xpath> -->
+						<!-- <value> -->
+							<!-- <inspectorTabs> -->
+								<!-- <li>MedievalOverhaul.ITab_FuelCustom</li> -->
+							<!-- </inspectorTabs> -->
+						<!-- </value> -->
+					<!-- </match> -->
+				<!-- </li> -->
+				
+			</operations>
+		</inactive>
 	</Operation>
 
 </Patch>

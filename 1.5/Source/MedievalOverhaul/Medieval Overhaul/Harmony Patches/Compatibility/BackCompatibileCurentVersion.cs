@@ -1,10 +1,6 @@
 ﻿using HarmonyLib;
-using RimWorld;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 using Verse;
 
@@ -33,6 +29,11 @@ namespace MedievalOverhaul.Patches
                     __result = typeof(Building_WorkTable_HeatPushCustom);
                     return false;
                 }
+                //if (RefuelablePatching.AllWorkTable_HeatPushRefuelables.Contains(node["def"].InnerText.ToString()))
+                //{
+                //    __result = typeof(Building_WorkTable_HeatPushCustom);
+                //    return false;
+                //}
             }
             if (providedClassName == "Building_WorkTable" && node["def"] != null)
             {
@@ -43,6 +44,11 @@ namespace MedievalOverhaul.Patches
                     __result = typeof(Building_WorkTableCustom);
                     return false;
                 }
+                //if (RefuelablePatching.AllWorkTable_Refuelables.Contains(node["def"].InnerText.ToString()))
+                //{
+                //    __result = typeof(Building_WorkTableCustom);
+                //    return false;
+                //}
             }
             return true;
         }

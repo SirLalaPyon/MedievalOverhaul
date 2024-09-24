@@ -2,62 +2,62 @@
 <Patch>
 
 	<!-- Vanilla Torches -->
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
-		<attribute>Class</attribute>
-		<value>MedievalOverhaul.CompProperties_RefuelableCustom</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAttributeSet"> -->
+		<!-- <xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="CompProperties_Refuelable"]</xpath> -->
+		<!-- <attribute>Class</attribute> -->
+		<!-- <value>MedievalOverhaul.CompProperties_RefuelableCustom</value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
-		<value>
-			<li>DankPyon_Coal</li>
-			<li>DankPyon_Tar</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath> -->
+		<!-- <value> -->
+			<!-- <li>DankPyon_Coal</li> -->
+			<!-- <li>DankPyon_Tar</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]/fuelFilter</xpath>
-		<value>
-			<categories>
-				<li>DankPyon_RawWood</li>
-				<li>DankPyon_Wood</li>
-			</categories>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]/fuelFilter</xpath> -->
+		<!-- <value> -->
+			<!-- <categories> -->
+				<!-- <li>DankPyon_RawWood</li> -->
+				<!-- <li>DankPyon_Wood</li> -->
+			<!-- </categories> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="CompProperties_HeatPusher"]/compClass[.="CompHeatPusherPowered"]</xpath>
-		<value>
-			<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="CompProperties_HeatPusher"]/compClass[.="CompHeatPusherPowered"]</xpath> -->
+		<!-- <value> -->
+			<!-- <compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAttributeSet">
-		<xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="CompProperties_FireOverlay"]</xpath>
-		<attribute>Class</attribute>
-		<value>MedievalOverhaul.CompProperties_FireOverlayCustom</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAttributeSet"> -->
+		<!-- <xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/comps/li[@Class="CompProperties_FireOverlay"]</xpath> -->
+		<!-- <attribute>Class</attribute> -->
+		<!-- <value>MedievalOverhaul.CompProperties_FireOverlayCustom</value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="TorchBase"]/inspectorTabs</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="TorchBase"]</xpath>
-			<value>
-				<inspectorTabs></inspectorTabs>
-			</value>
-		</nomatch>
-	</Operation>
+	<!-- <Operation Class="PatchOperationConditional"> -->
+		<!-- <xpath>Defs/ThingDef[@Name="TorchBase"]/inspectorTabs</xpath> -->
+		<!-- <nomatch Class="PatchOperationAdd"> -->
+			<!-- <xpath>Defs/ThingDef[@Name="TorchBase"]</xpath> -->
+			<!-- <value> -->
+				<!-- <inspectorTabs></inspectorTabs> -->
+			<!-- </value> -->
+		<!-- </nomatch> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[ defName="TorchWallLamp"]/inspectorTabs</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="TorchWallLamp"]</xpath>
-			<value>
-				<inspectorTabs></inspectorTabs>
-			</value>
-		</nomatch>
-	</Operation>
+	<!-- <Operation Class="PatchOperationConditional"> -->
+		<!-- <xpath>Defs/ThingDef[ defName="TorchWallLamp"]/inspectorTabs</xpath> -->
+		<!-- <nomatch Class="PatchOperationAdd"> -->
+			<!-- <xpath>Defs/ThingDef[defName="TorchWallLamp"]</xpath> -->
+			<!-- <value> -->
+				<!-- <inspectorTabs></inspectorTabs> -->
+			<!-- </value> -->
+		<!-- </nomatch> -->
+	<!-- </Operation> -->
 	
 	<!-- <Operation Class="PatchOperationConditional"> -->
 		<!-- <xpath>Defs/ThingDef[@Name="Brazier"]/inspectorTabs</xpath> -->
@@ -69,12 +69,12 @@
 		<!-- </nomatch> -->
 	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/inspectorTabs</xpath>
-		<value>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/ThingDef[@Name="TorchBase" or defName="TorchWallLamp"]/inspectorTabs</xpath> -->
+		<!-- <value> -->
+			<!-- <li>MedievalOverhaul.ITab_FuelCustom</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
 	<!-- Production Buildings -->
 	<Operation Class="PatchOperationAttributeSet">

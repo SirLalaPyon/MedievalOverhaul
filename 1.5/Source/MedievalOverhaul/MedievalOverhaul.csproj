@@ -35,6 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
+    <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Designator_GatherIce.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
@@ -45,6 +47,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\BackCompatibileCurentVersion.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\Harmony_BetterPyro.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_Refuel.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Refuel_MakeNewToils_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_JobTracker_EndCurrentJob_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Bill_Notify_PawnDidWork_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeDoerGainSkillExp_OnBookGenerated_Patch.cs" />
@@ -116,6 +119,7 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_OperateQuest.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\Utilities\RefuelableMaker\RefuelablePatching.cs" />
     <Compile Include="Medieval Overhaul\Utilities\SitePartWorker_WorkSite_Hunting.cs" />
     <Compile Include="Medieval Overhaul\Utilities\MayRequireCEAttribute.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoBillCustomRefuelable.cs" />

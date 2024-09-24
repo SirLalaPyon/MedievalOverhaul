@@ -72,5 +72,13 @@
 			<li>Megasloth</li>
 		</furHidesRaceDef>
 	</MedievalOverhaul.HideGraphicList>
+	
+	<MedievalOverhaul.FuelPatchList>
+		<defName>FuelPatchList</defName>
+		<label>Fuel Patch Blacklist</label>
+		<blackListRefuelable>
+			<li>PassiveCooler</li>
+		</blackListRefuelable>
+	</MedievalOverhaul.FuelPatchList>
 
 </Defs>

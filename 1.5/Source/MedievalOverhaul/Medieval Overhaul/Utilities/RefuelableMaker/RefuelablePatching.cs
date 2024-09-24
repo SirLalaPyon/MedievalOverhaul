@@ -14,6 +14,7 @@ namespace MedievalOverhaul
         public static HashSet<string> AllWorkTable_HeatPushRefuelables = [];
         public static Dictionary<ThingDef, ThingDef> RefuelableSeen = [];
         public static Dictionary<ThingDef, ThingDef> WorkbenchSeen = [];
+        public static FuelPatchList FuelPatchList = DefDatabase<FuelPatchList>.GetNamed("FuelPatchList");
 
         static RefuelablePatching()
         {
@@ -25,7 +26,7 @@ namespace MedievalOverhaul
             foreach (ThingDef building in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Building).ToList())
             {
 
-                if (building.thingClass != null && building.comps != null)
+                if (!FuelPatchList.blackListRefuelable.Contains(building) &&  building.thingClass != null && building.comps != null)
                 {
                     if (!MedievalOverhaulSettings.settings.refuelableTorch)
                     {
@@ -48,11 +49,6 @@ namespace MedievalOverhaul
                                     AllNonWorkbenchRefuelables.Remove(building);
                                 }
                             }
-                            if (building.defName == "PassiveCooler")
-                            {
-                                AllRefuelables.Remove(building);
-                            }
-
                         }
                     }
                 

@@ -30,4 +30,10 @@ namespace MedievalOverhaul
         public List<ThingDef> blackListWood;
         public Dictionary<ThingDef, ThingDef> plankDict;
     }
+
+    public class FuelPatchList : Def
+    {
+        public List<ThingDef> blackListRefuelable;
+
+    }
 }

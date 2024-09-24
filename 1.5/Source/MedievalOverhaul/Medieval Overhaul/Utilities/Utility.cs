@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Verse.AI;
 using Verse;
 using RimWorld;
+using UnityEngine;
+using System.Linq;
 
 namespace MedievalOverhaul
 {
@@ -18,6 +20,9 @@ namespace MedievalOverhaul
         public static bool LWMFuelFilterIsEnabled = ModsConfig.IsActive("lwm.fuelfilter");
         public static RoomRoleDef DankPyon_Library;
         public static ThoughtDef DankPyon_ReadInLibrary;
+       
+
+        
         static Utility()
         {
             if (VBEIsEnabled is false)
@@ -26,7 +31,20 @@ namespace MedievalOverhaul
                 DankPyon_ReadInLibrary = DefDatabase<ThoughtDef>.GetNamed("DankPyon_ReadInLibrary");
             }
         }
-        
+        public static int GetFuelCountToFullyRefuel(CompRefuelable RefuelableComp)
+        {
+            if (RefuelableComp.Props.atomicFueling)
+            {
+                return Mathf.CeilToInt(RefuelableComp.Props.fuelCapacity / RefuelableComp.Props.FuelMultiplierCurrentDifficulty);
+            }
+            return Mathf.Max(Mathf.CeilToInt((RefuelableComp.TargetFuelLevel - RefuelableComp.fuel) / RefuelableComp.Props.FuelMultiplierCurrentDifficulty), 1);
+        }
+        public static int GetFuelCountToFullyRefuel(CompRefuelable RefuelableComp, Thing fuelThing)
+        {
+            float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(fuelThing.def, 1f);
+            return Mathf.CeilToInt(GetFuelCountToFullyRefuel(RefuelableComp) / fuelValue);
+        }
+
         public static Thing FindSpecificFuel(Pawn pawn, ThingDef fuel)
         {
             return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(fuel), PathEndMode.ClosestTouch, TraverseParms.For(pawn), validator: new Predicate<Thing>(validator));

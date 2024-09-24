@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>woodChain</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+			</operations>
+		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationSetName">
+					<xpath>Defs/TerrainDef[defName="DankPyon_VFEArch_WoodenParquetDarkWood"]/costList/DankPyon_DarkWood</xpath>
+					<name>DankPyon_RawDarkWood</name>
+				</li>
+
+			</operations>
+		</inactive>
+	</Operation>
+
+</Patch>

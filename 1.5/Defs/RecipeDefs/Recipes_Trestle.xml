@@ -197,7 +197,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-				<DankPyon_RawDarkWood>2</DankPyon_RawDarkWood>
+				<DankPyon_DarkWood>2</DankPyon_DarkWood>
 		</products>
 	</RecipeDef>
 
@@ -221,7 +221,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-				<DankPyon_RawDarkWood>40</DankPyon_RawDarkWood>
+				<DankPyon_DarkWood>40</DankPyon_DarkWood>
 		</products>
 	</RecipeDef>
 
@@ -246,7 +246,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-				<DankPyon_RawDarkWood>200</DankPyon_RawDarkWood>
+				<DankPyon_DarkWood>200</DankPyon_DarkWood>
 		</products>
 	</RecipeDef>
 
@@ -283,7 +283,7 @@
 
 	<RecipeDef ParentName="DankPyon_MakeTimberBase">
 		<defName>DankPyon_Make_Timber_Tribal</defName>
-		<label>make timber</label>
+		<label>make timber x2</label>
 		<description>Cuts raw wood into timber.</description>
 		<workAmount Inherit="False">120</workAmount>
 		<ingredients>
@@ -302,7 +302,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<WoodLog>1</WoodLog>
+			<WoodLog>2</WoodLog>
 		</products>
 		<recipeUsers Inherit="false">
 			<li>CraftingSpot</li>
@@ -311,7 +311,7 @@
 
 	<RecipeDef ParentName="DankPyon_MakeTimberBase">
 		<defName>DankPyon_Make_TimberDark_Tribal</defName>
-		<label>make dark timber</label>
+		<label>make dark timber x2</label>
 		<description>Cuts raw wood into timber.</description>
 		<workAmount Inherit="False">120</workAmount>
 		<ingredients>
@@ -330,7 +330,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<DankPyon_RawDarkWood>1</DankPyon_RawDarkWood>
+			<DankPyon_DarkWood>2</DankPyon_DarkWood>
 		</products>
 		<recipeUsers Inherit="false">
 			<li>CraftingSpot</li>

@@ -166,7 +166,6 @@ namespace MedievalOverhaul
                 resourceReadoutPriority = ResourceCountPriority.Middle,
                 useHitPoints = true,
                 selectable = true,
-                stackLimit = 100,
                 alwaysHaulable = true,
                 drawGUIOverlay = true,
                 rotatable = false,
@@ -181,6 +180,7 @@ namespace MedievalOverhaul
                 burnableByRecipe = true,
                 minRewardCount = 10,
             };
+            log.stackLimit = wood.stackLimit;
             log.SetStatBaseValue(StatDefOf.Beauty, -4f);
             log.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
             log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));

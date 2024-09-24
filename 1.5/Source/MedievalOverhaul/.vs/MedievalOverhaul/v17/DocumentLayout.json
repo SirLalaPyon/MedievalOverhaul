@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\utilities\\refuelablemaker\\refuelablepatching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\utilities\\refuelablemaker\\refuelablepatching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\compatibility\\backcompatibilecurentversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\compatibility\\backcompatibilecurentversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\compprocessor_takeoutproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\compprocessor_takeoutproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\utilities\\seperatehidelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\settings\\medievaloverhaul_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\settings\\medievaloverhaul_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\compatibility\\backcompatibilecurentversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\compatibility\\backcompatibilecurentversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\jobdrivers\\jobdriver_refuelcustom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CompProcessor_TakeOutProduct.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\CompProcessor_TakeOutProduct.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\CompProcessor_TakeOutProduct.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\CompProcessor_TakeOutProduct.cs",
+              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\CompProcessor_TakeOutProduct.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAwAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:38:37.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SeperateHideList.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\SeperateHideList.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Utilities\\SeperateHideList.cs",
@@ -67,20 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RefuelablePatching.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\RefuelableMaker\\RefuelablePatching.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Utilities\\RefuelableMaker\\RefuelablePatching.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\RefuelableMaker\\RefuelablePatching.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Utilities\\RefuelableMaker\\RefuelablePatching.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T00:24:01.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MedievalOverhaul_Settings.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Settings\\MedievalOverhaul_Settings.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Settings\\MedievalOverhaul_Settings.cs",
@@ -119,13 +119,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "BackCompatibileCurentVersion.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\Compatibility\\BackCompatibileCurentVersion.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\Compatibility\\BackCompatibileCurentVersion.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\Compatibility\\BackCompatibileCurentVersion.cs",
               "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\Compatibility\\BackCompatibileCurentVersion.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T01:17:59.166Z",
               "EditorCaption": ""
@@ -158,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Utility.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\Utility.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Utilities\\Utility.cs",

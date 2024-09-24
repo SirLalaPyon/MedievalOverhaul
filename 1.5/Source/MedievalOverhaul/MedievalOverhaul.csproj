@@ -119,7 +119,6 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_OperateQuest.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\RefuelableMaker\RefuelablePatching.cs" />
     <Compile Include="Medieval Overhaul\Utilities\SitePartWorker_WorkSite_Hunting.cs" />
     <Compile Include="Medieval Overhaul\Utilities\MayRequireCEAttribute.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoBillCustomRefuelable.cs" />
@@ -235,6 +234,7 @@
   <ItemGroup>
     <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
     <Folder Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\" />
+    <Folder Include="Medieval Overhaul\Utilities\RefuelableMaker\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">

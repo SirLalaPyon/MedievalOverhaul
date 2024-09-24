@@ -31,9 +31,9 @@ namespace MedievalOverhaul
         public Dictionary<ThingDef, ThingDef> plankDict;
     }
 
-    public class FuelPatchList : Def
-    {
-        public List<ThingDef> blackListRefuelable;
+    //public class FuelPatchList : Def
+    //{
+    //    public List<ThingDef> blackListRefuelable;
 
-    }
+    //}
 }

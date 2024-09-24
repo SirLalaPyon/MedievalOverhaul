@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
+using ProcessorFramework;
 
 namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
     public static class RefuelablePatching
     {
-        public static HashSet<ThingDef> AllRefuelables = [];
-        public static HashSet<ThingDef> AllNonWorkbenchRefuelables = [];
+        public static Dictionary<ThingDef, CompProperties> AllRefuelables = [];
         public static HashSet<string> AllWorkTable_Refuelables = [];
         public static HashSet<string> AllWorkTable_HeatPushRefuelables = [];
         public static Dictionary<ThingDef, ThingDef> RefuelableSeen = [];
@@ -19,53 +19,63 @@ namespace MedievalOverhaul
         static RefuelablePatching()
         {
             MakeRefuelableList();
-            ProcessRefuelableList(AllRefuelables);
+            AddFuel(AllRefuelables);
+            //ProcessRefuelableList();
         }
         public static void MakeRefuelableList()
         {
             foreach (ThingDef building in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Building).ToList())
             {
 
-                if (!FuelPatchList.blackListRefuelable.Contains(building) &&  building.thingClass != null && building.comps != null)
+                if (!FuelPatchList.blackListRefuelable.Contains(building) && building.thingClass != null && building.comps != null)
                 {
-                    if (!MedievalOverhaulSettings.settings.refuelableTorch)
+                    for (int i = 0; i < building.comps.Count; i++)
                     {
-                        if (building.thingClass == typeof(Building))
+                        if (building.comps[i] is CompProperties_Refuelable compRefuel && compRefuel?.fuelFilter?.thingDefs?.Contains(ThingDefOf.WoodLog) == true)
                         {
-                            foreach (CompProperties comp in building.comps)
-                            {
-                                if (comp is CompProperties_Refuelable compRefuel && compRefuel.fuelFilter.thingDefs.Contains(ThingDefOf.WoodLog))
-                                {
-                                    AllRefuelables.Add(building);
-                                    AllNonWorkbenchRefuelables.Add(building);
-                                }
-
-                            }
-                            foreach (CompProperties comp in building.comps)
-                            {
-                                if (comp is CompProperties_Power compRefuel)
-                                {
-                                    AllRefuelables.Remove(building);
-                                    AllNonWorkbenchRefuelables.Remove(building);
-                                }
-                            }
+                            AllRefuelables.Add(building, building.comps[i]);
                         }
                     }
-                
-                    //if (building.thingClass == typeof(Building_WorkTable))
+                   
+                    //if (!MedievalOverhaulSettings.settings.refuelableTorch)
                     //{
-                    //    foreach (CompProperties comp in building.comps)
+
+                    //    if (building.thingClass == typeof(Building))
                     //    {
-                    //        if (comp is CompProperties_Refuelable compRefuel && compRefuel.fuelFilter.thingDefs.Contains(ThingDefOf.WoodLog))
+                    //        for (int i = 0; i < building.comps.Count; i++)
                     //        {
-                    //            AllRefuelables.Add(building);
-                    //            AllWorkTable_Refuelables.Add(building.defName.ToString());
+                                
                     //        }
 
                     //    }
-                    //    foreach (CompProperties comp in building.comps)
+                    //    for (int i = 0; i < building.comps.Count; i++)
                     //    {
-                    //        if (comp is CompProperties_Power compRefuel)
+                    //        if (building.comps[i] != null && building.comps[i] is CompProperties_Power)
+                    //        {
+                    //            AllRefuelables.Remove(building);
+                    //        }
+                    //    }
+                    //}
+                    //if (building.thingClass == typeof(Building_WorkTable))
+                    //{
+                    //    for (int i = 0; i < building.comps.Count; i++)
+                    //    {
+                    //        if (building.comps[i] != null && building.comps[i] is CompProperties_Refuelable compRefuel && compRefuel?.fuelFilter?.thingDefs?.Contains(ThingDefOf.WoodLog) == true)
+                    //        {
+
+                    //            AllRefuelables.Add(building);
+                    //            AllWorkTable_Refuelables.Add(building.defName.ToString());
+                    //        }
+                    //    }
+
+                    //    for (int i = 0; i < building.comps.Count; i++)
+                    //    {
+                    //        if (building.comps[i] != null && building.comps[i] is CompProperties_Power)
+                    //        {
+                    //            AllRefuelables.Remove(building);
+                    //            AllWorkTable_Refuelables.Remove(building.defName.ToString());
+                    //        }
+                    //        if (building.comps[i] != null && building.comps[i] is CompProperties_Processor)
                     //        {
                     //            AllRefuelables.Remove(building);
                     //            AllWorkTable_Refuelables.Remove(building.defName.ToString());
@@ -76,9 +86,9 @@ namespace MedievalOverhaul
                     //{
                     //    foreach (CompProperties comp in building.comps)
                     //    {
-                    //        if (comp is CompProperties_Refuelable compRefuel && compRefuel.fuelFilter.thingDefs.Contains(ThingDefOf.WoodLog))
+                    //        if (comp is CompProperties_Refuelable compRefuel && compRefuel?.fuelFilter?.thingDefs?.Contains(ThingDefOf.WoodLog) == true)
                     //        {
-                    //            //AllRefuelables.Add(building);
+                    //            AllRefuelables.Add(building);
                     //            AllWorkTable_HeatPushRefuelables.Add(building.defName);
                     //        }
                     //    }
@@ -86,12 +96,20 @@ namespace MedievalOverhaul
                     //    {
                     //        if (comp is CompProperties_Power compRefuel)
                     //        {
-                    //           // AllRefuelables.Remove(building);
+                    //            AllRefuelables.Remove(building);
                     //            AllWorkTable_HeatPushRefuelables.Remove(building.defName);
                     //        }
                     //    }
                     //}
                 }
+            }
+        }
+
+        public static void AddFuel (Dictionary<ThingDef, CompProperties> refuelableThings)
+        {
+            foreach(var thing in refuelableThings)
+            {
+
             }
         }
 
@@ -189,16 +207,15 @@ namespace MedievalOverhaul
                         }
                     }
                 }
-                //if (building.thingClass.ToString() == "Verse.Building_WorkTable_Heat")
-                //{
-                //    building.thingClass = typeof(Building_WorkTableCustom);
-                //}
-                //if (building.thingClass.ToString() == "Verse.Building_WorkTable_HeatPush")
-                //{
-                //    building.thingClass = typeof(Building_WorkTable_HeatPushCustom);
-                //}
-                    //building.inspectorTabsResolved.Add(new ITab_FuelCustom());
-                    Log.Message("Sucesfully patched" + " " + building);
+                if (building.thingClass == typeof(Building_WorkTable))
+                {
+                    building.thingClass = typeof(Building_WorkTableCustom);
+                }
+                if (building.thingClass == typeof(Building_WorkTable_HeatPush))
+                {
+                    building.thingClass = typeof(Building_WorkTable_HeatPushCustom);
+                }
+                Log.Message("Sucesfully patched" + " " + building);
             }
         }
 

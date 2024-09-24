@@ -73,13 +73,13 @@
 		</furHidesRaceDef>
 	</MedievalOverhaul.HideGraphicList>
 	
-	<MedievalOverhaul.FuelPatchList>
-		<defName>FuelPatchList</defName>
-		<label>Fuel Patch Blacklist</label>
-		<blackListRefuelable>
-			<li>PassiveCooler</li>
-			<li MayRequire="ludeon.rimworld.biotech">SanguphageMeetingTorch</li>
-		</blackListRefuelable>
-	</MedievalOverhaul.FuelPatchList>
+	<!-- <MedievalOverhaul.FuelPatchList> -->
+		<!-- <defName>FuelPatchList</defName> -->
+		<!-- <label>Fuel Patch Blacklist</label> -->
+		<!-- <blackListRefuelable> -->
+			<!-- <li>PassiveCooler</li> -->
+			<!-- <li MayRequire="ludeon.rimworld.biotech">SanguphageMeetingTorch</li> -->
+		<!-- </blackListRefuelable> -->
+	<!-- </MedievalOverhaul.FuelPatchList> -->
 
 </Defs>

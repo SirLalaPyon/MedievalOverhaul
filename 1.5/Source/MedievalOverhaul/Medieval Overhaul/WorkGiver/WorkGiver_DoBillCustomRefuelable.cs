@@ -142,7 +142,7 @@ namespace MedievalOverhaul
             if (compRefuelable != null && !compRefuelable.HasFuel)
             {
                 ThingFilter fuelFilter = compRefuelable.Props.fuelFilter;
-                JobFailReason.Is("NoFuelToRefuel".Translate(fuelFilter.Summary), null);
+                JobFailReason.Is("NoFuel".Translate(), null);
                 return false;
             }
             return this.JobOnThing(pawn, thing, forced) != null;

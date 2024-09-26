@@ -253,7 +253,7 @@
 		</active>
 		<inactive Class="PatchOperationSequence">
 			<operations>
-				
+
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[stuffCategories[li="DankPyon_RawWood"]]</xpath>
 					<match Class="PatchOperationReplace">
@@ -263,21 +263,31 @@
 						</value>
 					</match>
 				</li>
-				
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[not(stuffProps/categories/li[.="Woody"])]/stuffProps/categories/li[.="DankPyon_RawWood"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[not(stuffProps/categories/li[.="Woody"])]/stuffProps/categories/li[.="DankPyon_RawWood"]</xpath>
+						<value>
+							<li>Woody</li>
+						</value>
+					</match>
+				</li>
+
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/RecipeDef[defName="DankPyon_Make_TimberAny_Tribal"]</xpath>
 					<match Class="PatchOperationRemove">
 						<xpath>Defs/RecipeDef[defName="DankPyon_Make_TimberAny_Tribal"]</xpath>
 					</match>
 				</li>
-				
+
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/RecipeDef[defName="DankPyon_Make_Timber_Tribal"]</xpath>
 					<match Class="PatchOperationRemove">
 						<xpath>Defs/RecipeDef[defName="DankPyon_Make_Timber_Tribal"]</xpath>
 					</match>
 				</li>
-				
+
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/RecipeDef[defName="DankPyon_Make_TimberDark_Tribal"]</xpath>
 					<match Class="PatchOperationRemove">

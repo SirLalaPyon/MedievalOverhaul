@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Medieval Overhaul\Harmony Patches\RitualObligationTargetWorker_CampfireParty_CanUseTargetInternal_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StageFailTrigger_TargetNotLit_Failed_Patch.cs" />
     <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />

@@ -1,7 +1,385 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- Pawns -->
+	<!-- Pawns -->
+	<!-- Mimics -->
+	<KCSG.SymbolDef>
+		<defName>DankPyon_RusticMimic_WoodLog</defName>
+		<pawnKindDef>DankPyon_RusticMimic_WoodLog</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
 
+	<KCSG.SymbolDef>
+		<defName>DankPyon_RoyalMimic</defName>
+		<pawnKindDef>DankPyon_RoyalMimic</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<!-- Cultists -->
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Cultist_Novice</defName>
+		<pawnKindDef>DankPyon_Cultist_Novice</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DanyPyon_Cultist_Acolyte_Melee</defName>
+		<pawnKindDef>DanyPyon_Cultist_Acolyte_Melee</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DanyPyon_Cultist_Acolyte_Ranged</defName>
+		<pawnKindDef>DanyPyon_Cultist_Acolyte_Ranged</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DanyPyon_Cultist_Adept_Melee</defName>
+		<pawnKindDef>DanyPyon_Cultist_Adept_Melee</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DanyPyon_Cultist_Adept_Ranged</defName>
+		<pawnKindDef>DanyPyon_Cultist_Adept_Ranged</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DanyPyon_Cultist_HighPriest_Melee</defName>
+		<pawnKindDef>DanyPyon_Cultist_HighPriest_Melee</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DanyPyon_Cultist_HighPriest_Ranged</defName>
+		<pawnKindDef>DanyPyon_Cultist_HighPriest_Ranged</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<!-- Amboise -->
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Amboisse_Peasant</defName>
+		<pawnKindDef>DankPyon_Amboisse_Peasant</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Amboise_Archer</defName>
+		<pawnKindDef>DankPyon_Amboisse_Archer</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseFierce</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Amboise_Footman</defName>
+		<pawnKindDef>DankPyon_Amboisse_Footman</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseFierce</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Amboise_Knight</defName>
+		<pawnKindDef>DankPyon_Amboisse_Knight</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseFierce</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Amboise_LocalLord</defName>
+		<pawnKindDef>DankPyon_Amboise_LocalLord</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<!-- Soren -->
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Soren_Archer</defName>
+		<pawnKindDef>DankPyon_Soren_Archer</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseCivil2</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Soren_Footman</defName>
+		<pawnKindDef>DankPyon_Soren_Footman</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseCivil2</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Soren_Knight</defName>
+		<pawnKindDef>DankPyon_Soren_Knight</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseCivil2</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Soren_LocalLord</defName>
+		<pawnKindDef>DankPyon_Soren_LocalLord</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseCivil2</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Soren_Peasant</defName>
+		<pawnKindDef>DankPyon_Soren_Peasant</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<!-- Oswin -->
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Oswin_Archer</defName>
+		<pawnKindDef>DankPyon_Oswin_Archer</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseCivil</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Oswin_Footman</defName>
+		<pawnKindDef>DankPyon_Oswin_Footman</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseCivil</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Oswin_Knight</defName>
+		<pawnKindDef>DankPyon_Oswin_Knight</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseCivil</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Oswin_LocalLord</defName>
+		<pawnKindDef>DankPyon_Oswin_LocalLord</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseCivil</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Oswin_Peasant</defName>
+		<pawnKindDef>DankPyon_Oswin_Peasant</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<!-- Hesse -->
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Hesse_Peasant</defName>
+		<pawnKindDef>DankPyon_Hesse_Peasant</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Hesse_Archer</defName>
+		<pawnKindDef>DankPyon_Hesse_Archer</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseSavage</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Hesse_Footman</defName>
+		<pawnKindDef>DankPyon_Hesse_Footman</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseSavage</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Hesse_Knight</defName>
+		<pawnKindDef>DankPyon_Hesse_Knight</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_NobleHouseSavage</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
+	<KCSG.SymbolDef>
+		<defName>DankPyon_Hesse_LocalLord</defName>
+		<pawnKindDef>DankPyon_Hesse_LocalLord</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
 
 </Defs>

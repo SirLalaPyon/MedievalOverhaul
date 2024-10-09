@@ -16,7 +16,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4184-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -114,7 +114,7 @@
           }
         },
         "runtime": {
-          "lib/net48/0Harmony.dll": {
+          "lib/net48/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -135,7 +135,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4184-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -233,7 +233,7 @@
           }
         },
         "runtime": {
-          "lib/net48/0Harmony.dll": {
+          "lib/net48/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -254,7 +254,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4184-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -352,7 +352,7 @@
           }
         },
         "runtime": {
-          "lib/net48/0Harmony.dll": {
+          "lib/net48/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -373,7 +373,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4184-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -471,7 +471,7 @@
           }
         },
         "runtime": {
-          "lib/net48/0Harmony.dll": {
+          "lib/net48/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -492,7 +492,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4184-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -590,7 +590,7 @@
           }
         },
         "runtime": {
-          "lib/net48/0Harmony.dll": {
+          "lib/net48/_._": {
             "related": ".pdb;.xml"
           }
         }
@@ -616,17 +616,17 @@
         "krafs.publicizer.nuspec"
       ]
     },
-    "Krafs.Rimworld.Ref/1.5.4104": {
-      "sha512": "/EQrSATOpDbBNtYDQJIT27FMNTuzL6fVuvyCxoqHWWdoINjljPna8s2/9wqD5AwDGiG9A8QN53zXnWTqUdy0Cw==",
+    "Krafs.Rimworld.Ref/1.5.4184-beta": {
+      "sha512": "THZdhv2qYlekS++Me2znEtcU7spq1yTz+9VGfASUDLz+SWbD+63JsmG1zR8b9sCMomx45vujxeKiIfjSHS4mcA==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.5.4104",
+      "path": "krafs.rimworld.ref/1.5.4184-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.5.4104.nupkg.sha512",
+        "krafs.rimworld.ref.1.5.4184-beta.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -763,26 +763,26 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Krafs.Publicizer >= 2.2.1",
-      "Krafs.Rimworld.Ref >= 1.5.4104",
-      "Lib.Harmony >= 2.3.3"
+      "Krafs.Publicizer >= 2.*",
+      "Krafs.Rimworld.Ref >= 1.*-*",
+      "Lib.Harmony >= 2.*"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vova\\.nuget\\packages\\": {}
+    "C:\\Users\\Enurta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\1.5\\Source\\MedievalOverhaul\\MedievalOverhaul.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\MedievalOverhaul.csproj",
       "projectName": "MedievalOverhaul",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\1.5\\Source\\MedievalOverhaul\\MedievalOverhaul.csproj",
-      "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\1.5\\Source\\MedievalOverhaul\\obj\\",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\MedievalOverhaul.csproj",
+      "packagesPath": "C:\\Users\\Enurta\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Vova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Enurta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -790,7 +790,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.nuget.org/packages/MonoMod.Core/": {}
       },
       "frameworks": {
         "net48": {
@@ -810,15 +811,16 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.2.1, )"
+            "version": "[2.*, )"
           },
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.5.4104, )"
+            "version": "[1.*-*, )"
           },
           "Lib.Harmony": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[2.3.3, )"
+            "version": "[2.*, )"
           }
         }
       }

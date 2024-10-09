@@ -2,11 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
-using Verse.Noise;
 
 namespace MedievalOverhaul
 {
@@ -47,15 +44,13 @@ namespace MedievalOverhaul
                     yield return floatMenuOption;
                 }
             }
-            IEnumerator<ICommunicable> enumerator = null;
             foreach (FloatMenuOption floatMenuOption2 in base.GetFloatMenuOptions(myPawn))
             {
                 yield return floatMenuOption2;
             }
-            IEnumerator<FloatMenuOption> enumerator2 = null;
             yield break;
         }
-        private FloatMenuOption GetFailureReason(Pawn myPawn)
+        private new FloatMenuOption GetFailureReason(Pawn myPawn)
         {
             if (this.facilities.LinkedFacilitiesListForReading.Count < extension.linkablesNeeded)
             {
@@ -63,8 +58,7 @@ namespace MedievalOverhaul
             }
             for (int i = 0; i < this.facilities.LinkedFacilitiesListForReading.Count; i++)
             {
-                Building building = this.facilities.LinkedFacilitiesListForReading[i] as Building;
-                if (building == null || building.HasComp<CompRefuelable>() && !building.GetComp<CompRefuelable>().HasFuel)
+                if (this.facilities.LinkedFacilitiesListForReading[i] is not Building building || building.HasComp<CompRefuelable>() && !building.GetComp<CompRefuelable>().HasFuel)
                 {
                     return new FloatMenuOption("Required building needs fuel", null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
                 }
@@ -88,17 +82,19 @@ namespace MedievalOverhaul
             }
             return null;
         }
-        private void AnnounceTradeShips()
+        private new void AnnounceTradeShips()
         {
             foreach (TradeShip tradeShip in from s in base.Map.passingShipManager.passingShips.OfType<TradeShip>()
                                             where !s.WasAnnounced
                                             select s)
             {
                 TaggedString baseLetterText = "TraderArrival".Translate(tradeShip.name, tradeShip.def.label, (tradeShip.Faction == null) ? "TraderArrivalNoFaction".Translate() : "TraderArrivalFromFaction".Translate(tradeShip.Faction.Named("FACTION")));
-                IncidentParms incidentParms = new IncidentParms();
-                incidentParms.target = base.Map;
-                incidentParms.traderKind = tradeShip.TraderKind;
-                IncidentWorker.SendIncidentLetter(tradeShip.def.LabelCap, baseLetterText, LetterDefOf.PositiveEvent, incidentParms, LookTargets.Invalid, null, Array.Empty<NamedArgument>());
+                IncidentParms incidentParms = new()
+                {
+                    target = base.Map,
+                    traderKind = tradeShip.TraderKind
+                };
+                IncidentWorker.SendIncidentLetter(tradeShip.def.LabelCap, baseLetterText, LetterDefOf.PositiveEvent, incidentParms, LookTargets.Invalid, null, []);
                 tradeShip.WasAnnounced = true;
             }
         }

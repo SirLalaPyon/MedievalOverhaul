@@ -12,8 +12,7 @@ namespace MedievalOverhaul.Patches
     
     public static class FixBrokenDownBuilding_HasJobOnThing
     {
-        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions,
-                                                       ILGenerator generator)
+        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             List<CodeInstruction> code = instructions.ToList();
             bool foundInjection = false;

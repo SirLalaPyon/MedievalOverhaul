@@ -14,9 +14,9 @@ namespace MedievalOverhaul.Patches
     public static class Pawn_ButcherProducts
     {
         
-        private static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, Pawn __instance, Pawn butcher, float efficiency)
+        private static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, Pawn __instance, float efficiency)
         {
-            List<Thing> productList = new List<Thing>();
+            List<Thing> productList = [];
             var pawn = __instance;
             // Adding normal butcher output to the list
             if (MedievalOverhaulSettings.settings.leatherChain)
@@ -25,7 +25,7 @@ namespace MedievalOverhaul.Patches
                 {
                     if (HideUtility.IsHide(product.def))
                     {
-                        Thing productThing = new Thing();
+                        Thing productThing;
                         if (StaticCollectionsClass.leather_gene_pawns.ContainsKey(pawn))
                         {
                             productThing = ThingMaker.MakeThing(StaticCollectionsClass.leather_gene_pawns[pawn]);

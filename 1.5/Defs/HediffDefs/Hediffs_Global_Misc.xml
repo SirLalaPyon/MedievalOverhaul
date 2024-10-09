@@ -765,9 +765,12 @@
 		<defName>DankPyon_LindwurmAcidImmune</defName>
 		<label>lindwurm acid immunity</label>
 		<description>Immune to lindwurm acid</description>
-		<hediffClass>Hediff</hediffClass>
+		<hediffClass>HediffWithComps</hediffClass>
 		<makesSickThought>false</makesSickThought>
 		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
 		<stages>
 			<li>
 				<becomeVisible>false</becomeVisible>
@@ -779,9 +782,12 @@
 		<defName>DankPyon_StunImmune</defName>
 		<label>stun immunity</label>
 		<description>Immune to being stunned</description>
-		<hediffClass>Hediff</hediffClass>
+		<hediffClass>HediffWithComps</hediffClass>
 		<makesSickThought>false</makesSickThought>
 		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
 		<stages>
 			<li>
 				<becomeVisible>false</becomeVisible>
@@ -793,9 +799,12 @@
 		<defName>DankPyon_DazeImmune</defName>
 		<label>daze immunity</label>
 		<description>Immune to being dazed</description>
-		<hediffClass>Hediff</hediffClass>
+		<hediffClass>HediffWithComps</hediffClass>
 		<makesSickThought>false</makesSickThought>
 		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
 		<stages>
 			<li>
 				<becomeVisible>false</becomeVisible>
@@ -807,9 +816,12 @@
 		<defName>DankPyon_SigilMood</defName>
 		<label>rune sigil</label>
 		<description>Increased mood from sigil</description>
-		<hediffClass>Hediff</hediffClass>
+		<hediffClass>HediffWithComps</hediffClass>
 		<makesSickThought>false</makesSickThought>
 		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
 		<stages>
 			<li>
 				<becomeVisible>false</becomeVisible>

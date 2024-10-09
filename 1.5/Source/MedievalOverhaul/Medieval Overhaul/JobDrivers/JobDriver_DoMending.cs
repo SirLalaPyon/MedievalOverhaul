@@ -29,22 +29,21 @@ namespace MedievalOverhaul
         {
             get
             {
-                IBillGiver billGiver = mendingBench as IBillGiver;
-                if (billGiver == null)
+                if (MendingBench is not IBillGiver billGiver)
                 {
                     throw new InvalidOperationException("DoBill on non-Billgiver.");
                 }
                 return billGiver;
             }
         }
-        protected Thing mendingBench
+        protected Thing MendingBench
         {
             get
             {
                 return this.job.GetTarget(TargetIndex.A).Thing;
             }
         }
-        protected Thing repairThing
+        protected Thing RepairThing
         {
             get
             {
@@ -89,8 +88,7 @@ namespace MedievalOverhaul
             this.FailOnBurningImmobile(TargetIndex.A);
             this.FailOn(delegate ()
             {
-                IBillGiver billGiver = this.job.GetTarget(TargetIndex.A).Thing as IBillGiver;
-                if (billGiver != null)
+                if (this.job.GetTarget(TargetIndex.A).Thing is IBillGiver billGiver)
                 {
                     if (this.job.bill.DeletedOrDereferenced)
                     {
@@ -109,8 +107,7 @@ namespace MedievalOverhaul
             {
                 if (this.job.targetQueueB != null && this.job.targetQueueB.Count == 1)
                 {
-                    UnfinishedThing unfinishedThing = this.job.targetQueueB[0].Thing as UnfinishedThing;
-                    if (unfinishedThing != null)
+                    if (this.job.targetQueueB[0].Thing is UnfinishedThing unfinishedThing)
                     {
                         unfinishedThing.BoundBill = (Bill_ProductionWithUft)this.job.bill;
                     }
@@ -123,7 +120,6 @@ namespace MedievalOverhaul
             {
                 yield return toil2;
             }
-            IEnumerator<Toil> enumerator = null;
             yield return gotoBillGiver;
             yield return Toils_Recipe.MakeUnfinishedThingIfNeeded();
             yield return DoRecipeWork_Mend().FailOnDespawnedNullOrForbiddenPlacedThings(TargetIndex.A).FailOnCannotTouch(TargetIndex.A, PathEndMode.InteractionCell);
@@ -286,8 +282,7 @@ namespace MedievalOverhaul
                 }
                 jobDriver_DoBill.ticksSpentDoingRecipeWork++;
                 curJob.bill.Notify_PawnDidWork(actor);
-                IBillGiverWithTickAction billGiverWithTickAction = toil.actor.CurJob.GetTarget(TargetIndex.A).Thing as IBillGiverWithTickAction;
-                if (billGiverWithTickAction != null)
+                if (toil.actor.CurJob.GetTarget(TargetIndex.A).Thing is IBillGiverWithTickAction billGiverWithTickAction)
                 {
                     billGiverWithTickAction.UsedThisTick();
                 }
@@ -298,8 +293,7 @@ namespace MedievalOverhaul
                 float num = (curJob.RecipeDef.workSpeedStat == null) ? 1f : actor.GetStatValue(curJob.RecipeDef.workSpeedStat, true, -1);
                 if (curJob.RecipeDef.workTableSpeedStat != null)
                 {
-                    Building_WorkTable building_WorkTable = jobDriver_DoBill.BillGiver as Building_WorkTable;
-                    if (building_WorkTable != null)
+                    if (jobDriver_DoBill.BillGiver is Building_WorkTable building_WorkTable)
                     {
                         num *= building_WorkTable.GetStatValue(curJob.RecipeDef.workTableSpeedStat, true, -1);
                     }
@@ -396,12 +390,11 @@ namespace MedievalOverhaul
                 curJob.bill.Notify_IterationCompleted(actor, ingredients);
                 RecordsUtility.Notify_BillDone(actor, ingredients);
                 actor.jobs.EndCurrentJob(JobCondition.Succeeded, true, true);
-                Bill_Mech bill;
-                if (((curJob != null) ? curJob.bill : null) == null)
+                if ((curJob?.bill) == null)
                 {
                     for (int i = 0; i < ingredients.Count; i++)
                     {
-                        if (!GenPlace.TryPlaceThing(ingredients[i], actor.Position, actor.Map, ThingPlaceMode.Near, null, null, default(Rot4)))
+                        if (!GenPlace.TryPlaceThing(ingredients[i], actor.Position, actor.Map, ThingPlaceMode.Near, null, null, default))
                         {
                             Log.Error(string.Concat(new object[]
                             {
@@ -418,11 +411,11 @@ namespace MedievalOverhaul
                
                 if (curJob.bill.recipe.WorkAmountTotal(thingMend) >= 10000f && ingredients.Count > 0)
                 {
-                    TaleRecorder.RecordTale(TaleDefOf.CompletedLongCraftingProject, new object[]
-                    {
+                    TaleRecorder.RecordTale(TaleDefOf.CompletedLongCraftingProject,
+                    [
                         actor,
                         ingredients[0].GetInnerIfMinified().def
-                    });
+                    ]);
                 }
                 IntVec3 invalid = IntVec3.Invalid;
                 if (curJob.bill.GetStoreMode() == BillStoreModeDefOf.BestStockpile)
@@ -439,7 +432,7 @@ namespace MedievalOverhaul
                 }
                 if (!invalid.IsValid)
                 {
-                    if (!GenPlace.TryPlaceThing(ingredients[0], actor.Position, actor.Map, ThingPlaceMode.Near, null, null, default(Rot4)))
+                    if (!GenPlace.TryPlaceThing(ingredients[0], actor.Position, actor.Map, ThingPlaceMode.Near, null, null, default))
                     {
                         Log.Error(string.Format("Bill doer could not drop product {0} near {1}", ingredients[0], actor.Position));
                     }
@@ -451,7 +444,7 @@ namespace MedievalOverhaul
                 {
                     int count = ingredients[0].stackCount - num;
                     Thing thing2 = ingredients[0].SplitOff(count);
-                    if (!GenPlace.TryPlaceThing(thing2, actor.Position, actor.Map, ThingPlaceMode.Near, null, null, default(Rot4)))
+                    if (!GenPlace.TryPlaceThing(thing2, actor.Position, actor.Map, ThingPlaceMode.Near, null, null, default))
                     {
                         Log.Error(string.Format("{0} could not drop recipe extra product that pawn couldn't carry, {1} near {2}", actor, thing2, actor.Position));
                     }
@@ -468,15 +461,14 @@ namespace MedievalOverhaul
         }
         private static List<Thing> CalculateIngredients(Job job, Pawn actor)
         {
-            UnfinishedThing unfinishedThing = job.GetTarget(TargetIndex.B).Thing as UnfinishedThing;
-            if (unfinishedThing != null)
+            if (job.GetTarget(TargetIndex.B).Thing is UnfinishedThing unfinishedThing)
             {
                 List<Thing> ingredients = unfinishedThing.ingredients;
                 job.RecipeDef.Worker.ConsumeIngredient(unfinishedThing, job.RecipeDef, actor.Map);
                 job.placedThings = null;
                 return ingredients;
             }
-            List<Thing> list = new List<Thing>();
+            List<Thing> list = [];
             if (job.placedThings != null)
             {
                 for (int i = 0; i < job.placedThings.Count; i++)
@@ -514,8 +506,7 @@ namespace MedievalOverhaul
                             list.Add(thing);
                             if (job.RecipeDef.autoStripCorpses)
                             {
-                                IStrippable strippable = thing as IStrippable;
-                                if (strippable != null && strippable.AnythingToStrip())
+                                if (thing is IStrippable strippable && strippable.AnythingToStrip())
                                 {
                                     strippable.Strip(true);
                                 }
@@ -529,8 +520,7 @@ namespace MedievalOverhaul
         }
         private static Thing CalculateDominantIngredient(Job job, List<Thing> ingredients)
         {
-            UnfinishedThing uft = job.GetTarget(TargetIndex.B).Thing as UnfinishedThing;
-            if (uft != null && uft.def.MadeFromStuff)
+            if (job.GetTarget(TargetIndex.B).Thing is UnfinishedThing uft && uft.def.MadeFromStuff)
             {
                 return uft.ingredients.First((Thing ing) => ing.def == uft.Stuff);
             }

@@ -11,6 +11,8 @@
 			</categories>
 			<disallowedThingDefs>
 				<li>DankPyon_DriedMeat</li>
+				<li>DankPyon_DriedMeat_Human</li>
+				<li>DankPyon_DriedMeat_Insect</li>
 				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 			</disallowedThingDefs>
@@ -57,7 +59,7 @@
 		</ingredientFilter>
 		<processDays>2.5</processDays><!-- in days, a day is 60,000 ticks -->
 		<capacityFactor>1.0</capacityFactor>
-		<efficiency>0.1</efficiency>
+		<efficiency>0.8</efficiency>
 		<usesTemperature>true</usesTemperature>
 		<temperatureSafe>-99.0~99.0</temperatureSafe>
 		<temperatureIdeal>21.0~99.0</temperatureIdeal>
@@ -91,7 +93,7 @@
 		</ingredientFilter>
 		<processDays>2.5</processDays><!-- in days, a day is 60,000 ticks -->
 		<capacityFactor>1.0</capacityFactor>
-		<efficiency>0.1</efficiency>
+		<efficiency>0.8</efficiency>
 		<usesTemperature>true</usesTemperature>
 		<temperatureSafe>-99.0~99.0</temperatureSafe>
 		<temperatureIdeal>21.0~99.0</temperatureIdeal>

@@ -1,11 +1,6 @@
 ﻿using HarmonyLib;
-using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace MedievalOverhaul.Patches
@@ -30,12 +25,12 @@ namespace MedievalOverhaul.Patches
             if (__result != null)
             {
                 foreach (var thing in __result)
-                    {
-                        yield return thing;
-                    }
+                {
+                    yield return thing;
+                }
                 if (recipeDef.HasModExtension<RecipeExtension_Timber>())
                 {
-                    Thing thing = null;
+                    Thing thing;
                     for (int i = 0; i < ingredients.Count; i++)
                     {
                         thing = ingredients[i];
@@ -48,6 +43,10 @@ namespace MedievalOverhaul.Patches
                         {
                             ThingDefCountClass thingDefCountClass = thing.def.butcherProducts[j];
                             int num = thing.stackCount * thingDefCountClass.count;
+                            if (num > 2)
+                            {
+                                num -= 2;
+                            }
                             ThingDef butcherDef = thingDefCountClass.thingDef;
                             Thing butcherThing = ThingMaker.MakeThing(butcherDef, null);
                             butcherThing.stackCount = num;

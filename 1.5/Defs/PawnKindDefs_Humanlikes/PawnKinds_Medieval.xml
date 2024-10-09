@@ -13,6 +13,13 @@
 		<invFoodDef>DankPyon_MealBread</invFoodDef>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelIgnorePollution>true</apparelIgnorePollution>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Nudist</li>
+		</disallowedTraits>   
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 	</PawnKindDef>
 
 	<PawnKindDef Name="DankPyon_BrigandPawnKindBase" Abstract="True">

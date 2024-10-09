@@ -307,9 +307,9 @@
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>/Defs/ThingDef[defName="DankPyon_DryRack"]</xpath>
+					<xpath>/Defs/ThingDef[defName="DankPyon_RawhideRack"]</xpath>
 					<match Class="PatchOperationRemove">
-						<xpath>/Defs/ThingDef[defName="DankPyon_DryRack"]</xpath>
+						<xpath>/Defs/ThingDef[defName="DankPyon_RawhideRack"]</xpath>
 					</match>
 				</li>
 

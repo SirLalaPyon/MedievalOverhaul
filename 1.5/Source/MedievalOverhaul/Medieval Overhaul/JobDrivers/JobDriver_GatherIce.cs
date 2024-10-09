@@ -79,7 +79,7 @@ namespace MedievalOverhaul
             Scribe_Values.Look<float>(ref this.workLeft, "workLeft", 0f, false);
         }
 
-        private float workLeft = -1000f;
+        private new float workLeft = -1000f;
 
         protected new bool clearSnow;
     }

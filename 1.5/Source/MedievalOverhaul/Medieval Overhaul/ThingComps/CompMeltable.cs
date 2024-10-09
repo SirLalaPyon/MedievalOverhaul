@@ -38,7 +38,7 @@ namespace MedievalOverhaul
             }
         }
 
-        public new RotStage Stage
+        public RotStage Stage
         {
             get
             {

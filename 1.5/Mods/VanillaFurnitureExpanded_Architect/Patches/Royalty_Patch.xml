@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+
+				<TerrainDef ParentName="FloorBase">
+					<defName>DankPyon_VFEArch_FineDarkWoodenFloor</defName>
+					<label>fine dark wooden floor</label>
+					<description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
+					<texturePath>Terrains/FineWoodenFloor</texturePath>
+					<renderPrecedence>228</renderPrecedence>
+					<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+					<color>(112,91,76)</color>
+					<costList>
+						<DankPyon_RawDarkWood>20</DankPyon_RawDarkWood>
+					</costList>
+					<statBases>
+						<WorkToBuild>5000</WorkToBuild>
+						<Beauty>3</Beauty>
+						<Flammability>0.22</Flammability>
+					</statBases>
+					<tags>
+						<li>FineFloor</li>
+					</tags>
+					<constructEffect>ConstructWood</constructEffect>
+					<designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+				</TerrainDef>
+
+				<TerrainDef ParentName="FineMetalTileBase">
+					<defName>DankPyon_VFEArch_FineIronTile</defName>
+					<label>fine iron tile</label>
+					<renderPrecedence>241</renderPrecedence>
+					<color>(0.3, 0.3, 0.3)</color>
+					<statBases>
+						<Beauty>1</Beauty>
+						<WorkToBuild>800</WorkToBuild>
+						<Cleanliness>0.1</Cleanliness>
+						<CleaningTimeFactor>0.65</CleaningTimeFactor>
+					</statBases>
+					<costList>
+						<DankPyon_IronIngot>20</DankPyon_IronIngot>
+					</costList>
+				</TerrainDef>
+
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

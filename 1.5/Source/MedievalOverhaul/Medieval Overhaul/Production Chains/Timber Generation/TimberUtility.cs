@@ -166,7 +166,6 @@ namespace MedievalOverhaul
                 resourceReadoutPriority = ResourceCountPriority.Middle,
                 useHitPoints = true,
                 selectable = true,
-                stackLimit = 100,
                 alwaysHaulable = true,
                 drawGUIOverlay = true,
                 rotatable = false,
@@ -181,63 +180,24 @@ namespace MedievalOverhaul
                 burnableByRecipe = true,
                 minRewardCount = 10,
             };
+            log.stackLimit = wood.stackLimit;
             log.SetStatBaseValue(StatDefOf.Beauty, -4f);
             log.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.Flammability) != null)
-                log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
-            else
-                log.SetStatBaseValue(StatDefOf.Flammability, 1f);
-
+            log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
             log.SetStatBaseValue(StatDefOf.DeteriorationRate, 2f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.Mass) != null)
-                log.SetStatBaseValue(StatDefOf.Mass, (wood.GetStatValueAbstract(StatDefOf.Mass) * 3));
-            else
-                log.SetStatBaseValue(StatDefOf.Mass, 1.2f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.MarketValue) != null)
-                log.SetStatBaseValue(StatDefOf.MarketValue, (wood.GetStatValueAbstract(StatDefOf.MarketValue) * 2));
-            else
-                log.SetStatBaseValue(StatDefOf.MarketValue, 1.2f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Sharp) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Sharp, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Sharp));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Sharp, 0.54f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Blunt) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Blunt, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Blunt));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Blunt, 0.54f);
+            log.SetStatBaseValue(StatDefOf.Mass, (wood.GetStatValueAbstract(StatDefOf.Mass) * 3));
+            log.SetStatBaseValue(StatDefOf.MarketValue, (wood.GetStatValueAbstract(StatDefOf.MarketValue) * 2));
+            log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Sharp, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Sharp));
+            log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Blunt, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Blunt));
             if (Utility.CEIsEnabled)
             {
                 log.SetStatBaseValue(MedievalOverhaulDefOf.Bulk, wood.GetStatValueAbstract(MedievalOverhaulDefOf.Bulk)*2);
             }
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Heat) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Heat));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Heat, 0.40f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Cold) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Cold, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Cold));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Cold, 8);
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Heat) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Heat));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Heat, 4f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier) != null)
-                log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier));
-            else
-                log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, 0.40f);
-            if (wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier) != null)
-                log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier));
-            else
-                log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, 0.9f);
+            log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Heat));
+            log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Cold, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Cold));
+            log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Heat));
+            log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier));
+            log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier));
             log.tools = wood.tools;
             log.comps = wood.comps;
             log.techLevel = wood.techLevel;

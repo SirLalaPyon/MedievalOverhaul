@@ -10,7 +10,7 @@ namespace ImprovedNeurotrainers
 {
     internal class CompUseEffect_LearnSkillImproved : CompUseEffect
     {
-        public CompPropertiesUseEffect_LearnSkillImproved Props => (CompPropertiesUseEffect_LearnSkillImproved)this.props;
+        public new CompPropertiesUseEffect_LearnSkillImproved Props => (CompPropertiesUseEffect_LearnSkillImproved)this.props;
 
         private SkillDef Skill => DefDatabase<SkillDef>.GetNamed(this.Props.skillDefName);
 

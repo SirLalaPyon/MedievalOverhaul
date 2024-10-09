@@ -8,26 +8,18 @@ namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(QualityUtility))]
     [HarmonyPatch("GenerateQualityCreatedByPawn")]
-    [HarmonyPatch(new Type[]
-    {
-            typeof(Pawn),
-            typeof(SkillDef)
-    }, new ArgumentType[]
-    {
-            0,
-            0
-    })]
+    [HarmonyPatch([typeof(Pawn), typeof(SkillDef)], [0,0])]
     public static class QualityUtility_GenerateQualityCreatedByPawn_Patch
     {
-        public static List<(int, QualityCategory)> minQualities = new List<(int, QualityCategory)>
-        {
+        public static List<(int, QualityCategory)> minQualities =
+        [
             (9, QualityCategory.Poor),
             (13, QualityCategory.Normal),
             (17, QualityCategory.Good),
             (20, QualityCategory.Excellent),
-        };
+        ];
 
-        private static void Postfix(ref QualityCategory __result, Pawn pawn)
+        public static void Postfix(ref QualityCategory __result, Pawn pawn)
         {
             if (pawn?.CurJob?.RecipeDef?.WorkerCounter is RecipeWorker_MakeSkillBook)
             {

@@ -10,15 +10,15 @@ namespace MedievalOverhaul
 {
     public class WorkGiver_DoMending : WorkGiver_Scanner
     {
-        private List<ThingCount> chosenIngThings = new List<ThingCount>();
-        private static List<IngredientCount> missingIngredients = new List<IngredientCount>();
-        private static List<Thing> tmpMissingUniqueIngredients = new List<Thing>();
-        private static readonly IntRange ReCheckFailedBillTicksRange = new IntRange(500, 600);
-        private static List<Thing> relevantThings = new List<Thing>();
-        private static HashSet<Thing> processedThings = new HashSet<Thing>();
-        private static List<Thing> newRelevantThings = new List<Thing>();
-        private static List<Thing> tmpMedicine = new List<Thing>();
-        private static WorkGiver_DoMending.DefCountList availableCounts = new WorkGiver_DoMending.DefCountList();
+        private List<ThingCount> chosenIngThings = [];
+        private static List<IngredientCount> missingIngredients = [];
+        private static List<Thing> tmpMissingUniqueIngredients = [];
+        private static readonly IntRange ReCheckFailedBillTicksRange = new (500, 600);
+        private static List<Thing> relevantThings = [];
+        private static HashSet<Thing> processedThings = [];
+        private static List<Thing> newRelevantThings = [];
+        private static List<Thing> tmpMedicine = [];
+        private static WorkGiver_DoMending.DefCountList availableCounts = new ();
 
         public override PathEndMode PathEndMode => PathEndMode.InteractionCell;
 

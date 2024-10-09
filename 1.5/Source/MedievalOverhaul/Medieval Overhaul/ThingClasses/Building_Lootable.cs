@@ -55,7 +55,6 @@ namespace MedievalOverhaul
             {
                 yield return floatMenuOption;
             }
-            IEnumerator<FloatMenuOption> enumerator = null;
             if (!this.CanOpen)
             {
                 yield break;
@@ -121,28 +120,45 @@ namespace MedievalOverhaul
                     if (Rand.Chance(lootableExt.lootChance))
                     {
                         ThingDef lootableTD;
-                        // Random search results.
-                        if (lootableExt.isRandom == true)
+                    // Random search results.
+                    if (lootableExt.isRandom == true)
+                    {
+                        lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
+                        if (lootableTD != null)
                         {
-                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
-                            if (lootableTD != null)
+                            if (lootableTD.thingClass.Name == "Book")
+                            {
+                                Thing book = BookUtility.MakeBook(lootableTD, ArtGenerationContext.Outsider);
+                                innerContainer.TryAdd(book, 1);
+                            }
+                            else
                             {
                                 Thing t1 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
                                 t1.stackCount = lootableExt.lootCount.RandomInRange;
                                 innerContainer.TryAdd(t1, lootableExt.lootCount.RandomInRange);
                             }
                         }
-                        // Non-random search results.
-                        else
+                    }
+                    // Non-random search results.
+                    else
+                    {
+                        lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
+                        if (lootableTD != null)
                         {
-                            lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
-                            if (lootableTD != null)
+                            if (lootableTD.thingClass.Name == "Book")
+                            {
+                                Thing book = BookUtility.MakeBook(lootableTD, ArtGenerationContext.Outsider);
+                                innerContainer.TryAdd(book, 1);
+                            }
+                            else
                             {
                                 Thing t2 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
                                 t2.stackCount = lootableExt.lootCount.RandomInRange;
                                 innerContainer.TryAdd(t2, lootableExt.lootCount.RandomInRange);
                             }
+                            
                         }
+                    }
                     }
                 contentsKnown = false;
             }

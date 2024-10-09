@@ -61,7 +61,7 @@
 			<baseHealthScale>0.70</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Leather_Rhinoceros</leatherDef><!-- Rhino is turned into heavy scale leather -->
-			<meatLabel>cobra meat</meatLabel>
+			<useMeatFrom>Cobra</useMeatFrom>
 			<wildness>0.75</wildness>
 			<petness>0.05</petness>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
@@ -164,7 +164,6 @@
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>0.75</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<meatLabel>cobra meat</meatLabel>
 		</race>
 	</ThingDef>
 
@@ -354,6 +353,7 @@
 			<maxPreyBodySize>3</maxPreyBodySize>
 			<baseBodySize>3.65</baseBodySize>
 			<baseHealthScale>6.7</baseHealthScale>
+			<useMeatFrom>DankPyon_GiantConstrictorForest</useMeatFrom>
 		</race>
      
 	</ThingDef>
@@ -624,6 +624,7 @@
 		</comps>
 		<race>
 			<baseHealthScale>12.5</baseHealthScale>
+			<useMeatFrom>DankPyon_LindwurmForest</useMeatFrom>
 		</race>
 	</ThingDef>
 

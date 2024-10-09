@@ -1,6 +1,4 @@
-﻿// Assembly-CSharp, Version=1.5.8857.30236, Culture=neutral, PublicKeyToken=null
-// RimWorld.IncidentWorker_AggressiveAnimals
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
@@ -21,8 +19,7 @@ namespace MedievalOverhaul
                 return false;
             }
             Map map = (Map)parms.target;
-            IntVec3 result;
-            return RCellFinder.TryFindRandomPawnEntryCell(out result, map, CellFinder.EdgeRoadChance_Animal);
+            return RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 result, map, CellFinder.EdgeRoadChance_Animal);
         }
 
         public override bool TryExecuteWorker(IncidentParms parms)
@@ -38,7 +35,7 @@ namespace MedievalOverhaul
             {
                 return false;
             }
-            List<Pawn> list = AggressiveAnimalIncidentUtility.GenerateAnimals(animalKind, map.Tile, parms.points * 1f, parms.pawnCount);
+            List<Pawn> list = AggressiveAnimalIncidentUtility.GenerateAnimals(animalKind, map.Tile, parms.points * PointsFactor, parms.pawnCount);
             Rot4 rot = Rot4.FromAngleFlat((map.Center - result).AngleFlat);
             for (int i = 0; i < list.Count; i++)
             {
@@ -50,7 +47,7 @@ namespace MedievalOverhaul
                     pawn.health.AddHediff(HediffDefOf.Scaria);
                 }
                 pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent);
-                pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(60000, 120000);
+                pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(AnimalsStayDurationMin, AnimalsStayDurationMax);
             }
             if (ModsConfig.AnomalyActive)
             {

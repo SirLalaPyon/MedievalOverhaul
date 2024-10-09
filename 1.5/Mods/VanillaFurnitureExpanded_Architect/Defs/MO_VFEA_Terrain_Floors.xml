@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Parquet Floor -->
+	<TerrainDef ParentName="VFEArch_WoodenParquetBase">
+		<defName>DankPyon_VFEArch_WoodenParquetDarkWood</defName>
+		<label>dark wooden parquet</label>
+		<color>(112,91,76)</color>
+		<costList>
+			<DankPyon_DarkWood>12</DankPyon_DarkWood>
+		</costList>
+	</TerrainDef>
+
+	<!-- Cobblestone floor -->
+	<TerrainDef ParentName="CobblestoneBase">
+		<defName>VFEArch_CobblestoneFloorMarble</defName>
+		<label>clay cobblestone floor</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>4</DankPyon_BlocksClay>
+		</costList>
+	</TerrainDef>
+
+	<!-- Polished stone floor -->
+	<TerrainDef ParentName="PolishedStoneFloorBase">
+		<defName>DankPyon_VFEArch_PolishedStoneFloorClay</defName>
+		<label>clay polished floor</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>12</DankPyon_BlocksClay>
+		</costList>
+	</TerrainDef>
+
+	<!-- Stone slabs -->
+	<TerrainDef ParentName="StoneSlabsBase">
+		<defName>DankPyon_VFEArch_SlabsClay</defName>
+		<label>clay slabs</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>8</DankPyon_BlocksClay>
+		</costList>
+	</TerrainDef>
+	
+	<!-- Rustic Floors -->
+	<TerrainDef ParentName="DankPyon_Floor_RusticWoodFloorBase">
+		<defName>DankPyon_Floor_RusticWoodFloor_Walnut</defName>
+		<label>rustic walnut wood floor</label>
+		<color>(79,60,45)</color>
+		<costList>
+			<WoodLog>3</WoodLog>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_RusticWoodFloorBase">
+		<defName>DankPyon_Floor_RusticWoodFloor_Birch</defName>
+		<label>rustic birch wood floor</label>
+		 <color>(243,196,150)</color>
+		<costList>
+			<WoodLog>3</WoodLog>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_RusticWoodFloorBase">
+		<defName>DankPyon_Floor_RusticWoodFloor_Mahogany</defName>
+		<label>rustic mahogany wood floor</label>
+		<color>(134,79,49)</color>
+		<costList>
+			<WoodLog>3</WoodLog>
+		</costList>
+	</TerrainDef>
+
+</Defs>

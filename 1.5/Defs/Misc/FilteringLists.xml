@@ -36,6 +36,10 @@
 				<key>WoodLog</key> <!-- Original Wood turned into plank-->
 				<value>DankPyon_RawWood</value> <!-- New XML log -->
 			</li>
+			<li>
+				<key>DankPyon_DarkWood</key> <!-- Original Wood turned into plank-->
+				<value>DankPyon_RawDarkWood</value> <!-- New XML log -->
+			</li>
 		</plankDict>
 	</MedievalOverhaul.SeperateWoodList>
 
@@ -72,5 +76,14 @@
 			<li>Megasloth</li>
 		</furHidesRaceDef>
 	</MedievalOverhaul.HideGraphicList>
+	
+	<!-- <MedievalOverhaul.FuelPatchList> -->
+		<!-- <defName>FuelPatchList</defName> -->
+		<!-- <label>Fuel Patch Blacklist</label> -->
+		<!-- <blackListRefuelable> -->
+			<!-- <li>PassiveCooler</li> -->
+			<!-- <li MayRequire="ludeon.rimworld.biotech">SanguphageMeetingTorch</li> -->
+		<!-- </blackListRefuelable> -->
+	<!-- </MedievalOverhaul.FuelPatchList> -->
 
 </Defs>

@@ -29,12 +29,11 @@ namespace MedievalOverhaul
                 requiredBuilding = false;
                 for (int i = 0; i < this.facilities.LinkedFacilitiesListForReading.Count; i++)
                 {
-                    Building building = this.facilities.LinkedFacilitiesListForReading[i] as Building;
-                    if (building != null && building.def == ext.requiredLinkable)
+                    if (this.facilities.LinkedFacilitiesListForReading[i] is Building building && building.def == ext.requiredLinkable)
                     {
                         bool refuelComp = building.HasComp<CompRefuelable>();
                         if (!refuelComp || (refuelComp && building.GetComp<CompRefuelable>().HasFuel))
-                        requiredBuilding = true;
+                            requiredBuilding = true;
                         break;
                     }
                 }
@@ -50,8 +49,7 @@ namespace MedievalOverhaul
             base.PostSpawnSetup(respawningAfterLoad);
             this.compRefuelable = this.parent.TryGetComp<CompRefuelable>();
             this.facilities = this.parent.TryGetComp<CompAffectedByFacilities>();
-            if (this.currentQuest == null)
-                this.currentQuest = this.AvailableForFind.RandomElement<QuestScriptDef>();
+            this.currentQuest ??= this.AvailableForFind.RandomElement<QuestScriptDef>();
             GameComponent_QuestFinder.Instance.RegisterFinder(this);
         }
         public override void Initialize(CompProperties props)
@@ -126,10 +124,10 @@ namespace MedievalOverhaul
                 element.defaultDesc = (string)"EEG.SelectQuest".Translate((NamedArgument)this.currentQuest.LabelCap());
                 element.icon = (Texture)TexButton.Search;
                 element.action = (Action)(() => Find.WindowStack.Add((Window)new FloatMenu(this.AvailableForFind.Select<QuestScriptDef, FloatMenuOption>((Func<QuestScriptDef, FloatMenuOption>)(quest => new FloatMenuOption(quest.LabelCap(), (Action)(() => this.currentQuest = quest)))).ToList<FloatMenuOption>())));
+               
                 yield return element;
             }
 
-            IEnumerator<Gizmo> enumerator = null;
             if (this.parent.Faction == Faction.OfPlayer && this.currentQuest == QuestScriptDefOf.LongRangeMineralScannerLump)
             {
                 ThingDef mineableThing = this.targetMineable.building.mineableThing;
@@ -140,18 +138,18 @@ namespace MedievalOverhaul
                 command_Action.iconAngle = mineableThing.uiIconAngle;
                 command_Action.iconOffset = mineableThing.uiIconOffset;
                 command_Action.action = delegate ()
+
                 {
                     List<ThingDef> mineables = ((GenStep_PreciousLump)GenStepDefOf.PreciousLump.genStep).mineables;
-                    List<FloatMenuOption> list = new List<FloatMenuOption>();
+                    List<FloatMenuOption> list = [];
                     foreach (ThingDef localD2 in mineables)
                     {
                         ThingDef localD = localD2;
-                        FloatMenuOption item = new FloatMenuOption(localD.building.mineableThing.LabelCap, delegate ()
+                        FloatMenuOption item = new (localD.building.mineableThing.LabelCap, delegate ()
                         {
                             foreach (object obj in Find.Selector.SelectedObjects)
                             {
-                                Thing thing = obj as Thing;
-                                if (thing != null)
+                                if (obj is Thing thing)
                                 {
                                     CompQuestFinder compLongRangeMineralScanner = thing.TryGetComp<CompQuestFinder>();
                                     if (compLongRangeMineralScanner != null)

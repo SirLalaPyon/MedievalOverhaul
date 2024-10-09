@@ -78,7 +78,6 @@
 			</damageData>
 		</graphicData>
 		<size>(1,1)</size>
-
 		<techLevel>Medieval</techLevel>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -86,7 +85,6 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.20</staticSunShadowHeight>
 		<designationCategory>Production</designationCategory>
-
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
@@ -96,18 +94,15 @@
 		<costList>
 			<DankPyon_IronIngot>75</DankPyon_IronIngot>
 		</costList>
-
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>2500</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
-
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<paintable>true</paintable>
 		</building>
-
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -134,23 +129,25 @@
 					<li>DankPyon_Process_Luhix</li>
 				</processes>
 			</li>
-
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
+					</thingDefs>
 					<categories>
-						<li>DankPyon_Wood</li>
 						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
 					</categories>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
-
 			<li Class="CompProperties_Forbiddable"/>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
@@ -158,6 +155,9 @@
 			<li>DankPyon_Alchemy</li>
 		</researchPrerequisites>
 		<tickerType>Rare</tickerType>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<!--Drying rack-->
@@ -611,12 +611,13 @@
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
 					<categories>
-						<li>DankPyon_Wood</li>
 						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
 					</categories>
 				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 	 		<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
@@ -639,6 +640,7 @@
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<tickerType>Rare</tickerType>
 		<designationCategory>Production</designationCategory>
@@ -646,6 +648,9 @@
 			<li>DankPyon_Smoker</li>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -734,16 +739,13 @@
 			</damageData>
 		</graphicData>
 		<uiIconScale>0.85</uiIconScale>
-
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
-
 		<costList>
 			<Steel>80</Steel>
 		</costList>
-
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
@@ -797,6 +799,7 @@
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>9</heatPerSecond>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<tickerType>Rare</tickerType>
 		<placeWorkers>
@@ -806,6 +809,9 @@
 		<researchPrerequisites>
 			<li>DankPyon_Steel</li>
 		</researchPrerequisites>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -844,8 +850,9 @@
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
@@ -883,6 +890,7 @@
 				<heatPerSecond>15</heatPerSecond>
 				<heatPushMaxTemperature>18</heatPushMaxTemperature>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<tickerType>Rare</tickerType>
 		<placeWorkers>
@@ -892,6 +900,9 @@
 		<researchPrerequisites>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
   

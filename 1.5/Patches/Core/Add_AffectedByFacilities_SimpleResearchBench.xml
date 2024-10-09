@@ -7,25 +7,12 @@
 			<xpath>/Defs/ThingDef[defName="SimpleResearchBench"]/comps</xpath>
 			<value>
 				<li Class="CompProperties_AffectedByFacilities">
-					<linkableFacilities/>
+					<linkableFacilities>
+						<li>DankPyon_RusticBookshelf</li>
+						<li>DankPyon_RusticBookshelf1x2c</li>
+						<li>DankPyon_RoyalBookshelf</li>
+					</linkableFacilities>
 				</li>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-		<value>
-			<li>Bookcase</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="BookcaseBase"]/comps/li[@Class="CompProperties_Facility"]</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="SimpleResearchBench"]/comps</xpath>
-			<value>
-				<li Class="CompProperties_Facility"></li>
 			</value>
 		</nomatch>
 	</Operation>

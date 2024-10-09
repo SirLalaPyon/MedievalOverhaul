@@ -55,9 +55,9 @@
 		</comps>
 		<rotatable>false</rotatable>
 	</ThingDef>
-  
+
 	<!-- Dried Meats -->
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="OrganicProductBase">
 		<defName>DankPyon_DriedMeat</defName>
 		<label>dried Meat</label>
 		<description>Dried meat to preserve and prolong shelf life.</description>
@@ -66,11 +66,12 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>13</MarketValue>
+			<MarketValue>1.9</MarketValue>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
-			<preferability>MealAwful</preferability>
+			<foodType>Meat</foodType>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>DankPyon_AteDriedMeat</tasteThought>
@@ -89,9 +90,9 @@
 		<rotatable>false</rotatable>
 		<tradeability>Buyable</tradeability>
 	</ThingDef>
-	
+
 	<!-- Dried Human Meats -->
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="OrganicProductBase">
 		<defName>DankPyon_DriedMeat_Human</defName>
 		<label>dried Human Meat</label>
 		<description>Dried human meat to preserve and prolong shelf life. Does not rehydrate very well and only true cannibals can stomach it.</description>
@@ -100,17 +101,21 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>13</MarketValue>
-			<Nutrition>0.7</Nutrition>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
-			<preferability>MealAwful</preferability>
+			<foodType>Meat</foodType>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>DankPyon_AteDriedMeat</tasteThought>
 			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>60</daysToRotStart>
@@ -123,7 +128,7 @@
 		<rotatable>false</rotatable>
 	</ThingDef>
 
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="OrganicProductBase">
 		<defName>DankPyon_DriedMeat_Insect</defName>
 		<label>dried Insect Meat</label>
 		<description>Dried insect meat to preserve and prolong shelf life.Does not rehydrate very well and not many can stomach it</description>
@@ -132,17 +137,21 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>13</MarketValue>
-			<Nutrition>0.7</Nutrition>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
-			<preferability>MealAwful</preferability>
+			<foodType>Meat</foodType>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
-			<!-- <tasteThought>DankPyon_DriedMeat</tasteThought> -->
+			<tasteThought>DankPyon_AteDriedMeat</tasteThought>
 			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>60</daysToRotStart>
@@ -152,7 +161,7 @@
 		<rotatable>false</rotatable>
 	</ThingDef>
 
-	<!-- Dried Meats -->
+	<!-- Smoked Meats -->
 	<ThingDef ParentName="MealBase">
 		<defName>DankPyon_SmokedMeat</defName>
 		<label>smoked meat</label>

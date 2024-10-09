@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][not(fuelLabel)]/fuelFilter/thingDefs/li[.="WoodLog"]][not(comps/li[@Class="CompProperties_Power"])][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])][not(defName[.="PassiveCooler"])]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
+		<value>
+			<li>DankPyon_Coal</li>
+			<li>DankPyon_Tar</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter[thingDefs[li="DankPyon_Coal"]]/categories</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter[thingDefs[li="DankPyon_Coal"]]/categories</xpath>
+			<value>
+				<li>DankPyon_RawWood</li>
+				<li>DankPyon_Wood</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter[thingDefs[li="DankPyon_Coal"]]</xpath>
+			<value>
+				<categories>
+					<li>DankPyon_RawWood</li>
+					<li>DankPyon_Wood</li>
+				</categories>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>LWM's Fuel Filter</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<!-- Find all refuelable that has WoodLogs, replace with DankPyon_Coal-->
+				<!-- <li Class="PatchOperationReplace"> -->
+				<!-- <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]/li</xpath> -->
+				<!-- <value> -->
+				<!-- <li>DankPyon_Coal</li> -->
+				<!-- <li>DankPyon_Tar</li> -->
+				<!-- </value> -->
+				<!-- </li> -->
+
+				<!-- add fuel filters to refuelable things that has coal. 
+
+				if they use coal, which was originally WoodLog, big chance that they do 
+				not use specific fuel such as torches, campfires as opposed to tanning racks 
+				or apiaries or chemfuel generators-->
+				<!-- <li Class="PatchOperationConditional"> -->
+				<!-- <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath> -->
+				<!-- <match Class="PatchOperationAdd"> -->
+				<!-- <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath> -->
+				<!-- <value> -->
+				<!-- <li>DankPyon_RawWood</li> -->
+				<!-- <li>DankPyon_Wood</li> -->
+				<!-- </value> -->
+				<!-- </match> -->
+				<!-- <nomatch Class="PatchOperationAdd"> -->
+				<!-- <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/..</xpath> -->
+				<!-- <value> -->
+				<!-- <categories> -->
+				<!-- <li>DankPyon_RawWood</li> -->
+				<!-- <li>DankPyon_Wood</li> -->
+				<!-- </categories> -->
+				<!-- </value> -->
+				<!-- </nomatch> -->
+				<!-- </li> -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]][not(comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"])]/comps</xpath>
+					<value>
+						<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
+					</value>
+				</li>
+
+				<!-- If there is no inspector tab, add inspector tab AND MedievalOverhaul.ITab_Fuel-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)][not (@ParentName="TorchLamp")][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)][not (@ParentName="TorchLamp")][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>MedievalOverhaul.ITab_Fuel</li>
+							</inspectorTabs>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/inspectorTabs[not(li[.="MedievalOverhaul.ITab_Fuel"])]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/inspectorTabs[not(li[.="MedievalOverhaul.ITab_Fuel"])]</xpath>
+						<value>
+							<li>MedievalOverhaul.ITab_Fuel</li>
+						</value>
+					</match>
+				</li>
+
+			</operations>
+		</nomatch>
+	</Operation>
+	
+	<!-- <Operation Class="PatchOperationConditional"> -->
+	<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs</xpath> -->
+	<!-- <match Class="PatchOperationAdd"> -->
+	<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs</xpath> -->
+	<!-- <value> -->
+	<!-- <li>MedievalOverhaul.ITab_FuelCustom</li> -->
+	<!-- </value> -->
+	<!-- </match> -->
+	<!-- </Operation> -->
+
+	<!-- <Operation Class="PatchOperationConditional"> -->
+	<!-- <xpath>Defs/ThingDef[thingClass[.="Building_WorkTable"]][comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="DankPyon_Coal"]][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/thingClass</xpath> -->
+	<!-- <match Class="PatchOperationReplace"> -->
+	<!-- <xpath>Defs/ThingDef[thingClass[.="Building_WorkTable"]][comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="DankPyon_Coal"]][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/thingClass</xpath> -->
+	<!-- <value> -->
+	<!-- <thingClass>MedievalOverhaul.Building_WorkTableCustom</thingClass> -->
+	<!-- </value> -->
+	<!-- </match> -->
+	<!-- </Operation> -->
+
+	<!-- <Operation Class="PatchOperationConditional"> -->
+	<!-- <xpath>Defs/ThingDef[thingClass[.="Building_WorkTable_HeatPush"]][comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="DankPyon_Coal"]][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/thingClass</xpath> -->
+	<!-- <match Class="PatchOperationReplace"> -->
+	<!-- <xpath>Defs/ThingDef[thingClass[.="Building_WorkTable_HeatPush"]][comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="DankPyon_Coal"]][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/thingClass</xpath> -->
+	<!-- <value> -->
+	<!-- <thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass> -->
+	<!-- </value> -->
+	<!-- </match> -->
+	<!-- </Operation> -->
+
+	<!-- <Operation Class="PatchOperationConditional"> -->
+	<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"] and not(comps/li[@Class="CompProperties_Power"]) and not(defName[.="PassiveCooler"])][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/comps/li[@Class="CompProperties_Refuelable"]</xpath> -->
+	<!-- <match Class="PatchOperationAttributeSet"> -->
+	<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"] and not(comps/li[@Class="CompProperties_Power"]) and not(defName[.="PassiveCooler"])][not(comps/li[@Class="ProcessorFramework.CompProperties_Processor"])]/comps/li[@Class="CompProperties_Refuelable"]</xpath> -->
+	<!-- <attribute>Class</attribute> -->
+	<!-- <value>MedievalOverhaul.CompProperties_RefuelableCustom</value> -->
+	<!-- </match> -->
+	<!-- </Operation> -->
+
+	<!-- <Operation Class="PatchOperationAttributeSet"> -->
+	<!-- <xpath>Defs/ThingDef[comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]]/comps/li[@Class="CompProperties_FireOverlay"]</xpath> -->
+	<!-- <attribute>Class</attribute> -->
+	<!-- <value>MedievalOverhaul.CompProperties_FireOverlayCustom</value> -->
+	<!-- </Operation> -->
+
+	<!-- <Operation Class="PatchOperationReplace"> -->
+	<!-- <xpath>Defs/ThingDef[comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]]/comps/li[@Class="CompProperties_HeatPusher"]/compClass</xpath> -->
+	<!-- <value> -->
+	<!-- <compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass> -->
+	<!-- </value> -->
+	<!-- </Operation> -->
+
+</Patch>

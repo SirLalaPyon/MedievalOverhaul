@@ -12,12 +12,13 @@ namespace MedievalOverhaul
     public class MedievalOverhaulSettings : Mod
     {
         public static MedievalOverhaul_Settings settings;
-
+        public string version = "1.5.0.1";
         public MedievalOverhaulSettings(ModContentPack content) : base(content)
         {
             settings = GetSettings<MedievalOverhaul_Settings>();
             Harmony harmony = new Harmony(id: "medievalOverhaul");
             harmony.PatchAll();
+            Log.Message("Medieval Overhaul v"+ version);
         }
 
         public override string SettingsCategory()

@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse.AI;
 using Verse;
 using RimWorld;
+using UnityEngine;
+using System.Linq;
 
 namespace MedievalOverhaul
 {
@@ -16,11 +15,14 @@ namespace MedievalOverhaul
         public static SeperateWoodList LogList = DefDatabase<SeperateWoodList>.GetNamed("LogList");
         public static HideGraphicList HideGraphicList = DefDatabase<HideGraphicList>.GetNamed("HideGraphicList");
         public static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
-        public static bool LWMFuelFilterIsEnabled = LoadedModManager.RunningModsListForReading.Any<ModContentPack>((Predicate<ModContentPack>)(x => x.Name == "LWM's Fuel Filter" || x.PackageId == "LWM.FuelFilter"));
         public static bool CEIsEnabled = LoadedModManager.RunningModsListForReading.Any<ModContentPack>((Predicate<ModContentPack>)(x => x.PackageId == "ceteam.combatextended"));
         public static bool VBEIsEnabled = ModsConfig.IsActive("VanillaExpanded.VBooksE");
+        public static bool LWMFuelFilterIsEnabled = ModsConfig.IsActive("lwm.fuelfilter");
         public static RoomRoleDef DankPyon_Library;
         public static ThoughtDef DankPyon_ReadInLibrary;
+       
+
+        
         static Utility()
         {
             if (VBEIsEnabled is false)
@@ -28,6 +30,19 @@ namespace MedievalOverhaul
                 DankPyon_Library = DefDatabase<RoomRoleDef>.GetNamed("DankPyon_Library");
                 DankPyon_ReadInLibrary = DefDatabase<ThoughtDef>.GetNamed("DankPyon_ReadInLibrary");
             }
+        }
+        public static int GetFuelCountToFullyRefuel(CompRefuelable RefuelableComp)
+        {
+            if (RefuelableComp.Props.atomicFueling)
+            {
+                return Mathf.CeilToInt(RefuelableComp.Props.fuelCapacity / RefuelableComp.Props.FuelMultiplierCurrentDifficulty);
+            }
+            return Mathf.Max(Mathf.CeilToInt((RefuelableComp.TargetFuelLevel - RefuelableComp.fuel) / RefuelableComp.Props.FuelMultiplierCurrentDifficulty), 1);
+        }
+        public static int GetFuelCountToFullyRefuel(CompRefuelable RefuelableComp, Thing fuelThing)
+        {
+            float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(fuelThing.def, 1f);
+            return Mathf.CeilToInt(GetFuelCountToFullyRefuel(RefuelableComp) / fuelValue);
         }
 
         public static Thing FindSpecificFuel(Pawn pawn, ThingDef fuel)
@@ -87,8 +102,7 @@ namespace MedievalOverhaul
             List<Thing> thingList = c.GetThingList(map);
             for (int i = 0; i < thingList.Count; i++)
             {
-                Mineable_CompSpawnerDestroy mineable = thingList[i] as Mineable_CompSpawnerDestroy;
-                if (mineable != null)
+                if (thingList[i] is Mineable_CompSpawnerDestroy mineable)
                 {
                     return mineable;
                 }

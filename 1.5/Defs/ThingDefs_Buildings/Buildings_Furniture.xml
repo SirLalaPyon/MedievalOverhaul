@@ -2430,8 +2430,8 @@
 	
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase" Name="DankPyon_RusticBookshelf">
 		<defName>DankPyon_RusticBookshelf</defName>
-		<label>small bookshelf</label>
-		<description>Increases research speed when placed near research table. Each research bench can  use two small bookshelf.</description>
+		<label>small research shelf</label>
+		<description>Increases research speed when placed near research table. Each research bench can  use two small research shelves.</description>
 		<graphicData>
 			<texPath>Furniture/RusticBookshelf1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -2510,8 +2510,8 @@
 
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
 		<defName>DankPyon_RusticBookshelf1x2c</defName>
-		<label>large bookshelf</label>
-		<description>Increases research speed when placed near research table. Each research bench can use one large bookshelf.</description>
+		<label>large research shelf</label>
+		<description>Increases research speed when placed near research table. Each research bench can use one large research shelf.</description>
 		<graphicData>
 			<texPath>Furniture/RusticBookshelf1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
